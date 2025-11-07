@@ -4543,35 +4543,50 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer
 
-Pidgeotto
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Tackle
-- Sand Attack
-- Gust
+Kirlia @ Sitrus Berry
+Nature: Modest
+Ability: Trace
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Psybeam
+- Draining Kiss
+- Magical Leaf
+
+Staravia @ Muscle Band
+Nature: Adamant
+Ability: Intimidate
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pluck
 - Quick Attack
+- U-turn
+- Sleep Talk
 
-Abra
-Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Teleport
+Pawniard @ Chople Berry
+Nature: Adamant
+Ability: Defiant
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Knock Off
+- Sucker Punch
+- Cut
+- Low Sweep
 
-Rattata
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Tackle
-- Tail Whip
-- Quick Attack
-
-Squirtle
-Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Tail Whip
-- Withdraw
-- Water Gun
+Wartortle @ Eviolite
+Nature: Modest
+Ability: Torrent
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Pulse
+- Icy Wind
+- Seismic Toss
+- Counter
 
 === TRAINER_RIVAL_CERULEAN_BULBASAUR ===
 Name: TERRY
@@ -4580,35 +4595,50 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer
 
-Pidgeotto
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Tackle
-- Sand Attack
-- Gust
+Kirlia @ Sitrus Berry
+Nature: Modest
+Ability: Trace
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Psybeam
+- Draining Kiss
+- Magical Leaf
+
+Staravia @ Muscle Band
+Nature: Adamant
+Ability: Intimidate
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pluck
 - Quick Attack
+- U-turn
+- Sleep Talk
 
-Abra
-Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Teleport
+Pawniard @ Chople Berry
+Nature: Adamant
+Ability: Defiant
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Knock Off
+- Sucker Punch
+- Cut
+- Low Sweep
 
-Rattata
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Tackle
-- Tail Whip
-- Quick Attack
-
-Bulbasaur
-Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Sleep Powder
-- Poison Powder
-- Vine Whip
+Ivysaur @ Eviolite
+Nature: Modest
+Ability: Overgrow
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leech Seed
+- Sludge
+- Mega Drain
+- Protect
 
 === TRAINER_RIVAL_CERULEAN_CHARMANDER ===
 Name: TERRY
@@ -4617,35 +4647,50 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer
 
-Pidgeotto
-Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Tackle
-- Sand Attack
-- Gust
+Kirlia @ Sitrus Berry
+Nature: Modest
+Ability: Trace
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Psybeam
+- Draining Kiss
+- Magical Leaf
+
+Staravia @ Muscle Band
+Nature: Adamant
+Ability: Intimidate
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pluck
 - Quick Attack
+- U-turn
+- Sleep Talk
 
-Abra
-Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Teleport
+Pawniard @ Chople Berry
+Nature: Adamant
+Ability: Defiant
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Knock Off
+- Sucker Punch
+- Cut
+- Low Sweep
 
-Rattata
-Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-- Tackle
-- Tail Whip
-- Quick Attack
-
-Charmander
-Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Metal Claw
-- Ember
-- Growl
-- Scratch
+Charmeleon @ Eviolite
+Nature: Rash
+Ability: Blaze
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flame Burst
+- Thunder Punch
+- Ancient Power
+- Bite
 
 === TRAINER_SCIENTIST_TED ===
 Name: TED
@@ -5028,7 +5073,6 @@ Class: Leader Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
-Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -5936,7 +5980,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -5986,7 +6029,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6036,7 +6078,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6086,7 +6127,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6136,7 +6176,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6186,7 +6225,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6236,7 +6274,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6286,7 +6323,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6336,7 +6372,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6386,7 +6421,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6436,7 +6470,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6486,7 +6519,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6536,7 +6568,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6586,7 +6617,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6636,7 +6666,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6686,7 +6715,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6736,7 +6764,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6786,7 +6813,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6836,7 +6862,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
@@ -6887,7 +6912,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
@@ -6938,7 +6962,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Agatha Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
@@ -6989,7 +7012,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
@@ -7041,20 +7063,50 @@ Pic: Leader Brock Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer
 
-Geodude
-Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Defense Curl
-
-Onix
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Bind
+Geodude-Alola @ Custap Berry
+Nature: Adamant
+Ability: Sturdy
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bulldoze
 - Rock Tomb
+- Spark
+- Selfdestruct
+
+Varoom @ Air Balloon
+Nature: Brave
+Ability: Filter
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Gyro Ball
+- Bulldoze
+- Toxic
+- Protect
+
+Onix @ Berry Juice
+Nature: Bashful
+Ability: Sturdy
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Tomb
+- Bulldoze
+- Sleep Talk
+
+Archen @ Berry Juice
+Nature: Jolly
+Ability: Defeatist
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pluck
+- Rock Tomb
+- Bulldoze
+- Facade
 
 === TRAINER_LEADER_MISTY ===
 Name: MISTY
@@ -7062,59 +7114,117 @@ Class: Leader Frlg
 Pic: Leader Misty Frlg
 Gender: Male
 Music: Female
-Items: Super Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Smart Trainer
 
-Staryu
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Harden
-- Recover
-- Water Pulse
+Frogadier @ Eviolite
+Nature: Lonely
+Ability: Protean
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 40 Atk / 0 Def / 40 SpA / 0 SpD / 0 Spe
+- Ice Punch
+- Rock Tomb
+- Flip Turn
+- Grass Knot
 
-Starmie
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Swift
-- Recover
-- Rapid Spin
+Floatzel @ Mystic Water
+Nature: Timid
+Ability: Technician
+Level: 25
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
+- Flip Turn
+- Icy Wind
+- Hidden Power 
+
+Starmie @ Sitrus Berry
+Nature: Timid
+Ability: Analytic
+Level: 27
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Psyshock
+- Water Pulse
+- Recover
+- Aurora Beam
+
+Clodsire @ Iapapa Berry
+Nature: Bold
+Ability: Water Absorb
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Poison Jab
+- Bulldoze
+- Rock Tomb
+- Recover
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: LT. SURGE
 Class: Leader Frlg
 Pic: Leader Lt Surge Frlg
+Items: Mega Ring
 Gender: Male
 Music: Male
-Items: Super Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Voltorb
-Level: 21
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sonic Boom
-- Tackle
-- Screech
-- Shock Wave
+Pincurchin @ Terrain Extender
+Nature: Bold
+Ability: Electric Surge
+Level: 32
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Volt Switch
+- Scald
+- Discharge
+- Hidden Power
 
-Pikachu
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Quick Attack
-- Thunder Wave
-- Double Team
-- Shock Wave
+Vikavolt @ Occa Berry
+Nature: Calm
+Ability: Levitate
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Volt Switch
+- Bug Buzz
+- Roost
+- Mud Shot
 
-Raichu
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Quick Attack
+Bellibolt @ Shuca Berry
+Nature: Bold
+Ability: Electromorphosis
+Level: 33
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 100 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Parabolic Charge
+- Muddy Water
 - Thunder Wave
-- Double Team
-- Shock Wave
+- Hidden Power
+
+Pawmot @ Focus Sash
+Nature: Jolly
+Ability: Iron Fist
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Drain Punch
+- Thunder Punch
+- Ice Punch
+- Mach Punch
+
+Manectric @ Manectite
+Nature: Timid
+Ability: Intimidate
+Level: 34
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Charge Beam
+- Volt Switch
+- Flame Burst
+- Hidden Power
 
 === TRAINER_LEADER_ERIKA ===
 Name: ERIKA
@@ -7122,7 +7232,6 @@ Class: Leader Frlg
 Pic: Leader Erika Frlg
 Gender: Male
 Music: Female
-Items: Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7156,7 +7265,6 @@ Class: Leader Frlg
 Pic: Leader Koga Frlg
 Gender: Male
 Music: Male
-Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7198,7 +7306,6 @@ Class: Leader Frlg
 Pic: Leader Blaine Frlg
 Gender: Male
 Music: Male
-Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7240,7 +7347,6 @@ Class: Leader Frlg
 Pic: Leader Sabrina Frlg
 Gender: Male
 Music: Female
-Items: Hyper Potion / Hyper Potion / Full Heal
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7779,7 +7885,6 @@ Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -7838,7 +7943,6 @@ Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -7897,7 +8001,6 @@ Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -9066,7 +9169,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -9092,7 +9194,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -9156,7 +9257,6 @@ Class: Lady Frlg
 Pic: Lady Frlg
 Gender: Male
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -9494,7 +9594,6 @@ Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -9528,7 +9627,6 @@ Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -9957,7 +10055,6 @@ Class: Lady Frlg
 Pic: Lady Frlg
 Gender: Male
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -10541,7 +10638,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10567,7 +10663,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10601,7 +10696,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10623,7 +10717,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10641,7 +10734,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10691,7 +10783,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10741,7 +10832,6 @@ Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10847,7 +10937,6 @@ Class: Lady Frlg
 Pic: Lady Frlg
 Gender: Male
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -13010,7 +13099,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -13036,7 +13124,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -13104,7 +13191,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -13138,7 +13224,6 @@ Class: Pkmn Ranger Frlg
 Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -13156,7 +13241,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -13206,7 +13290,6 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -13256,7 +13339,6 @@ Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
-Items: Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -13396,7 +13478,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
@@ -13447,7 +13528,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
@@ -13498,7 +13578,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Agatha Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
@@ -13549,7 +13628,6 @@ Class: Elite Four Frlg
 Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
@@ -13600,7 +13678,6 @@ Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -13659,7 +13736,6 @@ Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -13718,7 +13794,6 @@ Class: Champion Frlg
 Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow

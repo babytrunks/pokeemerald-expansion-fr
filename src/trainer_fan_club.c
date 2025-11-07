@@ -343,16 +343,16 @@ static void BufferFanClubTrainerName(u8 whichLinkTrainer, u8 whichNPCTrainer)
     {
     case 0:
     default:
-#if IS_FRLG
+// #if IS_FRLG
         StringCopy(gStringVar1, gSaveBlock1Ptr->rivalName);
         break;
-#endif
-    case 1:
-        StringCopy(gStringVar1, gText_LtSurge);
-        break;
-    case 2:
-        StringCopy(gStringVar1, gText_Koga);
-        break;
+// #endif
+//     case 1:
+//         StringCopy(gStringVar1, gText_LtSurge);
+//         break;
+//     case 2:
+//         StringCopy(gStringVar1, gText_Koga);
+//         break;
     }
 }
 #endif //FREE_LINK_BATTLE_RECORDS

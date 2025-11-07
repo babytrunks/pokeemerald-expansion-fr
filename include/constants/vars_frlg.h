@@ -130,10 +130,10 @@
 #define VAR_MAP_SCENE_SEVEN_ISLAND_HOUSE_ROOM1                                 0x4074
 #define VAR_MAP_SCENE_ONE_ISLAND_HARBOR                                        0x4075
 #define VAR_MAP_SCENE_ONE_ISLAND_POKEMON_CENTER_1F                             0x4076
-#define VAR_0x4077                                                             0x4077
+#define VAR_DN_STEP_COUNTER                                                             0x4077
 #define VAR_MAP_SCENE_TWO_ISLAND                                               0x4078
 #define VAR_MAP_SCENE_TWO_ISLAND_JOYFUL_GAME_CORNER                            0x4079
-#define VAR_0x407A                                                             0x407A
+#define VAR_DN_SPECIES                                                             0x407A
 #define VAR_MAP_SCENE_THREE_ISLAND                                             0x407B
 #define VAR_MAP_SCENE_POKEMON_CENTER_TEALA                                     0x407C
 #define VAR_MAP_SCENE_CERULEAN_CITY_ROCKET                                     0x407D
@@ -146,7 +146,7 @@
 #define VAR_MAP_SCENE_FIVE_ISLAND_RESORT_GORGEOUS                              0x4084
 #define VAR_MAP_SCENE_INDIGO_PLATEAU_EXTERIOR                                  0x4085
 #define VAR_MAP_SCENE_FOUR_ISLAND                                              0x4086
-#define VAR_0x4087                                                             0x4087
+#define VAR_LEVEL_CAP_FR                                                       0x4087
 #define VAR_MAP_SCENE_ROCKET_WAREHOUSE                                         0x4088
 #define VAR_MAP_SCENE_SIX_ISLAND_POKEMON_CENTER_1F                             0x4089
 #define VAR_MAP_SCENE_CINNABAR_ISLAND_2                                        0x408A

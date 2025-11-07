@@ -1214,11 +1214,11 @@
 #define FLAG_DEFEATED_CHAMP           0x4BC
 
 // Unused?
-#define FLAG_0x4BD               0x4BD
-#define FLAG_0x4BE               0x4BE
-#define FLAG_0x4BF               0x4BF
-#define FLAG_0x4C0               0x4C0
-#define FLAG_0x4C1               0x4C1
+#define FLAG_DETECTOR_MODE                          0x4BD
+#define FLAG_DEXNAV_GET                             0x4BE
+#define FLAG_SEARCHING                              0x4BF
+#define FLAG_EXP_SHARE                              0x4C0
+#define FLAG_FORCE_SHINY                            0x4C1
 #define FLAG_0x4C2               0x4C2
 #define FLAG_0x4C3               0x4C3
 #define FLAG_0x4C4               0x4C4
@@ -2623,7 +2623,7 @@
 #define FLAG_UNUSED_0x903                           0
 #define FLAG_UNUSED_0x904                           0
 #define FLAG_UNUSED_0x905                           0
-#define FLAG_UNUSED_0x906                           0
+#define FLAG_UNUSED_0x906                           0x906
 #define FLAG_UNUSED_0x907                           0
 #define FLAG_UNUSED_0x908                           0
 #define FLAG_UNUSED_0x909                           0
@@ -2636,7 +2636,7 @@
 #define FLAG_UNUSED_0x910                           0
 #define FLAG_UNUSED_0x911                           0
 #define FLAG_UNUSED_0x912                           0
-#define FLAG_UNUSED_0x913                           0
+#define FLAG_UNUSED_0x913                           0x913
 #define FLAG_UNUSED_0x914                           0
 #define FLAG_UNUSED_0x915                           0
 #define FLAG_UNUSED_0x916                           0
@@ -2646,9 +2646,9 @@
 #define FLAG_UNUSED_0x91A                           0
 #define FLAG_UNUSED_0x91B                           0
 #define FLAG_UNUSED_0x91C                           0
-#define FLAG_UNUSED_0x91D                           0
-#define FLAG_UNUSED_0x91E                           0
-#define FLAG_UNUSED_0x91F                           0
+#define FLAG_UNUSED_0x91D                          0x91D
+#define FLAG_UNUSED_0x91E                             0x91E 
+#define FLAG_UNUSED_0x91F                              0x91F
 
 // Daily Flags
 // These flags are cleared once per day
