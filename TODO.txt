@@ -34,7 +34,8 @@ LOW PRIORITY:
 - Hardcore Mode
 - ipitax hq mixer (for music)
 - Title screen update
-- Decapitalization
+- Decapitalization (species name, moves, abilities, items are decapped, most in-game text are not)
+- Graphics updates (battle interface, textbox, etc)
 
 ALREADY DONE:
 - base stats (ability, stats, type changes) updated to match FRU
