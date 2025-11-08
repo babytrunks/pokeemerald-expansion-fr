@@ -343,7 +343,10 @@ enum __attribute__((packed)) Ability
     ABILITY_BAD_COMPANY = 319,
     ABILITY_BLAZING_SOUL = 320,
     ABILITY_BULL_RUSH = 321,
-    ABILITY_FELINE_POWER = 322,
+    ABILITY_QUILL_RUSH = 322, //bull rush clone
+    ABILITY_FELINE_PROWESS = 323, 
+    ABILITY_FROZEN_MIST = 324, //shield dust buff
+    ABILITY_BLUBBER_DEFENSE = 325, //multiscale lul 
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

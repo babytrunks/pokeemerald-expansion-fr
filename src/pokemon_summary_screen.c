@@ -44,6 +44,7 @@
 #include "tv.h"
 #include "window.h"
 #include "constants/battle_move_effects.h"
+#include "constants/hold_effects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
@@ -163,7 +164,7 @@ static EWRAM_DATA struct PokemonSummaryScreenData
         u8 sanity; // 0x35
         u8 OTName[17]; // 0x36
         u32 OTID; // 0x48
-        enum Type teraType;
+        u8 teraType;
         u8 mintNature;
     } summary;
     u16 bgTilemapBuffers[PSS_PAGE_COUNT][2][0x400];
@@ -328,12 +329,12 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum);
 void ExtractMonSkillIvData(struct Pokemon *mon, struct PokeSummary *sum);
 void ExtractMonSkillEvData(struct Pokemon *mon, struct PokeSummary *sum);
 static void PrintTextOnWindow(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId);
+static void PrintTextOnWindow_SmallNarrow(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId);
 static void PrintTextOnWindowWithFont(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId, u32 fontId);
 static const u8 *GetLetterGrade(u32 stat);
 static u8 AddWindowFromTemplateList(const struct WindowTemplate *template, u8 templateId);
 static u8 IncrementSkillsStatsMode(u8 mode);
 static void ClearStatLabel(u32 length, u32 statsCoordX, u32 statsCoordY);
-u32 GetAdjustedIvData(struct Pokemon *mon, u32 stat);
 
 static const struct BgTemplate sBgTemplates[] =
 {
@@ -607,23 +608,41 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .paletteNum = 6,
         .baseBlock = 489,
     },
-    [PSS_DATA_WINDOW_INFO_ABILITY] = {
+        [PSS_DATA_WINDOW_INFO_ABILITY] = {    
         .bg = 0,
-        .tilemapLeft = 11,
+        #if(P_SUMMARY_SCREEN_EXPAND_ABILITY_DESCRIPTION)
+        .tilemapLeft = 10,
+        .tilemapTop = 8,
+        .width = 20,
+        .height = 8,
+        .paletteNum = 6,
+        .baseBlock = 504,
+        #else
+        .tilemapLeft = 10,
         .tilemapTop = 9,
         .width = 18,
         .height = 4,
         .paletteNum = 6,
         .baseBlock = 503,
+        #endif
     },
     [PSS_DATA_WINDOW_INFO_MEMO] = {
         .bg = 0,
+        #if(P_SUMMARY_SCREEN_EXPAND_ABILITY_DESCRIPTION)
+        .tilemapLeft = 11,
+        .tilemapTop = 16,
+        .width = 20,
+        .height = 4,
+        .paletteNum = 6,
+        .baseBlock = 665,
+        #else
         .tilemapLeft = 11,
         .tilemapTop = 14,
         .width = 18,
         .height = 6,
         .paletteNum = 6,
         .baseBlock = 575,
+        #endif
     },
 };
 static const struct WindowTemplate sPageSkillsTemplate[] =
@@ -695,6 +714,15 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .baseBlock = 557,
     },
     [PSS_DATA_WINDOW_MOVE_DESCRIPTION] = {
+        #if P_SUMMARY_SCREEN_EXPAND_MOVE_DESCRIPTION
+        .bg = 0,
+        .tilemapLeft = 10,
+        .tilemapTop = 14,
+        .width = 20,
+        .height = 6,
+        .paletteNum = 6,
+        .baseBlock = 617,
+        #else
         .bg = 0,
         .tilemapLeft = 10,
         .tilemapTop = 15,
@@ -702,6 +730,7 @@ static const struct WindowTemplate sPageMovesTemplate[] = // This is used for bo
         .height = 4,
         .paletteNum = 6,
         .baseBlock = 617,
+        #endif
     },
 };
 static const u8 sTextColors[][3] =
@@ -754,6 +783,8 @@ static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 #define TAG_MOVE_TYPES 30002
 #define TAG_MON_MARKINGS 30003
 #define TAG_CATEGORY_ICONS 30004
+#define TAG_MON_SHADOW 30005
+#define TAG_TERA_TYPE 30006
 
 static const struct OamData sOamData_CategoryIcons =
 {
@@ -962,10 +993,16 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
 
 const struct CompressedSpriteSheet gSpriteSheet_MoveTypes =
 {
+    #if P_SUMMARY_SCREEN_NEW_TYPE_ICONS
+    .data = gMoveTypes_Gfx_New,
+    #else
     .data = gMoveTypes_Gfx,
+    #endif
     .size = (NUMBER_OF_MON_TYPES + CONTEST_CATEGORIES_COUNT) * 0x100,
     .tag = TAG_MOVE_TYPES
 };
+
+
 const struct SpriteTemplate gSpriteTemplate_MoveTypes =
 {
     .tileTag = TAG_MOVE_TYPES,
@@ -984,6 +1021,176 @@ static const u8 sContestCategoryToOamPaletteNum[CONTEST_CATEGORIES_COUNT] =
     [CONTEST_CATEGORY_SMART] = 15,
     [CONTEST_CATEGORY_TOUGH] = 13,
 };
+
+//Tera Types Icons
+static const u32 sTeraTypes_Gfx[] = INCBIN_U32("graphics/types_new/tera/tera_types.4bpp.lz");
+
+static const union AnimCmd sSpriteAnim_TeraTypeNone[] =
+{
+    ANIMCMD_FRAME(TYPE_NONE * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeNormal[] =
+{
+    ANIMCMD_FRAME(TYPE_NORMAL * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeFighting[] = 
+{
+    ANIMCMD_FRAME(TYPE_FIGHTING * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeFlying[] =
+{
+    ANIMCMD_FRAME(TYPE_FLYING * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypePoison[] = 
+{
+    ANIMCMD_FRAME(TYPE_POISON * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeGround[] = 
+{
+    ANIMCMD_FRAME(TYPE_GROUND * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeRock[] = 
+{
+    ANIMCMD_FRAME(TYPE_ROCK * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeBug[] = 
+{
+    ANIMCMD_FRAME(TYPE_BUG * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeGhost[] = 
+{
+    ANIMCMD_FRAME(TYPE_GHOST * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeSteel[] = 
+{
+    ANIMCMD_FRAME(TYPE_STEEL * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeMystery[] =
+{
+    ANIMCMD_FRAME(TYPE_MYSTERY * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeFire[] = 
+{
+    ANIMCMD_FRAME(TYPE_FIRE * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeWater[] = 
+{
+    ANIMCMD_FRAME(TYPE_WATER * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeGrass[] = 
+{
+    ANIMCMD_FRAME(TYPE_GRASS * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeElectric[] = 
+{
+    ANIMCMD_FRAME(TYPE_ELECTRIC * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypePsychic[] = 
+{
+    ANIMCMD_FRAME(TYPE_PSYCHIC * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeIce[] = 
+{
+    ANIMCMD_FRAME(TYPE_ICE * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeDragon[] = 
+{
+    ANIMCMD_FRAME(TYPE_DRAGON * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeDark[] = 
+{
+    ANIMCMD_FRAME(TYPE_DARK * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeFairy[] = 
+{
+    ANIMCMD_FRAME(TYPE_FAIRY * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+static const union AnimCmd sSpriteAnim_TeraTypeStellar[] = 
+{
+    ANIMCMD_FRAME(TYPE_STELLAR * 4, 0, FALSE, FALSE),
+    ANIMCMD_END
+};
+
+static const union AnimCmd *const sSpriteAnimTable_TeraType[NUMBER_OF_MON_TYPES] = 
+{
+    [TYPE_NONE] = sSpriteAnim_TeraTypeNone,
+    [TYPE_NORMAL] = sSpriteAnim_TeraTypeNormal,
+    [TYPE_FIGHTING] = sSpriteAnim_TeraTypeFighting,
+    [TYPE_FLYING] = sSpriteAnim_TeraTypeFlying,
+    [TYPE_POISON] = sSpriteAnim_TeraTypePoison,
+    [TYPE_GROUND] = sSpriteAnim_TeraTypeGround,
+    [TYPE_ROCK] = sSpriteAnim_TeraTypeRock,
+    [TYPE_BUG] = sSpriteAnim_TeraTypeBug,
+    [TYPE_GHOST] = sSpriteAnim_TeraTypeGhost,
+    [TYPE_STEEL] = sSpriteAnim_TeraTypeSteel,
+    [TYPE_MYSTERY] = sSpriteAnim_TeraTypeMystery,
+    [TYPE_FIRE] = sSpriteAnim_TeraTypeFire,
+    [TYPE_WATER] = sSpriteAnim_TeraTypeWater,
+    [TYPE_GRASS] = sSpriteAnim_TeraTypeGrass,
+    [TYPE_ELECTRIC] = sSpriteAnim_TeraTypeElectric,
+    [TYPE_PSYCHIC] = sSpriteAnim_TeraTypePsychic,
+    [TYPE_ICE] = sSpriteAnim_TeraTypeIce,
+    [TYPE_DRAGON] = sSpriteAnim_TeraTypeDragon,
+    [TYPE_DARK] = sSpriteAnim_TeraTypeDark,
+    [TYPE_FAIRY] = sSpriteAnim_TeraTypeFairy,
+    [TYPE_STELLAR] = sSpriteAnim_TeraTypeStellar
+};
+
+static const struct OamData sOamData_TeraType =
+{
+    .y = 0,
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .mosaic = FALSE,
+    .bpp = ST_OAM_4BPP,
+    .shape = SPRITE_SHAPE(16x16),
+    .x = 0,
+    .matrixNum = 0,
+    .size = SPRITE_SIZE(16x16),
+    .tileNum = 0,
+    .priority = 1,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static const struct CompressedSpriteSheet gSpriteSheet_TeraType =
+{
+    .data = sTeraTypes_Gfx,
+    .size = NUMBER_OF_MON_TYPES * 0x100,
+    .tag = TAG_TERA_TYPE
+};
+
+static const struct SpriteTemplate gSpriteTemplate_TeraType =
+{
+    .tileTag = TAG_TERA_TYPE,
+    .paletteTag = TAG_TERA_TYPE,
+    .oam = &sOamData_TeraType,
+    .anims = sSpriteAnimTable_TeraType,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy
+};
+
 static const struct OamData sOamData_MoveSelector =
 {
     .y = 0,
@@ -1173,15 +1380,10 @@ static void DestroyCategoryIcon(void)
     sMonSummaryScreen->categoryIconSpriteId = 0xFF;
 }
 
-u32 GetAdjustedIvData(struct Pokemon *mon, u32 stat)
-{
-    if (P_SUMMARY_SCREEN_IV_HYPERTRAIN && GetMonData(mon, MON_DATA_HYPER_TRAINED_HP + stat))
-        return MAX_PER_STAT_IVS;
-    return GetMonData(mon, MON_DATA_HP_IV + stat);
-}
-
 void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
 {
+    u8 pageCount = P_SUMMARY_SCREEN_SHOW_CONTEST_MOVES ? PSS_PAGE_COUNT - 1 : PSS_PAGE_COUNT - 2;
+
     sMonSummaryScreen = AllocZeroed(sizeof(*sMonSummaryScreen));
     sMonSummaryScreen->mode = mode;
     sMonSummaryScreen->monList.mons = mons;
@@ -1204,16 +1406,16 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
     case SUMMARY_MODE_RELEARNER_BATTLE:
     case SUMMARY_MODE_RELEARNER_CONTEST:
         sMonSummaryScreen->minPageIndex = 0;
-        sMonSummaryScreen->maxPageIndex = PSS_PAGE_COUNT - 1;
+        sMonSummaryScreen->maxPageIndex = pageCount;
         break;
     case SUMMARY_MODE_LOCK_MOVES:
         sMonSummaryScreen->minPageIndex = 0;
-        sMonSummaryScreen->maxPageIndex = PSS_PAGE_COUNT - 1;
+        sMonSummaryScreen->maxPageIndex = pageCount;
         sMonSummaryScreen->lockMovesFlag = TRUE;
         break;
     case SUMMARY_MODE_SELECT_MOVE:
         sMonSummaryScreen->minPageIndex = PSS_PAGE_BATTLE_MOVES;
-        sMonSummaryScreen->maxPageIndex = PSS_PAGE_COUNT - 1;
+        sMonSummaryScreen->maxPageIndex = pageCount;
         sMonSummaryScreen->lockMonFlag = TRUE;
         break;
     }
@@ -1471,7 +1673,14 @@ static bool8 DecompressGraphics(void)
         sMonSummaryScreen->switchCounter++;
         break;
     case 12:
+    #if P_SUMMARY_SCREEN_NEW_TYPE_ICONS == TRUE
+        LoadPalette(gMoveTypes_Pal_New, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
+    #else
         LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
+    #endif
+        // LoadPalette(gMoveTypes_Pal_New, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
+        if (P_SUMMARY_SCREEN_NEW_TERA_TYPE_ICONS == TRUE)
+            LoadCompressedSpriteSheet(&gSpriteSheet_TeraType);
         LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
         LoadSpritePalette(&gSpritePal_CategoryIcons);
         sMonSummaryScreen->switchCounter = 0;
@@ -1871,12 +2080,12 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
 
 void ExtractMonSkillIvData(struct Pokemon *mon, struct PokeSummary *sum)
 {
-    sum->currentHP = GetAdjustedIvData(mon, STAT_HP);
-    sum->atk = GetAdjustedIvData(mon, STAT_ATK);
-    sum->def =  GetAdjustedIvData(mon, STAT_DEF);
-    sum->spatk = GetAdjustedIvData(mon, STAT_SPATK);
-    sum->spdef = GetAdjustedIvData(mon, STAT_SPDEF);
-    sum->speed = GetAdjustedIvData(mon, STAT_SPEED);
+    sum->currentHP = GetMonData(mon, MON_DATA_HP_IV);
+    sum->atk = GetMonData(mon, MON_DATA_ATK_IV);
+    sum->def = GetMonData(mon, MON_DATA_DEF_IV);
+    sum->spatk = GetMonData(mon, MON_DATA_SPATK_IV);
+    sum->spdef = GetMonData(mon, MON_DATA_SPDEF_IV);
+    sum->speed = GetMonData(mon, MON_DATA_SPEED_IV);
 }
 
 void ExtractMonSkillEvData(struct Pokemon *mon, struct PokeSummary *sum)
@@ -2989,9 +3198,18 @@ static void DrawPokerusCuredSymbol(struct Pokemon *mon) // This checks if the mo
 static void SetMonPicBackgroundPalette(bool8 isMonShiny)
 {
     if (!isMonShiny)
-        SetBgTilemapPalette(3, 1, 4, 8, 8, 0);
-    else
-        SetBgTilemapPalette(3, 1, 4, 8, 8, 5);
+    {
+        // if(SUMMARY_SCREEN_BACKGROUND_COLOR == TRUE)
+            SetBgTilemapPalette(3, 0, 2, 32, 20, 0);
+        // else
+        //     SetBgTilemapPalette(3, 1, 4, 8, 8, 0);
+    }
+    else{
+        // if(SUMMARY_SCREEN_BACKGROUND_COLOR == TRUE)
+            SetBgTilemapPalette(3, 0, 2, 32, 20, 0);
+        // else
+        //     SetBgTilemapPalette(3, 1, 4, 8, 8, 5);
+    }
     ScheduleBgCopyTilemapToVram(3);
 }
 
@@ -3100,6 +3318,11 @@ static void PrintTextOnWindowWithFont(u8 windowId, const u8 *string, u8 x, u8 y,
 static void PrintTextOnWindow(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId)
 {
     PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, colorId, FONT_NORMAL);
+}
+
+static void PrintTextOnWindow_SmallNarrow(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId)
+{
+    PrintTextOnWindowWithFont(windowId, string, x, y, lineSpacing, colorId, FONT_SMALL_NARROW);
 }
 
 static void PrintTextOnWindowToFitPx(u8 windowId, const u8 *string, u8 x, u8 y, u8 lineSpacing, u8 colorId, u32 width)
@@ -3473,15 +3696,37 @@ static void PrintMonOTID(void)
 
 static void PrintMonAbilityName(void)
 {
-    enum Ability ability = GetAbilityBySpecies(sMonSummaryScreen->summary.species, sMonSummaryScreen->summary.abilityNum);
-    PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].name, 0, 1, 0, 1);
+    u8 windowId = AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY);
+    u16 ability = GetAbilityBySpecies(sMonSummaryScreen->summary.species, sMonSummaryScreen->summary.abilityNum);
+    u16 isHiddenAbility = sMonSummaryScreen->summary.abilityNum == 2;
+    if(isHiddenAbility)
+        PrintTextOnWindow(windowId, gAbilitiesInfo[ability].name, 5, 8, 2, ABILITY_COLOR_VALUE);
+    else
+        PrintTextOnWindow(windowId, gAbilitiesInfo[ability].name, 5, 8, 2, 1);
+
 }
 
 static void PrintMonAbilityDescription(void)
 {
-    enum Ability ability = GetAbilityBySpecies(sMonSummaryScreen->summary.species, sMonSummaryScreen->summary.abilityNum);
-    PrintTextOnWindow(AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY), gAbilitiesInfo[ability].description, 0, 17, 0, 0);
+    u8 windowId = AddWindowFromTemplateList(sPageInfoTemplate, PSS_DATA_WINDOW_INFO_ABILITY);
+    u16 ability = GetAbilityBySpecies(sMonSummaryScreen->summary.species, sMonSummaryScreen->summary.abilityNum);
+
+    u8 desc[MAX_ABILITY_DESCRIPTION_LENGTH];
+    FormatTextByWidth(desc, MAX_ABILITY_DESCRIPTION_WIDTH, FONT_SHORT_NARROW, gAbilitiesInfo[ability].description, 0);
+    PrintTextOnWindow_SmallNarrow(windowId, desc, 5, 22, 2, 0);
+
+
 }
+
+static const u8 gText_XNatureMetAtYZAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, met at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
+static const u8 gText_XNatureHatchedAtYZAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, hatched at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
+static const u8 gText_XNatureObtainedInTradeAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, obtained in a trade.");
+static const u8 gText_XNatureFatefulEncounterAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, obtained in a fateful\nencounter at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}.");
+static const u8 gText_XNatureProbablyMetAtAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, probably met at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1},\n{DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}.");
+static const u8 gText_XNatureAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature");
+static const u8 gText_XNatureMetSomewhereAtAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, met somewhere at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}.");
+static const u8 gText_XNatureHatchedSomewhereAtAbilityExpanded[] = _("{DYNAMIC 0}{DYNAMIC 2}{DYNAMIC 1}{DYNAMIC 5} nature, hatched somewhere at {LV_2}{DYNAMIC 0}{DYNAMIC 3}{DYNAMIC 1}.");
+
 
 static void BufferMonTrainerMemo(void)
 {
@@ -3511,22 +3756,42 @@ static void BufferMonTrainerMemo(void)
 
         if (DoesMonOTMatchOwner() == TRUE)
         {
-            if (sum->metLevel == 0)
-                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
+
+            if(P_SUMMARY_SCREEN_EXPAND_ABILITY_DESCRIPTION == TRUE)
+            {
+                if (sum->metLevel == 0)
+                    text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAtAbilityExpanded : gText_XNatureHatchedAtYZAbilityExpanded;
+                else
+                    text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAtAbilityExpanded : gText_XNatureMetAtYZAbilityExpanded;
+            }
             else
-                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZ;
+            {
+                if (sum->metLevel == 0)
+                    text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureHatchedSomewhereAt : gText_XNatureHatchedAtYZ;
+                else
+                    text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureMetSomewhereAt : gText_XNatureMetAtYZ;
+            }
         }
         else if (sum->metLocation == METLOC_FATEFUL_ENCOUNTER)
         {
-            text = gText_XNatureFatefulEncounter;
+            if(P_SUMMARY_SCREEN_EXPAND_ABILITY_DESCRIPTION == TRUE)
+                text = gText_XNatureFatefulEncounterAbilityExpanded;
+            else
+                text = gText_XNatureFatefulEncounter;
         }
         else if (sum->metLocation != METLOC_IN_GAME_TRADE && DidMonComeFromGBAGames())
         {
-            text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;
+            if(P_SUMMARY_SCREEN_EXPAND_ABILITY_DESCRIPTION == TRUE)
+                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTradeAbilityExpanded : gText_XNatureProbablyMetAtAbilityExpanded;
+            else
+                text = (sum->metLocation >= MAPSEC_NONE) ? gText_XNatureObtainedInTrade : gText_XNatureProbablyMetAt;
         }
         else
         {
-            text = gText_XNatureObtainedInTrade;
+            if(P_SUMMARY_SCREEN_EXPAND_ABILITY_DESCRIPTION == TRUE)
+                text = gText_XNatureObtainedInTradeAbilityExpanded;
+            else
+                text = gText_XNatureObtainedInTrade;
         }
 
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, text);
@@ -3765,7 +4030,7 @@ static void PrintRibbonCount(void)
     PrintTextOnWindow(AddWindowFromTemplateList(sPageSkillsTemplate, PSS_DATA_WINDOW_SKILLS_RIBBON_COUNT), text, x, 1, 0, 0);
 }
 
-static void BufferStat(u8 *dst, enum Stat statIndex, u32 stat, u32 strId, u32 n)
+static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n)
 {
     static const u8 sTextNatureDown[] = _("{COLOR}{08}");
     static const u8 sTextNatureUp[] = _("{COLOR}{05}");
@@ -4108,9 +4373,19 @@ static void PrintContestMoveDescription(u8 moveSlot)
     if (move != MOVE_NONE)
     {
         u8 windowId = AddWindowFromTemplateList(sPageMovesTemplate, PSS_DATA_WINDOW_MOVE_DESCRIPTION);
-        PrintTextOnWindow(windowId, gContestEffectDescriptionPointers[GetMoveContestEffect(move)], 6, 1, 0, 0);
+        if(P_SUMMARY_SCREEN_EXPAND_MOVE_DESCRIPTION)
+        {
+            u8 desc[MAX_MOVE_DESCRIPTION_LENGTH];
+            FormatTextByWidth(desc, MAX_MOVE_DESCRIPTION_WIDTH, FONT_SMALL_NARROW, gContestEffectDescriptionPointers[GetMoveContestEffect(move)], 0);
+            PrintTextOnWindow_SmallNarrow(windowId, desc, 5, 6, 2, 0);
+        }
+        else
+        {
+            PrintTextOnWindow(windowId, gContestEffectDescriptionPointers[GetMoveContestEffect(move)], 6, 1, 0, 0);
+        }
     }
 }
+
 
 static void PrintMoveDetails(u16 move)
 {
@@ -4123,11 +4398,29 @@ static void PrintMoveDetails(u16 move)
             if (B_SHOW_CATEGORY_ICON == TRUE)
                 ShowCategoryIcon(GetBattleMoveCategory(move));
             PrintMovePowerAndAccuracy(move);
-            PrintTextOnWindow(windowId, GetMoveDescription(move), 6, 1, 0, 0);
+            if(P_SUMMARY_SCREEN_EXPAND_MOVE_DESCRIPTION)
+            {
+                u8 desc[MAX_MOVE_DESCRIPTION_LENGTH];
+                FormatTextByWidth(desc, MAX_MOVE_DESCRIPTION_WIDTH, FONT_SMALL_NARROW, GetMoveDescription(move), 0);
+                PrintTextOnWindow_SmallNarrow(windowId, desc, 5, 6, 2, 0);
+            }
+            else
+            {
+                PrintTextOnWindow(windowId, GetMoveDescription(move), 6, 1, 0, 0);
+            }
         }
         else
         {
-            PrintTextOnWindow(windowId, gContestEffectDescriptionPointers[GetMoveContestEffect(move)], 6, 1, 0, 0);
+            if(P_SUMMARY_SCREEN_EXPAND_MOVE_DESCRIPTION)
+            {
+                u8 desc[MAX_MOVE_DESCRIPTION_LENGTH];
+                FormatTextByWidth(desc, MAX_MOVE_DESCRIPTION_WIDTH, FONT_SMALL_NARROW, GetMoveDescription(move), 0);
+                PrintTextOnWindow_SmallNarrow(windowId, desc, 5, 6, 2, 0);
+            }
+            else
+            {
+                PrintTextOnWindow(windowId, gContestEffectDescriptionPointers[GetMoveContestEffect(move)], 6, 1, 0, 0);
+            }
         }
         PutWindowTilemap(windowId);
     }
@@ -4260,7 +4553,7 @@ static void CreateMoveTypeIcons(void)
     }
 }
 
-void SetTypeSpritePosAndPal(enum Type typeId, u8 x, u8 y, u8 spriteArrayId)
+void SetTypeSpritePosAndPal(u8 typeId, u8 x, u8 y, u8 spriteArrayId)
 {
     struct Sprite *sprite = &gSprites[sMonSummaryScreen->spriteIds[spriteArrayId]];
     StartSpriteAnim(sprite, typeId);
@@ -4305,7 +4598,7 @@ static void SetMoveTypeIcons(void)
     u32 i;
     struct PokeSummary *summary = &sMonSummaryScreen->summary;
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
-    enum Type type;
+    u32 type;
 
     for (i = 0; i < MAX_MON_MOVES; i++)
     {
@@ -4342,7 +4635,7 @@ static void SetContestMoveTypeIcons(void)
 
 static void SetNewMoveTypeIcon(void)
 {
-    enum Type type = GetMoveType(sMonSummaryScreen->newMove);
+    u32 type = GetMoveType(sMonSummaryScreen->newMove);
     struct Pokemon *mon = &sMonSummaryScreen->currentMon;
 
     if (P_SHOW_DYNAMIC_TYPES)
