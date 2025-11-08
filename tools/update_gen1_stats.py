@@ -2,7 +2,7 @@
 import re
 from pathlib import Path
 
-base_stats_path = Path(r"c:\Users\EBAfa\OneDrive\Desktop\base_stats_rr.c")
+base_stats_path = Path(r"c:\Users\EBAfa\OneDrive\Desktop\GBA\RadicalRed\Dynamic-Pokemon-Expansion\src\Base_Stats.c")
 gen1_path = Path(r"c:\Users\EBAfa\DeCUMPs\pokeemerald-expansion-fr\src\data\pokemon\species_info\gen_1_families.h")
 
 # fields of interest
@@ -208,6 +208,21 @@ ability_override_map = {
     'ABILITY_TERASHELL': 'ABILITY_TERA_SHELL',
     'ABILITY_TERAFORMZERO': 'ABILITY_TERAFORM_ZERO',
     'ABILITY_POISONPUPPETEER': 'ABILITY_POISON_PUPPETEER',
+    'ABILITY_LEAFGUARD': 'ABILITY_LEAF_GUARD',
+    'ABILITY_WATERBUBBLE': 'ABILITY_WATER_BUBBLE',
+    'ABILITY_TINTEDLENS': 'ABILITY_TINTED_LENS',
+    'ABILITY_SUPERLUCK': 'ABILITY_SUPER_LUCK',
+    'ABILITY_MOLDBREAKER': 'ABILITY_MOLD_BREAKER',
+    'ABILITY_BONEZONE': 'ABILITY_BONE_ZONE',
+    'ABILITY_BULLRUSH': 'ABILITY_BULL_RUSH',
+    'ABILITY_FLAMINGSOUL': 'ABILITY_BLAZING_SOUL',
+    'ABILITY_PRIMALARMOR': 'ABILITY_PRIMAL_ARMOR',
+    'ABILITY_BADCOMPANY': 'ABILITY_BAD_COMPANY',
+    'ABILITY_SAGEPOWER' : 'ABILITY_SAGE_POWER',
+    'ABILITY_FELINEPOWER': 'ABILITY_FELINE_POWER',
+    'ABILITY_SELFSUFFICIENT': 'ABILITY_SELF_SUFFICIENT',
+    'ABILITY_LETHALPRECISION': 'ABILITY_FATAL_PRECISION',
+    'ABILITY_PHOENIXDOWN': 'ABILITY_PHOENIX_DOWN'
 }
 
 # Use the static ability_override_map above for normalization
@@ -267,132 +282,135 @@ for m in pattern.finditer(text):
 
 print(f"Parsed {len(species_map)} species with stats from base_stats_rr.c")
 
-# Read gen1 file
-gen1_text = gen1_path.read_text(encoding='utf-8')
-orig_text = gen1_text
+# Process all gen_*_families.h files in the species_info directory (gen_1 .. gen_9)
+species_info_dir = Path(r"c:\Users\EBAfa\DeCUMPs\pokeemerald-expansion-fr\src\data\pokemon\species_info")
+gen_files = [species_info_dir / f"gen_{i}_families.h" for i in range(1, 10)]
+
 log_lines = []
+updated_files = []
 
-# For each species found, locate its block in gen1_text and replace stat assignments
-for name, stats in species_map.items():
-    # find the species occurrence
-    m = re.search(r"\[SPECIES_%s\]\s*=\s*\{" % re.escape(name), gen1_text)
-    if not m:
+for gen_path in gen_files:
+    if not gen_path.exists():
+        print(f"Skipping missing file: {gen_path}")
         continue
-    start = m.end()
-    i = start
-    depth = 1
-    while i < len(gen1_text) and depth > 0:
-        if gen1_text[i] == '{':
-            depth += 1
-        elif gen1_text[i] == '}':
-            depth -= 1
-        i += 1
-    block = gen1_text[start:i-1]
-    new_block = block
-    changed = [False]
-    for f in fields:
-        if f in stats:
-            # replace the assignment for this field inside new_block
-            # match lines like: .baseHP        = 45,  (allow arbitrary spacing and expressions)
-            p = re.compile(r"(\.%s\s*=\s*)([^,\n]+)(,)" % re.escape(f))
-            def repl(m2):
-                old = m2.group(2)
-                new = stats[f]
-                if old.strip() != new:
-                    changed[0] = True
-                    return m2.group(1) + new + m2.group(3)
-                return m2.group(0)
-            new_block, nsub = p.subn(repl, new_block)
-    # Also update types if available
-    if 'type1' in stats:
-        t1 = stats.get('type1')
-        t2 = stats.get('type2')
-        # build replacement MON_TYPES(...) string
-        # normalize and deduplicate types: prefer a single type if identical or if type2 is TYPE_NONE/missing
-        t1_norm = t1.strip() if t1 else ''
-        t2_norm = t2.strip() if t2 else ''
-        if not t2_norm or t2_norm == 'TYPE_NONE' or t2_norm == t1_norm:
-            types_args = f"{t1_norm}"
-        else:
-            types_args = f"{t1_norm}, {t2_norm}"
-        # replace the .types = MON_TYPES(...) occurrence robustly (handle nested parentheses)
+    gen_text = gen_path.read_text(encoding='utf-8')
+    orig_text = gen_text
+
+    # For each species found, locate its block in this gen file and replace stat assignments
+    for name, stats in species_map.items():
+        # find the species occurrence
+        m = re.search(r"\[SPECIES_%s\]\s*=\s*\{" % re.escape(name), gen_text)
+        if not m:
+            continue
+        start = m.end()
+        i = start
+        depth = 1
+        while i < len(gen_text) and depth > 0:
+            if gen_text[i] == '{':
+                depth += 1
+            elif gen_text[i] == '}':
+                depth -= 1
+            i += 1
+        block = gen_text[start:i-1]
+        new_block = block
+        changed = [False]
+        for f in fields:
+            if f in stats:
+                # replace the assignment for this field inside new_block
+                p = re.compile(r"(\.%s\s*=\s*)([^,\n]+)(,)" % re.escape(f))
+                def repl(m2):
+                    old = m2.group(2)
+                    new = stats[f]
+                    if old.strip() != new:
+                        changed[0] = True
+                        return m2.group(1) + new + m2.group(3)
+                    return m2.group(0)
+                new_block, nsub = p.subn(repl, new_block)
+
+        # Also update types if available
         n_types = 0
-        types_pos = new_block.find('.types')
-        if types_pos != -1:
-            mon_pos = new_block.find('MON_TYPES', types_pos)
-            if mon_pos != -1:
-                paren_start = new_block.find('(', mon_pos)
-                if paren_start != -1:
-                    # scan to matching closing paren
-                    j = paren_start + 1
-                    depth = 1
-                    while j < len(new_block) and depth > 0:
-                        if new_block[j] == '(':
-                            depth += 1
-                        elif new_block[j] == ')':
-                            depth -= 1
-                        j += 1
-                    if depth == 0:
-                        paren_end = j - 1
-                        # replace inner args between paren_start+1 and paren_end
-                        new_block = new_block[:paren_start+1] + types_args + new_block[paren_end:]
-                        n_types = 1
+        if 'type1' in stats:
+            t1 = stats.get('type1')
+            t2 = stats.get('type2')
+            t1_norm = t1.strip() if t1 else ''
+            t2_norm = t2.strip() if t2 else ''
+            if not t2_norm or t2_norm == 'TYPE_NONE' or t2_norm == t1_norm:
+                types_args = f"{t1_norm}"
+            else:
+                types_args = f"{t1_norm}, {t2_norm}"
+            types_pos = new_block.find('.types')
+            if types_pos != -1:
+                mon_pos = new_block.find('MON_TYPES', types_pos)
+                if mon_pos != -1:
+                    paren_start = new_block.find('(', mon_pos)
+                    if paren_start != -1:
+                        j = paren_start + 1
+                        depth_p = 1
+                        while j < len(new_block) and depth_p > 0:
+                            if new_block[j] == '(':
+                                depth_p += 1
+                            elif new_block[j] == ')':
+                                depth_p -= 1
+                            j += 1
+                        if depth_p == 0:
+                            paren_end = j - 1
+                            new_block = new_block[:paren_start+1] + types_args + new_block[paren_end:]
+                            n_types = 1
 
-    # Also update abilities if available in stats
-    n_abilities = 0
-    if any(k in stats for k in ability_fields):
-        a1_raw = stats.get('ability1', '').strip()
-        a2_raw = stats.get('ability2', '').strip()
-        ah_raw = stats.get('hiddenAbility', '').strip()
-        # Normalize each ability token using the helper; this produces a canonical token when possible
-        a1_norm, r1 = normalize_ability_token(a1_raw) if a1_raw else ('ABILITY_NONE', 'empty')
-        a2_norm, r2 = normalize_ability_token(a2_raw) if a2_raw else ('ABILITY_NONE', 'empty')
-        ah_norm, rh = normalize_ability_token(ah_raw) if ah_raw else ('ABILITY_NONE', 'empty')
-        # Build replacement args in order: ability1, ability2, hiddenAbility
-        abilities_args = f"{a1_norm or 'ABILITY_NONE'}, {a2_norm or 'ABILITY_NONE'}, {ah_norm or 'ABILITY_NONE'}"
-        # find the .abilities = { ... } block and replace inner contents
-        abil_pos = new_block.find('.abilities')
-        if abil_pos != -1:
-            brace_pos = new_block.find('{', abil_pos)
-            if brace_pos != -1:
-                # find matching closing brace for this initializer list
-                k = brace_pos + 1
-                depth_b = 1
-                while k < len(new_block) and depth_b > 0:
-                    if new_block[k] == '{':
-                        depth_b += 1
-                    elif new_block[k] == '}':
-                        depth_b -= 1
-                    k += 1
-                if depth_b == 0:
-                    brace_end = k - 1
-                    old_args = new_block[brace_pos+1:brace_end].strip()
-                    # replace inner args
-                    new_block = new_block[:brace_pos+1] + ' ' + abilities_args + ' ' + new_block[brace_end:]
-                    n_abilities = 1
-                    # log the change for manual review — include species name and old/new
-                    log_lines.append(f"SPECIES_{name}: abilities changed from '{{{old_args}}}' to '{{{abilities_args}}}'")
-                    # Log normalization reasons when different from exact
-                    if r1 != 'exact' or r2 != 'exact' or rh != 'exact':
-                        log_lines.append(f"  normalization: ability1 {a1_raw} -> {a1_norm} ({r1}), ability2 {a2_raw} -> {a2_norm} ({r2}), hidden {ah_raw} -> {ah_norm} ({rh})")
+        # Also update abilities if available in stats
+        n_abilities = 0
+        if any(k in stats for k in ability_fields):
+            a1_raw = stats.get('ability1', '').strip()
+            a2_raw = stats.get('ability2', '').strip()
+            ah_raw = stats.get('hiddenAbility', '').strip()
+            a1_norm, r1 = normalize_ability_token(a1_raw) if a1_raw else ('ABILITY_NONE', 'empty')
+            a2_norm, r2 = normalize_ability_token(a2_raw) if a2_raw else ('ABILITY_NONE', 'empty')
+            ah_norm, rh = normalize_ability_token(ah_raw) if ah_raw else ('ABILITY_NONE', 'empty')
+            abilities_args = f"{a1_norm or 'ABILITY_NONE'}, {a2_norm or 'ABILITY_NONE'}, {ah_norm or 'ABILITY_NONE'}"
+            abil_pos = new_block.find('.abilities')
+            if abil_pos != -1:
+                brace_pos = new_block.find('{', abil_pos)
+                if brace_pos != -1:
+                    k = brace_pos + 1
+                    depth_b = 1
+                    while k < len(new_block) and depth_b > 0:
+                        if new_block[k] == '{':
+                            depth_b += 1
+                        elif new_block[k] == '}':
+                            depth_b -= 1
+                        k += 1
+                    if depth_b == 0:
+                        brace_end = k - 1
+                        old_args = new_block[brace_pos+1:brace_end].strip()
+                        new_block = new_block[:brace_pos+1] + ' ' + abilities_args + ' ' + new_block[brace_end:]
+                        n_abilities = 1
+                        # log the change for manual review — include filename and species name
+                        log_lines.append(f"{gen_path.name}: SPECIES_{name}: abilities changed from '{{{old_args}}}' to '{{{abilities_args}}}'")
+                        if r1 != 'exact' or r2 != 'exact' or rh != 'exact':
+                            log_lines.append(f"  normalization: ability1 {a1_raw} -> {a1_norm} ({r1}), ability2 {a2_raw} -> {a2_norm} ({r2}), hidden {ah_raw} -> {ah_norm} ({rh})")
 
-    if changed[0] or ('type1' in stats and n_types > 0) or n_abilities > 0:
-        gen1_text = gen1_text[:start] + new_block + gen1_text[i-1:]
+        if changed[0] or n_types > 0 or n_abilities > 0:
+            gen_text = gen_text[:start] + new_block + gen_text[i-1:]
 
-# If changes were made, backup and write
-if gen1_text != orig_text:
-    bak = gen1_path.with_suffix('.h.bak')
-    bak.write_text(orig_text, encoding='utf-8')
-    gen1_path.write_text(gen1_text, encoding='utf-8')
-    print(f"Updated {gen1_path} and wrote backup to {bak}")
-    # write abilities change log if any
-    if log_lines:
-        log_path = Path(__file__).with_name('update_gen1_stats.log')
-        header = 'Update log for update_gen1_stats.py\n'
-        header += 'Note: entries list species and abilities replacement performed.\n\n'
-        existing = ''
-        if log_path.exists():
-            existing = log_path.read_text(encoding='utf-8')
-        log_path.write_text(header + existing + '\n'.join(log_lines) + '\n', encoding='utf-8')
+    # If changes were made for this gen file, backup and write
+    if gen_text != orig_text:
+        bak = gen_path.with_suffix('.h.bak')
+        bak.write_text(orig_text, encoding='utf-8')
+        gen_path.write_text(gen_text, encoding='utf-8')
+        print(f"Updated {gen_path} and wrote backup to {bak}")
+        updated_files.append(gen_path)
+
+# write abilities change log if any
+if log_lines:
+    log_path = Path(__file__).with_name('update_gen1_stats.log')
+    header = 'Update log for update_gen1_stats.py\n'
+    header += 'Note: entries list filename, species and abilities replacement performed.\n\n'
+    existing = ''
+    if log_path.exists():
+        existing = log_path.read_text(encoding='utf-8')
+    log_path.write_text(header + existing + '\n'.join(log_lines) + '\n', encoding='utf-8')
+
+if not updated_files:
+    print("No changes needed; all gen files already match Base_Stats for specified fields.")
 else:
-    print("No changes needed; gen1 file already matches base_stats_rr.c for specified fields.")
+    print(f"Updated {len(updated_files)} files.")
