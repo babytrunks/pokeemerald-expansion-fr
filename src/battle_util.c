@@ -4628,6 +4628,18 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                     BattleScriptExecute(BattleScript_RainDishActivates);
                     effect++;
                 }
+                break;            
+            case ABILITY_SELF_SUFFICIENT:
+                if (!BATTLER_MAX_HP(battler)
+                 && !(gStatuses3[battler] & STATUS3_HEAL_BLOCK))
+                {
+                    BattleScriptPushCursorAndCallback(BattleScript_RainDishActivates);
+                    gBattleMoveDamage = GetNonDynamaxMaxHP(battler)/16 ;
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = 1;
+                    gBattleMoveDamage *= -1;
+                    effect++;
+                }
                 break;
             case ABILITY_HYDRATION:
                 if (IsBattlerWeatherAffected(battler, B_WEATHER_RAIN)
@@ -7213,7 +7225,17 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         break;
     case ABILITY_IRON_FIST:
         if (IsPunchingMove(move))
-           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
+    case ABILITY_BULL_RUSH:
+    case ABILITY_QUILL_RUSH:
+        if  (gDisableStructs[battlerAtk].isFirstTurn) {
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
+        }
+        break;
+    case ABILITY_STRIKER:
+        if (gMovesInfo[move].kickingMove)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
         break;
     case ABILITY_SHEER_FORCE:
         if (MoveIsAffectedBySheerForce(move))
@@ -7227,8 +7249,6 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     case ABILITY_RIVALRY:
         if (AreBattlersOfSameGender(battlerAtk, battlerDef))
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.25));
-        else if (AreBattlersOfOppositeGender(battlerAtk, battlerDef))
-            modifier = uq4_12_multiply(modifier, UQ_4_12(0.75));
         break;
     case ABILITY_ANALYTIC:
         if (GetBattlerTurnOrderNum(battlerAtk) == gBattlersCount - 1 && move != MOVE_FUTURE_SIGHT && move != MOVE_DOOM_DESIRE)
@@ -7529,6 +7549,10 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
     case ABILITY_HUGE_POWER:
     case ABILITY_PURE_POWER:
         if (IsBattleMovePhysical(move))
+            modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
+        break;
+    case ABILITY_FELINE_PROWESS:
+        if (IsBattleMoveSpecial(move))
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(2.0));
         break;
     case ABILITY_SLOW_START:
@@ -8100,6 +8124,7 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(struct DamageContext *ctx)
     switch (ctx->abilityDef)
     {
     case ABILITY_MULTISCALE:
+    case ABILITY_BLUBBER_DEFENSE:
     case ABILITY_SHADOW_SHIELD:
         if (IsBattlerAtMaxHp(ctx->battlerDef))
         {
@@ -8113,6 +8138,13 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(struct DamageContext *ctx)
         if (ctx->typeEffectivenessModifier >= UQ_4_12(2.0))
         {
             modifier = UQ_4_12(0.75);
+            recordAbility = TRUE;
+        }
+        break;
+    case ABILITY_PRIMAL_ARMOR:
+        if (ctx->typeEffectivenessModifier >= UQ_4_12(2.0))
+        {
+            modifier = UQ_4_12(0.50);
             recordAbility = TRUE;
         }
         break;
@@ -9685,6 +9717,11 @@ bool32 IsBattlerAffectedByHazards(u32 battler, bool32 toxicSpikes)
         ret = FALSE;
         RecordItemEffectBattle(battler, holdEffect);
     }
+    else if (GetBattlerAbility(battler) != ABILITY_SHIELD_DUST
+        && GetBattlerAbility(battler) != ABILITY_FROZEN_MIST)
+    {
+        ret = FALSE;
+    }
     return ret;
 }
 
@@ -10268,7 +10305,7 @@ bool32 DoesDestinyBondFail(u32 battler)
 // This check has always to be the last in a condtion statement because of the recording of AI data.
 bool32 IsMoveEffectBlockedByTarget(enum Ability ability)
 {
-    if (ability == ABILITY_SHIELD_DUST)
+    if (ability == ABILITY_SHIELD_DUST || ability == ABILITY_FROZEN_MIST)
     {
         RecordAbilityBattle(gBattlerTarget, ability);
         return TRUE;
@@ -10666,6 +10703,9 @@ u32 GetTotalAccuracy(u32 battlerAtk, u32 battlerDef, u32 move, enum Ability atkA
     {
     case ABILITY_COMPOUND_EYES:
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
+        break;
+    case ABILITY_ILLUMINATE:
+        calc = (calc * 120) / 100; // 1.2 illuminate boost
         break;
     case ABILITY_VICTORY_STAR:
         calc = (calc * 110) / 100; // 1.1 victory star boost

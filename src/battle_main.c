@@ -4833,6 +4833,9 @@ u32 GetBattlerTotalSpeedStat(u32 battler, enum Ability ability, enum HoldEffect 
     // other abilities
     if (ability == ABILITY_QUICK_FEET && gBattleMons[battler].status1 & STATUS1_ANY)
         speed = (speed * 150) / 100;
+    else if ( (ability == ABILITY_BULL_RUSH || ability == ABILITY_QUILL_RUSH) && gDisableStructs[battler].isFirstTurn) {
+        speed = (speed * 150) / 100;
+    }
     else if (ability == ABILITY_SURGE_SURFER && gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
         speed *= 2;
     else if (ability == ABILITY_SLOW_START && gDisableStructs[battler].slowStartTimer != 0)
@@ -4909,6 +4912,12 @@ s32 GetBattleMovePriority(u32 battler, enum Ability ability, u32 move)
     else if (ability == ABILITY_GALE_WINGS
           && (GetGenConfig(GEN_CONFIG_GALE_WINGS) < GEN_7 || IsBattlerAtMaxHp(battler))
           && GetMoveType(move) == TYPE_FLYING)
+    {
+        priority++;
+    }
+    else if (ability == ABILITY_BLAZING_SOUL
+          && (GetGenConfig(GEN_CONFIG_GALE_WINGS) < GEN_7 || IsBattlerAtMaxHp(battler))
+          && GetMoveType(move) == TYPE_FIRE)
     {
         priority++;
     }

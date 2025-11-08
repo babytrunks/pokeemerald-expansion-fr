@@ -446,7 +446,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .aiRating = 0,
         },
 
-        [ABILITY_FORECAST] =
+        [ABILITY_FORECAST] = //todo
         {
             .name = _("Forecast"),
             .description = COMPOUND_STRING("Changes with the weather."),
@@ -595,7 +595,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .breakable = TRUE,
         },
 
-        [ABILITY_RIVALRY] =
+        [ABILITY_RIVALRY] = 
         {
             .name = _("Rivalry"),
             .description = COMPOUND_STRING("If the Opponent is the same type as the player, 30% to those moves."),
@@ -672,7 +672,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_IRON_FIST] =
         {
             .name = _("Iron Fist"),
-            .description = COMPOUND_STRING("Increases the damage done by punching moves by 20%."),
+            .description = COMPOUND_STRING("Increases the damage done by punching moves by 30%."),
             .aiRating = 6,
         },
 
@@ -1202,7 +1202,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .aiRating = 6,
         },
 
-        [ABILITY_ZEN_MODE] =
+        [ABILITY_ZEN_MODE] = //todo
         {
             .name = _("Zen Mode"),
             .description = COMPOUND_STRING("Transforms at Half HP."),
@@ -1256,7 +1256,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .aiRating = 4,
         },
 
-        [ABILITY_PROTEAN] =
+        [ABILITY_PROTEAN] = 
         {
             .name = _("Protean"),
             .description = COMPOUND_STRING("Changes the user's type to the type of the move it's about to use."),
@@ -2456,6 +2456,42 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {        
         .name = _("Feline Prowess"),
         .description = COMPOUND_STRING("Doubles the user's Sp. Atk stat."),
+        .aiRating = 10,
+    }, 
+    [ABILITY_BAD_COMPANY] = //todo
+    {        
+        .name = _("Bad Company"),
+        .description = COMPOUND_STRING("Prevents self-lowering stats and recoil."),
+        .aiRating = 10,
+    },
+    [ABILITY_PRIMAL_ARMOR] = 
+    {        
+        .name = _("Primal Armor"),
+            .description = COMPOUND_STRING("Damage taken by the user from “super effective” attacks are decreased by 50%."),
+        .aiRating = 10,
+    },
+    [ABILITY_MOUNTAINEER] = 
+    {        
+        .name = _("Mountaineer"),
+        .description = COMPOUND_STRING("Immune to Rock attacks and Stealth Rocks."),
+        .aiRating = 10,
+    },
+    [ABILITY_PHOENIX_DOWN] = //todo
+    {        
+        .name = _("Phoenix Down"),
+        .description = COMPOUND_STRING("Revives to half health on first faint once per battle."),
+        .aiRating = 10,
+    },
+    [ABILITY_SAGE_POWER] = 
+    {        
+        .name = _("Sage Power"),
+        .description = COMPOUND_STRING("Ups Sp. Attack and locks move."),
+        .aiRating = 10,
+    },
+    [ABILITY_FATAL_PRECISION] = //todo
+    {        
+        .name = _("Fatal Precision"),
+        .description = COMPOUND_STRING("Super effective moves can't miss & boosted by 20%."),
         .aiRating = 10,
     }
 };
