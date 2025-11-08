@@ -446,7 +446,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .aiRating = 0,
         },
 
-        [ABILITY_FORECAST] = //todo
+        [ABILITY_FORECAST] = //fru todo
         {
             .name = _("Forecast"),
             .description = COMPOUND_STRING("Changes with the weather."),
@@ -1202,7 +1202,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .aiRating = 6,
         },
 
-        [ABILITY_ZEN_MODE] = //todo
+        [ABILITY_ZEN_MODE] = //fru todo
         {
             .name = _("Zen Mode"),
             .description = COMPOUND_STRING("Transforms at Half HP."),
@@ -2458,7 +2458,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Doubles the user's Sp. Atk stat."),
         .aiRating = 10,
     }, 
-    [ABILITY_BAD_COMPANY] = //todo
+    [ABILITY_BAD_COMPANY] = //fru todo
     {        
         .name = _("Bad Company"),
         .description = COMPOUND_STRING("Prevents self-lowering stats and recoil."),
@@ -2476,7 +2476,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Immune to Rock attacks and Stealth Rocks."),
         .aiRating = 10,
     },
-    [ABILITY_PHOENIX_DOWN] = //todo
+    [ABILITY_PHOENIX_DOWN] = //fru todo
     {        
         .name = _("Phoenix Down"),
         .description = COMPOUND_STRING("Revives to half health on first faint once per battle."),
@@ -2488,7 +2488,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Ups Sp. Attack and locks move."),
         .aiRating = 10,
     },
-    [ABILITY_FATAL_PRECISION] = //todo
+    [ABILITY_FATAL_PRECISION] = //fru todo
     {        
         .name = _("Fatal Precision"),
         .description = COMPOUND_STRING("Super effective moves can't miss & boosted by 20%."),

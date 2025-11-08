@@ -1,0 +1,57 @@
+
+TODO:
+
+HIGHEST PRIORITY:
+- FRU additional event scripts
+    - For beginning, Mom asking what starter, Oak giving Gen 9, skip the whole Pokemart package and just give Pokeballs/Dex right off the bat)
+- Wild Encounters 
+    - pokeemerald-expansion DNS uses 4 slots for different times of day, but we only need Day/Night
+- PokeVial as item 
+    - https://github.com/pret/pokeemerald/compare/master...PokemonSanFran:pokeemerald:pokevial
+- Infinite Repel as item (babytrunks)
+- Updated level-up-learnsets from FRU
+- Update TM/HM list to FRU 
+    - (pokeemerald has 100, idk if we even use all 120 in FRU but we can look into 120 if necessary)
+- Updated Move Tutor, TM, HM, Egg Moves from FRU
+- Update beginning options select into fancier option menu
+- Level Cap (functionality is in, just need to add in vars for set up)
+- Randomization Options (Species, Ability, Moves)
+- Testing, obviously
+
+MEDIUM PRIORITY:
+- Convert rest of trainers into trainers.party format
+- Trainer battle sprites, new object events
+- FRU Exclusive Megas, Regional forms
+- FRU Exclusive Items/Functionality
+- FRU Exclusive moves (there aren't many ?)
+- Time Changer
+- DexNav search levels currently disabled because of save space
+- Max Boxes is only 14, need to research on how to expand..
+- Some FRU Ability exclusive abilities still need implementation (can see //fru todo in constants/abilities.h)
+
+LOW PRIORITY:
+- Music (Team Rocket battle, Rival battle, Johto Rival battle, etc )
+- Hardcore Mode
+- ipitax hq mixer (for music)
+- Title screen update
+- Decapitalization
+
+ALREADY DONE:
+- base stats (ability, stats, type changes) updated to match FRU
+- Day Night System (wild encounters unchanged)
+- Updated Summary Screen (space for more abilities, move info, cycle through EV/IVs, nickname change, and also tera support)
+- some early boss fights changed for testing purposes
+- Oak gives DexNav
+- Updated Power, Accuracy changes for battle moves from RR (retain accuracy reducing moves)
+- PokeEmerald has ride pager options we can just enable
+
+Stuff going to make out of scope:
+Raid battles (probably replace with hidden grottos)
+
+Additional Stuff:
+- New Megas from Legends Z/A
+- New exclusive items planned for next FRU update
+- Hidden Grottos to replace Raid Battles
+- Probably semi-roguelike additions like choosing between 3 Pokemon after beating optional boss battle
+- Maybe gauntlets (fight x amount of people before going to Pokemon Center)
+- HUUUUGE would be nice to have, but adding a Hoenn post game would be very cool
