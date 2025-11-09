@@ -1072,6 +1072,14 @@ struct Bag
     struct ItemSlot berries[BAG_BERRIES_COUNT];
 };
 
+//Start Pokevial Branch
+struct Pokevial
+{
+    u8 Size : 4;
+    u8 Dose : 4;
+};
+//End Pokevial Branch
+
 struct SaveBlock1
 {
     /*0x00*/ struct Coords16 pos;
@@ -1188,6 +1196,7 @@ struct SaveBlock1
     u8 rivalName[PLAYER_NAME_LENGTH + 1];
     struct DaycareMon route5DayCareMon;
 #endif
+    struct Pokevial pokevial; //Pokevial Branch
     // sizeof: 0x3???
 };
 

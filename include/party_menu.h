@@ -114,4 +114,7 @@ bool32 SetUpFieldMove_Waterfall(void);
 bool32 SetUpFieldMove_Dive(void);
 bool32 SetUpFieldMove_RockClimb(void);
 
+void ItemUseCB_UsePokevial(u8 taskId, TaskFunc task); //Pokevial Branch
+void InitPartyMenuForPokevialFromField(u8 taskId); //Pokevial Branch
+
 #endif // GUARD_PARTY_MENU_H

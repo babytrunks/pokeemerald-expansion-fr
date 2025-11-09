@@ -5,6 +5,7 @@
 #define ITEM0_DIRE_HIT          0x30 // Works the same way as the move Focus Energy.
 #define ITEM0_SACRED_ASH        0x40
 #define ITEM0_INFATUATION       0x80
+#define ITEM0_POKEVIAL          0xC0 //Pokevial Branch
 
 // new field 1 masks
 #define ITEM1_X_ATTACK          STAT_ATK
@@ -92,7 +93,7 @@
 #define ITEM_EFFECT_PP_MAX 20
 #define ITEM_EFFECT_HEAL_PP 21
 #define ITEM_EFFECT_NONE 22
-
+#define ITEM_EFFECT_POKEVIAL           0x23 //Pokevial Branch
 // Since X item stat increases are now handled by battle scripts, the friendship increase effect is now handled by the battle controller in HandleAction_UseItem.
 #define X_ITEM_FRIENDSHIP_INCREASE    1   // The amount of friendship gained by using an X item on a Pokémon in battle.
 #define X_ITEM_MAX_FRIENDSHIP         200 // Friendship threshold at which Pokémon stop receiving a friendship increase from using X items on them in battle.

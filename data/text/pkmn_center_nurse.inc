@@ -49,3 +49,14 @@ gText_ThankYouForWaiting::
 
 gText_WeHopeToSeeYouAgain2::
 	.string "We hope to see you again!$"
+
+gText_Nurse_YouDontHaveVial::
+    .string "I see you're a newer trainer.\n"
+	.string "You'd find this item useful.$"
+
+gText_Nurse_YouDontHaveVial2::
+    .string "That item allows you to heal your Poké-\n"
+	.string "mon anywhere.\p"
+	.string "It has limited doses but we can refill\n"
+	.string "it here as needed.\p"
+	.string "We hope to see you again!$"

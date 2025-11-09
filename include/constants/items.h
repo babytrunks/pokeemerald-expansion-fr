@@ -832,7 +832,7 @@
 #define ITEM_OVAL_CHARM 690
 #define ITEM_SHINY_CHARM 691
 #define ITEM_CATCHING_CHARM 692
-#define ITEM_EXP_CHARM 693
+#define ITEM_POKEVIAL 693
 
 // Form-changing Key Items
 #define ITEM_ROTOM_CATALOG 694

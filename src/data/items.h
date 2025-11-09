@@ -12364,20 +12364,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_CatchingCharm,
     },
 
-    [ITEM_EXP_CHARM] =
+    [ITEM_POKEVIAL] =
     {
-        .name = ITEM_NAME("Exp. Charm"),
+        .name = ITEM_NAME("Pokévial"),
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "A charm that raises\n"
-            "the amount of Exp.\n"
-            "earned in battle."),
+                "Restores all\n"
+                "Pokémon to full\n"
+                "health."),
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_ExpCharm,
-        .iconPalette = gItemIconPalette_ExpCharm,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Pokevial,
+        .iconPic = gItemIcon_Pokevial,
+        .iconPalette = gItemIconPalette_Pokevial,
     },
 
 // Form-changing Key Items
