@@ -212,15 +212,19 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 	clearflag FLAG_DONT_TRANSITION_MUSIC
 	savebgm MUS_DUMMY
 	fadedefaultbgm
+	setspeaker SP_NAME_RIVAL
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting
 	closemessage
 	delay 60
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne
 	closemessage
 	delay 30
 	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalReact
 	waitmovement 0
+	setspeaker SP_NAME_RIVAL
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalNoFairWhatAboutMe
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakBePatientRival
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2
 	releaseall
@@ -548,6 +552,7 @@ PalletTown_ProfessorOaksLab_Movement_PlayerWatchRivalExitAfterBattleRight::
 PalletTown_ProfessorOaksLab_EventScript_Rival::
 	lock
 	faceplayer
+	setspeaker SP_NAME_RIVAL
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_RivalChoseStarter
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_RivalWaitingForStarter
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround
@@ -567,6 +572,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalChoseStarter::
 PalletTown_ProfessorOaksLab_EventScript_ProfOak::
 	lock
 	faceplayer
+	setspeaker SP_NAME_PROF_OAK
 	goto_if_set SHOWED_OAK_COMPLETE_DEX, PalletTown_ProfessorOaksLab_EventScript_OakJustShownCompleteDex
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 9, PalletTown_ProfessorOaksLab_EventScript_RatePokedex
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 8, PalletTown_ProfessorOaksLab_EventScript_MonsAroundWorldWait
@@ -1070,9 +1076,10 @@ PalletTown_ProfessorOaksLab_EventScript_BulbasaurBall::
 	lock
 	faceplayer
 	setvar PLAYER_STARTER_NUM, 0
-	setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
+	setvar VAR_TEMP_2, SPECIES_BULBASAUR
 	setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
 	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	call setstartervars
 	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
 	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
@@ -1121,7 +1128,7 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
 	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
 	givemon PLAYER_STARTER_SPECIES, 5
 	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
-	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	bufferspeciesname STR_VAR_1, VAR_TEMP_2
 	message PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak
 	waitmessage
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
@@ -1213,9 +1220,10 @@ PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
 	lock
 	faceplayer
 	setvar PLAYER_STARTER_NUM, 1
-	setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
+	setvar VAR_TEMP_2, SPECIES_SQUIRTLE
 	setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
 	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	call setstartervars
 	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
 	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
@@ -1226,9 +1234,10 @@ PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
 	lock
 	faceplayer
 	setvar PLAYER_STARTER_NUM, 2
-	setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
+	setvar VAR_TEMP_2, SPECIES_CHARMANDER
 	setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
 	setvar RIVAL_STARTER_ID, LOCALID_SQUIRTLE_BALL
+	call setstartervars
 	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
 	msgbox PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls
@@ -1299,6 +1308,186 @@ PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
 	msgbox PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints
 	releaseall
 	end
+
+
+setstartervars::
+    call_if_eq VAR_STARTER_GENERATION, JOHTO_STARTER, SetVarsJohto
+	call_if_eq VAR_STARTER_GENERATION, HOENN_STARTER,  SetVarsHoenn
+	call_if_eq VAR_STARTER_GENERATION, SINNOH_STARTER, SetVarsSinnoh
+	call_if_eq VAR_STARTER_GENERATION, UNOVA_STARTER,  SetVarsUnova
+	call_if_eq VAR_STARTER_GENERATION, KALOS_STARTER,  SetVarsKalos
+	call_if_eq VAR_STARTER_GENERATION, ALOLA_STARTER,  SetVarsAlola
+	call_if_eq VAR_STARTER_GENERATION, GALAR_STARTER,  SetVarsGalar
+	call_if_eq VAR_STARTER_GENERATION, PALDEA_STARTER, SetVarsPaldea
+	return
+
+SetVarsJohto::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetChikorita
+    call_if_eq PLAYER_STARTER_NUM, 1, SetTotodile
+    call_if_eq PLAYER_STARTER_NUM, 2, SetCyndaquil
+    return
+
+SetVarsHoenn::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetTreecko
+    call_if_eq PLAYER_STARTER_NUM, 1, SetMudkip
+    call_if_eq PLAYER_STARTER_NUM, 2, SetTorchic
+    return
+
+SetVarsSinnoh::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetTurtwig
+    call_if_eq PLAYER_STARTER_NUM, 1, SetPiplup
+    call_if_eq PLAYER_STARTER_NUM, 2, SetChimchar
+    return
+
+SetVarsUnova::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetSnivy
+    call_if_eq PLAYER_STARTER_NUM, 1, SetOshawott
+    call_if_eq PLAYER_STARTER_NUM, 2, SetTepig
+    return
+
+SetVarsKalos::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetChespin
+    call_if_eq PLAYER_STARTER_NUM, 1, SetFroakie
+    call_if_eq PLAYER_STARTER_NUM, 2, SetFennekin
+    return
+
+SetVarsAlola::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetRowlet
+    call_if_eq PLAYER_STARTER_NUM, 1, SetPopplio
+    call_if_eq PLAYER_STARTER_NUM, 2, SetLitten
+    return
+
+SetVarsGalar::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetGrookey
+    call_if_eq PLAYER_STARTER_NUM, 1, SetSobble
+    call_if_eq PLAYER_STARTER_NUM, 2, SetScorbunny
+    return
+
+SetVarsPaldea::
+    call_if_eq PLAYER_STARTER_NUM, 0, SetSprigatito
+    call_if_eq PLAYER_STARTER_NUM, 1, SetQuaxly
+    call_if_eq PLAYER_STARTER_NUM, 2, SetFuecoco
+    return
+
+SetChikorita:: 
+    setvar VAR_TEMP_2, SPECIES_CHIKORITA
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetTotodile::
+    setvar VAR_TEMP_2, SPECIES_TOTODILE
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetCyndaquil::
+    setvar VAR_TEMP_2, SPECIES_CYNDAQUIL
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetTreecko:: 
+    setvar VAR_TEMP_2, SPECIES_TREECKO
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetMudkip:: 
+    setvar VAR_TEMP_2, SPECIES_MUDKIP
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetTorchic:: 
+    setvar VAR_TEMP_2, SPECIES_TORCHIC
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetTurtwig:: 
+    setvar VAR_TEMP_2, SPECIES_TURTWIG
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetPiplup::
+    setvar VAR_TEMP_2, SPECIES_PIPLUP
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetChimchar::
+    setvar VAR_TEMP_2, SPECIES_CHIMCHAR
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetSnivy::
+    setvar VAR_TEMP_2, SPECIES_SNIVY
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetOshawott::
+    setvar VAR_TEMP_2, SPECIES_OSHAWOTT
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetTepig::
+    setvar VAR_TEMP_2, SPECIES_TEPIG
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetChespin:: 
+    setvar VAR_TEMP_2, SPECIES_CHESPIN
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetFroakie::
+    setvar VAR_TEMP_2, SPECIES_FROAKIE
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetFennekin::
+    setvar VAR_TEMP_2, SPECIES_FENNEKIN
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetRowlet::
+    setvar VAR_TEMP_2, SPECIES_ROWLET
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetPopplio::
+    setvar VAR_TEMP_2, SPECIES_POPPLIO
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetLitten::
+    setvar VAR_TEMP_2, SPECIES_LITTEN
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetGrookey::
+    setvar VAR_TEMP_2, SPECIES_GROOKEY
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetSobble::
+    setvar VAR_TEMP_2, SPECIES_SOBBLE
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetScorbunny::
+    setvar VAR_TEMP_2, SPECIES_SCORBUNNY
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetSprigatito::
+    setvar VAR_TEMP_2, SPECIES_SPRIGATITO
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetQuaxly::
+    setvar VAR_TEMP_2, SPECIES_QUAXLY
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
+
+SetFuecoco::
+    setvar VAR_TEMP_2, SPECIES_FUECOCO
+    bufferspeciesname STR_VAR_1, VAR_TEMP_2
+    return
 
 PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround::
     .string "{RIVAL}: What, it's only {PLAYER}?\n"
@@ -1403,22 +1592,22 @@ PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet::
     .string "Don't go away yet!$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander::
-    .string "Ah! CHARMANDER is your choice.\n"
+    .string "Ah! {STR_VAR_1} is your choice.\n"
     .string "You should raise it patiently.\p"
     .string "So, {PLAYER}, you're claiming the\n"
-    .string "FIRE POKéMON CHARMANDER?$"
+    .string "FIRE POKéMON {STR_VAR_1}?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle::
-    .string "Hm! SQUIRTLE is your choice.\n"
+    .string "Hm! {STR_VAR_1} is your choice.\n"
     .string "It's one worth raising.\p"
     .string "So, {PLAYER}, you've decided on the\n"
-    .string "WATER POKéMON SQUIRTLE?$"
+    .string "WATER POKéMON {STR_VAR_1}?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur::
-    .string "I see! BULBASAUR is your choice.\n"
+    .string "I see! {STR_VAR_1} is your choice.\n"
     .string "It's very easy to raise.\p"
     .string "So, {PLAYER}, you want to go with\n"
-    .string "the GRASS POKéMON BULBASAUR?$"
+    .string "the GRASS POKéMON {STR_VAR_1}?$"
 
 PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic::
     .string "This POKéMON is really quite\n"

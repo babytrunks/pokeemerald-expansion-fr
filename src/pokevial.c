@@ -4,49 +4,50 @@
 #include "graphics.h"
 #include "math_util.h"
 #include "random.h"
+#include "event_data.h"
 
 static void PokevialFixDoseOverflow(void);
 
 static void PokevialInit()
 {
-    if (gSaveBlock1Ptr->pokevial.Size < VIAL_MIN_SIZE)
+    if (VarGet(VAR_POKEVIAL_MAX_SIZE) < VIAL_MIN_SIZE)
     {
-        gSaveBlock1Ptr->pokevial.Size = VIAL_MIN_SIZE;
-        gSaveBlock1Ptr->pokevial.Dose = VIAL_MIN_SIZE;
+        VarSet(VAR_POKEVIAL_MAX_SIZE,VIAL_MIN_SIZE );
+        VarSet(VAR_POKEVIAL_CURRENT_DOSE,VIAL_MIN_SIZE );
     }
 }
 
 u32 PokevialGetDose()
 {
-    PokevialInit();
-    return gSaveBlock1Ptr->pokevial.Dose;
+    // PokevialInit();
+    return VarGet(VAR_POKEVIAL_CURRENT_DOSE); 
 }
 
 u32 PokevialGetSize()
 {
-    PokevialInit();
-    return gSaveBlock1Ptr->pokevial.Size;
+    // PokevialInit();
+    return VarGet(VAR_POKEVIAL_MAX_SIZE);
 }
 
 void PokevialSizeUp(u8 sizeIncrease)
 {
-    gSaveBlock1Ptr->pokevial.Size = ((PokevialGetSize() + sizeIncrease) > VIAL_MAX_SIZE ? VIAL_MAX_SIZE : gSaveBlock1Ptr->pokevial.Size + sizeIncrease);
+    VarSet(VAR_POKEVIAL_MAX_SIZE, VarGet(VAR_POKEVIAL_MAX_SIZE) + sizeIncrease);
 }
 
 void PokevialDoseUp(u8 doseIncrease)
 {
-    gSaveBlock1Ptr->pokevial.Dose = ((PokevialGetDose() + doseIncrease) > gSaveBlock1Ptr->pokevial.Size ? gSaveBlock1Ptr->pokevial.Size : gSaveBlock1Ptr->pokevial.Dose + doseIncrease);
+    VarSet(VAR_POKEVIAL_CURRENT_DOSE, VarGet(VAR_POKEVIAL_CURRENT_DOSE) + doseIncrease);
 }
 
 void PokevialSizeDown(u8 sizeDecrease)
 {
-    gSaveBlock1Ptr->pokevial.Size = ((PokevialGetSize() - sizeDecrease) < VIAL_MIN_SIZE ? VIAL_MIN_SIZE : (gSaveBlock1Ptr->pokevial.Size - sizeDecrease));
+    VarSet(VAR_POKEVIAL_MAX_SIZE, VarGet(VAR_POKEVIAL_MAX_SIZE) - sizeDecrease);
     PokevialFixDoseOverflow();
 }
 
 void PokevialDoseDown(u8 doseDecrease)
 {
-    gSaveBlock1Ptr->pokevial.Dose = (doseDecrease > PokevialGetDose()) ? EMPTY_VIAL : (gSaveBlock1Ptr->pokevial.Dose - doseDecrease);
+    VarSet(VAR_POKEVIAL_CURRENT_DOSE, VarGet(VAR_POKEVIAL_CURRENT_DOSE) - doseDecrease);
 }
 
 static void PokevialFixDoseOverflow(void)
@@ -59,7 +60,7 @@ bool32 PokevialRefill()
     if (PokevialGetDose() == PokevialGetSize())
         return FALSE;
 
-    gSaveBlock1Ptr->pokevial.Dose = gSaveBlock1Ptr->pokevial.Size;
+    VarSet(VAR_POKEVIAL_CURRENT_DOSE, VarGet(VAR_POKEVIAL_MAX_SIZE));
     return TRUE;
 }
 
@@ -96,35 +97,4 @@ static u32 PokevialGetVialPercent(void)
 const void *PokevialGetDoseIcon(void)
 {
     return pokevialIconIndex[PokevialGetVialPercent()];
-}
-
-void Pokevial_HealPlayerParty(void)
-{
-    u8 i, j;
-    u8 ppBonuses;
-    u8 arg[4];
-
-                      // restore HP.
-    for(i = 0; i < gPlayerPartyCount; i++)
-    {
-        u16 maxHP = GetMonData(&gPlayerParty[i], MON_DATA_MAX_HP);
-        arg[0] = maxHP;
-        arg[1] = maxHP >> 8;
-        SetMonData(&gPlayerParty[i], MON_DATA_HP, arg);
-        ppBonuses = GetMonData(&gPlayerParty[i], MON_DATA_PP_BONUSES);
-
-        // restore PP.
-        for(j = 0; j < MAX_MON_MOVES; j++)
-        {
-            arg[0] = CalculatePPWithBonus(GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + j), ppBonuses, j);
-            SetMonData(&gPlayerParty[i], MON_DATA_PP1 + j, arg);
-        }
-
-        // since status is u32, the four 0 assignments here are probably for safety to prevent undefined data from reaching SetMonData.
-        arg[0] = 0;
-        arg[1] = 0;
-        arg[2] = 0;
-        arg[3] = 0;
-        SetMonData(&gPlayerParty[i], MON_DATA_STATUS, arg);
-    }
 }

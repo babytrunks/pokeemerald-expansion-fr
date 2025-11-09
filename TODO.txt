@@ -6,8 +6,6 @@ HIGHEST PRIORITY:
     - For beginning, Mom asking what starter, Oak giving Gen 9, skip the whole Pokemart package and just give Pokeballs/Dex right off the bat)
 - Wild Encounters 
     - pokeemerald-expansion DNS uses 4 slots for different times of day, but we only need Day/Night
-- PokeVial as item 
-    - https://github.com/pret/pokeemerald/compare/master...PokemonSanFran:pokeemerald:pokevial
 - Infinite Repel as item (babytrunks)
 - Updated level-up-learnsets from FRU
 - Update TM/HM list to FRU 
@@ -45,6 +43,8 @@ ALREADY DONE:
 - Oak gives DexNav
 - Updated Power, Accuracy changes for battle moves from RR (retain accuracy reducing moves)
 - PokeEmerald has ride pager options we can just enable
+- PokeVial as item 
+    - https://github.com/pret/pokeemerald/compare/master...PokemonSanFran:pokeemerald:pokevial
 
 Stuff going to make out of scope:
 Raid battles (probably replace with hidden grottos)
