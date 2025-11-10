@@ -1,0 +1,26 @@
+#org @gText_Rules
+Rules 
+
+#org @gText_WhatYouWant 
+Would you like to hear the rules\nagain? 
+
+#org @gText_TurnOnExpert
+Okay, it's been turned on! 
+
+#org @gText_TurnOffExpert
+Okay, it's been turned off! 
+
+#org @gText_ExpertMode1
+Yo, champ in the making!\pIt seems this is your first Gym\nchallenge, so I'm responsible for\linforming you of the rules. 
+
+#org @gText_ExpertMode2 
+1: Accuracy reducing moves and\nevasion raising effects have been\lremoved from this game.\p2: Baton Pass is removed from this\ngame.\p3: Sleep Clause is in effect,\nmeaning only one Pok\emon per team\lcan be put to sleep at a time.\p4: OHKO moves are removed from the\ngame.\p5: The bag is inaccessible during\nboss battles.\p6: There is a soft level cap before\neach boss, which reduces EXP gain\lsignificantly when the level cap is\lreached.\p7: Pok\emon will disobey when levelled\ntoo far above the level cap.\p8: Consumable held items come back\nafter trainer battles.\p9. Battle Style is forced to Set.\p10. You cannot Thief items from\ntrainers.\p11. You are automatically healed to\nfull in most boss battles to prevent\lcertain exploits.
+
+#org @gText_ExpertMode3 
+If you ever want me to reiterate\nthe rules, just talk to me again!
+
+#org @gText_ExpertModeEasy
+1: Accuracy reducing moves and\nevasion raising effects have been\lremoved from this game.\p2: Baton Pass is removed from this\ngame.\p3: Sleep Clause is in effect,\nmeaning only one Pok\emon per team\lcan be put to sleep at a time.\p4: OHKO moves are removed from the\ngame.\p5: There is a soft level cap before\neach boss, which reduces EXP gain\lsignificantly when the level cap is\lreached.\p6: Pok\emon will disobey when levelled\ntoo far above the level cap.\p7: Consumable held items come back\nafter trainer battles.\p8. You cannot Thief items from\ntrainers.\p9. You are automatically healed to\nfull in most boss battles to prevent\lcertain exploits.
+
+#org @gText_ExpertMode5
+Good luck challenger! 

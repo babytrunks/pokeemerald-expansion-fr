@@ -1,0 +1,206 @@
+#org @gText_VRBrendanBattle_1
+Oi, wait up!
+
+#org @gText_VRBrendanBattle_2
+Hey, it's me again[.]\pSorry I couldn't help you further\nin [GREEN]Cerulean Cave[BLUE].\pI got destroyed by [GREEN]Archer[BLUE] and ran\naway in shame[.]
+
+#org @gText_VRBrendanBattle_3 
+You know recently[.]\pI don't know, I know I'm not a\nbad trainer by any means.\pI can snag Gym badges sure, \nbut I've always wanted to be an\lincredible trainer like my Dad.\pAnd I really thought that as long\nas I put in the effort and work,\lI could be one of the best.\pBut, I could never put a dent\nin you.\pEven trainers like [GREEN]Archer[BLUE] have\nshown me how far the gap between\lus has become.\pIt's becoming clear to me that I'm\njust not very strong,\llet alone talented.
+
+#org @gText_VRBrendanBattle_4
+Is that what I'm missing?\pAn innate trait that some are just\ngifted with?\pI just can't accept that[.]\p
+
+#org @gText_VRBrendanBattle_5
+Agh! I'm not sure what\nI'm trying to say.
+
+#org @gText_VRBrendanBattle_6
+I don't care.\n[GREEN][PLAYER][BLUE]!\pWe're battling.\pI won't take no for an answer!
+
+#org @gText_VRBrendanLoss
+Not sure what I was\nexpecting[.]
+
+#org @gText_VRBrendanBattle_7
+I[.] I don't know.\pI'm discouraged. I know I shouldn't\nhave shot for the stars, but[.]
+
+#org @gText_VRBrendanBattle_8
+The bottom line is I have a lot\nto learn.\pI'll be returning to Hoenn to train\nwith my Dad.\pMaybe I'll come back sometime.\pOr you could come visit,\nif you'd like.\pI know, somehow, our paths will\ncross again.\pI still must thank you for always\npushing me to my limit.\pIn case I never see you again,\ntake this.
+
+#org @gText_VRBrendanBattle_9
+The Mega Stone for my favorite\nPok\emon[.]\pIt really needs no introduction.\pI don't need to stick around to\nsee you win it all,\lyou already ooze Champion status.\pDon't disappoint me!
+
+#org @gText_VRBrendanBattle_10
+So long, friend.
+
+#org @gText_dada_MartGreetingMsg 
+Welcome!\pHow may I help you?
+
+#org @gText_dada_MartLeavingMsg
+Please come again!
+
+#org @gText_FinalCreatorBattle_1
+Well well, thought you could\nwaltz into the Pok\emon League\lwithout another boss battle?\p[.]Who the hell am I?\pI'm [GREEN]soupercell[BLUE], the creator of\nthis hack, dumbass!\pAnyway, I can't let any scrubs\ncomplete my game, so I'll need\lto give you an ass-whooping.
+
+#org @gText_FinalCreatorBattle_Loss
+W-what?! You[.]\nYou beat my invincible strat?!
+
+#org @gText_FinalCreatorBattle_2
+Hot damn!\pI don't know why I doubted you!\pYou're certainly ready.\pI've reserved this item for you,\nit's among one of the most\lbonkers Mega Evos so, you know,\lsave the best for last.
+
+#org @gText_FinalCreatorBattle_3
+I will warn that I've dropped\n[GREEN][RIVAL][BLUE] some sick Pok\emon on his\lway to the League.\pHis team won't resemble the one\nyou just faced. Have fun!\pAnyway, thanks for playing my ROM\nhack [GREEN][PLAYER][BLUE], even if you didn't enjoy\lit.\pHave a good one, friend!
+
+#org @gText_VictoryRoad_Moltres1
+Gyaoo!
+
+#org @gText_SelectThree
+[BLACK]Select three Pok\emon to take into\nbattle.
+
+#org @gText_StartRaidBattle
+[BLACK]This strange den exuberates\npowerful energy.\pWould you like to look inside it?
+
+#org @gText_RaidTeamUp
+A powerful wild Pok\emon came\nout!
+
+#org @gText_StartRaidBattle2
+It's an empty den.
+
+#org @gText_Adamant
+Adamant [SHRINK][RED]+Atk [BLUE]-SpA
+
+#org @gText_Modest 
+Modest  [SHRINK][RED]+SpA [BLUE]-Atk
+
+#org @gText_Timid 
+Timid    [SHRINK][RED]+Speed [BLUE]-Atk
+
+#org @gText_Jolly 
+Jolly   [SHRINK][RED]+Speed [BLUE]-SpA
+
+#org @gText_Hasty 
+Hasty   [SHRINK][RED]+Speed [BLUE]-Def
+
+#org @gText_Naive 
+Naive   [SHRINK][RED]+Speed [BLUE]-SpD
+
+#org @gText_Mild 
+Mild    [SHRINK][RED]+SpA [BLUE]-Def
+
+#org @gText_Naughty
+Naughty [SHRINK][RED]+Atk [BLUE]-SpD
+
+#org @gText_Rash 
+Rash     [SHRINK][RED]+SpA [BLUE]-SpDef
+
+#org @gText_Lonely 
+Lonely   [SHRINK][RED]+Atk [BLUE]-Def 
+
+#org @gText_Brave 
+Brave    [SHRINK][RED]+Atk [BLUE]-Speed 
+
+#org @gText_Quiet 
+Quiet    [SHRINK][RED]+SpA [BLUE]-Speed 
+
+#org @gText_Calm
+Calm    [SHRINK][RED]+SpD [BLUE]-Atk
+
+#org @gText_Impish
+Impish  [SHRINK][RED]+Def [BLUE]-SpA 
+
+#org @gText_Sassy
+Sassy   [SHRINK][RED]+SpD [BLUE]-Speed
+
+#org @gText_Careful
+Careful [SHRINK][RED]+SpD [BLUE]-SpA
+
+#org @gText_Relaxed
+Relaxed [SHRINK][RED]+Def [BLUE]-Speed
+
+#org @gText_Bold 
+Bold     [SHRINK][RED]+Def [BLUE]-Atk
+
+#org @gText_Bashful
+Bashful     [SHRINK]Neutral
+
+#org @gText_Lax
+Lax        [SHRINK][RED]+Def [BLUE]-SpD
+
+#org @gText_Gentle
+Gentle   [SHRINK][RED]+SpD [BLUE]-Def
+
+#org @gText_Exit 
+Exit 
+
+#org @gText_NatureChanger1
+We can change a Pok\emon's nature\nfree of charge! Interested?
+
+#org @gText_NatureChanger2 
+Which nature would you like? 
+
+#org @gText_NatureChanger3 
+Sure thing!
+
+#org @gText_NatureChanger3_2
+One second[.]
+
+#org @gText_NatureChanger4
+Thank you, the nature has been\nchanged!\pWe hope to see you again!  
+
+#org @gText_nurse_1
+You look tired.\nTake a rest.
+
+#org @gText_nurse_2
+Take care!
+
+#org @gText_closecombat_1
+You should be proud of yourself,\nhaving battled your way through\lVictory Road so courageously.\pIn recognition of your feat,\nI'll teach you Close Combat.\pWould you like me to teach that\ntechnique?
+
+#org @gText_closecombat_2
+It'll cost \$25000 now.
+
+#org @gText_closecombat_3
+Which Pok\emon should I teach\nClose Combat to?
+
+#org @gText_closecombat_4
+Keep that drive going for the\nPok\emon League!\pTake a run at them and knock 'em\nout!
+
+#org @gText_closecombat_No
+I'll teach you the technique\nanytime.
+
+#org @gText_closecombat_Wait
+[.]
+
+#org @gText_closecombat_Poor
+[.]You don't have enough money.
+
+#org @gText_ShitsHard1 
+Mate[.] the Elite Four here is\non some wack shit.\pThankfully the AI can act like some\ndoodoo, use that to your advantage. 
+
+#org @gText_ShitsHard2
+Yo[.] get the fuck outta here.\pYou beat the game already lmao\pBut forreal, the Elite Four\nrematch will be available eventually. 
+
+#org @gText_whitneytesttxt
+I will warn that I've dropped\n[GREEN][RIVAL][BLUE] some sick Pok\emon on his\lway to the League.\pHis team won't resemble the one\nyou just faced. Have fun!
+
+#org @gText_GuardTopFloorDisappearBanned
+Greetings. Unfortunately, the top floor\nis restricted for those playing on [GREEN]Minimal\lGrinding Mode.
+
+#org @gText_GuardTopFloorDisappear1
+Greetings. The top floor is mainly\nif you'd like to trade to yourself\lfor whatever reason.\pTake care.
+
+#org @gText_Route23_CanOnlyPass
+[BLUE]You can pass here only if you have\nthe Rising Badge.\pYou don't have the Rising\nBadge yet.\pYou have to have it to get to\nthe Pok\emon League.
+
+#org @gText_Route23_YouCanPass
+[BLUE]You can pass here only if you have\nthe Rising Badge.\pOh!\nThat is the Rising Badge!\pOkay, then.\nPlease, go right ahead.
+
+#org @gText_EliteFour_LoreleiForecast1
+Yo!\nChamp in the making!
+
+#org @gText_EliteFour_LoreleiForecastRain
+I think I saw [GREEN]Lorelei[BLUE] with a\n[GREEN]Swampert[BLUE] today.
+
+#org @gText_EliteFour_LoreleiForecastHail
+I think I saw [GREEN]Lorelei[BLUE] with an\n[GREEN]Abomasnow[BLUE] today.
+
+#org @gText_EliteFour_LoreleiForecast2
+Never mind, you're an actual Champ\nnow.\pYou're an inspiration!

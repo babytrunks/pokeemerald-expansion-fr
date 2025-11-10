@@ -1,0 +1,101 @@
+#org @gText_PkmnTower_Gengar
+Garr!
+
+#org @gText_PkmnTower_Gatekeeper
+Hello worthy challenger.\nAbove are some trials that only the\lmost talented players could\lcomplete.\pThere may be a fine reward at the end.\nOr perhaps not.\pDo you wish to attempt this?
+
+#org @gText_PkmnTower_Gatekeeper2
+Very well challenger.\nFollow me.
+
+#org @gText_PkmnTower_GateKeeperReject
+Alright then.
+
+#org @gText_PkmnTower_GateKeeperRules
+[BLUE]Your Start menu and other functions\nhave been disabled. So, you won't\lbe able to heal.\pThere are [GREEN]Gengars[BLUE] guarding this\narea that will send you back to the\lentrance if you get caught by them.\pAnd[.]other possible foes[.]\pI'll be here if you want me to\nescort you out.\pBest of luck.
+
+#org @gText_PkmnTower_AceTrainer1_1
+[BLUE]It seems you've gotten past the fear-\nsome obstacles[.]\pI've been tasked to guard this\narea, and I intend to do it well.\pSo, trainer, are you ready to\nbattle?
+
+#org @gText_PkmnTower_AceTrainer1_2
+[BLUE]Let us begin.
+
+#org @gText_PkmnTower_AceTrainer1_3
+Hmm[.] Well played.
+
+#org @gText_PkmnTower_AceTrainer1_4
+[BLUE]You are extremely powerful,\nchallenger.\pI will need to return\nto my training[.]\pBefore I leave, as a courtesy, I can\nheal two of your Pok\emon.\pWould that interest you?
+
+#org @gText_PkmnTower_AceTrainer1_5
+[BLUE]Huh, how brave of you.
+
+#org @gText_PkmnTower_AceTrainer1_6
+[BLUE]Well then, best of luck on\nthe rest of your trial.
+
+#org @gText_PkmnTower_AceTrainer1_4_2
+[BLUE]Your [GREEN][BUFFER1][BLUE] has been healed.
+
+#org @gText_PkmnTower_AceTrainer2_4_2 
+[RED]Your [GREEN][BUFFER1][RED] has been healed.
+
+#org @gText_PkmnTower_AceTrainer1_4_3
+[BLUE]Would you like another Pok\emon to be\nhealed?
+
+#org @gText_PkmnTower_AceTrainer2_1
+[RED]I don't like wasting time.\pYou know the deal.\nAre you ready to fight?
+
+#org @gText_PkmnTower_AceTrainer2_2
+[RED]Very well, let's have at it.
+
+#org @gText_PkmnTower_AceTrainer2_3
+Mm[.] perhaps I was overconfident. 
+
+#org @gText_PkmnTower_AceTrainer2_4
+[RED]Well, like the trainer who preceded\nme, I can heal 2 of your Pok\emon.\pAre you in need of this service?
+
+#org @gText_PkmnTower_AceTrainer2_4_3
+[RED]Another one?
+
+#org @gText_PkmnTower_AceTrainer2_5
+Hmm[.] strange.\nNo one has denied this service\lbefore.
+
+#org @gText_PkmnTower_AceTrainer2_6
+Well, this is goodbye.\nI'm not aware of the foe we're\lcharged with protecting, but I hope\lyou're able to leverage its power\lfor good.
+
+#org @gText_PkmnTower_AceTrainer3_1
+[BLUE]It is rare for someone to make it this\nfar.\pFine, will you continue onwards?
+
+#org @gText_PkmnTower_AceTrainer3_2
+[BLUE]Let's hope this was no fluke, trainer.
+
+#org @gText_PkmnTower_AceTrainer3_3
+Well, I did my best.
+
+#org @gText_PkmnTower_AceTrainer3_4
+[BLUE]It was not by chance that you've\nmade it this far. Congratulations.\pThere is only one more foe ahead.\pWould you like me to heal\ntwo Pok\emon?
+
+#org @gText_PkmnTower_AceTrainer3_5
+Not a fan of handouts?\nUnderstandable.
+
+#org @gText_PkmnTower_AceTrainer3_6
+Good luck.
+
+#org @gText_PkmnTower_GateKeeperLeave
+If you leave, all the progress you've\nmade will be reset, including trainers\ldefeated.\pWould you still like me to\nescort you out?
+
+#org @gText_PkmnTower_Morty_1
+[BLUE]Ah[.]\pI definitely expected you to be the\none to make it here,\l[GREEN][PLAYER][BLUE].
+
+#org @gText_PkmnTower_Morty_2
+[BLUE]It's quite strange. This Pok\emon\nseems quite harmless at first glance,\lsome could even call it cute.\pHowever, it's capable of copying and\nperfecting abilities it observes.\pCoupled with its capabilities of\ninflicting fear upon massive groups\lof people[.]\pPut it simply, it'll wreak\ngreat havoc in the wrong hands.
+
+#org @gText_PkmnTower_Morty_3
+[GREEN][PLAYER][BLUE], it's clear to me you only\nhave good intentions.\pPlease, show me your strength\none last time.
+
+#org @gText_PkmnTower_Morty_4
+[BLUE]With Team Rocket taken down, we\nmust do everything possible to uphold\lthe current status quo[.]\pSo these powerful Pok\emon showing up\nout of the blue leaves a lot of\lus concerned.\pBut, you ought to take pride of\nthe peace you created, [GREEN][PLAYER].[BLUE]\pPlease, have this.
+
+#org @gText_PkmnTower_Morty_5
+[BLUE]I'm sure many more powerful foes\nawait you.\pI wish you the best.
+
+#org @gText_PkmnTower_MortyLoss
+It was the expected outcome.\nThank you for the opportunity.

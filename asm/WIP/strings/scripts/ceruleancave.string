@@ -1,0 +1,257 @@
+#org @gText_ceruleancavelevelscript_1
+[BLUE]Hm, nothing suspicious so far[.]
+
+#org @gText_ceruleancavelevelscript_2
+[RED]Well well, if it isn't the two scrubs\nback in Silph Co.
+
+#org @gText_ceruleancavelevelscript_3
+[BLUE]Agh! Team Rocket!\pI knew it!\pWhat do you think you're doing?!
+
+#org @gText_ceruleancavelevelscript_4
+[RED]Ariana: It doesn't concern you.\pI'll have you taken care of.
+
+#org @gText_ceruleancavelevelscript_5
+[GREEN][PLAYER][BLUE], go on\nahead!\pI'll catch up with you later!
+
+#org @gText_ceruleancavelevelscript_6
+[RED]Tsk, whatever.\pYou won't be able to stop the boss\nanyway.
+
+#org @gText_arianaceruelancave_1
+[GREEN]Mawile, [RED]use Play Rough!
+
+#org @gText_arianaceruelancave_2
+What the hell are you looking at?\pI'll take care of you after.
+
+#org @gText_brendanceruleancave_1
+[GREEN]Sceptile, [BLUE]use Focus Blast!
+
+#org @gText_brendanceruleancave_2
+[GREEN][PLAYER][BLUE], go on\nahead!\pI'll catch up with you later!
+
+#org @gText_ceruleangrunt4_EncounterText
+The boss's plan?\pMy guess is as good as yours.
+
+#org @gText_ceruleangrunt4_DefeatText
+Being a good trainer[.]\nCouldn't be me.
+
+#org @gText_ceruleangrunt4_AfterBattle
+The boss's plan?\pMy guess is as good as yours.
+
+#org @gText_ceruleangrunt3_EncounterText
+Aw, jeez.\pI remember you[.]
+
+#org @gText_ceruleangrunt3_DefeatText
+Must be nice being strong.
+
+#org @gText_ceruleangrunt3_AfterBattle
+Must be nice being the protag-\nonist.
+
+#org @gText_ceruleangrunt2_EncounterText
+I'm just following orders.
+
+#org @gText_ceruleangrunt2_DefeatText
+Well, no surprise there.
+
+#org @gText_ceruleangrunt2_AfterBattle
+I'm just here as I was promised\nsome speedb. 
+
+#org @gText_ceruleangrunt1_EncounterText
+Hey, you ought to turn back.
+
+#org @gText_ceruleangrunt1_DefeatText
+Crushed by a kid,\nas usual.
+
+#org @gText_ceruleangrunt1_AfterBattle
+Most Team Rocket members left\nafter the latest ordeal.\pI have no idea why I'm still\nhere to be honest.
+
+#org @gText_ceruleanarcherariana_1
+[BLUE]Hey, looks like we caught up.
+
+#org @gText_ceruleanarcherariana_2
+[RED]There's no escape.\pYour friend isn't here to stop us\nthis time.
+
+#org @gText_ceruleanarcherariana_3
+[BLUE]Don't worry, he's safe.\pHe's gone to the Pok\emon center after\nour skirmish.
+
+#org @gText_ceruleanarcherariana_4
+[RED]You know[.]
+
+#org @gText_ceruleanarcherariana_5
+[RED]We're gonna cut the crap.\pWe honestly don't know what the boss\nis up to ourselves.\pAfter his last defeat against you[.]\p
+
+#org @gText_ceruleanarcherariana_6
+[BLUE]He's definitely become unhinged.\pAnyway[.]
+
+#org @gText_ceruleanarcherariana_7
+[BLUE]He's never been one to tell us\nmuch, so we're basically in the dark\labout what this mission is[.]
+
+#org @gText_ceruleanarcherariana_8
+[RED]But[.] orders are orders.
+
+#org @gText_ceruleanarcherariana_10
+[BLUE]We're loyal to the boss,\nperhaps to a fault.\pYou aren't getting to him.
+
+#org @gText_ceruleanarcherariana_11
+[RED]Well[.] here goes.
+
+#org @gText_ceruleanarcherariana_12
+[BLUE]You might be the strongest trainer\nI've ever faced.\pPerhaps you may be able to\ntalk some sense into our boss[.]\pIt'd be nice if he could have some\nfaith in us, but he won't listen to\lme.
+
+#org @gText_ceruleanarcherariana_13
+[RED]Not me, either.\pBut, we're still concerned for him.\pWe're really sorry for the trouble.\pAnd please, have this.
+
+#org @gText_ceruleanarcherariana_14
+[BLUE]I would apologize too,\nbut I know we were always just\lpushovers for you[.]\p[.]Hah! You're smiling.\pI knew it.\pFrom me, then.
+
+#org @gText_ceruleanarcherariana_15
+[BLUE]If he's doing what I think\nhe's doing, you may be in trouble[.]\pBut, we have faith in you.\pPlease, stop our boss[.]
+
+#org @gText_ceruleanarcherariana_16
+[RED]Good luck.
+
+#org @gText_ceruleanarcherariana_Archerloss
+That's how it be[.]
+
+#org @gText_ceruleanarcherariana_Arianaloss
+Heh[.]\nI'm actually impressed.
+
+#org @gText_healstoptheboss_1
+Please[.] stop the boss.
+
+#org @gText_ceruleangiovanni_1
+[BLUE]I see you've come to stop me\nyet again[.]
+
+#org @gText_ceruleangiovanni_2
+[BLUE]Unfortunately, you won't be the hero\nthis time.\pYou're too late.
+
+#org @gText_ceruleangiovanni_3
+[GREEN]Mewtwo![BLUE] You're mine!
+
+#org @gText_ceruleangiovanni_4
+[BLACK]Mew!
+
+#org @gText_ceruleangiovanni_5
+[BLUE]Master Ball, go!
+
+#org @gText_ceruleangiovanni_6
+[.]
+
+#org @gText_ceruleangiovanni_Defeated
+W-what?!\nImpossible[.]
+
+#org @gText_ceruleangiovanni_7
+[BLUE]Aha! The Master Ball my scientists\nmade works!\pAnd attaching this Mega Stone that\nwe've worked hard on[.]\pI'm practically invincible!
+
+#org @gText_ceruleangiovanni_8
+[BLUE]You still dare to stop me\nknowing I have [GREEN]Mega Mewtwo[BLUE]?\pWell, the honor is mine, you insolent\nchild!
+
+#org @gText_ceruleangiovanni_8_2 
+[GREEN]???[BLUE]: Woah, things are getting out\nof hand here[.]
+
+#org @gText_ceruleangiovanni_8_3 
+[GREEN]Lance[BLUE]: Hi there, just the champion\nstopping by to help put an end\lto this mess. 
+
+#org @gText_ceruleangiovanni_8_4 
+[GREEN]Giovanni[BLUE]: Hm, no matter.\nI can't possibly be stopped with\lMega Mewtwo. 
+
+#org @gText_ceruleangiovanni_8_5 
+[GREEN]Lance[BLUE]: Sorry, [PLAYER], was it?\nI came here rather short of notice,\lso I don't have my best Pok\emon on me.\pYou'll have to help me out here.
+
+#org @gText_ceruleangiovanni_8_6 
+[GREEN]Giovanni[BLUE]: Have at me then, you fools! 
+
+#org @gText_ceruleangiovanni_9
+[BLUE]Even with [GREEN]Mega Mewtwo[BLUE],\nI've fallen by your hands.\pI[.]
+
+#org @gText_ceruleangiovanni_Awaydialogue
+[BLUE]I am truly humbled.\pMy plan for world domination is\nbut a dream.
+
+#org @gText_ceruleangiovanni_10
+[BLUE]I threw aside family for this[.]\pAbandoned my wife,\neven my own son[.]\pDespite my defeat at Silph Co,\nI couldn't give up on my plan.
+
+#org @gText_ceruleangiovanni_11
+[BLUE]I admit, I was a victim of the\nsunk-cost fallacy[.]\pBut, I've given up literally every-\nthing for this[.]
+
+#org @gText_ceruleangiovanni_12
+[GREEN]Archer and Ariana[BLUE]: Boss!
+
+#org @gText_ceruleangiovanni_13
+[GREEN]Giovanni[BLUE]: Wha[.]\nArcher, Ariana?
+
+#org @gText_ceruleangiovanni_14
+[GREEN]Archer[BLUE]: Not everything, sir.
+
+#org @gText_ceruleangiovanni_15
+[RED]You still have us!\pPlease, sir, have faith in us[.]
+
+#org @gText_ceruleangiovanni_16
+[GREEN]Archer[BLUE]: We've stuck with you\nthrough thick and thin boss, you\lcould learn to rely on us,\leven if just a little[.]
+
+#org @gText_ceruleangiovanni_17
+[RED]Could you have any doubt\non our loyalty?\pEver since you took us in\nwhen we were lowly children, with\lno home to go to[.]
+
+#org @gText_ceruleangiovanni_18
+[BLUE]You're truly family to us!\pMore than just our boss!
+
+#org @gText_ceruleangiovanni_19
+[RED]Although we don't agree with\neverything you do, we will stand by\lyou no matter what.
+
+#org @gText_ceruleangiovanni_20
+[GREEN]Giovanni[BLUE]: You two[.]
+
+#org @gText_ceruleangiovanni_21
+[BLUE]I'm sorry[.]\pMy crude ambitions have blinded\nme[.]
+
+#org @gText_ceruleangiovanni_22
+[BLUE]You guys are more than family.\pWe sh-
+
+#org @gText_ceruleangiovanni_23
+[BLUE]Wha?!\pMewtwo escaped out of my Master\nBall!
+
+#org @gText_ceruleangiovanni_24
+[BLACK]Mewtwo: [PLAYER][.]\pWhen you are worthy,\nplease return to me.
+
+#org @gText_e4check_1
+[BLACK]Mewtwo: No [PLAYER][.]\pYou are not worthy yet.
+
+#org @gText_MewtwoBattle
+I see you've returned,\neven more capable.\pFine, let me unleash my full\npotential to see if you're truly\lworthy!
+
+#org @gText_KubfuMaster_1 
+Hi there. I've been training here\nto try and chase the glory my grand-\lfather [GREEN]Mustard[BLUE] once held.\pA while ago in the Galar region he\nheld his status as Champion for\lover 15 years.\pAs his greatest prodigy I've always\nwanted to live up his standards[.]\pYet, I'm still so far away.
+
+#org @gText_KubfuMaster_2
+I saw you completely dismantle a\nformidable foe with the help of the\lone-and-only,[GREEN] Lance!\p[BLUE]You must be a worthy training\npartner!\pSo, what do you say?\pCan you help me in my quest? 
+
+#org @gText_KubfuMaster_3
+No worries.\pI shall continue my training.
+
+#org @gText_KubfuMaster_PreFight
+Very well then.\nI'm giving it my all!
+
+#org @gText_KubfuMaster_FightLoss
+Hm, I guess that's a wrap.
+
+#org @gText_KubfuMaster_4
+That was a well fought battle.\pPlease, have my Grandpa's sig-\nnature Pok\emon.
+
+#org @gText_ReceivedKubfu
+You received a [GREEN]Kubfu![BLUE]
+
+#org @gText_KubfuMaster_GoodLuck
+[GREEN]Kubfu[BLUE] can evolve into two separate\nforms using either the Water or\lDusk Stone.\pBoth are very capable Pok\emon,\neven in the hands of the most\lirresponsible trainer.
+
+#org @gText_KubfuMaster_DoneForToday
+Well, that's it from me for today.\pTalk to me again tomorrow,\nand I may be ready to spar again.
+
+#org @gText_KubfuMaster_DownAgain
+Hello again! Are you here to spar?\pI do have one last [GREEN]Kubfu\nto offer if you end up victorious.\pWhat do you say?
+
+#org @gText_KubfuMaster_5
+Impressive, I never stood a chance!\pYet, I do feel new know-\nledge coming to light.\pPlease take one, yet again!
+
+#org @gText_KubfuMaster_DownAgain2
+Welcome back, partner!\nAre you here to spar?\pUnfortunately, I have no [GREEN]Kubfus[BLUE]\nleft to offer.\pStill, I hope you find value in\nbattling with me!\pWhat do you say?
+
+#org @gText_KubfuMaster_5_2
+Ha ha ha! As expected!\nBut, i still find losing to you\lworthwhile.\pWell, I at least have these\lto give.

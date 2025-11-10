@@ -1,0 +1,102 @@
+#org @gText_punchtutor_1
+I teach Elemental Punches and Fangs,\nbut it's going to cost ya \$2500.\pInterested?
+
+#org @gText_punchtutor_Text1
+Fire Punch
+
+#org @gText_punchtutor_Text2
+Ice Punch
+
+#org @gText_punchtutor_Text3
+Thunder Punch
+
+#org @gText_punchtutor_Text4
+Fire Fang 
+
+#org @gText_punchtutor_Text5
+Ice Fang
+
+#org @gText_punchtutor_Text6
+Thunder Fang 
+
+#org @gText_punchTutor_psychicfang
+Psychic Fangs
+
+#org @gText_punchtutor_Msg
+Which move shall I teach?
+
+#org @gText_punchtutor_3
+Cool. Who shall I teach it to?
+
+#org @gText_punchtutor_4
+Thank you come again.
+
+#org @gText_punchtutor_Wait
+[.]
+
+#org @gText_ltsurge_EncounterText
+[BLUE]Hey, kid! What do you think you're\ndoing here?\pYou won't live long in combat!\nNot with your puny power!\pI tell you, kid, electric Pok\emon\nsaved me during the war!\pThey zapped my enemies into\nparalysis!\pThe same as I'll do to you!
+
+#org @gText_ltsurge_DefeatText
+Now that's a shocker!\pYou're the real deal, kid!\pFine, then, take the Thunder Badge!
+
+#org @gText_ltsurge_Givetm
+[BLUE]You're special, kid!\nTake this!
+
+#org @gText_ltsurge_TMInfomsg
+[BLUE]TM92 contains Volt Switch!\pTeach it to an Electric Pok\emon!
+
+#org @gText_ltsurge_Helloagain
+Kid! I was hoping to see you again.\pMy Pok\emon and I haven't forgotten\nthat crazy ride we had with you.\pWe're raring to get another shot at\nya!
+
+#org @gText_ltsurge_Comeback
+Boo[.] Well, whenever you're ready.
+
+#org @gText_ltsurge_Battle
+I'm letting my beasts out!\pHere we go!
+
+#org @gText_ltsurge_Seconddefeat
+Another electrifying defeat!
+
+#org @gText_ltsurge_Won2text
+Heh, my Pok\emon aren't keen on losing,\nbut I can tell they're having a blast\lwith you! You can have these.
+
+#org @gText_ltsurge_InfoHard
+[GREEN]Mega Manectric[BLUE] is a literal beast.\pIt frightens foes with Intimidate,\nand threatens them out with its Speed\land Special Attack.\pHe's one of my favorites for a\nreason!
+
+
+#org @gText_SSAnne_CantForget1
+HM Cut is used to cut small trees. 
+
+#org @gText_Vermilion_NewTruant
+Did you know [GREEN]Slaking[RED] can use Slack\nOff on turns it loafs around?\pIt's quite powerful, don't you\nthink?! 
+
+#org @gText_Vermilion_NewHM
+Hidden Machines, like Cut, don't\nneed to be taught anymore.\nHow convenient!
+
+#org @gText_Vermillion_Infernape1
+[.]
+
+#org @gText_Vermillion_Infernape2
+[BLACK]It's an Infernape hard at work.
+
+#org @gText_FanClub_Girl1
+I just adore my [GREEN]Yamper!\n[RED]It's so lovable!\pIt squeals when I hug it!
+
+#org @gText_FanClub_Girl2
+Oh, my!!\pLook at our [GREEN]Yampers[RED] playing!
+
+#org @gText_FanClub_Girl3
+How cute!\nHere, let me share these with\lyou.
+
+#org @gText_Vermillion_Yamper
+[BLUE][GREEN]Yamper:[BLUE] Yap yap!
+
+#org @gText_Vermillion_MailGuy
+I want to exchange Mail with all\nsorts of people.\pI send my [GREEN]Corviknight[BLUE] to a Union Room\nto exchange Mail for me.
+
+#org @gText_Vermillion_Corviknight
+Corv!
+
+#org @gText_Vermillion_MailGuy2
+I'm getting my [GREEN]Corviknight[BLUE] to fly a\nletter to Saffron in the north.

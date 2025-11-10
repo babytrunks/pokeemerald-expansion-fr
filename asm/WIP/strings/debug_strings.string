@@ -1,0 +1,167 @@
+#org @gText_ZamazentaCode
+xo6HsTl5Uym1
+
+#org @gText_DebugMenu_SetFlag
+Set Flag
+
+#org @gText_DebugMenu_ClearFlag
+Clear Flag
+
+#org @gText_DebugMenu_GiveItem
+Give Item
+
+#org @gText_DebugMenu_Level100Team
+Level 100 Team
+
+#org @gText_DebugMenu_MaxCoinage
+Money
+
+#org @gText_DebugMenu_AllBadges
+All Badges
+
+#org @gText_DebugMenu_GameClear
+Game Clear
+
+#org @gText_DebugMenu_CustomFlag
+Custom Flag
+
+#org @gText_DebugMenu_Pokedexes
+Pokedexes
+
+#org @gText_DebugMenu_FlySpots
+Fly Spots
+
+#org @gText_DebugMenu_UsefulKeyItems
+Useful Key Items
+
+#org @gText_DebugMenu_GeneralUsefulItems
+General Useful Items
+
+#org @gText_DebugMenu_PokeBalls
+Pok\e Balls
+
+#org @gText_DebugMenu_Berries
+Berries
+
+#org @gText_DebugMenu_TMs
+TMs and HMs
+
+#org @gText_DebugMenu_AllItems
+All Items
+
+#org @gText_GivePokemon
+Give Pok\emon
+
+#org @gText_WildBattle
+Wild Battle
+
+#org @gText_Trainer
+Trainer Battle
+
+#org @gText_DebugMenu
+Welcome to the Debug Menu.\nThis should not be in the official\lrelease.
+
+#org @gText_EnterSpeciesNumber
+Enter the species number.
+
+#org @gText_InvalidNumber
+Invalid number.
+
+#org @gText_ReceivedDebugPokemon
+You received a [GREEN][BUFFER1].
+
+#org @gText_EnterItemNumber
+Enter the item number.
+
+#org @gText_ReceivedItems
+You received [GREEN][BUFFER1] [BUFFER2].
+
+#org @gText_DebugMenu_GivenMoney
+Many moneys received.\nMuch yay.
+
+#org @gText_ZekromCode
+02UXRthxIDrp
+
+#org @gText_DebugFlagSet
+Flag [BUFFER1] set.\nIf it's an invalid flag,\lthis will result in horrible bugs.
+
+#org @gText_EnterFlagNumber
+Enter flag number, in decimal.
+
+#org @gText_EnterTrainerNumber
+Enter trainer number, in decimal.
+
+#org @gText_peepeePooPoo
+peepee poopoo.
+
+#org @gText_DebugMenu_MakeShiny
+Make Shiny
+
+#org @gText_DebugMenu_MakeHisuian
+Make Hisuian
+
+#org @gText_Seviian
+Seviian
+
+#org @gText_PalkiaCode
+FHbrO5xLF3Vy
+
+#org @gText_YouReceivedPrimalDialga
+[BLACK]You received a [GREEN]Primal Dialga!\n[BLACK]Don't break the game too hard!
+
+#org @gText_YouReceiveEternatus
+[BLACK]You received a [GREEN]Eternatus Eternamax!\n[BLACK]Don't break the game too hard!
+
+#org @gText_YouReceivedGiftPokemonBreak
+[BLACK]You received a [GREEN][BUFFER1]!\n[BLACK]Take it easy on the poor foes!
+
+#org @gText_YouReceivedGiftPokemon
+[BLACK]You received a [GREEN][BUFFER1]![BLACK]
+
+#org @gText_YouReceivedAllSeviians
+[BLACK]You received the first stage\nPok\emon of all Seviian forms!
+
+#org @gText_NeedToBeatGift
+[.]Sorry, you need to beat the game\nfirst for that gift.
+
+#org @gText_MysteryGiftAsk
+Would you like to redeem a code\nand receive a gift?
+
+#org @gText_AlreadyRedeemed
+[.]You already redeemed that code.
+
+#org @gText_MmThatIncorrect
+Mmm[.] that's an invalid code.
+
+#org @gText_NeedNewGamePlus
+Mm[.] you need to be on New Game\nPlus to redeem that code.
+
+#org @gText_NeedBadgesForThis
+[.]You need 3 badges to redeem\nthat one.
+
+#org @gText_MegaCode
+Mega
+
+#org @gText_Random6
+Random6
+
+#org @gText_SkipPuzzle
+Puzzle
+
+#org @gText_YouCanSKipPuzzle
+[.] Okay.\pYou don't have to complete the\npuzzle battles now.\pSimply talk to them to redeem\nyour reward.
+
+#org @gText_XerneasCode
+ZcqLcEfUDp5Z
+
+#org @gText_SetToLevelCap
+[BUFFER1] has been set to the\nLevel Cap.
+
+#org @gText_AlreadyAtLevelCap
+[.][BUFFER1] is already at the Level\nCap.
+
+#org @gText_DebugMenu_SetToLevelCap
+Set To Level Cap
+
+#org @gText_DebugMenu_GiveAllItems
+Give All TMs/HMs

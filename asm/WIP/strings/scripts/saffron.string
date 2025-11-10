@@ -1,0 +1,689 @@
+#org @gText_Saffron_Nerd
+Hi, I can swap to a Pok\emon's\nhidden ability and vice versa.\pI'll need a [GREEN]Bottle Cap[BLUE] though.\pHow about it?
+
+#org @gText_Saffron_NerdGiveItem
+[BLACK][PLAYER] handed over a Bottle Cap.[BLUE]
+
+#org @gText_Saffron_NerdAfter
+Thank you!\pAbilities have been swapped.
+
+#org @gText_Saffron_NerdReject
+Uh, you don't have a [GREEN]Bottle Cap[BLUE].
+
+#org @gText_Saffron_Nerd2
+I can change a Pok\emon's ability.\pYou in?
+
+#org @gText_Saffron_Nerd2_Hidden
+That Pok\emon has its Hidden\nAbility. You'll have to talk to\lmy other friend here to get that\lswapped.
+
+#org @gText_SaffronNerd2_NoDiff
+[.]That Pok\emon doesn't have an\nability to swap to. 
+
+#org @gText_SaffronNerd_NoHidden
+[.]That Pok\emon doesn't have a\nHidden Ability. 
+
+#org @gText_RandomEgg_1
+Hi, I hand out Starter eggs!\pI'm also a shard collector.\pGive me a Red, Blue, or Green\nShard, and I'll give a random egg\lcorresponding to that type.
+
+#org @gText_RandomEgg_2
+Ah! You have a Shard!\pWould you like to exchange it\nfor an egg?
+
+#org @gText_RandomEgg_GiveRedMsg
+A Red Shard!\pI can give a Fire starter for that!\pSound good?
+
+#org @gText_RandomEgg_GiveBlueMsg
+A Blue Shard!\pI can give a Water starter for that!\pSound good?
+
+#org @gText_RandomEgg_GiveGreenMsg
+A Green Shard!\pI can give a Grass starter for that!\pSound good?
+
+#org @gText_RandomEgg_AwOkayThen
+Aw, okay then.
+
+#org @gText_RandomEgg_NoRoom
+You have no room for this.\pCome back when you do!
+
+#org @gText_RandomEgg_GiveShard
+[BLACK][PLAYER] handed over the Shard.[BLUE]
+
+#org @gText_RandomEgg_ReceivedEgg
+[BLACK][PLAYER] received an Egg![BLUE]
+
+#org @gText_RandomEgg_ThankYou
+[BLUE]Thank you!\pHere it is.
+
+#org @gText_RandomEgg_WhichShard 
+Which Shard are you exchanging?
+
+#org @gText_RandomEgg_YouDontHave
+Erm.\pYou don't have that Shard.
+
+#org @gText_RandomEgg_Red 
+[RED]Red Shard 
+
+#org @gText_RandomEgg_Blue 
+[BLUE]Blue Shard 
+
+#org @gText_RandomEgg_LearnMore
+Learn More 
+
+#org @gText_RandomEgg_LearnMoreMsg 
+The pool for Fire Starters are\nCyndaquil, Chimchar, Tepig,\lFennekin, Litten, and Scorbunny.\pThe pool for Grass Starters are\nChikorita, Turtwig, Chespin, \lRowlet, and Grookey.\pThe pool for Water starters are\nTotodile, Piplup, Oshawott,\lPopplio, and Sobble.
+
+#org @gText_RandomEgg_Green 
+[GREEN]Green Shard 
+
+#org @gText_DumbassKid_1
+i Herd U Liek Mudkipz 
+
+#org @gText_DumbassKid_Good
+Mud! Kip!
+
+#org @gText_DumbassKid_Battle
+no??? NO???????\pI HERD U LIEK MUDKIPZ????
+
+#org @gText_DumbassKid_Battle2 
+YOU[.]\pYOU WILL PAY!!!!!!!!!
+
+#org @gText_DumbassKidLoss
+mud... kip...\p:( 
+
+#org @gText_DumbassKid_EQInfo
+eq is an extremely pog move\non swampy[.]
+
+#org @gText_DumbassKid_PostLoss
+Well[.]\pMudkips are still cool[.]\pI will share sum love XD 
+
+#org @gText_DumbassKid_GetMudkip
+[BLACK]You received a [GREEN]Mudkip[BLACK]!
+
+#org @gText_DumbassKid_LastMsg
+THIS GAME WON'T LET ME OVERLEVEL\nWHAT THE FRIIIIIIIIIIICK!
+
+#org @gText_DumbassKid_Rematch
+ohohoh[.] you have z-power-ring now!\nOwO[.]\pu seem stwonger[.]\ncan we battle again??
+
+#org @gText_DumbassKid_GetHim
+let's freaking go[.]\nlet's get him swampy!!!!
+
+#org @gText_DumbassKid_Rematch2
+aw man[.] i'm sadge again[.]\pbut i will admit[.]\nu are seriously too good!\pmaybe you are interested in another\ncool pokemons.\p[GREEN]cosmog[.][BLUE]\nit can evolve into either [GREEN]solgaleo[BLUE]\lor [GREEN]lunala![BLUE]\pit's kinda poggers.\nhere u go.
+
+#org @gText_DumbassKid_ReceiveCosmog
+[BLACK]You received a [GREEN]Cosmog!
+
+#org @gText_DumbassKid_Stronger
+[BLUE]when i grow older i want to\nbecome stwonger than u[.]
+
+#org @gText_DumbassKid_Gren
+[BLUE]how i get pretransformed ash\ngreninja?\pcheating obviously!\nlolz. 
+
+#org @gText_DumbassKid_SisterBully
+[BLUE]my sister is big meanie[.]\nshe bully me with riwwaboom[.]\pmost op pok\emon vs swampy[.]
+
+#org @gText_DumbassKid_YouGotSwamp
+oh my GOSH!\ndid u get urself a swampert???\p[.]
+
+#org @gText_DumbassKid_ThatsPog
+that's FREAKING POG!!!!!!\nyou have good taste xD
+
+#org @gText_DumbassKid_HaveThis
+pls, take this. friend.
+
+#org @gText_DumbassKid_LastMsg_2
+i heckin luv mudkipz[.]
+
+#org @gText_SilphCo_TeamAlert1
+[BLACK]Just a small warning from\nthe creator himself[.]\pThere's an upcoming tag battle,\nso I've healed your team in\lpreparation.
+
+#org @gText_Saffron_ManyTutors1 
+Hiya, I got a whole slew of\nuseful moves!\pThey cost \$7500.
+
+#org @gText_Saffron_ManyTutors2 
+Hm, that's not enough money. 
+
+#org @gText_Saffron_ManyTutors3 
+Nice doing business with ya! 
+
+#org @gText_Saffron_ManyTutors4
+[.]
+
+#org @gText_Saffron_ManyTutors5
+Well, alright then. 
+
+#org @gText_Saffron_ManyTutors6
+Which move would you like? 
+
+#org @gText_Saffron_ManyTutors7
+Who wants it? 
+
+#org @gText_Saffron_ManyTutors8
+Need more options eh? 
+
+#org @gText_HydroPump
+Hydro Pump
+
+#org @gText_DrillRun
+Drill Run
+
+#org @gText_BlazeKick
+Blaze Kick
+
+#org @gText_PSplit
+Pain Split
+
+#org @gText_ZenHeadbutt
+Zen Headbutt
+
+#org @gText_WeatherBall
+Weather Ball
+
+#org @gText_AirSlash
+Air Slash 
+
+#org @gText_Hex
+Hex
+
+#org @gText_MysticalFire
+Mystic Fire 
+
+#org @gText_SeedBomb
+Seed Bomb
+
+#org @gText_LeafBlade
+Leaf Blade 
+
+#org @gText_KnockOff
+Knock Off 
+
+#org @gText_ViewMore
+View More 
+
+#org @gText_Back 
+Back 
+
+#org @gText_liquidation_1
+Need to liquidate some money?\pDo it easily by teaching your Pok\e-\nmon Liquidation!\pHow about it?
+
+#org @gText_liquidation_2
+It's going to cost ya \$7500 though.
+
+#org @gText_liquidation_3
+Which Pok\emon should I teach\nLiquidation to?
+
+#org @gText_liquidation_4
+Water em down[.]
+
+#org @gText_liquidation_No
+Aw, well. I hope to see you again.
+
+#org @gText_liquidation_Wait
+[.]
+
+#org @gText_liquidation_Poor
+[.]You don't have enough money.
+
+#org @gText_EVSubtracter_Msg
+Hi, I can subtract EVs from a\nPok\emon. You in?
+
+#org @gText_EVSubtracter_1
+Your [BUFFER1][.]\nWhich stat should I subtract?
+
+#org @gText_EVSubtracter_2
+Feel free to come back if you\nneed my assistance.
+
+#org @gText_EVSubtracter_4
+Shall I do another Pok\emon?
+
+#org @gText_EVSubtracter_Reduceby
+Reduce by 10, 50, 100, or 252?
+
+#org @gText_EVSubtracter_None
+The EVs in that stat are at 0. 
+
+#org @gText_EVSubtracter_HP
+HP
+
+#org @gText_EVSubtracter_Attack
+Attack
+
+#org @gText_EVSubtracter_Defense
+Defense
+
+#org @gText_EVSubtracter_SpA
+Sp. Attack
+
+#org @gText_EVSubtracter_SpDef
+Sp. Def
+
+#org @gText_EVSubtracter_Speed
+Speed
+
+#org @gText_EVSubtracter_AllStats
+All Stats
+
+#org @gText_EVSubtracter_Ten
+10
+
+#org @gText_EVSubtracter_Fifty
+50
+
+#org @gText_EVSubtracter_Hundred
+100
+
+#org @gText_EVSubtracter_All
+252
+
+#org @gText_EVSubtracter_By10
+Succesfully reduced by 10!
+
+#org @gText_EVSubtracter_By50
+Succesfully reduced by 50!
+
+#org @gText_EVSubtracter_By100
+Succesfully reduced by 100!
+
+#org @gText_EVSubtracter_ByAll
+Succesfully reduced by 252!
+
+#org @gText_EVSubtracter_DoAllDone
+Sucessfully reset [BUFFER1]'s\nEVs! 
+
+#org @gText_EVSubtracter_DoAll 
+Shall I reduce all of\n[BUFFER1]'s EVs? 
+
+#org @gText_EVSubtracter_Currently
+It currently has [BUFFER2] EVs in that\nstat.
+
+#org @gText_EVSubtracter_NowHas
+It now has [BUFFER2] EVs in that\nstat.
+
+#org @gText_EvChecker_Msg
+Hi, I'm a gigantic nerd.\pI can check your Pok\emon's EVs at a\nglance. Interested?
+
+#org @gText_EvChecker_1
+Your [BUFFER1] has[.]
+
+#org @gText_EvChecker_2
+Well, just here to help.
+
+#org @gText_EvChecker_3
+[BUFFER1] HP EVs, [BUFFER2] Atk EVs, [BUFFER3] Def EVs[.]
+
+#org @gText_EvChecker_4
+Shall I check another one?
+
+#org @gText_EvChecker_5
+[BUFFER1] SpAtk EVs, [BUFFER2] SpDef EVs,\n[BUFFER3] Speed EVs.
+
+#org @gText_chuck_1
+[BLUE]Hello there little chump!\pI'm [GREEN]Chuck[BLUE], and I've taken over\nas the Karate Master of this dojo!\pI can put you in a choke-hold in\na matter of seconds if I wanted to!\pWhat?\pIt has nothing to do with Pok\emon?\pHaha! A challenger long ago once\nsaid the same thing!\pCome on, we shall do battle!
+
+#org @gText_chuck_Defeat
+Wha! I lost?!\nIncredible!
+
+#org @gText_chuck_6
+What a crushing defeat!\pIt's back to 24-hour training for\nme!\pBut, I'm impressed, challenger.\pHave this!
+
+#org @gText_chuck_8
+These could help your warriors fight\nbetter as well!
+
+#org @gText_chuck_Take
+If you'd like, you can have one of\nthe Fighting Pok\emon over here as a\ltrophy.
+
+#org @gText_chuck_9
+Hey there!\nHope the lifting's going well.
+
+#org @gText_chuck_10
+[.]I see you have your own [GREEN]Mega\nRing[BLUE].\pIf you show me a Pok\emon you've invested\nin Attack, I might just give you a\l[GREEN]Galladite![BLUE]
+
+#org @gText_chuck_10_minGrinding
+[.]I see you have your own [GREEN]Mega\nRing[BLUE].\pIf you show me a Pok\emon with strong\nAttack, I might just give you a\l[GREEN]Galladite![BLUE]
+
+#org @gText_chuck_11
+Your [BUFFER1][.]
+
+#org @gText_chuck_12
+Woah, this thing's ripped!\pAdmirable!\pWahaha, here you go!
+
+#org @gText_chuck_14
+Take this one as well.
+
+#org @gText_chuck_13
+Eh[.] it could still hit the Gym[.]
+
+#org @gText_taurospfire_Received
+You received the Blaze Breed [GREEN]Tauros[BLACK]\nfrom [GREEN]Chuck[BLACK]!
+
+#org @gText_clobbopus_Msggreedy
+Better not get greedy[.]
+
+#org @gText_taurospfire_Uwant
+You want the Blaze Breed [GREEN]Tauros[BLACK]?
+
+#org @gText_taurospwater_Received
+You received the Aqua Breed [GREEN]Tauros[BLACK]\nfrom [GREEN]Chuck[BLACK]!
+
+#org @gText_crabrawler_Msggreedy
+Better not get greedy[.]
+
+#org @gText_taurospwater_Uwant
+You want the Aqua Breed [GREEN]Tauros[BLACK]?
+
+#org @gText_sabrina_EncounterText
+[RED]I had a vision of your arrival.\pI have had psychic powers since\nI was a child.\pIt started when a spoon I\ncarelessly tossed, bent.\pI dislike battling, but if you wish,\nI will show you my powers.\pI prefer fighting in the Doubles\nstyle, are you ready? 
+
+#org @gText_sabrina_DefeatText
+This loss shocks me!\nBut, a loss is a loss.\pI admit, I didn't work hard enough\nto win.\pYour victory has earned you the\nMarsh Badge.
+
+#org @gText_sabrina_Givetm
+TM116 is Trick Room.\pIt flips dimensions to allow\nslower Pok\emon to go first.\pIt's quite a potent strategy\nin Doubles. 
+
+#org @gText_sabrina_GivetmHard
+TM104 is Psyshock.\pIt's a special move that hits\nthe target's Defense.\pIt's a unique move that can\ncatch the opponent off guard.
+
+#org @gText_sabrina_Shinypokemon
+If you show me a shiny Pok\emon,\nI'll reward you handsomely.
+
+#org @gText_sabrina_TMInfomsg
+Before you go, please,\ntake this TM with you.
+
+#org @gText_sabrina_Helloagain
+[.]Perhaps you're looking for a\n[GREEN]Gardevoirite[RED]?
+
+#org @gText_sabrina_HelloagainHard
+[.]Perhaps you're looking for a\n[GREEN]Cameruptite[RED]?
+
+#org @gText_sabrina_Perfectpokemon
+If you show me a perfect Pok\emon,\nI'll reward you handsomely.
+
+#org @gText_sabrina_Thepokemon
+Your [BUFFER1][.]
+
+#org @gText_sabrina_Notquite
+It's not quite what I'm looking\nfor[.]
+
+#org @gText_sabrina_Perfect
+Ah, yes.\pThis Pok\emon is clearly flawless.\pHere, take it.
+
+#org @gText_sabrina_Shiny
+Ah, yes.\pThis Pok\emon is clearly a Shiny.\pHere, take it.
+
+#org @gText_sabrina_Donemsg
+Psychic power isn't something that\nonly a few people have.\pEveryone has it to some degree.\nThey just haven't realized it yet.
+
+#org @gText_sabrina_Charmmsg
+I've carried this around for a while,\nbut I have no idea if it actually\ldoes anything.\pYou might like it, though.
+
+#org @gText_silphcoteambattle_1
+[RED]Looks like we found our intruder.
+
+#org @gText_silphcoteambattle_2
+[BLUE]Wait a sec...\pThis is the punk I ran into at\n[GREEN]Mt. Moon!
+
+#org @gText_silphcoteambattle_3
+[RED]Wow, you lost to this loser?\p[BLUE]Quiet, I'm sure my [GREEN]Mightyena[BLUE] gave\nthis punk a scare.
+
+#org @gText_silphcoteambattle_4
+[RED]Your [GREEN]Mightyena[RED] doesn't even have\nIntimidate.
+
+#org @gText_silphcoteambattle_5
+[BLUE]Would you SHUT UP [GREEN]Ari[BLUE]?!\pWe've got things to deal with here.
+
+#org @gText_silphcoteambattle_6
+[RED]Fine[.]\pSorry kid, looks like your fun ends\nhere.
+
+#org @gText_silphcoteambattle_7
+[GREEN]???[BLUE]: Wait a moment!
+
+#org @gText_silphcoteambattle_8
+[GREEN]Brendan:[BLUE] Don't you think two against\none is a little unfair?
+
+#org @gText_silphcoteambattle_9
+[BLUE]Heh, sorry I'm late to the party\n[GREEN][PLAYER][BLUE].\pLet me give you a hand!
+
+#org @gText_silphcoteambattle_10
+[BLUE]Who the hell[.]?\p[RED]The more the merrier I guess.\p[BLUE]Whatever, neither of you will be\nreaching the boss.
+
+#org @gText_silphcoteambattle_11
+[BLUE]Damn it[.]\pI really hate them kids[.]\p[RED]I[.] I'm shocked[.]\nBoss won't be happy about this.
+
+#org @gText_silphcoteambattle_12
+[BLUE]Of course he won't.\nWe ought to scram.
+
+#org @gText_silphcoteambattle_13
+[BLUE]Pray you don't meet me again,\n[GREEN][PLAYER][BLUE].
+
+#org @gText_silphcoteambattle_ArianaDefeat
+I[.] I fought hard[.]\nBut I still lost[.]
+
+#org @gText_silphcoteambattle_ArcherDefeatText
+Again?!\nThis is infuriating!
+
+#org @gText_silphcoteambattle_14
+[BLUE]Whew[.]\pTo be honest, I was quite scared!\pBut, I knew they stood no chance\nwith you on my side.\pYou're simply incredible!
+
+#org @gText_silphcoteambattle_15
+[BLUE]Hm[.]
+
+#org @gText_silphcoteambattle_16
+[BLUE]Sorry looks like I have a text\nmessage on my Pok\enav[.]\p[.]\pAgh! I'm sorry!\pI'd love to help you further, but\nI have something urgent to attend[.]\pHere, let me heal your Pok\emon.
+
+#org @gText_silphcoteambattle_17
+[BLUE]Again, I apologize for needing to\nleave so abruptly[.]\pPlease, take yet another parting gift.
+
+#org @gText_silphcoteambattle_18
+[BLUE]Good luck, friend.
+
+#org @gText_megaring_1
+Wait!
+
+#org @gText_megaring_2
+The President forgot to give you\nthis.\pA lot of trainers have already\ngotten their hands on it, as you may\lhave already noticed.\pBut we're sure this will be of use\nfor you.
+
+#org @gText_megaring_3
+I also thought this would be worth\nmentioning[.]\pMany Gym Leaders have been looking\nfor rematches.\pPerhaps you ought to pay them a\nvisit?\pAnyways, take care!\pAnd once again, thank you.
+
+#org @gText_stopchuck_1
+Hey!\pYou're gonna have to fight me for\nthose!
+
+#org @gText_sabrina_Whenever
+Whenever you're ready[.]
+
+#org @gText_sabrina_LetsBegin
+Let's begin! 
+
+#org @gText_IvChecker_Msg
+I can check your Pok\emon's IVs at a\nglance. Interested?
+
+#org @gText_IvChecker_3
+[BUFFER1] HP IVs, [BUFFER2] Atk IVs, [BUFFER3] Def IVs[.]
+
+#org @gText_IvChecker_5
+[BUFFER1] SpAtk IVs, [BUFFER2] SpDef IVs,\n[BUFFER3] Speed IVs.
+
+#org @gText_IVSubtracter_Msg
+Hi, I can set the IV of a\nspecific stat to 0.\pThis is mainly useful for getting\nminimum speed for Trick Room.\pInterested? 
+
+#org @gText_IVSubtracter_HP
+Shall I reduce HP to 0 IVs?\nThis can't be undone.
+
+#org @gText_IVSubtracter_Attack
+Shall I reduce Attack to\n0 IVs? This can't be undone.
+
+#org @gText_IVSubtracter_Defense
+Shall I reduce Defense to 0\nIVs? This can't be undone.
+
+#org @gText_IVSubtracter_SpA
+Shall I reduce SpA to 0\nIVs? This can't be undone.
+
+#org @gText_IVSubtracter_SpDef
+Shall I reduce SpDef to 0\nIVs? This can't be undone.
+
+#org @gText_IVSubtracter_Speed
+Shall I reduce Speed to 0\nIVs? This can't be undone.
+
+#org @gText_IVSubtracter_1
+Your [BUFFER1][.]\nWhich stat should I set to 0?
+
+#org @gText_IVSetterDone 
+[.]Okay, it's done!\nCome back if you need more! 
+
+#org @gText_SetBalls1 
+Hi, I can switch the Pok\e Ball\nof your Pok\emon.\pInterested? 
+
+#org @gText_SetBallsMaster 
+Master Ball 
+
+#org @gText_SetBallsUltra
+Ultra Ball
+
+#org @gText_SetBallsGreat
+Great Ball
+
+#org @gText_SetBallsPoke
+Pok\e Ball 
+
+#org @gText_SetBallsSafari
+Safari Ball 
+
+#org @gText_SetBallsNet
+Net Ball 
+
+#org @gText_SetBallsDive
+Dive Ball 
+
+#org @gText_SetBallsNest
+Nest Ball 
+
+#org @gText_SetBallsRepeat
+Repeat Ball 
+
+#org @gText_SetBallsTimer
+Timer Ball 
+
+#org @gText_SetBallsLuxury
+Luxury Ball 
+
+#org @gText_SetBallsPremier
+Premier Ball 
+
+#org @gText_SetBallsDusk
+Dusk Ball 
+
+#org @gText_SetBallsHeal
+Heal Ball 
+
+#org @gText_SetBallsQuick
+Quick Ball
+
+#org @gText_SetBallsCherish
+Cherish Ball
+
+#org @gText_SetBallsPark 
+Park Ball 
+
+#org @gText_SetBallsFast
+Fast Ball 
+
+#org @gText_SetBallsLevel
+Level Ball 
+
+#org @gText_SetBallsLure
+Lure Ball 
+
+#org @gText_SetBallsHeavy
+Heavy Ball 
+
+#org @gText_SetBallsLove
+Love Ball 
+
+#org @gText_SetBallsFriend
+Friend Ball
+
+#org @gText_SetBallsMoon
+Moon Ball 
+
+#org @gText_SetBallsSport
+Hisui Pok\eBall 
+
+#org @gText_SetBallsBeast
+Beast Ball 
+
+#org @gText_SetBallsDream
+Dream Ball 
+
+#org @gText_SetBallsHisuian
+Hisuian Ball
+
+#org @gText_SetBallsExit
+Exit 
+
+#org @gText_PokeBall_Which
+Which Ball would you like?
+
+#org @gText_POkeBall_Done
+Aaaaand[.]\nDone! Enjoy. 
+
+#org @gText_Saffron_HPChanger_1
+Hi! I can configure your Pok\emon's\nIVs for a specific Hidden Power\lType!\pThe catch is each of its IVs\nmust be at least 30.\pAre you interested?
+
+#org @gText_Saffron_HpChanger_Which
+Which Hidden Power type would\nyou like?
+
+#org @gText_SettingIVs
+For this Hidden Power, I need\nto set your IVs to[.]\p[BUFFER1] HP IVs, [BUFFER2] Atk IVs, [BUFFER3] Def IVs,\n[BUFFER4] SpA IVs, [BUFFER5] SpD IVs, [BUFFER6] Speed IVs.
+
+#org @gText_SettingIVs_2
+Is that okay?
+
+#org @gText_HPChanger_Done
+[.]And all done!\nEnjoy!
+
+#org @gText_SaffronHPChanger_No
+Hm[.]\nI don't think this Pok\emon follows\lthe critera I requested. Sorry.
+
+#org @gText_SaffronCake1
+Hm[.] I need some ingredients\nfor this cake I'm making.
+
+#org @gText_SaffronCake2
+Oh! Hello there! Would you be\nwilling to help me with some\lcake ingredients?\pI'll need 2 [GREEN]Moomoo Milks, a Rawst Berry,\n[RED]and an [GREEN]Aspear Berry. 
+
+#org @gText_SaffronCake3
+[RED]Ah yes! That would be a great\nhelp! Thank you so much!\pPlease, have this!
+
+#org @gText_SaffronCake4
+[GREEN]Mega Alcremie[RED] looks like a delicious\ncake, but it's actually quite a bulky\lPok\emon too!
+
+#org @gText_SaffronCake5
+You can have this too. I needed\nthis back when I was a musician,\lbut those days are long gone.
+
+#org @gText_SaffronCakeDontHave
+Eh[.] you don't have all the ingredients[.]
+
+#org @gText_SaffronCakeImprovise
+Perhaps I'll just improvise with\nwhat I have[.]
+
+#org @gText_SaffronStaraptor
+[GREEN]Staraptor: [RED]Star star!
+
+#org @gText_Saffron_Corvknight
+[GREEN]Corviknight: [RED]Corv.
+
+#org @gText_SaffronStaraptorTrainer
+I flew here on my[GREEN] Staraptor[BLUE] when\nI read about Silph.\pIt's already over?\nI missed the media action[.]
+
+#org @gText_SaffronMudkip
+Mudkip!
+
+#org @gText_SaffronMarshtomp
+Marshtomp!
+
+#org @gText_SaffronSwampert
+Swampert!
+
+#org @gText_SaffronMimikyu
+Mimikyu!
+
+#org @gText_SaffronRillaboom
+Rillaboom!

@@ -1,0 +1,62 @@
+#include "src/config.h"
+
+//Notice the extra whitespace character after the "\p"s. Without it, the message won't disappear from the screen when the player presses A.
+
+#org @gText_DefaultTrainerDynamaxMsg
+Time to Dynamax!\p 
+
+#org @gText_TestTrainerDynamaxMsg
+I now shall unleash the power\nof Dynamax!\p 
+#org @sText_BrockLastSwitchIn
+Ah ha ha! It iches! It itches!\p 
+
+#org @sText_FalknerLastSwitchIn
+The wind is finally with us!\p 
+
+#org @sText_ArcherOneLastSwitchIn
+Don't worry.\nYour suffering will be over soon.\p 
+
+#org @sText_MistyLastSwitchIn
+Hmm[.] You're pretty good[.]\p 
+
+#org @sText_LtSurgeLastSwitchIn
+It's not over yet!\nIt's just the beginning!\p 
+
+#org @sText_ErikaLastSwitchIn
+Don't go easy on me.\nGive me everything you've got!\p 
+
+#org @sText_SabrinaLastSwitchIn
+What will happen after this?\nI already know.\p 
+
+#org @sText_BugsyLastSwitchIn
+Hang in there!\nJust a little more!\p 
+
+#org @sText_WhitneyLastSwitchIn
+H-hey! Just one left?!\nI still ain't losing, you hear?\p 
+
+#org @sText_MortyLastSwitchIn
+No, it's not over yet!\nI still believe we can do it!\p 
+
+#org @sText_ChuckLastSwitchIn
+We haven't lost yet!\nI don't train to fail!\p 
+
+#org @sText_SoupFirstMonDown
+Get ready to lose.\p
+
+#org @sText_SoupLastMonDown
+How could this be[.]\p
+
+#org @sText_KogaLastSwitchIn
+One Pok\emon left? Ha ha ha!\nI've been counting on this one\lfrom the very beginning!\p
+
+#org @sText_BlaineLastSwitchIn
+I'll show you the spirit of my\nPok\emon!\p
+
+#org @sText_ClairLastSwitchIn
+One left? This is where the\nreal battle begins!\p
+
+#org @sText_JotardLastSwitchIn
+ORAORAORAORA!!!\p
+
+#org @gText_MiraidonCode
+divysuSN
