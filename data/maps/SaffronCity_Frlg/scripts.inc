@@ -200,7 +200,7 @@ SaffronCity_Text_GymSign::
     .string "The Master of PSYCHIC Pokémon!$"
 
 SaffronCity_Text_FullHealCuresStatus::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "FULL HEAL cures all ailments like\n"
     .string "burns, paralysis, poisoning,\l"
     .string "freezing, and sleep.\p"
@@ -208,7 +208,7 @@ SaffronCity_Text_FullHealCuresStatus::
     .string "convenient than buying other items.$"
 
 SaffronCity_Text_GreatBallImprovedCatchRate::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "The new GREAT BALL offers improved\n"
     .string "catching rates.\p"
     .string "Try it on those hard-to-catch\n"

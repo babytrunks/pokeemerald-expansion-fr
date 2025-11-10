@@ -7998,7 +7998,7 @@ static const u8 gPCText_Give[] = _("GIVE");
 
 static const u8 *const sMenuTexts[] =
 {
-    [MENU_CANCEL]     = COMPOUND_STRING("CANCEL"),
+    [MENU_CANCEL]     = COMPOUND_STRING("Cancel"),
     [MENU_STORE]      = COMPOUND_STRING("STORE"),
     [MENU_WITHDRAW]   = COMPOUND_STRING("WITHDRAW"),
     [MENU_MOVE]       = COMPOUND_STRING("MOVE"),

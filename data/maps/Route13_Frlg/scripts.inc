@@ -128,12 +128,12 @@ Route13_Text_RobertPostBattle::
     .string "PIDGEOTTO…$"
 
 Route13_Text_LookToLeftOfThatPost::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "Look, look!\n"
     .string "Look to the left of that post!$"
 
 Route13_Text_SelectToSwitchItems::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "Use SELECT to switch items in the\n"
     .string "ITEMS window.$"
 

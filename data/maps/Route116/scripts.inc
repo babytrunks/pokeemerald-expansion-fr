@@ -453,7 +453,7 @@ Route116_Text_TunnelersRestHouse:
 	.string "TUNNELER'S REST HOUSE$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
-	.string "TRAINER TIPS\p"
+	.string "Trainer Tips\p"
 	.string "If you want to stop a Pokémon from\n"
 	.string "evolving, press the B Button while it\l"
 	.string "is trying to evolve.\l"
@@ -461,7 +461,7 @@ Route116_Text_TrainerTipsBToStopEvolution:
 	.string "This is called an evolution cancel.$"
 
 Route116_Text_TrainerTipsBagHasPockets:
-	.string "TRAINER TIPS\p"
+	.string "Trainer Tips\p"
 	.string "Your BAG has several POCKETS.\p"
 	.string "Items you obtain are automatically\n"
 	.string "placed in the appropriate POCKETS.\p"

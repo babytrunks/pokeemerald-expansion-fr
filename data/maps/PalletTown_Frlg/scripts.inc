@@ -183,6 +183,7 @@ PalletTown_EventScript_OakTrigger::
 	textcolor NPC_TEXT_COLOR_MALE
 	delay 30
 	playbgm MUS_RG_OAK, 0
+	setspeaker SP_NAME_PROF_OAK
 	message PalletTown_Text_OakDontGoOut
 	waitmessage
 	delay 85
@@ -197,6 +198,7 @@ PalletTown_EventScript_OakTrigger::
 	call_if_eq VAR_TEMP_1, 0, PalletTown_EventScript_OakEnterLeft
 	call_if_eq VAR_TEMP_1, 1, PalletTown_EventScript_OakEnterRight
 	delay 30
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_Text_OakGrassUnsafeNeedMon
 	closemessage
 	delay 30
@@ -449,11 +451,11 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	end
 
 PalletTown_Text_OakDontGoOut::
-    .string "OAK: Hey! Wait!\n"
+    .string "Hey! Wait!\n"
     .string "Don't go out!$"
 
 PalletTown_Text_OakGrassUnsafeNeedMon::
-    .string "OAK: It's unsafe!\n"
+    .string "It's unsafe!\n"
     .string "Wild Pokémon live in tall grass!\p"
     .string "You need your own Pokémon for\n"
     .string "your protection.\p"
@@ -480,11 +482,11 @@ PalletTown_Text_RivalsHouse::
     .string "{RIVAL}'s house$"
 
 PalletTown_Text_TownSign::
-    .string "PALLET TOWN\n"
+    .string "Pallet Town\n"
     .string "Shades of your journey await!$"
 
 PalletTown_Text_OakLetMeSeePokedex::
-    .string "OAK: Ah, {PLAYER}!\n"
+    .string "Ah, {PLAYER}!\n"
     .string "You're back, are you?\p"
     .string "How much have you filled in your\n"
     .string "Pokédex?\p"
@@ -507,7 +509,7 @@ PalletTown_Text_CaughtXImpressiveFollowMe::
     .string "Follow me.$"
 
 PalletTown_Text_OakYouEnjoyingTraveling::
-    .string "OAK: Ah, {PLAYER}!\n"
+    .string "Ah, {PLAYER}!\n"
     .string "You seem to be enjoying traveling.\p"
     .string "Knowing you, {PLAYER}, I can easily\n"
     .string "imagine you going out to even more\l"
@@ -529,7 +531,7 @@ PalletTown_Text_ReadItReadIt::
 
 @ Used by sign
 PalletTown_Text_PressStartToOpenMenu::
-	.string "TRAINER TIPS\p"
+	.string "Trainer Tips\p"
 	.string "Press START to open the MENU!$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
@@ -538,11 +540,11 @@ PalletTown_Text_SignsAreUsefulArentThey::
 PalletTown_Text_LookCopiedTrainerTipsSign::
 	.string "Look, look!\p"
 	.string "I copied what it said on one of\n"
-	.string "those TRAINER TIPS signs!$"
+	.string "those Trainer Tips signs!$"
 
 @ Used by NPC
 PalletTown_Text_PressStartToOpenMenuCopy::
-	.string "TRAINER TIPS!\p"
+	.string "Trainer Tips!\p"
 	.string "Press START to open the MENU!$"
 
 

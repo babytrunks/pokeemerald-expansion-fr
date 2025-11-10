@@ -519,7 +519,7 @@ CeruleanCity_Text_CitySign::
     .string "It$"
 
 CeruleanCity_Text_TrainerTipsHeldItems::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "A Pokémon can be made to hold\n"
     .string "an item.\p"
     .string "Some items can even be used by\n"

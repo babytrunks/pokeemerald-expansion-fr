@@ -62,7 +62,7 @@ gFameCheckerFlavorText_Daisy3:: @ 0x81AD5A7
 
 gFameCheckerFlavorText_Daisy4:: @ 0x81AD608
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What is this person like?\p"
-	.string "{FONT_FEMALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}A girl from PALLET TOWN, DAISY,\n"
+	.string "{FONT_FEMALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}A girl from Pallet Town, DAISY,\n"
 	.string "she enjoys TEA every day.\p"
 	.string "She visits the CELADON DEPT. STORE\n"
 	.string "to buy some TEA.$"
@@ -71,7 +71,7 @@ gFameCheckerFlavorText_Daisy5:: @ 0x81AD69F
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}There's a rumor…\p"
 	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}The Spring Pokémon CONTEST's\n"
 	.string "Grand Champion is DAISY OAK of\l"
-	.string "PALLET TOWN!$"
+	.string "Pallet Town!$"
 
 gFameCheckerFlavorText_Brock0:: @ 0x81AD705
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
@@ -798,7 +798,7 @@ gFameCheckerPersonQuote_Giovanni:: @ 0x81B0BB5
 	.string "bettering myself, and none other.$"
 
 gFameCheckerFlavorTextOriginLocation_ProfOak0:: @ 0x81B0C45
-	.string "PALLET TOWN$"
+	.string "Pallet Town$"
 
 gFameCheckerFlavorTextOriginLocation_ProfOak1::
 	.string "RESEARCH LAB$"
@@ -807,7 +807,7 @@ gFameCheckerFlavorTextOriginLocation_ProfOak2::
 	.string "RESEARCH LAB$"
 
 gFameCheckerFlavorTextOriginLocation_ProfOak3::
-	.string "VIRIDIAN CITY$"
+	.string "Viridian City$"
 
 gFameCheckerFlavorTextOriginLocation_ProfOak4::
 	.string "Pokémon LEAGUE$"
@@ -825,7 +825,7 @@ gFameCheckerFlavorTextOriginLocation_Daisy2::
 	.string "WATER LABYRINTH$"
 
 gFameCheckerFlavorTextOriginLocation_Daisy3::
-	.string "VIRIDIAN CITY$"
+	.string "Viridian City$"
 
 gFameCheckerFlavorTextOriginLocation_Daisy4::
 	.string "CELADON MANSION$"
@@ -1077,10 +1077,10 @@ gFameCheckerFlavorTextOriginLocation_Giovanni2::
 	.string "SILPH CO.$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni3::
-	.string "VIRIDIAN GYM$"
+	.string "Viridian Gym$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni4::
-	.string "VIRIDIAN GYM$"
+	.string "Viridian Gym$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni5::
 	.string "ROCKET WAREHOUSE$"
@@ -1475,7 +1475,7 @@ PokemonJournal_Text_SpecialFeatureDaisyOak::
 	.string "CONTEST Special!\p"
 	.string "The Spring Pokémon CONTEST's\n"
 	.string "Grand Champion is DAISY OAK of\l"
-	.string "PALLET TOWN!$"
+	.string "Pallet Town!$"
 
 PokemonJournal_Text_SpecialFeatureMrFuji::
 	.string "Pokémon JOURNAL\p"

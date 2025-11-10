@@ -916,7 +916,7 @@ PewterCity_Text_GoTakeOnBrock::
     .string "go take on BROCK!$"
 
 PewterCity_Text_TrainerTipsEarningEXP::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "All Pokémon that appear in battle,\n"
     .string "however briefly, earn EXP Points.$"
 

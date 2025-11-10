@@ -137,7 +137,7 @@ ViridianForest_Text_RanOutOfPokeBalls::
     .string "many Poké Balls.$"
 
 ViridianForest_Text_AvoidGrassyAreasWhenWeak::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "If your Pokémon are weak and you\n"
     .string "want to avoid battles, stay away\l"
     .string "from grassy areas!$"
@@ -147,19 +147,19 @@ ViridianForest_Text_UseAntidoteForPoison::
     .string "Get it at Pokémon MARTS!$"
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "Contact Prof. Oak via a PC to\n"
     .string "get your Pokédex evaluated!$"
 
 ViridianForest_Text_CantCatchOwnedMons::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "You can't catch a Pokémon that\n"
     .string "belongs to someone else.\p"
     .string "Throw Poké Balls only at wild\n"
     .string "Pokémon to catch them!$"
 
 ViridianForest_Text_WeakenMonsBeforeCapture::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "Weaken Pokémon before attempting\n"
     .string "capture!\p"
     .string "When healthy, they may escape!$"

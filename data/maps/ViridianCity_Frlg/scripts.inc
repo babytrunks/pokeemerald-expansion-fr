@@ -125,20 +125,6 @@ ViridianCity_EventScript_TutorialStart::
 	release
 	end
 
-@ Unused
-ViridianCity_EventScript_WatchToLearnBasics::
-	msgbox ViridianCity_Text_WatchThatToLearnBasics
-	release
-	end
-
-@ Unused. Starts battle after the post battle text, which is odd.
-ViridianCity_EventScript_TutorialUnused::
-	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
-	special StartOldManTutorialBattle
-	waitstate
-	release
-	end
-
 ViridianCity_EventScript_TutorialNotReady::
 	msgbox ViridianCity_Text_ThisIsPrivateProperty
 	closemessage
@@ -222,14 +208,14 @@ ViridianCity_EventScript_TutorialTriggerRight::
 ViridianCity_EventScript_DoTutorialBattle::
 	msgbox ViridianCity_Text_ShowYouHowToCatchMons
 	closemessage
-	special StartOldManTutorialBattle
-	waitstate
+	@ special StartOldManTutorialBattle
+	@ waitstate
 	lock
 	faceplayer
 	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2
 	giveitem ITEM_TEACHY_TV
-	msgbox ViridianCity_Text_WatchThatToLearnBasics
+	msgbox ViridianCity_Text_ThatThingsUseless
 	return
 
 ViridianCity_Text_CanCarryMonsAnywhere::
@@ -243,7 +229,7 @@ ViridianCity_Text_GymClosedWonderWhoLeaderIs::
     .string "I wonder who the LEADER is?$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
-    .string "VIRIDIAN GYM's LEADER returned!$"
+    .string "Viridian Gym's LEADER returned!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
     .string "You want to know about the two\n"
@@ -287,17 +273,12 @@ ViridianCity_Text_ShowYouHowToCatchMons::
     .string "Whenever you catch a Pokémon,\n"
     .string "the Pokédex automatically updates\l"
     .string "its data.$"
-	
+
 ViridianCity_Text_ThatWasEducationalTakeThis::
-    .string "There! Now tell me, that was\n"
-    .string "educational, was it not?\p"
     .string "And here, take this, too.$"
 
-ViridianCity_Text_WatchThatToLearnBasics::
-    .string "If there's something you don't\n"
-    .string "understand, watch that.\p"
-    .string "It will teach you about the basics\n"
-    .string "of being a Pokémon TRAINER.$"
+ViridianCity_Text_ThatThingsUseless::
+    .string "That thing's useless!"
 
 ViridianCity_Text_WeakenMonsFirstToCatch::
     .string "Well, now, I've had my coffee, and\n"
@@ -314,8 +295,8 @@ ViridianCity_Text_HowsTeachyTVHelping::
     .string "that's what I need to get going!\p"
     .string "But I made it too strong.\n"
     .string "It gave me a headache…\p"
-    .string "Incidentally, is my old TEACHY TV\n"
-    .string "helping you?$"
+    .string "Incidentally, how much dust is my\n"
+    .string "old Teachy TV gathering?$"
 
 ViridianCity_Text_MyGrandsonOnTheShow::
     .string "Wahaha!\n"
@@ -330,26 +311,26 @@ ViridianCity_Text_TooBusyForTeachyTV::
     .string "be ill spent…$"
 
 ViridianCity_Text_CitySign::
-    .string "VIRIDIAN CITY \n"
+    .string "Viridian City \n"
     .string "The Eternally Green Paradise$"
 
 ViridianCity_Text_CatchMonsForEasierBattles::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "Catch Pokémon and expand your\n"
     .string "collection.\p"
     .string "The more you have, the easier it\n"
     .string "is to battle.$"
 
 ViridianCity_Text_MovesLimitedByPP::
-    .string "TRAINER TIPS\p"
+    .string "Trainer Tips\p"
     .string "The battle moves of Pokémon are\n"
     .string "limited by their POWER POINTS, PP.\p"
     .string "To replenish PP, rest your tired\n"
     .string "Pokémon at a Pokémon CENTER.$"
 
 ViridianCity_Text_GymSign::
-    .string "VIRIDIAN CITY Pokémon GYM$"
+    .string "Viridian City Pokémon GYM$"
 
 ViridianCity_Text_GymDoorsAreLocked::
-    .string "VIRIDIAN GYM's doors are locked…$"
+    .string "Viridian Gym's doors are locked…$"
 

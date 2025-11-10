@@ -164,14 +164,14 @@ PalletTown_ProfessorOaksLab_EventScript_OakBringDexesToDeskNorth::
 
 PalletTown_ProfessorOaksLab_EventScript_OakBringDexesToDeskSouth::
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakBringDexesToDeskSouth
-	applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDesk
+	@ applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDesk
 	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDesk
 	waitmovement LOCALID_OAKS_LAB_PROF_OAK
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_OakBringDexesToDeskEast::
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakBringDexesToDesk
-	applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDeskEast
+	@ applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDeskEast
 	waitmovement LOCALID_OAKS_LAB_PROF_OAK
 	return
 
@@ -635,13 +635,16 @@ PalletTown_ProfessorOaksLab_EventScript_ReceiveDexScene::
 	closemessage
 
 ProceedPokedexScript::
-	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskSouth
-	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskEast
-	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskWest
+	@ call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskNorth
+	@ call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskSouth
+	@ call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskEast
+	@ call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskWest
+	call PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskNorth
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk
 	closemessage
 	delay 40
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou
 	closemessage
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_WalkInPlaceFasterUp
@@ -650,10 +653,11 @@ ProceedPokedexScript::
 	delay 10
 	removeobject LOCALID_POKEDEX_2
 	delay 25
-	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverSouth
-	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverEast
-	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverWest
+	@ call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverNorth
+	@ call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverSouth
+	@ call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverEast
+	@ call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverWest
+	call PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverNorth
 	delay 10
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
@@ -666,27 +670,34 @@ ProceedPokedexScript::
 	special EnableNationalPokedex
 	setflag FLAG_DEXNAV_GET
 	setvar VAR_MAP_SCENE_POKEMON_CENTER_TEALA, 1
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_WalkLeft
 	waitmovement 0
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
 	waitmovement 0
 	giveitem_msg PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls, ITEM_POKE_BALL, 5
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakExplainCatching
 	famechecker FAMECHECKER_OAK, 1
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream
+	setspeaker SP_NAME_RIVAL
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps
-	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerSouth
-	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerEastWest
-	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerEastWest
+	@ call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerNorth
+	@ call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerSouth
+	@ call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerEastWest
+	@ call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerEastWest
+	call PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerNorth
+	setspeaker SP_NAME_RIVAL
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap
 	closemessage
 	playbgm MUS_RG_RIVAL_EXIT, 0
-	call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_RivalExitNorth
-	call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_RivalExit
-	call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_RivalExit
-	call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_RivalExit
+	@ call_if_eq VAR_FACING, DIR_NORTH, PalletTown_ProfessorOaksLab_EventScript_RivalExitNorth
+	@ call_if_eq VAR_FACING, DIR_SOUTH, PalletTown_ProfessorOaksLab_EventScript_RivalExit
+	@ call_if_eq VAR_FACING, DIR_EAST, PalletTown_ProfessorOaksLab_EventScript_RivalExit
+	@ call_if_eq VAR_FACING, DIR_WEST, PalletTown_ProfessorOaksLab_EventScript_RivalExit
+	call PalletTown_ProfessorOaksLab_EventScript_RivalExitNorth
 	removeobject LOCALID_OAKS_LAB_RIVAL
 	fadedefaultbgm
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6
@@ -741,19 +752,19 @@ PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskNorth::
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskSouth::
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakWalkToDeskSouth
-	applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDesk
+	@ applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDesk
 	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDesk
 	waitmovement LOCALID_OAKS_LAB_PROF_OAK
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskEast::
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakWalkToDesk
-	applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDeskEast
+	@ applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchOakWalkToDeskEast
 	waitmovement LOCALID_OAKS_LAB_PROF_OAK
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneOakWalkToDeskWest::
-	applymovement LOCALID_OAKS_LAB_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakWalkToDesk
+	@ applymovement LOCALID_OAKS_LAB_PROF_OAK, PalletTown_ProfessorOaksLab_Movement_OakWalkToDesk
 	waitmovement 0
 	return
 
@@ -996,7 +1007,7 @@ PalletTown_ProfessorOaksLab_EventScript_DexSceneOakFacePlayerAndRivalWest::
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FacePlayer
 	waitmovement 0
 	delay 15
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
+	@ applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
@@ -1005,31 +1016,31 @@ PalletTown_ProfessorOaksLab_EventScript_DexSceneOakFacePlayerAndRivalEast::
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FacePlayer
 	waitmovement 0
 	delay 15
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	@ applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerNorth::
 	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FacePlayer
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	@ applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerSouth::
 	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_WalkInPlaceFasterUp
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	@ applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_DexSceneRivalFacePlayerEastWest::
 	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FacePlayer
-	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
+	@ applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalExitNorth::
-	applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchRivalEnterEastWest
+	@ applymovement LOCALID_PLAYER, PalletTown_ProfessorOaksLab_Movement_WatchRivalEnterEastWest
 	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalExit
 	waitmovement 0
 	return
@@ -1104,18 +1115,21 @@ PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ConfirmBulbasaur::
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, PalletTown_ProfessorOaksLab_EventScript_ChoseStarter
 	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ConfirmSquirtle::
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, PalletTown_ProfessorOaksLab_EventScript_ChoseStarter
 	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_ConfirmCharmander::
+	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, PalletTown_ProfessorOaksLab_EventScript_ChoseStarter
 	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_DeclinedStarter
@@ -1190,6 +1204,7 @@ PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter::
 	waitfanfare
 	call_if_set FLAG_OPENED_START_MENU, PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene
 	applymovement LOCALID_OAKS_LAB_PROF_OAK Common_Movement_FaceRight
+	setspeaker SP_NAME_PROF_OAK
     msgbox gText_OakBothComeHere 
     applymovement LOCALID_OAKS_LAB_PROF_OAK Common_Movement_FaceDown
 	call_if_eq RIVAL_STARTER_ID 7, MoveGaryCharmander
@@ -1202,33 +1217,26 @@ MoveGaryBulbasaur::
 	waitmovement 0
     @here 2 locations have to be considered for player: above and under
     @because player takes water here which is middle
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_SOUTH, PlayerBackToOak7
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_NORTH, PlayerBackToOak8
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak7
+	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak8
     return
 
 MoveGarySquirtle::
     applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryWaterToOak
     @here 3 locations have to be considered for player: above, right and under
     @because player takes fire here which is far right
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_SOUTH, PlayerBackToOak4
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_WEST, PlayerBackToOak5
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_NORTH, PlayerBackToOak6
+	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak6
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak4
+	call_if_eq VAR_FACING, DIR_WEST, PlayerBackToOak5
     return
 
 MoveGaryCharmander::
     applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryFireToOak 
     @here 3 locations have to be considered for player: above, left and under
     @because player takes grass here which is left
-	call_if_eq VAR_RESULT, DIR_SOUTH, PlayerBackToOak1
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_EAST, PlayerBackToOak2
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_NORTH, PlayerBackToOak3
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak1
+	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak2
+	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
     return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalWalksBackToOak:
@@ -1256,12 +1264,9 @@ GaryMoveFromFire:
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
     @here 3 locations have to be considered for player: above, left and under
     @because player takes grass here which is left
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_WEST, PlayerBackToOak1
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_EAST, PlayerBackToOak2
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_NORTH, PlayerBackToOak3
+	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
+	call_if_eq VAR_FACING, DIR_WEST, PlayerBackToOak1
+	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak2
     goto ProceedPokedexScript
 
 GaryMoveFromWater::
@@ -1283,12 +1288,9 @@ GaryMoveFromWater::
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
     @here 3 locations have to be considered for player: above, right and under
     @because player takes fire here which is far right
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_SOUTH, PlayerBackToOak4
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_EAST, PlayerBackToOak5
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_NORTH, PlayerBackToOak6
+	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak6
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak4
+	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak5
     goto ProceedPokedexScript
 
 GaryMoveFromGrass::
@@ -1310,10 +1312,8 @@ GaryMoveFromGrass::
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
     @here 2 locations have to be considered for player: above and under
     @because player takes water here which is middle
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_SOUTH, PlayerBackToOak7
-	specialvar VAR_RESULT, GetPlayerFacingDirection
-	call_if_eq VAR_RESULT, DIR_NORTH, PlayerBackToOak8
+	call_if_eq VAR_FACING, DIR_NORTH,PlayerBackToOak8
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak7
     goto ProceedPokedexScript
 
 GaryGetStarter::
@@ -1367,6 +1367,7 @@ PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
 	setvar VAR_TEMP_2, SPECIES_SQUIRTLE
 	setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
 	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	setspeaker SP_NAME_PROF_OAK
 	call setstartervars
 	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice
@@ -1381,6 +1382,7 @@ PalletTown_ProfessorOaksLab_EventScript_CharmanderBall::
 	setvar VAR_TEMP_2, SPECIES_CHARMANDER
 	setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
 	setvar RIVAL_STARTER_ID, LOCALID_SQUIRTLE_BALL
+	setspeaker SP_NAME_PROF_OAK
 	call setstartervars
 	goto_if_ge VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3, PalletTown_ProfessorOaksLab_EventScript_LastPokeBall
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2, PalletTown_ProfessorOaksLab_EventScript_ConfirmStarterChoice

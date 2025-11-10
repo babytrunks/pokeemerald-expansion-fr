@@ -7,6 +7,8 @@ enum SpeakerNames {
     SP_NAME_PLAYER,
     SP_NAME_PROF_OAK,
     SP_NAME_RIVAL,
+    SP_NAME_UNKNOWN,
+    SP_NAME_DAISY,
     SP_NAME_COUNT
 };
 

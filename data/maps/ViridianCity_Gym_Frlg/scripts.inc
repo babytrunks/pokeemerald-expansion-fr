@@ -236,7 +236,7 @@ ViridianCity_Gym_Text_ColePostBattle::
     .string "I was just careless!$"
 
 ViridianCity_Gym_Text_SamuelIntro::
-    .string "VIRIDIAN GYM was closed for a\n"
+    .string "Viridian Gym was closed for a\n"
     .string "long time.\p"
     .string "But now, our LEADER is back!$"
 
