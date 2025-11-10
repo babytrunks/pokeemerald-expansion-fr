@@ -1,0 +1,44 @@
+#org @gText_sharpedonite_1
+I found this stone one day\nfishing, although I'm not sure what\lit does.\pPerhaps if you show me the right\nPok\emon, it might cause this stone\lto react.
+
+#org @gText_sharpedonite_2
+Hm[.]\pI don't think this is it[.]
+
+#org @gText_sharpedonite_3
+I hope your [GREEN]Sharpedo[BLUE] is well!
+
+#org @gText_sharpedonite_4
+[BUFFER1][.]
+
+#org @gText_sharpedonite_5
+Hm[.]\pOh?
+
+#org @gText_sharpedonite_6
+[BLUE]W-wait! It looks like this\nstone is reacting to your [GREEN]Sharpedo!
+
+#org @gText_sharpedonite_7
+[BLUE]Woah! Incredible!\nI've never seen a [GREEN]Mega Sharpedo\l[BLUE]in person before.\pHere, please take it!\nIt's better off in your hands.
+
+#org @gText_snorlaxencounter_Pokeflute
+Want to use the Pok\e Flute?
+
+#org @gText_snorlaxencounter_ComfySlumber
+A Pok\emon is sprawled out in\na deep and comfortable slumber.
+
+#org @gText_snorlaxencounter_playflute
+[PLAYER] played the Pok\e Flute.
+
+#org @gText_snorlaxencounter_Wokeup
+Snorlax woke up!\pIt attacked in a grumpy rage!
+
+#org @gText_snorlaxencounter_CalmedDown
+Snorlax calmed down.\nIt gave a huge yawn[.]\lAnd returned to the mountains.
+
+#org @gText_Route12Trainer1_EncounterText 
+There are optimal strategies in\nrainy weather.
+
+#org @gText_Route12Trainer1_DefeatText
+Hmm, weather-centric strategies\nstill have weaknesses.
+
+#org @gText_Route12Trainer1_AfterBattle 
+Some Pok\emon receive benefits\nunder different weathers.

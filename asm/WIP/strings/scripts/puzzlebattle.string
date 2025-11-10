@@ -1,0 +1,65 @@
+#org @gText_PokeVial_Teacher
+Hm[.] you're a trainer aren't you?\p[.] I figured as much.\pPerhaps you don't have much to\nlearn from me, but I have a proposal.\pPass this simple trial of mine,\nand I'll give you a nice little prize.\pAre you interested?
+
+#org @gText_PokeVial_Rules
+The rules are simple.\pYou select 3 Pok\emon from 6\nthat I provide for you.\pI assure you that among these choices lie\na guaranteed path to victory.\pThe order I send out my Pok\emon will\nstay consistent, and I will not\lmanually switch.
+
+#org @gText_PokeVial_LetsBegin
+Okay then, let's begin!
+
+#org @gText_PokeVialPuzzle_Defeat
+My, my, you're quite the clever one!
+
+#org @gText_PokeVial_OkNextTime
+Well, I promise you, the prize\nthat awaits you is quite useful!
+
+#org @gText_MoveReminder_OkNextTime
+Aw, well, my services are quite handy.\pYour loss!
+
+#org @gText_PokeVial_TryAnotherTime
+Would you like to attempt this\ntrial another time?
+
+#org @gText_PokeVial_NicelyDone
+Nicely done trainer, it does\ntake a while for my students to\lpass that!\pAs promised, here is my prize.\pI hope it doesn't disappoint!
+
+#org @gText_PokeVial_ReceivedPokeVial
+[BLACK]You received a Pok\eVial!
+
+#org @gText_PokeVial_HowToUse
+The Pok\eVial is essentially a portable\nPok\emon Center.\pYou can access your Pok\eVial by\nclicking on [L_BUTTON] in the overworld to\lbring up your Skills Menu.\pYou can use it 6 times, but getting\nhealed by Nurse Joy refills it.\pIt's sure to come in handy!
+
+#org @gText_ViewMyTeam
+View Your Team
+
+#org @gText_OpponentsTeam
+View Opp. Team
+
+#org @gText_StartBattle
+Start Battle
+
+#org @gText_HearRules
+Rules
+
+#org @gText_WhatPuzzleAction
+What would you like to do?
+
+#org @gText_Puzzle_MoveReminder
+Alright, alright!\nA deal's a deal.\pHere, I've unlocked it in the Pok\emon\nmenu for you.\pIf you'd rather get me to\nteach them to your Pok\emon,\lI can do that too.
+
+#org @gText_Puzzle_LossPokeVial
+Good effort.\nIf you need a hint[.]\pHazards are key against [GREEN]Shedinja.\p[RED]Passive damage may be key, too.
+
+#org @gText_Puzzle_LossMoveReminder
+Nice try.\nIf you need a hint[.]\pTry leading with [GREEN]Buneary.\p[BLUE]An essential partner to it in\nthis fight is [GREEN]Fletchling.
+
+#org @gText_Puzzle_MoveRemember
+I'm the Pok\emon Move Maniac.\pI know every single move that\nPok\emon learn growing up.\pIf you defeat me in a Puzzle Battle,\nI'll provide my services for you\lfor free.\pHow about it?
+
+#org @gText_Puzzle_IfYourPokemonNeed
+If your Pok\emon need to learn a\nmove, come back to me.
+
+#org @gText_Puzzle_YouLoseBattle
+It's not easy, huh?
+
+#org @gText_Puzzle2_YouLoseBattle
+Well, you gotta try harder\nthan that!

@@ -1,0 +1,309 @@
+#org @gText_Viridian_WiseGlasses1
+Jeez[.]\pMy friends said these glasses\nmake you smarter, but it's not\lhaving much of an effect.\pYou can take them.
+
+#org @gText_Viridian_WiseGlasses2
+[.]Oh? Those are for Pok\emon?\pMy friends must have been pulling\na prank.\pGr[.]
+
+#org @gText_aidoranberry_1 
+Oh, you must be [GREEN][PLAYER][BLUE]!
+
+#org @gText_aidoranberry_2
+Sorry, I almost didn't recognize\nyou!\pI'm one of [GREEN]Oak's [BLUE]aides. I was just\npicking up some packages for the\lprofessor.\pI think he wanted to give you this but\ndidn't manage to get it on time.
+
+#org @gText_aidoranberry_3
+[BLUE]To access DexNav on the Start Menu,\nclick the [ARROW_RIGHT] button.\pI've also upgraded your Pok\edex to\nthe National Dex.\pWhile I'm here, I may as well give\nyou these too.
+
+#org @gText_aidoranberry_carepackage
+[BLUE]Ah, the care package cheat.\pHere then.
+
+#org @gText_aidoranberry_ifyouwant
+[BLUE]If you'd like a care package, please\ninput the necessary password.
+
+#org @gText_aidoranberry_3_2
+[BLUE]Oh[.] You're playing [GREEN]Hardcore Mode[BLUE],\nare you?\pHow brave of you!\pHere, take this too.
+
+#org @gText_aidoranberry_NiceHere
+Yup, that's it!\nHere's your first care package.
+
+#org @gText_aidoranberry_carepackageNo
+Hmm[.]\nThat's not quite it.\pWould you like to try again?
+
+#org @gText_aidoranberry_4
+Take care!
+
+#org @gText_aidoranberry_Getnav
+You received the [GREEN]Dex Nav!
+
+#org @gText_viridianforesttutor_Forestmovetutor1
+Hello! My Bug type Pok\emon LOVE\n[GREEN]Oran Berries!\p[BLUE]If you give me one, I can teach\nBug Bite to one of your Pok\emon.
+
+#org @gText_viridianforesttutor_Forestmovetutor2
+Oh! An Oran Berry! I can teach Bug\nBite in exchange for one of those!
+
+#org @gText_viridianforesttutor_Forestmovetutor3
+Great! Who should I teach it to?
+
+#org @gText_viridianforesttutor_Forestmovetutor4
+My Weedle is pleased. Thanks!
+
+#org @gText_viridianforesttutor_Forestmovetutor5
+Aw okay[.]
+
+#org @gText_brendanbattleleft_1
+Hm... There should be a [GREEN]Joltik\n[BLUE]somewhere here...
+
+#org @gText_brendanbattleleft_2
+Oh hello!\pI'm just trying to catch some Pok\e-\nmon before I challenge [GREEN]Brock.
+
+#org @gText_brendanbattleleft_3
+[.]Oh? You're looking to challenge him\nas well?\pWhy don't we have a battle then?
+
+#org @gText_brendanbattleleft_Defeat
+Oof, I'm missing something...
+
+#org @gText_brendanbattleleft_4
+I haven't had a loss like that in\na while! But, that was rather fun. \p[.][GREEN][PLAYER], [BLUE]huh...\pHere, I have an extra of these,\nthey'll surely help you.
+
+#org @gText_brendanbattleleft_6
+Also, in case you didn't know[.]\pPressing [A_BUTTON] on the stat section of\nthe summary screen also brings you to\lthe Stat Scanner.\pIt shows information about EVs, IVs,\nand even evolution data.\pAnyway, I'm heading to Viridian to\ngrab the Pok\eVial from the trainer\lschool.\pYou should check it out if you\nhaven't already!\pWell, until we meet again,\n[GREEN][PLAYER]![BLUE]
+
+#org @gText_brendantoceruleancave_1
+[GREEN][PLAYER][BLUE]!
+
+#org @gText_brendantoceruleancave_2
+[BLUE]Oh my, I'm so glad to have found\nyou.\p[GREEN]May[BLUE] told me she had just bumped\ninto you here, so I hurried back\lover here.
+
+#org @gText_brendantoceruleancave_3
+[BLUE]I've come looking for your help!\pYou're really the only one I\nknow that could stop this[.]\pTeam Rocket has occupied [GREEN]Cerulean\nCave[BLUE], it seems.\pThere's rumors that a powerful\nlegendary rests there[.]\pCould that be what they're looking\nfor?!\pIt sounds like bad news.\pAnywho, we need to put an end\nto it!\pOh, you'd like a heal? Sure thing[.]
+
+#org @gText_brendantoceruleancave_4
+[BLUE]Okay, off we go.
+
+#org @gText_giovannicheck_1
+[BLACK]I ought to help Brendan in\n[GREEN]Cerulean Cave[.]
+
+#org @gText_claire_EncounterText
+[RED]Ah, a challenger finally arrives.\pI was about to take a nap.\p[RED]Although I'm the newly appointed\nGym Leader of the Kanto region,\lI was once a leader in Johto.\pSo, this is nothing new to me.\p[GREEN]Lance[RED] may be considered the world's\ndragon master, but I'm a close sec-\lond!\pDo you still dare to take me on?\pFine, let's do this!
+
+#org @gText_Clair_FairyOnly
+Though, I should mention I have a special\nrule in my Gym[.]\pYou aren't allowed to bring Fairy\ntypes, including their Megas.
+
+#org @gText_ClairFairyGood
+[.]Seems like you're good,\nlet's roll!
+
+#org @gText_Clair_TeamNotFit
+Seems like your team doesn't\nfit this criteria[.]\pSorry, you'll have to come back\nwithout any Fairies[.]
+
+#org @gText_claire_DefeatText
+Oh, I see[.]\nYour skills are rather mysterious.\pFine, have the Rising Badge.
+
+#org @gText_claire_Givetm
+[RED]TM59 contains Dragon Pulse.\nIt's a huge blast of draconic\nenergy.\pTeach it to a Dragon-type.\pSince you're off to the Pok\emon\nLeague, this may help you.
+
+#org @gText_claire_TMInfomsg
+Years of being defeated as a Gym\nLeader have changed my perspect-\live, although I haven't been\lhumbled like that in a while.\pTake this.
+
+#org @gText_claire_Altarianite
+Mega Duraludon becomes a non-\nstop barrage of Dracos.\pIt is quite satisfying.
+
+#org @gText_claire_Helloagain
+Also[.]
+
+#org @gText_claire_Perfectpokemon
+If you show me a Dragon-type, I\ncan teach it Draco Meteor.
+
+#org @gText_claire_Afterteaching
+Vanquish foes with the strongest\nDragon-type move!
+
+#org @gText_claire_No
+This move strikes fear in its foes.\pYou don't want to miss it.
+
+#org @gText_Clair_RematchAsk
+Ah, you are back.\nI see you've defeated my cousin\l[GREEN]Lance.[RED]\pI'm sure he still caused you some\nproblems.\pAnyway, I've been itching for a battle.\pWould you be interested in a\nrematch? One caveat[.]\pNo fairies. That pesky type brought\nme down from the peak of my\lprime.\pHow about it?
+
+#org @gText_Clair_RematchBeforeBattle
+Let's see if I can relive\nmy glory days.
+
+#org @gText_Clair_RematchDefeat
+Even with a handicap I've been\ndoomed. Commendable.
+
+#org @gText_Clair_RematchAfterBattle
+I can clearly see the drive\nthat crowned you Champion.\pFor so long I had thought the\nintroduction of Fairies was\lwhat made me weaker[.]\pI simply lacked the work ethic and\ndetermination I once had.\pBlaming Fairies was only an excuse.\pFor helping me realize this,\nhave my favorite TM.
+
+#org @gText_Clair_RematchAfterBattle2
+Draco Barrage is a perfect move\nfor me as it bypasses the dread-\lful Fairy immunity.\pOf course, I didn't need to use\nit that battle because of my\lhandicap. Heh.\pEven as Champion, I'm sure you're\ngrateful for gifts.\pTake one of my special\n[GREEN]Dragapults.
+
+#org @gText_Clair_RematchAfterBattle3
+[RED]Dragapult is a deadly mon, even\nthough it's missing a physical\lGhost STAB.\pHowever, I've trained mine to have\n[GREEN]Spirit Shackle.\p[RED]You may find your Dragon Dance\nsets far more potent accompanied\lby this.
+
+#org @gText_Clair_Dragapult
+[BLACK]You received a [GREEN]Dragapult![BLACK]
+
+#org @gText_Clair_TeachDracoStill
+I'll still be here if you want\nme to teach [GREEN]Draco Meteor.[RED]
+
+#org @gText_Clair_SecretLance
+Hm[.]? You'd like to know how\nto get [GREEN]Primal Dialga?\p[RED]Hah[.] that may be a secret\nfor another time.\pAnyway[.]
+
+#org @gText_roamer_1
+[GREEN][PLAYER][BLUE]!
+
+#org @gText_roamer_2
+[BLUE]Hi, I'm one of Oak's aids!\pWe just wanted to congratulate you\non obtaining all the badges!
+
+#org @gText_roamer_3
+[BLUE]Now that you're strong enough,\nthis information would be helpful[.]\pRoaming legendaries have appeared!\pYou can view them on your Town\nMap. 
+
+#org @gText_roamer_4
+[BLUE]They're quite powerful mons,\nalthough they may be difficult to\lcatch.\pThat's all from me!\pGood luck!
+
+#org @gText_virizion_1
+Aeepraaa!
+
+#org @gText_Viridian_GirlTip 
+Here's a neat trick!\pPressing [R_BUTTON] in the main fight menu\nallows you to instantly click the\lRun button!
+
+#org @gText_viridian_cheatiswrong
+Hmm[.] you really don't know\nwhat's up[.]
+
+#org @gText_viridian_doyoucheat
+Hmm[.] do you know what's up?
+
+#org @gText_viridian_youcheat
+I guess you're in the know.\nTake these.
+
+#org @gText_oldmanrescript_HadMyCoffeTxt
+Well, now, I've had my coffee, and\nthat's what I need to get going!\pBut I made it too strong.\nIt gave me a headache[.]\pIncidentally, is my old Teachy TV\nhelping you?
+
+#org @gText_oldmanrescript_GrandsonShowTxt
+Wahaha!\nIt's my grandson on the show!\pSince he's the one doing the\nteaching, you're bound to learn.
+
+#org @gText_oldmanrescript_GetGoingTxt
+Well, now, I've had my coffee, and\nthat's what I need to get going!\pBut I made it too strong.\nIt gave me a headache[.]\pIncidentally, are you filling your\nPok\edex?\pAt first, focus on weakening the\nPok\emon before trying to catch it.
+
+#org @gText_oldmanrescript_PrivatePropertyTxt
+I absolutely forbid you from\ngoing through here!\pThis is private property!
+
+#org @gText_oldmanrescript_TooBusyTxt
+Hm[.] You're too busy to not even\nhave the time for Teachy TV[.]\pTime is money, and neither should\nbe ill spent[.]
+
+#org @gText_oldmanrescript_CoffeeTextToo
+Well, now, I've had my coffee, and\nthat's what I need to get going!\pHm?\nWhat is that red box you have?\pAh, so you're working on your\nPok\edex.\pThen let me give you a word of\nadvice.\pWhenever you catch a Pok\emon,\nthe Pok\edex automatically updates\lits data.
+
+#org @gText_oldmanrescript_EducationRight
+Here, take this, too.
+
+#org @gText_oldmanrescript_WatchThat
+That thing's worthless!
+
+#org @gText_viridian_levelcapdetails
+Just so you know, rare candies automa-\ntically stop working when you reach\lthe level cap so you don't accident-\lally overlevel.
+
+#org @gText_Viridian_FollowerPkmn1
+[BLUE]It appears your [GREEN][BUFFER1][BLUE]\nwould like to come out of its ball.\pWould you like to bring it out?
+
+#org @gText_Viridian_FollowerPkmn2
+[BLUE]Aw, a lot of Pok\emon do prefer\nbeing out of its ball.
+
+#org @gText_Viridian_FollowerPkmn3
+[BLUE]Ah, unfortunately, you don't have a\nPok\emon that wants to come out\lof its ball.
+
+#org @gText_Viridian_FollowerPkmnDisble
+[BLUE]Would you like to put your\nPok\emon back in its ball?
+
+#org @gText_Viridian_Arcanine1
+Iggy: Ruff ruff!
+
+#org @gText_Viridian_hisuianInfo
+Iggy's a [GREEN]Hisuian Growlithe.\p[RED]Supposedly Hisuians can't be found in\nKanto, but can be seen in the Sevii\lIslands.\pHowever, I've heard there's an Egg\nTraveler here in Kanto who sells Eggs\lthat hatch into Hisuian forms.
+
+#org @gText_LassRepelEncounter
+[RED]Eek, I hate bugs!
+
+#org @gText_LassRepelDefeat
+Picked a fight with the wrong trainer[.]
+
+#org @gText_Viridian_LassRepel1
+[RED]Sorry for being rude!\nI'm on edge[.]\pUsing the new [GREEN]Infinite Repel[RED]\nI got from my father, I'm able to avoid\lthese pesky insects[.]\pBut I'm still a bit startled.
+
+#org @gText_Viridian_LassRepel1_2
+[.] Ah, perhaps you could put it to use\ntoo!\pHere, let me unlock that for you.
+
+#org @gText_Viridian_LassRepel2
+[BLACK]You unlocked the Infinite Repel!
+
+#org @gText_Viridian_LassRepel3
+Just hit the [L_BUTTON] to bring up\nthe skills menu so you can\lenable or disable the Infinite Repel.\pWell, no more bugs for me!\pBye bye.
+
+#org @gText_ViridianCity_FollowerNew1
+[BLUE]Hey, you're a new trainer aren't ya!\pDid you know you could take\nyour Pok\emon out of its ball?\pSometimes it's nice to let them\nget some fresh air.
+
+#org @gText_ViridianCity_FollowerNew1_1
+[BLUE]Hey, you're an experienced\ntrainer!\pDid you know you could take\nyour Pok\emon out of its ball?\pSometimes it's nice to let them\nget some fresh air.
+
+#org @gText_NatureChanger_TurnedOffInstaHP
+[.]Instant HP option has been\nturned off!
+
+#org @gText_NatureChanger_TurnOnInstaHP
+Would you like to turn on the\nInstant HP Bar setting?
+
+#org @gText_NatureChanger_TurnedOnInstaHP
+[.]Instant HP option has been\nturned on!
+
+#org @gText_NatureChanger_TurnOffInstaHP
+Would you like to turn off\nthe Instant HP Bar setting?
+
+#org @gText_NatureChanger_InstantHPInfo
+The Instant HP Bar setting allows\nthe HP bar to move much\lquicker if toggled on.\pSome prefer it off since it can look\njarring.
+
+#org @gText_InstantHPBar
+Instant HP Bar
+
+#org @gText_ModeInfo
+Mode Info
+
+#org @gText_MsgAskToGoDownEasy
+You are currently playing on [GREEN]Normal\nMode.\p[RED]Would you like to go down to\n[GREEN]Easy Mode?
+
+#org @gText_AreYouSureEasy
+Are you sure you want to switch\nto [GREEN]Easy?[RED] You won't be able to\lswitch back.
+
+#org @gText_SwitchedToEasy
+[.]You have switched to [GREEN]Easy Mode.[RED]
+
+#org @gText_DisplayEasyMode
+[GREEN]Easy Mode.[RED]
+
+#org @gText_DisplayHCMode
+[GREEN]Hardcore Mode[.][RED]
+
+#org @gText_ScaledRandomizer
+[GREEN]Scaled Randomizer[.][RED]
+
+#org @gText_YouArePlayingOn
+You are playing on[.]
+
+#org @gText_SpeciesRandomizer_PC
+[GREEN]Species Randomizer[.][RED]
+
+#org @gText_AbilityRandomizer_Text
+[GREEN]Ability Randomizer[.][RED]
+
+#org @gText_LearnsetRandomizer_Text
+[GREEN]Learnset Randomizer[.][RED]
+
+#org @gText_RestrictMode
+[GREEN]Restricted Mode[.][RED]
+
+#org @gText_Viridian_IggySign
+Hisuian Growlithe\nName: Iggy
+
+#org @gText_ViridianForest_AceTrainerEncounter
+Did you know this area has different\nencounters?
+
+#org @gText_ViridianForest_AceTrainerDefeat
+What?! Gulpin couldn't do it?
+
+#org @gText_ViridianForest_AceTrainerAfter
+My intuiton tells me there's a rare\nPok\emon past the smashable rocks[.]
+

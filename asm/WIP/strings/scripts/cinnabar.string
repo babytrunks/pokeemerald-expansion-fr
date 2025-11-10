@@ -1,0 +1,314 @@
+#org @gText_CinnabarMay1
+Sorry, excuse me[.]
+
+#org @gText_CinnabarMay2
+All those Gym badges[.]
+
+#org @gText_CinnabarMay3
+[.]I knew it, you're\n[GREEN][PLAYER][RED]!\p[GREEN]Brendan[RED] talks about you very often;\nyou seem to be a big motivator\lfor him.\pOh right! I'm [GREEN]May[RED].\n[GREEN]Brendan[RED] and I both come from Hoenn.\pWell, I could use a warm-up before I\nface [GREEN]Blaine[RED].
+
+#org @gText_CinnabarMay4
+I may as well see how skilled you\nare myself!
+
+#org @gText_CinnabarMayDefeat
+Woah, that was great!\nYou lived up to the hype!
+
+#org @gText_CinnabarMay5
+I see why [GREEN]Brendan[RED] looks up\nto you now.\pI don't know if we'll bump into each\nother again, so please, have this.
+
+#org @gText_CinnabarMay7
+Take care!
+
+#org @gText_Cinnabar_FossilGuy1
+I'm a fossil collector!\pHere, have one. 
+
+#org @gText_Cinnabar_FossilGuy2 
+[BLACK]You received a [GREEN][BUFFER1][BLACK].
+
+#org @gText_Cinnabar_FossilGuy3
+Hmm[.] I'm out of fossils today.\nCome back tomorrow!
+
+#org @gText_CinnabarLatis1 
+Hmm[.] My colleague says these\nstones correspond to certain\llegendary Pok\emon, but I'm unsure\lwhich ones he may be referring\lto.
+
+#org @gText_CinnabarLatis2 
+Yeah[.] 
+
+#org @gText_CinnabarLatis3 
+That doesn't seem to be it.\nThank you though! 
+
+#org @gText_CinnabarLatis4
+Ah yes, you already showed\nme that one! 
+
+#org @gText_CinnabarLatis5
+Thank you for helping me\ncomplete my research!\pYou must be a strong trainer!
+
+#org @gText_CinnabarLatis6
+Yes! It's for [GREEN][BUFFER1][BLACK]!\pThank you for helping me with\nthis discovery!\pPlease, have them! 
+
+#org @gText_Normal 
+Normal
+
+#org @gText_Fighting
+Fighting 
+
+#org @gText_Flying
+Flying
+
+#org @gText_Poison
+Poison
+
+#org @gText_Ground 
+Ground
+
+#org @gText_Rock
+Rock
+
+#org @gText_Bug
+Bug
+
+#org @gText_Ghost
+Ghost
+
+#org @gText_Steel
+Steel
+
+#org @gText_Fire
+Fire
+
+#org @gText_Water
+Water
+
+#org @gText_Grass
+Grass
+
+#org @gText_Electric
+Electric
+
+#org @gText_Psychic
+Psychic
+
+#org @gText_Ice
+Ice
+
+#org @gText_Dragon
+Dragon
+
+#org @gText_Dark
+Dark
+
+#org @gText_Fairy
+Fairy
+
+#org @gText_NoSilvally
+Hm, that's not a [GREEN]Silvally[BLUE]. 
+
+#org @gText_SilvallyChanger1
+I can switch your Silvally's\nform! Is that something you're\linterested in? 
+
+#org @gText_WhichForm
+Which [GREEN]Silvally[BLUE] form do you want? 
+
+#org @gText_SilvallyChanger2 
+And[.]\pYup, the form has been changed!\pLet me know if you're in need\nof my services again! 
+
+#org @gText_SilvallyChanger3
+Ah yes! A [GREEN]Silvally[BLUE]!
+
+#org @gText_blaine_EncounterText
+[BLUE]Hah!\pI am [GREEN]Blaine[BLUE], the red-hot Leader\nof Cinnabar Gym!\pMy fiery Pok\emon are all rough\nand ready with intense heat!\pThey incinerate all challengers!\pHah!\nYou better have Burn Heal!
+
+#org @gText_blaine_DefeatText
+I have burned down to nothing!\nNot even ashes remain!\pYou have earned the Volcano Badge.
+
+#org @gText_blaine_Givetm
+TM38 contains Fire Blast.\nTeach it to Fire-type Pok\emon.\pSpecial Attackers would be ideal\nfor that move.
+
+#org @gText_blaine_TMInfomsg
+Hah! What a fight.\pHere, you can have this, too!
+
+#org @gText_blaine_Helloagain
+[.]You looking for a [GREEN]Charizardite Y[BLUE]?
+
+#org @gText_blaine_Perfectpokemon
+Show me a Pok\emon with hefty\nSpecial Attack.\pThen, you'll earn a [GREEN]Charizardite Y[BLUE]!
+
+#org @gText_blaine_Helloagain2
+[.]You looking for a [GREEN]Charizardite X[BLUE]?
+
+#org @gText_blaine_Perfectpokemon2
+Show me a Pok\emon with hefty\nSpecial Attack.\pThen, you'll earn a [GREEN]Charizardite X[BLUE]!
+
+#org @gText_blaine_Thepokemon
+Your [BUFFER1][.]
+
+#org @gText_blaine_Notquite
+It's not enough, I'm afraid.
+
+#org @gText_blaine_Perfect
+Hah!\nThat's what I wanna see!\pWell then, here it is.
+
+#org @gText_blaine_Donemsg
+Fire-types are to be used with\nutmost respect.\pDon't waste them on Water-types.
+
+#org @gText_blaine_Charmmsg
+This item makes special attacks\neven more fearsome.\pTake it as well.
+
+#org @gText_jasmine_1
+Hmm[.][GREEN] Mega Aggron[RED] or [GREEN]Mega Steelix[RED][.]
+
+#org @gText_jasmine_2
+Ah, hello.\pI've only recently acquainted myself\nwith Mega Evolution, so I'm still\lfiguring things out.
+
+#org @gText_jasmine_3
+Um, I'd like to practice, if you don't\nmind[.]
+
+#org @gText_jasmine_4
+Although I'm shy[.]\nPlease don't take me lightly.
+
+#org @gText_jasmine_Defeat
+Well done[.]
+
+#org @gText_jasmine_6
+You have both skill and fortitude.\pUm[.] I think you'd like this.
+
+#org @gText_jasmine_7
+This item has helped me in count-\nless battles, although it can be a\lbit tricky to use.\pTry it for yourself.
+
+#org @gText_jasmine_Take
+I do have more to give, but[.]\pYou'll have to show me a Pok\emon\nforged in Defense.
+
+#org @gText_jasmine_8
+I think it could use more\nprotection.\pNo[.] I don't mean that kind[.]
+
+#org @gText_jasmine_Firstmon
+Your [BUFFER1][.]
+
+#org @gText_jasmine_9
+Yes, this Pok\emon is quite a\nworthy shield.\pAs promised, here you go.
+
+#org @gText_jasmine_10
+[RED]The[GREEN] Assault Vest[RED] complements a high\ndefense Pok\emon well, making it an\limpenetrable wall. 
+
+#org @gText_metatutor_1
+I teach some sick moves, but it's\ngoing to cost \$10000.\pYou in?
+
+#org @gText_metatutor_Text1
+Aura Sphere
+
+#org @gText_metatutor_Text2
+Heat Wave
+
+#org @gText_metatutor_Text3
+Hurricane
+
+#org @gText_metatutor_Text4
+Power Whip
+
+#org @gText_metatutor_Text5
+High Horsepower
+
+#org @gText_metatutor_Text6
+Bug Buzz
+
+#org @gText_metatutor_Text7
+Phantom Force 
+
+#org @gText_metatutor_Text8
+Flare Blitz 
+
+#org @gText_metatutor_Text9
+Stored Power
+
+#org @gText_metatutor_Text10
+Gunk Shot
+
+#org @gText_metatutor_Text11
+Power Gem
+
+#org @gText_metatutor_Tailwind
+Tailwind
+
+#org @gText_metatutor_Megahorn
+Megahorn 
+
+#org @gText_metatutor_TextViewMore
+View More
+
+#org @gText_metatutor_Exit
+Exit
+
+#org @gText_metatutor_Msg
+\$10000. Which move should I teach?
+
+#org @gText_metatutor_3
+Alright, who's getting it?
+
+#org @gText_metatutor_4
+Come back for more.
+
+#org @gText_metatutor_Wait
+[.]
+
+#org @gText_metatutor_Poor
+[.]You don't have enough money.
+
+#org @gText_therianforms_2
+I have items that are said to change\nforms of certain Pok\emon.
+
+#org @gText_therianforms_2_1
+I already gave you the item\nfor that Pok\emon.
+
+#org @gText_therianforms_3
+If you show me one that's compatible,\nI'll gladly hand it over!
+
+#org @gText_therianforms_5
+That ain't it.
+
+#org @gText_therianforms_7
+Yes, that's it!\nHere you go! 
+
+#org @gText_therianforms_4
+[BUFFER1][.]
+
+#org @gText_therianforms_8
+I hope you're wreaking havoc\nwith the alternate forms. 
+
+#org @gText_Cinnabar_Eevee
+[GREEN]Eevee[BLUE] can evolve into one of eight\nkinds of Pok\emon. 
+
+#org @gText_jasminere_1
+[RED]Ah, welcome back.\nI hope you haven't returned\lhoping to destroy me in battle again.\pI've polished and learned a few new\nskills of my own.\pSo, is that what you'd like? 
+
+#org @gText_jasminere_2
+[RED]Hm, another loss, although it hurts\nless knowing you're the champion.\pI do feel like my battling prowess\nhas improved, so thank you.\pThis may assist you.
+
+#org @gText_jasminere_3
+[RED]And, if you'd like me to teach the move\nSteel Beam, talk to me!\pKeep it going, [GREEN][PLAYER].
+
+#org @gText_CinnabarGym_AceTrainer1_1
+I know why [GREEN]Blaine[BLUE] became a\nTrainer.
+
+#org @gText_CinnabarGym_AceTrainer1_2
+Ow!
+
+#org @gText_CinnabarGym_AceTrainer1_3
+Our Leader, [GREEN]Blaine[BLUE], became lost\nin the mountains but good.\pNight fell when a fiery bird\nPok\emon appeared.\pIts light allowed Blaine to find\nhis way down safely.
+
+#org @gText_CinnabarGym_AceTrainer2_1
+I've been to many Gyms, but this\none best suits my style.
+
+#org @gText_CinnabarGym_AceTrainer2_2
+Yowza!\nToo hot!
+
+#org @gText_CinnabarGym_AceTrainer2_3
+[GREEN]Blaziken, Cinderace[.]\n[RED]Those are popular Fire Pok\emon.
+
+#org @gText_CinnabarGym_AceTrainer3_1
+Fire is weak against H2O.
+
+#org @gText_CinnabarGym_AceTrainer3_2
+Oh!\nSnuffed out!
+
+#org @gText_CinnabarGym_AceTrainer3_3
+Water beats fire, of course.\pBut fire melts ice, so the Fire\ntype beats Ice-type Pok\emon.

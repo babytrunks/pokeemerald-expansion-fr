@@ -1,0 +1,240 @@
+#org @gText_TeleportToKanto
+Do you want me to Teleport you\nto Kanto?
+
+#org @gText_OneIslandJotard_1
+[BLUE]Well well, if it isn't the Jojo\nhater. Became champion, did ya?
+
+#org @gText_OneIslandJotard_2
+[BLUE][.]why the long look on your face?
+
+#org @gText_OneIslandJotard_3
+[BLUE]Ah, I get it!\pYou were expecting [GREEN]Silver[BLUE] to be\nyour post-game rival, but it was me,\l[GREEN]Jojo Fan!
+
+#org @gText_OneIslandJotard_4
+[BLUE]I'll add to your disappointment\nwith a crushing defeat by the hands\lof my Stand powers.
+
+#org @gText_OneIslandJotard_Defeated
+Kuso[.]
+
+#org @gText_OneIslandJotard_5
+[BLUE]Alright, fine.\nI acknowledge your strength,\l[GREEN][PLAYER][BLUE].\pI'll share my Stand technique with you.
+
+#org @gText_OneIslandJotard_6
+[BLUE]That enables you to use Z-Moves,\nwhich allows you to release a strong\lmove once per battle.\pOf course, you must have the right\nZ-Crystal to go along with it.\pAnd to go along with that,\nhave some ORA ORA ORA!
+
+#org @gText_OneIslandJotard_6_2
+[BLUE][.]Oh? Is that not the stand tech-\nnique you're interested in?\pYou'd like to know how to Mega\nEvolve twice in a battle?\pThat's difficult to be taught.\nIn time you might learn about\nit.\pAnyway[.]
+
+#org @gText_OneIslandJotard_7
+[BLUE]I think I've seen some Team Rocket\nmembers around here, although they\ldidn't seem to be posing\lproblems or anything.\pNo idea what they're up to, but I fi-\ngured our main protagonist ought\lto know!\pAnyway, catch you later!
+
+#org @gText_OneIslandJotard_8
+[BLACK]Jojo fan walked away, menacingly[.]
+
+#org @gText_waterfallhm_Handinhand
+Hot springs go hand-in-hand with\nvolcanoes.\pThe Ember Spa here, well,\nI made it years ago.\pI hewed the pool right out of a\ngigantic boulder by hand.\pI was using this at the time.\nI suppose I can part with it.\p[.]Huh, you already have this!\pWell, perhaps you'd find this useful\ninstead.
+
+#org @gText_waterfallhm_Shatterstxt
+That allows you to traverse waterfalls\nwith ease.
+
+#org @gText_TreasureBeach_Red1
+[.]
+
+#org @gText_TreasureBeach_Red2
+[BLACK]It seems Red wants you to have these[.]
+
+#org @gText_TreasureBeach_Red3
+[BLACK]Red also wants you to have a special\nPikachu Libre, with Aura Wheel and\l252 EVs in all its stats.\pIt's amazing Red is able to\nconvey so much information with his gaze!
+
+#org @gText_TreasureBeach_Red4
+[BLACK]You received a Pikachu!
+
+#org @gText_TreasureBeach_Red5
+[BLUE][.]
+
+#org @gText_TreasureBeach_Red3_2
+[BLACK]Red also wants you to have a special\nPikachu Libre, with Aura Wheel. It\lalso has 100 EVs in its offensive\lstats, and maxed out Speed EVs.\pSeems like he cheated to stay\non top!
+
+#org @gText_OneIsland_RandomBattler1
+[BLACK]Hello, welcome to the One Island\nBattle Simulator.\pYou can fight various random boss\ntrainers from this region to hone\lyour skills, and potentially receive\lprizes.
+
+#org @gText_OneIsland_NormalTrainerHiScore
+Your current high score for Normal\nMode is [BUFFER1].\pWould you like to start the battle\nsimulator on Normal Mode?
+
+#org @gText_OneIsland_HCTrainerHiScore
+Your current high score for Hardcore\nMode is [BUFFER1].\pWould you like to start the battle\nsimulator on Hardcore Mode?
+
+#org @gText_OneIsland_RandomBattler1_1
+Would you like to battle?
+
+#org @gText_OneIsland_BattleStart
+[BLACK]Random trainer generated.\nBattle commencing.
+
+#org @gText_RandomBattlerWon
+Battle won.
+
+#org @gText_RandomBattlerLost
+Battle lost.
+
+#org @gText_WouldYouLikeToContinue
+Well played trainer.\nYour current win streak is [BUFFER1].\pWould you like to continue?
+
+#org @gText_RandomBattlerEnd
+You ended with a win streak of [BUFFER1].\nYour high score is [BUFFER2].
+
+#org @gText_RandomBattler_NewHighScore
+You ended with a win streak of [BUFFER1],\na new high score.\pCongratulations!
+
+#org @gText_TeamHasBeenHealed
+Your team has been healed.
+
+#org @gText_WouldYouLikeToHeal
+Would you like to heal your team?
+
+#org @gText_HealTeam 
+[.]
+
+#org @gText_RandomBattler_RedIsHere
+[BLACK]A powerful trainer has sensed your\npresence, and awaits you in Treasure\lBeach.
+
+#org @gText_BattleSim_Normal
+Normal
+
+#org @gText_BattleSim_Hardcore
+Hardcore
+
+#org @gText_Info
+Info
+
+#org @gText_BattleSim_MasterBall
+Here is a reward for receiving a win\nstreak of [BUFFER1].
+
+#org @gText_BattleSim_Info
+[BLACK]Normal option allows you to fight\nvarious boss battles from Normal\lMode.\pHardcore option allows you to fight\nvarious boss battles from\lHardcore Mode.\pYou stop receiving heals after\na win streak of 10.
+
+#org @gText_OneIsland_EnamorusRoaming
+A new legendary Pok\emon may be found\nroaming the Kanto Region.
+
+#org @gText_OneIsland_CosmogPrize
+As a reward for your impressive\nwin streak, you have been awarded\lthis rare Pok\emon.
+
+#org @gText_OneIsland_PkmnReceived
+You received a [GREEN][BUFFER1]![BLACK]
+
+#org @gText_AddBattlePoints
+You received [GREEN][BUFFER1] BP.[GREEN]\n[BLACK]You now have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_ExchangeItems
+Exchange BP
+
+#org @gText_MasterBall
+[BLACK]Master Ball          [SHRINK][GREEN]3 BP
+
+#org @gText_TapuniumZ
+[BLACK]Tapunium Z           [SHRINK][GREEN]3 BP
+
+#org @gText_SnorliumZ
+[BLACK]Snorlium Z           [SHRINK][GREEN]3 BP
+
+#org @gText_PikaniumZ
+[BLACK]Pikanium Z           [SHRINK][GREEN]3 BP
+
+#org @gText_PikashuniumZ
+[BLACK]Pikashunium Z        [SHRINK][GREEN]3 BP
+
+#org @gText_AloRachiumZ
+[BLACK]Aloraichium Z        [SHRINK][GREEN]5 BP
+
+#org @gText_InciniumZ
+[BLACK]Incinium Z           [SHRINK][GREEN]5 BP
+
+#org @gText_DecidiumZ
+[BLACK]Decidium Z           [SHRINK][GREEN]5 BP
+
+#org @gText_PrimariumZ
+[BLACK]Primarium Z          [SHRINK][GREEN]5 BP
+
+#org @gText_LycaniumZ
+[BLACK]Lycanium Z           [SHRINK][GREEN]5 BP
+
+#org @gText_FlyingGem
+[BLACK]Flying Gem           [SHRINK][GREEN]15 BP
+
+#org @gText_Diancite
+[BLACK]Diancite             [SHRINK][GREEN]20 BP
+
+#org @gText_KommoniumZ
+[BLACK]Kommonium Z          [SHRINK][GREEN]25 BP
+
+#org @gText_NLunarizer
+[BLACK]Necrozmizer          [SHRINK][GREEN]25 BP
+
+#org @gText_NLunarizerSold
+[BLACK]Necrozmizer          [RED]SOLD
+
+#org @gText_NSolarizer
+[BLACK]N-Solarizer          [SHRINK][GREEN]25 BP 
+
+#org @gText_CosmogBP
+[BLACK]Cosmog                  [SHRINK][GREEN]50 BP
+
+#org @gText_CosmogSoldOut
+[BLACK]Cosmog               [RED]SOLD
+
+#org @gText_UltraNecroziumZ
+[BLACK]Ultranecrozium Z     [SHRINK][GREEN]50 BP
+
+#org @gText_Zygarde10Per
+[BLACK]Booster Energy       [SHRINK][GREEN]15 BP
+
+
+#org @gText_MoreBPStuff
+More
+
+#org @gText_BpExit
+Exit
+
+#org @gText_WhichBPItemYouWant
+Which item would you like?\nYou have [GREEN][BUFFER1] BP.[BLACK]
+
+#org @gText_NotEnoughBP
+[.]Unfortunately you don't have\nenough BP.
+
+#org @gText_WouldYoulike3BP
+You want [BUFFER1] for [GREEN]3 BP?\n[BLACK]You have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_WouldYoulike5BP
+You want [BUFFER1] for [GREEN]5 BP?\n[BLACK]You have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_WouldYoulike15BP
+You want [BUFFER1] for [GREEN]15 BP?\n[BLACK]You have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_WouldYoulike20BP
+You want [BUFFER1] for [GREEN]20 BP?\n[BLACK]You have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_WouldYoulike25BP
+You want [BUFFER1] for [GREEN]25 BP?\n[BLACK]You have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_WouldYoulike50BP
+You want [BUFFER1] for [GREEN]50 BP?\n[BLACK]You have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_TransactionCompleted
+Transaction completed.\nYou now have [GREEN][BUFFER2] BP.[BLACK]
+
+#org @gText_TransactionDotDotDot
+[.]
+
+#org @gText_AlreadyBoughtCosmog
+[.]You already bought [GREEN]Cosmog.[BLACK]
+
+#org @gText_AlreadyBoughtLunarizer
+[.]You already bought this item.
+
+#org @gText_ReceivedBonusPoints
+You received a bonus of [GREEN]5 BP[BLACK]\nfor this high score.
+
+#org @gText_BonusBattlePoints10Streak
+For getting above a win streak of\n10, you received an additional [GREEN]5 BP.[BLACK]\pYou now have [GREEN][BUFFER1] BP.[BLACK]
+
+#org @gText_OneIsland_HisuainForms
+Apparently, some Pok\emon are able\nto evolve into their Hisuian forms\lhere in the Sevii Islands.

@@ -1,0 +1,675 @@
+#org @gText_RandomPika_1
+I'm a [GREEN]Yellow Shard[BLUE] collector!\pIf you hand me one, I can\nexchange give a random costume\l[GREEN]Pikachu.
+
+#org @gText_RandomPika_2
+Ah! I see a [GREEN]Yellow Shard[BLUE]!\pWould you like to exchange it?
+
+#org @gText_RandomPika_AwOkay
+Well, come back if you change\nyour mind.
+
+#org @gText_RandomPika_ReceivedPika
+[BLACK][PLAYER] received a Pikachu![BLUE]
+
+#org @gText_Celadon_ErikaCheck
+[BLACK]It appears to be closed[.]
+
+#org @gText_Celadon_IronHead1
+Have any hardheaded Pok\emon?\pPerhaps you ought to teach them\nIron Head!\pYou're down, yeah?
+
+#org @gText_Celadon_IronHead2
+I hope you land a lot of flinches!
+
+#org @gText_playrough_1
+Oh, hi!\nI finally finished Pok\emon.\pNot done yet? How about I teach\nyou a good move?\pThe move I have in mind is Play\nRough.\pKinda like your mom in bed!
+
+#org @gText_playrough_2
+It'll cost ya \$5000 though.
+
+#org @gText_playrough_3
+Which Pok\emon should I teach\nPlay Rough to?
+
+#org @gText_playrough_4
+Get rough and rowdy with these\nfellas.
+
+#org @gText_playrough_No
+You're not interested? Come see\nme if you change your mind.
+
+#org @gText_playrough_Wait
+[.]
+
+#org @gText_playrough_Poor
+[.]You don't have enough money.
+
+#org @gText_coincasenugget_3
+I used to give out[GREEN] Coin Cases[BLUE] to\nminors that approached me,\lbut then it became illegal.\pYou can have these instead.
+
+#org @gText_coincasenugget_4
+I can't stay a gambling addict[.]\pTake my money so I don't do it\nanymore[.]
+
+#org @gText_coincasenugget_5
+Game Corner fueled my gambling\naddiction in quarantine.\pIt's been stuck with me ever\nsince.
+
+#org @gText_ivseller_1
+Psst[.] I have a crazy proposition.\pI can max one of your Pok\emon's\nIVs for \$350000.\pOr I can do a single stat for\n\$70000.\pIt's crazy expensive, but this is\ntechnically illegal!\pHow about it?
+
+#org @gText_ivseller_1_Hard
+Psst[.] I have a crazy proposition.\pI can max one of your Pok\emon's\nIVs for free.\pNormally I charge money, but\nthis service isn't as useful in\l[GREEN]Minimal Grinding Mode.[BLUE]\pHow about it?
+
+#org @gText_ivseller_2
+Boo. You don't have enough money.\pCome back when you got stacks.
+
+#org @gText_ivseller_Op
+Don't you want OP Pok\emon?\pEspecially in a screwed up ROM hack\nlike this?\pYou can't get this anywhere else.
+
+#org @gText_ivseller_3
+Sweet. Who wants it?
+
+#org @gText_ivseller_4
+So, [BUFFER1] will have its IVs\nmaxed. \$350000.
+
+#org @gText_ivseller_4_min
+So, [BUFFER1] will have its IVs\nmaxed.
+
+#org @gText_ivseller_4_1
+So, [BUFFER1] will have its HP IVs\nmaxed. It currently has [BUFFER2] HP\lIVs. It'll be \$70000.
+
+#org @gText_ivseller_4_1_min
+So, [BUFFER1] will have its HP IVs\nmaxed. It currently has [BUFFER2] HP\lIVs.
+
+#org @gText_ivseller_4_2
+So, [BUFFER1] will have its Atk IVs\nmaxed. It currently has [BUFFER2] Atk\lIVs. It'll be \$70000.
+
+#org @gText_ivseller_4_2_min
+So, [BUFFER1] will have its Atk IVs\nmaxed. It currently has [BUFFER2] Atk\lIVs.
+
+#org @gText_ivseller_4_3
+So, [BUFFER1] will have its Def IVs\nmaxed. It currently has [BUFFER2]Def\lIVs. It'll be \$70000.
+
+#org @gText_ivseller_4_3_min
+So, [BUFFER1] will have its Def IVs\nmaxed. It currently has [BUFFER2]Def\lIVs.
+
+#org @gText_ivseller_4_4
+So, [BUFFER1] will have its Sp. Atk\nIVs maxed. It currently has [BUFFER2]\lSp. Atk IVs. It'll be \$70000.
+
+#org @gText_ivseller_4_4_min
+So, [BUFFER1] will have its Sp. Atk\nIVs maxed. It currently has [BUFFER2]\lSp. Atk IVs. 
+
+#org @gText_ivseller_4_5
+So, [BUFFER1] will have its Sp. Def\nIVs maxed. It currently has [BUFFER2]\lSp. Def IVs. It'll be \$70000.
+
+#org @gText_ivseller_4_5_min
+So, [BUFFER1] will have its Sp. Def\nIVs maxed. It currently has [BUFFER2]\lSp. Def IVs. 
+
+#org @gText_ivseller_4_6
+So, [BUFFER1] will have its Speed\nIVs maxed. It currently has [BUFFER2]\lSpeed IVs. It'll be \$70000.
+
+#org @gText_ivseller_4_6_min
+So, [BUFFER1] will have its Speed\nIVs maxed. It currently has [BUFFER2]\lSpeed IVs. 
+
+#org @gText_ivseller_5
+Is that correct?
+
+#org @gText_ivseller_bust_1 
+Heyyo welcome back Champ[.]
+
+#org @gText_ivseller_bust_2
+Uhh[.] whachu doing with that\ntracker?\p[BLACK]Reach for your Locater?
+
+#org @gText_ivseller_bust_3
+Yee, I knew we were good!\nLet's get started with ya[.]
+
+#org @gText_ivseller_bust_4
+GUYS, HE'S REACHING FOR IT!\nGET HIM!
+
+#org @gText_ivseller_bust_5
+[BLUE]Really now?\nWe don't gotta do this, but fine.
+
+#org @gText_Thug2DefeatTxt
+Tsk, screw this! 
+
+#org @gText_Thug1DefeatTxt
+But[.] why though[.]
+
+#org @gText_ivseller_bust_6
+[BLUE]You damn scumbag[.]\nWe got a harmless business going on\nhere, and you ruin it. For what?\pBeing champion wasn't enough?\pFine. You get what you deserve.
+
+#org @gText_ThugBossDefeatTxt
+What the hell[.]\nBetrayed[.] by you?
+
+#org @gText_ivseller_bust_call
+[BLACK]You free yourself from the thugs,\nand use the Locater to alert Officer Jenny!\p[BLUE]Whatever, kiddo.\pWe were practically born in jail.  
+
+#org @gText_ivseller_Wtf
+Yo, I don't operate on eggs.
+
+#org @gText_ivseller_Wait
+[.]
+
+#org @gText_ivseller_Done
+All done. Hope you enjoy pal.
+
+#org @gText_ivseller_Grind
+The grind don't stop, right?
+
+#org @gText_amuletcoin_3
+Life sure is tough in the city[.]\nI learned it the hard way,\nnothing is free!
+
+#org @gText_amuletcoin_4
+[.]You came from [GREEN]Pallet Town[BLUE]?!\pHoly cow!\pYou'd make better use of this than\nme.
+
+#org @gText_amuletcoin_5
+The [GREEN]Amulet Coin[BLUE] ain't a money tree,\nbut it's the next closest thing.
+
+#org @gText_coinstory_6
+Way back in the day, me and my\nsquad here hustled money using the\l[GREEN]Amulet Coin[BLUE].\pWe'd keep note of all the weak train-\ners that paid well, and repeatedly\lbattled them with the [GREEN]VS Seeker[BLUE].
+
+#org @gText_coinstory_7
+It was a scummy way of making money,\ntaking money from weak children and\lwhat not.\pBut, it was a business nonetheless.
+
+#org @gText_coinstory_8
+Eventually, the League caught wind\nof it, and rather than banning the\l[GREEN]Amulet Coin[BLUE], they banned the [GREEN]VS\lSeeker[BLUE].
+
+#org @gText_coinstory_9
+Funny, isn't it?\pUs chumps caused an item to be\noutlawed!\pIt was a big hit for us at the time,\nbut now we're making bank thanks to\lour new services.
+
+#org @gText_coinstory_10
+Just keep quiet what we're doing\nhere, fam.
+
+#org @gText_gamecornertms_Hello
+May I help you?
+
+#org @gText_gamecornertms_Comeagain
+Please come again!
+
+#org @gText_gamecornermons_1
+We sell exclusive Pok\emon!\pThese Pok\emon can be upgraded to\ntheir shiny forms for a steep\lprice as well.\pInterested?
+
+#org @gText_gamecornermons_Text1
+Dratini
+
+#org @gText_gamecornermons_Text2
+Larvitar
+
+#org @gText_gamecornermons_Text3
+Beldum
+
+#org @gText_gamecornermons_Text4
+Bagon
+
+#org @gText_gamecornermons_Text5
+Riolu
+
+#org @gText_gamecornermons_Text6
+Rotom
+
+#org @gText_gamecornermons_Text7
+View More 
+
+#org @gText_gamecornermons_Itllbe
+That'll be \$100000.
+
+#org @gText_gamecornermons_Itllberotom
+That'll be \$100000.
+
+#org @gText_gamecornermons_Whichpkmn
+Which Pok\emon would you like?
+
+#org @gText_gamecornermons_Upgrade
+Would you like to upgrade it to\nits Shiny form?\pIt'll double the price.
+
+#org @gText_gamecornermons_Haupgrade
+Would you like its Hidden Ability?
+
+#org @gText_gamecornermons_Shinytxt
+With a shiny upgrade, making it\nanother \$100000[.]\p\$200000 total.
+
+#org @gText_gamecornermons_Rotomtxt
+With a shiny upgrade, making it\nanother \$100000[.]\p\$200000 total.
+
+#org @gText_gamecornermons_Withha
+With its Hidden Ability[.]
+
+#org @gText_gamecornermons_Isitok
+This is default Rotom.\pIs that okay?
+
+#org @gText_gamecornermons_Correct
+Is this correct?
+
+#org @gText_gamecornermons_4
+Thank you partner!\pEnjoy!
+
+#org @gText_gamecornermons_Wait
+[.]
+
+#org @gText_gamecornermons_Poor
+[.]You don't have enough money.
+
+#org @gText_gamecornermons_Gotdratini
+You received a [GREEN]Dratini!
+
+#org @gText_gamecornermons_Gotlarvitar
+You received a [GREEN]Larvitar!
+
+#org @gText_gamecornermons_Gotbeldum
+You received a [GREEN]Beldum!
+
+#org @gText_gamecornermons_Gotbagon
+You received a [GREEN]Bagon!
+
+#org @gText_gamecornermons_Gotriolu
+You received a [GREEN]Riolu!
+
+#org @gText_gamecornermons_Gotrotom
+You received a [GREEN]Rotom!
+
+#org @gText_gamecornermons_GotToxel
+You received a [GREEN]Toxel!
+
+#org @gText_giveNickname 
+Give it a Nickname?
+
+#org @gText_gamecornermons2_Text1
+Gible
+
+#org @gText_gamecornermons2_Text2
+Larvesta
+
+#org @gText_gamecornermons2_Text3
+Deino
+
+#org @gText_gamecornermons2_Text4
+Goomy
+
+#org @gText_gamecornermons2_Text5
+Jangmo-o
+
+#org @gText_gamecornermons2_Text6
+Dreepy
+
+#org @gText_gamecornermons2_Text7
+Floette-Eternal 
+
+#org @gText_gamecornermons3_Text1
+Honedge 
+
+#org @gText_gamecornermons3_Text2
+Toxel 
+
+#org @gText_gamecornermons3_Text3
+Frigibax
+
+
+#org @gText_gamecornermons3_Text4
+Exit 
+
+#org @gText_gamecornermons2_Itllbefloette
+That'll be \$50000.
+
+#org @gText_gamecornermons2_Whichpkmn
+Which Pok\emon would you like?
+
+#org @gText_gamecornermons2_Shinytxt
+With a shiny upgrade, making it\nanother \$100000[.]\p\$200000 total.
+
+#org @gText_gamecornermons2_Floettetxt
+With a shiny upgrade, making it\nanother \$50000[.]\p\$100000 total.
+
+#org @gText_gamecornermons2_Isitok
+Floette-Eternal can't evolve.\pIs that okay?
+
+#org @gText_gamecornermons2_Correct
+Is this correct?
+
+#org @gText_gamecornermons2_4
+Thank you partner!\pEnjoy!
+
+#org @gText_gamecornermons2_Wait
+[.]
+
+#org @gText_gamecornermons2_Poor
+[.]You don't have enough money.
+
+#org @gText_gamecornermons2_Gotgible
+You received a [GREEN]Gible!
+
+#org @gText_gamecornermons2_GotLarvesta
+You received a [GREEN]Larvesta!
+
+#org @gText_gamecornermons2_GotDeino
+You received a [GREEN]Deino!
+
+#org @gText_gamecornermons2_GotGoomy
+You received a [GREEN]Goomy!
+
+#org @gText_gamecornermons2_Gotjangmo
+You received a [GREEN]Jangmo-o!
+
+#org @gText_gamecornermons2_Gotfloette
+You received a [GREEN]Floette-Eternal!
+
+#org @gText_gamecornermons2_GotDreepy
+You received a [GREEN]Dreepy!
+
+#org @gText_gamecornermons2_GotHonedge
+You received a [GREEN]Honedge! 
+
+#org @gText_gamecornermons2_GotToxel
+You received a [GREEN]Toxel! 
+
+#org @gText_gamecornermons2_GotFrigibax
+You received a [GREEN]Frigibax! 
+
+#org @gText_gardevoirite_1
+Hey, you came to see me!\pI'm not thirsty like I was in\nthe old games though.\pYou can have this instead!
+
+#org @gText_gardevoirite_2
+That item Mega Evolves [GREEN]Alakazam[RED]!\pYou'll need a [GREEN]Mega Ring[RED] for it\nto work though.
+
+#org @gText_erika_EncounterText
+[RED]Hello[.]\nLovely weather, isn't it?\lIt's so pleasant[.]\p[.]Oh, dear[.]\nI must have dozed off. Welcome.\pMy name is Erika.\nI am the Leader of Celadon Gym.\pI am a student of the art of\nflower arranging.\pMy Pok\emon are solely of the\nGrass type.\p[.]Oh, I'm sorry, I had no idea that\nyou wished to challenge me.\pVery well, but I shall not lose.
+
+#org @gText_erika_DefeatText
+Oh!\nI concede defeat.\lYou are remarkably strong.\pI must confer on you the\nRainbow Badge.
+
+#org @gText_erika_Givetm
+The Rainbow Badge allows\nyou to use Strength outside\lof battle.\pPlease also take this with you.
+
+#org @gText_erika_TMInfomsg
+TM19 contains Giga Drain.\pHalf the damage it inflicts is\ndrained to heal your Pok\emon.\pWouldn't you agree that it's a\nwonderful move?
+
+#org @gText_erika_Helloagain
+Oh hello there.\p[.]I see you've obtained the [GREEN]Mega Ring[RED].\pUnfortunately, my Pok\emon aren't look-\ning to battle at the moment.\pYou see, this [GREEN]Gloom[RED] I've been caring for\nhas become terribly sick.
+
+#org @gText_erika_Helloend
+If you could bring me something\nthat could help my [GREEN]Gloom[RED], that would\lhelp tremendously.
+
+#org @gText_erika_Isit
+Oh my[.]\pThis [GREEN]Medicine[RED][.] is it for [GREEN]Gloom[RED]?!
+
+#org @gText_erika_Thankutext
+Oh my goodness!\pThank you!\pLet me see if it helps [GREEN]Gloom[RED].
+
+#org @gText_erika_Nothing
+[.]
+
+#org @gText_erika_Itworks
+[GREEN]Gloom[RED] is feeling great now!\pI couldn't thank you enough!\pWell, I'm up for a battle now!\pAre you ready? 
+
+#org @gText_erika_No
+Oh, never mind then[.]
+
+#org @gText_erika_Info
+I hope your travels go safely, dear\nfriend.
+
+#org @gText_erika_Snivy
+You received a [GREEN]Snivy[RED]!
+
+#org @gText_erika_StartBattle
+Very well, let's begin!
+
+#org @gText_Erika_DefeatText2
+Ah, you've got me again. 
+
+#org @gText_PostRematch 
+Thank you for the lovely\nbattle, and for helping [GREEN]Gloom![RED]\pPlease, have this. 
+
+#org @gText_checkerikasabrina_1
+[BLACK]I think I'd better get [GREEN]Erika[BLACK] and\n[GREEN]Sabrina's[BLACK] badge before proceeding.
+
+#org @gText_FossilPokemon_1
+Hi there. I'm just a huge fan\nof old Pok\emon.\pSo I collect fossil Pok\emon!\nI'll exchange them for shards.\pInterested?
+
+#org @gText_FossilPokemon_Which
+Which fossil Pok\emon would you\nlike?
+
+#org @gText_FossilPokemon_Dont
+Hm, you don't have enough\n[GREEN][BUFFER1]s[BLUE].\pCome back with some [GREEN][BUFFER1]s[BLUE]\nif you'd like a [GREEN][BUFFER2][BLUE].
+
+#org @gText_FossilPokemon_Confirm 
+Okay, you'd like to exchange\n[GREEN][BUFFER1]s[BLUE] for [GREEN][BUFFER2][BLUE],\lcorrect?
+
+#org @gText_FossilReceive
+You received a [GREEN][BUFFER2][BLUE]!
+
+#org @gText_FossilThanks
+Thank ya! Enjoy. 
+
+#org @gText_Celadon_Frisk
+Are you looking to farm rare items?
+
+#org @gText_Celadon_Frisk2 
+Leading with a Pok\emon that has either\nSuper Luck, Frisk, or Compound-eyes\las their ability will boost the\lchance of wild Pok\emon holding\litems! 
+
+#org @gText_IVPerfecterPreparemsg_1
+Which stat should I perfect? 
+
+#org @gText_CeladonFlappleTrainers_1
+Jeez[.] who would've thought a\ntrip to Celadon would be so boring!
+
+#org @gText_CeladonFlappleTrainers_1_1
+Yeah[.] I didn't expect our dates\nto flake on us[.]\pIt's quite unfortunate.
+
+#org @gText_CeladonFlappleTrainers_2
+For real[.] This is disappointing[.]
+
+#org @gText_CeladonFlappleTrainers_3
+That item in your bag[.]\nYou got a Mega Ring don't you?\pSay[.] help us out here!\pWe're just two super bored gals[.]\pCould you entertain us with a battle?
+
+#org @gText_CeladonFlappleTrainers_4
+Alright, no holding back!
+
+#org @gText_CeladonFlappleTrainers_Boring
+An uneventful vacation it is[.]
+
+#org @gText_CeladonFlappleTrainers_5
+[RED]Okay, I'll go next I'll go next!
+
+#org @gText_flappletrainer1_loss
+Woah, how unexpected!
+
+#org @gText_flappletrainer2_loss
+Heh, I guess I deserved that.
+
+#org @gText_CeladonFlappleTrainers_6
+[RED]Those were some battles!\nSorry if it felt like we ganged\lup on you. We were just very\leager to battle, sitting here doing\lnothing.\pPlease, have one of our signature\nitems!
+
+#org @gText_CeladonFlappleTrainers_7
+The [GREEN]Applite[RED] can actually Mega Evolve\nboth Flapple and Appletun!\pAlthough they both have the same\nappearance, their stats and abilities\lare quite distinct!
+
+#org @gText_CeladonFlappleTrainers8
+And if that wasn't enough, you can\nhave our favorite TM as well!
+
+#org @gText_CeladonFlappleTrainers_9
+I personally prefer [GREEN]Mega Appletun.\p[RED]Contrary Draco Meteor is so satisfy-\ning!
+
+#org @gText_CeladonSeviiEgg_1
+[BLUE]Ah, [GREEN][PLAYER]!
+
+#org @gText_CeladonSeviiEgg_2
+[BLUE]We've received an eggs that likely\nevolve to regional variants exclusive\lto the Sevii Islands!\pIt's been reported that these variants\ncan be quite powerful.\pSince you're quite the potent trainer,\nthe professor thought it'd be good\lin your hands!\pPlease, take it.
+
+#org @gText_CeladonSeviiEgg_3
+[BLUE]Well, it seems you don't have room.\pI'll be here until you make space.\pSee you around!
+
+#org @gText_Celadon_ReceivedEgg
+[BLACK]You received an Egg!
+
+#org @gText_CeladonSeviiEgg_4
+[BLUE]Well, take care, [GREEN][PLAYER]!
+
+#org @gText_CeladonSeviiEgg_5
+Ah, have you made room for the\nSeviian Egg?
+
+#org @gText_CeladonSeviiEgg_6
+[.]Hmm, seems like you still don't\nhave room.\pI'll be here until you make space.\pSee you around!
+
+#org @gText_CeladonSeviiEgg_7
+[.]Great! Please, take it.
+
+#org @gText_Celadon_Gambler1
+[BLUE]Hah! A minor! Disappointed you\ncan't gamble? Lucky you, I've\lgot quite the proposition.\pSlots here just don't really\ndo it for me now.
+
+#org @gText_Celadon_Gambler2
+I love betting on Pok\emon\nBattles!\pIf you'd like, we can bet on a\nbattle with a team of Metronome\lonly Pok\emon.\pWhat do you say?
+
+#org @gText_Celadon_10000
+\$10000
+
+#org @gText_Celadon_25000
+\$50000
+
+#org @gText_Celadon_50000
+\$100000
+
+#org @gText_Celadon_GamblerNo
+Not feeling lucky today eh?\pWell, just know I'm always ready\nto gamble!
+
+#org @gText_Celadon_Gambler_LetsGo
+Haha! Let's see who's side\nlady luck is on!
+
+#org @gText_BetHowMuch
+How much would you like to\nbet?
+
+#org @gText_Gamble_NotEnough
+Woah! Don't gamble more than you have,\nkid!\pYou're something else!
+
+#org @gText_Celadon_YouLost
+Well, I'll be keeping your money!\pAlthough you're probably going\nto reset to your last save\llike a little cheater, so this\lbasically never happened.
+
+#org @gText_Celadon_YouWin
+Agh, you got me you got me!\p[SHRINK][.] lucky bastard[.]
+
+#org @gText_Celadon_Here
+Here's your dang money[.]
+
+#org @gText_CeladonLoseBattle
+Hah! Outplayed!
+
+#org @gText_CeladonWinbattle
+Tch, call it beginner's luck[.]
+
+#org @gText_ImAlwaysHere
+I'll be here if you\nstill want to go.
+
+#org @gText_Celadon_LucarioMan1 
+This is my trusted pal, [GREEN]Lucario.\p[BLUE]I got it from the Game Corner\nas a [GREEN]Riolu [BLUE]when I was little.\pAfter growing together through\ntough times, he evolved.
+
+#org @gText_Celadon_Lucario
+Lucario!
+
+#org @gText_Celadon_Azumarill
+Azu!
+
+#org @gText_Celadon_Empoleon
+Empoleon!
+
+#org @gText_Celadon_Togekiss
+Togekiss!
+
+#org @gText_giovanni1_Giovannitxt1
+So! I must say, I am impressed you\ngot here.\pTeam Rocket captures Pok\emon from\naround the world.\pThey're important tools for keeping\nour criminal enterprise going.\pI am the leader, [GREEN]Giovanni![BLUE]\pFor your insolence, you will feel a\nworld of pain!
+
+#org @gText_giovanni1_Giovanniloss
+What!\nThis can't be!
+
+#org @gText_giovanni1_Giovannitxt2
+I see that you raise Pok\emon with\nutmost care.\pA child like you would never\nunderstand what I hope to achieve.\pI shall step aside this time!\pI hope we meet again[.]
+
+#org @gText_Celadon_RotomChanger
+[BLACK][.]Your [GREEN]Rotom[BLACK] is reacting to this\nmysterious machine!\pIt seems like it wants to change\nform[.]
+
+#org @gText_WhichRotomForm
+Which form should [GREEN]Rotom[BLACK] change to?
+
+#org @gText_Celadon_NotRotom
+[BLACK]That's not a [GREEN]Rotom[.]
+
+#org @gText_Celadon_SameForm
+[.]That's the same [GREEN]Rotom[BLACK] form.
+
+#org @gText_RotomNorm
+Rotom
+
+#org @gText_RotomWash
+Rotom-Wash
+
+#org @gText_RotomMow
+Rotom-Mow
+
+#org @gText_RotomFrost
+Rotom-Frost
+
+#org @gText_RotomHeat
+Rotom-Heat
+
+#org @gText_RotomFan
+Rotom-Fan
+
+#org @gText_Celadon_RotomChange_Down
+[.][GREEN]Rotom[BLACK] form change complete!
+
+#org @gText_MysteriousMachine_Text
+[BLACK]What is this machine?\nBetter not mess around with it!
+
+#org @gText_Kangakshan
+Kangakshan!
+
+#org @gText_Celadon_LucarioMan2
+Ah, a fellow [GREEN]Lucario[BLUE] enjoyer.
+
+#org @gText_Celadon_LucarioMan2_1
+Tell me, what is your favorite\n[GREEN]Lucario [BLUE]set?
+
+#org @gText_Physical_Lucario
+Physical Sweeper
+
+#org @gText_Special_Lucario
+Special Sweeper
+
+#org @gText_gText_Mixed_Lucario
+Mixed Attacker
+
+#org @gText_Lucario_PickedPhysical
+Mmm[.] Physical sweeping Lucario\nis excellent with Swords Dance and a\lstrong 120 Base Power Move in\lClose Combat.\pA fine choice.
+
+#org @gText_Lucario_PickedSpecial
+Mmm[.] Special sweeping Lucario\nis great with Nasty Plot and\lis an effective use of its iconic\lmove, Aura Sphere. A decent choice.
+
+#org @gText_Lucario_PickedMixed
+Mmm[.] Mixed attacking Lucario\nis useful for hitting the\lenemy at its weakest point.\pNot my preference, but I can\nget behind it.
+
+#org @gText_Lucario_Flaws
+With that being said,\nbase [GREEN]Lucario [BLUE]has its flaws.
+
+#org @gText_Lucario_Flaws2
+What would you say its biggest\nflaw is?
+
+#org @gText_PowerCreep
+Power Creep
+
+#org @gText_4MSS
+4 Move Slot Syndrome
+
+#org @gText_SpeedTier
+Bad Speed Tier
+
+#org @gText_Lucario_PickedPowerCreep
+Yes[.] with the power levels\nrising each Generation Lucario\lfound itself outclassed[.]
+
+#org @gText_Lucario_4mss
+Yes[.] [GREEN]Lucario[BLUE] sometimes struggles\nto get what it wants with 4\lmove slots[.]
+
+#org @gText_Lucario_SpeedTier
+Mm[.] even with its strong priority\nmoves, a 90 Base Speed isn't the\lmost desirable for a sweeper.
+
+#org @gText_Lucario_DoYouThink
+Tell me then, do you think\n[GREEN]Mega Lucario[BLUE] is busted?
+
+#org @gText_Lucario_NeverMind
+Oh, never mind then[.]
+
+#org @gText_Lucario_Yeppers
+Of course!\nHere, I noticed yours is missing\la Mega Stone.
+
+#org @gText_Lucario_amazingMega
+[GREEN]Mega Lucario[BLUE] is a really\namazing Mega.\pIt gets higher base Speed and\nan insane ability Adaptability.

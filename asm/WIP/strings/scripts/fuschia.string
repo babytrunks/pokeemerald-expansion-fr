@@ -1,0 +1,296 @@
+#org @gText_Fuschia_OakAid1
+Hi! Remember me?\nI'm one of Prof. Oak's Aides.\pHe entrusted me to give you these\nitems.
+
+#org @gText_Fuschia_OakAid2
+It may seem counterintuitive to\ninflict status on your own Pok\e-\lmon, but some of them greatly\lbenefit from it. 
+
+#org @gText_Fuschia_NastyPlot1
+Hehehe... how shall I go about\nmy plan for world domination...\pSorry, I was just mumbling to\nmyself. But[.]\pWould you like me to teach\nNasty Plot?
+
+#org @gText_Fuschia_NastyPlot2
+May your suspicious schemes go\nby smoothly. 
+
+#org @gText_Fuschia_NastyPlot3
+Hmm[.] perhaps I'm too sus. 
+
+#org @gText_Fuschia_Egg1
+Hi[.]I'm a special move tutor.\pI teach Egg moves, so you don't have\nto go through the trouble of\lbreeding.\pI'll need a [GREEN]Heart Scale[BLUE] though.
+
+#org @gText_Fuschia_Egg2
+Would you like me to teach\nan egg move?
+
+#org @gText_Fuschia_Egg3
+Alright, who wants it?
+
+#org @gText_Fuschia_Egg4
+[BLUE]Thank you, enjoy!
+
+#org @gText_Fuschia_EggNo
+Well then[.]
+
+#org @gText_Fuschia_EggNo2
+Sorry[.]\pIt doesn't appear as if I have a\nmove I can teach that Pok\emon.
+
+#org @gText_Fuschia_EggNo3
+Sorry[.] that's an egg.
+
+#org @gText_Fuschia_EggNew1
+Would you like me to teach\nan egg move?
+
+#org @gText_Fuschia_EggWhichMove
+Which move should I teach?
+
+#org @gText_Fuschia_GuessCry1
+Hi there, I have a valuable\nservice!\pI teach Egg moves, so you don't have\nto go through the trouble of\lbreeding.
+
+#org @gText_Fuschia_GuessCry1_1
+However, I'll only do it for\na true Pok\emon trainer.\pSo, I'll play 4 Pok\emon cries\nand you'll have to guess\lthe Pok\emon the cry corresponds\lto.\pYou up for it?
+
+#org @gText_Fuschia_GuessCry2
+Alright, here's one.\pThis one's from Generation 1!
+
+#org @gText_Fuschia_GuessCry3
+Nice! That's correct.\pThis one's from Generation 3. 
+
+#org @gText_Fuschia_GuessCry3_1
+Yup, [GREEN]Magmar![BLUE]
+
+#org @gText_Fuschia_GuessCry4
+Hmm[.] Unfortunately that's\nincorrect.
+
+#org @gText_FuschiaGuessCry5
+Would you like to guess again?
+
+#org @gText_Fuschia_GuessCry6_1
+That's [GREEN]Nincada[BLUE] alright.
+
+#org @gText_Fuschia_GuessCry6
+Nice. Correct again!\pYou got 2 so far!\pThe next one's from Generation\n4. 
+
+#org @gText_Fuschia_GuessCry7_1
+You guessed it, [GREEN]Gallade![BLUE]
+
+#org @gText_Fuschia_GuessCry7
+You're on a roll!\pOnly one more cry to go!\pNo hints for this one,\nyou're too good!
+
+#org @gText_Fuschia_GuessGulpin
+Gulpin?\nGulpin these nuts!\pGottem!\pHaha, unfortunately that's not\neven the right answer.\pYou'll have to try again!
+
+#org @gText_Fuschia_GuessRhydon
+Rhydon?\nRhydon these nuts!\pGottem!\pHaha, unfortunately that's not\neven the right answer.\pYou'll have to try again!
+
+#org @gText_Fuschia_GuessSlugma
+Slugma? Slugma nuts!\pGottem!\p[.]Wait, actually, don't do that.\pEither way, that's not even\nthe right answer.\pYou'll have to try again!
+
+#org @gText_TryAgainNextTime
+Try again next time then.
+
+#org @gText_Fuschia_GuessCryFinal
+Right on, it's [GREEN]Komala![BLUE]
+
+#org @gText_Fuschia_YouGotIt
+Woah, you're one gigantic\nnerd bro!\pThat's all four of them.\pNicely done. As promised, I\ncan teach your Pok\emon egg\lmoves.
+
+#org @gText_Fuschia_DotDotDot
+[.]
+
+#org @gText_Fuschia_WhichOne
+Alright, what's your guess?
+
+#org @gText_Venomoth
+Venomoth
+
+#org @gText_Magmar
+Magmar
+
+#org @gText_Nincada
+Nincada
+
+#org @gText_Gallade
+Gallade
+
+#org @gText_Komala
+Komala
+
+#org @gText_Gulpin
+Gulpin
+
+#org @gText_Rhydon
+Rhydon
+
+#org @gText_FuschiaHandOver
+[PLAYER] handed over a\n[GREEN]Heart Scale[BLACK] in exchange.
+
+#org @gText_FuschiaDouble1 
+Hey, I can turn on wild double\nbattles for you!\pThis is especially useful for\nfaster EV training.\pDo you want to proceed?
+
+#org @gText_FuschiaDouble2
+Wild double battles are turned\non! Talk to me again if you want to\lturn them off.
+
+#org @gText_FuschiaDouble3 
+Do you want to turn off\nwild double battles? 
+
+#org @gText_FuschiaDouble4
+Wild double battles are turned\noff! 
+
+#org @gText_FuschiaDouble5
+I'll be here if my service\nwill ever be of use!
+
+#org @gText_brendanfuschia_1
+Oh hey [GREEN][PLAYER][BLUE]!\pFancy meeting you here.\p[.]You took down the boss, huh?\pI'm really sorry I couldn't be there\nfor it, but I was never really worried\labout you.\pI've recently obtained the [GREEN]Mega Ring[BLUE],\nso I'd like to put myself to the test!\p[.]I see you've got one too!\pLet's not hold back then!
+
+#org @gText_brendanfuschia_Defeat
+Heh[.] not bad[.]\n
+
+#org @gText_brendanfuschia_2
+I feel the gap between us shrinking\neach time.\pI know I can do it!\pBut, thanks for being a sport as\nalways.\pWith [GREEN]Sabrina's[BLUE] badge, you should be\nable to use this.
+
+#org @gText_brendanfuschia_3
+Safe travels pal!
+
+#org @gText_nursegivemedicine_3
+[RED]I'm a nurse caring for Pok\emon\nhere at the Safari Zone.
+
+#org @gText_nursegivemedicine_4
+[.]Oh? Erika has a sick Pok\emon?\pPerhaps this will help!
+
+#org @gText_nursegivemedicine_5
+Give Erika my best wishes.
+
+#org @gText_nursegivemedicine_6
+Ah? Erika's [GREEN]Gloom[RED] is better?\pThat's fantastic news.
+
+#org @gText_substitute_3
+Aww, I wish I was a Kangaskhan\nbaby.\pI'd love to be a substitute for the\nbaby[.]\pAnd snuggle in the mother\nKangaskhan's belly pouch.\pBut only Pok\emon can use the\ntechnique Substitute[.]\pWant me to teach Substitute to\none of your Pok\emon?
+
+#org @gText_substitute_4
+Well, here you go.
+
+#org @gText_substitute_5
+Boy, what I'd give to crawl inside\na Kangaskhan belly pouch[.]
+
+#org @gText_substitute_6
+Oh, really?\nSubstitute seems so fun[.]
+
+#org @gText_earthpower
+Make foes shudder with the\nforce of Earth Power!\pHow about it?
+
+#org @gText_earthpower_Which
+Which Pok\emon should I teach\nEarth Power to?
+
+#org @gText_earthpower_gogetem
+Go get em bud.
+
+#org @gText_earthpower_Cost
+It'll cost \$10000 now.
+
+#org @gText_earthpower_dot
+[.]
+
+#org @gText_earthpower_essential
+No?\pIt's an essential move.
+
+#org @gText_earthpower_notenough
+[.]You don't have enough money.
+
+#org @gText_koga_EncounterText
+[BLUE]Fwahahaha!\pA mere child like you dares to\nchallenge me?\pThe very idea makes me shiver\nwith mirth!\pVery well, I shall show you true\nterror as a ninja master.\pSwiftness brings abrupt doom.\pBeing outran can render foes\nhelpless.\pDespair to the frightening horror of\nmy speed demons!
+
+#org @gText_koga_DefeatText
+Humph!\nYou have proven your worth!\pHere!\nTake the Soul Badge!
+
+#org @gText_koga_Givetm
+TM36 is Sludge Bomb.\pThe foe is drenched in toxins,\ninflicting damage with a chance of\lpoison.
+
+#org @gText_koga_TMInfomsg
+Now that you have the Soul Badge,\nyou can Surf outside of battle.\pAh!\nTake this, too!
+
+#org @gText_koga_Helloagain
+[.]You want a [GREEN]Toxtricitite[BLUE]?
+
+#org @gText_koga_Perfectpokemon
+Show me a Pok\emon you've invested\nin Speed.\pI'll gladly hand one over.
+
+#org @gText_koga_PerfectpokemonMinimal
+Show me a speedy Pok\emon.\pI'll gladly hand one over.
+
+#org @gText_koga_Thepokemon
+Your [BUFFER1][.]
+
+#org @gText_koga_Notquite
+Not fast enough, child.
+
+#org @gText_koga_Perfect
+Ohoho! This one is quick!\pPlease, have it.
+
+#org @gText_koga_Donemsg
+Continue terrorizing foes, child.\pYou have the capacity to do so.
+
+#org @gText_koga_Charmmsg
+Have one of my favorite items as\nwell.
+
+#org @gText_FuschiaDoubleOof
+Sorry, double battles aren't\nworking at the moment.
+
+#org @gText_Fuschia_Sandaconda1
+Hey! I've recently learned of a new\npowerful strategy!\pIt's such a blast using it!\pWould you like to help me test it\nout?
+
+#org @gText_Fuschia_Sandaconda2
+Woohoo, exciting! Let's begin. 
+
+#org @gText_Fuschia_SandacondaReject
+Hm, see you later then.
+
+#org @gText_Fuschia_SandacondaDefeat
+Wow, you withstood my onslaught!
+
+#org @gText_Fuschia_Sandaconda3
+Hmm, perhaps I'm a bit tunnel-visioned\nwith my new strategy[.]\pI'll do some more practice!\pThanks for the help!\pTake the [GREEN]Sandacondite!
+
+#org @gText_Fuschia_Sandaconda4
+[RED][.] ah, you want the item I've been\nplaying around with too?\pAlright, fine.
+
+#org @gText_Fuschia_Sandaconda5
+[GREEN]Power Herb Meteor Beam!\n[RED]Watch your foes cower in terror as\lthe stars fall! 
+
+#org @gText_Fuschia_Closed 
+[BLACK]The gym appears to be closed[.]\pPerhaps it'd be wise to rematch\nsome of the Gym Leaders?
+
+#org @gText_Safari_WhereMyBf
+[GREEN]Sara: [RED]Where did my boyfriend,\n[GREEN]Erik[RED], go?
+
+#org @gText_Safari_WouldveGaveToErik
+Oh, you have the care package\ncheat.\pI would've gave these to my boyfriend,\nbut he stood me up!\pSo, take them.
+
+#org @gText_Fuschia_Dracovish
+Name: Dracovish\nIt may not appear powerful at\lfirst glance, but this fearsome\lPok\emon is notorious for OHKO-ing\lall sorts of foes.
+
+#org @gText_Fuschia_Milotic
+Name: Milotic\nThis beautiful and elegant Pok\emon\levolves from quite the hideous\lPok\emon.
+
+#org @gText_Fuschia_Slowbro
+Name: Slowbro\nFriendly and very slow moving.
+
+#org @gText_Fuschia_GuyZoo1
+That monstrosity there[.]\pYou want it too right?\pI've heard they can show up at\n[GREEN]Route 18.
+
+#org @gText_FuschiaSeviiEgg_1
+[BLUE]Hey [GREEN][PLAYER]!
+
+#org @gText_FuschiaSeviiEgg_2
+[BLUE]Just another one of Oak's aides with\nanother Seviian Egg.\pOak figured you might want\nanother one of these.\pTake it!
+
+#org @gText_FuschiaSeviiEgg_3
+[BLUE]Mm[.] seems you don't have space.\pI can wait around until you\nmake room.
+
+#org @gText_FuschiaSeviiEgg_4
+[BLUE]Farewell [GREEN][PLAYER]!
+
+#org @gText_FuschiaSeviiEgg_5
+Hey! Have you made room for the\nSeviian Egg?
+
+#org @gText_FuschiaSeviiEgg_6
+[.]Hmm, seems like you still don't\nhave space.\pI'll be here until you do.
+
+#org @gText_FuschiaSeviiEgg_7
+[.]Yep! Here, take it.
