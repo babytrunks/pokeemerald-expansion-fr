@@ -1,5 +1,6 @@
 #include "global.h"
 #include "option_menu.h"
+#include "option_plus_menu.h"
 #include "bg.h"
 #include "gpu_regs.h"
 #include "international_string_util.h"
@@ -16,6 +17,8 @@
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
 
+#define useOptionPlusMenu TRUE
+
 #define tMenuSelection data[0]
 #define tTextSpeed data[1]
 #define tBattleSceneOff data[2]
@@ -23,6 +26,7 @@
 #define tSound data[4]
 #define tButtonMode data[5]
 #define tWindowFrameType data[6]
+
 
 enum
 {
@@ -151,6 +155,12 @@ static void VBlankCB(void)
 
 void CB2_InitOptionMenu(void)
 {
+    if (useOptionPlusMenu)
+    {
+        CB2_InitOptionPlusMenu();
+        return;
+    }
+
     switch (gMain.state)
     {
     default:

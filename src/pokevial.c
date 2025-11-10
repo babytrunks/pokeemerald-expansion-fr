@@ -8,14 +8,14 @@
 
 static void PokevialFixDoseOverflow(void);
 
-static void PokevialInit()
-{
-    if (VarGet(VAR_POKEVIAL_MAX_SIZE) < VIAL_MIN_SIZE)
-    {
-        VarSet(VAR_POKEVIAL_MAX_SIZE,VIAL_MIN_SIZE );
-        VarSet(VAR_POKEVIAL_CURRENT_DOSE,VIAL_MIN_SIZE );
-    }
-}
+// static void PokevialInit()
+// {
+//     if (VarGet(VAR_POKEVIAL_MAX_SIZE) < VIAL_MIN_SIZE)
+//     {
+//         VarSet(VAR_POKEVIAL_MAX_SIZE,VIAL_MIN_SIZE );
+//         VarSet(VAR_POKEVIAL_CURRENT_DOSE,VIAL_MIN_SIZE );
+//     }
+// }
 
 u32 PokevialGetDose()
 {

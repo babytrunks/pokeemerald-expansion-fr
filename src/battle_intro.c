@@ -205,7 +205,7 @@ static void BattleIntroNoSlide(u8 taskId)
 static void BattleIntroSlide1(u8 taskId)
 {
     int i;
-    if (B_FAST_INTRO_NO_SLIDE || gTestRunnerHeadless)
+    if (B_FAST_INTRO_NO_SLIDE || gTestRunnerHeadless || gSaveBlock2Ptr->optionsFastIntro == 0)
         return BattleIntroNoSlide(taskId);
 
     gBattle_BG1_X += 6;
@@ -292,7 +292,7 @@ static void BattleIntroSlide1(u8 taskId)
 static void BattleIntroSlide2(u8 taskId)
 {
     int i;
-    if (B_FAST_INTRO_NO_SLIDE || gTestRunnerHeadless)
+    if (B_FAST_INTRO_NO_SLIDE || gTestRunnerHeadless || gSaveBlock2Ptr->optionsFastIntro == 0)
         return BattleIntroNoSlide(taskId);
 
     switch (gTasks[taskId].tEnvironment)
@@ -406,7 +406,7 @@ static void BattleIntroSlide2(u8 taskId)
 static void BattleIntroSlide3(u8 taskId)
 {
     int i;
-    if (B_FAST_INTRO_NO_SLIDE || gTestRunnerHeadless)
+    if (B_FAST_INTRO_NO_SLIDE || gTestRunnerHeadless || gSaveBlock2Ptr->optionsFastIntro == 0)
         return BattleIntroNoSlide(taskId);
 
     gBattle_BG1_X += 8;

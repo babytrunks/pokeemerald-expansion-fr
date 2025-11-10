@@ -2343,7 +2343,10 @@ static bool8 GetMonInfo(struct Pokemon *mon, u32 *species, bool32 *shiny, bool32
 // Retrieve graphic information about the following pokemon, if any
 bool8 GetFollowerInfo(u32 *species, bool32 *shiny, bool32 *female)
 {
-    return GetMonInfo(GetFirstLiveMon(), species, shiny, female);
+    if (gSaveBlock2Ptr->optionsfollowerEnable == 0) 
+        return GetMonInfo(GetFirstLiveMon(), species, shiny, female);
+    else
+        return FALSE;
 }
 
 // Update following pokemon if any
