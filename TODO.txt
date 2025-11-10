@@ -7,7 +7,7 @@ HIGHEST PRIORITY:
 - Wild Encounters 
     - pokeemerald-expansion DNS uses 4 slots for different times of day, but we only need Day/Night
 - Infinite Repel as item (babytrunks)
-- Updated level-up-learnsets from FRU
+- Updated level-up-learnsets from FRU (JwowSquared)
 - Update TM/HM list to FRU 
     - (pokeemerald has 100, idk if we even use all 120 in FRU but we can look into 120 if necessary)
 - Updated Move Tutor, TM, HM, Egg Moves from FRU
