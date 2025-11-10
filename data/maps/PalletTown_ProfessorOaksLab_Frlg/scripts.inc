@@ -1217,8 +1217,8 @@ MoveGaryBulbasaur::
 	waitmovement 0
     @here 2 locations have to be considered for player: above and under
     @because player takes water here which is middle
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak7
 	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak8
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak7
     return
 
 MoveGarySquirtle::
@@ -1234,9 +1234,9 @@ MoveGaryCharmander::
     applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryFireToOak 
     @here 3 locations have to be considered for player: above, left and under
     @because player takes grass here which is left
+	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
 	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak1
 	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak2
-	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
     return
 
 PalletTown_ProfessorOaksLab_EventScript_RivalWalksBackToOak:
