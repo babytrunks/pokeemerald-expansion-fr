@@ -211,7 +211,7 @@ ViridianCity_EventScript_DoTutorialBattle::
 	@ special StartOldManTutorialBattle
 	@ waitstate
 	lock
-	faceplayer
+	@ faceplayer
 	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2
 	giveitem ITEM_TEACHY_TV

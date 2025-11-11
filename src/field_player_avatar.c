@@ -848,6 +848,17 @@ static void PlayerNotOnBikeTurningInPlace(u8 direction, u16 heldKeys)
     PlayerTurnInPlace(direction);
 }
 
+static bool8 IsPlayerTryingToRun(u16 heldKeys)
+{
+    if (FlagGet(DN_FLAG_SEARCHING) && (heldKeys & A_BUTTON))
+        return FALSE;
+    if (gSaveBlock2Ptr->optionsautoRun == 0)
+        return TRUE;
+    else if (heldKeys & B_BUTTON)
+        return TRUE;
+    return FALSE;
+}
+
 static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
 {
     u8 collision = CheckForPlayerAvatarCollision(direction);
@@ -904,27 +915,46 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
             gPlayerAvatar.creeping = TRUE;
             PlayerWalkSlow(direction);
         }
+        else if (gSaveBlock2Ptr->optionsautoRun == 1)
+        {            
+            if (heldKeys & B_BUTTON)
+                PlayerWalkFaster(direction);
+            else
+                PlayerWalkFast(direction);
+        }
         else
-        {
-            // speed 2 is fast, same speed as running
-            PlayerWalkFast(direction);
+        {            
+            if (heldKeys & B_BUTTON)
+                PlayerWalkFast(direction);
+            else
+                PlayerWalkFaster(direction);
         }
         return;
     }
 
     if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER)
-     && (heldKeys & B_BUTTON) 
+     && IsPlayerTryingToRun(heldKeys)
      && FlagGet(FLAG_SYS_B_DASH)
      && IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior) == 0 
      && !FollowerNPCComingThroughDoor() 
      && (I_ORAS_DOWSING_FLAG == 0 || (I_ORAS_DOWSING_FLAG != 0 && !FlagGet(I_ORAS_DOWSING_FLAG))))
     {
-        if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
-            PlayerRunSlow(direction);
+        if (heldKeys & B_BUTTON && gSaveBlock2Ptr->optionsautoRun == 0)
+        {
+            if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
+                PlayerWalkSlow(direction);
+            else
+                PlayerWalkNormal(direction);
+        }
         else
-            PlayerRun(direction);
-
-        gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
+        {
+            if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
+                PlayerRunSlow(direction);
+            else
+                PlayerRun(direction);
+            
+            gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
+        }
         return;
     }
     else if (FlagGet(DN_FLAG_SEARCHING) && (heldKeys & A_BUTTON))

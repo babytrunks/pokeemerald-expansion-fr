@@ -30,11 +30,13 @@ enum
     MENUITEM_MAIN_TEXTSPEED,
     MENUITEM_MAIN_BATTLESCENE,
     MENUITEM_MAIN_BATTLESTYLE,
+    MENUITEM_MAIN_AUTORUN,
     MENUITEM_MAIN_SOUND,
     MENUITEM_MAIN_MUSIC,
     MENUITEM_MAIN_BUTTONMODE,
     MENUITEM_MAIN_FOLLOWER,
     // MENUITEM_MAIN_UNIT_SYSTEM,
+    MENUITEM_MAIN_FONT, 
     MENUITEM_MAIN_FRAMETYPE,
     MENUITEM_MAIN_CANCEL,
     MENUITEM_MAIN_COUNT,
@@ -44,7 +46,6 @@ enum
 {
     MENUITEM_BATTLE_HP_BAR,
     // MENUITEM_BATTLE_EXP_BAR,
-    MENUITEM_MAIN_FONT,
     MENUITEM_BATTLE_FAST_BATTLES, 
     MENUITEM_BATTLE_FAST_INTRO,
     // MENUITEM_BATTLE_MATCHCALL,
@@ -168,6 +169,8 @@ static void DrawChoices_BarSpeed(int selection, int y); //HP and EXP
 // static void DrawChoices_UnitSystem(int selection, int y);
 static void DrawChoices_Font(int selection, int y);
 static void DrawChoices_FrameType(int selection, int y);
+static void DrawChoices_Autorun(int selection, int y);
+
 // static void DrawChoices_MatchCall(int selection, int y);
 static void DrawChoices_Follower(int selection, int y);
 static void DrawChoices_FastIntro(int selection, int y);
@@ -210,11 +213,13 @@ struct // MENU_MAIN
     [MENUITEM_MAIN_TEXTSPEED]    = {DrawChoices_TextSpeed,   ProcessInput_Options_Four},
     [MENUITEM_MAIN_BATTLESCENE]  = {DrawChoices_BattleScene, ProcessInput_Options_Two},
     [MENUITEM_MAIN_BATTLESTYLE]  = {DrawChoices_BattleStyle, ProcessInput_Options_Two},
+    [MENUITEM_MAIN_AUTORUN]                 = {DrawChoices_Autorun,          ProcessInput_Options_Two},
     [MENUITEM_MAIN_SOUND]        = {DrawChoices_Sound,       ProcessInput_Options_Two},
     [MENUITEM_MAIN_MUSIC]                         = {DrawChoices_Music,                                 ProcessInput_Options_Two},
     [MENUITEM_MAIN_BUTTONMODE]   = {DrawChoices_ButtonMode,  ProcessInput_Options_Three},
     [MENUITEM_MAIN_FOLLOWER]                = {DrawChoices_Follower,         ProcessInput_Options_Two},
     // [MENUITEM_MAIN_UNIT_SYSTEM]  = {DrawChoices_UnitSystem,  ProcessInput_Options_Two},
+    [MENUITEM_MAIN_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
     [MENUITEM_MAIN_FRAMETYPE]    = {DrawChoices_FrameType,   ProcessInput_FrameType},
     [MENUITEM_MAIN_CANCEL]       = {NULL, NULL},
 };
@@ -227,7 +232,6 @@ struct // MENU_CUSTOM
 {
     [MENUITEM_BATTLE_HP_BAR]       = {DrawChoices_BarSpeed,    ProcessInput_Options_Eleven},
     // [MENUITEM_BATTLE_EXP_BAR]      = {DrawChoices_BarSpeed,    ProcessInput_Options_Eleven},
-    [MENUITEM_MAIN_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
     [MENUITEM_BATTLE_FAST_BATTLES]     = {DrawChoices_FastBattles,        ProcessInput_Options_Two},
     [MENUITEM_BATTLE_FAST_INTRO]       = {DrawChoices_FastIntro,          ProcessInput_Options_Two},
 
@@ -242,7 +246,7 @@ static const u8 sText_UnitSystem[]  = _("Unit System");
 
 static const u8 gText_FollowerEnable[] = _("{PKMN} Follower"); 
 static const u8 sText_OptionMusic[]                  = _("Music");
-
+static const u8 gText_Autorun[] = _("Autorun");
 static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 {
     [MENUITEM_MAIN_TEXTSPEED]   = gText_TextSpeed,
@@ -250,7 +254,9 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
     [MENUITEM_MAIN_BATTLESTYLE] = gText_BattleStyle,
     [MENUITEM_MAIN_SOUND]       = gText_Sound,
     [MENUITEM_MAIN_MUSIC]       = sText_OptionMusic,
+    [MENUITEM_MAIN_AUTORUN]  = gText_Autorun,
     [MENUITEM_MAIN_BUTTONMODE]  = gText_ButtonMode,
+    [MENUITEM_MAIN_FONT]        = gText_Font,
     [MENUITEM_MAIN_FOLLOWER]  = gText_FollowerEnable,
     // [MENUITEM_MAIN_UNIT_SYSTEM] = sText_UnitSystem,
     [MENUITEM_MAIN_FRAMETYPE]   = gText_Frame,
@@ -265,7 +271,6 @@ static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_BATTLE_COUNT] =
 {
     [MENUITEM_BATTLE_HP_BAR]      = sText_HpBar,
     // [MENUITEM_BATTLE_EXP_BAR]     = sText_ExpBar,
-    [MENUITEM_MAIN_FONT]        = gText_Font,
     [MENUITEM_BATTLE_FAST_INTRO]       = sText_OptionFastIntro,
     [MENUITEM_BATTLE_FAST_BATTLES]     = sText_OptionFastBattles,
     // [MENUITEM_BATTLE_MATCHCALL]   = gText_OptionMatchCalls,
@@ -298,16 +303,17 @@ static bool8 CheckConditions(int selection)
         // case MENUITEM_MAIN_UNIT_SYSTEM:     return TRUE;
         case MENUITEM_MAIN_FRAMETYPE:       return TRUE;
         case MENUITEM_MAIN_FOLLOWER:          return TRUE;
+        case MENUITEM_MAIN_FONT:            return TRUE;
         case MENUITEM_MAIN_CANCEL:          return TRUE;
         case MENUITEM_MAIN_COUNT:           return TRUE;
         case MENUITEM_MAIN_MUSIC:          return TRUE;
+        case MENUITEM_MAIN_AUTORUN:           return TRUE;
         }
     case MENU_CUSTOM:
         switch(selection)
         {
         case MENUITEM_BATTLE_HP_BAR:          return TRUE;
         // case MENUITEM_BATTLE_EXP_BAR:         return TRUE;
-        case MENUITEM_MAIN_FONT:            return TRUE;
         case MENUITEM_BATTLE_FAST_BATTLES:    return TRUE;
         case MENUITEM_BATTLE_FAST_INTRO:      return TRUE;
         // case MENUITEM_BATTLE_MATCHCALL:       return TRUE;
@@ -341,18 +347,21 @@ static const u8 sText_Desc_FollowerOff[]           = _("Walk alone.");
 
 static const u8 sText_Desc_FastIntroOn[]           = _("Skip the sliding animation\nand enter battles faster.");
 static const u8 sText_Desc_FastIntroOff[]          = _("Battles load at the usual speed.");
-
+static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
+static const u8 sText_Desc_AutorunOn[]             = _("Run without pressing B.");
+static const u8 sText_Desc_AutorunOff[]            = _("Press and hold B to run.");
 
 static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][3] =
 {
     [MENUITEM_MAIN_TEXTSPEED]   = {sText_Desc_TextSpeed,            sText_Empty,                sText_Empty},
     [MENUITEM_MAIN_BATTLESCENE] = {sText_Desc_BattleScene_On,       sText_Desc_BattleScene_Off, sText_Empty},
     [MENUITEM_MAIN_BATTLESTYLE] = {sText_Desc_BattleStyle_Shift,    sText_Desc_BattleStyle_Set, sText_Empty},
+    [MENUITEM_MAIN_AUTORUN]     = {sText_Desc_AutorunOn,            sText_Desc_AutorunOff},
     [MENUITEM_MAIN_SOUND]       = {sText_Desc_SoundMono,            sText_Desc_SoundStereo,     sText_Empty},
     [MENUITEM_MAIN_MUSIC]       = {sText_Desc_Music_On,             sText_Desc_Music_Off,     sText_Empty},
     [MENUITEM_MAIN_BUTTONMODE]  = {sText_Desc_ButtonMode,           sText_Desc_ButtonMode_LR,   sText_Desc_ButtonMode_LA},
     [MENUITEM_MAIN_FOLLOWER]    = {sText_Desc_FollowerOn,           sText_Desc_FollowerOff},
-
+    [MENUITEM_MAIN_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
     //[MENUITEM_MAIN_UNIT_SYSTEM] = {sText_Desc_UnitSystemImperial,   sText_Desc_UnitSystemMetric,sText_Empty},
     [MENUITEM_MAIN_FRAMETYPE]   = {sText_Desc_FrameType,            sText_Empty,                sText_Empty},
     [MENUITEM_MAIN_CANCEL]      = {sText_Desc_Save,                 sText_Empty,                sText_Empty},
@@ -365,15 +374,14 @@ static const u8 sText_Desc_SurfOff[]            = _("Disables the SURF theme whe
 static const u8 sText_Desc_SurfOn[]             = _("Enables the SURF theme\nwhen using SURF.");
 static const u8 sText_Desc_BikeOff[]            = _("Disables the BIKE theme when\nusing the BIKE.");
 static const u8 sText_Desc_BikeOn[]             = _("Enables the BIKE theme when\nusing the BIKE.");
-static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
 static const u8 sText_Desc_FastBattleOn[]          = _("Skips all delays in battles, which\nmakes them faster.");
 static const u8 sText_Desc_FastBattleOff[]         = _("Manual delay skipping. You can\npress A or B to skip delays.");
+
 
 static const u8 *const sOptionMenuItemDescriptionsCustom[MENUITEM_BATTLE_COUNT][2] =
 {
     [MENUITEM_BATTLE_HP_BAR]      = {sText_Desc_BattleHPBar,        sText_Empty},
     // [MENUITEM_BATTLE_EXP_BAR]     = {sText_Desc_BattleExpBar,       sText_Empty},
-    [MENUITEM_MAIN_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
     [MENUITEM_BATTLE_FAST_BATTLES]        = {sText_Desc_FastBattleOn,             sText_Desc_FastBattleOff},
     [MENUITEM_BATTLE_FAST_INTRO]          = {sText_Desc_FastIntroOn,              sText_Desc_FastIntroOff},
 
@@ -390,11 +398,13 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMain[MENUITEM_MAIN_COU
     [MENUITEM_MAIN_TEXTSPEED]   = sText_Desc_Disabled_Textspeed,
     [MENUITEM_MAIN_BATTLESCENE] = sText_Empty,
     [MENUITEM_MAIN_BATTLESTYLE] = sText_Empty,
+    [MENUITEM_MAIN_AUTORUN]     = sText_Empty,
     [MENUITEM_MAIN_SOUND]       = sText_Empty,
     [MENUITEM_MAIN_BUTTONMODE]  = sText_Empty,
     [MENUITEM_MAIN_FOLLOWER]    = sText_Desc_Disabled_BattleHPBar,
     //[MENUITEM_MAIN_UNIT_SYSTEM] = sText_Empty,
     [MENUITEM_MAIN_FRAMETYPE]   = sText_Empty,
+    [MENUITEM_MAIN_FONT]        = sText_Empty,
     [MENUITEM_MAIN_CANCEL]      = sText_Empty,
 };
 
@@ -403,7 +413,6 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_BATTLE
 {
     [MENUITEM_BATTLE_HP_BAR]      = sText_Desc_Disabled_BattleHPBar,
     // [MENUITEM_BATTLE_EXP_BAR]     = sText_Empty,
-    [MENUITEM_MAIN_FONT]        = sText_Empty,
     [MENUITEM_BATTLE_FAST_BATTLES]        = sText_Empty,
     [MENUITEM_BATTLE_FAST_INTRO]          = sText_Empty,
     // [MENUITEM_BATTLE_MATCHCALL]   = sText_Empty,
@@ -653,10 +662,11 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_FOLLOWER]            = gSaveBlock2Ptr->optionsfollowerEnable;
         sOptions->sel[MENUITEM_MAIN_FRAMETYPE]   = gSaveBlock2Ptr->optionsWindowFrameType;
         sOptions->sel[MENUITEM_MAIN_MUSIC]         = gSaveBlock2Ptr->optionsMusicOnOff;
-
+        sOptions->sel[MENUITEM_MAIN_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
+        sOptions->sel[MENUITEM_MAIN_AUTORUN]             = gSaveBlock2Ptr->optionsautoRun;
         sOptions->sel_custom[MENUITEM_BATTLE_HP_BAR]      = gSaveBlock2Ptr->optionsHpBarSpeed;
         // sOptions->sel_custom[MENUITEM_BATTLE_EXP_BAR]     = gSaveBlock2Ptr->optionsExpBarSpeed;
-        sOptions->sel_custom[MENUITEM_MAIN_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
+
         sOptions->sel_custom[MENUITEM_BATTLE_FAST_INTRO]      = gSaveBlock2Ptr->optionsFastIntro;
         sOptions->sel_custom[MENUITEM_BATTLE_FAST_BATTLES]    = gSaveBlock2Ptr->optionsFastBattle;
 
@@ -843,13 +853,14 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound            = sOptions->sel[MENUITEM_MAIN_SOUND];
     gSaveBlock2Ptr->optionsButtonMode       = sOptions->sel[MENUITEM_MAIN_BUTTONMODE];
     gSaveBlock2Ptr->optionsfollowerEnable        = sOptions->sel[MENUITEM_MAIN_FOLLOWER];
+    gSaveBlock2Ptr->optionsautoRun               = sOptions->sel[MENUITEM_MAIN_AUTORUN];
 
     // gSaveBlock2Ptr->optionsUnitSystem       = sOptions->sel[MENUITEM_MAIN_UNIT_SYSTEM];
     gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel[MENUITEM_MAIN_FRAMETYPE];
 
     gSaveBlock2Ptr->optionsHpBarSpeed       = sOptions->sel_custom[MENUITEM_BATTLE_HP_BAR];
     // gSaveBlock2Ptr->optionsExpBarSpeed      = sOptions->sel_custom[MENUITEM_BATTLE_EXP_BAR];
-    gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel_custom[MENUITEM_MAIN_FONT];
+    gSaveBlock2Ptr->optionsCurrentFont      = sOptions->sel[MENUITEM_MAIN_FONT];
     gSaveBlock2Ptr->optionsFastIntro        = sOptions->sel_custom[MENUITEM_BATTLE_FAST_INTRO];
     gSaveBlock2Ptr->optionsFastBattle       = sOptions->sel_custom[MENUITEM_BATTLE_FAST_BATTLES];
 
@@ -1216,6 +1227,26 @@ static void DrawChoices_Font(int selection, int y)
 
     DrawOptionMenuChoice(gText_OptionFontFireRed, 104, y, styles[0], active);
     DrawOptionMenuChoice(gText_OptionFontEmerald, GetStringRightAlignXOffset(1, gText_OptionFontEmerald, 198), y, styles[1], active);
+}
+
+
+static void DrawChoices_Autorun(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_MAIN_AUTORUN);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    if (selection == 0)
+    {
+        gSaveBlock2Ptr->optionsautoRun = 0;
+    }
+    else
+    {
+        gSaveBlock2Ptr->optionsautoRun = 1;
+    }
+
+    DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
 }
 
 static void DrawChoices_Follower(int selection, int y)

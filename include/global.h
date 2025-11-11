@@ -586,6 +586,7 @@ struct SaveBlock2
              u16 optionsHpBarSpeed:4;   //tx_optionsPlus
             //  u16 optionsExpBarSpeed:4;  //tx_optionsPlus
             //  u16 optionsDisableMatchCall:1; //tx_optionsPlus
+             u16 optionsautoRun:1;
              u16 optionsCurrentFont:1;  //tx_optionsPlus
              u16 optionsMusicOnOff:1;
              u16 optionsFastBattle:1;
