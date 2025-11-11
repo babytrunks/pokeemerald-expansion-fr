@@ -1520,7 +1520,8 @@ void Script_ForceSaveGame(struct ScriptContext *ctx)
 }
 
 extern const u8 gText_StartMenu_Time[];
-
+static const u8 gText_StartMenu_Day[]                   = _("Day");
+static const u8 gText_StartMenu_Night[]                   = _("Night");
 void DrawTime(void) {
 	sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
 	PutWindowTilemap(sSafariBallsWindowId);
@@ -1528,6 +1529,11 @@ void DrawTime(void) {
     // FormatDecimalTimeWithoutSeconds(gStringVar1, s8 hour, s8 minute, bool32 is24Hour)
 	ConvertIntToDecimalStringN(gStringVar1, gLocalTime.hours, STR_CONV_MODE_LEFT_ALIGN, 3);
 	ConvertIntToDecimalStringN(gStringVar2, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
+    u32 time = GetTimeOfDay();
+    if (time < TIME_EVENING)
+        StringCopy(gStringVar3, gText_StartMenu_Day);
+    else
+        StringCopy(gStringVar3, gText_StartMenu_Night);
 	StringExpandPlaceholders(gStringVar4, gText_StartMenu_Time);
 	FillWindowPixelBuffer(sSafariBallsWindowId, PIXEL_FILL(1));
 	AddTextPrinterParameterized(sSafariBallsWindowId, 2, gStringVar4, 4, 3, 0xFF, NULL);

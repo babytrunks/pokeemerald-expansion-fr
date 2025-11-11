@@ -173,7 +173,7 @@ const u8 gText_TheBattle[] = _("the battle");
 const u8 gText_ThePokemonList[] = _("the Pokémon LIST");
 const u8 gText_TheShop[] = _("the shop");
 const u8 gText_ThePC[] = _("the PC");
-const u8 gText_StartMenu_Time[] = _("Time: {STR_VAR_1}:{STR_VAR_2}");
+const u8 gText_StartMenu_Time[] = _("{STR_VAR_1}:{STR_VAR_2}\n{STR_VAR_3}");
 const u8 *const gBagMenu_ReturnToStrings[] =
 {
     [ITEMMENULOCATION_FIELD]               = gText_TheField,

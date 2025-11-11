@@ -408,6 +408,10 @@ enum TimeOfDay GetTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area
     const struct WildPokemonInfo *wildMonInfo;
     enum TimeOfDay timeOfDay = GetTimeOfDay();
 
+    // Added
+    if (timeOfDay == TIME_EVENING) {
+        timeOfDay = TIME_NIGHT;
+    }
     if (!OW_TIME_OF_DAY_ENCOUNTERS)
         return TIME_OF_DAY_DEFAULT;
 
