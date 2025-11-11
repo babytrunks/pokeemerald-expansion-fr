@@ -17,7 +17,7 @@ Route3_Text_TunnelFromCeruleanTiring::
 
 Route3_Text_ColtonIntro::
     .string "Hey!\n"
-    .string "I saw you in VIRIDIAN FOREST!$"
+    .string "I saw you in Viridian Forest!$"
 
 Route3_Text_ColtonDefeat::
     .string "You beat me again!$"

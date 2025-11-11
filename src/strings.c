@@ -173,7 +173,7 @@ const u8 gText_TheBattle[] = _("the battle");
 const u8 gText_ThePokemonList[] = _("the Pokémon LIST");
 const u8 gText_TheShop[] = _("the shop");
 const u8 gText_ThePC[] = _("the PC");
-
+const u8 gText_StartMenu_Time[] = _("Time: {STR_VAR_1}:{STR_VAR_2}");
 const u8 *const gBagMenu_ReturnToStrings[] =
 {
     [ITEMMENULOCATION_FIELD]               = gText_TheField,
@@ -203,11 +203,11 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [POCKET_ITEMS] =        COMPOUND_STRING("ITEMS"),
+    [POCKET_ITEMS] =        COMPOUND_STRING("Items"),
     [POCKET_POKE_BALLS] =   COMPOUND_STRING("Poké Balls"),
     [POCKET_TM_HM]  =       COMPOUND_STRING("TMs & HMs"),
-    [POCKET_BERRIES] =      COMPOUND_STRING("BERRIES"),
-    [POCKET_KEY_ITEMS] =    COMPOUND_STRING("KEY ITEMS")
+    [POCKET_BERRIES] =      COMPOUND_STRING("Berries"),
+    [POCKET_KEY_ITEMS] =    COMPOUND_STRING("Key Items")
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}");

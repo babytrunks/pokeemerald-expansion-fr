@@ -931,12 +931,12 @@ PewterCity_Text_MuseumOfScience::
     .string "PEWTER MUSEUM OF SCIENCE$"
 
 PewterCity_Text_GymSign::
-    .string "PEWTER CITY Pokémon GYM\n"
+    .string "Pewter City Pokémon GYM\n"
     .string "LEADER: BROCK\l"
     .string "The Rock-Solid Pokémon TRAINER!$"
 
 PewterCity_Text_CitySign::
-    .string "PEWTER CITY\n"
+    .string "Pewter City\n"
     .string "A Stone Gray City$"
 
 PewterCity_Text_OhPlayer::

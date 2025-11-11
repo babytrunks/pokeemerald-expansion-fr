@@ -49,6 +49,8 @@
 #include "constants/battle_frontier.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "rtc.h"
+
 
 // Menu actions
 enum
@@ -330,6 +332,8 @@ static void AddStartMenuAction(u8 action)
 
 static void BuildNormalStartMenu(void)
 {
+    DrawTime();
+
     if (FlagGet(FLAG_SYS_POKEDEX_GET) == TRUE)
         AddStartMenuAction(MENU_ACTION_POKEDEX);
 
@@ -619,8 +623,16 @@ void ShowStartMenu(void)
     LockPlayerFieldControls();
 }
 
+static void DestroySafariZoneStatsWindow(void)
+{
+	ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
+	CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
+	RemoveWindow(sSafariBallsWindowId);
+}
+
 static bool8 HandleStartMenuInput(void)
 {
+    RtcCalcLocalTime();
     if (JOY_NEW(DPAD_UP))
     {
         PlaySE(SE_SELECT);
@@ -661,6 +673,7 @@ static bool8 HandleStartMenuInput(void)
 
     if (JOY_NEW(START_BUTTON | B_BUTTON))
     {
+        DestroySafariZoneStatsWindow();
         RemoveExtraStartMenuWindows();
         HideStartMenu();
         return TRUE;
@@ -1504,4 +1517,19 @@ void Script_ForceSaveGame(struct ScriptContext *ctx)
     ShowSaveInfoWindow();
     gMenuCallback = SaveCallback;
     sSaveDialogCallback = SaveSavingMessageCallback;
+}
+
+extern const u8 gText_StartMenu_Time[];
+
+void DrawTime(void) {
+	sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
+	PutWindowTilemap(sSafariBallsWindowId);
+	DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
+    // FormatDecimalTimeWithoutSeconds(gStringVar1, s8 hour, s8 minute, bool32 is24Hour)
+	ConvertIntToDecimalStringN(gStringVar1, gLocalTime.hours, STR_CONV_MODE_LEFT_ALIGN, 3);
+	ConvertIntToDecimalStringN(gStringVar2, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
+	StringExpandPlaceholders(gStringVar4, gText_StartMenu_Time);
+	FillWindowPixelBuffer(sSafariBallsWindowId, PIXEL_FILL(1));
+	AddTextPrinterParameterized(sSafariBallsWindowId, 2, gStringVar4, 4, 3, 0xFF, NULL);
+	CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
 }

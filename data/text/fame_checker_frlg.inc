@@ -75,7 +75,7 @@ gFameCheckerFlavorText_Daisy5:: @ 0x81AD69F
 
 gFameCheckerFlavorText_Brock0:: @ 0x81AD705
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}PEWTER CITY Pokémon GYM\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Pewter City Pokémon GYM\n"
 	.string "LEADER: BROCK\l"
 	.string "The Rock-Solid Pokémon TRAINER!$"
 
@@ -834,13 +834,13 @@ gFameCheckerFlavorTextOriginLocation_Daisy5::
 	.string "FOUR ISLAND$"
 
 gFameCheckerFlavorTextOriginLocation_Brock0::
-	.string "PEWTER CITY$"
+	.string "Pewter City$"
 
 gFameCheckerFlavorTextOriginLocation_Brock1::
 	.string "PEWTER GYM$"
 
 gFameCheckerFlavorTextOriginLocation_Brock2::
-	.string "PEWTER CITY$"
+	.string "Pewter City$"
 
 gFameCheckerFlavorTextOriginLocation_Brock3::
 	.string "ROUTE 4$"

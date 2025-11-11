@@ -251,10 +251,10 @@ ViridianCity_Text_GrandpaHasntHadCoffeeYet::
     .string "He hasn't had his coffee yet.$"
 
 ViridianCity_Text_GoShoppingInPewterOccasionally::
-    .string "I go shopping in PEWTER CITY\n"
+    .string "I go shopping in Pewter City\n"
     .string "occasionally.\p"
     .string "I have to take the winding trail in\n"
-    .string "VIRIDIAN FOREST when I go.$"
+    .string "Viridian Forest when I go.$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
     .string "I absolutely forbid you from\n"

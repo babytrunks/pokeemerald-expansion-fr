@@ -1,6 +1,6 @@
 Route3_Text_ColtonRematchIntro::
 	.string "Hey!\n"
-	.string "I saw you in VIRIDIAN FOREST!$"
+	.string "I saw you in Viridian Forest!$"
 
 Route3_Text_BenRematchIntro::
 	.string "Hi! I like shorts!\n"
