@@ -18,7 +18,6 @@
 #include "pokedex_area_screen.h"
 #include "pokedex_cry_screen.h"
 #include "pokedex_plus_hgss.h"
-#include "pokedex_frlg.h"
 #include "rtc.h"
 #include "scanline_effect.h"
 #include "sound.h"
@@ -1609,12 +1608,6 @@ void CB2_OpenPokedex(void)
     if (POKEDEX_PLUS_HGSS)
     {
         CB2_OpenPokedexPlusHGSS();
-        return;
-    }
-
-    if (IS_FRLG)
-    {
-        CB2_OpenPokedexFromStartMenu();
         return;
     }
 
