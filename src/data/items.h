@@ -12714,24 +12714,21 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_TownMap,
     },
 
-    [ITEM_VS_SEEKER] =
+    [ITEM_INFINITE_CANDY] =
     {
-        .name = ITEM_NAME("Vs. Seeker"),
+        .name = ITEM_NAME("Infinite Candy"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A rechargeable unit\n"
-            "that flags battle-\n"
-            "ready Trainers."),
+            "Raises the level\n"
+            "of a Pokémon by\n"
+            "one."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_FIELD,
-#if I_VS_SEEKER_CHARGING != 0
-        .fieldUseFunc = FieldUseFunc_VsSeeker,
-#else
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-#endif
-        .iconPic = gItemIcon_VsSeeker,
-        .iconPalette = gItemIconPalette_VsSeeker,
+        .type = ITEM_USE_PARTY_MENU,
+        .effect = gItemEffect_RareCandy,
+        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
+        .iconPic = gItemIcon_RareCandy,
+        .iconPalette = gItemIconPalette_RareCandy,
     },
 
     [ITEM_TM_CASE] =

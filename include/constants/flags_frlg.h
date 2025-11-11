@@ -639,7 +639,7 @@
 #define FLAG_0x28F                                       0x28F
 #define FLAG_MET_STICKER_MAN                             0x290
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0x291
-#define FLAG_GOT_VS_SEEKER                               0x292
+#define FLAG_GOT_VS_SEEKER                               0x292 // UNUSED
 #define FLAG_GOT_TM19_FROM_ERIKA                         0x293
 #define FLAG_GOT_TM33_FROM_THIRSTY_GIRL                  0x294
 #define FLAG_GOT_TM20_FROM_THIRSTY_GIRL                  0x295
@@ -1215,7 +1215,7 @@
 
 // Unused?
 #define FLAG_DETECTOR_MODE                          0x4BD
-#define FLAG_DEXNAV_GET                             0x4BE
+#define FLAG_0x4BE                             0x4BE
 #define FLAG_SEARCHING                              0x4BF
 #define FLAG_EXP_SHARE                              0x4C0
 #define FLAG_FORCE_SHINY                            0x4C1

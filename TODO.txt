@@ -3,9 +3,10 @@ TODO:
 
 HIGHEST PRIORITY:
 - FRU additional event scripts
-    - For beginning, Mom asking what starter, Oak giving Gen 9, skip the whole Pokemart package and just give Pokeballs/Dex right off the bat)
-- Wild Encounters 
-    - pokeemerald-expansion DNS uses 4 slots for different times of day, but we only need Day/Night
+    - For beginning, Mom asking what starter, Oak giving Gen 1-9, skip the whole Pokemart package and just give Pokeballs/Dex right off the bat DONE
+
+- Wild Encounters (sorta done?)
+    - have FRU wild encounters converted to json already
 - Infinite Repel as item (babytrunks)
 - Updated level-up-learnsets from FRU (JwowSquared)
 - Update TM/HM list to FRU 
@@ -23,6 +24,7 @@ MEDIUM PRIORITY:
 - FRU Exclusive Items/Functionality
 - FRU Exclusive moves (there aren't many ?)
 - Time Changer
+- Time Box in start menu
 - DexNav search levels currently disabled because of save space
 - Max Boxes is only 14, need to research on how to expand..
 - Some FRU Ability exclusive abilities still need implementation (can see //fru todo in constants/abilities.h)
@@ -42,7 +44,7 @@ ALREADY DONE:
 - some early boss fights changed for testing purposes
 - Oak gives DexNav
 - Updated Power, Accuracy changes for battle moves from RR (retain accuracy reducing moves)
-- PokeEmerald has ride pager options we can just enable
+- PokeEmerald has ride pager options, enabled
 - PokeVial as item 
     - https://github.com/pret/pokeemerald/compare/master...PokemonSanFran:pokeemerald:pokevial
 

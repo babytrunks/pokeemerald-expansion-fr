@@ -7,15 +7,14 @@ Route1_EventScript_MartClerk::
 	goto_if_set FLAG_GOT_POTION_ON_ROUTE_1, Route1_EventScript_AlreadyGotPotion
 	msgbox Route1_Text_WorkAtPokeMartTakeSample
 	textcolor NPC_TEXT_COLOR_NEUTRAL
-	checkitemspace ITEM_POTION
+	checkitemspace ITEM_INFINITE_CANDY
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
-	bufferitemname STR_VAR_2, ITEM_POTION
+	bufferitemname STR_VAR_2, ITEM_INFINITE_CANDY
 	playfanfare MUS_LEVEL_UP
 	message gText_ObtainedTheItem
 	waitmessage
 	waitfanfare
-	additem ITEM_POTION
-	msgbox Route1_Text_PutPotionAway
+	giveitem ITEM_INFINITE_CANDY
 	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_POTION_ON_ROUTE_1
 	release
@@ -47,9 +46,9 @@ Route1_Text_ComeSeeUsIfYouNeedPokeBalls::
     .string "Please come see us if you need\n"
     .string "Poké Balls for catching Pokémon.$"
 
-Route1_Text_PutPotionAway::
-    .string "{PLAYER} put the POTION away in\n"
-    .string "the BAG's ITEMS POCKET.$"
+@ Route1_Text_PutPotionAway::
+@     .string "{PLAYER} put the POTION away in\n"
+@     .string "the BAG's ITEMS POCKET.$"
 
 Route1_Text_CanJumpFromLedges::
     .string "See those ledges along the road?\p"

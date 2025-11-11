@@ -278,7 +278,7 @@ ViridianCity_Text_ThatWasEducationalTakeThis::
     .string "And here, take this, too.$"
 
 ViridianCity_Text_ThatThingsUseless::
-    .string "That thing's useless!"
+    .string "That thing's useless!$"
 
 ViridianCity_Text_WeakenMonsFirstToCatch::
     .string "Well, now, I've had my coffee, and\n"

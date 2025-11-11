@@ -668,7 +668,6 @@ ProceedPokedexScript::
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	special EnableNationalPokedex
-	setflag FLAG_DEXNAV_GET
 	setvar VAR_MAP_SCENE_POKEMON_CENTER_TEALA, 1
 	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese
