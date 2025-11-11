@@ -2071,12 +2071,12 @@ static void DecompressGlyph_Normal(u16 glyphId, bool32 isJapanese)
     }
     else
     {
-        if (gSaveBlock2Ptr->optionsCurrentFont == 0)
+        if (gSaveBlock2Ptr->optionsCurrentFont == FONT_EMERALD)
         {
             glyphs = gFontNormalLatinGlyphs + (0x20 * glyphId);
             gCurGlyph.width = gFontNormalLatinGlyphWidths[glyphId];
         }
-        else
+        else // FONT_FIRERED
         {
             glyphs = gFontShortLatinGlyphs + (0x20 * glyphId);
             gCurGlyph.width = gFontShortLatinGlyphWidths[glyphId];

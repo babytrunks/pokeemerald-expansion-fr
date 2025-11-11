@@ -26,6 +26,8 @@ enum {
 
 #define FONT_MALE FONT_NORMAL
 #define FONT_FEMALE FONT_NORMAL
+#define FONT_EMERALD 1
+#define FONT_FRLG    0
 
 // Return values for font functions
 enum {
