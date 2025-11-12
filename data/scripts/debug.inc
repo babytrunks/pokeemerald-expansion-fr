@@ -85,7 +85,7 @@ Debug_CheatStartFrlg::
 	special SetUnlockedPokedexFlags
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6 @ state after handing in parcel and getting pokedex
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 2
-	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1
+	setvar VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 1
 	setvar VAR_MAP_SCENE_PALLET_TOWN_RIVALS_HOUSE, 1
 	setvar VAR_MAP_SCENE_ROUTE22, 1
 	setvar VAR_MAP_SCENE_POKEMON_CENTER_TEALA, 1 @ end

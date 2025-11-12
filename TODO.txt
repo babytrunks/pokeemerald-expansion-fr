@@ -48,7 +48,7 @@ ALREADY DONE:
 - PokeVial as item 
     - https://github.com/pret/pokeemerald/compare/master...PokemonSanFran:pokeemerald:pokevial
 
-Stuff going to make out of scope:
+Stuff going to be out of scope:
 Raid battles (probably replace with hidden grottos)
 
 Additional Stuff:
@@ -56,5 +56,6 @@ Additional Stuff:
 - New exclusive items planned for next FRU update
 - Hidden Grottos to replace Raid Battles
 - Probably semi-roguelike additions like choosing between 3 Pokemon after beating optional boss battle
-- Maybe gauntlets (fight x amount of people before going to Pokemon Center)
+- Gauntlets (fight x amount of people before going to Pokemon Center, Pocket PC and pokeVial disabled)
+- Repurpose quest menu into achievements
 - HUUUUGE would be nice to have, but adding a Hoenn post game would be very cool

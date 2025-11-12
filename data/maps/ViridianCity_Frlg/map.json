@@ -195,7 +195,7 @@
       "x": 22,
       "y": 11,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
+      "var": "VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK",
       "var_value": "0",
       "script": "ViridianCity_EventScript_RoadBlocked"
     },
@@ -213,7 +213,7 @@
       "x": -4,
       "y": -3,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
+      "var": "VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK",
       "var_value": "1",
       "script": "ViridianCity_EventScript_TutorialTriggerLeft"
     },
@@ -222,7 +222,7 @@
       "x": -4,
       "y": -3,
       "elevation": 3,
-      "var": "VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN",
+      "var": "VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK",
       "var_value": "1",
       "script": "ViridianCity_EventScript_TutorialTriggerRight"
     }

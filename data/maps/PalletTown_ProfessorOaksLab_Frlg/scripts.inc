@@ -701,7 +701,7 @@ ProceedPokedexScript::
 	fadedefaultbgm
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 2
-	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1
+	setvar VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 1
 	setvar VAR_MAP_SCENE_PALLET_TOWN_RIVALS_HOUSE, 1
 	setvar VAR_MAP_SCENE_ROUTE22, 1
 	release
@@ -1808,6 +1808,78 @@ MoveGaryWaterToOak::
     step_end
 
 
+PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLinkTriggerLeft::
+	lockall
+	setvar VAR_TEMP_2, 1
+	goto PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLink
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLinkTriggerMiddle::
+	lockall
+	setvar VAR_TEMP_2, 2
+	goto PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLink
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLinkTriggerRight::
+	lockall
+	setvar VAR_TEMP_2, 3
+	goto PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLink
+	end
+
+
+PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLink::
+	msgbox PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_WaitUp
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	call_if_eq VAR_TEMP_2, 1, PalletTown_ProfessorOaksLab_AideApproachLeft
+	call_if_eq VAR_TEMP_2, 2, PalletTown_ProfessorOaksLab_AideApproachMiddle
+	call_if_eq VAR_TEMP_2, 3, PalletTown_ProfessorOaksLab_AideApproachRight
+	waitmovement 0
+	msgbox PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_GiveExpShare
+	giveitem ITEM_POKEMON_BOX_LINK
+	msgbox PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_KindnessWins
+	setvar VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK 2
+	release
+	end
+
+PalletTown_ProfessorOaksLab_AideApproachLeft::
+	applymovement LOCALID_AIDE_BOX_LINK, AideBoxLink_ApproachLeft
+	waitmovement 0
+	return
+
+PalletTown_ProfessorOaksLab_AideApproachMiddle::
+	applymovement LOCALID_AIDE_BOX_LINK, AideBoxLink_ApproachMiddle
+	waitmovement 0
+	return
+
+PalletTown_ProfessorOaksLab_AideApproachRight::
+	applymovement LOCALID_AIDE_BOX_LINK, AideBoxLink_ApproachRight
+	waitmovement 0
+	return
+
+AideBoxLink_ApproachLeft::
+	walk_right
+	walk_right
+	face_down
+	step_end
+
+AideBoxLink_ApproachMiddle::
+	walk_right
+	walk_right
+	walk_right
+	face_down
+	step_end
+
+AideBoxLink_ApproachRight::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_down
+	step_end
+
 PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround::
     .string "What, it's only {PLAYER}?\n"
     .string "Gramps isn't around.$"
@@ -2197,3 +2269,15 @@ gText_Pallet_OakSaysFine::
 gText_StarterPokemon_Rivalreceive::
 	.string "{RIVAL} received the {STR_VAR_1}\n"
 	.string "from Prof. Oak!$"
+
+PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_WaitUp::
+    .string "Wait just a second, {PLAYER}!$"
+
+PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_GiveExpShare::
+    .string "We just received a shipment of\n"
+    .string "these. I figured I'd rather place\l"
+    .string "it in your hands than Oak's snobby\l"
+    .string "grandson.$"
+
+PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_KindnessWins::
+    .string "Kindness wins!$"

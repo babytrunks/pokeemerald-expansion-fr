@@ -4,9 +4,6 @@ ViridianCity_Frlg_MapScripts::
 
 ViridianCity_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_VIRIDIAN_CITY
-	call_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_SetOldManBlockingRoad
-	call_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1, ViridianCity_EventScript_SetOldManStandingByRoad
-	call_if_ge VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2, ViridianCity_EventScript_SetOldManNormal
 	call_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR, 0, ViridianCity_EventScript_TryUnlockGym
 	end
 
@@ -98,9 +95,9 @@ ViridianCity_EventScript_TutorialOldMan::
 	lock
 	faceplayer
 	goto_if_set FLAG_BADGE01_GET, ViridianCity_EventScript_AskIfTeachyTVHelpful
-	goto_if_ge VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2, ViridianCity_EventScript_TutorialCompleted
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 1, ViridianCity_EventScript_TutorialStart
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_TutorialNotReady
+	goto_if_ge VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 2, ViridianCity_EventScript_TutorialCompleted
+	goto_if_eq VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 1, ViridianCity_EventScript_TutorialStart
+	goto_if_eq VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 0, ViridianCity_EventScript_TutorialNotReady
 	end
 
 ViridianCity_EventScript_AskIfTeachyTVHelpful::
@@ -152,7 +149,7 @@ ViridianCity_EventScript_YoungsterDeclineExplanation::
 ViridianCity_EventScript_Woman::
 	lock
 	faceplayer
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 0, ViridianCity_EventScript_WomanRoadBlocked
+	goto_if_eq VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 0, ViridianCity_EventScript_WomanRoadBlocked
 	msgbox ViridianCity_Text_GoShoppingInPewterOccasionally
 	release
 	end
@@ -213,7 +210,7 @@ ViridianCity_EventScript_DoTutorialBattle::
 	lock
 	@ faceplayer
 	msgbox ViridianCity_Text_ThatWasEducationalTakeThis
-	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_OLD_MAN, 2
+	setvar VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 2
 	giveitem ITEM_TEACHY_TV
 	msgbox ViridianCity_Text_ThatThingsUseless
 	return
