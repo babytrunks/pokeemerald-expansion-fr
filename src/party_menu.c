@@ -412,9 +412,9 @@ static void Task_HandleStopLearningMove(u8 taskId);
 static void Task_StopLearningMoveYesNo(u8);
 static void Task_HandleStopLearningMoveYesNoInput(u8);
 static void Task_TryLearningNextMoveAfterText(u8);
-static void BufferMonStatsToTaskData(struct Pokemon *, s16 *);
+// static void BufferMonStatsToTaskData(struct Pokemon *, s16 *);
 static void UpdateMonDisplayInfoAfterRareCandy(u8, struct Pokemon *);
-static void Task_DisplayLevelUpStatsPg1(u8);
+// static void Task_DisplayLevelUpStatsPg1(u8);
 static void DisplayLevelUpStatsPg1(u8);
 static void Task_DisplayLevelUpStatsPg2(u8);
 static void DisplayLevelUpStatsPg2(u8);
@@ -5793,15 +5793,15 @@ static void UpdateMonDisplayInfoAfterRareCandy(u8 slot, struct Pokemon *mon)
     ScheduleBgCopyTilemapToVram(0);
 }
 
-static void Task_DisplayLevelUpStatsPg1(u8 taskId)
-{
-    if (WaitFanfare(FALSE) && IsPartyMenuTextPrinterActive() != TRUE && ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON))))
-    {
-        PlaySE(SE_SELECT);
-        DisplayLevelUpStatsPg1(taskId);
-        gTasks[taskId].func = Task_DisplayLevelUpStatsPg2;
-    }
-}
+// static void Task_DisplayLevelUpStatsPg1(u8 taskId)
+// {
+//     if (WaitFanfare(FALSE) && IsPartyMenuTextPrinterActive() != TRUE && ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON))))
+//     {
+//         PlaySE(SE_SELECT);
+//         DisplayLevelUpStatsPg1(taskId);
+//         gTasks[taskId].func = Task_DisplayLevelUpStatsPg2;
+//     }
+// }
 
 static void Task_DisplayLevelUpStatsPg2(u8 taskId)
 {
@@ -5955,15 +5955,15 @@ static void DisplayMonLearnedMove(u8 taskId, u16 move)
     gTasks[taskId].func = Task_DoLearnedMoveFanfareAfterText;
 }
 
-static void BufferMonStatsToTaskData(struct Pokemon *mon, s16 *data)
-{
-    data[0] = GetMonData(mon, MON_DATA_MAX_HP);
-    data[1] = GetMonData(mon, MON_DATA_ATK);
-    data[2] = GetMonData(mon, MON_DATA_DEF);
-    data[4] = GetMonData(mon, MON_DATA_SPATK);
-    data[5] = GetMonData(mon, MON_DATA_SPDEF);
-    data[3] = GetMonData(mon, MON_DATA_SPEED);
-}
+// static void BufferMonStatsToTaskData(struct Pokemon *mon, s16 *data)
+// {
+//     data[0] = GetMonData(mon, MON_DATA_MAX_HP);
+//     data[1] = GetMonData(mon, MON_DATA_ATK);
+//     data[2] = GetMonData(mon, MON_DATA_DEF);
+//     data[4] = GetMonData(mon, MON_DATA_SPATK);
+//     data[5] = GetMonData(mon, MON_DATA_SPDEF);
+//     data[3] = GetMonData(mon, MON_DATA_SPEED);
+// }
 
 #define tState        data[0]
 #define tMonId        data[1]

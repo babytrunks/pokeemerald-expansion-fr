@@ -85,7 +85,7 @@
 #define POKEBLOCKS_COUNT 40
 #define OBJECT_EVENTS_COUNT 16
 #define MAIL_COUNT (10 + PARTY_SIZE)
-#define SECRET_BASES_COUNT 20
+#define SECRET_BASES_COUNT 15
 #define POKE_NEWS_COUNT 16
 #define PC_ITEMS_COUNT 50
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
@@ -107,6 +107,9 @@
 #define BAG_POKEBALLS_COUNT 16
 #define BAG_TMHM_COUNT 64
 #define BAG_BERRIES_COUNT 46
+#define BAG_MEDICINE_COUNT 34
+#define BAG_BATTLEITEMS_COUNT 47
+#define BAG_TREASURES_COUNT 50
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.
