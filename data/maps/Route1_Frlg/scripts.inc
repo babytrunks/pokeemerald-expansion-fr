@@ -7,14 +7,14 @@ Route1_EventScript_MartClerk::
 	goto_if_set FLAG_GOT_POTION_ON_ROUTE_1, Route1_EventScript_AlreadyGotPotion
 	msgbox Route1_Text_WorkAtPokeMartTakeSample
 	textcolor NPC_TEXT_COLOR_NEUTRAL
-	checkitemspace ITEM_INFINITE_CANDY
+	checkitemspace ITEM_SERIOUS_MINT
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
-	bufferitemname STR_VAR_2, ITEM_INFINITE_CANDY
+	bufferitemname STR_VAR_2, ITEM_SERIOUS_MINT
 	playfanfare MUS_LEVEL_UP
 	message gText_ObtainedTheItem
 	waitmessage
 	waitfanfare
-	giveitem ITEM_INFINITE_CANDY
+	giveitem ITEM_SERIOUS_MINT
 	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_POTION_ON_ROUTE_1
 	release
@@ -35,11 +35,12 @@ Route1_EventScript_RouteSign::
 
 Route1_Text_WorkAtPokeMartTakeSample::
     .string "Hi!\n"
-    .string "I work at a Pokémon MART.\p"
+    .string "I work at a Pokémon Mart.\p"
     .string "It's part of a convenient chain\n"
     .string "selling all sorts of items.\p"
     .string "Please, visit us in Viridian City.\p"
-    .string "I know, I'll give you a sample.\n"
+    .string "Here, check out one of our upcoming\n"
+	.string "items.\p"
     .string "Here you go!$"
 
 Route1_Text_ComeSeeUsIfYouNeedPokeBalls::

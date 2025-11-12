@@ -1040,24 +1040,24 @@ static void Task_RevealHiddenMon(u8 taskId)
     }
 
 
-    if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
-    {
-        u8 index;
+    // if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
+    // {
+    //     u8 index;
 
-        //if not seen, hide name and whiteout mon
-        DrawSearchWindow(species, sDexNavSearchDataPtr->potential, TRUE);
-        DrawDexNavSearchMonIcon(species, &sDexNavSearchDataPtr->iconSpriteId, FALSE);
-        // whiteout icon
-        index = IndexOfSpritePaletteTag(gSprites[sDexNavSearchDataPtr->iconSpriteId].template->paletteTag);
-        CpuCopy16(&gPlttBufferUnfaded[0x100 + index * 16], sDexNavSearchDataPtr->palBuffer, 32);
-        TintPalette_CustomTone(sDexNavSearchDataPtr->palBuffer, 16, 510, 510, 510);
-        LoadPalette(sDexNavSearchDataPtr->palBuffer, 0x100 + index * 16, 32);
-    }
-    else
-    {
+    //     //if not seen, hide name and whiteout mon
+    //     DrawSearchWindow(species, sDexNavSearchDataPtr->potential, TRUE);
+    //     DrawDexNavSearchMonIcon(species, &sDexNavSearchDataPtr->iconSpriteId, FALSE);
+    //     // whiteout icon
+    //     index = IndexOfSpritePaletteTag(gSprites[sDexNavSearchDataPtr->iconSpriteId].template->paletteTag);
+    //     CpuCopy16(&gPlttBufferUnfaded[0x100 + index * 16], sDexNavSearchDataPtr->palBuffer, 32);
+    //     TintPalette_CustomTone(sDexNavSearchDataPtr->palBuffer, 16, 510, 510, 510);
+    //     LoadPalette(sDexNavSearchDataPtr->palBuffer, 0x100 + index * 16, 32);
+    // }
+    // else
+    // {
         DrawSearchWindow(species, sDexNavSearchDataPtr->potential, FALSE);
         DrawDexNavSearchMonIcon(species, &sDexNavSearchDataPtr->iconSpriteId, GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT));
-    }
+    // }
 
     DexNavUpdateDirectionArrow();
     task->func = Task_DexNavSearch;
@@ -1077,21 +1077,21 @@ static void Task_DexNavSearch(u8 taskId)
         return;
     }
 
-    if (sDexNavSearchDataPtr->proximity <= CREEPING_PROXIMITY && !gPlayerAvatar.creeping && task->tFrameCount > 60)
-    { //should be creeping but player walks normally
-        if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed)
-            EndDexNavSearch(taskId);
-        else
-            EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
-        return;
-    }
+    // if (sDexNavSearchDataPtr->proximity <= CREEPING_PROXIMITY && !gPlayerAvatar.creeping && task->tFrameCount > 60)
+    // { //should be creeping but player walks normally
+    //     if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed)
+    //         EndDexNavSearch(taskId);
+    //     else
+    //         EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
+    //     return;
+    // }
 
-    if (sDexNavSearchDataPtr->proximity <= SNEAKING_PROXIMITY && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH | PLAYER_AVATAR_FLAG_BIKE))
-    { // running/biking too close
-        //always do event script, even if player hasn't revealed a hidden mon. It's assumed they would be creeping towards it
-        EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
-        return;
-    }
+    // if (sDexNavSearchDataPtr->proximity <= SNEAKING_PROXIMITY && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH | PLAYER_AVATAR_FLAG_BIKE))
+    // { // running/biking too close
+    //     //always do event script, even if player hasn't revealed a hidden mon. It's assumed they would be creeping towards it
+    //     EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
+    //     return;
+    // }
 
     if (ArePlayerFieldControlsLocked() == TRUE)
     { // check if script just executed
@@ -1136,20 +1136,20 @@ static void Task_DexNavSearch(u8 taskId)
     }
 
     //Caves and water the pokemon moves around
-    if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
-        && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 2
-        && task->tRevealed)
-    {
-        FieldEffectStop(&gSprites[sDexNavSearchDataPtr->fldEffSpriteId], sDexNavSearchDataPtr->fldEffId);
+    // if ((sDexNavSearchDataPtr->environment == ENCOUNTER_TYPE_WATER || GetCurrentMapType() == MAP_TYPE_UNDERGROUND)
+    //     && sDexNavSearchDataPtr->proximity < GetMovementProximityBySearchLevel() && sDexNavSearchDataPtr->movementCount < 2
+    //     && task->tRevealed)
+    // {
+    //     FieldEffectStop(&gSprites[sDexNavSearchDataPtr->fldEffSpriteId], sDexNavSearchDataPtr->fldEffId);
 
-        if (!TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 10, 10, TRUE))
-        {
-            EndDexNavSearchSetupScript(EventScript_PokemonGotAway, taskId);
-            return;
-        }
+    //     if (!TryStartHiddenMonFieldEffect(sDexNavSearchDataPtr->environment, 10, 10, TRUE))
+    //     {
+    //         EndDexNavSearchSetupScript(EventScript_PokemonGotAway, taskId);
+    //         return;
+    //     }
 
-        sDexNavSearchDataPtr->movementCount++;
-    }
+    //     sDexNavSearchDataPtr->movementCount++;
+    // }
 
     DexNavProximityUpdate();
     if (task->tProximity != sDexNavSearchDataPtr->proximity)
@@ -1255,7 +1255,7 @@ static void CreateDexNavWildMon(u16 species, u8 potential, u8 level, u8 abilityN
 static u8 DexNavTryGenerateMonLevel(u16 species, enum EncounterType environment)
 {
     u8 levelBase = GetEncounterLevelFromMapData(species, environment);
-    u8 levelBonus = gSaveBlock3Ptr->dexNavChain / 5;
+    u8 levelBonus = gSaveBlock3Ptr->dexNavChain / 10;
 
     if (levelBase == MON_LEVEL_NONEXISTENT)
         return MON_LEVEL_NONEXISTENT;   //species not found in the area
