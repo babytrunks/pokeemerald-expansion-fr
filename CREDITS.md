@@ -1,11 +1,19 @@
 <!-- ## Old List of Credits -->
+
 <!-- - **mvit**: ability pop up and mega evo gfx -->
+
 <!-- - **Doesnt**: berries gfx, pokeball particles -->
+
 <!-- - **MrDollSteak**: Pokedex descriptions -->
+
 <!-- - **Avara**: item descriptions -->
+
 <!-- - **TheLaw**: move animations -->
+
 <!-- - **BreadCrumbs**: code review -->
+
 <!-- - **Syreldar**: testing, wrote an explanation post -->
+
 <!-- - **Pyredrid**: automating issue creation, code review and testing -->
 
 ## Credits ✨
@@ -13,8 +21,11 @@
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+
 <!-- prettier-ignore-start -->
+
 <!-- markdownlint-disable -->
+
 <table>
   <tbody>
     <tr>
@@ -89,18 +100,26 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 </table>
 
 <!-- markdownlint-restore -->
+
 <!-- prettier-ignore-end -->
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
+
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
+
+Pawkie - Time Box
+
 ## Other Credits
+
 ### Mega Evolution Overworld Sprite Credits:
+
 - [princess-phoenix](https://www.deviantart.com/princess-phoenix)
 - [larryturbo](https://www.deviantart.com/larryturbo)
 - [kidkatt](https://www.deviantart.com/kidkatt)
 
 ## Resources
+
 - [Sugimori Palettes and Sprites](https://www.pokecommunity.com/showthread.php?t=336945)
 - [DS Style Gen VI Sprites](https://www.pokecommunity.com/showthread.php?t=314422)
 - [Gen VII and Beyond Sprites](https://www.pokecommunity.com/showthread.php?t=368703)

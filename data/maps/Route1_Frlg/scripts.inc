@@ -15,54 +15,6 @@ Route1_EventScript_MartClerk::
 	waitmessage
 	waitfanfare
 	giveitem ITEM_SERIOUS_MINT
-
-    giveitem ITEM_VENUSAURITE 
-    giveitem ITEM_CHARIZARDITE_X 
-    giveitem ITEM_CHARIZARDITE_Y 
-    giveitem ITEM_BLASTOISINITE 
-    giveitem ITEM_BEEDRILLITE 
-    giveitem ITEM_PIDGEOTITE 
-    giveitem ITEM_ALAKAZITE 
-    giveitem ITEM_SLOWBRONITE 
-    giveitem ITEM_GENGARITE 
-    giveitem ITEM_KANGASKHANITE 
-    giveitem ITEM_PINSIRITE 
-    giveitem ITEM_GYARADOSITE 
-    giveitem ITEM_AERODACTYLITE 
-    giveitem ITEM_MEWTWONITE_X 
-    giveitem ITEM_MEWTWONITE_Y 
-    giveitem ITEM_AMPHAROSITE 
-    giveitem ITEM_STEELIXITE 
-    giveitem ITEM_SCIZORITE  
-    giveitem ITEM_HERACRONITE 
-    giveitem ITEM_HOUNDOOMINITE    
-    giveitem ITEM_TYRANITARITE    
-    giveitem ITEM_SCEPTILITE  
-    giveitem ITEM_BLAZIKENITE   
-    giveitem ITEM_SWAMPERTITE   
-    giveitem ITEM_GARDEVOIRITE   
-    giveitem ITEM_SABLENITE   
-    giveitem ITEM_MAWILITE    
-    giveitem ITEM_AGGRONITE   
-    giveitem ITEM_MEDICHAMITE  
-    giveitem ITEM_MANECTITE  
-    giveitem ITEM_SHARPEDONITE  
-    giveitem ITEM_CAMERUPTITE  
-    giveitem ITEM_ALTARIANITE  
-    giveitem ITEM_BANETTITE  
-    giveitem ITEM_ABSOLITE  
-    giveitem ITEM_GLALITITE  
-    giveitem ITEM_SALAMENCITE  
-    giveitem ITEM_METAGROSSITE  
-    giveitem ITEM_LATIASITE  
-    giveitem ITEM_LATIOSITE  
-    giveitem ITEM_LOPUNNITE  
-    giveitem ITEM_GARCHOMPITE    
-    giveitem ITEM_LUCARIONITE   
-    giveitem ITEM_ABOMASITE  
-    giveitem ITEM_GALLADITE  
-    giveitem ITEM_AUDINITE  
-    giveitem ITEM_DIANCITE 
 	call EventScript_RestorePrevTextColor
 	setflag FLAG_GOT_POTION_ON_ROUTE_1
 	release

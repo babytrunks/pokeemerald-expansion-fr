@@ -13,6 +13,11 @@
 #define PALETTE_FADE_STATUS_DONE 0
 #define PALETTE_FADE_STATUS_LOADING 0xFF
 
+#define PALETTE_FADE_STATUS_DELAY 2
+#define PALETTE_FADE_STATUS_ACTIVE 1
+#define PALETTE_FADE_STATUS_DONE 0
+#define PALETTE_FADE_STATUS_LOADING 0xFF
+
 #define PALETTES_BG      0x0000FFFF
 // like PALETTES_BG but excludes UI pals [13, 15]
 #define PALETTES_MAP     0x00001FFF
@@ -29,6 +34,11 @@
 // Used to determine whether a sprite palette tag should be excluded from time (and weather) blending
 #define BLEND_IMMUNE_FLAG (1 << 15)
 #define IS_BLEND_IMMUNE_TAG(tag) ((tag) & BLEND_IMMUNE_FLAG)
+
+#define PALETTE_FADE_STATUS_DELAY 2
+#define PALETTE_FADE_STATUS_ACTIVE 1
+#define PALETTE_FADE_STATUS_DONE 0
+#define PALETTE_FADE_STATUS_LOADING 0xFF
 
 enum
 {
@@ -92,6 +102,8 @@ void LoadPaletteFast(const void *src, u32 offset, u32 size);
 void FillPalette(u32 value, u32 offset, u32 size);
 void TransferPlttBuffer(void);
 u32 UpdatePaletteFade(void);
+u32 PrevPaletteFadeResult(void); // Battle Speed Up
+u32 PrevPaletteFadeResult(void); // Battle Speed Up
 void ResetPaletteFade(void);
 bool32 BeginNormalPaletteFade(u32 selectedPalettes, s8 delay, u8 startY, u8 targetY, u32 blendColor);
 bool32 BeginTimeOfDayPaletteFade(u32 selectedPalettes, s8 delay, u8 startY, u8 targetY, struct BlendSettings *bld0, struct BlendSettings *bld1, u32 weight, u32 color);

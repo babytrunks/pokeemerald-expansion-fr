@@ -428,6 +428,10 @@ void LinkOpponentBufferExecCompleted(u32 battler);
 
 // link partner
 void SetControllerToLinkPartner(u32 battler);
+
+// Battle Speed Up (Credit to Pokabbie)
+u32 Rogue_GetBattleSpeedScale(bool32 forHealthbar);
+
 void LinkPartnerBufferExecCompleted(u32 battler);
 
 void TrySetBattlerShadowSpriteCallback(u32 battler);

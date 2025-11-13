@@ -111,6 +111,13 @@
 #define BAG_BATTLEITEMS_COUNT 180
 #define BAG_TREASURES_COUNT 100
 
+#define OPTIONS_BATTLE_SCENE_1X         0
+#define OPTIONS_BATTLE_SCENE_2X         1
+#define OPTIONS_BATTLE_SCENE_3X         2
+#define OPTIONS_BATTLE_SCENE_4X         3
+#define OPTIONS_BATTLE_SCENE_DISABLED   4
+#define OPTIONS_BATTLE_SCENE_COUNT      5
+
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.
 // Excludes link modes. See RANKING_HALL_* in include/constants/battle_frontier.h

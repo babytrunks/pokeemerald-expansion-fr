@@ -81,6 +81,16 @@ enum
     SAVE_ERROR
 };
 
+static const struct WindowTemplate sWindowTemplate_StartClock = {
+    .bg = 0, 
+    .tilemapLeft = 1, 
+    .tilemapTop = 1, 
+    .width = 9, // If you want to shorten the dates to Sat., Sun., etc., change this to 9
+    .height = 2, 
+    .paletteNum = 15,
+    .baseBlock = 0x30
+};
+
 // IWRAM common
 COMMON_DATA bool8 (*gMenuCallback)(void) = NULL;
 
@@ -1519,23 +1529,68 @@ void Script_ForceSaveGame(struct ScriptContext *ctx)
     sSaveDialogCallback = SaveSavingMessageCallback;
 }
 
-extern const u8 gText_StartMenu_Time[];
-static const u8 gText_StartMenu_Day[]                   = _("Day");
-static const u8 gText_StartMenu_Night[]                   = _("Night");
+// extern const u8 gText_StartMenu_Time[];
+// static const u8 gText_StartMenu_Day[]                   = _("Day");
+// static const u8 gText_StartMenu_Night[]                   = _("Night");
+
+#define CLOCK_WINDOW_WIDTH 70
+
+const u8 gText_Saturday[] = _("Sat. ");
+const u8 gText_Sunday[] = _("Sun. ");
+const u8 gText_Monday[] = _("Mon. ");
+const u8 gText_Tuesday[] = _("Tues. ");
+const u8 gText_Wednesday[] = _("Wed. ");
+const u8 gText_Thursday[] = _("Thurs. ");
+const u8 gText_Friday[] = _("Fri. ");
+
+const u8 *const gDayNameStringsTable[7] = {
+    gText_Saturday,
+    gText_Sunday,
+    gText_Monday,
+    gText_Tuesday,
+    gText_Wednesday,
+    gText_Thursday,
+    gText_Friday,
+};
+
 void DrawTime(void) {
-	sSafariBallsWindowId = AddWindow(&sWindowTemplate_SafariBalls);
+    const u8 *suffix;
+    u8* ptr;
+    u8 convertedHours;
+
+	sSafariBallsWindowId = AddWindow(&sWindowTemplate_StartClock);
 	PutWindowTilemap(sSafariBallsWindowId);
 	DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
     // FormatDecimalTimeWithoutSeconds(gStringVar1, s8 hour, s8 minute, bool32 is24Hour)
-	ConvertIntToDecimalStringN(gStringVar1, gLocalTime.hours, STR_CONV_MODE_LEFT_ALIGN, 3);
-	ConvertIntToDecimalStringN(gStringVar2, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
-    u32 time = GetTimeOfDay();
-    if (time < TIME_EVENING)
-        StringCopy(gStringVar3, gText_StartMenu_Day);
+	if (gLocalTime.hours < 12)
+    {
+        if (gLocalTime.hours == 0)
+            convertedHours = 12;
+        else
+            convertedHours = gLocalTime.hours;
+        suffix = gText_AM;
+    }
+    else if (gLocalTime.hours == 12)
+    {
+        convertedHours = 12;
+        if (suffix == gText_AM);
+            suffix = gText_PM;
+    }
     else
-        StringCopy(gStringVar3, gText_StartMenu_Night);
-	StringExpandPlaceholders(gStringVar4, gText_StartMenu_Time);
-	FillWindowPixelBuffer(sSafariBallsWindowId, PIXEL_FILL(1));
-	AddTextPrinterParameterized(sSafariBallsWindowId, 2, gStringVar4, 4, 3, 0xFF, NULL);
-	CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
+    {
+        convertedHours = gLocalTime.hours - 12;
+        suffix = gText_PM;
+    }
+
+    StringExpandPlaceholders(gStringVar4, gDayNameStringsTable[(gLocalTime.days % 7)]);
+    // StringExpandPlaceholders(gStringVar4, gText_ContinueMenuTime); // prints "time" word, from version before weekday was added and leaving it here in case anyone would prefer to use it
+    AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL); 
+
+    ptr = ConvertIntToDecimalStringN(gStringVar4, convertedHours, STR_CONV_MODE_LEFT_ALIGN, 3);
+    *ptr = 0xF0;
+
+    ConvertIntToDecimalStringN(ptr + 1, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
+    AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, GetStringRightAlignXOffset(1, suffix, CLOCK_WINDOW_WIDTH) - (CLOCK_WINDOW_WIDTH - GetStringRightAlignXOffset(1, gStringVar4, CLOCK_WINDOW_WIDTH) + 3), 1, 0xFF, NULL); // print time
+    AddTextPrinterParameterized(sSafariBallsWindowId, 1, suffix, GetStringRightAlignXOffset(1, suffix, CLOCK_WINDOW_WIDTH), 1, 0xFF, NULL); // print am/pm
+    CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
 }

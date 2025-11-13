@@ -2466,5 +2466,8 @@ extern const u8 gText_PokevialIsEmpty[];
 extern const u8 gText_YourPkmnWereRestored[];
 //End Pokevial Branch
 
+extern const u8 gText_AM[];
+extern const u8 gText_PM[];
+
 
 #endif // GUARD_STRINGS_H
