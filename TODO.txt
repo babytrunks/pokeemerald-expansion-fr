@@ -51,6 +51,8 @@ Stuff going to be out of scope:
 Raid battles (probably replace with hidden grottos)
 
 Additional Stuff:
+- Implement Gatcha thingy, some sort of design where you could use it immediately for something ok or wait for it to get better
+    - Not sure if item or Pokemon yet
 - New Megas from Legends Z/A
 - New exclusive items planned for next FRU update
 - Hidden Grottos to replace Raid Battles

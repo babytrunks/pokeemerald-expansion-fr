@@ -1765,7 +1765,9 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId)
     }
     else 
     {
+        StringCopy(gStringVar2, gText_PokemonCenter);
         StringExpandPlaceholders(gStringVar4, gText_PokevialIsEmpty);
+    
         if (isPlayerUsingRegisteredKeyItem)
             DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
         else
