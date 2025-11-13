@@ -49,6 +49,7 @@
 #include "constants/songs.h"
 #include "tv.h" //Pokevial Branch
 #include "pokevial.h" //Pokevial Branch
+#include "script_pokemon_util.h"
 
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
@@ -1739,13 +1740,65 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId)
     u32 currentDoses = PokevialGetDose();
     bool32 isPlayerUsingRegisteredKeyItem = gTasks[taskId].tUsingRegisteredKeyItem;
 
+    u32 numDigits = CountDigits(currentDoses);
+
+    // ConvertIntToDecimalStringN(gStringVar2, currentDoses, STR_CONV_MODE_LEFT_ALIGN, numDigits);
+    // StringExpandPlaceholders(gStringVar4, gText_PokevialHasDoses);
+
+
     CopyItemName(ITEM_POKEVIAL, gStringVar1);
 
-    if (currentDoses > EMPTY_VIAL)
-        PokevialPrintDosesAndConfirmMessage(currentDoses, isPlayerUsingRegisteredKeyItem, taskId);
-    else
-        PokevialPrintNoDosesMessage(isPlayerUsingRegisteredKeyItem, taskId);
+    if (currentDoses > EMPTY_VIAL) 
+    {
+        PlaySE(SE_USE_ITEM);
+        PokevialDoseDown(1);
+        currentDoses = PokevialGetDose();
+        numDigits = CountDigits(currentDoses);
+        ConvertIntToDecimalStringN(gStringVar2, currentDoses, STR_CONV_MODE_LEFT_ALIGN, numDigits);
+        FlagSet(FLAG_USING_POKE_VIAL);
+        HealPlayerParty();
+        StringExpandPlaceholders(gStringVar4, gText_PokevialHasDoses);
+        if (isPlayerUsingRegisteredKeyItem) 
+            DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+    }
+    else 
+    {
+        StringExpandPlaceholders(gStringVar4, gText_PokevialIsEmpty);
+        if (isPlayerUsingRegisteredKeyItem)
+            DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId,FONT_NORMAL,gStringVar4,CloseItemMessage);
+    }
 }
 //End Pokevial Branch
+
+void ItemUseOutOfBattle_InfiniteRepel(u8 taskId)
+{
+    // if (REPEL_STEP_COUNT == 0)
+    // bool32 isPlayerUsingRegisteredKeyItem = gTasks[taskId].tUsingRegisteredKeyItem;
+    
+    // bool32 isPlayerUsingRegisteredKeyItem = gTasks[taskId].tUsingRegisteredKeyItem;
+    
+    if (FlagGet(FLAG_INFINITE_REPEL))
+    {
+        PlaySE(SE_REPEL);
+        if (!gTasks[taskId].data[2]) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_RepelEffectsToggledOff, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_RepelEffectsToggledOff, CloseItemMessage);
+    }
+    else
+    {
+        // PlaySE(SE_EXP_MAX);
+        if (!gTasks[taskId].data[2]) // to account for pressing select in the overworld
+            DisplayItemMessageOnField(taskId, gText_RepelEffectsToggledOn, Task_CloseCantUseKeyItemMessage);
+        else
+            DisplayItemMessage(taskId, FONT_NORMAL, gText_RepelEffectsToggledOn, CloseItemMessage);
+    }
+    FlagToggle(FLAG_INFINITE_REPEL);
+}
+
 
 #undef tUsingRegisteredKeyItem

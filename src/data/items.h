@@ -13225,20 +13225,20 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ContestPass,
     },
 
-    [ITEM_PARCEL] =
+    [ITEM_INFINITE_REPEL] =
     {
-        .name = ITEM_NAME("Parcel"),
+        .name = ITEM_NAME("Infinite Repel"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A parcel for Prof.\n"
-            "Oak from a Pokémon\n"
-            "Mart's clerk."),
-        .importance = 2,
+            "Repels wild Poké-\n"
+            "mon indefinitely.\n"
+            "Toggleable."),
+        .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .iconPic = gItemIcon_Parcel,
-        .iconPalette = gItemIconPalette_Parcel,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_InfiniteRepel,
+        .iconPic = gItemIcon_Repel,
+        .iconPalette = gItemIconPalette_MaxRepel,
     },
 
     [ITEM_SECRET_KEY] =

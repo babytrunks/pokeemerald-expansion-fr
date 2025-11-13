@@ -2470,4 +2470,7 @@ extern const u8 gText_AM[];
 extern const u8 gText_PM[];
 
 extern const u8 gText_StatEditor[];
+extern const u8 gText_RepelEffectsToggledOff[];
+extern const u8 gText_RepelEffectsToggledOn[];
+
 #endif // GUARD_STRINGS_H

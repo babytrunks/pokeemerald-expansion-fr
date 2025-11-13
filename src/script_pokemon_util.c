@@ -37,7 +37,10 @@ static void HealPlayerBoxes(void);
 void HealPlayerParty(void)
 {
     u32 i;
-    PokevialRefill(); //Pokevial Branch
+    if (!FlagGet(FLAG_USING_POKE_VIAL))
+        PokevialRefill(); //Pokevial Branch
+    else 
+        FlagClear(FLAG_USING_POKE_VIAL);
     
     for (i = 0; i < gPlayerPartyCount; i++)
         HealPokemon(&gPlayerParty[i]);

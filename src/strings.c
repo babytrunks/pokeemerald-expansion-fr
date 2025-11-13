@@ -1340,10 +1340,13 @@ const u8 gText_OakImportantToGetToKnowPokemonThroughly[] = _("OAK: It's importan
 const u8 gText_OakThisIsListOfPokemon[] = _("This is a list of your Pokémon,\n{PLAYER}.\pOpen this to check the skills\nand moves of your Pokémon.\pYou also choose Pokémon here if\nyou want to use an item on one.{PAUSE_UNTIL_PRESS}");
 
 // Start Pokevial Branch
-const u8 gText_PokevialHasDoses[] =_("The {STR_VAR_1} has {STR_VAR_2} doses remaining.\nUse the {STR_VAR_1}?");
+const u8 gText_PokevialHasDoses[] =_("The {STR_VAR_1} has {STR_VAR_2} doses remaining.\nYour party's been healed.");
 const u8 gText_PokevialIsEmpty[] =_("The {STR_VAR_1} is empty!\nRefill it by healing at a {STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
 const u8 gText_YourPkmnWereRestored[] =_("Your Pokémon were restored\nto full health.{PAUSE_UNTIL_PRESS}");
 //End Pokevial Branch
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
 const u8 gText_StatEditor[] = _("Edit Stats");
+
+const u8 gText_RepelEffectsToggledOff[] = _("The fumes from Infinite Repel\nwere smeared off.{PAUSE_UNTIL_PRESS}");
+const u8 gText_RepelEffectsToggledOn[] = _("{PLAYER} used the\nInfinite Repel.\pWild Pokémon will be repelled.{PAUSE_UNTIL_PRESS}");
