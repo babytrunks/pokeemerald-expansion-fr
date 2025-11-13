@@ -3420,7 +3420,7 @@ extern const u16 gBattleIcons_Pal2[];
 extern const u32 gGhostFrontPic[];
 extern const u16 gGhostPalette[];
 
-extern const u16 gMoveTypes_Pal_New[];
-extern const u32 gMoveTypes_Gfx_New[];
+// extern const u16 gMoveTypes_Pal_New[];
+// extern const u32 gMoveTypes_Gfx_New[];
 
 #endif //GUARD_GRAPHICS_H

@@ -3,6 +3,8 @@
 
 // New
 #define B_BATTLE_SPEED 0 // Usage with a variable
+#define B_DYNAMIC_MOVE_INFO         TRUE // If set to TRUE, battle move info will show the real base power and accuracy of moves after ability, stat or item modifier.
+#define B_DYNAMIC_MOVE_INFO_COLORS  TRUE // If set to TRUE, battle move info will have its color change depending on how the power or accuracy is modified.
 
 // Calculation settings
 #define B_CRIT_CHANCE               GEN_LATEST // Chances of a critical hit landing. See CalcCritChanceStage. Gen6+ chances guarantee that Farfetch'd and Sirfetch'd always get critical hits while holding a Leek and using high-crit ratio moves.

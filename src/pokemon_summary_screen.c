@@ -994,7 +994,7 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
 const struct CompressedSpriteSheet gSpriteSheet_MoveTypes =
 {
     #if P_SUMMARY_SCREEN_NEW_TYPE_ICONS
-    .data = gMoveTypes_Gfx_New,
+    .data = gMoveTypes_Gfx,
     #else
     .data = gMoveTypes_Gfx,
     #endif
@@ -1023,7 +1023,7 @@ static const u8 sContestCategoryToOamPaletteNum[CONTEST_CATEGORIES_COUNT] =
 };
 
 //Tera Types Icons
-static const u32 sTeraTypes_Gfx[] = INCBIN_U32("graphics/types_new/tera/tera_types.4bpp.lz");
+static const u32 sTeraTypes_Gfx[] = INCBIN_U32("graphics/types_new/tera/tera_types.4bpp.smol");
 
 static const union AnimCmd sSpriteAnim_TeraTypeNone[] =
 {
@@ -1673,12 +1673,7 @@ static bool8 DecompressGraphics(void)
         sMonSummaryScreen->switchCounter++;
         break;
     case 12:
-    #if P_SUMMARY_SCREEN_NEW_TYPE_ICONS == TRUE
-        LoadPalette(gMoveTypes_Pal_New, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
-    #else
         LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
-    #endif
-        // LoadPalette(gMoveTypes_Pal_New, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
         if (P_SUMMARY_SCREEN_NEW_TERA_TYPE_ICONS == TRUE)
             LoadCompressedSpriteSheet(&gSpriteSheet_TeraType);
         LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
