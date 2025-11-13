@@ -1346,3 +1346,4 @@ const u8 gText_YourPkmnWereRestored[] =_("Your Pokémon were restored\nto full h
 //End Pokevial Branch
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
+const u8 gText_StatEditor[] = _("Edit Stats");

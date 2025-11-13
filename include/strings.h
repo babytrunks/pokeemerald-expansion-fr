@@ -2469,5 +2469,5 @@ extern const u8 gText_YourPkmnWereRestored[];
 extern const u8 gText_AM[];
 extern const u8 gText_PM[];
 
-
+extern const u8 gText_StatEditor[];
 #endif // GUARD_STRINGS_H
