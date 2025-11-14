@@ -2101,12 +2101,34 @@ static s32 SetInstantBarMove(struct BattleBarInfo *bar)
 
 s32 MoveBattleBar(u8 battlerId, u8 healthboxSpriteId, u8 whichBar, u8 unused)
 {
-    u32 s;
-    u32 speedScale = Rogue_GetBattleSpeedScale(TRUE);
-    s32 currentBarValue = 0;
+    s32 currentBarValue = 1;
+    s32 i, previousVal = 0, toLoop;
+    bool32 instant;
 
-    for(s = 0; s < speedScale; ++s)
+
+    if (whichBar == HEALTH_BAR) // health bar
     {
+        if (gSaveBlock2Ptr->optionsHpBarSpeed == 3) {
+            instant = TRUE;
+        }
+        // instant = (gSaveBlock2Ptr->optionsHpBarSpeed >= 10);
+        instant = FALSE;
+        toLoop = sMoveBarTable[gSaveBlock2Ptr->optionsHpBarSpeed + 1][gBattleSpritesDataPtr->battleBars[battlerId].oddFrame];
+    }
+    else // exp bar
+    {
+        instant = FALSE;
+        toLoop = sMoveBarTable[9][gBattleSpritesDataPtr->battleBars[battlerId].oddFrame];
+    }
+    gBattleSpritesDataPtr->battleBars[battlerId].oddFrame ^= 1;
+
+    if (instant)
+        previousVal = SetInstantBarMove(&gBattleSpritesDataPtr->battleBars[battlerId]);
+
+    for (i = 0; i < toLoop; i++)
+    {
+        if (i != 0)
+            previousVal = currentBarValue;
         if (whichBar == HEALTH_BAR) // health bar
         {
             currentBarValue = CalcNewBarValue(gBattleSpritesDataPtr->battleBars[battlerId].maxValue,
@@ -2117,46 +2139,31 @@ s32 MoveBattleBar(u8 battlerId, u8 healthboxSpriteId, u8 whichBar, u8 unused)
         }
         else // exp bar
         {
-            // Instant
-            if (gBattleSpritesDataPtr->battleBars[battlerId].currValue == -32768) // first function call
-            {
-                gBattleSpritesDataPtr->battleBars[battlerId].currValue = gBattleSpritesDataPtr->battleBars[battlerId].receivedValue;
-            }
-            else
-            {
-                currentBarValue = -1;
-            }
+            u16 expFraction = GetScaledExpFraction(gBattleSpritesDataPtr->battleBars[battlerId].oldValue,
+                        gBattleSpritesDataPtr->battleBars[battlerId].receivedValue,
+                        gBattleSpritesDataPtr->battleBars[battlerId].maxValue, 8);
+            if (expFraction == 0)
+                expFraction = 1;
+            expFraction = abs(gBattleSpritesDataPtr->battleBars[battlerId].receivedValue / expFraction);
 
-            //if(gBattleSpritesDataPtr->battleBars[battlerId].oldValue == gBattleSpritesDataPtr->battleBars[battlerId].currValue)
-//
-            //u16 expFraction = GetScaledExpFraction(gBattleSpritesDataPtr->battleBars[battlerId].oldValue,
-            //            gBattleSpritesDataPtr->battleBars[battlerId].receivedValue,
-            //            gBattleSpritesDataPtr->battleBars[battlerId].maxValue, 8);
-            //if (expFraction == 0)
-            //    expFraction = 1;
-            //expFraction = abs(gBattleSpritesDataPtr->battleBars[battlerId].receivedValue / expFraction);
-//
-            //// RogueNote: Fast exp bar
-            //expFraction = 100;
-//
-            //currentBarValue = CalcNewBarValue(gBattleSpritesDataPtr->battleBars[battlerId].maxValue,
-            //            gBattleSpritesDataPtr->battleBars[battlerId].oldValue,
-            //            gBattleSpritesDataPtr->battleBars[battlerId].receivedValue,
-            //            &gBattleSpritesDataPtr->battleBars[battlerId].currValue,
-            //            B_EXPBAR_PIXELS / 8, expFraction);
-//
-            //gBattleSpritesDataPtr->battleBars[battlerId].currValue = gBattleSpritesDataPtr->battleBars[battlerId].maxValue;
+            currentBarValue = CalcNewBarValue(gBattleSpritesDataPtr->battleBars[battlerId].maxValue,
+                        gBattleSpritesDataPtr->battleBars[battlerId].oldValue,
+                        gBattleSpritesDataPtr->battleBars[battlerId].receivedValue,
+                        &gBattleSpritesDataPtr->battleBars[battlerId].currValue,
+                        B_EXPBAR_PIXELS / 8, expFraction);
         }
 
-        if(currentBarValue == -1)
+        if (whichBar == EXP_BAR || (whichBar == HEALTH_BAR && !gBattleSpritesDataPtr->battlerData[battlerId].hpNumbersNoBars))
+            MoveBattleBarGraphically(battlerId, whichBar);
+
+        if (currentBarValue == -1)
+        {
+            gBattleSpritesDataPtr->battleBars[battlerId].currValue = 0;
+            if ((i != 0 || instant) && whichBar == HEALTH_BAR)
+                UpdateHpTextInHealthbox(gHealthboxSpriteIds[battlerId], HP_CURRENT, previousVal, gBattleSpritesDataPtr->battleBars[battlerId].maxValue );
             break;
+        }
     }
-
-    if (whichBar == EXP_BAR || (whichBar == HEALTH_BAR && !gBattleSpritesDataPtr->battlerData[battlerId].hpNumbersNoBars))
-        MoveBattleBarGraphically(battlerId, whichBar);
-
-    if (currentBarValue == -1)
-        gBattleSpritesDataPtr->battleBars[battlerId].currValue = 0;
 
     return currentBarValue;
 }

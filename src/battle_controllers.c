@@ -3219,7 +3219,7 @@ void FreeShinyStars(void)
 
 u32 Rogue_GetBattleSpeedScale(bool32 forHealthbar)
 {
-    u8 battleSceneOption = gSaveBlock2Ptr->optionsHpBarSpeed / 2; // Originally GetBattleSceneOption() with a saveblock stored value;
+    u8 battleSceneOption = gSaveBlock2Ptr->optionsHpBarSpeed ; // Originally GetBattleSceneOption() with a saveblock stored value;
 
     // Hold L to slow down
     if(JOY_HELD(L_BUTTON))

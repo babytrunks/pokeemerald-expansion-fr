@@ -496,8 +496,8 @@
 #define DERBY_FLAG_RESET                                        0x203
 #define FLAG_BEAT_VIRIDIAN_CITY_TEACHER                         0x204
 #define FLAG_RARE_POKEMON_SCREEN                                0x205
-#define FLAG_0x206               0x206
-#define FLAG_0x207               0x207
+#define FLAG_NES_GAVE_INFINITE_CANDY                            0x206
+#define FLAG_NES_ACTIVATE_DEX_ALL                               0x207
 #define FLAG_0x208               0x208
 #define FLAG_0x209               0x209
 #define FLAG_0x20A               0x20A

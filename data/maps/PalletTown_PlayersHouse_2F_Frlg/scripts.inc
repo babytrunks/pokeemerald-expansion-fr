@@ -21,12 +21,66 @@ PalletTown_PlayersHouse_2F_FirstWarpIn::
 	end
 
 PalletTown_PlayersHouse_2F_EventScript_NES::
-	msgbox PalletTown_PlayersHouse_2F_Text_PlayedWithNES, MSGBOX_SIGN
+	msgbox PalletTown_Text_AskCode, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, PalletTown_EventScript_NESAskCode
+	goto_if_eq VAR_RESULT, NO, PalletTown_EventScript_NESDone
+
+PalletTown_EventScript_NESDone:
+	release
+	end
+
+PalletTown_EventScript_NESAskCode::
+	special EnterCode 
+	waitstate
+	special GetCodeFeedback
+	goto_if_eq VAR_RESULT, 0, NESCodeFailed
+	goto_if_eq VAR_RESULT, 1, NESGiveInfCandy
+	goto_if_eq VAR_RESULT, 2, NESActivateDexAll
+
+NESCodeFailed::
+	msgbox PalletTown_Text_NESInvalidCode
+	release
+	end
+
+NESGiveInfCandy::
+	goto_if_set FLAG_NES_GAVE_INFINITE_CANDY, PalletTown_EventScript_NES_AlreadyGaveCode
+	msgbox PalletTown_Text_NESInfCandyCode
+	giveitem ITEM_INFINITE_CANDY
+	setflag FLAG_NES_GAVE_INFINITE_CANDY
+	release
+	end
+
+NESActivateDexAll::
+	goto_if_set FLAG_NES_ACTIVATE_DEX_ALL, PalletTown_EventScript_NES_AlreadyGaveCode
+	msgbox PalletTown_Text_NESDexAllActivate
+	setflag FLAG_NES_ACTIVATE_DEX_ALL
+	release
+	end
+
+
+PalletTown_EventScript_NES_AlreadyGaveCode::
+	msgbox PalletTown_Text_NES_AlreadyGave
+	release
 	end
 
 PalletTown_PlayersHouse_2F_EventScript_Sign::
 	msgbox PalletTown_PlayersHouse_2F_Text_PressLRForHelp, MSGBOX_SIGN
 	end
+
+PalletTown_Text_AskCode::
+	.string "Would you like to input a code?$"
+
+PalletTown_Text_NES_AlreadyGave::
+	.string "…You already input that code.$"
+
+PalletTown_Text_NESInvalidCode::
+	.string "Invalid code.$"
+
+PalletTown_Text_NESDexAllActivate::
+	.string "…DexAll code activated.$"
+
+PalletTown_Text_NESInfCandyCode::
+	.string "…Infinite Candy code received.$"
 
 PalletTown_PlayersHouse_2F_Text_PlayedWithNES::
     .string "{PLAYER} played with the NES.\p"
@@ -35,6 +89,6 @@ PalletTown_PlayersHouse_2F_Text_PlayedWithNES::
 
 PalletTown_PlayersHouse_2F_Text_PressLRForHelp::
     .string "It's a posted notice…\p"
-    .string "If you're confused, ask for HELP!\n"
-    .string "Press the L or R Button!$"
+    .string "Check out the Options Menu in the\n"
+    .string "{START_BUTTON} Menu!$"
 
