@@ -120,7 +120,7 @@
 #define OPTIONS_BATTLE_SCENE_COUNT      5
 
 //tx_registered_items_menu
-#define REGISTERED_ITEMS_MAX 4
+#define REGISTERED_ITEMS_MAX 10
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.

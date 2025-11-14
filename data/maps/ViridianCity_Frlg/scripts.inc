@@ -131,9 +131,15 @@ ViridianCity_EventScript_TutorialNotReady::
 ViridianCity_EventScript_Youngster::
 	lock
 	faceplayer
+	goto_if_set FLAG_NES_GAVE_INFINITE_CANDY, ViridianCity_EventScript_Youngster_WillyWonka
 	msgbox ViridianCity_Text_WantToKnowAboutCaterpillarMons, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, ViridianCity_EventScript_YoungsterExplainCaterpillars
 	goto_if_eq VAR_RESULT, NO, ViridianCity_EventScript_YoungsterDeclineExplanation
+	end
+
+ViridianCity_EventScript_Youngster_WillyWonka::
+	msgbox ViridianCity_Text_ExplainWillyWonka
+	release
 	end
 
 ViridianCity_EventScript_YoungsterExplainCaterpillars::
@@ -235,6 +241,14 @@ ViridianCity_Text_WantToKnowAboutCaterpillarMons::
 ViridianCity_Text_OhOkayThen::
     .string "Oh, okay then!$"
 
+ViridianCity_Text_ExplainWillyWonka::
+	.string "…Oh nice, you got the Infinite\n"
+	.string "Candy. If you're curious on how\l"
+	.string "such a thing even works…\p"
+	.string "I heard Soupercell commissioned\n"
+	.string "Willy Wonka himself quite a bit of\n"
+	.string "money!$"
+
 ViridianCity_Text_ExplainCaterpieWeedle::
     .string "CATERPIE has no poison,\n"
     .string "but WEEDLE does.\p"
@@ -330,4 +344,3 @@ ViridianCity_Text_GymSign::
 
 ViridianCity_Text_GymDoorsAreLocked::
     .string "Viridian Gym's doors are locked…$"
-

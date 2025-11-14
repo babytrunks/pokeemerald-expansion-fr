@@ -304,13 +304,13 @@ static const u8 sMenuText_Select[] = _("SELECT");
 static const struct MenuAction sItemMenuActions[] = {
     [ACTION_USE]               = {gMenuText_Use,                {ItemMenu_UseOutOfBattle}},
     [ACTION_TOSS]              = {gMenuText_Toss,               {ItemMenu_Toss}},
-    [ACTION_REGISTER]          = {gMenuText_Register,           {ItemMenu_Register}},
+    [ACTION_REGISTER]          = {gMenuText_Register,           {ItemMenu_RegisterList}},
     [ACTION_GIVE]              = {gMenuText_Give,               {ItemMenu_Give}},
     [ACTION_CANCEL]            = {gText_Cancel2,                {ItemMenu_Cancel}},
     [ACTION_BATTLE_USE]        = {gMenuText_Use,                {ItemMenu_UseInBattle}},
     [ACTION_CHECK]             = {COMPOUND_STRING("CHECK"),     {ItemMenu_UseOutOfBattle}},
     [ACTION_WALK]              = {COMPOUND_STRING("WALK"),      {ItemMenu_UseOutOfBattle}},
-    [ACTION_DESELECT]          = {COMPOUND_STRING("DESELECT"),  {ItemMenu_Register}},
+    [ACTION_DESELECT]          = {COMPOUND_STRING("DESELECT"),  {ItemMenu_Deselect}},
     [ACTION_CHECK_TAG]         = {COMPOUND_STRING("CHECK TAG"), {ItemMenu_CheckTag}},
     [ACTION_CONFIRM]           = {gMenuText_Confirm,            {Task_FadeAndCloseBagMenu}},
     [ACTION_SHOW]              = {COMPOUND_STRING("SHOW"),      {ItemMenu_Show}},
@@ -320,7 +320,7 @@ static const struct MenuAction sItemMenuActions[] = {
     [ACTION_BY_TYPE]           = {COMPOUND_STRING("Type"),      {ItemMenu_SortByType}},
     [ACTION_BY_AMOUNT]         = {COMPOUND_STRING("Amount"),    {ItemMenu_SortByAmount}},
     [ACTION_BY_INDEX]          = {COMPOUND_STRING("Index"),     {ItemMenu_SortByIndex}},
-    [ACTION_DUMMY]             = {COMPOUND_STRING("Dummy"),     {NULL}},
+    [ACTION_DUMMY]             = {gText_EmptyString2, {NULL}}
 };
 
 // these are all 2D arrays with a width of 2 but are represented as 1D arrays
@@ -1031,7 +1031,7 @@ static void BagMenu_ItemPrintCallback(u8 windowId, u32 itemIndex, u8 y)
         else
         {
             // Print registered icon
-            if (TxRegItemsMenu_CheckRegisteredHasItem(itemId))
+            if (TxRegItemsMenu_CheckRegisteredHasItem(itemSlot.itemId))
                 BlitBitmapToWindow(windowId, sRegisteredSelect_Gfx, 96, y - 1, 24, 16);
         }
     }
@@ -1708,7 +1708,7 @@ static void OpenContextMenu(u8 taskId)
                 break;
             case POCKET_KEY_ITEMS:
                 gBagMenu->contextMenuItemsPtr = gBagMenu->contextMenuItemsBuffer;
-                if (ItemId_GetFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_CannotUse){
+                if (GetItemFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_CannotUse){
                     gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_Cancel);
                     memcpy(&gBagMenu->contextMenuItemsBuffer, &sContextMenuItems_Cancel, sizeof(sContextMenuItems_Cancel));
                 }
@@ -2180,7 +2180,7 @@ bool8 UseRegisteredKeyItemOnField(u8 button)
             PlayerFreeze();
             StopPlayerAvatar();
             gSpecialVar_ItemId = registeredItem;
-            taskId = CreateTask(ItemId_GetFieldFunc(registeredItem), 8);
+            taskId = CreateTask(GetItemFieldFunc(registeredItem), 8);
             gTasks[taskId].tUsingRegisteredKeyItem = TRUE;
             return TRUE;
         }
@@ -3102,8 +3102,10 @@ void UNUSED ItemMenu_Register(u8 taskId)
     BagDestroyPocketScrollArrowPair();
     BagMenu_PrintCursor(tListTaskId, COLORID_GRAY_CURSOR);
     tListPosition = listPosition;
-    tQuantity = BagGetQuantityByPocketPosition(gBagPosition.pocket + 1, listPosition);
-    gSpecialVar_ItemId = BagGetItemIdByPocketPosition(gBagPosition.pocket + 1, listPosition);
+    struct ItemSlot itemSlot = GetBagItemIdAndQuantity(gBagPosition.pocket + 1, listPosition);
+
+    tQuantity = itemSlot.quantity;
+    gSpecialVar_ItemId = itemSlot.itemId;
     sContextMenuFuncs[gBagPosition.location](taskId);
 }
 
@@ -3119,7 +3121,7 @@ static void UNUSED ItemMenu_Deselect(u8 taskId)
 {
     s16* data = gTasks[taskId].data;
     int listPosition = ListMenu_ProcessInput(tListTaskId);
-    u16 itemId = BagGetItemIdByPocketPosition(gBagPosition.pocket + 1, listPosition);
+    u16 itemId = GetBagItemId(gBagPosition.pocket + 1, listPosition);
 
     ResetRegisteredItem(itemId);
 
