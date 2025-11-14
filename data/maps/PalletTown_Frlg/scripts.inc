@@ -418,6 +418,7 @@ PalletTown_EventScript_TrainerTips::
 	releaseall
 	end
 
+
 PalletTown_EventScript_SignLadyTrigger::
 	lockall
 	@ applymovement LOCALID_PALLET_SIGN_LADY, Common_Movement_WalkInPlaceFasterRight

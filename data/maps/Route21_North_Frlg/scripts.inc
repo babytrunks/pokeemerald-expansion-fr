@@ -1,6 +1,30 @@
 Route21_North_Frlg_MapScripts::
 	.byte 0
 
+EventScript_PalletTown_Lass::
+	lock
+	msgbox Route21_North_Text_Lass
+	release
+	end
+
+EventScript_PalletTown_Stufful::
+	lock
+	waitse
+	playmoncry SPECIES_STUFFUL, CRY_MODE_NORMAL
+	msgbox Route21_North_Text_Stufful
+	waitmoncry
+	release
+	end
+
+Route21_North_Text_Lass::
+  .string "{COLOR GREEN}Stufful…\n"
+  .string "{COLOR RED}Do you really have to lay down\l"
+  .string "here of all places?\p"
+  .string "We're blocking the way to Route 21!$"
+
+Route21_North_Text_Stufful::
+  .string "Stufful!$"
+
 Route21_North_Text_RonaldIntro::
 	.string "You want to know if the fish are\n"
 	.string "biting?$"

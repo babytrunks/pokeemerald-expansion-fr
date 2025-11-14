@@ -43,7 +43,7 @@
       "local_id": "LOCALID_PALLET_FAT_MAN",
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN_FRLG",
       "x": 13,
-      "y": 17,
+      "y": 15,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 6,
@@ -66,6 +66,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "0x0",
       "flag": "FLAG_HIDE_OAK_IN_PALLET_TOWN"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LASS_FRLG",
+      "x": 11,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_PalletTown_Lass",
+      "flag": "FLAG_SYS_POKEMON_GET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(STUFFUL)",
+      "x": 12,
+      "y": 19,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "EventScript_PalletTown_Stufful",
+      "flag": "FLAG_SYS_POKEMON_GET"
     }
   ],
   "warp_events": [
