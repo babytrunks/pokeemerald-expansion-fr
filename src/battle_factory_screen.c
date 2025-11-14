@@ -42,7 +42,7 @@
 #define SWAP_PLAYER_SCREEN 0  // The screen where the player selects which of their Pokémon to swap away
 #define SWAP_ENEMY_SCREEN  1  // The screen where the player selects which new Pokémon from the defeated party to swap for
 
-#define SELECTABLE_MONS_COUNT 6
+#define SELECTABLE_MONS_COUNT 3
 
 #define PALNUM_FADE_TEXT 14
 #define PALNUM_TEXT      15
@@ -197,6 +197,8 @@ static u8 Select_OptionSummary(void);
 static u8 Select_OptionOthers(void);
 static u8 Select_OptionRentDeselect(void);
 static bool32 Select_AreSpeciesValid(u16);
+
+static void GiveSelectedRareMonToPlayer(void);
 
 // Swap screen
 static void CB2_InitSwapScreen(void);
@@ -1313,7 +1315,7 @@ static void Select_InitAllSprites(void)
 
     for (i = 0; i < SELECTABLE_MONS_COUNT; i++)
     {
-        sFactorySelectScreen->mons[i].ballSpriteId = CreateSprite(&sSpriteTemplate_Select_Pokeball, (35 * i) + 32, 64, 1);
+        sFactorySelectScreen->mons[i].ballSpriteId = CreateSprite(&sSpriteTemplate_Select_Pokeball, (80 * i) + 32, 64, 1);
         gSprites[sFactorySelectScreen->mons[i].ballSpriteId].data[0] = 0;
         Select_SetBallSpritePaletteNum(i);
     }
@@ -1506,7 +1508,8 @@ static void Select_Task_Exit(u8 taskId)
     case 1:
         if (!UpdatePaletteFade())
         {
-            Select_CopyMonsToPlayerParty();
+            // Select_CopyMonsToPlayerParty();
+            GiveSelectedRareMonToPlayer();
             DestroyTask(sFactorySelectScreen->fadeSpeciesNameTaskId);
             Select_DestroyAllSprites();
             FREE_AND_SET_NULL(sSelectMenuTilesetBuffer);
@@ -1530,8 +1533,10 @@ static void Select_Task_HandleYesNo(u8 taskId)
     switch (gTasks[taskId].tState)
     {
     case STATE_YESNO_SHOW_MONS:
-        Select_ShowChosenMons();
-        gTasks[taskId].tState = STATE_YESNO_SHOW_OPTIONS;
+        // Select_ShowChosenMons();
+        // gTasks[taskId].tState = STATE_YESNO_SHOW_OPTIONS;        
+        gTasks[taskId].tState = 0;
+        gTasks[taskId].func = Select_Task_Exit;
         break;
     case STATE_YESNO_SHOW_OPTIONS:
         Select_ShowYesNoOptions();
@@ -1750,6 +1755,10 @@ static void CreateFrontierFactorySelectableMons(u8 firstMonId)
     else
         level = FRONTIER_MAX_LEVEL_50;
 
+        
+    if (FlagGet(FLAG_RARE_POKEMON_SCREEN)) 
+        level = 10;
+
     rentalRank = GetNumPastRentalsRank(battleMode, lvlMode);
     otId = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);
 
@@ -1757,7 +1766,10 @@ static void CreateFrontierFactorySelectableMons(u8 firstMonId)
     {
         u16 monId = gSaveBlock2Ptr->frontier.rentalMons[i].monId;
         sFactorySelectScreen->mons[i + firstMonId].monId = monId;
-        if (i < rentalRank)
+        if (FlagGet(FLAG_RARE_POKEMON_SCREEN)) {
+            ivs = USE_RANDOM_IVS;
+        }
+        else if (i < rentalRank)
             ivs = GetFactoryMonFixedIV(challengeNum + 1, FALSE);
         else
             ivs = GetFactoryMonFixedIV(challengeNum, FALSE);
@@ -1869,6 +1881,8 @@ static void Select_PrintMonSpecies(void)
     CopyWindowToVram(SELECT_WIN_SPECIES, COPYWIN_GFX);
 }
 
+static const u8 gText_ChooseThisPokemon[] = _("Choose this Pokémon?");
+
 static void Select_PrintSelectMonString(void)
 {
     const u8 *str = NULL;
@@ -1877,7 +1891,7 @@ static void Select_PrintSelectMonString(void)
     if (sFactorySelectScreen->selectingMonsState == 1)
         str = gText_SelectFirstPkmn;
     else if (sFactorySelectScreen->selectingMonsState == 2)
-        str = gText_SelectSecondPkmn;
+        str = gText_ChooseThisPokemon;
     else if (sFactorySelectScreen->selectingMonsState == 3)
         str = gText_SelectThirdPkmn;
     else
@@ -1941,7 +1955,7 @@ static u8 Select_OptionRentDeselect(void)
         Select_HandleMonSelectionChange();
         Select_PrintSelectMonString();
         Select_ErasePopupMenu(SELECT_WIN_OPTIONS);
-        if (sFactorySelectScreen->selectingMonsState > FRONTIER_PARTY_SIZE)
+        if (sFactorySelectScreen->selectingMonsState > 1)
             return SELECT_CONFIRM_MONS;
         else
             return SELECT_CONTINUE_CHOOSING;
@@ -4289,4 +4303,23 @@ static void Swap_CreateMonSprite(void)
     gSprites[sFactorySwapScreen->monPic.monSpriteId].centerToCornerVecY = 0;
 
     sFactorySwapScreen->monPicAnimating = FALSE;
+}
+
+//here
+static void GiveSelectedRareMonToPlayer(void)
+{
+    u8 i, j;
+
+    for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
+    {
+        for (j = 0; j < SELECTABLE_MONS_COUNT; j++)
+        {
+            if (sFactorySelectScreen->mons[j].selectedId == i + 1)
+            {
+                GiveMonToPlayer( &sFactorySelectScreen->mons[j].monData);
+                break;
+            }
+        }
+    }
+    // CalculatePlayerPartyCount();
 }

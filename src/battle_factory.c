@@ -169,10 +169,12 @@ static const u8 sFixedIVTable[][2] =
 static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
-    {FRONTIER_MON_GRIMER,     FRONTIER_MON_FURRET_1},   // 110 - 199
-    {FRONTIER_MON_DELCATTY_1, FRONTIER_MON_CLOYSTER_1}, // 162 - 266
-    {FRONTIER_MON_DELCATTY_2, FRONTIER_MON_CLOYSTER_2}, // 267 - 371
-    {FRONTIER_MON_DUGTRIO_1,  FRONTIER_MON_SLAKING_1},  // 372 - 467
+    // Level 50
+    {FRONTIER_MON_BULBASAUR,     FRONTIER_MON_EEVEE },  //0 Route 102
+    {FRONTIER_MON_ABRA,     FRONTIER_MON_DHELMISE},   // 1 Petalburg Woods
+    {FRONTIER_MON_TYROGUE, FRONTIER_MON_KECLEON},     // 2 Petalburg City
+    {FRONTIER_MON_CARVANHA, FRONTIER_MON_SLOWPOKE_GALAR}, // 267 - 371 3 Route 104
+    {FRONTIER_MON_HOUNDOUR,  FRONTIER_MON_DEINO},  // 3 Rustboro City Post Save Peeko
     {FRONTIER_MON_DUGTRIO_2,  FRONTIER_MON_SLAKING_2},  // 468 - 563
     {FRONTIER_MON_DUGTRIO_3,  FRONTIER_MON_SLAKING_3},  // 564 - 659
     {FRONTIER_MON_DUGTRIO_4,  FRONTIER_MON_SLAKING_4},  // 660 - 755
@@ -462,14 +464,14 @@ static void GenerateInitialRentalMons(void)
     u16 currSpecies;
     u16 species[PARTY_SIZE];
     u16 monIds[PARTY_SIZE];
-    u16 heldItems[PARTY_SIZE];
+    // u16 heldItems[PARTY_SIZE];
 
     gFacilityTrainers = gBattleFrontierTrainers;
     for (i = 0; i < PARTY_SIZE; i++)
     {
         species[i] = SPECIES_NONE;
         monIds[i] = 0;
-        heldItems[i] = ITEM_NONE;
+        // heldItems[i] = ITEM_NONE;
     }
     lvlMode = gSaveBlock2Ptr->frontier.lvlMode;
     battleMode = VarGet(VAR_FRONTIER_BATTLE_MODE);
@@ -491,7 +493,9 @@ static void GenerateInitialRentalMons(void)
         firstMonId = 0;
     }
     rentalRank = GetNumPastRentalsRank(factoryBattleMode, factoryLvlMode);
+    // if (FlagGet(FLAG_RARE_POKEMON_SCREEN)) {
 
+    // }
     currSpecies = SPECIES_NONE;
     i = 0;
     while (i != PARTY_SIZE)
@@ -522,21 +526,21 @@ static void GenerateInitialRentalMons(void)
             continue;
 
         // Cannot have two same held items.
-        for (j = firstMonId; j < firstMonId + i; j++)
-        {
-            if (heldItems[j] != ITEM_NONE && heldItems[j] == gFacilityTrainerMons[monId].heldItem)
-            {
-                if (gFacilityTrainerMons[monId].species == currSpecies)
-                    currSpecies = SPECIES_NONE;
-                break;
-            }
-        }
+        // for (j = firstMonId; j < firstMonId + i; j++)
+        // {
+        //     if (heldItems[j] != ITEM_NONE && heldItems[j] == gFacilityTrainerMons[monId].heldItem)
+        //     {
+        //         if (gFacilityTrainerMons[monId].species == currSpecies)
+        //             currSpecies = SPECIES_NONE;
+        //         break;
+        //     }
+        // }
         if (j != firstMonId + i)
             continue;
 
         gSaveBlock2Ptr->frontier.rentalMons[i].monId = monId;
         species[i] = gFacilityTrainerMons[monId].species;
-        heldItems[i] = gFacilityTrainerMons[monId].heldItem;
+        // heldItems[i] = gFacilityTrainerMons[monId].heldItem;
         monIds[i] = monId;
         i++;
     }
@@ -767,7 +771,13 @@ static u16 GetFactoryMonId(u8 lvlMode, u8 challengeNum, bool8 useBetterRange)
     else
         adder = 8;
 
-    if (challengeNum < 7)
+    if (FlagGet(FLAG_RARE_POKEMON_SCREEN)){
+            u8 range = VarGet(VAR_RARE_POKEMON_COUNTER);
+            numMons = (sInitialRentalMonRanges[range][1] - sInitialRentalMonRanges[range][0]) + 1;
+            monId = Random() % numMons;
+            monId += sInitialRentalMonRanges[range][0];
+    }
+    else if (challengeNum < 7)
     {
         if (useBetterRange)
         {

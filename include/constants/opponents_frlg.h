@@ -389,7 +389,7 @@
 #define TRAINER_SIS_AND_BRO_LIL_IAN                383
 #define TRAINER_YOUNGSTER_BEN_3                    384
 #define TRAINER_YOUNGSTER_BEN_4                    385
-#define TRAINER_YOUNGSTER_CHAD_2                   386
+#define TRAINER_STARTER_TEACHER                    386
 #define TRAINER_LASS_RELI_2                        387
 #define TRAINER_LASS_RELI_3                        388
 #define TRAINER_YOUNGSTER_TIMMY_2                  389

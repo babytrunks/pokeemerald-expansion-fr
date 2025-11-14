@@ -489,13 +489,13 @@
 #define FLAG_HIDE_SILPH_CO_4F_TM41                              0x1FE
 
 // Unused?
-#define FLAG_0x1FF               0x1FF
-#define FLAG_INFINITE_REPEL      0x200
-#define FLAG_USING_POKE_VIAL     0x201
-#define DERBY_FLAG_NICKNAME      0x202
-#define DERBY_FLAG_RESET         0x203
-#define FLAG_0x204               0x204
-#define FLAG_0x205               0x205
+#define FLAG_0x1FF                                              0x1FF
+#define FLAG_INFINITE_REPEL                                     0x200
+#define FLAG_USING_POKE_VIAL                                    0x201
+#define DERBY_FLAG_NICKNAME                                     0x202
+#define DERBY_FLAG_RESET                                        0x203
+#define FLAG_BEAT_VIRIDIAN_CITY_TEACHER                         0x204
+#define FLAG_RARE_POKEMON_SCREEN                                0x205
 #define FLAG_0x206               0x206
 #define FLAG_0x207               0x207
 #define FLAG_0x208               0x208

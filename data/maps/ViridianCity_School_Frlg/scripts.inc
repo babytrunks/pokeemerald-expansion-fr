@@ -13,13 +13,48 @@ ViridianCity_School_EventScript_Lass::
 
 ViridianCity_School_EventScript_Woman::
 	lock
-	faceplayer
 	msgbox ViridianCity_School_Text_ReadBlackboardCarefully
 	closemessage
+	faceplayer
+	msgbox ViridianCity_School_Text_YouDontSeemNew
+	closemessage
+	goto CheckIfBeatAllViridianForestTrainers
+ViridianCity_School_EventScript_WomanEnd::
 	applymovement LOCALID_SCHOOL_WOMAN, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
+
+CheckIfBeatAllViridianForestTrainers:
+	goto_if_not_defeated TRAINER_BUG_CATCHER_CHARLIE, ViridianCity_School_EventScript_WomanEnd
+	goto_if_not_defeated TRAINER_BUG_CATCHER_ANTHONY, ViridianCity_School_EventScript_WomanEnd
+	goto_if_not_defeated TRAINER_BUG_CATCHER_SAMMY, ViridianCity_School_EventScript_WomanEnd
+	goto_if_not_defeated TRAINER_BUG_CATCHER_DOUG, ViridianCity_School_EventScript_WomanEnd
+	goto_if_not_defeated TRAINER_BUG_CATCHER_RICK, ViridianCity_School_EventScript_WomanEnd
+	msgbox ViridianCity_School_Text_EntertainMe, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, ViridianCity_School_EventScript_FightTeacher
+	goto_if_eq VAR_RESULT, NO, ViridianCity_School_EventScript_WomanReject
+
+ViridianCity_School_EventScript_FightTeacher::
+	trainerbattle_single TRAINER_STARTER_TEACHER, ViridianCity_School_Text_GiveItAll, ViridianCity_School_Text_Defeated, ViridianCity_School_EventScript_GiveMon, NO_MUSIC
+ViridianCity_School_EventScript_GiveMon::
+	msgbox ViridianCity_School_Text_HaveYourPick
+	setflag FLAG_RARE_POKEMON_SCREEN
+	setflag FLAG_BEAT_VIRIDIAN_CITY_TEACHER
+	setvar VAR_RARE_POKEMON_COUNTER 0
+	factory_generaterentalmons
+	factory_rentmons
+	waitstate
+	clearflag FLAG_RARE_POKEMON_SCREEN
+ViridianCity_School_EventScript_BeatenTeacher::
+	msgbox ViridianCity_School_Text_Study
+	release
+	end
+
+ViridianCity_School_EventScript_WomanReject::
+	msgbox ViridianCity_School_Text_WomanReject
+	release
+	end 
 
 ViridianCity_School_EventScript_Notebook::
 	lockall
@@ -101,6 +136,40 @@ ViridianCity_School_Text_ReadBlackboardCarefully::
     .string "Okay!\p"
     .string "Be sure to read what's on the\n"
     .string "blackboard carefully!$"
+
+ViridianCity_School_Text_YouDontSeemNew::
+    .string "…You're from Pallet Town, aren't you?\p"
+    .string "You have quite the potential.\p"
+    .string "Tell you what - beat all the\n"
+    .string "trainers in Viridian Forest\l"
+    .string "and I'll reward you with something\l"
+    .string "special.$"
+
+ViridianCity_School_Text_EntertainMe::
+    .string "…Oh nice, you actually beat all\n"
+    .string "of them.\p"
+    .string "Entertain me in a battle,\n"
+    .string "and I'll let you choose a\l"
+    .string "another starter Pokémon.\p"
+    .string "Y'know, those rare Pokémon\n"
+    .string "Oak has stashed away.\p"
+    .string "You wanna give it a go?$"
+
+ViridianCity_School_Text_GiveItAll::
+    .string "Give it all you got!$"
+
+ViridianCity_School_Text_WomanReject::
+    .string "Aw… Being a teacher is a thankless\n"
+    .string "job. Please reconsider it!$"
+
+ViridianCity_School_Text_Defeated::
+    .string "Entertained I was!$"
+
+ViridianCity_School_Text_Study::
+    .string "Study hard and further yourself!$"
+
+ViridianCity_School_Text_HaveYourPick::
+	.string "Well then, have your pick!$"
 
 ViridianCity_School_Text_NotebookFirstPage::
     .string "Let's check out the notebook.\p"

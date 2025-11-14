@@ -1566,13 +1566,13 @@ static void FillTentTrainerParty(u8 monsCount)
     ZeroEnemyPartyMons();
     FillTentTrainerParty_(TRAINER_BATTLE_PARAM.opponentA, 0, monsCount);
 }
-
+//may need to modify here
 void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32 otID, u32 flags, struct Pokemon *dst)
 {
     u8 ball = (fmon->ball == 0xFF) ? Random() % POKEBALL_COUNT : fmon->ball;
     u16 move;
-    u32 personality = 0, friendship, j;
-    enum Ability ability;
+    u32 personality = 0, ability, friendship, j;
+    u8 randInd;
 
     if (fmon->gender == TRAINER_MON_MALE)
     {
@@ -1582,9 +1582,14 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     {
         personality = GeneratePersonalityForGender(MON_FEMALE, fmon->species);
     }
+    if (fmon->nature != NATURE_DOCILE) {
+        ModifyPersonalityForNature(&personality, fmon->nature);
+    }
+    else {
+        ModifyPersonalityForNature(&personality, Random() % NUM_NATURES);
+    }
 
-    ModifyPersonalityForNature(&personality, fmon->nature);
-    CreateMon(dst, fmon->species, level, fixedIV, TRUE, personality, OT_ID_PRESET, otID);
+    CreateMon(dst, fmon->species, level, fixedIV, TRUE, personality, otID, OT_ID_PRESET);
 
     friendship = MAX_FRIENDSHIP;
     // Give the chosen Pokémon its specified moves.
@@ -1595,12 +1600,77 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
             move = MOVE_FRUSTRATION;
 
         SetMonMoveSlot(dst, move, j);
-        if (GetMoveEffect(move) == EFFECT_FRUSTRATION)
+        if (gMovesInfo[move].effect == EFFECT_FRUSTRATION)
             friendship = 0;  // Frustration is more powerful the lower the pokemon's friendship is.
     }
-
+    u16 item = fmon->heldItem;
     SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);
-    SetMonData(dst, MON_DATA_HELD_ITEM, &fmon->heldItem);
+    if (fmon->species == SPECIES_EEVEE && fmon->heldItem == ITEM_WATER_STONE) 
+    { //randomize stone on eevee
+        randInd = Random() % 7;
+        switch (randInd) 
+        {
+            case 0:
+                item = ITEM_LEAF_STONE; 
+                break;
+            case 1:
+                item = ITEM_FIRE_STONE;
+                break;
+            case 2:
+                item = ITEM_ICE_STONE;
+                break;
+            case 3:
+                item = ITEM_MOON_STONE;
+                break;
+            case 4:
+                item = ITEM_SUN_STONE;
+                break;
+            case 5:
+                item =ITEM_THUNDER_STONE;
+                break;
+            case 6:
+                break;
+        }
+    }
+    else if (fmon->species == SPECIES_PIKACHU) 
+    { //randomize pikachu
+        randInd = Random() % 6;
+        u16 species;
+        switch (randInd) 
+        {
+            case 0:
+                species = SPECIES_PIKACHU_ROCK_STAR;
+                break;
+            case 1:
+                species = SPECIES_PIKACHU_BELLE;
+                break;
+            case 2:
+                species = SPECIES_PIKACHU_POP_STAR;
+                break;
+            case 3:
+                species = SPECIES_PIKACHU_PHD;
+                break;
+            case 4:
+                species = SPECIES_PIKACHU_LIBRE;
+                break;
+            case 5:
+                species = SPECIES_PIKACHU;
+                break;
+        }
+        SetMonData(dst, MON_DATA_SPECIES, &species);
+    } 
+    // else if (Random() % 5 == 0) { //chance for mega
+    //     for (u8 i = 0; i < SIZE_OF_PRIZE_MONS; i ++) {
+    //         if (monToMegaStoneTable[i].species == fmon->species) {
+    //             item = monToMegaStoneTable[i].megaStone;
+    //             if (monToMegaStoneTable[i].megaStone2 != ITEM_NONE && Random() % 2 == 0 ) {
+    //                 item = monToMegaStoneTable[i].megaStone2;
+    //             }
+    //         }
+    //     }
+    // } 
+
+    SetMonData(dst, MON_DATA_HELD_ITEM, &item);
 
     // try to set ability. Otherwise, random of non-hidden as per vanilla
     if (fmon->ability != ABILITY_NONE)
@@ -1615,7 +1685,11 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         if (ability >= maxAbilities)
             ability = 0;
         SetMonData(dst, MON_DATA_ABILITY_NUM, &ability);
-    }
+    } 
+    // if (Random() % 5 == 0) { //chance for HA
+    //     u8 abilityNum = 2;
+    //     SetMonData(dst, MON_DATA_ABILITY_NUM, &abilityNum);
+    // }
 
     if (fmon->ev != NULL)
     {
@@ -1632,7 +1706,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
 
     if (fmon->isShiny)
     {
-        bool32 data = TRUE;
+        u32 data = TRUE;
         SetMonData(dst, MON_DATA_IS_SHINY, &data);
     }
     if (fmon->dynamaxLevel > 0)
@@ -1647,12 +1721,12 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     }
     if (fmon->teraType)
     {
-        enum Type data = fmon->teraType;
+        u32 data = fmon->teraType;
         SetMonData(dst, MON_DATA_TERA_TYPE, &data);
     }
 
-    if (ball != BALL_STRANGE)
-        SetMonData(dst, MON_DATA_POKEBALL, &ball);
+
+    SetMonData(dst, MON_DATA_POKEBALL, &ball);
     CalculateMonStats(dst);
 }
 

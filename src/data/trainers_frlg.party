@@ -8842,22 +8842,42 @@ Arbok
 Level: 48
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_YOUNGSTER_CHAD_2 ===
-Name: CHAD
-Class: Youngster Frlg
-Pic: Youngster Frlg
+=== TRAINER_STARTER_TEACHER ===
+Name: Teacher
+Class: Friendly
+Pic: Lady
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Ekans
-Level: 20
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Rowlet 
+Level: 10  
+Ability: Overgrow 
+Nature: Hardy  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Magical Leaf
+- Pluck  
 
-Sandshrew
-Level: 20
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Totodile @ Oran Berry
+Level: 11  
+Ability: Strong Jaw
+Nature: Hardy  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Aqua Jet
+- Ice Fang  
+
+Litten @ Lum Berry  
+Level: 11
+Ability: Intimidate
+Nature: Bashful  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
+- Fake Out
+- Fire Fang
+- Bite
 
 === TRAINER_LASS_RELI_2 ===
 Name: RELI
