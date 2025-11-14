@@ -119,6 +119,9 @@
 #define OPTIONS_BATTLE_SCENE_DISABLED   4
 #define OPTIONS_BATTLE_SCENE_COUNT      5
 
+//tx_registered_items_menu
+#define REGISTERED_ITEMS_MAX 4
+
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.
 // Excludes link modes. See RANKING_HALL_* in include/constants/battle_frontier.h
