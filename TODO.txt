@@ -1,6 +1,7 @@
 
 TODO:
-
+Bug:
+- Fix EXP bar bug
 HIGHEST PRIORITY:
 - FRU additional event scripts
     - For beginning, Mom asking what starter, Oak giving Gen 1-9, skip the whole Pokemart package and just give Pokeballs/Dex right off the bat DONE
