@@ -23,6 +23,7 @@
 #include "strings.h"
 #include "script.h"
 #include "task.h"
+#include "text.h"
 #include "text_window.h"
 #include "window.h"
 #include "constants/songs.h"
@@ -628,21 +629,21 @@ void DisplayYesNoMenuWithDefault(u8 initialCursorPos)
     CreateYesNoMenu(&sYesNo_WindowTemplates, STD_WINDOW_BASE_TILE_NUM, STD_WINDOW_PALETTE_NUM, initialCursorPos);
 }
 
-u32 GetPlayerTextSpeed(void)
-{
-    if (gTextFlags.forceMidTextSpeed)
-        return OPTIONS_TEXT_SPEED_MID;
-    return gSaveBlock2Ptr->optionsTextSpeed;
-}
+// u32 GetPlayerTextSpeed(void)
+// {
+//     if (gTextFlags.forceMidTextSpeed)
+//         return OPTIONS_TEXT_SPEED_MID;
+//     return gSaveBlock2Ptr->optionsTextSpeed;
+// }
 
-u8 GetPlayerTextSpeedDelay(void)
-{
-    u32 speed;
-    if (gSaveBlock2Ptr->optionsTextSpeed > OPTIONS_TEXT_SPEED_FASTER)
-        gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
-    speed = GetPlayerTextSpeed();
-    return sTextSpeedFrameDelays[speed];
-}
+// u32 GetPlayerTextSpeedDelay(void)
+// {
+//     u32 speed;
+//     if (gSaveBlock2Ptr->optionsTextSpeed > OPTIONS_TEXT_SPEED_FASTER)
+//         gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
+//     speed = GetPlayerTextSpeed();
+//     return sTextSpeedFrameDelays[speed];
+// }
 
 u8 AddStartMenuWindow(u8 numActions)
 {
