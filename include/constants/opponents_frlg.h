@@ -16,7 +16,7 @@
 #define TRAINER_YOUNGSTER_DILLON                   10
 #define TRAINER_YOUNGSTER_YASU                     11
 #define TRAINER_YOUNGSTER_DAVE                     12
-#define TRAINER_YOUNGSTER_BEN_2                    13
+#define TRAINER_BRENDAN_1                          13
 #define TRAINER_BUG_CATCHER_RICK                   14
 #define TRAINER_BUG_CATCHER_DOUG                   15
 #define TRAINER_BUG_CATCHER_SAMMY                  16

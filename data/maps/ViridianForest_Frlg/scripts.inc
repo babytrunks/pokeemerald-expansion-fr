@@ -63,6 +63,174 @@ ViridianForest_EventScript_Charlie::
 	msgbox ViridianForest_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
 	end
 
+ViridianForest_EventScript_BrendanOneTriggerLeft::
+	lockall
+	setvar VAR_TEMP_2, 1
+    goto ViridianForest_EventScript_BrendanOne_Battle
+    end
+
+ViridianForest_EventScript_BrendanOneTriggerMiddle::
+	lockall
+	setvar VAR_TEMP_2, 2
+    goto ViridianForest_EventScript_BrendanOne_Battle
+    end
+
+ViridianForest_EventScript_BrendanOneTriggerRight::
+	lockall
+	setvar VAR_TEMP_2, 3
+    goto ViridianForest_EventScript_BrendanOne_Battle
+    end
+
+ViridianForest_EventScript_BrendanOne_Battle::
+    
+    addobject LOCALID_VIRIDIAN_FOREST_BRENDAN 
+    addobject LOCALID_VIRIDIAN_FOREST_TREECKO 
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_BrendanLookingAround
+    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_TreeckoLookingAround
+    waitmovement 0 
+    msgbox ViridianForest_Text_BrendanLooking
+    waitmessage
+    playse SE_PIN 
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, Common_Movement_ExclamationMark
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, Common_Movement_Delay32
+    waitmovement 0
+    call_if_eq VAR_TEMP_2, 1, ViridianForest_EventScript_BrendanApproachLeftTile
+    call_if_eq VAR_TEMP_2, 2, ViridianForest_EventScript_BrendanApproachMiddleTile
+    call_if_eq VAR_TEMP_2, 3, ViridianForest_EventScript_BrendanApproachRightTile
+    msgbox ViridianForest_Text_BrendanOhHello 
+    trainerbattle_no_intro TRAINER_BRENDAN_1, ViridianForest_Text_Brendan1Defeat
+    msgbox ViridianForest_Text_PostDefeat
+    giveitem ITEM_EXP_SHARE
+    msgbox ViridianForest_Text_BrendanTeacher
+    call_if_eq VAR_TEMP_2, 1, ViridianForest_EventScript_BrendanLeaveLeftTile
+    call_if_eq VAR_TEMP_2, 2, ViridianForest_EventScript_BrendanLeaveLeftTile
+    call_if_eq VAR_TEMP_2, 3, ViridianForest_EventScript_BrendanLeaveRightTile
+    waitmovement 0
+	removeobject LOCALID_VIRIDIAN_FOREST_BRENDAN
+    removeobject LOCALID_VIRIDIAN_FOREST_TREECKO
+    setvar VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE, 1 
+    release
+    end
+
+ViridianForest_EventScript_BrendanApproachLeftTile::
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveApproachLeftTile
+    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveApproachLeftTile
+    waitmovement 0
+    return
+
+ViridianForest_EventScript_BrendanApproachMiddleTile::
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveApproachMiddleTile
+    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveApproachMiddleTile
+    waitmovement 0
+    return
+
+ViridianForest_EventScript_BrendanApproachRightTile::
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveApproachRightTile
+    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveApproachRightTile
+    waitmovement 0
+    return
+
+ViridianForest_EventScript_BrendanLeaveLeftTile::
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveLeaveLeftTile
+    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveLeaveLeftTile
+    return
+
+ViridianForest_EventScript_BrendanLeaveRightTile::
+    applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveLeaveRightTile
+    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveLeaveRightTile
+ 
+EventScript_BrendanLookingAround::
+    walk_down
+    walk_down
+    walk_right
+    walk_left
+    walk_left
+    walk_right
+    step_end
+
+EventScript_TreeckoLookingAround::
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_left
+    walk_left
+    step_end
+
+EventScript_Brendan_MoveApproachLeftTile::
+    walk_down
+    walk_down
+    walk_down
+    walk_left
+    face_down
+    step_end
+
+EventScript_Brendan_MoveApproachMiddleTile::
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+EventScript_Brendan_MoveApproachRightTile::
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    face_down
+    step_end
+
+EventScript_Treecko_MoveApproachLeftTile::
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+EventScript_Treecko_MoveApproachMiddleTile::
+    walk_right
+    walk_down
+    walk_down
+    step_end
+
+EventScript_Treecko_MoveApproachRightTile::
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+EventScript_Brendan_MoveLeaveLeftTile::
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+EventScript_Brendan_MoveLeaveRightTile::
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+EventScript_Treecko_MoveLeaveLeftTile::
+    walk_left
+    walk_right
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+EventScript_Treecko_MoveLeaveRightTile::
+    walk_right
+    walk_left
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with some friends to\n"
     .string "catch us some BUG Pokémon!\p"
@@ -142,6 +310,9 @@ ViridianForest_Text_AvoidGrassyAreasWhenWeak::
     .string "want to avoid battles, stay away\l"
     .string "from grassy areas!$"
 
+ViridianForest_Text_Brendan1Defeat::
+    .string "So it goes…$"
+
 ViridianForest_Text_UseAntidoteForPoison::
     .string "For poison, use ANTIDOTE!\n"
     .string "Get it at Pokémon MARTS!$"
@@ -165,6 +336,35 @@ ViridianForest_Text_WeakenMonsBeforeCapture::
     .string "When healthy, they may escape!$"
 
 ViridianForest_Text_LeavingViridianForest::
-    .string "LEAVING Viridian Forest\n"
-    .string "Pewter City AHEAD$"
+    .string "Leaving Viridian Forest\n"
+    .string "Pewter City Ahead$"
 
+ViridianForest_Text_BrendanLooking::
+  .string "{COLOR BLUE}Hm… There should be a Joltik\n"
+  .string "somewhere hereF{PAUSE 15}$"
+
+  
+ViridianForest_Text_BrendanOhHello::
+  .string "Oh hello!\p"
+  .string "I'm just trying to catch some Poké-\n"
+  .string "mon before I challenge {COLOR GREEN}Brock.\p"
+  .string "…Oh? You're looking to challenge him\n"
+  .string "as well?\p"
+  .string "Why don't we have a battle then?$"
+
+ViridianForest_Text_PostDefeat::
+  .string "I haven't had a loss like that in\n"
+  .string "a while! But, that was rather fun.\p"
+  .string "…{PLAYER}, {COLOR BLUE}huh…\p"
+  .string "Here, I have an extra of these,\n"
+  .string "they'll surely help you.$"
+
+ViridianForest_Text_BrendanTeacher::
+  .string "{COLOR BLUE}Anyway, I'm heading to Viridian to\n"
+  .string "check out the trainer school.\p"
+  .string "I heard the teacher has some rare\n"
+  .string "Pokémon.\p"
+  .string "You should check it out if you\n"
+  .string "haven't already!\p"
+  .string "Well, until we meet again,\n"
+  .string "{PLAYER}!$"

@@ -272,7 +272,7 @@ EventScript_brendanbattleleft_Start:
 	call PutFollowPkmnInBallBattle
 	clearflag 0x200
 	showsprite 0x0D
-	showsprite 0x1
+	showsprite 0x1  
 	applymovement 0xFF EventScript_brendanbattleleft_Up
 	applymovement 0x0D EventScript_brendanbattleleft_Lookaround
 	applymovement 0x1 EventScript_brendanbattleleft_LookaroundTreecko

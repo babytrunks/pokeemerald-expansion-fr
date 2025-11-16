@@ -202,22 +202,26 @@ Nidorino
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_YOUNGSTER_BEN_2 ===
-Name: BEN
-Class: Youngster Frlg
-Pic: Youngster Frlg
+=== TRAINER_BRENDAN_1 ===
+Name: Brendan
+Class: Pkmn Trainer 1
+Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Rattata
-Level: 17
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Corphish 
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Vise Grip
+- Aqua Jet
 
-Ekans
-Level: 17
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Treecko @ Oran Berry
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Quick Attack
+- Mega Drain
 
 === TRAINER_BUG_CATCHER_RICK ===
 Name: RICK

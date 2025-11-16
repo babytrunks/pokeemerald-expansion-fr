@@ -170,7 +170,7 @@
 #define DERBY_VAR_RACER_5                               0x409A
 #define DERBY_VAR_RACER_6                               0x409B
 #define VAR_RARE_POKEMON_COUNTER                        0x409C
-#define VAR_0x409D                 0x409D
+#define VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE              0x409D
 #define VAR_0x409E                 0x409E
 #define VAR_0x409F                 0x409F
 #define VAR_0x40A0                 0x40A0
