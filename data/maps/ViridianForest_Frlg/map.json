@@ -160,8 +160,8 @@
     {
       "local_id": "LOCALID_VIRIDIAN_FOREST_BRENDAN",
       "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
-      "x": 40,
-      "y": 44,
+      "x": 30,
+      "y": 59,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -174,8 +174,8 @@
     {
       "local_id": "LOCALID_VIRIDIAN_FOREST_TREECKO",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TREECKO)",
-      "x": 40,
-      "y": 43,
+      "x": 31,
+      "y": 59,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -233,7 +233,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 41,
+      "x": 35,
       "y": 50,
       "elevation": 0,
       "var": "VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE",
@@ -242,7 +242,7 @@
     },
     {
       "type": "trigger",
-      "x": 40,
+      "x": 37,
       "y": 50,
       "elevation": 0,
       "var": "VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE",
@@ -251,7 +251,7 @@
     },
     {
       "type": "trigger",
-      "x": 39,
+      "x": 36,
       "y": 50,
       "elevation": 0,
       "var": "VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE",
