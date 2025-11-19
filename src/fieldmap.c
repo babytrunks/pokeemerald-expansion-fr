@@ -491,6 +491,7 @@ void MapGridSetMetatileEntryAt(int x, int y, u16 metatile)
 static const u32 sFrlgToEmeraldBehavior[NUM_METATILE_BEHAVIORS] =
 {
     [MB_FRLG_NORMAL] = MB_NORMAL,
+    [46]             = MB_NORMAL,
     [MB_FRLG_UNUSED_01] = MB_SECRET_BASE_WALL,
     [MB_FRLG_TALL_GRASS] = MB_TALL_GRASS,
     [MB_FRLG_CAVE] = MB_CAVE,

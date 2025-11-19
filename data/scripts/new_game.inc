@@ -327,4 +327,5 @@ EventScript_ResetAllMapFlagsFrlg::
 	setflag FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS
 	setflag FLAG_SYS_B_DASH
 	setvar VAR_MASSAGE_COOLDOWN_STEP_COUNTER, 500
+	call EventScript_ResetAllBerries
 	end
