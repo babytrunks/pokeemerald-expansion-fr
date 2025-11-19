@@ -1917,7 +1917,7 @@
 #define FLAG_HIDE_POKEMON_MANSION_1F_PROTEIN                    0
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0
-#define FLAG_HIDE_VIRIDIAN_CITY_POTION                          0
+#define FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE                          0
 #define FLAG_HIDE_ROUTE11_GREAT_BALL                            0
 #define FLAG_HIDE_ROUTE11_AWAKENING                             0
 #define FLAG_HIDE_POKEMON_TOWER_5F_CLEANSE_TAG                  0

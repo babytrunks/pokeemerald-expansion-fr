@@ -437,7 +437,7 @@
 #define FLAG_HIDE_POKEMON_MANSION_1F_PROTEIN                    0x1CA
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0x1CB
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0x1CC
-#define FLAG_HIDE_VIRIDIAN_CITY_POTION                          0x1CD
+#define FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE                          0x1CD
 #define FLAG_HIDE_ROUTE11_GREAT_BALL                            0x1CE
 #define FLAG_HIDE_ROUTE11_AWAKENING                             0x1CF
 #define FLAG_HIDE_POKEMON_TOWER_5F_CLEANSE_TAG                  0x1D0
