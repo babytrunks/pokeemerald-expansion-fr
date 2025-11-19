@@ -39073,7 +39073,7 @@
                     {
                       "min_level": 27,
                       "max_level": 29,
-                      "species": "SPECIES_CORSOLA_G"
+                      "species": "SPECIES_CORSOLA_GALAR"
                     },
                     {
                       "min_level": 53,
@@ -39120,7 +39120,7 @@
                   {
                     "min_level": 4,
                     "max_level": 6,
-                    "species": "SPECIES_WOOPER_P"
+                    "species": "SPECIES_WOOPER_PALDEA"
                   },
                   {
                     "min_level": 4,
