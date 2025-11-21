@@ -581,7 +581,7 @@
 #define TRAINER_CRUSH_GIRL_TANYA_3                 575
 #define TRAINER_BLACK_BELT_SHEA_2                  576
 #define TRAINER_BLACK_BELT_SHEA_3                  577
-#define TRAINER_BLACK_BELT_HUGH_2                  578
+#define TRAINER_FALKNER                  578
 #define TRAINER_BLACK_BELT_HUGH_3                  579
 #define TRAINER_CRUSH_KIN_MIK_KIA_2                580
 #define TRAINER_CRUSH_KIN_MIK_KIA_3                581

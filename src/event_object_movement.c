@@ -573,6 +573,15 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_StrangeBall,           OBJ_EVENT_PAL_TAG_BALL_STRANGE},
     #endif //ITEM_STRANGE_BALL
 #endif //OW_FOLLOWERS_POKEBALLS
+    {gObjectEventPal_Falkner,               OBJ_EVENT_PAL_TAG_FALKNER},
+    {gObjectEventPal_Bugsy,               OBJ_EVENT_PAL_TAG_BUGSY},
+    {gObjectEventPal_Whitney,               OBJ_EVENT_PAL_TAG_WHITNEY},
+    {gObjectEventPal_Morty,               OBJ_EVENT_PAL_TAG_MORTY},
+    {gObjectEventPal_Jasmine,               OBJ_EVENT_PAL_TAG_JASMINE},
+    {gObjectEventPal_Chuck,               OBJ_EVENT_PAL_TAG_CHUCK},
+    {gObjectEventPal_Pryce,               OBJ_EVENT_PAL_TAG_PRYCE},
+    {gObjectEventPal_Clair,               OBJ_EVENT_PAL_TAG_CLAIR},
+    // {gObjectEventPal_Janine,               OBJ_EVENT_PAL_TAG_JANINE},
     {gObjectEventPal_Substitute,            OBJ_EVENT_PAL_TAG_SUBSTITUTE},
     {gObjectEventPaletteLight,              OBJ_EVENT_PAL_TAG_LIGHT},
     {gObjectEventPaletteLight2,             OBJ_EVENT_PAL_TAG_LIGHT_2},

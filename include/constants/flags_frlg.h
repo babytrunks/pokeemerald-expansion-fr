@@ -318,9 +318,9 @@
 // Item ball hide/show
 #define FLAG_HIDE_ROUTE2_ETHER                                  0x154
 #define FLAG_HIDE_ROUTE2_PARALYZE_HEAL                          0x155
-#define FLAG_HIDE_VIRIDIAN_FOREST_POKE_BALL                     0x156
+#define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0x156
 #define FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE                      0x157
-#define FLAG_HIDE_VIRIDIAN_FOREST_POTION                        0x158
+#define FLAG_HIDE_VIRIDIAN_FOREST_MIRACLE_SEED                        0x158
 #define FLAG_HIDE_MT_MOON_1F_PARALYZE_HEAL                      0x159
 #define FLAG_HIDE_MT_MOON_1F_TM09                               0x15A
 #define FLAG_HIDE_MT_MOON_1F_POTION                             0x15B
@@ -498,8 +498,8 @@
 #define FLAG_RARE_POKEMON_SCREEN                                0x205
 #define FLAG_NES_GAVE_INFINITE_CANDY                            0x206
 #define FLAG_NES_ACTIVATE_DEX_ALL                               0x207
-#define FLAG_INF_REPEL_GIRL               0x208
-#define FLAG_0x209               0x209
+#define FLAG_INF_REPEL_GIRL                                     0x208
+#define FLAG_BEAT_PEWTER_FALKNER                                0x209
 #define FLAG_0x20A               0x20A
 #define FLAG_0x20B               0x20B
 #define FLAG_0x20C               0x20C

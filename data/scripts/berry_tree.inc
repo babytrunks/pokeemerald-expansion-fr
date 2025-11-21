@@ -1,15 +1,16 @@
 BerryTreeScript::
 	special ObjectEventInteractionGetBerryTreeData
 	switch VAR_0x8004
-	case BERRY_STAGE_SPARKLING, BerryTree_EventScript_Sparkling
-	case BERRY_STAGE_NO_BERRY, BerryTree_EventScript_CheckSoil
-	case BERRY_STAGE_PLANTED, BerryTree_EventScript_CheckBerryStage1
-	case BERRY_STAGE_SPROUTED, BerryTree_EventScript_CheckBerryStage2
-	case BERRY_STAGE_TALLER, BerryTree_EventScript_CheckBerryStage3
-	case BERRY_STAGE_TRUNK, BerryTree_EventScript_CheckBerryStageTrunk
-	case BERRY_STAGE_BUDDING, BerryTree_EventScript_CheckBerryStageBudding
-	case BERRY_STAGE_FLOWERING, BerryTree_EventScript_CheckBerryStage4
+	@ case BERRY_STAGE_SPARKLING, BerryTree_EventScript_Sparkling
+	@ case BERRY_STAGE_NO_BERRY, BerryTree_EventScript_CheckSoil
+	@ case BERRY_STAGE_PLANTED, BerryTree_EventScript_CheckBerryStage1
+	@ case BERRY_STAGE_SPROUTED, BerryTree_EventScript_CheckBerryStage2
+	@ case BERRY_STAGE_TALLER, BerryTree_EventScript_CheckBerryStage3
+	@ case BERRY_STAGE_TRUNK, BerryTree_EventScript_CheckBerryStageTrunk
+	@ case BERRY_STAGE_BUDDING, BerryTree_EventScript_CheckBerryStageBudding
+	@ case BERRY_STAGE_FLOWERING, BerryTree_EventScript_CheckBerryStage4
 	case BERRY_STAGE_BERRIES, BerryTree_EventScript_CheckBerryFullyGrown
+	goto BerryTree_EventScript_CheckSoil
 	end
 
 BerryTree_EventScript_Sparkling::
@@ -23,10 +24,10 @@ BerryTree_EventScript_Sparkling::
 BerryTree_EventScript_CheckSoil::
 	lock
 	faceplayer
-	specialvar VAR_RESULT, PlayerHasBerries
-	goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_WantToPlant
-	specialvar VAR_RESULT, PlayerHasMulch
-	goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_WantToMulch
+	@ specialvar VAR_RESULT, PlayerHasBerries
+	@ goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_WantToPlant
+	@ specialvar VAR_RESULT, PlayerHasMulch
+	@ goto_if_eq VAR_RESULT, TRUE, BerryTree_EventScript_WantToMulch
 	message BerryTree_Text_ItsSoftLoamySoil
 	waitmessage
 	waitbuttonpress
@@ -257,7 +258,7 @@ BerryTree_EventScript_PlantBerry::
 	return
 
 BerryTree_Text_ItsSoftLoamySoil:
-	.string "It's soft, loamy soil.$"
+	.string "It's an empty berry tree.$"
 
 BerryTree_Text_WantToPlant:
 	.string "It's soft, loamy soil.\n"

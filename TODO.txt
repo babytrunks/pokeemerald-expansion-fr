@@ -1,20 +1,22 @@
 
 TODO:
 Bug:
-- Fix EXP bar bug
+- Text colors arent really consistent with FR right now (Blue for male, Red for girls)
+- Berry Tree cuts off the player head for some reason
+- Fade Screen messes with colors (like in FRU)
+
 HIGHEST PRIORITY:
 - FRU additional event scripts
-    - For beginning, Mom asking what starter, Oak giving Gen 1-9, skip the whole Pokemart package and just give Pokeballs/Dex right off the bat DONE
 - Updated level-up-learnsets from FRU (JwowSquared)
 - Update TM/HM list to FRU 
     - (pokeemerald has 100)
 - Updated Move Tutor, TM, HM, Egg Moves from FRU
 - Update beginning options select into fancier option menu
-- Level Cap (functionality is in, just need to add in vars for set up)
+- Level Cap (basically done, but will be updated depending on how vision changes)
 - Testing, obviously
 
 MEDIUM PRIORITY:
-- Convert rest of trainers into trainers.party format
+- Convert rest of trainers into trainers.party format (babytrunks has script for this)
 - Trainer battle sprites, new object events
 - FRU Exclusive Megas, Regional forms
 - FRU Exclusive Items/Functionality
@@ -23,7 +25,6 @@ MEDIUM PRIORITY:
 - Randomization Options (Species, Ability, Moves)
 - Max Boxes is only 14, need to research on how to expand..
 - Some FRU Ability exclusive abilities still need implementation (can see //fru todo in constants/abilities.h)
-- Register Item Wheel
 
 LOW PRIORITY:
 - Music (Team Rocket battle, Rival battle, Johto Rival battle, etc )
@@ -47,6 +48,7 @@ ALREADY DONE:
     - https://github.com/pret/pokeemerald/compare/master...PokemonSanFran:pokeemerald:pokevial
 - Time Box 
 - Infinite Repel
+- Register more than 1 items at a time
 - Implement Gatcha thingy, some sort of design where you could use it immediately for something ok or wait for it to get better
     - Not sure if item or Pokemon yet
     - https://github.com/rh-hideout/pokeemerald-expansion/compare/master...agsmgmaster64:worldlinkdeluxe-ame:gacha-expansion

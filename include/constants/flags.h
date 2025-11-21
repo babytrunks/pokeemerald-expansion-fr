@@ -1798,9 +1798,9 @@
 
 #define FLAG_HIDE_ROUTE2_ETHER                                  0
 #define FLAG_HIDE_ROUTE2_PARALYZE_HEAL                          0
-#define FLAG_HIDE_VIRIDIAN_FOREST_POKE_BALL                     0
+#define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0
 #define FLAG_HIDE_VIRIDIAN_FOREST_ANTIDOTE                      0
-#define FLAG_HIDE_VIRIDIAN_FOREST_POTION                        0
+#define FLAG_HIDE_VIRIDIAN_FOREST_MIRACLE_SEED                        0
 #define FLAG_HIDE_MT_MOON_1F_PARALYZE_HEAL                      0
 #define FLAG_HIDE_MT_MOON_1F_TM09                               0
 #define FLAG_HIDE_MT_MOON_1F_POTION                             0

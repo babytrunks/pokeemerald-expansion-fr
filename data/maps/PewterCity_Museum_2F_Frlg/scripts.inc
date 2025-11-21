@@ -29,6 +29,32 @@ PewterCity_Museum_2F_EventScript_MoonStone::
 	msgbox PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon, MSGBOX_SIGN
 	end
 
+EventScript_falkner_Start::
+    lockall                 @ CFRU used 'lock'; using lockall + faceplayer here
+    msgbox falkner_Text_1   @ 0x6 -> normal msgbox
+    playse SE_PIN              @ sound 0x15  @ ??? replace with proper SE_* constant
+    applymovement LOCALID_FALKNER, Common_Movement_ExclamationMark   @ 0x6 -> Falkner’s local id
+    waitmovement 0
+    waitse                  @ checksound
+    applymovement LOCALID_FALKNER, Common_Movement_FacePlayer
+    waitmovement 0
+    msgbox falkner_Text_2
+    msgbox falkner_Text_3
+    @ trainerbattle3 0x3 0x2D 0x0 gText_falkner_Defeat
+    @ Guess: simple no-intro trainer battle with mugshot handled via VARs above.
+    trainerbattle_no_intro TRAINER_FALKNER, falkner_Text_Defeat   @ ??? 0x2D trainer id
+    msgbox falkner_Text_4
+    giveitem ITEM_TM_AERIAL_ACE      
+    msgbox falkner_Text_6
+    fadescreen FADE_TO_BLACK    @ fadescreen 0x1
+    removeobject LOCALID_FALKNER @ hidesprite 0x6  @ ??? confirm correct LOCALID
+    playse SE_EXIT                  @ sound 0x9  @ ??? replace with proper SE_* constant
+    waitse                      @ checksound
+    fadescreen FADE_FROM_BLACK  @ fadescreen 0x0
+    setflag FLAG_BEAT_PEWTER_FALKNER           @ ??? Likely “beaten Falkner / badge” story flag
+    release
+    end
+
 Text_SeismicTossTeach::
     .string "The secrets of space…\n"
     .string "The mysteries of earth…\p"
@@ -53,16 +79,19 @@ Text_SeismicTossTaught::
     .string "Keep it up.$"
 
 PewterCity_Museum_1F_Text_WhatsSpecialAboutMoonStone::
-    .string "MOON STONE, huh?\p"
-    .string "What's so special about it?\n"
-    .string "Looks like an ordinary rock to me.$"
+    .string "Moon Stone is busted!\p"
+    .string "Early game Nidoking or Clefable?\n"
+    .string "Can't go wrong!$"
 
 PewterCity_Museum_1F_Text_BoughtColorTVForMoonLanding::
     .string "July 20, 1969!\p"
     .string "Humankind first set foot on the\n"
     .string "moon that day.\p"
     .string "I bought a color TV just so I\n"
-    .string "could watch that news.$"
+    .string "could watch that news.\p"
+    .string "Now you got conspiracy nuts\n"
+    .string "saying it was all fake.\p"
+    .string "What a sad world.$"
 
 PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
     .string "This month, we're running a space\n"
@@ -82,4 +111,41 @@ PewterCity_Museum_1F_Text_SpaceShuttle::
 PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
     .string "A meteorite that fell on MT. MOON.\n"
     .string "It is thought to be a MOON STONE.$"
+
+
+falkner_Text_1::
+  .string "{COLOR BLUE}Hmm… There doesn't seem to be\n"
+  .string "any information on Mega Stones…$"
+
+
+falkner_Text_2::
+  .string "{COLOR BLUE}Oh, hello! I'm Falkner, a Gym\n"
+  .string "Leader from Johto.\p"
+  .string "I'm traveling in Kanto looking for\n"
+  .string "information on Mega Evolution,\l"
+  .string "but have found nothing so far.$"
+
+
+falkner_Text_3::
+  .string "{COLOR BLUE}…A battle is what you're looking\n"
+  .string "for?\p"
+  .string "I guess I could spare the time.\p"
+  .string "I'll demonstrate the power of the\n"
+  .string "elegant bird Pokémon!$"
+
+
+falkner_Text_Defeat::
+  .string "Mmm… I have much to learn even\n"
+  .string "before attaining the Mega Stones…$"
+
+
+falkner_Text_4::
+  .string "{COLOR BLUE}Thank you for a wonderful battle.\n"
+  .string "I hope we meet again.\p"
+  .string "I don't have a badge to give\n"
+  .string "unfortunately, but you can have this.$"
+
+
+falkner_Text_6::
+  .string "Until next time.$"
 

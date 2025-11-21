@@ -12687,22 +12687,48 @@ Machamp @ Black Belt
 Level: 55
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
-=== TRAINER_BLACK_BELT_HUGH_2 ===
-Name: HUGH
-Class: Black Belt Frlg
-Pic: Black Belt Frlg
+=== TRAINER_FALKNER ===
+Name: Falkner
+Class: Leader
+Pic: Leader Falkner
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Machoke @ Black Belt
-Level: 50
-IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Rufflet @ Berry Juice
+Nature: Bashful
+Ability: Hustle
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Aerial Ace
+- Rock Tomb
+- Rock Smash
+- Roost
 
-Machoke @ Black Belt
-Level: 50
-IVs: 21 HP / 21 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Wattrel @ Lum Berry
+Nature: Bashful
+Ability: Volt Absorb
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flash
+- Air Cutter
+- Sleep Talk
+- Roost
+
+Flittle @ Eviolite
+Nature: Bold
+Ability: Speed Boost
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Disarming Voice
+- Roost
+- Psybeam
+- Calm Mind
+
 
 === TRAINER_BLACK_BELT_HUGH_3 ===
 Name: HUGH
