@@ -4,14 +4,14 @@
 ASSUMPTIONS
 {
     ASSUME(GetMoveEffect(MOVE_THIEF == EFFECT_STEAL_ITEM));
-    ASSUME(GetMoveEffect(MOVE_COVET == EFFECT_STEAL_ITEM));
+    ASSUME(GetMoveEffect(MOVE_JOVIAL_BASH == EFFECT_STEAL_ITEM));
 }
 
 SINGLE_BATTLE_TEST("Thief and Covet steal target's held item")
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
@@ -31,7 +31,7 @@ SINGLE_BATTLE_TEST("Thief and Covet steal player's held item if opponent is a tr
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
     GIVEN {
         ASSUME(B_TRAINERS_KNOCK_OFF_ITEMS == TRUE);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
@@ -52,7 +52,7 @@ WILD_BATTLE_TEST("Thief and Covet don't steal player's held item if opponent is 
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
     GIVEN {
         ASSUME(B_TRAINERS_KNOCK_OFF_ITEMS == TRUE);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
@@ -73,7 +73,7 @@ SINGLE_BATTLE_TEST("Thief and Covet don't steal target's held item if user is ho
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_POTION); }
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_HYPER_POTION); }
@@ -93,7 +93,7 @@ SINGLE_BATTLE_TEST("Thief and Covet don't steal target's held item if target has
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
@@ -111,7 +111,7 @@ WILD_BATTLE_TEST("Thief and Covet steal target's held item and it's added to Bag
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
     GIVEN {
         WITH_CONFIG(GEN_STEAL_WILD_ITEMS, GEN_9);
         PLAYER(SPECIES_WOBBUFFET);
@@ -132,7 +132,7 @@ SINGLE_BATTLE_TEST("Thief and Covet can't steal target's held item if user faint
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { HP(1); };
         OPPONENT(SPECIES_WOBBUFFET) { Item(ITEM_ROCKY_HELMET); }
@@ -152,7 +152,7 @@ SINGLE_BATTLE_TEST("Thief and Covet: Berries that activate on HP thresholds are 
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
 
     GIVEN {
         PLAYER(SPECIES_WYNAUT);
@@ -171,7 +171,7 @@ SINGLE_BATTLE_TEST("Thief and Covet: Berries that activate on a Status activate 
 {
     u32 move;
     PARAMETRIZE { move = MOVE_THIEF; }
-    PARAMETRIZE { move = MOVE_COVET; }
+    PARAMETRIZE { move = MOVE_JOVIAL_BASH; }
 
     GIVEN {
         PLAYER(SPECIES_TOXICROAK) { Ability(ABILITY_POISON_TOUCH); }

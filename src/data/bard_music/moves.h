@@ -2750,7 +2750,7 @@ static const struct BardSoundTemplate sBardSoundTemplates_Moves[MOVES_COUNT][MAX
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [MOVE_COVET] = {
+    [MOVE_JOVIAL_BASH] = {
         { .songId = PHONEME_ID(PH_STRUT_BLEND) },
         { .songId = PHONEME_ID(PH_DRESS_BLEND) },
         PREV_BARD_SOUND,

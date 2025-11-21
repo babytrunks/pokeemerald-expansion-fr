@@ -980,7 +980,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
     [FRONTIER_MON_LINOONE_1] = {
         .species = SPECIES_LINOONE,
-        .moves = {MOVE_SECRET_POWER, MOVE_SAND_ATTACK, MOVE_COVET, MOVE_TICKLE},
+        .moves = {MOVE_SECRET_POWER, MOVE_SAND_ATTACK, MOVE_JOVIAL_BASH, MOVE_TICKLE},
         .heldItem = ITEM_WHITE_HERB,
         .nature = NATURE_ADAMANT
     },

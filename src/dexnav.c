@@ -1013,15 +1013,15 @@ static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId)
     ScriptContext_SetupScript(script);
 }
 
-static u8 GetMovementProximityBySearchLevel(void)
-{
-    if (sDexNavSearchDataPtr->searchLevel < 20)
-        return 2;
-    else if (sDexNavSearchDataPtr->searchLevel < 50)
-        return 3;
-    else
-        return 4;
-}
+// static u8 GetMovementProximityBySearchLevel(void)
+// {
+//     if (sDexNavSearchDataPtr->searchLevel < 20)
+//         return 2;
+//     else if (sDexNavSearchDataPtr->searchLevel < 50)
+//         return 3;
+//     else
+//         return 4;
+// }
 
 static void Task_RevealHiddenMon(u8 taskId)
 {

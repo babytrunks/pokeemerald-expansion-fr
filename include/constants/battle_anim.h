@@ -594,8 +594,8 @@
 #define B_ANIM_MON_SCARED               54
 #define B_ANIM_GHOST_GET_OUT            55
 #define B_ANIM_SILPH_SCOPED             56
-
-#define NUM_B_ANIMS_GENERAL             57
+#define B_ANIM_MIST                     57
+#define NUM_B_ANIMS_GENERAL             58
 
 // special animations table (sBattleAnims_Special)
 #define B_ANIM_LVL_UP                   0

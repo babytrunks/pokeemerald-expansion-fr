@@ -259,7 +259,7 @@ static const u16 sCleffaEggMoveLearnset[] = {
     MOVE_MIMIC,
     MOVE_WISH,
     MOVE_FAKE_TEARS,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_AROMATHERAPY,
     MOVE_STORED_POWER,
     MOVE_TICKLE,
@@ -318,7 +318,7 @@ static const u16 sIgglybuffEggMoveLearnset[] = {
     MOVE_WISH,
     MOVE_FAKE_TEARS,
     MOVE_LAST_RESORT,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_GRAVITY,
     MOVE_SLEEP_TALK,
     MOVE_CAPTIVATE,
@@ -464,7 +464,7 @@ static const u16 sMeowthAlolaEggMoveLearnset[] = {
     MOVE_AMNESIA,
     MOVE_ASSIST,
     MOVE_CHARM,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_FLAIL,
     MOVE_FLATTER,
     MOVE_FOUL_PLAY,
@@ -483,7 +483,7 @@ static const u16 sMeowthGalarEggMoveLearnset[] = {
     MOVE_CURSE,
     MOVE_FLAIL,
     MOVE_NIGHT_SLASH,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_GALARIAN_FORMS
@@ -540,7 +540,7 @@ static const u16 sGrowlitheEggMoveLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_FLARE_BLITZ,
     MOVE_MORNING_SUN,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_IRON_TAIL,
     MOVE_DOUBLE_KICK,
     MOVE_CLOSE_COMBAT,
@@ -743,7 +743,7 @@ static const u16 sFarfetchdEggMoveLearnset[] = {
     MOVE_FLAIL,
     MOVE_FEATHER_DANCE,
     MOVE_CURSE,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_MUD_SLAP,
     MOVE_NIGHT_SLASH,
     MOVE_LEAF_BLADE,
@@ -762,7 +762,7 @@ static const u16 sFarfetchdGalarEggMoveLearnset[] = {
     MOVE_FLAIL,
     MOVE_QUICK_GUARD,
     MOVE_CURSE,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_NIGHT_SLASH,
     MOVE_SIMPLE_BEAM,
     MOVE_DOUBLE_EDGE,
@@ -1352,7 +1352,7 @@ static const u16 sEeveeEggMoveLearnset[] = {
     MOVE_WISH,
     MOVE_YAWN,
     MOVE_FAKE_TEARS,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_DETECT,
     MOVE_NATURAL_GIFT,
     MOVE_STORED_POWER,
@@ -1496,7 +1496,7 @@ static const u16 sCyndaquilEggMoveLearnset[] = {
     MOVE_REVERSAL,
     MOVE_THRASH,
     MOVE_FORESIGHT,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_HOWL,
     MOVE_CRUSH_CLAW,
     MOVE_DOUBLE_EDGE,
@@ -1540,7 +1540,7 @@ static const u16 sSentretEggMoveLearnset[] = {
     MOVE_ASSIST,
     MOVE_LAST_RESORT,
     MOVE_CHARM,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_NATURAL_GIFT,
     MOVE_IRON_TAIL,
     MOVE_CAPTIVATE,
@@ -1773,7 +1773,7 @@ static const u16 sAipomEggMoveLearnset[] = {
     MOVE_DOUBLE_SLAP,
     MOVE_BEAT_UP,
     MOVE_FAKE_OUT,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_BOUNCE,
     MOVE_REVENGE,
     MOVE_SWITCHEROO,
@@ -2410,7 +2410,7 @@ static const u16 sMudkipEggMoveLearnset[] = {
 static const u16 sPoochyenaEggMoveLearnset[] = {
     MOVE_ASTONISH,
     MOVE_POISON_FANG,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_LEER,
     MOVE_YAWN,
     MOVE_SUCKER_PUNCH,
@@ -3566,7 +3566,7 @@ static const u16 sShieldonEggMoveLearnset[] = {
 
 #if P_FAMILY_PACHIRISU
 static const u16 sPachirisuEggMoveLearnset[] = {
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_BITE,
     MOVE_FAKE_TEARS,
     MOVE_DEFENSE_CURL,
@@ -3924,7 +3924,7 @@ static const u16 sSnivyEggMoveLearnset[] = {
 
 #if P_FAMILY_TEPIG
 static const u16 sTepigEggMoveLearnset[] = {
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_BODY_SLAM,
     MOVE_THRASH,
     MOVE_MAGNITUDE,
@@ -3998,7 +3998,7 @@ static const u16 sPurrloinEggMoveLearnset[] = {
     MOVE_CHARM,
     MOVE_ENCORE,
     MOVE_YAWN,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_COPYCAT,
     MOVE_UNAVAILABLE,
 };
@@ -4006,7 +4006,7 @@ static const u16 sPurrloinEggMoveLearnset[] = {
 
 #if P_FAMILY_PANSAGE
 static const u16 sPansageEggMoveLearnset[] = {
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_LOW_KICK,
     MOVE_TICKLE,
     MOVE_NASTY_PLOT,
@@ -4024,7 +4024,7 @@ static const u16 sPansageEggMoveLearnset[] = {
 
 #if P_FAMILY_PANSEAR
 static const u16 sPansearEggMoveLearnset[] = {
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_LOW_KICK,
     MOVE_TICKLE,
     MOVE_NASTY_PLOT,
@@ -4043,7 +4043,7 @@ static const u16 sPansearEggMoveLearnset[] = {
 
 #if P_FAMILY_PANPOUR
 static const u16 sPanpourEggMoveLearnset[] = {
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_LOW_KICK,
     MOVE_TICKLE,
     MOVE_NASTY_PLOT,
@@ -4580,7 +4580,7 @@ static const u16 sEmolgaEggMoveLearnset[] = {
     MOVE_AIR_SLASH,
     MOVE_SHOCK_WAVE,
     MOVE_CHARM,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_TICKLE,
     MOVE_BATON_PASS,
     MOVE_ION_DELUGE,
@@ -5171,7 +5171,7 @@ static const u16 sHawluchaEggMoveLearnset[] = {
 #if P_FAMILY_DEDENNE
 static const u16 sDedenneEggMoveLearnset[] = {
     MOVE_EERIE_IMPULSE,
-    MOVE_COVET,
+    MOVE_JOVIAL_BASH,
     MOVE_HELPING_HAND,
     MOVE_NATURAL_GIFT,
     MOVE_TEARFUL_LOOK,

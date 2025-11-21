@@ -21,6 +21,7 @@ PalletTown_RivalsHouse_EventScript_AlreadyReceivedTownMap::
 PalletTown_RivalsHouse_EventScript_Daisy::
 	lock
 	faceplayer
+	setspeaker SP_NAME_DAISY
 	famechecker FAMECHECKER_DAISY, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	goto_if_set FLAG_SYS_GAME_CLEAR, PalletTown_RivalsHouse_EventScript_GroomMon
 	goto_if_eq RECEIVED_TOWN_MAP, TRUE, PalletTown_RivalsHouse_EventScript_PleaseGiveMonsRest

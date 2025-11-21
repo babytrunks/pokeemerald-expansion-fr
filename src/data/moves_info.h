@@ -9043,7 +9043,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_COVET] =
+    [MOVE_JOVIAL_BASH] =
     {
         .name = COMPOUND_STRING("Covet"),
         .description = COMPOUND_STRING(
@@ -21183,6 +21183,62 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             .chance = 50,
         }),
         .battleAnimScript = gBattleAnimMove_MalignantChain,
+    },
+
+    
+    [MOVE_MISTY_SPLATTER] =
+    {
+        .name = COMPOUND_STRING("Misty Splatter"),
+        .description = COMPOUND_STRING(
+            "A dewy splash that can\n"
+            "cast Mist."),
+        .effect = EFFECT_HIT,
+        .power = 55,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 20,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_MIST,
+            .chance = 30,
+        }),
+        .battleAnimScript = gBattleAnimMove_ChillingWater,
+    },
+
+    [MOVE_BREAKTHROUGH] =
+    {
+        .name = COMPOUND_STRING("Breakthrough"),
+        .description = COMPOUND_STRING(
+            "Adds 5 IVs to a random offensive stat and raises it for the user upon KO in a trainer battle."),
+        .effect = EFFECT_BREAKTHROUGH,
+        .power = 40,
+        .type = TYPE_NORMAL,
+        .accuracy = 100,
+        .pp = 1,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_Frustration,
+    },
+
+    [MOVE_FORTIFY] =
+    {
+        .name = COMPOUND_STRING("Fortify"),
+        .description = COMPOUND_STRING(
+            "Adds 5 IVs to a random defensive stat and raises it for the user upon KO\nin a trainer battle."),
+        .effect = EFFECT_FORTIFY,
+        .power = 40,
+        .type = TYPE_ROCK,
+        .accuracy = 100,
+        .pp = 1,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .metronomeBanned = TRUE,
+        .battleAnimScript = gBattleAnimMove_RockThrow,
     },
 
     // Z-Moves

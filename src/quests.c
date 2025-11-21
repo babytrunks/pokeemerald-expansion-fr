@@ -1159,12 +1159,12 @@ static bool8 LoadGraphics(void)
 		case 1:
 			if (FreeTempTileDataBuffersIfPossible() != TRUE)
 			{
-				LZDecompressWram(sQuestMenuTilemap, sBg1TilemapBuffer);
+				DecompressDataWithHeaderWram(sQuestMenuTilemap, sBg1TilemapBuffer);
 				sStateDataPtr->data[0]++;
 			}
 			break;
 		case 2:
-			LoadCompressedPalette(sQuestMenuBgPals, 0x00, 0x60);
+			LoadPalette(sQuestMenuBgPals, 0x00, 0x60);
 			sStateDataPtr->data[0]++;
 			break;
 		case 3:
@@ -2172,7 +2172,7 @@ void DetermineSpriteType(s32 questId)
 static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 {
 	u8 *ptr = &sItemMenuIconSpriteIds[10];
-	u8 spriteId = 0xFF;
+	u8 spriteId = MAX_SPRITES - 1;
 
 	if (ptr[idx] == 0xFF)
 	{
@@ -2190,7 +2190,7 @@ static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 				break;
 			case PKMN:
 				LoadMonIconPalettes();
-				spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1, 1);
+				spriteId = CreateMonIcon(itemId, SpriteCallbackDummy, 20, 132, 0, 1);
 				break;
 			default:
 				break;
@@ -2198,7 +2198,7 @@ static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType)
 
 		gSprites[spriteId].oam.objMode = ST_OAM_OBJ_BLEND;
 
-		if (spriteId != MAX_SPRITES)
+		if (spriteId != MAX_SPRITES - 1)
 		{
 			ptr[idx] = spriteId;
 

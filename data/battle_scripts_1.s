@@ -3543,6 +3543,15 @@ BattleScript_EffectAttract::
 	call BattleScript_TryDestinyKnotAttacker
 	goto BattleScript_MoveEnd
 
+
+BattleScript_EffectAttractAttack::
+	jumpifability BS_TARGET_SIDE, ABILITY_AROMA_VEIL, BattleScript_MoveEndAttract
+	tryinfatuating BattleScript_MoveEndAttract
+	printstring STRINGID_PKMNFELLINLOVE
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_MoveEndAttract:
+	return
+
 BattleScript_EffectPresent::
 	attackcanceler
 	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
@@ -7339,6 +7348,23 @@ BattleScript_FellStingerRaisesStat::
 BattleScript_FellStingerRaisesAtkEnd:
 	return
 
+BattleScript_BreakthroughRaisesHP::
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_FellStingerRaisesAtkEnd
+	@ setgraphicalstatchangevalues
+	@ playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_BreakthroughRaisesStat::
+    @ statbuffchange BS_ATTACKER, STAT_CHANGE_ALLOW_PTR, BattleScript_FellStingerRaisesAtkEnd
+	@ jumpifbyte CMP_GREATER_THAN, cMULTISTRING_CHOOSER, B_MSG_DEFENDER_STAT_CHANGED, BattleScript_FellStingerRaisesAtkEnd
+	@ setgraphicalstatchangevalues
+	@ playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	@ printfromtable gStatUpStringIds
+	@ waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_AttackerAbilityStatRaiseEnd3::
 	call BattleScript_AttackerAbilityStatRaise
 	restoreattacker
@@ -7851,6 +7877,13 @@ BattleScript_BerryFocusEnergyRet::
 BattleScript_BerryFocusEnergyEnd2::
 	call BattleScript_BerryFocusEnergyRet
 	end2
+
+BattleScript_EffectMistAttack::
+	setmist
+	playanimation BS_ATTACKER, B_ANIM_MIST, sB_ANIM_ARG1
+	printfromtable gMistUsedStringIds
+	waitmessage B_WAIT_TIME_LONG
+	return
 
 BattleScript_ActionSelectionItemsCantBeUsed::
 	printselectionstring STRINGID_ITEMSCANTBEUSEDNOW

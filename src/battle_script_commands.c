@@ -3152,6 +3152,18 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
             gBattlescriptCurrInstr = BattleScript_MoveEffectWrap;
         }
         break;
+
+        // New effects here bc idk
+        case MOVE_EFFECT_ATTRACT:
+            BattleScriptPush(gBattlescriptCurrInstr + 1);
+            gBattlescriptCurrInstr = BattleScript_EffectAttractAttack;
+            break;
+
+        case MOVE_EFFECT_MIST:
+            BattleScriptPush(gBattlescriptCurrInstr + 1);
+            gBattlescriptCurrInstr = BattleScript_EffectMistAttack;
+            break;
+
     case MOVE_EFFECT_ATK_PLUS_1:
     case MOVE_EFFECT_DEF_PLUS_1:
     case MOVE_EFFECT_SPD_PLUS_1:
@@ -5913,6 +5925,48 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
             BattleScriptPushCursor();
             gBattlescriptCurrInstr = BattleScript_FellStingerRaisesStat;
             effect = TRUE;
+        }
+        break;
+    
+    case EFFECT_BREAKTHROUGH:
+        if ( //gMovesInfo[gCurrentMove].effect == EFFECT_BREAKTHROUGH &&
+            IsBattlerAlive(gBattlerAttacker)
+            && !IsBattlerAlive(gBattlerTarget)
+            && IsBattlerTurnDamaged(gBattlerTarget)
+            && !NoAliveMonsForEitherParty()
+            && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        {
+            u8 i;
+            u8 statArray[3] = {STAT_ATK,  STAT_SPATK, STAT_SPEED};
+            u8 monIVs[NUM_STATS];
+            struct Pokemon *mon2;
+            mon2 = GetBattlerMon(gBattlerAttacker);
+            for (i = 0; i < NUM_STATS; i++) {
+                monIVs[i] = GetMonData(mon2, MON_DATA_HP_IV + i);
+            }
+            // u8 perfIv = 31;
+            Shuffle(statArray, NUM_STATS, sizeof(statArray[0]));
+            for (i = 0; i < 3; i++)
+            {
+                if (monIVs[statArray[i]] != 31)
+                {
+                    u8 newIV = monIVs[statArray[i]] + 5;
+                    if (newIV > 31) {
+                        newIV = 31;
+                    }
+                    // SET_STATCHANGER(statArray[i], 1 , FALSE);
+                    SetMonData(mon2, MON_DATA_HP_IV + statArray[i] , &newIV);
+                    // gBattlescriptCurrInstr = BattleScript_BreakthroughRaisesStat;
+                    // effect = TRUE;
+                    break;
+                    // PREPARE_STAT_BUFFER(gBattleTextBuff1,statArray[i] );
+                    // BattleScriptPushCursor();
+                    // if (statArray[i] == STAT_HP) {
+                    //     gBattlescriptCurrInstr = BattleScript_BreakthroughRaisesHP;
+                    // }
+                    // else {
+                }
+            }
         }
         break;
     case EFFECT_STONE_AXE:

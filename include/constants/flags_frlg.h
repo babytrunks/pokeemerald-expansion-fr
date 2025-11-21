@@ -500,7 +500,7 @@
 #define FLAG_NES_ACTIVATE_DEX_ALL                               0x207
 #define FLAG_INF_REPEL_GIRL                                     0x208
 #define FLAG_BEAT_PEWTER_FALKNER                                0x209
-#define FLAG_0x20A               0x20A
+#define FLAG_SYS_QUEST_MENU_GET                                 0x20A
 #define FLAG_0x20B               0x20B
 #define FLAG_0x20C               0x20C
 #define FLAG_0x20D               0x20D

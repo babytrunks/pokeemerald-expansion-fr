@@ -31,6 +31,7 @@ PewterCity_Museum_2F_EventScript_MoonStone::
 
 EventScript_falkner_Start::
     lockall                 @ CFRU used 'lock'; using lockall + faceplayer here
+    setspeaker SP_NAME_FALKNER
     msgbox falkner_Text_1   @ 0x6 -> normal msgbox
     playse SE_PIN              @ sound 0x15  @ ??? replace with proper SE_* constant
     applymovement LOCALID_FALKNER, Common_Movement_ExclamationMark   @ 0x6 -> Falkner’s local id
@@ -38,13 +39,17 @@ EventScript_falkner_Start::
     waitse                  @ checksound
     applymovement LOCALID_FALKNER, Common_Movement_FacePlayer
     waitmovement 0
+    setspeaker SP_NAME_FALKNER
     msgbox falkner_Text_2
+    setspeaker SP_NAME_FALKNER
     msgbox falkner_Text_3
     @ trainerbattle3 0x3 0x2D 0x0 gText_falkner_Defeat
     @ Guess: simple no-intro trainer battle with mugshot handled via VARs above.
     trainerbattle_no_intro TRAINER_FALKNER, falkner_Text_Defeat   @ ??? 0x2D trainer id
+    setspeaker SP_NAME_FALKNER
     msgbox falkner_Text_4
-    giveitem ITEM_TM_AERIAL_ACE      
+    giveitem ITEM_TM_AERIAL_ACE     
+    setspeaker SP_NAME_FALKNER 
     msgbox falkner_Text_6
     fadescreen FADE_TO_BLACK    @ fadescreen 0x1
     removeobject LOCALID_FALKNER @ hidesprite 0x6  @ ??? confirm correct LOCALID

@@ -242,11 +242,11 @@ ViridianCity_Text_OhOkayThen::
     .string "Oh, okay then!$"
 
 ViridianCity_Text_ExplainWillyWonka::
-	.string "…Oh nice, you got the Infinite\n"
-	.string "Candy. If you're curious on how\l"
-	.string "such a thing even works…\p"
+	.string "{COLOR BLUE}…Oh nice, you got the Infinite Candy.\n"
+	.string "If you're curious on how such a\l"
+	.string "thing even works…\p"
 	.string "I heard Soupercell commissioned\n"
-	.string "Willy Wonka himself quite a bit of\n"
+	.string "Willy Wonka himself quite a bit of\l"
 	.string "money!$"
 
 ViridianCity_Text_ExplainCaterpieWeedle::

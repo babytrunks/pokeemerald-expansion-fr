@@ -83,6 +83,7 @@ ViridianForest_EventScript_BrendanOne_Battle::
     applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_BrendanLookingAround
     applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_TreeckoLookingAround
     waitmovement 0 
+    setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_BrendanLooking
     waitmessage
     playse SE_PIN 
@@ -92,6 +93,7 @@ ViridianForest_EventScript_BrendanOne_Battle::
     call_if_eq VAR_TEMP_2, 1, ViridianForest_EventScript_BrendanApproachLeftTile
     call_if_eq VAR_TEMP_2, 2, ViridianForest_EventScript_BrendanApproachMiddleTile
     call_if_eq VAR_TEMP_2, 3, ViridianForest_EventScript_BrendanApproachRightTile
+    setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_BrendanOhHello 
     trainerbattle_no_intro TRAINER_BRENDAN_1, ViridianForest_Text_Brendan1Defeat
     fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
@@ -99,8 +101,10 @@ ViridianForest_EventScript_BrendanOne_Battle::
     playse 0xF                                        @ sound 0xF
     waitse
     fadescreen FADE_FROM_BLACK  
+    setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_PostDefeat
     giveitem ITEM_EXP_SHARE
+    setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_BrendanTeacher
     call_if_eq VAR_TEMP_2, 1, ViridianForest_EventScript_BrendanLeaveLeftTile
     call_if_eq VAR_TEMP_2, 2, ViridianForest_EventScript_BrendanLeaveLeftTile
@@ -243,15 +247,19 @@ EventScript_Viridian_LassRepelGirl::
     lockall
     faceplayer
     playbgm MUS_RG_ENCOUNTER_GIRL, 0
+    setspeaker SP_NAME_ANNE
     msgbox LassRepelEncounter_Text
     @ setflag FLAG_DONT_RANDOMIZE
 
     @ trainerbattle3 0x3 0x04 0x0 gText_LassRepelDefeat
     @ Guessing this is a simple no-intro trainer battle.
     trainerbattle_no_intro TRAINER_LASS_ANNE, LassRepelDefeat_Text   @ ??? 0x04
+    setspeaker SP_NAME_ANNE
     msgbox Viridian_Text_LassRepel1   
+    setspeaker SP_NAME_ANNE
     msgbox Viridian_Text_LassRepel1_2   
     giveitem ITEM_INFINITE_REPEL
+    setspeaker SP_NAME_ANNE
     msgbox Viridian_Text_LassRepel3  
     fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
     @ hidesprite 0x16

@@ -2710,7 +2710,7 @@
       },
       {
         "Level": 8,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 12,
@@ -2834,7 +2834,7 @@
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GRAVITY",
       "MOVE_HEAL_PULSE",
       "MOVE_LAST_RESORT",
@@ -2869,7 +2869,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -3017,7 +3017,7 @@
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GRAVITY",
       "MOVE_HEAL_PULSE",
       "MOVE_LAST_RESORT",
@@ -3940,7 +3940,7 @@
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FLAIL",
       "MOVE_HYPNOSIS",
       "MOVE_LAST_RESORT",
@@ -4069,7 +4069,7 @@
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FLAIL",
       "MOVE_HYPNOSIS",
       "MOVE_LAST_RESORT",
@@ -4364,7 +4364,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 5,
@@ -4736,7 +4736,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
       "MOVE_MORNING_SUN",
@@ -4869,7 +4869,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
       "MOVE_MORNING_SUN",
@@ -9671,7 +9671,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -10859,7 +10859,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 5,
@@ -10985,7 +10985,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -11127,7 +11127,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -11302,7 +11302,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -11604,7 +11604,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -13371,7 +13371,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DOUBLE_KICK",
       "MOVE_EXTRASENSORY",
@@ -13486,7 +13486,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DOUBLE_KICK",
       "MOVE_EXTRASENSORY",
@@ -13626,7 +13626,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DOUBLE_KICK",
       "MOVE_EXTRASENSORY",
@@ -15274,7 +15274,7 @@
       "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GRAVITY",
       "MOVE_HEAL_PULSE",
       "MOVE_LAST_RESORT",
@@ -16871,7 +16871,7 @@
       "MOVE_BEAT_UP",
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_OUT",
       "MOVE_IRON_TAIL",
       "MOVE_QUICK_GUARD",
@@ -17488,7 +17488,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -17656,7 +17656,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -19737,7 +19737,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -19869,7 +19869,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -22013,7 +22013,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -24592,7 +24592,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_POISON_FANG"
     ],
     "TutorMoves": []
@@ -24726,7 +24726,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_POISON_FANG"
     ],
     "TutorMoves": []
@@ -26776,7 +26776,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 25,
@@ -27025,7 +27025,7 @@
       },
       {
         "Level": 23,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 27,
@@ -37424,7 +37424,7 @@
       "MOVE_BABY_DOLL_EYES",
       "MOVE_BITE",
       "MOVE_CHARGE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFENSE_CURL",
       "MOVE_FAKE_TEARS",
       "MOVE_FLAIL",
@@ -38032,7 +38032,7 @@
       "MOVE_BEAT_UP",
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_OUT",
       "MOVE_IRON_TAIL",
       "MOVE_QUICK_GUARD",
@@ -39277,7 +39277,7 @@
       },
       {
         "Level": 16,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 20,
@@ -39800,7 +39800,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 16,
@@ -42064,7 +42064,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -42219,7 +42219,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -58445,7 +58445,7 @@
       },
       {
         "Level": 18,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 21,
@@ -58545,7 +58545,7 @@
       },
       {
         "Level": 18,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 21,
@@ -59473,7 +59473,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -59833,7 +59833,7 @@
       "MOVE_ELECTROWEB"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_MAGNET_RISE",
       "MOVE_TEARFUL_LOOK"
     ],
@@ -63840,7 +63840,7 @@
       },
       {
         "Level": 30,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 36,
@@ -63940,7 +63940,7 @@
       },
       {
         "Level": 32,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 40,
@@ -68893,7 +68893,7 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -71820,7 +71820,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FLAIL",
@@ -74968,7 +74968,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -76721,7 +76721,7 @@
       },
       {
         "Level": 15,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 17,
@@ -77905,7 +77905,7 @@
       },
       {
         "Level": 8,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 11,
@@ -78014,7 +78014,7 @@
       },
       {
         "Level": 8,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 11,
@@ -81372,7 +81372,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 14,
@@ -81482,7 +81482,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 14,
@@ -81597,7 +81597,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 14,
@@ -90614,7 +90614,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FLAIL",
       "MOVE_FLATTER",
       "MOVE_HYPNOSIS",
@@ -90749,7 +90749,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FLAIL",
       "MOVE_FLATTER",
       "MOVE_HYPNOSIS",
@@ -91701,7 +91701,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FLAIL",
@@ -92870,7 +92870,7 @@
       "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
       "MOVE_HEAD_SMASH",
@@ -93016,7 +93016,7 @@
       "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
       "MOVE_HEAD_SMASH",
@@ -93404,7 +93404,7 @@
       "MOVE_CURSE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DOUBLE_KICK",
       "MOVE_EXTRASENSORY",
@@ -96848,7 +96848,7 @@
       },
       {
         "Level": 18,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 21,
@@ -98337,7 +98337,7 @@
       },
       {
         "Level": 15,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 17,
@@ -98405,7 +98405,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 15,

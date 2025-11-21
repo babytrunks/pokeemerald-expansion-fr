@@ -3782,7 +3782,7 @@
     "EggMoves": [
       "MOVE_AMNESIA",
       "MOVE_BELLY_DRUM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_METRONOME",
       "MOVE_MIMIC",
@@ -3906,7 +3906,7 @@
     "EggMoves": [
       "MOVE_AMNESIA",
       "MOVE_BELLY_DRUM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_METRONOME",
       "MOVE_MIMIC",
@@ -4254,7 +4254,7 @@
       "MOVE_STRENGTH"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
       "MOVE_GRAVITY",
@@ -4366,7 +4366,7 @@
       "MOVE_STRENGTH"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
       "MOVE_GRAVITY",
@@ -6120,7 +6120,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -6317,7 +6317,7 @@
       }
     ],
     "PreEvoMoves": [
-      "MOVE_COVET"
+      "MOVE_JOVIAL_BASH"
     ],
     "TMMoves": [
       "MOVE_FOCUS_PUNCH",
@@ -9348,7 +9348,7 @@
       "MOVE_DEFOG"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_FEATHER_DANCE",
       "MOVE_FLAIL",
@@ -15250,7 +15250,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",
@@ -15369,7 +15369,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",
@@ -15493,7 +15493,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",
@@ -15611,7 +15611,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",
@@ -18042,7 +18042,7 @@
       "MOVE_CUT"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -18154,7 +18154,7 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -18286,7 +18286,7 @@
       "MOVE_ROCK_CLIMB"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -18825,7 +18825,7 @@
     "EggMoves": [
       "MOVE_ASSIST",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FOCUS_ENERGY",
       "MOVE_LAST_RESORT",
@@ -18969,7 +18969,7 @@
     "EggMoves": [
       "MOVE_ASSIST",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FOCUS_ENERGY",
       "MOVE_LAST_RESORT",
@@ -20226,7 +20226,7 @@
     "EggMoves": [
       "MOVE_AMNESIA",
       "MOVE_BELLY_DRUM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_METRONOME",
       "MOVE_MIMIC",
@@ -20316,7 +20316,7 @@
       "MOVE_SUBSTITUTE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
       "MOVE_GRAVITY",
@@ -22251,7 +22251,7 @@
       "MOVE_BEAT_UP",
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_SLAP",
       "MOVE_FAKE_OUT",
       "MOVE_PURSUIT",
@@ -22961,7 +22961,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",
@@ -23084,7 +23084,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",
@@ -25222,7 +25222,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -25350,7 +25350,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -30756,7 +30756,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_FANG",
       "MOVE_ICE_FANG",
       "MOVE_LEER",
@@ -30885,7 +30885,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_FANG",
       "MOVE_ICE_FANG",
       "MOVE_LEER",
@@ -30939,7 +30939,7 @@
       },
       {
         "Level": 29,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 33,
@@ -31067,7 +31067,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 41,
@@ -33380,7 +33380,7 @@
       },
       {
         "Level": 31,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 37,
@@ -33509,7 +33509,7 @@
     ],
     "PreEvoMoves": [
       "MOVE_AMNESIA",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAINT_ATTACK",
       "MOVE_FLAIL",
       "MOVE_SLACK_OFF",
@@ -33621,7 +33621,7 @@
       },
       {
         "Level": 31,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 36,
@@ -34946,7 +34946,7 @@
       },
       {
         "Level": 36,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 39,
@@ -35051,7 +35051,7 @@
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
       "MOVE_COPYCAT",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FAINT_ATTACK",
       "MOVE_FORESIGHT",
@@ -36740,7 +36740,7 @@
       },
       {
         "Level": 45,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       }
     ],
     "PreEvoMoves": [],
@@ -48516,7 +48516,7 @@
     ],
     "EggMoves": [
       "MOVE_BITE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFENSE_CURL",
       "MOVE_FAKE_TEARS",
       "MOVE_FLAIL",
@@ -49267,7 +49267,7 @@
       "MOVE_BEAT_UP",
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_SLAP",
       "MOVE_FAKE_OUT",
       "MOVE_PURSUIT",
@@ -54868,7 +54868,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",
@@ -54989,7 +54989,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDURE",
       "MOVE_FAKE_TEARS",

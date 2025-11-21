@@ -1974,7 +1974,7 @@
       "MOVE_UPROAR"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -2111,7 +2111,7 @@
       "MOVE_UPROAR"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -2777,7 +2777,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
@@ -2884,7 +2884,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
@@ -3017,7 +3017,7 @@
       "MOVE_ROTOTILLER"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_FOCUS_PUNCH",
       "MOVE_IRON_TAIL",
@@ -3167,7 +3167,7 @@
       "MOVE_ROTOTILLER"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_FOCUS_PUNCH",
       "MOVE_IRON_TAIL",
@@ -4052,7 +4052,7 @@
       "MOVE_AMNESIA",
       "MOVE_AROMATHERAPY",
       "MOVE_BELLY_DRUM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_HEAL_PULSE",
       "MOVE_METRONOME",
@@ -4067,7 +4067,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -4197,7 +4197,7 @@
       "MOVE_AMNESIA",
       "MOVE_AROMATHERAPY",
       "MOVE_BELLY_DRUM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_HEAL_PULSE",
       "MOVE_METRONOME",
@@ -4212,7 +4212,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -4372,7 +4372,7 @@
       "MOVE_TAIL_SLAP"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HEAT_WAVE",
       "MOVE_IRON_TAIL",
@@ -4478,7 +4478,7 @@
       "MOVE_TAIL_SLAP"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HEAT_WAVE",
       "MOVE_IRON_TAIL",
@@ -4619,7 +4619,7 @@
     ],
     "EggMoves": [
       "MOVE_CAPTIVATE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
       "MOVE_GRAVITY",
@@ -4635,7 +4635,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -4755,7 +4755,7 @@
     ],
     "EggMoves": [
       "MOVE_CAPTIVATE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
       "MOVE_GRAVITY",
@@ -4771,7 +4771,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -6267,7 +6267,7 @@
       "MOVE_TAIL_WHIP"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
       "MOVE_HYPER_VOICE",
@@ -6428,7 +6428,7 @@
       "MOVE_TAIL_WHIP"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
       "MOVE_HYPER_VOICE",
@@ -6739,7 +6739,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -6870,7 +6870,7 @@
       "MOVE_SMELLING_SALTS"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -6982,7 +6982,7 @@
       }
     ],
     "PreEvoMoves": [
-      "MOVE_COVET"
+      "MOVE_JOVIAL_BASH"
     ],
     "TMMoves": [
       "MOVE_WORK_UP",
@@ -7042,7 +7042,7 @@
       "MOVE_SMELLING_SALTS"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -7171,7 +7171,7 @@
       "MOVE_BODY_SLAM",
       "MOVE_BURN_UP",
       "MOVE_CLOSE_COMBAT",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -7184,7 +7184,7 @@
       "MOVE_THRASH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAT_WAVE",
       "MOVE_HELPING_HAND",
       "MOVE_IRON_TAIL",
@@ -7271,7 +7271,7 @@
       "MOVE_BODY_SLAM",
       "MOVE_BURN_UP",
       "MOVE_CLOSE_COMBAT",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -7284,7 +7284,7 @@
       "MOVE_THRASH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAGON_PULSE",
       "MOVE_HEAT_WAVE",
       "MOVE_HELPING_HAND",
@@ -10444,7 +10444,7 @@
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_FEATHER_DANCE",
       "MOVE_FINAL_GAMBIT",
@@ -10464,7 +10464,7 @@
       "MOVE_TRUMP_CARD"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_HEAT_WAVE",
       "MOVE_HELPING_HAND",
@@ -13611,7 +13611,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
       "MOVE_KNOCK_OFF",
@@ -13777,7 +13777,7 @@
       "MOVE_VACUUM_WAVE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -14645,7 +14645,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -14934,7 +14934,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -15806,7 +15806,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -16108,7 +16108,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HEAL_BELL",
@@ -16242,7 +16242,7 @@
       "MOVE_ROLLING_KICK"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ELECTROWEB",
       "MOVE_FIRE_PUNCH",
@@ -16371,7 +16371,7 @@
       "MOVE_THUNDER_PUNCH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -16923,7 +16923,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -17015,7 +17015,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -17029,7 +17029,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -17110,7 +17110,7 @@
       "MOVE_BATON_PASS",
       "MOVE_BITE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -17151,7 +17151,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -17166,7 +17166,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -17250,7 +17250,7 @@
       "MOVE_BATON_PASS",
       "MOVE_BITE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -17292,7 +17292,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -17306,7 +17306,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -17389,7 +17389,7 @@
     "PreEvoMoves": [
       "MOVE_BATON_PASS",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -17429,7 +17429,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -17443,7 +17443,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HEAT_WAVE",
       "MOVE_HELPING_HAND",
@@ -18370,7 +18370,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GUNK_SHOT",
@@ -19498,7 +19498,7 @@
       "MOVE_BLOCK",
       "MOVE_BOUNCE",
       "MOVE_BUG_BITE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_DRAGON_PULSE",
       "MOVE_DRAIN_PUNCH",
@@ -20042,7 +20042,7 @@
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -20058,7 +20058,7 @@
       "MOVE_THRASH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PLEDGE",
       "MOVE_HEAT_WAVE",
       "MOVE_SNORE"
@@ -20165,7 +20165,7 @@
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -20181,7 +20181,7 @@
       "MOVE_THRASH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HEAT_WAVE",
@@ -20316,7 +20316,7 @@
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_DOUBLE_EDGE",
       "MOVE_DOUBLE_KICK",
@@ -20333,7 +20333,7 @@
     ],
     "TutorMoves": [
       "MOVE_BLAST_BURN",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -20869,7 +20869,7 @@
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FOCUS_ENERGY",
       "MOVE_IRON_TAIL",
@@ -20882,7 +20882,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
@@ -21024,7 +21024,7 @@
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FOCUS_ENERGY",
       "MOVE_IRON_TAIL",
@@ -21037,7 +21037,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
@@ -22386,7 +22386,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_HELPING_HAND",
       "MOVE_IRON_TAIL",
@@ -22468,7 +22468,7 @@
       "MOVE_AMNESIA",
       "MOVE_AROMATHERAPY",
       "MOVE_BELLY_DRUM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_HEAL_PULSE",
       "MOVE_METRONOME",
@@ -22482,7 +22482,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GRAVITY",
       "MOVE_HELPING_HAND",
@@ -22568,7 +22568,7 @@
     ],
     "EggMoves": [
       "MOVE_CAPTIVATE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
       "MOVE_GRAVITY",
@@ -22583,7 +22583,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
@@ -22716,7 +22716,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_HEAL_BELL",
       "MOVE_HYPER_VOICE",
@@ -22873,7 +22873,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
@@ -23851,7 +23851,7 @@
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -24003,7 +24003,7 @@
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -24160,7 +24160,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -24806,7 +24806,7 @@
       "MOVE_BEAT_UP",
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_SLAP",
       "MOVE_FAKE_OUT",
       "MOVE_PURSUIT",
@@ -24820,7 +24820,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_FOUL_PLAY",
@@ -25536,7 +25536,7 @@
       "MOVE_BATON_PASS",
       "MOVE_BITE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -25579,7 +25579,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -25594,7 +25594,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -25682,7 +25682,7 @@
       "MOVE_BATON_PASS",
       "MOVE_BITE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -25724,7 +25724,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -25738,7 +25738,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -27262,7 +27262,7 @@
       "MOVE_THUNDER_FANG"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HEAL_BELL",
@@ -27416,7 +27416,7 @@
       "MOVE_THUNDER_FANG"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HEAL_BELL",
@@ -28163,7 +28163,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -28275,7 +28275,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GUNK_SHOT",
@@ -28296,7 +28296,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -28417,7 +28417,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GUNK_SHOT",
@@ -30770,7 +30770,7 @@
       "MOVE_VACUUM_WAVE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_LASER_FOCUS",
       "MOVE_LOW_KICK",
@@ -30925,7 +30925,7 @@
       "MOVE_VACUUM_WAVE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_HELPING_HAND",
       "MOVE_LASER_FOCUS",
@@ -31045,7 +31045,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_ICE_PUNCH",
@@ -31166,7 +31166,7 @@
       "MOVE_ROLLING_KICK"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ELECTROWEB",
       "MOVE_FIRE_PUNCH",
@@ -31285,7 +31285,7 @@
       "MOVE_THUNDER_PUNCH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -31577,7 +31577,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -34169,7 +34169,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_FANG",
       "MOVE_ICE_FANG",
       "MOVE_LEER",
@@ -34183,7 +34183,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPER_VOICE",
       "MOVE_IRON_TAIL",
@@ -34333,7 +34333,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_FANG",
       "MOVE_ICE_FANG",
       "MOVE_LEER",
@@ -34347,7 +34347,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPER_VOICE",
       "MOVE_IRON_TAIL",
@@ -34400,7 +34400,7 @@
       },
       {
         "Level": 23,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 25,
@@ -34472,7 +34472,7 @@
       "MOVE_TRICK"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GUNK_SHOT",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -34543,7 +34543,7 @@
       },
       {
         "Level": 24,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 27,
@@ -34624,7 +34624,7 @@
       "MOVE_TRICK"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GUNK_SHOT",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -37151,7 +37151,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 25,
@@ -37220,7 +37220,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GUNK_SHOT",
@@ -37293,7 +37293,7 @@
     ],
     "PreEvoMoves": [
       "MOVE_AMNESIA",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAINT_ATTACK",
       "MOVE_FLAIL",
       "MOVE_PLAY_ROUGH",
@@ -37355,7 +37355,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GUNK_SHOT",
@@ -37425,7 +37425,7 @@
       },
       {
         "Level": 23,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 27,
@@ -37523,7 +37523,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GUNK_SHOT",
@@ -38682,7 +38682,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
       "MOVE_ICY_WIND",
@@ -38880,7 +38880,7 @@
       },
       {
         "Level": 34,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 37,
@@ -38952,7 +38952,7 @@
       "MOVE_ZEN_HEADBUTT"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -38990,7 +38990,7 @@
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
       "MOVE_COPYCAT",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DISARMING_VOICE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FAINT_ATTACK",
@@ -39056,7 +39056,7 @@
       "MOVE_ZEN_HEADBUTT"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -40547,7 +40547,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_HELPING_HAND",
       "MOVE_IRON_TAIL",
@@ -40686,7 +40686,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_HELPING_HAND",
       "MOVE_IRON_TAIL",
@@ -40889,7 +40889,7 @@
       },
       {
         "Level": 47,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 50,
@@ -40945,7 +40945,7 @@
     ],
     "TutorMoves": [
       "MOVE_BUG_BITE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GIGA_DRAIN",
@@ -41082,7 +41082,7 @@
       "MOVE_EXTRASENSORY"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GIGA_DRAIN",
       "MOVE_SEED_BOMB",
       "MOVE_SNORE",
@@ -42423,7 +42423,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -42585,7 +42585,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -42716,7 +42716,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -49625,7 +49625,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_DRACO_METEOR",
       "MOVE_DRAGON_PULSE",
@@ -50927,7 +50927,7 @@
       "MOVE_THUNDER_PUNCH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
@@ -51074,7 +51074,7 @@
       "MOVE_THUNDER_PUNCH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
@@ -51241,7 +51241,7 @@
     ],
     "TutorMoves": [
       "MOVE_BLAST_BURN",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
@@ -51363,7 +51363,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_ICY_WIND",
       "MOVE_SIGNAL_BEAM",
@@ -51496,7 +51496,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_ICY_WIND",
       "MOVE_SIGNAL_BEAM",
@@ -51645,7 +51645,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_HYDRO_CANNON",
       "MOVE_ICY_WIND",
@@ -52099,7 +52099,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
       "MOVE_LAST_RESORT",
@@ -52241,7 +52241,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -52815,7 +52815,7 @@
       "MOVE_SYNTHESIS"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GIGA_DRAIN",
       "MOVE_SEED_BOMB",
       "MOVE_SNORE",
@@ -52922,7 +52922,7 @@
       "MOVE_SYNTHESIS"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GIGA_DRAIN",
       "MOVE_LASER_FOCUS",
       "MOVE_SEED_BOMB",
@@ -53985,7 +53985,7 @@
       "MOVE_BESTOW",
       "MOVE_BITE",
       "MOVE_CHARGE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFENSE_CURL",
       "MOVE_FAKE_TEARS",
       "MOVE_FLAIL",
@@ -53997,7 +53997,7 @@
       "MOVE_TAIL_WHIP"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_GUNK_SHOT",
       "MOVE_HELPING_HAND",
@@ -54821,7 +54821,7 @@
       "MOVE_BEAT_UP",
       "MOVE_BOUNCE",
       "MOVE_COUNTER",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_SLAP",
       "MOVE_FAKE_OUT",
       "MOVE_PURSUIT",
@@ -54835,7 +54835,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_FOUL_PLAY",
@@ -55255,7 +55255,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -55435,7 +55435,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
@@ -55819,7 +55819,7 @@
       "MOVE_WAKE_UP_SLAP"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPER_VOICE",
       "MOVE_IRON_TAIL",
@@ -55956,7 +55956,7 @@
       "MOVE_WAKE_UP_SLAP"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPER_VOICE",
       "MOVE_IRON_TAIL",
@@ -56727,7 +56727,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_FOUL_PLAY",
       "MOVE_HELPING_HAND",
@@ -56878,7 +56878,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
@@ -56969,7 +56969,7 @@
       "MOVE_PRESENT"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_GRAVITY",
@@ -57734,7 +57734,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GUNK_SHOT",
@@ -60520,7 +60520,7 @@
       "MOVE_ROLLING_KICK"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ELECTROWEB",
       "MOVE_FIRE_PUNCH",
@@ -60670,7 +60670,7 @@
       "MOVE_THUNDER_PUNCH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -60784,7 +60784,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
@@ -61025,7 +61025,7 @@
       "MOVE_BATON_PASS",
       "MOVE_BITE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -61067,7 +61067,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -61081,7 +61081,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GIGA_DRAIN",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -61166,7 +61166,7 @@
     "PreEvoMoves": [
       "MOVE_BATON_PASS",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -61206,7 +61206,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -61221,7 +61221,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -63762,7 +63762,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_ICY_WIND",
@@ -63870,7 +63870,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_ICY_WIND",
@@ -64083,7 +64083,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
@@ -64894,7 +64894,7 @@
     "EggMoves": [
       "MOVE_BODY_SLAM",
       "MOVE_BURN_UP",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDEAVOR",
       "MOVE_HEAVY_SLAM",
@@ -64906,7 +64906,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
       "MOVE_HEAT_WAVE",
@@ -65044,7 +65044,7 @@
     "EggMoves": [
       "MOVE_BODY_SLAM",
       "MOVE_BURN_UP",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDEAVOR",
       "MOVE_HEAVY_SLAM",
@@ -65056,7 +65056,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
@@ -65206,7 +65206,7 @@
     "EggMoves": [
       "MOVE_BODY_SLAM",
       "MOVE_BURN_UP",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_ENDEAVOR",
       "MOVE_HEAVY_SLAM",
@@ -65220,7 +65220,7 @@
     "TutorMoves": [
       "MOVE_BLAST_BURN",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
@@ -65345,7 +65345,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -65474,7 +65474,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -65620,7 +65620,7 @@
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYDRO_CANNON",
       "MOVE_ICY_WIND",
@@ -65743,7 +65743,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GUNK_SHOT",
       "MOVE_HELPING_HAND",
@@ -65903,7 +65903,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -66034,7 +66034,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
       "MOVE_LAST_RESORT",
@@ -66160,7 +66160,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
       "MOVE_LAST_RESORT",
@@ -66300,7 +66300,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
       "MOVE_IRON_HEAD",
@@ -66421,7 +66421,7 @@
     "EggMoves": [
       "MOVE_CHARM",
       "MOVE_COPYCAT",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENCORE",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
@@ -66430,7 +66430,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
       "MOVE_HYPER_VOICE",
@@ -66569,7 +66569,7 @@
     "EggMoves": [
       "MOVE_CHARM",
       "MOVE_COPYCAT",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENCORE",
       "MOVE_FAKE_TEARS",
       "MOVE_FAINT_ATTACK",
@@ -66578,7 +66578,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
       "MOVE_HYPER_VOICE",
@@ -66696,7 +66696,7 @@
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_BULLET_SEED",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DISARMING_VOICE",
       "MOVE_GRASS_WHISTLE",
       "MOVE_LEAF_STORM",
@@ -66708,7 +66708,7 @@
       "MOVE_TICKLE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GASTRO_ACID",
@@ -66800,7 +66800,7 @@
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_BULLET_SEED",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DISARMING_VOICE",
       "MOVE_GRASS_WHISTLE",
       "MOVE_LEAF_STORM",
@@ -66812,7 +66812,7 @@
       "MOVE_TICKLE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GASTRO_ACID",
@@ -66939,7 +66939,7 @@
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_BELCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DISARMING_VOICE",
       "MOVE_FIRE_PUNCH",
       "MOVE_FIRE_SPIN",
@@ -66952,7 +66952,7 @@
       "MOVE_TICKLE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
@@ -67045,7 +67045,7 @@
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_BELCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DISARMING_VOICE",
       "MOVE_FIRE_PUNCH",
       "MOVE_FIRE_SPIN",
@@ -67058,7 +67058,7 @@
       "MOVE_TICKLE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
@@ -67184,7 +67184,7 @@
       "MOVE_AQUA_RING",
       "MOVE_AQUA_TAIL",
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DISARMING_VOICE",
       "MOVE_HYDRO_PUMP",
       "MOVE_LOW_KICK",
@@ -67195,7 +67195,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GASTRO_ACID",
@@ -67290,7 +67290,7 @@
       "MOVE_AQUA_RING",
       "MOVE_AQUA_TAIL",
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DISARMING_VOICE",
       "MOVE_HYDRO_PUMP",
       "MOVE_LOW_KICK",
@@ -67301,7 +67301,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FOCUS_PUNCH",
       "MOVE_GASTRO_ACID",
@@ -69198,7 +69198,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOCUS_PUNCH",
@@ -71061,7 +71061,7 @@
       "MOVE_WORRY_SEED"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
@@ -71171,7 +71171,7 @@
       "MOVE_WORRY_SEED"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
@@ -71288,7 +71288,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GIGA_DRAIN",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -71389,7 +71389,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GIGA_DRAIN",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -74307,7 +74307,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPER_VOICE",
       "MOVE_KNOCK_OFF",
@@ -74469,7 +74469,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HYPER_VOICE",
       "MOVE_KNOCK_OFF",
@@ -74598,7 +74598,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GUNK_SHOT",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -74701,7 +74701,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GUNK_SHOT",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -74839,7 +74839,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
@@ -74991,7 +74991,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
@@ -75147,7 +75147,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
@@ -76586,7 +76586,7 @@
       "MOVE_ASTONISH",
       "MOVE_BATON_PASS",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ION_DELUGE",
       "MOVE_IRON_TAIL",
       "MOVE_ROOST",
@@ -76595,7 +76595,7 @@
       "MOVE_TICKLE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_ELECTROWEB",
       "MOVE_HELPING_HAND",
@@ -79825,7 +79825,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_ICE_PUNCH",
       "MOVE_ICY_WIND",
@@ -79992,7 +79992,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_ICE_PUNCH",
       "MOVE_ICY_WIND",
@@ -84387,7 +84387,7 @@
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_HELPING_HAND",
       "MOVE_ICY_WIND",
@@ -84526,7 +84526,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_DUAL_CHOP",
       "MOVE_FIRE_PUNCH",
@@ -85276,7 +85276,7 @@
       "MOVE_WISH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FOUL_PLAY",
       "MOVE_HEAT_WAVE",
@@ -85402,7 +85402,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOUL_PLAY",
@@ -85579,7 +85579,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BLAST_BURN",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FIRE_PLEDGE",
       "MOVE_FIRE_PUNCH",
       "MOVE_FOUL_PLAY",
@@ -87175,7 +87175,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
       "MOVE_HEAL_BELL",
@@ -87287,7 +87287,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
       "MOVE_HEAL_BELL",
@@ -87396,7 +87396,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
@@ -87775,7 +87775,7 @@
     ],
     "TutorMoves": [
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
@@ -87960,7 +87960,7 @@
     ],
     "TutorMoves": [
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
@@ -88104,7 +88104,7 @@
       },
       {
         "Level": 5,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 9,
@@ -88176,7 +88176,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -88220,7 +88220,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -88228,7 +88228,7 @@
       },
       {
         "Level": 5,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 9,
@@ -88339,7 +88339,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -88801,7 +88801,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -88950,7 +88950,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_HEAL_BELL",
@@ -89068,7 +89068,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GASTRO_ACID",
       "MOVE_HEAL_BELL",
@@ -89194,7 +89194,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_GASTRO_ACID",
@@ -91134,7 +91134,7 @@
       "MOVE_BATON_PASS",
       "MOVE_BITE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_GROWL",
       "MOVE_REFRESH",
@@ -91174,7 +91174,7 @@
     "EggMoves": [
       "MOVE_CAPTIVATE",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CURSE",
       "MOVE_DETECT",
       "MOVE_ENDURE",
@@ -91188,7 +91188,7 @@
       "MOVE_YAWN"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
@@ -91448,7 +91448,7 @@
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EERIE_IMPULSE",
       "MOVE_HELPING_HAND",
       "MOVE_NATURAL_GIFT",
@@ -91456,7 +91456,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_HELPING_HAND",
       "MOVE_IRON_TAIL",
@@ -91576,7 +91576,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_GRAVITY",
       "MOVE_IRON_DEFENSE",
@@ -92022,7 +92022,7 @@
       "MOVE_THIEF"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_FOUL_PLAY",
       "MOVE_IRON_DEFENSE",
@@ -93610,7 +93610,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_ENDEAVOR",
       "MOVE_GRAVITY",
@@ -93757,7 +93757,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_DUAL_CHOP",
       "MOVE_FIRE_PUNCH",
@@ -94014,7 +94014,7 @@
       "MOVE_OMINOUS_WIND"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_GIGA_DRAIN",
       "MOVE_GRASS_PLEDGE",
@@ -94140,7 +94140,7 @@
       "MOVE_OMINOUS_WIND"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_GIGA_DRAIN",
       "MOVE_GRASS_PLEDGE",
@@ -94296,7 +94296,7 @@
       "MOVE_OMINOUS_WIND"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_FRENZY_PLANT",
       "MOVE_GIGA_DRAIN",
@@ -94421,7 +94421,7 @@
       "MOVE_REVENGE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
       "MOVE_HEAT_WAVE",
@@ -94547,7 +94547,7 @@
       "MOVE_REVENGE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
       "MOVE_FIRE_PLEDGE",
@@ -94709,7 +94709,7 @@
     "TutorMoves": [
       "MOVE_BIND",
       "MOVE_BLAST_BURN",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_DUAL_CHOP",
       "MOVE_ENDEAVOR",
@@ -94833,7 +94833,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
       "MOVE_ICY_WIND",
@@ -94957,7 +94957,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYPER_VOICE",
       "MOVE_ICY_WIND",
@@ -95097,7 +95097,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_HELPING_HAND",
       "MOVE_HYDRO_CANNON",
       "MOVE_HYPER_VOICE",
@@ -96396,7 +96396,7 @@
       "MOVE_TAILWIND"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_HELPING_HAND",
       "MOVE_ICY_WIND",
@@ -96500,7 +96500,7 @@
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
       "MOVE_BUG_BITE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_HELPING_HAND",
       "MOVE_LAST_RESORT",
@@ -96630,7 +96630,7 @@
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
       "MOVE_BUG_BITE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_HELPING_HAND",
       "MOVE_LAST_RESORT",
@@ -96740,7 +96740,7 @@
       "MOVE_THUNDER_FANG"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_EARTH_POWER",
       "MOVE_ENDEAVOR",
       "MOVE_HYPER_VOICE",
@@ -96877,7 +96877,7 @@
       "MOVE_THUNDER_FANG"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRILL_RUN",
       "MOVE_EARTH_POWER",
       "MOVE_ENDEAVOR",
@@ -96990,7 +96990,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_HELPING_HAND",
       "MOVE_IRON_TAIL",
@@ -97092,7 +97092,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GASTRO_ACID",
       "MOVE_GUNK_SHOT",
       "MOVE_ICY_WIND",
@@ -97224,7 +97224,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GASTRO_ACID",
       "MOVE_GUNK_SHOT",
       "MOVE_ICY_WIND",
@@ -98255,7 +98255,7 @@
       "MOVE_SNATCH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAGON_PULSE",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
@@ -98404,7 +98404,7 @@
       "MOVE_SNATCH"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAGON_PULSE",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
@@ -98730,7 +98730,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
       "MOVE_HELPING_HAND",
@@ -98853,7 +98853,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
       "MOVE_HELPING_HAND",
@@ -98998,7 +98998,7 @@
     ],
     "TutorMoves": [
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
       "MOVE_HELPING_HAND",
@@ -99136,7 +99136,7 @@
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
       "MOVE_BIND",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DEFOG",
       "MOVE_GIGA_DRAIN",
       "MOVE_HEAL_BELL",
@@ -99271,7 +99271,7 @@
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GRAVITY",
       "MOVE_KNOCK_OFF",
@@ -100710,7 +100710,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_BOUNCE",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_ENDEAVOR",
       "MOVE_GRAVITY",
@@ -100845,7 +100845,7 @@
     ],
     "TutorMoves": [
       "MOVE_AFTER_YOU",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_GIGA_DRAIN",
       "MOVE_LAST_RESORT",
@@ -103945,7 +103945,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAGON_PULSE",
       "MOVE_GASTRO_ACID",
       "MOVE_GUNK_SHOT",
@@ -104029,7 +104029,7 @@
       }
     ],
     "PreEvoMoves": [
-      "MOVE_COVET"
+      "MOVE_JOVIAL_BASH"
     ],
     "TMMoves": [
       "MOVE_DRAGON_CLAW",
@@ -104529,7 +104529,7 @@
       "MOVE_UPROAR"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -104671,7 +104671,7 @@
       "MOVE_UPROAR"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_ICY_WIND",
       "MOVE_IRON_TAIL",
@@ -104797,7 +104797,7 @@
     ],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ELECTROWEB",
       "MOVE_FOCUS_PUNCH",
       "MOVE_HELPING_HAND",
@@ -104939,7 +104939,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_ICE_PUNCH",
       "MOVE_ICY_WIND",
@@ -105058,7 +105058,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRILL_RUN",
       "MOVE_FOCUS_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -105202,7 +105202,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HEAL_BELL",
       "MOVE_ICY_WIND",
@@ -105317,7 +105317,7 @@
     ],
     "TutorMoves": [
       "MOVE_AQUA_TAIL",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_HEAL_BELL",
       "MOVE_ICY_WIND",
@@ -105688,7 +105688,7 @@
       "MOVE_AMNESIA",
       "MOVE_ASSIST",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FLAIL",
       "MOVE_FLATTER",
       "MOVE_FOUL_PLAY",
@@ -105699,7 +105699,7 @@
       "MOVE_SPITE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
       "MOVE_HYPER_VOICE",
@@ -105858,7 +105858,7 @@
       "MOVE_AMNESIA",
       "MOVE_ASSIST",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FLAIL",
       "MOVE_FLATTER",
       "MOVE_FOUL_PLAY",
@@ -105869,7 +105869,7 @@
       "MOVE_SPITE"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FOUL_PLAY",
       "MOVE_GUNK_SHOT",
       "MOVE_HYPER_VOICE",
@@ -108266,7 +108266,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GIGA_DRAIN",
       "MOVE_LASER_FOCUS",
       "MOVE_LAST_RESORT",
@@ -108622,7 +108622,7 @@
     "TutorMoves": [
       "MOVE_AFTER_YOU",
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_ENDEAVOR",
       "MOVE_GIGA_DRAIN",
       "MOVE_HEAL_BELL",
@@ -108658,7 +108658,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 1,
@@ -108666,7 +108666,7 @@
       },
       {
         "Level": 5,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 9,
@@ -108772,7 +108772,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_GRAVITY",
       "MOVE_HEAL_BELL",
       "MOVE_HELPING_HAND",
@@ -108915,7 +108915,7 @@
     "TutorMoves": [
       "MOVE_ALLY_SWITCH",
       "MOVE_BLOCK",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRAIN_PUNCH",
       "MOVE_DUAL_CHOP",
       "MOVE_FIRE_PUNCH",
@@ -109068,7 +109068,7 @@
       "MOVE_THUNDER_FANG"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DUAL_CHOP",
       "MOVE_EARTH_POWER",
       "MOVE_ENDEAVOR",
@@ -109214,7 +109214,7 @@
       "MOVE_THUNDER_FANG"
     ],
     "TutorMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DRILL_RUN",
       "MOVE_EARTH_POWER",
       "MOVE_ENDEAVOR",

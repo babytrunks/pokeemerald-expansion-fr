@@ -266,7 +266,7 @@ const struct ContestPokemon gContestOpponents[] =
             MOVE_REST,
             MOVE_FACADE,
             MOVE_TACKLE,
-            MOVE_COVET
+            MOVE_JOVIAL_BASH
         },
         .cool = 10,
         .beauty = 10,
@@ -2409,7 +2409,7 @@ const struct ContestPokemon gContestOpponents[] =
         .aiPool_Tough = TRUE,
         .moves =
         {
-            MOVE_COVET,
+            MOVE_JOVIAL_BASH,
             MOVE_COUNTER,
             MOVE_ENCORE,
             MOVE_SLACK_OFF

@@ -12390,7 +12390,7 @@
       },
       {
         "Level": 45,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 49,
@@ -13518,7 +13518,7 @@
       "MOVE_CUT"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_FORESIGHT",
       "MOVE_FURY_SWIPES",
@@ -13599,7 +13599,7 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_FORESIGHT",
       "MOVE_FURY_SWIPES",
@@ -13686,7 +13686,7 @@
       "MOVE_ROCK_SMASH"
     ],
     "EggMoves": [
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_CRUSH_CLAW",
       "MOVE_FORESIGHT",
       "MOVE_FURY_SWIPES",
@@ -22730,7 +22730,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_LEER",
       "MOVE_POISON_FANG",
       "MOVE_YAWN"
@@ -22834,7 +22834,7 @@
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_LEER",
       "MOVE_POISON_FANG",
       "MOVE_YAWN"
@@ -22883,7 +22883,7 @@
       },
       {
         "Level": 29,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 33,
@@ -22985,7 +22985,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 41,
@@ -24755,7 +24755,7 @@
       },
       {
         "Level": 31,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 37,
@@ -24872,7 +24872,7 @@
     ],
     "PreEvoMoves": [
       "MOVE_AMNESIA",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_FAINT_ATTACK",
       "MOVE_FLAIL",
       "MOVE_SLACK_OFF",
@@ -24969,7 +24969,7 @@
       },
       {
         "Level": 31,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 36,
@@ -26023,7 +26023,7 @@
       },
       {
         "Level": 31,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       },
       {
         "Level": 37,
@@ -26103,7 +26103,7 @@
     "PreEvoMoves": [
       "MOVE_ASSIST",
       "MOVE_CHARM",
-      "MOVE_COVET",
+      "MOVE_JOVIAL_BASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FAINT_ATTACK",
       "MOVE_HEAL_BELL",
@@ -27387,7 +27387,7 @@
       },
       {
         "Level": 37,
-        "Move": "MOVE_COVET"
+        "Move": "MOVE_JOVIAL_BASH"
       }
     ],
     "PreEvoMoves": [],
