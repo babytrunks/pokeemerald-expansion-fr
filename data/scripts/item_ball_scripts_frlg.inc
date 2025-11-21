@@ -410,8 +410,8 @@ ThreeIsland_EventScript_ItemZinc::
 	finditem ITEM_ZINC
 	end
 
-ViridianForest_EventScript_ItemPotion2::
-	finditem ITEM_POTION
+ViridianForest_EventScript_ItemBoldMint::
+	finditem ITEM_BOLD_MINT
 	end
 
 MtMoon_B2F_EventScript_ItemRevive::

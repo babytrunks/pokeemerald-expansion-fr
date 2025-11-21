@@ -416,7 +416,7 @@
 #define TRAINER_BIKER_GOON_2                       410
 #define TRAINER_BIKER_GOON_3                       411
 #define TRAINER_BUG_CATCHER_ANTHONY                412
-#define TRAINER_BUG_CATCHER_CHARLIE                413
+#define TRAINER_LASS_ANNE                413
 #define TRAINER_TWINS_ELI_ANNE_2                   414
 #define TRAINER_YOUNGSTER_JOHNSON                  415
 #define TRAINER_BIKER_RICARDO                      416

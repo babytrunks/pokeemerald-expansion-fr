@@ -1902,7 +1902,7 @@
 #define FLAG_HIDE_THREE_ISLAND_ZINC                             0
 #define FLAG_0x1BC                                              0
 #define FLAG_0x1BD                                              0
-#define FLAG_HIDE_VIRIDIAN_FOREST_POTION_2                      0
+#define FLAG_HIDE_VIRIDIAN_FOREST_BOLD_MINT                      0
 #define FLAG_HIDE_MT_MOON_B2F_REVIVE                            0
 #define FLAG_HIDE_MT_MOON_B2F_ANTIDOTE                          0
 #define FLAG_HIDE_ROUTE11_X_DEFEND                              0

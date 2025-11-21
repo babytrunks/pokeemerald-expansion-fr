@@ -290,9 +290,7 @@ EventScript_brendanbattleleft_Start:
 	msgbox gText_brendanbattleleft_2 0x6
 	msgbox gText_brendanbattleleft_3 0x6
 	setflag 0x200
-	@ hidesprite 0x1
 	trainerbattle3 0x3 0x2C 0x0 gText_brendanbattleleft_Defeat
-	@ fadescreen 0x1
 	applymovement 0x0D LookLeft
 	waitmovement 0x0
 	hidesprite 0x1
@@ -300,22 +298,15 @@ EventScript_brendanbattleleft_Start:
 	checksound
 	applymovement 0x0D LookDown
 	waitmovement 0x0
-    @ fadescreen 0x0
 	msgbox gText_brendanbattleleft_4 0x6
 	giveitem ITEM_EXP_SHARE 0x1 MSG_OBTAIN
-	giveitem ITEM_VS_SEEKER 0x1 MSG_OBTAIN
 	setflag 0x906
 	msgbox gText_brendanbattleleft_6 0x6
 	applymovement 0x0D EventScript_brendanbattleleft_Comedown
-	@ applymovement 0x01 EventScript_brendanbattleleft_Comedown2
 	waitmovement 0x0
 	setvar 0x4013 0x1
-	@ fadescreen 0x1
 	hidesprite 0x0D
-	@ sound 0x9
-	@ checksound
 	call MakeFollowerVisibleNoFade
-    @ fadescreen 0x0
 	release
 	end
 

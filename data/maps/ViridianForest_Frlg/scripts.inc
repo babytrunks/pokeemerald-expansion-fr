@@ -58,11 +58,6 @@ ViridianForest_EventScript_Anthony::
 	msgbox ViridianForest_Text_AnthonyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-ViridianForest_EventScript_Charlie::
-	trainerbattle_single TRAINER_BUG_CATCHER_CHARLIE, ViridianForest_Text_CharlieIntro, ViridianForest_Text_CharlieDefeat
-	msgbox ViridianForest_Text_CharliePostBattle, MSGBOX_AUTOCLOSE
-	end
-
 ViridianForest_EventScript_BrendanOneTriggerLeft::
 	lockall
 	setvar VAR_TEMP_2, 1
@@ -82,7 +77,7 @@ ViridianForest_EventScript_BrendanOneTriggerRight::
     end
 
 ViridianForest_EventScript_BrendanOne_Battle::
-    
+    lockall
     addobject LOCALID_VIRIDIAN_FOREST_BRENDAN 
     addobject LOCALID_VIRIDIAN_FOREST_TREECKO 
     applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_BrendanLookingAround
@@ -99,6 +94,11 @@ ViridianForest_EventScript_BrendanOne_Battle::
     call_if_eq VAR_TEMP_2, 3, ViridianForest_EventScript_BrendanApproachRightTile
     msgbox ViridianForest_Text_BrendanOhHello 
     trainerbattle_no_intro TRAINER_BRENDAN_1, ViridianForest_Text_Brendan1Defeat
+    fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
+    removeobject LOCALID_VIRIDIAN_FOREST_TREECKO     
+    playse 0xF                                        @ sound 0xF
+    waitse
+    fadescreen FADE_FROM_BLACK  
     msgbox ViridianForest_Text_PostDefeat
     giveitem ITEM_EXP_SHARE
     msgbox ViridianForest_Text_BrendanTeacher
@@ -107,7 +107,6 @@ ViridianForest_EventScript_BrendanOne_Battle::
     call_if_eq VAR_TEMP_2, 3, ViridianForest_EventScript_BrendanLeaveRightTile
     waitmovement 0
 	removeobject LOCALID_VIRIDIAN_FOREST_BRENDAN
-    removeobject LOCALID_VIRIDIAN_FOREST_TREECKO
     setvar VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE, 1 
     release
     end
@@ -132,13 +131,14 @@ ViridianForest_EventScript_BrendanApproachRightTile::
 
 ViridianForest_EventScript_BrendanLeaveLeftTile::
     applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveLeaveLeftTile
-    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveLeaveLeftTile
+    @ applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveLeaveLeftTile
     return
 
 ViridianForest_EventScript_BrendanLeaveRightTile::
     applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveLeaveRightTile
-    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveLeaveRightTile
- 
+    @ applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_Treecko_MoveLeaveRightTile
+    return
+
 EventScript_BrendanLookingAround::
     walk_down
     walk_down
@@ -205,10 +205,14 @@ EventScript_Brendan_MoveLeaveLeftTile::
     walk_down
     walk_down
     walk_down
+    walk_down
+    walk_down
     step_end
 
 EventScript_Brendan_MoveLeaveRightTile::
     walk_left
+    walk_down
+    walk_down
     walk_down
     walk_down
     walk_down
@@ -221,6 +225,8 @@ EventScript_Treecko_MoveLeaveLeftTile::
     walk_down
     walk_down
     walk_down
+    walk_down
+    walk_down
     step_end
 
 EventScript_Treecko_MoveLeaveRightTile::
@@ -229,7 +235,33 @@ EventScript_Treecko_MoveLeaveRightTile::
     walk_down
     walk_down
     walk_down
+    walk_down
+    walk_down
     step_end
+
+EventScript_Viridian_LassRepelGirl::
+    lockall
+    faceplayer
+    playbgm MUS_RG_ENCOUNTER_GIRL, 0
+    msgbox LassRepelEncounter_Text
+    @ setflag FLAG_DONT_RANDOMIZE
+
+    @ trainerbattle3 0x3 0x04 0x0 gText_LassRepelDefeat
+    @ Guessing this is a simple no-intro trainer battle.
+    trainerbattle_no_intro TRAINER_LASS_ANNE, LassRepelDefeat_Text   @ ??? 0x04
+    msgbox Viridian_Text_LassRepel1   
+    msgbox Viridian_Text_LassRepel1_2   
+    giveitem ITEM_INFINITE_REPEL
+    msgbox Viridian_Text_LassRepel3  
+    fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
+    @ hidesprite 0x16
+    removeobject LOCALID_VIRIDIAN_LASS_REPEL_GIRL      @ ??? 0x16; use proper local id
+    setflag FLAG_INF_REPEL_GIRL
+    playse SE_EXIT                                        @ sound 0xF
+    waitse                                            @ checksound
+    fadescreen FADE_FROM_BLACK                        @ fadescreen 0x0
+    release
+    end
 
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with some friends to\n"
@@ -287,17 +319,6 @@ ViridianForest_Text_AnthonyDefeat::
 ViridianForest_Text_AnthonyPostBattle::
     .string "I lost some of my allowance…$"
 
-ViridianForest_Text_CharlieIntro::
-    .string "Did you know that Pokémon evolve?$"
-
-ViridianForest_Text_CharlieDefeat::
-    .string "Oh!\n"
-    .string "I lost!$"
-
-ViridianForest_Text_CharliePostBattle::
-    .string "BUG Pokémon evolve quickly.\n"
-    .string "They're a lot of fun!$"
-
 ViridianForest_Text_RanOutOfPokeBalls::
     .string "I was throwing Poké Balls to\n"
     .string "catch Pokémon, and I ran out.\p"
@@ -341,19 +362,19 @@ ViridianForest_Text_LeavingViridianForest::
 
 ViridianForest_Text_BrendanLooking::
   .string "{COLOR BLUE}Hm… There should be a Joltik\n"
-  .string "somewhere hereF{PAUSE 15}$"
+  .string "somewhere here…{PAUSE 15}$"
 
   
 ViridianForest_Text_BrendanOhHello::
-  .string "Oh hello!\p"
+  .string "{COLOR BLUE}Oh hello!\p"
   .string "I'm just trying to catch some Poké-\n"
-  .string "mon before I challenge {COLOR GREEN}Brock.\p"
+  .string "mon before I challenge Brock.\p"
   .string "…Oh? You're looking to challenge him\n"
   .string "as well?\p"
   .string "Why don't we have a battle then?$"
 
 ViridianForest_Text_PostDefeat::
-  .string "I haven't had a loss like that in\n"
+  .string "{COLOR BLUE}I haven't had a loss like that in\n"
   .string "a while! But, that was rather fun.\p"
   .string "…{PLAYER}, {COLOR BLUE}huh…\p"
   .string "Here, I have an extra of these,\n"
@@ -368,3 +389,27 @@ ViridianForest_Text_BrendanTeacher::
   .string "haven't already!\p"
   .string "Well, until we meet again,\n"
   .string "{PLAYER}!$"
+
+LassRepelEncounter_Text::
+  .string "{COLOR RED}Eek, I hate bugs!$"
+
+
+LassRepelDefeat_Text::
+  .string "Picked a fight with the wrong trainer…$"
+
+
+Viridian_Text_LassRepel1::
+  .string "{COLOR RED}Sorry for being rude!\n"
+  .string "I'm on edge…\p"
+  .string "Using the new {COLOR GREEN}Infinite Repel{COLOR RED}\n"
+  .string "I got from my father, I'm able to avoid\l"
+  .string "these pesky insects…\p"
+  .string "But I'm still a bit startled.$"
+
+Viridian_Text_LassRepel1_2::
+  .string "…Ah, perhaps you could put it to use\n"
+  .string "too!$\p"
+
+Viridian_Text_LassRepel3::
+  .string "Well, no more bugs for both of\n"
+  .string "us! Toodles!$"

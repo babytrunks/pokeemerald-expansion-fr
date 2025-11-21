@@ -132,17 +132,18 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER_FRLG",
-      "x": 16,
-      "y": 5,
+      "local_id": "LOCALID_VIRIDIAN_LASS_REPEL_GIRL",
+      "graphics_id": "OBJ_EVENT_GFX_LASS_FRLG",
+      "x": 23,
+      "y": 17,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "ViridianForest_EventScript_Charlie",
-      "flag": "0"
+      "trainer_sight_or_berry_tree_id": "4",
+      "script": "EventScript_Viridian_LassRepelGirl",
+      "flag": "FLAG_INF_REPEL_GIRL"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -154,8 +155,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ViridianForest_EventScript_ItemPotion2",
-      "flag": "FLAG_HIDE_VIRIDIAN_FOREST_POTION_2"
+      "script": "ViridianForest_EventScript_ItemBoldMint",
+      "flag": "FLAG_HIDE_VIRIDIAN_FOREST_BOLD_MINT"
     },
     {
       "local_id": "LOCALID_VIRIDIAN_FOREST_BRENDAN",
@@ -184,6 +185,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 48,
+      "y": 9,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_VIRIDIAN_FOREST_PECHA",
+      "script": "NULL",
+      "flag": "BerryTreeScript"
     }
   ],
   "warp_events": [
@@ -233,7 +247,7 @@
   "coord_events": [
     {
       "type": "trigger",
-      "x": 39,
+      "x": 41,
       "y": 50,
       "elevation": 0,
       "var": "VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE",
@@ -251,7 +265,7 @@
     },
     {
       "type": "trigger",
-      "x": 41,
+      "x": 39,
       "y": 50,
       "elevation": 0,
       "var": "VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE",

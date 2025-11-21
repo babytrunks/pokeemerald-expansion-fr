@@ -35,6 +35,9 @@ Route22_EventScript_EarlyRival::
 	call_if_eq VAR_STARTER_MON, 0, Route22_EventScript_EarlyRivalCharmander
 	msgbox Route22_Text_EarlyRivalPostBattle
 	closemessage
+	giveitem ITEM_RARE_CANDY 1
+	msgbox Route22_Text_EarlyRivalPostBattle2
+	closemessage
 	delay 10
 	playbgm MUS_RG_RIVAL_EXIT, 0
 	call_if_eq VAR_TEMP_1, 0, Route22_EventScript_EarlyRivalExit
@@ -251,8 +254,10 @@ Route22_Text_EarlyRivalDefeat::
 Route22_Text_EarlyRivalPostBattle::
 	.string "I heard the Pokémon League is\n"
 	.string "crawling with tough trainers.\p"
-	.string "I have to figure out how to get\n"
-	.string "past them.\p"
+	.string "A scrub like you would need\n"
+	.string "something childish to get past them.$"
+
+Route22_Text_EarlyRivalPostBattle2::
 	.string "You should quit dawdling and get a\n"
 	.string "move on!$"
 

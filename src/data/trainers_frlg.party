@@ -9381,26 +9381,27 @@ Caterpie
 Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_BUG_CATCHER_CHARLIE ===
-Name: CHARLIE
-Class: Bug Catcher Frlg
-Pic: Bug Catcher Frlg
-Gender: Male
-Music: Male
+=== TRAINER_LASS_ANNE ===
+Name: Anne
+Class: Lass Frlg
+Pic: Lass Frlg
+Gender: Female
+Music: Female
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer
 
-Metapod
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Stufful @ Oran Berry
+Ability: Fluffy
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tackle
+- Rock Smash
 
-Caterpie
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Metapod
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Audino
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Swagger
+- Tackle
 
 === TRAINER_TWINS_ELI_ANNE_2 ===
 Name: ELI & ANNE

@@ -422,7 +422,7 @@
 #define FLAG_HIDE_THREE_ISLAND_ZINC                             0x1BB
 #define FLAG_0x1BC                                              0x1BC
 #define FLAG_0x1BD                                              0x1BD
-#define FLAG_HIDE_VIRIDIAN_FOREST_POTION_2                      0x1BE
+#define FLAG_HIDE_VIRIDIAN_FOREST_BOLD_MINT                      0x1BE
 #define FLAG_HIDE_MT_MOON_B2F_REVIVE                            0x1BF
 #define FLAG_HIDE_MT_MOON_B2F_ANTIDOTE                          0x1C0
 #define FLAG_HIDE_ROUTE11_X_DEFEND                              0x1C1
@@ -498,7 +498,7 @@
 #define FLAG_RARE_POKEMON_SCREEN                                0x205
 #define FLAG_NES_GAVE_INFINITE_CANDY                            0x206
 #define FLAG_NES_ACTIVATE_DEX_ALL                               0x207
-#define FLAG_0x208               0x208
+#define FLAG_INF_REPEL_GIRL               0x208
 #define FLAG_0x209               0x209
 #define FLAG_0x20A               0x20A
 #define FLAG_0x20B               0x20B
