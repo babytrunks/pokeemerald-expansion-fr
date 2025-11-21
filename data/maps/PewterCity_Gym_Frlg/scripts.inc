@@ -1,5 +1,32 @@
 PewterCity_Gym_Frlg_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, PewterCity_Gym_OnFrame
 	.byte 0
+
+PewterCity_Gym_OnFrame::
+	map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 0, EventScript_ExpertModeMapScript
+	.2byte 0
+
+EventScript_ExpertModeMapScript::
+    applymovement LOCALID_EXPERT_MODE_NPC, Movement_GymGuide_WalkUpToYou   @ 0x3 -> NPC’s local id
+    waitmovement 0
+    msgbox PewterCity_Gym_Text_BrockNotHere   @ MSG_NORMAL
+    @ call_if_set FLAG_EASY_MODE, 1, EasyModeRulesText    @ if 0x1 _call EasyModeRulesText
+    @ call_if_set FLAG_EASY_MODE, 0, NormalRulesText      @ if 0x0 _call NormalRulesText
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
+    warp MAP_PEWTER_CITY, 2
+    @ msgbox gText_ExpertMode3       @ MSG_NORMAL
+    @ msgbox gText_ExpertMode5       @ MSG_NORMAL
+
+    @ setvar 0x5101, 1     
+    waitstate      
+    end
+
+Movement_GymGuide_WalkUpToYou:
+    walk_left
+    walk_down
+    step_end
+
 
 PewterCity_Gym_EventScript_Brock::
 	famechecker FAMECHECKER_BROCK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
@@ -200,3 +227,40 @@ PewterCity_Gym_Text_GymStatuePlayerWon::
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"
 
+
+PewterCity_Gym_Text_BrockNotHere:
+  .string "{COLOR BLUE}Yo, champ in the making!\p"
+  .string "Brock's not here at the moment.\n"
+  .string "He's busy swooning after girls\l"
+  .string "or something.\p"
+  .string "You could check out the museum\n"
+  .string "in the meantime!$"
+
+ExpertMode1_Text::
+  .string "Yo, champ in the making!\p"
+  .string "It seems this is your first Gym\n"
+  .string "challenge, so I'm responsible for\l"
+  .string "informing you of the rules.$"
+
+
+ExpertMode2_Text::
+  .string "1: The bag is inaccessible during\n"
+  .string "boss battles.\p"
+  .string "2: There is a hard level cap before\n"
+  .string "each boss, which reduces EXP gain\l"
+  .string "significantly when the level cap is\l"
+  .string "reached. The finite Rare Candy\l"
+  .string "can bypass the cap.\p"
+  @ .string "8: Consumable held items come back\n"
+  @ .string "after trainer battles.\p"
+  @ .string "9. Battle Style is forced to Set.\p"
+  @ .string "10. You cannot Thief items from\n"
+  @ .string "trainers.\p"
+  .string "3. You are automatically healed to\n"
+  .string "full in most boss battles to prevent\l"
+  .string "certain exploits.$"
+
+
+ExpertMode3_Text::
+  .string "If you ever want me to reiterate\n"
+  .string "the rules, just talk to me again!$"

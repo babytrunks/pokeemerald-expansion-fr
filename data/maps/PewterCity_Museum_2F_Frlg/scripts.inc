@@ -52,8 +52,10 @@ EventScript_falkner_Start::
     waitse                      @ checksound
     fadescreen FADE_FROM_BLACK  @ fadescreen 0x0
     setflag FLAG_BEAT_PEWTER_FALKNER           @ ??? Likely “beaten Falkner / badge” story flag
+    setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 1
     release
     end
+
 
 Text_SeismicTossTeach::
     .string "The secrets of space…\n"

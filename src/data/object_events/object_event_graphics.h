@@ -632,6 +632,15 @@ const u16 gObjectEventPic_JigglypuffOld[] = INCBIN_U16("graphics/object_events/p
 const u16 gObjectEventPic_PidgeyOld[] = INCBIN_U16("graphics/object_events/pics/pokemon_old/pidgey.4bpp");
 const u16 gObjectEventPic_ClefairyOld[] = INCBIN_U16("graphics/object_events/pics/pokemon_old/clefairy.4bpp");
 
+const u32 gObjectEventPic_Falkner[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/falkner.4bpp");
+const u32 gObjectEventPic_Bugsy[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/bugsy.4bpp");
+const u32 gObjectEventPic_Whitney[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/whitney.4bpp");
+const u32 gObjectEventPic_Morty[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/morty.4bpp");
+const u32 gObjectEventPic_Jasmine[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/jasmine.4bpp");
+const u32 gObjectEventPic_Chuck[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/chuck.4bpp");
+const u32 gObjectEventPic_Pryce[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/pryce.4bpp");
+const u32 gObjectEventPic_Clair[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/clair.4bpp");
+
 const u16 gObjectEventPal_Falkner[] = INCBIN_U16("graphics/object_events/palettes/falkner.gbapal");
 const u16 gObjectEventPal_Bugsy[] = INCBIN_U16("graphics/object_events/palettes/bugsy.gbapal");
 const u16 gObjectEventPal_Whitney[] = INCBIN_U16("graphics/object_events/palettes/whitney.gbapal");
