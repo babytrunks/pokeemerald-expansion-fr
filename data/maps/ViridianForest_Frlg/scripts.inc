@@ -361,7 +361,7 @@ ViridianForest_Text_LeavingViridianForest::
     .string "Pewter City Ahead$"
 
 ViridianForest_Text_BrendanLooking::
-  .string "{COLOR BLUE}Hm… There should be a Joltik\n"
+  .string "{COLOR BLUE}Hm… I wonder if there are Surskit\n"
   .string "somewhere here…{PAUSE 15}$"
 
   
