@@ -5362,7 +5362,7 @@
     {
       "id": "LAYOUT_PALLET_TOWN",
       "name": "PalletTown_Layout",
-      "width": 24,
+      "width": 28,
       "height": 20,
       "primary_tileset": "gTileset_General_Frlg",
       "secondary_tileset": "gTileset_PalletTown",
@@ -5505,7 +5505,7 @@
     {
       "id": "LAYOUT_ROUTE1",
       "name": "Route1_Layout",
-      "width": 24,
+      "width": 28,
       "height": 40,
       "primary_tileset": "gTileset_General_Frlg",
       "secondary_tileset": "gTileset_PalletTown",
@@ -5765,7 +5765,7 @@
     {
       "id": "LAYOUT_ROUTE21_NORTH",
       "name": "Route21_North_Layout",
-      "width": 24,
+      "width": 28,
       "height": 50,
       "primary_tileset": "gTileset_General_Frlg",
       "secondary_tileset": "gTileset_PalletTown",
@@ -5869,8 +5869,8 @@
     {
       "id": "LAYOUT_VIRIDIAN_FOREST",
       "name": "ViridianForest_Layout",
-      "width": 54,
-      "height": 69,
+      "width": 66,
+      "height": 79,
       "primary_tileset": "gTileset_General_Frlg",
       "secondary_tileset": "gTileset_ViridianForest",
       "border_filepath": "data/layouts/ViridianForest_Frlg/border.bin",

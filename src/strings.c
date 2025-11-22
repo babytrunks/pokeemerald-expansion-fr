@@ -388,7 +388,7 @@ const u8 gText_RibbonsVar1[] = _("RIBBONS: {STR_VAR_1}");
 const u8 gText_EmptyString5[] = _("");
 const u8 gText_Events[] = _("EVENTS"); // Unused
 const u8 gText_Switch[] = _("SWITCH");
-const u8 gText_PkmnInfo[] = _("Pokémon Info");
+const u8 gText_PkmnInfo[] = _("Pokémon Info ");
 const u8 gText_PkmnSkills[] = _("Pokémon Skills");
 const u8 gText_BattleMoves[] = _("Battle Moves");
 const u8 gText_ContestMoves[] = _("CONTEST MOVES");
@@ -1362,7 +1362,7 @@ const u8 gText_QuestComplete[] =_("complete");
 const u8 gText_QuestActive[] =_("active");
 
 //names
-const u8 gText_SideQuestName_1[] = _("Side Quest 1");
+const u8 gText_SideQuestName_1[] = _("A Father's Request");
 const u8 gText_SideQuestName_2[] = _("Side Quest 2");
 const u8 gText_SideQuestName_3[] = _("Side Quest 3");
 const u8 gText_SideQuestName_4[] = _("Side Quest 4");
@@ -1394,7 +1394,7 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("Description 1");
+const u8 gText_SideQuestDesc_1[] = _("Show a Pikachu for a\nreward.");
 const u8 gText_SideQuestDesc_2[] = _("Description 2");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
 const u8 gText_SideQuestDesc_4[] = _("Description 4");
@@ -1458,7 +1458,7 @@ const u8 gText_SideQuestDoneDesc_29[] = _("Completed Quest 29");
 const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
 
 //map
-const u8 gText_SideQuestMap1[] = _("Map 1");
+const u8 gText_SideQuestMap1[] = _("Pewter Museum");
 const u8 gText_SideQuestMap2[] = _("Map 2");
 const u8 gText_SideQuestMap3[] = _("Map 3");
 const u8 gText_SideQuestMap4[] = _("Map 4");

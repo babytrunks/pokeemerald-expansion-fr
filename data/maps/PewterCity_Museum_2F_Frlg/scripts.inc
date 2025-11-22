@@ -18,7 +18,16 @@ PewterCity_Museum_2F_EventScript_LittleGirl::
 	end
 
 PewterCity_Museum_2F_EventScript_BaldingMan::
-	msgbox PewterCity_Museum_1F_Text_PikachuSoonIPromise, MSGBOX_NPC
+	msgbox PewterCity_Museum_1F_Text_PikachuSoonIPromise
+    applymovement LOCALID_PEWTER_BALDING_MAN, Common_Movement_ExclamationMark
+    playse SE_PIN
+    waitmovement 0
+    waitse
+    faceplayer
+    setflag FLAG_SYS_QUEST_MENU_GET
+	msgbox PewterCity_Museum_1F_Text_HeyYouLookLike
+    closemessage
+    questmenu QUEST_MENU_SET_ACTIVE QUEST_1
 	end
 
 PewterCity_Museum_2F_EventScript_SpaceShuttle::
@@ -105,12 +114,17 @@ PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
     .string "exhibit.$"
 
 PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu::
-    .string "I want a PIKACHU!\n"
+    .string "I want a Pikachu!\n"
     .string "It's so cute!\p"
     .string "I asked my daddy to catch me one!$"
 
 PewterCity_Museum_1F_Text_PikachuSoonIPromise::
-    .string "Yeah, a PIKACHU soon, I promise!$"
+    .string "Yeah, a Pikachu soon, I promise!$"
+
+PewterCity_Museum_1F_Text_HeyYouLookLike::
+    .string "Hey, you look like a trainer!\p"
+    .string "Can you get a Pikachu to show\n"
+    .string "my daughter? Prety please?$"
 
 PewterCity_Museum_1F_Text_SpaceShuttle::
     .string "Space Shuttle$"
