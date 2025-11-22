@@ -9323,6 +9323,16 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_VIRIDIAN_FOREST_2",
+      "name": "ViridianForest_2",
+      "width": 54,
+      "height": 69,
+      "primary_tileset": "gTileset_General_Frlg",
+      "secondary_tileset": "gTileset_ViridianForest",
+      "border_filepath": "data/layouts/ViridianForest_2/border.bin",
+      "blockdata_filepath": "data/layouts/ViridianForest_2/map.bin"
     }
   ]
 }
