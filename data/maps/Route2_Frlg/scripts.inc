@@ -16,3 +16,7 @@ Route2_Text_RouteSign::
 Route2_Text_DiglettsCave::
     .string "DIGLETT'S CAVE$"
 
+
+Route2_EventScript_ItemMegaStone::
+	@ finditem ITEM_ORBEETILITE
+	end

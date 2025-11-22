@@ -5,6 +5,11 @@ DiglettsCave_NorthEntrance_EventScript_Hiker::
 	msgbox DiglettsCave_NorthEntrance_RockTunnelPitchBlack, MSGBOX_NPC
 	end
 
+DiglettsCave_NorthEntrance_EventScript_ItemHardStone::
+    finditem ITEM_HARD_STONE
+	end
+
+
 DiglettsCave_NorthEntrance_RockTunnelPitchBlack::
     .string "I went inside ROCK TUNNEL, but it's\n"
     .string "pitch-black and scary in there.\p"

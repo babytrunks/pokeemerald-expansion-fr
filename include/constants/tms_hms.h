@@ -49,7 +49,7 @@
     F(ATTRACT) \
     F(THIEF) \
     F(STEEL_WING) \
-    F(SKILL_SWAP) \
+    F(ELECTROWEB) \
     F(SNATCH) \
     F(OVERHEAT)
 

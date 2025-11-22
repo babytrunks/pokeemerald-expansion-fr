@@ -14260,6 +14260,152 @@
             ]
           }
         },
+{
+          "map": "MAP_VIRIDIAN_FOREST_FRLG_2",
+          "base_label": "sViridianForest2FireRed_Morning",
+          "land_mons": {
+            "encounter_rate": 14,
+            "mons": [
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_CATERPIE"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_WEEDLE"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_NATU"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_BURMY"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_COMBEE"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_KRICKETOT"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_SLAKOTH"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_GRUBBIN"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_BRAMBLIN"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_PUMPKABOO_SUPER"
+                },
+                {
+                  "min_level": 5,
+                  "max_level": 7,
+                  "species": "SPECIES_NYMBLE"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_NYMBLE"
+                }
+            ]
+          }
+        },
+        {
+          "map": "MAP_VIRIDIAN_FOREST_FRLG_2",
+          "base_label": "sViridianForest2_FireRed_Day"
+        },
+        {
+          "map": "MAP_VIRIDIAN_FOREST_FRLG_2",
+          "base_label": "sViridianForest2_FireRed_Evening"
+        },
+        {
+          "map": "MAP_VIRIDIAN_FOREST_FRLG_2",
+          "base_label": "sViridianForest2_FireRed_Night",
+          "land_mons": {
+            "encounter_rate": 14,
+            "mons": [
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_TAROUNTULA"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_BLIPBUG"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_CHINGLING"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_BURMY_TRASH"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_NINCADA"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_KRICKETOT"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_SLAKOTH"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_RELLOR"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_BRAMBLIN"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_PHANTUMP"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_NYMBLE"
+                },
+                {
+                  "min_level": 4,
+                  "max_level": 6,
+                  "species": "SPECIES_NYMBLE"
+                }
+            ]
+          }
+        },
         {
           "map": "MAP_VIRIDIAN_FOREST",
           "base_label": "sViridianForest_LeafGreen_Morning",

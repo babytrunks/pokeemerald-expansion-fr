@@ -7947,8 +7947,8 @@
     {
       "id": "LAYOUT_DIGLETTS_CAVE_NORTH_ENTRANCE",
       "name": "DiglettsCave_NorthEntrance_Layout",
-      "width": 10,
-      "height": 8,
+      "width": 30,
+      "height": 24,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General_Frlg",
