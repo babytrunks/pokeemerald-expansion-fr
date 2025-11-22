@@ -15598,6 +15598,152 @@
           "base_label": "sDiglettsCaveB1F_LeafGreen_Night"
         },
         {
+          "map": "MAP_DIGLETTS_CAVE_NORTH_ENTRANCE",
+          "base_label": "sDiglettsCaveNorthEntrance_FireRed_Morning",
+          "land_mons": {
+            "encounter_rate": 5,
+            "mons": [
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_DIGLETT"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_NACLI"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_NUMEL"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_YAMASK"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_SANDSHREW"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_GEODUDE"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_TRAPINCH"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_SILICOBRA"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_BRONZOR"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_MACHOP"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_NOIBAT"
+              },
+              {
+                "min_level": 7,
+                "max_level": 9,
+                "species": "SPECIES_NOIBAT"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DIGLETTS_CAVE_NORTH_ENTRANCE",
+          "base_label": "sDiglettsCaveNorthEntrance_FireRed_Day"
+        },
+        {
+          "map": "MAP_DIGLETTS_CAVE_NORTH_ENTRANCE",
+          "base_label": "sDiglettsCaveNorthEntrance_FireRed_Evening"
+        },
+        {
+          "map": "MAP_DIGLETTS_CAVE_NORTH_ENTRANCE",
+          "base_label": "sDiglettsCaveNorthEntrance_FireRed_Night",
+          "land_mons": {
+            "encounter_rate": 5,
+            "mons": [
+             {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_DIGLETT_ALOLA"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_NACLI"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_NUMEL"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_YAMASK_GALAR"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_SANDSHREW"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_GEODUDE_ALOLA"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_TRAPINCH"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_SANDILE"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_BRONZOR"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_PANCHAM"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_NOIBAT"
+            },
+            {
+              "min_level": 7,
+              "max_level": 9,
+              "species": "SPECIES_NOIBAT"
+            }
+            ]
+          }
+        },
+        {
           "map": "MAP_VICTORY_ROAD_1F_FRLG",
           "base_label": "sVictoryRoad1F_FireRed_Morning",
           "land_mons": {

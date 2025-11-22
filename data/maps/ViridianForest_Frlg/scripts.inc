@@ -415,9 +415,9 @@ Viridian_Text_LassRepel1::
   .string "But I'm still a bit startled.$"
 
 Viridian_Text_LassRepel1_2::
-  .string "…Ah, perhaps you could put it to use\n"
+  .string "{COLOR RED}…Ah, perhaps you could put it to use\n"
   .string "too!$\p"
 
 Viridian_Text_LassRepel3::
-  .string "Well, no more bugs for both of\n"
+  .string "{COLOR RED}Well, no more bugs for both of\n"
   .string "us! Toodles!$"
