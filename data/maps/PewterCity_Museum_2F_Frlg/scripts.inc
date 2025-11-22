@@ -14,10 +14,18 @@ PewterCity_Museum_2F_EventScript_Scientist::
 	end
 
 PewterCity_Museum_2F_EventScript_LittleGirl::
+    goto_if_quest_complete QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_LittleGirlPikablu
 	msgbox PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu, MSGBOX_NPC
 	end
 
+PewterCity_Museum_2F_EventScript_LittleGirlPikablu::
+	msgbox PewterCity_Museum_1F_Text_AskedDaddyToCatchPikablu, MSGBOX_NPC
+	end
+
 PewterCity_Museum_2F_EventScript_BaldingMan::
+    @ lock
+    goto_if_quest_complete QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_WhatIsPikablu
+    goto_if_quest_active QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_FindPikachu
 	msgbox PewterCity_Museum_1F_Text_PikachuSoonIPromise
     applymovement LOCALID_PEWTER_BALDING_MAN, Common_Movement_ExclamationMark
     playse SE_PIN
@@ -27,8 +35,49 @@ PewterCity_Museum_2F_EventScript_BaldingMan::
     setflag FLAG_SYS_QUEST_MENU_GET
 	msgbox PewterCity_Museum_1F_Text_HeyYouLookLike
     closemessage
-    questmenu QUEST_MENU_SET_ACTIVE QUEST_1
+    questmenu QUEST_MENU_SET_ACTIVE QUEST_LIGHT_BALL
+    openquestmenu
+    startquest QUEST_LIGHT_BALL
 	end
+
+PewterCity_Museum_2F_EventScript_FindPikachu::
+    @ lock
+    faceplayer
+    callnative GetFollowerPokemon
+    goto_if_eq VAR_RESULT, SPECIES_PIKACHU, PewterCity_Museum_2F_EventScript_LightBallCompleteQuest
+	msgbox PewterCity_Museum_1F_Text_HeyYouLookLike
+    closemessage
+    release
+    end
+
+PewterCity_Museum_2F_EventScript_WhatIsPikablu::
+    msgbox PewterCity_Museum_1F_Text_WhatIsPikablu
+    release
+    end
+
+PewterCity_Museum_2F_EventScript_LightBallCompleteQuest::
+    playse SE_PIN
+    applymovement LOCALID_PEWTER_LITTLE_GIRL_PIKACHU, PewterMuseum_Movement_GirlFacePlayer
+    waitmovement 0
+    waitse
+ 	msgbox PewterCity_Museum_1F_Text_HeyItsPikachu
+    waitmessage
+    applymovement LOCALID_PEWTER_BALDING_MAN, Common_Movement_WalkInPlaceLeft
+    waitmovement 0
+    msgbox PewterCity_Museum_1F_Text_ThatsOkaySilly
+    applymovement LOCALID_PEWTER_BALDING_MAN,  Common_Movement_FacePlayer
+    waitmovement 0
+    msgbox PewterCity_Museum_1F_Text_KnewThisWouldHappen
+    giveitem ITEM_LIGHT_BALL
+    completequest QUEST_LIGHT_BALL
+    waitmessage
+    release
+    end
+
+PewterMuseum_Movement_GirlFacePlayer:
+    face_player
+    emote_exclamation_mark
+    step_end
 
 PewterCity_Museum_2F_EventScript_SpaceShuttle::
 	msgbox PewterCity_Museum_1F_Text_SpaceShuttle, MSGBOX_SIGN
@@ -60,6 +109,7 @@ EventScript_falkner_Start::
     giveitem ITEM_TM_AERIAL_ACE     
     setspeaker SP_NAME_FALKNER 
     msgbox falkner_Text_6
+    closemessage
     fadescreen FADE_TO_BLACK    @ fadescreen 0x1
     removeobject LOCALID_FALKNER @ hidesprite 0x6  @ ??? confirm correct LOCALID
     playse SE_EXIT                  @ sound 0x9  @ ??? replace with proper SE_* constant
@@ -114,17 +164,44 @@ PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
     .string "exhibit.$"
 
 PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu::
-    .string "I want a Pikachu!\n"
+    .string "{COLOR RED}I want a Pikachu!\n"
     .string "It's so cute!\p"
     .string "I asked my daddy to catch me one!$"
 
+PewterCity_Museum_1F_Text_AskedDaddyToCatchPikablu::
+    .string "{COLOR RED}Daddy, I want a Pikablu now!\n"
+    .string "It's so cute!$"
+
 PewterCity_Museum_1F_Text_PikachuSoonIPromise::
-    .string "Yeah, a Pikachu soon, I promise!$"
+    .string "{COLOR BLUE}Yeah, a Pikachu soon, I promise!$"
 
 PewterCity_Museum_1F_Text_HeyYouLookLike::
-    .string "Hey, you look like a trainer!\p"
+    .string "{COLOR BLUE}Hey, you look like a trainer!\p"
     .string "Can you get a Pikachu to show\n"
-    .string "my daughter? Prety please?$"
+    .string "my daughter? Pretty please?$"
+
+PewterCity_Museum_1F_Text_WhatIsPikablu::
+    .string "{COLOR BLUE}Yeah, a Pikablu soon, I-\n"
+    .string "…what in the world is a Pikablu?$"
+
+PewterCity_Museum_1F_Text_HeyItsPikachu::
+    .string "{COLOR RED}Hey… it's a Pikachu!\n"
+    .string "Sooooo cute!\p"
+    .string "Hmm…\p"
+    .string "Hmmmm…\p"
+    .string "Hm…\p"
+    .string "…Now that I've seen it, I don't\n"
+    .string "think I want one anymore…$"
+
+PewterCity_Museum_1F_Text_ThatsOkaySilly::
+    .string "{COLOR BLUE}Okay silly…$"
+
+PewterCity_Museum_1F_Text_KnewThisWouldHappen::
+    .string "{COLOR BLUE}I sort of knew this would happen.\p"
+    .string "Kids can be like this. The joy of\n"
+    .string "parenting! Anyway, thanks for that.\p"
+    .string "This was going to go to her Pikachu,\n" 
+    .string "but you can have it instead.$"
 
 PewterCity_Museum_1F_Text_SpaceShuttle::
     .string "Space Shuttle$"
@@ -169,4 +246,3 @@ falkner_Text_4::
 
 falkner_Text_6::
   .string "Until next time.$"
-

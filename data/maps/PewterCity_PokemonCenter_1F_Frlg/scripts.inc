@@ -10,6 +10,7 @@ PewterCity_PokemonCenter_1F_OnTransition::
 PewterCity_PokemonCenter_1F_EventScript_Nurse::
 	lock
 	faceplayer
+	setvar VAR_0x800B, LOCALID_PEWTER_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	release
 	end

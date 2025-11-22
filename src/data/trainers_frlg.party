@@ -210,6 +210,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Green
 
 Corphish 
 Level: 8
@@ -7068,6 +7069,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Yellow
 
 Geodude-Alola @ Custap Berry
 Nature: Adamant
@@ -12695,6 +12697,7 @@ Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Blue
 
 Rufflet @ Berry Juice
 Nature: Bashful
@@ -12705,7 +12708,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aerial Ace
 - Rock Tomb
 - Rock Smash
-- Roost
 
 Wattrel @ Lum Berry
 Nature: Bashful

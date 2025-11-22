@@ -203,9 +203,9 @@ static void Task_QuestMenuTurnOff2(u8 taskId);
 static const u32 sQuestMenuTiles[] =
         INCBIN_U32("graphics/quest_menu/menu.4bpp.smol");
 static const u32 sQuestMenuBgPals[] =
-        INCBIN_U32("graphics/quest_menu/menu.gbapal.lz");
+        INCBIN_U32("graphics/quest_menu/menu.gbapal");
 static const u32 sQuestMenuTilemap[] =
-        INCBIN_U32("graphics/quest_menu/menu.bin.lz");
+        INCBIN_U32("graphics/quest_menu/menu.bin.smolTM");
 
 //Strings used for the Quest Menu
 static const u8 sText_Empty[] = _("");
@@ -566,7 +566,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_1,
 	      gText_SideQuestDoneDesc_1,
 	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_BALDING_MAN,
 	      OBJECT,
 	      NULL,
 	      0

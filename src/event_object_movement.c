@@ -2429,6 +2429,11 @@ void RemoveFollowingPokemon(void)
     RemoveObjectEvent(objectEvent);
 }
 
+void GetFollowerPokemon(void)
+{
+    gSpecialVar_Result = GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES);
+}
+
 // Determine whether follower *should* be visible
 bool32 IsFollowerVisible(void)
 {
