@@ -7193,7 +7193,7 @@ Nature: Calm
 Ability: Levitate
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 1031 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Volt Switch
 - Bug Buzz
 - Roost
@@ -7204,7 +7204,7 @@ Nature: Bold
 Ability: Electromorphosis
 Level: 33
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-EVs: 1031 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Parabolic Charge
 - Muddy Water
 - Thunder Wave

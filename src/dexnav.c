@@ -1360,52 +1360,52 @@ static u16 DexNavGenerateHeldItem(u16 species, u8 searchLevel)
 
 static u8 DexNavGetAbilityNum(u16 species, u8 searchLevel)
 {
-    bool8 genAbility = FALSE;
-    u16 randVal = Random() % 100;
+    // bool8 genAbility = FALSE;
+    // u16 randVal = Random() % 100;
     u8 abilityNum = 0;
 
-    if (searchLevel < 5)
-    {
-        #if (SEARCHLEVEL0_ABILITYCHANCE != 0)
-        if (randVal < SEARCHLEVEL0_ABILITYCHANCE)
-            genAbility = TRUE;
-        #endif
-    }
-    else if (searchLevel < 10)
-    {
-        #if (SEARCHLEVEL5_ABILITYCHANCE != 0)
-        if (randVal < SEARCHLEVEL5_ABILITYCHANCE)
-            genAbility = TRUE;
-        #endif
-    }
-    else if (searchLevel < 25)
-    {
-        #if (SEARCHLEVEL10_ABILITYCHANCE != 0)
-        if (randVal < SEARCHLEVEL10_ABILITYCHANCE)
-            genAbility = TRUE;
-        #endif
-    }
-    else if (searchLevel < 50)
-    {
-        #if (SEARCHLEVEL25_ABILITYCHANCE != 0)
-        if (randVal < SEARCHLEVEL25_ABILITYCHANCE)
-            genAbility = TRUE;
-        #endif
-    }
-    else if (searchLevel < 100)
-    {
-        #if (SEARCHLEVEL50_ABILITYCHANCE != 0)
-        if (randVal < SEARCHLEVEL50_ABILITYCHANCE)
-            genAbility = TRUE;
-        #endif
-    }
-    else
-    {
-        #if (SEARCHLEVEL100_ABILITYCHANCE != 0)
-        if (randVal < SEARCHLEVEL100_ABILITYCHANCE)
-            genAbility = TRUE;
-        #endif
-    }
+    // if (searchLevel < 5)
+    // {
+    //     #if (SEARCHLEVEL0_ABILITYCHANCE != 0)
+    //     if (randVal < SEARCHLEVEL0_ABILITYCHANCE)
+    //         genAbility = TRUE;
+    //     #endif
+    // }
+    // else if (searchLevel < 10)
+    // {
+    //     #if (SEARCHLEVEL5_ABILITYCHANCE != 0)
+    //     if (randVal < SEARCHLEVEL5_ABILITYCHANCE)
+    //         genAbility = TRUE;
+    //     #endif
+    // }
+    // else if (searchLevel < 25)
+    // {
+    //     #if (SEARCHLEVEL10_ABILITYCHANCE != 0)
+    //     if (randVal < SEARCHLEVEL10_ABILITYCHANCE)
+    //         genAbility = TRUE;
+    //     #endif
+    // }
+    // else if (searchLevel < 50)
+    // {
+    //     #if (SEARCHLEVEL25_ABILITYCHANCE != 0)
+    //     if (randVal < SEARCHLEVEL25_ABILITYCHANCE)
+    //         genAbility = TRUE;
+    //     #endif
+    // }
+    // else if (searchLevel < 100)
+    // {
+    //     #if (SEARCHLEVEL50_ABILITYCHANCE != 0)
+    //     if (randVal < SEARCHLEVEL50_ABILITYCHANCE)
+    //         genAbility = TRUE;
+    //     #endif
+    // }
+    // else
+    // {
+    //     #if (SEARCHLEVEL100_ABILITYCHANCE != 0)
+    //     if (randVal < SEARCHLEVEL100_ABILITYCHANCE)
+    //         genAbility = TRUE;
+    //     #endif
+    // }
 
     // if (genAbility
     //         && GetSpeciesAbility(species, 2) != ABILITY_NONE
