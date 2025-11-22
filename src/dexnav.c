@@ -1407,21 +1407,21 @@ static u8 DexNavGetAbilityNum(u16 species, u8 searchLevel)
         #endif
     }
 
-    if (genAbility
-            && GetSpeciesAbility(species, 2) != ABILITY_NONE
-            && GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
-    {
-        //Only give hidden ability if Pokemon has been caught before
-        abilityNum = 2;
-    }
-    else
-    {
+    // if (genAbility
+    //         && GetSpeciesAbility(species, 2) != ABILITY_NONE
+    //         && GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT))
+    // {
+    //     //Only give hidden ability if Pokemon has been caught before
+    //     abilityNum = 2;
+    // }
+    // else
+    // {
         //Pick a normal ability of that Pokemon
         if (GetSpeciesAbility(species, 1) != ABILITY_NONE)
             abilityNum = Random() & 1;
         else
             abilityNum = 0;
-    }
+    // }
 
     return abilityNum;
 }
