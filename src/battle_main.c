@@ -129,6 +129,7 @@ static void HandleEndTurn_FinishBattle(void);
 static u32 Crc32B (const u8 *data, u32 size);
 static u32 GeneratePartyHash(const struct Trainer *trainer, u32 i);
 static s32 Factorial(s32);
+static void SavePartyItems(void);
 
 EWRAM_DATA u16 gBattle_BG0_X = 0;
 EWRAM_DATA u16 gBattle_BG0_Y = 0;
@@ -245,6 +246,7 @@ EWRAM_DATA bool8 gLastUsedBallMenuPresent = FALSE;
 EWRAM_DATA u8 gPartyCriticalHits[PARTY_SIZE] = {0};
 EWRAM_DATA static u8 sTriedEvolving = 0;
 EWRAM_DATA u8 gCategoryIconSpriteId = 0;
+EWRAM_DATA u16 savedConsumedItems[PARTY_SIZE] = {0}; 
 
 COMMON_DATA MainCallback gPreBattleCallback1 = NULL;
 COMMON_DATA void (*gBattleMainFunc)(void) = NULL;
@@ -6343,4 +6345,10 @@ void BattleDebug_WonBattle(void)
 {
     gBattleOutcome |= B_OUTCOME_WON;
     gBattleMainFunc = sEndTurnFuncsTable[gBattleOutcome & 0x7F];
+}
+
+static void SavePartyItems(void)
+{
+	for (int i = 0; i < PARTY_SIZE; ++i)
+		savedConsumedItems[i] = GetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM);
 }

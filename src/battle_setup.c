@@ -86,6 +86,7 @@ static void RegisterTrainerInMatchCall(void);
 static void HandleRematchVarsOnBattleEnd(void);
 static const u8 *GetIntroSpeechOfApproachingTrainer(void);
 static const u8 *GetTrainerCantBattleSpeech(void);
+static void RestoreNonConsumableItems(void);
 
 EWRAM_DATA TrainerBattleParameter gTrainerBattleParameter = {0};
 EWRAM_DATA u16 gPartnerTrainerId = 0;
@@ -639,6 +640,8 @@ static void CB2_EndWildBattle(void)
 {
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
+
+    RestoreNonConsumableItems();
 
     if (IsNPCFollowerWildBattle())
     {
@@ -1393,6 +1396,7 @@ static void HandleBattleVariantEndParty(void)
 static void CB2_EndTrainerBattle(void)
 {
     HandleBattleVariantEndParty();
+    RestoreNonConsumableItems();
 
     if (FollowerNPCIsBattlePartner())
     {
@@ -2070,4 +2074,34 @@ u16 CountBattledRematchTeams(u16 trainerId)
     }
 
     return i;
+}
+
+
+static void RestoreNonConsumableItems(void)
+{
+	// u16 none = ITEM_NONE;
+	// u16* items = gNewBS->itemBackup;
+	// bool8 keepConsumables = TRUE; 
+
+	if (gBattleTypeFlags & BATTLE_TYPE_TRAINER /*|| (FlagGet(FLAG_RAID_BATTLE) )*/)
+	{
+		for (int i = 0; i < PARTY_SIZE; ++i)
+		{
+			if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER
+			// ||  keepConsumables
+			// ||  (savedConsumedItems[i] == ITEM_NONE)
+            && ( (GetItemPocket(savedConsumedItems[i]) != POCKET_BERRIES) || (GetMonAbility(&gPlayerParty[i]) == ABILITY_HARVEST))
+			// ||  !IsConsumable(savedConsumedItems[i])
+            )
+			{
+				SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &savedConsumedItems[i]);
+			}
+		}
+	}
+	else{
+		for (int i = 0; i < PARTY_SIZE; ++i)
+		{
+		    SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &savedConsumedItems[i]);
+		}
+	}
 }
