@@ -22,3 +22,9 @@
 - Fix Pokedex HGSS not showing National Dex mons
 - Start with Running Shoes
 - Added setup for DNS Encounters, added Route 1 mons
+
+
+
+randomn shit to document:
+
+- haven't been able to update porymap properly so that it can edit layer elevation of tiles. to manually edit in HxD, do * 4 of the metatile value + 3 (2E * 4 + 3 = BB), thats the byte you want to edit
