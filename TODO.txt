@@ -2,7 +2,6 @@
 TODO:
 Bug:
 - Text colors arent really consistent with FR right now (Blue for male, Red for girls)
-- Berry Tree cuts off the player head for some reason
 - Fade Screen messes with colors (like in FRU)
 - Breakthrough should have notification of which stat it upped
 

@@ -505,7 +505,7 @@
 #define TRAINER_CAMPER_RILEY                       499
 #define TRAINER_PICNICKER_MARCY                    500
 #define TRAINER_RUIN_MANIAC_LAYTON                 501
-#define TRAINER_PICNICKER_KELSEY_2                 502
+#define TRAINER_MT_MOON_ARCHER                 502
 #define TRAINER_PICNICKER_KELSEY_3                 503
 #define TRAINER_PICNICKER_KELSEY_4                 504
 #define TRAINER_CAMPER_RICKY_2                     505

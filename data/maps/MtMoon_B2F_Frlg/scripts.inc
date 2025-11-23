@@ -133,6 +133,114 @@ MtMoon_B2F_EventScript_Grunt4::
 	msgbox MtMoon_B2F_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+EventScript_AdminMtMoonLeft_Start::
+    lockall
+    addobject LOCALID_MT_MOON_ARCHER
+    addobject LOCALID_MT_MOON_MIGHTYENA
+    applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Stop
+    waitmovement 0
+    msgbox adminmtmoonleft_Text_1
+    waitmessage
+
+    @ playse 0xB3                         @ original: sound 0xB3 @? (pick a proper SE_ constant later)
+    applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Question
+    waitmovement 0
+    @ waitse                               @ original used checksound @?
+
+    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonLeft_ComeUp
+    applymovement LOCALID_MT_MOON_MIGHTYENA, MtMoon_Movement_AdminMtMoonLeft_ComeUp
+    waitmovement 0
+
+    applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Look
+    waitmovement 0
+
+    msgbox adminmtmoonleft_Text_2
+    waitmessage
+    trainerbattle_no_intro TRAINER_MT_MOON_ARCHER, adminmtmoonleft_Text_Defeat
+
+    fadescreen FADE_TO_BLACK
+    waitstate
+
+    removeobject LOCALID_MT_MOON_MIGHTYENA
+    playse 0xF                          @ original: sound 0xF when partner disappears @?
+    waitse
+
+    fadescreen FADE_FROM_BLACK
+    waitstate
+
+    msgbox adminmtmoonleft_Text_4
+    waitmessage
+
+    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonLeft_ComeDown
+    waitmovement 0
+
+    setvar VAR_MT_MOON_ARCHER, 1                    @ TODO: give this a proper VAR_ name in vars.h @?
+    removeobject LOCALID_MT_MOON_ARCHER
+    setflag FLAG_BEAT_MT_MOON_ARCHER
+    playse SE_EXIT    
+    waitse
+    release
+    end
+
+
+@ =========================
+@ Movement scripts
+@ =========================
+
+MtMoon_Movement_AdminMtMoonLeft_ComeUp:
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    step_end 
+
+MtMoon_Movement_AdminMtMoonRight_ComeUp:
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    step_end 
+
+MtMoon_Movement_AdminMtMoonLeft_ComeDown:
+    walk_fast_right
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_right
+    step_end 
+
+MtMoon_Movement_AdminMtMoonRight_ComeDown:
+    walk_fast_left
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_right
+    walk_fast_right
+    step_end 
+
+MtMoon_Movement_AdminMtMoonLeft_Question:
+    @ CFRU bytes: 0x63,0xFE
+    @ In FR, 0x63 is a movement/step; name suggests a question-mark emotion.
+    @ If you have a Common_Movement_QuestionMark, you could just use that instead.
+    @ e.g.:
+    @   Common_Movement_QuestionMark
+    step_end @?
+
+MtMoon_Movement_AdminMtMoonLeft_Look:
+    @ CFRU bytes: 0x01,0xFE (Face Up)
+    face_up
+    step_end
+
+MtMoon_Movement_AdminMtMoonLeft_Stop:
+    @ CFRU bytes: 0x00,0xFE (Face Down)
+    face_down
+    step_end
+
 MtMoon_B2F_Text_MiguelIntro::
     .string "Hey, stop!\p"
     .string "I found these fossils!\n"
@@ -217,3 +325,25 @@ MtMoon_B2F_Text_ObtainedHelixFossil::
 MtMoon_B2F_Text_ObtainedDomeFossil::
     .string "Obtained the DOME FOSSIL!$"
 
+adminmtmoonleft_Text_1::
+  .string "HEY YOU! Wait right there!$"
+
+
+adminmtmoonleft_Text_2::
+  .string "Are you the twerp messing with my\n"
+  .string "grunts?\p"
+  .string "…Little kid, you think you're brave,\n"
+  .string "eh?\p"
+  .string "I'll teach you a valuable lesson.$"
+
+
+adminmtmoonleft_Text_Defeat::
+  .string "What a shameful blunder…$"
+
+
+adminmtmoonleft_Text_4::
+  .string "Whatever, we've done everything we\n"
+  .string "needed.\p"
+  .string "I won't be as nice to you next\n"
+  .string "time.\p"
+  .string "…I'll be seeing you.$"

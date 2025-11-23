@@ -423,7 +423,10 @@
 #define OBJ_EVENT_GFX_CHUCK                      392
 #define OBJ_EVENT_GFX_PRYCE                      393
 #define OBJ_EVENT_GFX_CLAIR                      394
-
+#define OBJ_EVENT_GFX_ARCHER                     395
+#define OBJ_EVENT_GFX_ARIANA                     396
+#define OBJ_EVENT_GFX_GOLD_ITEM_BALL             397
+#define OBJ_EVENT_GFX_MEGA_STONE                 398
 // FRLG equivalents
 
 // #define OBJ_EVENT_GFX_MEW OBJ_EVENT_GFX_NINJA_BOY
@@ -434,7 +437,7 @@
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        395
+#define NUM_OBJ_EVENT_GFX                        399
 
 
 // These are dynamic object gfx ids.
@@ -624,7 +627,8 @@
 #define OBJ_EVENT_PAL_TAG_CHUCK                   0x1170
 #define OBJ_EVENT_PAL_TAG_PRYCE                   0x1171
 #define OBJ_EVENT_PAL_TAG_CLAIR                   0x1172
-
+#define OBJ_EVENT_PAL_TAG_ROCKET_2                   0x1173
+#define OBJ_EVENT_PAL_TAG_ROCKET_3                   0x1174
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

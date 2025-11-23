@@ -573,7 +573,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSobbleLevelUpLearnset,
         .teachableLearnset = sSobbleTeachableLearnset,
         .eggMoveLearnset = sSobbleEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_DRIZZILE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_DRIZZILE}),
     },
 
     [SPECIES_DRIZZILE] =

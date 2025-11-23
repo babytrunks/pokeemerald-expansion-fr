@@ -19,7 +19,7 @@ Rattata
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ekans
+Rattata Alola
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -32,7 +32,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Spearow
+Zigzagoon Galar
 Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -45,16 +45,16 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Rattata
+Wooloo
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rattata
+Chewtle
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 10
+Woobat
+Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_TIMMY ===
@@ -284,16 +284,16 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Caterpie
+Dottler
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Weedle
+Spewpa
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Caterpie
-Level: 10
+Snom
+Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_GREG ===
@@ -305,20 +305,20 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Weedle
-Level: 9
+Nincada
+Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Kakuna
-Level: 9
+Joltik
+Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Caterpie
-Level: 9
+Dustox
+Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Metapod
-Level: 9
+Sizzlipede
+Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_JAMES ===
@@ -330,11 +330,11 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Caterpie
+Ledyba
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Metapod
+Surskit
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -347,11 +347,11 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Weedle
+Beedrill
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Kakuna
+Kricketune
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -364,15 +364,15 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Caterpie
+Beautifly
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Metapod
+Paras
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Caterpie
+Mothim
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -482,12 +482,12 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Pidgey
-Level: 9
+Fidough
+Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgey
-Level: 9
+Nidoran F
+Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_SALLY ===
@@ -499,11 +499,11 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Rattata
+Pawmi
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Nidoran F
+Flabebe
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -516,7 +516,7 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Jigglypuff
+Flaaffy
 Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -550,11 +550,11 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Oddish
+Applin
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Bellsprout
+Audino
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -567,7 +567,7 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer
 
-Clefairy
+Tinkatink
 Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1402,7 +1402,7 @@ Magnemite
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Voltorb
+Gimmighoul Chest
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -1412,20 +1412,52 @@ Class: Super Nerd Frlg
 Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer
 
-Grimer
-Level: 12
+Thwackey @ Eviolite
+Nature: Adamant
+Ability: Grassy Surge
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fake Out
+- Razor Leaf
+- Knock Off
+- U-turn
 
-Voltorb
-Level: 12
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Voltorb-Hisui @ Focus Sash
+Nature: Naive
+Ability: Reckless
+Level: 15
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Magical Leaf
+- Self-Destruct
+- Shock Wave
+- Hidden Power 
 
-Koffing
-Level: 12
+Bibarel @ Grassy Seed
+Nature: Careful
+Ability: Simple
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quick Attack
+- Aqua Jet
+- Curse
+- Rock Smash
+
+Sableye @ Sitrus Berry
+Nature: Careful
+Ability: Prankster
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Will-O-Wisp
+- Recover
+- Protect
+- Foul Play
 
 === TRAINER_SUPER_NERD_AIDAN ===
 Name: AIDAN
@@ -1591,15 +1623,15 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer
 
-Geodude
+Rolycoly
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Geodude
+Drilbur
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Onix
+Nosepass
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -4555,7 +4587,7 @@ Nature: Modest
 Ability: Trace
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
 - Draining Kiss
 - Magical Leaf
@@ -4565,7 +4597,7 @@ Nature: Adamant
 Ability: Intimidate
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
 - Quick Attack
 - U-turn
@@ -4576,7 +4608,7 @@ Nature: Adamant
 Ability: Defiant
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
 - Sucker Punch
 - Cut
@@ -4587,7 +4619,7 @@ Nature: Modest
 Ability: Torrent
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
 - Icy Wind
 - Seismic Toss
@@ -4607,7 +4639,7 @@ Nature: Modest
 Ability: Trace
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
 - Draining Kiss
 - Magical Leaf
@@ -4617,7 +4649,7 @@ Nature: Adamant
 Ability: Intimidate
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
 - Quick Attack
 - U-turn
@@ -4628,7 +4660,7 @@ Nature: Adamant
 Ability: Defiant
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
 - Sucker Punch
 - Cut
@@ -4639,7 +4671,7 @@ Nature: Modest
 Ability: Overgrow
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leech Seed
 - Sludge
 - Mega Drain
@@ -4659,7 +4691,7 @@ Nature: Modest
 Ability: Trace
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
 - Draining Kiss
 - Magical Leaf
@@ -4669,7 +4701,7 @@ Nature: Adamant
 Ability: Intimidate
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
 - Quick Attack
 - U-turn
@@ -4680,7 +4712,7 @@ Nature: Adamant
 Ability: Defiant
 Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
 - Sucker Punch
 - Cut
@@ -4691,7 +4723,7 @@ Nature: Rash
 Ability: Blaze
 Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Burst
 - Thunder Punch
 - Ancient Power
@@ -5130,11 +5162,11 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer
 
-Rattata
+Yungoos
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
+Croagunk
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -5147,7 +5179,7 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer
 
-Sandshrew
+Sandile
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -5155,7 +5187,7 @@ Rattata
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
+Noibat
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -5172,7 +5204,7 @@ Zubat
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ekans
+Purrloin
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -5185,11 +5217,11 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer
 
-Rattata
+Stunky
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Sandshrew
+Glameow
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -7076,7 +7108,7 @@ Nature: Adamant
 Ability: Sturdy
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulldoze
 - Rock Tomb
 - Spark
@@ -7087,18 +7119,17 @@ Nature: Brave
 Ability: Filter
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Gyro Ball
 - Bulldoze
 - Toxic
 - Protect
 
-Onix @ Berry Juice
+Onix @ Liechi Berry
 Nature: Bashful
 Ability: Sturdy
 Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Tomb
 - Bulldoze
 - Sleep Talk
@@ -7108,7 +7139,7 @@ Nature: Jolly
 Ability: Defeatist
 Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
 - Rock Tomb
 - Bulldoze
@@ -7122,6 +7153,7 @@ Gender: Male
 Music: Female
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Blue
 
 Frogadier @ Eviolite
 Nature: Lonely
@@ -7139,7 +7171,7 @@ Nature: Timid
 Ability: Technician
 Level: 25
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
 - Flip Turn
 - Icy Wind
@@ -7150,7 +7182,7 @@ Nature: Timid
 Ability: Analytic
 Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psyshock
 - Water Pulse
 - Recover
@@ -7161,7 +7193,7 @@ Nature: Bold
 Ability: Water Absorb
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Jab
 - Bulldoze
 - Rock Tomb
@@ -7182,7 +7214,7 @@ Nature: Bold
 Ability: Electric Surge
 Level: 32
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Volt Switch
 - Scald
 - Discharge
@@ -7193,7 +7225,7 @@ Nature: Calm
 Ability: Levitate
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Volt Switch
 - Bug Buzz
 - Roost
@@ -7204,7 +7236,7 @@ Nature: Bold
 Ability: Electromorphosis
 Level: 33
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Parabolic Charge
 - Muddy Water
 - Thunder Wave
@@ -7215,7 +7247,7 @@ Nature: Jolly
 Ability: Iron Fist
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Drain Punch
 - Thunder Punch
 - Ice Punch
@@ -7226,7 +7258,7 @@ Nature: Timid
 Ability: Intimidate
 Level: 34
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Charge Beam
 - Volt Switch
 - Flame Burst
@@ -8862,7 +8894,7 @@ Level: 10
 Ability: Overgrow 
 Nature: Hardy  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Magical Leaf
 - Pluck  
 
@@ -8871,7 +8903,7 @@ Level: 11
 Ability: Strong Jaw
 Nature: Hardy  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Aqua Jet
 - Ice Fang  
 
@@ -8880,7 +8912,7 @@ Level: 11
 Ability: Intimidate
 Nature: Bashful  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe  
 - Fake Out
 - Fire Fang
 - Bite
@@ -11249,22 +11281,46 @@ Sandslash
 Level: 48
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_PICNICKER_KELSEY_2 ===
-Name: KELSEY
-Class: Picnicker Frlg
-Pic: Picnicker Frlg
+=== TRAINER_MT_MOON_ARCHER ===
+Name: Archer
+Class: Team Rocket Frlg
+Pic: Archer
 Gender: Male
-Music: Girl
+Music: Aqua
 Double Battle: No
 AI: Smart Trainer
 
-Nidoran M
-Level: 21
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Glimmet @ Shuca Berry
+Nature: Timid
+Ability: Toxic Debris
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ancient Power
+- Venoshock
+- Mud Shot
 
-Nidoran F
-Level: 21
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+
+Houndour @ Wise Glasses
+Nature: Timid
+Ability: Flash Fire
+Level: 17
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Incinerate
+- Snarl
+- Hidden Power 
+
+Mightyena @ Berry Juice
+Nature: Jolly
+Ability: Strong Jaw
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bite
+- Ice Fang
+- Howl
+- Fire Fang
 
 === TRAINER_PICNICKER_KELSEY_3 ===
 Name: KELSEY
@@ -12704,7 +12760,7 @@ Nature: Bashful
 Ability: Hustle
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aerial Ace
 - Rock Tomb
 - Rock Smash
@@ -12714,7 +12770,7 @@ Nature: Bashful
 Ability: Volt Absorb
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Shock Wave
 - Air Cutter
 - Sleep Talk
@@ -12725,7 +12781,7 @@ Nature: Bold
 Ability: Speed Boost
 Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Disarming Voice
 - Roost
 - Psybeam

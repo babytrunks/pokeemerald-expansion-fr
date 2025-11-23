@@ -10,8 +10,8 @@ ViridianForest_EventScript_ItemQuickBall::
 	finditem ITEM_QUICK_BALL
 	end
 
-ViridianForest_EventScript_ItemAntidote::
-	finditem ITEM_ANTIDOTE
+ViridianForest_EventScript_ItemWiseGlasses::
+	finditem ITEM_WISE_GLASSES
 	end
 
 ViridianForest_EventScript_ItemMiracleSeed::
