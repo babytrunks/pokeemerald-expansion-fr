@@ -78,6 +78,7 @@ static void FillTentTrainerParty_(u16 trainerId, u8 firstMonId, u8 monCount);
 static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId);
 static void FillFactoryTentTrainerParty(u16 trainerId, u8 firstMonId);
 static u8 GetFrontierTrainerFixedIvs(u16 trainerId);
+static void RerandomizeIVs(struct Pokemon *dst);
 #if FREE_BATTLE_TOWER_E_READER == FALSE
 static void SetEReaderTrainerChecksum(struct BattleTowerEReaderTrainer *ereaderTrainer);
 #endif //FREE_BATTLE_TOWER_E_READER
@@ -1631,6 +1632,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
             case 6:
                 break;
         }
+        RerandomizeIVs(dst);
     }
     else if (fmon->species == SPECIES_PIKACHU) 
     { //randomize pikachu
@@ -1730,6 +1732,28 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     CalculateMonStats(dst);
 }
 
+static void RerandomizeIVs(struct Pokemon *dst)
+{
+    u32 iv;
+    u32 ivRandom = Random32();
+    u16 value = (u16)ivRandom;
+
+    iv = value & MAX_IV_MASK;
+    SetMonData(dst, MON_DATA_HP_IV, &iv);
+    iv = (value & (MAX_IV_MASK << 5)) >> 5;
+    SetMonData(dst, MON_DATA_ATK_IV, &iv);
+    iv = (value & (MAX_IV_MASK << 10)) >> 10;
+    SetMonData(dst, MON_DATA_DEF_IV, &iv);
+
+    value = (u16)(ivRandom >> 16);
+
+    iv = value & MAX_IV_MASK;
+    SetMonData(dst, MON_DATA_SPEED_IV, &iv);
+    iv = (value & (MAX_IV_MASK << 5)) >> 5;
+    SetMonData(dst, MON_DATA_SPATK_IV, &iv);
+    iv = (value & (MAX_IV_MASK << 10)) >> 10;
+    SetMonData(dst, MON_DATA_SPDEF_IV, &iv);
+}
 static void FillTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount)
 {
     s32 i, j;

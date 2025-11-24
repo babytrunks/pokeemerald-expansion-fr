@@ -1095,8 +1095,8 @@ static bool8 IsWildLevelAllowedByRepel(u8 wildLevel)
 
     if (!FlagGet(FLAG_INFINITE_REPEL))
         return TRUE;
-    if (!REPEL_STEP_COUNT)
-        return TRUE;
+    // if (!REPEL_STEP_COUNT)
+    //     return TRUE;
 
     for (i = 0; i < PARTY_SIZE; i++)
     {

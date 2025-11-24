@@ -1154,6 +1154,7 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
 	waitmessage
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
 	waitfanfare
+	clearflag FLAG_3_PERFECT_IVS
 	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_GiveNicknameToStarter
 	goto_if_eq VAR_RESULT, NO, PalletTown_ProfessorOaksLab_EventScript_RivalPicksStarter
@@ -2172,7 +2173,9 @@ PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
     .string "Prof. Oak may not look like much,\n"
     .string "but he's the authority on Pokémon.\p"
-    .string "Many Pokémon TRAINERS hold him in\n"
+    .string "He ensures every Pokémon in his\n"
+    .string "collection has 3 Perfect IVs.\p"
+    .string "Many Pokémon trainers hold him in\n"
     .string "high regard.$"
 
 PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer::

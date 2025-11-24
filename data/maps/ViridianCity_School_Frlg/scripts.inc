@@ -36,16 +36,18 @@ CheckIfBeatAllViridianForestTrainers:
 	goto_if_eq VAR_RESULT, NO, ViridianCity_School_EventScript_WomanReject
 
 ViridianCity_School_EventScript_FightTeacher::
-	trainerbattle_single TRAINER_STARTER_TEACHER, ViridianCity_School_Text_GiveItAll, ViridianCity_School_Text_Defeated, ViridianCity_School_EventScript_GiveMon, NO_MUSIC
+	trainerbattle_no_intro TRAINER_STARTER_TEACHER, ViridianCity_School_Text_Defeated
 ViridianCity_School_EventScript_GiveMon::
 	msgbox ViridianCity_School_Text_HaveYourPick
 	setflag FLAG_RARE_POKEMON_SCREEN
 	setflag FLAG_BEAT_VIRIDIAN_CITY_TEACHER
+	setflag FLAG_3_PERFECT_IVS
 	setvar VAR_RARE_POKEMON_COUNTER 0
 	factory_generaterentalmons
 	factory_rentmons
 	waitstate
 	clearflag FLAG_RARE_POKEMON_SCREEN
+	clearflag FLAG_3_PERFECT_IVS
 ViridianCity_School_EventScript_BeatenTeacher::
 	msgbox ViridianCity_School_Text_Study
 	release
@@ -140,19 +142,18 @@ ViridianCity_School_Text_ReadBlackboardCarefully::
 ViridianCity_School_Text_YouDontSeemNew::
     .string "…You're from Pallet Town, aren't you?\p"
     .string "You have quite the potential.\p"
-    .string "Tell you what - beat all the\n"
-    .string "trainers in Viridian Forest\l"
-    .string "and I'll reward you with something\l"
-    .string "special.$"
+    .string "Tell you what - beat all the trainers\n"
+    .string "in Viridian Forest and I'll reward\l"
+    .string "you with something special.$"
 
 ViridianCity_School_Text_EntertainMe::
     .string "…Oh nice, you actually beat all\n"
     .string "of them.\p"
-    .string "Entertain me in a battle,\n"
-    .string "and I'll let you choose a\l"
-    .string "another starter Pokémon.\p"
-    .string "Y'know, those rare Pokémon\n"
-    .string "Oak has stashed away.\p"
+    .string "Entertain me in a battle, and I'll\n"
+    .string "let you choose another starter\l"
+	.string "Pokémon.\p"
+    .string "Y'know, those rare Pokémon Oak has\n"
+    .string "stashed away.\p"
     .string "You wanna give it a go?$"
 
 ViridianCity_School_Text_GiveItAll::

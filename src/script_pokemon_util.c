@@ -531,7 +531,6 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
 
     if (FlagGet(FLAG_3_PERFECT_IVS)) {
         perfectIVCount = 3;
-        FlagClear(FLAG_3_PERFECT_IVS);
     }
     if (perfectIVCount != 0)
     {
