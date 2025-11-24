@@ -1429,7 +1429,13 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         iv = (value & (MAX_IV_MASK << 10)) >> 10;
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
 
-        if (gSpeciesInfo[species].perfectIVCount != 0)
+        u8 perfectIVCount = gSpeciesInfo[species].perfectIVCount;
+        if (FlagGet(FLAG_3_PERFECT_IVS)) {
+            perfectIVCount = 3;
+            FlagClear(FLAG_3_PERFECT_IVS);
+        }
+
+        if (perfectIVCount != 0)
         {
             iv = MAX_PER_STAT_IVS;
             // Initialize a list of IV indices.
@@ -1439,13 +1445,13 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
             }
 
             // Select the IVs that will be perfected.
-            for (i = 0; i < NUM_STATS && i < gSpeciesInfo[species].perfectIVCount; i++)
+            for (i = 0; i < NUM_STATS && i < perfectIVCount; i++)
             {
                 u8 index = Random() % (NUM_STATS - i);
                 selectedIvs[i] = availableIVs[index];
                 RemoveIVIndexFromList(availableIVs, index);
             }
-            for (i = 0; i < NUM_STATS && i < gSpeciesInfo[species].perfectIVCount; i++)
+            for (i = 0; i < NUM_STATS && i < perfectIVCount; i++)
             {
                 switch (selectedIvs[i])
                 {

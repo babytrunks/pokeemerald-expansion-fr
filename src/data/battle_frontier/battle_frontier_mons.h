@@ -1,18 +1,18 @@
 const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 {
-    [FRONTIER_MON_BULBASAUR] = { //20% chance to hold Venusaurite
+    [FRONTIER_MON_BULBASAUR] = { 
         .species = SPECIES_BULBASAUR,
         .moves = {MOVE_TACKLE, MOVE_MAGICAL_LEAF, MOVE_SLEEP_POWDER, MOVE_NONE},
         .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_RELAXED
     },
-    [FRONTIER_MON_CHARMANDER] = { //20% chance to hold Charizardite X/Y
+    [FRONTIER_MON_CHARMANDER] = { 
         .species = SPECIES_CHARMANDER,
         .moves = {MOVE_FIRE_SPIN, MOVE_METAL_CLAW, MOVE_SMOKESCREEN, MOVE_SCARY_FACE},
         .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
-    [FRONTIER_MON_SQUIRTLE] = { //20% chance to hold Blastoisinite
+    [FRONTIER_MON_SQUIRTLE] = { 
         .species = SPECIES_SQUIRTLE,
         .moves = {MOVE_WATER_PULSE, MOVE_BITE, MOVE_RAPID_SPIN, MOVE_NONE},
         .heldItem = ITEM_LEFTOVERS,
@@ -42,6 +42,27 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_TURTWIG,
         .moves = {MOVE_MEGA_DRAIN, MOVE_TACKLE, MOVE_SAND_TOMB, MOVE_NONE},
         .heldItem = ITEM_WHITE_HERB,
+        .nature = NATURE_DOCILE
+    },
+
+    [FRONTIER_MON_TORCHIC] = {
+        .species = SPECIES_TORCHIC,
+        .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_EMBER, MOVE_QUICK_ATTACK},
+        .heldItem = ITEM_SITRUS_BERRY,
+        .nature = NATURE_DOCILE
+    },
+
+    [FRONTIER_MON_MUDKIP] = {
+        .species = SPECIES_MUDKIP,
+        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_WATER_GUN, MOVE_ROCK_SMASH},
+        .heldItem = ITEM_SITRUS_BERRY,
+        .nature = NATURE_DOCILE
+    },
+
+    [FRONTIER_MON_TREECKO] = {
+        .species = SPECIES_TREECKO,
+        .moves = {MOVE_POUND, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_MEGA_DRAIN},
+        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
@@ -830,7 +851,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_PIKACHU] = {
         .species = SPECIES_PIKACHU,
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_QUICK_ATTACK},
-        .heldItem = ITEM_LIGHT_BALL,
+        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     [FRONTIER_MON_SANDSHREW] = {

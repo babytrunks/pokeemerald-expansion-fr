@@ -489,7 +489,7 @@
 #define FLAG_HIDE_SILPH_CO_4F_TM41                              0x1FE
 
 // Unused?
-#define FLAG_0x1FF                                              0x1FF
+#define FLAG_3_PERFECT_IVS                                      0x1FF // Set this FLAG for gift/wild mon to guarantee 3 wild IVs (more custom use than LEGENDARY_PERFECT_IV_COUNT, automatically clears after use)
 #define FLAG_INFINITE_REPEL                                     0x200
 #define FLAG_USING_POKE_VIAL                                    0x201
 #define DERBY_FLAG_NICKNAME                                     0x202

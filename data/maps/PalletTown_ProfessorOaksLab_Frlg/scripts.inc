@@ -227,6 +227,7 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakBePatientRival
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2
+	setflag FLAG_3_PERFECT_IVS @ Starter has 3 Perfect IVs
 	releaseall
 	end
 
