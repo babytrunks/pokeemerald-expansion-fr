@@ -104,6 +104,7 @@ ViridianForest_EventScript_BrendanOne_Battle::
     setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_PostDefeat
     giveitem ITEM_EXP_SHARE
+    setflag FLAG_EXP_SHARE
     setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_BrendanTeacher
     call_if_eq VAR_TEMP_2, 1, ViridianForest_EventScript_BrendanLeaveLeftTile

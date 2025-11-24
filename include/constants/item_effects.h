@@ -28,8 +28,8 @@
 #define ITEM3_STATUS_ALL        (ITEM3_CONFUSION | ITEM3_PARALYSIS | ITEM3_FREEZE | ITEM3_BURN | ITEM3_POISON | ITEM3_SLEEP)
 
 // field 4 masks
-#define ITEM4_EV_HP             0x1
-#define ITEM4_EV_ATK            0x2
+#define ITEM4_IV_HP             0x1
+#define ITEM4_IV_ATK            0x2
 #define ITEM4_HEAL_HP           0x4
 #define ITEM4_HEAL_PP           0x8
 #define ITEM4_HEAL_PP_ONE       0x10
@@ -38,10 +38,10 @@
 #define ITEM4_EVO_STONE         0x80
 
 // field 5 masks
-#define ITEM5_EV_DEF            0x1
-#define ITEM5_EV_SPEED          0x2
-#define ITEM5_EV_SPDEF          0x4
-#define ITEM5_EV_SPATK          0x8
+#define ITEM5_IV_DEF            0x1
+#define ITEM5_IV_SPEED          0x2
+#define ITEM5_IV_SPDEF          0x4
+#define ITEM5_IV_SPATK          0x8
 #define ITEM5_PP_MAX            0x10
 #define ITEM5_FRIENDSHIP_LOW    0x20
 #define ITEM5_FRIENDSHIP_MID    0x40
@@ -63,8 +63,8 @@
 // Special PP recovery amounts for ITEM4_HEAL_PP
 #define ITEM6_HEAL_PP_FULL   0x7F
 
-// Amount of EV modified by ITEM4_EV_HP, ITEM4_EV_ATK, ITEM5_EV_DEF, ITEM5_EV_SPEED, ITEM5_EV_SPDEF and ITEM5_EV_SPATK
-#define ITEM6_ADD_EV       10
+// Amount of EV modified by ITEM4_IV_HP, ITEM4_IV_ATK, ITEM5_IV_DEF, ITEM5_IV_SPEED, ITEM5_IV_SPDEF and ITEM5_IV_SPATK
+#define ITEM6_ADD_IV       10
 #define ITEM6_SUBTRACT_EV -10
 #define ITEM6_ADD_ONE_EV    1
 #define ITEM6_RESET_EV      0
@@ -82,12 +82,12 @@
 #define ITEM_EFFECT_CURE_INFATUATION 9
 #define ITEM_EFFECT_SACRED_ASH 10
 #define ITEM_EFFECT_CURE_ALL_STATUS 11
-#define ITEM_EFFECT_ATK_EV 12
-#define ITEM_EFFECT_HP_EV 13
-#define ITEM_EFFECT_SPATK_EV 14
-#define ITEM_EFFECT_SPDEF_EV 15
-#define ITEM_EFFECT_SPEED_EV 16
-#define ITEM_EFFECT_DEF_EV 17
+#define ITEM_EFFECT_ATK_IV 12
+#define ITEM_EFFECT_HP_IV 13
+#define ITEM_EFFECT_SPATK_IV 14
+#define ITEM_EFFECT_SPDEF_IV 15
+#define ITEM_EFFECT_SPEED_IV 16
+#define ITEM_EFFECT_DEF_IV 17
 #define ITEM_EFFECT_EVO_STONE 18
 #define ITEM_EFFECT_PP_UP 19
 #define ITEM_EFFECT_PP_MAX 20

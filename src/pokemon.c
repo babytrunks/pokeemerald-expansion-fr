@@ -1117,6 +1117,16 @@ static const u8 sGetMonDataEVConstants[] =
     MON_DATA_SPATK_EV
 };
 
+static const u8 sGetMonDataIVConstants[] =
+{
+    MON_DATA_HP_IV,
+    MON_DATA_ATK_IV,
+    MON_DATA_DEF_IV,
+    MON_DATA_SPEED_IV,
+    MON_DATA_SPDEF_IV,
+    MON_DATA_SPATK_IV
+};
+
 // For stat-raising items
 static const enum Stat sStatsToRaise[] =
 {
@@ -4043,11 +4053,19 @@ const u32 sExpCandyExperienceTable[] = {
     [EXP_30000 - 1] = 30000,
 };
 
+const u32 sIndividualValueVitaminTable[] = {
+    // [EV_32 - 1] = 32,
+    // [EV_64 - 1] = 64,
+    // [EV_128 - 1] = 128,
+    [IV_15 - 1] = 15,
+    [IV_31 - 1] = 31,
+};
+
 // Returns TRUE if the item has no effect on the Pokémon, FALSE otherwise
 bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 moveIndex, bool8 usedByAI)
 {
     u32 dataUnsigned;
-    s32 dataSigned, evCap;
+    s32 dataSigned;// evCap;
     s32 friendship;
     s32 i;
     bool8 retVal = TRUE;
@@ -4061,10 +4079,12 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     u16 heldItem;
     u8 effectFlags;
     s8 evChange;
-    u16 evCount;
-
+    // u16 evCount;
+    evChange = 0;
+    u8 ivCap = 31;
+    s8 ivChange;
     // Determine the EV cap to use
-    u32 maxAllowedEVs = !B_EV_ITEMS_CAP ? MAX_TOTAL_EVS : GetCurrentEVCap();
+    // u32 maxAllowedEVs = !B_EV_ITEMS_CAP ? MAX_TOTAL_EVS : GetCurrentEVCap();
 
     // Get item hold effect
     heldItem = GetMonData(mon, MON_DATA_HELD_ITEM, NULL);
@@ -4179,49 +4199,58 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
             temp1 = 0;
 
             // Loop through and try each of the remaining ITEM4 effects
+            // Changed here for IV stuff
             while (effectFlags != 0)
             {
                 if (effectFlags & 1)
                 {
                     switch (temp1)
                     {
-                    case 0: // ITEM4_EV_HP
-                    case 1: // ITEM4_EV_ATK
-                        evCount = GetMonEVCount(mon);
+                    case 0: // ITEM4_IV_HP
+                    case 1: // ITEM4_IV_ATK
+                        // evCount = GetMonEVCount(mon);
                         temp2 = itemEffect[itemEffectParam];
-                        dataSigned = GetMonData(mon, sGetMonDataEVConstants[temp1], NULL);
-                        evChange = temp2;
+                        dataSigned = GetMonData(mon, sGetMonDataIVConstants[temp1], NULL);
 
-                        if (evChange > 0) // Increasing EV (HP or Atk)
+                        u8 param = GetItemHoldEffectParam(item);
+                        ivChange = sIndividualValueVitaminTable[param - 1];
+                        // evChange = temp2;
+
+                        if (ivChange > 0) // Increasing IV (HP or Atk)
                         {
                             // Check if the total EV limit is reached
-                            if (evCount >= maxAllowedEVs)
-                                return TRUE;
+                            // if (evCount >= maxAllowedEVs)
+                            //     return TRUE;
 
-                            // Ensure the increase does not exceed the max EV per stat (252)
-                            evCap = (itemEffect[10] & ITEM10_IS_VITAMIN) ? EV_ITEM_RAISE_LIMIT : MAX_PER_STAT_EVS;
+                            // Ensure the increase does not exceed the max IV per stat 31
+
 
                             // Check if the per-stat limit is reached
-                            if (dataSigned >= evCap)
+                            if (dataSigned >= ivCap)
                                 return TRUE;  // Prevents item use if the per-stat cap is already reached
 
-                            if (dataSigned + evChange > evCap)
-                                temp2 = evCap - dataSigned;
+                            // if (dataSigned + evChange > evCap)
+                            //     temp2 = evCap - dataSigned;
+                            // else
+                            //     temp2 = evChange;
+
+                            if (dataSigned + ivChange > ivCap)
+                                temp2 = ivCap - dataSigned;
                             else
-                                temp2 = evChange;
-
+                                temp2 = ivChange;
+                        
                             // Ensure the total EVs do not exceed the maximum allowed (510)
-                            if (evCount + temp2 > maxAllowedEVs)
-                                temp2 = maxAllowedEVs - evCount;
+                            // if (evCount + temp2 > maxAllowedEVs)
+                            //     temp2 = maxAllowedEVs - evCount;
 
-                            // Prevent item use if no EVs can be increased
+                            // Prevent item use if no IVs can be increased
                             if (temp2 == 0)
                                 return TRUE;
 
                             // Apply the EV increase
                             dataSigned += temp2;
                         }
-                        else if (evChange < 0) // Decreasing EV (HP or Atk)
+                        else if (ivChange < 0) // Decreasing IV (HP or Atk), should be unused
                         {
                             if (dataSigned == 0)
                             {
@@ -4372,37 +4401,36 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                 {
                     switch (temp1)
                     {
-                    case 0: // ITEM5_EV_DEF
-                    case 1: // ITEM5_EV_SPEED
-                    case 2: // ITEM5_EV_SPDEF
-                    case 3: // ITEM5_EV_SPATK
-                        evCount = GetMonEVCount(mon);
-                        temp2 = itemEffect[itemEffectParam];
-                        dataSigned = GetMonData(mon, sGetMonDataEVConstants[temp1 + 2], NULL);
-                        evChange = temp2;
-                        if (evChange > 0) // Increasing EV
+                    case 0: // ITEM5_IV_DEF
+                    case 1: // ITEM5_IV_SPEED
+                    case 2: // ITEM5_IV_SPDEF
+                    case 3: // ITEM5_IV_SPATK
+                         temp2 = itemEffect[itemEffectParam];
+                        dataSigned = GetMonData(mon, sGetMonDataIVConstants[temp1 + 2], NULL);
+                        ivChange = temp2;
+                        if (ivChange > 0) // Increasing EV
                         {
                             // Check if the total EV limit is reached
-                            if (evCount >= maxAllowedEVs)
-                                return TRUE;
+                            // if (evCount >= maxAllowedEVs)
+                            //     return TRUE;
 
                             // Ensure the increase does not exceed the max EV per stat (252)
-                            evCap = (itemEffect[10] & ITEM10_IS_VITAMIN) ? EV_ITEM_RAISE_LIMIT : MAX_PER_STAT_EVS;
+                            // evCap = (itemEffect[10] & ITEM10_IS_VITAMIN) ? EV_ITEM_RAISE_LIMIT : MAX_PER_STAT_EVS;
 
                             // Check if the per-stat limit is reached
-                            if (dataSigned >= evCap)
+                            if (dataSigned >= ivCap)
                                 return TRUE;  // Prevents item use if the per-stat cap is already reached
 
-                            if (dataSigned + evChange > evCap)
-                                temp2 = evCap - dataSigned;
+                            if (dataSigned + ivChange > ivCap)
+                                temp2 = ivCap - dataSigned;
                             else
-                                temp2 = evChange;
+                                temp2 = ivChange;
 
                             // Ensure the total EVs do not exceed the maximum allowed (510)
-                            if (evCount + temp2 > maxAllowedEVs)
-                                temp2 = maxAllowedEVs - evCount;
+                            // if (evCount + temp2 > maxAllowedEVs)
+                            //     temp2 = maxAllowedEVs - evCount;
 
-                            // Prevent item use if no EVs can be increased
+                            // Prevent item use if no IVs can be increased
                             if (temp2 == 0)
                                 return TRUE;
 
@@ -4576,12 +4604,12 @@ u8 GetItemEffectParamOffset(u32 battler, u16 itemId, u8 effectByte, u8 effectBit
                         if (effectFlags & (ITEM4_REVIVE >> 2))
                             effectFlags &= ~(ITEM4_REVIVE >> 2);
                         // fallthrough
-                    case 0: // ITEM4_EV_HP
+                    case 0: // ITEM4_IV_HP
                         if (i == effectByte && (effectFlags & effectBit))
                             return offset;
                         offset++;
                         break;
-                    case 1: // ITEM4_EV_ATK
+                    case 1: // ITEM4_IV_ATK
                         if (i == effectByte && (effectFlags & effectBit))
                             return offset;
                         offset++;
@@ -4612,10 +4640,10 @@ u8 GetItemEffectParamOffset(u32 battler, u16 itemId, u8 effectByte, u8 effectBit
                 {
                     switch (j)
                     {
-                    case 0: // ITEM5_EV_DEF
-                    case 1: // ITEM5_EV_SPEED
-                    case 2: // ITEM5_EV_SPDEF
-                    case 3: // ITEM5_EV_SPATK
+                    case 0: // ITEM5_IV_DEF
+                    case 1: // ITEM5_IV_SPEED
+                    case 2: // ITEM5_IV_SPDEF
+                    case 3: // ITEM5_IV_SPATK
                     case 4: // ITEM5_PP_MAX
                     case 5: // ITEM5_FRIENDSHIP_LOW
                     case 6: // ITEM5_FRIENDSHIP_MID

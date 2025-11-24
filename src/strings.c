@@ -208,7 +208,7 @@ const u8 *const gPocketNamesStringsTable[] =
     [POCKET_TM_HM]  =       COMPOUND_STRING("TMs & HMs"),
     [POCKET_BERRIES] =      COMPOUND_STRING("Berries"),
     [POCKET_KEY_ITEMS] =    COMPOUND_STRING("Key Items"),
-    [POCKET_MEDICINE] =     COMPOUND_STRING("Medicine"),
+    [POCKET_POWER_UP] =     COMPOUND_STRING("Power Up"),
     [POCKET_MEGA_STONES] =     COMPOUND_STRING("Mega Stones"),
     [POCKET_BATTLE_ITEMS] = COMPOUND_STRING("Battle Items"),
 
@@ -1363,7 +1363,7 @@ const u8 gText_QuestActive[] =_("active");
 
 //names
 const u8 gText_SideQuestName_1[] = _("A Father's Request");
-const u8 gText_SideQuestName_2[] = _("Side Quest 2");
+const u8 gText_SideQuestName_2[] = _("Grass Type Mastery");
 const u8 gText_SideQuestName_3[] = _("Side Quest 3");
 const u8 gText_SideQuestName_4[] = _("Side Quest 4");
 const u8 gText_SideQuestName_5[] = _("Side Quest 5");
@@ -1395,7 +1395,7 @@ const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Show a Pikachu for a\nreward.");
-const u8 gText_SideQuestDesc_2[] = _("Description 2");
+const u8 gText_SideQuestDesc_2[] = _("Get {STR_VAR_1}/5 KOs with Grass\nPokémon in battle.");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
 const u8 gText_SideQuestDesc_4[] = _("Description 4");
 const u8 gText_SideQuestDesc_5[] = _("Description 5");
@@ -1427,7 +1427,7 @@ const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
 const u8 gText_SideQuestDoneDesc_1[] = _("Received Light Ball by showing\na Pikachu.");
-const u8 gText_SideQuestDoneDesc_2[] = _("Completed Quest 2");
+const u8 gText_SideQuestDoneDesc_2[] = _("Get 5 KOs with Grass\nPokémon in battle.");
 const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
 const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
 const u8 gText_SideQuestDoneDesc_5[] = _("Completed Quest 5");
@@ -1459,7 +1459,7 @@ const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
 
 //map
 const u8 gText_SideQuestMap1[] = _("Pewter Museum");
-const u8 gText_SideQuestMap2[] = _("Map 2");
+const u8 gText_SideQuestMap2[] = _("Route 3");
 const u8 gText_SideQuestMap3[] = _("Map 3");
 const u8 gText_SideQuestMap4[] = _("Map 4");
 const u8 gText_SideQuestMap5[] = _("Map 5");
@@ -1553,3 +1553,4 @@ const u8 gText_SubQuest2_Desc17[] = _("Description Sub 17");
 const u8 gText_SubQuest2_Desc18[] = _("Description Sub 18");
 const u8 gText_SubQuest2_Desc19[] = _("Description Sub 19");
 const u8 gText_SubQuest2_Desc20[] = _("Description Sub 20");
+const u8 gText_PkmnIVStatRaised[] = _("{STR_VAR_1}'s {STR_VAR_2} IV\nstat was raised.{PAUSE_UNTIL_PRESS}");

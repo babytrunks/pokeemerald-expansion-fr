@@ -1411,12 +1411,12 @@ void ItemUseOutOfBattle_EnigmaBerry(u8 taskId)
     case ITEM_EFFECT_CURE_FREEZE_FROSTBITE:
     case ITEM_EFFECT_CURE_PARALYSIS:
     case ITEM_EFFECT_CURE_ALL_STATUS:
-    case ITEM_EFFECT_ATK_EV:
-    case ITEM_EFFECT_HP_EV:
-    case ITEM_EFFECT_SPATK_EV:
-    case ITEM_EFFECT_SPDEF_EV:
-    case ITEM_EFFECT_SPEED_EV:
-    case ITEM_EFFECT_DEF_EV:
+    case ITEM_EFFECT_ATK_IV:
+    case ITEM_EFFECT_HP_IV:
+    case ITEM_EFFECT_SPATK_IV:
+    case ITEM_EFFECT_SPDEF_IV:
+    case ITEM_EFFECT_SPEED_IV:
+    case ITEM_EFFECT_DEF_IV:
         gTasks[taskId].tEnigmaBerryType = ITEM_USE_PARTY_MENU;
         ItemUseOutOfBattle_Medicine(taskId);
         break;

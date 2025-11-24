@@ -66,7 +66,7 @@
                             max(BAG_ITEMS_COUNT,             \
                             max(BAG_BATTLEITEMS_COUNT,       \
                             max(BAG_TREASURES_COUNT,         \
-                            max(BAG_MEDICINE_COUNT,          \
+                            max(BAG_POWER_UP_COUNT,          \
                             max(BAG_KEYITEMS_COUNT,          \
                                 BAG_POKEBALLS_COUNT)))))))) + 1)
 

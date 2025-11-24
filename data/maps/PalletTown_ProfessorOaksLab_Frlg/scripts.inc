@@ -2173,7 +2173,7 @@ PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
     .string "Prof. Oak may not look like much,\n"
     .string "but he's the authority on Pokémon.\p"
-    .string "He ensures every Pokémon in his\n"
+    .string "He ensures every Pokémon in his personal\n"
     .string "collection has 3 Perfect IVs.\p"
     .string "Many Pokémon trainers hold him in\n"
     .string "high regard.$"

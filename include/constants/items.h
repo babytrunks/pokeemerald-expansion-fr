@@ -1067,6 +1067,9 @@
 #define ACRO_BIKE 1
 #define STANDARD_BIKE 2
 
+#define IV_15  1
+#define IV_31  2
+
 // Item parameters for EXP Candies
 #define EXP_100   1
 #define EXP_800   2

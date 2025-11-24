@@ -2681,4 +2681,6 @@ extern const u8 gText_StatEditor[];
 extern const u8 gText_RepelEffectsToggledOff[];
 extern const u8 gText_RepelEffectsToggledOn[];
 
+extern const u8 gText_PkmnIVStatRaised[];
+
 #endif // GUARD_STRINGS_H

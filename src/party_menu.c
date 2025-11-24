@@ -399,7 +399,7 @@ static u8 GetPartyLayoutFromBattleType(void);
 static void Task_SetSacredAshCB(u8);
 static void CB2_ReturnToBagMenu(void);
 static void Task_DisplayHPRestoredMessage(u8);
-static u16 ItemEffectToMonEv(struct Pokemon *, u8);
+static u16 ItemEffectToMonIv(struct Pokemon *, u8);
 static void ItemEffectToStatString(u8, u8 *);
 static void ReturnToUseOnWhichMon(u8);
 static void SetSelectedMoveForItem(u8);
@@ -4756,29 +4756,29 @@ static void GetMedicineItemEffectMessage(u16 item, u32 statusCured)
     case ITEM_EFFECT_CURE_ALL_STATUS:
         StringExpandPlaceholders(gStringVar4, gText_PkmnBecameHealthy);
         break;
-    case ITEM_EFFECT_HP_EV:
+    case ITEM_EFFECT_HP_IV:
         StringCopy(gStringVar2, gText_HP3);
-        StringExpandPlaceholders(gStringVar4, gText_PkmnBaseVar2StatIncreased);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnIVStatRaised);
         break;
-    case ITEM_EFFECT_ATK_EV:
+    case ITEM_EFFECT_ATK_IV:
         StringCopy(gStringVar2, gText_Attack3);
-        StringExpandPlaceholders(gStringVar4, gText_PkmnBaseVar2StatIncreased);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnIVStatRaised);
         break;
-    case ITEM_EFFECT_DEF_EV:
+    case ITEM_EFFECT_DEF_IV:
         StringCopy(gStringVar2, gText_Defense3);
-        StringExpandPlaceholders(gStringVar4, gText_PkmnBaseVar2StatIncreased);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnIVStatRaised);
         break;
-    case ITEM_EFFECT_SPEED_EV:
+    case ITEM_EFFECT_SPEED_IV:
         StringCopy(gStringVar2, gText_Speed2);
-        StringExpandPlaceholders(gStringVar4, gText_PkmnBaseVar2StatIncreased);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnIVStatRaised);
         break;
-    case ITEM_EFFECT_SPATK_EV:
+    case ITEM_EFFECT_SPATK_IV:
         StringCopy(gStringVar2, gText_SpAtk3);
-        StringExpandPlaceholders(gStringVar4, gText_PkmnBaseVar2StatIncreased);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnIVStatRaised);
         break;
-    case ITEM_EFFECT_SPDEF_EV:
+    case ITEM_EFFECT_SPDEF_IV:
         StringCopy(gStringVar2, gText_SpDef3);
-        StringExpandPlaceholders(gStringVar4, gText_PkmnBaseVar2StatIncreased);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnIVStatRaised);
         break;
     case ITEM_EFFECT_PP_UP:
     case ITEM_EFFECT_PP_MAX:
@@ -4795,7 +4795,7 @@ static void GetMedicineItemEffectMessage(u16 item, u32 statusCured)
 
 static bool8 NotUsingHPEVItemOnShedinja(struct Pokemon *mon, u16 item)
 {
-    if (GetItemEffectType(item) == ITEM_EFFECT_HP_EV && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA)
+    if (GetItemEffectType(item) == ITEM_EFFECT_HP_IV && GetMonData(mon, MON_DATA_SPECIES) == SPECIES_SHEDINJA)
         return FALSE;
     return TRUE;
 }
@@ -5256,10 +5256,10 @@ void ItemUseCB_ReduceEV(u8 taskId, TaskFunc task)
     u16 item = gSpecialVar_ItemId;
     u8 effectType = GetItemEffectType(item);
     u16 friendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
-    u16 ev = ItemEffectToMonEv(mon, effectType);
+    u16 ev = ItemEffectToMonIv(mon, effectType);
     bool8 cannotUseEffect = ExecuteTableBasedItemEffect(mon, item, gPartyMenu.slotId, 0);
     u16 newFriendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
-    u16 newEv = ItemEffectToMonEv(mon, effectType);
+    u16 newEv = ItemEffectToMonIv(mon, effectType);
 
     if (cannotUseEffect || (friendship == newFriendship && ev == newEv))
     {
@@ -5293,24 +5293,24 @@ void ItemUseCB_ReduceEV(u8 taskId, TaskFunc task)
     }
 }
 
-static u16 ItemEffectToMonEv(struct Pokemon *mon, u8 effectType)
+static u16 ItemEffectToMonIv(struct Pokemon *mon, u8 effectType)
 {
     switch (effectType)
     {
-    case ITEM_EFFECT_HP_EV:
+    case ITEM_EFFECT_HP_IV:
         if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_SHEDINJA)
-            return GetMonData(mon, MON_DATA_HP_EV);
+            return GetMonData(mon, MON_DATA_HP_IV);
         break;
-    case ITEM_EFFECT_ATK_EV:
-        return GetMonData(mon, MON_DATA_ATK_EV);
-    case ITEM_EFFECT_DEF_EV:
-        return GetMonData(mon, MON_DATA_DEF_EV);
-    case ITEM_EFFECT_SPEED_EV:
-        return GetMonData(mon, MON_DATA_SPEED_EV);
-    case ITEM_EFFECT_SPATK_EV:
-        return GetMonData(mon, MON_DATA_SPATK_EV);
-    case ITEM_EFFECT_SPDEF_EV:
-        return GetMonData(mon, MON_DATA_SPDEF_EV);
+    case ITEM_EFFECT_ATK_IV:
+        return GetMonData(mon, MON_DATA_ATK_IV);
+    case ITEM_EFFECT_DEF_IV:
+        return GetMonData(mon, MON_DATA_DEF_IV);
+    case ITEM_EFFECT_SPEED_IV:
+        return GetMonData(mon, MON_DATA_SPEED_IV);
+    case ITEM_EFFECT_SPATK_IV:
+        return GetMonData(mon, MON_DATA_SPATK_IV);
+    case ITEM_EFFECT_SPDEF_IV:
+        return GetMonData(mon, MON_DATA_SPDEF_IV);
     }
     return 0;
 }
@@ -5319,22 +5319,22 @@ static void ItemEffectToStatString(u8 effectType, u8 *dest)
 {
     switch (effectType)
     {
-    case ITEM_EFFECT_HP_EV:
+    case ITEM_EFFECT_HP_IV:
         StringCopy(dest, gText_HP3);
         break;
-    case ITEM_EFFECT_ATK_EV:
+    case ITEM_EFFECT_ATK_IV:
         StringCopy(dest, gText_Attack3);
         break;
-    case ITEM_EFFECT_DEF_EV:
+    case ITEM_EFFECT_DEF_IV:
         StringCopy(dest, gText_Defense3);
         break;
-    case ITEM_EFFECT_SPEED_EV:
+    case ITEM_EFFECT_SPEED_IV:
         StringCopy(dest, gText_Speed2);
         break;
-    case ITEM_EFFECT_SPATK_EV:
+    case ITEM_EFFECT_SPATK_IV:
         StringCopy(dest, gText_SpAtk3);
         break;
-    case ITEM_EFFECT_SPDEF_EV:
+    case ITEM_EFFECT_SPDEF_IV:
         StringCopy(dest, gText_SpDef3);
         break;
     }
@@ -5859,7 +5859,7 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
         {
             PlaySE(SE_USE_ITEM);
             gPartyMenuUseExitCallback = FALSE;
-            ConvertIntToDecimalStringN(gStringVar2, sExpCandyExperienceTable[holdEffectParam - 1], STR_CONV_MODE_LEFT_ALIGN, 6);
+            ConvertIntToDecimalStringN(gStringVar2, sIndividualValueVitaminTable[holdEffectParam - 1], STR_CONV_MODE_LEFT_ALIGN, 6);
             StringExpandPlaceholders(gStringVar4, gText_PkmnGainedExp);
             DisplayPartyMenuMessage(gStringVar4, FALSE);
             ScheduleBgCopyTilemapToVram(2);
@@ -6994,18 +6994,18 @@ u8 GetItemEffectType(u16 item)
 
     if (itemEffect[4] & (ITEM4_REVIVE | ITEM4_HEAL_HP))
         return ITEM_EFFECT_HEAL_HP;
-    else if (itemEffect[4] & ITEM4_EV_ATK)
-        return ITEM_EFFECT_ATK_EV;
-    else if (itemEffect[4] & ITEM4_EV_HP)
-        return ITEM_EFFECT_HP_EV;
-    else if (itemEffect[5] & ITEM5_EV_SPATK)
-        return ITEM_EFFECT_SPATK_EV;
-    else if (itemEffect[5] & ITEM5_EV_SPDEF)
-        return ITEM_EFFECT_SPDEF_EV;
-    else if (itemEffect[5] & ITEM5_EV_SPEED)
-        return ITEM_EFFECT_SPEED_EV;
-    else if (itemEffect[5] & ITEM5_EV_DEF)
-        return ITEM_EFFECT_DEF_EV;
+    else if (itemEffect[4] & ITEM4_IV_ATK)
+        return ITEM_EFFECT_ATK_IV;
+    else if (itemEffect[4] & ITEM4_IV_HP)
+        return ITEM_EFFECT_HP_IV;
+    else if (itemEffect[5] & ITEM5_IV_SPATK)
+        return ITEM_EFFECT_SPATK_IV;
+    else if (itemEffect[5] & ITEM5_IV_SPDEF)
+        return ITEM_EFFECT_SPDEF_IV;
+    else if (itemEffect[5] & ITEM5_IV_SPEED)
+        return ITEM_EFFECT_SPEED_IV;
+    else if (itemEffect[5] & ITEM5_IV_DEF)
+        return ITEM_EFFECT_DEF_IV;
     else if (itemEffect[4] & ITEM4_EVO_STONE)
         return ITEM_EFFECT_EVO_STONE;
     else if (itemEffect[4] & ITEM4_PP_UP)
