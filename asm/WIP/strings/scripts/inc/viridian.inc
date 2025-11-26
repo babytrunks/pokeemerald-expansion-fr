@@ -505,7 +505,7 @@ LassRepelDefeat_Text::
 Viridian_Text_LassRepel1::
   .string "{COLOR RED}Sorry for being rude!\n"
   .string "I'm on edge...\p"
-  .string "Using the new {COLOR GREEN}Infinite Repel{COLOR RED}\n"
+  .string "Using the new Infinite Repel{COLOR RED}\n"
   .string "I got from my father, I'm able to avoid\l"
   .string "these pesky insects...\p"
   .string "But I'm still a bit startled.$"

@@ -1,5 +1,9 @@
 
 TODO:
+
+Stuff to test:
+- Does Cosplay Pikachu trigger quest?
+
 Bug:
 - Text colors arent really consistent with FR right now (Blue for male, Red for girls)
 - Fade Screen messes with colors (like in FRU)
@@ -17,6 +21,8 @@ HIGHEST PRIORITY:
 
 MEDIUM PRIORITY:
 - Convert rest of trainers into trainers.party format (babytrunks has script for this)
+- Implement dynamic trainer levelling 
+    - https://github.com/GraionDilach/spinarakgreen/wiki/Dynamic-level-scaling-(pokeemerald%E2%80%90expansion)
 - Trainer battle sprites, new object events
 - FRU Exclusive Megas, Regional forms
 - FRU Exclusive Items/Functionality

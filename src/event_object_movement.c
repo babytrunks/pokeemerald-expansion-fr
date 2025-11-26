@@ -2433,7 +2433,8 @@ void RemoveFollowingPokemon(void)
 
 void GetFollowerPokemon(void)
 {
-    gSpecialVar_Result = GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES);
+
+    gSpecialVar_Result = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));
 }
 
 // Determine whether follower *should* be visible
@@ -11617,6 +11618,8 @@ bool8 MovementAction_WalkSlowStairsRight_Step1(struct ObjectEvent *objectEvent, 
 
 static u16 GetGraphicsIdForMon(u32 species, bool32 shiny, bool32 female)
 {
+    if (GET_BASE_SPECIES_ID(species) == SPECIES_PIKACHU) 
+        species = SPECIES_PIKACHU; //for costume pikas
     u16 graphicsId = species + OBJ_EVENT_MON;
     if (shiny)
         graphicsId += OBJ_EVENT_MON_SHINY;
