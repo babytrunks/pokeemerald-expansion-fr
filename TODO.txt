@@ -1,9 +1,5 @@
 
 TODO:
-
-Stuff to test:
-- Does Cosplay Pikachu trigger quest?
-
 Bug:
 - Text colors arent really consistent with FR right now (Blue for male, Red for girls)
 - Fade Screen messes with colors (like in FRU)

@@ -134,6 +134,15 @@ MtMoon_B2F_EventScript_Grunt4::
 	end
 
 EventScript_AdminMtMoonLeft_Start::
+    setvar VAR_TEMP_2, 1
+    goto EventScript_AdminMtMoonMain_Start
+
+
+EventScript_AdminMtMoonRight_Start::
+    setvar VAR_TEMP_2, 2
+    goto EventScript_AdminMtMoonMain_Start
+
+EventScript_AdminMtMoonMain_Start::
     lockall
     addobject LOCALID_MT_MOON_ARCHER
     addobject LOCALID_MT_MOON_MIGHTYENA
@@ -147,32 +156,26 @@ EventScript_AdminMtMoonLeft_Start::
     waitmovement 0
     @ waitse                               @ original used checksound @?
 
-    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonLeft_ComeUp
-    applymovement LOCALID_MT_MOON_MIGHTYENA, MtMoon_Movement_AdminMtMoonLeft_ComeUp
-    waitmovement 0
-
-    applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Look
-    waitmovement 0
+    call_if_eq VAR_TEMP_2, 1, MtMoon_AdminMtMoon_ComeUpLeft
+    call_if_eq VAR_TEMP_2, 2, MtMoon_AdminMtMoon_ComeUpRight
 
     msgbox adminmtmoonleft_Text_2
     waitmessage
     trainerbattle_no_intro TRAINER_MT_MOON_ARCHER, adminmtmoonleft_Text_Defeat
 
     fadescreen FADE_TO_BLACK
-    waitstate
 
     removeobject LOCALID_MT_MOON_MIGHTYENA
     playse 0xF                          @ original: sound 0xF when partner disappears @?
     waitse
 
     fadescreen FADE_FROM_BLACK
-    waitstate
 
     msgbox adminmtmoonleft_Text_4
     waitmessage
 
-    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonLeft_ComeDown
-    waitmovement 0
+    call_if_eq VAR_TEMP_2, 1, MtMoon_AdminMtMoon_ComeDownLeft
+    call_if_eq VAR_TEMP_2, 2, MtMoon_AdminMtMoon_ComeDownRight
 
     setvar VAR_MT_MOON_ARCHER, 1                    @ TODO: give this a proper VAR_ name in vars.h @?
     removeobject LOCALID_MT_MOON_ARCHER
@@ -182,6 +185,31 @@ EventScript_AdminMtMoonLeft_Start::
     release
     end
 
+MtMoon_AdminMtMoon_ComeUpLeft:
+    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonLeft_ComeUp
+    applymovement LOCALID_MT_MOON_MIGHTYENA, MtMoon_Movement_AdminMtMoonLeft_ComeUp
+    waitmovement 0
+    applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Look
+    waitmovement 0
+    return
+
+MtMoon_AdminMtMoon_ComeUpRight:
+    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonRight_ComeUp
+    applymovement LOCALID_MT_MOON_MIGHTYENA, MtMoon_Movement_AdminMtMoonRight_ComeUp
+    waitmovement 0
+    applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Look
+    waitmovement 0
+    return
+
+MtMoon_AdminMtMoon_ComeDownLeft:
+    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonLeft_ComeDown
+    waitmovement 0
+    return
+
+MtMoon_AdminMtMoon_ComeDownRight:
+    applymovement LOCALID_MT_MOON_ARCHER, MtMoon_Movement_AdminMtMoonRight_ComeDown
+    waitmovement 0
+    return
 
 @ =========================
 @ Movement scripts
@@ -194,6 +222,10 @@ MtMoon_Movement_AdminMtMoonLeft_ComeUp:
     walk_fast_left
     walk_fast_left
     walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    face_down
     step_end 
 
 MtMoon_Movement_AdminMtMoonRight_ComeUp:
@@ -202,6 +234,10 @@ MtMoon_Movement_AdminMtMoonRight_ComeUp:
     walk_fast_left
     walk_fast_left
     walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    face_down
     step_end 
 
 MtMoon_Movement_AdminMtMoonLeft_ComeDown:

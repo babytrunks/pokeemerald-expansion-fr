@@ -1555,6 +1555,8 @@ const u8 gText_Wednesday[] = _("Wed. ");
 const u8 gText_Thursday[] = _("Thurs. ");
 const u8 gText_Friday[] = _("Fri. ");
 
+const u8 gText_StartMenuTime[] = _("Time: ");
+
 const u8 *const gDayNameStringsTable[7] = {
     gText_Saturday,
     gText_Sunday,
@@ -1594,8 +1596,8 @@ void DrawTime(void) {
         suffix = gText_PM;
     }
 
-    StringExpandPlaceholders(gStringVar4, gDayNameStringsTable[(gLocalTime.days % 7)]);
-    // StringExpandPlaceholders(gStringVar4, gText_ContinueMenuTime); // prints "time" word, from version before weekday was added and leaving it here in case anyone would prefer to use it
+    // StringExpandPlaceholders(gStringVar4, gDayNameStringsTable[(gLocalTime.days % 7)]);
+    StringExpandPlaceholders(gStringVar4, gText_StartMenuTime); // prints "time" word, from version before weekday was added and leaving it here in case anyone would prefer to use it
     AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL); 
 
     ptr = ConvertIntToDecimalStringN(gStringVar4, convertedHours, STR_CONV_MODE_LEFT_ALIGN, 3);

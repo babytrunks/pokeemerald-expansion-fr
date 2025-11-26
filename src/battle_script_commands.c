@@ -2709,12 +2709,13 @@ static void Cmd_waitmessage(void)
             u16 toWait = cmd->time;
             if (gTestRunnerHeadless)
                 gPauseCounterBattle = toWait;
-            else if (gSaveBlock2Ptr->optionsFastBattle == 0)
+            /*else if (gSaveBlock2Ptr->optionsFastBattle == 0)
             {
                 gPauseCounterBattle = 0;
                 gBattlescriptCurrInstr = cmd->nextInstr;
                 gBattleCommunication[MSG_DISPLAY] = 0;
             }
+            else */ 
             else if (++gPauseCounterBattle >= toWait || (JOY_NEW(A_BUTTON | B_BUTTON)))
             {
                 gPauseCounterBattle = 0;
@@ -5295,11 +5296,11 @@ static void Cmd_pause(void)
         u16 value = cmd->frames;
         if (gTestRunnerHeadless)
             gPauseCounterBattle = value;
-        if (gSaveBlock2Ptr->optionsFastBattle == 0)
-        {
-            gPauseCounterBattle = 0;
-            gBattlescriptCurrInstr = cmd->nextInstr;
-        } 
+        // if (gSaveBlock2Ptr->optionsFastBattle == 0)
+        // {
+        //     gPauseCounterBattle = 0;
+        //     gBattlescriptCurrInstr = cmd->nextInstr;
+        // } 
         else if (++gPauseCounterBattle >= value || (JOY_NEW(A_BUTTON | B_BUTTON)))
         {
             gPauseCounterBattle = 0;

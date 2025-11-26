@@ -116,7 +116,7 @@ static void SetDefaultOptions(void)
     // gSaveBlock2Ptr->optionsDisableMatchCall = 0;    //tx_optionsPlus
     gSaveBlock2Ptr->optionsCurrentFont = FONT_FRLG;         //tx_optionsPlus
     gSaveBlock2Ptr->optionsMusicOnOff = 0;
-    gSaveBlock2Ptr->optionsFastBattle = 0; //HnS
+    // gSaveBlock2Ptr->optionsFastBattle = 0; //HnS
     gSaveBlock2Ptr->optionsfollowerEnable = 0;
     gSaveBlock2Ptr->optionsFastIntro = 1;
 }

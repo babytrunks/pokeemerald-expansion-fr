@@ -9719,8 +9719,8 @@ bool32 IsBattlerAffectedByHazards(u32 battler, bool32 toxicSpikes)
         ret = FALSE;
         RecordItemEffectBattle(battler, holdEffect);
     }
-    else if (GetBattlerAbility(battler) != ABILITY_SHIELD_DUST
-        && GetBattlerAbility(battler) != ABILITY_FROZEN_MIST)
+    else if (GetBattlerAbility(battler) == ABILITY_SHIELD_DUST
+        || GetBattlerAbility(battler) == ABILITY_FROZEN_MIST)
     {
         ret = FALSE;
     }
