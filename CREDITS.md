@@ -115,6 +115,8 @@ psf - Quest Menu
 
 Oomer - default D/P/P style text frame
 
+archie - stat editor, gen 5 party menu
+
 ## Other Credits
 
 ### Mega Evolution Overworld Sprite Credits:
