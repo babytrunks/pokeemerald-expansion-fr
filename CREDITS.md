@@ -113,6 +113,8 @@ Pawkie - Time Box
 
 psf - Quest Menu
 
+Oomer - default D/P/P style text frame
+
 ## Other Credits
 
 ### Mega Evolution Overworld Sprite Credits:
