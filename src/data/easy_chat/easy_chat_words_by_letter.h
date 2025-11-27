@@ -1672,7 +1672,7 @@ const u16 gEasyChatWordsByLetter_T[] = {
     EC_WORD_THEY_VE,
     EC_WORD_THICK,
     EC_WORD_THICK_FAT,
-    EC_MOVE2(THIEF),
+    EC_MOVE2(SNARL),
     EC_WORD_THIN,
     EC_WORD_THING,
     EC_WORD_THINGS,

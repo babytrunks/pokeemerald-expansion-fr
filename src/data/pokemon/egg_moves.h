@@ -5194,7 +5194,6 @@ static const u16 sGoomyEggMoveLearnset[] = {
 #if P_FAMILY_KLEFKI
 static const u16 sKlefkiEggMoveLearnset[] = {
     MOVE_SWITCHEROO,
-    MOVE_THIEF,
     MOVE_LOCK_ON,
     MOVE_IRON_DEFENSE,
     MOVE_UNAVAILABLE,

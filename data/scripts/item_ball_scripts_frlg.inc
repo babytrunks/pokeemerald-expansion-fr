@@ -18,16 +18,16 @@ ViridianForest_EventScript_ItemMiracleSeed::
 	finditem ITEM_MIRACLE_SEED
 	end
 
-MtMoon_1F_EventScript_ItemParalyzeHeal::
-	finditem ITEM_PARALYZE_HEAL
+MtMoon_1F_EventScript_ItemGreatBall::
+	finditem ITEM_GREAT_BALL
 	end
 
 MtMoon_1F_EventScript_ItemTM09::
 	finditem ITEM_TM09
 	end
 
-MtMoon_1F_EventScript_ItemPotion::
-	finditem ITEM_POTION
+MtMoon_B2F_EventScript_ItemBerryJuice::
+	finditem ITEM_BERRY_JUICE
 	end
 
 MtMoon_1F_EventScript_ItemRareCandy::
@@ -414,12 +414,12 @@ ViridianForest_EventScript_ItemBoldMint::
 	finditem ITEM_BOLD_MINT
 	end
 
-MtMoon_B2F_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+MtMoon_B2F_EventScript_ItemHealth_Feather::
+	finditem ITEM_HEALTH_FEATHER
 	end
 
-MtMoon_B2F_EventScript_ItemAntidote::
-	finditem ITEM_ANTIDOTE
+MtMoon_B2F_EventScript_ItemCarefulMint::
+	finditem ITEM_CAREFUL_MINT
 	end
 
 Route11_EventScript_ItemXDefend::

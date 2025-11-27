@@ -144,8 +144,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MtMoon_B2F_EventScript_ItemRevive",
-      "flag": "FLAG_HIDE_MT_MOON_B2F_REVIVE"
+      "script": "MtMoon_B2F_EventScript_ItemHealth_Feather",
+      "flag": "FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -157,8 +157,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MtMoon_B2F_EventScript_ItemAntidote",
-      "flag": "FLAG_HIDE_MT_MOON_B2F_ANTIDOTE"
+      "script": "MtMoon_B2F_EventScript_ItemCarefulMint",
+      "flag": "FLAG_HIDE_MT_MOON_B2F_CAREFUL_MINT"
     },
     {
       "local_id": "LOCALID_MT_MOON_ARCHER",

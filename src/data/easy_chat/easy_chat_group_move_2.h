@@ -179,7 +179,7 @@ const u16 gEasyChatGroup_Move2[] = {
     MOVE_TAUNT,
     MOVE_TEETER_DANCE,
     MOVE_TELEPORT,
-    MOVE_THIEF,
+    MOVE_SNARL,
     MOVE_THUNDER_WAVE,
     MOVE_THUNDER_SHOCK,
     MOVE_TOXIC,

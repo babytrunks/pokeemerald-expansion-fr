@@ -321,9 +321,9 @@
 #define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0x156
 #define FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES                      0x157
 #define FLAG_HIDE_VIRIDIAN_FOREST_MIRACLE_SEED                        0x158
-#define FLAG_HIDE_MT_MOON_1F_PARALYZE_HEAL                      0x159
+#define FLAG_FLAG_HIDE_MT_MOON_1F_GREAT_BALL                      0x159
 #define FLAG_HIDE_MT_MOON_1F_TM09                               0x15A
-#define FLAG_HIDE_MT_MOON_1F_POTION                             0x15B
+#define FLAG_HIDE_MT_MOON_1F_BERRY_JUICE                             0x15B
 #define FLAG_HIDE_MT_MOON_1F_RARE_CANDY                         0x15C
 #define FLAG_HIDE_MT_MOON_1F_ESCAPE_ROPE                        0x15D
 #define FLAG_HIDE_MT_MOON_1F_MOON_STONE                         0x15E
@@ -423,8 +423,8 @@
 #define FLAG_HIDE_ROUTE_2_MEGA_STONE                            0x1BC
 #define FLAG_HIDE_DIGLETTS_CAVE_HARD_STONE                      0x1BD
 #define FLAG_HIDE_VIRIDIAN_FOREST_BOLD_MINT                     0x1BE
-#define FLAG_HIDE_MT_MOON_B2F_REVIVE                            0x1BF
-#define FLAG_HIDE_MT_MOON_B2F_ANTIDOTE                          0x1C0
+#define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                    0x1BF
+#define FLAG_HIDE_MT_MOON_B2F_CAREFUL_MINT                      0x1C0
 #define FLAG_HIDE_ROUTE11_X_DEFEND                              0x1C1
 #define FLAG_HIDE_ROUTE9_BURN_HEAL                              0x1C2
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0x1C3
@@ -1108,7 +1108,7 @@
 #define FLAG_HIDDEN_ITEM_ONE_ISLAND_TREASURE_BEACH_BIG_PEARL               (FLAG_HIDDEN_ITEMS_START + 110)
 #define FLAG_HIDDEN_ITEM_TWO_ISLAND_CAPE_BRINK_RARE_CANDY                  (FLAG_HIDDEN_ITEMS_START + 111)
 #define FLAG_HIDDEN_ITEM_PEWTER_CITY_POKE_BALL                             (FLAG_HIDDEN_ITEMS_START + 112)
-#define FLAG_HIDDEN_ITEM_ROUTE3_ORAN_BERRY                                 (FLAG_HIDDEN_ITEMS_START + 113)
+#define FLAG_HIDDEN_ITEM_ROUTE3_ORAN_BERRY                                 (FLAG_HIDDEN_ITEMS_START + 113) //unused
 #define FLAG_HIDDEN_ITEM_ROUTE4_PERSIM_BERRY                               (FLAG_HIDDEN_ITEMS_START + 114)
 #define FLAG_HIDDEN_ITEM_ROUTE24_PECHA_BERRY                               (FLAG_HIDDEN_ITEMS_START + 115)
 #define FLAG_HIDDEN_ITEM_ROUTE25_ORAN_BERRY                                (FLAG_HIDDEN_ITEMS_START + 116)

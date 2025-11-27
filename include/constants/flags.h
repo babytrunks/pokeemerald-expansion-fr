@@ -1801,9 +1801,9 @@
 #define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0
 #define FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES                      0
 #define FLAG_HIDE_VIRIDIAN_FOREST_MIRACLE_SEED                        0
-#define FLAG_HIDE_MT_MOON_1F_PARALYZE_HEAL                      0
+#define FLAG_FLAG_HIDE_MT_MOON_1F_GREAT_BALL                      0
 #define FLAG_HIDE_MT_MOON_1F_TM09                               0
-#define FLAG_HIDE_MT_MOON_1F_POTION                             0
+#define FLAG_HIDE_MT_MOON_1F_BERRY_JUICE                             0
 #define FLAG_HIDE_MT_MOON_1F_RARE_CANDY                         0
 #define FLAG_HIDE_MT_MOON_1F_ESCAPE_ROPE                        0
 #define FLAG_HIDE_MT_MOON_1F_MOON_STONE                         0
@@ -1903,8 +1903,8 @@
 #define FLAG_0x1BC                                              0
 #define FLAG_0x1BD                                              0
 #define FLAG_HIDE_VIRIDIAN_FOREST_BOLD_MINT                      0
-#define FLAG_HIDE_MT_MOON_B2F_REVIVE                            0
-#define FLAG_HIDE_MT_MOON_B2F_ANTIDOTE                          0
+#define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                            0
+#define FLAG_HIDE_MT_MOON_B2F_CAREFUL_MINT                          0
 #define FLAG_HIDE_ROUTE11_X_DEFEND                              0
 #define FLAG_HIDE_ROUTE9_BURN_HEAL                              0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0

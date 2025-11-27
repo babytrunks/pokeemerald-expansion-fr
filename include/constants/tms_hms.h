@@ -47,7 +47,7 @@
     F(SECRET_POWER) \
     F(REST) \
     F(ATTRACT) \
-    F(THIEF) \
+    F(SNARL) \
     F(STEEL_WING) \
     F(ELECTROWEB) \
     F(SNATCH) \
