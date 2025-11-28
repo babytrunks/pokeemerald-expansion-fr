@@ -71,7 +71,7 @@ const u8 gText_ListByFirstLetter[] = _("List by the first letter in the name.\nS
 const u8 gText_ListByBodyColor[] = _("List by body color.\nSpotted Pokémon only.");
 const u8 gText_ListByType[] = _("List by type.\nOwned Pokémon only.");
 const u8 gText_ExecuteSearchSwitch[] = _("Execute search/switch.");
-const u8 gText_DexHoennTitle[] = _("HOENN DEX");
+const u8 gText_DexHoennTitle[] = _("KANTO DEX");
 const u8 gText_DexNatTitle[] = _("NATIONAL DEX");
 const u8 gText_DexSortNumericalTitle[] = _("NUMERICAL MODE");
 const u8 gText_DexSortAtoZTitle[] = _("A TO Z MODE");
@@ -98,7 +98,7 @@ const u8 gText_DexSearchColorPurple[] = _("PURPLE");
 const u8 gText_DexSearchColorGray[] = _("GRAY");
 const u8 gText_DexSearchColorWhite[] = _("WHITE");
 const u8 gText_DexSearchColorPink[] = _("PINK");
-const u8 gText_DexHoennDescription[] = _("HOENN region's Pokédex");
+const u8 gText_DexHoennDescription[] = _("Kanto Region's Pokédex");
 const u8 gText_DexNatDescription[] = _("National edition Pokédex");
 const u8 gText_DexSortNumericalDescription[] = _("Pokémon are listed according to their\nnumber.");
 const u8 gText_DexSortAtoZDescription[] = _("Spotted and owned Pokémon are listed\nalphabetically.");
@@ -1081,6 +1081,7 @@ const u8 gText_PokedexDiploma[] = _("PLAYER: {CLEAR 0x10}{COLOR RED}{SHADOW LIGH
 const u8 gJPText_GameFreak[] = _("{COLOR RED}{SHADOW LIGHT_RED}ゲ-ムフリ-ク"); // Unused
 const u8 gText_DiplomaEmpty[] = _("{COLOR RED}{SHADOW LIGHT_RED}"); // Unused
 const u8 gText_Hoenn[] = _("Hoenn");
+const u8 gText_KantoReg[] = _("Kanto");
 const u8 gText_OhABite[] = _("Oh! A bite!");
 const u8 gText_PokemonOnHook[] = _("A Pokémon's on the hook!{PAUSE_UNTIL_PRESS}");
 const u8 gText_NotEvenANibble[] = _("Not even a nibble…{PAUSE_UNTIL_PRESS}");
@@ -1395,7 +1396,7 @@ const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
 const u8 gText_SideQuestDesc_1[] = _("Show a Pikachu for a\nreward.");
-const u8 gText_SideQuestDesc_2[] = _("Get {STR_VAR_1}/5 KOs with Grass\nPokémon in battle.");
+const u8 gText_SideQuestDesc_2[] = _("Find a Berry Juice for a\nrare Grass Pokémon.");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
 const u8 gText_SideQuestDesc_4[] = _("Description 4");
 const u8 gText_SideQuestDesc_5[] = _("Description 5");
@@ -1427,7 +1428,7 @@ const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
 const u8 gText_SideQuestDoneDesc_1[] = _("Received Light Ball by showing\na Pikachu.");
-const u8 gText_SideQuestDoneDesc_2[] = _("Get 5 KOs with Grass\nPokémon in battle.");
+const u8 gText_SideQuestDoneDesc_2[] = _("Received a Grass Pokémon\nby giving a Berry Juice.");
 const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
 const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
 const u8 gText_SideQuestDoneDesc_5[] = _("Completed Quest 5");

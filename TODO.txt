@@ -3,7 +3,8 @@ TODO:
 Bug:
 - Text colors arent really consistent with FR right now (Blue for male, Red for girls)
 - Fade Screen messes with colors (like in FRU)
-- Breakthrough should have notification of which stat it upped
+- Breakthrough should have some sort of notification of which stat it upped (or it succeeded in general)
+- Pokedex Plus shows Hoenn, need to edit the tilemap..
 
 HIGHEST PRIORITY:
 - FRU additional event scripts

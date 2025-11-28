@@ -411,6 +411,14 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Clair;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ariana;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GoldItemBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MegaStone;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Birdkeeper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juggler;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Burglar;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Electrician;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tamer;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -808,9 +816,17 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CHUCK]                  = &gObjectEventGraphicsInfo_Chuck,
     [OBJ_EVENT_GFX_PRYCE]                   = &gObjectEventGraphicsInfo_Pryce,
     [OBJ_EVENT_GFX_CLAIR]                 = &gObjectEventGraphicsInfo_Clair,
+    [OBJ_EVENT_GFX_MEGA_STONE] =               &gObjectEventGraphicsInfo_MegaStone,
     [OBJ_EVENT_GFX_GOLD_ITEM_BALL] =           &gObjectEventGraphicsInfo_GoldItemBall,
     [OBJ_EVENT_GFX_ARCHER] =                    &gObjectEventGraphicsInfo_Archer,
     [OBJ_EVENT_GFX_ARIANA] =           &gObjectEventGraphicsInfo_Ariana,
+    [OBJ_EVENT_GFX_BIRDKEEPER] =           &gObjectEventGraphicsInfo_Birdkeeper,
+    [OBJ_EVENT_GFX_JUGGLER]   =           &gObjectEventGraphicsInfo_Juggler,
+    [OBJ_EVENT_GFX_BURGLAR]   =           &gObjectEventGraphicsInfo_Burglar,
+    [OBJ_EVENT_GFX_ELECTRICIAN] =         &gObjectEventGraphicsInfo_Electrician,
+    [OBJ_EVENT_GFX_POKEMANIAC] =          &gObjectEventGraphicsInfo_Pokemaniac,
+    [OBJ_EVENT_GFX_PSYCHIC_F] =           &gObjectEventGraphicsInfo_PsychicF,
+    [OBJ_EVENT_GFX_TAMER]     =           &gObjectEventGraphicsInfo_Tamer,
 
 #endif // IS_FRLG
 };

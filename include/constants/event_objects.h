@@ -427,6 +427,13 @@
 #define OBJ_EVENT_GFX_ARIANA                     396
 #define OBJ_EVENT_GFX_GOLD_ITEM_BALL             397
 #define OBJ_EVENT_GFX_MEGA_STONE                 398
+#define OBJ_EVENT_GFX_BIRDKEEPER                 399
+#define OBJ_EVENT_GFX_JUGGLER                    400
+#define OBJ_EVENT_GFX_BURGLAR                    401
+#define OBJ_EVENT_GFX_ELECTRICIAN                402
+#define OBJ_EVENT_GFX_POKEMANIAC                 403
+#define OBJ_EVENT_GFX_PSYCHIC_F                  404
+#define OBJ_EVENT_GFX_TAMER                      405
 // FRLG equivalents
 
 // #define OBJ_EVENT_GFX_MEW OBJ_EVENT_GFX_NINJA_BOY
@@ -437,7 +444,7 @@
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        399
+#define NUM_OBJ_EVENT_GFX                        406
 
 
 // These are dynamic object gfx ids.
@@ -627,8 +634,17 @@
 #define OBJ_EVENT_PAL_TAG_CHUCK                   0x1170
 #define OBJ_EVENT_PAL_TAG_PRYCE                   0x1171
 #define OBJ_EVENT_PAL_TAG_CLAIR                   0x1172
-#define OBJ_EVENT_PAL_TAG_ROCKET_2                   0x1173
-#define OBJ_EVENT_PAL_TAG_ROCKET_3                   0x1174
+#define OBJ_EVENT_PAL_TAG_ROCKET_2                0x1173
+#define OBJ_EVENT_PAL_TAG_ROCKET_3                0x1174
+#define OBJ_EVENT_PAL_TAG_BIRDKEEPER              0x1175
+#define OBJ_EVENT_PAL_TAG_JUGGLER                 0x1176
+#define OBJ_EVENT_PAL_TAG_BURGLAR                 0x1177
+#define OBJ_EVENT_PAL_TAG_ELECTRICIAN             0x1178
+#define OBJ_EVENT_PAL_TAG_POKEMANIAC              0x1179
+#define OBJ_EVENT_PAL_TAG_ROCKER                  0x117A
+#define OBJ_EVENT_PAL_TAG_PSYCHIC_M               0x117B
+#define OBJ_EVENT_PAL_TAG_TAMER                   0x117C
+
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001
