@@ -502,8 +502,8 @@
 #define FLAG_BEAT_PEWTER_FALKNER                                0x209
 #define FLAG_SYS_QUEST_MENU_GET                                 0x20A
 #define FLAG_BEAT_MT_MOON_ARCHER                                0x20B
-#define FLAG_0x20C               0x20C
-#define FLAG_0x20D               0x20D
+#define FLAG_BERRY_ENABLE_RC_EVENT                              0x20C
+#define FLAG_BERRY_COMPLETED_RC_EVENT               0x20D
 #define FLAG_0x20E               0x20E
 #define FLAG_0x20F               0x20F
 #define FLAG_0x210               0x210

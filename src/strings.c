@@ -1395,8 +1395,8 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_SideQuestName_30[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("Show a Pikachu for a\nreward.");
-const u8 gText_SideQuestDesc_2[] = _("Find a Berry Juice for a\nrare Grass Pokémon.");
+const u8 gText_SideQuestDesc_1[] = _("Show a Pikachu for a reward.");
+const u8 gText_SideQuestDesc_2[] = _("Find a Berry Juice for a rare Grass\nPokémon.");
 const u8 gText_SideQuestDesc_3[] = _("Description 3");
 const u8 gText_SideQuestDesc_4[] = _("Description 4");
 const u8 gText_SideQuestDesc_5[] = _("Description 5");
@@ -1427,8 +1427,8 @@ const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
-const u8 gText_SideQuestDoneDesc_1[] = _("Received Light Ball by showing\na Pikachu.");
-const u8 gText_SideQuestDoneDesc_2[] = _("Received a Grass Pokémon\nby giving a Berry Juice.");
+const u8 gText_SideQuestDoneDesc_1[] = _("Received Light Ball by showing a\nPikachu.");
+const u8 gText_SideQuestDoneDesc_2[] = _("Received a Grass Pokémon by giving\na Berry Juice.");
 const u8 gText_SideQuestDoneDesc_3[] = _("Completed Quest 3");
 const u8 gText_SideQuestDoneDesc_4[] = _("Completed Quest 4");
 const u8 gText_SideQuestDoneDesc_5[] = _("Completed Quest 5");

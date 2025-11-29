@@ -576,10 +576,10 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      gText_SideQuestDesc_2,
 	      gText_SideQuestDoneDesc_2,
 	      gText_SideQuestMap2,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_CAMPER_FRLG,
 	      OBJECT,
 	      NULL, //removed sSubQuests1
-	      QUEST_1_SUB_COUNT
+	      0 //removed QUEST_1_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_3,

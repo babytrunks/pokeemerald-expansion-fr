@@ -42,7 +42,7 @@ ViridianCity_School_EventScript_GiveMon::
 	setflag FLAG_RARE_POKEMON_SCREEN
 	setflag FLAG_BEAT_VIRIDIAN_CITY_TEACHER
 	setflag FLAG_3_PERFECT_IVS
-	setvar VAR_RARE_POKEMON_COUNTER 0
+	setvar VAR_RARE_POKEMON_COUNTER, 0
 	factory_generaterentalmons
 	factory_rentmons
 	waitstate
@@ -255,4 +255,3 @@ ViridianCity_School_Text_ExplainParalysis::
     .string "prevent the Pokémon from moving.\p"
     .string "Paralysis remains after battles.\n"
     .string "Use PARLYZ HEAL for treatment.$"
-
