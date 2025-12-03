@@ -183,14 +183,14 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 
     [FRONTIER_MON_ODDISH] = {
     .species = SPECIES_ODDISH,
-    .moves = {MOVE_ABSORB, MOVE_GROWTH, MOVE_ACID, MOVE_SWEET_SCENT},
+    .moves = {MOVE_ABSORB, MOVE_MEGA_DRAIN, MOVE_ACID, MOVE_SWEET_SCENT},
     .heldItem = ITEM_LEAF_STONE,
     .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_BELLSPROUT] = {
         .species = SPECIES_BELLSPROUT,
-        .moves = {MOVE_VINE_WHIP, MOVE_GROWTH, MOVE_WRAP, MOVE_SLEEP_POWDER},
+        .moves = {MOVE_VINE_WHIP, MOVE_ACID, MOVE_WRAP, MOVE_SLEEP_POWDER},
         .heldItem = ITEM_LEAF_STONE,
         .nature = NATURE_DOCILE
     },
@@ -204,7 +204,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 
     [FRONTIER_MON_BUDEW] = {
         .species = SPECIES_BUDEW,
-        .moves = {MOVE_MEGA_DRAIN, MOVE_STUN_SPORE, MOVE_WORRY_SEED},
+        .moves = {MOVE_MEGA_DRAIN, MOVE_STUN_SPORE, MOVE_WORRY_SEED, MOVE_NONE},
         .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
@@ -246,7 +246,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 
     [FRONTIER_MON_APPLIN] = {
         .species = SPECIES_APPLIN,
-        .moves = {MOVE_ASTONISH, MOVE_WITHDRAW},
+        .moves = {MOVE_ASTONISH, MOVE_WITHDRAW, MOVE_NONE, MOVE_NONE},
         .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
