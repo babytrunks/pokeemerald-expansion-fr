@@ -41,20 +41,19 @@ Route24_EventScript_RocketTrigger::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	msgbox Route24_Text_JustEarnedFabulousPrize
-	checkitemspace ITEM_NUGGET
-	goto_if_eq VAR_RESULT, FALSE, Route24_EventScript_NoRoomForNuggetTrigger
 	call Route24_EventScript_BattleRocket
 	releaseall
 	end
 
 Route24_EventScript_BattleRocket::
-	giveitem_msg Route24_Text_ReceivedNuggetFromMysteryTrainer, ITEM_NUGGET
 	message Route24_Text_JoinTeamRocket
 	waitmessage
 	playbgm MUS_RG_ENCOUNTER_ROCKET, 0
 	waitbuttonpress
 	setvar VAR_LAST_TALKED, LOCALID_ROUTE24_ROCKET
 	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_6, Route24_Text_RocketDefeat
+	msgbox Route24_Text_FineHeresNugget
+	giveitem ITEM_NUGGET
 	msgbox Route24_Text_YoudBecomeTopRocketLeader
 	setvar VAR_MAP_SCENE_ROUTE24, 1
 	return
@@ -98,19 +97,11 @@ Route24_Movement_WalkDown::
 
 Route24_Text_JustEarnedFabulousPrize::
     .string "Congratulations! You beat our\n"
-    .string "five contest TRAINERS!\p"
-    .string "You just earned a fabulous prize!$"
-
-Route24_Text_ReceivedNuggetFromMysteryTrainer::
-    .string "{PLAYER} received a NUGGET\n"
-    .string "from the mystery TRAINER!$"
-
-Route24_Text_YouDontHaveAnyRoom::
-    .string "You don't have any room!$"
+    .string "five contest tainers!$"
 
 Route24_Text_JoinTeamRocket::
     .string "By the way, how would you like to\n"
-    .string "join TEAM ROCKET?\p"
+    .string "join Team Rocket?\p"
     .string "We're a group of professional\n"
     .string "criminals specializing in Pokémon!\p"
     .string "Want to join?\p"
@@ -121,13 +112,16 @@ Route24_Text_JoinTeamRocket::
     .string "I'll make you an offer you can't\n"
     .string "refuse!$"
 
+Route24_Text_FineHeresNugget::
+    .string "Fine, here's your Nugget.$"
+
 Route24_Text_RocketDefeat::
     .string "Arrgh!\n"
     .string "You are good!$"
 
 Route24_Text_YoudBecomeTopRocketLeader::
     .string "With your ability, you'd become\n"
-    .string "a top leader in TEAM ROCKET.\p"
+    .string "a top leader in Team Rocket.\p"
     .string "Come on, think of the opportunity!\n"
     .string "Don't let this chance go to waste.$"
 
@@ -184,9 +178,9 @@ Route24_Text_AliPostBattle::
     .string "I did my best. I have no regrets!$"
 
 Route24_Text_CaleIntro::
-    .string "People call this the NUGGET\n"
-    .string "BRIDGE!\p"
-    .string "Beat us five TRAINERS and win\n"
+    .string "People call this the Nugget\n"
+    .string "Bridge!\p"
+    .string "Beat us five Trainers and win\n"
     .string "a fabulous prize!\p"
     .string "Think you got what it takes?$"
 
