@@ -25773,6 +25773,7 @@ static const u16 sZekromTeachableLearnset[] = {
     MOVE_DOUBLE_EDGE,
     MOVE_DOUBLE_TEAM,
     MOVE_DRAGON_CLAW,
+    MOVE_EARTHQUAKE,
     MOVE_ENDURE,
     MOVE_FACADE,
     MOVE_FLASH,

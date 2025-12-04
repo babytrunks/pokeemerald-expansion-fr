@@ -3692,19 +3692,19 @@ AI: Smart Trainer
 
 Kadabra
 Level: 31
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Slowpoke
 Level: 31
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Mr Mime
 Level: 31
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Kadabra
 Level: 31
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PSYCHIC_TYRON ===
 Name: Tyron
@@ -3717,11 +3717,11 @@ AI: Smart Trainer
 
 Mr Mime
 Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Kadabra
 Level: 34
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PSYCHIC_CAMERON ===
 Name: Cameron
@@ -3734,15 +3734,15 @@ AI: Smart Trainer
 
 Slowpoke
 Level: 33
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Slowpoke
 Level: 33
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Slowbro
 Level: 33
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PSYCHIC_PRESTON ===
 Name: Preston
@@ -3755,7 +3755,7 @@ AI: Smart Trainer
 
 Slowbro
 Level: 38
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ROCKER_RANDALL ===
 Name: Randall
@@ -4641,15 +4641,15 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Try To Faint / Check Viability
 
-Pidgey
+Starly
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 - Sand Attack
 
 Squirtle
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 - Tail Whip
 
@@ -4662,15 +4662,15 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Try To Faint / Check Viability
 
-Pidgey
+Starly
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 - Sand Attack
 
 Bulbasaur
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 - Growl
 
@@ -4683,15 +4683,15 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Try To Faint / Check Viability
 
-Pidgey
+Starly
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 - Sand Attack
 
 Charmander
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Scratch
 - Growl
 
@@ -7668,15 +7668,15 @@ AI: Smart Trainer / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Kadabra
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Wartortle
 Level: 20
@@ -7693,15 +7693,15 @@ AI: Smart Trainer / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Kadabra
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Ivysaur
 Level: 20
@@ -7718,15 +7718,15 @@ AI: Smart Trainer / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Kadabra
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Charmeleon
 Level: 20
@@ -8949,11 +8949,11 @@ AI: Smart Trainer
 
 Hitmonchan @ Black Belt
 Level: 29
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Hitmonlee @ Black Belt
 Level: 29
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNG_COUPLE_LEA_JED ===
 Name: LEA & JED
@@ -9333,11 +9333,11 @@ AI: Smart Trainer
 
 Mankey @ Black Belt
 Level: 37
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Primeape @ Black Belt
 Level: 37
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TUBER_AMIRA ===
 Name: AMIRA
@@ -9497,7 +9497,7 @@ AI: Smart Trainer
 
 Smeargle
 Level: 50
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dynamic Punch
 - Dizzy Punch
 - Focus Punch
@@ -10055,11 +10055,11 @@ AI: Smart Trainer
 
 Hitmonlee @ Black Belt
 Level: 38
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Hitmonchan @ Black Belt
 Level: 38
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BLACK_BELT_SHEA ===
 Name: SHEA
@@ -10152,11 +10152,11 @@ AI: Smart Trainer
 
 Machoke @ Black Belt
 Level: 39
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Primeape @ Black Belt
 Level: 39
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_AROMA_LADY_VIOLET ===
 Name: VIOLET
@@ -10245,7 +10245,7 @@ AI: Smart Trainer
 
 Smeargle
 Level: 50
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fly
 - Dig
 - Dive
@@ -10262,7 +10262,7 @@ AI: Smart Trainer
 
 Smeargle
 Level: 50
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Cross Chop
 - Megahorn
 - Double Edge
@@ -10384,15 +10384,15 @@ AI: Smart Trainer
 
 Ekans
 Level: 48
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Gloom
 Level: 48
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Gloom
 Level: 48
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_MILO ===
 Name: MILO
@@ -10786,15 +10786,15 @@ AI: Smart Trainer
 
 Primeape @ Black Belt
 Level: 48
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Hitmontop @ Black Belt
 Level: 48
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Machoke @ Black Belt
 Level: 48
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CRUSH_GIRL_JOCELYN ===
 Name: JOCELYN
@@ -10807,11 +10807,11 @@ AI: Smart Trainer
 
 Hitmonchan @ Black Belt
 Level: 38
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Hitmonchan @ Black Belt
 Level: 38
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TAMER_EVAN ===
 Name: EVAN
@@ -11127,7 +11127,7 @@ AI: Smart Trainer
 
 Smeargle
 Level: 50
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fake Out
 - Extreme Speed
 - Protect
@@ -12948,39 +12948,137 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Calm Mind
 
 
-=== TRAINER_BLACK_BELT_HUGH_3 ===
-Name: HUGH
-Class: Black Belt Frlg
-Pic: Black Belt Frlg
+=== TRAINER_BUGSY ===
+Name: Bugsy
+Class: Leader
+Pic: Leader Bugsy
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer
+Mugshot: Green
+Dynamic Level Ratio: 80
 
-Machoke @ Black Belt
-Level: 55
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Lokix @ Silver Powder
+Nature: Bashful
+Ability: Tinted Lens
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- First Impression
+- Knock Off
+- U-turn
+- Leech Life
 
-Machamp @ Black Belt
-Level: 55
-IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
+Ledian @ Focus Sash
+Nature: Bashful
+Ability: Iron Fist
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Drain Punch
+- Mach Punch
+- Ice Punch
+- Thunder Punch
 
-=== TRAINER_CRUSH_KIN_MIK_KIA_2 ===
-Name: MIK & KIA
-Class: Crush Kin Frlg
-Pic: Crush Kin Frlg
+Scyther @ Charti Berry
+Nature: Bashful
+Ability: Technician
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bug Bite
+- Swords Dance
+- Rock Smash
+- Aerial Ace
+
+Scizor @ Sitrus Berry
+Nature: Bashful
+Ability: Technician
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bullet Punch
+- U-turn
+- Rock Smash
+- Aerial Ace
+
+=== TRAINER_BUGSY_POST_SURGE ===
+Name: Bugsy
+Class: Leader
+Pic: Leader Bugsy
 Gender: Male
 Music: Intense
-Double Battle: Yes
+Double Battle: No
 AI: Smart Trainer
+Mugshot: Green
+Dynamic Level Ratio: 80
 
-Machoke @ Black Belt
-Level: 51
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Kleavor @ Focus Sash
+Nature: Jolly
+Ability: Sharpness
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+- Stone Axe
+- Night Slash
+- U-turn
+- X-Scissor
 
-Primeape @ Black Belt
-Level: 51
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
+Scizor @ Scizorite
+Nature: Careful
+Ability: Technician
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+- Bullet Punch
+- Dual Wingbeat
+- U-turn
+- Rock Smash
+
+Scyther @ Eviolite
+Nature: Adamant
+Ability: Technician
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+- Swords Dance
+- Dual Wingbeat
+- Bug Bite
+- Rock Smash
+
+Lokix @ Silver Powder
+Nature: Jolly
+Ability: Tinted Lens
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+- Sucker Punch
+- First Impression
+- Knock Off
+- U-turn
+
+Araquanid @ Leftovers
+Nature: Impish
+Ability: Water Bubble
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Atk / 252 Def / 0 SpA / 0 SpD / 0 Spe
+- X-Scissor
+- Liquidation
+- Protect
+- Toxic
+
+Vikavolt @ Magnet
+Nature: Modest
+Ability: Levitate
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 0 Spe
+- Thunder
+- Bug Buzz
+- Volt Switch
+- Energy Ball
 
 === TRAINER_CRUSH_KIN_MIK_KIA_3 ===
 Name: MIK & KIA
@@ -14126,8 +14224,8 @@ AI: Smart Trainer
 
 Weezing
 Level: 39
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Muk
 Level: 39
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe

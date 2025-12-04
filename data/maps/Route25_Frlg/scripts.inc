@@ -9,6 +9,74 @@ Route25_EventScript_Man::
 	msgbox Route25_Text_AreYouHereAlone, MSGBOX_NPC
 	end
 
+Route25_EventScript_Bugsy::
+    lockall
+    @ checkflag 0x10C2                          @ ??? some prior-save / tutorial flag
+    @ call_if_eq VAR_RESULT, 0, SaveGame        @ if 0x0 _call SaveGame
+    setspeaker SP_NAME_UNKNOWN
+    msgbox gText_bugsy_1      @ 0x4
+    applymovement LOCALID_BUGSY, Movement_Bugsy_Look
+    waitmovement 0
+    setspeaker SP_NAME_BUGSY
+    msgbox gText_bugsy_2
+    setspeaker SP_NAME_BUGSY
+    msgbox gText_bugsy_3, MSGBOX_YESNO        @ 0x5 -> yes/no box; sets VAR_RESULT
+    goto_if_eq VAR_RESULT, 1, EventScript_Bugsy_Battle
+    setspeaker SP_NAME_BUGSY
+    msgbox gText_bugsy_4, MSGBOX_DEFAULT
+    release
+    end
+
+
+EventScript_Bugsy_Battle::        
+    setspeaker SP_NAME_BUGSY      
+    msgbox gText_bugsy_5, MSGBOX_DEFAULT
+    special HealPlayerParty                               
+    goto CheckBadges                          
+
+
+NormalBugsy:
+    trainerbattle_no_intro TRAINER_BUGSY, gText_bugsy_Defeat  
+    goto PostBugsy
+
+
+PostBugsy:
+    setweather 0x0                           
+    doweather
+    setspeaker SP_NAME_BUGSY
+    msgbox gText_bugsy_6, MSGBOX_DEFAULT
+    setflag FLAG_RARE_POKEMON_SCREEN
+	setflag FLAG_3_PERFECT_IVS 
+    setvar VAR_RARE_POKEMON_COUNTER, 2
+    factory_generaterentalmons
+	factory_rentmons
+	waitstate
+	clearflag FLAG_RARE_POKEMON_SCREEN
+	clearflag FLAG_3_PERFECT_IVS
+    setspeaker SP_NAME_BUGSY
+    msgbox gText_bugsy_7, MSGBOX_DEFAULT
+    fadescreen FADE_TO_BLACK
+    removeobject LOCALID_BUGSY                
+    playse SE_PIN                                @ ??? map to proper SE_* constant
+    waitse
+    fadescreen FADE_FROM_BLACK
+    setflag FLAG_DEFEATED_BUGSY                           
+    setweather 0x3                            
+    doweather
+
+    release
+    end
+
+
+CheckBadges:
+    goto_if_unset FLAG_BADGE03_GET, NormalBugsy
+    trainerbattle_no_intro TRAINER_BUGSY_POST_SURGE, gText_bugsy_Defeat  
+    goto PostBugsy
+
+Movement_Bugsy_Look:
+    face_player                       
+    step_end
+
 Route25_Text_JoeyIntro::
     .string "Local TRAINERS come here to\n"
     .string "practice.$"
@@ -128,3 +196,52 @@ Route25_Text_AreYouHereAlone::
     .string "If you're out at CERULEAN's cape…\n"
     .string "Well, it should be as a couple.$"
 
+gText_bugsy_1::
+  .string "{COLOR BLUE}I better keep my ass in this rainy\n"
+  .string "weather!!! or im FINISHED!!$"
+
+
+gText_bugsy_2::
+  .string "{COLOR BLUE}Oh, didn't see you there. I hope you\n"
+  .string "can disregard what I just said…\p"
+  .string "The name's Bugsy.\p"
+  .string "…Oh? You've met my colleague\n"
+  .string "Falkner too?\p"
+  .string "Yeah, the Johto gym leaders decided\n"
+  .string "to pay Kanto a visit, as there have\l"
+  .string "been talks of a lot of new cutting-\l"
+  .string "edge technology being researched here.$"
+
+
+gText_bugsy_3::
+  .string "{COLOR BLUE}Well, since you're here, I'm assuming\n"
+  .string "you want a battle?$"
+
+
+gText_bugsy_4::
+  .string "{COLOR BLUE}Suit yourself. I'll be here in case\n"
+  .string "you change your mind.$"
+
+
+gText_bugsy_5::
+  .string "{COLOR BLUE}Don't consider me weak just because I\n"
+  .string "use Bug types, I'll show you how\l"
+  .string "fearsome they can be!$"
+
+
+gText_bugsy_Defeat::
+  .string "Gah… It's just not cutting it!$"
+
+gText_bugsy_6::
+  .string "{COLOR BLUE}Frankly, I'm a bit disappointed in\n"
+  .string "myself.\p"
+  .string "I'm struggling to win even in the\n"
+  .string "rain. It's hard to stay competitive\l"
+  .string "specializing in Bug-types.\p"
+  .string "Well, you can have a selection of\n"
+  .string "a rare Bug-type. Maybe you'll go fur-\l"
+  .string "ther with them than me.$"
+
+gText_bugsy_7::
+  .string "{COLOR BLUE}Anywho, it's nice meeting you, but I'll\n"
+  .string "be taking my leave.$"

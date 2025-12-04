@@ -78,7 +78,7 @@ static void FillTentTrainerParty_(u16 trainerId, u8 firstMonId, u8 monCount);
 static void FillFactoryFrontierTrainerParty(u16 trainerId, u8 firstMonId);
 static void FillFactoryTentTrainerParty(u16 trainerId, u8 firstMonId);
 static u8 GetFrontierTrainerFixedIvs(u16 trainerId);
-static void RerandomizeIVs(struct Pokemon *dst);
+static void RerandomizeIVs(struct Pokemon *dst, u8 numPerfectIVs);
 #if FREE_BATTLE_TOWER_E_READER == FALSE
 static void SetEReaderTrainerChecksum(struct BattleTowerEReaderTrainer *ereaderTrainer);
 #endif //FREE_BATTLE_TOWER_E_READER
@@ -1632,7 +1632,6 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
             case 6:
                 break;
         }
-        RerandomizeIVs(dst);
     }
     else if (fmon->species == SPECIES_PIKACHU) 
     { //randomize pikachu
@@ -1672,6 +1671,8 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     //     }
     // } 
 
+    if (fmon->numPerfectIVs > 0) 
+        RerandomizeIVs(dst, fmon->numPerfectIVs);
     SetMonData(dst, MON_DATA_HELD_ITEM, &item);
 
     // try to set ability. Otherwise, random of non-hidden as per vanilla
@@ -1732,28 +1733,65 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     CalculateMonStats(dst);
 }
 
-static void RerandomizeIVs(struct Pokemon *dst)
+static void RerandomizeIVs(struct Pokemon *dst, u8 numPerfectIVs)
 {
-    u32 iv;
     u32 ivRandom = Random32();
     u16 value = (u16)ivRandom;
 
-    iv = value & MAX_IV_MASK;
-    SetMonData(dst, MON_DATA_HP_IV, &iv);
-    iv = (value & (MAX_IV_MASK << 5)) >> 5;
-    SetMonData(dst, MON_DATA_ATK_IV, &iv);
-    iv = (value & (MAX_IV_MASK << 10)) >> 10;
-    SetMonData(dst, MON_DATA_DEF_IV, &iv);
+    u8 hpIv = value & MAX_IV_MASK;
+    u8 atkIv = (value & (MAX_IV_MASK << 5)) >> 5;
+
+    u8 defIv = (value & (MAX_IV_MASK << 10)) >> 10;
+
 
     value = (u16)(ivRandom >> 16);
 
-    iv = value & MAX_IV_MASK;
-    SetMonData(dst, MON_DATA_SPEED_IV, &iv);
-    iv = (value & (MAX_IV_MASK << 5)) >> 5;
-    SetMonData(dst, MON_DATA_SPATK_IV, &iv);
-    iv = (value & (MAX_IV_MASK << 10)) >> 10;
-    SetMonData(dst, MON_DATA_SPDEF_IV, &iv);
+    u8 speedIv = value & MAX_IV_MASK;
+
+    u8 spAtkIv = (value & (MAX_IV_MASK << 5)) >> 5;
+
+    u8 spDefIv = (value & (MAX_IV_MASK << 10)) >> 10;
+
+
+    if (numPerfectIVs != 0)
+    {
+        u32 i;
+        enum Stat availableIVs[NUM_STATS];
+        enum Stat selectedIvs[NUM_STATS];
+        // Initialize a list of IV indices.
+        for (i = 0; i < NUM_STATS; i++)
+            availableIVs[i] = i;
+
+        // Select the IVs that will be perfected.
+        for (i = 0; i < NUM_STATS && i < numPerfectIVs; i++)
+        {
+            u8 index = Random() % (NUM_STATS - i);
+            selectedIvs[i] = availableIVs[index];
+            RemoveIVIndexFromList(availableIVs, index);
+        }
+        for (i = 0; i < NUM_STATS && i < numPerfectIVs; i++)
+        {
+            switch (selectedIvs[i])
+            {
+            case STAT_HP:    hpIv    = MAX_PER_STAT_IVS; break;
+            case STAT_ATK:   atkIv   = MAX_PER_STAT_IVS; break;
+            case STAT_DEF:   defIv   = MAX_PER_STAT_IVS; break;
+            case STAT_SPEED: speedIv = MAX_PER_STAT_IVS; break;
+            case STAT_SPATK: spAtkIv = MAX_PER_STAT_IVS; break;
+            case STAT_SPDEF: spDefIv = MAX_PER_STAT_IVS; break;
+            default: break;
+            }
+        }
+    }
+    SetMonData(dst, MON_DATA_HP_IV, &hpIv);
+    SetMonData(dst, MON_DATA_ATK_IV, &atkIv);
+    SetMonData(dst, MON_DATA_DEF_IV, &defIv);
+    SetMonData(dst, MON_DATA_SPEED_IV, &speedIv);
+    SetMonData(dst, MON_DATA_SPATK_IV, &spAtkIv);
+    SetMonData(dst, MON_DATA_SPDEF_IV, &spDefIv);
 }
+
+
 static void FillTrainerParty(u16 trainerId, u8 firstMonId, u8 monCount)
 {
     s32 i, j;

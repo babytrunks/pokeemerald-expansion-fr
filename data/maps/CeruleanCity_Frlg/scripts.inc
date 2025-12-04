@@ -40,22 +40,26 @@ CeruleanCity_EventScript_Rival::
 	addobject LOCALID_CERULEAN_RIVAL
 	applymovement LOCALID_CERULEAN_RIVAL, CeruleanCity_Movement_RivalEnter
 	waitmovement 0
+	setspeaker SP_NAME_RIVAL
 	msgbox CeruleanCity_Text_RivalIntro
 	setvar VAR_LAST_TALKED, LOCALID_CERULEAN_RIVAL
 	call_if_eq VAR_STARTER_MON, 2, CeruleanCity_EventScript_RivalSquirtle
 	call_if_eq VAR_STARTER_MON, 1, CeruleanCity_EventScript_RivalBulbasaur
 	call_if_eq VAR_STARTER_MON, 0, CeruleanCity_EventScript_RivalCharmander
 	famechecker FAMECHECKER_BILL, 0
+	setspeaker SP_NAME_RIVAL
 	msgbox CeruleanCity_Text_RivalPostBattle
 	closemessage
 	playbgm MUS_RG_RIVAL_EXIT, 0
 	call_if_eq VAR_TEMP_1, 0, CeruleanCity_EventScript_RivalStartExit
 	call_if_eq VAR_TEMP_1, 1, CeruleanCity_EventScript_RivalStartExit
 	call_if_eq VAR_TEMP_1, 2, CeruleanCity_EventScript_RivalStartExitRight
+	setspeaker SP_NAME_RIVAL
 	msgbox CeruleanCity_Text_OhRightLittlePresentAsFavor
 	setvar VAR_MAP_SCENE_CERULEAN_CITY_RIVAL, 1
 	setflag FLAG_GOT_FAME_CHECKER
 	giveitem ITEM_FAME_CHECKER
+	setspeaker SP_NAME_RIVAL
 	msgbox CeruleanCity_Text_ExplainFameCheckerSmellYa
 	closemessage
 	applymovement LOCALID_CERULEAN_RIVAL, CeruleanCity_Movement_RivalExit

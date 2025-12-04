@@ -6,14 +6,7 @@ Route24_EventScript_Rocket::
 	faceplayer
 	goto_if_eq VAR_MAP_SCENE_ROUTE24, 1, Route24_EventScript_RocketPostBattle
 	msgbox Route24_Text_JustEarnedFabulousPrize
-	checkitemspace ITEM_NUGGET
-	goto_if_eq VAR_RESULT, FALSE, Route24_EventScript_NoRoomForNugget
 	call Route24_EventScript_BattleRocket
-	release
-	end
-
-Route24_EventScript_NoRoomForNugget::
-	msgbox Route24_Text_YouDontHaveAnyRoom
 	release
 	end
 
@@ -67,15 +60,6 @@ Route24_EventScript_RocketMotionToPlayer::
 	applymovement LOCALID_ROUTE24_ROCKET, Common_Movement_WalkInPlaceFasterLeft
 	waitmovement 0
 	return
-
-Route24_EventScript_NoRoomForNuggetTrigger::
-	msgbox Route24_Text_YouDontHaveAnyRoom
-	closemessage
-	applymovement LOCALID_PLAYER, Route24_Movement_WalkDown
-	waitmovement 0
-	call_if_eq VAR_TEMP_1, 0, Route24_EventScript_RocketWalkBackToPos
-	release
-	end
 
 Route24_EventScript_RocketWalkBackToPos::
 	applymovement LOCALID_ROUTE24_ROCKET, Route24_Movement_RocketWalkBackToPos

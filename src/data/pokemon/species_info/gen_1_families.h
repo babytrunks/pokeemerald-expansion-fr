@@ -3050,7 +3050,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
+        .levelUpLearnset = sPikachuRockstarLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
     },
@@ -3102,7 +3102,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
+        .levelUpLearnset = sPikachuBelleLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
     },
@@ -3154,7 +3154,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
+        .levelUpLearnset = sPikachuPopstarLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
     },
@@ -3205,7 +3205,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
+        .levelUpLearnset = sPikachuPhdLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
     },
@@ -3256,7 +3256,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
+        .levelUpLearnset = sPikachuLibreLevelUpLearnset,
         .teachableLearnset = sPikachuTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
     },
