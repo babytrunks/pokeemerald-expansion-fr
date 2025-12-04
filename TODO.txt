@@ -18,8 +18,6 @@ HIGHEST PRIORITY:
 
 MEDIUM PRIORITY:
 - Convert rest of trainers into trainers.party format (babytrunks has script for this)
-- Implement dynamic trainer levelling 
-    - https://github.com/GraionDilach/spinarakgreen/wiki/Dynamic-level-scaling-(pokeemerald%E2%80%90expansion)
 - Trainer battle sprites, new object events
 - FRU Exclusive Megas, Regional forms
 - FRU Exclusive Items/Functionality
@@ -56,6 +54,10 @@ ALREADY DONE:
     - Not sure if item or Pokemon yet
     - https://github.com/rh-hideout/pokeemerald-expansion/compare/master...agsmgmaster64:worldlinkdeluxe-ame:gacha-expansion
     - (this was like 1.1% of space but... fugg it)
+- Implement dynamic trainer levelling 
+    - https://github.com/GraionDilach/spinarakgreen/wiki/Dynamic-level-scaling-(pokeemerald%E2%80%90expansion)
+
+
 Stuff going to be out of scope:
 Raid battles (probably replace with hidden grottos)
 

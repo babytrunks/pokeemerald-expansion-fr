@@ -7671,10 +7671,6 @@ BattleScript_BerryFocusEnergy::
 	removeitem BS_SCRIPTING
 	return
 
-BattleScript_BerryFocusEnergyEnd2::
-	call BattleScript_BerryFocusEnergyRet
-	end2
-
 BattleScript_EffectMistAttack::
 	setmist
 	playanimation BS_ATTACKER, B_ANIM_MIST, sB_ANIM_ARG1

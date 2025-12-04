@@ -65,14 +65,40 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 70
 
-Sandshrew
-Level: 14
+Plusle @ Shuca Berry
+Nature: Timid
+Ability: Plus
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Grass Knot
+- Electroweb
+- Signal Beam
+- Charge Beam
 
-Ekans
-Level: 14
+Electrike @ Magnet
+Nature: Timid
+Ability: Minus
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Shock Wave
+- Round
+- Flame Burst
+- Signal Beam
+
+Snover @ Occa Berry
+Nature: Bashful
+Ability: Soundproof
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ice Shard
+- Mega Drain
+- Icy Wind
+- Water Pulse
 
 === TRAINER_YOUNGSTER_JOEY ===
 Name: JOEY
@@ -377,29 +403,47 @@ Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_CALE ===
-Name: CALE
+Name: Cale
 Class: Bug Catcher Frlg
 Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer
+Dynamic Level Ratio: 70
 
-Caterpie
-Level: 10
+Vivillon @ Charti Berry
+Nature: Bashful
+Ability: Friend Guard
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Struggle Bug
+- Electroweb
+- Air Cutter
+- Draining Kiss
 
-Weedle
-Level: 10
+Butterfree @ Sitrus Berry
+Nature: Timid
+Ability: Compound Eyes
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Sleep Powder
+- Ominous Wind
+- Air Cutter
+- Mega Drain
 
-Metapod
-Level: 10
+Wormadam-Sandy @ Rocky Helmet
+Nature: Careful
+Ability: Overcoat
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Kakuna
-Level: 10
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bulldoze
+- Bug Bite
+- Rock Tomb
+- Sucker Punch
 
 === TRAINER_BUG_CATCHER_KEIGO ===
 Name: KEIGO
@@ -572,42 +616,90 @@ Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_RELI ===
-Name: RELI
+Name: Reli
 Class: Lass Frlg
 Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 70
 
-Nidoran M
-Level: 16
+Greedent @ Sitrus Berry
+Nature: Bashful
+Ability: Cheek Pouch
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Stomping Tantrum
+- Facade
+- Seed Bomb
+- Thunder Fang
 
-Nidoran F
-Level: 16
+Togetic @ Sitrus Berry
+Nature: Bashful
+Ability: Serene Grace
+Level: 17
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Air Slash
+- Thunder Wave
+- Draining Kiss
+- Magical Leaf
+
+Clamperl @ Deep Sea Tooth
+Nature: Bashful
+Ability: Battle Armor
+Level: 18
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Pulse
+- Icy Wind
+- Rest
+- Sleep Talk
 
 === TRAINER_LASS_ALI ===
-Name: ALI
+Name: Ali
 Class: Lass Frlg
 Pic: Lass Frlg
 Gender: Male
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer
+Dynamic Level Ratio: 70
 
-Pidgey
-Level: 12
+Jigglypuff @ Eviolite
+Nature: Bold
+Ability: Friend Guard
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Round
+- Draining Kiss
+- Incinerate
+- Icy Wind
 
-Oddish
-Level: 12
+Amaura @ Chople Berry
+Nature: Modest
+Ability: Refrigerate
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Round
+- Ancient Power
+- Water Pulse
+- Mud Shot
 
-Bellsprout
-Level: 12
+Brionne @ Sitrus Berry
+Nature: Bashful
+Ability: Liquid Voice
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Round
+- Draining Kiss
+- Icy Wind
+- Aqua Jet
 
 === TRAINER_LASS_HALEY ===
 Name: HALEY
@@ -958,17 +1050,47 @@ Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_ETHAN ===
-Name: ETHAN
+Name: Ethan
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 70
 
-Mankey
+Mabosstiff @ Black Glasses
+Nature: Bashful
+Ability: Intimidate
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Trailblaze
+- Bite
+- Fire Fang
+- Ice Fang
+
+Salandit @ Black Sludge
+Nature: Timid
+Ability: Corrosion
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Toxic
+- Substitute
+- Protect
+- Incinerate
+
+Misdreavus @ Eviolite
+Nature: Bashful
+Ability: Levitate
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Hex
+- Will-O-Wisp
+- Icy Wind
+- Shock Wave
 
 === TRAINER_CAMPER_RICKY ===
 Name: RICKY
@@ -4581,11 +4703,12 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 80
 
 Kirlia @ Sitrus Berry
-Nature: Modest
+Nature: Bashful
 Ability: Trace
-Level: 23
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -4593,9 +4716,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Magical Leaf
 
 Staravia @ Muscle Band
-Nature: Adamant
+Nature: Bashful
 Ability: Intimidate
-Level: 22
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
@@ -4604,9 +4727,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sleep Talk
 
 Pawniard @ Chople Berry
-Nature: Adamant
+Nature: Bashful
 Ability: Defiant
-Level: 22
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
@@ -4615,9 +4738,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Low Sweep
 
 Wartortle @ Eviolite
-Nature: Modest
+Nature: Bashful
 Ability: Torrent
-Level: 23
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
@@ -4633,11 +4756,12 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 80
 
 Kirlia @ Sitrus Berry
-Nature: Modest
+Nature: Bashful
 Ability: Trace
-Level: 22
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -4645,9 +4769,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Magical Leaf
 
 Staravia @ Muscle Band
-Nature: Adamant
+Nature: Bashful
 Ability: Intimidate
-Level: 23
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
@@ -4656,9 +4780,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sleep Talk
 
 Pawniard @ Chople Berry
-Nature: Adamant
+Nature: Bashful
 Ability: Defiant
-Level: 22
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
@@ -4667,9 +4791,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Low Sweep
 
 Ivysaur @ Eviolite
-Nature: Modest
+Nature: Bashful
 Ability: Overgrow
-Level: 23
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leech Seed
@@ -4685,11 +4809,12 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 80
 
 Kirlia @ Sitrus Berry
-Nature: Modest
+Nature: Bashful
 Ability: Trace
-Level: 23
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -4697,9 +4822,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Magical Leaf
 
 Staravia @ Muscle Band
-Nature: Adamant
+Nature: Bashful
 Ability: Intimidate
-Level: 22
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
@@ -4708,9 +4833,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sleep Talk
 
 Pawniard @ Chople Berry
-Nature: Adamant
+Nature: Bashful
 Ability: Defiant
-Level: 22
+Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
@@ -4719,9 +4844,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Low Sweep
 
 Charmeleon @ Eviolite
-Nature: Rash
+Nature: Bashful
 Ability: Blaze
-Level: 23
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Burst
