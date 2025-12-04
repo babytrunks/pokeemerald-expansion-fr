@@ -1398,6 +1398,7 @@ static void CB2_EndTrainerBattle(void)
     HandleBattleVariantEndParty();
     RestoreNonConsumableItems();
 
+    gIsDebugBattle = FALSE;
     if (FollowerNPCIsBattlePartner())
     {
         RestorePartyAfterFollowerNPCBattle();
