@@ -2096,8 +2096,8 @@
 #define FLAG_TUTOR_THUNDER_WAVE                          0
 #define FLAG_TUTOR_ROCK_SLIDE                            0
 #define FLAG_TUTOR_EXPLOSION                             0
-#define FLAG_TUTOR_MEGA_PUNCH                            0
-#define FLAG_TUTOR_MEGA_KICK                             0
+#define FLAG_GIVE_BLACK_BELT                            0
+#define FLAG_TM_LOW_KICK                             0
 #define FLAG_TUTOR_DREAM_EATER                           0
 #define FLAG_TUTOR_SOFT_BOILED                           0
 #define FLAG_TUTOR_SUBSTITUTE                            0

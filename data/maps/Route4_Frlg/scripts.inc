@@ -40,53 +40,33 @@ Route4_Text_RouteSign::
     .string "ROUTE 4\n"
     .string "MT. MOON - CERULEAN CITY$"
 
-Text_MegaPunchTeach::
-    .string "A punch of roaring ferocity!\p"
-    .string "Packed with destructive power!\p"
-    .string "When the chips are down,\n"
-    .string "MEGA PUNCH is the ultimate attack!\l"
-    .string "You agree, yes?\p"
-    .string "Now!\n"
-    .string "Let me teach it to your Pokémon!$"
+Text_BlackBeltGuy_BitFeisty::
+    .string "Sorry, my partner can be a bit feisty.\p"
+    .string "But, if you're serious about training,\n"
+    .string "take this.$"
 
-Text_MegaPunchDeclined::
-    .string "You'll be back when you understand\n"
-    .string "the worth of MEGA PUNCH.$"
+Text_BlackBeltTaught::
+    .string "That'll give your Pokémon a better\n"
+    .string "fighting chance!$"
 
-Text_MegaPunchWhichMon::
-    .string "Fine!\n"
-    .string "Which Pokémon will learn it?$"
-
-Text_MegaPunchTaught::
-    .string "Now, we are comrades in the way of\n"
-    .string "punching!\p"
-    .string "You should go before you're seen\n"
-    .string "by the misguided fool who trains\l"
-    .string "only his silly kicking over there.$"
-
-Text_MegaKickTeach::
+Text_LowKickTeach::
     .string "A kick of brutal ferocity!\p"
     .string "Packed with destructive power!\p"
     .string "When you get right down to it,\n"
-    .string "MEGA KICK is the ultimate attack!\l"
-    .string "Don't you agree?\p"
-    .string "Okay!\n"
-    .string "I'll teach it to your Pokémon!$"
+    .string "Low Kick is the ultimate attack!\l"
+    .string "Don't you agree?$"
 
-Text_MegaKickDeclined::
+Text_LowKickDeclined::
     .string "You'll come crawling back when you\n"
-    .string "realize the value of MEGA KICK.$"
+    .string "realize the value of Low Kick.$"
 
-Text_MegaKickWhichMon::
-    .string "All right!\n"
-    .string "Which Pokémon wants to learn it?$"
+Text_LowKickHereYouGo::
+    .string "I like your spirit!\n"
+    .string "Take the TM!$"
 
-Text_MegaKickTaught::
+Text_LowKickTaught::
     .string "Now, we are soul mates in the way\n"
-    .string "of kicking!\p"
-    .string "You should run before you're seen\n"
-    .string "by the deluded nitwit who trains\l"
-    .string "only simple punching over there.$"
+    .string "of kicking!$"
 
 Route4_Text_PeopleLikeAndRespectBrock::
     .string "Oh, wow, that's the BOULDERBADGE!\n"

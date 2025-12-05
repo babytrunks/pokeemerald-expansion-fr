@@ -121,7 +121,7 @@
   "PIDGEOT": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [ "MOVE_FOCUS_BLAST"],
     "EggMoves": [],
     "TutorMoves": []
   },

@@ -65,7 +65,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
-Dynamic Level Ratio: 70
+Dynamic Level Ratio: 80
 
 Plusle @ Shuca Berry
 Nature: Timid
@@ -410,7 +410,7 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
-Dynamic Level Ratio: 70
+Dynamic Level Ratio: 80
 
 Vivillon @ Charti Berry
 Nature: Bashful
@@ -623,7 +623,7 @@ Gender: Male
 Music: Female
 Double Battle: No
 AI: Smart Trainer
-Dynamic Level Ratio: 70
+Dynamic Level Ratio: 80
 
 Greedent @ Sitrus Berry
 Nature: Bashful
@@ -666,7 +666,7 @@ Gender: Male
 Music: Female
 Double Battle: Yes
 AI: Smart Trainer
-Dynamic Level Ratio: 70
+Dynamic Level Ratio: 80
 
 Jigglypuff @ Eviolite
 Nature: Bold
@@ -1057,7 +1057,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
-Dynamic Level Ratio: 70
+Dynamic Level Ratio: 80
 
 Mabosstiff @ Black Glasses
 Nature: Bashful
@@ -4703,7 +4703,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 90
 
 Kirlia @ Sitrus Berry
 Nature: Bashful
@@ -4756,7 +4756,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 90
 
 Kirlia @ Sitrus Berry
 Nature: Bashful
@@ -4809,7 +4809,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 90
 
 Kirlia @ Sitrus Berry
 Nature: Bashful
@@ -5375,7 +5375,7 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 90
 
 Growlithe @ Eviolite
 Nature: Bashful
@@ -12957,7 +12957,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Green
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 90
 
 Lokix @ Silver Powder
 Nature: Bashful
@@ -13012,7 +13012,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer
 Mugshot: Green
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 90
 
 Kleavor @ Focus Sash
 Nature: Jolly

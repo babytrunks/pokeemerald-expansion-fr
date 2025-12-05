@@ -2071,6 +2071,9 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             if (trainer->dynamicLevelRatio > 0 && (partyMaxLevel - npcTrainerPartyMaxLevel) > 0)
             {
                 level += (partyMaxLevel - npcTrainerPartyMaxLevel);
+                if (level < partyData[monIndex].lvl) {
+                    level = partyData[monIndex].lvl;
+                }
             }
 
             if (trainer->battleType != TRAINER_BATTLE_TYPE_SINGLES)

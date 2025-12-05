@@ -1460,7 +1460,7 @@ const u8 gText_SideQuestDoneDesc_30[] = _("Completed Quest 30");
 
 //map
 const u8 gText_SideQuestMap1[] = _("Pewter Museum");
-const u8 gText_SideQuestMap2[] = _("Route 3");
+const u8 gText_SideQuestMap2[] = _("Route 4");
 const u8 gText_SideQuestMap3[] = _("Map 3");
 const u8 gText_SideQuestMap4[] = _("Map 4");
 const u8 gText_SideQuestMap5[] = _("Map 5");

@@ -29,11 +29,11 @@
     F(THUNDER) \
     F(EARTHQUAKE) \
     F(RETURN) \
-    F(DIG) \
+    F(BULLDOZE) \
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(DOUBLE_TEAM) \
+    F(LOW_KICK) \
     F(REFLECT) \
     F(SHOCK_WAVE) \
     F(FLAMETHROWER) \
@@ -46,7 +46,7 @@
     F(FACADE) \
     F(SECRET_POWER) \
     F(REST) \
-    F(ATTRACT) \
+    F(DRAINING_KISS) \
     F(SNARL) \
     F(STEEL_WING) \
     F(ELECTROWEB) \

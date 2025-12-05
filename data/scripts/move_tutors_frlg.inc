@@ -118,63 +118,42 @@ EventScript_ExplosionTaught::
 	release
 	end
 
-Route4_EventScript_MegaPunchTutor::
+Route4_EventScript_BlackBeltTutor::
 	lock
 	faceplayer
-.if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_MEGA_PUNCH, EventScript_MegaPunchTaught
-.endif
-	msgbox Text_MegaPunchTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_MegaPunchDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_MegaPunchDeclined
-	msgbox Text_MegaPunchWhichMon
-	setvar VAR_0x8005, MOVE_MEGA_PUNCH
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_MegaPunchDeclined
-.if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_MEGA_PUNCH
-.endif
-	goto EventScript_MegaPunchTaught
+	goto_if_set FLAG_GIVE_BLACK_BELT, EventScript_BlackBeltTaught
+	msgbox Text_BlackBeltGuy_BitFeisty
+	giveitem ITEM_BLACK_BELT
+	setflag FLAG_GIVE_BLACK_BELT
+	goto EventScript_BlackBeltTaught
 	end
 
-EventScript_MegaPunchDeclined::
-	msgbox Text_MegaPunchDeclined
+EventScript_BlackBeltTaught::
+	msgbox Text_BlackBeltTaught
 	release
 	end
 
-EventScript_MegaPunchTaught::
-	msgbox Text_MegaPunchTaught
-	release
-	end
-
-Route4_EventScript_MegaKickTutor::
+Route4_EventScript_LowKickTMGiver::
 	lock
 	faceplayer
-.if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_MEGA_KICK, EventScript_MegaKickTaught
-.endif
-	msgbox Text_MegaKickTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_MegaKickDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_MegaKickDeclined
-	msgbox Text_MegaKickWhichMon
-	setvar VAR_0x8005, MOVE_MEGA_KICK
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_MegaKickDeclined
-.if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_MEGA_KICK
-.endif
-	goto EventScript_MegaKickTaught
+	goto_if_set FLAG_TM_LOW_KICK, EventScript_LowKickTaught
+	msgbox Text_LowKickTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_LowKickDeclined
+	@ call EventScript_CanOnlyBeLearnedOnce
+	@ goto_if_eq VAR_RESULT, NO, EventScript_LowKickDeclined
+	msgbox Text_LowKickHereYouGo
+	giveitem ITEM_TM_LOW_KICK
+	setflag FLAG_TM_LOW_KICK
+	goto EventScript_LowKickTaught
 	end
 
-EventScript_MegaKickDeclined::
-	msgbox Text_MegaKickDeclined
+EventScript_LowKickDeclined::
+	msgbox Text_LowKickDeclined
 	release
 	end
 
-EventScript_MegaKickTaught::
-	msgbox Text_MegaKickTaught
+EventScript_LowKickTaught::
+	msgbox Text_LowKickTaught
 	release
 	end
 
