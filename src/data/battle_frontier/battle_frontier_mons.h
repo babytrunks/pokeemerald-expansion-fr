@@ -293,6 +293,125 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_DOCILE
     },
 
+    [FRONTIER_MON_CAPSAKID] = {
+    .species = SPECIES_CAPSAKID,
+    .moves = {MOVE_LEER, MOVE_LEAFAGE, MOVE_BITE, MOVE_GROWTH},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_SCYTHER] = {
+    .species = SPECIES_SCYTHER,
+    .moves = {MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_FURY_CUTTER, MOVE_FALSE_SWIPE},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_NYMBLE] = {
+    .species = SPECIES_NYMBLE,
+    .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_STRUGGLE_BUG, MOVE_ASTONISH},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_PINSIR] = {
+    .species = SPECIES_PINSIR,
+    .moves = {MOVE_VISE_GRIP, MOVE_FOCUS_ENERGY, MOVE_BIND, MOVE_SEISMIC_TOSS},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_HERACROSS] = {
+    .species = SPECIES_HERACROSS,
+    .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_FURY_ATTACK, MOVE_ENDURE},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_SHUCKLE] = {
+    .species = SPECIES_SHUCKLE,
+    .moves = {MOVE_WITHDRAW, MOVE_WRAP, MOVE_ROLLOUT, MOVE_STRUGGLE_BUG},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_ANORITH] = {
+    .species = SPECIES_ANORITH,
+    .moves = {MOVE_FURY_CUTTER, MOVE_AQUA_JET, MOVE_SMACK_DOWN, MOVE_BUG_BITE},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_SKORUPI] = {
+    .species = SPECIES_SKORUPI,
+    .moves = {MOVE_POISON_STING, MOVE_LEER, MOVE_POISON_FANG, MOVE_BITE},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_VENIPEDE] = {
+    .species = SPECIES_VENIPEDE,
+    .moves = {MOVE_POISON_STING, MOVE_ROLLOUT, MOVE_BUG_BITE, MOVE_POISON_TAIL},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_KARRABLAST] = {
+    .species = SPECIES_KARRABLAST,
+    .moves = {MOVE_PECK, MOVE_LEER, MOVE_FURY_CUTTER, MOVE_ENDURE},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_SHELMET] = {
+    .species = SPECIES_SHELMET,
+    .moves = {MOVE_ABSORB, MOVE_ACID, MOVE_STRUGGLE_BUG, MOVE_MEGA_DRAIN},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_DURANT] = {
+    .species = SPECIES_DURANT,
+    .moves = {MOVE_FURY_CUTTER, MOVE_SAND_ATTACK, MOVE_VISE_GRIP, MOVE_METAL_CLAW},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_LARVESTA] = {
+    .species = SPECIES_LARVESTA,
+    .moves = {MOVE_EMBER, MOVE_STRING_SHOT, MOVE_FLAME_WHEEL, MOVE_BUG_BITE},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_WIMPOD] = {
+    .species = SPECIES_WIMPOD,
+    .moves = {MOVE_STRUGGLE_BUG, MOVE_SAND_ATTACK, MOVE_DEFENSE_CURL},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_DEWPIDER] = {
+    .species = SPECIES_DEWPIDER,
+    .moves = {MOVE_WATER_GUN, MOVE_INFESTATION, MOVE_BUG_BITE, MOVE_BITE},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+[FRONTIER_MON_FALINKS] = {
+    .species = SPECIES_FALINKS,
+    .moves = {MOVE_TACKLE, MOVE_PROTECT, MOVE_ROCK_SMASH, MOVE_FOCUS_ENERGY},
+    .heldItem = ITEM_SITRUS_BERRY,
+    .nature = NATURE_DOCILE
+},
+
+// [FRONTIER_MON_ZANGOOSE] = {
+//     .species = SPECIES_ZANGOOSE,
+//     .moves = {MOVE_DOUBLE_KICK, MOVE_DISABLE, MOVE_FURY_SWIPES, MOVE_FEINT},
+//     .heldItem = ITEM_SITRUS_BERRY,
+//     .nature = NATURE_DOCILE
+// },
+
     // [FRONTIER_MON_AZURILL] = { //20% chance to get griefed by Hidden Ability chance LUL
     //     .species = SPECIES_AZURILL,
     //     .moves = {MOVE_BUBBLE, MOVE_ATTRACT, MOVE_SING, MOVE_CHARM},
@@ -381,319 +500,319 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // },
 
 
-    [FRONTIER_MON_IGGLYBUFF] = { 
-        .species = SPECIES_IGGLYBUFF,
-        .moves = {MOVE_SWEET_KISS, MOVE_SING, MOVE_ATTRACT, MOVE_SEISMIC_TOSS},
-        .heldItem = ITEM_MOON_STONE,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_MUNCHLAX] = {
-        .species = SPECIES_MUNCHLAX,
-        .moves = {MOVE_TACKLE, MOVE_CHARM, MOVE_ATTRACT, MOVE_METRONOME},
-        .heldItem = ITEM_LEFTOVERS,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_STUFFUL] = {
-        .species = SPECIES_STUFFUL,
-        .ability = ABILITY_FLUFFY,
-        .moves = {MOVE_TACKLE, MOVE_BABY_DOLL_EYES, MOVE_PAYBACK, MOVE_LEER},
-        .heldItem = ITEM_LEFTOVERS,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_BUNEARY] = {
-        .species = SPECIES_BUNEARY,
-        .ability = ABILITY_SCRAPPY,
-        .moves = {MOVE_TACKLE, MOVE_SPLASH, MOVE_BABY_DOLL_EYES, MOVE_NONE},
-        .heldItem = ITEM_SILK_SCARF,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_LICKITUNG] = {
-        .species = SPECIES_LICKITUNG,
-        .moves = {MOVE_SLAM, MOVE_SUPERSONIC, MOVE_LICK, MOVE_MUD_SLAP},
-        .heldItem = ITEM_LEFTOVERS,
-        .nature = NATURE_DOCILE,
-    },
-    [FRONTIER_MON_EEVEE_2] = { 
-        .species = SPECIES_EEVEE,
-        .moves = {MOVE_TACKLE, MOVE_ATTRACT, MOVE_FLAIL, MOVE_ENDURE},
-        .heldItem = ITEM_WATER_STONE, //can be any of Fire/Water/Electric/Moon/Sun/Ice/Leaf stone
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_PORYGON] = { //10% chance for Dusk Stone (to evolve to Pz), 10% chance for Eviolite
-        .species = SPECIES_PORYGON,
-        .moves = {MOVE_TACKLE, MOVE_ICY_WIND, MOVE_CONVERSION, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY, 
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_CLEFFA] = {
-        .ability = ABILITY_MAGIC_GUARD,
-        .species = SPECIES_CLEFFA,
-        .moves = {MOVE_MOONLIGHT, MOVE_SING, MOVE_ATTRACT, MOVE_DRAINING_KISS},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_DUNSPARCE] = { //20% chance to hold Leftovers
-        .ability = ABILITY_SERENE_GRACE,
-        .species = SPECIES_DUNSPARCE,
-        .moves = {MOVE_TACKLE, MOVE_GLARE, MOVE_DEFENSE_CURL, MOVE_MUD_SLAP},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE,
-    },
-    [FRONTIER_MON_TEDDIURSA] = { //20% chance to hold Toxic Orb
-        .species = SPECIES_TEDDIURSA,
-        .moves = {MOVE_FURY_SWIPES, MOVE_BABY_DOLL_EYES, MOVE_FEINT_ATTACK, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_STANTLER] = { //20% chance to hold Leftovers
-        .species = SPECIES_STANTLER,
-        .ability = ABILITY_INTIMIDATE,
-        .moves = {MOVE_STOMP, MOVE_HYPNOSIS, MOVE_LEER, MOVE_CONFUSE_RAY},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_TANDEMAUS] = {
-        .species = SPECIES_TANDEMAUS,
-        .moves = {MOVE_POUND, MOVE_ECHOED_VOICE, MOVE_HELPING_HAND, MOVE_BABY_DOLL_EYES},
-        .heldItem = ITEM_WIDE_LENS,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_HAPPINY] = {
-        .species = SPECIES_HAPPINY,
-        .moves = {MOVE_POUND, MOVE_COPYCAT, MOVE_SWEET_KISS, MOVE_DISARMING_VOICE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_ZANGOOSE] = { //20% chance to hold Toxic Orb
-        .species = SPECIES_ZANGOOSE,
-        .ability = ABILITY_TOXIC_BOOST,
-        .moves = {MOVE_DOUBLE_KICK, MOVE_FALSE_SWIPE, MOVE_FURY_SWIPES, MOVE_QUICK_ATTACK},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_MINCCINO] = {
-        .species = SPECIES_MINCCINO,
-        .ability = ABILITY_TECHNICIAN,
-        .moves = {MOVE_POUND, MOVE_BABY_DOLL_EYES, MOVE_SWEET_KISS, MOVE_DISARMING_VOICE},
-        .heldItem = ITEM_SHINY_STONE,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_DRAMPA] = {
-        .species = SPECIES_DRAMPA,
-        .moves = {MOVE_ECHOED_VOICE, MOVE_TWISTER, MOVE_PROTECT, MOVE_PLAY_NICE},
-        .heldItem = ITEM_LEFTOVERS,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_CYCLIZAR] = {
-        .species = SPECIES_CYCLIZAR,
-        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_QUICK_ATTACK, MOVE_BITE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_GIRAFARIG] = {
-        .ability = ABILITY_SAP_SIPPER,
-        .species = SPECIES_GIRAFARIG,
-        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_ASTONISH, MOVE_CONFUSION},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_INDEEDEE_M] = {
-        .species = SPECIES_INDEEDEE_M,
-        .moves = {MOVE_SWIFT, MOVE_PSYBEAM, MOVE_PLAY_NICE, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_SWABLU] = {
-        .ability = ABILITY_CLOUD_NINE,
-        .species = SPECIES_SWABLU,
-        .moves = {MOVE_PLUCK, MOVE_SING, MOVE_DISARMING_VOICE, MOVE_MIST},
-        .heldItem = ITEM_LEFTOVERS, 
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_KECLEON] = {
-        .ability = ABILITY_PROTEAN,
-        .species = SPECIES_KECLEON,
-        .moves = {MOVE_ASTONISH, MOVE_GROWL, MOVE_DISARMING_VOICE, MOVE_MIST},
-        .heldItem = ITEM_BERRY_JUICE, 
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_TOGEPI] = {
-        .species = SPECIES_TOGEPI,
-        .moves = {MOVE_GROWL, MOVE_POUND, MOVE_LIFE_DEW, MOVE_SWEET_KISS},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_IGGLYBUFF] = { 
+    //     .species = SPECIES_IGGLYBUFF,
+    //     .moves = {MOVE_SWEET_KISS, MOVE_SING, MOVE_ATTRACT, MOVE_SEISMIC_TOSS},
+    //     .heldItem = ITEM_MOON_STONE,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_MUNCHLAX] = {
+    //     .species = SPECIES_MUNCHLAX,
+    //     .moves = {MOVE_TACKLE, MOVE_CHARM, MOVE_ATTRACT, MOVE_METRONOME},
+    //     .heldItem = ITEM_LEFTOVERS,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_STUFFUL] = {
+    //     .species = SPECIES_STUFFUL,
+    //     .ability = ABILITY_FLUFFY,
+    //     .moves = {MOVE_TACKLE, MOVE_BABY_DOLL_EYES, MOVE_PAYBACK, MOVE_LEER},
+    //     .heldItem = ITEM_LEFTOVERS,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_BUNEARY] = {
+    //     .species = SPECIES_BUNEARY,
+    //     .ability = ABILITY_SCRAPPY,
+    //     .moves = {MOVE_TACKLE, MOVE_SPLASH, MOVE_BABY_DOLL_EYES, MOVE_NONE},
+    //     .heldItem = ITEM_SILK_SCARF,
+    //     .nature = NATURE_DOCILE
+    // },
+    // // [FRONTIER_MON_LICKITUNG] = {
+    //     .species = SPECIES_LICKITUNG,
+    //     .moves = {MOVE_SLAM, MOVE_SUPERSONIC, MOVE_LICK, MOVE_MUD_SLAP},
+    //     .heldItem = ITEM_LEFTOVERS,
+    //     .nature = NATURE_DOCILE,
+    // },
+    // [FRONTIER_MON_EEVEE_2] = { 
+    //     .species = SPECIES_EEVEE,
+    //     .moves = {MOVE_TACKLE, MOVE_ATTRACT, MOVE_FLAIL, MOVE_ENDURE},
+    //     .heldItem = ITEM_WATER_STONE, //can be any of Fire/Water/Electric/Moon/Sun/Ice/Leaf stone
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_PORYGON] = { //10% chance for Dusk Stone (to evolve to Pz), 10% chance for Eviolite
+    //     .species = SPECIES_PORYGON,
+    //     .moves = {MOVE_TACKLE, MOVE_ICY_WIND, MOVE_CONVERSION, MOVE_NONE},
+    //     .heldItem = ITEM_SITRUS_BERRY, 
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_CLEFFA] = {
+    //     .ability = ABILITY_MAGIC_GUARD,
+    //     .species = SPECIES_CLEFFA,
+    //     .moves = {MOVE_MOONLIGHT, MOVE_SING, MOVE_ATTRACT, MOVE_DRAINING_KISS},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_DUNSPARCE] = { //20% chance to hold Leftovers
+    //     .ability = ABILITY_SERENE_GRACE,
+    //     .species = SPECIES_DUNSPARCE,
+    //     .moves = {MOVE_TACKLE, MOVE_GLARE, MOVE_DEFENSE_CURL, MOVE_MUD_SLAP},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE,
+    // },
+    // [FRONTIER_MON_TEDDIURSA] = { //20% chance to hold Toxic Orb
+    //     .species = SPECIES_TEDDIURSA,
+    //     .moves = {MOVE_FURY_SWIPES, MOVE_BABY_DOLL_EYES, MOVE_FEINT_ATTACK, MOVE_NONE},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_STANTLER] = { //20% chance to hold Leftovers
+    //     .species = SPECIES_STANTLER,
+    //     .ability = ABILITY_INTIMIDATE,
+    //     .moves = {MOVE_STOMP, MOVE_HYPNOSIS, MOVE_LEER, MOVE_CONFUSE_RAY},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_TANDEMAUS] = {
+    //     .species = SPECIES_TANDEMAUS,
+    //     .moves = {MOVE_POUND, MOVE_ECHOED_VOICE, MOVE_HELPING_HAND, MOVE_BABY_DOLL_EYES},
+    //     .heldItem = ITEM_WIDE_LENS,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_HAPPINY] = {
+    //     .species = SPECIES_HAPPINY,
+    //     .moves = {MOVE_POUND, MOVE_COPYCAT, MOVE_SWEET_KISS, MOVE_DISARMING_VOICE},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_ZANGOOSE] = { //20% chance to hold Toxic Orb
+    //     .species = SPECIES_ZANGOOSE,
+    //     .ability = ABILITY_TOXIC_BOOST,
+    //     .moves = {MOVE_DOUBLE_KICK, MOVE_FALSE_SWIPE, MOVE_FURY_SWIPES, MOVE_QUICK_ATTACK},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_MINCCINO] = {
+    //     .species = SPECIES_MINCCINO,
+    //     .ability = ABILITY_TECHNICIAN,
+    //     .moves = {MOVE_POUND, MOVE_BABY_DOLL_EYES, MOVE_SWEET_KISS, MOVE_DISARMING_VOICE},
+    //     .heldItem = ITEM_SHINY_STONE,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_DRAMPA] = {
+    //     .species = SPECIES_DRAMPA,
+    //     .moves = {MOVE_ECHOED_VOICE, MOVE_TWISTER, MOVE_PROTECT, MOVE_PLAY_NICE},
+    //     .heldItem = ITEM_LEFTOVERS,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_CYCLIZAR] = {
+    //     .species = SPECIES_CYCLIZAR,
+    //     .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_QUICK_ATTACK, MOVE_BITE},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_GIRAFARIG] = {
+    //     .ability = ABILITY_SAP_SIPPER,
+    //     .species = SPECIES_GIRAFARIG,
+    //     .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_ASTONISH, MOVE_CONFUSION},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_INDEEDEE_M] = {
+    //     .species = SPECIES_INDEEDEE_M,
+    //     .moves = {MOVE_SWIFT, MOVE_PSYBEAM, MOVE_PLAY_NICE, MOVE_NONE},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_SWABLU] = {
+    //     .ability = ABILITY_CLOUD_NINE,
+    //     .species = SPECIES_SWABLU,
+    //     .moves = {MOVE_PLUCK, MOVE_SING, MOVE_DISARMING_VOICE, MOVE_MIST},
+    //     .heldItem = ITEM_LEFTOVERS, 
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_KECLEON] = {
+    //     .ability = ABILITY_PROTEAN,
+    //     .species = SPECIES_KECLEON,
+    //     .moves = {MOVE_ASTONISH, MOVE_GROWL, MOVE_DISARMING_VOICE, MOVE_MIST},
+    //     .heldItem = ITEM_BERRY_JUICE, 
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_TOGEPI] = {
+    //     .species = SPECIES_TOGEPI,
+    //     .moves = {MOVE_GROWL, MOVE_POUND, MOVE_LIFE_DEW, MOVE_SWEET_KISS},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_TYROGUE] = {
-        .species = SPECIES_TYROGUE,
-        .moves = {MOVE_MACH_PUNCH, MOVE_FAKE_OUT, MOVE_FOCUS_ENERGY, MOVE_TACKLE},
-        .heldItem = ITEM_FOCUS_BAND,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_TYROGUE] = {
+    //     .species = SPECIES_TYROGUE,
+    //     .moves = {MOVE_MACH_PUNCH, MOVE_FAKE_OUT, MOVE_FOCUS_ENERGY, MOVE_TACKLE},
+    //     .heldItem = ITEM_FOCUS_BAND,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_CARVANHA] = {
-        .species = SPECIES_CARVANHA,
-        .moves = {MOVE_AQUA_JET, MOVE_LEER, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-    [FRONTIER_MON_CORPHISH] = {
-        .ability = ABILITY_ADAPTABILITY, 
-        .species = SPECIES_CORPHISH,
-        .moves = {MOVE_BUBBLE_BEAM, MOVE_LEER, MOVE_TAUNT, MOVE_VISE_GRIP},
-        .heldItem = ITEM_MYSTIC_WATER,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_CARVANHA] = {
+    //     .species = SPECIES_CARVANHA,
+    //     .moves = {MOVE_AQUA_JET, MOVE_LEER, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+    // [FRONTIER_MON_CORPHISH] = {
+    //     .ability = ABILITY_ADAPTABILITY, 
+    //     .species = SPECIES_CORPHISH,
+    //     .moves = {MOVE_BUBBLE_BEAM, MOVE_LEER, MOVE_TAUNT, MOVE_VISE_GRIP},
+    //     .heldItem = ITEM_MYSTIC_WATER,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_FINIZEN] = {
-        .species = SPECIES_FINIZEN,
-        .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_LEER, MOVE_WATER_GUN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_FINIZEN] = {
+    //     .species = SPECIES_FINIZEN,
+    //     .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_LEER, MOVE_WATER_GUN},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_SEEL] = {
-        .species = SPECIES_SEEL,
-        .moves = {MOVE_HEADBUTT, MOVE_GROWL, MOVE_WATER_GUN, MOVE_ICY_WIND},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_SEEL] = {
+    //     .species = SPECIES_SEEL,
+    //     .moves = {MOVE_HEADBUTT, MOVE_GROWL, MOVE_WATER_GUN, MOVE_ICY_WIND},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_SPHEAL] = {
-        .species = SPECIES_SPHEAL,
-        .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_GROWL, MOVE_WATER_GUN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_SPHEAL] = {
+    //     .species = SPECIES_SPHEAL,
+    //     .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_GROWL, MOVE_WATER_GUN},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_KRABBY] = {
-        .species = SPECIES_KRABBY,
-        .moves = {MOVE_BUBBLE, MOVE_VICE_GRIP, MOVE_LEER, MOVE_HARDEN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_KRABBY] = {
+    //     .species = SPECIES_KRABBY,
+    //     .moves = {MOVE_BUBBLE, MOVE_VICE_GRIP, MOVE_LEER, MOVE_HARDEN},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_SLOWPOKE] = {
-        .species = SPECIES_SLOWPOKE,
-        .moves = {MOVE_CURSE, MOVE_YAWN, MOVE_TACKLE, MOVE_GROWL},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_SLOWPOKE] = {
+    //     .species = SPECIES_SLOWPOKE,
+    //     .moves = {MOVE_CURSE, MOVE_YAWN, MOVE_TACKLE, MOVE_GROWL},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_SHELLDER] = {
-        .species = SPECIES_SHELLDER,
-        .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_PROTECT, MOVE_ICY_WIND},
-        .heldItem = ITEM_BIG_PEARL,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_SHELLDER] = {
+    //     .species = SPECIES_SHELLDER,
+    //     .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_PROTECT, MOVE_ICY_WIND},
+    //     .heldItem = ITEM_BIG_PEARL,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_MANTYKE] = {
-        .species = SPECIES_MANTYKE,
-        .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_BUBBLE_BEAM},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_MANTYKE] = {
+    //     .species = SPECIES_MANTYKE,
+    //     .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_BUBBLE_BEAM},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_CLAMPERL] = {
-        .species = SPECIES_CLAMPERL,
-        .moves = {MOVE_WHIRLPOOL, MOVE_IRON_DEFENSE, MOVE_CLAMP, MOVE_WATER_GUN},
-        .heldItem = ITEM_DEEP_SEA_SCALE,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_CLAMPERL] = {
+    //     .species = SPECIES_CLAMPERL,
+    //     .moves = {MOVE_WHIRLPOOL, MOVE_IRON_DEFENSE, MOVE_CLAMP, MOVE_WATER_GUN},
+    //     .heldItem = ITEM_DEEP_SEA_SCALE,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_LUVDISC] = {
-        .species = SPECIES_LUVDISC,
-        .moves = {MOVE_TACKLE, MOVE_CHARM, MOVE_WATER_GUN, MOVE_AGILITY},
-        .heldItem = ITEM_HEART_SCALE,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_LUVDISC] = {
+    //     .species = SPECIES_LUVDISC,
+    //     .moves = {MOVE_TACKLE, MOVE_CHARM, MOVE_WATER_GUN, MOVE_AGILITY},
+    //     .heldItem = ITEM_HEART_SCALE,
+    //     .nature = NATURE_DOCILE
+    // },
 
-    [FRONTIER_MON_BUIZEL] = {
-        .species = SPECIES_BUIZEL,
-        .moves = {MOVE_SONIC_BOOM, MOVE_GROWL, MOVE_WATER_SPORT, MOVE_QUICK_ATTACK},
-        .heldItem = ITEM_MYSTIC_WATER,
-        .nature = NATURE_DOCILE
-    },
-
-
-    [FRONTIER_MON_BASCULIN] = {
-        .species = SPECIES_BASCULIN_WHITE_STRIPED,
-        .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_UPROAR, MOVE_BITE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_FRILLISH] = {
-        .species = SPECIES_FRILLISH,
-        .moves = {MOVE_BUBBLE, MOVE_WATER_SPORT, MOVE_ABSORB, MOVE_NIGHT_SHADE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_WISHIWASHI] = { // guaranteed 2 perfect IVs
-        .species = SPECIES_WISHIWASHI,
-        .moves = {MOVE_WATER_GUN, MOVE_HELPING_HAND, MOVE_BEAT_UP, MOVE_TEARFUL_LOOK},
-        .heldItem = ITEM_LEFTOVERS,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_MAREANIE] = {
-        .species = SPECIES_MAREANIE,
-        .moves = {MOVE_PECK, MOVE_BITE, MOVE_TOXIC_SPIKES, MOVE_WIDE_GUARD},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_DEWPIDER] = {
-        .ability = ABILITY_WATER_BUBBLE,
-        .species = SPECIES_DEWPIDER,
-        .moves = {MOVE_WATER_GUN, MOVE_INFESTATION, MOVE_BUG_BITE, MOVE_BUBBLE_BEAM},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_HORSEA] = {
-        .species = SPECIES_HORSEA,
-        .moves = {MOVE_BUBBLE, MOVE_SMOKESCREEN, MOVE_LEER, MOVE_WATER_GUN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_ALOMOMOLA] = {
-        .species = SPECIES_ALOMOMOLA,
-        .moves = {MOVE_POUND, MOVE_WATER_GUN, MOVE_HELPING_HAND, MOVE_AQUA_RING},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_STARYU] = {
-        .species = SPECIES_STARYU,
-        .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_WATER_GUN, MOVE_RAPID_SPIN},
-        .heldItem = ITEM_STARDUST,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_LAPRAS] = {
-        .species = SPECIES_LAPRAS,
-        .moves = {MOVE_WATER_GUN, MOVE_GROWL, MOVE_SING, MOVE_MIST},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
-    },
-
-    [FRONTIER_MON_SLOWPOKE_GALAR] = {
-        .species = SPECIES_SLOWPOKE_GALAR,
-        .moves = {MOVE_TACKLE, MOVE_YAWN, MOVE_GROWL, MOVE_GROWL},
-        .heldItem = ITEM_BLACK_SLUDGE,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_BUIZEL] = {
+    //     .species = SPECIES_BUIZEL,
+    //     .moves = {MOVE_SONIC_BOOM, MOVE_GROWL, MOVE_WATER_SPORT, MOVE_QUICK_ATTACK},
+    //     .heldItem = ITEM_MYSTIC_WATER,
+    //     .nature = NATURE_DOCILE
+    // },
 
 
-    [FRONTIER_MON_ANORITH] = {
-        .species = SPECIES_ANORITH,
-        .moves = {MOVE_METAL_CLAW, MOVE_FURY_CUTTER, MOVE_ANCIENT_POWER, MOVE_WATER_GUN},
-        .heldItem = ITEM_SCOPE_LENS,
-        .nature = NATURE_DOCILE
-    },
+    // [FRONTIER_MON_BASCULIN] = {
+    //     .species = SPECIES_BASCULIN_WHITE_STRIPED,
+    //     .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_UPROAR, MOVE_BITE},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_FRILLISH] = {
+    //     .species = SPECIES_FRILLISH,
+    //     .moves = {MOVE_BUBBLE, MOVE_WATER_SPORT, MOVE_ABSORB, MOVE_NIGHT_SHADE},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_WISHIWASHI] = { // guaranteed 2 perfect IVs
+    //     .species = SPECIES_WISHIWASHI,
+    //     .moves = {MOVE_WATER_GUN, MOVE_HELPING_HAND, MOVE_BEAT_UP, MOVE_TEARFUL_LOOK},
+    //     .heldItem = ITEM_LEFTOVERS,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_MAREANIE] = {
+    //     .species = SPECIES_MAREANIE,
+    //     .moves = {MOVE_PECK, MOVE_BITE, MOVE_TOXIC_SPIKES, MOVE_WIDE_GUARD},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_DEWPIDER] = {
+    //     .ability = ABILITY_WATER_BUBBLE,
+    //     .species = SPECIES_DEWPIDER,
+    //     .moves = {MOVE_WATER_GUN, MOVE_INFESTATION, MOVE_BUG_BITE, MOVE_BUBBLE_BEAM},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_HORSEA] = {
+    //     .species = SPECIES_HORSEA,
+    //     .moves = {MOVE_BUBBLE, MOVE_SMOKESCREEN, MOVE_LEER, MOVE_WATER_GUN},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_ALOMOMOLA] = {
+    //     .species = SPECIES_ALOMOMOLA,
+    //     .moves = {MOVE_POUND, MOVE_WATER_GUN, MOVE_HELPING_HAND, MOVE_AQUA_RING},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_STARYU] = {
+    //     .species = SPECIES_STARYU,
+    //     .moves = {MOVE_TACKLE, MOVE_HARDEN, MOVE_WATER_GUN, MOVE_RAPID_SPIN},
+    //     .heldItem = ITEM_STARDUST,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_LAPRAS] = {
+    //     .species = SPECIES_LAPRAS,
+    //     .moves = {MOVE_WATER_GUN, MOVE_GROWL, MOVE_SING, MOVE_MIST},
+    //     .heldItem = ITEM_SITRUS_BERRY,
+    //     .nature = NATURE_DOCILE
+    // },
+
+    // [FRONTIER_MON_SLOWPOKE_GALAR] = {
+    //     .species = SPECIES_SLOWPOKE_GALAR,
+    //     .moves = {MOVE_TACKLE, MOVE_YAWN, MOVE_GROWL, MOVE_GROWL},
+    //     .heldItem = ITEM_BLACK_SLUDGE,
+    //     .nature = NATURE_DOCILE
+    // },
+
+
+    // [FRONTIER_MON_ANORITH] = {
+    //     .species = SPECIES_ANORITH,
+    //     .moves = {MOVE_METAL_CLAW, MOVE_FURY_CUTTER, MOVE_ANCIENT_POWER, MOVE_WATER_GUN},
+    //     .heldItem = ITEM_SCOPE_LENS,
+    //     .nature = NATURE_DOCILE
+    // },
 
     [FRONTIER_MON_OMANYTE] = {
         .species = SPECIES_OMANYTE,

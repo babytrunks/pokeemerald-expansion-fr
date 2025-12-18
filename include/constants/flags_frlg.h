@@ -577,7 +577,7 @@
 #define FLAG_DID_NINA_TRADE                              0x251
 #define FLAG_GOT_ITEMFINDER                              0x252
 #define FLAG_WOKE_UP_ROUTE_12_SNORLAX                    0x253
-#define FLAG_GOT_TM39_FROM_BROCK                         0x254
+#define FLAG_GOT_TM39_FROM_BROCK                         0x254 //UNUSED
 #define FLAG_GOT_SUPER_ROD                               0x255
 #define FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE                0x256
 #define FLAG_DID_MARC_TRADE                              0x257
@@ -644,7 +644,7 @@
 #define FLAG_GOT_TM33_FROM_THIRSTY_GIRL                  0x294
 #define FLAG_GOT_TM20_FROM_THIRSTY_GIRL                  0x295
 #define FLAG_GOT_TM16_FROM_THIRSTY_GIRL                  0x296
-#define FLAG_GOT_TM03_FROM_MISTY                         0x297
+#define FLAG_GOT_TM03_FROM_MISTY                         0x297 // UNUSED
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298
 #define FLAG_0x299                                       0x299
 #define FLAG_GOT_TM04_FROM_SABRINA                       0x29A

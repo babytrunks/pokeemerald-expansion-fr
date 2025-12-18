@@ -68,3 +68,4 @@ Additional Stuff:
 - Gauntlets (fight x amount of people before going to Pokemon Center, Pocket PC and pokeVial disabled)
 - Repurpose quest menu into achievements
 - HUUUUGE would be nice to have, but adding a Hoenn post game would be very cool
+- Hidden Ability through Dex Nav can unlock after Erika
