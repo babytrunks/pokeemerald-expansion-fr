@@ -2639,7 +2639,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sEkansLevelUpLearnset,
         .teachableLearnset = sEkansTeachableLearnset,
         .eggMoveLearnset = sEkansEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_ARBOK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_ARBOK}),
     },
 
     [SPECIES_ARBOK] =
@@ -6660,7 +6660,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sDiglettTeachableLearnset,
         .eggMoveLearnset = sDiglettEggMoveLearnset,
         .formSpeciesIdTable = sDiglettFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 26, SPECIES_DUGTRIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_DUGTRIO}),
     },
 
     [SPECIES_DUGTRIO] =
@@ -9516,7 +9516,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sGeodudeTeachableLearnset,
         .eggMoveLearnset = sGeodudeEggMoveLearnset,
         .formSpeciesIdTable = sGeodudeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_GRAVELER}),
     },
 
     [SPECIES_GRAVELER] =
@@ -9730,7 +9730,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sGeodudeAlolaTeachableLearnset,
         .eggMoveLearnset = sGeodudeAlolaEggMoveLearnset,
         .formSpeciesIdTable = sGeodudeFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GRAVELER_ALOLA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_GRAVELER_ALOLA}),
     },
 
     [SPECIES_GRAVELER_ALOLA] =
