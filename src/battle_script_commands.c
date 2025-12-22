@@ -5803,8 +5803,8 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
         break;
     
     case EFFECT_BREAKTHROUGH:
-        if ( //gMovesInfo[gCurrentMove].effect == EFFECT_BREAKTHROUGH &&
-            IsBattlerAlive(gBattlerAttacker)
+    case EFFECT_FORTIFY:
+        if ( IsBattlerAlive(gBattlerAttacker)
             && !IsBattlerAlive(gBattlerTarget)
             && IsBattlerTurnDamaged(gBattlerTarget)
             && !NoAliveMonsForEitherParty()
@@ -5812,6 +5812,12 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
         {
             u8 i;
             u8 statArray[3] = {STAT_ATK,  STAT_SPATK, STAT_SPEED};
+            if (moveEffect== EFFECT_FORTIFY )
+            {
+                statArray[0] = STAT_HP; 
+                statArray[1] = STAT_DEF; 
+                statArray[2] = STAT_SPDEF;
+            }
             u8 monIVs[NUM_STATS];
             struct Pokemon *mon2;
             mon2 = GetBattlerMon(gBattlerAttacker);

@@ -12,7 +12,7 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE01_GET, 14},
         {FLAG_BEAT_MT_MOON_ARCHER, 18},
         {FLAG_BADGE02_GET, 21},
-        {FLAG_BADGE03_GET, 26},
+        {FLAG_BADGE03_GET, LEVEL_CAP_GYM_3}, //26
         {FLAG_BADGE04_GET, 31},
         {FLAG_BADGE05_GET, 33},
         {FLAG_BADGE06_GET, 33},

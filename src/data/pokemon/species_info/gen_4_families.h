@@ -1355,7 +1355,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sShinxLevelUpLearnset,
         .teachableLearnset = sShinxTeachableLearnset,
         .eggMoveLearnset = sShinxEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_LUXIO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_LUXIO}),
     },
 
     [SPECIES_LUXIO] =

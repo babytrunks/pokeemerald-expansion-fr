@@ -1442,7 +1442,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sPansageLevelUpLearnset,
         .teachableLearnset = sPansageTeachableLearnset,
         .eggMoveLearnset = sPansageEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_SIMISAGE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_SIMISAGE}),
+
     },
 
     [SPECIES_SIMISAGE] =
@@ -1580,7 +1581,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sPansearLevelUpLearnset,
         .teachableLearnset = sPansearTeachableLearnset,
         .eggMoveLearnset = sPansearEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_SIMISEAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_SIMISEAR}),
+    
     },
 
     [SPECIES_SIMISEAR] =
@@ -1721,7 +1723,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sPanpourLevelUpLearnset,
         .teachableLearnset = sPanpourTeachableLearnset,
         .eggMoveLearnset = sPanpourEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_WATER_STONE, SPECIES_SIMIPOUR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_SIMIPOUR}),
+    
     },
 
     [SPECIES_SIMIPOUR] =
@@ -2331,7 +2334,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_STURDY, ABILITY_WEAK_ARMOR, ABILITY_SAND_FORCE },
+        .abilities = { ABILITY_STURDY, ABILITY_SAND_FORCE, ABILITY_WEAK_ARMOR },
     #else
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_FORCE },
     #endif
@@ -2383,7 +2386,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sRoggenrolaLevelUpLearnset,
         .teachableLearnset = sRoggenrolaTeachableLearnset,
         .eggMoveLearnset = sRoggenrolaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BOLDORE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_BOLDORE}),
     },
 
     [SPECIES_BOLDORE] =
@@ -2407,7 +2410,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_STURDY, ABILITY_WEAK_ARMOR, ABILITY_SAND_FORCE },
+        .abilities = { ABILITY_STURDY, ABILITY_SAND_FORCE, ABILITY_WEAK_ARMOR },
     #else
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_FORCE },
     #endif
@@ -2491,7 +2494,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_MINERAL),
     #if P_UPDATED_ABILITIES >= GEN_7
-        .abilities = { ABILITY_STURDY, ABILITY_SAND_STREAM, ABILITY_SAND_FORCE },
+        .abilities = { ABILITY_STURDY, ABILITY_SAND_FORCE, ABILITY_SAND_STREAM },
     #else
         .abilities = { ABILITY_STURDY, ABILITY_NONE, ABILITY_SAND_FORCE },
     #endif

@@ -1753,7 +1753,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sWoolooLevelUpLearnset,
         .teachableLearnset = sWoolooTeachableLearnset,
         .eggMoveLearnset = sWoolooEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_DUBWOOL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_DUBWOOL}),
     },
 
     [SPECIES_DUBWOOL] =
