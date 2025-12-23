@@ -1673,5 +1673,10 @@
 
 #define LEVEL_CAP_GYM_2 21
 #define LEVEL_CAP_GYM_3 26
+#define LEVEL_CAP_GYM_4 32
+#define LEVEL_CAP_GYM_5 40
+#define LEVEL_CAP_GYM_6 47 
+#define LEVEL_CAP_GYM_7 52
+#define LEVEL_CAP_GYM_8 58
 
 #endif  // GUARD_CONSTANTS_SPECIES_H

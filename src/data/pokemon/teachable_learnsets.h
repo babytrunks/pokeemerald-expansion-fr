@@ -17644,6 +17644,8 @@ static const u16 sKricketotTeachableLearnset[] = {
 static const u16 sKricketuneTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
     MOVE_BRICK_BREAK,
+    MOVE_BULLDOZE,
+    MOVE_BULLET_SEED,
     MOVE_CUT,
     MOVE_ENDURE,
     MOVE_FACADE,
@@ -17656,6 +17658,7 @@ static const u16 sKricketuneTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REST,
     MOVE_ROCK_SMASH,
+    MOVE_ROCK_TOMB,
     MOVE_SLEEP_TALK,
     MOVE_SNORE,
     MOVE_STRENGTH,

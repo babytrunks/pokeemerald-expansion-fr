@@ -214,7 +214,7 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [ "MOVE_CLOSE_COMBAT"]
   },
   "RAICHU": {
     "LevelMoves": [],
@@ -2865,7 +2865,7 @@
   "KRICKETUNE": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": ["MOVE_BULLDOZE", "MOVE_ROCK_TOMB", "MOVE_BULLET_SEED"],
     "EggMoves": [],
     "TutorMoves": []
   },

@@ -410,12 +410,12 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 75
 
 Vivillon @ Charti Berry
 Nature: Bashful
 Ability: Friend Guard
-Level: 16
+Level: 15
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Struggle Bug
@@ -426,7 +426,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Butterfree @ Sitrus Berry
 Nature: Timid
 Ability: Compound Eyes
-Level: 17
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sleep Powder
@@ -437,7 +437,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wormadam-Sandy @ Rocky Helmet
 Nature: Careful
 Ability: Overcoat
-Level: 17
+Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulldoze

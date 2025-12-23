@@ -648,8 +648,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sLechonkLevelUpLearnset,
         .teachableLearnset = sLechonkTeachableLearnset,
         .eggMoveLearnset = sLechonkEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 18, SPECIES_OINKOLOGNE_M, CONDITIONS({IF_GENDER, MON_MALE})},
-                                {EVO_LEVEL, 18, SPECIES_OINKOLOGNE_F, CONDITIONS({IF_GENDER, MON_FEMALE})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_OINKOLOGNE_M, CONDITIONS({IF_GENDER, MON_MALE})},
+                                {EVO_LEVEL, 14, SPECIES_OINKOLOGNE_F, CONDITIONS({IF_GENDER, MON_FEMALE})}),
     },
 
     [SPECIES_OINKOLOGNE_M] =
@@ -669,7 +669,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_LINGERING_AROMA, ABILITY_GLUTTONY, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_LINGERING_AROMA, ABILITY_THICK_FAT, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Oinkologne"),
         .cryId = CRY_OINKOLOGNE_M,
@@ -732,7 +732,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
-        .abilities = { ABILITY_AROMA_VEIL, ABILITY_GLUTTONY, ABILITY_THICK_FAT },
+        .abilities = { ABILITY_AROMA_VEIL, ABILITY_THICK_FAT, ABILITY_GLUTTONY },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("Oinkologne"),
         .cryId = CRY_OINKOLOGNE_F,
