@@ -3,120 +3,123 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_BULBASAUR] = { 
         .species = SPECIES_BULBASAUR,
         .moves = {MOVE_TACKLE, MOVE_MAGICAL_LEAF, MOVE_SLEEP_POWDER, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_RELAXED
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_CHARMANDER] = { 
         .species = SPECIES_CHARMANDER,
         .moves = {MOVE_FIRE_SPIN, MOVE_METAL_CLAW, MOVE_SMOKESCREEN, MOVE_SCARY_FACE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_SQUIRTLE] = { 
         .species = SPECIES_SQUIRTLE,
         .moves = {MOVE_WATER_PULSE, MOVE_BITE, MOVE_RAPID_SPIN, MOVE_NONE},
         .heldItem = ITEM_LEFTOVERS,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_CHIKORITA] = {
         .species = SPECIES_CHIKORITA,
         .moves = {MOVE_TACKLE, MOVE_ABSORB, MOVE_MUD_SLAP, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_CYNDAQUIL] = {
         .species = SPECIES_CYNDAQUIL,
         .moves = {MOVE_INCINERATE, MOVE_SWIFT, MOVE_QUICK_ATTACK, MOVE_SMOKESCREEN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_TOTODILE] = {
         .ability = ABILITY_SHEER_FORCE,
         .species = SPECIES_TOTODILE,
         .moves = {MOVE_AQUA_JET, MOVE_BITE, MOVE_SCARY_FACE, MOVE_NONE},
         .heldItem = ITEM_REVIVE,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_TURTWIG] = {
         .species = SPECIES_TURTWIG,
         .moves = {MOVE_MEGA_DRAIN, MOVE_TACKLE, MOVE_SAND_TOMB, MOVE_NONE},
-        .heldItem = ITEM_WHITE_HERB,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_TORCHIC] = {
         .species = SPECIES_TORCHIC,
         .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_EMBER, MOVE_QUICK_ATTACK},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_MUDKIP] = {
         .species = SPECIES_MUDKIP,
         .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_WATER_GUN, MOVE_ROCK_SMASH},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_TREECKO] = {
         .species = SPECIES_TREECKO,
         .moves = {MOVE_POUND, MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_MEGA_DRAIN},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_CHIMCHAR] = {
         .species = SPECIES_CHIMCHAR,
         .moves = {MOVE_FLAME_WHEEL, MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE},
         .heldItem = ITEM_BLACK_BELT,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_PIPLUP] = {
         .species = SPECIES_PIPLUP,
         .moves = {MOVE_BRINE, MOVE_PLUCK, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_SNIVY] = {
         .species = SPECIES_SNIVY,
         .moves = {MOVE_MEGA_DRAIN, MOVE_GLARE, MOVE_LEECH_SEED, MOVE_SWIFT},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_TEPIG] = {
         .species = SPECIES_TEPIG,
         .moves = {MOVE_FLAME_WHEEL, MOVE_TACKLE, MOVE_SUCKER_PUNCH, MOVE_ROCK_SMASH},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_OSHAWOTT] = {
         .species = SPECIES_OSHAWOTT,
         .moves = {MOVE_WATER_GUN, MOVE_TACKLE, MOVE_TAIL_WHIP, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_CHESPIN] = {
         .species = SPECIES_CHESPIN,
         .moves = {MOVE_VINE_WHIP, MOVE_GROWL, MOVE_ROLLOUT, MOVE_BITE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_FENNEKIN] = {
         .ability = ABILITY_MAGIC_GUARD,
         .species = SPECIES_FENNEKIN,
         .moves = {MOVE_INCINERATE, MOVE_MUD_SLAP, MOVE_FOUL_PLAY, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_FROAKIE] = {
         .species = SPECIES_FROAKIE,
         .moves = {MOVE_LICK, MOVE_WATER_PULSE, MOVE_SMOKESCREEN, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_ROWLET] = {
@@ -124,68 +127,70 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_ROWLET,
         .moves = {MOVE_RAZOR_LEAF, MOVE_PLUCK, MOVE_SUCKER_PUNCH, MOVE_NONE},
         .heldItem = ITEM_REVIVE,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_LITTEN] = {
         .species = SPECIES_LITTEN,
         .moves = {MOVE_EMBER, MOVE_FURY_SWIPES, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_POPPLIO] = {
         .species = SPECIES_POPPLIO,
         .moves = {MOVE_WATER_GUN, MOVE_TACKLE, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_GROOKEY] = {
         .species = SPECIES_GROOKEY,
         .moves = {MOVE_BRANCH_POKE, MOVE_FALSE_SWIPE, MOVE_SCRATCH, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_SCORBUNNY] = {
         .species = SPECIES_SCORBUNNY,
         .moves = {MOVE_EMBER, MOVE_QUICK_ATTACK, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_SOBBLE] = {
         .ability = ABILITY_SNIPER,
         .species = SPECIES_SOBBLE,
         .moves = {MOVE_WATER_PULSE, MOVE_U_TURN, MOVE_GROWL, MOVE_NONE},
         .heldItem = ITEM_SCOPE_LENS,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_SPRIGATITO] = {
         .species = SPECIES_SPRIGATITO,
         .moves = {MOVE_LEAFAGE, MOVE_QUICK_ATTACK, MOVE_NONE, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_FUECOCO] = {
         .species = SPECIES_FUECOCO,
         .moves = {MOVE_EMBER, MOVE_TACKLE, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
     [FRONTIER_MON_QUAXLY] = {
         .species = SPECIES_QUAXLY,
         .moves = {MOVE_WATER_GUN, MOVE_DISARMING_VOICE, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_ODDISH] = {
-    .species = SPECIES_ODDISH,
-    .moves = {MOVE_ABSORB, MOVE_MEGA_DRAIN, MOVE_ACID, MOVE_SWEET_SCENT},
-    .heldItem = ITEM_LEAF_STONE,
-    .nature = NATURE_DOCILE
+        .species = SPECIES_ODDISH,
+        .moves = {MOVE_ABSORB, MOVE_MEGA_DRAIN, MOVE_ACID, MOVE_SWEET_SCENT},
+        .heldItem = ITEM_LEAF_STONE,
+        .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_BELLSPROUT] = {
@@ -198,255 +203,223 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_SNOVER] = {
         .species = SPECIES_SNOVER,
         .moves = {MOVE_LEER, MOVE_POWDER_SNOW, MOVE_LEAFAGE, MOVE_MIST},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_BUDEW] = {
         .species = SPECIES_BUDEW,
         .moves = {MOVE_MEGA_DRAIN, MOVE_STUN_SPORE, MOVE_WORRY_SEED, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_VOLTORB_HISUIAN] = {
         .species = SPECIES_VOLTORB_HISUI,
         .moves = {MOVE_CHARGE, MOVE_TACKLE, MOVE_THUNDER_SHOCK, MOVE_EERIE_IMPULSE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_CARNIVINE] = {
         .species = SPECIES_CARNIVINE,
         .moves = {MOVE_BIND, MOVE_GROWTH, MOVE_BITE, MOVE_VINE_WHIP},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_COTTONEE] = {
         .species = SPECIES_COTTONEE,
         .moves = {MOVE_HELPING_HAND, MOVE_ABSORB, MOVE_FAIRY_WIND, MOVE_STUN_SPORE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_PETILIL] = {
         .species = SPECIES_PETILIL,
         .moves = {MOVE_ABSORB, MOVE_GROWTH, MOVE_HELPING_HAND, MOVE_STUN_SPORE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_MARACTUS] = {
         .species = SPECIES_MARACTUS,
         .moves = {MOVE_SPIKY_SHIELD, MOVE_PECK, MOVE_ABSORB, MOVE_AFTER_YOU},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_APPLIN] = {
         .species = SPECIES_APPLIN,
         .moves = {MOVE_ASTONISH, MOVE_WITHDRAW, MOVE_NONE, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_FOONGUS] = {
         .species = SPECIES_FOONGUS,
         .moves = {MOVE_ABSORB, MOVE_ASTONISH, MOVE_STUN_SPORE, MOVE_MEGA_DRAIN},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_TROPIUS] = {
         .species = SPECIES_TROPIUS,
         .moves = {MOVE_GUST, MOVE_LEER, MOVE_RAZOR_LEAF, MOVE_SWEET_SCENT},
-        .heldItem = ITEM_SITRUS_BERRY,
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_TOEDSCOOL] = {
         .species = SPECIES_TOEDSCOOL,
         .moves = {MOVE_WRAP, MOVE_MUD_SLAP, MOVE_ABSORB, MOVE_POISON_POWDER},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_EXEGGCUTE] = {
         .species = SPECIES_EXEGGCUTE,
         .moves = {MOVE_ABSORB, MOVE_HYPNOSIS, MOVE_CONFUSION, MOVE_BULLET_SEED},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_DHELMISE] = {
         .species = SPECIES_DHELMISE,
         .moves = {MOVE_ABSORB, MOVE_RAPID_SPIN, MOVE_ASTONISH, MOVE_WRAP},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_LILEEP] = {
         .species = SPECIES_LILEEP,
         .moves = {MOVE_BULLET_SEED, MOVE_WRAP, MOVE_ASTONISH, MOVE_ACID},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_CAPSAKID] = {
-    .species = SPECIES_CAPSAKID,
-    .moves = {MOVE_LEER, MOVE_LEAFAGE, MOVE_BITE, MOVE_GROWTH},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+        .heldItem = ITEM_FIRE_STONE,
+        .species = SPECIES_CAPSAKID,
+        .moves = {MOVE_LEER, MOVE_LEAFAGE, MOVE_BITE, MOVE_GROWTH},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_SCYTHER] = {
-    .species = SPECIES_SCYTHER,
-    .moves = {MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_FURY_CUTTER, MOVE_FALSE_SWIPE},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_SCYTHER] = {
+        .species = SPECIES_SCYTHER,
+        .moves = {MOVE_LEER, MOVE_QUICK_ATTACK, MOVE_FURY_CUTTER, MOVE_FALSE_SWIPE},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_NYMBLE] = {
-    .species = SPECIES_NYMBLE,
-    .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_STRUGGLE_BUG, MOVE_ASTONISH},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_NYMBLE] = {
+        .ability = ABILITY_TINTED_LENS,
+        .species = SPECIES_NYMBLE,
+        .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_STRUGGLE_BUG, MOVE_ASTONISH},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3
+    },
 
-[FRONTIER_MON_PINSIR] = {
-    .species = SPECIES_PINSIR,
-    .moves = {MOVE_VISE_GRIP, MOVE_FOCUS_ENERGY, MOVE_BIND, MOVE_SEISMIC_TOSS},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_PINSIR] = {
+        .species = SPECIES_PINSIR,
+        .moves = {MOVE_VISE_GRIP, MOVE_FOCUS_ENERGY, MOVE_BIND, MOVE_SEISMIC_TOSS},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_HERACROSS] = {
-    .species = SPECIES_HERACROSS,
-    .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_FURY_ATTACK, MOVE_ENDURE},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_HERACROSS] = {
+        .species = SPECIES_HERACROSS,
+        .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_FURY_ATTACK, MOVE_ENDURE},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_SHUCKLE] = {
-    .species = SPECIES_SHUCKLE,
-    .moves = {MOVE_WITHDRAW, MOVE_WRAP, MOVE_ROLLOUT, MOVE_STRUGGLE_BUG},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_SHUCKLE] = {
+        .species = SPECIES_SHUCKLE,
+        .moves = {MOVE_WITHDRAW, MOVE_WRAP, MOVE_ROLLOUT, MOVE_STRUGGLE_BUG},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_ANORITH] = {
-    .species = SPECIES_ANORITH,
-    .moves = {MOVE_FURY_CUTTER, MOVE_AQUA_JET, MOVE_SMACK_DOWN, MOVE_BUG_BITE},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_ANORITH] = {
+        .species = SPECIES_ANORITH,
+        .moves = {MOVE_FURY_CUTTER, MOVE_AQUA_JET, MOVE_SMACK_DOWN, MOVE_BUG_BITE},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_SKORUPI] = {
-    .species = SPECIES_SKORUPI,
-    .moves = {MOVE_POISON_STING, MOVE_LEER, MOVE_POISON_FANG, MOVE_BITE},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_SKORUPI] = {
+        .species = SPECIES_SKORUPI,
+        .moves = {MOVE_POISON_STING, MOVE_LEER, MOVE_POISON_FANG, MOVE_BITE},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_VENIPEDE] = {
-    .species = SPECIES_VENIPEDE,
-    .moves = {MOVE_POISON_STING, MOVE_ROLLOUT, MOVE_BUG_BITE, MOVE_POISON_TAIL},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_VENIPEDE] = {
+        .species = SPECIES_VENIPEDE,
+        .moves = {MOVE_POISON_STING, MOVE_ROLLOUT, MOVE_BUG_BITE, MOVE_POISON_TAIL},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_KARRABLAST] = {
-    .species = SPECIES_KARRABLAST,
-    .moves = {MOVE_PECK, MOVE_LEER, MOVE_FURY_CUTTER, MOVE_ENDURE},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_KARRABLAST] = {
+        .species = SPECIES_KARRABLAST,
+        .moves = {MOVE_PECK, MOVE_LEER, MOVE_FURY_CUTTER, MOVE_ENDURE},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_SHELMET] = {
-    .species = SPECIES_SHELMET,
-    .moves = {MOVE_ABSORB, MOVE_ACID, MOVE_STRUGGLE_BUG, MOVE_MEGA_DRAIN},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_SHELMET] = {
+        .species = SPECIES_SHELMET,
+        .moves = {MOVE_ABSORB, MOVE_ACID, MOVE_STRUGGLE_BUG, MOVE_MEGA_DRAIN},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_DURANT] = {
-    .species = SPECIES_DURANT,
-    .moves = {MOVE_FURY_CUTTER, MOVE_SAND_ATTACK, MOVE_VISE_GRIP, MOVE_METAL_CLAW},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_DURANT] = {
+        .species = SPECIES_DURANT,
+        .moves = {MOVE_FURY_CUTTER, MOVE_SAND_ATTACK, MOVE_VISE_GRIP, MOVE_METAL_CLAW},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_LARVESTA] = {
-    .species = SPECIES_LARVESTA,
-    .moves = {MOVE_EMBER, MOVE_STRING_SHOT, MOVE_FLAME_WHEEL, MOVE_BUG_BITE},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_LARVESTA] = {
+        .species = SPECIES_LARVESTA,
+        .moves = {MOVE_EMBER, MOVE_STRING_SHOT, MOVE_FLAME_WHEEL, MOVE_BUG_BITE},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_WIMPOD] = {
-    .species = SPECIES_WIMPOD,
-    .moves = {MOVE_STRUGGLE_BUG, MOVE_SAND_ATTACK, MOVE_DEFENSE_CURL},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_WIMPOD] = {
+        .species = SPECIES_WIMPOD,
+        .moves = {MOVE_STRUGGLE_BUG, MOVE_SAND_ATTACK, MOVE_DEFENSE_CURL},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_DEWPIDER] = {
-    .species = SPECIES_DEWPIDER,
-    .moves = {MOVE_WATER_GUN, MOVE_INFESTATION, MOVE_BUG_BITE, MOVE_BITE},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_DEWPIDER] = {
+        .species = SPECIES_DEWPIDER,
+        .moves = {MOVE_WATER_GUN, MOVE_INFESTATION, MOVE_BUG_BITE, MOVE_BITE},
+        .nature = NATURE_DOCILE
+    },
 
-[FRONTIER_MON_FALINKS] = {
-    .species = SPECIES_FALINKS,
-    .moves = {MOVE_TACKLE, MOVE_PROTECT, MOVE_ROCK_SMASH, MOVE_FOCUS_ENERGY},
-    .heldItem = ITEM_SITRUS_BERRY,
-    .nature = NATURE_DOCILE
-},
+    [FRONTIER_MON_FALINKS] = {
+        .species = SPECIES_FALINKS,
+        .moves = {MOVE_TACKLE, MOVE_PROTECT, MOVE_ROCK_SMASH, MOVE_FOCUS_ENERGY},
+        .nature = NATURE_DOCILE
+    },
 
 // [FRONTIER_MON_ZANGOOSE] = {
 //     .species = SPECIES_ZANGOOSE,
 //     .moves = {MOVE_DOUBLE_KICK, MOVE_DISABLE, MOVE_FURY_SWIPES, MOVE_FEINT},
-//     .heldItem = ITEM_SITRUS_BERRY,
 //     .nature = NATURE_DOCILE
 // },
 
     // [FRONTIER_MON_AZURILL] = { //20% chance to get griefed by Hidden Ability chance LUL
     //     .species = SPECIES_AZURILL,
     //     .moves = {MOVE_BUBBLE, MOVE_ATTRACT, MOVE_SING, MOVE_CHARM},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .ability = ABILITY_HUGE_POWER,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_MAGIKARP] = { //20% chance to hold Gyaradosite
     //     .species = SPECIES_MAGIKARP,
     //     .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_ABRA] = { //10% chance to hold Alakazite, 10% chance for Sash
     //     .species = SPECIES_ABRA,
     //     .moves = {MOVE_CONFUSION, MOVE_TELEPORT, MOVE_HIDDEN_POWER, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_MANKEY] = {
     //     .species = SPECIES_MANKEY,
     //     .moves = {MOVE_LOW_KICK, MOVE_LEER, MOVE_SCRATCH, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_EXEGGCUTE] = {
     //     .species = SPECIES_EXEGGCUTE,
     //     .moves = {MOVE_CONFUSION, MOVE_ABSORB, MOVE_LIGHT_SCREEN, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_FOONGUS] = {
     //     .species = SPECIES_FOONGUS,
     //     .moves = {MOVE_ABSORB, MOVE_ASTONISH, MOVE_STUN_SPORE, MOVE_MEGA_DRAIN},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_SKORUPI] = {
@@ -458,19 +431,16 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_YANMA] = {
     //     .species = SPECIES_YANMA,
     //     .moves = {MOVE_QUICK_ATTACK, MOVE_STRUGGLE_BUG, MOVE_DOUBLE_TEAM, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_PINSIR] = {
     //     .species = SPECIES_PINSIR,
     //     .moves = {MOVE_VISE_GRIP, MOVE_FOCUS_ENERGY, MOVE_BIND, MOVE_SEISMIC_TOSS},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_SHELMET] = {
     //     .species = SPECIES_SHELMET,
     //     .moves = {MOVE_ABSORB, MOVE_ACID, MOVE_SMACK_DOWN, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     [FRONTIER_MON_EEVEE] = { 
@@ -482,20 +452,17 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_KARRABLAST] = {
     //     .species = SPECIES_KARRABLAST,
     //     .moves = {MOVE_PECK, MOVE_LEER, MOVE_FURY_CUTTER, MOVE_ENDURE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_LARVESTA] = {
     //     .species = SPECIES_LARVESTA,
     //     .moves = {MOVE_EMBER, MOVE_STRING_SHOT, MOVE_FLAME_CHARGE, MOVE_STRUGGLE_BUG},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_HERACROSS] = {
     //     .species = SPECIES_HERACROSS,
     //     .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_FURY_ATTACK, MOVE_ENDURE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -541,34 +508,29 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_PORYGON] = { //10% chance for Dusk Stone (to evolve to Pz), 10% chance for Eviolite
     //     .species = SPECIES_PORYGON,
     //     .moves = {MOVE_TACKLE, MOVE_ICY_WIND, MOVE_CONVERSION, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY, 
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_CLEFFA] = {
     //     .ability = ABILITY_MAGIC_GUARD,
     //     .species = SPECIES_CLEFFA,
     //     .moves = {MOVE_MOONLIGHT, MOVE_SING, MOVE_ATTRACT, MOVE_DRAINING_KISS},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_DUNSPARCE] = { //20% chance to hold Leftovers
     //     .ability = ABILITY_SERENE_GRACE,
     //     .species = SPECIES_DUNSPARCE,
     //     .moves = {MOVE_TACKLE, MOVE_GLARE, MOVE_DEFENSE_CURL, MOVE_MUD_SLAP},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE,
     // },
     // [FRONTIER_MON_TEDDIURSA] = { //20% chance to hold Toxic Orb
     //     .species = SPECIES_TEDDIURSA,
     //     .moves = {MOVE_FURY_SWIPES, MOVE_BABY_DOLL_EYES, MOVE_FEINT_ATTACK, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_STANTLER] = { //20% chance to hold Leftovers
     //     .species = SPECIES_STANTLER,
     //     .ability = ABILITY_INTIMIDATE,
     //     .moves = {MOVE_STOMP, MOVE_HYPNOSIS, MOVE_LEER, MOVE_CONFUSE_RAY},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_TANDEMAUS] = {
@@ -580,14 +542,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_HAPPINY] = {
     //     .species = SPECIES_HAPPINY,
     //     .moves = {MOVE_POUND, MOVE_COPYCAT, MOVE_SWEET_KISS, MOVE_DISARMING_VOICE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_ZANGOOSE] = { //20% chance to hold Toxic Orb
     //     .species = SPECIES_ZANGOOSE,
     //     .ability = ABILITY_TOXIC_BOOST,
     //     .moves = {MOVE_DOUBLE_KICK, MOVE_FALSE_SWIPE, MOVE_FURY_SWIPES, MOVE_QUICK_ATTACK},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_MINCCINO] = {
@@ -606,20 +566,17 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_CYCLIZAR] = {
     //     .species = SPECIES_CYCLIZAR,
     //     .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_QUICK_ATTACK, MOVE_BITE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_GIRAFARIG] = {
     //     .ability = ABILITY_SAP_SIPPER,
     //     .species = SPECIES_GIRAFARIG,
     //     .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_ASTONISH, MOVE_CONFUSION},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_INDEEDEE_M] = {
     //     .species = SPECIES_INDEEDEE_M,
     //     .moves = {MOVE_SWIFT, MOVE_PSYBEAM, MOVE_PLAY_NICE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_SWABLU] = {
@@ -639,7 +596,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_TOGEPI] = {
     //     .species = SPECIES_TOGEPI,
     //     .moves = {MOVE_GROWL, MOVE_POUND, MOVE_LIFE_DEW, MOVE_SWEET_KISS},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -653,7 +609,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_CARVANHA] = {
     //     .species = SPECIES_CARVANHA,
     //     .moves = {MOVE_AQUA_JET, MOVE_LEER, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_CORPHISH] = {
@@ -667,35 +622,30 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_FINIZEN] = {
     //     .species = SPECIES_FINIZEN,
     //     .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_LEER, MOVE_WATER_GUN},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_SEEL] = {
     //     .species = SPECIES_SEEL,
     //     .moves = {MOVE_HEADBUTT, MOVE_GROWL, MOVE_WATER_GUN, MOVE_ICY_WIND},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_SPHEAL] = {
     //     .species = SPECIES_SPHEAL,
     //     .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_GROWL, MOVE_WATER_GUN},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_KRABBY] = {
     //     .species = SPECIES_KRABBY,
     //     .moves = {MOVE_BUBBLE, MOVE_VICE_GRIP, MOVE_LEER, MOVE_HARDEN},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_SLOWPOKE] = {
     //     .species = SPECIES_SLOWPOKE,
     //     .moves = {MOVE_CURSE, MOVE_YAWN, MOVE_TACKLE, MOVE_GROWL},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -709,7 +659,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_MANTYKE] = {
     //     .species = SPECIES_MANTYKE,
     //     .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_SUPERSONIC, MOVE_BUBBLE_BEAM},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -738,14 +687,12 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_BASCULIN] = {
     //     .species = SPECIES_BASCULIN_WHITE_STRIPED,
     //     .moves = {MOVE_TACKLE, MOVE_WATER_GUN, MOVE_UPROAR, MOVE_BITE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_FRILLISH] = {
     //     .species = SPECIES_FRILLISH,
     //     .moves = {MOVE_BUBBLE, MOVE_WATER_SPORT, MOVE_ABSORB, MOVE_NIGHT_SHADE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -759,7 +706,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_MAREANIE] = {
     //     .species = SPECIES_MAREANIE,
     //     .moves = {MOVE_PECK, MOVE_BITE, MOVE_TOXIC_SPIKES, MOVE_WIDE_GUARD},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -767,21 +713,18 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     //     .ability = ABILITY_WATER_BUBBLE,
     //     .species = SPECIES_DEWPIDER,
     //     .moves = {MOVE_WATER_GUN, MOVE_INFESTATION, MOVE_BUG_BITE, MOVE_BUBBLE_BEAM},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_HORSEA] = {
     //     .species = SPECIES_HORSEA,
     //     .moves = {MOVE_BUBBLE, MOVE_SMOKESCREEN, MOVE_LEER, MOVE_WATER_GUN},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
     // [FRONTIER_MON_ALOMOMOLA] = {
     //     .species = SPECIES_ALOMOMOLA,
     //     .moves = {MOVE_POUND, MOVE_WATER_GUN, MOVE_HELPING_HAND, MOVE_AQUA_RING},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -795,7 +738,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_LAPRAS] = {
     //     .species = SPECIES_LAPRAS,
     //     .moves = {MOVE_WATER_GUN, MOVE_GROWL, MOVE_SING, MOVE_MIST},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -817,56 +759,47 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_OMANYTE] = {
         .species = SPECIES_OMANYTE,
         .moves = {MOVE_MUD_SHOT, MOVE_WATER_GUN, MOVE_ANCIENT_POWER, MOVE_TICKLE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     [FRONTIER_MON_KABUTO] = {
         .species = SPECIES_KABUTO,
         .moves = {MOVE_MEGA_DRAIN, MOVE_ANCIENT_POWER, MOVE_SAND_ATTACK, MOVE_PROTECT},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     // [FRONTIER_MON_FEEBAS] = {
     //     .species = SPECIES_FEEBAS,
     //     .moves = {MOVE_FLAIL, MOVE_SPLASH, MOVE_NONE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
    
     // [FRONTIER_MON_WOOPER] = {
     //     .species = SPECIES_WOOPER,
     //     .moves = {MOVE_BUBBLE, MOVE_MUD_SHOT, MOVE_NONE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_WOOPER_P] = {
     //     .species = SPECIES_WOOPER_PALDEA,
     //     .moves = {MOVE_POISON_TAIL, MOVE_MUD_SHOT, MOVE_NONE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_SNOM] = {
     //     .species = SPECIES_SNOM,
     //     .moves = {MOVE_POWDER_SNOW, MOVE_STRUGGLE_BUG, MOVE_NONE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_PINECO] = {
     //     .species = SPECIES_PINECO,
     //     .moves = {MOVE_SELF_DESTRUCT, MOVE_TAKE_DOWN, MOVE_BUG_BITE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_VENIPEDE] = {
     //     .species = SPECIES_VENIPEDE,
     //     .moves = {MOVE_POISON_TAIL, MOVE_ROLLOUT, MOVE_BUG_BITE, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_WIMPOD] = {
     //     .species = SPECIES_WIMPOD,
     //     .moves = {MOVE_STRUGGLE_BUG, MOVE_SAND_ATTACK, MOVE_DEFENSE_CURL, MOVE_NONE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
 
@@ -876,77 +809,66 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_SWINUB] = {
         .species = SPECIES_SWINUB,
         .moves = {MOVE_ICY_WIND, MOVE_DIG, MOVE_ROCK_TOMB, MOVE_ENDURE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_GENTLE
     },
 
     [FRONTIER_MON_HOUNDOUR] = {
         .species = SPECIES_HOUNDOUR,
         .moves = {MOVE_LEER, MOVE_EMBER, MOVE_HOWL, MOVE_SMOG},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_MURKROW] = {
         .species = SPECIES_MURKROW,
         .moves = {MOVE_PECK, MOVE_ASTONISH, MOVE_GUST, MOVE_HAZE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_SNEASEL] = {
         .species = SPECIES_SNEASEL,
         .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_TAUNT, MOVE_QUICK_ATTACK},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_ABSOL] = {
         .species = SPECIES_ABSOL,
         .moves = {MOVE_QUICK_ATTACK, MOVE_LEER, MOVE_DOUBLE_TEAM, MOVE_KNOCK_OFF},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_CARVANHA_1] = {
         .species = SPECIES_CARVANHA,
         .moves = {MOVE_AQUA_JET, MOVE_LEER, MOVE_POISON_FANG, MOVE_FOCUS_ENERGY},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_SPIRITOMB] = {
         .species = SPECIES_SPIRITOMB,
         .moves = {MOVE_NIGHT_SHADE, MOVE_CONFUSE_RAY, MOVE_SHADOW_SNEAK, MOVE_SPITE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_SANDILE] = {
         .species = SPECIES_SANDILE,
         .moves = {MOVE_LEER, MOVE_POWER_TRIP, MOVE_SAND_ATTACK, MOVE_NONE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_PAWNIARD] = {
         .species = SPECIES_PAWNIARD,
         .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_FURY_CUTTER, MOVE_METAL_CLAW},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_VULLABY] = {
         .species = SPECIES_VULLABY,
         .moves = {MOVE_GUST, MOVE_LEER, MOVE_FLATTER, MOVE_PLUCK},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_IMPIDIMP] = {
         .species = SPECIES_IMPIDIMP,
         .moves = {MOVE_FAKE_OUT, MOVE_CONFIDE, MOVE_BITE, MOVE_FLATTER},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
@@ -967,56 +889,48 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_KUBFU] = {
         .species = SPECIES_KUBFU,
         .moves = {MOVE_LEER, MOVE_ROCK_SMASH, MOVE_ENDURE, MOVE_FOCUS_ENERGY},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_LITTEN_1] = {
         .species = SPECIES_LITTEN,
         .moves = {MOVE_SCRATCH, MOVE_GROWL, MOVE_EMBER, MOVE_LICK},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_SPRIGATITO_1] = {
         .species = SPECIES_SPRIGATITO,
         .moves = {MOVE_SCRATCH, MOVE_TAIL_WHIP, MOVE_LEAFAGE, MOVE_BITE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_FLOETTE_ETERNAL] = {
         .species = SPECIES_FLOETTE_ETERNAL,
         .moves = {MOVE_VINE_WHIP, MOVE_TACKLE, MOVE_FAIRY_WIND, MOVE_SAFEGUARD},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_ZORUA] = {
         .species = SPECIES_ZORUA,
         .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_TORMENT, MOVE_HONE_CLAWS},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_ZORUA_HISUI] = {
         .species = SPECIES_ZORUA_HISUI,
         .moves = {MOVE_SCRATCH, MOVE_LEER, MOVE_TORMENT, MOVE_HONE_CLAWS},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
     [FRONTIER_MON_LARVITAR] = {
         .species = SPECIES_LARVITAR,
         .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_ROCK_THROW, MOVE_PAYBACK},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     
     [FRONTIER_MON_DEINO] = {
         .species = SPECIES_DEINO,
         .moves = {MOVE_TACKLE, MOVE_FOCUS_ENERGY, MOVE_DRAGON_BREATH, MOVE_BITE},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
 
@@ -1041,7 +955,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_PIKACHU] = {
         .species = SPECIES_PIKACHU,
         .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_DOUBLE_TEAM, MOVE_QUICK_ATTACK},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_DOCILE
     },
     [FRONTIER_MON_SANDSHREW] = {
@@ -1059,7 +972,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_BELLSPROUT] = {
     //     .species = SPECIES_BELLSPROUT,
     //     .moves = {MOVE_RAZOR_LEAF, MOVE_ACID, MOVE_STUN_SPORE, MOVE_WRAP},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_LAX
     // },
     [FRONTIER_MON_GEODUDE] = {
@@ -1120,7 +1032,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_VENONAT] = {
         .species = SPECIES_VENONAT,
         .moves = {MOVE_PSYBEAM, MOVE_SUPERSONIC, MOVE_STUN_SPORE, MOVE_SKILL_SWAP},
-        .heldItem = ITEM_SITRUS_BERRY,
         .nature = NATURE_RELAXED
     },
    
@@ -1252,7 +1163,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_PELIPPER_1] = {
     //     .species = SPECIES_PELIPPER,
     //     .moves = {MOVE_WATER_PULSE, MOVE_AERIAL_ACE, MOVE_STOCKPILE, MOVE_SWALLOW},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_QUIET
     // },
     // [FRONTIER_MON_SWELLOW_1] = {
@@ -1306,13 +1216,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_LUNATONE_1] = {
     //     .species = SPECIES_LUNATONE,
     //     .moves = {MOVE_CONFUSION, MOVE_COSMIC_POWER, MOVE_LIGHT_SCREEN, MOVE_SANDSTORM},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_QUIET
     // },
     // [FRONTIER_MON_SOLROCK_1] = {
     //     .species = SPECIES_SOLROCK,
     //     .moves = {MOVE_CONFUSION, MOVE_FIRE_SPIN, MOVE_LIGHT_SCREEN, MOVE_SANDSTORM},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_QUIET
     // },
     // [FRONTIER_MON_NOCTOWL_1] = {
@@ -1324,7 +1232,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_SANDSLASH_1] = {
     //     .species = SPECIES_SANDSLASH,
     //     .moves = {MOVE_CRUSH_CLAW, MOVE_ROCK_SLIDE, MOVE_SWIFT, MOVE_SANDSTORM},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_ADAMANT
     // },
     // [FRONTIER_MON_VENOMOTH_1] = {
@@ -1336,13 +1243,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_CHANSEY_1] = {
     //     .species = SPECIES_CHANSEY,
     //     .moves = {MOVE_METRONOME, MOVE_REFRESH, MOVE_DEFENSE_CURL, MOVE_MINIMIZE},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_RELAXED
     // },
     // [FRONTIER_MON_SEAKING_1] = {
     //     .species = SPECIES_SEAKING,
     //     .moves = {MOVE_WATER_PULSE, MOVE_PSYBEAM, MOVE_SWIFT, MOVE_AGILITY},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_JUMPLUFF_1] = {
@@ -1480,7 +1385,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_TORKOAL_1] = {
     //     .species = SPECIES_TORKOAL,
     //     .moves = {MOVE_EMBER, MOVE_FIRE_SPIN, MOVE_SMOKESCREEN, MOVE_AMNESIA},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_RELAXED
     // },
     // [FRONTIER_MON_KINGLER_1] = {
@@ -1744,7 +1648,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_PONYTA_2] = {
     //     .species = SPECIES_PONYTA,
     //     .moves = {MOVE_FLAMETHROWER, MOVE_BODY_SLAM, MOVE_DOUBLE_KICK, MOVE_DOUBLE_TEAM},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_QUIRKY
     // },
     // [FRONTIER_MON_AZUMARILL_2] = {
@@ -1774,7 +1677,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_SEALEO_2] = {
     //     .species = SPECIES_SEALEO,
     //     .moves = {MOVE_ICE_BEAM, MOVE_SURF, MOVE_BODY_SLAM, MOVE_HAIL},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_QUIET
     // },
     // [FRONTIER_MON_RATICATE_2] = {
@@ -1840,7 +1742,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_WIGGLYTUFF_2] = {
     //     .species = SPECIES_WIGGLYTUFF,
     //     .moves = {MOVE_FAKE_TEARS, MOVE_SING, MOVE_DREAM_EATER, MOVE_BRICK_BREAK},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_DOCILE
     // },
     // [FRONTIER_MON_SUNFLORA_2] = {
@@ -1888,7 +1789,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_LAIRON_2] = {
     //     .species = SPECIES_LAIRON,
     //     .moves = {MOVE_EARTHQUAKE, MOVE_IRON_TAIL, MOVE_ROAR, MOVE_PROTECT},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_SASSY
     // },
     // [FRONTIER_MON_TANGELA_2] = {
@@ -2158,7 +2058,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_OMASTAR_2] = {
     //     .species = SPECIES_OMASTAR,
     //     .moves = {MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_ICE_BEAM, MOVE_PROTECT},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_MODEST
     // },
     // [FRONTIER_MON_KABUTOPS_2] = {
@@ -2338,7 +2237,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_VICTREEBEL_1] = {
     //     .species = SPECIES_VICTREEBEL,
     //     .moves = {MOVE_GIGA_DRAIN, MOVE_SLEEP_POWDER, MOVE_SWEET_SCENT, MOVE_SYNTHESIS},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_QUIET
     // },
     // [FRONTIER_MON_ELECTRODE_1] = {
@@ -2566,7 +2464,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_STEELIX_1] = {
     //     .species = SPECIES_STEELIX,
     //     .moves = {MOVE_EARTHQUAKE, MOVE_DRAGON_BREATH, MOVE_ROCK_TOMB, MOVE_ROAR},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_ADAMANT
     // },
     // [FRONTIER_MON_TENTACRUEL_1] = {
@@ -2632,7 +2529,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_FLAREON_1] = {
     //     .species = SPECIES_FLAREON,
     //     .moves = {MOVE_FLAMETHROWER, MOVE_ROAR, MOVE_BITE, MOVE_SAND_ATTACK},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_MODEST
     // },
     // [FRONTIER_MON_MEGANIUM_1] = {
@@ -2968,7 +2864,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_WEEZING_2] = {
     //     .species = SPECIES_WEEZING,
     //     .moves = {MOVE_MEMENTO, MOVE_SLUDGE_BOMB, MOVE_FACADE, MOVE_DESTINY_BOND},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_ADAMANT
     // },
     // [FRONTIER_MON_KANGASKHAN_2] = {
@@ -3034,7 +2929,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     // [FRONTIER_MON_CRADILY_2] = {
     //     .species = SPECIES_CRADILY,
     //     .moves = {MOVE_EARTHQUAKE, MOVE_ANCIENT_POWER, MOVE_SWAGGER, MOVE_PSYCH_UP},
-    //     .heldItem = ITEM_SITRUS_BERRY,
     //     .nature = NATURE_ADAMANT
     // },
     // [FRONTIER_MON_ARMALDO_2] = {

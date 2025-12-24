@@ -51,7 +51,11 @@
     F(STEEL_WING) \
     F(ELECTROWEB) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(WILD_CHARGE) \
+    F(U_TURN) \
+    F(VOLT_SWITCH) \
+    F(FLIP_TURN)
 
 #define FOREACH_HM(F) \
     F(CUT) \
