@@ -42,8 +42,8 @@ MtMoon_1F_EventScript_ItemMoonStone::
 	finditem ITEM_MOON_STONE
 	end
 
-MtMoon_B2F_EventScript_ItemStarPiece::
-	finditem ITEM_STAR_PIECE
+MtMoon_B2F_EventScript_ItemSoftSand::
+	finditem ITEM_SOFT_SAND
 	end
 
 MtMoon_B2F_EventScript_ItemTM46::

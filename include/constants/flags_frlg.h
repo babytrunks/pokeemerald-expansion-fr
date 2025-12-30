@@ -327,7 +327,7 @@
 #define FLAG_HIDE_MT_MOON_1F_RARE_CANDY                         0x15C
 #define FLAG_HIDE_MT_MOON_1F_ESCAPE_ROPE                        0x15D
 #define FLAG_HIDE_MT_MOON_1F_MOON_STONE                         0x15E
-#define FLAG_HIDE_MT_MOON_B2F_STAR_PIECE                        0x15F
+#define FLAG_HIDE_MT_MOON_B2F_SOFT_SAND                        0x15F
 #define FLAG_HIDE_MT_MOON_B2F_TM46                              0x160
 #define FLAG_HIDE_ROUTE4_TM05                                   0x161
 #define FLAG_HIDE_ROUTE24_TM45                                  0x162
@@ -682,7 +682,7 @@
 #define FLAG_WONDER_CARD_UNUSED_17                       0x2BA
 #define NUM_WONDER_CARD_FLAGS                            (1 + FLAG_WONDER_CARD_UNUSED_17 - FLAG_RECEIVED_AURORA_TICKET)
 
-#define FLAG_GOT_POWDER_JAR                              0x2BB
+#define FLAG_GOT_POWDER_JAR                              0x2BB //unused
 #define FLAG_FOUGHT_MEWTWO                               0x2BC
 #define FLAG_FOUGHT_MOLTRES                              0x2BD
 #define FLAG_FOUGHT_ARTICUNO                             0x2BE
@@ -1687,7 +1687,7 @@
 #define FLAG_RECEIVED_OLD_ROD                0
 #define FLAG_RECEIVED_COIN_CASE              0
 #define FLAG_RETURNED_RED_OR_BLUE_ORB        0
-#define FLAG_RECEIVED_TM_SNATCH              0
+#define FLAG_RECEIVED_TM_HURRICANE              0
 #define FLAG_RECEIVED_TM_DIG                 0
 #define FLAG_RECEIVED_TM_BULLET_SEED         0
 #define FLAG_ENTERED_ELITE_FOUR              0
@@ -2308,7 +2308,7 @@
 #define FLAG_ITEM_ROUTE_109_PP_UP                                   0
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0
-#define FLAG_ITEM_ROUTE_111_TM_SANDSTORM                            0
+#define FLAG_ITEM_ROUTE_111_TM_HIGH_HORSEPOWER                            0
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0
 #define FLAG_ITEM_ROUTE_112_NUGGET                                  0
@@ -2344,7 +2344,7 @@
 #define FLAG_ITEM_RUSTBORO_CITY_X_DEFEND                            0
 #define FLAG_ITEM_LILYCOVE_CITY_MAX_REPEL                           0
 #define FLAG_ITEM_MOSSDEEP_CITY_NET_BALL                            0
-#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_TAIL                   0
+#define FLAG_ITEM_METEOR_FALLS_1F_1R_TM_IRON_HEAD                   0
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_FULL_HEAL                      0
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_MOON_STONE                     0
 #define FLAG_ITEM_METEOR_FALLS_1F_1R_PP_UP                          0

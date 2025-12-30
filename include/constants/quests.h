@@ -18,7 +18,7 @@
 #define QUEST_NATURE_CHANGER                0
 #define QUEST_LIGHT_BALL          1
 #define QUEST_FIND_BERRY_JUICE          2
-#define QUEST_4          3
+#define QUEST_FANG_TUTOR          3
 #define QUEST_5          4
 #define QUEST_6          5
 #define QUEST_7          6

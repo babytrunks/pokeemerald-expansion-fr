@@ -2458,6 +2458,67 @@ void GetFollowerPokemonGender(void)
     gSpecialVar_Result = GetMonGender(GetFirstLiveMon());
 }
 
+void CheckFollowerPokemonIsDog(void)
+{
+    u16 species = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));
+    switch (species) 
+    {
+        case SPECIES_GROWLITHE:
+        case SPECIES_GROWLITHE_HISUI:
+        case SPECIES_ARCANINE:
+        case SPECIES_ARCANINE_HISUI:
+
+        // Gen 2
+        case SPECIES_HOUNDOUR:
+        case SPECIES_HOUNDOOM:
+        case SPECIES_SNUBBULL:
+        case SPECIES_GRANBULL:
+
+        // Gen 3
+        case SPECIES_POOCHYENA:
+        case SPECIES_MIGHTYENA:
+        case SPECIES_ELECTRIKE:
+        case SPECIES_MANECTRIC:
+        case SPECIES_SMEARGLE:
+        // Gen 4
+
+        // Gen 5
+        case SPECIES_LILLIPUP:
+        case SPECIES_HERDIER:
+        case SPECIES_STOUTLAND:
+
+        // Gen 6
+        case SPECIES_FURFROU:
+
+        // Gen 7
+        case SPECIES_ROCKRUFF:
+        case SPECIES_LYCANROC_MIDDAY:
+        case SPECIES_LYCANROC_MIDNIGHT:
+        case SPECIES_LYCANROC_DUSK:
+
+        // Gen 8
+        case SPECIES_YAMPER:
+        case SPECIES_BOLTUND:
+        case SPECIES_ZACIAN:
+        case SPECIES_ZAMAZENTA:
+
+        // Gen 9
+        case SPECIES_FIDOUGH:
+        case SPECIES_DACHSBUN:
+        case SPECIES_MASCHIFF:
+        case SPECIES_MABOSSTIFF:
+        case SPECIES_GREAVARD:
+        case SPECIES_HOUNDSTONE:
+        case SPECIES_RIOLU: 
+        case SPECIES_LUCARIO:
+        case SPECIES_ZYGARDE_10:
+            gSpecialVar_Result = TRUE;
+            break;
+        default:
+            gSpecialVar_Result = FALSE;
+            break;
+    }
+}
 // Determine whether follower *should* be visible
 bool32 IsFollowerVisible(void)
 {

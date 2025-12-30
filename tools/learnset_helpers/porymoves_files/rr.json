@@ -573,10 +573,6 @@
   },
   "MEOWTH": {
     "LevelMoves": [
-      {
-        "Level": 22,
-        "Move": "MOVE_BULLET_PUNCH"
-      }
     ],
     "PreEvoMoves": [],
     "TMMoves": [],

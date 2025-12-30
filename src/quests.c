@@ -531,12 +531,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL, //removed sSubQuests1
 	      0 //removed QUEST_1_SUB_COUNT
 	),
-	side_quest(
+	side_quest( // Fang Tutor Quest
 	      gText_SideQuestName_4,
 	      gText_SideQuestDesc_4,
 	      gText_SideQuestDoneDesc_4,
 	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_OLD_MAN_2,
 	      OBJECT,
 	      NULL,
 	      0
