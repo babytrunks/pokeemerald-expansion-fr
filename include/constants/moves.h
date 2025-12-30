@@ -910,7 +910,10 @@
 #define MOVE_MISTY_SPLATTER 848
 #define MOVE_BREAKTHROUGH   849
 #define MOVE_FORTIFY     850
-#define MOVES_COUNT_GEN9 851
+#define MOVE_DARK_HOLE     851 //todo
+#define MOVE_AQUA_FANG     852 //todo
+#define MOVE_DRACO_BARRAGE 853 //todo
+#define MOVES_COUNT_GEN9 854
 
 #define MOVES_COUNT         MOVES_COUNT_GEN9
 
