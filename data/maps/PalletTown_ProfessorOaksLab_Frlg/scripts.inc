@@ -1413,8 +1413,130 @@ PalletTown_ProfessorOaksLab_EventScript_Aide1GameClear::
 PalletTown_ProfessorOaksLab_EventScript_Aide2::
 	lock
 	faceplayer
-	goto_if_set FLAG_SYS_GAME_CLEAR, PalletTown_ProfessorOaksLab_EventScript_Aide2GameClear
-	msgbox PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide
+	@ goto_if_set FLAG_SYS_GAME_CLEAR, PalletTown_ProfessorOaksLab_EventScript_Aide2GameClear
+	@ msgbox PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide
+	goto_if_quest_complete QUEST_NATURE_CHANGER, PalletTown_ProfessorOaksLab_EventScript_WantNatureChange
+	goto_if_quest_active QUEST_NATURE_CHANGER, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks
+	msgbox PalletTown_ProfessorOaksLab_Text_HelpWithNatureQuest
+	setflag FLAG_SYS_QUEST_MENU_GET
+ 	questmenu QUEST_MENU_SET_ACTIVE QUEST_NATURE_CHANGER
+    openquestmenu
+    startquest QUEST_NATURE_CHANGER
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_WantNatureChange:
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hardy, 0
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lonely, 1
+	dynmultipush Debug_EventScript_ChangeNature_Text_Brave, 2
+	dynmultipush Debug_EventScript_ChangeNature_Text_Adamant, 3
+	dynmultipush Debug_EventScript_ChangeNature_Text_Naughty, 4
+	dynmultipush Debug_EventScript_ChangeNature_Text_Bold, 5
+	dynmultipush Debug_EventScript_ChangeNature_Text_Docile, 6
+	dynmultipush Debug_EventScript_ChangeNature_Text_Relaxed, 7
+	dynmultipush Debug_EventScript_ChangeNature_Text_Impish, 8
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lax, 9
+	dynmultipush Debug_EventScript_ChangeNature_Text_Timid, 10
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hasty, 11
+	dynmultipush Debug_EventScript_ChangeNature_Text_Serious, 12
+	dynmultipush Debug_EventScript_ChangeNature_Text_Jolly, 13
+	dynmultipush Debug_EventScript_ChangeNature_Text_Naive, 14
+	dynmultipush Debug_EventScript_ChangeNature_Text_Modest, 15
+	dynmultipush Debug_EventScript_ChangeNature_Text_Mild, 16
+	dynmultipush Debug_EventScript_ChangeNature_Text_Quiet, 17
+	dynmultipush Debug_EventScript_ChangeNature_Text_Bashful, 18
+	dynmultipush Debug_EventScript_ChangeNature_Text_Rash, 19
+	dynmultipush Debug_EventScript_ChangeNature_Text_Calm, 20
+	dynmultipush Debug_EventScript_ChangeNature_Text_Gentle, 21
+	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
+	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
+	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, PalletTown_ProfessorOaks_EventScript_End
+	special SetHiddenNature
+	releaseall
+	end
+
+PalletTown_ProfessorOaks_EventScript_End:
+	releaseall
+	end
+
+
+
+PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks:
+	goto_if_set FLAG_COMPLETED_NATURE_SUBQUEST_3, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks4
+	goto_if_set FLAG_COMPLETED_NATURE_SUBQUEST_2, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks3
+	goto_if_set FLAG_COMPLETED_NATURE_SUBQUEST_1, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks2
+	callnative GetFollowerPokemonNature
+	goto_if_eq VAR_RESULT, NATURE_LAX, PalletTown_ProfessorOaksLab_EventScript_CompleteSubquest1
+	msgbox PalletTown_ProfessorOaksLab_Text_ThatsNotALaxNature
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks2:
+	msgbox PalletTown_ProfessorOaksLab_Text_INeedPersimBerry
+	checkitem ITEM_PERSIM_BERRY
+	goto_if_eq VAR_RESULT, FALSE, PalletTown_ProfessorOaksLab_EventScript_Aide2ThatsNotAPersimBerry
+	msgbox PalletTown_ProfessorOaksLab_Text_ThatsAPersimBerry
+	msgbox PalletTown_ProfessorOaksLab_Text_NeedGenderless
+	setflag FLAG_COMPLETED_NATURE_SUBQUEST_2
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER, SUB_QUEST_2
+	openquestmenu	
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_Aide2ThatsNotAPersimBerry::
+	@ msgbox PalletTown_ProfessorOaksLab_Text_ThatsNotAPersimBerry
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks4:
+	msgbox PalletTown_ProfessorOaksLab_Text_BringEverstone
+	checkitem ITEM_EVERSTONE
+	goto_if_eq VAR_RESULT, FALSE, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks_NoEverstone
+	msgbox PalletTown_ProfessorOaksLab_Text_ThatsEverstone
+	setflag FLAG_COMPLETED_NATURE_SUBQUEST_4
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER, SUB_QUEST_4
+	questmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER
+	openquestmenu
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks_NoEverstone:
+	@ msgbox PalletTown_ProfessorOaksLab_Text_Aide2StartNatureChangeChecks_NoEverstone
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks3:
+	msgbox PalletTown_ProfessorOaksLab_Text_NeedGenderless
+	callnative GetFollowerPokemonGender
+	goto_if_eq VAR_RESULT, 0, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks_WrongGender
+	goto_if_eq VAR_RESULT, 0xFE, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks_WrongGender
+	msgbox PalletTown_ProfessorOaksLab_Text_ThatsGenderless
+	msgbox PalletTown_ProfessorOaksLab_Text_BringEverstone
+	setflag FLAG_COMPLETED_NATURE_SUBQUEST_3
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER, SUB_QUEST_3
+	openquestmenu
+	release
+	end
+ 
+ PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks_WrongGender: 
+	@ msgbox PalletTown_ProfessorOaksLab_Text_ThatsNotAGenderless
+	release
+	end
+
+PalletTown_ProfessorOaksLab_EventScript_CompleteSubquest1:
+	msgbox PalletTown_ProfessorOaksLab_Text_ThatsALaxNature
+	msgbox PalletTown_ProfessorOaksLab_Text_INeedPersimBerry
+	setflag FLAG_COMPLETED_NATURE_SUBQUEST_1
+	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER, SUB_QUEST_1
+	openquestmenu
 	release
 	end
 
@@ -2148,10 +2270,6 @@ PalletTown_ProfessorOaksLab_Text_EmailMessage::
     .string "Prof. Oak, please visit us!\n"
     .string "…$"
 
-PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide::
-    .string "I study Pokémon as Prof. Oak's\n"
-    .string "AIDE.$"
-
 PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons::
     .string "Hi, {PLAYER}. I bet you've become\n"
     .string "good friends with your Pokémon.\p"
@@ -2285,3 +2403,90 @@ PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_GiveExpShare::
 
 PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_KindnessWins::
     .string "Kindness wins!$"
+
+PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide::
+    .string "I study Pokémon as Prof. Oak's\n"
+    .string "Aide.$"
+
+PalletTown_ProfessorOaksLab_Text_HelpWithNatureQuest::
+	.string "Hello! I am trying to complete my\n"
+	.string "nature changing device.\p"
+	.string "I have heard reports of issues swapping\n"
+	.string "natures of Pokémon with Lax nature.\p"
+	.string "Could you bring me a Lax\n"
+	.string "nature Pokémon so I can test?$"
+
+PalletTown_ProfessorOaksLab_Text_HelpWithNatureSubQuest2::
+	.string "It seems there my nature changing device\n"
+	.string "does have an issue with Lax nature\l"
+	.string "Pokémon.\p"
+	.string "Could you bring me a Persim Berry?\n"
+	.string "I think is a potential ingredient\l"
+	.string "that could fix this issue.$"
+
+PalletTown_ProfessorOaksLab_Text_HelpWithNatureSubQuest3::
+	.string "Ah yes! It does seem the Persim Berry\n"
+	.string "has helped fix this issue.\p"
+	.string "I would like to test the device on\l"
+	.string "a gender-less Pokémon.\p"
+	.string "Can you show me a gender-less Pokémon\n"
+	.string "I could test this out on?$"
+
+PalletTown_ProfessorOaksLab_Text_HelpWithNatureSubQuest4::
+	.string "There is a problem using my nature-\n"
+	.string "changing device with gender-less Pokémon.\p"
+	.string "Bring me an Everstone so I can stabilize\n"
+	.string "the subject's traits for testing.$"
+
+PalletTown_ProfessorOaksLab_Text_ThatsNotALaxNature:
+	.string "Eh, no.$"
+
+PalletTown_ProfessorOaksLab_Text_ThatsNotAPersimBerry:
+	.string "Eh, no.$"
+
+PalletTown_ProfessorOaksLab_Text_ThatsALaxNature:
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}Yes, that's a Lax Nature Pokémon!\n"
+	.string "Ah, rats. There is an issue with the device.$"
+
+
+PalletTown_ProfessorOaksLab_Text_INeedPersimBerry:
+	.string "I think a Persim Berry would solve\n"
+	.string "this issue, could you get one for me?$"
+
+PalletTown_ProfessorOaksLab_Text_ThatsAPersimBerry:
+	.string "Nice, thank you! Let's see…\n"
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}\p"
+	.string "Yes, that fixed it!$"
+
+PalletTown_ProfessorOaksLab_Text_NeedGenderless:
+	.string "However, I just realize\n"
+	.string "I haven't tested this device with a gender-\l"
+	.string "less Pokémon. Can you bring one?$"
+
+PalletTown_ProfessorOaksLab_Text_ThatsNotAGenderless:
+	.string "Eh, no.$"
+
+PalletTown_ProfessorOaksLab_Text_ThatsGenderless:
+	.string "Yes, that's what I'm looking for! One sec…$"
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}\p"
+	.string "Yep, there's an issue with gender-less\n"
+	.string "Pokémon.$"
+
+PalletTown_ProfessorOaksLab_Text_BringEverstone:
+	.string "Sorry to bother again, but could you\n"
+	.string "bring an Everstone? It can stabilize\l"
+	.string "the subject's traits for testing.$"
+
+PalletTown_ProfessorOaksLab_Text_ThatsEverstone:
+	.string "Oh boy! An Everstone! Gimme gimme!\n"
+	.string "Okay, let's see if this'll do the\l"
+	.string "trick…\p"
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}\p"
+	.string "Alright, it works now. I'm so very\n"
+	.string "grateful for your help! In return,\l"
+	.string "I can swap the natures of your Pokémon\l"
+	.string "now. Just talk to me when you're\l"
+	.string "in need of this service.$"
+
+PalletTown_ProfessorOaksLab_Text_Aide2StartNatureChangeChecks_NoEverstone:
+	.string "Eh, no.$"

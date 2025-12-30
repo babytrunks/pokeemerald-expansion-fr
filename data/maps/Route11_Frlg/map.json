@@ -3,7 +3,6 @@
   "name": "Route11_Frlg",
   "layout": "LAYOUT_ROUTE11",
   "music": "MUS_RG_ROUTE11",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_ROUTE_11",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -12,7 +11,6 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
-  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
@@ -28,7 +26,6 @@
   ],
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 19,
       "y": 8,
@@ -42,7 +39,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 16,
       "y": 17,
@@ -56,7 +52,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 31,
       "y": 8,
@@ -70,7 +65,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 28,
       "y": 10,
@@ -84,7 +78,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 38,
       "y": 15,
@@ -98,7 +91,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 50,
       "y": 4,
@@ -112,8 +104,7 @@
       "flag": "0"
     },
     {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_ELECTRICIAN",
       "x": 42,
       "y": 8,
       "elevation": 3,
@@ -126,7 +117,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 50,
       "y": 14,
@@ -140,7 +130,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 57,
       "y": 16,
@@ -154,8 +143,7 @@
       "flag": "0"
     },
     {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_ELECTRICIAN",
       "x": 32,
       "y": 18,
       "elevation": 3,
@@ -168,7 +156,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 42,
       "y": 12,
@@ -178,11 +165,10 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route11_EventScript_ItemXDefend",
-      "flag": "FLAG_HIDE_ROUTE11_X_DEFEND"
+      "script": "Route11_EventScript_ItemIron",
+      "flag": "FLAG_HIDE_ROUTE11_IRON"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 63,
       "y": 13,
@@ -192,11 +178,10 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route11_EventScript_ItemGreatBall",
-      "flag": "FLAG_HIDE_ROUTE11_GREAT_BALL"
+      "script": "Route11_EventScript_ItemDuskBall",
+      "flag": "FLAG_HIDE_ROUTE11_DUSK_BALL"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 13,
       "y": 3,
@@ -206,8 +191,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route11_EventScript_ItemAwakening",
-      "flag": "FLAG_HIDE_ROUTE11_AWAKENING"
+      "script": "Route11_EventScript_ItemMuscleFeather",
+      "flag": "FLAG_HIDE_ROUTE11_MUSCLE_FEATHER"
     }
   ],
   "warp_events": [
@@ -245,13 +230,15 @@
     },
     {
       "type": "hidden_item",
-      "x": 58,
-      "y": 5,
+      "x": 59,
+      "y": -1,
       "elevation": 0,
       "item": "ITEM_ESCAPE_ROPE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE11_ESCAPE_ROPE",
       "quantity": 1,
       "underfoot": false
     }
-  ]
+  ],
+  "floor_number": 0,
+  "region": "REGION_KANTO"
 }

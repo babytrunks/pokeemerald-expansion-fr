@@ -98,11 +98,14 @@
     "TutorMoves": []
   },
   "BEEDRILL": {
-    "LevelMoves": [],
+    "LevelMoves": [ {
+        "Level": 64,
+        "Move": "MOVE_MEGAHORN"
+      }],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [ "MOVE_GUNK_SHOT"]
   },
   "PIDGEY": {
     "LevelMoves": [],
@@ -147,7 +150,13 @@
     "TutorMoves": []
   },
   "FEAROW": {
-    "LevelMoves": [],
+    "LevelMoves": [       {
+        "Level": 0,
+        "Move": "MOVE_DOUBLE_HIT"
+      }, {
+        "Level": 38,
+        "Move": "MOVE_BRAVE_BIRD"
+      }],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6181,7 +6190,10 @@
     "TutorMoves": []
   },
   "SANDACONDA": {
-    "LevelMoves": [],
+    "LevelMoves": [       {
+        "Level": 0,
+        "Move": "MOVE_DOUBLE_HIT"
+      }],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6407,7 +6419,7 @@
   "PINCURCHIN": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [ "MOVE_VOLT_SWITCH"],
     "EggMoves": [],
     "TutorMoves": []
   },

@@ -237,7 +237,7 @@ static const u8 sText_DotSpace[] = _(". ");
 static const u8 sText_Close[] = _("Close");
 static const u8 sText_ColorGreen[] = _("{COLOR}{GREEN}");
 static const u8 sText_AZ[] = _(" A-Z");
-
+static const u8 gText_NatureSubQuestMap1[] =  _("Oak's Lab");
 ///////////////////////////////////////////////////////////////////////////////
 //////////////////////BEGIN SUBQUEST CUSTOMIZATION/////////////////////////////
 
@@ -249,8 +249,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      0,
 	      gText_SubQuest1_Name1,
 	      gText_SubQuest1_Desc1,
-	      gText_SideQuestMap1,
-	      OBJ_EVENT_GFX_WALLY,
+	      gText_NatureSubQuestMap1,
+	      OBJ_EVENT_GFX_SCIENTIST,
 	      OBJECT,
 	      sText_Found
 	),
@@ -259,8 +259,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      1,
 	      gText_SubQuest1_Name2,
 	      gText_SubQuest1_Desc2,
-	      gText_SideQuestMap2,
-	      OBJ_EVENT_GFX_WALLY,
+	      gText_NatureSubQuestMap1,
+	      OBJ_EVENT_GFX_SCIENTIST,
 	      OBJECT,
 	      sText_Found
 	),
@@ -269,8 +269,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      2,
 	      gText_SubQuest1_Name3,
 	      gText_SubQuest1_Desc3,
-	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_WALLY,
+	      gText_NatureSubQuestMap1,
+	      OBJ_EVENT_GFX_SCIENTIST,
 	      OBJECT,
 	      sText_Found
 	),
@@ -279,68 +279,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      3,
 	      gText_SubQuest1_Name4,
 	      gText_SubQuest1_Desc4,
-	      gText_SideQuestMap4,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      4,
-	      gText_SubQuest1_Name5,
-	      gText_SubQuest1_Desc5,
-	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      5,
-	      gText_SubQuest1_Name6,
-	      gText_SubQuest1_Desc6,
-	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      6,
-	      gText_SubQuest1_Name7,
-	      gText_SubQuest1_Desc7,
-	      gText_SideQuestMap7,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      7,
-	      gText_SubQuest1_Name8,
-	      gText_SubQuest1_Desc8,
-	      gText_SideQuestMap8,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      8,
-	      gText_SubQuest1_Name9,
-	      gText_SubQuest1_Desc9,
-	      gText_SideQuestMap9,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sText_Found
-	),
-
-	sub_quest(
-	      9,
-	      gText_SubQuest1_Name10,
-	      gText_SubQuest1_Desc10,
-	      gText_SideQuestMap10,
-	      OBJ_EVENT_GFX_WALLY,
+	      gText_NatureSubQuestMap1,
+	      OBJ_EVENT_GFX_SCIENTIST,
 	      OBJECT,
 	      sText_Found
 	),
@@ -561,8 +501,18 @@ static const struct SubQuest sSubQuests2[QUEST_2_SUB_COUNT] =
 #define side_quest(n, d, dd, m, s, st, sq, ns) {.name = n, .desc = d, .donedesc = dd, .map = m, .sprite = s, .spritetype = st, .subquests = sq, .numSubquests = ns}
 static const struct SideQuest sSideQuests[QUEST_COUNT] =
 {
+	side_quest( // A study in nature NATURE CHANGING QUEST
+	      gText_AStudyInNature,
+	      gText_SideQuestDesc_3,
+	      gText_SideQuestDoneDesc_3,
+	      gText_SideQuestMap3,
+	      OBJ_EVENT_GFX_SCIENTIST,
+	      OBJECT,
+	      sSubQuests1,
+	      QUEST_1_SUB_COUNT
+	),
 	side_quest( //A Father's Request LIGHT BALL QUEST
-	      gText_SideQuestName_1,
+	      gText_AFathersRequest,
 	      gText_SideQuestDesc_1,
 	      gText_SideQuestDoneDesc_1,
 	      gText_SideQuestMap1,
@@ -580,16 +530,6 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      OBJECT,
 	      NULL, //removed sSubQuests1
 	      0 //removed QUEST_1_SUB_COUNT
-	),
-	side_quest(
-	      gText_SideQuestName_3,
-	      gText_SideQuestDesc_3,
-	      gText_SideQuestDoneDesc_3,
-	      gText_SideQuestMap3,
-	      OBJ_EVENT_GFX_WALLY,
-	      OBJECT,
-	      sSubQuests2,
-	      QUEST_2_SUB_COUNT
 	),
 	side_quest(
 	      gText_SideQuestName_4,
@@ -652,7 +592,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_10,
+	      gText_AFathersRequest0,
 	      gText_SideQuestDesc_10,
 	      gText_SideQuestDoneDesc_10,
 	      gText_SideQuestMap10,
@@ -662,7 +602,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_11,
+	      gText_AFathersRequest1,
 	      gText_SideQuestDesc_11,
 	      gText_SideQuestDoneDesc_11,
 	      gText_SideQuestMap11,
@@ -672,7 +612,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_12,
+	      gText_AFathersRequest2,
 	      gText_SideQuestDesc_12,
 	      gText_SideQuestDoneDesc_12,
 	      gText_SideQuestMap12,
@@ -682,7 +622,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_13,
+	      gText_AFathersRequest3,
 	      gText_SideQuestDesc_13,
 	      gText_SideQuestDoneDesc_13,
 	      gText_SideQuestMap13,
@@ -692,7 +632,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_14,
+	      gText_AFathersRequest4,
 	      gText_SideQuestDesc_14,
 	      gText_SideQuestDoneDesc_14,
 	      gText_SideQuestMap14,
@@ -702,7 +642,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_15,
+	      gText_AFathersRequest5,
 	      gText_SideQuestDesc_15,
 	      gText_SideQuestDoneDesc_15,
 	      gText_SideQuestMap15,
@@ -712,7 +652,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_16,
+	      gText_AFathersRequest6,
 	      gText_SideQuestDesc_16,
 	      gText_SideQuestDoneDesc_16,
 	      gText_SideQuestMap16,
@@ -722,7 +662,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_17,
+	      gText_AFathersRequest7,
 	      gText_SideQuestDesc_17,
 	      gText_SideQuestDoneDesc_17,
 	      gText_SideQuestMap17,
@@ -732,7 +672,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_18,
+	      gText_AFathersRequest8,
 	      gText_SideQuestDesc_18,
 	      gText_SideQuestDoneDesc_18,
 	      gText_SideQuestMap18,
@@ -742,7 +682,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_19,
+	      gText_AFathersRequest9,
 	      gText_SideQuestDesc_19,
 	      gText_SideQuestDoneDesc_19,
 	      gText_SideQuestMap19,
@@ -852,7 +792,7 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      0
 	),
 	side_quest(
-	      gText_SideQuestName_30,
+	      gText_AStudyInNature0,
 	      gText_SideQuestDesc_30,
 	      gText_SideQuestDoneDesc_30,
 	      gText_SideQuestMap30,

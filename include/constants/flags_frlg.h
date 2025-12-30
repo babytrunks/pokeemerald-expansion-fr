@@ -422,10 +422,10 @@
 #define FLAG_HIDE_THREE_ISLAND_ZINC                             0x1BB
 #define FLAG_HIDE_ROUTE_2_MEGA_STONE                            0x1BC
 #define FLAG_HIDE_DIGLETTS_CAVE_HARD_STONE                      0x1BD
-#define FLAG_HIDE_VIRIDIAN_FOREST_BOLD_MINT                     0x1BE
+#define FLAG_HIDE_VIRIDIAN_FOREST_RESIST_FEATHER                     0x1BE
 #define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                    0x1BF
-#define FLAG_HIDE_MT_MOON_B2F_CAREFUL_MINT                      0x1C0
-#define FLAG_HIDE_ROUTE11_X_DEFEND                              0x1C1
+#define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                      0x1C0
+#define FLAG_HIDE_ROUTE11_IRON                              0x1C1
 #define FLAG_HIDE_ROUTE9_BURN_HEAL                              0x1C2
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0x1C3
 #define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0x1C4
@@ -438,8 +438,8 @@
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0x1CB
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0x1CC
 #define FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE                          0x1CD
-#define FLAG_HIDE_ROUTE11_GREAT_BALL                            0x1CE
-#define FLAG_HIDE_ROUTE11_AWAKENING                             0x1CF
+#define FLAG_HIDE_ROUTE11_DUSK_BALL                            0x1CE
+#define FLAG_HIDE_ROUTE11_MUSCLE_FEATHER                             0x1CF
 #define FLAG_HIDE_POKEMON_TOWER_5F_CLEANSE_TAG                  0x1D0
 #define FLAG_HIDE_CELADON_CITY_ETHER                            0x1D1
 #define FLAG_HIDE_ROCKET_HIDEOUT_B3F_BLACK_GLASSES              0x1D2
@@ -541,7 +541,7 @@
 
 // Story flags
 #define STORY_FLAGS_START                                0x230
-#define FLAG_GOT_POTION_ON_ROUTE_1                       0x230
+#define FLAG_GOT_PREMIER_BALL_ON_ROUTE_1                       0x230
 #define FLAG_GOT_TM34_FROM_SURGE                         0x231
 #define FLAG_GOT_FOSSIL_FROM_MT_MOON                     0x232
 #define FLAG_HELPED_BILL_IN_SEA_COTTAGE                  0x233
@@ -1345,12 +1345,12 @@
 #define FLAG_0x82E                                                  (SYS_FLAGS + 0x2E)
 #define FLAG_SYS_B_DASH                                             (SYS_FLAGS + 0x2F)
 #define FLAG_SYS_ON_CYCLING_ROAD                                    (SYS_FLAGS + 0x30)
-#define FLAG_0x831                                                  (SYS_FLAGS + 0x31)
-#define FLAG_0x832                                                  (SYS_FLAGS + 0x32)
-#define FLAG_0x833                                                  (SYS_FLAGS + 0x33)
+#define FLAG_ITEM_ROUTE6_MEGA_STONE                                 (SYS_FLAGS + 0x31)
+#define FLAG_COMPLETED_NATURE_SUBQUEST_1                            (SYS_FLAGS + 0x32)
+#define FLAG_COMPLETED_NATURE_SUBQUEST_2                            (SYS_FLAGS + 0x33)
 #define FLAG_SYS_PC_LANETTE                                         (SYS_FLAGS + 0x34)
-#define FLAG_0x835                                                  (SYS_FLAGS + 0x35)
-#define FLAG_0x836                                                  (SYS_FLAGS + 0x36)
+#define FLAG_COMPLETED_NATURE_SUBQUEST_3                            (SYS_FLAGS + 0x35)
+#define FLAG_COMPLETED_NATURE_SUBQUEST_4                            (SYS_FLAGS + 0x36)
 #define FLAG_SYS_RESET_RTC_ENABLE                                   (SYS_FLAGS + 0x37)
 #define FLAG_0x838                                                  (SYS_FLAGS + 0x38) // Set, never read
 #define FLAG_SYS_MYSTERY_GIFT_ENABLE                                (SYS_FLAGS + 0x39)

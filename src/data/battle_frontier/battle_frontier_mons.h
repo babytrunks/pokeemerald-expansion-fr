@@ -9,7 +9,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_CHARMANDER] = { 
         .species = SPECIES_CHARMANDER,
         .moves = {MOVE_FIRE_SPIN, MOVE_METAL_CLAW, MOVE_SMOKESCREEN, MOVE_SCARY_FACE},
-        .nature = NATURE_DOCILE
+        .nature = NATURE_DOCILE,
         .numPerfectIVs = 3,
     },
     [FRONTIER_MON_SQUIRTLE] = { 
@@ -289,8 +289,9 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_CAPSAKID] = {
         .heldItem = ITEM_FIRE_STONE,
         .species = SPECIES_CAPSAKID,
-        .moves = {MOVE_LEER, MOVE_LEAFAGE, MOVE_BITE, MOVE_GROWTH},
-        .nature = NATURE_DOCILE
+        .moves = {MOVE_LEER, MOVE_LEAFAGE, MOVE_BITE, MOVE_NONE},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     },
 
     [FRONTIER_MON_SCYTHER] = {

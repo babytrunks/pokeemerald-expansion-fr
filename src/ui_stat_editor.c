@@ -737,7 +737,7 @@ static void PrintMonStats(bool8 calcInitialEvTotal)
         AddTextPrinterParameterized4(WINDOW_3, FONT_NORMAL, 41 + 8, 19, 0, 0, sGenderColors[(gender == MON_FEMALE)], TEXT_SKIP_DRAW, text);
     }
 
-    nature = GetNature(ReturnPartyMon());
+    nature = GetMonData(ReturnPartyMon(), MON_DATA_HIDDEN_NATURE);
     StringCopy(gStringVar2, gNaturesInfo[nature].name);
     // u8 lives = GetMonData(ReturnPartyMon(), MON_DATA_LIVES);
     // ConvertIntToDecimalStringN(gStringVar1, lives, STR_CONV_MODE_RIGHT_ALIGN, 1);

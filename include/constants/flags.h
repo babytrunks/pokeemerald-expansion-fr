@@ -1902,10 +1902,10 @@
 #define FLAG_HIDE_THREE_ISLAND_ZINC                             0
 #define FLAG_0x1BC                                              0
 #define FLAG_0x1BD                                              0
-#define FLAG_HIDE_VIRIDIAN_FOREST_BOLD_MINT                      0
+#define FLAG_HIDE_VIRIDIAN_FOREST_RESIST_FEATHER                      0
 #define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                            0
-#define FLAG_HIDE_MT_MOON_B2F_CAREFUL_MINT                          0
-#define FLAG_HIDE_ROUTE11_X_DEFEND                              0
+#define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                          0
+#define FLAG_HIDE_ROUTE11_IRON                              0
 #define FLAG_HIDE_ROUTE9_BURN_HEAL                              0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0
@@ -1918,8 +1918,8 @@
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0
 #define FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE                          0
-#define FLAG_HIDE_ROUTE11_GREAT_BALL                            0
-#define FLAG_HIDE_ROUTE11_AWAKENING                             0
+#define FLAG_HIDE_ROUTE11_DUSK_BALL                            0
+#define FLAG_HIDE_ROUTE11_MUSCLE_FEATHER                             0
 #define FLAG_HIDE_POKEMON_TOWER_5F_CLEANSE_TAG                  0
 #define FLAG_HIDE_CELADON_CITY_ETHER                            0
 #define FLAG_HIDE_ROCKET_HIDEOUT_B3F_BLACK_GLASSES              0
@@ -1969,7 +1969,7 @@
 #define FLAG_HIDE_SILPH_CO_4F_TM41                              0
 
 #define STORY_FLAGS_START                                0
-#define FLAG_GOT_POTION_ON_ROUTE_1                       0
+#define FLAG_GOT_PREMIER_BALL_ON_ROUTE_1                       0
 #define FLAG_GOT_TM34_FROM_SURGE                         0
 #define FLAG_GOT_FOSSIL_FROM_MT_MOON                     0
 #define FLAG_HELPED_BILL_IN_SEA_COTTAGE                  0

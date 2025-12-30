@@ -2446,6 +2446,18 @@ void GetFollowerPokemon(void)
     gSpecialVar_Result = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));
 }
 
+void GetFollowerPokemonNature(void)
+{
+
+    gSpecialVar_Result = GetMonData(GetFirstLiveMon(), MON_DATA_HIDDEN_NATURE);
+}
+
+void GetFollowerPokemonGender(void)
+{
+
+    gSpecialVar_Result = GetMonGender(GetFirstLiveMon());
+}
+
 // Determine whether follower *should* be visible
 bool32 IsFollowerVisible(void)
 {

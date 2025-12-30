@@ -5,6 +5,9 @@ Route6_EventScript_UndergroundPathSign::
 	msgbox Route6_Text_UndergroundPathSign, MSGBOX_SIGN
 	end
 
+Route6_EventScript_ItemMegaStone::
+	finditem ITEM_PINSIRITE
+	end
 Route6_Text_RickyIntro::
     .string "Who's there?\n"
     .string "Quit listening in on us!$"

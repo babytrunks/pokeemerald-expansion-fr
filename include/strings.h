@@ -2389,25 +2389,25 @@ extern const u8 gText_QuestComplete[];
 extern const u8 gText_QuestActive[];
 
 //names
-extern const u8 gText_SideQuestName_1[];
+extern const u8 gText_AFathersRequest[];
 extern const u8 gText_SideQuestName_2[];
-extern const u8 gText_SideQuestName_3[];
+extern const u8 gText_AStudyInNature[];
 extern const u8 gText_SideQuestName_4[];
 extern const u8 gText_SideQuestName_5[];
 extern const u8 gText_SideQuestName_6[];
 extern const u8 gText_SideQuestName_7[];
 extern const u8 gText_SideQuestName_8[];
 extern const u8 gText_SideQuestName_9[];
-extern const u8 gText_SideQuestName_10[];
-extern const u8 gText_SideQuestName_11[];
-extern const u8 gText_SideQuestName_12[];
-extern const u8 gText_SideQuestName_13[];
-extern const u8 gText_SideQuestName_14[];
-extern const u8 gText_SideQuestName_15[];
-extern const u8 gText_SideQuestName_16[];
-extern const u8 gText_SideQuestName_17[];
-extern const u8 gText_SideQuestName_18[];
-extern const u8 gText_SideQuestName_19[];
+extern const u8 gText_AFathersRequest0[];
+extern const u8 gText_AFathersRequest1[];
+extern const u8 gText_AFathersRequest2[];
+extern const u8 gText_AFathersRequest3[];
+extern const u8 gText_AFathersRequest4[];
+extern const u8 gText_AFathersRequest5[];
+extern const u8 gText_AFathersRequest6[];
+extern const u8 gText_AFathersRequest7[];
+extern const u8 gText_AFathersRequest8[];
+extern const u8 gText_AFathersRequest9[];
 extern const u8 gText_SideQuestName_20[];
 extern const u8 gText_SideQuestName_21[];
 extern const u8 gText_SideQuestName_22[];
@@ -2418,7 +2418,7 @@ extern const u8 gText_SideQuestName_26[];
 extern const u8 gText_SideQuestName_27[];
 extern const u8 gText_SideQuestName_28[];
 extern const u8 gText_SideQuestName_29[];
-extern const u8 gText_SideQuestName_30[];
+extern const u8 gText_AStudyInNature0[];
 
 //descriptions
 extern const u8 gText_SideQuestDesc_1[];

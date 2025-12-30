@@ -4,19 +4,12 @@ Route1_Frlg_MapScripts::
 Route1_EventScript_MartClerk::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_POTION_ON_ROUTE_1, Route1_EventScript_AlreadyGotPotion
+	goto_if_set FLAG_GOT_PREMIER_BALL_ON_ROUTE_1, Route1_EventScript_AlreadyGotPotion
 	msgbox Route1_Text_WorkAtPokeMartTakeSample
 	textcolor NPC_TEXT_COLOR_NEUTRAL
-	checkitemspace ITEM_SERIOUS_MINT
-	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
-	bufferitemname STR_VAR_2, ITEM_SERIOUS_MINT
-	playfanfare MUS_LEVEL_UP
-	message gText_ObtainedTheItem
-	waitmessage
-	waitfanfare
-	giveitem ITEM_SERIOUS_MINT
+	giveitem ITEM_PREMIER_BALL
 	call EventScript_RestorePrevTextColor
-	setflag FLAG_GOT_POTION_ON_ROUTE_1
+	setflag FLAG_GOT_PREMIER_BALL_ON_ROUTE_1
 	release
 	end
 
@@ -39,17 +32,12 @@ Route1_Text_WorkAtPokeMartTakeSample::
     .string "It's part of a convenient chain\n"
     .string "selling all sorts of items.\p"
     .string "Please, visit us in Viridian City.\p"
-    .string "Here, check out one of our upcoming\n"
-	.string "items.\p"
-    .string "Here you go!$"
+    .string "Here, check out one of our special\n"
+	.string "items.$"
 
 Route1_Text_ComeSeeUsIfYouNeedPokeBalls::
     .string "Please come see us if you need\n"
     .string "Poké Balls for catching Pokémon.$"
-
-@ Route1_Text_PutPotionAway::
-@     .string "{PLAYER} put the POTION away in\n"
-@     .string "the BAG's ITEMS POCKET.$"
 
 Route1_Text_CanJumpFromLedges::
     .string "See those ledges along the road?\p"
@@ -59,6 +47,6 @@ Route1_Text_CanJumpFromLedges::
     .string "quicker that way.$"
 
 Route1_Text_RouteSign::
-    .string "ROUTE 1\n"
+    .string "Route 1\n"
     .string "Pallet Town - Viridian City$"
 

@@ -169,8 +169,8 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Ekans
-Level: 21
+Arbok
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_DILLON ===
@@ -182,12 +182,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Sandshrew
-Level: 19
+Phanpy
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 19
+Swoobat
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_YASU ===
@@ -220,12 +220,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Nidoran M
-Level: 18
+Nidorino
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Nidorino
-Level: 18
+Houndstone
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BRENDAN_1 ===
@@ -454,16 +454,16 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Weedle
-Level: 16
+Ledian
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Caterpie
-Level: 16
+Mothim
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Weedle
-Level: 16
+Karrablast
+Level: 20  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_ELIJAH ===
@@ -475,8 +475,8 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Butterfree
-Level: 20
+Masquerain
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_BRENT ===
@@ -1101,8 +1101,8 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Squirtle
-Level: 20
+Squawkabilly
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_JEFF ===
@@ -1114,12 +1114,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Spearow
-Level: 16
+Doduo
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 16
+Electrike
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_CHRIS ===
@@ -1173,8 +1173,8 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer
 
-Goldeen
-Level: 19
+Drednaw
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_NANCY ===
@@ -1186,12 +1186,12 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer
 
-Rattata
-Level: 16
+Growlithe-Hisui
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pikachu
-Level: 16
+Vulpix-Alola
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_ISABELLE ===
@@ -2597,16 +2597,16 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Magnemite
-Level: 18
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Magnemite
-Level: 18
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
 Magneton
-Level: 18
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Tadbulb
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Electabuzz
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_FISHERMAN_DALE ===
@@ -2845,12 +2845,12 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer
 
-Horsea
-Level: 16
+Shellder
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Shellder
-Level: 16
+Tirtouga
+Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SWIMMER_MALE_RICHARD ===
@@ -3297,12 +3297,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Poliwag
-Level: 18
+Poliwhirl
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Horsea
-Level: 18
+Falinks
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GAMER_JASPER ===
@@ -3314,12 +3314,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Bellsprout
-Level: 18
+Weepinbell
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Oddish
-Level: 18
+Flamigo
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GAMER_DIRK ===
@@ -3331,12 +3331,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Voltorb
-Level: 18
+Voltorb-Hisui
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Magnemite
-Level: 18
+Pawmo
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GAMER_DARIAN ===
@@ -3349,11 +3349,12 @@ Double Battle: No
 AI: Smart Trainer
 
 Growlithe
-Level: 18
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Vulpix
-Level: 18
+
+Gimmighoul
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GAMER_STAN ===
@@ -3978,11 +3979,11 @@ AI: Smart Trainer
 
 Sandslash
 Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Arbok
 Level: 34
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TAMER_EDGAR ===
 Name: Edgar
@@ -3995,15 +3996,15 @@ AI: Smart Trainer
 
 Arbok
 Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Sandslash
 Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Arbok
 Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TAMER_JASON ===
 Name: Jason
@@ -4016,7 +4017,7 @@ AI: Smart Trainer
 
 Rhyhorn
 Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TAMER_COLE ===
 Name: Cole
@@ -4029,11 +4030,11 @@ AI: Smart Trainer
 
 Arbok
 Level: 39
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tauros
 Level: 39
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TAMER_VINCENT ===
 Name: Vincent
@@ -4046,11 +4047,11 @@ AI: Smart Trainer
 
 Persian
 Level: 44
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Golduck
 Level: 44
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TAMER_JOHN ===
 Name: John
@@ -4063,19 +4064,19 @@ AI: Smart Trainer
 
 Rhyhorn
 Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Primeape
 Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Arbok
 Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tauros
 Level: 42
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_SEBASTIAN ===
 Name: Sebastian
@@ -7372,7 +7373,7 @@ AI: Smart Trainer / Try To Faint / Check Viability
 Pincurchin @ Terrain Extender
 Nature: Bold
 Ability: Electric Surge
-Level: 32
+Level: 26
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Volt Switch
@@ -7383,7 +7384,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Vikavolt @ Occa Berry
 Nature: Calm
 Ability: Levitate
-Level: 33
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Volt Switch
@@ -7394,7 +7395,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Bellibolt @ Shuca Berry
 Nature: Bold
 Ability: Electromorphosis
-Level: 33
+Level: 27
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Parabolic Charge
@@ -7402,21 +7403,21 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Wave
 - Hidden Power
 
-Pawmot @ Focus Sash
-Nature: Jolly
-Ability: Iron Fist
-Level: 33
+Raichu-Alola @ Focus Sash
+Nature: Modest
+Ability: Surge Surfer
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Drain Punch
-- Thunder Punch
-- Ice Punch
-- Mach Punch
+- Nasty Plot
+- Discharge
+- Psyshock
+- Grass Knot
 
 Manectric @ Manectite
 Nature: Timid
 Ability: Intimidate
-Level: 34
+Level: 26
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Charge Beam
@@ -9088,11 +9089,11 @@ AI: Smart Trainer
 
 Pidgey
 Level: 20
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Nidoran F
 Level: 20
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_RELI_3 ===
 Name: RELI
@@ -9122,15 +9123,15 @@ AI: Smart Trainer
 
 Raticate
 Level: 19
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Ekans
 Level: 19
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Zubat
 Level: 19
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_TIMMY_3 ===
 Name: Timmy
@@ -9202,11 +9203,11 @@ AI: Smart Trainer
 
 Pidgeotto
 Level: 20
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pidgeotto
 Level: 20
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_JANICE_3 ===
 Name: Janice
@@ -9253,11 +9254,11 @@ AI: Smart Trainer
 
 Machoke
 Level: 25
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Graveler
 Level: 25
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PKMN_PROF_PROF_OAK ===
 Name: Prof. Oak
@@ -10824,15 +10825,15 @@ AI: Smart Trainer
 
 Sandslash
 Level: 48
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lickitung
 Level: 48
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Ursaring
 Level: 49
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_MARK_2 ===
 Name: Mark
@@ -11527,7 +11528,7 @@ AI: Smart Trainer
 
 Squirtle
 Level: 22
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_RICKY_3 ===
 Name: Ricky
@@ -11566,11 +11567,11 @@ AI: Smart Trainer
 
 Spearow
 Level: 21
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 21
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_JEFF_3 ===
 Name: Jeff
@@ -11615,17 +11616,17 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer
 
-Pidgeotto
-Level: 21
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Sinistea
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgeotto
-Level: 21
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Swadloon
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgey
-Level: 18
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Lombre
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_ISABELLE_3 ===
 Name: Isabelle
@@ -11678,17 +11679,17 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Rattata
-Level: 22
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Gumshoos
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 22
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Greedent
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
+Raticate-Alola
 Level: 22
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_YASU_3 ===
 Name: Yasu
@@ -11760,11 +11761,11 @@ AI: Smart Trainer
 
 Growlithe
 Level: 24
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Charmander
 Level: 24
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_CHRIS_3 ===
 Name: Chris
@@ -11811,7 +11812,7 @@ AI: Smart Trainer
 
 Meowth
 Level: 25
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_ALICIA_3 ===
 Name: Alicia
@@ -11935,23 +11936,23 @@ AI: Smart Trainer
 
 Pidgeotto
 Level: 22
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 22
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Nidoran M
 Level: 23
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Meowth
 Level: 21
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pikachu
 Level: 22
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_MEGAN_3 ===
 Name: Megan
@@ -13736,15 +13737,15 @@ AI: Smart Trainer
 
 Metapod
 Level: 19
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Weedle
 Level: 19
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Metapod
 Level: 19
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_COLTON_3 ===
 Name: Colton

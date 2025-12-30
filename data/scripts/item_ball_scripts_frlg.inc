@@ -410,20 +410,20 @@ ThreeIsland_EventScript_ItemZinc::
 	finditem ITEM_ZINC
 	end
 
-ViridianForest_EventScript_ItemBoldMint::
-	finditem ITEM_BOLD_MINT
+ViridianForest_EventScript_ItemResistFeather::
+	finditem ITEM_RESIST_FEATHER
 	end
 
 MtMoon_B2F_EventScript_ItemHealth_Feather::
 	finditem ITEM_HEALTH_FEATHER
 	end
 
-MtMoon_B2F_EventScript_ItemCarefulMint::
-	finditem ITEM_CAREFUL_MINT
+MtMoon_B2F_EventScript_ItemCleverFeather::
+	finditem ITEM_CLEVER_FEATHER
 	end
 
-Route11_EventScript_ItemXDefend::
-	finditem ITEM_X_DEFEND
+Route11_EventScript_ItemIron::
+	finditem ITEM_IRON
 	end
 
 Route9_EventScript_ItemBurnHeal::
@@ -474,12 +474,12 @@ ViridianCity_EventScript_ItemAbilityCapsule::
 	finditem ITEM_ABILITY_CAPSULE
 	end
 
-Route11_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+Route11_EventScript_ItemDuskBall::
+	finditem ITEM_DUSK_BALL
 	end
 
-Route11_EventScript_ItemAwakening::
-	finditem ITEM_AWAKENING
+Route11_EventScript_ItemMuscleFeather::
+	finditem ITEM_MUSCLE_FEATHER
 	end
 
 PokemonTower_5F_EventScript_ItemCleanseTag::

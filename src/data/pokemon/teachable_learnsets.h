@@ -31415,6 +31415,7 @@ static const u16 sPincurchinTeachableLearnset[] = {
     MOVE_THUNDER,
     MOVE_THUNDERBOLT,
     MOVE_THUNDER_WAVE,
+    MOVE_VOLT_SWITCH,
     MOVE_WILD_CHARGE,
     MOVE_UNAVAILABLE,
 };

@@ -157,8 +157,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MtMoon_B2F_EventScript_ItemCarefulMint",
-      "flag": "FLAG_HIDE_MT_MOON_B2F_CAREFUL_MINT"
+      "script": "MtMoon_B2F_EventScript_ItemCleverFeather",
+      "flag": "FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER"
     },
     {
       "local_id": "LOCALID_MT_MOON_ARCHER",
