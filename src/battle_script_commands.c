@@ -5825,7 +5825,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
                 monIVs[i] = GetMonData(mon2, MON_DATA_HP_IV + i);
             }
             // u8 perfIv = 31;
-            Shuffle(statArray, NUM_STATS, sizeof(statArray[0]));
+            Shuffle(statArray, 3, sizeof(statArray[0]));
             for (i = 0; i < 3; i++)
             {
                 if (monIVs[statArray[i]] != 31)

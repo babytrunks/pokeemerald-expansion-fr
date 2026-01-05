@@ -255,7 +255,8 @@ Route22_Text_EarlyRivalPostBattle::
 	.string "I heard the Pokémon League is\n"
 	.string "crawling with tough trainers.\p"
 	.string "A scrub like you would need\n"
-	.string "something childish to get past them.$"
+	.string "something childish like this\l
+	.string "to get past them.$"
 
 Route22_Text_EarlyRivalPostBattle2::
 	.string "You should quit dawdling and get a\n"

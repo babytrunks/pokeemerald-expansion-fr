@@ -1,7 +1,6 @@
 
 TODO:
 Bug:
-- Breakthrough/Fortify not working properly
 - Power up Items use the same item window as previously opened item
 
 - Text colors arent really consistent with FR right now (Blue for male, Red for girls)
