@@ -255,14 +255,14 @@ const u8 gItemEffect_AtkFeather[11] = {
 
 const u8 gItemEffect_DefFeather[11] = {
     [5] = ITEM5_IV_DEF | ITEM5_FRIENDSHIP_ALL,
-    [6] = ITEM6_ADD_ONE_EV,
+    [6] = ITEM6_ADD_IV,
     FEATHER_FRIENDSHIP_CHANGE(7),
     [10] = 0,
 };
 
 const u8 gItemEffect_SpeedFeather[11] = {
     [5] = ITEM5_IV_SPEED | ITEM5_FRIENDSHIP_ALL,
-    [6] = ITEM6_ADD_ONE_EV,
+    [6] = ITEM6_ADD_IV,
     FEATHER_FRIENDSHIP_CHANGE(7),
     [10] = 0,
 };

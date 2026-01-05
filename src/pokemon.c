@@ -4047,7 +4047,7 @@ const u32 sIndividualValueVitaminTable[] = {
     // [EV_32 - 1] = 32,
     // [EV_64 - 1] = 64,
     // [EV_128 - 1] = 128,
-    [IV_15 - 1] = 15,
+    [IV_10 - 1] = 10,
     [IV_31 - 1] = 31,
 };
 
@@ -4264,7 +4264,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         }
 
                         // Update EVs and stats
-                        SetMonData(mon, sGetMonDataEVConstants[temp1], &dataSigned);
+                        SetMonData(mon, sGetMonDataIVConstants[temp1], &dataSigned);
                         CalculateMonStats(mon);
                         itemEffectParam++;
                         retVal = FALSE;
@@ -4395,7 +4395,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     case 1: // ITEM5_IV_SPEED
                     case 2: // ITEM5_IV_SPDEF
                     case 3: // ITEM5_IV_SPATK
-                         temp2 = itemEffect[itemEffectParam];
+                        temp2 = itemEffect[itemEffectParam];
                         dataSigned = GetMonData(mon, sGetMonDataIVConstants[temp1 + 2], NULL);
                         ivChange = temp2;
                         if (ivChange > 0) // Increasing EV
@@ -4451,7 +4451,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         }
 
                         // Update EVs and stats
-                        SetMonData(mon, sGetMonDataEVConstants[temp1 + 2], &dataSigned);
+                        SetMonData(mon, sGetMonDataIVConstants[temp1 + 2], &dataSigned);
                         CalculateMonStats(mon);
                         retVal = FALSE;
                         itemEffectParam++;
