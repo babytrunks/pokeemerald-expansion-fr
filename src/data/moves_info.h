@@ -21194,8 +21194,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Misty Splatter"),
         .description = COMPOUND_STRING(
-            "A dewy splash that can\n"
-            "cast Mist."),
+            "A dewy splash that has 30%\n"
+            "chance to cast Mist."),
         .effect = EFFECT_HIT,
         .power = 55,
         .type = TYPE_WATER,

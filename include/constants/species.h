@@ -1671,6 +1671,7 @@
 
 #define SPECIES_SHINY_TAG 5000
 
+#define LEVEL_CAP_GYM_1 14
 #define LEVEL_CAP_GYM_2 21
 #define LEVEL_CAP_GYM_3 28
 #define LEVEL_CAP_GYM_4 35

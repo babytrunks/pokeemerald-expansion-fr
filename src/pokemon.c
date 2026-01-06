@@ -4263,7 +4263,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             dataSigned = 0;
                         }
 
-                        // Update EVs and stats
+                        // Update IVs and stats
                         SetMonData(mon, sGetMonDataIVConstants[temp1], &dataSigned);
                         CalculateMonStats(mon);
                         itemEffectParam++;
