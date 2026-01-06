@@ -145,7 +145,8 @@ static const u8 sGenericMulchDesc[]   = _("A fertilizer that\n"
 
 static const u8 sUTurnDescription[] = _(
     "Does damage then\n"
-    "switches out the user.");
+    "switches out the\n"
+    "user.");
 
 const struct Item gItemsInfo[] =
 {
@@ -1598,7 +1599,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Switches a Poké-\n"
             "mon's ability."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_AbilityCapsule,
@@ -1616,7 +1617,7 @@ const struct Item gItemsInfo[] =
             "Turns the ability\n"
             "of a Pokémon into\n"
             "a rare ability."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_AbilityPatch,

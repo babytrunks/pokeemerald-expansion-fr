@@ -408,6 +408,7 @@ EventScript_MimicTaughtFemale::
 	msgbox Text_MimicTaughtFemale
 	return
 
+@ This tutor shouldnt be used, is mainly for populating the teachable_learnsets
 FourIsland_House1_EventScript_BodySlamTutor::
 	lock
 	faceplayer
@@ -419,7 +420,9 @@ FourIsland_House1_EventScript_BodySlamTutor::
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
 	msgbox Text_BodySlamWhichMon
-	setvar VAR_0x8005, MOVE_BODY_SLAM
+	setvar VAR_0x8005, MOVE_FIRE_FANG
+	setvar VAR_0x8005, MOVE_ICE_FANG
+	setvar VAR_0x8005, MOVE_THUNDER_FANG
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
 .if I_REUSABLE_TMS == FALSE

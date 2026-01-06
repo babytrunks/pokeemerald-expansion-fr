@@ -46,7 +46,6 @@ PostBugsy:
     setspeaker SP_NAME_BUGSY
     msgbox gText_bugsy_6, MSGBOX_DEFAULT
     setflag FLAG_RARE_POKEMON_SCREEN
-	setflag FLAG_3_PERFECT_IVS 
     setvar VAR_RARE_POKEMON_COUNTER, 2
     factory_generaterentalmons
 	factory_rentmons
