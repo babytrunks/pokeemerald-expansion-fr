@@ -6,8 +6,8 @@ CeruleanCity_Gym_EventScript_Misty::
 	famechecker FAMECHECKER_MISTY, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyIntro, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, NO_MUSIC
 	setspeaker SP_NAME_MISTY
-    goto_if_unset FLAG_BADGE02_GET, CeruleanCity_Gym_EventScript_GiveTM03
-	msgbox CeruleanCity_Gym_Text_ExplainTM03
+    goto_if_unset FLAG_BADGE02_GET, CeruleanCity_Gym_EventScript_GiveTM54
+	msgbox CeruleanCity_Gym_Text_ExplainTM54
 	release
 	end
 
@@ -17,17 +17,17 @@ CeruleanCity_Gym_EventScript_MistyDefeated::
 	setflag FLAG_BADGE02_GET
 	setrespawn HEAL_LOCATION_CERULEAN_CITY
 	set_gym_trainers_frlg 2
-	goto CeruleanCity_Gym_EventScript_GiveTM03
+	goto CeruleanCity_Gym_EventScript_GiveTM54
 	end
 
-CeruleanCity_Gym_EventScript_GiveTM03::
+CeruleanCity_Gym_EventScript_GiveTM54::
 	msgbox CeruleanCity_Gym_Text_ExplainCascadeBadge
-	giveitem_msg CeruleanCity_Gym_Text_ReceivedTM03FromMisty, ITEM_TM03
-	msgbox CeruleanCity_Gym_Text_ExplainTM03
+	giveitem_msg CeruleanCity_Gym_Text_ReceivedTM54FromMisty, ITEM_TM_FLIP_TURN
+	msgbox CeruleanCity_Gym_Text_ExplainTM54
 	release
 	end
 
-CeruleanCity_Gym_EventScript_NoRoomForTM03::
+CeruleanCity_Gym_EventScript_NoRoomForTM54::
 	msgbox CeruleanCity_Gym_Text_BetterMakeRoomForThis
 	release
 	end
@@ -77,8 +77,8 @@ CeruleanCity_Gym_Text_MistyIntro::
     .string "My policy is an all-out offensive\n"
     .string "with WATER-type Pokémon!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
-CeruleanCity_Gym_Text_ExplainTM03::
-    .string "TM03 teaches WATER PULSE.\p"
+CeruleanCity_Gym_Text_ExplainTM54::
+    .string "TM54 teaches Flip Turn.\p"
     .string "Use it on an aquatic Pokémon!$"
 
 CeruleanCity_Gym_Text_ExplainCascadeBadge::
@@ -92,8 +92,8 @@ CeruleanCity_Gym_Text_ExplainCascadeBadge::
     .string "open new pathways.\p"
     .string "You can also have my favorite TM.$"
 
-CeruleanCity_Gym_Text_ReceivedTM03FromMisty::
-    .string "{PLAYER} received TM03\n"
+CeruleanCity_Gym_Text_ReceivedTM54FromMisty::
+    .string "{PLAYER} received TM54\n"
     .string "from MISTY.$"
 
 CeruleanCity_Gym_Text_BetterMakeRoomForThis::

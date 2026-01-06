@@ -76,7 +76,7 @@ CeruleanCity_House1_Text_LookingForGoodBoy::
 
 CeruleanCity_House1_Text_BringMeAGoodBoy:
 	.string "Can you show me a good dog?\n"
-	.string "I need something to lift my spirits."
+	.string "I need something to lift my spirits.\p"
 	.string "I can teach you the Fang moves in\n"
 	.string "return.$"
 

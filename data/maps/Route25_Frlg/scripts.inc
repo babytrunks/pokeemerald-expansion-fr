@@ -54,6 +54,8 @@ PostBugsy:
 	clearflag FLAG_RARE_POKEMON_SCREEN
 	clearflag FLAG_3_PERFECT_IVS
     setspeaker SP_NAME_BUGSY
+    msgbox gText_bugsy_6_1
+    giveitem ITEM_TM_U_TURN
     msgbox gText_bugsy_7, MSGBOX_DEFAULT
     fadescreen FADE_TO_BLACK
     removeobject LOCALID_BUGSY                
@@ -241,6 +243,9 @@ gText_bugsy_6::
   .string "Well, you can have a selection of\n"
   .string "a rare Bug-type. Maybe you'll go fur-\l"
   .string "ther with them than me.$"
+
+gText_bugsy_6_1::
+  .string "{COLOR BLUE}Here, have my favorite TM too.$"
 
 gText_bugsy_7::
   .string "{COLOR BLUE}Anywho, it's nice meeting you, but I'll\n"

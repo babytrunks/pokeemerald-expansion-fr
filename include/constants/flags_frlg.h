@@ -503,8 +503,8 @@
 #define FLAG_SYS_QUEST_MENU_GET                                 0x20A
 #define FLAG_BEAT_MT_MOON_ARCHER                                0x20B
 #define FLAG_BERRY_ENABLE_RC_EVENT                              0x20C
-#define FLAG_BERRY_COMPLETED_RC_EVENT               0x20D
-#define FLAG_0x20E               0x20E
+#define FLAG_BERRY_COMPLETED_RC_EVENT                           0x20D
+#define FLAG_HIDE_TM_THUNDER_PUNCH                              0x20E
 #define FLAG_0x20F               0x20F
 #define FLAG_0x210               0x210
 #define FLAG_0x211               0x211

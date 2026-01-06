@@ -58,6 +58,10 @@ Route24_EventScript_ItemTM45::
 	finditem ITEM_TM45
 	end
 
+Route24_EventScript_ItemTMThunderPunch::
+	finditem ITEM_TM_THUNDER_PUNCH
+	end
+
 Route25_EventScript_ItemTM43::
 	finditem ITEM_TM43
 	end

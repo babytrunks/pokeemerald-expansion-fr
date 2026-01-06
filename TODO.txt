@@ -26,6 +26,7 @@ MEDIUM PRIORITY:
 - Randomization Options (Species, Ability, Moves)
 - Max Boxes is only 14, need to research on how to expand..
 - Some FRU Ability exclusive abilities still need implementation (can see //fru todo in constants/abilities.h)
+- Team Preview
 
 LOW PRIORITY:
 - Music (Team Rocket battle, Rival battle, Johto Rival battle, etc )

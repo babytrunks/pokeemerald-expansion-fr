@@ -44,7 +44,7 @@
     F(AERIAL_ACE) \
     F(LIQUIDATION) \
     F(FACADE) \
-    F(SECRET_POWER) \
+    F(DEFOG) \
     F(REST) \
     F(DRAINING_KISS) \
     F(SNARL) \
@@ -59,7 +59,9 @@
     F(FOCUS_BLAST) \
     F(DAZZLING_GLEAM) \
     F(LOW_SWEEP) \
-
+    F(THUNDER_PUNCH) \
+    F(FIRE_PUNCH) \
+    F(ICE_PUNCH) 
 
 #define FOREACH_HM(F) \
     F(CUT) \

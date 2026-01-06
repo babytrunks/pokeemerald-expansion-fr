@@ -598,7 +598,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_RIVALRY] = 
         {
             .name = _("Rivalry"),
-            .description = COMPOUND_STRING("If the Opponent is the same type as the player, 30% to those moves."),
+            .description = COMPOUND_STRING("If the Opponent is the same type as the player, 25% to those moves."),
             .aiRating = 1,
         },
 
