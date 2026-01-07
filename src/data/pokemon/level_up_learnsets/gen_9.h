@@ -4967,10 +4967,10 @@ static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
-    LEVEL_UP_MOVE( 7, MOVE_EMBER),
-    LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
-    LEVEL_UP_MOVE(13, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(16, MOVE_DEFENSE_CURL),
+    LEVEL_UP_MOVE( 6, MOVE_EMBER),
+    LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
+    LEVEL_UP_MOVE(10, MOVE_FLAME_WHEEL),
+    LEVEL_UP_MOVE(13, MOVE_BREAKTHROUGH),
     LEVEL_UP_MOVE(18, MOVE_FLAME_BURST),
     LEVEL_UP_MOVE(21, MOVE_SWIFT),
     LEVEL_UP_MOVE(23, MOVE_SCORCHING_SANDS),
@@ -4980,11 +4980,12 @@ static const struct LevelUpMove sCyndaquilLevelUpLearnset[] = {
     LEVEL_UP_MOVE(36, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(39, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(42, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(64, MOVE_ERUPTION), // COMMENT: come back to this
+    LEVEL_UP_MOVE(LEVEL_CAP_GYM_8 - 1, MOVE_ERUPTION), // COMMENT: come back to this
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sQuilavaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_BREAKTHROUGH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
@@ -5004,11 +5005,12 @@ static const struct LevelUpMove sQuilavaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(48, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE(68, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(74, MOVE_ERUPTION), // COMMENT: come back to this
+    LEVEL_UP_MOVE(LEVEL_CAP_GYM_8 - 1, MOVE_ERUPTION), // COMMENT: come back to this
     LEVEL_UP_END
 };
 
 static const struct LevelUpMove sTyphlosionLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_BREAKTHROUGH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_EDGE),
     LEVEL_UP_MOVE( 1, MOVE_MUD_SLAP),
@@ -5028,13 +5030,14 @@ static const struct LevelUpMove sTyphlosionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(48, MOVE_INFERNO),
     LEVEL_UP_MOVE(63, MOVE_FIRE_BLAST),
-    LEVEL_UP_MOVE(74, MOVE_ERUPTION), // COMMENT: come back to this
+    LEVEL_UP_MOVE(LEVEL_CAP_GYM_8, MOVE_ERUPTION), // COMMENT: come back to this
     LEVEL_UP_END
 };
 
 #if P_HISUIAN_FORMS
 static const struct LevelUpMove sTyphlosionHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_INFERNAL_PARADE),
+    LEVEL_UP_MOVE( 1, MOVE_BREAKTHROUGH),
     LEVEL_UP_MOVE( 1, MOVE_GYRO_BALL),
     LEVEL_UP_MOVE( 1, MOVE_ROLLOUT),
     LEVEL_UP_MOVE( 1, MOVE_SMOKESCREEN),
@@ -5052,8 +5055,7 @@ static const struct LevelUpMove sTyphlosionHisuiLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_INFERNO),
     LEVEL_UP_MOVE(56, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(63, MOVE_FIRE_BLAST),
-    // LEVEL_UP_MOVE(77, MOVE_ERUPTION), // COMMENT: come back to this 
-    // either let base typhlosion get it couple splits earlier or dont let it learn it at all
+    LEVEL_UP_MOVE(LEVEL_CAP_GYM_8, MOVE_ERUPTION), 
     LEVEL_UP_END
 };
 #endif //P_HISUIAN_FORMS
@@ -11828,7 +11830,8 @@ static const struct LevelUpMove sVictiniLevelUpLearnset[] = {
 static const struct LevelUpMove sSnivyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
-    LEVEL_UP_MOVE( 7, MOVE_VINE_WHIP),
+    LEVEL_UP_MOVE( 6, MOVE_VINE_WHIP),
+    LEVEL_UP_MOVE( 8, MOVE_BREAKTHROUGH),
     LEVEL_UP_MOVE(10, MOVE_WRAP),
     LEVEL_UP_MOVE(13, MOVE_MAGICAL_LEAF),
     LEVEL_UP_MOVE(17, MOVE_LEECH_SEED),
@@ -11843,6 +11846,7 @@ static const struct LevelUpMove sSnivyLevelUpLearnset[] = {
 
 static const struct LevelUpMove sServineLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_GLARE),
+    LEVEL_UP_MOVE( 1, MOVE_BREAKTHROUGH),
     LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
@@ -11859,6 +11863,7 @@ static const struct LevelUpMove sServineLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sSerperiorLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_BREAKTHROUGH),
     LEVEL_UP_MOVE( 1, MOVE_KNOCK_OFF),
     LEVEL_UP_MOVE( 1, MOVE_REFLECT),
     LEVEL_UP_MOVE( 1, MOVE_LIGHT_SCREEN),

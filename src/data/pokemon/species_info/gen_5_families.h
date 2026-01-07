@@ -142,7 +142,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSnivyLevelUpLearnset,
         .teachableLearnset = sSnivyTeachableLearnset,
         .eggMoveLearnset = sSnivyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_SERVINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_SERVINE}),
     },
 
     [SPECIES_SERVINE] =
