@@ -5359,14 +5359,51 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 80
 
-Machop
-Level: 17
+Persian-Alola @ Black Glasses
+Nature: Bashful
+Ability: Feline Power
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Snarl
+- Water Pulse
+- Parting Shot
+- Shock Wave
 
-Drowzee
-Level: 17
+Golbat @ Eviolite
+Nature: Bashful
+Ability: Sniper
+Level: 20
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Mega Drain
+- Cross Poison
+- Air Cutter
+- Hidden Power (Fire)
+
+Carvanha @ Focus Sash
+Nature: Bashful
+Ability: Speed Boost
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ancient Power
+- Waterfall
+- Bite
+- Aqua Jet
+
+Sneasel-Hisui @ Rindo Berry
+Nature: Bashful
+Ability: Inner Focus
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bullet Seed
+- Rock Blast
+- Water Pulse
+- Icy Wind
 
 === TRAINER_TEAM_ROCKET_GRUNT_6 ===
 Name: GRUNT
