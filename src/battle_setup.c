@@ -2088,15 +2088,15 @@ static void RestoreNonConsumableItems(void)
 	{
 		for (int i = 0; i < PARTY_SIZE; ++i)
 		{
-			if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER
-			// ||  keepConsumables
-			// ||  (savedConsumedItems[i] == ITEM_NONE)
-            && ( (GetItemPocket(savedConsumedItems[i]) != POCKET_BERRIES) || (GetMonAbility(&gPlayerParty[i]) == ABILITY_HARVEST))
-			// ||  !IsConsumable(savedConsumedItems[i])
-            )
-			{
+			// if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER
+			// // ||  keepConsumables
+			// // ||  (savedConsumedItems[i] == ITEM_NONE)
+            // // && ( (GetItemPocket(savedConsumedItems[i]) != POCKET_BERRIES) || (GetMonAbility(&gPlayerParty[i]) == ABILITY_HARVEST))
+			// // ||  !IsConsumable(savedConsumedItems[i])
+            // )
+			// {
 				SetMonData(&gPlayerParty[i], MON_DATA_HELD_ITEM, &savedConsumedItems[i]);
-			}
+			// }
 		}
 	}
 	else{
