@@ -329,7 +329,7 @@
 #define FLAG_HIDE_MT_MOON_1F_MOON_STONE                         0x15E
 #define FLAG_HIDE_MT_MOON_B2F_SOFT_SAND                        0x15F
 #define FLAG_HIDE_MT_MOON_B2F_TM46                              0x160
-#define FLAG_HIDE_ROUTE4_TM05                                   0x161
+#define FLAG_HIDE_ROUTE4_TM_ShockWave                                   0x161
 #define FLAG_HIDE_ROUTE24_TM45                                  0x162
 #define FLAG_HIDE_ROUTE25_TM43                                  0x163
 #define FLAG_HIDE_SSANNE_1F_ROOM2_TM31                          0x164
@@ -425,7 +425,7 @@
 #define FLAG_HIDE_VIRIDIAN_FOREST_RESIST_FEATHER                     0x1BE
 #define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                    0x1BF
 #define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                      0x1C0
-#define FLAG_HIDE_ROUTE11_IRON                              0x1C1
+#define FLAG_HIDE_ROUTE11_FIRE_STONE                              0x1C1
 #define FLAG_HIDE_ROUTE9_BURN_HEAL                              0x1C2
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0x1C3
 #define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0x1C4
@@ -504,8 +504,8 @@
 #define FLAG_BEAT_MT_MOON_ARCHER                                0x20B
 #define FLAG_BERRY_ENABLE_RC_EVENT                              0x20C
 #define FLAG_BERRY_COMPLETED_RC_EVENT                           0x20D
-#define FLAG_HIDE_TM_THUNDER_PUNCH                              0x20E
-#define FLAG_0x20F               0x20F
+#define FLAG_HIDE_TM_WATER_PULSE                                0x20E
+#define FLAG_DEFEATED_WHITNEY                                   0x20F
 #define FLAG_0x210               0x210
 #define FLAG_0x211               0x211
 #define FLAG_0x212               0x212
@@ -1215,11 +1215,11 @@
 
 // Unused?
 #define FLAG_DETECTOR_MODE                          0x4BD
-#define FLAG_0x4BE                             0x4BE
+#define FLAG_HIDE_TM_VENOSHOCK                      0x4BE
 #define FLAG_SEARCHING                              0x4BF
 #define FLAG_EXP_SHARE                              0x4C0
 #define FLAG_FORCE_SHINY                            0x4C1
-#define FLAG_0x4C2               0x4C2
+#define FLAG_UNLOCKED_STAT_EDITOR                   0x4C2
 #define FLAG_0x4C3               0x4C3
 #define FLAG_0x4C4               0x4C4
 #define FLAG_0x4C5               0x4C5

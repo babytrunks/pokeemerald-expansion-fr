@@ -50,20 +50,24 @@ MtMoon_B2F_EventScript_ItemTM46::
 	finditem ITEM_TM46
 	end
 
-Route4_EventScript_ItemTM05::
-	finditem ITEM_TM05
+Route4_EventScript_ItemTM_ShockWave::
+	finditem ITEM_TM_SHOCK_WAVE
 	end
 
 Route24_EventScript_ItemTM45::
 	finditem ITEM_TM45
 	end
 
-Route24_EventScript_ItemTMThunderPunch::
-	finditem ITEM_TM_THUNDER_PUNCH
+Route24_EventScript_ItemTMWaterPulse::
+	finditem ITEM_TM_WATER_PULSE
 	end
 
 Route25_EventScript_ItemTM43::
 	finditem ITEM_TM43
+	end
+
+Route6_EventScript_ItemTMVenoshock::
+	finditem ITEM_TM_VENOSHOCK
 	end
 
 SSAnne_1F_Room2_EventScript_ItemTM31::
@@ -426,8 +430,8 @@ MtMoon_B2F_EventScript_ItemCleverFeather::
 	finditem ITEM_CLEVER_FEATHER
 	end
 
-Route11_EventScript_ItemIron::
-	finditem ITEM_IRON
+Route11_EventScript_ItemFireStone::
+	finditem ITEM_FIRE_STONE
 	end
 
 Route9_EventScript_ItemBurnHeal::

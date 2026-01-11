@@ -141,6 +141,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_RockSmash",
       "flag": "FLAG_TEMP_12"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
+      "x": 19,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route6_EventScript_ItemTMVenoshock",
+      "flag": "FLAG_HIDE_TM_VENOSHOCK"
     }
   ],
   "warp_events": [
@@ -188,8 +201,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 19,
-      "y": 5,
+      "x": 24,
+      "y": 10,
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE6_RARE_CANDY",

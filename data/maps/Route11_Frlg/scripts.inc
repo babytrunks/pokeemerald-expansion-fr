@@ -1,6 +1,55 @@
 Route11_Frlg_MapScripts::
 	.byte 0
 
+@ Whitney intro script (map label is a guess, rename as needed)
+Route11_EventScript_Whitney::
+    lockall
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_1
+    applymovement LOCALID_WHITNEY, Movement_Whitney_Look
+    waitmovement 0
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_2
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_3, MSGBOX_YESNO     @ player choice; sets VAR_RESULT
+    goto_if_eq VAR_RESULT, 1, EventScript_Whitney_Battle
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_4
+    release
+    end
+
+EventScript_Whitney_Battle::
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_5
+    @ special HealPlayerParty                  @ special 0x0
+    trainerbattle_no_intro TRAINER_WHITNEY, whitney_Text_Defeat   @ 0x31
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_6
+    setspeaker SP_NAME_WHITNEY
+    call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_7_2
+    giveitem ITEM_EVIOLITE
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_8
+    fadescreen FADE_TO_BLACK                 @ fadescreen 0x1
+    playse SE_PIN                            @ sound 0x9
+    waitse                                   @ checksound
+    setflag FLAG_DEFEATED_WHITNEY            @ 0x933
+    setflag FLAG_UNLOCKED_STAT_EDITOR
+    removeobject LOCALID_WHITNEY             @ hidesprite 0x2
+    fadescreen FADE_FROM_BLACK               @ fadescreen 0x0
+    release
+    end
+
+EventScript_Whitney_StatEditExplain:
+    msgbox whitney_Text_StatEditor_Explain
+    return
+
+Movement_Whitney_Look:
+    face_player                              @ from bytes 0x4A, 0xFE
+    step_end
+
 Route11_EventScript_DiglettsCaveSign::
 	msgbox Route11_Text_DiglettsCave, MSGBOX_SIGN
 	end
@@ -117,4 +166,73 @@ Route11_Text_DavePostBattle::
 
 Route11_Text_DiglettsCave::
     .string "DIGLETT'S CAVE$"
+
+
+
+gText_whitney_1::
+  .string "{COLOR RED}Jeez, Meganium and Feraligatr got new\n"
+  .string "Megas, but Miltank gets no love!\p"
+  .string "Don't worry buddy, I'm sure your time\n"
+  .string "to shine will come soon…$"
+
+
+gText_whitney_2::
+  .string "{COLOR RED}Oh… hello there.\n"
+  .string "I see you're quite an experienced\l"
+  .string "trainer.\p"
+  .string "I'm a renowned Gym Leader from the\n"
+  .string "Johto region, fearsome for my\l"
+  .string "Miltank! Perhaps you've heard of me?\p"
+
+
+gText_whitney_3::
+  .string "{COLOR RED}Well, if an intense battle is what you\n"
+  .string "want, then that's what you're going\l"
+  .string "to get!$"
+
+
+gText_whitney_4::
+  .string "{COLOR RED}Scared of Miltank, aren't ya?$"
+
+gText_whitney_5::
+  .string "{COLOR RED}I hope you don't let my cuteness lull\n"
+  .string "you. You'll definitely regret it!$"
+
+
+whitney_Text_Defeat::
+  .string "Ah… woe is me…$"
+
+
+gText_whitney_6::
+  .string "{COLOR RED}In my younger days, Miltank was such\n"
+  .string "a big threat I gave trainers of all\l"
+  .string "ages nightmares.\p"
+  .string "Though, now with Mega Evolutions, I fear\n"
+  .string "my Miltank isn't quite as threatening\l"
+  .string "anymore. But, I'm determined to still\l"
+  .string "make it work!\p"
+  .string "Anyway, thanks for the battle. I can"
+  .string "raise your Effort Values cap so your"
+  .string "team can grow even stronger!$"
+
+whitney_Text_StatEditor_Explain::
+  .string "{COLOR RED}You will now see an Edit Stats\n"
+  .string "option when viewing your Pokémon in\l"
+  .string "the party menu.$"
+
+gText_whitney_7_2::
+  .string "{COLOR RED} Have this as well.$"
+
+
+gText_whitney_8::
+  .string "{COLOR GREEN}Eviolite{COLOR RED} boosts the defenses of Poké-\n"
+  .string "mon that can still evolve.\p"
+  .string "It has an added functionality where\n"
+  .string "it prevents evolution too, for your\l"
+  .string "convenience.\p"
+  .string "It's great if you like keeping them\n"
+  .string "adorable!\p"
+  .string "Anyway, I need to Bounce.\n"
+  .string "Too many creeps on this Route.\p"
+  .string "I hope we see each other soon.$"
 

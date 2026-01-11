@@ -165,8 +165,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route11_EventScript_ItemIron",
-      "flag": "FLAG_HIDE_ROUTE11_IRON"
+      "script": "Route11_EventScript_ItemFireStone",
+      "flag": "FLAG_HIDE_ROUTE11_FIRE_STONE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -182,7 +182,7 @@
       "flag": "FLAG_HIDE_ROUTE11_DUSK_BALL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
       "x": 13,
       "y": 3,
       "elevation": 3,
@@ -191,8 +191,22 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route11_EventScript_ItemMuscleFeather",
-      "flag": "FLAG_HIDE_ROUTE11_MUSCLE_FEATHER"
+      "script": "SSAnne_1F_Room2_EventScript_ItemTM31",
+      "flag": "FLAG_HIDE_SSANNE_1F_ROOM2_TM31"
+    },
+    {
+      "local_id": "LOCALID_WHITNEY",
+      "graphics_id": "OBJ_EVENT_GFX_WHITNEY",
+      "x": 57,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route11_EventScript_Whitney",
+      "flag": "FLAG_DEFEATED_WHITNEY"
     }
   ],
   "warp_events": [

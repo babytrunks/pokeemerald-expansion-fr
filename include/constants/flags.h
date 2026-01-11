@@ -1809,7 +1809,7 @@
 #define FLAG_HIDE_MT_MOON_1F_MOON_STONE                         0
 #define FLAG_HIDE_MT_MOON_B2F_SOFT_SAND                        0
 #define FLAG_HIDE_MT_MOON_B2F_TM46                              0
-#define FLAG_HIDE_ROUTE4_TM05                                   0
+#define FLAG_HIDE_ROUTE4_TM_ShockWave                                   0
 #define FLAG_HIDE_ROUTE24_TM45                                  0
 #define FLAG_HIDE_ROUTE25_TM43                                  0
 #define FLAG_HIDE_SSANNE_1F_ROOM2_TM31                          0
@@ -1905,7 +1905,7 @@
 #define FLAG_HIDE_VIRIDIAN_FOREST_RESIST_FEATHER                      0
 #define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                            0
 #define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                          0
-#define FLAG_HIDE_ROUTE11_IRON                              0
+#define FLAG_HIDE_ROUTE11_FIRE_STONE                              0
 #define FLAG_HIDE_ROUTE9_BURN_HEAL                              0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0

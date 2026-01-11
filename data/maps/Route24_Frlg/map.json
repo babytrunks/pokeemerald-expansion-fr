@@ -140,8 +140,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route24_EventScript_ItemTMThunderPunch",
-      "flag": "FLAG_HIDE_TM_THUNDER_PUNCH"
+      "script": "Route24_EventScript_ItemTMWaterPulse",
+      "flag": "FLAG_HIDE_TM_WATER_PULSE"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",

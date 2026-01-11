@@ -24,18 +24,22 @@ ViridianCity_House_EventScript_NicknameSign::
 	end
 
 ViridianCity_House_Text_NicknamingIsFun::
-    .string "Coming up with nicknames is fun,\n"
-    .string "but it's not so easy to do.\p"
-    .string "Clever names are nice, but simple\n"
-    .string "names are easier to remember.$"
+  .string "Kids nowadays are cracked!\p"
+  .string "Back in my day, you'd be king of\n"
+  .string "the playground if you had even\l"
+  .string "a {COLOR GREEN}Nidorino{COLOR BLUE} at my son's age.\p"
+  .string "My kid's running around with a\n"
+  .string "{COLOR GREEN}Sheer Force Nidoking!\p"
+  .string "{COLOR BLUE}Wahahah!$"
 
 ViridianCity_House_Text_MyDaddyLovesMonsToo::
-    .string "My daddy loves Pokémon, too.$"
+  .string "{COLOR GREEN}LeKing, {COLOR BLUE} sit!$"
+
 
 ViridianCity_House_Text_Speary::
-    .string "SPEARY: Tetweet!$"
+  .string "{COLOR GREEN}LeKing: {COLOR BLUE} Raaagh!$"
 
 ViridianCity_House_Text_SpearowNameSpeary::
-    .string "SPEAROW\n"
-    .string "Name: SPEARY$"
+    .string "Nidoking\n"
+    .string "Name: LeKing$"
 

@@ -414,12 +414,14 @@ CeruleanCity_Text_GruntIntro::
     .string "Don't you believe me?{PLAY_BGM}{MUS_RG_ENCOUNTER_ROCKET}$"
 
 CeruleanCity_Text_GruntDefeat::
-    .string "GRUNT: Stop! I give up!\n"
+    .string "Grunt: Stop! I give up!\n"
     .string "I'll leave quietly!$"
 
 CeruleanCity_Text_OkayIllReturnStolenTM::
     .string "…Okay.\n"
-    .string "I'll return the TM I stole.$"
+    .string "I'll return the TM I stole.\l$"
+    .string "None of my Pokémon can learn it"
+	.string "anyway…$"
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
     .string "{PLAYER} recovered TM28 from\n"
@@ -434,7 +436,7 @@ CeruleanCity_Text_MakeRoomForThisCantRun::
     .string "I can't run until I give it to you!$"
 
 CeruleanCity_Text_TrainerLifeIsToughIsntIt::
-    .string "You're a TRAINER, too?\p"
+    .string "You're a trainer, too?\p"
     .string "Collecting, battling…\n"
     .string "It's a tough life, isn't it?$"
 
@@ -467,7 +469,7 @@ CeruleanCity_Text_PeopleHereWereRobbed::
 
 CeruleanCity_Text_SlowbroUseSonicboom::
     .string "Okay! SLOWBRO!\n"
-    .string "Use SONICBOOM!$"
+    .string "Mega Evolve!$"
 
 CeruleanCity_Text_SlowbroPayAttention::
     .string "Come on, SLOWBRO, pay attention!$"

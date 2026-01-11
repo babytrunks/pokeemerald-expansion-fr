@@ -584,7 +584,7 @@
 #define TRAINER_FALKNER                            578
 #define TRAINER_BUGSY                              579
 #define TRAINER_BUGSY_POST_SURGE                   580
-#define TRAINER_CRUSH_KIN_MIK_KIA_3                581
+#define TRAINER_WHITNEY                581
 #define TRAINER_TUBER_AMIRA_2                      582
 #define TRAINER_TWINS_JOY_MEG_2                    583
 #define TRAINER_PAINTER_RAYNA_2                    584
@@ -594,8 +594,8 @@
 #define TRAINER_YOUNG_COUPLE_GIA_JES_3             588
 #define TRAINER_BIRD_KEEPER_MILO_2                 589
 #define TRAINER_BIRD_KEEPER_CHAZ_2                 590
-#define TRAINER_BIRD_KEEPER_HAROLD_2               591
-#define TRAINER_SWIMMER_FEMALE_NICOLE_2            592
+#define TRAINER_ANN               591
+#define TRAINER_BROOKS            592
 #define TRAINER_PSYCHIC_JACLYN_2                   593
 #define TRAINER_SWIMMER_MALE_SAMIR_2               594
 #define TRAINER_HIKER_EARL_2                       595

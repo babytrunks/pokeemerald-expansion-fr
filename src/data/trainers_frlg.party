@@ -5363,7 +5363,7 @@ Dynamic Level Ratio: 80
 
 Persian-Alola @ Black Glasses
 Nature: Bashful
-Ability: Feline Power
+Ability: Feline Prowess
 Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -5381,7 +5381,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Mega Drain
 - Cross Poison
 - Air Cutter
-- Hidden Power (Fire)
+- Hidden Power 
 
 Carvanha @ Focus Sash
 Nature: Bashful
@@ -7619,7 +7619,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Calm Mind
 
 === TRAINER_GENTLEMAN_THOMAS ===
-Name: THOMAS
+Name: Thomas
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7627,16 +7627,16 @@ Music: Rich
 Double Battle: No
 AI: Smart Trainer
 
-Growlithe
-Level: 18
+Growlithe-Hisui
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Growlithe
-Level: 18
+Vaporeon
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GENTLEMAN_ARTHUR ===
-Name: ARTHUR
+Name: Arthur
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7644,12 +7644,12 @@ Music: Rich
 Double Battle: No
 AI: Smart Trainer
 
-Nidoran M
-Level: 19
+Dachsbun
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Nidoran F
-Level: 19
+Roselia
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GENTLEMAN_TUCKER ===
@@ -9274,11 +9274,11 @@ AI: Smart Trainer
 
 Arbok
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Sandslash
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_HIKER_FRANKLIN_2 ===
 Name: Franklin
@@ -11548,11 +11548,11 @@ AI: Smart Trainer
 
 Nidorino
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Nidorina
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_RICKY_2 ===
 Name: Ricky
@@ -11697,15 +11697,15 @@ AI: Smart Trainer
 
 Pidgeotto
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pidgeotto
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pidgeot
 Level: 50
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_YOUNGSTER_YASU_2 ===
 Name: Yasu
@@ -11739,15 +11739,15 @@ AI: Smart Trainer
 
 Raticate
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ENGINEER_BERNIE_2 ===
 Name: Bernie
@@ -12002,23 +12002,23 @@ AI: Smart Trainer
 
 Pidgeot
 Level: 46
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Nidorino
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Persian
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raichu
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SUPER_NERD_GLENN_2 ===
 Name: Glenn
@@ -12128,11 +12128,11 @@ AI: Smart Trainer
 
 Clefairy
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Persian
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_ROBERT_2 ===
 Name: ROBERT
@@ -12170,19 +12170,19 @@ AI: Smart Trainer
 
 Pidgeot
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pidgeot
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Fearow
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Fearow
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_SUSIE_2 ===
 Name: SUSIE
@@ -12224,23 +12224,23 @@ AI: Smart Trainer
 
 Pidgeotto
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Persian
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raticate
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pikachu
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Persian
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_SUSIE_4 ===
 Name: SUSIE
@@ -12282,19 +12282,19 @@ AI: Smart Trainer
 
 Koffing
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Koffing
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Muk
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Weezing
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_BENNY_2 ===
 Name: BENNY
@@ -12324,11 +12324,11 @@ AI: Smart Trainer
 
 Fearow
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Fearow
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_MARLON_2 ===
 Name: MARLON
@@ -12362,15 +12362,15 @@ AI: Smart Trainer
 
 Fearow
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Dodrio
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Fearow
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BEAUTY_GRACE_2 ===
 Name: Grace
@@ -12383,11 +12383,11 @@ AI: Smart Trainer
 
 Pidgeot
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Wigglytuff
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_CHESTER_2 ===
 Name: CHESTER
@@ -12421,15 +12421,15 @@ AI: Smart Trainer
 
 Dodrio
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Dodrio
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Dodrio
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_BECKY_2 ===
 Name: BECKY
@@ -12459,11 +12459,11 @@ AI: Smart Trainer
 
 Pikachu
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Raichu
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_BECKY_4 ===
 Name: BECKY
@@ -12544,15 +12544,15 @@ AI: Smart Trainer
 
 Weezing
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Weezing
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Weezing
 Level: 48
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CUE_BALL_CAMRON_2 ===
 Name: Camron
@@ -12565,11 +12565,11 @@ AI: Smart Trainer
 
 Primeape
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Machoke
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIKER_JAXON_2 ===
 Name: Jaxon
@@ -12582,11 +12582,11 @@ AI: Smart Trainer
 
 Weezing
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Muk
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CUE_BALL_ISAIAH_2 ===
 Name: Isaiah
@@ -12599,11 +12599,11 @@ AI: Smart Trainer
 
 Machoke
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Machamp
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CUE_BALL_COREY_2 ===
 Name: Corey
@@ -12616,11 +12616,11 @@ AI: Smart Trainer
 
 Primeape
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Machamp
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_JACOB_2 ===
 Name: JACOB
@@ -12658,19 +12658,19 @@ AI: Smart Trainer
 
 Fearow
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Fearow
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Fearow
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Fearow
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SWIMMER_FEMALE_ALICE_2 ===
 Name: Alice
@@ -12683,11 +12683,11 @@ AI: Smart Trainer
 
 Seaking
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seaking
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SWIMMER_MALE_DARRIN_2 ===
 Name: Darrin
@@ -12725,11 +12725,11 @@ AI: Smart Trainer
 
 Seaking
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seaking
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_MISSY_3 ===
 Name: MISSY
@@ -12759,27 +12759,27 @@ AI: Smart Trainer
 
 Magikarp
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magikarp
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magikarp
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magikarp
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magikarp
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magikarp
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SWIMMER_MALE_JACK_2 ===
 Name: Jack
@@ -12792,7 +12792,7 @@ AI: Smart Trainer
 
 Starmie
 Level: 50
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN_2 ===
 Name: LIL & IAN
@@ -12805,11 +12805,11 @@ AI: Smart Trainer
 
 Seadra
 Level: 50
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Starmie
 Level: 50
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN_3 ===
 Name: LIL & IAN
@@ -12839,7 +12839,7 @@ AI: Smart Trainer
 
 Starmie
 Level: 50
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CRUSH_GIRL_SHARON_2 ===
 Name: SHARON
@@ -13118,22 +13118,71 @@ EVs: 252 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 0 Spe
 - Volt Switch
 - Energy Ball
 
-=== TRAINER_CRUSH_KIN_MIK_KIA_3 ===
-Name: MIK & KIA
-Class: Crush Kin Frlg
-Pic: Crush Kin Frlg
-Gender: Male
+=== TRAINER_WHITNEY ===
+Name: Whitney
+Class: Leader
+Pic: Leader Whitney
+Gender: Female
 Music: Intense
 Double Battle: Yes
 AI: Smart Trainer
+Mugshot: Purple
+Dynamic Level Ratio: 90
 
-Machamp @ Black Belt
-Level: 56
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Tinkaton @ Sitrus Berry
+Nature: Jolly
+Ability: Mold Breaker
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 102 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+- Play Rough
+- Gigaton Hammer
+- Knock Off
+- Encore
 
-Primeape @ Black Belt
-Level: 56
-IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
+Girafarig @ Eviolite
+Nature: Modest
+Ability: Sap Sipper
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Psychic
+- Hyper Voice
+- Dazzling Gleam
+- Shadow Ball
+
+Miltank @ Chople Berry
+Nature: Adamant
+Ability: Thick Fat
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Body Slam
+- Slack Off
+- Zen Headbutt
+- High Horsepower
+
+Drampa @ Normal Gem
+Nature: Modest
+Ability: Sap Sipper
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Dragon Breath
+- Roost
+- Flamethrower
+- Hyper Voice
+
+Dudunsparce @ Leftovers
+Nature: Careful
+Ability: Serene Grace
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Body Slam
+- Roost
+- Bite
+- Coil
 
 === TRAINER_TUBER_AMIRA_2 ===
 Name: AMIRA
@@ -13146,15 +13195,15 @@ AI: Smart Trainer
 
 Poliwhirl
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Poliwhirl
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Poliwhirl
 Level: 47
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TWINS_JOY_MEG_2 ===
 Name: JOY & MEG
@@ -13167,11 +13216,11 @@ AI: Smart Trainer
 
 Clefairy
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Clefairy
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PAINTER_RAYNA_2 ===
 Name: RAYNA
@@ -13296,35 +13345,70 @@ Fearow
 Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_BIRD_KEEPER_HAROLD_2 ===
-Name: HAROLD
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
-Gender: Male
+=== TRAINER_ANN ===
+Name: Ann
+Class: Lass Frlg
+Pic: Lass Frlg
+Gender: Female
 Music: Cool
 Double Battle: No
 AI: Smart Trainer
+Dynamic Level Ratio: 80
 
-Noctowl
-Level: 53
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Bayleef @ Light Clay
+Nature: Bashful
+Ability: Overgrow
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Seed Bomb
+- Reflect
+- Synthesis
+- Light Screen
 
-Noctowl
-Level: 55
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Dachsbun @ Leftovers
+Nature: Bashful
+Ability: Well-Baked Body
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Jovial Bash
+- Psychic Fangs
+- Stomping Tantrum
+- Ice Fang
 
-=== TRAINER_SWIMMER_FEMALE_NICOLE_2 ===
-Name: NICOLE
-Class: Swimmer F Frlg
-Pic: Swimmer F Frlg
+
+=== TRAINER_BROOKS ===
+Name: Brooks
+Class: Gentleman Frlg
+Pic: Gentleman Frlg
 Gender: Male
-Music: Female
+Music: Male
 Double Battle: No
 AI: Smart Trainer
 
-Marill
-Level: 54
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Mabosstiff @ Black Glasses
+Nature: Bashful
+Ability: Intimidate
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bite
+- Play Rough
+- Trailblaze
+- Headbutt
+
+Lycanroc-Dusk @ Chople Berry
+Nature: Bashful
+Ability: Tough Claws
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Tomb
+- Bulldoze
+- Accelerock
+- Fire Fang
+
 
 === TRAINER_PSYCHIC_JACLYN_2 ===
 Name: JACLYN
@@ -13837,11 +13921,11 @@ AI: Smart Trainer
 
 Poliwhirl
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Poliwrath
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SWIMMER_MALE_TONY_2 ===
 Name: Tony
@@ -13854,11 +13938,11 @@ AI: Smart Trainer
 
 Seadra
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seadra
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SWIMMER_FEMALE_MELISSA_2 ===
 Name: Melissa
@@ -13871,11 +13955,11 @@ AI: Smart Trainer
 
 Poliwhirl
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Seaking
 Level: 49
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ELITE_FOUR_LORELEI_2 ===
 Name: LORELEI

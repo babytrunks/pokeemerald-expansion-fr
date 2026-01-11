@@ -47,12 +47,13 @@ VermilionCity_PokemonCenter_1F_Text_TrainerMonsStrongerThanWild::
     .string "Even if they are the same level,\n"
     .string "Pokémon can have very different\l"
     .string "stats and abilities.\p"
-    .string "A Pokémon raised by a TRAINER is\n"
-    .string "stronger than one in the wild.$"
+    .string "A Pokémon raised by a trainer can\n"
+    .string "be stronger than one in the wild.$"
 
 VermilionCity_PokemonCenter_1F_Text_PoisonedMonFaintedWhileWalking::
     .string "My Pokémon was poisoned!\n"
-    .string "It fainted while we were walking!$"
+    .string "And then it dealt even more damage!\p"
+    .string "Some Pokémon got Guts!$"
 
 VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
     .string "It is true that a higher-level\n"
@@ -60,7 +61,9 @@ VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
     .string "But, all Pokémon will have weak\n"
     .string "points against specific types.\p"
     .string "So, there appears to be no\n"
-    .string "universally strong Pokémon.$"
+    .string "universally strong Pokémon.\p"
+    .string "Except Mega Rayquaza.\n"
+    .string "That thing is busted!$"
 
 VermilionCity_PokemonCenter_1F_Text_UrgeToBattleSomeoneAgain::
     .string "The urge to battle with someone\n"

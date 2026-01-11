@@ -53,9 +53,12 @@ CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner::
     .string "GAME CORNER, I hear.$"
 
 CeladonCity_Restaurant_Text_ManLostItAllAtSlots::
-    .string "Munch…\p"
-    .string "The man at that table lost it all\n"
-    .string "at the slots.$"
+    .string "THIS ROM HACK IS SO GOOD I COULD\n"
+    .string "DIE!!$"
+
+CeladonCity_Restaurant_EventScript_Luffy::
+    .string "THIS ROM HACK IS SO BAD I COULD\n"
+    .string "DIE!!$"
 
 CeladonCity_Restaurant_Text_TakeThisImBusted::
     .string "Go ahead! Laugh!\n"

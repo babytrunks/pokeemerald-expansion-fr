@@ -3,7 +3,6 @@
   "name": "SSAnne_1F_Corridor_Frlg",
   "layout": "LAYOUT_SSANNE_1F_CORRIDOR",
   "music": "MUS_RG_SS_ANNE",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_S_S_ANNE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -12,12 +11,10 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
-  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SAILOR_FRLG",
       "x": 18,
       "y": 8,
@@ -31,7 +28,6 @@
       "flag": "0"
     },
     {
-      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WORKER_M",
       "x": 12,
       "y": 9,
@@ -42,6 +38,34 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "SSAnne_1F_Corridor_EventScript_WorkerM",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_SSANNE_BROOKS",
+      "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN_FRLG",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SSAnne_1F_Corridor_EventScript_GentlemanDouble",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_SSANNE_ANN",
+      "graphics_id": "OBJ_EVENT_GFX_LASS_FRLG",
+      "x": 10,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "SSAnne_1F_Corridor_EventScript_LassDouble",
       "flag": "0"
     }
   ],
@@ -139,5 +163,7 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "floor_number": 0,
+  "region": "REGION_KANTO"
 }

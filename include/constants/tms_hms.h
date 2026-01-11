@@ -23,7 +23,7 @@
     F(GIGA_DRAIN) \
     F(HYPER_VOICE) \
     F(ICY_WIND) \
-    F(SOLAR_BEAM) \
+    F(VENOSHOCK) \
     F(IRON_HEAD) \
     F(THUNDERBOLT) \
     F(THUNDER) \
