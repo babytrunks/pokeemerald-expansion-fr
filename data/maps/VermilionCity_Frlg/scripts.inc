@@ -295,12 +295,12 @@ VermilionCity_Text_SSAnneVisitsOnceAYear::
     .string "It visits VERMILION once a year.$"
 
 VermilionCity_Text_CitySign::
-    .string "VERMILION CITY\n"
+    .string "Vermilion City\n"
     .string "The Port of Exquisite Sunsets$"
 
 VermilionCity_Text_SnorlaxBlockingRoute12::
     .string "NOTICE!\p"
-    .string "ROUTE 12 may be blocked off by a\n"
+    .string "Route 12 may be blocked off by a\n"
     .string "sleeping Pokémon.\p"
     .string "Detour through ROCK TUNNEL to\n"
     .string "LAVENDER TOWN.\p"
@@ -311,7 +311,7 @@ VermilionCity_Text_PokemonFanClubSign::
     .string "All Pokémon fans welcome!$"
 
 VermilionCity_Text_GymSign::
-    .string "VERMILION CITY Pokémon GYM\n"
+    .string "Vermilion City Pokémon GYM\n"
     .string "LEADER: LT. SURGE\l"
     .string "The Lightning American!$"
 
@@ -390,7 +390,7 @@ VermilionCity_Text_Route2AideHasPackageForYou::
     .string "He had a package from Prof. Oak\n"
     .string "for you, {PLAYER}.\p"
     .string "He said he'd look for you around\n"
-    .string "ROUTE 2, {PLAYER}.\p"
+    .string "Route 2, {PLAYER}.\p"
     .string "If you're in the ROUTE 2 area,\n"
     .string "please look for him.$"
 

@@ -112,7 +112,7 @@ Route8_Text_JuliaPostBattle::
     .string "I wonder if it's true?$"
 
 Route8_Text_UndergroundPathSign::
-    .string "UNDERGROUND PATH\n"
+    .string "Underground Path\n"
     .string "CELADON CITY - LAVENDER TOWN$"
 
 Route8_Text_EliIntro::

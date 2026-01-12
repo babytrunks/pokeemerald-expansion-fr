@@ -144,7 +144,7 @@ Route17_Text_PressBToStayInPlace::
     .string "while on a slope.$"
 
 Route17_Text_RouteSign::
-    .string "ROUTE 17\n"
+    .string "Route 17\n"
     .string "CELADON CITY - FUCHSIA CITY$"
 
 Route17_Text_DontThrowGameThrowBalls::

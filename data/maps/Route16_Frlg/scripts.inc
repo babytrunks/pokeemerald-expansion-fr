@@ -150,7 +150,7 @@ Route16_Text_CyclingRoadSign::
     .string "CYCLING ROAD$"
 
 Route16_Text_RouteSign::
-    .string "ROUTE 16\n"
+    .string "Route 16\n"
     .string "CELADON CITY - FUCHSIA CITY$"
 
 Route16_Text_JedIntro::

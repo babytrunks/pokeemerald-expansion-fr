@@ -118,7 +118,7 @@ gFameCheckerFlavorText_Brock5:: @ 0x81ADA27
 
 gFameCheckerFlavorText_Misty0:: @ 0x81ADA91
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}CERULEAN CITY Pokémon GYM\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Cerulean City Pokémon GYM\n"
 	.string "LEADER: MISTY\l"
 	.string "The Tomboyish Mermaid!$"
 
@@ -153,7 +153,7 @@ gFameCheckerFlavorText_Misty5:: @ 0x81ADCEB
 
 gFameCheckerFlavorText_LtSurge0:: @ 0x81ADD3C
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}VERMILION CITY Pokémon GYM\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Vermilion City Pokémon GYM\n"
 	.string "LEADER: LT. SURGE\l"
 	.string "The Lightning American!$"
 
@@ -819,7 +819,7 @@ gFameCheckerFlavorTextOriginLocation_Daisy0::
 	.string "RESEARCH LAB$"
 
 gFameCheckerFlavorTextOriginLocation_Daisy1::
-	.string "VERMILION CITY$"
+	.string "Vermilion City$"
 
 gFameCheckerFlavorTextOriginLocation_Daisy2::
 	.string "WATER LABYRINTH$"
@@ -843,7 +843,7 @@ gFameCheckerFlavorTextOriginLocation_Brock2::
 	.string "Pewter City$"
 
 gFameCheckerFlavorTextOriginLocation_Brock3::
-	.string "ROUTE 4$"
+	.string "Route 4$"
 
 gFameCheckerFlavorTextOriginLocation_Brock4::
 	.string "MT. MOON$"
@@ -852,7 +852,7 @@ gFameCheckerFlavorTextOriginLocation_Brock5::
 	.string "PEWTER MUSEUM$"
 
 gFameCheckerFlavorTextOriginLocation_Misty0::
-	.string "CERULEAN CITY$"
+	.string "Cerulean City$"
 
 gFameCheckerFlavorTextOriginLocation_Misty1::
 	.string "CERULEAN GYM$"
@@ -867,10 +867,10 @@ gFameCheckerFlavorTextOriginLocation_Misty4::
 	.string "CERULEAN CAPE$"
 
 gFameCheckerFlavorTextOriginLocation_Misty5::
-	.string "CERULEAN CITY$"
+	.string "Cerulean City$"
 
 gFameCheckerFlavorTextOriginLocation_LtSurge0::
-	.string "VERMILION CITY$"
+	.string "Vermilion City$"
 
 gFameCheckerFlavorTextOriginLocation_LtSurge1::
 	.string "VERMILION GYM$"
@@ -885,7 +885,7 @@ gFameCheckerFlavorTextOriginLocation_LtSurge4::
 	.string "VERMILION GYM$"
 
 gFameCheckerFlavorTextOriginLocation_LtSurge5::
-	.string "VERMILION CITY$"
+	.string "Vermilion City$"
 
 gFameCheckerFlavorTextOriginLocation_Erika0::
 	.string "CELADON CITY$"
@@ -1032,10 +1032,10 @@ gFameCheckerFlavorTextOriginLocation_Lance5::
 	.string "INDIGO PLATEAU$"
 
 gFameCheckerFlavorTextOriginLocation_Bill0::
-	.string "CERULEAN CITY$"
+	.string "Cerulean City$"
 
 gFameCheckerFlavorTextOriginLocation_Bill1::
-	.string "CERULEAN CITY$"
+	.string "Cerulean City$"
 
 gFameCheckerFlavorTextOriginLocation_Bill2::
 	.string "FUCHSIA CITY$"

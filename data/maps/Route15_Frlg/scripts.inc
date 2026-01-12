@@ -124,7 +124,7 @@ Route15_Text_YazminPostBattle::
     .string "I'll go train with weaker people.$"
 
 Route15_Text_RouteSign::
-    .string "ROUTE 15\n"
+    .string "Route 15\n"
     .string "West to FUCHSIA CITY$"
 
 Route15_Text_MyaIntro::

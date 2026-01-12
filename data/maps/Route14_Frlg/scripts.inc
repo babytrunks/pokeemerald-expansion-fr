@@ -128,7 +128,7 @@ Route14_Text_MalikPostBattle::
     .string "one-on-one!$"
 
 Route14_Text_RouteSign::
-    .string "ROUTE 14\n"
+    .string "Route 14\n"
     .string "West to FUCHSIA CITY$"
 
 Route14_Text_KiriIntro::

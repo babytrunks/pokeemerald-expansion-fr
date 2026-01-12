@@ -632,7 +632,7 @@ Route25_Text_JoeyRematchIntro::
 
 Route25_Text_DanRematchIntro::
 	.string "Dad took me to a great party on\n"
-	.string "the S.S. ANNE at VERMILION CITY.$"
+	.string "the S.S. ANNE at Vermilion City.$"
 
 Route25_Text_FlintRematchIntro::
 	.string "I'm a cool guy.\n"

@@ -526,7 +526,7 @@ CeruleanCity_Text_ThisIsCeruleanCave::
     .string "made a great achievement.$"
 
 CeruleanCity_Text_CitySign::
-    .string "CERULEAN CITY\n"
+    .string "Cerulean City\n"
     .string "A Mysterious, Blue Aura Surrounds\l"
     .string "It$"
 
@@ -542,7 +542,7 @@ CeruleanCity_Text_BikeShopSign::
     .string "BIKE SHOP$"
 
 CeruleanCity_Text_GymSign::
-    .string "CERULEAN CITY Pokémon GYM\n"
+    .string "Cerulean City Pokémon GYM\n"
     .string "LEADER: MISTY\l"
     .string "The Tomboyish Mermaid!$"
 

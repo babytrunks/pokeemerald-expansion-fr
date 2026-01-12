@@ -60,7 +60,7 @@ Route18_Text_JacobPostBattle::
     .string "Pokémon.$"
 
 Route18_Text_RouteSign::
-    .string "ROUTE 18\n"
+    .string "Route 18\n"
     .string "CELADON CITY - FUCHSIA CITY$"
 
 Route18_Text_CyclingRoadSign::

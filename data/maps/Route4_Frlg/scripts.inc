@@ -37,8 +37,8 @@ Route4_Text_MtMoonEntrance::
     .string "Tunnel Entrance$"
 
 Route4_Text_RouteSign::
-    .string "ROUTE 4\n"
-    .string "MT. MOON - CERULEAN CITY$"
+    .string "Route 4\n"
+    .string "MT. MOON - Cerulean City$"
 
 Text_BlackBeltGuy_BitFeisty::
     .string "Sorry, my partner can be a bit feisty.\p"

@@ -421,7 +421,7 @@ Kecleon_Text_UseDevonScopeMonAttacked:
 	.string "The startled Pokémon attacked!$"
 
 Route120_Text_RouteSignFortree:
-	.string "ROUTE 120\n"
+	.string "Route 120\n"
 	.string "{LEFT_ARROW} FORTREE CITY$"
 
 Route120_Text_RouteSign121:

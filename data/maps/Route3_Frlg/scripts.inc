@@ -194,11 +194,11 @@ Route3_Text_RobinDefeat::
     .string "That's it?$"
 
 Route3_Text_RobinPostBattle::
-    .string "ROUTE 4 is at the foot of\n"
+    .string "Route 4 is at the foot of\n"
     .string "MT. MOON.$"
 
 Route3_Text_RouteSign::
-    .string "ROUTE 3\n"
+    .string "Route 3\n"
     .string "MT. MOON AHEAD$"
 
 Route3_Text_DroppedBerryJuiceQuest::

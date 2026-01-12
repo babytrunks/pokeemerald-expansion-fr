@@ -108,6 +108,6 @@ Route9_Text_ConnerPostBattle::
     .string "you bug me!$"
 
 Route9_Text_RouteSign::
-    .string "ROUTE 9\n"
-    .string "CERULEAN CITY - ROCK TUNNEL$"
+    .string "Route 9\n"
+    .string "Cerulean City - ROCK TUNNEL$"
 
