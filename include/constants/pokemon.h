@@ -390,4 +390,6 @@ enum ShinyMode {
 #define LEGENDARY_PERFECT_IV_COUNT 0
 #endif
 
+#define SPECIES_TABLES_TERMIN 0xFFFF
+
 #endif // GUARD_CONSTANTS_POKEMON_H

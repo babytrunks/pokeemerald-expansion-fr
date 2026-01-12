@@ -57,8 +57,14 @@ CeruleanCity_EventScript_Rival::
 	setspeaker SP_NAME_RIVAL
 	msgbox CeruleanCity_Text_OhRightLittlePresentAsFavor
 	setvar VAR_MAP_SCENE_CERULEAN_CITY_RIVAL, 1
-	setflag FLAG_GOT_FAME_CHECKER
-	giveitem ITEM_FAME_CHECKER
+	setflag FLAG_WONDER_TRADE
+	setflag FLAG_3_PERFECT_IVS
+	giveegg SPECIES_PIDGEY
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox CeruleanCity_Text_ReceivedAnEgg
+	waitfanfare
+	clearflag FLAG_WONDER_TRADE
+	clearflag FLAG_3_PERFECT_IVS
 	setspeaker SP_NAME_RIVAL
 	msgbox CeruleanCity_Text_ExplainFameCheckerSmellYa
 	closemessage
@@ -398,10 +404,10 @@ CeruleanCity_Text_OhRightLittlePresentAsFavor::
     .string "present as a favor.$"
 
 CeruleanCity_Text_ExplainFameCheckerSmellYa::
-    .string "A chatty gossip like you…\n"
-    .string "That thing's perfect.\p"
-    .string "I don't need it because I don't\n"
-    .string "give a hoot about others.\p"
+    .string "These random eggs are fun for ya,\n"
+    .string "aren't they? Almost like a mini gatcha\l"
+    .string "machine. I don't know why but my\l"
+    .string "gramps has been getting a bunch of these.\p"
     .string "All right, this time I really am\n"
     .string "gone. Smell ya!$"
 
@@ -540,3 +546,5 @@ CeruleanCity_Text_GymSign::
     .string "LEADER: MISTY\l"
     .string "The Tomboyish Mermaid!$"
 
+CeruleanCity_Text_ReceivedAnEgg:
+	.string "You received a mysterious egg."

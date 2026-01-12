@@ -10,6 +10,7 @@ Route11_EventScript_Whitney::
     waitmovement 0
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_2
+    call_if_unset FLAG_BADGE03_GET, Route11_EventScript_Whitney_NotReady
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_3, MSGBOX_YESNO     @ player choice; sets VAR_RESULT
     goto_if_eq VAR_RESULT, 1, EventScript_Whitney_Battle
@@ -17,6 +18,11 @@ Route11_EventScript_Whitney::
     msgbox gText_whitney_4
     release
     end
+
+Route11_EventScript_Whitney_NotReady:
+    setspeaker SP_NAME_WHITNEY
+    msgbox gText_whitney_3_1
+    return
 
 EventScript_Whitney_Battle::
     setspeaker SP_NAME_WHITNEY
@@ -33,7 +39,7 @@ EventScript_Whitney_Battle::
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_8
     fadescreen FADE_TO_BLACK                 @ fadescreen 0x1
-    playse SE_PIN                            @ sound 0x9
+    playse SE_EXIT                            @ sound 0x9
     waitse                                   @ checksound
     setflag FLAG_DEFEATED_WHITNEY            @ 0x933
     setflag FLAG_UNLOCKED_STAT_EDITOR
@@ -182,14 +188,17 @@ gText_whitney_2::
   .string "trainer.\p"
   .string "I'm a renowned Gym Leader from the\n"
   .string "Johto region, fearsome for my\l"
-  .string "Miltank! Perhaps you've heard of me?\p"
+  .string "Miltank! Perhaps you've heard of me?$"
 
 
 gText_whitney_3::
-  .string "{COLOR RED}Well, if an intense battle is what you\n"
-  .string "want, then that's what you're going\l"
-  .string "to get!$"
+  .string "{COLOR RED}If an intense battle is what you want,\n"
+  .string "then that's what you're going to get!$"
 
+gText_whitney_3_1::
+  .string "{COLOR RED}Though, I will warn you I don't\n"
+  .string "think your Pokémon are quite ready to\l"
+  .string "take me on…$"
 
 gText_whitney_4::
   .string "{COLOR RED}Scared of Miltank, aren't ya?$"
@@ -205,14 +214,14 @@ whitney_Text_Defeat::
 
 gText_whitney_6::
   .string "{COLOR RED}In my younger days, Miltank was such\n"
-  .string "a big threat I gave trainers of all\l"
+  .string "a big threat. I gave trainers of all\l"
   .string "ages nightmares.\p"
   .string "Though, now with Mega Evolutions, I fear\n"
   .string "my Miltank isn't quite as threatening\l"
   .string "anymore. But, I'm determined to still\l"
   .string "make it work!\p"
-  .string "Anyway, thanks for the battle. I can"
-  .string "raise your Effort Values cap so your"
+  .string "Anyway, thanks for the battle. I can\n"
+  .string "raise your Effort Values cap so your\l"
   .string "team can grow even stronger!$"
 
 whitney_Text_StatEditor_Explain::
@@ -225,7 +234,7 @@ gText_whitney_7_2::
 
 
 gText_whitney_8::
-  .string "{COLOR GREEN}Eviolite{COLOR RED} boosts the defenses of Poké-\n"
+  .string "{COLOR RED}Eviolite boosts the defenses of Poké-\n"
   .string "mon that can still evolve.\p"
   .string "It has an added functionality where\n"
   .string "it prevents evolution too, for your\l"

@@ -74,7 +74,7 @@ SSAnne_2F_Corridor_EventScript_RivalTrigger::
 	setspeaker SP_NAME_BRENDAN
 	msgbox SSAnne_2F_Corridor_Text_RivalPostBattle
 	closemessage
-	giveitem ITEM_SHINY_STONE
+	giveitem ITEM_FIRE_STONE
 	setspeaker SP_NAME_BRENDAN
 	msgbox SSAnne_2F_Corridor_Text_RivalPostBattle2
 	delay 10

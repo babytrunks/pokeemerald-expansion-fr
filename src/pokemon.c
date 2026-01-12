@@ -977,6 +977,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 #include "data/pokemon/egg_moves.h"
 #include "data/pokemon/form_species_tables.h"
 #include "data/pokemon/form_change_tables.h"
+#include "data/pokemon/randomizer_tables.h"
 #include "data/pokemon/form_change_table_pointers.h"
 #include "data/object_events/object_event_pic_tables_followers.h"
 
@@ -7825,3 +7826,55 @@ bool32 IsSpeciesOfType(u32 species, enum Type type)
         return TRUE;
     return FALSE;
 }
+
+
+void TryRandomizeSpecies(u16* species)
+{
+	// u16 trainerId = gTrainerBattleOpponent_A; //added 
+ 
+	u16 prevSpecies = *species;
+	if (FlagGet(FLAG_DONT_RANDOMIZE)) { 
+		return;
+	}
+    if (FlagGet(FLAG_WONDER_TRADE) && *species != SPECIES_NONE && *species < NUM_SPECIES)
+	{
+        u16 newSpecies = RandomizeAssociatedSpecies(gWonderTradeListFirst, prevSpecies, gNumWonderTradeListFirst);
+		*species = newSpecies;
+	} 
+}
+
+bool8 CheckTableForSpecies(u16 species, const u16 table[])
+{
+	for (u32 i = 0; table[i] != SPECIES_TABLES_TERMIN; ++i)
+	{
+		if (species == table[i])
+			return TRUE;
+	}
+
+	return FALSE;
+}
+
+u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumOfList ) 
+{
+    u32 id = MathMax(1, T1_READ_32(gSaveBlock2Ptr->playerTrainerId)); //0 id would mean every Pokemon would crash the game
+    u32 newSpecies = (u32) prevSpecies;
+    // if (FlagGet(FLAG_PUZZLE_BATTLE) || FlagGet(FLAG_RENTAL_BATTLE))
+    //     return newSpecies;
+    
+    u32 index;
+	u8 mapId = GetCurrentRegionMapSectionId();
+    murmurhash2a_init(index);
+    murmurhash2a_update(index, id);
+    murmurhash2a_update(index, newSpecies);
+    murmurhash2a_update(index, mapId);
+    murmurhash2a_final(index); 
+     
+    index = index % (u32) gNumOfList; 
+    newSpecies = list[index]; 
+
+    if (newSpecies >= NUM_SPECIES || newSpecies == 0){
+        newSpecies = SPECIES_DITTO;
+    }
+    return newSpecies;
+}
+ 

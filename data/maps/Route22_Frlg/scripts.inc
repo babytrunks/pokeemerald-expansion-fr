@@ -29,13 +29,23 @@ Route22_EventScript_EarlyRival::
 	call_if_eq VAR_TEMP_1, 1, Route22_EventScript_EarlyRivalApproach
 	call_if_eq VAR_TEMP_1, 2, Route22_EventScript_EarlyRivalApproachBottom
 	delay 6
+	setspeaker SP_NAME_RIVAL
 	msgbox Route22_Text_EarlyRivalIntro
 	call_if_eq VAR_STARTER_MON, 2, Route22_EventScript_EarlyRivalSquirtle
 	call_if_eq VAR_STARTER_MON, 1, Route22_EventScript_EarlyRivalBulbasaur
 	call_if_eq VAR_STARTER_MON, 0, Route22_EventScript_EarlyRivalCharmander
+	setspeaker SP_NAME_RIVAL
 	msgbox Route22_Text_EarlyRivalPostBattle
 	closemessage
-	giveitem ITEM_RARE_CANDY 1
+	setflag FLAG_WONDER_TRADE
+	setflag FLAG_3_PERFECT_IVS
+	giveegg SPECIES_CHARMANDER
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route22_Text_ReceivedAnEgg
+	waitfanfare
+	clearflag FLAG_WONDER_TRADE
+	clearflag FLAG_3_PERFECT_IVS
+	setspeaker SP_NAME_RIVAL
 	msgbox Route22_Text_EarlyRivalPostBattle2
 	closemessage
 	delay 10
@@ -237,7 +247,7 @@ Route22_EventScript_LeagueGateSign::
 	end
 
 Route22_Text_EarlyRivalIntro::
-	.string "{RIVAL}: Hey! {PLAYER}!\p"
+	.string "{COLOR_BLUE}Hey! {PLAYER}!\p"
 	.string "You're off to the Pokémon League?\n"
 	.string "Forget about it!\p"
 	.string "You probably don't have any\n"
@@ -252,18 +262,25 @@ Route22_Text_EarlyRivalDefeat::
 	.string "You just lucked out!$"
 
 Route22_Text_EarlyRivalPostBattle::
-	.string "I heard the Pokémon League is\n"
+	.string "{COLOR_BLUE}I heard the Pokémon League is\n"
 	.string "crawling with tough trainers.\p"
 	.string "A scrub like you would need\n"
-	.string "something childish like this\l"
-	.string "to get past them.$"
+	.string "something like this to get past\l"
+	.string "them.$"
+
+Route22_Text_ReceivedAnEgg::
+	.string "You received a mysterious Egg.$"
 
 Route22_Text_EarlyRivalPostBattle2::
+	.string "{COLOR_BLUE}My gramps sent me a couple of these\n"
+	.string "Eggs he got from a colleague. I\l"
+	.string "figure something like this would keep\l"
+	.string "a dummy like you entertained.\p"
 	.string "You should quit dawdling and get a\n"
 	.string "move on!$"
 
 Route22_Text_LateRivalIntro::
-	.string "{RIVAL}: What? {PLAYER}!\n"
+	.string "{COLOR_BLUE}What? {PLAYER}!\n"
 	.string "What a surprise to see you here!\p"
 	.string "So you're going to the Pokémon\n"
 	.string "League?\p"
@@ -278,7 +295,7 @@ Route22_Text_LateRivalDefeat::
 	.string "I was just careless, you!$"
 
 Route22_Text_LateRivalPostBattle::
-	.string "That loosened me up.\n"
+	.string "{COLOR_BLUE}That loosened me up.\n"
 	.string "I'm ready for the Pokémon League!\p"
 	.string "{PLAYER}, you need more practice.\p"
 	.string "But hey, you know that!\n"

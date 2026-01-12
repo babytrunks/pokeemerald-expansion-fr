@@ -506,8 +506,8 @@
 #define FLAG_BERRY_COMPLETED_RC_EVENT                           0x20D
 #define FLAG_HIDE_TM_WATER_PULSE                                0x20E
 #define FLAG_DEFEATED_WHITNEY                                   0x20F
-#define FLAG_0x210               0x210
-#define FLAG_0x211               0x211
+#define FLAG_WONDER_TRADE                                       0x210
+#define FLAG_DONT_RANDOMIZE                                     0x211
 #define FLAG_0x212               0x212
 #define FLAG_0x213               0x213
 #define FLAG_0x214               0x214
@@ -648,7 +648,7 @@
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298
 #define FLAG_0x299                                       0x299
 #define FLAG_GOT_TM04_FROM_SABRINA                       0x29A
-#define FLAG_GOT_FAME_CHECKER                            0x29B
+#define FLAG_GOT_FAME_CHECKER                            0x29B // UNUSED
 #define FLAG_GOT_RECORD_SETTING_MAGIKARP                 0x29C
 #define FLAG_TWO_ISLAND_SHOP_INTRODUCED                  0x29D
 #define FLAG_TWO_ISLAND_SHOP_EXPANDED_1                  0x29E

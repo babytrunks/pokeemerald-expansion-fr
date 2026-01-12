@@ -242,3 +242,11 @@ void BlendPalette(u16 palOffset, u16 numEntries, u8 coeff, u32 blendColor)
                                       b + (((data2->b - b) * coeff) >> 4));
     }
 }
+
+u32 MathMax(u32 num1, u32 num2)
+{
+	if (num1 > num2)
+		return num1;
+
+	return num2;
+}

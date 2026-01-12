@@ -929,4 +929,7 @@ u8 *GetSavedPlayerPartyCount(void);
 void SavePlayerPartyMon(u32 index, struct Pokemon *mon);
 bool32 IsSpeciesOfType(u32 species, enum Type type);
 
+bool8 CheckTableForSpecies(u16 species, const u16 table[]);
+u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumOfList );
+void TryRandomizeSpecies(u16* species);
 #endif // GUARD_POKEMON_H
