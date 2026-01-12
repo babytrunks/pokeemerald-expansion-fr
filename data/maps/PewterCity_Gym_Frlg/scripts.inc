@@ -54,11 +54,6 @@ PewterCity_Gym_EventScript_GiveTM39::
 	release
 	end
 
-PewterCity_Gym_EventScript_NoRoomForTM39::
-	msgbox PewterCity_Gym_Text_DontHaveRoomForThis
-	release
-	end
-
 PewterCity_Gym_EventScript_Liam::
 	trainerbattle_single TRAINER_CAMPER_LIAM, PewterCity_Gym_Text_LiamIntro, PewterCity_Gym_Text_LiamDefeat
 	msgbox PewterCity_Gym_Text_LiamPostBattle, MSGBOX_AUTOCLOSE
@@ -106,17 +101,17 @@ PewterCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 PewterCity_Gym_Text_BrockIntro::
-    .string "So, you're here. I'm BROCK.\n"
-    .string "I'm PEWTER's GYM LEADER.\p"
+    .string "{COLOR BLUE}So, you're here. I'm Brock.\n"
+    .string "I'm Pewter's Gym Leader.\p"
     .string "My rock-hard willpower is evident\n"
     .string "even in my Pokémon.\p"
     .string "My Pokémon are all rock hard, and\n"
     .string "have true-grit determination.\p"
     .string "That's right - my Pokémon are all\n"
-    .string "the ROCK type!\p"
+    .string "the Rock type!\p"
     .string "Fuhaha! You're going to challenge\n"
     .string "me knowing that you'll lose?\p"
-    .string "That's the TRAINER's honor that\n"
+    .string "That's the trainer's honor that\n"
     .string "compels you to challenge me.\p"
     .string "Fine, then!\n"
     .string "Show me your best!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
@@ -133,7 +128,7 @@ PewterCity_Gym_Text_BrockDefeat::
     .string "Flash outside of battle.$"
 
 PewterCity_Gym_Text_TakeThisWithYou::
-    .string "Wait!\n"
+    .string "{COLOR BLUE}Wait!\n"
     .string "Take this with you.$"
 
 PewterCity_Gym_Text_ReceivedTM39FromBrock::
@@ -141,29 +136,23 @@ PewterCity_Gym_Text_ReceivedTM39FromBrock::
     .string "from BROCK.$"
 
 PewterCity_Gym_Text_ExplainTM39::
-    .string "A TM, Technical Machine, contains a\n"
+    .string "{COLOR BLUE}A TM, Technical Machine, contains a\n"
     .string "technique for Pokémon.\p"
     .string "Using a TM teaches the move it\n"
     .string "contains to a Pokémon.\p"
-    .string "A TM is good for only one use.\p"
-    .string "So, when you use one, pick the\n"
-    .string "Pokémon carefully.\p"
     .string "Anyways…\n"
-    .string "TM39 contains ROCK TOMB.\p"
+    .string "TM39 contains Rock Tomb.\p"
     .string "It hurls boulders at the foe and\n"
-    .string "lowers its SPEED.$"
+    .string "lowers its Speed.$"
 
 PewterCity_Gym_Text_BrockPostBattle::
-    .string "There are all kinds of TRAINERS in\n"
+    .string "There are all kinds of trainers in\n"
     .string "this huge world of ours.\p"
     .string "You appear to be very gifted as a\n"
-    .string "Pokémon TRAINER.\p"
+    .string "Pokémon Trainer.\p"
     .string "So let me make a suggestion.\p"
-    .string "Go to the GYM in CERULEAN and test\n"
+    .string "Go to the Gym in Cerulean and test\n"
     .string "your abilities.$"
-
-PewterCity_Gym_Text_DontHaveRoomForThis::
-    .string "You don't have room for this.$"
 
 PewterCity_Gym_Text_LiamIntro::
     .string "Stop right there, kid!\p"
@@ -184,7 +173,7 @@ PewterCity_Gym_Text_LetMeTakeYouToTheTop::
     .string "Do you want to dream big?\p"
     .string "Do you dare to dream of becoming\n"
     .string "the Pokémon champ?\p"
-    .string "I'm no TRAINER, but I can advise\n"
+    .string "I'm no trainer, but I can advise\n"
     .string "you on how to win.\p"
     .string "Let me take you to the top!$"
 
@@ -240,16 +229,16 @@ ExpertMode2_Text::
   .string "1: The bag is inaccessible during\n"
   .string "boss battles.\p"
   .string "2: There is a hard level cap before\n"
-  .string "each boss, which reduces EXP gain\l"
-  .string "significantly when the level cap is\l"
-  .string "reached. The finite Rare Candy\l"
-  .string "can bypass the cap.\p"
-  @ .string "8: Consumable held items come back\n"
-  @ .string "after trainer battles.\p"
+  .string "each boss, which removes EXP gain\l"
+  .string "when the level cap is reached.\l"
+  .string "However, the finite Rare Candy can\l"
+  .string "bypass the cap.\p"
+  .string "3: Consumable held items come back\n"
+  .string "after battle.\p"
   @ .string "9. Battle Style is forced to Set.\p"
   @ .string "10. You cannot Thief items from\n"
   @ .string "trainers.\p"
-  .string "3. You are automatically healed to\n"
+  .string "4. You are automatically healed to\n"
   .string "full in most boss battles to prevent\l"
   .string "certain exploits.$"
 

@@ -828,7 +828,7 @@ CableClub_EventScript_DirectCornerAttendant_Frlg::
 	end
 
 CableClub_EventScript_DirectCornerSelectService_Frlg::
-	goto_if_unset FLAG_GOT_POWDER_JAR, CableClub_EventScript_DirectCornerNoBerry
+	goto CableClub_EventScript_DirectCornerNoBerry
 	multichoice 0, 0, MULTI_WIRELESS_NO_RECORD, FALSE
 	switch VAR_RESULT
 	case 0, CableClub_EventScript_WirelessTrade

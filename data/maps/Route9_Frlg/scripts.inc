@@ -39,7 +39,8 @@ Route9_Text_DrewPostBattle::
     .string "Are you off to ROCK TUNNEL, too?$"
 
 Route9_Text_CaitlinIntro::
-    .string "Don't you dare patronize me!$"
+    .string "When you lock eyes with a Cooltrainer,\n"
+    .string "you better be ready for something serious!$"
 
 Route9_Text_CaitlinDefeat::
     .string "No!\n"

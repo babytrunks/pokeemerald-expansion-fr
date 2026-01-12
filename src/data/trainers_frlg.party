@@ -488,12 +488,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Beedrill
-Level: 19
+Spidops
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Beedrill
-Level: 19
+Rabsca
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_CONNER ===
@@ -505,16 +505,16 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Caterpie
-Level: 20
+Heracross
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Weedle
-Level: 20
+Vibrava 
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Venonat
-Level: 20
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_JANICE ===
@@ -1157,12 +1157,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Growlithe
-Level: 21
+Raboot
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Charmander
-Level: 21
+Salandit
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_DREW ===
@@ -1174,20 +1174,16 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 19
+Stunky
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Sandshrew
-Level: 19
+Skiploom
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ekans
-Level: 19
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Sandshrew
-Level: 19
+Numel
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_DIANA ===
@@ -1267,34 +1263,64 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Oddish
-Level: 18
+Gloom
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Bellsprout
-Level: 18
+Shiinotic
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Oddish
-Level: 18
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Bellsprout
-Level: 18
+Swadloon
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_CAITLIN ===
 Name: Caitlin
-Class: Picnicker Frlg
-Pic: Picnicker Frlg
-Gender: Male
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
+Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Purple
+Dynamic Level Ratio: 90
 
-Meowth
-Level: 23
+Smeargle @ Choice Scarf
+Nature: Jolly
+Ability: Own Tempo
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- V-create
+- Dragon Ascent
+- Trick
+- Close Combat
+
+Spinda @ Sitrus Berry
+Nature: Jolly
+Ability: Contrary
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Assist
+
+Sneasel-Hisui @ Eviolite
+Nature: Bashful
+Ability: Inner Focus
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Assist
+
+Liepard @ Focus Sash
+Nature: Bashful
+Ability: Prankster
+Level: 29
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Assist
+
 
 === TRAINER_PICNICKER_HEIDI ===
 Name: Heidi
@@ -1425,11 +1451,11 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhyhorn
 Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lickitung
 Level: 29
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_HERMAN ===
 Name: Herman
@@ -1442,11 +1468,11 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 20
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Slowpoke
 Level: 20
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_COOPER ===
 Name: Cooper
@@ -1457,17 +1483,17 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Slowpoke
-Level: 20
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Slowpoke-Galar
+Level: 27
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Slowpoke
-Level: 20
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Porygon
+Level: 28
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Slowpoke
-Level: 20
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+Flareon
+Level: 27
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_STEVE ===
 Name: Steve
@@ -1480,11 +1506,11 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Charmander
 Level: 22
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Cubone
 Level: 22
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_WINSTON ===
 Name: Winston
@@ -1497,7 +1523,7 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Slowpoke
 Level: 25
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_DAWSON ===
 Name: Dawson
@@ -1510,15 +1536,15 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Charmeleon
 Level: 40
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lapras
 Level: 40
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Lickitung
 Level: 40
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_ASHTON ===
 Name: Ashton
@@ -1531,11 +1557,11 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 23
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Slowpoke
 Level: 23
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SUPER_NERD_JOVAN ===
 Name: Jovan
@@ -1847,21 +1873,14 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Geodude
-Level: 21
+Larvitar
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
 
-Onix
-Level: 21
+Carkol
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Harden
-- Rock Throw
-- Bind
-- Screech
+
 
 === TRAINER_HIKER_BRICE ===
 Name: Brice
@@ -1872,16 +1891,16 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Geodude
-Level: 20
+Klawf
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machop
-Level: 20
+Carbink
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Geodude
-Level: 20
+Minior
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_HIKER_CLARK ===
@@ -4671,14 +4690,10 @@ AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viab
 Starly
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-- Sand Attack
 
 Squirtle
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-- Tail Whip
 
 === TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
 Name: TERRY
@@ -4713,14 +4728,10 @@ AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viab
 Starly
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-- Sand Attack
 
 Charmander
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Scratch
-- Growl
 
 === TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
 Name: TERRY
@@ -4736,7 +4747,7 @@ Dynamic Level Ratio: 90
 Kirlia @ Sitrus Berry
 Nature: Bashful
 Ability: Trace
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -4746,7 +4757,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Staravia @ Muscle Band
 Nature: Bashful
 Ability: Intimidate
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
@@ -4757,7 +4768,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Pawniard @ Chople Berry
 Nature: Bashful
 Ability: Defiant
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
@@ -4768,7 +4779,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wartortle @ Eviolite
 Nature: Bashful
 Ability: Torrent
-Level: 19
+Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
@@ -4790,7 +4801,7 @@ Dynamic Level Ratio: 90
 Kirlia @ Sitrus Berry
 Nature: Bashful
 Ability: Trace
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -4800,7 +4811,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Staravia @ Muscle Band
 Nature: Bashful
 Ability: Intimidate
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
@@ -4811,7 +4822,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Pawniard @ Chople Berry
 Nature: Bashful
 Ability: Defiant
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
@@ -4822,7 +4833,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ivysaur @ Eviolite
 Nature: Bashful
 Ability: Overgrow
-Level: 19
+Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Leech Seed
@@ -4844,7 +4855,7 @@ Dynamic Level Ratio: 90
 Kirlia @ Sitrus Berry
 Nature: Bashful
 Ability: Trace
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -4854,7 +4865,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Staravia @ Muscle Band
 Nature: Bashful
 Ability: Intimidate
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Pluck
@@ -4865,7 +4876,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Pawniard @ Chople Berry
 Nature: Bashful
 Ability: Defiant
-Level: 18
+Level: 19
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Knock Off
@@ -4876,7 +4887,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Charmeleon @ Eviolite
 Nature: Bashful
 Ability: Blaze
-Level: 19
+Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flame Burst
@@ -5423,16 +5434,16 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 - Aqua Jet
 
-Sneasel-Hisui @ Rindo Berry
+Sneasel @ Rindo Berry
 Nature: Bashful
 Ability: Inner Focus
 Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bullet Seed
-- Rock Blast
-- Water Pulse
-- Icy Wind
+- Bite
+- Ice Shard
+- Ice Punch
+- Low Kick
 
 === TRAINER_TEAM_ROCKET_GRUNT_6 ===
 Name: GRUNT
@@ -7435,6 +7446,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
 
 Pincurchin @ Terrain Extender
 Nature: Bold
@@ -8551,7 +8563,7 @@ Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_HIKER_JEREMY ===
-Name: JEREMY
+Name: Jeremy
 Class: Hiker Frlg
 Pic: Hiker Frlg
 Gender: Male
@@ -8559,12 +8571,12 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop
-Level: 20
+Pignite
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Onix
-Level: 20
+Stunfisk-Galar
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_ALMA ===
@@ -9476,15 +9488,15 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 48
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Clefairy
 Level: 48
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Marill
 Level: 48
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PKMN_RANGER_NICOLAS ===
 Name: NICOLAS
@@ -10749,11 +10761,11 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhyhorn
 Level: 49
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Kangaskhan
 Level: 49
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PSYCHIC_DARIO ===
 Name: DARIO
@@ -11333,7 +11345,7 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Chansey
 Level: 50
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PKMN_BREEDER_ALLISON ===
 Name: ALLISON
@@ -11346,15 +11358,15 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 48
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Clefairy
 Level: 48
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Clefable
 Level: 48
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BUG_CATCHER_GARRET ===
 Name: GARRET

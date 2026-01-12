@@ -98,8 +98,8 @@ SSAnne_Kitchen_EventScript_ItemGreatBall::
 	finditem ITEM_GREAT_BALL
 	end
 
-Route9_EventScript_ItemTM40::
-	finditem ITEM_TM40
+Route9_EventScript_ItemTMThunderPunch::
+	finditem ITEM_TM_THUNDER_PUNCH
 	end
 
 RocketHideout_B1F_EventScript_ItemEscapeRope::
@@ -434,8 +434,13 @@ Route11_EventScript_ItemFireStone::
 	finditem ITEM_FIRE_STONE
 	end
 
-Route9_EventScript_ItemBurnHeal::
-	finditem ITEM_BURN_HEAL
+Route10_EventScript_ItemTMFirePunch::
+	finditem ITEM_TM_FIRE_PUNCH
+	end
+
+
+Route9_EventScript_ItemLeafStone::
+	finditem ITEM_LEAF_STONE
 	end
 
 RockTunnel_1F_EventScript_ItemRepel::

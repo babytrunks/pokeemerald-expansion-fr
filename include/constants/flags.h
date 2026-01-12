@@ -1819,7 +1819,7 @@
 #define FLAG_HIDE_SSANNE_B1F_ROOM3_MYSTIC_WATER                        0
 #define FLAG_HIDE_SSANNE_B1F_ROOM5_WATER_STONE                 0
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0
-#define FLAG_HIDE_ROUTE9_TM40                                   0
+#define FLAG_HIDE_ROUTE9_TM_THUNDER_PUNCH                                   0
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_ESCAPE_ROPE                0
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_HYPER_POTION               0
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_X_SPEED                    0
@@ -1906,7 +1906,7 @@
 #define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                            0
 #define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                          0
 #define FLAG_HIDE_ROUTE11_FIRE_STONE                              0
-#define FLAG_HIDE_ROUTE9_BURN_HEAL                              0
+#define FLAG_HIDE_ROUTE9_LEAF_STONE                              0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_ESCAPE_ROPE                    0

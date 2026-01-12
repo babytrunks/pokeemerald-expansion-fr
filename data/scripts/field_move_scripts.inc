@@ -1,15 +1,17 @@
 @ Interact with cuttable tree
 EventScript_CutTree::
 	lockall
-	checkfieldmove FIELD_MOVE_CUT, TRUE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
-	setfieldeffectargument 0, VAR_RESULT
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	buffermovename STR_VAR_2, MOVE_CUT
-	msgbox Text_WantToCut, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
-	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
-	closemessage
+	goto_if_unset FLAG_BADGE02_GET, EventScript_CheckTreeCantCut
+	checkitem ITEM_HM_CUT, 1
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CheckTreeCantCut
+	@ setfieldeffectargument 0, VAR_RESULT
+	goto EventScript_CutTreeDown
+	@ bufferpartymonnick STR_VAR_1, VAR_RESULT
+	@ buffermovename STR_VAR_2, MOVE_CUT
+	@ msgbox Text_WantToCut, MSGBOX_YESNO
+	@ goto_if_eq VAR_RESULT, NO, EventScript_CancelCut
+	@ msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	@ closemessage
 EventScript_CutTreeCommon:
 	isfollowerfieldmoveuser VAR_0x8004
 	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
@@ -18,6 +20,7 @@ EventScript_CutTreeCommon:
 EventScript_CutTreeDown:: @ fallthrough
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+	playse SE_M_CUT
 	applymovement VAR_LAST_TALKED, Movement_CutTreeDown
 	waitmovement 0
 	removeobject VAR_LAST_TALKED

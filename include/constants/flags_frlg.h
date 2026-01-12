@@ -339,7 +339,7 @@
 #define FLAG_HIDE_SSANNE_B1F_ROOM3_MYSTIC_WATER                        0x168
 #define FLAG_HIDE_SSANNE_B1F_ROOM5_WATER_STONE                 0x169
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0x16A
-#define FLAG_HIDE_ROUTE9_TM40                                   0x16B
+#define FLAG_HIDE_ROUTE9_TM_THUNDER_PUNCH                                   0x16B
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_ESCAPE_ROPE                0x16C
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_HYPER_POTION               0x16D
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_X_SPEED                    0x16E
@@ -426,7 +426,7 @@
 #define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                    0x1BF
 #define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                      0x1C0
 #define FLAG_HIDE_ROUTE11_FIRE_STONE                              0x1C1
-#define FLAG_HIDE_ROUTE9_BURN_HEAL                              0x1C2
+#define FLAG_HIDE_ROUTE9_LEAF_STONE                              0x1C2
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0x1C3
 #define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0x1C4
 #define FLAG_HIDE_ROCK_TUNNEL_1F_ESCAPE_ROPE                    0x1C5
@@ -682,7 +682,7 @@
 #define FLAG_WONDER_CARD_UNUSED_17                       0x2BA
 #define NUM_WONDER_CARD_FLAGS                            (1 + FLAG_WONDER_CARD_UNUSED_17 - FLAG_RECEIVED_AURORA_TICKET)
 
-#define FLAG_GOT_POWDER_JAR                              0x2BB //unused
+#define FLAG_HIDE_ROUTE10_TM_FIRE_PUNCH                  0x2BB 
 #define FLAG_FOUGHT_MEWTWO                               0x2BC
 #define FLAG_FOUGHT_MOLTRES                              0x2BD
 #define FLAG_FOUGHT_ARTICUNO                             0x2BE
