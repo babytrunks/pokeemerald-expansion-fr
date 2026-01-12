@@ -316,7 +316,7 @@
 #define FLAG_0x153               0x153
 
 // Item ball hide/show
-#define FLAG_HIDE_ROUTE2_ETHER                                  0x154
+#define FLAG_HIDE_ROUTE2_TM_REST                                  0x154
 #define FLAG_HIDE_ROUTE2_PARALYZE_HEAL                          0x155
 #define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0x156
 #define FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES                      0x157
@@ -333,11 +333,11 @@
 #define FLAG_HIDE_ROUTE24_TM45                                  0x162
 #define FLAG_HIDE_ROUTE25_TM43                                  0x163
 #define FLAG_HIDE_SSANNE_1F_ROOM2_TM31                          0x164
-#define FLAG_HIDE_SSANNE_2F_ROOM2_STARDUST                      0x165
-#define FLAG_HIDE_SSANNE_2F_ROOM4_X_ATTACK                      0x166
-#define FLAG_HIDE_SSANNE_B1F_ROOM2_TM44                         0x167
-#define FLAG_HIDE_SSANNE_B1F_ROOM3_ETHER                        0x168
-#define FLAG_HIDE_SSANNE_B1F_ROOM5_SUPER_POTION                 0x169
+#define FLAG_HIDE_SSANNE_2F_ROOM2_DIVE_BALL                      0x165
+#define FLAG_HIDE_SSANNE_2F_ROOM4_SWIFT_FEATHER                      0x166
+#define FLAG_HIDE_SSANNE_B1F_ROOM2_HEALTH_FEATHER                         0x167
+#define FLAG_HIDE_SSANNE_B1F_ROOM3_MYSTIC_WATER                        0x168
+#define FLAG_HIDE_SSANNE_B1F_ROOM5_WATER_STONE                 0x169
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0x16A
 #define FLAG_HIDE_ROUTE9_TM40                                   0x16B
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_ESCAPE_ROPE                0x16C

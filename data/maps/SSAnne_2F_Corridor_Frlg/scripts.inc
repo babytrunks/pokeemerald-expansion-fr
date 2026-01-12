@@ -1,6 +1,41 @@
 SSAnne_2F_Corridor_Frlg_MapScripts::
 	.byte 0
 
+SSAnne_2F_Corridor_EventScript_SailorDouble_Trigger::
+SSAnne_2F_Corridor_EventScript_SailorDouble::
+    lock
+    goto_if_defeated TRAINER_SAILOR_TREVOR, SSAnne_2F_Corridor_TrevorBeaten
+    applymovement LOCALID_SSANNE_TREVOR, SSAnne_2F_Corridor_Movement_SailorFacePlayer
+    waitmovement 0
+    playbgm MUS_ENCOUNTER_COOL, FALSE
+    setspeaker SP_NAME_TREVOR
+    msgbox SSAnne_Deck_Text_TrevorIntro
+    applymovement LOCALID_SSANNE_EDMOND, Common_Movement_ExclamationMark
+    waitmovement 0
+    playbgm MUS_ENCOUNTER_COOL, FALSE
+    setspeaker SP_NAME_EDMOND
+    msgbox SSAnne_Deck_Text_EdmondIntro
+	trainerbattle_two_trainers TRAINER_SAILOR_TREVOR, SSAnne_Deck_Text_EdmondDefeat, TRAINER_SAILOR_EDMOND, SSAnne_Deck_Text_TrevorDefeat
+	settrainerflag TRAINER_SAILOR_TREVOR
+    settrainerflag TRAINER_SAILOR_EDMOND
+    setvar VAR_SS_ANNE_TREVOR_EDMOND_BATTLE, 0x1
+    end
+
+SSAnne_2F_Corridor_Movement_SailorFacePlayer:
+	emote_exclamation_mark
+	face_player
+	step_end
+
+SSAnne_2F_Corridor_TrevorBeaten:
+	msgbox SSAnne_Deck_Text_TrevorPostBattle, MSGBOX_AUTOCLOSE
+	release
+	end
+
+SSAnne_2F_Corridor_EventScript_Edmond:
+	msgbox SSAnne_Deck_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
+	release
+	end
+
 SSAnne_2F_Corridor_EventScript_RivalTriggerLeft::
 	lockall
 	setvar VAR_TEMP_1, 0
@@ -23,7 +58,7 @@ SSAnne_2F_Corridor_EventScript_RivalTrigger::
 	textcolor NPC_TEXT_COLOR_MALE
 	playse SE_EXIT
 	delay 5
-	playbgm MUS_RG_ENCOUNTER_RIVAL, 0
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
 	addobject LOCALID_SS_ANNE_RIVAL
 	delay 10
 	applymovement LOCALID_SS_ANNE_RIVAL, Common_Movement_WalkInPlaceFasterDown
@@ -32,15 +67,18 @@ SSAnne_2F_Corridor_EventScript_RivalTrigger::
 	call_if_eq VAR_TEMP_1, 0, SSAnne_2F_Corridor_EventScript_RivalApproachLeft
 	call_if_eq VAR_TEMP_1, 1, SSAnne_2F_Corridor_EventScript_RivalApproachMid
 	call_if_eq VAR_TEMP_1, 2, SSAnne_2F_Corridor_EventScript_RivalApproachRight
+	setspeaker SP_NAME_BRENDAN
 	msgbox SSAnne_2F_Corridor_Text_RivalIntro
 	setvar VAR_LAST_TALKED, LOCALID_SS_ANNE_RIVAL
-	call_if_eq VAR_STARTER_MON, 2, SSAnne_2F_Corridor_EventScript_RivalSquirtle
-	call_if_eq VAR_STARTER_MON, 1, SSAnne_2F_Corridor_EventScript_RivalBulbasaur
-	call_if_eq VAR_STARTER_MON, 0, SSAnne_2F_Corridor_EventScript_RivalCharmander
+	trainerbattle_no_intro TRAINER_BRENDAN_2, SSAnne_2F_Corridor_Text_RivalDefeat
+	setspeaker SP_NAME_BRENDAN
 	msgbox SSAnne_2F_Corridor_Text_RivalPostBattle
 	closemessage
+	giveitem ITEM_SHINY_STONE
+	setspeaker SP_NAME_BRENDAN
+	msgbox SSAnne_2F_Corridor_Text_RivalPostBattle2
 	delay 10
-	playbgm MUS_RG_RIVAL_EXIT, 0
+	playbgm MUS_ENCOUNTER_BRENDAN, 0
 	call_if_eq VAR_TEMP_1, 0, SSAnne_2F_Corridor_EventScript_RivalExitLeft
 	call_if_eq VAR_TEMP_1, 1, SSAnne_2F_Corridor_EventScript_RivalExitMid
 	call_if_eq VAR_TEMP_1, 2, SSAnne_2F_Corridor_EventScript_RivalExitRight
@@ -65,18 +103,6 @@ SSAnne_2F_Corridor_EventScript_RivalApproachRight::
 	applymovement LOCALID_PLAYER, SSAnne_2F_Corridor_Movement_PlayerFaceRivalRight
 	applymovement LOCALID_SS_ANNE_RIVAL, SSAnne_2F_Corridor_Movement_RivalApproachRight
 	waitmovement 0
-	return
-
-SSAnne_2F_Corridor_EventScript_RivalSquirtle::
-	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_SQUIRTLE, SSAnne_2F_Corridor_Text_RivalDefeat
-	return
-
-SSAnne_2F_Corridor_EventScript_RivalBulbasaur::
-	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_BULBASAUR, SSAnne_2F_Corridor_Text_RivalDefeat
-	return
-
-SSAnne_2F_Corridor_EventScript_RivalCharmander::
-	trainerbattle_no_intro TRAINER_RIVAL_SS_ANNE_CHARMANDER, SSAnne_2F_Corridor_Text_RivalDefeat
 	return
 
 SSAnne_2F_Corridor_EventScript_RivalExitLeft::
@@ -175,33 +201,45 @@ SSAnne_2F_Corridor_Text_ThisShipIsLuxuryLiner::
     .string "invited TRAINERS.$"
 
 SSAnne_2F_Corridor_Text_RivalIntro::
-    .string "{RIVAL}: Bonjour!\n"
-    .string "{PLAYER}!\p"
-    .string "Imagine seeing you here!\n"
-    .string "{PLAYER}, were you really invited?\p"
-    .string "So how's your Pokédex coming?\p"
-    .string "I already caught 40 kinds, pal.\n"
-    .string "Different kinds are everywhere.\p"
-    .string "Crawl around in grassy areas, and\n"
-    .string "look hard for them.$"
+	.string "{COLOR BLUE}Oh hey {PLAYER}!\n"
+	.string "It's been a while.\p"
+	.string "I've snagged two badges since we\n"
+	.string "first met.\p"
+	.string "…You too huh? I thought so!\p"
+	.string "Let's put each other to the test.$"
 
 SSAnne_2F_Corridor_Text_RivalDefeat::
-    .string "Humph!\p"
-    .string "At least you're raising your\n"
-    .string "Pokémon!$"
-
-SSAnne_2F_Corridor_Text_RivalVictory::
-    .string "{PLAYER}..！\n"
-    .string "ふなよい　してるのか！\p"
-    .string "もっと　からだ\n"
-    .string "きたえた　ほうが　いいぜ！$"
+  	.string "Drat, wasted yet again…$"
 
 SSAnne_2F_Corridor_Text_RivalPostBattle::
-    .string "{RIVAL}: I heard there was a CUT\n"
-    .string "master on board.\p"
-    .string "But he was just a seasick old man!\p"
-    .string "CUT itself is really useful.\n"
-    .string "Yup, it'll be handy.\p"
-    .string "You should go see him, too.\n"
-    .string "Smell ya!$"
+    .string "{COLOR BLUE}There's a Cut master on board.\n"
+    .string "It'll be handy to get through\l"
+    .string "those pesky trees.\p"
+    .string "In the meantime, I've got something\n"
+    .string "you may find useful.$"
 
+SSAnne_2F_Corridor_Text_RivalPostBattle2::
+  .string "{COLOR BLUE}Well, it's back to training for me.\p"
+  .string "Thanks for the battle, {PLAYER}.$"
+
+SSAnne_Deck_Text_EdmondIntro::
+    .string "Hey, matey!\p"
+    .string "Let's do a little jig!$"
+
+SSAnne_Deck_Text_EdmondDefeat::
+    .string "You're impressive!$"
+
+SSAnne_Deck_Text_EdmondPostBattle::
+    .string "How many kinds of Pokémon do you\n"
+    .string "think there are in this big world?$"
+
+SSAnne_Deck_Text_TrevorIntro::
+    .string "Ahoy, there!\n"
+    .string "Are you seasick?$"
+
+SSAnne_Deck_Text_TrevorDefeat::
+    .string "I was just careless!$"
+
+SSAnne_Deck_Text_TrevorPostBattle::
+    .string "My pa said there are 100 kinds of\n"
+    .string "Pokémon. I think there are more.$"

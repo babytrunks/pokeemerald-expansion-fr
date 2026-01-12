@@ -49,7 +49,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "SSAnne_1F_Corridor_EventScript_GentlemanDouble",
       "flag": "0"
@@ -63,7 +63,7 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "SSAnne_1F_Corridor_EventScript_LassDouble",
       "flag": "0"
@@ -162,7 +162,26 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_SS_ANNE_ANN_BROOKS_BATTLE",
+      "var_value": "0",
+      "script": "SSAnne_1F_Corridor_EventScript_LassDouble_Trigger"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_SS_ANNE_ANN_BROOKS_BATTLE",
+      "var_value": "0",
+      "script": "SSAnne_1F_Corridor_EventScript_LassDouble_Trigger"
+    }
+  ],
   "bg_events": [],
   "floor_number": 0,
   "region": "REGION_KANTO"

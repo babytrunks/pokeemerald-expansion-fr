@@ -1,5 +1,5 @@
-Route2_EventScript_ItemEther::
-	finditem ITEM_ETHER
+Route2_EventScript_ItemTMRest::
+	finditem ITEM_TM_REST
 	end
 
 Route2_EventScript_ItemParalyzeHeal::
@@ -74,24 +74,24 @@ SSAnne_1F_Room2_EventScript_ItemTM31::
 	finditem ITEM_TM31
 	end
 
-SSAnne_2F_Room2_EventScript_ItemStardust::
-	finditem ITEM_STARDUST
+SSAnne_2F_Room2_EventScript_ItemDiveBall::
+	finditem ITEM_DIVE_BALL
 	end
 
-SSAnne_2F_Room4_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+SSAnne_2F_Room4_EventScript_ItemSwiftFeather::
+	finditem ITEM_SWIFT_FEATHER
 	end
 
-SSAnne_B1F_Room2_EventScript_ItemTM44::
-	finditem ITEM_TM44
+SSAnne_B1F_Room2_EventScript_ItemHealthFeather::
+	finditem ITEM_HEALTH_FEATHER
 	end
 
-SSAnne_B1F_Room3_EventScript_ItemEther::
-	finditem ITEM_ETHER
+SSAnne_B1F_Room3_EventScript_ItemMysticWater::
+	finditem ITEM_MYSTIC_WATER
 	end
 
-SSAnne_B1F_Room5_EventScript_ItemSuperPotion::
-	finditem ITEM_SUPER_POTION
+SSAnne_B1F_Room5_EventScript_ItemWaterStone::
+	finditem ITEM_WATER_STONE
 	end
 
 SSAnne_Kitchen_EventScript_ItemGreatBall::

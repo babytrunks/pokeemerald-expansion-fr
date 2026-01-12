@@ -13,7 +13,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 11
@@ -30,7 +30,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Zigzagoon Galar
 Level: 14
@@ -43,7 +43,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Wooloo
 Level: 10
@@ -64,7 +64,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
 Plusle @ Shuca Berry
@@ -107,7 +107,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 18
@@ -124,7 +124,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Slowpoke
 Level: 17
@@ -137,7 +137,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Volbeat
 Level: 19
@@ -154,7 +154,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidoran M
 Level: 21
@@ -167,7 +167,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Arbok
 Level: 23
@@ -180,7 +180,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Phanpy
 Level: 22
@@ -197,7 +197,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 17
@@ -218,7 +218,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorino
 Level: 22
@@ -235,7 +235,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Green
 
 Corphish 
@@ -257,7 +257,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weedle
 Level: 6
@@ -274,7 +274,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ledyba
 Level: 7
@@ -295,7 +295,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Tarountula
 Level: 10
@@ -308,7 +308,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Dottler
 Level: 10
@@ -329,7 +329,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nincada
 Level: 10
@@ -354,7 +354,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ledyba
 Level: 11
@@ -371,7 +371,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Beedrill
 Level: 11
@@ -388,7 +388,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Beautifly
 Level: 10
@@ -409,7 +409,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 75
 
 Vivillon @ Charti Berry
@@ -452,7 +452,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ledian
 Level: 21
@@ -473,7 +473,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Masquerain
 Level: 21
@@ -486,7 +486,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Beedrill
 Level: 19
@@ -503,7 +503,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Caterpie
 Level: 20
@@ -524,7 +524,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fidough
 Level: 10
@@ -541,7 +541,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pawmi
 Level: 10
@@ -558,7 +558,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Flaaffy
 Level: 14
@@ -571,7 +571,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Paras
 Level: 31
@@ -592,7 +592,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Applin
 Level: 11
@@ -609,7 +609,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Tinkatink
 Level: 14
@@ -622,7 +622,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
 Greedent @ Sitrus Berry
@@ -665,7 +665,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
 Jigglypuff @ Eviolite
@@ -708,7 +708,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Illumise
 Level: 19
@@ -729,7 +729,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 18
@@ -746,14 +746,14 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 18
+Pikachu-Belle
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pikachu
-Level: 18
+Swirlix
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_LASS_PAIGE ===
@@ -763,7 +763,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidoran F
 Level: 23
@@ -780,7 +780,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Meowth
 Level: 24
@@ -801,7 +801,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 19
@@ -830,7 +830,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 22
@@ -847,7 +847,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bellsprout
 Level: 23
@@ -864,7 +864,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Oddish
 Level: 23
@@ -881,15 +881,29 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop
-Level: 18
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Lileep @ Eviolite
+Nature: Modest
+Ability: Storm Drain
+Level: 24
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ancient Power
+- Giga Drain
+- Earth Power
+- Hidden Power 
 
-Shellder
-Level: 18
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Lumineon @ Wacan Berry
+Nature: Timid
+Ability: Storm Drain
+Level: 25
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scald
+- Ice Beam
+- Hidden Power 
+- Flip Turn
 
 === TRAINER_SAILOR_TREVOR ===
 Name: Trevor
@@ -898,15 +912,27 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party 
 
-Machop
-Level: 17
+Cramorant @ Focus Sash
+Nature: Timid
+Ability: Gulp Missile
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Surf
+- U-turn
+- Air Slash
 
-Tentacool
-Level: 17
+Nidoqueen @ Shuca Berry
+Nature: Timid
+Ability: Sheer Force
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Surf
+- Scorching Sands
+- Sludge
 
 === TRAINER_SAILOR_LEONARD ===
 Name: Leonard
@@ -915,9 +941,9 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Shellder
+Palpitoad
 Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -928,18 +954,18 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Horsea
-Level: 17
+Qwilfish-Hisui
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Shellder
-Level: 17
+Chinchou
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Tentacool
-Level: 17
+Psyduck
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SAILOR_HUEY ===
@@ -949,14 +975,14 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Tentacool
-Level: 18
+Stunfisk
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Staryu
-Level: 18
+Binacle
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SAILOR_DYLAN ===
@@ -966,18 +992,18 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Horsea
-Level: 17
+Barboach
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Horsea
-Level: 17
+Wishiwashi
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Horsea
-Level: 17
+Wailmer
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SAILOR_PHILLIP ===
@@ -987,10 +1013,10 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop
-Level: 20
+Machoke
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SAILOR_DWAYNE ===
@@ -1000,7 +1026,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 21
@@ -1017,7 +1043,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 10
@@ -1039,7 +1065,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bramblin
 Level: 17
@@ -1056,7 +1082,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
 Mabosstiff @ Black Glasses
@@ -1099,7 +1125,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Squawkabilly
 Level: 21
@@ -1112,7 +1138,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Doduo
 Level: 22
@@ -1129,7 +1155,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 21
@@ -1146,7 +1172,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 19
@@ -1171,7 +1197,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drednaw
 Level: 22
@@ -1184,7 +1210,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe-Hisui
 Level: 21
@@ -1201,18 +1227,18 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgey
-Level: 16
+Sinistea
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgey
-Level: 16
+Swadloon
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgey
-Level: 16
+Lombre
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_KELSEY ===
@@ -1222,7 +1248,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorino
 Level: 18
@@ -1239,7 +1265,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Oddish
 Level: 18
@@ -1264,7 +1290,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Meowth
 Level: 23
@@ -1277,7 +1303,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 20
@@ -1294,7 +1320,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 21
@@ -1311,7 +1337,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Jigglypuff
 Level: 21
@@ -1332,7 +1358,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Oddish
 Level: 22
@@ -1349,7 +1375,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bulbasaur
 Level: 24
@@ -1366,7 +1392,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 24
@@ -1395,7 +1421,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhyhorn
 Level: 29
@@ -1412,7 +1438,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 20
@@ -1429,7 +1455,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Slowpoke
 Level: 20
@@ -1450,7 +1476,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Charmander
 Level: 22
@@ -1467,7 +1493,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Slowpoke
 Level: 25
@@ -1480,7 +1506,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Charmeleon
 Level: 40
@@ -1501,7 +1527,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 23
@@ -1518,7 +1544,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magnemite
 Level: 11
@@ -1535,7 +1561,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Thwackey @ Eviolite
 Nature: Adamant
@@ -1588,7 +1614,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 20
@@ -1629,7 +1655,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 22
@@ -1650,7 +1676,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 26
@@ -1667,7 +1693,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Vulpix
 Level: 36
@@ -1688,7 +1714,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ponyta
 Level: 34
@@ -1713,7 +1739,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rapidash
 Level: 41
@@ -1726,7 +1752,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 37
@@ -1743,7 +1769,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rolycoly
 Level: 10
@@ -1764,7 +1790,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Timburr
 Level: 17
@@ -1781,7 +1807,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Phanpy
 Level: 17
@@ -1806,7 +1832,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Naclstack
 Level: 19
@@ -1819,7 +1845,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 21
@@ -1844,7 +1870,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 20
@@ -1865,7 +1891,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 21
@@ -1890,7 +1916,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 19
@@ -1907,7 +1933,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 21
@@ -1940,7 +1966,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 25
@@ -1957,7 +1983,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 20
@@ -1974,7 +2000,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 19
@@ -1999,7 +2025,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 20
@@ -2020,7 +2046,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 21
@@ -2045,7 +2071,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 28
@@ -2078,7 +2104,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 29
@@ -2103,7 +2129,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 25
@@ -2152,7 +2178,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 28
@@ -2185,7 +2211,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 29
@@ -2210,7 +2236,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 33
@@ -2223,7 +2249,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 28
@@ -2256,7 +2282,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Muk
 Level: 33
@@ -2269,7 +2295,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 29
@@ -2294,7 +2320,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 29
@@ -2319,7 +2345,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 25
@@ -2368,7 +2394,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 26
@@ -2409,7 +2435,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 28
@@ -2442,7 +2468,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 29
@@ -2467,7 +2493,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 36
@@ -2488,7 +2514,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ponyta
 Level: 41
@@ -2501,7 +2527,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Vulpix
 Level: 37
@@ -2518,7 +2544,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Charmander
 Level: 34
@@ -2535,7 +2561,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ninetales
 Level: 38
@@ -2548,7 +2574,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 34
@@ -2565,7 +2591,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 21
@@ -2582,7 +2608,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magnemite
 Level: 21
@@ -2595,7 +2621,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magneton
 Level: 23
@@ -2616,18 +2642,18 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
-Level: 17
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Tentacool
-Level: 17
+Clobbopus
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Goldeen
-Level: 17
+Frillish
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_FISHERMAN_BARNY ===
@@ -2637,18 +2663,18 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
-
-Tentacool
-Level: 17
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Staryu
-Level: 17
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Shellder
-Level: 17
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Skrelp
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Krabby
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_FISHERMAN_NED ===
@@ -2658,7 +2684,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 22
@@ -2679,7 +2705,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Tentacool
 Level: 24
@@ -2696,7 +2722,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 27
@@ -2709,7 +2735,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwag
 Level: 21
@@ -2734,7 +2760,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seaking
 Level: 28
@@ -2759,7 +2785,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Shellder
 Level: 31
@@ -2776,7 +2802,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magikarp
 Level: 27
@@ -2809,7 +2835,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seaking
 Level: 33
@@ -2826,7 +2852,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magikarp
 Level: 24
@@ -2843,7 +2869,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Shellder
 Level: 19
@@ -2860,7 +2886,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Tentacool
 Level: 30
@@ -2877,7 +2903,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 29
@@ -2898,7 +2924,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwag
 Level: 30
@@ -2915,7 +2941,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Horsea
 Level: 27
@@ -2940,7 +2966,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 29
@@ -2961,7 +2987,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Horsea
 Level: 30
@@ -2978,7 +3004,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Tentacool
 Level: 27
@@ -3007,7 +3033,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Shellder
 Level: 31
@@ -3024,7 +3050,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Staryu
 Level: 35
@@ -3037,7 +3063,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Horsea
 Level: 28
@@ -3062,7 +3088,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 33
@@ -3079,7 +3105,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Starmie
 Level: 37
@@ -3092,7 +3118,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Staryu
 Level: 33
@@ -3109,7 +3135,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 32
@@ -3130,7 +3156,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 28
@@ -3151,7 +3177,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mankey
 Level: 29
@@ -3168,7 +3194,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mankey
 Level: 29
@@ -3185,7 +3211,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mankey
 Level: 29
@@ -3202,7 +3228,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 29
@@ -3219,7 +3245,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke
 Level: 33
@@ -3232,7 +3258,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mankey
 Level: 26
@@ -3257,7 +3283,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Primeape
 Level: 29
@@ -3274,7 +3300,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Tentacool
 Level: 31
@@ -3295,7 +3321,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 22
@@ -3312,7 +3338,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weepinbell
 Level: 23
@@ -3329,7 +3355,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb-Hisui
 Level: 24
@@ -3346,7 +3372,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 24
@@ -3364,7 +3390,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwag
 Level: 22
@@ -3385,7 +3411,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 24
@@ -3402,7 +3428,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Oddish
 Level: 21
@@ -3427,7 +3453,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bellsprout
 Level: 24
@@ -3444,7 +3470,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Exeggcute
 Level: 24
@@ -3457,7 +3483,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 27
@@ -3478,7 +3504,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 29
@@ -3495,7 +3521,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seaking
 Level: 35
@@ -3508,7 +3534,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Shellder
 Level: 30
@@ -3529,7 +3555,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwag
 Level: 31
@@ -3546,7 +3572,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 29
@@ -3563,7 +3589,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bulbasaur
 Level: 29
@@ -3580,7 +3606,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weepinbell
 Level: 33
@@ -3601,7 +3627,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwag
 Level: 27
@@ -3630,7 +3656,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 30
@@ -3647,7 +3673,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Staryu
 Level: 29
@@ -3668,7 +3694,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 30
@@ -3689,7 +3715,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Kadabra
 Level: 31
@@ -3714,7 +3740,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mr Mime
 Level: 34
@@ -3731,7 +3757,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Slowpoke
 Level: 33
@@ -3752,7 +3778,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Slowbro
 Level: 38
@@ -3765,7 +3791,7 @@ Pic: Rocker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 20
@@ -3786,7 +3812,7 @@ Pic: Rocker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 29
@@ -3803,7 +3829,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Kadabra
 Level: 29
@@ -3820,7 +3846,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drowzee
 Level: 41
@@ -3845,7 +3871,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drowzee
 Level: 31
@@ -3870,7 +3896,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drowzee
 Level: 34
@@ -3887,7 +3913,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mr Mime
 Level: 48
@@ -3904,7 +3930,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 46
@@ -3945,7 +3971,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hypno
 Level: 38
@@ -3958,7 +3984,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drowzee
 Level: 34
@@ -3975,7 +4001,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sandslash
 Level: 34
@@ -3992,7 +4018,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Arbok
 Level: 33
@@ -4013,7 +4039,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhyhorn
 Level: 43
@@ -4026,7 +4052,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Arbok
 Level: 39
@@ -4043,7 +4069,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Persian
 Level: 44
@@ -4060,7 +4086,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhyhorn
 Level: 42
@@ -4085,7 +4111,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 29
@@ -4102,7 +4128,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Spearow
 Level: 25
@@ -4131,7 +4157,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 26
@@ -4156,7 +4182,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Farfetchd
 Level: 33
@@ -4169,7 +4195,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Spearow
 Level: 29
@@ -4186,7 +4212,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 26
@@ -4211,7 +4237,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Dodrio
 Level: 28
@@ -4232,7 +4258,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Spearow
 Level: 29
@@ -4249,7 +4275,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Dodrio
 Level: 34
@@ -4262,7 +4288,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Spearow
 Level: 26
@@ -4287,7 +4313,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 30
@@ -4308,7 +4334,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 39
@@ -4333,7 +4359,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Farfetchd
 Level: 39
@@ -4350,7 +4376,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 28
@@ -4371,7 +4397,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 26
@@ -4396,7 +4422,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 29
@@ -4413,7 +4439,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Spearow
 Level: 28
@@ -4434,7 +4460,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonlee @ Black Belt
 Level: 37
@@ -4451,7 +4477,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mankey @ Black Belt
 Level: 31
@@ -4472,7 +4498,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop @ Black Belt
 Level: 32
@@ -4489,7 +4515,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Primeape @ Black Belt
 Level: 36
@@ -4502,7 +4528,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop @ Black Belt
 Level: 31
@@ -4523,7 +4549,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop @ Black Belt
 Level: 40
@@ -4540,7 +4566,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke @ Black Belt
 Level: 43
@@ -4553,7 +4579,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke @ Black Belt
 Level: 38
@@ -4574,7 +4600,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke @ Black Belt
 Level: 43
@@ -4595,7 +4621,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Squirtle
 Level: 5
@@ -4610,7 +4636,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Bulbasaur
 Level: 5
@@ -4625,7 +4651,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Charmander
 Level: 5
@@ -4640,7 +4666,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Starly
 Level: 9
@@ -4661,7 +4687,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Starly
 Level: 9
@@ -4682,7 +4708,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Starly
 Level: 9
@@ -4703,7 +4729,8 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
 Dynamic Level Ratio: 90
 
 Kirlia @ Sitrus Berry
@@ -4756,7 +4783,8 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
 Dynamic Level Ratio: 90
 
 Kirlia @ Sitrus Berry
@@ -4809,7 +4837,8 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
 Dynamic Level Ratio: 90
 
 Kirlia @ Sitrus Berry
@@ -4862,7 +4891,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Electrode
 Level: 29
@@ -4879,7 +4908,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 26
@@ -4920,7 +4949,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magnemite
 Level: 28
@@ -4941,7 +4970,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Electrode
 Level: 29
@@ -4966,7 +4995,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Electrode
 Level: 33
@@ -4979,7 +5008,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magneton
 Level: 26
@@ -5020,7 +5049,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 25
@@ -5069,7 +5098,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Electrode
 Level: 29
@@ -5086,7 +5115,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 29
@@ -5103,7 +5132,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 28
@@ -5136,7 +5165,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magnemite
 Level: 29
@@ -5153,7 +5182,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magnemite
 Level: 33
@@ -5174,7 +5203,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magnemite
 Level: 34
@@ -5191,7 +5220,7 @@ Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 25
@@ -5212,7 +5241,7 @@ Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorino
 Level: 37
@@ -5237,7 +5266,7 @@ Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Rhyhorn
 Level: 45
@@ -5286,7 +5315,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Yungoos
 Level: 13
@@ -5303,7 +5332,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sandile
 Level: 11
@@ -5324,7 +5353,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Zubat
 Level: 11
@@ -5341,7 +5370,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Stunky
 Level: 13
@@ -5358,7 +5387,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
 Persian-Alola @ Black Glasses
@@ -5412,7 +5441,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
 
 Growlithe @ Eviolite
@@ -5464,7 +5493,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 20
@@ -5481,7 +5510,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drowzee
 Level: 21
@@ -5498,7 +5527,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 21
@@ -5515,7 +5544,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 20
@@ -5546,7 +5575,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 19
@@ -5571,7 +5600,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 22
@@ -5596,7 +5625,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Zubat
 Level: 17
@@ -5644,7 +5673,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 20
@@ -5665,7 +5694,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 21
@@ -5682,7 +5711,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sandshrew
 Level: 23
@@ -5703,7 +5732,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ekans
 Level: 23
@@ -5724,7 +5753,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 21
@@ -5741,7 +5770,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Zubat
 Level: 25
@@ -5762,7 +5791,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 26
@@ -5779,7 +5808,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Zubat
 Level: 23
@@ -5804,7 +5833,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drowzee
 Level: 26
@@ -5821,7 +5850,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 29
@@ -5838,7 +5867,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Golbat
 Level: 25
@@ -5867,7 +5896,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 28
@@ -5888,7 +5917,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 29
@@ -5905,7 +5934,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ekans
 Level: 28
@@ -5926,7 +5955,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Arbok
 Level: 33
@@ -5939,7 +5968,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hypno
 Level: 33
@@ -5952,7 +5981,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 29
@@ -5969,7 +5998,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Zubat
 Level: 28
@@ -5990,7 +6019,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 26
@@ -6031,7 +6060,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 29
@@ -6048,7 +6077,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sandshrew
 Level: 29
@@ -6065,7 +6094,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 26
@@ -6090,7 +6119,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 28
@@ -6111,7 +6140,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drowzee
 Level: 28
@@ -6132,7 +6161,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Golbat
 Level: 28
@@ -6153,7 +6182,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke
 Level: 33
@@ -6166,7 +6195,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 25
@@ -6195,7 +6224,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 32
@@ -6216,7 +6245,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Sandslash
 Level: 37
@@ -6265,7 +6294,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Exeggutor
 Level: 42
@@ -6314,7 +6343,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Kingler
 Level: 41
@@ -6363,7 +6392,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Slowpoke
 Level: 42
@@ -6412,7 +6441,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Raticate
 Level: 42
@@ -6461,7 +6490,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 42
@@ -6510,7 +6539,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Nidorino
 Level: 42
@@ -6559,7 +6588,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Seel
 Level: 42
@@ -6608,7 +6637,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Sandslash
 Level: 38
@@ -6657,7 +6686,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Marowak
 Level: 37
@@ -6706,7 +6735,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Bellsprout
 Level: 22
@@ -6755,7 +6784,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Bellsprout
 Level: 42
@@ -6804,7 +6833,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Clefairy
 Level: 42
@@ -6853,7 +6882,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Beedrill
 Level: 42
@@ -6902,7 +6931,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Persian
 Level: 42
@@ -6951,7 +6980,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Tangela
 Level: 42
@@ -7000,7 +7029,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Rhyhorn
 Level: 42
@@ -7049,7 +7078,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Persian
 Level: 42
@@ -7098,7 +7127,7 @@ Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Purple
 
 Dewgong
@@ -7148,7 +7177,7 @@ Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Green
 
 Onix
@@ -7198,7 +7227,7 @@ Pic: Elite Four Agatha Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Pink
 
 Gengar
@@ -7248,7 +7277,7 @@ Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Blue
 
 Gyarados
@@ -7298,7 +7327,7 @@ Pic: Leader Brock Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
 
 Geodude-Alola @ Custap Berry
@@ -7350,7 +7379,7 @@ Pic: Leader Misty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Blue
 
 Frogadier @ Eviolite
@@ -7405,7 +7434,7 @@ Items: Mega Ring
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pincurchin @ Terrain Extender
 Nature: Bold
@@ -7469,7 +7498,7 @@ Pic: Leader Erika Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Victreebel
 Level: 29
@@ -7502,7 +7531,7 @@ Pic: Leader Koga Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Koffing
 Level: 37
@@ -7543,7 +7572,7 @@ Pic: Leader Blaine Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Growlithe
 Level: 42
@@ -7584,7 +7613,7 @@ Pic: Leader Sabrina Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Kadabra
 Level: 38
@@ -7625,7 +7654,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe-Hisui
 Level: 22
@@ -7642,7 +7671,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Dachsbun
 Level: 21
@@ -7659,7 +7688,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 23
@@ -7672,7 +7701,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Persian
 Level: 48
@@ -7685,7 +7714,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 17
@@ -7702,7 +7731,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
@@ -7727,7 +7756,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
@@ -7752,7 +7781,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
@@ -7777,7 +7806,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 25
@@ -7806,7 +7835,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 25
@@ -7835,7 +7864,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 25
@@ -7864,7 +7893,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeot
 Level: 37
@@ -7893,7 +7922,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeot
 Level: 37
@@ -7922,7 +7951,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeot
 Level: 37
@@ -7951,7 +7980,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeot
 Level: 47
@@ -8008,7 +8037,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeot
 Level: 47
@@ -8065,7 +8094,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Pidgeot
 Level: 47
@@ -8122,7 +8151,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
 
 Pidgeot
@@ -8180,7 +8209,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
 
 Pidgeot
@@ -8238,7 +8267,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
 
 Pidgeot
@@ -8296,7 +8325,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 22
@@ -8309,7 +8338,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 24
@@ -8322,7 +8351,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 23
@@ -8335,7 +8364,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 24
@@ -8348,7 +8377,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 23
@@ -8365,7 +8394,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 22
@@ -8378,7 +8407,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Haunter
 Level: 23
@@ -8391,7 +8420,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 22
@@ -8404,7 +8433,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 24
@@ -8417,7 +8446,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 22
@@ -8430,7 +8459,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 22
@@ -8451,7 +8480,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 24
@@ -8464,7 +8493,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 24
@@ -8477,7 +8506,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 34
@@ -8494,7 +8523,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Haunter
 Level: 38
@@ -8507,7 +8536,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gastly
 Level: 33
@@ -8528,7 +8557,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 20
@@ -8545,7 +8574,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 28
@@ -8566,7 +8595,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 24
@@ -8595,7 +8624,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwag
 Level: 30
@@ -8612,7 +8641,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 27
@@ -8637,7 +8666,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 28
@@ -8670,7 +8699,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Farfetchd Galar
 Level: 17
@@ -8687,7 +8716,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 31
@@ -8704,7 +8733,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Tentacool
 Level: 30
@@ -8725,7 +8754,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Meowth
 Level: 20
@@ -8746,7 +8775,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 19
@@ -8771,7 +8800,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bellsprout
 Level: 22
@@ -8788,7 +8817,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidoran M
 Level: 29
@@ -8805,7 +8834,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bellsprout
 Level: 29
@@ -8826,7 +8855,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gloom
 Level: 28
@@ -8847,7 +8876,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 29
@@ -8864,40 +8893,78 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_GENTLEMAN_BROOKS ===
-Name: BROOKS
-Class: Gentleman Frlg
-Pic: Gentleman Frlg
+=== TRAINER_BRENDAN_2 ===
+Name: Brendan
+Class: Pkmn Trainer 1
+Pic: Brendan
 Gender: Male
-Music: Rich
+Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Green
+Dynamic Level Ratio: 90
 
-Pikachu
-Level: 23
+Loudred @ Chople Berry
+Level: 26
+Nature: Naive
+Ability: Punk Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hyper Voice
+- Brick Break
+- Ice Beam
+- Shadow Ball
+
+Lunatone @ Colbur Berry
+Level: 26
+Nature: Modest
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psyshock
+- Ancient Power
+- Hypnosis
+- Calm Mind
+
+Crawdaunt  @ Focus Sash
+Level: 26
+Nature: Adamant
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Jet
+- Waterfall
+- Knock Off
+- X-Scissor
+
+Grovyle @ Eviolite
+Level: 27
+Nature: Adamant
+Ability: Overgrow
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Power-Up Punch
+- Aerial Ace
+- Rock Tomb
+- Leaf Blade
 
 === TRAINER_GENTLEMAN_LAMAR ===
-Name: LAMAR
+Name: Lamar
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Growlithe
-Level: 17
+Ponyta-Galar
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ponyta
-Level: 17
+Furfrou
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TWINS_ELI_ANNE ===
@@ -8907,7 +8974,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 22
@@ -8924,7 +8991,7 @@ Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Nidoqueen
 Level: 45
@@ -8949,7 +9016,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidoran M
 Level: 24
@@ -8966,7 +9033,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Charmander
 Level: 29
@@ -8983,7 +9050,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonchan @ Black Belt
 Level: 29
@@ -9000,7 +9067,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rapidash
 Level: 29
@@ -9017,7 +9084,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 30
@@ -9034,7 +9101,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 33
@@ -9051,7 +9118,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 28
@@ -9068,7 +9135,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 48
@@ -9085,7 +9152,7 @@ Pic: Lady
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rowlet 
 Level: 10  
@@ -9122,7 +9189,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 20
@@ -9139,7 +9206,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 28
@@ -9156,7 +9223,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 19
@@ -9177,7 +9244,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 27
@@ -9198,7 +9265,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 52
@@ -9219,7 +9286,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Volbeat
 Level: 19
@@ -9236,7 +9303,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 20
@@ -9253,7 +9320,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 28
@@ -9270,7 +9337,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Arbok
 Level: 48
@@ -9287,7 +9354,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke
 Level: 25
@@ -9304,7 +9371,7 @@ Pic: Professor Oak Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ekans
 Level: 5
@@ -9317,7 +9384,7 @@ Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Houndour
 Level: 49
@@ -9334,7 +9401,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Natu
 Level: 48
@@ -9367,7 +9434,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mankey @ Black Belt
 Level: 37
@@ -9384,7 +9451,7 @@ Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwag
 Level: 34
@@ -9405,7 +9472,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 48
@@ -9426,7 +9493,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Weepinbell
 Level: 51
@@ -9451,7 +9518,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Gloom
 Level: 51
@@ -9476,7 +9543,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bellsprout
 Level: 37
@@ -9493,7 +9560,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Graveler
 Level: 48
@@ -9514,7 +9581,7 @@ Pic: Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hoppip @ Stardust
 Level: 48
@@ -9531,7 +9598,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Smeargle
 Level: 50
@@ -9548,7 +9615,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 37
@@ -9573,7 +9640,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 38
@@ -9590,7 +9657,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 38
@@ -9603,7 +9670,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Kricketune
 Level: 10
@@ -9620,7 +9687,7 @@ Pic: Lass Frlg
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Stufful @ Oran Berry
 Ability: Fluffy
@@ -9642,7 +9709,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 28
@@ -9659,7 +9726,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ekans
 Level: 33
@@ -9680,7 +9747,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 22
@@ -9713,7 +9780,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Grimer
 Level: 24
@@ -9730,7 +9797,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Cubone
 Level: 37
@@ -9747,7 +9814,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 35
@@ -9772,7 +9839,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Zubat
 Level: 38
@@ -9793,7 +9860,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Muk
 Level: 48
@@ -9814,7 +9881,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop
 Level: 48
@@ -9835,7 +9902,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hypno
 Level: 49
@@ -9852,7 +9919,7 @@ Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Muk
 Level: 52
@@ -9885,7 +9952,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Golbat
 Level: 53
@@ -9918,7 +9985,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 46
@@ -9967,7 +10034,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seel
 Level: 36
@@ -9988,7 +10055,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 37
@@ -10005,7 +10072,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Psyduck
 Level: 35
@@ -10026,7 +10093,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Starmie
 Level: 38
@@ -10039,7 +10106,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Shellder
 Level: 35
@@ -10060,7 +10127,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Goldeen
 Level: 33
@@ -10089,7 +10156,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonlee @ Black Belt
 Level: 38
@@ -10106,7 +10173,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop @ Black Belt
 Level: 38
@@ -10123,7 +10190,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machop @ Black Belt
 Level: 37
@@ -10140,7 +10207,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorino
 Level: 36
@@ -10161,7 +10228,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Meowth
 Level: 35
@@ -10186,7 +10253,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke @ Black Belt
 Level: 39
@@ -10203,7 +10270,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bulbasaur
 Level: 36
@@ -10224,7 +10291,7 @@ Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Staryu
 Level: 34
@@ -10249,7 +10316,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 37
@@ -10266,7 +10333,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Kingler
 Level: 38
@@ -10279,7 +10346,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Smeargle
 Level: 50
@@ -10296,7 +10363,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Smeargle
 Level: 50
@@ -10313,7 +10380,7 @@ Pic: Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mareep @ Stardust
 Level: 47
@@ -10334,7 +10401,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 48
@@ -10351,7 +10418,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 48
@@ -10372,7 +10439,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rattata
 Level: 48
@@ -10393,7 +10460,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 49
@@ -10418,7 +10485,7 @@ Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Ekans
 Level: 48
@@ -10439,7 +10506,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgey
 Level: 47
@@ -10456,7 +10523,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Spearow
 Level: 47
@@ -10473,7 +10540,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hoothoot
 Level: 47
@@ -10490,7 +10557,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Qwilfish
 Level: 49
@@ -10507,7 +10574,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Kingler
 Level: 49
@@ -10524,7 +10591,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Marill
 Level: 50
@@ -10537,7 +10604,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 50
@@ -10554,7 +10621,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sunkern
 Level: 49
@@ -10571,7 +10638,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gyarados
 Level: 50
@@ -10584,7 +10651,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Chinchou
 Level: 49
@@ -10601,7 +10668,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 50
@@ -10618,7 +10685,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 49
@@ -10635,7 +10702,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Golem
 Level: 50
@@ -10648,7 +10715,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke
 Level: 49
@@ -10665,7 +10732,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sudowoodo
 Level: 50
@@ -10678,7 +10745,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhyhorn
 Level: 49
@@ -10695,7 +10762,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Girafarig
 Level: 52
@@ -10712,7 +10779,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Natu
 Level: 48
@@ -10745,7 +10812,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Bellossom
 Level: 50
@@ -10762,7 +10829,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Golduck
 Level: 50
@@ -10779,7 +10846,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Voltorb
 Level: 47
@@ -10820,7 +10887,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Primeape @ Black Belt
 Level: 48
@@ -10841,7 +10908,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonchan @ Black Belt
 Level: 38
@@ -10858,7 +10925,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sandslash
 Level: 48
@@ -10879,7 +10946,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhyhorn
 Level: 33
@@ -10896,7 +10963,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Exeggcute
 Level: 37
@@ -10921,7 +10988,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Tangela
 Level: 49
@@ -10954,7 +11021,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Bellsprout
 Level: 38
@@ -10975,7 +11042,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Chansey
 Level: 52
@@ -10992,7 +11059,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Rhydon
 Level: 47
@@ -11041,7 +11108,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Persian
 Level: 47
@@ -11090,7 +11157,7 @@ Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Miltank
 Level: 52
@@ -11115,7 +11182,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 50
@@ -11128,7 +11195,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Geodude
 Level: 48
@@ -11161,7 +11228,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Smeargle
 Level: 50
@@ -11178,7 +11245,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Marowak
 Level: 49
@@ -11195,7 +11262,7 @@ Pic: Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Persian @ Nugget
 Level: 49
@@ -11220,7 +11287,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 47
@@ -11241,7 +11308,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Natu
 Level: 48
@@ -11262,7 +11329,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Chansey
 Level: 50
@@ -11275,7 +11342,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 48
@@ -11296,7 +11363,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Heracross
 Level: 49
@@ -11309,7 +11376,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Yanma
 Level: 45
@@ -11334,7 +11401,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Venonat
 Level: 48
@@ -11351,7 +11418,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weepinbell
 Level: 47
@@ -11372,7 +11439,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Farfetchd
 Level: 48
@@ -11389,7 +11456,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hoppip
 Level: 46
@@ -11414,7 +11481,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Snubbull
 Level: 49
@@ -11427,7 +11494,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pinsir
 Level: 49
@@ -11444,7 +11511,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Paras
 Level: 48
@@ -11465,7 +11532,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sandslash
 Level: 48
@@ -11486,7 +11553,7 @@ Pic: Archer
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Glimmet @ Shuca Berry
 Nature: Timid
@@ -11527,7 +11594,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorino
 Level: 29
@@ -11544,7 +11611,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorino
 Level: 49
@@ -11561,7 +11628,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Squirtle
 Level: 22
@@ -11574,7 +11641,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Wartortle
 Level: 30
@@ -11587,7 +11654,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Wartortle
 Level: 55
@@ -11600,7 +11667,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Spearow
 Level: 21
@@ -11617,7 +11684,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 29
@@ -11634,7 +11701,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 54
@@ -11651,7 +11718,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sinistea
 Level: 22
@@ -11672,7 +11739,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 29
@@ -11693,7 +11760,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 47
@@ -11714,7 +11781,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gumshoos
 Level: 24
@@ -11735,7 +11802,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 47
@@ -11756,7 +11823,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magneton
 Level: 28
@@ -11777,7 +11844,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 29
@@ -11794,7 +11861,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 24
@@ -11811,7 +11878,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 29
@@ -11828,7 +11895,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Arcanine
 Level: 54
@@ -11845,7 +11912,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Meowth
 Level: 25
@@ -11858,7 +11925,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Persian
 Level: 30
@@ -11871,7 +11938,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Persian
 Level: 55
@@ -11884,7 +11951,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke
 Level: 30
@@ -11901,7 +11968,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhydon
 Level: 54
@@ -11918,7 +11985,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Marowak
 Level: 29
@@ -11935,7 +12002,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Marowak
 Level: 54
@@ -11952,7 +12019,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 31
@@ -11969,7 +12036,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 22
@@ -11998,7 +12065,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeot
 Level: 46
@@ -12027,7 +12094,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Muk
 Level: 28
@@ -12048,7 +12115,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Growlithe
 Level: 30
@@ -12065,7 +12132,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Muk
 Level: 28
@@ -12082,7 +12149,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 28
@@ -12107,7 +12174,7 @@ Pic: Rocker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Electrode
 Level: 33
@@ -12124,7 +12191,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 49
@@ -12141,7 +12208,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 28
@@ -12166,7 +12233,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeot
 Level: 47
@@ -12191,7 +12258,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 27
@@ -12220,7 +12287,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 47
@@ -12249,7 +12316,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeot
 Level: 52
@@ -12278,7 +12345,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Koffing
 Level: 47
@@ -12303,7 +12370,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 32
@@ -12320,7 +12387,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 49
@@ -12337,7 +12404,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 30
@@ -12358,7 +12425,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 48
@@ -12379,7 +12446,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeot
 Level: 49
@@ -12396,7 +12463,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Dodrio
 Level: 30
@@ -12417,7 +12484,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Dodrio
 Level: 48
@@ -12438,7 +12505,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 32
@@ -12455,7 +12522,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 49
@@ -12472,7 +12539,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raichu
 Level: 54
@@ -12489,7 +12556,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonchan @ Black Belt
 Level: 33
@@ -12506,7 +12573,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonchan @ Black Belt
 Level: 51
@@ -12523,7 +12590,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonchan @ Black Belt
 Level: 56
@@ -12540,7 +12607,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 48
@@ -12561,7 +12628,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Primeape
 Level: 49
@@ -12578,7 +12645,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 49
@@ -12595,7 +12662,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke
 Level: 49
@@ -12612,7 +12679,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Primeape
 Level: 49
@@ -12629,7 +12696,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 28
@@ -12654,7 +12721,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 47
@@ -12679,7 +12746,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seaking
 Level: 49
@@ -12696,7 +12763,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 52
@@ -12721,7 +12788,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seaking
 Level: 49
@@ -12738,7 +12805,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seaking
 Level: 54
@@ -12755,7 +12822,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Magikarp
 Level: 47
@@ -12788,7 +12855,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Starmie
 Level: 50
@@ -12801,7 +12868,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 50
@@ -12818,7 +12885,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 55
@@ -12835,7 +12902,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Starmie
 Level: 50
@@ -12848,7 +12915,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mankey @ Black Belt
 Level: 50
@@ -12865,7 +12932,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Primeape @ Black Belt
 Level: 55
@@ -12882,7 +12949,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonlee @ Black Belt
 Level: 50
@@ -12899,7 +12966,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Hitmonlee @ Black Belt
 Level: 55
@@ -12916,7 +12983,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke @ Black Belt
 Level: 50
@@ -12933,7 +13000,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke @ Black Belt
 Level: 55
@@ -12950,7 +13017,7 @@ Pic: Leader Falkner
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Blue
 
 Rufflet @ Berry Juice
@@ -12993,7 +13060,7 @@ Pic: Leader Bugsy
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Green
 Dynamic Level Ratio: 90
 
@@ -13048,7 +13115,7 @@ Pic: Leader Bugsy
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Green
 Dynamic Level Ratio: 90
 
@@ -13125,7 +13192,7 @@ Pic: Leader Whitney
 Gender: Female
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Purple
 Dynamic Level Ratio: 90
 
@@ -13191,7 +13258,7 @@ Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 47
@@ -13212,7 +13279,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Clefairy
 Level: 49
@@ -13229,7 +13296,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Smeargle
 Level: 54
@@ -13246,7 +13313,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Raticate
 Level: 53
@@ -13263,7 +13330,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pikachu
 Level: 53
@@ -13284,7 +13351,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorina
 Level: 30
@@ -13301,7 +13368,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidoking
 Level: 55
@@ -13318,7 +13385,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pidgeotto
 Level: 53
@@ -13335,7 +13402,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Fearow
 Level: 53
@@ -13352,7 +13419,7 @@ Pic: Lass Frlg
 Gender: Female
 Music: Cool
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
 Bayleef @ Light Clay
@@ -13385,7 +13452,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Mabosstiff @ Black Glasses
 Nature: Bashful
@@ -13398,7 +13465,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Trailblaze
 - Headbutt
 
-Lycanroc-Dusk @ Chople Berry
+Lycanroc-Dusk @ Shuca Berry
 Nature: Bashful
 Ability: Tough Claws
 Level: 24
@@ -13417,7 +13484,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Natu
 Level: 52
@@ -13450,7 +13517,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gyarados
 Level: 55
@@ -13463,7 +13530,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Onix
 Level: 54
@@ -13480,7 +13547,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Machoke
 Level: 54
@@ -13497,7 +13564,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Rhydon
 Level: 55
@@ -13514,7 +13581,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Girafarig
 Level: 56
@@ -13531,7 +13598,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Natu
 Level: 53
@@ -13564,7 +13631,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Electrode
 Level: 52
@@ -13589,7 +13656,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Victreebel
 Level: 55
@@ -13614,7 +13681,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Vileplume
 Level: 55
@@ -13639,7 +13706,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Primeape @ Black Belt
 Level: 54
@@ -13660,7 +13727,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Sandslash
 Level: 52
@@ -13681,7 +13748,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Tangela
 Level: 53
@@ -13714,7 +13781,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Chansey
 Level: 56
@@ -13731,7 +13798,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Rhydon
 Level: 52
@@ -13780,7 +13847,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Persian
 Level: 53
@@ -13829,7 +13896,7 @@ Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Miltank
 Level: 57
@@ -13854,7 +13921,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Metapod
 Level: 19
@@ -13875,7 +13942,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Butterfree
 Level: 27
@@ -13896,7 +13963,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Butterfree
 Level: 51
@@ -13917,7 +13984,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 49
@@ -13934,7 +14001,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Seadra
 Level: 49
@@ -13951,7 +14018,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Poliwhirl
 Level: 49
@@ -13968,7 +14035,7 @@ Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Purple
 
 Dewgong
@@ -14018,7 +14085,7 @@ Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Green
 
 Steelix
@@ -14068,7 +14135,7 @@ Pic: Elite Four Agatha Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Pink
 
 Gengar
@@ -14118,7 +14185,7 @@ Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Blue
 
 Gyarados
@@ -14168,7 +14235,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
 
 Heracross
@@ -14226,7 +14293,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
 
 Heracross
@@ -14284,7 +14351,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
 
 Heracross
@@ -14342,7 +14409,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer
+AI: Smart Trainer / Prediction / Know Opponent Party
 
 Weezing
 Level: 39

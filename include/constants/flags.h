@@ -1796,7 +1796,7 @@
 #define FLAG_HIDE_MISC_KANTO_ROCKETS                       0
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0
 
-#define FLAG_HIDE_ROUTE2_ETHER                                  0
+#define FLAG_HIDE_ROUTE2_TM_REST                                  0
 #define FLAG_HIDE_ROUTE2_PARALYZE_HEAL                          0
 #define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0
 #define FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES                      0
@@ -1813,11 +1813,11 @@
 #define FLAG_HIDE_ROUTE24_TM45                                  0
 #define FLAG_HIDE_ROUTE25_TM43                                  0
 #define FLAG_HIDE_SSANNE_1F_ROOM2_TM31                          0
-#define FLAG_HIDE_SSANNE_2F_ROOM2_STARDUST                      0
-#define FLAG_HIDE_SSANNE_2F_ROOM4_X_ATTACK                      0
-#define FLAG_HIDE_SSANNE_B1F_ROOM2_TM44                         0
-#define FLAG_HIDE_SSANNE_B1F_ROOM3_ETHER                        0
-#define FLAG_HIDE_SSANNE_B1F_ROOM5_SUPER_POTION                 0
+#define FLAG_HIDE_SSANNE_2F_ROOM2_DIVE_BALL                      0
+#define FLAG_HIDE_SSANNE_2F_ROOM4_SWIFT_FEATHER                      0
+#define FLAG_HIDE_SSANNE_B1F_ROOM2_HEALTH_FEATHER                         0
+#define FLAG_HIDE_SSANNE_B1F_ROOM3_MYSTIC_WATER                        0
+#define FLAG_HIDE_SSANNE_B1F_ROOM5_WATER_STONE                 0
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0
 #define FLAG_HIDE_ROUTE9_TM40                                   0
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_ESCAPE_ROPE                0

@@ -87,6 +87,7 @@ ViridianForest_EventScript_BrendanOne_Battle::
     msgbox ViridianForest_Text_BrendanLooking
     waitmessage
     playse SE_PIN 
+    playbgm MUS_ENCOUNTER_BRENDAN, FALSE
     applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, Common_Movement_ExclamationMark
     applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, Common_Movement_Delay32
     waitmovement 0

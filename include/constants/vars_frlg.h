@@ -172,8 +172,8 @@
 #define VAR_RARE_POKEMON_COUNTER                        0x409C
 #define VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE              0x409D
 #define VAR_MT_MOON_ARCHER                              0x409E
-#define VAR_0x409F                 0x409F
-#define VAR_0x40A0                 0x40A0
+#define VAR_SS_ANNE_ANN_BROOKS_BATTLE                   0x409F
+#define VAR_SS_ANNE_TREVOR_EDMOND_BATTLE                0x40A0
 #define VAR_0x40A1                 0x40A1
 #define VAR_0x40A2                 0x40A2
 #define VAR_0x40A3                 0x40A3

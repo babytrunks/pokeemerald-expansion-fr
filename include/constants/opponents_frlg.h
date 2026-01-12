@@ -377,7 +377,7 @@
 #define TRAINER_PICNICKER_KINDRA                   371
 #define TRAINER_PICNICKER_BECKY                    372
 #define TRAINER_PICNICKER_CELIA                    373
-#define TRAINER_GENTLEMAN_BROOKS                   374
+#define TRAINER_BRENDAN_2                   374
 #define TRAINER_GENTLEMAN_LAMAR                    375
 #define TRAINER_TWINS_ELI_ANNE                     376
 #define TRAINER_COOL_COUPLE_RAY_TYRA               377
