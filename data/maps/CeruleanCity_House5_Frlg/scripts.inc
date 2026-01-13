@@ -98,7 +98,9 @@ CeruleanCity_House1_Text_HesJustLikeHim:
 	.string "day!\p"
 	.string "For your help, I can teach you\n"
 	.string "various fang moves. Just talk to me\l"
-	.string "if I could be of assistance.$"
+	.string "if I could be of assistance.\l"
+	.string "The Nurse's Aide should be able\l"
+	.string "to teach them to you now as well.$"
 
 CeruleanCity_House1_Text_DoYouWantFangTutor:
 	.string "Do your Pokémon want to learn\n"
@@ -108,12 +110,12 @@ CeruleanCity_House1_Text_TaughtFangs:
 	.string "And there you have it!\n"
 	.string "I hope those jaws bite hard!$"
 
-gText_IceFang:
+gText_IceFang::
 	.string "Ice Fang$"
 
-gText_FireFang:
+gText_FireFang::
 	.string "Fire Fang$"
 
-gText_ThunderFang:
+gText_ThunderFang::
 	.string "Thunder Fang$"
 

@@ -225,6 +225,60 @@ PkmnCenterNurse_EventScript_WantNatureChange::
 
 PkmnCenterNurse_EventScript_WantMoveTutor:
 	goto_if_unset FLAG_BADGE01_GET, PkmnCenterNurse_EventScript_StartingMoveTutors
+	dynmultipush PkmnCenterNurse_Text_StartingTutors, 0
+	call_if_set FLAG_BADGE01_GET, PkmnCenterNurse_SetBoulderBadgeTutor
+	call_if_set FLAG_BADGE02_GET, PkmnCenterNurse_SetCascadeBadgeTutor
+	call_if_set FLAG_BADGE03_GET, PkmnCenterNurse_SetThunderBadgeTutor
+	call_if_set FLAG_BADGE04_GET, PkmnCenterNurse_SetRainbowBadgeTutor
+	call_if_set FLAG_BADGE05_GET, PkmnCenterNurse_SetSoulBadgeTutor
+	call_if_set FLAG_BADGE06_GET, PkmnCenterNurse_SetMarshBadgeTutor
+	call_if_set FLAG_BADGE07_GET, PkmnCenterNurse_SetVolcanoBadgeTutor
+	call_if_set FLAG_BADGE08_GET, PkmnCenterNurse_SetEarthBadgeTutor
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_EventScript_StartingMoveTutors
+	case 1, PkmnCenterNurse_EventScript_BoulderMoveTutors
+	case 2, PkmnCenterNurse_EventScript_CascadeMoveTutors
+	case 3, PkmnCenterNurse_EventScript_ThunderMoveTutors
+	case 4, PkmnCenterNurse_EventScript_RainbowMoveTutors
+	case 5, PkmnCenterNurse_EventScript_SoulMoveTutors
+	case 6, PkmnCenterNurse_EventScript_MarshMoveTutors
+	case 7, PkmnCenterNurse_EventScript_VolcanoMoveTutors
+	case 8, PkmnCenterNurse_EventScript_EarthMoveTutors
+	end 
+
+PkmnCenterNurse_SetBoulderBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_BoulderBadgeTutors, 1
+	return
+
+PkmnCenterNurse_SetCascadeBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_CascadeBadgeTutors, 2
+	return
+
+PkmnCenterNurse_SetThunderBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_ThunderBadgeTutors, 3
+	return
+
+PkmnCenterNurse_SetRainbowBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_RainbowBadgeTutors, 4
+	return
+
+PkmnCenterNurse_SetSoulBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_SoulBadgeTutors, 5
+	return
+
+PkmnCenterNurse_SetMarshBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_MarshBadgeTutors, 6
+	return
+
+PkmnCenterNurse_SetVolcanoBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_VolcanoBadgeTutors, 7
+	return
+
+PkmnCenterNurse_SetEarthBadgeTutor:
+	dynmultipush PkmnCenterNurse_Text_EarthBadgeTutors, 8
+	return
 
 PkmnCenterNurse_EventScript_StartingMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_Swift, 0
@@ -234,12 +288,64 @@ PkmnCenterNurse_EventScript_StartingMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_AirCutter, 4
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_Tutor_Swift
 	case 1, PkmnCenterNurse_Tutor_FalseSwipe
 	case 2, PkmnCenterNurse_Tutor_MagicalLeaf
 	case 3, PkmnCenterNurse_Tutor_BugBite
 	case 4, PkmnCenterNurse_Tutor_AirCutter
 	end
+
+PkmnCenterNurse_EventScript_BoulderMoveTutors:
+	call_if_quest_complete QUEST_FANG_TUTOR, PkmnCenterNurse_EventScript_FangTutors
+	dynmultipush PkmnCenterNurse_Text_Round, 3
+	dynmultipush PkmnCenterNurse_Text_MudShot, 4
+	dynmultipush PkmnCenterNurse_Text_OminousWind, 5
+	dynmultipush PkmnCenterNurse_Text_AncientPower, 6
+	dynmultipush PkmnCenterNurse_Text_VacuumWave, 7
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_Tutor_FireFang
+	case 1, PkmnCenterNurse_Tutor_IceFang
+	case 2, PkmnCenterNurse_Tutor_ThunderFang
+	case 3, PkmnCenterNurse_Tutor_Round
+	case 4, PkmnCenterNurse_Tutor_Mudshot
+	case 5, PkmnCenterNurse_Tutor_OminousWind
+	case 6, PkmnCenterNurse_Tutor_AncientPower
+	case 7, PkmnCenterNurse_Tutor_VacuumWave
+	end
+
+PkmnCenterNurse_EventScript_FangTutors:
+	dynmultipush gText_FireFang, 0
+	dynmultipush gText_IceFang, 1
+	dynmultipush gText_ThunderFang, 2
+	return
+
+PkmnCenterNurse_EventScript_CascadeMoveTutors:
+	call_if_quest_complete QUEST_FAN_CLUB_TUTOR, PkmnCenterNurse_EventScript_VermFanClubTutors
+	dynmultipush PkmnCenterNurse_Text_StompingTantrum, 6
+	dynmultipush PkmnCenterNurse_Text_Hex, 7
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_Tutor_FlameCharge
+	case 1, PkmnCenterNurse_Tutor_Trailblaze
+	case 2, PkmnCenterNurse_Tutor_PowerUpPunch
+	case 3, PkmnCenterNurse_Tutor_ChargeBeam
+	case 4, PkmnCenterNurse_Tutor_WorkUp
+	case 5, PkmnCenterNurse_Tutor_HoneClaws
+	case 6, PkmnCenterNurse_Tutor_Hex
+	end
+
+PkmnCenterNurse_EventScript_VermFanClubTutors:
+	dynmultipush PkmnCenterNurse_Text_FlameCharge, 0
+	dynmultipush PkmnCenterNurse_Text_Trailblaze, 1
+	dynmultipush PkmnCenterNurse_Text_PowerUpPunch, 2
+	dynmultipush PkmnCenterNurse_Text_ChargeBeam, 3
+	dynmultipush PkmnCenterNurse_Text_WorkUp, 4
+	dynmultipush PkmnCenterNurse_Text_HoneClaws, 5
+	return
 
 PkmnCenterNurse_Tutor_Swift:
 	setvar VAR_0x8005, MOVE_SWIFT
@@ -260,6 +366,138 @@ PkmnCenterNurse_Tutor_BugBite:
 PkmnCenterNurse_Tutor_AirCutter:
 	setvar VAR_0x8005, MOVE_AIR_CUTTER
 	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_Round:
+	setvar VAR_0x8005, MOVE_ROUND
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_Mudshot:
+	setvar VAR_0x8005, MOVE_MUD_SHOT
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_OminousWind:
+	setvar VAR_0x8005, MOVE_OMINOUS_WIND
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_AncientPower:
+	setvar VAR_0x8005, MOVE_ANCIENT_POWER
+	goto PkmnCenterNurse_Tutor_TeachMove
+PkmnCenterNurse_Tutor_VacuumWave:
+	setvar VAR_0x8005, MOVE_VACUUM_WAVE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_FireFang:
+	setvar VAR_0x8005, MOVE_FIRE_FANG
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_IceFang:
+	setvar VAR_0x8005, MOVE_ICE_FANG
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_ThunderFang:
+	setvar VAR_0x8005, MOVE_THUNDER_FANG
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_FlameCharge:
+	setvar VAR_0x8005, MOVE_FLAME_CHARGE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_Trailblaze:
+	setvar VAR_0x8005, MOVE_TRAILBLAZE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_PowerUpPunch:
+	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_ChargeBeam:
+	setvar VAR_0x8005, MOVE_CHARGE_BEAM
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_WorkUp:
+	setvar VAR_0x8005, MOVE_WORK_UP
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_HoneClaws:
+	setvar VAR_0x8005, MOVE_HONE_CLAWS
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_Hex:
+	setvar VAR_0x8005, MOVE_HEX
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_IcyWind:
+	setvar VAR_0x8005, MOVE_ICY_WIND
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_StompingTantrum:
+	setvar VAR_0x8005, MOVE_STOMPING_TANTRUM
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_AirSlash:
+	setvar VAR_0x8005, MOVE_AIR_SLASH
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_MysticalFire:
+	setvar VAR_0x8005, MOVE_MYSTICAL_FIRE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_Hex:
+	setvar VAR_0x8005, MOVE_HEX
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_SignalBeam:
+	setvar VAR_0x8005, MOVE_SIGNAL_BEAM
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_ScorchingSands:
+	setvar VAR_0x8005, MOVE_SCORCHING_SANDS
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_TailSlap:
+	setvar VAR_0x8005, MOVE_TAIL_SLAP
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_RockBlast:
+	setvar VAR_0x8005, MOVE_ROCK_BLAST
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_IcicleSpear:
+	setvar VAR_0x8005, MOVE_ICICLE_SPEAR
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_EventScript_ThunderMoveTutors:
+	dynmultipush PkmnCenterNurse_Text_AirSlash, 0
+	dynmultipush PkmnCenterNurse_Text_MysticalFire, 1
+	dynmultipush PkmnCenterNurse_Text_SignalBeam, 2
+	dynmultipush PkmnCenterNurse_Text_TailSlap, 3
+	dynmultipush PkmnCenterNurse_Text_RockBlast, 4
+	dynmultipush PkmnCenterNurse_Text_IcicleSpear, 5
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_Tutor_AirSlash
+	case 1, PkmnCenterNurse_Tutor_MysticalFire
+	case 2, PkmnCenterNurse_Tutor_SignalBeam
+	case 3, PkmnCenterNurse_Tutor_TailSlap
+	case 4, PkmnCenterNurse_Tutor_RockBlast
+	case 5, PkmnCenterNurse_Tutor_IcicleSpear
+	end
+
+PkmnCenterNurse_EventScript_RainbowMoveTutors:
+	goto EventScript_PkmnCenterNurse_Aide
+
+PkmnCenterNurse_EventScript_SoulMoveTutors:
+	goto EventScript_PkmnCenterNurse_Aide
+
+PkmnCenterNurse_EventScript_MarshMoveTutors:
+	goto EventScript_PkmnCenterNurse_Aide
+
+PkmnCenterNurse_EventScript_VolcanoMoveTutors:
+	goto EventScript_PkmnCenterNurse_Aide
+
+PkmnCenterNurse_EventScript_EarthMoveTutors:
+	goto EventScript_PkmnCenterNurse_Aide
 
 PkmnCenterNurse_Tutor_TeachMove:
 	call EventScript_ChooseMoveTutorMon
@@ -401,3 +639,93 @@ PkmnCenterNurse_Text_BugBite:
 
 PkmnCenterNurse_Text_AirCutter:
 	.string "Air Cutter$"
+
+PkmnCenterNurse_Text_Round:
+	.string "Round$"
+
+PkmnCenterNurse_Text_MudShot:
+	.string "Mud Shot$"
+
+PkmnCenterNurse_Text_OminousWind:
+	.string "Ominous Wind$"
+
+PkmnCenterNurse_Text_VacuumWave:
+	.string "Vacuum Wave$"
+
+PkmnCenterNurse_Text_FlameCharge:
+	.string "Flame Charge$"
+
+PkmnCenterNurse_Text_Trailblaze:
+	.string "Trailblaze$"
+
+PkmnCenterNurse_Text_PowerUpPunch:
+	.string "Power-Up Punch$"
+
+PkmnCenterNurse_Text_ChargeBeam:
+	.string "Charge Beam$"
+
+PkmnCenterNurse_Text_WorkUp:
+	.string "Work Up$"
+
+PkmnCenterNurse_Text_HoneClaws:
+	.string "Hone Claws$"
+
+PkmnCenterNurse_Text_IcyWind:
+	.string "Icy Wind$"
+
+PkmnCenterNurse_Text_AncientPower:
+	.string "Ancient Power$"
+
+PkmnCenterNurse_Text_StompingTantrum:
+	.string "Stomping Tantrum$"
+
+PkmnCenterNurse_Text_AirSlash:
+	.string "Air Slash$"
+
+PkmnCenterNurse_Text_MysticalFire:
+	.string "Mystical Fire$"
+
+PkmnCenterNurse_Text_Hex:
+	.string "Hex$"
+
+PkmnCenterNurse_Text_SignalBeam:
+	.string "Signal Beam$"
+
+PkmnCenterNurse_Text_ScorchingSands:
+	.string "Scorching Sands$"
+
+PkmnCenterNurse_Text_TailSlap:
+	.string "Tail Slap$"
+
+PkmnCenterNurse_Text_RockBlast:
+	.string "Rock Blast$"
+
+PkmnCenterNurse_Text_IcicleSpear:
+	.string "Icicle Spear$"
+
+PkmnCenterNurse_Text_StartingTutors:
+	.string "Starting Tutors$"
+
+PkmnCenterNurse_Text_BoulderBadgeTutors:
+	.string "Boulder Badge Tutors$"
+
+PkmnCenterNurse_Text_CascadeBadgeTutors:
+	.string "Cascade Badge Tutors$"
+
+PkmnCenterNurse_Text_ThunderBadgeTutors:
+	.string "Thunder Badge Tutors$"
+
+PkmnCenterNurse_Text_RainbowBadgeTutors:
+	.string "Rainbow Badge Tutors$"
+
+PkmnCenterNurse_Text_SoulBadgeTutors:
+	.string "Soul Badge Tutors$"
+
+PkmnCenterNurse_Text_MarshBadgeTutors:
+	.string "Marsh Badge Tutors$"
+
+PkmnCenterNurse_Text_VolcanoBadgeTutors:
+	.string "Volcano Badge Tutors$"
+
+PkmnCenterNurse_Text_EarthBadgeTutors:
+	.string "Earth Badge Tutors$"
