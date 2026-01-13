@@ -422,9 +422,6 @@ PkmnCenterNurse_Tutor_HoneClaws:
 	setvar VAR_0x8005, MOVE_HONE_CLAWS
 	goto PkmnCenterNurse_Tutor_TeachMove
 
-PkmnCenterNurse_Tutor_Hex:
-	setvar VAR_0x8005, MOVE_HEX
-	goto PkmnCenterNurse_Tutor_TeachMove
 
 PkmnCenterNurse_Tutor_IcyWind:
 	setvar VAR_0x8005, MOVE_ICY_WIND

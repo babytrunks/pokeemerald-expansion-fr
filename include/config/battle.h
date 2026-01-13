@@ -6,6 +6,13 @@
 #define B_DYNAMIC_MOVE_INFO         TRUE // If set to TRUE, battle move info will show the real base power and accuracy of moves after ability, stat or item modifier.
 #define B_DYNAMIC_MOVE_INFO_COLORS  TRUE // If set to TRUE, battle move info will have its color change depending on how the power or accuracy is modified.
 
+// Battle DNS settings
+// Requires OW_ENABLE_DNS to be set to TRUE in include/config/overworld.h
+#define B_APPLY_DNS_TO_BACKGROUND           TRUE     // Applies the day and night system to the background during battles (assuming the current map is also affected)
+#define B_APPLY_DNS_TO_SPRITES              TRUE     // Applies the day and night system to the Pokémon, trainers, and ball sprites during battles. Not vanilla game behavior
+#define B_SPRITE_BLEND_LEVEL                100      // How much the DNS blending affects the sprites on a 0-100 scale. 100 is fully applied DNS, 0 is no DNS blending at all
+#define B_BLEND_UI_EDGES                    TRUE     // Blends the edges of the vanilla battle UI to make it look a bit better. Recommended to set to FALSE if not using vanilla UI
+
 // Calculation settings
 #define B_CRIT_CHANCE               GEN_LATEST // Chances of a critical hit landing. See CalcCritChanceStage. Gen6+ chances guarantee that Farfetch'd and Sirfetch'd always get critical hits while holding a Leek and using high-crit ratio moves.
 #define B_CRIT_MULTIPLIER           GEN_LATEST // In Gen6+, critical hits multiply damage by 1.5 instead of 2.
