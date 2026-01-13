@@ -4494,6 +4494,10 @@ void SetHiddenNature(void)
     u32 hiddenNature = gSpecialVar_Result;
     SetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HIDDEN_NATURE, &hiddenNature);
     CalculateMonStats(&gPlayerParty[gSpecialVar_0x8004]);
+
+    u32 nature = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_HIDDEN_NATURE);
+    GetMonNickname(&gPlayerParty[gSpecialVar_0x8004], gStringVar1);
+    StringCopy(gStringVar2, gNaturesInfo[nature].name);
 }
 
 void SetAbility(void)
@@ -4776,7 +4780,7 @@ void AnimateTeleporterCable(void)
 
 void SetVermilionTrashCans(void)
 {
-    u16 idx = (Random() % 15) + 1;
+    // u16 idx = (Random() % 15) + 1;
     gSpecialVar_0x8004 = 1;
     gSpecialVar_0x8005 = 15;
     // switch (gSpecialVar_0x8004)

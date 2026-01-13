@@ -1028,12 +1028,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pikachu
-Level: 21
+Plusle
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pikachu
-Level: 21
+Minun
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_LIAM ===
@@ -2612,12 +2612,12 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Voltorb
-Level: 21
+Voltorb-Hisui
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Magnemite
-Level: 21
+Emolga
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ENGINEER_BRAXTON ===
@@ -7694,7 +7694,7 @@ Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GENTLEMAN_TUCKER ===
-Name: TUCKER
+Name: Tucker
 Class: Gentleman Frlg
 Pic: Gentleman Frlg
 Gender: Male
@@ -7702,8 +7702,8 @@ Music: Rich
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pikachu
-Level: 23
+Luxio
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GENTLEMAN_NORTON ===
@@ -13211,9 +13211,9 @@ Dynamic Level Ratio: 90
 Tinkaton @ Sitrus Berry
 Nature: Jolly
 Ability: Mold Breaker
-Level: 34
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 102 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Play Rough
 - Gigaton Hammer
 - Knock Off
@@ -13222,7 +13222,7 @@ EVs: 0 HP / 102 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
 Girafarig @ Eviolite
 Nature: Modest
 Ability: Sap Sipper
-Level: 35
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psychic
@@ -13233,7 +13233,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Miltank @ Chople Berry
 Nature: Adamant
 Ability: Thick Fat
-Level: 35
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Body Slam
@@ -13244,7 +13244,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Drampa @ Normal Gem
 Nature: Modest
 Ability: Sap Sipper
-Level: 35
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dragon Breath
@@ -13255,7 +13255,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dudunsparce @ Leftovers
 Nature: Careful
 Ability: Serene Grace
-Level: 34
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Body Slam

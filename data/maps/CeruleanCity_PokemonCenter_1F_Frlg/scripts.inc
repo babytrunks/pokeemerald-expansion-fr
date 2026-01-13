@@ -60,4 +60,3 @@ CeruleanCity_PokemonCenter_1F_Text_TryTradingUpstairs::
     .string "by trading.\p"
     .string "The Pokémon you get in trades grow\n"
     .string "quickly, too.$"
-

@@ -1415,7 +1415,7 @@ PalletTown_ProfessorOaksLab_EventScript_Aide2::
 	faceplayer
 	@ goto_if_set FLAG_SYS_GAME_CLEAR, PalletTown_ProfessorOaksLab_EventScript_Aide2GameClear
 	@ msgbox PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide
-	goto_if_quest_complete QUEST_NATURE_CHANGER, PalletTown_ProfessorOaksLab_EventScript_WantNatureChange
+	goto_if_quest_complete QUEST_NATURE_CHANGER, PkmnCenterNurse_EventScript_WantNatureChange
 	goto_if_quest_active QUEST_NATURE_CHANGER, PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks
 	msgbox PalletTown_ProfessorOaksLab_Text_HelpWithNatureQuest
 	setflag FLAG_SYS_QUEST_MENU_GET
@@ -1423,44 +1423,6 @@ PalletTown_ProfessorOaksLab_EventScript_Aide2::
     openquestmenu
     startquest QUEST_NATURE_CHANGER
 	release
-	end
-
-PalletTown_ProfessorOaksLab_EventScript_WantNatureChange:
-	special ChoosePartyMon
-	waitstate
-	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
-	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
-	goto_if_eq VAR_RESULT, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
-	dynmultipush Debug_EventScript_ChangeNature_Text_Hardy, 0
-	dynmultipush Debug_EventScript_ChangeNature_Text_Lonely, 1
-	dynmultipush Debug_EventScript_ChangeNature_Text_Brave, 2
-	dynmultipush Debug_EventScript_ChangeNature_Text_Adamant, 3
-	dynmultipush Debug_EventScript_ChangeNature_Text_Naughty, 4
-	dynmultipush Debug_EventScript_ChangeNature_Text_Bold, 5
-	dynmultipush Debug_EventScript_ChangeNature_Text_Docile, 6
-	dynmultipush Debug_EventScript_ChangeNature_Text_Relaxed, 7
-	dynmultipush Debug_EventScript_ChangeNature_Text_Impish, 8
-	dynmultipush Debug_EventScript_ChangeNature_Text_Lax, 9
-	dynmultipush Debug_EventScript_ChangeNature_Text_Timid, 10
-	dynmultipush Debug_EventScript_ChangeNature_Text_Hasty, 11
-	dynmultipush Debug_EventScript_ChangeNature_Text_Serious, 12
-	dynmultipush Debug_EventScript_ChangeNature_Text_Jolly, 13
-	dynmultipush Debug_EventScript_ChangeNature_Text_Naive, 14
-	dynmultipush Debug_EventScript_ChangeNature_Text_Modest, 15
-	dynmultipush Debug_EventScript_ChangeNature_Text_Mild, 16
-	dynmultipush Debug_EventScript_ChangeNature_Text_Quiet, 17
-	dynmultipush Debug_EventScript_ChangeNature_Text_Bashful, 18
-	dynmultipush Debug_EventScript_ChangeNature_Text_Rash, 19
-	dynmultipush Debug_EventScript_ChangeNature_Text_Calm, 20
-	dynmultipush Debug_EventScript_ChangeNature_Text_Gentle, 21
-	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
-	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
-	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
-	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
-	switch VAR_RESULT
-	case MULTI_B_PRESSED, PalletTown_ProfessorOaks_EventScript_End
-	special SetHiddenNature
-	releaseall
 	end
 
 PalletTown_ProfessorOaks_EventScript_End:
@@ -2445,8 +2407,8 @@ PalletTown_ProfessorOaksLab_Text_ThatsNotAPersimBerry:
 	.string "Eh, no.$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsALaxNature:
-	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}Yes, that's a Lax Nature Pokémon!\n"
-	.string "Ah, rats. There is an issue with the device.$"
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 200}Yes, that's a Lax Nature Pokémon!\n"
+	.string "Ah, rats. There is an issue with the\ldevice.$"
 
 
 PalletTown_ProfessorOaksLab_Text_INeedPersimBerry:
@@ -2455,20 +2417,20 @@ PalletTown_ProfessorOaksLab_Text_INeedPersimBerry:
 
 PalletTown_ProfessorOaksLab_Text_ThatsAPersimBerry:
 	.string "Nice, thank you! Let's see…\n"
-	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}\p"
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 200}\p"
 	.string "Yes, that fixed it!$"
 
 PalletTown_ProfessorOaksLab_Text_NeedGenderless:
-	.string "However, I just realize\n"
-	.string "I haven't tested this device with a gender-\l"
-	.string "less Pokémon. Can you bring one?$"
+	.string "However, I just realized I haven't\n"
+	.string "tested this device with a gender-less\l"
+	.string "Pokémon. Can you bring one?$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsNotAGenderless:
 	.string "Eh, no.$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsGenderless:
 	.string "Yes, that's what I'm looking for! One sec…$"
-	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}\p"
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 200}\p"
 	.string "Yep, there's an issue with gender-less\n"
 	.string "Pokémon.$"
 
@@ -2481,12 +2443,15 @@ PalletTown_ProfessorOaksLab_Text_ThatsEverstone:
 	.string "Oh boy! An Everstone! Gimme gimme!\n"
 	.string "Okay, let's see if this'll do the\l"
 	.string "trick…\p"
-	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 500}\p"
+	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 200}\p"
 	.string "Alright, it works now. I'm so very\n"
 	.string "grateful for your help! In return,\l"
 	.string "I can swap the natures of your Pokémon\l"
 	.string "now. Just talk to me when you're\l"
-	.string "in need of this service.$"
+	.string "in need of this service.\p"
+	.string "Also, I'll be shipping this device\n"
+	.string "to every {PKMN} Center, so the Nurse's\l"
+	.string "Aide should be able to help you as well.$"
 
 PalletTown_ProfessorOaksLab_Text_Aide2StartNatureChangeChecks_NoEverstone:
 	.string "Eh, no.$"

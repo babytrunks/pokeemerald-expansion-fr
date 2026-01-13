@@ -355,8 +355,8 @@ VermilionCity_Gym_Text_DwaynePostBattle::
     .string "the GYM himself.\p"
     .string "He set up double locks everywhere.\n"
     .string "Let me give you a hint.\p"
-    .string "When you open the first lock, the\n"
-    .string "second lock is right next to it.$"
+    .string "The bottom right trash can is always\n"
+    .string "the second lock.$"
 
 VermilionCity_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"

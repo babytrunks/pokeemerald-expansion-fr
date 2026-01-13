@@ -151,3 +151,191 @@ EventScript_PkmnCenterNurse_PlayerTurn::
    waitmovement 0
    release
    end
+
+EventScript_PkmnCenterNurse_Aide::
+	lock
+	call_if_quest_complete QUEST_NATURE_CHANGER, PkmnCenterNurse_NatureChangeOption
+	call_if_set FLAG_NES_GAVE_INFINITE_CANDY, PkmnCenterNurse_LevelCapOptions
+	msgbox PkmnCenterNurse_Text_WhatService
+	@ dynmultipush PkmnCenterNurse_Text_GenderSwap, 3
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, PkmnCenterNurse_Aide_End
+	case 0, PkmnCenterNurse_EventScript_WantNatureChange
+	case 1, PkmnCenterNurse_EventScript_PartyToLvlCap
+	case 2, PkmnCenterNurse_EventScript_PkmnToLvlCap
+	case 3, PkmnCenterNurse_EventScript_SwapGender
+	release
+	end
+
+PkmnCenterNurse_LevelCapOptions:
+	dynmultipush PkmnCenterNurse_Text_PartyToLevelCap, 1
+	dynmultipush PkmnCenterNurse_Text_PkmnToLevelCap, 2
+	return
+
+PkmnCenterNurse_NatureChangeOption:
+	dynmultipush PkmnCenterNurse_Text_NatureChanger, 0
+	return
+
+PkmnCenterNurse_EventScript_WantNatureChange::
+	msgbox PkmnCenterNurse_Text_InterestedInNatureChange MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, EventScript_PkmnCenterNurse_Aide
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_PkmnCenterNurse_Aide
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, PkmnCenterNurse_CantOperateOnEgg
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	msgbox PkmnCenterNurse_Text_WhatNature
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hardy, 0
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lonely, 1
+	dynmultipush Debug_EventScript_ChangeNature_Text_Brave, 2
+	dynmultipush Debug_EventScript_ChangeNature_Text_Adamant, 3
+	dynmultipush Debug_EventScript_ChangeNature_Text_Naughty, 4
+	dynmultipush Debug_EventScript_ChangeNature_Text_Bold, 5
+	dynmultipush Debug_EventScript_ChangeNature_Text_Docile, 6
+	dynmultipush Debug_EventScript_ChangeNature_Text_Relaxed, 7
+	dynmultipush Debug_EventScript_ChangeNature_Text_Impish, 8
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lax, 9
+	dynmultipush Debug_EventScript_ChangeNature_Text_Timid, 10
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hasty, 11
+	dynmultipush Debug_EventScript_ChangeNature_Text_Serious, 12
+	dynmultipush Debug_EventScript_ChangeNature_Text_Jolly, 13
+	dynmultipush Debug_EventScript_ChangeNature_Text_Naive, 14
+	dynmultipush Debug_EventScript_ChangeNature_Text_Modest, 15
+	dynmultipush Debug_EventScript_ChangeNature_Text_Mild, 16
+	dynmultipush Debug_EventScript_ChangeNature_Text_Quiet, 17
+	dynmultipush Debug_EventScript_ChangeNature_Text_Bashful, 18
+	dynmultipush Debug_EventScript_ChangeNature_Text_Rash, 19
+	dynmultipush Debug_EventScript_ChangeNature_Text_Calm, 20
+	dynmultipush Debug_EventScript_ChangeNature_Text_Gentle, 21
+	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
+	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
+	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, PalletTown_ProfessorOaks_EventScript_End
+	special SetHiddenNature
+	msgbox PkmnCenterNurse_Text_PkmnNatureChangeDone
+	releaseall
+	end
+
+PkmnCenterNurse_EventScript_PartyToLvlCap:
+	msgbox PkmnCenterNurse_Text_SetPartyToLevelCap MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, EventScript_PkmnCenterNurse_Aide
+	callnative SetTeamToLevelCap
+	msgbox PkmnCenterNurse_Text_SetPartyToLevelCapDone
+	release
+	end
+
+
+PkmnCenterNurse_EventScript_PkmnToLvlCap:
+	msgbox PkmnCenterNurse_Text_WhichPokemonDoYouWantLvlCap 
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_PkmnCenterNurse_Aide
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, PkmnCenterNurse_CantOperateOnEgg
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	msgbox PkmnCenterNurse_Text_RaisePokemonToLvlCap MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, EventScript_PkmnCenterNurse_Aide
+	callnative SetPkmnToLevelCap
+	msgbox PkmnCenterNurse_Text_PkmnRaisedToCapDone
+	release
+	end
+
+PkmnCenterNurse_EventScript_SwapGender:
+	msgbox PkmnCenterNurse_Text_DoYouWantToSwapGender MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, EventScript_PkmnCenterNurse_Aide
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_PkmnCenterNurse_Aide
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, PkmnCenterNurse_CantOperateOnEgg
+	callnative GetSelectedPokemonGender
+	goto_if_eq VAR_RESULT, 0xFE, PkmnCenterNurse_CantOperateOnGenderless
+	msgbox PkmnCenterNurse_Text_SwapGenderOfPkmn MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, EventScript_PkmnCenterNurse_Aide
+	callnative SwapSelectedPokemonGender
+	release
+	end
+
+PkmnCenterNurse_CantOperateOnEgg::
+	msgbox PkmnCenterNurse_Text_CantOperateOnEgg
+	goto EventScript_PkmnCenterNurse_Aide
+	end
+
+PkmnCenterNurse_Aide_End:
+	release
+	end
+
+	
+PkmnCenterNurse_Text_MoveTutor:
+	.string "Move Tutors$"
+
+PkmnCenterNurse_Text_NatureChanger:
+	.string "Nature Change$"
+
+PkmnCenterNurse_Text_GenderSwap:
+	.string "Gender Swap$"
+
+PkmnCenterNurse_Text_PartyToLevelCap:
+	.string "Party To Level Cap$"
+
+PkmnCenterNurse_Text_PkmnToLevelCap:
+	.string "{PKMN} To Level Cap$"
+
+PkmnCenterNurse_Text_MysteryGift:
+	.string "Mystery Gift$"
+
+PkmnCenterNurse_Text_WhatService:
+	.string "{COLOR RED}What service would be of interest?$"
+
+PkmnCenterNurse_Text_CantOperateOnEgg:
+	.string "{COLOR RED}…I can't operate on an egg.$"
+
+PkmnCenterNurse_Text_WhatNature:
+	.string "{COLOR RED}What nature would you like for {STR_VAR_1}?$"
+
+PkmnCenterNurse_Text_SetPartyToLevelCapDone: 
+	.string "{COLOR RED}…Okay, your team has been set to the\n"
+	.string "Level Cap of {STR_VAR_2}.$"
+
+PkmnCenterNurse_Text_WhichPokemonDoYouWantLvlCap:
+	.string "{COLOR RED}Select the {PKMN} whose level you'd like to\n"
+	.string "raise to the Level Cap.$"
+
+PkmnCenterNurse_Text_RaisePokemonToLvlCap:
+	.string "{COLOR RED}Raise {STR_VAR_1} to\n"
+	.string "the Level Cap?$"
+
+PkmnCenterNurse_Text_SetPartyToLevelCap:
+	.string "{COLOR RED}Shall I raise your party's levels to the\n"
+	.string "Level Cap?$"
+
+PkmnCenterNurse_Text_PkmnRaisedToCapDone:
+	.string "{COLOR RED}{STR_VAR_1} has been raised to the\n"
+	.string "Level Cap of {STR_VAR_2}.$"
+
+PkmnCenterNurse_Text_InterestedInNatureChange:
+	.string "{COLOR RED}Are you interested in swapping\n"
+	.string "a Pokémon's nature?$"
+
+PkmnCenterNurse_Text_PkmnNatureChangeDone:
+	.string "{COLOR RED}…Okay, your {STR_VAR_1}'s Nature has\n"
+	.string "been changed to {STR_VAR_2}.$"
+
+PkmnCenterNurse_Text_DoYouWantToSwapGender:
+	.string "{COLOR RED}Do you want to swap the Gender\n"
+	.string "of one of your Pokémon?$"
+
+PkmnCenterNurse_CantOperateOnGenderless:
+	.string "{COLOR RED}…That Pokémon doesn't have a gender.$"
+
+PkmnCenterNurse_Text_SwapGenderOfPkmn:
+	.string "{COLOR RED}Swap the Gender of {STR_VAR_1}?$"

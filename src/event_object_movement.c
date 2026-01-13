@@ -35,6 +35,7 @@
 #include "script.h"
 #include "sound.h"
 #include "sprite.h"
+#include "string_util.h"
 #include "task.h"
 #include "trainer_see.h"
 #include "trainer_hill.h"
@@ -2458,6 +2459,47 @@ void GetFollowerPokemonGender(void)
     gSpecialVar_Result = GetMonGender(GetFirstLiveMon());
 }
 
+void GetSelectedPokemonGender(void)
+{
+    gSpecialVar_Result = GetMonGender(&gPlayerParty[gSpecialVar_0x8004]);
+    GetMonNickname(&gPlayerParty[gSpecialVar_0x8004], gStringVar1);
+}
+
+void SwapSelectedPokemonGender(void)
+{
+    struct Pokemon* mon = &gPlayerParty[gSpecialVar_0x8004];
+	u32 speciesPersonality = GetMonData(mon, MON_DATA_PERSONALITY);
+	u16 species = GetMonData(mon, MON_DATA_SPECIES);
+	u8 nature = GetNatureFromPersonality(speciesPersonality);
+	u8 gender = GetMonGender(mon);
+
+	u8 abilityBit = speciesPersonality & 1;
+	u8 genderToSwapTo;
+	u32 personality;
+	if (gender == MON_MALE) {
+		genderToSwapTo = MON_FEMALE;
+	}
+	else {
+		genderToSwapTo = MON_MALE; 
+	}
+    // bool8 isShiny = IsMonShiny(mon);
+	u32 trainerId = GetMonData(mon, MON_DATA_OT_ID, NULL);
+	u16 sid = HIHALF(trainerId);
+	u16 tid = LOHALF(trainerId);
+    do
+	{
+		personality = Random32(); 
+		personality &= ~(1);
+		personality |= abilityBit;   
+		if(GetGenderFromSpeciesAndPersonality(species, personality) == genderToSwapTo){
+			if(nature == GetNatureFromPersonality(personality))  
+				break; // we found a personality with the desired nature  
+		}  
+	} while (TRUE);
+ 
+	SetMonData(mon, MON_DATA_PERSONALITY, &personality);
+	CalculateMonStats(mon);
+}
 void CheckFollowerPokemonIsDog(void)
 {
     u16 species = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));

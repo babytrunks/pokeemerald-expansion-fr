@@ -8732,3 +8732,48 @@ static void Task_PokevialLoop(u8 taskId)
 #undef tUsedOnSlot
 #undef tHadEffect
 #undef tLastSlotUsed
+
+void SetTeamToLevelCap(void)
+{
+    u32 currCap = GetCurrentLevelCap();
+    u8 lvl;
+    u32 data;
+    for (u8 i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+        lvl = GetMonData(mon, MON_DATA_LEVEL, NULL);
+        if (lvl < currCap) {
+            while (lvl < currCap) {
+                data = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES, NULL)].growthRate][GetMonData(mon, MON_DATA_LEVEL, NULL) + 1];
+                SetMonData(mon, MON_DATA_EXP, &data);
+                CalculateMonStats(mon);
+                lvl = GetMonData(mon, MON_DATA_LEVEL, NULL);
+            }
+	    }
+    }
+
+    ConvertIntToDecimalStringN(gStringVar2, currCap, STR_CONV_MODE_LEFT_ALIGN, 3);
+}
+
+void SetPkmnToLevelCap(void)
+{
+    u32 currCap = GetCurrentLevelCap();
+    u32 data;
+    struct Pokemon *mon = &gPlayerParty[gSpecialVar_0x8004];
+    u8 lvl = GetMonData(mon, MON_DATA_LEVEL, NULL);
+    if (lvl < currCap) {
+		gSpecialVar_Result = 0x1;
+		while (lvl < currCap) {
+			data = gExperienceTables[gSpeciesInfo[GetMonData(mon, MON_DATA_SPECIES)].growthRate][GetMonData(mon, MON_DATA_LEVEL) + 1];
+			SetMonData(mon, MON_DATA_EXP, &data);
+			CalculateMonStats(mon);
+			lvl = GetMonData(mon, MON_DATA_LEVEL, NULL);
+		}
+	}
+	else {
+		gSpecialVar_Result = 0x0; 
+	}
+
+    GetMonNickname(mon, gStringVar1);
+    ConvertIntToDecimalStringN(gStringVar2, currCap, STR_CONV_MODE_LEFT_ALIGN, 3);
+}
