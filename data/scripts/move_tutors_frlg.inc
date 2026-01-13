@@ -423,6 +423,10 @@ FourIsland_House1_EventScript_BodySlamTutor::
 	setvar VAR_0x8005, MOVE_FIRE_FANG
 	setvar VAR_0x8005, MOVE_ICE_FANG
 	setvar VAR_0x8005, MOVE_THUNDER_FANG
+	setvar VAR_0x8005, MOVE_SWIFT
+	setvar VAR_0x8005, MOVE_AIR_CUTTER
+	setvar VAR_0x8005, MOVE_FALSE_SWIPE
+	setvar VAR_0x8005, MOVE_MAGICAL_LEAF
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
 .if I_REUSABLE_TMS == FALSE

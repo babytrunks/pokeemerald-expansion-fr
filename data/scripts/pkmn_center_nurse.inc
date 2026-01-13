@@ -155,22 +155,24 @@ EventScript_PkmnCenterNurse_PlayerTurn::
 EventScript_PkmnCenterNurse_Aide::
 	lock
 	call_if_quest_complete QUEST_NATURE_CHANGER, PkmnCenterNurse_NatureChangeOption
+	dynmultipush PkmnCenterNurse_Text_MoveTutor, 1
 	call_if_set FLAG_NES_GAVE_INFINITE_CANDY, PkmnCenterNurse_LevelCapOptions
 	msgbox PkmnCenterNurse_Text_WhatService
-	@ dynmultipush PkmnCenterNurse_Text_GenderSwap, 3
+	@ dynmultipush PkmnCenterNurse_Text_GenderSwap, 4
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, PkmnCenterNurse_Aide_End
 	case 0, PkmnCenterNurse_EventScript_WantNatureChange
-	case 1, PkmnCenterNurse_EventScript_PartyToLvlCap
-	case 2, PkmnCenterNurse_EventScript_PkmnToLvlCap
-	case 3, PkmnCenterNurse_EventScript_SwapGender
+	case 1, PkmnCenterNurse_EventScript_WantMoveTutor
+	case 2, PkmnCenterNurse_EventScript_PartyToLvlCap
+	case 3, PkmnCenterNurse_EventScript_PkmnToLvlCap
+	case 4, PkmnCenterNurse_EventScript_SwapGender
 	release
 	end
 
 PkmnCenterNurse_LevelCapOptions:
-	dynmultipush PkmnCenterNurse_Text_PartyToLevelCap, 1
-	dynmultipush PkmnCenterNurse_Text_PkmnToLevelCap, 2
+	dynmultipush PkmnCenterNurse_Text_PartyToLevelCap, 2
+	dynmultipush PkmnCenterNurse_Text_PkmnToLevelCap, 3
 	return
 
 PkmnCenterNurse_NatureChangeOption:
@@ -213,13 +215,58 @@ PkmnCenterNurse_EventScript_WantNatureChange::
 	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
 	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
 	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
-	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, PalletTown_ProfessorOaks_EventScript_End
 	special SetHiddenNature
 	msgbox PkmnCenterNurse_Text_PkmnNatureChangeDone
 	releaseall
 	end
+
+PkmnCenterNurse_EventScript_WantMoveTutor:
+	goto_if_unset FLAG_BADGE01_GET, PkmnCenterNurse_EventScript_StartingMoveTutors
+
+PkmnCenterNurse_EventScript_StartingMoveTutors:
+	dynmultipush PkmnCenterNurse_Text_Swift, 0
+	dynmultipush PkmnCenterNurse_Text_FalseSwipe, 1
+	dynmultipush PkmnCenterNurse_Text_MagicalLeaf, 2
+	dynmultipush PkmnCenterNurse_Text_BugBite, 3
+	dynmultipush PkmnCenterNurse_Text_AirCutter, 4
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, PkmnCenterNurse_Tutor_Swift
+	case 1, PkmnCenterNurse_Tutor_FalseSwipe
+	case 2, PkmnCenterNurse_Tutor_MagicalLeaf
+	case 3, PkmnCenterNurse_Tutor_BugBite
+	case 4, PkmnCenterNurse_Tutor_AirCutter
+	end
+
+PkmnCenterNurse_Tutor_Swift:
+	setvar VAR_0x8005, MOVE_SWIFT
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_FalseSwipe:
+	setvar VAR_0x8005, MOVE_FALSE_SWIPE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_MagicalLeaf:
+	setvar VAR_0x8005, MOVE_MAGICAL_LEAF
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_BugBite:
+	setvar VAR_0x8005, MOVE_BUG_BITE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_AirCutter:
+	setvar VAR_0x8005, MOVE_AIR_CUTTER
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_TeachMove:
+	call EventScript_ChooseMoveTutorMon
+	goto_if_eq VAR_RESULT, FALSE, PkmnCenterNurse_EventScript_WantMoveTutor
+	release
+	end
+
 
 PkmnCenterNurse_EventScript_PartyToLvlCap:
 	msgbox PkmnCenterNurse_Text_SetPartyToLevelCap MSGBOX_YESNO
@@ -339,3 +386,18 @@ PkmnCenterNurse_CantOperateOnGenderless:
 
 PkmnCenterNurse_Text_SwapGenderOfPkmn:
 	.string "{COLOR RED}Swap the Gender of {STR_VAR_1}?$"
+
+PkmnCenterNurse_Text_Swift:
+	.string "Swift$"
+
+PkmnCenterNurse_Text_FalseSwipe:
+	.string "False Swipe$"
+
+PkmnCenterNurse_Text_MagicalLeaf:
+	.string "Magical Leaf$"
+
+PkmnCenterNurse_Text_BugBite:
+	.string "Bug Bite$"
+
+PkmnCenterNurse_Text_AirCutter:
+	.string "Air Cutter$"
