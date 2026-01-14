@@ -577,7 +577,7 @@
 #define FLAG_DID_NINA_TRADE                              0x251
 #define FLAG_GOT_ITEMFINDER                              0x252
 #define FLAG_WOKE_UP_ROUTE_12_SNORLAX                    0x253
-#define FLAG_GOT_TM39_FROM_BROCK                         0x254 //UNUSED
+#define FLAG_HIDE_ROUTE10_TM_ICY_WIND                    0x254 
 #define FLAG_GOT_SUPER_ROD                               0x255
 #define FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE                0x256
 #define FLAG_DID_MARC_TRADE                              0x257

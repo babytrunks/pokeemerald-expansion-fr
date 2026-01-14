@@ -438,6 +438,9 @@ Route10_EventScript_ItemTMFirePunch::
 	finditem ITEM_TM_FIRE_PUNCH
 	end
 
+Route10_EventScript_ItemTMIcyWind::
+	finditem ITEM_TM_ICY_WIND
+	end
 
 Route9_EventScript_ItemLeafStone::
 	finditem ITEM_LEAF_STONE
