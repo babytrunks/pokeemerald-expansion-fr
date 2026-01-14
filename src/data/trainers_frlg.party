@@ -1331,12 +1331,12 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pikachu
-Level: 20
+Roselia
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Clefairy
-Level: 20
+Furret
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_CAROL ===
@@ -1348,12 +1348,12 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgey
-Level: 21
+Swablu
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgeotto
-Level: 21
+Kirlia
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_SOFIA ===
@@ -1466,12 +1466,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Cubone
-Level: 20
+Munchlax
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Slowpoke
-Level: 20
+Chansey
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_POKEMANIAC_COOPER ===
@@ -1555,12 +1555,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Cubone
-Level: 23
+Rhyhorn
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Slowpoke
-Level: 23
+Lickitung
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SUPER_NERD_JOVAN ===
@@ -1912,21 +1912,13 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Geodude
-Level: 21
+Graveler-Alola
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
 
-Onix
-Level: 21
+Bronzor
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Harden
-- Rock Throw
-- Bind
-- Screech
 
 === TRAINER_HIKER_TRENT ===
 Name: Trent
@@ -1937,12 +1929,12 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Onix
-Level: 19
+Crabominable
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Graveler
-Level: 19
+Mudbray
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_HIKER_DUDLEY ===
@@ -2021,20 +2013,20 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Geodude
-Level: 19
+Graveler
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machop
-Level: 19
+Onix
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Geodude
-Level: 19
+Carkol
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Geodude
-Level: 19
+Diggersby
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_HIKER_OLIVER ===
@@ -2046,16 +2038,16 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Onix
-Level: 20
+Machoke
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Onix
-Level: 20
+Sudowoodo
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Geodude
-Level: 20
+Gligar
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_HIKER_LUCAS ===
@@ -2067,21 +2059,14 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Geodude
-Level: 21
+Drilbur
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
 
-Graveler
-Level: 21
+Boldore
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Magnitude
-- Rock Throw
-- Mud Sport
-- Defense Curl
+
 
 === TRAINER_BIKER_JARED ===
 Name: Jared
@@ -8768,16 +8753,16 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Meowth
-Level: 20
+Fletchinder
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Oddish
-Level: 20
+Lilligant
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgey
-Level: 20
+Azumarill
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_ARIANA ===
@@ -8789,24 +8774,24 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgey
-Level: 19
+Delcatty
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rattata
-Level: 19
+Gloom
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rattata
-Level: 19
+Nidorina
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Bellsprout
-Level: 19
+Cherrim
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_LEAH ===
-Name: LEAH
+Name: Leah
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
 Gender: Male
@@ -8814,12 +8799,12 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Bellsprout
-Level: 22
+Floette
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Clefairy
-Level: 22
+Togetic
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_JUSTIN ===
