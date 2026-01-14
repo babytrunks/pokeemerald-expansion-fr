@@ -2561,6 +2561,21 @@ void CheckFollowerPokemonIsDog(void)
             break;
     }
 }
+
+void CheckFollowerPokemonIsPerfectOffenses(void)
+{
+    struct Pokemon *mon = GetFirstLiveMon();
+    u32 atkIV = GetMonData(mon, MON_DATA_ATK_IV);
+    u32 spAtkIV = GetMonData(mon, MON_DATA_SPATK_IV);
+    u32 speedIV = GetMonData(mon, MON_DATA_SPEED_IV);
+
+    if (atkIV == 31 && spAtkIV == 31 && speedIV == 31)
+        gSpecialVar_Result = TRUE;
+    else
+        gSpecialVar_Result = FALSE;
+}
+
+
 // Determine whether follower *should* be visible
 bool32 IsFollowerVisible(void)
 {

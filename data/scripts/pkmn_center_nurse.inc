@@ -649,22 +649,22 @@ PkmnCenterNurse_Text_OminousWind:
 PkmnCenterNurse_Text_VacuumWave:
 	.string "Vacuum Wave$"
 
-PkmnCenterNurse_Text_FlameCharge:
+PkmnCenterNurse_Text_FlameCharge::
 	.string "Flame Charge$"
 
-PkmnCenterNurse_Text_Trailblaze:
+PkmnCenterNurse_Text_Trailblaze::
 	.string "Trailblaze$"
 
-PkmnCenterNurse_Text_PowerUpPunch:
+PkmnCenterNurse_Text_PowerUpPunch::
 	.string "Power-Up Punch$"
 
-PkmnCenterNurse_Text_ChargeBeam:
+PkmnCenterNurse_Text_ChargeBeam::
 	.string "Charge Beam$"
 
-PkmnCenterNurse_Text_WorkUp:
+PkmnCenterNurse_Text_WorkUp::
 	.string "Work Up$"
 
-PkmnCenterNurse_Text_HoneClaws:
+PkmnCenterNurse_Text_HoneClaws::
 	.string "Hone Claws$"
 
 PkmnCenterNurse_Text_IcyWind:

@@ -118,6 +118,89 @@ VermilionCity_PokemonFanClub_EventScript_RulesSign2::
 	msgbox VermilionCity_PokemonFanClub_Text_SomeoneBragsBragBack, MSGBOX_SIGN
 	end
 
+
+VermilionCity_PokemonFanClub_EventScript_TamerTutor::
+	lock
+	faceplayer
+    goto_if_quest_complete QUEST_FAN_CLUB_TUTOR, VermilionCity_PokemonFanClub_EventScript_TeachBoostingMoves	
+	goto_if_quest_active QUEST_FAN_CLUB_TUTOR, VermilionCity_PokemonFanClub_EventScript_CheckBoy
+	msgbox VermilionCity_FanClubTutor_Text_LookingForOffensiveMon
+    setflag FLAG_SYS_QUEST_MENU_GET
+ 	questmenu QUEST_MENU_SET_ACTIVE QUEST_FAN_CLUB_TUTOR
+    openquestmenu
+    startquest QUEST_FAN_CLUB_TUTOR
+	release
+	end
+
+VermilionCity_PokemonFanClub_EventScript_CheckBoy:
+	msgbox VermilionCity_FanClubTutor_Text_BringMeAGoodBoy
+	callnative CheckFollowerPokemonIsPerfectOffenses
+	goto_if_eq VAR_RESULT, NO, VermilionCity_PokemonFanClub_EventScript_ThatsNotPerfOffenses
+	setvar 0x8004, 0
+	special BufferMonNickname
+	msgbox VermilionCity_FanClubTutor_Text_HesHim
+	completequest QUEST_FAN_CLUB_TUTOR
+    waitmessage
+    release
+    end
+	
+VermilionCity_PokemonFanClub_EventScript_ThatsNotPerfOffenses: 
+	msgbox VermilionCity_FanClubTutor_Text_ThatsNotPerfOffenses
+	release
+	end
+
+VermilionCity_PokemonFanClub_EventScript_TeachBoostingMoves:
+	msgbox VermilionCity_FanClubTutor_Text_DoYouWantBoostingTutor, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, VermilionCity_PokemonFanClub_EventScript_NoInterestInBoostingMoves
+	msgbox VermilionCity_FanClubTutor_Text_WhatchaThinking
+	dynmultichoice 25, 0, 0, 6, 0, DYN_MULTICHOICE_CB_NONE, PkmnCenterNurse_Text_FlameCharge, PkmnCenterNurse_Text_Trailblaze, PkmnCenterNurse_Text_PowerUpPunch, PkmnCenterNurse_Text_ChargeBeam, PkmnCenterNurse_Text_WorkUp, PkmnCenterNurse_Text_HoneClaws
+	switch VAR_RESULT
+	case MULTI, VermilionCity_PokemonFanClub_EventScript_NoInterestInBoostingMoves
+	case 0, VermilionCity_PokemonFanClub_EventScript_TeachFlameCharge
+	case 1, VermilionCity_PokemonFanClub_EventScript_TeachTrailblaze
+	case 2, VermilionCity_PokemonFanClub_EventScript_TeachPowerUpPunch
+	case 3, VermilionCity_PokemonFanClub_EventScript_TeachChargeBeam
+	case 4, VermilionCity_PokemonFanClub_EventScript_TeachWorkUp
+	case 5, VermilionCity_PokemonFanClub_EventScript_TeachHoneClaws
+	end
+
+VermilionCity_PokemonFanClub_EventScript_NoInterestInBoostingMoves::
+	@ msgbox VermilionCity_FanClubTutor_Text_HopeToSeeYouAgain
+	release
+	end
+
+VermilionCity_PokemonFanClub_EventScript_TeachFlameCharge:
+	setvar VAR_0x8005, MOVE_FLAME_CHARGE
+	goto VermilionCity_PokemonFanClub_EventScript_FinishBoostingMoves
+
+VermilionCity_PokemonFanClub_EventScript_TeachTrailblaze:
+	setvar VAR_0x8005, MOVE_TRAILBLAZE
+	goto VermilionCity_PokemonFanClub_EventScript_FinishBoostingMoves
+
+VermilionCity_PokemonFanClub_EventScript_TeachPowerUpPunch:
+	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH
+	goto VermilionCity_PokemonFanClub_EventScript_FinishBoostingMoves
+
+VermilionCity_PokemonFanClub_EventScript_TeachChargeBeam:
+	setvar VAR_0x8005, MOVE_CHARGE_BEAM
+	goto VermilionCity_PokemonFanClub_EventScript_FinishBoostingMoves
+
+VermilionCity_PokemonFanClub_EventScript_TeachWorkUp:
+	setvar VAR_0x8005, MOVE_WORK_UP
+	goto VermilionCity_PokemonFanClub_EventScript_FinishBoostingMoves
+
+VermilionCity_PokemonFanClub_EventScript_TeachHoneClaws:
+	setvar VAR_0x8005, MOVE_HONE_CLAWS
+	goto VermilionCity_PokemonFanClub_EventScript_FinishBoostingMoves
+
+VermilionCity_PokemonFanClub_EventScript_FinishBoostingMoves:
+	call EventScript_ChooseMoveTutorMon
+	goto_if_eq VAR_RESULT, FALSE, VermilionCity_PokemonFanClub_EventScript_NoInterestInBoostingMoves
+	msgbox VermilionCity_FanClubTutor_Text_TaughtBoostingMoves
+	release
+	end
+
+
 VermilionCity_PokemonFanClub_Text_AdmirePikachusTail::
     .string "Won't you admire my PIKACHU's\n"
     .string "adorable tail?$"
@@ -214,3 +297,43 @@ VermilionCity_PokemonFanClub_Text_ChairmanReallyAdoresHisMons::
     .string "Pokémon.\p"
     .string "But the person who is most liked by\n"
     .string "Pokémon is DAISY, I think.$"
+
+VermilionCity_FanClubTutor_Text_LookingForOffensiveMon:
+	.string "{COLOR BLUE}Ooh, you look like a good trainer!\n"
+	.string "Tell you what - I love when Pokémon\l"
+	.string "hit hard and fast!\p"
+	.string "{PAUSE 200}.{PAUSE 200}.{PAUSE 200}.Uhh yeah, pause.\p"
+	.string "What I mean is, I'd like to see a\n"
+	.string "Pokémon you've perfected in its\l"
+	.string "speed and offenses.\p"
+	.string "Show me that and I can teach you some\n"
+	.string "cool moves.$"
+
+VermilionCity_FanClubTutor_Text_BringMeAGoodBoy:
+	.string "I'd like to see a Pokémon you've\n"
+	.string "perfected in its speed and offenses.\p"
+	.string "Show me that and I can teach you some\n"
+	.string "cool moves.$"
+
+VermilionCity_FanClubTutor_Text_ThatsNotPerfOffenses:
+	.string "Hmm… that's not quite it.$"
+
+VermilionCity_FanClubTutor_Text_DoYouWantBoostingTutor:
+	.string "Hey buddy! You want to learn some\n"
+	.string "boosting moves?$"
+
+VermilionCity_FanClubTutor_Text_HesHim:
+	.string "Oh yup.{PAUSE 200}.{PAUSE 200}.{PAUSE 200}\n"
+	.string "That {STR_VAR_1}, yo that {STR_VAR_1}\l"
+	.string "kinda nice.\p"
+	.string "Alright, as agreed I can teach you\n"
+	.string "some boosting moves now. The Nurse's\l"
+	.string "Aide should be able to teach you them\l"
+	.string "as well.$"
+
+VermilionCity_FanClubTutor_Text_WhatchaThinking:
+	.string "Whatcha thinking?$"
+
+VermilionCity_FanClubTutor_Text_TaughtBoostingMoves:
+	.string "Faster and stronger!\n"
+	.string "I hope you dig it!$"

@@ -250,8 +250,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SubQuest1_Name1,
 	      gText_SubQuest1_Desc1,
 	      gText_NatureSubQuestMap1,
-	      OBJ_EVENT_GFX_SCIENTIST,
-	      OBJECT,
+	      SPECIES_MUNCHLAX, 
+	      PKMN,
 	      sText_Found
 	),
 
@@ -260,8 +260,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SubQuest1_Name2,
 	      gText_SubQuest1_Desc2,
 	      gText_NatureSubQuestMap1,
-	      OBJ_EVENT_GFX_SCIENTIST,
-	      OBJECT,
+	      ITEM_PERSIM_BERRY,
+	      ITEM,
 	      sText_Found
 	),
 
@@ -270,8 +270,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SubQuest1_Name3,
 	      gText_SubQuest1_Desc3,
 	      gText_NatureSubQuestMap1,
-	      OBJ_EVENT_GFX_SCIENTIST,
-	      OBJECT,
+	      SPECIES_PORYGON,
+	      PKMN,
 	      sText_Found
 	),
 
@@ -280,8 +280,8 @@ static const struct SubQuest sSubQuests1[QUEST_1_SUB_COUNT] =
 	      gText_SubQuest1_Name4,
 	      gText_SubQuest1_Desc4,
 	      gText_NatureSubQuestMap1,
-	      OBJ_EVENT_GFX_SCIENTIST,
-	      OBJECT,
+	      ITEM_EVERSTONE,
+	      ITEM,
 	      sText_Found
 	),
 };
@@ -541,12 +541,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
+	side_quest( // Verm Fan Club Tutor Quest
 	      gText_SideQuestName_5,
 	      gText_SideQuestDesc_5,
 	      gText_SideQuestDoneDesc_5,
 	      gText_SideQuestMap5,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_CLERK,
 	      OBJECT,
 	      NULL,
 	      0
