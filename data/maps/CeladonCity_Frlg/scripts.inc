@@ -59,6 +59,10 @@ CeladonCity_EventScript_RocketGrunt2::
 	msgbox CeladonCity_Text_GetLostOrIllPunchYou, MSGBOX_NPC
 	end
 
+CeladonCity_EventScript_RocketGrunt3::
+	msgbox CeladonCity_Text_RocketWhichWay
+	end
+
 CeladonCity_EventScript_Boy::
 	msgbox CeladonCity_Text_ScaldedTongueOnTea, MSGBOX_NPC
 	end
@@ -131,6 +135,10 @@ CeladonCity_Text_MyTrustedPalPoliwrath::
 CeladonCity_Text_Poliwrath::
     .string "POLIWRATH: Ribi ribit!$"
 
+CeladonCity_Text_RocketWhichWay::
+    .string "Hmm… Which way was it to\n"
+    .string "the hideout again…$"
+
 CeladonCity_Text_GetLostOrIllPunchYou::
     .string "What are you staring at?\n"
     .string "Get lost, or I'll punch you.$"
@@ -148,11 +156,11 @@ CeladonCity_Text_ExplainXAccuracyDireHit::
     .string "DEPT. STORE!$"
 
 CeladonCity_Text_CitySign::
-    .string "CELADON CITY\n"
+    .string "Celadon City\n"
     .string "The City of Rainbow Dreams$"
 
 CeladonCity_Text_GymSign::
-    .string "CELADON CITY Pokémon GYM\n"
+    .string "Celadon City Pokémon GYM\n"
     .string "LEADER: ERIKA\l"
     .string "The Nature-Loving Princess!$"
 
@@ -210,7 +218,7 @@ Text_SoftboiledTaught::
 
 CeladonCity_Text_SomeoneStoleSilphScope::
     .string "Oh, what am I to do…\p"
-    .string "Someone stole our SILPH SCOPE.\p"
+    .string "Someone stole our Silph Scope.\p"
     .string "The thief came running this way,\n"
     .string "I'm sure of it.\p"
     .string "But I lost sight of him!\n"

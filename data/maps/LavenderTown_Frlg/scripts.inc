@@ -70,7 +70,7 @@ LavenderTown_Text_GhostsAppearedInTower::
     .string "Pokémon that the ROCKETS killed.$"
 
 LavenderTown_Text_TownSign::
-    .string "LAVENDER TOWN\n"
+    .string "Lavender Town\n"
     .string "The Noble Purple Town$"
 
 LavenderTown_Text_SilphScopeNotice::
@@ -79,10 +79,10 @@ LavenderTown_Text_SilphScopeNotice::
     .string "SILPH CO.$"
 
 LavenderTown_Text_VolunteerPokemonHouse::
-    .string "LAVENDER VOLUNTEER\n"
-    .string "Pokémon HOUSE$"
+    .string "Lavender Volunteer\n"
+    .string "Pokémon House$"
 
 LavenderTown_Text_PokemonTowerSign::
-    .string "Pokémon TOWER\n"
+    .string "Pokémon Tower\n"
     .string "Becalm the Spirits of Pokémon$"
 

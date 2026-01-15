@@ -19,7 +19,7 @@ Route11_EastEntrance_1F_Text_ManInLavenderRatesNames::
     .string "up good names for Pokémon?\p"
     .string "Especially if you've caught a\n"
     .string "whole bunch?\p"
-    .string "In LAVENDER TOWN, there's a man\n"
+    .string "In Lavender Town, there's a man\n"
     .string "who rates Pokémon nicknames.\p"
     .string "He can even help you rename your\n"
     .string "Pokémon, too.$"

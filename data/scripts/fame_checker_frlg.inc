@@ -46,7 +46,16 @@ Route4_EventScript_Boy::
 MtMoon_1F_EventScript_BaldingMan::
 	lock
 	faceplayer
+	goto_if_set FLAG_RECEIVED_MUSCLE_BAND, MtMoon_1F_Text_BrockHelpsExcavateFossils2
 	famechecker FAMECHECKER_BROCK, 4
+	msgbox MtMoon_1F_Text_BrockHelpsExcavateFossils
+	msgbox MtMoon_1F_Text_OhYouBeatBrock
+	giveitem ITEM_MUSCLE_BAND 
+	setflag FLAG_RECEIVED_MUSCLE_BAND
+	release
+	end
+
+MtMoon_1F_Text_BrockHelpsExcavateFossils2:
 	msgbox MtMoon_1F_Text_BrockHelpsExcavateFossils
 	release
 	end

@@ -61,7 +61,9 @@
     F(LOW_SWEEP) \
     F(THUNDER_PUNCH) \
     F(FIRE_PUNCH) \
-    F(ICE_PUNCH) 
+    F(ICE_PUNCH) \
+    F(DUAL_WINGBEAT) \
+    F(ROCK_SLIDE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

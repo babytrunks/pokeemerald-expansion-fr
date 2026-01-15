@@ -1797,11 +1797,11 @@
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0
 
 #define FLAG_HIDE_ROUTE2_TM_REST                                  0
-#define FLAG_HIDE_ROUTE2_PARALYZE_HEAL                          0
+#define FLAG_HIDE_ROUTE2_PARALYZE_THUNDER_STONE                          0
 #define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0
 #define FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES                      0
-#define FLAG_HIDE_VIRIDIAN_FOREST_MIRACLE_SEED                        0
-#define FLAG_FLAG_HIDE_MT_MOON_1F_GREAT_BALL                      0
+#define FLAG_HIDE_VIRIDIAN_FOREST_SILVER_POWDER                        0
+#define FLAG_FLAG_HIDE_MT_MOON_1F_SHELL_BELL                      0
 #define FLAG_HIDE_MT_MOON_1F_TM09                               0
 #define FLAG_HIDE_MT_MOON_1F_BERRY_JUICE                             0
 #define FLAG_HIDE_MT_MOON_1F_RARE_CANDY                         0
@@ -1905,11 +1905,11 @@
 #define FLAG_HIDE_VIRIDIAN_FOREST_RESIST_FEATHER                      0
 #define FLAG_HIDE_MT_MOON_B2F_HEALTH_FEATHER                            0
 #define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                          0
-#define FLAG_HIDE_ROUTE11_FIRE_STONE                              0
+#define FLAG_HIDE_ROUTE11_THUNDER_STONE                              0
 #define FLAG_HIDE_ROUTE9_LEAF_STONE                              0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0
 #define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0
-#define FLAG_HIDE_ROCK_TUNNEL_1F_ESCAPE_ROPE                    0
+#define FLAG_HIDE_ROCK_TUNNEL_1F_EVERSTONE                    0
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_REVIVE                        0
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_MAX_ETHER                     0
 #define FLAG_HIDE_SILPH_CO_8F_IRON                              0
@@ -1918,10 +1918,10 @@
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0
 #define FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE                          0
-#define FLAG_HIDE_ROUTE11_DUSK_BALL                            0
+#define FLAG_HIDE_ROUTE11_MIRACLE_SEED                            0
 #define FLAG_HIDE_ROUTE11_MUSCLE_FEATHER                             0
 #define FLAG_HIDE_POKEMON_TOWER_5F_CLEANSE_TAG                  0
-#define FLAG_HIDE_CELADON_CITY_ETHER                            0
+#define FLAG_HIDE_CELADON_CITY_DREAM_PATCH                            0
 #define FLAG_HIDE_ROCKET_HIDEOUT_B3F_BLACK_GLASSES              0
 #define FLAG_HIDE_SAFARI_ZONE_NORTH_QUICK_CLAW                  0
 #define FLAG_HIDE_SEAFOAM_ISLANDS_1F_ICE_HEAL                   0
@@ -2163,7 +2163,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE25_ETHER                                     0
 #define FLAG_HIDDEN_ITEM_ROUTE9_ETHER                                      0
 #define FLAG_HIDDEN_ITEM_UNUSED_0x07                                       0
-#define FLAG_HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_HYPER_POTION                  0
+#define FLAG_HIDDEN_ITEM_SSANNE_B1F_CORRIDOR_ABILITY_CAPSULE                  0
 #define FLAG_HIDDEN_ITEM_ROUTE10_SUPER_POTION                              0
 #define FLAG_HIDDEN_ITEM_ROUTE10_MAX_ETHER                                 0
 #define FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B1F_PP_UP                          0

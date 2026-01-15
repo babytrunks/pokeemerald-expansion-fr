@@ -1041,7 +1041,7 @@ We register the table for each form in `gSpeciesInfo`.
         ...
         .teachableLearnset = sPikachuTeachableLearnset,
 +       .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_RAICHU},
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_ABILITY_CAPSULE, SPECIES_RAICHU},
                                 {EVO_NONE, 0, SPECIES_RAICHU_ALOLAN}),
     },
 

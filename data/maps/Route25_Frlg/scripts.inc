@@ -189,12 +189,12 @@ Route25_Text_SeaCottageSign::
 
 Route25_Text_MistyHighHopesAboutThisPlace::
     .string "This cape is a famous date spot.\p"
-    .string "MISTY, the GYM LEADER, has high\n"
+    .string "Misty, the Gym Leader, has high\n"
     .string "hopes about this place.$"
 
 Route25_Text_AreYouHereAlone::
     .string "Hello, are you here alone?\p"
-    .string "If you're out at CERULEAN's cape…\n"
+    .string "If you're out at Cerulean's cape…\n"
     .string "Well, it should be as a couple.$"
 
 gText_bugsy_1::

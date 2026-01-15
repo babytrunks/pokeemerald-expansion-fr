@@ -4172,7 +4172,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Rock Slide"),
         .description = COMPOUND_STRING(
             "Large boulders are hurled.\n"
-            "May cause flinching."),
+            "20% chance to flinch."),
         .effect = EFFECT_HIT,
         .power = 75,
         .type = TYPE_ROCK,

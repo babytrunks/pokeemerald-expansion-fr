@@ -7,5 +7,5 @@ Route7_EventScript_UndergroundPathSign::
 
 Route7_Text_UndergroundPathSign::
     .string "Underground Path\n"
-    .string "CELADON CITY - LAVENDER TOWN$"
+    .string "Celadon City - Lavender Town$"
 

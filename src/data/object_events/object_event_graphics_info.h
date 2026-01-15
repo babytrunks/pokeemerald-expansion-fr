@@ -7527,7 +7527,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Burglar = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Electrician = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_PSYCHIC_M,
+    .paletteTag = OBJ_EVENT_PAL_TAG_ELECTRICIAN,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

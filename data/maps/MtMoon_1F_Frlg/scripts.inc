@@ -134,6 +134,11 @@ MtMoon_1F_Text_ZubatIsABloodsucker::
 
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
     .string "Hi, I'm excavating for fossils here\n"
-    .string "under MT. MOON.\p"
-    .string "Sometimes, BROCK of PEWTER GYM\n"
+    .string "under Mt. Moon.\p"
+    .string "Sometimes, Brock of Pewter Gym\n"
     .string "lends me a hand.$"
+
+MtMoon_1F_Text_OhYouBeatBrock::
+    .string ".{PAUSE 200}.{PAUSE 200}.Oh you beat him?\n"
+    .string "You must be strong, you could\l"
+    .string "probably use this.$"

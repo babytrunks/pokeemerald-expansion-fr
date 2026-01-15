@@ -1,9 +1,21 @@
+Route1_EventScript_ItemSilkScarf::
+	finditem ITEM_SILK_SCARF
+	end
+
+Route22_EventScript_ItemSharpBeak::
+	finditem ITEM_SHARP_BEAK
+	end
+
 Route2_EventScript_ItemTMRest::
 	finditem ITEM_TM_REST
 	end
 
-Route2_EventScript_ItemParalyzeHeal::
-	finditem ITEM_PARALYZE_HEAL
+Route2_EventScript_ItemAbilityCapsule::
+	finditem ITEM_ABILITY_CAPSULE
+	end
+
+Route3_EventScript_ItemCharcoal::
+	finditem ITEM_CHARCOAL
 	end
 
 ViridianForest_EventScript_ItemQuickBall::
@@ -14,12 +26,12 @@ ViridianForest_EventScript_ItemWiseGlasses::
 	finditem ITEM_WISE_GLASSES
 	end
 
-ViridianForest_EventScript_ItemMiracleSeed::
-	finditem ITEM_MIRACLE_SEED
+ViridianForest_EventScript_ItemSilverPowder::
+	finditem ITEM_SILVER_POWDER
 	end
 
-MtMoon_1F_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+MtMoon_1F_EventScript_ItemShellBell::
+	finditem ITEM_SHELL_BELL
 	end
 
 MtMoon_1F_EventScript_ItemTM09::
@@ -46,6 +58,10 @@ MtMoon_B2F_EventScript_ItemSoftSand::
 	finditem ITEM_SOFT_SAND
 	end
 
+Route24_EventScript_ItemPoisonBarb::
+	finditem ITEM_POISON_BARB
+	end
+
 MtMoon_B2F_EventScript_ItemTM46::
 	finditem ITEM_TM46
 	end
@@ -65,6 +81,11 @@ Route24_EventScript_ItemTMWaterPulse::
 Route25_EventScript_ItemTM43::
 	finditem ITEM_TM43
 	end
+
+Route5_EventScript_ItemTwistedSpoon::
+	finditem ITEM_TWISTED_SPOON
+	end
+
 
 Route6_EventScript_ItemTMVenoshock::
 	finditem ITEM_TM_VENOSHOCK
@@ -430,8 +451,8 @@ MtMoon_B2F_EventScript_ItemCleverFeather::
 	finditem ITEM_CLEVER_FEATHER
 	end
 
-Route11_EventScript_ItemFireStone::
-	finditem ITEM_FIRE_STONE
+Route11_EventScript_ItemThunderStone::
+	finditem ITEM_THUNDER_STONE
 	end
 
 Route10_EventScript_ItemTMFirePunch::
@@ -446,6 +467,10 @@ Route9_EventScript_ItemLeafStone::
 	finditem ITEM_LEAF_STONE
 	end
 
+Route8_EventScript_ItemTMDualWingbeat::
+	finditem ITEM_TM_DUAL_WINGBEAT
+	end
+
 RockTunnel_1F_EventScript_ItemRepel::
 	finditem ITEM_REPEL
 	end
@@ -454,8 +479,8 @@ RockTunnel_1F_EventScript_ItemPearl::
 	finditem ITEM_PEARL
 	end
 
-RockTunnel_1F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE
+RockTunnel_1F_EventScript_ItemEverstone::
+	finditem ITEM_EVERSTONE
 	end
 
 RockTunnel_B1F_EventScript_ItemRevive::
@@ -490,20 +515,24 @@ ViridianCity_EventScript_ItemAbilityCapsule::
 	finditem ITEM_ABILITY_CAPSULE
 	end
 
-Route11_EventScript_ItemDuskBall::
-	finditem ITEM_DUSK_BALL
+Route11_EventScript_ItemMiracleSeed::
+	finditem ITEM_MIRACLE_SEED
 	end
 
 Route11_EventScript_ItemMuscleFeather::
 	finditem ITEM_MUSCLE_FEATHER
 	end
 
+RockTunnel_B1F_EventScript_ItemTMRockSlide:
+	finditem ITEM_TM_ROCK_SLIDE
+	end
+
 PokemonTower_5F_EventScript_ItemCleanseTag::
 	finditem ITEM_CLEANSE_TAG
 	end
 
-CeladonCity_EventScript_ItemEther::
-	finditem ITEM_ETHER
+CeladonCity_EventScript_ItemDreamPatch::
+	finditem ITEM_DREAM_PATCH
 	end
 
 RocketHideout_B3F_EventScript_ItemBlackGlasses::

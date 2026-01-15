@@ -121,8 +121,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ViridianForest_EventScript_ItemMiracleSeed",
-      "flag": "FLAG_HIDE_VIRIDIAN_FOREST_MIRACLE_SEED"
+      "script": "ViridianForest_EventScript_ItemSilverPowder",
+      "flag": "FLAG_HIDE_VIRIDIAN_FOREST_SILVER_POWDER"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER_FRLG",

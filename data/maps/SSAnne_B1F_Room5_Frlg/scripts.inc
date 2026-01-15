@@ -9,19 +9,19 @@ SSAnne_B1F_Room5_EventScript_Machoke::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_GURDURR, CRY_MODE_NORMAL
+	playmoncry SPECIES_POLIWHIRL, CRY_MODE_NORMAL
 	msgbox SSAnne_B1F_Room5_Text_Machoke
 	waitmoncry
 	release
 	end
 
 SSAnne_B1F_Room5_Text_MachokeHasStrengthToMoveRocks::
-    .string "My buddy Gurdurr is super strong!\p"
+    .string "My buddy Poliwhirl is super strong!\p"
     .string "He has enough Strength to move\n"
     .string "big rocks!\p"
-	.string "Imagine what he could do with\n"
-	.string "a Link Cable!$"
+	.string "Imagine what he could do when\n"
+	.string "he's evolved!$"
 
 SSAnne_B1F_Room5_Text_Machoke::
-    .string "Gurdurr: Gwoh! Goggoh!$"
+    .string "Poliwhirl: Poli!$"
 
