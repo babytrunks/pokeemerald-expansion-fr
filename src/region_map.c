@@ -109,7 +109,7 @@ static void VBlankCB_FlyMap(void);
 static void CB2_FlyMap(void);
 static void SetFlyMapCallback(void callback(void));
 static void DrawFlyDestTextWindow(void);
-static void LoadFlyDestIcons(void);
+// void LoadFlyDestIcons(void);
 static void CreateFlyDestIcons(void);
 static void TryCreateRedOutlineFlyDestIcons(void);
 static void SpriteCB_FlyDestIcon(struct Sprite *sprite);
@@ -2107,8 +2107,7 @@ static void DrawFlyDestTextWindow(void)
     }
 }
 
-
-static void LoadFlyDestIcons(void)
+void LoadFlyDestIcons(void)
 {
     struct SpriteSheet sheet;
 

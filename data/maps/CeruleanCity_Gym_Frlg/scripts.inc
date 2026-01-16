@@ -5,8 +5,8 @@ CeruleanCity_Gym_EventScript_Misty::
     setspeaker SP_NAME_MISTY
 	famechecker FAMECHECKER_MISTY, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyIntro, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, NO_MUSIC
-	setspeaker SP_NAME_MISTY
     goto_if_unset FLAG_BADGE02_GET, CeruleanCity_Gym_EventScript_GiveTM54
+    setspeaker SP_NAME_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainTM54
 	release
 	end
@@ -21,14 +21,11 @@ CeruleanCity_Gym_EventScript_MistyDefeated::
 	end
 
 CeruleanCity_Gym_EventScript_GiveTM54::
+    setspeaker SP_NAME_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainCascadeBadge
 	giveitem_msg CeruleanCity_Gym_Text_ReceivedTM54FromMisty, ITEM_TM_FLIP_TURN
+    setspeaker SP_NAME_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainTM54
-	release
-	end
-
-CeruleanCity_Gym_EventScript_NoRoomForTM54::
-	msgbox CeruleanCity_Gym_Text_BetterMakeRoomForThis
 	release
 	end
 

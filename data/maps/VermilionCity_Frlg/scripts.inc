@@ -302,7 +302,7 @@ VermilionCity_Text_SnorlaxBlockingRoute12::
     .string "NOTICE!\p"
     .string "Route 12 may be blocked off by a\n"
     .string "sleeping Pokémon.\p"
-    .string "Detour through ROCK TUNNEL to\n"
+    .string "Detour through Rock Tunnel to\n"
     .string "Lavender Town.\p"
     .string "VERMILION POLICE$"
 
@@ -312,7 +312,7 @@ VermilionCity_Text_PokemonFanClubSign::
 
 VermilionCity_Text_GymSign::
     .string "Vermilion City Pokémon GYM\n"
-    .string "LEADER: LT. SURGE\l"
+    .string "LEADER: Lt. Surge\l"
     .string "The Lightning American!$"
 
 VermilionCity_Text_VermilionHarbor::

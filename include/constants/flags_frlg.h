@@ -352,12 +352,12 @@
 #define FLAG_HIDE_ROCKET_HIDEOUT_B4F_MAX_ETHER                  0x175
 #define FLAG_HIDE_ROCKET_HIDEOUT_B4F_CALCIUM                    0x176
 #define FLAG_HIDE_POKEMON_TOWER_3F_ESCAPE_ROPE                  0x177
-#define FLAG_HIDE_POKEMON_TOWER_4F_ELIXIR                       0x178
-#define FLAG_HIDE_POKEMON_TOWER_4F_AWAKENING                    0x179
-#define FLAG_HIDE_POKEMON_TOWER_4F_GREAT_BALL                   0x17A
-#define FLAG_HIDE_POKEMON_TOWER_5F_NUGGET                       0x17B
+#define FLAG_HIDE_POKEMON_TOWER_4F_METRONOME                       0x178
+#define FLAG_HIDE_POKEMON_TOWER_4F_SWIFT_FEATHER                    0x179
+#define FLAG_HIDE_POKEMON_TOWER_4F_WHITE_HERB                   0x17A
+#define FLAG_HIDE_POKEMON_TOWER_5F_IRON                       0x17B
 #define FLAG_HIDE_POKEMON_TOWER_6F_RARE_CANDY                   0x17C
-#define FLAG_HIDE_POKEMON_TOWER_6F_X_ACCURACY                   0x17D
+#define FLAG_HIDE_POKEMON_TOWER_6F_SABLENITE                   0x17D
 #define FLAG_HIDE_ROUTE12_TM48                                  0x17E
 #define FLAG_HIDE_ROUTE12_IRON                                  0x17F
 #define FLAG_HIDE_ROUTE15_TM18                                  0x180
@@ -427,8 +427,8 @@
 #define FLAG_HIDE_MT_MOON_B2F_CLEVER_FEATHER                      0x1C0
 #define FLAG_HIDE_ROUTE11_THUNDER_STONE                              0x1C1
 #define FLAG_HIDE_ROUTE9_LEAF_STONE                              0x1C2
-#define FLAG_HIDE_ROCK_TUNNEL_1F_REPEL                          0x1C3
-#define FLAG_HIDE_ROCK_TUNNEL_1F_PEARL                          0x1C4
+#define FLAG_HIDE_ROCK_TUNNEL_1F_RED_CARD                          0x1C3
+#define FLAG_HIDE_ROCK_TUNNEL_1F_NEVERMELTICE                          0x1C4
 #define FLAG_HIDE_ROCK_TUNNEL_1F_EVERSTONE                    0x1C5
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_REVIVE                        0x1C6
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_MAX_ETHER                     0x1C7
@@ -648,7 +648,7 @@
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298
 #define FLAG_0x299                                       0x299
 #define FLAG_GOT_TM04_FROM_SABRINA                       0x29A
-#define FLAG_GOT_FAME_CHECKER                            0x29B // UNUSED
+#define FLAG_HIDE_ROUTE8_LAX_MINT                        0x29B // UNUSED
 #define FLAG_GOT_RECORD_SETTING_MAGIKARP                 0x29C
 #define FLAG_TWO_ISLAND_SHOP_INTRODUCED                  0x29D
 #define FLAG_TWO_ISLAND_SHOP_EXPANDED_1                  0x29E

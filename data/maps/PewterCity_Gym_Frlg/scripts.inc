@@ -32,6 +32,7 @@ PewterCity_Gym_EventScript_Brock::
 	famechecker FAMECHECKER_BROCK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_BROCK, PewterCity_Gym_Text_BrockIntro, PewterCity_Gym_Text_BrockDefeat, PewterCity_Gym_EventScript_DefeatedBrock, NO_MUSIC
 	goto_if_unset FLAG_BADGE01_GET, PewterCity_Gym_EventScript_GiveTM39
+    setspeaker SP_NAME_BROCK
 	msgbox PewterCity_Gym_Text_BrockPostBattle
 	release
 	end
@@ -48,8 +49,10 @@ PewterCity_Gym_EventScript_DefeatedBrock::
 	end
 
 PewterCity_Gym_EventScript_GiveTM39::
+    setspeaker SP_NAME_BROCK
 	msgbox PewterCity_Gym_Text_TakeThisWithYou
 	giveitem_msg PewterCity_Gym_Text_ReceivedTM39FromBrock, ITEM_TM39
+    setspeaker SP_NAME_BROCK
 	msgbox PewterCity_Gym_Text_ExplainTM39
 	release
 	end

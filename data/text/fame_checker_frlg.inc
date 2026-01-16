@@ -154,7 +154,7 @@ gFameCheckerFlavorText_Misty5:: @ 0x81ADCEB
 gFameCheckerFlavorText_LtSurge0:: @ 0x81ADD3C
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
 	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Vermilion City Pokémon GYM\n"
-	.string "LEADER: LT. SURGE\l"
+	.string "LEADER: Lt. Surge\l"
 	.string "The Lightning American!$"
 
 gFameCheckerFlavorText_LtSurge1:: @ 0x81ADDA7
@@ -164,24 +164,24 @@ gFameCheckerFlavorText_LtSurge1:: @ 0x81ADDA7
 
 gFameCheckerFlavorText_LtSurge2:: @ 0x81ADE0B
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What is this person like?\p"
-	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}When I was in the Army, LT. SURGE\n"
+	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}When I was in the Army, Lt. Surge\n"
 	.string "was my strict CO.\p"
 	.string "He was a hard taskmaster.$"
 
 gFameCheckerFlavorText_LtSurge3:: @ 0x81ADE82
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What is this person like?\p"
-	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}LT. SURGE was always famous for\n"
+	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Lt. Surge was always famous for\n"
 	.string "his cautious nature in the Army.$"
 
 gFameCheckerFlavorText_LtSurge4:: @ 0x81ADEEC
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What is this person like?\p"
-	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}LT. SURGE installed the traps in\n"
+	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Lt. Surge installed the traps in\n"
 	.string "the GYM himself.\p"
 	.string "He set up double locks everywhere.$"
 
 gFameCheckerFlavorText_LtSurge5:: @ 0x81ADF6A
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}There's a rumor…\p"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}LT. SURGE is rumored to have been\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Lt. Surge is rumored to have been\n"
 	.string "a pilot while home in America.\p"
 	.string "He used the electricity generated\n"
 	.string "by Pokémon to power his plane.$"
@@ -264,14 +264,14 @@ gFameCheckerFlavorText_Koga5:: @ 0x81AE51B
 
 gFameCheckerFlavorText_Sabrina0:: @ 0x81AE5E8
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}SAFFRON CITY Pokémon GYM\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Saffron City Pokémon GYM\n"
 	.string "LEADER: SABRINA\l"
 	.string "The Master of PSYCHIC Pokémon!$"
 
 gFameCheckerFlavorText_Sabrina1:: @ 0x81AE656
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Favorite kind of Pokémon?\p"
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}You know about a girl GYM LEADER\n"
-	.string "in SAFFRON CITY?\p"
+	.string "in Saffron City?\p"
 	.string "She uses PSYCHIC-type Pokémon,\n"
 	.string "right?$"
 
@@ -659,10 +659,10 @@ gFameCheckerPersonQuote_Misty:: @ 0x81B03BF
 	.string "the road and travel.$"
 
 gFameCheckerPersonName_LtSurge:: @ 0x81B0446
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}LT. SURGE$"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Lt. Surge$"
 
 gFameCheckerPersonQuote_LtSurge:: @ 0x81B0456
-	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}From: LT. SURGE\n"
+	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}From: Lt. Surge\n"
 	.string "To: {PLAYER}\p"
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Hey, kid!\n"
 	.string "You electrified me in our battle!\p"
@@ -924,7 +924,7 @@ gFameCheckerFlavorTextOriginLocation_Koga5::
 	.string "SAFARI ZONE$"
 
 gFameCheckerFlavorTextOriginLocation_Sabrina0::
-	.string "SAFFRON CITY$"
+	.string "Saffron City$"
 
 gFameCheckerFlavorTextOriginLocation_Sabrina1::
 	.string "THREE ISLAND$"
@@ -936,7 +936,7 @@ gFameCheckerFlavorTextOriginLocation_Sabrina3::
 	.string "SAFFRON GYM$"
 
 gFameCheckerFlavorTextOriginLocation_Sabrina4::
-	.string "SAFFRON CITY$"
+	.string "Saffron City$"
 
 gFameCheckerFlavorTextOriginLocation_Sabrina5::
 	.string "SAFFRON GYM$"
@@ -984,7 +984,7 @@ gFameCheckerFlavorTextOriginLocation_Bruno1::
 	.string "Pokémon LEAGUE$"
 
 gFameCheckerFlavorTextOriginLocation_Bruno2::
-	.string "SAFFRON CITY$"
+	.string "Saffron City$"
 
 gFameCheckerFlavorTextOriginLocation_Bruno3::
 	.string "EMBER SPA$"
@@ -1020,7 +1020,7 @@ gFameCheckerFlavorTextOriginLocation_Lance1::
 	.string "Pokémon LEAGUE$"
 
 gFameCheckerFlavorTextOriginLocation_Lance2::
-	.string "SAFFRON CITY$"
+	.string "Saffron City$"
 
 gFameCheckerFlavorTextOriginLocation_Lance3::
 	.string "CELADON DEPT.$"
@@ -1161,7 +1161,7 @@ gFameCheckerFlavorTextOriginObjectName_LtSurge0::
 	.string "SIGN$"
 
 gFameCheckerFlavorTextOriginObjectName_LtSurge1::
-	.string "LT. SURGE$"
+	.string "Lt. Surge$"
 
 gFameCheckerFlavorTextOriginObjectName_LtSurge2::
 	.string "TUCKER$"
@@ -1390,8 +1390,8 @@ PokemonJournal_Text_SpecialFeatureMisty::
 PokemonJournal_Text_SpecialFeatureLtSurge::
 	.string "Pokémon JOURNAL\p"
 	.string "Special Feature: VERMILION GYM\n"
-	.string "LEADER LT. SURGE!\p"
-	.string "LT. SURGE is rumored to have been\n"
+	.string "LEADER Lt. Surge!\p"
+	.string "Lt. Surge is rumored to have been\n"
 	.string "a pilot while home in America.\p"
 	.string "He used the electricity generated\n"
 	.string "by Pokémon to power his plane.$"

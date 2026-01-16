@@ -133,6 +133,6 @@ Route11_EastEntrance_2F_Text_RockTunnelGoodRouteToLavender::
     .string "to show…\p"
     .string "To get to Lavender Town from\n"
     .string "Cerulean City…\p"
-    .string "ROCK TUNNEL appears to be a good\n"
+    .string "Rock Tunnel appears to be a good\n"
     .string "route to take.$"
 

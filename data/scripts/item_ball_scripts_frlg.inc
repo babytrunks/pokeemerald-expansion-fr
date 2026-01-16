@@ -167,32 +167,32 @@ RocketHideout_B4F_EventScript_ItemCalcium::
 	finditem ITEM_CALCIUM
 	end
 
-PokemonTower_3F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE
+PokemonTower_3F_EventScript_ItemScopeLens::
+	finditem ITEM_SPELL_TAG
 	end
 
-PokemonTower_4F_EventScript_ItemElixir::
-	finditem ITEM_ELIXIR
+PokemonTower_4F_EventScript_ItemMetronome::
+	finditem ITEM_METRONOME
 	end
 
-PokemonTower_4F_EventScript_ItemAwakening::
-	finditem ITEM_AWAKENING
+PokemonTower_4F_EventScript_ItemSwiftFeather::
+	finditem ITEM_SWIFT_FEATHER
 	end
 
-PokemonTower_4F_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+PokemonTower_4F_EventScript_ItemWhiteHerb::
+	finditem ITEM_WHITE_HERB
 	end
 
-PokemonTower_5F_EventScript_ItemNugget::
-	finditem ITEM_NUGGET
+PokemonTower_5F_EventScript_ItemIron::
+	finditem ITEM_IRON
 	end
 
 PokemonTower_6F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-PokemonTower_6F_EventScript_ItemXAccuracy::
-	finditem ITEM_X_ACCURACY
+PokemonTower_6F_EventScript_ItemSablenite::
+	finditem ITEM_SABLENITE
 	end
 
 Route12_EventScript_ItemTM48::
@@ -471,12 +471,16 @@ Route8_EventScript_ItemTMDualWingbeat::
 	finditem ITEM_TM_DUAL_WINGBEAT
 	end
 
-RockTunnel_1F_EventScript_ItemRepel::
-	finditem ITEM_REPEL
+Route8_EventScript_ItemLaxMint::
+	finditem ITEM_LAX_MINT
 	end
 
-RockTunnel_1F_EventScript_ItemPearl::
-	finditem ITEM_PEARL
+RockTunnel_1F_EventScript_ItemRedCard::
+	finditem ITEM_RED_CARD
+	end
+
+RockTunnel_1F_EventScript_ItemNeverMeltIce::
+	finditem ITEM_NEVER_MELT_ICE
 	end
 
 RockTunnel_1F_EventScript_ItemEverstone::
@@ -523,15 +527,19 @@ Route11_EventScript_ItemMuscleFeather::
 	finditem ITEM_MUSCLE_FEATHER
 	end
 
-RockTunnel_B1F_EventScript_ItemTMRockSlide:
+RockTunnel_B1F_EventScript_ItemTMRockSlide::
 	finditem ITEM_TM_ROCK_SLIDE
 	end
 
-PokemonTower_5F_EventScript_ItemCleanseTag::
-	finditem ITEM_CLEANSE_TAG
+PokemonTower_5F_EventScript_ItemSpellTag::
+	finditem ITEM_SPELL_TAG
 	end
 
 CeladonCity_EventScript_ItemDreamPatch::
+	finditem ITEM_DREAM_PATCH
+	end
+
+CeladonCity_EventScript_ItemScovillainite::
 	finditem ITEM_DREAM_PATCH
 	end
 

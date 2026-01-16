@@ -122,7 +122,7 @@ Route9_Text_ChrisRematchIntro::
 	.string "those good-looking Pokémon.$"
 
 Route9_Text_DrewRematchIntro::
-	.string "I'm taking ROCK TUNNEL to go to\n"
+	.string "I'm taking Rock Tunnel to go to\n"
 	.string "LAVENDER…\p"
 	.string "But I keep getting stopped by\n"
 	.string "everyone along the way…$"

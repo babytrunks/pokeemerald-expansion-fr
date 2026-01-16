@@ -1260,15 +1260,15 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
 Gloom
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Shiinotic
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+Shiinotic
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
 Swadloon
-Level: 25
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_CAITLIN ===
@@ -1296,17 +1296,17 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Spinda @ Sitrus Berry
 Nature: Jolly
 Ability: Contrary
-Level: 30
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 108 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 
 Sneasel-Hisui @ Eviolite
 Nature: Bashful
 Ability: Inner Focus
-Level: 29
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 108 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 
 Liepard @ Focus Sash
@@ -1314,7 +1314,7 @@ Nature: Bashful
 Ability: Prankster
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 
 
@@ -1332,7 +1332,7 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Furret
-Level: 29
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_CAROL ===
@@ -1850,11 +1850,11 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
 Larvitar
-Level: 27
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Carkol
-Level: 28
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 
@@ -7399,7 +7399,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Recover
 
 === TRAINER_LEADER_LT_SURGE ===
-Name: LT. SURGE
+Name: Lt. Surge
 Class: Leader Frlg
 Pic: Leader Lt Surge Frlg
 Items: Mega Ring
@@ -7465,37 +7465,70 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Hidden Power
 
 === TRAINER_LEADER_ERIKA ===
-Name: ERIKA
+Name: Erika
 Class: Leader Frlg
 Pic: Leader Erika Frlg
+Items: Mega Ring
 Gender: Male
 Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Green
 
-Victreebel
-Level: 29
+Rillaboom @ Terrain Extender
+Nature: Jolly
+Ability: Grassy Surge
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Stun Spore
-- Acid
-- Poison Powder
+EVs: 0 HP / 216 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Grassy Glide
+- U-turn
+- High Horsepower
+- Drain Punch
+
+Meowscarada @ Focus Sash
+Nature: Jolly
+Ability: Protean
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+- Flower Trick
+- Knock Off
+- U-turn
+- Triple Axel
+
+Victreebel @ Victreebelite
+Nature: Modest
+Ability: Chlorophyll
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 108 HP / 0 Atk / 0 Def / 108 SpA / 0 SpD / 0 Spe
 - Giga Drain
-
-Tangela
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Poison Powder
-- Constrict
-- Ingrain
-- Giga Drain
-
-Vileplume
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sludge Bomb
 - Sleep Powder
-- Acid
-- Stun Spore
+- Clear Smog
+
+Meganium @ Grassy Seed
+Nature: Modest
+Ability: Triage
+Level: 35
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 108 HP / 0 Atk / 0 Def / 108 SpA / 0 SpD / 0 Spe
+- Ancient Power
 - Giga Drain
+- Dazzling Gleam
+- Hidden Power 
+
+Electrode-Hisui @ Life Orb
+Nature: Naive
+Ability: Reckless
+Level: 35
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 216 SpA / 0 SpD / 0 Spe
+- Thunderbolt
+- Chloroblast
+- Hidden Power 
+- Explosion
 
 === TRAINER_LEADER_KOGA ===
 Name: KOGA
@@ -8533,11 +8566,11 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
 Pignite
-Level: 26
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Stunfisk-Galar
-Level: 25
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_ALMA ===
@@ -12986,7 +13019,7 @@ Mugshot: Blue
 Rufflet @ Berry Juice
 Nature: Bashful
 Ability: Hustle
-Level: 11
+Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aerial Ace
@@ -13004,16 +13037,16 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Sleep Talk
 - Roost
 
-Flittle @ Eviolite
-Nature: Bold
-Ability: Speed Boost
+Pidgeotto @ Eviolite
+Nature: Bashful
+Ability: Frisk
 Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Disarming Voice
+- Aerial Ace
+- Quick Attack
 - Roost
-- Psybeam
-- Calm Mind
+- Steel Wing
 
 
 === TRAINER_BUGSY ===

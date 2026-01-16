@@ -220,14 +220,6 @@ EventScript_LanceUnused::
 	release
 	end
 
-SaffronCity_EventScript_BattleGirlUnused::
-	lock
-	faceplayer
-	famechecker FAMECHECKER_LANCE, 1
-	msgbox SaffronCity_Text_HowCanClubNotRecognizeLance
-	release
-	end
-
 SaffronCity_EventScript_BattleGirl::
 	lock
 	faceplayer
