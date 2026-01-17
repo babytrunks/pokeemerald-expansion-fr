@@ -220,7 +220,7 @@
 #define TRAINER_BIRD_KEEPER_MITCH                  214
 #define TRAINER_BIRD_KEEPER_BECK                   215
 #define TRAINER_BIRD_KEEPER_MARLON                 216
-#define TRAINER_BLACK_BELT_KOICHI                  217
+#define TRAINER_BLACK_BELT_CHUCK                  217
 #define TRAINER_BLACK_BELT_MIKE                    218
 #define TRAINER_BLACK_BELT_HIDEKI                  219
 #define TRAINER_BLACK_BELT_AARON                   220

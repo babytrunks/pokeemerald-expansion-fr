@@ -9,7 +9,9 @@ CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall::
 	lock
 	faceplayer
 	setvar VAR_TEMP_1, SPECIES_EEVEE
+	setflag FLAG_FORCE_SHINY
 	givemon SPECIES_EEVEE, 25
+	clearflag FLAG_FORCE_SHINY
 	goto_if_eq VAR_RESULT, 0, CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveeParty
 	goto_if_eq VAR_RESULT, 1, CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveePC
 	goto_if_eq VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon
@@ -107,7 +109,7 @@ CeladonCity_Condominiums_RoofRoom_Text_TheresNothingIDontKnow::
     .string "There is nothing that I don't know,\n"
     .string "like I wrote on the blackboard.\p"
     .string "I know about the world of Pokémon\n"
-    .string "in your GAME BOY ADVANCE!\p"
+    .string "in your Game Boy Advance!\p"
     .string "Get together with your friends and\n"
     .string "enjoy trading Pokémon!$"
 

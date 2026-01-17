@@ -430,8 +430,8 @@
 #define FLAG_HIDE_ROCK_TUNNEL_1F_RED_CARD                          0x1C3
 #define FLAG_HIDE_ROCK_TUNNEL_1F_NEVERMELTICE                          0x1C4
 #define FLAG_HIDE_ROCK_TUNNEL_1F_EVERSTONE                    0x1C5
-#define FLAG_HIDE_ROCK_TUNNEL_B1F_REVIVE                        0x1C6
-#define FLAG_HIDE_ROCK_TUNNEL_B1F_MAX_ETHER                     0x1C7
+#define FLAG_HIDE_ROCK_TUNNEL_B1F_CLEVER_FEATHER                        0x1C6
+#define FLAG_HIDE_ROCK_TUNNEL_B1F_GENIUS_FEATHER                     0x1C7
 #define FLAG_HIDE_SILPH_CO_8F_IRON                              0x1C8
 #define FLAG_HIDE_SILPH_CO_11F_ZINC                             0x1C9
 #define FLAG_HIDE_POKEMON_MANSION_1F_PROTEIN                    0x1CA

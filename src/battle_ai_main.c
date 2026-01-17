@@ -3481,7 +3481,7 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 {
                     if (moveTarget == MOVE_TARGET_FOES_AND_ALLY)
                     {
-                        ADJUST_SCORE(DECENT_EFFECT);
+                        ADJUST_SCORE(GOOD_EFFECT);
                     }
 
                     if (GetMoveStrikeCount(move) > 1 && effect != EFFECT_DRAGON_DARTS)

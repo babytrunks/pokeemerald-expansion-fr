@@ -61,6 +61,7 @@ CeladonCity_EventScript_RocketGrunt2::
 
 CeladonCity_EventScript_RocketGrunt3::
 	msgbox CeladonCity_Text_RocketWhichWay
+    release
 	end
 
 CeladonCity_EventScript_Boy::
@@ -136,8 +137,8 @@ CeladonCity_Text_Poliwrath::
     .string "POLIWRATH: Ribi ribit!$"
 
 CeladonCity_Text_RocketWhichWay::
-    .string "Hmm… Which way was it to\n"
-    .string "the hideout again…$"
+    .string "Hmm… Which way was it to the hideout\n"
+    .string "again…$"
 
 CeladonCity_Text_GetLostOrIllPunchYou::
     .string "What are you staring at?\n"

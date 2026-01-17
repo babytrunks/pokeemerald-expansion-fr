@@ -7565,7 +7565,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juggler = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_PSYCHIC_M,
+    .paletteTag = OBJ_EVENT_PAL_TAG_POKEMANIAC,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7584,7 +7584,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tamer = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_PSYCHIC_M,
+    .paletteTag = OBJ_EVENT_PAL_TAG_TAMER,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

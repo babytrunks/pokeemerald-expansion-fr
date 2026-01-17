@@ -1780,7 +1780,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_DAUNTLESS_SHIELD] =
         {
             .name = _("Dauntless Shield"),
-            .description = COMPOUND_STRING("Boosts the Pokémon’s Defense stat the first time the Pokémon enters a battle."),
+            .description = COMPOUND_STRING("Boosts Defense on entry."),
             .aiRating = 3,
         },
 

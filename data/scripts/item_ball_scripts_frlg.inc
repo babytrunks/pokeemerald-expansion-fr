@@ -487,12 +487,12 @@ RockTunnel_1F_EventScript_ItemEverstone::
 	finditem ITEM_EVERSTONE
 	end
 
-RockTunnel_B1F_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
+RockTunnel_B1F_EventScript_ItemCleverFeather::
+	finditem ITEM_CLEVER_FEATHER
 	end
 
-RockTunnel_B1F_EventScript_ItemMaxEther::
-	finditem ITEM_MAX_ETHER
+RockTunnel_B1F_EventScript_ItemGeniusFeather::
+	finditem ITEM_GENIUS_FEATHER
 	end
 
 SilphCo_8F_EventScript_ItemIron::

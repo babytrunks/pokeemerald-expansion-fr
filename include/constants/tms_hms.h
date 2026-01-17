@@ -63,8 +63,9 @@
     F(FIRE_PUNCH) \
     F(ICE_PUNCH) \
     F(DUAL_WINGBEAT) \
-    F(ROCK_SLIDE)
-
+    F(ROCK_SLIDE) \
+    F(DRAIN_PUNCH) 
+    
 #define FOREACH_HM(F) \
     F(CUT) \
     F(FLY) \
