@@ -3383,6 +3383,64 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sScovillainLevelUpLearnset,
         .teachableLearnset = sScovillainTeachableLearnset,
     },
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_SCOVILLAIN_MEGA] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 138,
+        .baseDefense   = 85,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 138,
+        .baseSpDefense = 85,
+        .types = MON_TYPES(TYPE_GRASS, TYPE_FIRE),
+        .catchRate = 75,
+        .expYield = 170,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_CHLOROPHYLL, ABILITY_INSOMNIA, ABILITY_MOODY },
+        .bodyColor = BODY_COLOR_GREEN,
+        .speciesName = _("Scovillain"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_SCOVILLAIN_MEGA,
+    #else
+        .cryId = CRY_SCOVILLAIN,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_SCOVILLAIN,
+        .categoryName = _("Spicy Pepper"),
+        .height = 12,
+        .weight = 220,
+        .description = COMPOUND_STRING(
+            "Mega Evolution has dialed up this\n"
+            "Pokémon's spiciness. It swings its\n"
+            "“necktie” around to wallop its foes."),
+        //.frontPic = gMonBackPic_CircledQuestionMark,
+        //.frontPicSize = MON_COORDS_SIZE(40, 40),
+        //.frontPicYOffset = 12,
+        //.frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        //.backPic = gMonBackPic_CircledQuestionMark,
+        //.backPicSize = MON_COORDS_SIZE(40, 40),
+        //.backPicYOffset = 12,
+        //.backAnimId = BACK_ANIM_NONE,
+        //.palette = gMonPalette_CircledQuestionMark,
+        //.shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        //.iconSprite = gMonIcon_QuestionMark,
+        //.iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Scovillain)
+        //SHADOW(-1, 0, SHADOW_SIZE_M)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sScovillainLevelUpLearnset,
+        .teachableLearnset = sScovillainTeachableLearnset,
+        .formSpeciesIdTable = sScovillainFormSpeciesIdTable,
+        .formChangeTable = sScovillainFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CAPSAKID
 
 #if P_FAMILY_RELLOR
@@ -4657,22 +4715,23 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             "separated from its main body-rotate\n"
             "around it to provide defense while\n"
             "cattering poisonous fragments."),
-        //.frontPic = gMonBackPic_CircledQuestionMark,
-        //.frontPicSize = MON_COORDS_SIZE(40, 40),
-        //.frontPicYOffset = 12,
-        //.frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        .frontPic = gMonFrontPic_GlimmoraMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_TwoFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        //.backPic = gMonBackPic_CircledQuestionMark,
-        //.backPicSize = MON_COORDS_SIZE(40, 40),
-        //.backPicYOffset = 12,
+        .enemyMonElevation = 7,
+        .backPic = gMonBackPic_GlimmoraMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 12,
         //.backAnimId = BACK_ANIM_NONE,
-        //.palette = gMonPalette_CircledQuestionMark,
-        //.shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .palette = gMonPalette_GlimmoraMega,
+        .shinyPalette = gMonShinyPalette_GlimmoraMega,
         .iconSprite = gMonIcon_GlimmoraMega,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Glimmora)
-        //SHADOW(-1, 0, SHADOW_SIZE_M)
+        SHADOW(1, 18, SHADOW_SIZE_M)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sGlimmoraLevelUpLearnset,
         .teachableLearnset = sGlimmoraTeachableLearnset,
