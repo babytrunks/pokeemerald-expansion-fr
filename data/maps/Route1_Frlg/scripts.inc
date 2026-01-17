@@ -4,12 +4,12 @@ Route1_Frlg_MapScripts::
 Route1_EventScript_MartClerk::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_PREMIER_BALL_ON_ROUTE_1, Route1_EventScript_AlreadyGotPotion
+	goto_if_set FLAG_GOT_QUICK_BALL_ON_ROUTE_1, Route1_EventScript_AlreadyGotPotion
 	msgbox Route1_Text_WorkAtPokeMartTakeSample
 	textcolor NPC_TEXT_COLOR_NEUTRAL
-	giveitem ITEM_PREMIER_BALL
+	giveitem ITEM_QUICK_BALL 10
 	call EventScript_RestorePrevTextColor
-	setflag FLAG_GOT_PREMIER_BALL_ON_ROUTE_1
+	setflag FLAG_GOT_QUICK_BALL_ON_ROUTE_1
 	release
 	end
 
@@ -33,11 +33,11 @@ Route1_Text_WorkAtPokeMartTakeSample::
     .string "selling all sorts of items.\p"
     .string "Please, visit us in Viridian City.\p"
     .string "Here, check out one of our special\n"
-	.string "items.$"
+	.string "upcoming items.$"
 
 Route1_Text_ComeSeeUsIfYouNeedPokeBalls::
-    .string "Please come see us if you need\n"
-    .string "Poké Balls for catching Pokémon.$"
+    .string "Please come see us if you're ever\n"
+    .string "in need of balls.$"
 
 Route1_Text_CanJumpFromLedges::
     .string "See those ledges along the road?\p"

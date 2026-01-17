@@ -3463,9 +3463,9 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 if (isFriendlyFireOK && (moveType == TYPE_WATER || moveType == TYPE_FIRE)
                     && ShouldTriggerAbility(battlerAtk, battlerAtkPartner, atkPartnerAbility))
                 {
-                    if (moveTarget == MOVE_TARGET_FOES_AND_ALLY)
+                    if (moveTarget == MOVE_TARGET_FOES_AND_ALLY) //changed for weavile double in celadon
                     {
-                        ADJUST_SCORE(DECENT_EFFECT);
+                        ADJUST_SCORE(BEST_EFFECT);
                     }
                     RETURN_SCORE_PLUS(WEAK_EFFECT);
                 }

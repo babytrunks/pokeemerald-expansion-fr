@@ -3733,13 +3733,20 @@ u32 ShouldTryToFlinch(u32 battlerAtk, u32 battlerDef, enum Ability atkAbility, e
     {
         return 0;
     }
-    else if ((atkAbility == ABILITY_SERENE_GRACE
-      || gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS
+    else if ((gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS
       || gBattleMons[battlerDef].volatiles.infatuation
       || gBattleMons[battlerDef].volatiles.confusionTurns > 0)
       || ((AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY)) && CanTargetFaintAi(battlerDef, battlerAtk)))
     {
+        if (atkAbility == ABILITY_SERENE_GRACE)
+            return 3;
         return 2;   // good idea to flinch
+    }
+    else if (atkAbility == ABILITY_SERENE_GRACE)
+    {
+        if (move == MOVE_DOUBLE_IRON_BASH) 
+            return 3;
+        return 2;
     }
 
     return 0;   // don't try to flinch

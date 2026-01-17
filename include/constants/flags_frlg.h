@@ -541,7 +541,7 @@
 
 // Story flags
 #define STORY_FLAGS_START                                0x230
-#define FLAG_GOT_PREMIER_BALL_ON_ROUTE_1                       0x230
+#define FLAG_GOT_QUICK_BALL_ON_ROUTE_1                       0x230
 #define FLAG_GOT_TM34_FROM_SURGE                         0x231
 #define FLAG_GOT_FOSSIL_FROM_MT_MOON                     0x232
 #define FLAG_HELPED_BILL_IN_SEA_COTTAGE                  0x233
