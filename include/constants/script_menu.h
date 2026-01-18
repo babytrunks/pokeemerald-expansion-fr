@@ -222,6 +222,7 @@
 #define STDSTRING_MEDICINE         38
 #define STDSTRING_BATTLEITEMS      39
 #define STDSTRING_TREASURES        40
+#define STDSTRING_COINS            41
 
 // Dynamic Multichoice Callbacks
 

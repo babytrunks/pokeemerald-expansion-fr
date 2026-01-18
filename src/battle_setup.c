@@ -511,7 +511,11 @@ void StartMarowakBattle(void)
     gBattleTypeFlags = BATTLE_TYPE_GHOST;
 
     if (CheckBagHasItem(ITEM_SILPH_SCOPE, 1))
-        CreateMonWithGenderNatureLetter(gEnemyParty, SPECIES_MAROWAK, 30, 31, MON_FEMALE, NATURE_SERIOUS, 0);
+    {
+        u32 personality = GetMonPersonality(SPECIES_MAROWAK, MON_FEMALE, NATURE_SERIOUS, RANDOM_UNOWN_LETTER);
+
+        CreateMonWithIVsPersonality(&gEnemyParty[0], SPECIES_MAROWAK, 30, 31, personality);
+    }
 
     CreateBattleStartTask(GetWildBattleTransition(), 0);
     SetMonData(&gEnemyParty[0], MON_DATA_NICKNAME, gText_Ghost);
