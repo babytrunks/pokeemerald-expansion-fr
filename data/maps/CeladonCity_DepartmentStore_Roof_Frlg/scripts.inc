@@ -111,7 +111,7 @@ CeladonCity_DepartmentStore_Roof_EventScript_AskGiveAllDrinks::
 
 CeladonCity_DepartmentStore_Roof_EventScript_GiveFreshWater::
 	setvar VAR_0x8008, ITEM_FRESH_WATER
-	setvar VAR_0x8009, ITEM_TM16
+	setvar VAR_0x8009, ITEM_BANETTITE
 	goto_if_set FLAG_GOT_TM16_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
 	msgbox CeladonCity_DepartmentStore_Roof_Text_YayFreshWaterHaveThis
 	goto CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink
@@ -119,16 +119,16 @@ CeladonCity_DepartmentStore_Roof_EventScript_GiveFreshWater::
 
 CeladonCity_DepartmentStore_Roof_EventScript_GiveSodaPop::
 	setvar VAR_0x8008, ITEM_SODA_POP
-	setvar VAR_0x8009, ITEM_TM20
-	goto_if_set FLAG_GOT_TM20_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
+	setvar VAR_0x8009, ITEM_CAMERUPTITE
+	goto_if_set FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
 	msgbox CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis
 	goto CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink
 	end
 
 CeladonCity_DepartmentStore_Roof_EventScript_GiveLemonade::
 	setvar VAR_0x8008, ITEM_LEMONADE
-	setvar VAR_0x8009, ITEM_TM33
-	goto_if_set FLAG_GOT_TM33_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
+	setvar VAR_0x8009, ITEM_AUDINITE
+	goto_if_set FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
 	msgbox CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis
 	goto CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink
 	end
@@ -155,17 +155,17 @@ CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink::
 
 CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM16::
 	setflag FLAG_GOT_TM16_FROM_THIRSTY_GIRL
-	msgbox CeladonCity_DepartmentStore_Roof_Text_ExplainTM16
+	msgbox CeladonCity_DepartmentStore_Roof_Text_ExplainBanettite
 	return
 
 CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM20::
-	setflag FLAG_GOT_TM20_FROM_THIRSTY_GIRL
-	msgbox CeladonCity_DepartmentStore_Roof_Text_ExplainTM20
+	setflag FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL
+	msgbox CeladonCity_DepartmentStore_Roof_Text_ExplainCameruptite
 	return
 
 CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM33::
-	setflag FLAG_GOT_TM33_FROM_THIRSTY_GIRL
-	msgbox CeladonCity_DepartmentStore_Roof_Text_ExplainTM33
+	setflag FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL
+	msgbox CeladonCity_DepartmentStore_Roof_Text_ExplainAudinite
 	return
 
 CeladonCity_DepartmentStore_Roof_EventScript_NoRoomForReward::
@@ -290,7 +290,7 @@ CeladonCity_DepartmentStore_Roof_Text_GiveWhichDrink::
 
 CeladonCity_DepartmentStore_Roof_Text_YayFreshWaterHaveThis::
     .string "Yay!\p"
-    .string "FRESH WATER!\p"
+    .string "Fresh Water!\p"
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
@@ -298,32 +298,32 @@ Text_ReceivedItemFromLittleGirl::
     .string "{PLAYER} received a {STR_VAR_2}\n"
     .string "from the little girl.$"
 
-CeladonCity_DepartmentStore_Roof_Text_ExplainTM16::
-    .string "TM16 contains LIGHT SCREEN.\p"
-    .string "It's a move that weakens the power\n"
-    .string "of special attacks by your foe.$"
+CeladonCity_DepartmentStore_Roof_Text_ExplainBanettite::
+    .string "That evolves Banette!\n"
+    .string "It gains a Normal-type, which is useful\l"
+    .string "to help combat other Ghost-types!$"
 
 CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis::
     .string "Yay!\p"
-    .string "SODA POP!\p"
+    .string "Soda Pop!\p"
+	.string "Your my Soda Pop!\n"
+	.string "My little Soda Pop!\p"
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
-CeladonCity_DepartmentStore_Roof_Text_ExplainTM20::
-    .string "TM20 contains SAFEGUARD.\p"
-    .string "It's a move that prevents status\n"
-    .string "problems among your Pokémon.$"
+CeladonCity_DepartmentStore_Roof_Text_ExplainCameruptite::
+    .string "That Mega Evolves Camerupt!\p"
+    .string "He hits really hard!$"
 
 CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis::
     .string "Yay!\p"
-    .string "LEMONADE!\p"
+    .string "Lemonade!\p"
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
-CeladonCity_DepartmentStore_Roof_Text_ExplainTM33::
-    .string "TM33 contains REFLECT.\p"
-    .string "It's a move that weakens the power\n"
-    .string "of physical attacks by your foe.$"
+CeladonCity_DepartmentStore_Roof_Text_ExplainAudinite::
+    .string "That Mega Evolves Audino!\n"
+    .string "It turns into a Fairy-type!$"
 
 CeladonCity_DepartmentStore_Roof_Text_DontHaveSpaceForThis::
     .string "You don't have space for this!$"

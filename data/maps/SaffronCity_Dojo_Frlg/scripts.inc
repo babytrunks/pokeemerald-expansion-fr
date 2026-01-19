@@ -149,6 +149,7 @@ SaffronCity_Dojo_EventScript_DefeatedMasterKoichi::
 	setflag FLAG_DEFEATED_CHUCK
     msgbox SaffronCity_Dojo_Text_ChoosePrizedFightingMon
     call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
+    callnative SetBuffer1ToEvCap
 	msgbox johtoLeader_Text_CurrentEvCap
 	setflag FLAG_UNLOCKED_STAT_EDITOR
 	msgbox SaffronCity_Dojo_Text_HaveTMDrainPunch

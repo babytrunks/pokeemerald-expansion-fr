@@ -318,7 +318,7 @@
 // Item ball hide/show
 #define FLAG_HIDE_ROUTE2_TM_REST                                  0x154
 #define FLAG_HIDE_ROUTE2_PARALYZE_THUNDER_STONE                          0x155
-#define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0x156
+#define FLAG_HIDE_VIRIDIAN_FOREST_RARE_CANDY                     0x156
 #define FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES                      0x157
 #define FLAG_HIDE_VIRIDIAN_FOREST_SILVER_POWDER                        0x158
 #define FLAG_FLAG_HIDE_MT_MOON_1F_SHELL_BELL                      0x159
@@ -336,7 +336,7 @@
 #define FLAG_HIDE_SSANNE_2F_ROOM2_DIVE_BALL                      0x165
 #define FLAG_HIDE_SSANNE_2F_ROOM4_SWIFT_FEATHER                      0x166
 #define FLAG_HIDE_SSANNE_B1F_ROOM2_HEALTH_FEATHER                         0x167
-#define FLAG_HIDE_SSANNE_B1F_ROOM3_MYSTIC_WATER                        0x168
+#define FLAG_HIDE_SSANNE_B1F_ROOM3_LUXURY_BALL                        0x168
 #define FLAG_HIDE_SSANNE_B1F_ROOM5_WATER_STONE                 0x169
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0x16A
 #define FLAG_HIDE_ROUTE9_TM_THUNDER_PUNCH                                   0x16B
@@ -438,7 +438,7 @@
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0x1CB
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0x1CC
 #define FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE                          0x1CD
-#define FLAG_HIDE_ROUTE11_MIRACLE_SEED                            0x1CE
+#define FLAG_HIDE_ROUTE11_DREAM_BALL                            0x1CE
 #define FLAG_HIDE_ROUTE11_MUSCLE_FEATHER                             0x1CF
 #define FLAG_HIDE_POKEMON_TOWER_5F_CLEANSE_TAG                  0x1D0
 #define FLAG_HIDE_CELADON_CITY_DREAM_PATCH                            0x1D1
@@ -510,7 +510,7 @@
 #define FLAG_DONT_RANDOMIZE                                     0x211
 #define FLAG_HIDE_ROUTE1_SILK_SCARF                             0x212
 #define FLAG_HIDE_ROUTE22_SHARP_BEAK                            0x213
-#define FLAG_HIDE_ROUTE3_CHARCOAL                               0x214
+#define FLAG_HIDE_ROUTE3_WIDE_LENS                               0x214
 #define FLAG_HIDE_ROUTE24_POISON_BARB                           0x215
 #define FLAG_HIDE_ROUTE5_TWISTED_SPOON                          0x216
 #define FLAG_DEFEATED_CHUCK                                     0x217
@@ -518,7 +518,7 @@
 #define FLAG_DEFEATED_MORTY                                     0x219
 #define FLAG_DEFEATED_PRYCE                                     0x21A
 #define FLAG_HIDE_MTMOON_TM_HIDDEN_POWER                        0x21B
-#define FLAG_0x21C               0x21C
+#define FLAG_CERULEAN_GAVE_LUXURY_BALL                          0x21C
 #define FLAG_0x21D               0x21D
 #define FLAG_0x21E               0x21E
 #define FLAG_0x21F               0x21F
@@ -641,8 +641,8 @@
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0x291
 #define FLAG_GOT_VS_SEEKER                               0x292 // UNUSED
 #define FLAG_GOT_TM19_FROM_ERIKA                         0x293
-#define FLAG_GOT_TM33_FROM_THIRSTY_GIRL                  0x294
-#define FLAG_GOT_TM20_FROM_THIRSTY_GIRL                  0x295
+#define FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL                  0x294
+#define FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL                  0x295
 #define FLAG_GOT_TM16_FROM_THIRSTY_GIRL                  0x296
 #define FLAG_GOT_TM03_FROM_MISTY                         0x297 // UNUSED
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298

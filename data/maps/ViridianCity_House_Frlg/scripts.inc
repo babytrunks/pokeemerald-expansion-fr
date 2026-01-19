@@ -13,7 +13,7 @@ ViridianCity_House_EventScript_Speary::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SPEAROW, CRY_MODE_NORMAL
+	playmoncry SPECIES_NIDOKING, CRY_MODE_NORMAL
 	msgbox ViridianCity_House_Text_Speary
 	waitmoncry
 	release
@@ -24,20 +24,20 @@ ViridianCity_House_EventScript_NicknameSign::
 	end
 
 ViridianCity_House_Text_NicknamingIsFun::
-  .string "Kids nowadays are cracked!\p"
+  .string "{COLOR BLUE}Kids nowadays are cracked!\p"
   .string "Back in my day, you'd be king of\n"
   .string "the playground if you had even\l"
-  .string "a {COLOR GREEN}Nidorino{COLOR BLUE} at my son's age.\p"
+  .string "a Nidorino at my kid's age.\p"
   .string "My kid's running around with a\n"
-  .string "{COLOR GREEN}Sheer Force Nidoking!\p"
-  .string "{COLOR BLUE}Wahahah!$"
+  .string "Sheer Force Nidoking!\p"
+  .string "Wahahah!$"
 
 ViridianCity_House_Text_MyDaddyLovesMonsToo::
-  .string "{COLOR GREEN}LeKing, {COLOR BLUE} sit!$"
+  .string "{COLOR RED}LeKing, sit!$"
 
 
 ViridianCity_House_Text_Speary::
-  .string "{COLOR GREEN}LeKing: {COLOR BLUE} Raaagh!$"
+  .string "LeKing: Raaagh!$"
 
 ViridianCity_House_Text_SpearowNameSpeary::
     .string "Nidoking\n"

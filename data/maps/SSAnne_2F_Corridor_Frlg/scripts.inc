@@ -74,7 +74,14 @@ SSAnne_2F_Corridor_EventScript_RivalTrigger::
 	setspeaker SP_NAME_BRENDAN
 	msgbox SSAnne_2F_Corridor_Text_RivalPostBattle
 	closemessage
-	giveitem ITEM_FIRE_STONE
+	playfanfare MUS_OBTAIN_ITEM
+	msgbox Route22_Text_ReceivedAnEgg
+	waitfanfare
+	setflag FLAG_WONDER_TRADE
+	setflag FLAG_3_PERFECT_IVS
+	giveegg SPECIES_TYMPOLE
+	clearflag FLAG_WONDER_TRADE
+	clearflag FLAG_3_PERFECT_IVS
 	setspeaker SP_NAME_BRENDAN
 	msgbox SSAnne_2F_Corridor_Text_RivalPostBattle2
 	delay 10
@@ -215,8 +222,10 @@ SSAnne_2F_Corridor_Text_RivalPostBattle::
     .string "{COLOR BLUE}There's a Cut master on board.\n"
     .string "It'll be handy to get through\l"
     .string "those pesky trees.\p"
-    .string "In the meantime, I've got something\n"
-    .string "you may find useful.$"
+    .string "Oh and by the way, I ran into your friend\n"
+    .string "{RIVAL}, I think?\p"
+	.string "He told me to give you this,\n"
+	.string "and that it stinks of rotten egg.$"
 
 SSAnne_2F_Corridor_Text_RivalPostBattle2::
   .string "{COLOR BLUE}Well, it's back to training for me.\p"

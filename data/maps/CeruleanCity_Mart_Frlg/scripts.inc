@@ -14,7 +14,28 @@ CeruleanCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_BADGE05_GET, CeruleanCity_Mart_5BadgeStock
+	goto_if_set FLAG_BADGE04_GET, CeruleanCity_Mart_4BadgeStock
+	goto_if_set FLAG_BADGE02_GET, CeruleanCity_Mart_2BadgeStock
 	pokemart CeruleanCity_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+CeruleanCity_Mart_5BadgeStock:
+	pokemart CeruleanCity_Mart_5BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+CeruleanCity_Mart_4BadgeStock:
+	pokemart CeruleanCity_Mart_4BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+CeruleanCity_Mart_2BadgeStock:
+	pokemart CeruleanCity_Mart_2BadgeItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -22,12 +43,37 @@ CeruleanCity_Mart_EventScript_Clerk::
 	.align 2
 CeruleanCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+CeruleanCity_Mart_2BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+CeruleanCity_Mart_4BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+CeruleanCity_Mart_5BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DUSK_BALL  
 	.2byte ITEM_NONE
 	release
 	end

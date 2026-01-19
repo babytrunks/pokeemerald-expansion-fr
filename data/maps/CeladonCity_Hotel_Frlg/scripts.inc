@@ -33,14 +33,14 @@ EventScript_Jasmine_Battle::
     msgbox jasmine_Text_4
     special HealPlayerParty                   @ was special 0x0
     trainerbattle_no_intro TRAINER_LEADER_JASMINE, jasmine_Text_Defeat   @ 0x3E
+    setflag FLAG_DEFEATED_JASMINE    
     msgbox jasmine_Text_6
-    giveitem ITEM_AGGRONITE
+    call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
+    callnative SetBuffer1ToEvCap
+	msgbox johtoLeader_Text_CurrentEvCap
     msgbox jasmine_Text_7
-    giveitem ITEM_CHOICE_BAND
-    msgbox jasmine_Text_Take
-
-    setflag FLAG_DEFEATED_JASMINE          
-
+    giveitem ITEM_TM_IRON_HEAD
+    @ msgbox jasmine_Text_Take
     release
     end
 
@@ -83,65 +83,65 @@ CeladonCity_Hotel_Text_SisBroughtMeOnVacation::
 
 
 jasmine_Text_1::
-  .string "Hmm...{COLOR GREEN} Mega Aggron{COLOR RED} or {COLOR GREEN}Mega Steelix{COLOR RED}...$"
+  .string "{COLOR RED}Hmm… Mega Aggron or Mega Steelix…$"
 
 
 jasmine_Text_2::
-  .string "Ah, hello.\p"
+  .string "{COLOR RED}Ah, hello.\p"
   .string "I've only recently acquainted myself\n"
   .string "with Mega Evolution, so I'm still\l"
   .string "figuring things out.$"
 
 
 jasmine_Text_3::
-  .string "Um, I'd like to practice, if you don't\n"
-  .string "mind...$"
+  .string "{COLOR RED}Um, I'd like to practice, if you don't\n"
+  .string "mind…$"
 
 
 jasmine_Text_4::
-  .string "Although I'm shy...\n"
+  .string "{COLOR RED}Although I'm shy…\n"
   .string "Please don't take me lightly.$"
 
 
 jasmine_Text_Defeat::
-  .string "Well done...$"
+  .string "Well done…$"
 
 
 jasmine_Text_6::
-  .string "You have both skill and fortitude.\p"
-  .string "Um... I think you'd like this.$"
+  .string "{COLOR RED}You have both skill and fortitude.\p"
+  .string "Um… I think you'd like this.$"
 
 
 jasmine_Text_7::
-  .string "This item has helped me in count-\n"
-  .string "less battles, although it can be a\l"
-  .string "bit tricky to use.\p"
-  .string "Try it for yourself.$"
+  .string "{COLOR RED}This TM is pretty essential for Steel-\n"
+  .string "types. But it also can come in handy\l"
+  .string "as coverage to deal with pesky fairies…$"
 
 
 jasmine_Text_Take::
-  .string "I do have more to give, but...\p"
+  .string "{COLOR RED}I do have more to give, but…\p"
   .string "You'll have to show me a Pokémon\n"
   .string "forged in Defense.$"
 
 
 jasmine_Text_8::
-  .string "I think it could use more\n"
+  .string "{COLOR RED}I think it could use more\n"
   .string "protection.\p"
-  .string "No... I don't mean that kind...$"
+  .string "No… I don't mean that kind…$"
 
 
 jasmine_Text_Firstmon::
-  .string "Your {STR_VAR_1}...$"
+  .string "{COLOR RED}Your {STR_VAR_1}…$"
 
 
 jasmine_Text_9::
-  .string "Yes, this Pokémon is quite a\n"
+  .string "{COLOR RED}Yes, this Pokémon is quite a\n"
   .string "worthy shield.\p"
   .string "As promised, here you go.$"
 
 
 jasmine_Text_10::
-  .string "{COLOR RED}The{COLOR GREEN} Assault Vest{COLOR RED} complements a high\n"
-  .string "defense Pokémon well, making it an\l"
-  .string "impenetrable wall.$"
+  .string "{COLOR RED}Steel Pokémon are essential to a\n"
+  .string "balanced team. They do well against the\l"
+  .string "mighty Dragon-type and the annoying Fairy-\l"
+  .string "type.$"

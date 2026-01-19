@@ -1798,7 +1798,7 @@
 
 #define FLAG_HIDE_ROUTE2_TM_REST                                  0
 #define FLAG_HIDE_ROUTE2_PARALYZE_THUNDER_STONE                          0
-#define FLAG_HIDE_VIRIDIAN_FOREST_QUICK_BALL                     0
+#define FLAG_HIDE_VIRIDIAN_FOREST_RARE_CANDY                     0
 #define FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES                      0
 #define FLAG_HIDE_VIRIDIAN_FOREST_SILVER_POWDER                        0
 #define FLAG_FLAG_HIDE_MT_MOON_1F_SHELL_BELL                      0
@@ -1816,7 +1816,7 @@
 #define FLAG_HIDE_SSANNE_2F_ROOM2_DIVE_BALL                      0
 #define FLAG_HIDE_SSANNE_2F_ROOM4_SWIFT_FEATHER                      0
 #define FLAG_HIDE_SSANNE_B1F_ROOM2_HEALTH_FEATHER                         0
-#define FLAG_HIDE_SSANNE_B1F_ROOM3_MYSTIC_WATER                        0
+#define FLAG_HIDE_SSANNE_B1F_ROOM3_LUXURY_BALL                        0
 #define FLAG_HIDE_SSANNE_B1F_ROOM5_WATER_STONE                 0
 #define FLAG_HIDE_SSANNE_KITCHEN_GREAT_BALL                     0
 #define FLAG_HIDE_ROUTE9_TM_THUNDER_PUNCH                                   0
@@ -1918,7 +1918,7 @@
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0
 #define FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE                          0
-#define FLAG_HIDE_ROUTE11_MIRACLE_SEED                            0
+#define FLAG_HIDE_ROUTE11_DREAM_BALL                            0
 #define FLAG_HIDE_ROUTE11_MUSCLE_FEATHER                             0
 #define FLAG_HIDE_POKEMON_TOWER_5F_CLEANSE_TAG                  0
 #define FLAG_HIDE_CELADON_CITY_DREAM_PATCH                            0
@@ -2068,8 +2068,8 @@
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0
 #define FLAG_GOT_VS_SEEKER                               0
 #define FLAG_GOT_TM19_FROM_ERIKA                         0
-#define FLAG_GOT_TM33_FROM_THIRSTY_GIRL                  0
-#define FLAG_GOT_TM20_FROM_THIRSTY_GIRL                  0
+#define FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL                  0
+#define FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL                  0
 #define FLAG_GOT_TM16_FROM_THIRSTY_GIRL                  0
 #define FLAG_GOT_TM03_FROM_MISTY                         0
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0

@@ -1030,14 +1030,15 @@ static void Task_MenuEditingStat(u8 taskId) // This function should be refactore
 
 }
 
-#define EV_CAP_COUNT 5
+#define EV_CAP_COUNT 6
 static const u32 sEVCapFlagMap[EV_CAP_COUNT][2] =
 {
-    {FLAG_DEFEATED_WHITNEY, 102},
-    {FLAG_DEFEATED_CHUCK, 204},
-    {FLAG_DEFEATED_JASMINE, 306},
-    {FLAG_DEFEATED_MORTY, 408},
-    {FLAG_DEFEATED_PRYCE, 510},
+    {FLAG_DEFEATED_WHITNEY, 0},
+    {FLAG_DEFEATED_CHUCK, 102},
+    {FLAG_DEFEATED_JASMINE, 204},
+    {FLAG_DEFEATED_MORTY, 306},
+    {FLAG_DEFEATED_PRYCE, 408},
+    {FLAG_IS_CHAMPION, 510},
 };
 
 static u16 getEvCap(void) {
@@ -1060,4 +1061,9 @@ static bool8 checkIfEVCapReached(void) {
     u32 evCap = getEvCap();
 
     return ((sStatEditorDataPtr->editingStat == 252) || (sStatEditorDataPtr->evTotal >= evCap));
+}
+
+void SetBuffer1ToEvCap(void) {
+    u32 evCap = getEvCap();
+    ConvertIntToDecimalStringN(gStringVar1, evCap, STR_CONV_MODE_RIGHT_ALIGN, 3);
 }

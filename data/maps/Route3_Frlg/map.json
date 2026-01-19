@@ -165,8 +165,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route3_EventScript_ItemCharcoal",
-      "flag": "FLAG_HIDE_ROUTE3_CHARCOAL"
+      "script": "Route3_EventScript_ItemWideLens",
+      "flag": "FLAG_HIDE_ROUTE3_WIDE_LENS"
     }
   ],
   "warp_events": [],

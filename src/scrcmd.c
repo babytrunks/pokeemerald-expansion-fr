@@ -1755,6 +1755,8 @@ static bool8 WaitForAorBPress(void)
         return TRUE;
     if (JOY_NEW(B_BUTTON))
         return TRUE;
+    if (JOY_HELD(R_BUTTON))
+        return TRUE;
     return FALSE;
 }
 

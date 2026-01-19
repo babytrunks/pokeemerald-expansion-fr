@@ -64,7 +64,8 @@
     F(ICE_PUNCH) \
     F(DUAL_WINGBEAT) \
     F(ROCK_SLIDE) \
-    F(DRAIN_PUNCH) 
+    F(DRAIN_PUNCH) \
+    F(DRAGON_TAIL)
     
 #define FOREACH_HM(F) \
     F(CUT) \

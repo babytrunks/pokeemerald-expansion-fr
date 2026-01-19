@@ -32,8 +32,8 @@ EventScript_Whitney_Battle::
     setflag FLAG_DEFEATED_WHITNEY            @ 0x933
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_6
-    setspeaker SP_NAME_WHITNEY
     call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
+    callnative SetBuffer1ToEvCap
     msgbox johtoLeader_Text_CurrentEvCap
     setflag FLAG_UNLOCKED_STAT_EDITOR
     setspeaker SP_NAME_WHITNEY
@@ -45,6 +45,7 @@ EventScript_Whitney_Battle::
     playse SE_EXIT                            @ sound 0x9
     waitse                                   @ checksound
     removeobject LOCALID_WHITNEY             @ hidesprite 0x2
+    removeobject LOCALID_ROUTE11_MILTANK
     fadescreen FADE_FROM_BLACK               @ fadescreen 0x0
     release
     end
@@ -251,11 +252,8 @@ gText_whitney_7_2::
 gText_whitney_8::
   .string "{COLOR RED}Eviolite boosts the defenses of Poké-\n"
   .string "mon that can still evolve.\p"
-  .string "It has an added functionality where\n"
-  .string "it prevents evolution too, for your\l"
-  .string "convenience.\p"
-  .string "It's great if you like keeping them\n"
-  .string "adorable!\p"
+  .string "It's great if you like using cute\n"
+  .string "Pokémon!\p"
   .string "Anyway, I need to Bounce.\n"
   .string "Too many creeps on this Route.\p"
   .string "I hope we see each other soon.$"

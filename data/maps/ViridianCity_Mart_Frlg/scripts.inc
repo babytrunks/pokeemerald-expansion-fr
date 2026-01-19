@@ -21,7 +21,28 @@ ViridianCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_BADGE05_GET, ViridianCity_Mart_5BadgeStock
+	goto_if_set FLAG_BADGE04_GET, ViridianCity_Mart_4BadgeStock
+	goto_if_set FLAG_BADGE02_GET, ViridianCity_Mart_2BadgeStock
 	pokemart ViridianCity_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+ViridianCity_Mart_5BadgeStock:
+	pokemart ViridianCity_Mart_5BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+ViridianCity_Mart_4BadgeStock:
+	pokemart ViridianCity_Mart_4BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+ViridianCity_Mart_2BadgeStock:
+	pokemart ViridianCity_Mart_2BadgeItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -29,9 +50,40 @@ ViridianCity_Mart_EventScript_Clerk::
 	.align 2
 ViridianCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
-	.2byte ITEM_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+ViridianCity_Mart_2BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+ViridianCity_Mart_4BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+ViridianCity_Mart_5BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DUSK_BALL
 	.2byte ITEM_POMEG_BERRY
 	.2byte ITEM_NONE
 	release
@@ -47,10 +99,10 @@ ViridianCity_Mart_EventScript_Youngster::
 
 ViridianCity_Mart_Text_ShopDoesGoodBusinessInAntidotes::
     .string "This shop does good business in\n"
-    .string "ANTIDOTES, I've heard.$"
+    .string "Pomeg Berries, I've heard.$"
 
 ViridianCity_Mart_Text_GotToBuySomePotions::
-    .string "I've got to buy some POTIONS.\p"
-    .string "You never know when your Pokémon\n"
-    .string "will need quick healing.$"
+    .string "I've got to restock on Balls.\p"
+    .string "You never know when you will encounter\n"
+    .string "a Shiny.$"
 

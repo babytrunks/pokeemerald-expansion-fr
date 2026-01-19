@@ -13435,6 +13435,53 @@ static void Cmd_handleballthrow(void)
                     gBattleMons[gBattlerTarget].hp = gBattleMons[gBattlerTarget].maxHP;
                     SetMonData(caughtMon, MON_DATA_HP, &gBattleMons[gBattlerTarget].hp);
                 }
+                else if (ballId == BALL_DREAM) {
+                    u8 hiddenAbilityId = 2;
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &hiddenAbilityId);
+                }
+                else if (ballId == BALL_LUXURY) {
+                    u32 iv;
+                    iv = MAX_PER_STAT_IVS;
+                    u8 availableIVs[NUM_STATS];
+                    u8 selectedIvs[NUM_STATS];
+                    // Initialize a list of IV indices.
+                    for (i = 0; i < NUM_STATS; i++)
+                    {
+                        availableIVs[i] = i;
+                    }
+        
+                    // Select the IVs that will be perfected.
+                    for (i = 0; i < NUM_STATS && i < 3; i++)
+                    {
+                        u8 index = Random() % (NUM_STATS - i);
+                        selectedIvs[i] = availableIVs[index];
+                        RemoveIVIndexFromList(availableIVs, index);
+                    }
+                    for (i = 0; i < NUM_STATS && i < 3; i++)
+                    {
+                        switch (selectedIvs[i])
+                        {
+                        case STAT_HP:
+                            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_HP_IV, &iv);
+                            break;
+                        case STAT_ATK:
+                            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ATK_IV, &iv);
+                            break;
+                        case STAT_DEF:
+                            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_DEF_IV, &iv);
+                            break;
+                        case STAT_SPEED:
+                            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_SPEED_IV, &iv);
+                            break;
+                        case STAT_SPATK:
+                            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_SPATK_IV, &iv);
+                            break;
+                        case STAT_SPDEF:
+                            SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_SPDEF_IV, &iv);
+                            break;
+                        }
+                    }
+                }
                 else if (ballId == BALL_FRIEND)
                 {
                     u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);

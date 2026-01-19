@@ -69,7 +69,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_JASMINE",
       "x": 12,
-      "y": 7,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
@@ -82,7 +82,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(STEELIX_MEGA)",
       "x": 12,
-      "y": 8,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_RIGHT",
       "movement_range_x": 0,

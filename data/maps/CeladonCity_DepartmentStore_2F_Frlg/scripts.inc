@@ -14,26 +14,74 @@ CeladonCity_DepartmentStore_2F_EventScript_FloorSign::
 	end
 
 CeladonCity_DepartmentStore_2F_EventScript_ClerkItems::
-	lock
+lock
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	pokemart CeladonCity_DepartmentStore_2F_Items
+	goto_if_set FLAG_BADGE05_GET, CeladonCity_Mart_5BadgeStock
+	goto_if_set FLAG_BADGE04_GET, CeladonCity_Mart_4BadgeStock
+	goto_if_set FLAG_BADGE02_GET, CeladonCity_Mart_2BadgeStock
+	pokemart CeladonCity_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+CeladonCity_Mart_5BadgeStock:
+	pokemart CeladonCity_Mart_5BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+CeladonCity_Mart_4BadgeStock:
+	pokemart CeladonCity_Mart_4BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+CeladonCity_Mart_2BadgeStock:
+	pokemart CeladonCity_Mart_2BadgeItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
 
 	.align 2
-CeladonCity_DepartmentStore_2F_Items::
+CeladonCity_Mart_Items::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_BERRY_JUICE
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+CeladonCity_Mart_2BadgeItems::
+	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_REVIVE
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_BURN_HEAL
-	.2byte ITEM_ICE_HEAL
-	.2byte ITEM_SUPER_REPEL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_BERRY_JUICE
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+CeladonCity_Mart_4BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_BERRY_JUICE
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+CeladonCity_Mart_5BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DUSK_BALL  
+	.2byte ITEM_BERRY_JUICE
 	.2byte ITEM_NONE
 	release
 	end
@@ -50,24 +98,21 @@ CeladonCity_DepartmentStore_2F_EventScript_ClerkTMs::
 
 	.align 2
 CeladonCity_DepartmentStore_2F_TMs::
-	.2byte ITEM_TM05
-	.2byte ITEM_TM15
-	.2byte ITEM_TM28
-	.2byte ITEM_TM31
-	.2byte ITEM_TM43
-	.2byte ITEM_TM45
+	.2byte ITEM_TM_ROAR
+	.2byte ITEM_TM_DRAGON_TAIL
+	.2byte ITEM_TM_REFLECT 
+	.2byte ITEM_TM_LIGHT_SCREEN
 	.2byte ITEM_NONE
 	release
 	end
 
 CeladonCity_DepartmentStore_2F_Text_SuperRepelMorePowerfulRepel::
-    .string "SUPER REPEL keeps weak Pokémon at\n"
-    .string "bay…\p"
-    .string "Hmm, it's a more powerful REPEL.$"
+    .string "Sometimes when I want to let off a little\n"
+    .string "steam, I just spam Roar at Wild Rattatas.$"
 
 CeladonCity_DepartmentStore_2F_Text_BuyReviveForLongOutings::
-    .string "For long outings, you should buy\n"
-    .string "REVIVE.$"
+    .string "Pairing Reflect with Light Clay is\n"
+    .string "is a decent tactic.$"
 
 CeladonCity_DepartmentStore_2F_Text_FloorSign::
     .string "Top-Grade Items for TRAINERS!\p"

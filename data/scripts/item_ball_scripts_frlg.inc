@@ -14,12 +14,12 @@ Route2_EventScript_ItemAbilityCapsule::
 	finditem ITEM_ABILITY_CAPSULE
 	end
 
-Route3_EventScript_ItemCharcoal::
-	finditem ITEM_CHARCOAL
+Route3_EventScript_ItemWideLens::
+	finditem ITEM_WIDE_LENS
 	end
 
-ViridianForest_EventScript_ItemQuickBall::
-	finditem ITEM_QUICK_BALL
+ViridianForest_EventScript_ItemRareCandy::
+	finditem ITEM_RARE_CANDY
 	end
 
 ViridianForest_EventScript_ItemWiseGlasses::
@@ -111,8 +111,8 @@ SSAnne_B1F_Room2_EventScript_ItemHealthFeather::
 	finditem ITEM_HEALTH_FEATHER
 	end
 
-SSAnne_B1F_Room3_EventScript_ItemMysticWater::
-	finditem ITEM_MYSTIC_WATER
+SSAnne_B1F_Room3_EventScript_ItemLuxuryBall::
+	finditem ITEM_LUXURY_BALL
 	end
 
 SSAnne_B1F_Room5_EventScript_ItemWaterStone::
@@ -523,8 +523,8 @@ ViridianCity_EventScript_ItemAbilityCapsule::
 	finditem ITEM_ABILITY_CAPSULE
 	end
 
-Route11_EventScript_ItemMiracleSeed::
-	finditem ITEM_MIRACLE_SEED
+Route11_EventScript_ItemDreamBall::
+	finditem ITEM_DREAM_BALL
 	end
 
 Route11_EventScript_ItemMuscleFeather::
