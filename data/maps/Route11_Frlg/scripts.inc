@@ -29,10 +29,13 @@ EventScript_Whitney_Battle::
     msgbox gText_whitney_5
     @ special HealPlayerParty                  @ special 0x0
     trainerbattle_no_intro TRAINER_WHITNEY, whitney_Text_Defeat   @ 0x31
+    setflag FLAG_DEFEATED_WHITNEY            @ 0x933
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_6
     setspeaker SP_NAME_WHITNEY
     call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
+    msgbox johtoLeader_Text_CurrentEvCap
+    setflag FLAG_UNLOCKED_STAT_EDITOR
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_7_2
     giveitem ITEM_EVIOLITE
@@ -41,14 +44,12 @@ EventScript_Whitney_Battle::
     fadescreen FADE_TO_BLACK                 @ fadescreen 0x1
     playse SE_EXIT                            @ sound 0x9
     waitse                                   @ checksound
-    setflag FLAG_DEFEATED_WHITNEY            @ 0x933
-    setflag FLAG_UNLOCKED_STAT_EDITOR
     removeobject LOCALID_WHITNEY             @ hidesprite 0x2
     fadescreen FADE_FROM_BLACK               @ fadescreen 0x0
     release
     end
 
-EventScript_Whitney_StatEditExplain:
+EventScript_Whitney_StatEditExplain::
     msgbox whitney_Text_StatEditor_Explain
     return
 
@@ -59,6 +60,19 @@ Movement_Whitney_Look:
 Route11_EventScript_DiglettsCaveSign::
 	msgbox Route11_Text_DiglettsCave, MSGBOX_SIGN
 	end
+
+Route11_EventScript_Miltank::	
+    lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MILTANK, CRY_MODE_NORMAL
+	msgbox Route11_Text_Miltank
+	waitmoncry
+	release
+	end
+
+Route11_Text_Miltank::
+    .string "Miltank: Moo!$"
 
 Route11_Text_HugoIntro::
     .string "Win, lose, or draw!$"
@@ -207,10 +221,8 @@ gText_whitney_5::
   .string "{COLOR RED}I hope you don't let my cuteness lull\n"
   .string "you. You'll definitely regret it!$"
 
-
 whitney_Text_Defeat::
   .string "Ah… woe is me…$"
-
 
 gText_whitney_6::
   .string "{COLOR RED}In my younger days, Miltank was such\n"
@@ -225,9 +237,12 @@ gText_whitney_6::
   .string "team can grow even stronger!$"
 
 whitney_Text_StatEditor_Explain::
-  .string "{COLOR RED}You will now see an Edit Stats\n"
-  .string "option when viewing your Pokémon in\l"
+  .string "The Edit Stats option is now avail-\n"
+  .string "able when viewing your Pokémon in\l"
   .string "the party menu.$"
+
+johtoLeader_Text_CurrentEvCap::
+  .string "Your current EV Cap is {STR_VAR_1}.$"
 
 gText_whitney_7_2::
   .string "{COLOR RED} Have this as well.$"

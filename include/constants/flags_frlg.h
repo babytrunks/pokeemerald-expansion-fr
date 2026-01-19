@@ -513,11 +513,11 @@
 #define FLAG_HIDE_ROUTE3_CHARCOAL                               0x214
 #define FLAG_HIDE_ROUTE24_POISON_BARB                           0x215
 #define FLAG_HIDE_ROUTE5_TWISTED_SPOON                          0x216
-#define FLAG_0x217               0x217
-#define FLAG_0x218               0x218
-#define FLAG_0x219               0x219
-#define FLAG_0x21A               0x21A
-#define FLAG_0x21B               0x21B
+#define FLAG_DEFEATED_CHUCK                                     0x217
+#define FLAG_DEFEATED_JASMINE                                   0x218
+#define FLAG_DEFEATED_MORTY                                     0x219
+#define FLAG_DEFEATED_PRYCE                                     0x21A
+#define FLAG_HIDE_MTMOON_TM_HIDDEN_POWER                        0x21B
 #define FLAG_0x21C               0x21C
 #define FLAG_0x21D               0x21D
 #define FLAG_0x21E               0x21E

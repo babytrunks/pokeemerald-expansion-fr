@@ -21,8 +21,8 @@ SaffronCity_Dojo_EventScript_HitmonleeBall::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_AlreadyGotHitmon
-	showmonpic SPECIES_HITMONLEE, 10, 3
-	setvar VAR_TEMP_1, SPECIES_HITMONLEE
+	showmonpic SPECIES_TAUROS_PALDEA_BLAZE, 10, 3
+	setvar VAR_TEMP_1, SPECIES_TAUROS_PALDEA_BLAZE
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	textcolor NPC_TEXT_COLOR_MALE
@@ -42,8 +42,8 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_AlreadyGotHitmon
-	showmonpic SPECIES_HITMONCHAN, 10, 3
-	setvar VAR_TEMP_1, SPECIES_HITMONCHAN
+	showmonpic SPECIES_TAUROS_PALDEA_AQUA, 10, 3
+	setvar VAR_TEMP_1, SPECIES_TAUROS_PALDEA_AQUA
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	textcolor NPC_TEXT_COLOR_MALE
@@ -134,7 +134,7 @@ SaffronCity_Dojo_EventScript_Mike::
 	end
 
 SaffronCity_Dojo_EventScript_MasterKoichi::
-	trainerbattle_single TRAINER_BLACK_BELT_CHUCK, SaffronCity_Dojo_Text_MasterKoichiIntro, SaffronCity_Dojo_Text_MasterKoichiDefeat, SaffronCity_Dojo_EventScript_DefeatedMasterKoichi
+	trainerbattle_single TRAINER_BLACK_BELT_CHUCK, SaffronCity_Dojo_Text_ChuckIntro, SaffronCity_Dojo_Text_ChuckDefeat, SaffronCity_Dojo_EventScript_DefeatedMasterKoichi
 	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_MasterKoichiAlreadyGotHitmon
 	msgbox SaffronCity_Dojo_Text_ChoosePrizedFightingMon, MSGBOX_AUTOCLOSE
 	end
@@ -146,28 +146,44 @@ SaffronCity_Dojo_EventScript_MasterKoichiAlreadyGotHitmon::
 
 SaffronCity_Dojo_EventScript_DefeatedMasterKoichi::
 	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 1
+	setflag FLAG_DEFEATED_CHUCK
+    msgbox SaffronCity_Dojo_Text_ChoosePrizedFightingMon
+    call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
+	msgbox johtoLeader_Text_CurrentEvCap
+	setflag FLAG_UNLOCKED_STAT_EDITOR
+	msgbox SaffronCity_Dojo_Text_HaveTMDrainPunch
+	giveitem ITEM_TM_DRAIN_PUNCH
 	release
 	end
 
-SaffronCity_Dojo_Text_MasterKoichiIntro::
-    .string "Grunt!\p"
-    .string "I am the KARATE MASTER!\n"
-    .string "I am the LEADER here!\p"
-    .string "You wish to challenge us?\n"
-    .string "Expect no mercy!\p"
-    .string "Fwaaa!$"
+SaffronCity_Dojo_Text_ChuckIntro::
+    .string "{COLOR BLUE}Hello there little chump!\p"
+    .string "I'm Chuck, and I've taken over\n"
+    .string "as the Karate Master of this dojo!\p"
+    .string "I can put you in a choke-hold in\n"
+    .string "a matter of seconds if I wanted to!\p"
+    .string "What?\p"
+    .string "It has nothing to do with Pokémon?\p"
+    .string "Haha! A challenger long ago once\n"
+    .string "said the same thing!\p"
+    .string "Come on, we shall do battle!$"
 
-SaffronCity_Dojo_Text_MasterKoichiDefeat::
-    .string "Hwa!\n"
-    .string "Arrgh! Beaten!$"
+SaffronCity_Dojo_Text_ChuckDefeat::
+    .string "Wha! I lost?!\n"
+    .string "Incredible!$"
 
 SaffronCity_Dojo_Text_ChoosePrizedFightingMon::
-    .string "Indeed, I have lost!\p"
-    .string "But, I beseech you, do not take\n"
-    .string "our emblem as your trophy!\p"
-    .string "In return, I will give you a prized\n"
-    .string "FIGHTING Pokémon!\p"
-    .string "Choose whichever one you like!$"
+    .string "{COLOR BLUE}What a crushing defeat!\p"
+    .string "It's back to 24-hour training for\n"
+    .string "me!\p"
+    .string "But, I'm impressed, challenger.\p"
+    .string "Here, I can give your Pokémon some\n"
+    .string "nifty enhancements!$"
+
+SaffronCity_Dojo_Text_HaveTMDrainPunch::
+	.string "{COLOR BLUE}And here, my favorite TM!\p"
+	.string "What could be more crushing than defeating\n"
+	.string "the foe and also gaining HP!$"
 
 SaffronCity_Dojo_Text_StayAndTrainWithUs::
     .string "Grunt!\n"

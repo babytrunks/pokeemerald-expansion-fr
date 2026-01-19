@@ -281,6 +281,19 @@ VermilionCity_Gym_EventScript_GymStatuePostVictory::
 	releaseall
 	end
 
+VermilionCity_Gym_EventScript_Manectric::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MANECTRIC_MEGA, CRY_MODE_NORMAL
+	msgbox VermilionCity_Gym_Text_Manectric
+	waitmoncry
+	release
+	end
+
+VermilionCity_Gym_Text_Manectric::
+    .string "Manectric: Manec!$"
+
 VermilionCity_Gym_Text_LtSurgeIntro::
     .string "Hey, kid! What do you think you're\n"
     .string "doing here?\p"

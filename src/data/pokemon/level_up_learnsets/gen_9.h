@@ -20872,6 +20872,7 @@ static const struct LevelUpMove sDachsbunLevelUpLearnset[] = {
 };
 #endif //P_FAMILY_FIDOUGH
 
+//done
 #if P_FAMILY_SMOLIV
 static const struct LevelUpMove sSmolivLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -20888,6 +20889,7 @@ static const struct LevelUpMove sSmolivLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//done
 static const struct LevelUpMove sDollivLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
@@ -20903,6 +20905,7 @@ static const struct LevelUpMove sDollivLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//done
 static const struct LevelUpMove sArbolivaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),

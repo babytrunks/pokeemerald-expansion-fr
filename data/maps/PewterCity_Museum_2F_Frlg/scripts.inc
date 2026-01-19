@@ -112,6 +112,7 @@ EventScript_falkner_Start::
     closemessage
     fadescreen FADE_TO_BLACK    @ fadescreen 0x1
     removeobject LOCALID_FALKNER @ hidesprite 0x6  @ ??? confirm correct LOCALID
+    removeobject LOCALID_PEWTER_MUSEUM_PIDGEOTTO
     playse SE_EXIT                  @ sound 0x9  @ ??? replace with proper SE_* constant
     waitse                      @ checksound
     fadescreen FADE_FROM_BLACK  @ fadescreen 0x0
@@ -120,6 +121,18 @@ EventScript_falkner_Start::
     release
     end
 
+EventScript_PewterCity_Museum_Pidgeotto::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_PIDGEOTTO, CRY_MODE_NORMAL
+	msgbox PewterCity_Museum_Text_Pidgeotto
+	waitmoncry
+	release
+	end
+
+PewterCity_Museum_Text_Pidgeotto::
+    .string "Pidgeotto: Pi, pi!$"
 
 Text_SeismicTossTeach::
     .string "The secrets of space…\n"

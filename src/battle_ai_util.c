@@ -3731,7 +3731,7 @@ u32 ShouldTryToFlinch(u32 battlerAtk, u32 battlerDef, enum Ability atkAbility, e
       || DoesSubstituteBlockMove(battlerAtk, battlerDef, move)
       || AI_IsSlower(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY))) // Opponent goes first
     {
-        return 0;
+        return NO_INCREASE;
     }
     else if ((gBattleMons[battlerDef].status1 & STATUS1_PARALYSIS
       || gBattleMons[battlerDef].volatiles.infatuation
@@ -3739,17 +3739,18 @@ u32 ShouldTryToFlinch(u32 battlerAtk, u32 battlerDef, enum Ability atkAbility, e
       || ((AI_IsFaster(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY)) && CanTargetFaintAi(battlerDef, battlerAtk)))
     {
         if (atkAbility == ABILITY_SERENE_GRACE)
-            return 3;
-        return 2;   // good idea to flinch
+            return GOOD_EFFECT;
+        return DECENT_EFFECT;   // good idea to flinch
     }
     else if (atkAbility == ABILITY_SERENE_GRACE)
     {
         if (move == MOVE_DOUBLE_IRON_BASH) 
-            return 3;
-        return 2;
+            return GOOD_EFFECT;
+
+        return DECENT_EFFECT;
     }
 
-    return 0;   // don't try to flinch
+    return NO_INCREASE;   // don't try to flinch
 }
 
 bool32 ShouldTrap(u32 battlerAtk, u32 battlerDef, u32 move)

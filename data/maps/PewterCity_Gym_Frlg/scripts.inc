@@ -103,6 +103,19 @@ PewterCity_Gym_EventScript_GymStatuePostVictory::
 	releaseall
 	end
 
+PewterCity_Gym_EventScript_Onix::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_ONIX, CRY_MODE_NORMAL
+	msgbox PewterCity_Gym_Text_Onix
+	waitmoncry
+	release
+	end
+
+PewterCity_Gym_Text_Onix::
+    .string "Onix: Oooar!$"
+
 PewterCity_Gym_Text_BrockIntro::
     .string "{COLOR BLUE}So, you're here. I'm Brock.\n"
     .string "I'm Pewter's Gym Leader.\p"

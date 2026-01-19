@@ -58,6 +58,10 @@ MtMoon_B2F_EventScript_ItemSoftSand::
 	finditem ITEM_SOFT_SAND
 	end
 
+MtMoon_B2F_EventScript_ItemTMHiddenPower::
+	finditem ITEM_TM_HIDDEN_POWER
+	end
+
 Route24_EventScript_ItemPoisonBarb::
 	finditem ITEM_POISON_BARB
 	end

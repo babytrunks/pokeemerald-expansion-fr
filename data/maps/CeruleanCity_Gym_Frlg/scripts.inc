@@ -65,6 +65,19 @@ CeruleanCity_Gym_EventScript_GymStatuePostVictory::
 	releaseall
 	end
 
+CeruleanCity_Gym_EventScript_Starmie::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_STARMIE, CRY_MODE_NORMAL
+	msgbox CeruleanCity_Gym_Text_Starmie
+	waitmoncry
+	release
+	end
+
+CeruleanCity_Gym_Text_Starmie::
+    .string "Starmie: Star Star!$"
+
 CeruleanCity_Gym_Text_MistyIntro::
     .string "Hi, you're a new face!\p"
     .string "Only those TRAINERS who have a\n"

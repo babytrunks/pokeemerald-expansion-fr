@@ -585,7 +585,7 @@
 #define TRAINER_BUGSY                              579
 #define TRAINER_BUGSY_POST_SURGE                   580
 #define TRAINER_WHITNEY                581
-#define TRAINER_TUBER_AMIRA_2                      582
+#define TRAINER_LEADER_JASMINE                      582
 #define TRAINER_TWINS_JOY_MEG_2                    583
 #define TRAINER_PAINTER_RAYNA_2                    584
 #define TRAINER_YOUNGSTER_DESTIN_2                 585

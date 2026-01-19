@@ -1030,24 +1030,29 @@ static void Task_MenuEditingStat(u8 taskId) // This function should be refactore
 
 }
 
-static const u32 sEVCapFlagMap[][2] =
+#define EV_CAP_COUNT 5
+static const u32 sEVCapFlagMap[EV_CAP_COUNT][2] =
 {
-    {FLAG_BADGE02_GET, 0},
-    {FLAG_BADGE03_GET, 128},
-    {FLAG_BADGE04_GET, 256},
-    {FLAG_BADGE05_GET, 384},
-    {FLAG_BADGE06_GET, 510},
+    {FLAG_DEFEATED_WHITNEY, 102},
+    {FLAG_DEFEATED_CHUCK, 204},
+    {FLAG_DEFEATED_JASMINE, 306},
+    {FLAG_DEFEATED_MORTY, 408},
+    {FLAG_DEFEATED_PRYCE, 510},
 };
 
 static u16 getEvCap(void) {
     u32 evCap = 0;
+    u8 capIndex = 0;
     for (u8 i = 0; i < ARRAY_COUNT(sEVCapFlagMap); i++)
     {
-        if (!FlagGet(sEVCapFlagMap[i][0])) {
-            return sEVCapFlagMap[i][1];
+        if (FlagGet(sEVCapFlagMap[i][0])) {
+            capIndex++;
         }
     }
-
+    if (capIndex >= EV_CAP_COUNT) 
+        return 510;
+    else
+        return sEVCapFlagMap[capIndex][1];
     return evCap;
 }
 

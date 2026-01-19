@@ -57,7 +57,8 @@ PostBugsy:
     giveitem ITEM_TM_U_TURN
     msgbox gText_bugsy_7, MSGBOX_DEFAULT
     fadescreen FADE_TO_BLACK
-    removeobject LOCALID_BUGSY                
+    removeobject LOCALID_BUGSY 
+    removeobject LOCALID_ROUTE25_SCYTHER               
     playse SE_PIN                                @ ??? map to proper SE_* constant
     waitse
     fadescreen FADE_FROM_BLACK
@@ -77,6 +78,21 @@ CheckBadges:
 Movement_Bugsy_Look:
     face_player                       
     step_end
+
+
+Route25_EventScript_Scyther::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SCYTHER, CRY_MODE_NORMAL
+	msgbox Route25_Text_Scyther
+	waitmoncry
+	release
+	end
+
+Route25_Text_Scyther::
+    .string "Scyther: Scy!$"
+
 
 Route25_Text_JoeyIntro::
     .string "Local TRAINERS come here to\n"

@@ -83,6 +83,19 @@ CeladonCity_Gym_EventScript_GymStatuePostVictory::
 	releaseall
 	end
 
+CeladonCity_Gym_EventScript_Victreebel::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_VICTREEBEL, CRY_MODE_NORMAL
+	msgbox CeladonCity_Gym_Text_Victreebel
+	waitmoncry
+	release
+	end
+
+CeladonCity_Gym_Text_Victreebel::
+    .string "Victreebel: Victree!$"
+
 CeladonCity_Gym_Text_ErikaIntro::
     .string "Hello…\n"
     .string "Lovely weather, isn't it?\l"

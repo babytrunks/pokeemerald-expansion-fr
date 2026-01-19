@@ -1298,7 +1298,7 @@ Nature: Jolly
 Ability: Contrary
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 108 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 
 Sneasel-Hisui @ Eviolite
@@ -1306,7 +1306,7 @@ Nature: Bashful
 Ability: Inner Focus
 Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 108 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 
 Liepard @ Focus Sash
@@ -1314,7 +1314,7 @@ Nature: Bashful
 Ability: Prankster
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
 
 
@@ -4430,9 +4430,9 @@ Dynamic Level Ratio: 90
 Hitmontop @ Focus Sash
 Nature: Jolly
 Ability: Technician
-Level: 38
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Triple Kick
 - Triple Axel
 - Fake Out
@@ -4441,9 +4441,9 @@ EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
 Sneasler @ Focus Sash
 Nature: Jolly
 Ability: Poison Touch
-Level: 38
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Close Combat
 - Poison Jab
 - Knock Off
@@ -4452,9 +4452,9 @@ EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
 Breloom @ Toxic Orb
 Nature: Jolly
 Ability: Poison Heal
-Level: 38
+Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Spore
 - Substitute
 - Focus Punch
@@ -4463,9 +4463,9 @@ EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
 Quaquaval @ Mystic Water
 Nature: Jolly
 Ability: Moxie
-Level: 38
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Aqua Step
 - Close Combat
 - Bulk Up
@@ -4474,9 +4474,9 @@ EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
 Lucario @ Air Balloon
 Nature: Timid
 Ability: Inner Focus
-Level: 38
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 108 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 102 SpA / 0 SpD / 102 Spe
 - Nasty Plot
 - Aura Sphere
 - Flash Cannon
@@ -4485,9 +4485,9 @@ EVs: 0 HP / 0 Atk / 0 Def / 108 SpA / 0 SpD / 108 Spe
 Gallade @ Galladite
 Nature: Jolly
 Ability: Sharpness
-Level: 40
+Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Bulk Up
 - Drain Punch
 - Psycho Cut
@@ -5517,7 +5517,7 @@ Nature: Calm
 Ability: Bad Dreams
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 108 HP / 0 Atk / 0 Def / 0 SpA / 108 SpD / 0 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 102 SpD / 0 Spe
 - Dark Void
 - Psychic
 - Shadow Ball
@@ -5528,7 +5528,7 @@ Nature: Jolly
 Ability: Unnerve
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 4 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 4 Def / 0 SpA / 0 SpD / 102 Spe
 - Rock Slide
 - Dual Wingbeat
 - Aqua Tail
@@ -5539,7 +5539,7 @@ Nature: Adamant
 Ability: Intimidate
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 108 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 102 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Drain Punch
 - Play Rough
 - Temper Flare
@@ -5550,7 +5550,7 @@ Nature: Jolly
 Ability: Guts
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Facade
 - Knock Off
 - Sucker Punch
@@ -6797,7 +6797,7 @@ Nature: Jolly
 Ability: Infiltrator
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Surf
 - Knock Off
 - Icicle Crash
@@ -6808,7 +6808,7 @@ Nature: Hasty
 Ability: Steam Engine
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 216 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
 - Heat Wave
 - Rock Slide
 - Earth Power
@@ -6819,7 +6819,7 @@ Nature: Adamant
 Ability: Grassy Surge
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 216 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Grassy Glide
 - Drain Punch
 - Spiky Shield
@@ -6830,7 +6830,7 @@ Nature: Adamant
 Ability: Heavy Metal
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 216 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Heavy Slam
 - Body Press
 - Heat Crash
@@ -7567,7 +7567,7 @@ Nature: Jolly
 Ability: Grassy Surge
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 216 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Grassy Glide
 - U-turn
 - High Horsepower
@@ -7578,7 +7578,7 @@ Nature: Jolly
 Ability: Protean
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 108 Atk / 0 Def / 0 SpA / 0 SpD / 108 Spe
+EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Flower Trick
 - Knock Off
 - U-turn
@@ -7589,7 +7589,7 @@ Nature: Modest
 Ability: Chlorophyll
 Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 108 HP / 0 Atk / 0 Def / 108 SpA / 0 SpD / 0 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 102 SpA / 0 SpD / 0 Spe
 - Giga Drain
 - Sludge Bomb
 - Sleep Powder
@@ -7600,7 +7600,7 @@ Nature: Modest
 Ability: Triage
 Level: 35
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
-EVs: 108 HP / 0 Atk / 0 Def / 108 SpA / 0 SpD / 0 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 102 SpA / 0 SpD / 0 Spe
 - Ancient Power
 - Giga Drain
 - Dazzling Gleam
@@ -7611,7 +7611,7 @@ Nature: Naive
 Ability: Reckless
 Level: 35
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 216 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 204 SpA / 0 SpD / 0 Spe
 - Thunderbolt
 - Chloroblast
 - Hidden Power 
@@ -13334,26 +13334,81 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 - Coil
 
-=== TRAINER_TUBER_AMIRA_2 ===
-Name: AMIRA
-Class: Tuber Frlg
-Pic: Tuber F Frlg
-Gender: Male
+=== TRAINER_LEADER_JASMINE ===
+Name: Jasmine
+Class: Leader
+Pic: Leader Jasmine
+Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Purple
+Dynamic Level Ratio: 90
 
-Poliwhirl
-Level: 47
+Bronzong @ Iapapa Berry
+Nature: Impish
+Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Body Press
+- Teleport
+- Heavy Slam
+- Stealth Rock
 
-Poliwhirl
-Level: 47
+Gholdengo @ Air Balloon
+Nature: Modest
+Ability: Good As Gold
+Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 204 SpA / 0 SpD / 0 Spe
+- Nasty Plot
+- Shadow Ball
+- Make It Rain
+- Focus Blast
 
-Poliwhirl
-Level: 47
+Duraludon @ Eviolite
+Nature: Modest
+Ability: Stalwart
+Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Dragon Pulse
+- Flash Cannon
+- Thunderbolt
+- Body Press
+
+Durant @ Life Orb
+Nature: Jolly
+Ability: Hustle
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+- Iron Head
+- Close Combat
+- X-Scissor
+- Hone Claws
+
+Samurott @ White Herb
+Nature: Jolly
+Ability: Sharpness
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Shell Smash
+- Razor Shell
+- Cut
+- Sacred Sword
+
+Steelix @ Steelixite
+Nature: Adamant
+Ability: Sturdy
+Level: 37
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Heavy Slam
+- Earthquake
+- Body Press
+- Roar
 
 === TRAINER_TWINS_JOY_MEG_2 ===
 Name: JOY & MEG
