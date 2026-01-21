@@ -431,7 +431,7 @@ CeruleanCity_Text_OkayIllReturnStolenTM::
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
     .string "{PLAYER} recovered TM28 from\n"
-    .string "the TEAM ROCKET GRUNT.$"
+    .string "the Team Rocket GRUNT.$"
 
 CeruleanCity_Text_BetterGetMovingBye::
     .string "I better get moving!\n"
@@ -468,7 +468,7 @@ CeruleanCity_Text_PokemonEncyclopediaAmusing::
 
 CeruleanCity_Text_PeopleHereWereRobbed::
     .string "The people here were robbed.\p"
-    .string "It's obvious that TEAM ROCKET is\n"
+    .string "It's obvious that Team Rocket is\n"
     .string "behind this most heinous crime!\p"
     .string "Even our POLICE FORCE has\n"
     .string "trouble with the ROCKETS!$"
@@ -547,4 +547,4 @@ CeruleanCity_Text_GymSign::
     .string "The Tomboyish Mermaid!$"
 
 CeruleanCity_Text_ReceivedAnEgg:
-	.string "You received a mysterious egg."
+	.string "You received a mysterious egg.$"

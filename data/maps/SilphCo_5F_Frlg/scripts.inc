@@ -58,12 +58,12 @@ SilphCo_5F_EventScript_Dalton::
 	end
 
 SilphCo_5F_Text_RocketsInUproarAboutIntruder::
-    .string "TEAM ROCKET is in an uproar over\n"
+    .string "Team Rocket is in an uproar over\n"
     .string "some intruder.\p"
     .string "That's you, right?$"
 
 SilphCo_5F_Text_YoureOurHeroThankYou::
-    .string "TEAM ROCKET took off!\n"
+    .string "Team Rocket took off!\n"
     .string "You're our hero! Thank you!$"
 
 SilphCo_5F_Text_Grunt1Intro::
@@ -75,7 +75,7 @@ SilphCo_5F_Text_Grunt1Defeat::
 
 SilphCo_5F_Text_Grunt1PostBattle::
     .string "It's not smart to pick a fight with\n"
-    .string "TEAM ROCKET!$"
+    .string "Team Rocket!$"
 
 SilphCo_5F_Text_BeauIntro::
     .string "We study Poké Ball technology on\n"
@@ -102,7 +102,7 @@ SilphCo_5F_Text_DaltonPostBattle::
     .string "It's a long way to my BOSS!$"
 
 SilphCo_5F_Text_Grunt2Intro::
-    .string "Show TEAM ROCKET a little respect!$"
+    .string "Show Team Rocket a little respect!$"
 
 SilphCo_5F_Text_Grunt2Defeat::
     .string "Cough…\n"
@@ -128,7 +128,7 @@ SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
     .string "to evolve when they are traded.$"
 
 SilphCo_5F_Text_FloorSign::
-    .string "SILPH CO. HEAD OFFICE\n"
+    .string "Silph Co. HEAD OFFICE\n"
     .string "5F$"
 
 SilphCo_5F_Text_RocketBossLookingForStrongMons::

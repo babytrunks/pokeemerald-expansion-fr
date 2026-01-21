@@ -114,7 +114,7 @@ MtMoon_1F_Text_KentDefeat::
 
 MtMoon_1F_Text_KentPostBattle::
     .string "I saw them!\n"
-    .string "I'm sure they're from TEAM ROCKET!$"
+    .string "I'm sure they're from Team Rocket!$"
 
 MtMoon_1F_Text_RobbyIntro::
     .string "You need to go through this cave\n"

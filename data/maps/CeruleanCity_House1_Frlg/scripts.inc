@@ -9,7 +9,8 @@ CeruleanCity_House1_EventScript_LuxuryBallGuy::
     giveitem ITEM_LUXURY_BALL
     setflag FLAG_CERULEAN_GAVE_LUXURY_BALL
 CeruleanCity_House1_EventScript_LuxuryBallGuyDone:
-
+    msgbox CeruleanCity_House1_Text_LuxuryBallBoostsIVs
+    release
     end
 
 CeruleanCity_House1_Text_LuxuryBallClassy::

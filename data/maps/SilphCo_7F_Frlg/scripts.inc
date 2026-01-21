@@ -254,26 +254,26 @@ SilphCo_7F_Text_ExplainLapras::
     .string "It'll give you a lift across water!$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom::
-    .string "TEAM ROCKET's BOSS went to the\n"
+    .string "Team Rocket's BOSS went to the\n"
     .string "boardroom!\p"
     .string "Is our PRESIDENT okay?\n"
     .string "I'm worried.$"
 
 SilphCo_7F_Text_RocketsAfterMasterBall::
-    .string "TEAM ROCKET was after the MASTER\n"
+    .string "Team Rocket was after the MASTER\n"
     .string "BALL, which catches any Pokémon.$"
 
 SilphCo_7F_Text_CanceledMasterBallProject::
     .string "We canceled the MASTER BALL\n"
-    .string "project because of TEAM ROCKET.$"
+    .string "project because of Team Rocket.$"
 
 SilphCo_7F_Text_BadIfTeamRocketTookOver::
-    .string "It would be bad if TEAM ROCKET\n"
+    .string "It would be bad if Team Rocket\n"
     .string "took over SILPH or our Pokémon.$"
 
 SilphCo_7F_Text_WowYouChasedOffTeamRocket::
     .string "Wow!\p"
-    .string "You chased off TEAM ROCKET all by\n"
+    .string "You chased off Team Rocket all by\n"
     .string "yourself?$"
 
 SilphCo_7F_Text_ReallyDangerousHere::
@@ -337,7 +337,7 @@ SilphCo_7F_Text_RivalWhatKeptYou::
 SilphCo_7F_Text_RivalIntro::
     .string "{RIVAL}: Hahaha! I thought you'd\n"
     .string "turn up if I waited here!\p"
-    .string "I guess TEAM ROCKET slowed you\n"
+    .string "I guess Team Rocket slowed you\n"
     .string "down! Not that I care!\p"
     .string "I saw you in SAFFRON, so I decided\n"
     .string "to see if you got better!$"
@@ -363,6 +363,6 @@ SilphCo_7F_Text_RivalPostBattle::
     .string "Smell ya!$"
 
 SilphCo_7F_Text_FloorSign::
-    .string "SILPH CO. HEAD OFFICE\n"
+    .string "Silph Co. HEAD OFFICE\n"
     .string "7F$"
 

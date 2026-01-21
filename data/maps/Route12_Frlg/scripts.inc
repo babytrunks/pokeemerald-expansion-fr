@@ -34,6 +34,44 @@ Route12_EventScript_Snorlax::
 	release
 	end
 
+Route12_EventScript_Jes::
+    lock
+    faceplayer
+	goto_if_defeated TRAINER_YOUNG_COUPLE_GIA_JES, Route12_EventScript_Jes_Defeated
+	msgbox Route12_Text_GiaIntro
+	trainerbattle_no_intro TRAINER_YOUNG_COUPLE_GIA_JES, Route12_Text_GiaDefeat
+	msgbox Route12_Text_GiaPostBattle
+	giveitem ITEM_TM_DAZZLING_GLEAM
+	msgbox Route12_Text_GiaGiveFloettite
+	giveitem ITEM_FLOETTITE
+    release
+	settrainerflag TRAINER_YOUNG_COUPLE_GIA_JES
+	end
+
+Route12_EventScript_Gia::
+    lock
+    faceplayer
+	goto_if_defeated TRAINER_YOUNG_COUPLE_GIA_JES, Route12_EventScript_Gia_Defeated
+	msgbox Route12_Text_GiaIntro
+	trainerbattle_no_intro TRAINER_YOUNG_COUPLE_GIA_JES, Route12_Text_GiaDefeat
+	msgbox Route12_Text_GiaPostBattle
+	giveitem ITEM_TM_DAZZLING_GLEAM
+	msgbox Route12_Text_GiaGiveFloettite
+	giveitem ITEM_FLOETTITE
+    release
+	settrainerflag TRAINER_YOUNG_COUPLE_GIA_JES
+	end
+
+Route12_EventScript_Gia_Defeated:
+	msgbox Route12_Text_GiaDefeated
+	release
+	end
+
+Route12_EventScript_Jes_Defeated:
+	msgbox Route12_Text_JesDefeated
+	release
+	end
+
 Route12_EventScript_DontUsePokeFlute::
 	release
 	end
@@ -168,35 +206,48 @@ Route12_Text_SportfishingArea::
     .string "SPORTFISHING AREA$"
 
 Route12_Text_JesIntro::
-    .string "JES: If I win, I'm going to\n"
+    .string "Jes: If I win, I'm going to\n"
     .string "propose to GIA.$"
 
 Route12_Text_JesDefeat::
-    .string "JES: Oh, please, why couldn't you\n"
+    .string "Jes: Oh, please, why couldn't you\n"
     .string "let us win?$"
 
 Route12_Text_JesPostBattle::
-    .string "JES: Oh, GIA, forgive me,\n"
+    .string "Jes: Oh, Gia, forgive me,\n"
     .string "my love!$"
 
 Route12_Text_JesNotEnoughMons::
-    .string "JES: GIA and I, we'll be\n"
+    .string "Jes: Gia and I, we'll be\n"
     .string "together forever.\p"
     .string "We won't battle unless you have\n"
     .string "two Pokémon of your own.$"
 
+Route12_Text_GiaPostBattle::
+    .string "We thought our love was unbeat-\n"
+    .string "able. What a tragic revelation.\p"
+    .string "Take this TM for showing us our\n"
+    .string "weaknesses.$"
+
+Route12_Text_GiaGiveFloettite:
+    .string "This Mega Stone may suit you too.$"
+
 Route12_Text_GiaIntro::
-    .string "GIA: Hey, JES…\p"
+    .string "Gia: Hey, Jes\p"
     .string "If we win, I'll marry you!$"
 
 Route12_Text_GiaDefeat::
-    .string "GIA: Oh, but why?$"
+    .string "Gia: Oh, but why?$"
 
-Route12_Text_GiaPostBattle::
-    .string "GIA: JES, you silly!\n"
-    .string "You ruined this!$"
 
 Route12_Text_GiaNotEnoughMons::
-    .string "GIA: I can't bear to battle\n"
-    .string "without my JES!\p"
+    .string "Gia: I can't bear to battle\n"
+    .string "without my Jes!\p"
     .string "Don't you have one more Pokémon?$"
+
+Route12_Text_JesDefeated::
+    .string "Love may not stay strong forever.$"
+
+Route12_Text_GiaDefeated::
+    .string "Love needs to be built upon to\n"
+    .string "prosper.$"

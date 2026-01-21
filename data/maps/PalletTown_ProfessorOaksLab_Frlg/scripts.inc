@@ -796,7 +796,7 @@ PalletTown_ProfessorOaksLab_Movement_OakWalkToDeskSouth::
 	step_end
 
 PalletTown_ProfessorOaksLab_EventScript_RatePokedexOrTryGiveBalls::
-	setvar VAR_0x8004, 0
+	setvar VAR_0x8004, 1
 	specialvar VAR_RESULT, GetFrlgPokedexCount
 	copyvar VAR_0x8008, VAR_0x8005
 	copyvar VAR_0x8009, VAR_0x8006

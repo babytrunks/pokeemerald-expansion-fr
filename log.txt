@@ -1,0 +1,17 @@
+[ERROR] GBA Savedata: Savegame time offset set to 0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[ERROR] GBA Savedata: Savegame time offset set to 0
+[ERROR] GBA Savedata: Savegame time offset set to 0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
+[ERROR] GBA Savedata: Savegame time offset set to 0
+[ERROR] GBA Savedata: Savegame time offset set to 0
+[WARN] GBA Debug: ItemMenu_Deselect: itemId=693
+[ERROR] GBA Savedata: Savegame time offset set to 0
+[ERROR] GBA Savedata: Savegame time offset set to 0
+[ERROR] GBA Savedata: Savegame time offset set to 0

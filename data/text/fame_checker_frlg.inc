@@ -539,7 +539,7 @@ gFameCheckerFlavorText_MrFuji1:: @ 0x81AFB76
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}This old guy marched right up to\n"
 	.string "our HIDEOUT.\p"
 	.string "Then, he starts ranting about how\n"
-	.string "TEAM ROCKET's abusing Pokémon.\p"
+	.string "Team Rocket's abusing Pokémon.\p"
 	.string "So, we're just talking it over as\n"
 	.string "adults.$"
 
@@ -572,7 +572,7 @@ gFameCheckerFlavorText_MrFuji5:: @ 0x81AFDC4
 
 gFameCheckerFlavorText_Giovanni0:: @ 0x81AFE68
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
-	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}TEAM ROCKET captures Pokémon from\n"
+	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Team Rocket captures Pokémon from\n"
 	.string "around the world.\p"
 	.string "They're important tools for keeping\n"
 	.string "our criminal enterprise going.\p"
@@ -587,7 +587,7 @@ gFameCheckerFlavorText_Giovanni1:: @ 0x81AFF23
 
 gFameCheckerFlavorText_Giovanni2:: @ 0x81AFFA8
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What is this person like?\p"
-	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}TEAM ROCKET's BOSS is terribly\n"
+	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Team Rocket's BOSS is terribly\n"
 	.string "cruel!\p"
 	.string "To him, Pokémon are just tools to\n"
 	.string "be used.$"
@@ -596,7 +596,7 @@ gFameCheckerFlavorText_Giovanni3:: @ 0x81B0022
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Welcome to my hideout!\p"
 	.string "It shall be so until I can restore\n"
-	.string "TEAM ROCKET to its former glory.$"
+	.string "Team Rocket to its former glory.$"
 
 gFameCheckerFlavorText_Giovanni4:: @ 0x81B00A6
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
@@ -1053,7 +1053,7 @@ gFameCheckerFlavorTextOriginLocation_MrFuji0::
 	.string "Lavender Town$"
 
 gFameCheckerFlavorTextOriginLocation_MrFuji1::
-	.string "Pokémon TOWER$"
+	.string "Pokémon Tower$"
 
 gFameCheckerFlavorTextOriginLocation_MrFuji2::
 	.string "Lavender Town$"
@@ -1071,10 +1071,10 @@ gFameCheckerFlavorTextOriginLocation_Giovanni0::
 	.string "ROCKET HIDEOUT$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni1::
-	.string "SILPH CO.$"
+	.string "Silph Co.$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni2::
-	.string "SILPH CO.$"
+	.string "Silph Co.$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni3::
 	.string "Viridian Gym$"
@@ -1341,7 +1341,7 @@ gFameCheckerFlavorTextOriginObjectName_MrFuji0::
 	.string "LITTLE GIRL$"
 
 gFameCheckerFlavorTextOriginObjectName_MrFuji1::
-	.string "TEAM ROCKET$"
+	.string "Team Rocket$"
 
 gFameCheckerFlavorTextOriginObjectName_MrFuji2::
 	.string "MAGAZINE$"

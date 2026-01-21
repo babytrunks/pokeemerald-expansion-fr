@@ -278,7 +278,7 @@ void SafariBufferExecCompleted(u32 battler)
 
 static void SafariHandleDrawTrainerPic(u32 battler)
 {
-    enum TrainerPicID trainerPicId = gSaveBlock2Ptr->playerGender == MALE ? TRAINER_BACK_PIC_PLAYER_MALE : TRAINER_BACK_PIC_PLAYER_FEMALE;
+    u32 trainerPicId = gSaveBlock2Ptr->playerGender == MALE ? TRAINER_BACK_PIC_PLAYER_MALE : TRAINER_BACK_PIC_PLAYER_FEMALE;
 
     BtlController_HandleDrawTrainerPic(battler, trainerPicId, FALSE,
                                        80, 80 + 4 * (8 - gTrainerBacksprites[trainerPicId].coordinates.size),

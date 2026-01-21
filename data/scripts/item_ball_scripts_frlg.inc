@@ -1,9 +1,9 @@
-Route1_EventScript_ItemSilkScarf::
-	finditem ITEM_SILK_SCARF
+Route1_EventScript_ItemLuckyEgg::
+	finditem ITEM_LUCKY_EGG
 	end
 
-Route22_EventScript_ItemSharpBeak::
-	finditem ITEM_SHARP_BEAK
+Route22_EventScript_ItemQuickClaw::
+	finditem ITEM_QUICK_CLAW
 	end
 
 Route2_EventScript_ItemTMRest::
@@ -26,8 +26,8 @@ ViridianForest_EventScript_ItemWiseGlasses::
 	finditem ITEM_WISE_GLASSES
 	end
 
-ViridianForest_EventScript_ItemSilverPowder::
-	finditem ITEM_SILVER_POWDER
+ViridianForest_EventScript_ItemDuskBall::
+	finditem ITEM_DUSK_BALL
 	end
 
 MtMoon_1F_EventScript_ItemShellBell::
@@ -54,16 +54,16 @@ MtMoon_1F_EventScript_ItemMoonStone::
 	finditem ITEM_MOON_STONE
 	end
 
-MtMoon_B2F_EventScript_ItemSoftSand::
-	finditem ITEM_SOFT_SAND
+MtMoon_B2F_EventScript_ItemGeniusFeather::
+	finditem ITEM_GENIUS_FEATHER
 	end
 
 MtMoon_B2F_EventScript_ItemTMHiddenPower::
 	finditem ITEM_TM_HIDDEN_POWER
 	end
 
-Route24_EventScript_ItemPoisonBarb::
-	finditem ITEM_POISON_BARB
+Route24_EventScript_ItemSwiftFeather::
+	finditem ITEM_SWIFT_FEATHER
 	end
 
 MtMoon_B2F_EventScript_ItemTM46::
@@ -86,8 +86,8 @@ Route25_EventScript_ItemTM43::
 	finditem ITEM_TM43
 	end
 
-Route5_EventScript_ItemTwistedSpoon::
-	finditem ITEM_TWISTED_SPOON
+Route24_EventScript_ItemMuscleFeather::
+	finditem ITEM_MUSCLE_FEATHER
 	end
 
 
@@ -127,16 +127,16 @@ Route9_EventScript_ItemTMThunderPunch::
 	finditem ITEM_TM_THUNDER_PUNCH
 	end
 
-RocketHideout_B1F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE
+RocketHideout_B1F_EventScript_ItemLuxuryBall::
+	finditem ITEM_LUXURY_BALL
 	end
 
 RocketHideout_B1F_EventScript_ItemHyperPotion::
 	finditem ITEM_HYPER_POTION
 	end
 
-RocketHideout_B2F_EventScript_ItemXSpeed::
-	finditem ITEM_X_SPEED
+RocketHideout_B2F_EventScript_ItemSwiftFeather::
+	finditem ITEM_SWIFT_FEATHER
 	end
 
 RocketHideout_B2F_EventScript_ItemMoonStone::

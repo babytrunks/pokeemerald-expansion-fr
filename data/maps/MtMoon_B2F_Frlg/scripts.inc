@@ -301,7 +301,7 @@ MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils::
     .string "fossils.$"
 
 MtMoon_B2F_Text_Grunt1Intro::
-    .string "We, TEAM ROCKET, shall find the\n"
+    .string "We, Team Rocket, shall find the\n"
     .string "fossils!\p"
     .string "Reviving Pokémon from them will\n"
     .string "earn us huge riches!$"
@@ -312,10 +312,10 @@ MtMoon_B2F_Text_Grunt1Defeat::
 
 MtMoon_B2F_Text_Grunt1PostBattle::
     .string "You made me mad!\n"
-    .string "TEAM ROCKET will blacklist you!$"
+    .string "Team Rocket will blacklist you!$"
 
 MtMoon_B2F_Text_Grunt2Intro::
-    .string "We, TEAM ROCKET, are Pokémon\n"
+    .string "We, Team Rocket, are Pokémon\n"
     .string "gangsters!\l"
     .string "We strike fear with our strength!$"
 

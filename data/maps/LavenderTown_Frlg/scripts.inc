@@ -62,7 +62,7 @@ LavenderTown_Text_TownKnownAsMonGraveSite::
     .string "This town is known as the grave\n"
     .string "site of Pokémon.\p"
     .string "Memorial services are held in\n"
-    .string "Pokémon TOWER.$"
+    .string "Pokémon Tower.$"
 
 LavenderTown_Text_GhostsAppearedInTower::
     .string "Ghosts appeared in Pokémon TOWER.\p"
@@ -74,9 +74,9 @@ LavenderTown_Text_TownSign::
     .string "The Noble Purple Town$"
 
 LavenderTown_Text_SilphScopeNotice::
-    .string "New SILPH SCOPE!\n"
+    .string "New Silph Scope!\n"
     .string "Make the Invisible Plain to See!\p"
-    .string "SILPH CO.$"
+    .string "Silph Co.$"
 
 LavenderTown_Text_VolunteerPokemonHouse::
     .string "Lavender Volunteer\n"

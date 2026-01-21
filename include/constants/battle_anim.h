@@ -597,7 +597,7 @@
 #define B_ANIM_MON_SCARED               54
 #define B_ANIM_GHOST_GET_OUT            55
 #define B_ANIM_SILPH_SCOPED             56
-#define B_ANIM_MIST                     5
+#define B_ANIM_MIST                     57
 #define B_ANIM_SWAP_TO_SUBSTITUTE       58
 #define B_ANIM_SWAP_FROM_SUBSTITUTE     59
 #define B_ANIM_ROCK_THROW               60

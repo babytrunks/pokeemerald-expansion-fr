@@ -75,7 +75,7 @@ RocketHideout_B1F_Text_Grunt1PostBattle::
     .string "ROCKET, aren't you?$"
 
 RocketHideout_B1F_Text_Grunt2Intro::
-    .string "You broke into TEAM ROCKET's\n"
+    .string "You broke into Team Rocket's\n"
     .string "operation? What nerve!$"
 
 RocketHideout_B1F_Text_Grunt2Defeat::
@@ -92,7 +92,7 @@ RocketHideout_B1F_Text_Grunt3Defeat::
     .string "I can't do it!$"
 
 RocketHideout_B1F_Text_Grunt3PostBattle::
-    .string "SILPH SCOPE? Humph!\n"
+    .string "Silph Scope? Humph!\n"
     .string "I don't know where it is.$"
 
 RocketHideout_B1F_Text_Grunt4Intro::

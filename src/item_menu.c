@@ -53,6 +53,7 @@
 #include "constants/items.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "gba/isagbprint.h"
 
 #define TAG_POCKET_SCROLL_ARROW 110
 #define TAG_BAG_SCROLL_ARROW    111
@@ -346,7 +347,7 @@ static const u8 sContextMenuItems_TmHmPocket[] = {
 };
 
 static const u8 sContextMenuItems_BerriesPocket[] = {
-    ACTION_CHECK_TAG,   ACTION_DUMMY,
+    // ACTION_CHECK_TAG,   ACTION_DUMMY,
     ACTION_USE,         ACTION_GIVE,
     ACTION_TOSS,        ACTION_CANCEL
 };
@@ -3141,6 +3142,8 @@ void UNUSED ItemMenu_Register(u8 taskId)
 
     tQuantity = itemSlot.quantity;
     gSpecialVar_ItemId = itemSlot.itemId;
+    DebugPrintf("ItemMenu_Register: itemId=%d", itemSlot.itemId);
+
     sContextMenuFuncs[gBagPosition.location](taskId);
 }
 
@@ -3156,9 +3159,11 @@ static void UNUSED ItemMenu_Deselect(u8 taskId)
 {
     s16* data = gTasks[taskId].data;
     int listPosition = ListMenu_ProcessInput(tListTaskId);
-    u16 itemId = GetBagItemId(gBagPosition.pocket + 1, listPosition);
+    // struct ItemSlot itemSlot = GetBagItemIdAndQuantity(gBagPosition.pocket + 1, listPosition);
+    // u16 itemId = itemSlot.itemId;
+    // DebugPrintf("ItemMenu_Deselect: itemId=%d", gSpecialVar_ItemId);
 
-    ResetRegisteredItem(itemId);
+    ResetRegisteredItem(gSpecialVar_ItemId);
 
     gTasks[taskId].func = ItemMenu_FinishRegister;
 }

@@ -174,7 +174,7 @@
       "flag": "FLAG_HIDE_ROUTE12_IRON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY_FRLG",
+      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
       "x": 19,
       "y": 64,
       "elevation": 3,
@@ -187,7 +187,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
       "x": 19,
       "y": 63,
       "elevation": 3,

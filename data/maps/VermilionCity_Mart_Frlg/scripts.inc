@@ -14,7 +14,28 @@ VermilionCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_BADGE05_GET, VermilionCity_Mart_5BadgeStock
+	goto_if_set FLAG_BADGE04_GET, VermilionCity_Mart_4BadgeStock
+	goto_if_set FLAG_BADGE02_GET, VermilionCity_Mart_2BadgeStock
 	pokemart VermilionCity_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+VermilionCity_Mart_5BadgeStock:
+	pokemart VermilionCity_Mart_5BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+VermilionCity_Mart_4BadgeStock:
+	pokemart VermilionCity_Mart_4BadgeItems
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+VermilionCity_Mart_2BadgeStock:
+	pokemart VermilionCity_Mart_2BadgeItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -22,11 +43,45 @@ VermilionCity_Mart_EventScript_Clerk::
 	.align 2
 VermilionCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
-	.2byte ITEM_SUPER_POTION
-	.2byte ITEM_ANTIDOTE
-	.2byte ITEM_PARALYZE_HEAL
-	.2byte ITEM_AWAKENING
-	.2byte ITEM_ICE_HEAL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_HARD_STONE
+	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+VermilionCity_Mart_2BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_HARD_STONE
+	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+VermilionCity_Mart_4BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_HARD_STONE
+	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+VermilionCity_Mart_5BadgeItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DUSK_BALL  
+	.2byte ITEM_HARD_STONE
+	.2byte ITEM_SOFT_SAND
 	.2byte ITEM_NONE
 	release
 	end
@@ -34,14 +89,14 @@ VermilionCity_Mart_Items::
 VermilionCity_Mart_Text_TeamRocketAreWickedPeople::
     .string "There are wicked people who will\n"
     .string "use Pokémon for criminal acts.\p"
-    .string "TEAM ROCKET traffics in rare\n"
+    .string "Team Rocket traffics in rare\n"
     .string "Pokémon, for example.\p"
     .string "They also abandon Pokémon that\n"
     .string "they consider unpopular or useless.\p"
     .string "That's the sort of horrid people\n"
-    .string "they are, TEAM ROCKET.$"
+    .string "they are, Team Rocket.$"
 
 VermilionCity_Mart_Text_MonsGoodOrBadDependingOnTrainer::
     .string "I think Pokémon can be good or\n"
-    .string "bad. It depends on the TRAINER.$"
+    .string "bad. It depends on the Trainer.$"
 

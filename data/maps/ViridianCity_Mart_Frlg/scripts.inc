@@ -52,6 +52,7 @@ ViridianCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_SILK_SCARF
 	.2byte ITEM_NONE
 	release
 	end
@@ -62,6 +63,7 @@ ViridianCity_Mart_2BadgeItems::
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_SILK_SCARF
 	.2byte ITEM_NONE
 	release
 	end
@@ -73,6 +75,7 @@ ViridianCity_Mart_4BadgeItems::
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_SILK_SCARF
 	.2byte ITEM_NONE
 	release
 	end
@@ -85,6 +88,7 @@ ViridianCity_Mart_5BadgeItems::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_DUSK_BALL
 	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_SILK_SCARF
 	.2byte ITEM_NONE
 	release
 	end

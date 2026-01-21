@@ -123,7 +123,7 @@ RocketHideout_B4F_EventScript_RemoveBarrier::
 RocketHideout_B4F_Text_GiovanniIntro::
     .string "So! I must say, I am impressed you\n"
     .string "got here.\p"
-    .string "TEAM ROCKET captures Pokémon from\n"
+    .string "Team Rocket captures Pokémon from\n"
     .string "around the world.\p"
     .string "They're important tools for keeping\n"
     .string "our criminal enterprise going.\p"
