@@ -76,6 +76,7 @@ enum __attribute__((packed)) Type
 #define NATURE_QUIRKY   24 // Neutral
 #define NUM_NATURES     25
 
+#define NATURE_RANDOM            NUM_NATURES
 // Pokémon Stats
 enum __attribute__((packed)) Stat
 {
@@ -178,6 +179,8 @@ enum __attribute__((packed)) Stat
 #define MON_MALE       0x00
 #define MON_FEMALE     0xFE
 #define MON_GENDERLESS 0xFF
+
+#define MON_GENDER_RANDOM         0x01
 
 // Constants for AdjustFriendship
 #define FRIENDSHIP_EVENT_GROW_LEVEL       0

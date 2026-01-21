@@ -68,6 +68,7 @@
 #include "constants/trainers.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "assertf.h"
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 160 : 220)
 
@@ -7877,4 +7878,49 @@ u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumO
     }
     return newSpecies;
 }
- 
+
+
+static bool32 IsValidGender(u32 gender)
+{
+    switch (gender)
+    {
+        case MON_MALE:
+        case MON_FEMALE:
+        case MON_GENDERLESS:
+        case MON_GENDER_RANDOM:
+            return TRUE;
+        default:
+            return FALSE;
+    }
+}
+
+u32 GetMonPersonality(u16 species, u8 gender, u8 nature, u8 unownLetter)
+{
+    u32 personality, actualLetter;
+
+    assertf(IsValidGender(gender), "invalid gender: %d", gender)
+    {
+        gender = MON_GENDER_RANDOM;
+    }
+
+    assertf(nature <= NATURE_RANDOM, "invalid nature: %d", nature)
+    {
+        nature = NATURE_RANDOM;
+    }
+
+    assertf(unownLetter <= NUM_UNOWN_FORMS, "invalid letter: %d", unownLetter)
+    {
+        unownLetter = RANDOM_UNOWN_LETTER;
+    }
+
+    //gender outside valid gender ratios for species is not asserted because it could be triggered by cute charm
+    do
+    {
+        personality = Random32();
+        actualLetter = GET_UNOWN_LETTER(personality);
+    }
+    while ((nature != GetNatureFromPersonality(personality) && nature != NATURE_RANDOM)
+            || (gender != GetGenderFromSpeciesAndPersonality(species, personality) && gender != MON_GENDER_RANDOM)
+            || ((actualLetter != unownLetter - 1) && unownLetter > 0));
+    return personality;
+}

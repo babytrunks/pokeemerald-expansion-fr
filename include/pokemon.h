@@ -668,6 +668,7 @@ extern const u16 gKyuremBlackSwapMoveTable[][2];
 #endif //P_FUSION_FORMS
 
 #define NUM_UNOWN_FORMS 28
+#define RANDOM_UNOWN_LETTER 0
 
 #define GET_UNOWN_LETTER(personality) ((   \
       (((personality) & 0x03000000) >> 18) \
@@ -932,4 +933,6 @@ bool32 IsSpeciesOfType(u32 species, enum Type type);
 bool8 CheckTableForSpecies(u16 species, const u16 table[]);
 u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumOfList );
 void TryRandomizeSpecies(u16* species);
+u32 GetMonPersonality(u16 species, u8 gender, u8 nature, u8 unownLetter);
+
 #endif // GUARD_POKEMON_H
