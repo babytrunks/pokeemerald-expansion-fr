@@ -544,7 +544,7 @@ CeladonCity_EventScript_ItemDreamPatch::
 	end
 
 CeladonCity_EventScript_ItemScovillainite::
-	finditem ITEM_DREAM_PATCH
+	finditem ITEM_SCOVILLAINITE
 	end
 
 RocketHideout_B3F_EventScript_ItemBlackGlasses::

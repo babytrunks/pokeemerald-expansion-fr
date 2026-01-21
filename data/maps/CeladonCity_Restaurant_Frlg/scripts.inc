@@ -39,6 +39,10 @@ CeladonCity_Restaurant_EventScript_FatMan::
 	msgbox CeladonCity_Restaurant_Text_ManLostItAllAtSlots, MSGBOX_NPC
 	end
 
+CeladonCity_Restaurant_EventScript_Luffy::
+	msgbox CeladonCity_Restaurant_Text_Luffy, MSGBOX_NPC
+	end
+
 CeladonCity_Restaurant_Text_TakingBreakRightNow::
     .string "Hi!\p"
     .string "Sorry, but we're taking a break\n"
@@ -56,7 +60,7 @@ CeladonCity_Restaurant_Text_ManLostItAllAtSlots::
     .string "THIS ROM HACK IS SO GOOD I COULD\n"
     .string "DIE!!$"
 
-CeladonCity_Restaurant_EventScript_Luffy::
+CeladonCity_Restaurant_Text_Luffy::
     .string "THIS ROM HACK IS SO BAD I COULD\n"
     .string "DIE!!$"
 

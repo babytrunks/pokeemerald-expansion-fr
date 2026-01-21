@@ -2653,16 +2653,16 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Goldeen
-Level: 22
+Seaking
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Poliwag
-Level: 22
+Octillery
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Goldeen
-Level: 22
+Luvdisc
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_FISHERMAN_CHIP ===
@@ -2674,12 +2674,12 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Tentacool
-Level: 24
+Tentacruel
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Goldeen
-Level: 24
+Huntail
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_FISHERMAN_HANK ===
@@ -2691,8 +2691,8 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Goldeen
-Level: 27
+Pelipper
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_FISHERMAN_ELLIOT ===
@@ -2704,20 +2704,16 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Poliwag
-Level: 21
+Kingdra
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Shellder
-Level: 21
+Clawitzer
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Goldeen
-Level: 21
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Horsea
-Level: 21
+Tatsugiri
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_FISHERMAN_RONALD ===
@@ -9078,7 +9074,7 @@ Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_COOL_COUPLE_RAY_TYRA ===
-Name: RAY & TYRA
+Name: Ray & Tyra
 Class: Cool Couple Frlg
 Pic: Cool Couple Frlg
 Gender: Male
@@ -9103,21 +9099,64 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Sting
 
 === TRAINER_YOUNG_COUPLE_GIA_JES ===
-Name: GIA & JES
+Name: Gia & Jes
 Class: Young Couple Frlg
 Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
+Mugshot: Pink
 
-Nidoran M
-Level: 24
+Tatsugiri @ Toxic Orb
+Ability: Commander
+Level: 33
+Nature: Impish
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Endure
 
-Nidoran F
-Level: 24
+Drifblim @ Focus Sash
+Ability: Aftermath
+Level: 35
+Nature: Jolly
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
+- Explosion
+
+
+Dondozo @ Leftovers
+Level: 35
+Nature: Modest
+Ability: Impish
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Order Up
+- Liquidation
+- Earthquake
+- Body Press
+
+Flamigo @ White Herb
+Level: 34
+Nature: Jolly
+Ability: Costar
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
+- Dual Wingbeat
+- Close Combat
+- Throat Chop
+
+
+Luvdisc @ Focus Sash
+Level: 34
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 204 SpA / 0 SpD / 0 Spe
+- Dazzling Gleam
+- Hydro Pump
+- Lovely Kiss
+- Ice Beam
+
 
 === TRAINER_TWINS_KIRI_JAN ===
 Name: KIRI & JAN
