@@ -69,7 +69,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_B3F_EventScript_ItemTM21",
+      "script": "RocketHideout_B3F_EventScript_ItemTMZenHeadbutt",
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B3F_TM21"
     },
     {
@@ -83,7 +83,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RocketHideout_B3F_EventScript_ItemBlackGlasses",
+      "script": "RocketHideout_B3F_EventScript_ItemHeavyDutyBoots",
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B3F_BLACK_GLASSES"
     }
   ],

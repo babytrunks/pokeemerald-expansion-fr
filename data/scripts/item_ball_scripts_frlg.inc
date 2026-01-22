@@ -131,8 +131,8 @@ RocketHideout_B1F_EventScript_ItemLuxuryBall::
 	finditem ITEM_LUXURY_BALL
 	end
 
-RocketHideout_B1F_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+RocketHideout_B1F_EventScript_ItemZinc::
+	finditem ITEM_ZINC
 	end
 
 RocketHideout_B2F_EventScript_ItemSwiftFeather::
@@ -147,24 +147,24 @@ RocketHideout_B2F_EventScript_ItemTM12::
 	finditem ITEM_TM12
 	end
 
-RocketHideout_B2F_EventScript_ItemSuperPotion::
-	finditem ITEM_SUPER_POTION
+RocketHideout_B2F_EventScript_ItemSafetyGoggles::
+	finditem ITEM_SAFETY_GOGGLES
 	end
 
 RocketHideout_B3F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-RocketHideout_B3F_EventScript_ItemTM21::
-	finditem ITEM_TM21
+RocketHideout_B3F_EventScript_ItemTMZenHeadbutt::
+	finditem ITEM_TM_ZEN_HEADBUTT 
 	end
 
-RocketHideout_B4F_EventScript_ItemTM49::
-	finditem ITEM_TM49
+RocketHideout_B4F_EventScript_ItemTMSludgeBomb::
+	finditem ITEM_TM_SLUDGE_BOMB
 	end
 
-RocketHideout_B4F_EventScript_ItemMaxEther::
-	finditem ITEM_MAX_ETHER
+RocketHideout_B4F_EventScript_ItemHPUp::
+	finditem ITEM_HP_UP
 	end
 
 RocketHideout_B4F_EventScript_ItemCalcium::
@@ -547,8 +547,8 @@ CeladonCity_EventScript_ItemScovillainite::
 	finditem ITEM_SCOVILLAINITE
 	end
 
-RocketHideout_B3F_EventScript_ItemBlackGlasses::
-	finditem ITEM_BLACK_GLASSES
+RocketHideout_B3F_EventScript_ItemHeavyDutyBoots::
+	finditem ITEM_HEAVY_DUTY_BOOTS
 	end
 
 SafariZone_North_EventScript_ItemQuickClaw::

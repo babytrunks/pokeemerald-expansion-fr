@@ -15,7 +15,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_SQUIRTLE] = { 
         .species = SPECIES_SQUIRTLE,
         .moves = {MOVE_WATER_PULSE, MOVE_BITE, MOVE_RAPID_SPIN, MOVE_NONE},
-        .heldItem = ITEM_LEFTOVERS,
         .nature = NATURE_DOCILE,
         .numPerfectIVs = 3,
     },
@@ -32,10 +31,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .numPerfectIVs = 3,
     },
     [FRONTIER_MON_TOTODILE] = {
-        .ability = ABILITY_SHEER_FORCE,
         .species = SPECIES_TOTODILE,
         .moves = {MOVE_AQUA_JET, MOVE_BITE, MOVE_SCARY_FACE, MOVE_NONE},
-        .heldItem = ITEM_REVIVE,
         .nature = NATURE_DOCILE,
         .numPerfectIVs = 3,
     },
@@ -71,7 +68,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_CHIMCHAR] = {
         .species = SPECIES_CHIMCHAR,
         .moves = {MOVE_FLAME_WHEEL, MOVE_SCRATCH, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_BLACK_BELT,
         .nature = NATURE_DOCILE,
         .numPerfectIVs = 3,
     },
@@ -126,7 +122,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .ability = ABILITY_TINTED_LENS,
         .species = SPECIES_ROWLET,
         .moves = {MOVE_RAZOR_LEAF, MOVE_PLUCK, MOVE_SUCKER_PUNCH, MOVE_NONE},
-        .heldItem = ITEM_REVIVE,
         .nature = NATURE_DOCILE,
         .numPerfectIVs = 3,
     },
@@ -158,10 +153,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .numPerfectIVs = 3,
     },
     [FRONTIER_MON_SOBBLE] = {
-        .ability = ABILITY_SNIPER,
         .species = SPECIES_SOBBLE,
         .moves = {MOVE_WATER_PULSE, MOVE_U_TURN, MOVE_GROWL, MOVE_NONE},
-        .heldItem = ITEM_SCOPE_LENS,
         .nature = NATURE_DOCILE,
         .numPerfectIVs = 3,
     },

@@ -123,7 +123,7 @@ Route4_EventScript_BlackBeltTutor::
 	faceplayer
 	goto_if_set FLAG_GIVE_BLACK_BELT, EventScript_BlackBeltTaught
 	msgbox Text_BlackBeltGuy_BitFeisty
-	giveitem ITEM_BLACK_BELT
+	giveitem ITEM_PROTEIN
 	setflag FLAG_GIVE_BLACK_BELT
 	goto EventScript_BlackBeltTaught
 	end

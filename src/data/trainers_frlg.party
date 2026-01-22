@@ -5226,28 +5226,83 @@ Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BOSS_GIOVANNI ===
-Name: GIOVANNI
+Name: Giovanni
 Class: Boss Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
 
-Onix
-Level: 25
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Nidoking @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 4 Def / 0 SpA / 0 SpD / 204 Spe
+- Earth Power
+- Ice Beam
+- Sludge Bomb
+- Thunderbolt
 
-Rhyhorn
-Level: 24
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Honchkrow @ Scope Lens
+Nature: Jolly
+Ability: Super Luck
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 204 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+- Night Slash
+- Sucker Punch
+- Drill Peck
+- Heat Wave
 
-Kangaskhan
-Level: 29
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Infernape @ Focus Sash
+Nature: Jolly
+Ability: Blaze
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Swords Dance
+- Pyro Ball
+- Close Combat
+- Thunder Punch
+
+Kangaskhan @ Kangaskhanite
+Nature: Adamant
+Ability: Inner Focus
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
+- Fake Out
+- Body Slam
+- Crunch
+- Power-Up Punch
+
+Orthworm @ Sitrus Berry
+Nature: Impish
+Ability: Levitate
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 4 SpD / 0 Spe
+- Shed Tail
+- Iron Head
+- Earthquake
+- Body Press
+
+Veluza @ Sitrus Berry
+Nature: Jolly
+Ability: Sharpness
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fillet Away
+- Aqua Cutter
+- Psycho Cut
+- Aqua Jet
 
 === TRAINER_BOSS_GIOVANNI_2 ===
-Name: GIOVANNI
+Name: Giovanni
 Class: Boss Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -5272,7 +5327,7 @@ Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_LEADER_GIOVANNI ===
-Name: GIOVANNI
+Name: Giovanni
 Class: Leader Frlg
 Pic: Leader Giovanni Frlg
 Gender: Male
@@ -5321,7 +5376,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 
 === TRAINER_TEAM_ROCKET_GRUNT ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5338,7 +5393,7 @@ Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5359,7 +5414,7 @@ Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5376,7 +5431,7 @@ Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5393,7 +5448,7 @@ Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5447,7 +5502,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Low Kick
 
 === TRAINER_TEAM_ROCKET_GRUNT_6 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5554,7 +5609,7 @@ EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 
 
 === TRAINER_TEAM_ROCKET_GRUNT_8 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5562,16 +5617,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Drowzee
-Level: 21
+Seviper
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machop
-Level: 21
+Malamar
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_9 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5579,16 +5634,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Raticate
-Level: 21
+Toxicroak
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 21
+Linoone-Galar
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_10 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5596,30 +5651,20 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Grimer
-Level: 20
+Muk-Alola
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Minimize
-- Sludge
-- Disable
-- Harden
 
-Koffing
-Level: 20
+Slowbro-Galar
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smog
-- Tackle
-- Poison Gas
 
-Koffing
-Level: 20
+Swalot
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smog
-- Tackle
-- Poison Gas
 
 === TRAINER_TEAM_ROCKET_GRUNT_11 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5627,24 +5672,24 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 19
+Murkrow
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 19
+Vullaby
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 19
+Liepard
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rattata
-Level: 19
+Mabosstiff
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_12 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5652,24 +5697,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Grimer
-Level: 22
+Thievul
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Minimize
-- Sludge
-- Disable
-- Harden
 
-Koffing
-Level: 22
+Lairon
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge
-- Smog
-- Tackle
-- Poison Gas
 
 === TRAINER_TEAM_ROCKET_GRUNT_13 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5677,47 +5714,28 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Zubat
-Level: 17
+Raticate-Alola
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Astonish
-- Supersonic
-- Leech Life
 
-Koffing
-Level: 17
+Houndstone
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smog
-- Tackle
-- Poison Gas
 
-Grimer
-Level: 17
+Lokix
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge
-- Disable
-- Harden
-- Pound
 
-Zubat
-Level: 17
+Watchog
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Astonish
-- Supersonic
-- Leech Life
 
-Raticate
-Level: 17
+Galvantula
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Fang
-- Quick Attack
-- Tail Whip
-- Tackle
 
 === TRAINER_TEAM_ROCKET_GRUNT_14 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5738,7 +5756,7 @@ Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_15 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5755,7 +5773,7 @@ Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_16 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5763,20 +5781,20 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Sandshrew
-Level: 23
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Ekans
-Level: 23
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
 Sandslash
-Level: 23
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Wugtrio
+Level: 36
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Sandslash-Alola
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_17 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5784,20 +5802,20 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Ekans
-Level: 23
+Morpeko
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Sandshrew
-Level: 23
+Scrafty
+Level: 36
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Arbok
-Level: 23
+Cacturne
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_18 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5805,16 +5823,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Koffing
-Level: 21
+Pangoro
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 21
+Umbreon
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_19 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5835,7 +5853,7 @@ Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_20 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5852,7 +5870,7 @@ Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_21 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5877,7 +5895,7 @@ Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_22 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5894,7 +5912,7 @@ Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_23 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5911,7 +5929,7 @@ Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_24 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5940,7 +5958,7 @@ Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_25 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5961,7 +5979,7 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5978,7 +5996,7 @@ Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_27 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -5999,7 +6017,7 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_28 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6012,7 +6030,7 @@ Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_29 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6025,7 +6043,7 @@ Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_30 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6042,7 +6060,7 @@ Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6063,7 +6081,7 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_32 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6104,7 +6122,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Supersonic
 
 === TRAINER_TEAM_ROCKET_GRUNT_33 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6121,7 +6139,7 @@ Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_34 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6138,7 +6156,7 @@ Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_35 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6163,7 +6181,7 @@ Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_36 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6184,7 +6202,7 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6205,7 +6223,7 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_38 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6226,7 +6244,7 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_39 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6239,7 +6257,7 @@ Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_40 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -6268,7 +6286,7 @@ Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9510,7 +9528,7 @@ Level: 5
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_42 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
 Gender: Male
@@ -9913,7 +9931,7 @@ Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_43 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9930,7 +9948,7 @@ Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_44 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9955,7 +9973,7 @@ Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_45 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9976,7 +9994,7 @@ Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_46 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -9997,7 +10015,7 @@ Level: 48
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_47 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -10018,7 +10036,7 @@ Level: 48
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_48 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -10555,7 +10573,7 @@ Level: 48
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_49 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -10576,7 +10594,7 @@ Level: 48
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_50 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
@@ -10601,7 +10619,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Self Destruct
 
 === TRAINER_TEAM_ROCKET_GRUNT_51 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt F Frlg
 Gender: Male

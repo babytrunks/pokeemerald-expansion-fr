@@ -15,4 +15,3 @@ DiglettsCave_NorthEntrance_RockTunnelPitchBlack::
     .string "pitch-black and scary in there.\p"
     .string "If I could use the HM Flash and\n"
     .string "and light it up…$"
-
