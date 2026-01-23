@@ -910,10 +910,10 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party 
 
-Cramorant @ Focus Sash
+Pelipper @ Focus Sash
 Nature: Timid
-Ability: Gulp Missile
-Level: 24
+Ability: Keen Eye
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Surf
@@ -9127,13 +9127,21 @@ AI: Smart Trainer / Prediction / Know Opponent Party / Sequence Switching
 Mugshot: Pink
 Dynamic Level Ratio: 90
 
+Cramorant @ Toxic Orb
+Ability: Gulp Missile
+Level: 33
+Nature: Bashful
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Pledge
+
 Tatsugiri @ Toxic Orb
 Ability: Commander
 Level: 33
 Nature: Bashful
 IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Endure
+- Grass Pledge
 
 Drifblim @ Focus Sash
 Ability: Aftermath
@@ -9142,7 +9150,6 @@ Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
 - Explosion
-
 
 Dondozo @ Leftovers
 Level: 35
@@ -13617,15 +13624,15 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
-Dewott @ Eviolite
+Monferno @ Focus Sash
 Nature: Bashful
-Ability: Shell Armor
+Ability: Blaze
 Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Water Pledge
-- Flash Cannon
-- Ice Beam
+- Fire Pledge
+- Vacuum Wave
+- Brick Break
 
 Simisear @ Iapapa Berry
 Nature: Bashful
@@ -13637,8 +13644,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Low Kick
 - Grass Knot
 
-
-
 === TRAINER_BROOKS ===
 Name: Brooks
 Class: Gentleman Frlg
@@ -13648,7 +13653,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Dartrix @ Miracle Seed
+Dartrix @ Eviolite
 Nature: Bashful
 Ability: Tinted Lens
 Level: 23
@@ -13667,8 +13672,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Grass Pledge
 - Power Gem
 - Hidden Power
-
-
 
 === TRAINER_PSYCHIC_JACLYN_2 ===
 Name: JACLYN

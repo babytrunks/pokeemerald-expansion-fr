@@ -1378,7 +1378,7 @@ static void Task_BlendPalettesGradually(u8 taskId)
 
 void TimeMixBattleBgPalette(bool8 shadowOnly)
 {
-    if (!MapHasNaturalLight(gMapHeader.mapType) && B_APPLY_DNS_TO_BACKGROUND == FALSE)
+    if (!MapHasNaturalLight(gMapHeader.mapType) || B_APPLY_DNS_TO_BACKGROUND == FALSE)
         return;
 
     if (!shadowOnly)

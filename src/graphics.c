@@ -1680,9 +1680,9 @@ const u32 gBattleAnimBgTilemap_RainbowPlayer[] = INCBIN_U32("graphics/battle_ani
 const u32 gBattleAnimBgTilemap_RainbowOpponent[] = INCBIN_U32("graphics/battle_anims/backgrounds/rainbow_opponent_tile.bin.smolTM");
 
 // Pledge Effect field status - Swamp
-const u32 gBattleAnimBgImage_Swamp[] = INCBIN_U32("graphics/battle_anims/backgrounds/swampswizzle.4bpp.smol");
-const u16 gBattleAnimBGPalette_Swamp[] = INCBIN_U16("graphics/battle_anims/backgrounds/swampswizzle.gbapal");
-const u32 gBattleAnimBgTilemap_Swamp[] = INCBIN_U32("graphics/battle_anims/backgrounds/swampswizzle.bin.smolTM");
+const u32 gBattleAnimBgImage_Swamp[] = INCBIN_U32("graphics/battle_anims/backgrounds/rainbow_player_tile.4bpp.smol");
+const u16 gBattleAnimBGPalette_Swamp[] = INCBIN_U16("graphics/battle_anims/backgrounds/rainbow_player_tile.gbapal");
+const u32 gBattleAnimBgTilemap_Swamp[] = INCBIN_U32("graphics/battle_anims/backgrounds/rainbow_player_tile.bin.smolTM");
 
 const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bg.4bpp.smol");
 const u16 gPartyMenuBg_Pal[] = INCBIN_U16("graphics/party_menu/bg.gbapal");

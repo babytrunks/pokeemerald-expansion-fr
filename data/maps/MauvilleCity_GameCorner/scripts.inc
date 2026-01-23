@@ -1542,7 +1542,7 @@ MauvilleCity_GameCorner_Text_SoYourChoiceIsTheNewX:
 	.string "the {STR_VAR_1}?$"
 
 MauvilleCity_GameCorner_Text_BlackJack:
-	.string "It's a BLACKJACK TABLE!\n"
+	.string "It's a Blackjack Tabled!\n"
 	.string "Want to play?$"
 	
 MauvilleCity_GameCorner_Text_Derby:
@@ -1625,7 +1625,7 @@ MauvilleCity_GameCorner_Text_NoRoomForPlacingDecor:
 	.string "placing {STR_VAR_1}.$"
 	
 MauvilleCity_GameCorner_Text_VF_Keep_Going:
-	.string "You've made {STR_VAR_1} COINS.\n"
+	.string "You've made {STR_VAR_1} Coins.\n"
 	.string "Keep going?$"
 
 MauvilleCity_GameCorner_Text_OhIsThatSo:
@@ -1742,7 +1742,7 @@ MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
 
 MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "You can't play if you don't have\n"
-	.string "a COIN CASE.$"
+	.string "a Coin Case.$"
 
 MauvilleCity_GameCorner_Text_CantBuyWithNoCoinCase:
 	.string "Huh? Looks like you need\n"

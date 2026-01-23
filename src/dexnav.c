@@ -2,6 +2,7 @@
 #include "battle_main.h"
 #include "battle_setup.h"
 #include "bg.h"
+#include "caps.h"
 #include "data.h"
 #include "daycare.h"
 #include "decompress.h"
@@ -1268,9 +1269,9 @@ static u8 DexNavTryGenerateMonLevel(u16 species, enum EncounterType environment)
 
     if (Random() % 100 < 4)
         levelBonus += 10; //4% chance of having a +10 level
-
-    if (levelBase + levelBonus > MAX_LEVEL)
-        return MAX_LEVEL;
+    u8 maxLevelForCap = GetCurrentLevelCap();
+    if (levelBase + levelBonus > maxLevelForCap)
+        return maxLevelForCap;
     else
         return levelBase + levelBonus;
 }

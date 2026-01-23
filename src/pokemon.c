@@ -1363,7 +1363,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         }
         else
         {
-            u32 totalRerolls = 0;
+            u32 totalRerolls = 2;
             if (CheckBagHasItem(ITEM_SHINY_CHARM, 1))
                 totalRerolls += I_SHINY_CHARM_ADDITIONAL_ROLLS;
             if (LURE_STEP_COUNT != 0)
@@ -4206,6 +4206,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
                         u8 param = GetItemHoldEffectParam(item);
                         ivChange = sIndividualValueVitaminTable[param - 1];
+                        DebugPrintf("IV Change: %d", ivChange); 
+                        DebugPrintf("Data signed 1: %d", dataSigned);
                         // evChange = temp2;
 
                         if (ivChange > 0) // Increasing IV (HP or Atk)
@@ -4265,6 +4267,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             dataSigned = 0;
                         }
 
+                        DebugPrintf("Data signed: %d", dataSigned); 
                         // Update IVs and stats
                         SetMonData(mon, sGetMonDataIVConstants[temp1], &dataSigned);
                         CalculateMonStats(mon);
@@ -4399,7 +4402,9 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     case 3: // ITEM5_IV_SPATK
                         temp2 = itemEffect[itemEffectParam];
                         dataSigned = GetMonData(mon, sGetMonDataIVConstants[temp1 + 2], NULL);
-                        ivChange = temp2;
+                        ivChange = sIndividualValueVitaminTable[temp2 - 1];
+                        DebugPrintf("IV Change: %d", ivChange); 
+                        DebugPrintf("Data signed 1: %d", dataSigned);
                         if (ivChange > 0) // Increasing EV
                         {
                             // Check if the total EV limit is reached
@@ -7837,11 +7842,16 @@ void TryRandomizeSpecies(u16* species)
 	if (FlagGet(FLAG_DONT_RANDOMIZE)) { 
 		return;
 	}
-    if (FlagGet(FLAG_WONDER_TRADE) && *species != SPECIES_NONE && *species < NUM_SPECIES)
+    if (FlagGet(FLAG_WONDER_TRADE) && *species != SPECIES_NONE && *species < NUM_SPECIES && !FlagGet(FLAG_BADGE01_GET))
 	{
-        u16 newSpecies = RandomizeAssociatedSpecies(gWonderTradeListFirst, prevSpecies, gNumWonderTradeListFirst);
+        u16 newSpecies = RandomizeAssociatedSpecies(gWonderTradeListFirst, prevSpecies, gNumWonderTradeListFirst, Random32() );
 		*species = newSpecies;
 	} 
+    else if (FlagGet(FLAG_WONDER_TRADE) && *species != SPECIES_NONE && *species < NUM_SPECIES)
+    {
+        u16 newSpecies = RandomizeAssociatedSpecies(gWonderTradeList, prevSpecies, gNumWonderTradeList, Random32() );
+		*species = newSpecies;
+    }
 }
 
 bool8 CheckTableForSpecies(u16 species, const u16 table[])
@@ -7855,9 +7865,9 @@ bool8 CheckTableForSpecies(u16 species, const u16 table[])
 	return FALSE;
 }
 
-u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumOfList ) 
+u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumOfList, u32 seed ) 
 {
-    u32 id = MathMax(1, T1_READ_32(gSaveBlock2Ptr->playerTrainerId)); //0 id would mean every Pokemon would crash the game
+    u32 id = MathMax(1, seed); //0 id would mean every Pokemon would crash the game
     u32 newSpecies = (u32) prevSpecies;
     // if (FlagGet(FLAG_PUZZLE_BATTLE) || FlagGet(FLAG_RENTAL_BATTLE))
     //     return newSpecies;

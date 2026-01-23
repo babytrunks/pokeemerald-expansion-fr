@@ -12,28 +12,43 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_OldMan::
 CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkMons::
 	lock
 	faceplayer
-	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_PrizeRoom_EventScript_NeedCoinCase
-	showcoinsbox 0, 0
-	msgbox CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForPrizes
+	showcoinsbox 2, 2
+	msgbox CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForRarePokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
+	checkitem ITEM_RED_COIN 1 
+	goto_if_eq VAR_RESULT, 0, CeladonCity_GameCorner_EventScript_NoRedCoin
+	msgbox CeladonCity_GameCorner_PrizeRoom_Text_Use5000CoinsForShiny, MSGBOX_YESNO
+	call_if_eq VAR_RESULT, YES, EventScript_Check5000CoinsForShiny
+	hidecoinsbox 2, 2
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeMon
 	end
 
+EventScript_Check5000CoinsForShiny::
+	checkcoins 5000
+	goto_if_lt VAR_RESULT, VAR_TEMP_2, CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins
+	removecoins 5000
+	updatecoinsbox 2, 2
+	playfanfare MUS_LEVEL_UP
+	waitfanfare
+EventScript_ToggleShiny::
+	setflag FLAG_FORCE_SHINY
+	return
+
 CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeMon::
-	message CeladonCity_GameCorner_PrizeRoom_Text_WhichPrize
-	waitmessage
-	multichoice 11, 0, MULTI_GAME_CORNER_POKEMON_PRIZES, FALSE
-	switch VAR_RESULT
-	case 0, CeladonCity_GameCorner_PrizeRoom_EventScript_Abra
-	case 1, CeladonCity_GameCorner_PrizeRoom_EventScript_Clefairy
-	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_DratiniPinsir
-	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_ScytherDratini
-	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon
-	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	case 127, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
+	setflag FLAG_RARE_POKEMON_SCREEN
+ 	setvar VAR_RARE_POKEMON_COUNTER, 4
+	setflag FLAG_3_PERFECT_IVS
+    factory_generaterentalmons
+	factory_rentmons
+	waitstate
+	clearflag FLAG_RARE_POKEMON_SCREEN
+	clearflag FLAG_3_PERFECT_IVS
+	clearflag FLAG_FORCE_SHINY
+	release
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange::
-	hidecoinsbox 0, 0
+	hidecoinsbox 2, 2
 	release
 	end
 
@@ -181,7 +196,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_CheckReceivedMon::
 CeladonCity_GameCorner_PrizeRoom_EventScript_PartyFull::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox gText_NoMoreRoomForPokemon
-	hidecoinsbox 0, 0
+	hidecoinsbox 2, 2
 	release
 	end
 
@@ -240,7 +255,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkTMs::
 	lock
 	faceplayer
 	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_PrizeRoom_EventScript_NeedCoinCase
-	showcoinsbox 0, 0
+	showcoinsbox 2, 2
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForPrizes
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeTM
 	end
@@ -322,7 +337,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TryGivePrize::
 CeladonCity_GameCorner_PrizeRoom_EventScript_BagFull::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox gText_TooBadBagIsFull
-	hidecoinsbox 0, 0
+	hidecoinsbox 2, 2
 	release
 	end
 
@@ -330,7 +345,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkItems::
 	lock
 	faceplayer
 	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_PrizeRoom_EventScript_NeedCoinCase
-	showcoinsbox 0, 0
+	showcoinsbox 2, 2
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForPrizes
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeItem
 	end
@@ -379,6 +394,12 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_YellowFlute::
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
+CeladonCity_GameCorner_EventScript_NoRedCoin::
+	msgbox CeladonCity_GameCorner_PrizeRoom_Text_DontHaveRedCoin
+	hidecoinsbox 2, 2
+	release
+	end
+
 CeladonCity_GameCorner_PrizeRoom_Text_FancyThatPorygon::
     .string "I sure do fancy that PORYGON!\n"
     .string "But, it's hard to win at slots!$"
@@ -392,6 +413,19 @@ CeladonCity_GameCorner_PrizeRoom_Text_CoinCaseRequired::
 
 CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForPrizes::
     .string "We exchange your COINS for prizes.$"
+
+CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForRarePokemon::
+    .string "We exchange Red Coins for rare\n"
+	.string "Pokémon. You can upgrade the rare\l"
+	.string "Pokémon to shiny with Coins.\p"
+	.string "Interested?$"
+
+CeladonCity_GameCorner_PrizeRoom_Text_Use5000CoinsForShiny::
+	.string "Would you like to use 5000 Coins\n"
+	.string "to upgrade the rare Pokémon to Shiny?$"
+
+CeladonCity_GameCorner_PrizeRoom_Text_DontHaveRedCoin::
+	.string "…You don't have a Red Coin.$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_WhichPrize::
     .string "Which prize would you like?$"

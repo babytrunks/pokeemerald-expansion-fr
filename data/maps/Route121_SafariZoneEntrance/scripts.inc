@@ -55,7 +55,7 @@ Route121_SafariZoneEntrance_EventScript_EntranceCounterTrigger::
 	end
 
 Route121_SafariZoneEntrance_EventScript_TryEnterSafariZone::
-	checkitem ITEM_POKEBLOCK_CASE
+	checkitem ITEM_RED_COIN
 	goto_if_eq VAR_RESULT, 0, Route121_SafariZoneEntrance_EventScript_NoPokeblockCase
 	call Route121_SafariZoneEntrance_EventScript_CheckHasRoomForPokemon
 	checkmoney 500

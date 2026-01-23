@@ -6000,6 +6000,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .contestComboMoves = {COMBO_STARTER_AGILITY, COMBO_STARTER_AMNESIA, COMBO_STARTER_HONE_CLAWS, COMBO_STARTER_CALM_MIND, COMBO_STARTER_NASTY_PLOT, COMBO_STARTER_ROCK_POLISH},
         .battleAnimScript = gBattleAnimMove_BatonPass,
         .validApprenticeMove = TRUE,
+        .sketchBanned = TRUE,
     },
 
     [MOVE_ENCORE] =

@@ -931,7 +931,7 @@ void SavePlayerPartyMon(u32 index, struct Pokemon *mon);
 bool32 IsSpeciesOfType(u32 species, enum Type type);
 
 bool8 CheckTableForSpecies(u16 species, const u16 table[]);
-u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumOfList );
+u16 RandomizeAssociatedSpecies(const u16 *list, u16 prevSpecies, u16 const gNumOfList, u32 seed );
 void TryRandomizeSpecies(u16* species);
 u32 GetMonPersonality(u16 species, u8 gender, u8 nature, u8 unownLetter);
 

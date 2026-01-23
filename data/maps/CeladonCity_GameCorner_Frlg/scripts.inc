@@ -118,18 +118,8 @@ CeladonCity_GameCorner_EventScript_Woman1::
 CeladonCity_GameCorner_EventScript_Fisher::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_10_COINS_FROM_GAMBLER, CeladonCity_GameCorner_EventScript_FisherAlreadyGotCoins
-	msgbox CeladonCity_GameCorner_Text_DoYouWantToPlay
-	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_EventScript_GamblerNoCoinCase
-	checkcoins VAR_TEMP_1
-	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1) - 10, CeladonCity_GameCorner_EventScript_FisherNoRoomForCoins
-	addcoins 10
-	textcolor NPC_TEXT_COLOR_NEUTRAL
-	msgbox CeladonCity_GameCorner_Text_Received10CoinsFromMan
-	playse SE_SHOP
-	waitse
-	setflag FLAG_GOT_10_COINS_FROM_GAMBLER
-	goto CeladonCity_GameCorner_EventScript_FaceSlotMachine
+	msgbox CeladonCity_GameCorner_Text_BlackJackPeter
+	release
 	end
 
 CeladonCity_GameCorner_EventScript_FisherNoRoomForCoins::
@@ -230,9 +220,35 @@ CeladonCity_GameCorner_EventScript_GentlemanAlreadyGotCoins::
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine0::
+CeladonCity_GameCorner_EventScript_Derby::
 	lockall
-	setvar VAR_0x8004, 0
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	msgbox CeladonCity_GameCorner_Text_Derby, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelBJ
+	playbgm MUS_RG_PEWTER, FALSE
+	special StartDerby
+	waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+CeladonCity_GameCorner_EventScript_CheckWinnings::
+	goto_if_eq GAME_CORNER_VAR_WINNINGS, 0, CeladonCity_GameCorner_NoWin
+	showcoinsbox 1, 1
+	buffernumberstring STR_VAR_1, GAME_CORNER_VAR_WINNINGS
+	msgbox PB_YOU_WON_TEXT, MSGBOX_DEFAULT
+	waitmessage
+	addcoins GAME_CORNER_VAR_WINNINGS
+	setvar GAME_CORNER_VAR_WINNINGS, 0
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+CeladonCity_GameCorner_CancelVF::
+	hidecoinsbox 0, 5
+CeladonCity_GameCorner_CancelBJ::
+	closemessage
+CeladonCity_GameCorner_NoWin::
+	releaseall
 	end
 
 CeladonCity_GameCorner_EventScript_DontPlaySlotMachine::
@@ -260,88 +276,129 @@ CeladonCity_GameCorner_EventScript_SlotMachine::
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine1::
-	lockall
-	setvar VAR_0x8004, 1
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_Derby
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine2::
-	lockall
-	setvar VAR_0x8004, 2
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_Derby
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine3::
-	lockall
-	setvar VAR_0x8004, 3
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_Derby
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine4::
-	lockall
-	setvar VAR_0x8004, 4
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_BlackJack
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine5::
-	lockall
-	setvar VAR_0x8004, 5
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_BlackJack
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine6::
+CeladonCity_GameCorner_EventScript_BlackJack::
 	lockall
-	setvar VAR_0x8004, 6
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	msgbox CeladonCity_GameCorner_Text_BlackJack, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelBJ
+	playbgm MUS_GAME_CORNER, FALSE
+	special StartBlackJack
+	waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	releaseall
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine7::
+CeladonCity_GameCorner_EventScript_BlockStacker::
 	lockall
-	setvar VAR_0x8004, 7
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
-	end
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 25, BlockStacker_Not_Enough
+	showcoinsbox 1, 1
+	msgbox CeladonCity_GameCorner_Text_BS, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF	
+	removecoins 25
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_CASINO_PLUS_1, FALSE
+	special StartBlockStacker
+    waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	goto CeladonCity_GameCorner_EventScript_CheckWinnings
 
 CeladonCity_GameCorner_EventScript_SlotMachine8::
-	lockall
-	setvar VAR_0x8004, 8
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_BlockStacker
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine9::
-	lockall
-	setvar VAR_0x8004, 9
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_BlockStacker
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine10::
+CeladonCity_GameCorner_EventScript_Snake::
 	lockall
-	setvar VAR_0x8004, 10
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
-	end
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 25, Onix_Not_Enough
+	showcoinsbox 1, 1
+	msgbox CeladonCity_GameCorner_Text_Snake, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF
+	removecoins 25
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_NONE, FALSE
+	special StartSnake
+	waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	goto CeladonCity_GameCorner_EventScript_CheckWinnings
 
 CeladonCity_GameCorner_EventScript_SlotMachine11::
-	lockall
-	setvar VAR_0x8004, 11
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_Snake
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine12::
-	lockall
-	setvar VAR_0x8004, 12
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_Snake
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine13::
-	lockall
-	setvar VAR_0x8004, 13
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_Snake
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine14::
+CeladonCity_GameCorner_EventScript_FlappyBird::
 	lockall
-	setvar VAR_0x8004, 14
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
-	end
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 25, Butterfree_Not_Enough
+	showcoinsbox 1, 1
+	msgbox CeladonCity_GameCorner_Text_Bird, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF
+	removecoins 25
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_NONE, FALSE
+	special StartFlappyBird
+	waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	goto CeladonCity_GameCorner_EventScript_CheckWinnings
 
 CeladonCity_GameCorner_EventScript_SlotMachine15::
 	lockall
@@ -350,15 +407,11 @@ CeladonCity_GameCorner_EventScript_SlotMachine15::
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine16::
-	lockall
-	setvar VAR_0x8004, 16
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_FlappyBird
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine17::
-	lockall
-	setvar VAR_0x8004, 17
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_FlappyBird
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine18::
@@ -368,21 +421,15 @@ CeladonCity_GameCorner_EventScript_SlotMachine18::
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine19::
-	lockall
-	setvar VAR_0x8004, 19
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_VoltorbFlip
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine20::
-	lockall
-	setvar VAR_0x8004, 20
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_VoltorbFlip
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine21::
-	lockall
-	setvar VAR_0x8004, 21
-	goto CeladonCity_GameCorner_EventScript_SlotMachine
+	goto CeladonCity_GameCorner_EventScript_VoltorbFlip
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachineNoCoinCase::
@@ -452,16 +499,49 @@ CeladonCity_GameCorner_Movement_GruntExit::
 	walk_right
 	step_end
 
+
+CeladonCity_GameCorner_EventScript_NoCoinCase::
+	msgbox CeladonCity_GameCorner_Text_CantPlayWithNoCoinCase, MSGBOX_DEFAULT
+	releaseall
+	end
+
+CeladonCity_GameCorner_EventScript_NoCoinCase2::
+	msgbox CeladonCity_GameCorner_Text_CantBuyWithNoCoinCase, MSGBOX_DEFAULT
+	releaseall
+	end	
+
+
 CeladonCity_GameCorner_EventScript_UnusableSlotMachine1::
 	msgbox CeladonCity_GameCorner_Text_OutOfOrder, MSGBOX_SIGN
 	end
 
 CeladonCity_GameCorner_EventScript_UnusableSlotMachine2::
-	msgbox CeladonCity_GameCorner_Text_OutToLunch, MSGBOX_SIGN
+	goto CeladonCity_GameCorner_EventScript_FlappyBird
 	end
 
 CeladonCity_GameCorner_EventScript_UnusableSlotMachine3::
-	msgbox CeladonCity_GameCorner_Text_SomeonesKeys, MSGBOX_SIGN
+CeladonCity_GameCorner_EventScript_VoltorbFlip::
+	lockall
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 50, VF_Not_Enough
+	showcoinsbox 1, 1
+	msgbox CeladonCity_GameCorner_Text_VF, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF
+	removecoins 50
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_RG_OAK, FALSE
+	setvar GAME_CORNER_VAR_WINNINGS, 0
+	special Special_ViewVoltorbFlip
+	waitstate
+	goto_if_eq VAR_RESULT, 0, VF_Come_Again
+	goto_if_eq VAR_RESULT, 1, VF_Go_On
+	releaseall
 	end
 
 CeladonCity_GameCorner_Text_CanExchangeCoinsNextDoor::
@@ -612,3 +692,42 @@ CeladonCity_GameCorner_Text_SomeonesKeys::
     .string "Someone's keys!\n"
     .string "They'll be back.$"
 
+CeladonCity_GameCorner_Text_CantPlayWithNoCoinCase:
+	.string "You can't play if you don't have\n"
+	.string "a Coin Case.$"
+
+CeladonCity_GameCorner_Text_CantBuyWithNoCoinCase:
+	.string "Huh? Looks like you need\n"
+	.string "a Coin Case.$"
+
+CeladonCity_GameCorner_Text_BlackJackPeter::
+	.string "Machine: You've got 20.\n"
+	.string "Fat Guy: Hit me.\p"
+	.string "Machine: You've got 21.\n"
+	.string "Fat Guy: Hit me.\p"
+	.string "Machine: You've got 30.\n"
+	.string "Fat Guy: Hit me.$"
+
+CeladonCity_GameCorner_Text_BlackJack:
+	.string "It's a Blackjack Table!\n"
+	.string "Want to play?$"
+
+CeladonCity_GameCorner_Text_Derby:
+	.string "It's the Celadon Derby!\n"
+	.string "Want to place a bet?$"	
+
+CeladonCity_GameCorner_Text_BS:
+	.string "It's Block Builder!\n"
+	.string "It costs 25 Coins to play.$"
+
+CeladonCity_GameCorner_Text_Snake:
+	.string "It's Onix!\n"
+	.string "It costs 25 Coins to play.$"		
+
+CeladonCity_GameCorner_Text_Bird:
+	.string "It's Flutterfree!\n"
+	.string "It costs 25 Coins to play.$"	
+
+CeladonCity_GameCorner_Text_VF:
+	.string "It's Voltorb Flip!\n"
+	.string "It costs 50 Coins to play.$"

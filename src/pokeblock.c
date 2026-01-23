@@ -704,7 +704,7 @@ static void DrawPokeblockMenuTitleText(void)
 {
     u8 i;
 
-    const u8 *itemName = GetItemName(ITEM_POKEBLOCK_CASE);
+    const u8 *itemName = GetItemName(ITEM_RED_COIN);
     PrintOnPokeblockWindow(WIN_TITLE, itemName, GetStringCenterAlignXOffset(FONT_NORMAL, itemName, 0x48));
 
     PrintOnPokeblockWindow(WIN_SPICY,  COMPOUND_STRING("SPICY"),  0);

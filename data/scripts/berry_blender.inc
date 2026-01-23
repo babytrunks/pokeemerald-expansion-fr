@@ -286,7 +286,7 @@ BerryBlender_EventScript_ExplainBlending1:
 	end
 
 BerryBlender_EventScript_TryUseBerryBlender1:
-	checkitem ITEM_POKEBLOCK_CASE
+	checkitem ITEM_RED_COIN
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_Blender1NoCase
 	specialvar VAR_RESULT, GetFirstFreePokeblockSlot
 	goto_if_eq VAR_RESULT, 65535, BerryBlender_EventScript_Blender1CaseFull
@@ -354,7 +354,7 @@ BerryBlender_EventScript_ExplainBlending2:
 BerryBlender_EventScript_TryUseBerryBlender2:
 	specialvar VAR_RESULT, PlayerHasBerries
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_Blender2NoBerries
-	checkitem ITEM_POKEBLOCK_CASE
+	checkitem ITEM_RED_COIN
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_Blender2NoCase
 	msgbox BerryBlender_Text_Okay, MSGBOX_DEFAULT
 	specialvar VAR_RESULT, GetFirstFreePokeblockSlot
@@ -414,7 +414,7 @@ BerryBlender_EventScript_ExplainBlending3:
 BerryBlender_EventScript_TryUseBlender3:
 	specialvar VAR_RESULT, PlayerHasBerries
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_Blender3NoBerries
-	checkitem ITEM_POKEBLOCK_CASE
+	checkitem ITEM_RED_COIN
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_Blender3NoCase
 	msgbox BerryBlender_Text_OhDear, MSGBOX_DEFAULT
 	specialvar VAR_RESULT, GetFirstFreePokeblockSlot
@@ -447,7 +447,7 @@ BerryBlender_EventScript_BlendMasterNoBerries:
 	end
 
 BerryBlender_EventScript_TryBlendWithBlendMaster:
-	checkitem ITEM_POKEBLOCK_CASE
+	checkitem ITEM_RED_COIN
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_BlendMasterNoCase
 	specialvar VAR_RESULT, PlayerHasBerries
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_BlendMasterNoBerries
@@ -509,7 +509,7 @@ BerryBlender_EventScript_ExpertMPlayerHasBerries:
 	end
 
 BerryBlender_EventScript_ExpertMNoBerries:
-	checkitem ITEM_POKEBLOCK_CASE
+	checkitem ITEM_RED_COIN
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_ExpertMNoSpareBerries
 	specialvar VAR_RESULT, GetFirstFreePokeblockSlot
 	goto_if_eq VAR_RESULT, 65535, BerryBlender_EventScript_ExpertMNoSpareBerries
@@ -539,7 +539,7 @@ BerryBlender_EventScript_BerryBlenderLink::
 	lockall
 	specialvar VAR_RESULT, PlayerHasBerries
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_LinkBlenderNoBerries
-	checkitem ITEM_POKEBLOCK_CASE
+	checkitem ITEM_RED_COIN
 	goto_if_eq VAR_RESULT, FALSE, BerryBlender_EventScript_LinkBlenderNoCase
 	specialvar VAR_RESULT, GetFirstFreePokeblockSlot
 	goto_if_ne VAR_RESULT, 65535, BerryBlender_EventScript_LinkBlenderSaveGame

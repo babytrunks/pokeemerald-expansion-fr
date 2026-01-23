@@ -41,7 +41,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_STURDY] =
         {
             .name = _("Sturdy"),
-            .description = COMPOUND_STRING("The user cannot be knocked out with one hit causing the Pokemon to have 1 HP remaining.."),
+            .description = COMPOUND_STRING("The user cannot be knocked out with one hit causing the Pokemon to have 1 HP remaining."),
             .aiRating = 6,
             .breakable = TRUE,
         },

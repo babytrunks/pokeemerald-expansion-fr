@@ -139,8 +139,8 @@ RocketHideout_B2F_EventScript_ItemSwiftFeather::
 	finditem ITEM_SWIFT_FEATHER
 	end
 
-RocketHideout_B2F_EventScript_ItemMoonStone::
-	finditem ITEM_MOON_STONE
+RocketHideout_B2F_EventScript_ItemRedCoin::
+	finditem ITEM_RED_COIN
 	end
 
 RocketHideout_B2F_EventScript_ItemTM12::
@@ -547,8 +547,8 @@ CeladonCity_EventScript_ItemScovillainite::
 	finditem ITEM_SCOVILLAINITE
 	end
 
-RocketHideout_B3F_EventScript_ItemHeavyDutyBoots::
-	finditem ITEM_HEAVY_DUTY_BOOTS
+RocketHideout_B3F_EventScript_ItemAmuletCoin::
+	finditem ITEM_AMULET_COIN
 	end
 
 SafariZone_North_EventScript_ItemQuickClaw::

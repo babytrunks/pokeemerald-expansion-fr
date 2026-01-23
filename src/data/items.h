@@ -9108,7 +9108,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .secondaryId = TYPE_STEEL,
         .flingPower = 30,
@@ -9593,7 +9593,7 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
         .iconPic = gItemIcon_KingsRock,
@@ -13682,20 +13682,19 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_PokeRadar,
     },
 
-    [ITEM_POKEBLOCK_CASE] =
+    [ITEM_RED_COIN] =
     {
-        .name = ITEM_NAME("{POKEBLOCK} Case"),
+        .name = ITEM_NAME("Red Coin"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A case for holding\n"
-            "{POKEBLOCK}s made with\n"
-            "a Berry Blender."),
-        .importance = 1,
-        .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_PBLOCK_CASE,
-        .fieldUseFunc = ItemUseOutOfBattle_PokeblockCase,
-        .iconPic = gItemIcon_PokeblockCase,
-        .iconPalette = gItemIconPalette_PokeblockCase,
+            "A rare coin that\n"
+            "can be exchanged in\n"
+            "the Game Corner."),
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_AmuletCoin,
+        .iconPalette = gItemIconPalette_AmuletCoin,
     },
 
     [ITEM_SOOT_SACK] =

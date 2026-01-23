@@ -603,7 +603,7 @@
 #define FLAG_CINNABAR_GYM_QUIZ_6                         0x26B
 #define FLAG_POKEMON_MANSION_SWITCH_STATE                0x26C
 #define FLAG_OPENED_ROCKET_HIDEOUT                       0x26D
-#define FLAG_GOT_10_COINS_FROM_GAMBLER                   0x26E
+#define FLAG_GOT_10_COINS_FROM_GAMBLER                   0x26E // unused
 #define FLAG_GOT_20_COINS_FROM_GAMBLER                   0x26F
 #define FLAG_GOT_20_COINS_FROM_GAMBLER_2                 0x270
 #define FLAG_GOT_BICYCLE                                 0x271
