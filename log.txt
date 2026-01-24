@@ -1,17 +1,4 @@
 [ERROR] GBA Savedata: Savegame time offset set to 0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[ERROR] GBA Savedata: Savegame time offset set to 0
-[ERROR] GBA Savedata: Savegame time offset set to 0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=0
-[ERROR] GBA Savedata: Savegame time offset set to 0
-[ERROR] GBA Savedata: Savegame time offset set to 0
-[WARN] GBA Debug: ItemMenu_Deselect: itemId=693
-[ERROR] GBA Savedata: Savegame time offset set to 0
-[ERROR] GBA Savedata: Savegame time offset set to 0
-[ERROR] GBA Savedata: Savegame time offset set to 0
+[WARN] GBA Savestate: Savestate is for a different version of the game
+[INFO] Status: State 1 loaded
+[FATAL] GBA Memory: Jumped to invalid address: D9D9D600

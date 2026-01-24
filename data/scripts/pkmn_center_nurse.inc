@@ -324,8 +324,8 @@ PkmnCenterNurse_EventScript_FangTutors:
 
 PkmnCenterNurse_EventScript_CascadeMoveTutors:
 	call_if_quest_complete QUEST_FAN_CLUB_TUTOR, PkmnCenterNurse_EventScript_VermFanClubTutors
-	dynmultipush PkmnCenterNurse_Text_StompingTantrum, 6
-	dynmultipush PkmnCenterNurse_Text_Hex, 7
+	dynmultipush PkmnCenterNurse_Text_Hex, 6
+	dynmultipush PkmnCenterNurse_Text_StompingTantrum, 7
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
@@ -336,6 +336,7 @@ PkmnCenterNurse_EventScript_CascadeMoveTutors:
 	case 4, PkmnCenterNurse_Tutor_WorkUp
 	case 5, PkmnCenterNurse_Tutor_HoneClaws
 	case 6, PkmnCenterNurse_Tutor_Hex
+	case 7, PkmnCenterNurse_Tutor_StompingTantrum
 	end
 
 PkmnCenterNurse_EventScript_VermFanClubTutors:

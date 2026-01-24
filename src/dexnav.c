@@ -1278,42 +1278,42 @@ static u8 DexNavTryGenerateMonLevel(u16 species, enum EncounterType environment)
 
 static void DexNavGenerateMoveset(u16 species, u8 searchLevel, u8 encounterLevel, u16 *moveDst)
 {
-    bool8 genMove = FALSE;
-    u16 randVal = Random() % 100;
+    // bool8 genMove = FALSE;
+    // u16 randVal = Random() % 100;
     u16 i;
-    u16 eggMoveBuffer[EGG_MOVES_ARRAY_COUNT];
+    // u16 eggMoveBuffer[EGG_MOVES_ARRAY_COUNT];
 
     // see if first move slot should be an egg move
-    if (searchLevel < 5)
-    {
-        if (SEARCHLEVEL0_MOVECHANCE != 0 && randVal < SEARCHLEVEL0_MOVECHANCE)
-            genMove = TRUE;
-    }
-    else if (searchLevel < 10)
-    {
-        if (SEARCHLEVEL5_MOVECHANCE != 0 && randVal < SEARCHLEVEL5_MOVECHANCE)
-            genMove = TRUE;
-    }
-    else if (searchLevel < 25)
-    {
-        if (SEARCHLEVEL10_MOVECHANCE != 0 && randVal < SEARCHLEVEL10_MOVECHANCE)
-            genMove = TRUE;
-    }
-    else if (searchLevel < 50)
-    {
-        if (SEARCHLEVEL25_MOVECHANCE != 0 && randVal < SEARCHLEVEL25_MOVECHANCE)
-            genMove = TRUE;
-    }
-    else if (searchLevel < 100)
-    {
-        if (SEARCHLEVEL50_MOVECHANCE != 0 && randVal < SEARCHLEVEL50_MOVECHANCE)
-            genMove = TRUE;
-    }
-    else
-    {
-        if (SEARCHLEVEL100_MOVECHANCE != 0 && randVal < SEARCHLEVEL100_MOVECHANCE)
-            genMove = TRUE;
-    }
+    // if (searchLevel < 5)
+    // {
+    //     if (SEARCHLEVEL0_MOVECHANCE != 0 && randVal < SEARCHLEVEL0_MOVECHANCE)
+    //         genMove = TRUE;
+    // }
+    // else if (searchLevel < 10)
+    // {
+    //     if (SEARCHLEVEL5_MOVECHANCE != 0 && randVal < SEARCHLEVEL5_MOVECHANCE)
+    //         genMove = TRUE;
+    // }
+    // else if (searchLevel < 25)
+    // {
+    //     if (SEARCHLEVEL10_MOVECHANCE != 0 && randVal < SEARCHLEVEL10_MOVECHANCE)
+    //         genMove = TRUE;
+    // }
+    // else if (searchLevel < 50)
+    // {
+    //     if (SEARCHLEVEL25_MOVECHANCE != 0 && randVal < SEARCHLEVEL25_MOVECHANCE)
+    //         genMove = TRUE;
+    // }
+    // else if (searchLevel < 100)
+    // {
+    //     if (SEARCHLEVEL50_MOVECHANCE != 0 && randVal < SEARCHLEVEL50_MOVECHANCE)
+    //         genMove = TRUE;
+    // }
+    // else
+    // {
+    //     if (SEARCHLEVEL100_MOVECHANCE != 0 && randVal < SEARCHLEVEL100_MOVECHANCE)
+    //         genMove = TRUE;
+    // }
 
     // Generate a wild mon just to get the initial moveset (later overwritten by CreateDexNavWildMon)
     CreateWildMon(species, encounterLevel);
@@ -1323,12 +1323,12 @@ static void DexNavGenerateMoveset(u16 species, u8 searchLevel, u8 encounterLevel
         moveDst[i] = GetMonData(&gEnemyParty[0], MON_DATA_MOVE1 + i, NULL);
 
     // set first move slot to a random egg move if search level is good enough
-    if (genMove)
-    {
-        u8 numEggMoves = GetEggMoves(&gEnemyParty[0], eggMoveBuffer);
-        if (numEggMoves != 0)
-            moveDst[0] = eggMoveBuffer[Random() % numEggMoves];
-    }
+    // if (genMove)
+    // {
+    //     u8 numEggMoves = GetEggMoves(&gEnemyParty[0], eggMoveBuffer);
+    //     if (numEggMoves != 0)
+    //         moveDst[0] = eggMoveBuffer[Random() % numEggMoves];
+    // }
 }
 
 static u16 DexNavGenerateHeldItem(u16 species, u8 searchLevel)
