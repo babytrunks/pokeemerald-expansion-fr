@@ -3271,5 +3271,7 @@ const struct SpriteFrameImage sPicTable_MegaStone[] = {
     overworld_frame(gObjectEventPic_MegaStone, 2, 2, 0),
 };
 
-
+static const struct SpriteFrameImage sPicTable_GachaMachine[] = {
+    obj_frame_tiles(gObjectEventPic_GachaMachine),
+};
 #endif // IS_FRLG

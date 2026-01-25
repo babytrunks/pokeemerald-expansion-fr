@@ -58,36 +58,6 @@ EventScript_ThunderWaveTaught::
 	release
 	end
 
-RockTunnel_B1F_EventScript_RockSlideTutor::
-	lock
-	faceplayer
-.if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_ROCK_SLIDE, EventScript_RockSlideTaught
-.endif
-	msgbox Text_RockSlideTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_RockSlideDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_RockSlideDeclined
-	msgbox Text_RockSlideWhichMon
-	setvar VAR_0x8005, MOVE_ROCK_SLIDE
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_RockSlideDeclined
-.if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_ROCK_SLIDE
-.endif
-	goto EventScript_RockSlideTaught
-	end
-
-EventScript_RockSlideDeclined::
-	msgbox Text_RockSlideDeclined
-	release
-	end
-
-EventScript_RockSlideTaught::
-	msgbox Text_RockSlideTaught
-	release
-	end
-
 MtEmber_Exterior_EventScript_ExplosionTutor::
 	lock
 	faceplayer
@@ -431,13 +401,14 @@ FourIsland_House1_EventScript_BodySlamTutor::
 	setvar VAR_0x8005, MOVE_MUD_SHOT
 	setvar VAR_0x8005, MOVE_OMINOUS_WIND
 	setvar VAR_0x8005, MOVE_VACUUM_WAVE
-	setvar VAR_0x8005, MOVE_FLAME_CHARGE 
-	setvar VAR_0x8005, MOVE_TRAILBLAZE 
 	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH 
 	setvar VAR_0x8005, MOVE_CHARGE_BEAM
 	setvar VAR_0x8005, MOVE_WORK_UP
 	setvar VAR_0x8005, MOVE_HONE_CLAWS
 	setvar VAR_0x8005, MOVE_STOMPING_TANTRUM
+	setvar VAR_0x8005, MOVE_FLAME_CHARGE
+	setvar VAR_0x8005, MOVE_HEX
+	setvar VAR_0x8005, MOVE_TRAILBLAZE 
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
 .if I_REUSABLE_TMS == FALSE

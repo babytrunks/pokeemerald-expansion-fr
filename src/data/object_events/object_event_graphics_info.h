@@ -7620,7 +7620,24 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicF = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GachaMachine = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_GACHA_MACHINE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_4,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = TRUE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_Inanimate,
+    .images = sPicTable_GachaMachine,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Falkner = {TAG_NONE, OBJ_EVENT_PAL_TAG_FALKNER, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 2, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_Falkner, gDummySpriteAffineAnimTable};
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bugsy = {TAG_NONE, OBJ_EVENT_PAL_TAG_BUGSY, OBJ_EVENT_PAL_TAG_NONE, 256, 16, 32, 4, SHADOW_SIZE_M, FALSE, FALSE, TRACKS_FOOT, &gObjectEventBaseOam_16x32, sOamTables_16x32, sAnimTable_Standard, sPicTable_Bugsy, gDummySpriteAffineAnimTable};

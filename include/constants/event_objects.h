@@ -432,7 +432,7 @@
 #define OBJ_EVENT_GFX_POKEMANIAC                 404
 #define OBJ_EVENT_GFX_PSYCHIC_F                  405
 #define OBJ_EVENT_GFX_TAMER                      406
-
+#define OBJ_EVENT_GFX_GACHA_MACHINE              407
 // FRLG equivalents
 
 // #define OBJ_EVENT_GFX_MEW OBJ_EVENT_GFX_NINJA_BOY
@@ -444,7 +444,7 @@
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        407
+#define NUM_OBJ_EVENT_GFX                        408
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -643,7 +643,7 @@
 #define OBJ_EVENT_PAL_TAG_ROCKER                  0x117A
 #define OBJ_EVENT_PAL_TAG_PSYCHIC_M               0x117B
 #define OBJ_EVENT_PAL_TAG_TAMER                   0x117C
-
+#define OBJ_EVENT_PAL_TAG_GACHA_MACHINE           0x117D
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

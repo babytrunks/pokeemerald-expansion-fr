@@ -686,5 +686,7 @@ const u16 gObjectEventPic_Tamer[]   = INCBIN_U16("graphics/object_events/pics/pe
 const u16 gObjectEventPal_Tamer[]   = INCBIN_U16("graphics/object_events/palettes/tamer.gbapal");
 
 
+const u32 gObjectEventPic_GachaMachine[] = INCBIN_U32("graphics/object_events/pics/misc/gacha_machine.4bpp");
+const u16 gObjectEventPal_GachaMachine[] = INCBIN_U16("graphics/object_events/palettes/gacha_machine.gbapal");
 
 #endif // IS_FRLG

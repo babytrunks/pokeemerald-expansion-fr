@@ -5238,7 +5238,7 @@ Mugshot: Yellow
 Nidoking @ Life Orb
 Nature: Timid
 Ability: Sheer Force
-Level: 35
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 4 Def / 0 SpA / 0 SpD / 204 Spe
 - Earth Power
@@ -5260,7 +5260,7 @@ EVs: 0 HP / 204 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
 Infernape @ Focus Sash
 Nature: Jolly
 Ability: Blaze
-Level: 36
+Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Swords Dance
@@ -5293,7 +5293,7 @@ EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 4 SpD / 0 Spe
 Veluza @ Sitrus Berry
 Nature: Jolly
 Ability: Sharpness
-Level: 36
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fillet Away
@@ -5743,16 +5743,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 20
+Skuntank
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 20
+Ursaring
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Drowzee
-Level: 20
+Sirfetch'd
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_15 ===
@@ -5764,12 +5764,12 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop
-Level: 21
+Hariyama
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machop
-Level: 21
+Grapploct
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_16 ===

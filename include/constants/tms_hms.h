@@ -16,7 +16,7 @@
     F(TAUNT) \
     F(ICE_BEAM) \
     F(BLIZZARD) \
-    F(HYPER_BEAM) \
+    F(DARK_PULSE) \
     F(LIGHT_SCREEN) \
     F(PROTECT) \
     F(RAIN_DANCE) \
@@ -65,7 +65,9 @@
     F(DUAL_WINGBEAT) \
     F(ROCK_SLIDE) \
     F(DRAIN_PUNCH) \
-    F(DRAGON_TAIL)
+    F(DRAGON_TAIL) \
+    F(FLASH_CANNON) 
+
     
 #define FOREACH_HM(F) \
     F(CUT) \

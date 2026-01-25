@@ -167,12 +167,12 @@ RocketHideout_B4F_Text_Grunt3PostBattle::
 
 RocketHideout_B4F_Text_Grunt1Intro::
     .string "The elevator doesn't work?\n"
-    .string "Who has the LIFT KEY?$"
+    .string "Who has the Lift Key?$"
 
 RocketHideout_B4F_Text_Grunt1Defeat::
     .string "No!$"
 
 RocketHideout_B4F_Text_Grunt1PostBattle::
     .string "Oh, no!\n"
-    .string "I dropped the LIFT KEY!$"
+    .string "I dropped the Lift Key!$"
 

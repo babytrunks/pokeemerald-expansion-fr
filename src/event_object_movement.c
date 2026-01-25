@@ -599,6 +599,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Rocker,         OBJ_EVENT_PAL_TAG_ROCKER},
     {gObjectEventPal_PsychicM,         OBJ_EVENT_PAL_TAG_PSYCHIC_M},
     {gObjectEventPal_Tamer,         OBJ_EVENT_PAL_TAG_TAMER},
+    {gObjectEventPal_GachaMachine,        OBJ_EVENT_PAL_TAG_GACHA_MACHINE},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

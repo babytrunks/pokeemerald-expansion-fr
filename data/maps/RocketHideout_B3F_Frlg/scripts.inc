@@ -35,5 +35,5 @@ RocketHideout_B3F_Text_Grunt2Defeat::
 RocketHideout_B3F_Text_Grunt2PostBattle::
     .string "Go ahead and go!\p"
     .string "But you can't run the elevator\n"
-    .string "without the LIFT KEY.$"
+    .string "without the Lift Key.$"
 

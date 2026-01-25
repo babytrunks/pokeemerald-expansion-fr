@@ -829,6 +829,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKEMANIAC] =          &gObjectEventGraphicsInfo_Pokemaniac,
     [OBJ_EVENT_GFX_PSYCHIC_F] =           &gObjectEventGraphicsInfo_PsychicF,
     [OBJ_EVENT_GFX_TAMER]     =           &gObjectEventGraphicsInfo_Tamer,
+    [OBJ_EVENT_GFX_GACHA_MACHINE] =       &gObjectEventGraphicsInfo_GachaMachine,
 
 #endif // IS_FRLG
 };

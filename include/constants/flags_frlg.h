@@ -542,7 +542,7 @@
 // Story flags
 #define STORY_FLAGS_START                                0x230
 #define FLAG_GOT_QUICK_BALL_ON_ROUTE_1                       0x230
-#define FLAG_GOT_TM34_FROM_SURGE                         0x231
+#define FLAG_GOT_TM34_FROM_SURGE                         0x231 // unused
 #define FLAG_GOT_FOSSIL_FROM_MT_MOON                     0x232
 #define FLAG_HELPED_BILL_IN_SEA_COTTAGE                  0x233
 #define FLAG_GOT_SS_TICKET                               0x234
@@ -1220,12 +1220,12 @@
 #define FLAG_EXP_SHARE                              0x4C0
 #define FLAG_FORCE_SHINY                            0x4C1
 #define FLAG_UNLOCKED_STAT_EDITOR                   0x4C2
-#define FLAG_0x4C3               0x4C3
-#define FLAG_0x4C4               0x4C4
-#define FLAG_0x4C5               0x4C5
-#define FLAG_0x4C6               0x4C6
-#define FLAG_0x4C7               0x4C7
-#define FLAG_0x4C8               0x4C8
+#define FLAG_CELADON_BOUGHT_VENUSAURITE             0x4C3
+#define FLAG_CELADON_BOUGHT_BLASTOISINITE           0x4C4
+#define FLAG_CELADON_BOUGHT_CHARIZARDITE_X          0x4C5
+#define FLAG_CELADON_BOUGHT_PIDGEOTITE              0x4C6
+#define FLAG_CELADON_BOUGHT_HERACRONITE             0x4C7
+#define FLAG_CELADON_BOUGHT_ABSOLITE                0x4C8
 #define FLAG_0x4C9               0x4C9
 #define FLAG_0x4CA               0x4CA
 #define FLAG_0x4CB               0x4CB

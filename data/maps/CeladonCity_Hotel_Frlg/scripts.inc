@@ -36,6 +36,7 @@ EventScript_Jasmine_Battle::
     setflag FLAG_DEFEATED_JASMINE    
     msgbox jasmine_Text_6
     call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
+    setflag FLAG_UNLOCKED_STAT_EDITOR
     callnative SetBuffer1ToEvCap
 	msgbox johtoLeader_Text_CurrentEvCap
     msgbox jasmine_Text_7

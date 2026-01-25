@@ -1068,7 +1068,7 @@ gFameCheckerFlavorTextOriginLocation_MrFuji5::
 	.string "CINNABAR ISLAND$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni0::
-	.string "ROCKET HIDEOUT$"
+	.string "Rocket Hideout$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni1::
 	.string "Silph Co.$"
