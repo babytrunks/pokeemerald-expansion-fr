@@ -8531,89 +8531,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fire Spin
 
 === TRAINER_CHANNELER_PATRICIA ===
-Name: PATRICIA
-Class: Channeler Frlg
-Pic: Channeler Frlg
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
-Gastly
-Level: 22
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_CHANNELER_CARLY ===
-Name: CARLY
-Class: Channeler Frlg
-Pic: Channeler Frlg
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
-Gastly
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_CHANNELER_HOPE ===
-Name: HOPE
-Class: Channeler Frlg
-Pic: Channeler Frlg
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
-Gastly
-Level: 23
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_CHANNELER_PAULA ===
-Name: PAULA
-Class: Channeler Frlg
-Pic: Channeler Frlg
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
-Gastly
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_CHANNELER_LAUREL ===
-Name: LAUREL
-Class: Channeler Frlg
-Pic: Channeler Frlg
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
-Gastly
-Level: 23
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Gastly
-Level: 23
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_CHANNELER_JODY ===
-Name: JODY
-Class: Channeler Frlg
-Pic: Channeler Frlg
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
-Gastly
-Level: 22
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-=== TRAINER_CHANNELER_TAMMY ===
-Name: TAMMY
+Name: Patricia
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
@@ -8622,11 +8540,93 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
 Haunter
-Level: 23
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_CHANNELER_CARLY ===
+Name: Carly
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Misdreavus
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_CHANNELER_HOPE ===
+Name: Hope
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Duskull
+Level: 35
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_CHANNELER_PAULA ===
+Name: Paula
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Shuppet
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_CHANNELER_LAUREL ===
+Name: Laurel
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Haunter
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Hypno
+Level: 34
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_CHANNELER_JODY ===
+Name: Jody
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Lampent
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_CHANNELER_TAMMY ===
+Name: Tammy
+Class: Channeler Frlg
+Pic: Channeler Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Banette
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_RUTH ===
-Name: RUTH
+Name: Ruth
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
@@ -8634,12 +8634,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Gastly
-Level: 22
+Phantump
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_KARINA ===
-Name: KARINA
+Name: Karina
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
@@ -8647,12 +8647,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Gastly
-Level: 24
+Frillish
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_JANAE ===
-Name: JANAE
+Name: Janae
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
@@ -8660,12 +8660,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Gastly
-Level: 22
+Yamask
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_ANGELICA ===
-Name: ANGELICA
+Name: Angelica
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
@@ -8673,20 +8673,20 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Gastly
-Level: 22
+Dusclops
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Gastly
-Level: 22
+Drifblim
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Gastly
-Level: 22
+Litwick
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_EMILIA ===
-Name: EMILIA
+Name: Emilia
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
@@ -8694,8 +8694,8 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Gastly
-Level: 24
+Sableye
+Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_JENNIFER ===
@@ -8707,8 +8707,8 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Gastly
-Level: 24
+Spiritomb
+Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_AMANDA ===

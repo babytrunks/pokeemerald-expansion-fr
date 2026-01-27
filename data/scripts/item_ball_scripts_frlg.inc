@@ -535,8 +535,8 @@ RockTunnel_B1F_EventScript_ItemTMRockSlide::
 	finditem ITEM_TM_ROCK_SLIDE
 	end
 
-PokemonTower_5F_EventScript_ItemSpellTag::
-	finditem ITEM_SPELL_TAG
+PokemonTower_5F_EventScript_ItemTMWillOWisp::
+	finditem ITEM_TM_WILL_O_WISP
 	end
 
 CeladonCity_EventScript_ItemDreamPatch::

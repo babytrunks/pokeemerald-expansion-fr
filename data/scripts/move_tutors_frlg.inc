@@ -408,7 +408,7 @@ FourIsland_House1_EventScript_BodySlamTutor::
 	setvar VAR_0x8005, MOVE_STOMPING_TANTRUM
 	setvar VAR_0x8005, MOVE_FLAME_CHARGE
 	setvar VAR_0x8005, MOVE_HEX
-	setvar VAR_0x8005, MOVE_TRAILBLAZE 
+
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
 .if I_REUSABLE_TMS == FALSE
@@ -433,6 +433,41 @@ lock
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
 	goto EventScript_BodySlamTaught
 	end
+
+FourIsland_House3_EventScript_BodySlamTutor::
+lock
+	faceplayer
+.if I_REUSABLE_TMS == FALSE
+	goto_if_set FLAG_TUTOR_BODY_SLAM, EventScript_BodySlamTaught
+.endif
+	msgbox Text_BodySlamTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	call EventScript_CanOnlyBeLearnedOnce
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	msgbox Text_BodySlamWhichMon
+	setvar VAR_0x8005, MOVE_TRAILBLAZE
+	call EventScript_ChooseMoveTutorMon
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
+	goto EventScript_BodySlamTaught
+	end
+
+FourIsland_House4_EventScript_BodySlamTutor::
+	lock
+	faceplayer
+.if I_REUSABLE_TMS == FALSE
+	goto_if_set FLAG_TUTOR_BODY_SLAM, EventScript_BodySlamTaught
+.endif
+	msgbox Text_BodySlamTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	call EventScript_CanOnlyBeLearnedOnce
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	msgbox Text_BodySlamWhichMon
+	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH
+	call EventScript_ChooseMoveTutorMon
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
+	goto EventScript_BodySlamTaught
+	end
+
 
 EventScript_BodySlamDeclined::
 	msgbox Text_BodySlamDeclined
