@@ -224,4 +224,3 @@ CeladonCity_Text_SomeoneStoleSilphScope::
     .string "I'm sure of it.\p"
     .string "But I lost sight of him!\n"
     .string "Where'd he go?$"
-

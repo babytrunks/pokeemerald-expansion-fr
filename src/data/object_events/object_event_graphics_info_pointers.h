@@ -420,7 +420,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Electrician
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tamer;
-
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GachaMachine;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,

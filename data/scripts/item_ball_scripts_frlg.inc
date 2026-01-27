@@ -139,8 +139,8 @@ RocketHideout_B2F_EventScript_ItemSwiftFeather::
 	finditem ITEM_SWIFT_FEATHER
 	end
 
-RocketHideout_B2F_EventScript_ItemRedCoin::
-	finditem ITEM_RED_COIN
+RocketHideout_B2F_EventScript_ItemGachaVoucher::
+	finditem ITEM_GACHA_VOUCHER
 	end
 
 RocketHideout_B2F_EventScript_ItemTM12::

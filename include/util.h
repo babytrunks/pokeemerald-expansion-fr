@@ -39,5 +39,5 @@ void CopySpriteTiles(u8 shape, u8 size, u8 *tiles, u16 *tilemap, u8 *output);
 }
 
 u32 MathMax(u32 num1, u32 num2);
-
+u32 MathMin(u32 num1, u32 num2);
 #endif // GUARD_UTIL_H

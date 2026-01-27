@@ -498,7 +498,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sCharmeleonLevelUpLearnset,
         .teachableLearnset = sCharmeleonTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CHARIZARD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CHARIZARD}),
     },
 
     [SPECIES_CHARIZARD] =
@@ -909,7 +909,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sWartortleLevelUpLearnset,
         .teachableLearnset = sWartortleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_BLASTOISE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BLASTOISE}),
     },
 
     [SPECIES_BLASTOISE] =
@@ -16185,7 +16185,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
                             #endif
                             #endif
                             #if P_GEN_8_CROSS_EVOS
-                                {EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_KLEAVOR}
+                                {EVO_ITEM, ITEM_KINGS_ROCK, SPECIES_KLEAVOR}
                             #endif
                             ),
     #endif

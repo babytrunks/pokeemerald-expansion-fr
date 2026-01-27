@@ -8651,7 +8651,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sKarrablastLevelUpLearnset,
         .teachableLearnset = sKarrablastTeachableLearnset,
         .eggMoveLearnset = sKarrablastEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ESCAVALIER, CONDITIONS({IF_TRADE_PARTNER_SPECIES, SPECIES_SHELMET})}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ESCAVALIER, CONDITIONS({IF_TRADE_PARTNER_SPECIES, SPECIES_SHELMET})},
+                                    {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ESCAVALIER}),
     },
 
     [SPECIES_ESCAVALIER] =
@@ -9188,7 +9189,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sJoltikLevelUpLearnset,
         .teachableLearnset = sJoltikTeachableLearnset,
         .eggMoveLearnset = sJoltikEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_GALVANTULA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_GALVANTULA}),
     },
 
     [SPECIES_GALVANTULA] =
@@ -10868,7 +10869,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sShelmetLevelUpLearnset,
         .teachableLearnset = sShelmetTeachableLearnset,
         .eggMoveLearnset = sShelmetEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ACCELGOR, CONDITIONS({IF_TRADE_PARTNER_SPECIES, SPECIES_KARRABLAST})}),
+        .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ACCELGOR, CONDITIONS({IF_TRADE_PARTNER_SPECIES, SPECIES_KARRABLAST})},
+                                    {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_ALAKAZAM}),
     },
 
     [SPECIES_ACCELGOR] =

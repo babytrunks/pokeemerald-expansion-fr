@@ -983,3 +983,8 @@ bool32 IsHoldEffectChoice(enum HoldEffect holdEffect)
         || holdEffect == HOLD_EFFECT_CHOICE_SCARF
         || holdEffect == HOLD_EFFECT_CHOICE_SPECS;
 }
+
+void Buffer1GachaVouchers(void)
+{
+     ConvertIntToDecimalStringN(gStringVar1, CountTotalItemQuantityInBag(ITEM_GACHA_VOUCHER), STR_CONV_MODE_RIGHT_ALIGN, 2);
+}

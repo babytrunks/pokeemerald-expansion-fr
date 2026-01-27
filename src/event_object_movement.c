@@ -2484,7 +2484,7 @@ void SwapSelectedPokemonGender(void)
 		genderToSwapTo = MON_MALE; 
 	}
     // bool8 isShiny = IsMonShiny(mon);
-	u32 trainerId = GetMonData(mon, MON_DATA_OT_ID, NULL);
+	// u32 trainerId = GetMonData(mon, MON_DATA_OT_ID, NULL);
 	// u16 sid = HIHALF(trainerId);
 	// u16 tid = LOHALF(trainerId);
     do

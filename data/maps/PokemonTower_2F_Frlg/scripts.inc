@@ -33,6 +33,9 @@ PokemonTower_2F_EventScript_Rival::
 	call_if_eq VAR_STARTER_MON, 0, PokemonTower_2F_EventScript_RivalCharmander
 	msgbox PokemonTower_2F_Text_RivalPostBattle
 	closemessage
+	giveitem ITEM_GACHA_VOUCHER 2
+	msgbox PokemonTower_2F_Text_RivalPostBattle2
+	closemessage
 	playbgm MUS_RG_RIVAL_EXIT, 0
 	call_if_eq VAR_TEMP_1, 0, PokemonTower_2F_EventScript_RivalExitRight
 	call_if_eq VAR_TEMP_1, 1, PokemonTower_2F_EventScript_RivalExitDown
@@ -115,10 +118,14 @@ PokemonTower_2F_Text_RivalDefeat::
 
 PokemonTower_2F_Text_RivalPostBattle::
     .string "How's your Pokédex coming?\n"
-    .string "I just caught a CUBONE!\p"
-    .string "I can't find the bigger MAROWAK.\n"
+    .string "I just caught a Cubone!\p"
+    .string "I can't find the bigger Marowak.\n"
     .string "Where could they be?\p"
     .string "I bet there aren't any left!\p"
+    .string "Anyway, I got some more vouchers\n"
+	.string "for a sorry person like you.$"
+
+PokemonTower_2F_Text_RivalPostBattle2::
     .string "Well, I better get going.\n"
     .string "I've got a lot to accomplish,\l"
     .string "unlike you.\p"

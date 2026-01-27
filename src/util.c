@@ -250,3 +250,11 @@ u32 MathMax(u32 num1, u32 num2)
 
 	return num2;
 }
+
+u32 MathMin(u32 num1, u32 num2)
+{
+	if (num1 < num2)
+		return num1;
+
+	return num2;
+}

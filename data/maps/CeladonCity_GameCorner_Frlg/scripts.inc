@@ -7,11 +7,11 @@ CeladonCity_GameCorner_OnLoad::
 	end
 
 CeladonCity_GameCorner_EventScript_HideRocketHideout::
-	setmetatile 15, 2, METATILE_GameCorner_Floor_ShadeFull, 0
-	setmetatile 16, 2, METATILE_GameCorner_Floor_ShadeFull, 0
-	setmetatile 17, 2, METATILE_GameCorner_Floor_ShadeFull, 0
-	setmetatile 16, 3, METATILE_GameCorner_PurpleWall_Floor, 1
-	setmetatile 17, 3, METATILE_GameCorner_PurpleWall_Floor, 1
+	setmetatile 18, 2, METATILE_GameCorner_Floor_ShadeFull, 0
+	setmetatile 19, 2, METATILE_GameCorner_Floor_ShadeFull, 0
+	setmetatile 20, 2, METATILE_GameCorner_Floor_ShadeFull, 0
+	setmetatile 19, 3, METATILE_GameCorner_PurpleWall_Floor, 1
+	setmetatile 20, 3, METATILE_GameCorner_PurpleWall_Floor, 1
 	return
 
 CeladonCity_GameCorner_EventScript_InfoClerk::
@@ -284,7 +284,7 @@ CeladonCity_GameCorner_EventScript_SlotMachine2::
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine3::
-	goto CeladonCity_GameCorner_EventScript_Derby
+	goto CeladonCity_GameCorner_EventScript_BlackJack
 	end
 
 CeladonCity_GameCorner_EventScript_SlotMachine4::
@@ -432,6 +432,94 @@ CeladonCity_GameCorner_EventScript_SlotMachine21::
 	goto CeladonCity_GameCorner_EventScript_VoltorbFlip
 	end
 
+CeladonCity_GameCorner_EventScript_SlotMachine22::
+	lockall
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 25, Pinball_Not_Enough
+	showcoinsbox 1, 1
+	msgbox CeladonCity_GameCorner_Text_Pinball_Meowth, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF	
+	removecoins 25
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_RG_POKE_CENTER, FALSE
+	callnative PlayMeowthPinballGame
+    waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	goto CeladonCity_GameCorner_EventScript_CheckWinnings
+
+CeladonCity_GameCorner_EventScript_SlotMachine23::
+	lockall
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 25, Pinball_Not_Enough
+	showcoinsbox 1, 1
+	msgbox CeladonCity_GameCorner_Text_Pinball_Seel, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF	
+	removecoins 25
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_RG_POKE_CENTER, FALSE
+	callnative PlaySeelPinballGame
+    waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	goto CeladonCity_GameCorner_EventScript_CheckWinnings
+
+CeladonCity_GameCorner_EventScript_SlotMachine24::
+	lockall
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 50, Pinball_Not_Enough
+	showcoinsbox 1, 1
+	msgbox MauvilleCity_GameCorner_Text_Pinball_Diglett, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF	
+	removecoins 50
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_RG_POKE_CENTER, FALSE
+	callnative PlayDiglettPinballGame
+    waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	goto CeladonCity_GameCorner_EventScript_CheckWinnings
+
+CeladonCity_GameCorner_EventScript_SlotMachine25::
+	lockall
+	checkitem ITEM_COIN_CASE
+	goto_if_eq VAR_RESULT, FALSE, CeladonCity_GameCorner_EventScript_NoCoinCase
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, 100, Pinball_Not_Enough
+	showcoinsbox 1, 1
+	msgbox CeladonCity_GameCorner_Text_Pinball_Gengar, MSGBOX_YESNO
+	closemessage
+	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF	
+	removecoins 100
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	delay 40
+	hidecoinsbox 0, 5
+	playbgm MUS_RG_POKE_CENTER, FALSE
+	callnative PlayGengarPinballGame
+    waitstate
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	goto CeladonCity_GameCorner_EventScript_CheckWinnings
+
 CeladonCity_GameCorner_EventScript_SlotMachineNoCoinCase::
 	msgbox CeladonCity_GameCorner_Text_CoinCaseIsRequired
 	releaseall
@@ -446,11 +534,11 @@ CeladonCity_GameCorner_EventScript_Poster::
 
 CeladonCity_GameCorner_EventScript_OpenRocketHideout::
 	playse SE_UNLOCK
-	setmetatile 15, 2, METATILE_GameCorner_Floor_StairsTop, 0
-	setmetatile 16, 2, METATILE_GameCorner_StairsTop, 1
-	setmetatile 17, 2, METATILE_GameCorner_StairsBottom, 1
-	setmetatile 16, 3, METATILE_GameCorner_PurpleWall_StairsTop, 1
-	setmetatile 17, 3, METATILE_GameCorner_PurpleWall_stairsBottom, 1
+	setmetatile 18, 2, METATILE_GameCorner_Floor_StairsTop, 0
+	setmetatile 19, 2, METATILE_GameCorner_StairsTop, 1
+	setmetatile 20, 2, METATILE_GameCorner_StairsBottom, 1
+	setmetatile 19, 3, METATILE_GameCorner_PurpleWall_StairsTop, 1
+	setmetatile 20, 3, METATILE_GameCorner_PurpleWall_stairsBottom, 1
 	special DrawWholeMapView
 	setflag FLAG_OPENED_ROCKET_HIDEOUT
 	return
@@ -512,7 +600,7 @@ CeladonCity_GameCorner_EventScript_NoCoinCase2::
 
 
 CeladonCity_GameCorner_EventScript_UnusableSlotMachine1::
-	msgbox CeladonCity_GameCorner_Text_OutOfOrder, MSGBOX_SIGN
+	goto CeladonCity_GameCorner_EventScript_BlackJack
 	end
 
 CeladonCity_GameCorner_EventScript_UnusableSlotMachine2::
@@ -542,6 +630,12 @@ CeladonCity_GameCorner_EventScript_VoltorbFlip::
 	goto_if_eq VAR_RESULT, 0, VF_Come_Again
 	goto_if_eq VAR_RESULT, 1, VF_Go_On
 	releaseall
+	end
+
+CeladonCity_GameCorner_EventScript_SlotMachine26::
+	lockall
+	setvar VAR_0x8004, 1
+	goto CeladonCity_GameCorner_EventScript_SlotMachine
 	end
 
 CeladonCity_GameCorner_Text_CanExchangeCoinsNextDoor::
@@ -709,7 +803,7 @@ CeladonCity_GameCorner_Text_BlackJackPeter::
 	.string "Fat Guy: Hit me.$"
 
 CeladonCity_GameCorner_Text_BlackJack:
-	.string "It's a Blackjack Table!\n"
+	.string "It's a Blackjack Machine!\n"
 	.string "Want to play?$"
 
 CeladonCity_GameCorner_Text_Derby:
@@ -731,3 +825,19 @@ CeladonCity_GameCorner_Text_Bird:
 CeladonCity_GameCorner_Text_VF:
 	.string "It's Voltorb Flip!\n"
 	.string "It costs 50 Coins to play.$"
+
+CeladonCity_GameCorner_Text_Pinball_Meowth:
+	.string "It's a Meowth Pinball Machine!\n"
+	.string "It costs 25 Coins to play.$"
+
+CeladonCity_GameCorner_Text_Pinball_Seel:
+	.string "It's a Seel Pinball Machine!\n"
+	.string "It costs 25 Coins to play.$"
+	
+CeladonCity_GameCorner_Text_Pinball_Diglett:
+	.string "It's a Diglett Pinball Machine!\n"
+	.string "It costs 50 Coins to play.$"
+	
+CeladonCity_GameCorner_Text_Pinball_Gengar:
+	.string "It's a Gengar Pinball Machine\n"
+	.string "It costs 100 Coins to play.$"

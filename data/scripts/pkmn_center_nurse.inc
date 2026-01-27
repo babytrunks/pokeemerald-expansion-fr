@@ -557,7 +557,6 @@ PkmnCenterNurse_Aide_End:
 	release
 	end
 
-	
 PkmnCenterNurse_Text_MoveTutor:
 	.string "Move Tutors$"
 

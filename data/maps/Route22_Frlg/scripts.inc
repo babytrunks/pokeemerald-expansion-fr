@@ -37,14 +37,7 @@ Route22_EventScript_EarlyRival::
 	setspeaker SP_NAME_RIVAL
 	msgbox Route22_Text_EarlyRivalPostBattle
 	closemessage
-	setflag FLAG_WONDER_TRADE
-	setflag FLAG_3_PERFECT_IVS
-	giveegg SPECIES_CHARMANDER
-	playfanfare MUS_OBTAIN_ITEM
-	msgbox Route22_Text_ReceivedAnEgg
-	waitfanfare
-	clearflag FLAG_WONDER_TRADE
-	clearflag FLAG_3_PERFECT_IVS
+	giveitem ITEM_GACHA_VOUCHER
 	setspeaker SP_NAME_RIVAL
 	msgbox Route22_Text_EarlyRivalPostBattle2
 	closemessage
@@ -273,9 +266,9 @@ Route22_Text_ReceivedAnEgg::
 
 Route22_Text_EarlyRivalPostBattle2::
 	.string "{COLOR BLUE}My gramps sent me a couple of these\n"
-	.string "Eggs he got from a colleague. I\l"
-	.string "figure something like this would keep\l"
-	.string "a dummy like you entertained.\p"
+	.string "items he used to stock up on.\p"
+	.string "I figure a dummy like you would be\n"
+	.string "entertained.\p"
 	.string "You should quit dawdling and get a\n"
 	.string "move on!$"
 
