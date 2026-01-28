@@ -7591,7 +7591,7 @@ static u8 GetPartyLayoutFromBattleType(void)
 {
     if (IsMultiBattle() == TRUE)
         return PARTY_LAYOUT_MULTI;
-    if (!IsDoubleBattle() || gPlayerPartyCount == 1) // Draw the single layout in a double battle where the player has only one pokemon.
+    if (!IsDoubleBattle() || gPlayerPartyCount == 1 || WILD_ONE_VS_TWO_BATTLE)
         return PARTY_LAYOUT_SINGLE;
     return PARTY_LAYOUT_DOUBLE;
 }
@@ -7654,6 +7654,9 @@ static bool8 TrySwitchInPokemon(void)
     }
     for (i = 0; i < gBattlersCount; i++)
     {
+        // In 1-vs-2 wild battles, skip the player's absent right slot.
+        if (WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(i) == B_POSITION_PLAYER_RIGHT)
+            continue;
         if (IsOnPlayerSide(i) && GetPartyIdFromBattleSlot(slot) == gBattlerPartyIndexes[i])
         {
             GetMonNickname(&gPlayerParty[slot], gStringVar1);

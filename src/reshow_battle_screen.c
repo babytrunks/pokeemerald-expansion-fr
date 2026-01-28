@@ -266,7 +266,8 @@ static void ClearBattleBgCntBaseBlocks(void)
 
 static bool8 LoadBattlerSpriteGfx(u32 battler)
 {
-    if (battler < gBattlersCount)
+    if (battler < gBattlersCount
+        && !(WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
     {
         if (!IsOnPlayerSide(battler))
         {
@@ -293,7 +294,8 @@ static bool8 LoadBattlerSpriteGfx(u32 battler)
 
 void CreateBattlerSprite(u32 battler)
 {
-    if (battler < gBattlersCount)
+    if (battler < gBattlersCount
+        && !(WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
     {
         u8 posY;
 
@@ -365,7 +367,8 @@ void CreateBattlerSprite(u32 battler)
 
 static void CreateHealthboxSprite(u32 battler)
 {
-    if (battler < gBattlersCount)
+    if (battler < gBattlersCount
+        && !(WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
     {
         u8 healthboxSpriteId;
 

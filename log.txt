@@ -49220,3 +49220,4 @@
 [ERROR] GBA Savedata: Savegame time offset set to 0
 [ERROR] GBA Savedata: Savegame time offset set to 0
 [ERROR] GBA Savedata: Savegame time offset set to 0
+[ERROR] GBA Savedata: Savegame time offset set to 0
