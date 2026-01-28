@@ -3950,6 +3950,10 @@ static void TryDoEventsBeforeFirstTurn(void)
                 if (!IsBattlerAlive(i) || gBattleMons[i].species == SPECIES_NONE || GetMonData(mon, MON_DATA_IS_EGG))
                     gAbsentBattlerFlags |= 1u << i;
             }
+
+            // In 1-vs-2 wild battles, player's right slot is always absent.
+            if (WILD_ONE_VS_TWO_BATTLE)
+                gAbsentBattlerFlags |= 1u << GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
         }
 
         // Allow for illegal abilities within tests.

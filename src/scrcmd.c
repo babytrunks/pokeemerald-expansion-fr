@@ -79,6 +79,7 @@ static EWRAM_DATA u16 sFieldEffectScriptId = 0;
 
 static u8 sBrailleWindowId;
 static bool8 sIsScriptedWildDouble;
+static bool8 sIsScriptedWildOneVsTwo;
 
 extern const SpecialFunc gSpecials[];
 extern const u8 *gStdScripts[];
@@ -2512,6 +2513,8 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
 
     Script_RequestEffects(SCREFF_V1);
 
+    sIsScriptedWildOneVsTwo = FALSE;
+
     if(species2 == SPECIES_NONE)
     {
         CreateScriptedWildMon(species, level, item);
@@ -2526,15 +2529,25 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
     return FALSE;
 }
 
+bool8 ScrCmd_setwildonevstwo(struct ScriptContext *ctx)
+{
+    Script_RequestEffects(SCREFF_V1);
+    sIsScriptedWildOneVsTwo = TRUE;
+    return FALSE;
+}
+
 bool8 ScrCmd_dowildbattle(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
 
     if (sIsScriptedWildDouble == FALSE)
         BattleSetup_StartScriptedWildBattle();
+    else if (sIsScriptedWildOneVsTwo)
+        BattleSetup_StartScriptedWildOneVsTwoBattle();
     else
         BattleSetup_StartScriptedDoubleWildBattle();
 
+    sIsScriptedWildOneVsTwo = FALSE;
     ScriptContext_Stop();
 
     return TRUE;

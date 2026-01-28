@@ -1597,6 +1597,12 @@
 	.byte SCR_OP_DOWILDBATTLE
 	.endm
 
+	@ Sets the next dowildbattle to be a 1-vs-2 wild battle (player sends 1 mon, 2 wild mons).
+	@ Must be called after setwildbattle (with species2 set) and before dowildbattle.
+	.macro setwildonevstwo
+	.byte SCR_OP_SETWILDONEVSTWO
+	.endm
+
 	@ Sets a relative address to be used by the other vcommands as part of a Mystery Gift script.
 	.macro setvaddress pointer:req
 	.byte SCR_OP_SETVADDRESS

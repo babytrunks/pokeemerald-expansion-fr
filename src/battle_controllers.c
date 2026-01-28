@@ -2743,6 +2743,8 @@ void BtlController_HandleSpriteInvisibility(u32 battler)
 
 bool32 TwoPlayerIntroMons(u32 battler) // Double battle with both player pokemon active.
 {
+    if (WILD_ONE_VS_TWO_BATTLE && IsOnPlayerSide(battler))
+        return FALSE;
     return (IsDoubleBattle() && IsValidForBattle(GetBattlerMon(battler ^ BIT_FLANK)));
 }
 

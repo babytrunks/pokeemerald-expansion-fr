@@ -1956,7 +1956,12 @@ bool32 HandleFaintedMonActions(void)
             for (i = 0; i < gBattlersCount; i++)
             {
                 if (gAbsentBattlerFlags & (1u << i) && !HasNoMonsToSwitch(i, PARTY_SIZE, PARTY_SIZE))
+                {
+                    // Don't refill player's right slot in 1-vs-2 wild battles.
+                    if (WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(i) == B_POSITION_PLAYER_RIGHT)
+                        continue;
                     gAbsentBattlerFlags &= ~(1u << i);
+                }
             }
             // fall through
         case FAINTED_ACTIONS_GIVE_EXP:

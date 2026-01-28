@@ -257,6 +257,7 @@ gScriptCmdTable::
     script_cmd_table_entry SCR_OP_QUESTMENU                     ScrCmd_questmenu                      @ 0xe7 quest menu
     script_cmd_table_entry SCR_OP_SUBQUESTMENU                  ScrCmd_subquestmenu                   @ 0xe8 quest menu
     script_cmd_table_entry SCR_OP_RETURNQUESTSTATE              ScrCmd_returnqueststate               @ 0xe9 quest menu
+	script_cmd_table_entry SCR_OP_SETWILDONEVSTWO              ScrCmd_setwildonevstwo,              requests_effects=1  @ 0xea
 	.if ALLOCATE_SCRIPT_CMD_TABLE
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

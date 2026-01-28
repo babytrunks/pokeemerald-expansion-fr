@@ -379,7 +379,6 @@ static void CreateHealthboxSprite(u32 battler)
         gHealthboxSpriteIds[battler] = healthboxSpriteId;
         InitBattlerHealthboxCoords(battler);
         SetHealthboxSpriteVisible(healthboxSpriteId);
-
         if (!IsOnPlayerSide(battler))
             UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], GetBattlerMon(battler), HEALTHBOX_ALL);
         else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)

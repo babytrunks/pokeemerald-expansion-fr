@@ -14,6 +14,15 @@ CeladonCity_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+CeladonCity_TestScript::
+	lock
+	faceplayer
+	setwildbattle SPECIES_HAUNTER, 35, ITEM_NONE, SPECIES_GENGAR, 37, ITEM_NONE
+	setwildonevstwo
+	dowildbattle
+	release
+	end
+
 CeladonCity_PokemonCenter_1F_EventScript_Gentleman::
 	msgbox CeladonCity_PokemonCenter_1F_Text_PokeFluteAwakensSleepingMons, MSGBOX_NPC
 	end
