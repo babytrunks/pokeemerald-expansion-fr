@@ -174,7 +174,7 @@
 #define VAR_MT_MOON_ARCHER                              0x409E
 #define VAR_SS_ANNE_ANN_BROOKS_BATTLE                   0x409F
 #define VAR_SS_ANNE_TREVOR_EDMOND_BATTLE                0x40A0
-#define VAR_0x40A1                 0x40A1
+#define VAR_PRESET_TOTEM_BOSS                           0x40A1
 #define VAR_0x40A2                 0x40A2
 #define VAR_0x40A3                 0x40A3
 #define VAR_0x40A4                 0x40A4
@@ -304,5 +304,8 @@
 #define NPC_TEXT_COLOR_MON       2 // Black, for Pokémon
 #define NPC_TEXT_COLOR_NEUTRAL   3 // Black, for inanimate objects and messages from the game
 #define NPC_TEXT_COLOR_DEFAULT 255 // If an NPC is selected, use the color specified by GetColorFromTextColorTable, otherwise use Neutral.
+
+// Bosses for VAR_PRESET_TOTEM_BOSS
+#define BOSS_POKEMON_TOWER_MAROWAK 1
 
 #endif // GUARD_CONSTANTS_VARS_FRLG_H

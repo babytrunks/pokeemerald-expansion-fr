@@ -5,10 +5,28 @@ PokemonTower_6F_EventScript_MarowakGhost::
 	lockall
 	textcolor NPC_TEXT_COLOR_MON
 	msgbox PokemonTower_6F_Text_BeGoneIntruders
-	setwildbattle SPECIES_MAROWAK, 30
+	checkitem ITEM_SILPH_SCOPE
+	goto_if_eq VAR_RESULT, TRUE, StartMarowakTotemBattle
+	setwildbattle SPECIES_MAROWAK, 40
 	special StartMarowakBattle
 	waitstate
 	goto_if_eq VAR_RESULT, FALSE, PokemonTower_6F_EventScript_DefeatedMarowakGhost  @ VAR_RESULT set by CB2_EndMarowakBattle
+	applymovement LOCALID_PLAYER, PokemonTower_6F_Movement_ForcePlayerUp
+	waitmovement 0
+	releaseall
+	end
+
+StartMarowakTotemBattle::
+	setvar VAR_PRESET_TOTEM_BOSS BOSS_POKEMON_TOWER_MAROWAK
+	settotemboost B_POSITION_OPPONENT_LEFT, 1, 1, 1, 1, 1
+	setwildbattle SPECIES_MAROWAK_ALOLA, 47, ITEM_THICK_CLUB, SPECIES_HAUNTER, 45, ITEM_FOCUS_SASH
+	createmon 1, 0, SPECIES_MAROWAK_ALOLA, 47, ITEM_THICK_CLUB, 0, NATURE_ADAMANT, 1, MON_FEMALE, 252, 56, 0, 0 , 0, 0, 31, 31, 31, 31, 31, 31, MOVE_BONEMERANG, MOVE_FIRE_PUNCH, MOVE_SHADOW_BONE, MOVE_THUNDER_PUNCH, TRUE, FALSE, 0, 0  
+	createmon 1, 1, SPECIES_HAUNTER, 45, ITEM_FOCUS_SASH, 0, NATURE_TIMID, 1, MON_MALE, 0, 0, 0, 0 , 0, 0, 31, 31, 31, 31, 31, 31, MOVE_HEX, MOVE_WILL_O_WISP, MOVE_SLUDGE_BOMB, MOVE_ENERGY_BALL, FALSE, FALSE, 0, 0  	
+	@ callnative CreateTotemPartnerHaunter
+	setwildonevstwo
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PokemonTower_6F_EventScript_DefeatedMarowakGhost
 	applymovement LOCALID_PLAYER, PokemonTower_6F_Movement_ForcePlayerUp
 	waitmovement 0
 	releaseall

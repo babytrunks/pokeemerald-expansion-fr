@@ -1226,7 +1226,7 @@
 #define FLAG_CELADON_BOUGHT_PIDGEOTITE              0x4C6
 #define FLAG_CELADON_BOUGHT_HERACRONITE             0x4C7
 #define FLAG_CELADON_BOUGHT_ABSOLITE                0x4C8
-#define FLAG_0x4C9               0x4C9
+#define FLAG_CANT_RUN                               0x4C9
 #define FLAG_0x4CA               0x4CA
 #define FLAG_0x4CB               0x4CB
 #define FLAG_0x4CC               0x4CC

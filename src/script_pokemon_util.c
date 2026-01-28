@@ -164,6 +164,12 @@ void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u16 species
     }
 }
 
+// void CreateTotemPartnerHaunter(void)
+// {
+//     CreateMon(&gEnemyParty[1], SPECIES_HAUNTER, 45, 31, 0, 0, OT_ID_PLAYER_ID, 0);
+//     SetMonData(&gEnemyParty[1], MON_DATA_HELD_ITEM, ITEM_FOCUS_SASH);
+//     SetMonData
+// }
 void ScriptSetMonMoveSlot(u8 monIndex, u16 move, u8 slot)
 {
 // Allows monIndex to go out of bounds of gPlayerParty. Doesn't occur in vanilla
