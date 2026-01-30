@@ -6273,6 +6273,8 @@ void ScriptSetTotemBoost(struct ScriptContext *ctx)
 
 bool32 IsWildMonSmart(void)
 {
+  if (WILD_ONE_VS_TWO_BATTLE)
+    return TRUE;
 #if B_SMART_WILD_AI_FLAG != 0
     return (FlagGet(B_SMART_WILD_AI_FLAG));
 #else
