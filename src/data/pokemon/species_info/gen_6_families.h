@@ -3443,7 +3443,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sSpritzeeTeachableLearnset,
         .eggMoveLearnset = sSpritzeeEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_AROMATISSE, CONDITIONS({IF_HOLD_ITEM, ITEM_SACHET})},
-                                {EVO_ITEM, ITEM_SACHET, SPECIES_AROMATISSE}),
+                                {EVO_ITEM, ITEM_SHINY_STONE, SPECIES_AROMATISSE}),
     },
 
     [SPECIES_AROMATISSE] =
@@ -5251,7 +5251,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sGoomyTeachableLearnset,
         .eggMoveLearnset = sGoomyEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SLIGGOO, CONDITIONS({IF_NOT_REGION, REGION_HISUI})},
-                                {EVO_LEVEL, 40, SPECIES_SLIGGOO_HISUI, CONDITIONS({IF_REGION, REGION_HISUI})}),
+                                {EVO_ITEM, ITEM_METAL_COAT, SPECIES_SLIGGOO_HISUI}),
     },
 
     [SPECIES_SLIGGOO] =

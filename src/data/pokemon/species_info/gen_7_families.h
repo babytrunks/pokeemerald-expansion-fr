@@ -7811,7 +7811,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 55,
         .baseSpDefense = 35,
         .types = MON_TYPES(TYPE_STEEL),
-        .catchRate = 3,
+        .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 150 : 135,
         .evYield_Attack = 1,
         .genderRatio = MON_GENDERLESS,
@@ -7865,6 +7865,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMeltanLevelUpLearnset,
         .teachableLearnset = sMeltanTeachableLearnset,
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_COAT, SPECIES_MELMETAL}),
     },
 
     [SPECIES_MELMETAL] =

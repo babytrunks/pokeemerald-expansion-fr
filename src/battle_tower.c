@@ -1605,38 +1605,43 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
             friendship = 0;  // Frustration is more powerful the lower the pokemon's friendship is.
     }
     u16 item = fmon->heldItem;
+    u16 species = fmon->species;
     SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);
-    if (fmon->species == SPECIES_EEVEE && fmon->heldItem == ITEM_WATER_STONE) 
+    if (fmon->species == SPECIES_EEVEE) 
     { //randomize stone on eevee
-        randInd = Random() % 7;
+        randInd = Random() % 8;
         switch (randInd) 
         {
             case 0:
-                item = ITEM_LEAF_STONE; 
+                species = SPECIES_LEAFEON;
                 break;
             case 1:
-                item = ITEM_FIRE_STONE;
+                species = SPECIES_FLAREON;
                 break;
             case 2:
-                item = ITEM_ICE_STONE;
+                species = SPECIES_GLACEON;
                 break;
             case 3:
-                item = ITEM_MOON_STONE;
+                species = SPECIES_UMBREON;
                 break;
             case 4:
-                item = ITEM_SUN_STONE;
+                species = SPECIES_ESPEON;
                 break;
             case 5:
-                item =ITEM_THUNDER_STONE;
+                species = SPECIES_JOLTEON;
                 break;
             case 6:
+                species = SPECIES_SYLVEON;
+                break;
+            case 7:
+                species = SPECIES_VAPOREON;
                 break;
         }
+        SetMonData(dst, MON_DATA_SPECIES, &species);
     }
     else if (fmon->species == SPECIES_PIKACHU) 
     { //randomize pikachu
         randInd = Random() % 6;
-        u16 species;
         switch (randInd) 
         {
             case 0:

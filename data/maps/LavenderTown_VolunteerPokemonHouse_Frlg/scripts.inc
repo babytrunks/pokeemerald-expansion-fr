@@ -5,9 +5,8 @@ LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji::
 	lock
 	faceplayer
 	goto_if_set FLAG_GOT_POKE_FLUTE, LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute
+	setspeaker SP_NAME_FUJI
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis
-	checkitemspace ITEM_POKE_FLUTE
-	goto_if_eq VAR_RESULT, FALSE, LavenderTown_VolunteerPokemonHouse_EventScript_NoRoomForPokeFlute
 	setflag FLAG_GOT_POKE_FLUTE
 	giveitem_msg LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji, ITEM_POKE_FLUTE, 1, MUS_RG_OBTAIN_KEY_ITEM
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute
@@ -19,10 +18,6 @@ LavenderTown_VolunteerPokemonHouse_EventScript_AlreadyHavePokeFlute::
 	release
 	end
 
-LavenderTown_VolunteerPokemonHouse_EventScript_NoRoomForPokeFlute::
-	msgbox LavenderTown_VolunteerPokemonHouse_Text_MustMakeRoomForThis
-	release
-	end
 
 LavenderTown_VolunteerPokemonHouse_EventScript_LittleGirl::
 	lock
@@ -82,19 +77,19 @@ LavenderTown_VolunteerPokemonHouse_EventScript_Bookshelf::
 
 LavenderTown_PokemonCenter_1F_Text_HearMrFujiNotFromAroundHere::
     .string "I recently moved to this town.\p"
-    .string "I hear that MR. FUJI's not from\n"
+    .string "I hear that Mr. Fuji's not from\n"
     .string "these parts originally, either.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_WhereDidMrFujiGo::
-    .string "That's odd, MR. FUJI isn't here.\n"
+    .string "That's odd, Mr. Fuji isn't here.\n"
     .string "Where'd he go?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother::
-    .string "MR. FUJI had been praying alone\n"
+    .string "Mr. Fuji had been praying alone\n"
     .string "for CUBONE's mother.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons::
-    .string "This is really MR. FUJI's house.\p"
+    .string "This is really Mr. Fuji's house.\p"
     .string "He's really kind.\p"
     .string "He looks after abandoned and\n"
     .string "orphaned Pokémon.$"
@@ -110,7 +105,7 @@ LavenderTown_VolunteerPokemonHouse_Text_Psyduck::
     .string "Psyduck: Gwappa!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
-    .string "MR. FUJI: {PLAYER}…\p"
+    .string "{PLAYER}…\p"
     .string "Your Pokédex quest is one that\n"
     .string "requires strong dedication.\p"
     .string "Without deep love for Pokémon,\n"
@@ -119,20 +114,17 @@ LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
     .string "but I'd like you to have it.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji::
-    .string "{PLAYER} received a POKé FLUTE\n"
-    .string "from MR. FUJI.$"
+    .string "{PLAYER} received a Poké Flute\n"
+    .string "from Mr. Fuji.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute::
-    .string "Upon hearing the POKé FLUTE,\n"
+    .string "Upon hearing the Poké Flute,\n"
     .string "sleeping Pokémon will spring awake.\p"
     .string "Try using it on Pokémon that are\n"
     .string "sleeping obstacles.$"
 
-LavenderTown_VolunteerPokemonHouse_Text_MustMakeRoomForThis::
-    .string "You must make room for this!$"
-
 LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou::
-    .string "MR. FUJI: Has my POKé FLUTE\n"
+    .string "Has my Poké Flute\n"
     .string "helped you?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
@@ -144,6 +136,6 @@ LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
 
 LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf::
     .string "Pokémon magazines line the shelf.\p"
-    .string "Pokémon INSIDER…\p"
-    .string "Pokémon FAN…$"
+    .string "Pokémon Insider\p"
+    .string "Pokémon Fan…$"
 

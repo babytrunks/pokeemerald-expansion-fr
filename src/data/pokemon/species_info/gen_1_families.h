@@ -7761,7 +7761,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sPrimeapeLevelUpLearnset,
         .teachableLearnset = sPrimeapeTeachableLearnset,
     #if P_GEN_9_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_ANNIHILAPE, CONDITIONS({IF_USED_MOVE_X_TIMES, MOVE_RAGE_FIST, 20})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_ANNIHILAPE}),
     #endif
     },
 
@@ -15229,7 +15229,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sHorseaLevelUpLearnset,
         .teachableLearnset = sHorseaTeachableLearnset,
         .eggMoveLearnset = sHorseaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_SEADRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_SEADRA}),
     },
 
     [SPECIES_SEADRA] =
@@ -15307,7 +15307,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sSeadraTeachableLearnset,
     #if P_GEN_2_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_KINGDRA, CONDITIONS({IF_HOLD_ITEM, ITEM_DRAGON_SCALE})},
-                                {EVO_ITEM, ITEM_DRAGON_SCALE, SPECIES_KINGDRA}),
+                                {EVO_ITEM, ITEM_PRISM_SCALE, SPECIES_KINGDRA}),
     #endif
     },
 
@@ -16708,7 +16708,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sElectabuzzTeachableLearnset,
     #if P_GEN_4_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_ELECTIVIRE, CONDITIONS({IF_HOLD_ITEM, ITEM_ELECTIRIZER})},
-                                {EVO_ITEM, ITEM_ELECTIRIZER, SPECIES_ELECTIVIRE}),
+                                {EVO_ITEM, ITEM_THUNDER_STONE, SPECIES_ELECTIVIRE}),
     #endif
     },
 
@@ -16931,7 +16931,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sMagmarTeachableLearnset,
     #if P_GEN_4_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_MAGMORTAR, CONDITIONS({IF_HOLD_ITEM, ITEM_MAGMARIZER})},
-                                {EVO_ITEM, ITEM_MAGMARIZER, SPECIES_MAGMORTAR}),
+                                {EVO_ITEM, ITEM_FIRE_STONE, SPECIES_MAGMORTAR}),
     #endif
     },
 

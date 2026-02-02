@@ -4443,9 +4443,9 @@ const struct Item gItemsInfo[] =
             "that evolves a\n"
             "certain Pokémon."),
         .pocket = POCKET_POWER_UP,
-        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
-        .type = EVO_HELD_ITEM_TYPE,
-        .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
         .flingPower = 30,
         .iconPic = gItemIcon_PrismScale,

@@ -1632,7 +1632,7 @@ static void CreateKnob(void)
 
 // Pokemon omitted from here:
 // Pseudos, Larvesta, Honedge, Kubfu, Gimmighoul, Pawniard, Toxel
-// Starters, Poipole, Cosmog, Finizen
+// Starters, Eevee, Poipole, Cosmog, Finizen
 static const u16 sGachaBasicSpeciesCommon[] = {
  	SPECIES_DITTO,
 	SPECIES_ABRA,
@@ -1674,7 +1674,6 @@ static const u16 sGachaBasicSpeciesCommon[] = {
 	SPECIES_DUCKLETT,
 	SPECIES_DUSKULL,
 	SPECIES_DWEBBLE,
-	SPECIES_EEVEE,
 	SPECIES_ELECTRIKE,
 	SPECIES_ELGYEM,
 	SPECIES_EMOLGA,
@@ -1850,7 +1849,7 @@ static const u16 sGachaBasicSpeciesCommon[] = {
 	SPECIES_WOOPER_PALDEA,
     SPECIES_UNOWN,
 };
-
+   
 static const u16 sGachaBasicSpeciesUncommon[] = { //unused
     SPECIES_POIPOLE,
     SPECIES_LARVESTA,
@@ -2137,6 +2136,7 @@ static const u16 sGachaBasicSpeciesUltraRare[] = {// unused
 };
 
 static const u16 sGachaGreatSpeciesCommon[] = {
+    SPECIES_ROTOM,
     SPECIES_KUBFU,
     SPECIES_COSMOG,
     SPECIES_GIMMIGHOUL_CHEST,

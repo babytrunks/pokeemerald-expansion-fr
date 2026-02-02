@@ -11520,6 +11520,8 @@ bool32 IsAnyTargetTurnDamaged(u32 battlerAtk)
 
 bool32 IsAllowedToUseBag(void)
 {
+    if (WILD_ONE_VS_TWO_BATTLE)
+        return FALSE;
     switch(VarGet(B_VAR_NO_BAG_USE))
     {
     case NO_BAG_RESTRICTION:
