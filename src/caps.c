@@ -4,7 +4,7 @@
 #include "caps.h"
 #include "pokemon.h"
 
-#define LEVEL_CAP_COUNT 12
+#define LEVEL_CAP_COUNT 13
 u32 GetCurrentLevelCap(void)
 {
     static const u32 sLevelCapFlagMap[LEVEL_CAP_COUNT][2] =

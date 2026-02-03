@@ -9,6 +9,8 @@ SilphCo_1F_OnTrigger_PoliceMan::
 	playse SE_PIN
 	applymovement LOCALID_SILPHCO_POLICEMAN, SilphCo1F_Movement_PoliceMan
 	waitmovement 
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement
 	waitse
 	msgbox SilphCo_1F_Text_OhThankHeavens
 	giveitem ITEM_MEGA_RING
@@ -23,6 +25,7 @@ SilphCo1F_Movement_PoliceMan::
 
 EventScript_SilphCo_Growlithe::
 	lock
+	faceplayer
 	playmoncry SPECIES_GROWLITHE, CRY_MODE_NORMAL
 	msgbox SilphCo_1F_Text_Growlithe
 	release
@@ -69,4 +72,4 @@ SilphCo_1F_Text_OhThankHeavens::
 	.string "maybe you could put it to use.$"
 
 SilphCo_1F_Text_Growlithe::
-	.string "Ruff ruff!"
+	.string "Ruff ruff!$"

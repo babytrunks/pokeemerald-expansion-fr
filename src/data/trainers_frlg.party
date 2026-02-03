@@ -3790,12 +3790,12 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Kadabra
-Level: 29
+Mr Mime
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Mr Mime
-Level: 29
+Hypno
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_JUGGLER_NELSON ===
@@ -4745,16 +4745,6 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
 Dynamic Level Ratio: 90
 
-Kirlia @ Sitrus Berry
-Nature: Bashful
-Ability: Trace
-Level: 19
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psybeam
-- Draining Kiss
-- Magical Leaf
-
 Staravia @ Muscle Band
 Nature: Bashful
 Ability: Intimidate
@@ -4765,6 +4755,16 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Quick Attack
 - U-turn
 - Sleep Talk
+
+Darumaka @ Sitrus Berry
+Nature: Bashful
+Ability: Hustle
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Flame Wheel
+- Rock Tomb
+- U-turn
 
 Pawniard @ Chople Berry
 Nature: Bashful
@@ -4799,16 +4799,6 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
 Dynamic Level Ratio: 90
 
-Kirlia @ Sitrus Berry
-Nature: Bashful
-Ability: Trace
-Level: 19
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psybeam
-- Draining Kiss
-- Magical Leaf
-
 Staravia @ Muscle Band
 Nature: Bashful
 Ability: Intimidate
@@ -4819,6 +4809,17 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Quick Attack
 - U-turn
 - Sleep Talk
+
+Marill @ Mystic Water
+Nature: Adamant
+Ability: Huge Power
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Aqua Jet
+- Jovial Bash
+- Ice Punch
+- Misty Splatter
 
 Pawniard @ Chople Berry
 Nature: Bashful
@@ -4853,16 +4854,6 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
 Dynamic Level Ratio: 90
 
-Kirlia @ Sitrus Berry
-Nature: Bashful
-Ability: Trace
-Level: 19
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Psybeam
-- Draining Kiss
-- Magical Leaf
-
 Staravia @ Muscle Band
 Nature: Bashful
 Ability: Intimidate
@@ -4873,6 +4864,17 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Quick Attack
 - U-turn
 - Sleep Talk
+
+Skiploom @ Sitrus Berry
+Nature: Bashful
+Ability: Aerilate
+Level: 19
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Headbutt
+- Bullet Seed
+- Substitute
+- Leech Seed
 
 Pawniard @ Chople Berry
 Nature: Bashful
@@ -4914,7 +4916,7 @@ Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SCIENTIST_CONNOR ===
-Name: CONNOR
+Name: Connor
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -4922,57 +4924,41 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Grimer
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
-
-Weezing
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
-
-Koffing
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Self Destruct
-
-Weezing
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
-
-=== TRAINER_SCIENTIST_JERRY ===
-Name: JERRY
-Class: Scientist Frlg
-Pic: Scientist Frlg
-Gender: Male
-Music: Suspicious
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
-Magnemite
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Voltorb
-Level: 28
+Muk
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Magneton
-Level: 28
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Porygon2
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Weezing-Galar
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_SCIENTIST_JERRY ===
+Name: Jerry
+Class: Scientist Frlg
+Pic: Scientist Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Electrode
+Level: 39
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Gardevoir
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Swoobat
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SCIENTIST_JOSE ===
@@ -4984,21 +4970,13 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electrode
-Level: 29
+Magnezone
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
 
-Weezing
-Level: 29
+Exeggutor-Alola
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
 
 === TRAINER_SCIENTIST_RODNEY ===
 Name: RODNEY
@@ -5009,8 +4987,8 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electrode
-Level: 33
+Electabuzz
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SCIENTIST_BEAU ===
@@ -5022,37 +5000,21 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magneton
-Level: 26
+Tentacruel
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
 
-Koffing
-Level: 26
+Jolteon
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
 
-Weezing
-Level: 26
+Nidoking
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
 
-Magnemite
-Level: 26
+Bronzong
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
 
 === TRAINER_SCIENTIST_TAYLOR ===
 Name: TAYLOR
@@ -5063,45 +5025,25 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Voltorb
-Level: 25
+Venomoth
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
 
-Koffing
-Level: 25
+Raichu
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
 
-Magneton
-Level: 25
+Alakazam
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder Wave
-- Sonic Boom
-- Supersonic
-- Thunder Shock
 
-Magnemite
-Level: 25
+Nidoqueen
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder Wave
-- Sonic Boom
-- Supersonic
-- Thunder Shock
 
-Koffing
-Level: 25
+Rotom
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Self Destruct
 
 === TRAINER_SCIENTIST_JOSHUA ===
 Name: JOSHUA
@@ -5112,12 +5054,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electrode
-Level: 29
+Ampharos
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Muk
-Level: 29
+Gengar
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SCIENTIST_PARKER ===
@@ -5129,12 +5071,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Grimer
-Level: 29
+Luxray
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Electrode
-Level: 29
+Toxicroak
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SCIENTIST_ED ===
@@ -5146,29 +5088,17 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Voltorb
-Level: 28
+Porygon-Z
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Tackle
 
-Koffing
-Level: 28
+Scolipede
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Tackle
-- Smog
 
-Magneton
-Level: 28
+Manectric
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Thunder Wave
-- Sonic Boom
-- Supersonic
 
 === TRAINER_SCIENTIST_TRAVIS ===
 Name: TRAVIS
@@ -5179,12 +5109,12 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magnemite
-Level: 29
+Lanturn
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Koffing
-Level: 29
+Drapion
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SCIENTIST_BRAYDON ===
@@ -5920,12 +5850,12 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Cubone
-Level: 29
+Golbat
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 29
+Raticate
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_24 ===
@@ -5937,24 +5867,24 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Golbat
-Level: 25
+Crobat
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 25
+Arbok
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 25
+Persian
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 25
+Weezing
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 25
+Houndoom
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_25 ===
@@ -5966,16 +5896,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Raticate
-Level: 28
+Muk
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Hypno
-Level: 28
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Raticate
-Level: 28
+Honchkrow
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
@@ -5987,12 +5917,12 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop
-Level: 29
+Machoke
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Drowzee
-Level: 29
+Sandslash
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_27 ===
@@ -6004,16 +5934,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Ekans
-Level: 28
+Murkrow
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 28
+Marowak
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Cubone
-Level: 28
+Sneasel
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_28 ===
@@ -6025,8 +5955,8 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Arbok
-Level: 33
+Weavile
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_29 ===
@@ -6038,8 +5968,8 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Hypno
-Level: 33
+Annihilape
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_30 ===
@@ -6051,12 +5981,12 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop
-Level: 29
+Skuntank
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machoke
-Level: 29
+Machamp
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
@@ -6068,16 +5998,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Zubat
-Level: 28
+Dugtrio
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 28
+Sableye
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Golbat
-Level: 28
+Toxtricity
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_32 ===
@@ -6089,37 +6019,21 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Raticate
-Level: 26
+Sharpedo
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Scary Face
-- Hyper Fang
-- Quick Attack
-- Tail Whip
 
-Arbok
-Level: 26
+Nidoking
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Glare
-- Bite
-- Poison Sting
-- Leer
 
-Koffing
-Level: 26
+Krookodile
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
 
-Golbat
-Level: 26
+Scrafty
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Wing Attack
-- Bite
-- Astonish
-- Supersonic
 
 === TRAINER_TEAM_ROCKET_GRUNT_33 ===
 Name: Grunt
@@ -6130,12 +6044,12 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Cubone
-Level: 29
+Absol
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Cubone
-Level: 29
+Obstagoon
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_34 ===
@@ -6147,12 +6061,12 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Sandshrew
-Level: 29
+Crawdaunt
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Sandslash
-Level: 29
+Drapion
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_35 ===
@@ -6164,20 +6078,20 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Raticate
-Level: 26
+Mightyena
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 26
+Liepard
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Golbat
-Level: 26
+Cacturne
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rattata
-Level: 26
+Bisharp
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_36 ===
@@ -6189,16 +6103,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Weezing
-Level: 28
+Seviper
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Golbat
-Level: 28
+Spiritomb
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Koffing
-Level: 28
+Zoroark
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
@@ -6210,16 +6124,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Drowzee
-Level: 28
+Mandibuzz
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Grimer
-Level: 28
+Toxicroak
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machop
-Level: 28
+Pangoro
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_38 ===
@@ -6231,16 +6145,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Golbat
-Level: 28
+Morpeko
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Drowzee
-Level: 28
+Thievul
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Hypno
-Level: 28
+Grimmsnarl
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_39 ===
@@ -6252,8 +6166,8 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machoke
-Level: 33
+Incineroar
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_40 ===
@@ -6265,24 +6179,24 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 25
+Umbreon
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rattata
-Level: 25
+Overqwil
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Zubat
-Level: 25
+Arbok
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Rattata
-Level: 25
+Gliscor
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ekans
-Level: 25
+Sneasler
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
@@ -6294,16 +6208,16 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Cubone
-Level: 32
+Hydreigon
+Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Drowzee
-Level: 32
+Krookodile
+Level: 40
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Marowak
-Level: 32
+Nidoqueen
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_COOLTRAINER_SAMUEL ===
@@ -8106,26 +8020,62 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
 
-Pidgeot
-Level: 37
+Staraptor @ Sharp Beak
+Nature: Jolly
+Ability: Intimidate
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- U-turn
+- Brave Bird
+- Quick Attack
+- Close Combat
 
-Growlithe
-Level: 38
+Bisharp @ Eviolite
+Nature: Adamant
+Ability: Defiant
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Swords Dance
+- Iron Head
+- Knock Off
+- Sucker Punch
 
-Exeggcute
-Level: 35
+Jumpluff @ Sharp Beak
+Nature: Jolly
+Ability: Aerilate
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Sleep Powder
+- Double-Edge
+- Leaf Blade
+- Swords Dance
 
-Alakazam
-Level: 35
+Darmanitan @ Life Orb
+Nature: Jolly
+Ability: Sheer Force
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Flare Blitz
+- Rock Slide
+- U-turn
+- Earthquake
 
-Blastoise
-Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Blastoise @ Blastoisinite
+Nature: Modest
+Ability: Torrent
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 252 Spe
+- Shell Smash
+- Water Pulse
+- Dark Pulse
+- Aura Sphere
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
 Name: TERRY
@@ -8135,26 +8085,62 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
 
-Pidgeot
-Level: 37
+Staraptor @ Sharp Beak
+Nature: Jolly
+Ability: Intimidate
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- U-turn
+- Brave Bird
+- Quick Attack
+- Close Combat
 
-Gyarados
-Level: 38
+Bisharp @ Eviolite
+Nature: Adamant
+Ability: Defiant
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Swords Dance
+- Iron Head
+- Knock Off
+- Sucker Punch
 
-Growlithe
-Level: 35
+Azumarill @ Mystic Water
+Nature: Adamant
+Ability: Huge Power
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Liquidation
+- Play Rough
+- Aqua Jet
+- Ice Punch
 
-Alakazam
-Level: 35
+Darmanitan @ Life Orb
+Nature: Jolly
+Ability: Sheer Force
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Flare Blitz
+- Rock Slide
+- U-turn
+- Earthquake
 
-Venusaur
-Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Venusaur @ Venusaurite
+Nature: Timid
+Ability: Thick Fat
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 0 Spe
+- Sleep Powder
+- Giga Drain
+- Sludge Bomb
+- Earth Power
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
 Name: TERRY
@@ -8164,26 +8150,62 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
 
-Pidgeot
-Level: 37
+Staraptor @ Sharp Beak
+Nature: Jolly
+Ability: Intimidate
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- U-turn
+- Brave Bird
+- Quick Attack
+- Close Combat
 
-Exeggcute
-Level: 38
+Bisharp @ Eviolite
+Nature: Adamant
+Ability: Defiant
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Swords Dance
+- Iron Head
+- Knock Off
+- Sucker Punch
 
-Gyarados
-Level: 35
+Jumpluff @ Sharp Beak
+Nature: Jolly
+Ability: Aerilate
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Sleep Powder
+- Double-Edge
+- Leaf Blade
+- Swords Dance
 
-Alakazam
-Level: 35
+Azumarill @ Mystic Water
+Nature: Adamant
+Ability: Huge Power
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Liquidation
+- Play Rough
+- Aqua Jet
+- Ice Punch
 
-Charizard
-Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Charizard @ Charizardite Y
+Nature: Timid
+Ability: Drought
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 252 Spe
+- Flamethrower
+- Air Slash
+- Solar Beam
+- Focus Blast
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
 Name: TERRY
