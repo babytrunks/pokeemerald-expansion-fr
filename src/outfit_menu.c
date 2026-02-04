@@ -462,8 +462,8 @@ static bool32 SetupOutfitMenu_Graphics(void)
     case 1:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            LZDecompressWram(sTilemap, sOutfitMenu->tilemapBuffers[0]);
-            LZDecompressWram(sScrollingBG_Tilemap, sOutfitMenu->tilemapBuffers[1]);
+            DecompressDataWithHeaderWram(sTilemap, sOutfitMenu->tilemapBuffers[0]);
+            DecompressDataWithHeaderWram(sScrollingBG_Tilemap, sOutfitMenu->tilemapBuffers[1]);
             sOutfitMenu->gfxState++;
         }
         break;
@@ -996,6 +996,7 @@ u16 LockOutfit(u16 id)
 
 bool8 GetOutfitStatus(u16 id)
 {
+    return TRUE; // FOR NOW TESTING
     u16 *ptr = GetOutfitPointer(id);
 
     // return false if GetOutfitPointer returns NULL
