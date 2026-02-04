@@ -42,6 +42,7 @@
 #include "task.h"
 #include "text.h"
 #include "vs_seeker.h"
+#include "outfit_menu.h"
 #include "constants/event_bg.h"
 #include "constants/event_objects.h"
 #include "constants/item_effects.h"
@@ -83,6 +84,8 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
+static void CB2_OpenOutfitBoxFromBag(void);
+static void Task_OpenRegisteredOutfitBox(u8 taskId);
 
 //Start Pokevial Branch
 static void UsePokevialFieldYes(u8 taskId);
@@ -311,12 +314,22 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
 
 static void ItemUseOnFieldCB_Bike(u8 taskId)
 {
-    if (GetItemSecondaryId(gSpecialVar_ItemId) == STANDARD_BIKE)
-        GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE | PLAYER_AVATAR_FLAG_ACRO_BIKE);
-    else if (GetItemSecondaryId(gSpecialVar_ItemId) == MACH_BIKE)
-        GetOnOffBike(PLAYER_AVATAR_FLAG_MACH_BIKE);
-    else // ACRO_BIKE
-        GetOnOffBike(PLAYER_AVATAR_FLAG_ACRO_BIKE);
+    gUnusedBikeCameraAheadPanback = FALSE;
+
+    gSaveBlock2Ptr->playerBike = MACH_BIKE;
+    if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_BIKE)
+    {
+        SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_ON_FOOT);
+        Overworld_ClearSavedMusic();
+        Overworld_PlaySpecialMapMusic();
+    }
+    else
+    {
+        gSaveBlock2Ptr->playerBike = GetItemSecondaryId(gSpecialVar_ItemId);
+        SetPlayerAvatarTransitionFlags(PLAYER_AVATAR_FLAG_BIKE);
+        Overworld_SetSavedMusic(MUS_CYCLING);
+        Overworld_ChangeMusicTo(MUS_CYCLING);
+    }
 
     FollowerNPC_HandleBike();
     ScriptUnfreezeObjectEvents();
@@ -1768,7 +1781,7 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId)
 
     CopyItemName(ITEM_POKEVIAL, gStringVar1);
 
-    if (currentDoses > EMPTY_VIAL) 
+    if (currentDoses > EMPTY_VIAL)
     {
         PlaySE(SE_USE_ITEM);
         PokevialDoseDown(1);
@@ -1778,16 +1791,16 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId)
         FlagSet(FLAG_USING_POKE_VIAL);
         HealPlayerParty();
         StringExpandPlaceholders(gStringVar4, gText_PokevialHasDoses);
-        if (isPlayerUsingRegisteredKeyItem) 
+        if (isPlayerUsingRegisteredKeyItem)
             DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
         else
             DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
     }
-    else 
+    else
     {
         StringCopy(gStringVar2, gText_PokemonCenter);
         StringExpandPlaceholders(gStringVar4, gText_PokevialIsEmpty);
-    
+
         if (isPlayerUsingRegisteredKeyItem)
             DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
         else
@@ -1800,9 +1813,9 @@ void ItemUseOutOfBattle_InfiniteRepel(u8 taskId)
 {
     // if (REPEL_STEP_COUNT == 0)
     // bool32 isPlayerUsingRegisteredKeyItem = gTasks[taskId].tUsingRegisteredKeyItem;
-    
+
     // bool32 isPlayerUsingRegisteredKeyItem = gTasks[taskId].tUsingRegisteredKeyItem;
-    
+
     if (FlagGet(FLAG_INFINITE_REPEL))
     {
         PlaySE(SE_REPEL);
@@ -1822,5 +1835,37 @@ void ItemUseOutOfBattle_InfiniteRepel(u8 taskId)
     FlagToggle(FLAG_INFINITE_REPEL);
 }
 
+void ItemUseOutOfBattle_OutfitBox(u8 taskId)
+{
+    if (MenuHelpers_IsLinkActive() == TRUE)
+    {
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+    }
+    else if (gTasks[taskId].tUsingRegisteredKeyItem != TRUE)
+    {
+        gBagMenu->newScreenCallback = CB2_OpenOutfitBoxFromBag;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else
+    {
+        gFieldCallback = FieldCB_ReturnToFieldNoScript;
+        FadeScreen(FADE_TO_BLACK, 0);
+        gTasks[taskId].func = Task_OpenRegisteredOutfitBox;
+    }
+}
 
+static void CB2_OpenOutfitBoxFromBag(void)
+{
+    OpenOutfitMenu(CB2_ReturnToBagMenuPocket);
+}
+
+static void Task_OpenRegisteredOutfitBox(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        CleanupOverworldWindowsAndTilemaps();
+        OpenOutfitMenu(CB2_ReturnToField);
+        DestroyTask(taskId);
+    }
+}
 #undef tUsingRegisteredKeyItem

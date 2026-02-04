@@ -252,12 +252,16 @@ gScriptCmdTable::
 	script_cmd_table_entry SCR_OP_DYNMULTICHOICE                ScrCmd_dynmultichoice,              requests_effects=1  @ 0xe3
 	script_cmd_table_entry SCR_OP_DYNMULTIPUSH                  ScrCmd_dynmultipush,                requests_effects=1  @ 0xe4
 	script_cmd_table_entry SCR_OP_HIDEFOLLOWER                  ScrCmd_hidefollower,                requests_effects=1  @ 0xe5
-    script_cmd_table_entry SCR_OP_GETBRAILLESTRINGWIDTH         ScrCmd_getbraillestringwidth,       requests_effects=1  @ 0xe5
-	script_cmd_table_entry SCR_OP_POKEVIAL                      ScrCmd_pokevial,                    requests_effects=1   @ 0xe6 //Pokevial Branch
-    script_cmd_table_entry SCR_OP_QUESTMENU                     ScrCmd_questmenu                      @ 0xe7 quest menu
-    script_cmd_table_entry SCR_OP_SUBQUESTMENU                  ScrCmd_subquestmenu                   @ 0xe8 quest menu
-    script_cmd_table_entry SCR_OP_RETURNQUESTSTATE              ScrCmd_returnqueststate               @ 0xe9 quest menu
-	script_cmd_table_entry SCR_OP_SETWILDONEVSTWO              ScrCmd_setwildonevstwo,              requests_effects=1  @ 0xea
+    script_cmd_table_entry SCR_OP_GETBRAILLESTRINGWIDTH         ScrCmd_getbraillestringwidth,       requests_effects=1  @ 0xe6
+	script_cmd_table_entry SCR_OP_POKEVIAL                      ScrCmd_pokevial,                    requests_effects=1   @ 0xe7 //Pokevial Branch
+    script_cmd_table_entry SCR_OP_QUESTMENU                     ScrCmd_questmenu                      @ 0xe8 quest menu
+    script_cmd_table_entry SCR_OP_SUBQUESTMENU                  ScrCmd_subquestmenu                   @ 0xe9 quest menu
+    script_cmd_table_entry SCR_OP_RETURNQUESTSTATE              ScrCmd_returnqueststate               @ 0xea quest menu
+	script_cmd_table_entry SCR_OP_SETWILDONEVSTWO              ScrCmd_setwildonevstwo,              requests_effects=1  @ 0xeb
+	script_cmd_table_entry SCR_OP_TOGGLEOUTFIT                  ScrCmd_toggleoutfit                 requests_effects=1  @ 0xec
+	script_cmd_table_entry SCR_OP_GETOUTFITSTATUS               ScrCmd_getoutfitstatus              requests_effects=1  @ 0xed
+	script_cmd_table_entry SCR_OP_BUFFEROUTFITSTR               ScrCmd_bufferoutfitstr              requests_effects=1  @ 0xee
+	script_cmd_table_entry SCR_OP_POKEMARTOUTFIT                ScrCmd_pokemartoutfit               requests_effects=1  @ 0xef
 	.if ALLOCATE_SCRIPT_CMD_TABLE
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop
