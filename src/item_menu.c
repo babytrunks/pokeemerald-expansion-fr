@@ -729,6 +729,7 @@ static void CB2_Bag(void)
 static bool8 SetupBagMenu(void)
 {
     u8 taskId;
+    u8 i;
 
     switch (gMain.state)
     {
@@ -793,6 +794,8 @@ static bool8 SetupBagMenu(void)
     case 13:
         PrintPocketNames(gPocketNamesStringsTable[gBagPosition.pocket], 0);
         CopyPocketNameToWindow(0);
+        for (i = 0; i < POCKETS_COUNT; i++)
+            DrawPocketIndicatorSquare(i, FALSE);
         DrawPocketIndicatorSquare(gBagPosition.pocket, TRUE);
         gMain.state++;
         break;

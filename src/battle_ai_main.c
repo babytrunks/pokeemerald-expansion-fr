@@ -5714,6 +5714,31 @@ static s32 AI_CalcAdditionalEffectScore(u32 battlerAtk, u32 battlerDef, u32 move
                 case MOVE_EFFECT_EVS_PLUS_2:
                     ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, STAT_CHANGE_EVASION));
                     break;
+                case MOVE_EFFECT_ORDER_UP:
+                {
+                    enum StatChange stageStatId = STAT_CHANGE_ATK;
+                    bool32 commanderAffected = TRUE;
+
+                    switch (gBattleStruct->battlerState[battlerAtk].commanderSpecies)
+                    {
+                    case SPECIES_TATSUGIRI_CURLY:
+                        stageStatId = STAT_CHANGE_ATK;
+                        break;
+                    case SPECIES_TATSUGIRI_DROOPY:
+                        stageStatId = STAT_CHANGE_DEF;
+                        break;
+                    case SPECIES_TATSUGIRI_STRETCHY:
+                        stageStatId = STAT_CHANGE_SPEED;
+                        break;
+                    default:
+                        commanderAffected = FALSE;
+                        break;
+                    }
+
+                    if (commanderAffected)
+                        ADJUST_SCORE(IncreaseStatUpScore(battlerAtk, battlerDef, stageStatId));
+                    break;
+                }
                 default:
                     break;
                 }

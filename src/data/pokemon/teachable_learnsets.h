@@ -70,6 +70,7 @@
 // - MOVE_DRAGON_TAIL                                  //
 // - MOVE_FLASH_CANNON                                 //
 // - MOVE_WILL_O_WISP                                  //
+// - MOVE_THUNDER_WAVE                                 //
 // - MOVE_CUT                                          //
 // - MOVE_FLY                                          //
 // - MOVE_SURF                                         //
