@@ -67,7 +67,8 @@
     F(DRAIN_PUNCH) \
     F(DRAGON_TAIL) \
     F(FLASH_CANNON) \
-    F(WILL_O_WISP)
+    F(WILL_O_WISP) \
+    F(THUNDER_WAVE)
 
     
 #define FOREACH_HM(F) \

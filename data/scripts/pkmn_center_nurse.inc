@@ -464,6 +464,30 @@ PkmnCenterNurse_Tutor_IcicleSpear:
 	setvar VAR_0x8005, MOVE_ICICLE_SPEAR
 	goto PkmnCenterNurse_Tutor_TeachMove
 
+PkmnCenterNurse_Tutor_BugBuzz:
+	setvar VAR_0x8005, MOVE_BUG_BUZZ
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_BodySlam:
+	setvar VAR_0x8005, MOVE_BODY_SLAM
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_PhantomForce:
+	setvar VAR_0x8005, MOVE_PHANTOM_FORCE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_LeafBlade:
+	setvar VAR_0x8005, MOVE_LEAF_BLADE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_PowerGem:
+	setvar VAR_0x8005, MOVE_POWER_GEM
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_FocusPunch:
+	setvar VAR_0x8005, MOVE_FOCUS_PUNCH
+	goto PkmnCenterNurse_Tutor_TeachMove
+
 PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_AirSlash, 0
 	dynmultipush PkmnCenterNurse_Text_MysticalFire, 1
@@ -483,6 +507,21 @@ PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	end
 
 PkmnCenterNurse_EventScript_RainbowMoveTutors:
+	dynmultipush PkmnCenterNurse_Text_BugBuzz, 0
+	dynmultipush PkmnCenterNurse_Text_BodySlam, 1
+	dynmultipush PkmnCenterNurse_Text_PhantomForce, 2
+	dynmultipush PkmnCenterNurse_Text_LeafBlade, 3
+	dynmultipush PkmnCenterNurse_Text_PowerGem, 4
+	dynmultipush PkmnCenterNurse_Text_FocusPunch, 5
+	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_Tutor_BugBuzz
+	case 1, PkmnCenterNurse_Tutor_BodySlam
+	case 2, PkmnCenterNurse_Tutor_PhantomForce
+	case 3, PkmnCenterNurse_Tutor_LeafBlade
+	case 4, PkmnCenterNurse_Tutor_PowerGem
+	case 5, PkmnCenterNurse_Tutor_FocusPunch
 	goto EventScript_PkmnCenterNurse_Aide
 
 PkmnCenterNurse_EventScript_SoulMoveTutors:
@@ -699,6 +738,24 @@ PkmnCenterNurse_Text_RockBlast:
 
 PkmnCenterNurse_Text_IcicleSpear:
 	.string "Icicle Spear$"
+
+PkmnCenterNurse_Text_BugBuzz:
+	.string "Bug Buzz$"
+
+PkmnCenterNurse_Text_BodySlam:
+	.string "Body Slam$"
+
+PkmnCenterNurse_Text_PhantomForce:
+	.string "Phantom Force$"
+
+PkmnCenterNurse_Text_LeafBlade:
+	.string "Leaf Blade$"
+
+PkmnCenterNurse_Text_PowerGem:
+	.string "Power Gem$"
+
+PkmnCenterNurse_Text_FocusPunch:
+	.string "Focus Punch$"
 
 PkmnCenterNurse_Text_StartingTutors:
 	.string "Starting Tutors$"

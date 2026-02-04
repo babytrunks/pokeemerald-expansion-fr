@@ -5239,22 +5239,73 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
 
-Nidorino
-Level: 37
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Hippowdon @ Smooth Rock
+Nature: Adamant
+Ability: Sand Stream
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+- Stone Edge
+- Earthquake
+- Whirlwind
+- Stealth Rock
 
-Kangaskhan
-Level: 35
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Excadrill @ Focus Sash
+Nature: Adamant
+Ability: Sand Rush
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 54 Spe
+- Earthquake
+- Iron Head
+- Rock Slide
+- Swords Dance
 
-Rhyhorn
-Level: 37
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Kangaskhan @ Kangaskhanite
+Nature: Jolly
+Ability: Inner Focus
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+- Power-Up Punch
+- Fake Out
+- Body Slam
+- Crunch
 
-Nidoqueen
-Level: 41
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Garganacl @ Leftovers
+Nature: Impish
+Ability: Purifying Salt
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 0 Atk / 0 Def / 0 SpA / 54 SpD / 0 Spe
+- Protect
+- Body Press
+- Salt Cure
+- Recover
+
+Dracozolt @ Magnet
+Nature: Naive
+Ability: Sand Rush
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 54 Spe
+- Bolt Beak
+- Earthquake
+- Draco Meteor
+- Low Kick
+
+Torterra @ White Herb
+Nature: Jolly
+Ability: Rock Head
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Shell Smash
+- Wood Hammer
+- Earthquake
+- Head Smash
 
 === TRAINER_LEADER_GIOVANNI ===
 Name: Giovanni
