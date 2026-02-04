@@ -12,7 +12,7 @@
     F(ZEN_HEADBUTT) \
     F(BULLET_SEED) \
     F(HIDDEN_POWER) \
-    F(SUNNY_DAY) \
+    F(SUPERCELL_SLAM) \
     F(TAUNT) \
     F(ICE_BEAM) \
     F(BLIZZARD) \
@@ -68,7 +68,8 @@
     F(DRAGON_TAIL) \
     F(FLASH_CANNON) \
     F(WILL_O_WISP) \
-    F(THUNDER_WAVE)
+    F(THUNDER_WAVE) \
+    F(BODY_PRESS) 
 
     
 #define FOREACH_HM(F) \

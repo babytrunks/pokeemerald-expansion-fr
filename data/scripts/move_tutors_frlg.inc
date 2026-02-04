@@ -31,20 +31,12 @@ EventScript_DoubleEdgeTaught::
 EventScript_ThunderWaveTutor::
 	lock
 	faceplayer
-.if I_REUSABLE_TMS == FALSE
 	goto_if_set FLAG_TUTOR_THUNDER_WAVE, EventScript_ThunderWaveTaught
-.endif
 	msgbox Text_ThunderWaveTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_ThunderWaveDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_ThunderWaveDeclined
-	msgbox Text_ThunderWaveWhichMon
-	setvar VAR_0x8005, MOVE_THUNDER_WAVE
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_ThunderWaveDeclined
-.if I_REUSABLE_TMS == FALSE
+	msgbox SilphCo_Text_WellThenHereYouGo
+	giveitem ITEM_TM_THUNDER_WAVE
 	setflag FLAG_TUTOR_THUNDER_WAVE
-.endif
 	goto EventScript_ThunderWaveTaught
 	end
 
@@ -93,7 +85,7 @@ Route4_EventScript_BlackBeltTutor::
 	faceplayer
 	goto_if_set FLAG_GIVE_BLACK_BELT, EventScript_BlackBeltTaught
 	msgbox Text_BlackBeltGuy_BitFeisty
-	giveitem ITEM_PROTEIN
+	giveitem ITEM_PUNCHING_GLOVE
 	setflag FLAG_GIVE_BLACK_BELT
 	goto EventScript_BlackBeltTaught
 	end
@@ -620,3 +612,6 @@ Movement_JumpInPlaceRight:
 Text_MoveCanOnlyBeLearnedOnce::
 	.string "This move can be learned only\n"
 	.string "once. Is that okay?$"
+
+SilphCo_Text_WellThenHereYouGo::
+	.string "Okay, here you go!$"

@@ -46,8 +46,8 @@ Text_BlackBeltGuy_BitFeisty::
     .string "take this.$"
 
 Text_BlackBeltTaught::
-    .string "That'll give your Pokémon a better\n"
-    .string "fighting chance!$"
+    .string "That'll give your Pokémon with punch\n"
+    .string "moves a better fighting chance!$"
 
 Text_LowKickTeach::
     .string "A kick of brutal ferocity!\p"

@@ -255,28 +255,28 @@ SafariZone_West_EventScript_ItemMaxRevive::
 	finditem ITEM_MAX_REVIVE
 	end
 
-SilphCo_3F_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+SilphCo_3F_EventScript_ItemGachaVoucher::
+	finditem ITEM_GACHA_VOUCHER
 	end
 
-SilphCo_4F_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+SilphCo_4F_EventScript_ItemTMDragonClaw::
+	finditem ITEM_TM_DRAGON_CLAW
 	end
 
-SilphCo_4F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE
+SilphCo_4F_EventScript_ItemManectite::
+	finditem ITEM_MANECTITE
 	end
 
-SilphCo_4F_EventScript_ItemFullHeal::
-	finditem ITEM_FULL_HEAL
+SilphCo_4F_EventScript_ItemCovertCloak::
+	finditem ITEM_COVERT_CLOAK
 	end
 
 SilphCo_5F_EventScript_ItemProtein::
 	finditem ITEM_PROTEIN
 	end
 
-SilphCo_5F_EventScript_ItemTM01::
-	finditem ITEM_TM01
+SilphCo_5F_EventScript_ItemTMBodyPress::
+	finditem ITEM_TM_BODY_PRESS
 	end
 
 SilphCo_5F_EventScript_ItemCardKey::
@@ -287,8 +287,8 @@ SilphCo_6F_EventScript_ItemHPUp::
 	finditem ITEM_HP_UP
 	end
 
-SilphCo_6F_EventScript_ItemXSpecial::
-	finditem ITEM_X_SPECIAL
+SilphCo_6F_EventScript_ItemAudinite::
+	finditem ITEM_AUDINITE
 	end
 
 SilphCo_7F_EventScript_ItemCalcium::
@@ -303,8 +303,8 @@ SilphCo_10F_EventScript_ItemCarbos::
 	finditem ITEM_CARBOS
 	end
 
-SilphCo_10F_EventScript_ItemUltraBall::
-	finditem ITEM_ULTRA_BALL
+SilphCo_10F_EventScript_ItemDreamPatch::
+	finditem ITEM_DREAM_PATCH
 	end
 
 SilphCo_10F_EventScript_ItemRareCandy::
