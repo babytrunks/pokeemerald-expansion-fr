@@ -276,7 +276,6 @@ EventScript_ResetAllMapFlags::
 	end
 
 EventScript_ResetAllMapFlagsFrlg::
-	@ unlockoutfit 1 
 	setflag FLAG_HIDE_OAK_IN_HIS_LAB
 	setflag FLAG_HIDE_OAK_IN_PALLET_TOWN
 	setflag FLAG_HIDE_BILL_HUMAN_SEA_COTTAGE

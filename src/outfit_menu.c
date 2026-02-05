@@ -732,7 +732,7 @@ static void SetupOutfitMenu_Grids(void)
 
     LoadSpriteSheet(&sIndicator_SpriteSheet);
     LoadSpritePalette(&sIndicator_SpritePalette);
-
+    
     GridMenu_EnableVerticalWrapAround(sOutfitMenu->grid);
     GridMenu_SetIndex(sOutfitMenu->grid, gSaveBlock2Ptr->currOutfitId - 1);
     sOutfitMenu->idx = sOutfitMenu->list[GridMenu_SelectedIndex(sOutfitMenu->grid)];
@@ -997,7 +997,6 @@ u16 LockOutfit(u16 id)
 
 bool8 GetOutfitStatus(u16 id)
 {
-    return TRUE; // FOR NOW TESTING
     u16 *ptr = GetOutfitPointer(id);
 
     // return false if GetOutfitPointer returns NULL
