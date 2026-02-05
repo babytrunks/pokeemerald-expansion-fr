@@ -1,16 +1,6 @@
 #include "constants/global.h"
 #include "constants/event_objects.h"
 
-#if MODERN == 0
-static const u8 sText_OutfitName_UsualGreen[] = _("USUAL GREEN");
-static const u8 sText_OutfitDesc_UsualGreen[] = _(
-    "The usual, but basic OUTFIT.");
-
-static const u8 sText_OutfitName_UnusualRed[] = _("UNUSUAL RED");
-static const u8 sText_OutfitDesc_UnusualRed[] = _(
-    "Rather unusual, but still basic\nOUTFIT.");
-#endif
-
 static const u16 sRegionMapPlayerIcon_BrendanGfx[] = INCBIN_U16("graphics/pokenav/region_map/brendan_icon.4bpp");
 
 static const u16 sRegionMapPlayerIcon_RSBrendanGfx[] = INCBIN_U16("graphics/pokenav/region_map/rs_brendan_icon.4bpp");
@@ -68,24 +58,20 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
 
         //! agbcc doesnt like COMPOUND_STRING on my end
         //! DESC: outfit's name
-        #if MODERN == 1
-        .name = COMPOUND_STRING("USUAL GREEN"),
-        #else
-        .name = sText_OutfitName_UsualGreen,
-        #endif
 
-        //! DESC: outfit's description
-        #if MODERN == 1
-        .desc = COMPOUND_STRING("The usual, but basic OUTFIT."),
-        #else
-        .desc = sText_OutfitDesc_UsualGreen,
-        #endif
+        .name = COMPOUND_STRING("Default"),
+
+
+        .desc = COMPOUND_STRING("The usual, but basic Outfit."),
+
+        .nameFemale = COMPOUND_STRING("Default"),
+        .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
 
         //! DESC: trainer front & back pic index
         //! (see include/constants/trainers.h)
         .trainerPics = {
-            [MALE] =   { TRAINER_PIC_BRENDAN, TRAINER_BACK_PIC_BRENDAN, },
-            [FEMALE] = { TRAINER_PIC_MAY, TRAINER_BACK_PIC_MAY, },
+            [MALE] =   { TRAINER_PIC_RED, TRAINER_BACK_PIC_RED, },
+            [FEMALE] = { TRAINER_PIC_LEAF, TRAINER_BACK_PIC_LEAF, },
         },
 
         //! DESC: overworld avatars, consisting of: walking, cycling,
@@ -135,13 +121,11 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
     [OUTFIT_UNUSUAL_RED] = {
         .isHidden = FALSE,
         .prices = { 200, 500 },
-        #if MODERN == 1
-        .name = COMPOUND_STRING("UNUSUAL RED"),
-        .desc = COMPOUND_STRING("Rather unusual, but still basic\nOUTFIT."),
-        #else
-        .name = sText_OutfitName_UnusualRed,
-        .desc = sText_OutfitDesc_UnusualRed,
-        #endif
+        .name = COMPOUND_STRING("Alternate Red"),
+        .desc = COMPOUND_STRING("Alternate outfit for Red."),
+        .nameFemale = COMPOUND_STRING("Green"),
+        .descFemale = COMPOUND_STRING("Outfit for Green."),
+
         .trainerPics = {
             [MALE]   = {TRAINER_PIC_RS_BRENDAN, TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN},
             [FEMALE] = {TRAINER_PIC_RS_MAY, TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY}
