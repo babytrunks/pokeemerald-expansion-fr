@@ -434,6 +434,9 @@ const u16 gTrainerPalette_Archer[] = INCBIN_U16("graphics/trainers/front_pics/ar
 const u32 gTrainerFrontPic_Ariana[] = INCBIN_U32("graphics/trainers/front_pics/ariana.4bpp.smol");
 const u16 gTrainerPalette_Ariana[] = INCBIN_U16("graphics/trainers/front_pics/ariana.gbapal");
 
+const u32 gTrainerFrontPic_RgbyRed[] = INCBIN_U32("graphics/trainers/front_pics/rgby_red.4bpp.smol");
+const u16 gTrainerPalette_RgbyRed[] = INCBIN_U16("graphics/trainers/front_pics/rgby_red.gbapal");
+
 const u32 gTrainerFrontPic_GentlemanFrlg[] = INCBIN_U32("graphics/trainers/front_pics/gentleman_frlg.4bpp.smol");
 const u16 gTrainerPalette_GentlemanFrlg[] = INCBIN_U16("graphics/trainers/palettes/gentleman_frlg.gbapal");
 
@@ -507,11 +510,13 @@ const u8 gTrainerBackPic_Wally[] = INCBIN_U8("graphics/trainers/back_pics/wally.
 const u8 gTrainerBackPic_Steven[] = INCBIN_U8("graphics/trainers/back_pics/steven.4bpp");
 const u8 gTrainerBackPic_Pokedude[] = INCBIN_U8("graphics/trainers/back_pics/pokedude.4bpp");
 const u8 gTrainerBackPic_OldMan[] = INCBIN_U8("graphics/trainers/back_pics/old_man.4bpp");
+const u8 gTrainerBackPic_RgbyRed[] = INCBIN_U8("graphics/trainers/back_pics/rgby_red_back_pic.4bpp");
 
 const u16 gTrainerBackPicPalette_Red[] = INCBIN_U16("graphics/trainers/back_pics/red.gbapal");
 const u16 gTrainerBackPicPalette_Leaf[] = INCBIN_U16("graphics/trainers/back_pics/leaf.gbapal");
 const u16 gTrainerBackPicPalette_Pokedude[] = INCBIN_U16("graphics/trainers/back_pics/pokedude.gbapal");
 const u16 gTrainerBackPicPalette_OldMan[] = INCBIN_U16("graphics/trainers/back_pics/old_man.gbapal");
+const u16 gTrainerBackPicPalette_RgbyRed[] = INCBIN_U16("graphics/trainers/back_pics/rgby_red_back_pic.gbapal");
 
 // The first two parameters invoke a front pic and palette by
 // calling a "TRAINER_PIC" constant (e.g. TRAINER_PIC_HIKER), and
@@ -694,6 +699,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LEADER_CLAIR, gTrainerFrontPic_LeaderClair, gTrainerPalette_LeaderClair),
     TRAINER_SPRITE(TRAINER_PIC_ARCHER, gTrainerFrontPic_Archer, gTrainerPalette_Archer),
     TRAINER_SPRITE(TRAINER_PIC_ARIANA, gTrainerFrontPic_Ariana, gTrainerPalette_Ariana),
+    TRAINER_SPRITE(TRAINER_PIC_RGBY_RED, gTrainerFrontPic_RgbyRed, gTrainerPalette_RgbyRed),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
@@ -785,4 +791,5 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_STEVEN, 4, gTrainerBackPic_Steven, gTrainerPalette_Steven, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_POKEDUDE, 4, gTrainerBackPic_Pokedude, gTrainerBackPicPalette_Pokedude, sBackAnims_OldManPokedude),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_OLD_MAN, 4, gTrainerBackPic_OldMan, gTrainerBackPicPalette_OldMan, sBackAnims_OldManPokedude),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_RGBY_RED, 5, gTrainerBackPic_RgbyRed, gTrainerBackPicPalette_RgbyRed, sBackAnims_Kanto),
 };

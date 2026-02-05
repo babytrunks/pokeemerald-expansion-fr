@@ -421,6 +421,18 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tamer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GachaMachine;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RgbyRedNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RgbyRedMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RgbyRedSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RgbyRedFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RgbyRedFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenAltNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenAltMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenAltAcroBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenAltSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenAltUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenAltFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GreenAltFishing;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -830,6 +842,18 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PSYCHIC_F] =           &gObjectEventGraphicsInfo_PsychicF,
     [OBJ_EVENT_GFX_TAMER]     =           &gObjectEventGraphicsInfo_Tamer,
     [OBJ_EVENT_GFX_GACHA_MACHINE] =       &gObjectEventGraphicsInfo_GachaMachine,
+    [OBJ_EVENT_GFX_RGBY_RED_NORMAL] =     &gObjectEventGraphicsInfo_RgbyRedNormal,
+    [OBJ_EVENT_GFX_RGBY_RED_MACH_BIKE] =  &gObjectEventGraphicsInfo_RgbyRedMachBike,
+    [OBJ_EVENT_GFX_RGBY_RED_SURFING] =    &gObjectEventGraphicsInfo_RgbyRedSurfing,
+    [OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE] = &gObjectEventGraphicsInfo_RgbyRedFieldMove,
+    [OBJ_EVENT_GFX_RGBY_RED_FISHING] =    &gObjectEventGraphicsInfo_RgbyRedFishing,
+    [OBJ_EVENT_GFX_GREEN_ALT_NORMAL] =    &gObjectEventGraphicsInfo_GreenAltNormal,
+    [OBJ_EVENT_GFX_GREEN_ALT_MACH_BIKE] = &gObjectEventGraphicsInfo_GreenAltMachBike,
+    [OBJ_EVENT_GFX_GREEN_ALT_ACRO_BIKE] = &gObjectEventGraphicsInfo_GreenAltAcroBike,
+    [OBJ_EVENT_GFX_GREEN_ALT_SURFING] =   &gObjectEventGraphicsInfo_GreenAltSurfing,
+    [OBJ_EVENT_GFX_GREEN_ALT_UNDERWATER] = &gObjectEventGraphicsInfo_GreenAltUnderwater,
+    [OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE] = &gObjectEventGraphicsInfo_GreenAltFieldMove,
+    [OBJ_EVENT_GFX_GREEN_ALT_FISHING] =   &gObjectEventGraphicsInfo_GreenAltFishing,
 
 #endif // IS_FRLG
 };

@@ -14,6 +14,12 @@ static const u8 sRegionMapPlayerIcon_RedGfx[] = INCBIN_U8("graphics/pokenav/regi
 static const u16 sRegionMapPlayerIcon_GreenPal[] = INCBIN_U16("graphics/pokenav/region_map/leaf_icon.gbapal");
 static const u8 sRegionMapPlayerIcon_GreenGfx[] = INCBIN_U8("graphics/pokenav/region_map/leaf_icon.4bpp");
 
+static const u16 sRegionMapPlayerIcon_AltRedPal[] = INCBIN_U16("graphics/object_events/palettes/rgby_red_icon.gbapal");
+static const u8 sRegionMapPlayerIcon_AltRedGfx[] = INCBIN_U8("graphics/object_events/pics/people/rgby_red/rgby_red_icon.4bpp");
+// static const u16 sRegionMapPlayerIcon_AltGreenPal[] = INCBIN_U16("graphics/pokenav/region_map/leaf_icon.gbapal");
+// static const u8 sRegionMapPlayerIcon_AltGreenGfx[] = INCBIN_U8("graphics/object_events/pics/people/rgby_red/rgby_red_icon.4bpp");
+
+
 //! TODO: Should the gfx here be seperated?
 
 static const u8 sFrontierPassPlayerIcons_BrendanMay_Gfx[] = INCBIN_U8("graphics/frontier_pass/map_heads.4bpp");
@@ -64,8 +70,8 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
 
         .desc = COMPOUND_STRING("The usual, but basic Outfit."),
 
-        .nameFemale = COMPOUND_STRING("Default"),
-        .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
+        // .nameFemale = COMPOUND_STRING("Default"),
+        // .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
 
         //! DESC: trainer front & back pic index
         //! (see include/constants/trainers.h)
@@ -121,13 +127,13 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
     [OUTFIT_UNUSUAL_RED] = {
         .isHidden = FALSE,
         .prices = { 200, 500 },
-        .name = COMPOUND_STRING("Alternate Red"),
+        .name = COMPOUND_STRING("Alt Red"),
         .desc = COMPOUND_STRING("Alternate outfit for Red."),
-        .nameFemale = COMPOUND_STRING("Green"),
-        .descFemale = COMPOUND_STRING("Outfit for Green."),
+        // .nameFemale = COMPOUND_STRING("Green"),
+        // .descFemale = COMPOUND_STRING("Outfit for Green."),
 
         .trainerPics = {
-            [MALE]   = {TRAINER_PIC_RS_BRENDAN, TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN},
+            [MALE]   = {TRAINER_PIC_BRENDAN , TRAINER_BACK_PIC_BRENDAN  },
             [FEMALE] = {TRAINER_PIC_RS_MAY, TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY}
         },
         .avatarGfxIds = {
@@ -135,32 +141,32 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
                [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_BRENDAN_NORMAL,
                [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_BRENDAN_ACRO_BIKE,
                [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_BRENDAN_SURFING,
-               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_BRENDAN_UNDERWATER
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_BRENDAN_SURFING
            },
            [FEMALE] = {
-               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_MAY_NORMAL,
-               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_MAY_MACH_BIKE,
-               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_MAY_SURFING,
-               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_MAY_UNDERWATER
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_GREEN_ALT_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_GREEN_ALT_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_GREEN_ALT_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_GREEN_ALT_SURFING
            },
         },
         .animGfxIds = {
             [MALE] = {
                 [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE,
                 [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_BRENDAN_FISHING,
-                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_BRENDAN_WATERING,
-                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE,
-                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_BRENDAN_FIELD_MOVE
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE
             },
             [FEMALE] = {
-                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_MAY_FIELD_MOVE,
-                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_MAY_FISHING,
-                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_MAY_WATERING,
-                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_MAY_FIELD_MOVE,
-                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_MAY_FIELD_MOVE
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_GREEN_ALT_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE
             },
         },
-        .iconsRM = { sRegionMapPlayerIcon_RSBrendanGfx, sRegionMapPlayerIcon_RSMayGfx },
+        .iconsRM = { sRegionMapPlayerIcon_AltRedGfx, sRegionMapPlayerIcon_RSMayGfx },
         .iconsFP = sFrontierPassPlayerIcons_RSBrendanMay_Gfx,
     },
 };

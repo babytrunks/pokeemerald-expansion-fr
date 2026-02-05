@@ -600,6 +600,10 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_PsychicM,         OBJ_EVENT_PAL_TAG_PSYCHIC_M},
     {gObjectEventPal_Tamer,         OBJ_EVENT_PAL_TAG_TAMER},
     {gObjectEventPal_GachaMachine,        OBJ_EVENT_PAL_TAG_GACHA_MACHINE},
+    {gObjectEventPal_RgbyRed,             OBJ_EVENT_PAL_TAG_RGBY_RED},
+    {gObjectEventPal_RgbyRedReflection,   OBJ_EVENT_PAL_TAG_RGBY_RED_REFLECTION},
+    {gObjectEventPal_GreenAlt,            OBJ_EVENT_PAL_TAG_GREEN_ALT},
+    {gObjectEventPal_GreenAlt,            OBJ_EVENT_PAL_TAG_GREEN_ALT_REFLECTION},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

@@ -689,4 +689,24 @@ const u16 gObjectEventPal_Tamer[]   = INCBIN_U16("graphics/object_events/palette
 const u32 gObjectEventPic_GachaMachine[] = INCBIN_U32("graphics/object_events/pics/misc/gacha_machine.4bpp");
 const u16 gObjectEventPal_GachaMachine[] = INCBIN_U16("graphics/object_events/palettes/gacha_machine.gbapal");
 
+// RGBY Red
+const u32 gObjectEventPic_RgbyRedNormal[] = INCBIN_U32("graphics/object_events/pics/people/rgby_red/walking.4bpp", "graphics/object_events/pics/people/rgby_red/running.4bpp");
+const u32 gObjectEventPic_RgbyRedMachBike[] = INCBIN_U32("graphics/object_events/pics/people/rgby_red/mach_bike.4bpp");
+const u32 gObjectEventPic_RgbyRedSurfing[] = INCBIN_U32("graphics/object_events/pics/people/rgby_red/surfing.4bpp");
+const u32 gObjectEventPic_RgbyRedFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/rgby_red/field_move.4bpp");
+const u32 gObjectEventPic_RgbyRedFishing[] = INCBIN_U32("graphics/object_events/pics/people/rgby_red/fishing.4bpp");
+const u16 gObjectEventPal_RgbyRed[] = INCBIN_U16("graphics/object_events/palettes/rgby_red.gbapal");
+const u16 gObjectEventPal_RgbyRedReflection[] = INCBIN_U16("graphics/object_events/palettes/rgby_red_reflection.gbapal");
+
+// Green Alt
+const u32 gObjectEventPic_GreenAltNormal[] = INCBIN_U32("graphics/object_events/pics/people/green_alt/walking.4bpp", "graphics/object_events/pics/people/green_alt/running.4bpp");
+const u32 gObjectEventPic_GreenAltMachBike[] = INCBIN_U32("graphics/object_events/pics/people/green_alt/mach_bike.4bpp");
+const u32 gObjectEventPic_GreenAltAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/green_alt/acro_bike.4bpp");
+const u32 gObjectEventPic_GreenAltSurfing[] = INCBIN_U32("graphics/object_events/pics/people/green_alt/surfing.4bpp");
+const u32 gObjectEventPic_GreenAltUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/green_alt/underwater.4bpp");
+const u32 gObjectEventPic_GreenAltFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/green_alt/field_move.4bpp");
+const u32 gObjectEventPic_GreenAltFishing[] = INCBIN_U32("graphics/object_events/pics/people/green_alt/fishing.4bpp");
+const u16 gObjectEventPal_GreenAlt[] = INCBIN_U16("graphics/object_events/pics/people/green_alt/green.gbapal");
+const u16 gObjectEventPal_GreenAltUnderwater[] = INCBIN_U16("graphics/object_events/pics/people/green_alt/green_underwater.gbapal");
+
 #endif // IS_FRLG

@@ -184,7 +184,8 @@
 
 #define TRAINER_PIC_ARCHER                163
 #define TRAINER_PIC_ARIANA                164
-#define TRAINER_PIC_COUNT                 165
+#define TRAINER_PIC_RGBY_RED              165
+#define TRAINER_PIC_COUNT                 166
 
 #define TRAINER_BACK_PIC_PLAYER_MALE (IS_FRLG ? TRAINER_BACK_PIC_RED : TRAINER_BACK_PIC_BRENDAN)
 #define TRAINER_BACK_PIC_PLAYER_FEMALE (IS_FRLG ? TRAINER_BACK_PIC_LEAF : TRAINER_BACK_PIC_MAY)
@@ -200,6 +201,7 @@
 #define TRAINER_BACK_PIC_STEVEN                 7
 #define TRAINER_BACK_PIC_POKEDUDE               8
 #define TRAINER_BACK_PIC_OLD_MAN                9
+#define TRAINER_BACK_PIC_RGBY_RED               10
 
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1

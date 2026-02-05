@@ -1737,7 +1737,7 @@ const u16 gBagPalette[] = INCBIN_U16("graphics/bag/bag.gbapal");
 const u16 gBagScreenMale_Pal[] = INCBIN_U16("graphics/bag/menu_male.gbapal");
 const u16 gBagScreenFemale_Pal[] = INCBIN_U16("graphics/bag/menu_female.gbapal");
 //tx_registered_items_menu
-const u32 gSwapLineGfx_RegisteredItemsMenu[] = INCBIN_U32("graphics/interface/swap_line_tx.4bpp.lz");
+const u32 gSwapLineGfx_RegisteredItemsMenu[] = INCBIN_U32("graphics/interface/swap_line_tx.4bpp.smol");
 
 const u32 gBagScreen_Gfx[] = INCBIN_U32("graphics/bag/menu.4bpp.smol");
 const u32 gBagScreen_GfxTileMap[] = INCBIN_U32("graphics/bag/menu.bin.smolTM");

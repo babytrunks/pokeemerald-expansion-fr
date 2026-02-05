@@ -433,6 +433,18 @@
 #define OBJ_EVENT_GFX_PSYCHIC_F                  405
 #define OBJ_EVENT_GFX_TAMER                      406
 #define OBJ_EVENT_GFX_GACHA_MACHINE              407
+#define OBJ_EVENT_GFX_RGBY_RED_NORMAL            408
+#define OBJ_EVENT_GFX_RGBY_RED_MACH_BIKE         409
+#define OBJ_EVENT_GFX_RGBY_RED_SURFING           410
+#define OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE        411
+#define OBJ_EVENT_GFX_RGBY_RED_FISHING           412
+#define OBJ_EVENT_GFX_GREEN_ALT_NORMAL           413
+#define OBJ_EVENT_GFX_GREEN_ALT_MACH_BIKE        414
+#define OBJ_EVENT_GFX_GREEN_ALT_ACRO_BIKE        415
+#define OBJ_EVENT_GFX_GREEN_ALT_SURFING          416
+#define OBJ_EVENT_GFX_GREEN_ALT_UNDERWATER       417
+#define OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE       418
+#define OBJ_EVENT_GFX_GREEN_ALT_FISHING          419
 // FRLG equivalents
 
 // #define OBJ_EVENT_GFX_MEW OBJ_EVENT_GFX_NINJA_BOY
@@ -444,7 +456,7 @@
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        408
+#define NUM_OBJ_EVENT_GFX                        420
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -644,6 +656,10 @@
 #define OBJ_EVENT_PAL_TAG_PSYCHIC_M               0x117B
 #define OBJ_EVENT_PAL_TAG_TAMER                   0x117C
 #define OBJ_EVENT_PAL_TAG_GACHA_MACHINE           0x117D
+#define OBJ_EVENT_PAL_TAG_RGBY_RED                0x117E
+#define OBJ_EVENT_PAL_TAG_RGBY_RED_REFLECTION     0x117F
+#define OBJ_EVENT_PAL_TAG_GREEN_ALT               0x1180
+#define OBJ_EVENT_PAL_TAG_GREEN_ALT_REFLECTION    0x1181
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

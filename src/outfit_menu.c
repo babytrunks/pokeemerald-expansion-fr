@@ -153,13 +153,14 @@ static const u8 sText_OutfitError_Default[] = _(
 
 static const u16 sTiles[] = INCBIN_U16("graphics/outfit_menu/main.4bpp");
 static const u16 sPalette[] = INCBIN_U16("graphics/outfit_menu/main.gbapal");
-static const u32 sTilemap[] = INCBIN_U32("graphics/outfit_menu/main.bin.lz");
-static const u32 sScrollingBG_Tilemap[] = INCBIN_U32("graphics/outfit_menu/scroll.bin.lz");
+static const u32 sTilemap[] = INCBIN_U32("graphics/outfit_menu/main.bin.smolTM");
+static const u32 sScrollingBG_Tilemap[] = INCBIN_U32("graphics/outfit_menu/scroll.bin.smolTM");
 
 static const u16 sIndicatorSprite_Gfx[] = INCBIN_U16("graphics/outfit_menu/indicator.4bpp");
 static const u16 sIndicatorSprite_Pal[] = INCBIN_U16("graphics/outfit_menu/indicator.gbapal");
 static const u16 sCursorSprite_Gfx[] = INCBIN_U16("graphics/outfit_menu/cursor.4bpp");
 static const u16 sCursorSprite_Pal[] = INCBIN_U16("graphics/outfit_menu/cursor.gbapal");
+
 
 static EWRAM_DATA OutfitMenuResources *sOutfitMenu = NULL;
 
@@ -500,16 +501,8 @@ static void SetupOutfitMenu_Windows(void)
 
 static void SetupOutfitMenu_PrintStr(void)
 {
-    if (gSaveBlock2Ptr->playerGender == MALE) 
-    {
-        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].name);
-        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].desc);
-    }
-    else 
-    {
-        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].nameFemale);
-        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].descFemale);
-    }
+    PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].name);
+    PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].desc);
     CopyWindowToVram(WIN_INFO, COPYWIN_FULL);
 }
 
