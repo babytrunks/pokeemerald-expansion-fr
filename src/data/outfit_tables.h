@@ -16,6 +16,10 @@ static const u8 sRegionMapPlayerIcon_GreenGfx[] = INCBIN_U8("graphics/pokenav/re
 
 static const u16 sRegionMapPlayerIcon_AltRedPal[] = INCBIN_U16("graphics/object_events/palettes/rgby_red_icon.gbapal");
 static const u8 sRegionMapPlayerIcon_AltRedGfx[] = INCBIN_U8("graphics/object_events/pics/people/rgby_red/rgby_red_icon.4bpp");
+
+static const u16 sRegionMapPlayerIcon_GoldPal[] = INCBIN_U16("graphics/object_events/palettes/gold_icon.gbapal");
+static const u8 sRegionMapPlayerIcon_GoldGfx[] = INCBIN_U8("graphics/object_events/pics/people/gold/gold_icon.4bpp");
+static const u8 sRegionMapPlayerIcon_KrisGfx[] = INCBIN_U8("graphics/object_events/pics/people/kris/kris_icon.4bpp");
 // static const u16 sRegionMapPlayerIcon_AltGreenPal[] = INCBIN_U16("graphics/pokenav/region_map/leaf_icon.gbapal");
 // static const u8 sRegionMapPlayerIcon_AltGreenGfx[] = INCBIN_U8("graphics/object_events/pics/people/rgby_red/rgby_red_icon.4bpp");
 
@@ -124,76 +128,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! unlike region map. (probably should split them tbh)
         .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
     },
-    [OUTFIT_UNUSUAL_BLUE] = {
-        //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
-        .isHidden = TRUE,
-
-        //! DESC: prices for purchasing them.
-        .prices = { 0, 0 },
-
-        //! agbcc doesnt like COMPOUND_STRING on my end
-        //! DESC: outfit's name
-
-        .name = COMPOUND_STRING("Default 2"),
-
-
-        .desc = COMPOUND_STRING("The usual, but basic Outfit."),
-
-        // .nameFemale = COMPOUND_STRING("Default"),
-        // .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
-
-        //! DESC: trainer front & back pic index
-        //! (see include/constants/trainers.h)
-        .trainerPics = {
-            [MALE] =   { TRAINER_PIC_RED, TRAINER_BACK_PIC_BRENDAN, },
-            [FEMALE] = { TRAINER_PIC_LEAF, TRAINER_BACK_PIC_LEAF, },
-        },
-
-        //! DESC: overworld avatars, consisting of: walking, cycling,
-        //! surfing, and underwater. (see include/constants/event_object.h)
-        .avatarGfxIds = {
-           [MALE] = {
-               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_RED_NORMAL,
-               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE,
-               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_RED_SURF,
-               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_BRENDAN_UNDERWATER
-           },
-           [FEMALE] = {
-               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_GREEN_NORMAL,
-               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE,
-               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_GREEN_SURF,
-               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_BRENDAN_UNDERWATER
-           },
-        },
-
-        //! DESC: overworld anims, consisting of: field move, fishing,
-        //! water, and decorating. (see include/constants/event_object.h)
-        .animGfxIds = {
-            [MALE] = {
-                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_RED_FIELD_MOVE,
-                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_RED_FISH,
-                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_BRENDAN_WATERING,
-                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_BRENDAN_DECORATING,
-                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_RED_FIELD_MOVE
-            },
-            [FEMALE] = {
-                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_GREEN_FIELD_MOVE,
-                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_GREEN_FISH,
-                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_BRENDAN_WATERING,
-                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_BRENDAN_DECORATING,
-                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_GREEN_FIELD_MOVE
-            },
-        },
-
-        //! DESC: head icons gfx&pal for region map
-        .iconsRM = { sRegionMapPlayerIcon_RedGfx, sRegionMapPlayerIcon_GreenGfx },
-
-        //! DESC: head icons gfx&pal for frontier pass
-        //! note that frontier pass needs to be in one sprite instead of two,
-        //! unlike region map. (probably should split them tbh)
-        .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
-    },
-        [OUTFIT_ALT_RED_GREEN] = {
+    [OUTFIT_ALT_RED_GREEN] = {
         //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
         .isHidden = FALSE,
 
@@ -261,5 +196,108 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! note that frontier pass needs to be in one sprite instead of two,
         //! unlike region map. (probably should split them tbh)
         .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
+    },
+    [OUTFIT_GOLD_KRIS] = {
+        //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
+        .isHidden = FALSE,
+        .prices = { 0, 0 },
+
+
+        .name = COMPOUND_STRING("Gold"),
+        .desc = COMPOUND_STRING("An outfit based on Gold from GSC."),
+        .nameFemale = COMPOUND_STRING("Kris"),
+        .descFemale = COMPOUND_STRING("An outfit based on Kris from GSC."),
+        .trainerPics = {
+            [MALE] =   { TRAINER_PIC_GOLD , TRAINER_BACK_PIC_GOLD , },
+            [FEMALE] = { TRAINER_PIC_KRIS , TRAINER_BACK_PIC_KRIS , },
+        },
+
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_GOLD_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_GOLD_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_GOLD_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_GOLD_SURFING
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_KRIS_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_KRIS_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_KRIS_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_KRIS_SURFING
+           },
+        },
+
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_GOLD_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_GOLD_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_GOLD_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_GOLD_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_GOLD_FIELD_MOVE
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_KRIS_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_KRIS_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_KRIS_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_KRIS_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_KRIS_FIELD_MOVE
+            },
+        },
+
+        .iconsRM = { sRegionMapPlayerIcon_GoldGfx, sRegionMapPlayerIcon_KrisGfx },
+
+        .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
+    },
+    [OUTFIT_LUCAS_DAWN] = {
+        //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
+        .isHidden = FALSE,
+        .prices = { 0, 0 },
+
+
+        .name = COMPOUND_STRING("Lucas"),
+        .desc = COMPOUND_STRING("An outfit based on Lucas from DPP."),
+        .nameFemale = COMPOUND_STRING("Dawn"),
+        .descFemale = COMPOUND_STRING("An outfit based on Dawn from DPP."),
+        .trainerPics = {
+            [MALE] =   { TRAINER_PIC_LUCAS , TRAINER_BACK_PIC_LUCAS , },
+            [FEMALE] = { TRAINER_PIC_DAWN , TRAINER_BACK_PIC_DAWN , },
+        },
+
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_LUCAS_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_LUCAS_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_LUCAS_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_LUCAS_SURFING
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_DAWN_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_DAWN_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_DAWN_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_DAWN_SURFING
+           },
+        },
+
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_LUCAS_FISHING, //TODO
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_LUCAS_FISHING, 
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_LUCAS_FISHING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_LUCAS_FISHING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_LUCAS_FISHING
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_DAWN_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_DAWN_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_DAWN_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_DAWN_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_DAWN_FIELD_MOVE
+            },
+        },
+
+        .iconsRM = { sRegionMapPlayerIcon_RedGfx, sRegionMapPlayerIcon_GreenGfx }, //TODO
+
+        .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
     }
+       
 };

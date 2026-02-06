@@ -709,4 +709,47 @@ const u32 gObjectEventPic_GreenAltFishing[] = INCBIN_U32("graphics/object_events
 const u16 gObjectEventPal_GreenAlt[] = INCBIN_U16("graphics/object_events/pics/people/green_alt/green.gbapal");
 const u16 gObjectEventPal_GreenAltUnderwater[] = INCBIN_U16("graphics/object_events/pics/people/green_alt/green_underwater.gbapal");
 
+// GSC Gold
+const u32 gObjectEventPic_GoldNormal[] = INCBIN_U32("graphics/object_events/pics/people/gold/walking.4bpp");
+const u32 gObjectEventPic_GoldRunning[] = INCBIN_U32("graphics/object_events/pics/people/gold/running.4bpp");
+const u32 gObjectEventPic_GoldMachBike[] = INCBIN_U32("graphics/object_events/pics/people/gold/mach_bike.4bpp");
+const u32 gObjectEventPic_GoldAcroBike[] = INCBIN_U32("graphics/object_events/pics/people/gold/acro_bike.4bpp");
+const u32 gObjectEventPic_GoldSurfing[] = INCBIN_U32("graphics/object_events/pics/people/gold/surfing.4bpp");
+const u32 gObjectEventPic_GoldUnderwater[] = INCBIN_U32("graphics/object_events/pics/people/gold/underwater.4bpp");
+const u32 gObjectEventPic_GoldFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/gold/field_move.4bpp");
+const u32 gObjectEventPic_GoldFishing[] = INCBIN_U32("graphics/object_events/pics/people/gold/fishing.4bpp");
+const u32 gObjectEventPic_GoldWatering[] = INCBIN_U32("graphics/object_events/pics/people/gold/watering.4bpp");
+const u32 gObjectEventPic_GoldDecorating[] = INCBIN_U32("graphics/object_events/pics/people/gold/decorating.4bpp");
+const u16 gObjectEventPal_Gold[] = INCBIN_U16("graphics/object_events/palettes/gold.gbapal");
+const u16 gObjectEventPal_GoldReflection[] = INCBIN_U16("graphics/object_events/palettes/gold_reflection.gbapal");
+
+// GSC Kris
+const u32 gObjectEventPic_KrisNormal[] = INCBIN_U32("graphics/object_events/pics/people/kris/walking.4bpp");
+const u32 gObjectEventPic_KrisRunning[] = INCBIN_U32("graphics/object_events/pics/people/kris/running.4bpp");
+const u32 gObjectEventPic_KrisMachBike[] = INCBIN_U32("graphics/object_events/pics/people/kris/mach_bike.4bpp");
+const u32 gObjectEventPic_KrisSurfing[] = INCBIN_U32("graphics/object_events/pics/people/kris/surfing.4bpp");
+const u32 gObjectEventPic_KrisFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/kris/field_move.4bpp");
+const u32 gObjectEventPic_KrisFishing[] = INCBIN_U32("graphics/object_events/pics/people/kris/fishing.4bpp");
+const u16 gObjectEventPal_Kris[] = INCBIN_U16("graphics/object_events/palettes/kris.gbapal");
+const u16 gObjectEventPal_KrisReflection[] = INCBIN_U16("graphics/object_events/palettes/kris_reflection.gbapal");
+
+// DPPt Lucas
+const u32 gObjectEventPic_LucasNormal[] = INCBIN_U32("graphics/object_events/pics/people/lucas/walking.4bpp");
+const u32 gObjectEventPic_LucasRunning[] = INCBIN_U32("graphics/object_events/pics/people/lucas/running.4bpp");
+const u32 gObjectEventPic_LucasMachBike[] = INCBIN_U32("graphics/object_events/pics/people/lucas/mach_bike.4bpp");
+const u32 gObjectEventPic_LucasSurfing[] = INCBIN_U32("graphics/object_events/pics/people/lucas/surfing.4bpp");
+const u32 gObjectEventPic_LucasFishing[] = INCBIN_U32("graphics/object_events/pics/people/lucas/fishing.4bpp");
+const u16 gObjectEventPal_Lucas[] = INCBIN_U16("graphics/object_events/palettes/lucas.gbapal");
+// const u16 gObjectEventPal_LucasReflection[] = INCBIN_U16("graphics/object_events/palettes/lucas_reflection.gbapal");
+
+// DPPt Dawn
+const u32 gObjectEventPic_DawnNormal[] = INCBIN_U32("graphics/object_events/pics/people/dawn/walking.4bpp");
+const u32 gObjectEventPic_DawnRunning[] = INCBIN_U32("graphics/object_events/pics/people/dawn/running.4bpp");
+const u32 gObjectEventPic_DawnMachBike[] = INCBIN_U32("graphics/object_events/pics/people/dawn/mach_bike.4bpp");
+const u32 gObjectEventPic_DawnSurfing[] = INCBIN_U32("graphics/object_events/pics/people/dawn/surfing.4bpp");
+const u32 gObjectEventPic_DawnFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/dawn/field_move.4bpp");
+const u32 gObjectEventPic_DawnFishing[] = INCBIN_U32("graphics/object_events/pics/people/dawn/fishing.4bpp");
+const u16 gObjectEventPal_Dawn[] = INCBIN_U16("graphics/object_events/palettes/dawn.gbapal");
+// const u16 gObjectEventPal_DawnReflection[] = INCBIN_U16("graphics/object_events/palettes/dawn_reflection.gbapal");
+
 #endif // IS_FRLG

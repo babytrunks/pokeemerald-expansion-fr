@@ -118,6 +118,24 @@ Oomer - default D/P/P style text frame
 
 archie - stat editor, gen 5 party menu
 
+mudskipper - outfits menu
+
+Credits for Lucas/Dawn Assets
+spilledpizza(myself)
+TheWiggliestJiggliest
+RichardPT
+robloxmaster376
+The Spriters Resource
+The Radiant Quartz/Prismatic Platinum team for their support
+
+Pokemon HNS:
+
+Johto Gym Leader OW sprites, Kris sprites
+
+Hyo: Alt Red, Gold Sprites
+
+kwenio: Green OW sprites
+
 ## Other Credits
 
 ### Mega Evolution Overworld Sprite Credits:

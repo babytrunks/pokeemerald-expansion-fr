@@ -501,8 +501,16 @@ static void SetupOutfitMenu_Windows(void)
 
 static void SetupOutfitMenu_PrintStr(void)
 {
-    PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].name);
-    PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].desc);
+    if (gSaveBlock2Ptr->playerGender == MALE)
+    {
+        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].name);
+        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].desc);
+    }
+    else 
+    {
+        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].nameFemale);
+        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[gSaveBlock2Ptr->currOutfitId].descFemale);
+    }    
     CopyWindowToVram(WIN_INFO, COPYWIN_FULL);
 }
 
@@ -879,14 +887,10 @@ static void Task_OutfitMenuHandleInput(u8 taskId)
 
 static void FreeOutfitMenuResources(void)
 {
-    DebugPrintf("Free is broken?");
     u32 i;
     DestroySprite(&gSprites[sOutfitMenu->spriteIds[GFX_OW]]);
-    DebugPrintf("Got here");
     FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_FTS]);
-    DebugPrintf("Got here 2");
     // FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_BTS]);
-    DebugPrintf("Got here 3");
     for (i = 0; i < sOutfitMenu->grid->maxSize; i++)
     {
         DestroySprite(&gSprites[sOutfitMenu->currentOutfitSpriteIds[i]]);
@@ -1003,6 +1007,7 @@ u16 LockOutfit(u16 id)
 
 bool8 GetOutfitStatus(u16 id)
 {
+    return TRUE;
     u16 *ptr = GetOutfitPointer(id);
 
     // return false if GetOutfitPointer returns NULL

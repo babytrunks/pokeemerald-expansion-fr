@@ -445,6 +445,38 @@
 #define OBJ_EVENT_GFX_GREEN_ALT_UNDERWATER       417
 #define OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE       418
 #define OBJ_EVENT_GFX_GREEN_ALT_FISHING          419
+// GSC Gold
+#define OBJ_EVENT_GFX_GOLD_NORMAL                420
+#define OBJ_EVENT_GFX_GOLD_MACH_BIKE             421
+#define OBJ_EVENT_GFX_GOLD_ACRO_BIKE             422
+#define OBJ_EVENT_GFX_GOLD_SURFING               423
+#define OBJ_EVENT_GFX_GOLD_UNDERWATER            424
+#define OBJ_EVENT_GFX_GOLD_FIELD_MOVE            425
+#define OBJ_EVENT_GFX_GOLD_FISHING               426
+#define OBJ_EVENT_GFX_GOLD_WATERING              427
+#define OBJ_EVENT_GFX_GOLD_DECORATING            428
+#define OBJ_EVENT_GFX_GOLD_RUNNING               429
+// GSC Kris
+#define OBJ_EVENT_GFX_KRIS_NORMAL                430
+#define OBJ_EVENT_GFX_KRIS_MACH_BIKE             431
+#define OBJ_EVENT_GFX_KRIS_SURFING               432
+#define OBJ_EVENT_GFX_KRIS_FIELD_MOVE            433
+#define OBJ_EVENT_GFX_KRIS_FISHING               434
+#define OBJ_EVENT_GFX_KRIS_RUNNING               435
+// DPPt Lucas
+#define OBJ_EVENT_GFX_LUCAS_NORMAL               436
+#define OBJ_EVENT_GFX_LUCAS_MACH_BIKE            437
+#define OBJ_EVENT_GFX_LUCAS_SURFING              438
+#define OBJ_EVENT_GFX_LUCAS_FISHING              439
+#define OBJ_EVENT_GFX_LUCAS_RUNNING              440
+// DPPt Dawn
+#define OBJ_EVENT_GFX_DAWN_NORMAL                441
+#define OBJ_EVENT_GFX_DAWN_MACH_BIKE             442
+#define OBJ_EVENT_GFX_DAWN_SURFING               443
+#define OBJ_EVENT_GFX_DAWN_FIELD_MOVE            444
+#define OBJ_EVENT_GFX_DAWN_FISHING               445
+#define OBJ_EVENT_GFX_DAWN_RUNNING               446
+
 // FRLG equivalents
 
 // #define OBJ_EVENT_GFX_MEW OBJ_EVENT_GFX_NINJA_BOY
@@ -456,7 +488,7 @@
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        420
+#define NUM_OBJ_EVENT_GFX                        447
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -660,6 +692,14 @@
 #define OBJ_EVENT_PAL_TAG_RGBY_RED_REFLECTION     0x117F
 #define OBJ_EVENT_PAL_TAG_GREEN_ALT               0x1180
 #define OBJ_EVENT_PAL_TAG_GREEN_ALT_REFLECTION    0x1181
+#define OBJ_EVENT_PAL_TAG_GOLD                    0x1182
+#define OBJ_EVENT_PAL_TAG_GOLD_REFLECTION         0x1183
+#define OBJ_EVENT_PAL_TAG_KRIS                    0x1184
+#define OBJ_EVENT_PAL_TAG_KRIS_REFLECTION         0x1185
+#define OBJ_EVENT_PAL_TAG_LUCAS                   0x1186
+// #define OBJ_EVENT_PAL_TAG_LUCAS_REFLECTION        0x1187
+#define OBJ_EVENT_PAL_TAG_DAWN                    0x1187
+// #define OBJ_EVENT_PAL_TAG_DAWN_REFLECTION         0x1189
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001
