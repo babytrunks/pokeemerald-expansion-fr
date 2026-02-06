@@ -612,6 +612,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     // {gObjectEventPal_LucasReflection,     OBJ_EVENT_PAL_TAG_LUCAS_REFLECTION},
     {gObjectEventPal_Dawn,                OBJ_EVENT_PAL_TAG_DAWN},
     // {gObjectEventPal_DawnReflection,      OBJ_EVENT_PAL_TAG_DAWN_REFLECTION},
+    {gObjectEventPal_Lyra,                OBJ_EVENT_PAL_TAG_LYRA},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

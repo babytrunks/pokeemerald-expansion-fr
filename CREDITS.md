@@ -134,7 +134,7 @@ Johto Gym Leader OW sprites, Kris sprites
 
 Hyo: Alt Red, Gold Sprites
 
-kwenio: Green OW sprites
+kwenio: Green OW, Trainer sprites
 
 ## Other Credits
 

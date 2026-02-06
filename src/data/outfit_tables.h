@@ -295,6 +295,68 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         .iconsRM = { sRegionMapPlayerIcon_RedGfx, sRegionMapPlayerIcon_GreenGfx }, //TODO
 
         .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
+    },
+[OUTFIT_ALAIN_LYRA] = {
+        //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
+        .isHidden = FALSE,
+        .prices = { 0, 0 },
+
+
+        .name = COMPOUND_STRING("Lucas"),
+        .desc = COMPOUND_STRING("An outfit based on Lucas from DPP."),
+        .nameFemale = COMPOUND_STRING("Dawn"),
+        .descFemale = COMPOUND_STRING("An outfit based on Dawn from DPP."),
+        .trainerPics = {
+            [MALE] =   { TRAINER_PIC_LUCAS , TRAINER_BACK_PIC_LUCAS , },
+            [FEMALE] = { TRAINER_PIC_DAWN , TRAINER_BACK_PIC_DAWN , },
+        },
+
+        .avatarGfxIds = {
+           [MALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_LUCAS_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_LUCAS_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_LUCAS_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_LUCAS_SURFING
+           },
+           [FEMALE] = {
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_DAWN_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_DAWN_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_DAWN_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_DAWN_SURFING
+           },
+        },
+
+        .animGfxIds = {
+            [MALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_LUCAS_FISHING, //TODO
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_LUCAS_FISHING, 
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_LUCAS_FISHING,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_LUCAS_FISHING,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_LUCAS_FISHING
+            },
+            [FEMALE] = {
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_DAWN_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_DAWN_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_DAWN_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_DAWN_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_DAWN_FIELD_MOVE
+            },
+        },
+
+        .iconsRM = { sRegionMapPlayerIcon_RedGfx, sRegionMapPlayerIcon_GreenGfx }, //TODO
+
+        .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
     }
-       
+    [OUTFIT_PLACEHOLDER_1] = {
+        .isHidden = TRUE
+    },
+    [OUTFIT_PLACEHOLDER_2] = {
+        .isHidden = TRUE
+    },
+    [OUTFIT_PLACEHOLDER_3] = {
+        .isHidden = TRUE
+    },
+    [OUTFIT_PLACEHOLDER_4] = {
+        .isHidden = TRUE
+    },
 };

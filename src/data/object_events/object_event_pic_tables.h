@@ -3649,4 +3649,59 @@ static const struct SpriteFrameImage sPicTable_DawnRunning[] = {
     overworld_ascending_frames(gObjectEventPic_DawnRunning, 2, 4),
 };
 
+// HGSS Lyra
+static const struct SpriteFrameImage sPicTable_LyraNormal[] = {
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 0),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 1),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 2),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 3),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 4),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 5),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 6),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 7),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 8),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 0),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 3),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 4),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 1),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 5),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 6),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 2),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 7),
+    overworld_frame(gObjectEventPic_LyraRunning, 2, 4, 8),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 8),
+    overworld_frame(gObjectEventPic_LyraNormal, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_LyraMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_LyraMachBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LyraSurfing[] = {
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_LyraSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_LyraFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_LyraFieldMove, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LyraFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_LyraFishing, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_LyraRunning[] = {
+    overworld_ascending_frames(gObjectEventPic_LyraRunning, 2, 4),
+};
+
 #endif // IS_FRLG

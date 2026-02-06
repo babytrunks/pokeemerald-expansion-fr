@@ -476,6 +476,13 @@
 #define OBJ_EVENT_GFX_DAWN_FIELD_MOVE            444
 #define OBJ_EVENT_GFX_DAWN_FISHING               445
 #define OBJ_EVENT_GFX_DAWN_RUNNING               446
+// HGSS Lyra
+#define OBJ_EVENT_GFX_LYRA_NORMAL                447
+#define OBJ_EVENT_GFX_LYRA_MACH_BIKE             448
+#define OBJ_EVENT_GFX_LYRA_SURFING               449
+#define OBJ_EVENT_GFX_LYRA_FIELD_MOVE            450
+#define OBJ_EVENT_GFX_LYRA_FISHING               451
+#define OBJ_EVENT_GFX_LYRA_RUNNING               452
 
 // FRLG equivalents
 
@@ -700,6 +707,7 @@
 // #define OBJ_EVENT_PAL_TAG_LUCAS_REFLECTION        0x1187
 #define OBJ_EVENT_PAL_TAG_DAWN                    0x1187
 // #define OBJ_EVENT_PAL_TAG_DAWN_REFLECTION         0x1189
+#define OBJ_EVENT_PAL_TAG_LYRA                    0x1188
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

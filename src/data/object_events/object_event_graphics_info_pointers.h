@@ -917,6 +917,13 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_DAWN_FIELD_MOVE] =     &gObjectEventGraphicsInfo_DawnFieldMove,
     [OBJ_EVENT_GFX_DAWN_FISHING] =        &gObjectEventGraphicsInfo_DawnFishing,
     [OBJ_EVENT_GFX_DAWN_RUNNING] =        &gObjectEventGraphicsInfo_DawnRunning,
+    // HGSS Lyra
+    [OBJ_EVENT_GFX_LYRA_NORMAL] =         &gObjectEventGraphicsInfo_LyraNormal,
+    [OBJ_EVENT_GFX_LYRA_MACH_BIKE] =      &gObjectEventGraphicsInfo_LyraMachBike,
+    [OBJ_EVENT_GFX_LYRA_SURFING] =        &gObjectEventGraphicsInfo_LyraSurfing,
+    [OBJ_EVENT_GFX_LYRA_FIELD_MOVE] =     &gObjectEventGraphicsInfo_LyraFieldMove,
+    [OBJ_EVENT_GFX_LYRA_FISHING] =        &gObjectEventGraphicsInfo_LyraFishing,
+    [OBJ_EVENT_GFX_LYRA_RUNNING] =        &gObjectEventGraphicsInfo_LyraRunning,
 
 #endif // IS_FRLG
 };

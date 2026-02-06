@@ -752,4 +752,12 @@ const u32 gObjectEventPic_DawnFishing[] = INCBIN_U32("graphics/object_events/pic
 const u16 gObjectEventPal_Dawn[] = INCBIN_U16("graphics/object_events/palettes/dawn.gbapal");
 // const u16 gObjectEventPal_DawnReflection[] = INCBIN_U16("graphics/object_events/palettes/dawn_reflection.gbapal");
 
+const u32 gObjectEventPic_LyraNormal[] = INCBIN_U32("graphics/object_events/pics/people/lyra/walking.4bpp");
+const u32 gObjectEventPic_LyraRunning[] = INCBIN_U32("graphics/object_events/pics/people/lyra/running.4bpp");
+const u32 gObjectEventPic_LyraMachBike[] = INCBIN_U32("graphics/object_events/pics/people/lyra/mach_bike.4bpp");
+const u32 gObjectEventPic_LyraSurfing[] = INCBIN_U32("graphics/object_events/pics/people/lyra/surfing.4bpp");
+const u32 gObjectEventPic_LyraFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/lyra/field_move.4bpp");
+const u32 gObjectEventPic_LyraFishing[] = INCBIN_U32("graphics/object_events/pics/people/lyra/fishing.4bpp");
+const u16 gObjectEventPal_Lyra[] = INCBIN_U16("graphics/object_events/palettes/lyra.gbapal");
+
 #endif // IS_FRLG
