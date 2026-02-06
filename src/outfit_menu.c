@@ -515,14 +515,14 @@ static inline void SetupOutfitMenu_Sprites_DrawTrainerSprite(bool32 update, bool
     if (update)
     {
         FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_FTS]);
-        FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_BTS]);
+        // FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_BTS]);
     }
 
     sOutfitMenu->spriteIds[GFX_FTS] = CreateTrainerPicSprite(frontSpriteId, TRUE, 32+27, 32+32, frontPalSlot, TAG_NONE);
-    sOutfitMenu->spriteIds[GFX_BTS] = CreateTrainerPicSprite(backSpriteId, FALSE, 32+117, 32+32, backPalSlot, TAG_NONE);
-    LoadPalette(gTrainerBacksprites[backSpriteId].palette.data, OBJ_PLTT_ID(backPalSlot), PLTT_SIZE_4BPP);
-    gSprites[sOutfitMenu->spriteIds[GFX_BTS]].anims = gTrainerBacksprites[backSpriteId].animation;
-    StartSpriteAnim(&gSprites[sOutfitMenu->spriteIds[GFX_BTS]], 0);
+    // sOutfitMenu->spriteIds[GFX_BTS] = CreateTrainerPicSprite(backSpriteId, FALSE, 32+117, 32+32, backPalSlot, TAG_NONE);
+    // LoadPalette(gTrainerBacksprites[backSpriteId].palette.data, OBJ_PLTT_ID(backPalSlot), PLTT_SIZE_4BPP);
+    // gSprites[sOutfitMenu->spriteIds[GFX_BTS]].anims = gTrainerBacksprites[backSpriteId].animation;
+    // StartSpriteAnim(&gSprites[sOutfitMenu->spriteIds[GFX_BTS]], 0);
     if (!unlocked)
     {
         // bc we're directly tint to idx 1-15, skipping idx 0
@@ -533,8 +533,8 @@ static inline void SetupOutfitMenu_Sprites_DrawTrainerSprite(bool32 update, bool
         CpuCopy16(&gPlttBufferUnfaded[OBJ_PLTT_ID(frontPalSlot)+1], &gPlttBufferFaded[OBJ_PLTT_ID(frontPalSlot)+1], PLTT_SIZE_4BPP-1);
 
         // back
-        TintPalette_GrayScale(&gPlttBufferUnfaded[OBJ_PLTT_ID(backPalSlot)+1], PLTT_SIZE_4BPP-1);
-        CpuCopy16(&gPlttBufferUnfaded[OBJ_PLTT_ID(backPalSlot)+1], &gPlttBufferFaded[OBJ_PLTT_ID(backPalSlot)+1], PLTT_SIZE_4BPP-1);
+        // TintPalette_GrayScale(&gPlttBufferUnfaded[OBJ_PLTT_ID(backPalSlot)+1], PLTT_SIZE_4BPP-1);
+        // CpuCopy16(&gPlttBufferUnfaded[OBJ_PLTT_ID(backPalSlot)+1], &gPlttBufferFaded[OBJ_PLTT_ID(backPalSlot)+1], PLTT_SIZE_4BPP-1);
     }
     sOutfitMenu->slotId ^= 1;
 }
@@ -732,7 +732,7 @@ static void SetupOutfitMenu_Grids(void)
 
     LoadSpriteSheet(&sIndicator_SpriteSheet);
     LoadSpritePalette(&sIndicator_SpritePalette);
-    
+
     GridMenu_EnableVerticalWrapAround(sOutfitMenu->grid);
     GridMenu_SetIndex(sOutfitMenu->grid, gSaveBlock2Ptr->currOutfitId - 1);
     sOutfitMenu->idx = sOutfitMenu->list[GridMenu_SelectedIndex(sOutfitMenu->grid)];
@@ -831,6 +831,7 @@ static inline void CloseOutfitMenu(u8 taskId)
 
 static void UpdateCursorPosition(void)
 {
+    DebugPrintf("Cursor pos");
     u32 row = sOutfitMenu->grid->selectedItem / sOutfitMenu->grid->maxCols;
     u32 col = sOutfitMenu->grid->selectedItem % sOutfitMenu->grid->maxCols;
     u32 x = ((col % GRID_COLS) < ARRAY_COUNT(sGridPosX)) ? sGridPosX[col] : sGridPosX[0];
@@ -878,10 +879,14 @@ static void Task_OutfitMenuHandleInput(u8 taskId)
 
 static void FreeOutfitMenuResources(void)
 {
+    DebugPrintf("Free is broken?");
     u32 i;
     DestroySprite(&gSprites[sOutfitMenu->spriteIds[GFX_OW]]);
+    DebugPrintf("Got here");
     FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_FTS]);
-    FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_BTS]);
+    DebugPrintf("Got here 2");
+    // FreeAndDestroyTrainerPicSprite(sOutfitMenu->spriteIds[GFX_BTS]);
+    DebugPrintf("Got here 3");
     for (i = 0; i < sOutfitMenu->grid->maxSize; i++)
     {
         DestroySprite(&gSprites[sOutfitMenu->currentOutfitSpriteIds[i]]);
@@ -898,6 +903,7 @@ static void Task_CloseOutfitMenu(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
+        DebugPrintf("Got here 4");
         SetMainCallback2(sOutfitMenu->retCB);
         FreeOutfitMenuResources();
         DestroyTask(taskId);

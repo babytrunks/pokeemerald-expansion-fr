@@ -145,7 +145,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! DESC: trainer front & back pic index
         //! (see include/constants/trainers.h)
         .trainerPics = {
-            [MALE] =   { TRAINER_PIC_RED, TRAINER_BACK_PIC_RED, },
+            [MALE] =   { TRAINER_PIC_RED, TRAINER_BACK_PIC_BRENDAN, },
             [FEMALE] = { TRAINER_PIC_LEAF, TRAINER_BACK_PIC_LEAF, },
         },
 
@@ -193,7 +193,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! unlike region map. (probably should split them tbh)
         .iconsFP = sFrontierPassPlayerIcons_BrendanMay_Gfx,
     },
-        [OUTFIT_UNUSUAL_RED] = {
+        [OUTFIT_ALT_RED_GREEN] = {
         //! DESC: if sets to TRUE, it will not be shown in the OUTFIT menu if it's locked.
         .isHidden = FALSE,
 
@@ -203,18 +203,18 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! agbcc doesnt like COMPOUND_STRING on my end
         //! DESC: outfit's name
 
-        .name = COMPOUND_STRING("Default 3"),
+        .name = COMPOUND_STRING("Alternate Red"),
 
 
-        .desc = COMPOUND_STRING("The usual, but basic Outfit."),
+        .desc = COMPOUND_STRING("An alternate outfit for Red."),
 
-        // .nameFemale = COMPOUND_STRING("Default"),
-        // .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
+        .nameFemale = COMPOUND_STRING("Green"),
+        .descFemale = COMPOUND_STRING("An outfit based on Green."),
 
         //! DESC: trainer front & back pic index
         //! (see include/constants/trainers.h)
         .trainerPics = {
-            [MALE] =   { TRAINER_PIC_RED, TRAINER_BACK_PIC_RED, },
+            [MALE] =   { TRAINER_PIC_RGBY_RED, TRAINER_BACK_PIC_RGBY_RED, },
             [FEMALE] = { TRAINER_PIC_LEAF, TRAINER_BACK_PIC_LEAF, },
         },
 
@@ -222,16 +222,16 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! surfing, and underwater. (see include/constants/event_object.h)
         .avatarGfxIds = {
            [MALE] = {
-               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_RED_NORMAL,
-               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE,
-               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_RED_SURF,
-               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_BRENDAN_UNDERWATER
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_RGBY_RED_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_RGBY_RED_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_RGBY_RED_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_RGBY_RED_SURFING
            },
            [FEMALE] = {
-               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_GREEN_NORMAL,
-               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE,
-               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_GREEN_SURF,
-               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_BRENDAN_UNDERWATER
+               [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_GREEN_ALT_NORMAL,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_GREEN_ALT_MACH_BIKE,
+               [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_GREEN_ALT_SURFING,
+               [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_GREEN_ALT_SURFING
            },
         },
 
@@ -239,23 +239,23 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! water, and decorating. (see include/constants/event_object.h)
         .animGfxIds = {
             [MALE] = {
-                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_RED_FIELD_MOVE,
-                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_RED_FISH,
-                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_BRENDAN_WATERING,
-                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_BRENDAN_DECORATING,
-                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_RED_FIELD_MOVE
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_RGBY_RED_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_RGBY_RED_FIELD_MOVE
             },
             [FEMALE] = {
-                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_GREEN_FIELD_MOVE,
-                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_GREEN_FISH,
-                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_BRENDAN_WATERING,
-                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_BRENDAN_DECORATING,
-                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_GREEN_FIELD_MOVE
+                [PLAYER_AVATAR_GFX_FIELD_MOVE] = OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_FISHING] =    OBJ_EVENT_GFX_GREEN_ALT_FISHING,
+                [PLAYER_AVATAR_GFX_WATERING] =   OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_DECORATING] = OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE,
+                [PLAYER_AVATAR_GFX_VSSEEKER] =   OBJ_EVENT_GFX_GREEN_ALT_FIELD_MOVE
             },
         },
 
         //! DESC: head icons gfx&pal for region map
-        .iconsRM = { sRegionMapPlayerIcon_RedGfx, sRegionMapPlayerIcon_GreenGfx },
+        .iconsRM = { sRegionMapPlayerIcon_AltRedGfx, sRegionMapPlayerIcon_GreenGfx },
 
         //! DESC: head icons gfx&pal for frontier pass
         //! note that frontier pass needs to be in one sprite instead of two,

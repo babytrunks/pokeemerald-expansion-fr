@@ -1171,7 +1171,7 @@ void CB2_InitCopyrightScreenAfterBootup(void)
         if (gSaveBlock2Ptr->currOutfitId == OUTFIT_NONE)
         {
             UnlockOutfit(DEFAULT_OUTFIT);
-            UnlockOutfit(OUTFIT_UNUSUAL_RED);
+            UnlockOutfit(OUTFIT_ALT_RED_GREEN);
             gSaveBlock2Ptr->currOutfitId = DEFAULT_OUTFIT;
         }
         SetPokemonCryStereo(gSaveBlock2Ptr->optionsSound);

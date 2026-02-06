@@ -1425,7 +1425,7 @@ static void NamingScreen_NoIcon(void)
  *                gSaveBlock2Ptr->playerName,
  *                gSaveBlock2Ptr->playerGender,
  *                0, 
- *                OUTFIT_UNUSUAL_RED,
+ *                OUTFIT_ALT_RED_GREEN,
  *                CB2_NewGameBirchSpeech_ReturnFromNamingScreen);
  */
 static void NamingScreen_CreatePlayerIcon(void)
