@@ -70,12 +70,11 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! DESC: outfit's name
 
         .name = COMPOUND_STRING("Default"),
-
-
         .desc = COMPOUND_STRING("The usual, but basic Outfit."),
 
-        // .nameFemale = COMPOUND_STRING("Default"),
-        // .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
+        .nameFemale = COMPOUND_STRING("Default"),
+        .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
+
 
         //! DESC: trainer front & back pic index
         //! (see include/constants/trainers.h)
@@ -139,8 +138,6 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! DESC: outfit's name
 
         .name = COMPOUND_STRING("Alternate Red"),
-
-
         .desc = COMPOUND_STRING("An alternate outfit for Red."),
 
         .nameFemale = COMPOUND_STRING("Green"),
@@ -150,7 +147,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! (see include/constants/trainers.h)
         .trainerPics = {
             [MALE] =   { TRAINER_PIC_RGBY_RED, TRAINER_BACK_PIC_RGBY_RED, },
-            [FEMALE] = { TRAINER_PIC_LEAF, TRAINER_BACK_PIC_LEAF, },
+            [FEMALE] = { TRAINER_PIC_GREEN , TRAINER_BACK_PIC_GREEN , },
         },
 
         //! DESC: overworld avatars, consisting of: walking, cycling,

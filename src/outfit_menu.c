@@ -768,8 +768,16 @@ static inline void UpdateOutfitInfo(void)
     }
     else
     {
-        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[sOutfitMenu->idx].name);
-        PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[sOutfitMenu->idx].desc);
+        if (gSaveBlock2Ptr->playerGender == MALE)
+        {
+            PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[sOutfitMenu->idx].name);
+            PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[sOutfitMenu->idx].desc);
+        }
+        else 
+        {
+            PrintTexts(WIN_INFO, FONT_NORMAL, 2, 0, COLORID_NORMAL, gOutfits[sOutfitMenu->idx].nameFemale);
+            PrintTexts(WIN_INFO, FONT_NORMAL, 2, 16, COLORID_NORMAL, gOutfits[sOutfitMenu->idx].descFemale);
+        }
     }
     CopyWindowToVram(WIN_INFO, COPYWIN_FULL);
 
@@ -929,10 +937,16 @@ void BufferOutfitStrings(u8 *dest, u8 outfitId, u8 dataType)
     {
     default:
     case OUTFIT_BUFFER_NAME:
-        src = gOutfits[outfitId].name;
+        if (gSaveBlock2Ptr->playerGender == MALE)
+            src = gOutfits[outfitId].name;
+        else
+            src = gOutfits[outfitId].nameFemale;
         break;
     case OUTFIT_BUFFER_DESC:
-        src = gOutfits[outfitId].desc;
+        if (gSaveBlock2Ptr->playerGender == MALE) 
+            src = gOutfits[outfitId].desc;
+        else
+            src = gOutfits[outfitId].descFemale;
         break;
     }
     StringCopy(dest, src);

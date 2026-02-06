@@ -449,6 +449,9 @@ const u16 gTrainerPalette_Lucas[] = INCBIN_U16("graphics/trainers/palettes/lucas
 const u32 gTrainerFrontPic_Dawn[] = INCBIN_U32("graphics/trainers/front_pics/DP_Dawn.4bpp.smol");
 const u16 gTrainerPalette_Dawn[] = INCBIN_U16("graphics/trainers/palettes/dawn.gbapal");
 
+const u32 gTrainerFrontPic_Green[] = INCBIN_U32("graphics/trainers/front_pics/green.4bpp.smol");
+const u16 gTrainerPalette_Green[] = INCBIN_U16("graphics/trainers/front_pics/green.gbapal");
+
 const u32 gTrainerFrontPic_GentlemanFrlg[] = INCBIN_U32("graphics/trainers/front_pics/gentleman_frlg.4bpp.smol");
 const u16 gTrainerPalette_GentlemanFrlg[] = INCBIN_U16("graphics/trainers/palettes/gentleman_frlg.gbapal");
 
@@ -527,6 +530,7 @@ const u8 gTrainerBackPic_Gold[] = INCBIN_U8("graphics/trainers/back_pics/gold.4b
 const u8 gTrainerBackPic_Kris[] = INCBIN_U8("graphics/trainers/back_pics/kris.4bpp");
 const u8 gTrainerBackPic_Lucas[] = INCBIN_U8("graphics/trainers/back_pics/lucas.4bpp");
 const u8 gTrainerBackPic_Dawn[] = INCBIN_U8("graphics/trainers/back_pics/dawn.4bpp");
+const u8 gTrainerBackPic_Green[] = INCBIN_U8("graphics/trainers/back_pics/green.4bpp");
 
 const u16 gTrainerBackPicPalette_Red[] = INCBIN_U16("graphics/trainers/back_pics/red.gbapal");
 const u16 gTrainerBackPicPalette_Leaf[] = INCBIN_U16("graphics/trainers/back_pics/leaf.gbapal");
@@ -724,6 +728,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_KRIS, gTrainerFrontPic_Kris, gTrainerPalette_Kris),
     TRAINER_SPRITE(TRAINER_PIC_LUCAS, gTrainerFrontPic_Lucas, gTrainerPalette_Lucas),
     TRAINER_SPRITE(TRAINER_PIC_DAWN, gTrainerFrontPic_Dawn, gTrainerPalette_Dawn),
+    TRAINER_SPRITE(TRAINER_PIC_GREEN, gTrainerFrontPic_Green, gTrainerPalette_Green),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
@@ -820,4 +825,5 @@ const struct TrainerBacksprite gTrainerBacksprites[] =
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_KRIS, 4, gTrainerBackPic_Kris, gTrainerBackPicPalette_Kris, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_LUCAS, 4, gTrainerBackPic_Lucas, gTrainerPalette_Lucas, sBackAnims_Hoenn),
     TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_DAWN, 4, gTrainerBackPic_Dawn, gTrainerPalette_Dawn, sBackAnims_Hoenn),
+    TRAINER_BACK_SPRITE(TRAINER_BACK_PIC_GREEN, 4, gTrainerBackPic_Green, gTrainerPalette_Green, sBackAnims_Hoenn),
 };
