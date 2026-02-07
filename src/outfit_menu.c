@@ -568,9 +568,9 @@ static void SetupOutfitMenu_Sprites(void)
 static u32 CountAndFilterTotalOutfit(void)
 {
     u32 i = 0, j = OUTFIT_BEGIN;
-    while (j < OUTFIT_COUNT)
+    while (j < OUTFIT_END)
     {
-        if ((gOutfits[j].isHidden && !GetOutfitStatus(j)))
+        if ((gOutfits[j].isHidden && !GetOutfitStatusHidden(j)))
         {
             j++;
             continue; // skip
@@ -717,9 +717,9 @@ static u32 BuildOutfitLists(void)
 {
     u32 i = 0, j = 1;
     sOutfitMenu->list = AllocZeroed(CountAndFilterTotalOutfit() * sizeof(u8));
-    while (j < OUTFIT_COUNT)
+    while (j < OUTFIT_END)
     {
-        if ((gOutfits[j].isHidden && !GetOutfitStatus(j)))
+        if ((gOutfits[j].isHidden && !GetOutfitStatusHidden(j)))
         {
             j++;
             continue; // skip
@@ -1022,6 +1022,22 @@ u16 LockOutfit(u16 id)
 bool8 GetOutfitStatus(u16 id)
 {
     return TRUE;
+    u16 *ptr = GetOutfitPointer(id);
+
+    // return false if GetOutfitPointer returns NULL
+    if (!ptr)
+        return FALSE;
+
+    // return false if flag is not set
+    if (!(((*ptr) >> (id & 7)) & 1))
+        return FALSE;
+
+    // rest
+    return TRUE;
+}
+
+bool8 GetOutfitStatusHidden(u16 id)
+{
     u16 *ptr = GetOutfitPointer(id);
 
     // return false if GetOutfitPointer returns NULL

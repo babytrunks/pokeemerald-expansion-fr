@@ -13,6 +13,7 @@ u16 UnlockOutfit(u16 id);
 u16 ToggleOutfit(u16 id);
 u16 LockOutfit(u16 id);
 bool8 GetOutfitStatus(u16 id);
+bool8 GetOutfitStatusHidden(u16 id);
 bool8 IsPlayerWearingOutfit(u16 id);
 u32 GetOutfitPrice(u16 id);
 

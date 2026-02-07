@@ -760,4 +760,12 @@ const u32 gObjectEventPic_LyraFieldMove[] = INCBIN_U32("graphics/object_events/p
 const u32 gObjectEventPic_LyraFishing[] = INCBIN_U32("graphics/object_events/pics/people/lyra/fishing.4bpp");
 const u16 gObjectEventPal_Lyra[] = INCBIN_U16("graphics/object_events/palettes/lyra.gbapal");
 
+// XY Alain
+const u32 gObjectEventPic_AlainNormal[] = INCBIN_U32("graphics/object_events/pics/people/alain/walking.4bpp");
+const u32 gObjectEventPic_AlainMachBike[] = INCBIN_U32("graphics/object_events/pics/people/alain/mach_bike.4bpp");
+const u32 gObjectEventPic_AlainSurfing[] = INCBIN_U32("graphics/object_events/pics/people/alain/surfing.4bpp");
+const u32 gObjectEventPic_AlainFieldMove[] = INCBIN_U32("graphics/object_events/pics/people/alain/field_move.4bpp");
+const u32 gObjectEventPic_AlainFishing[] = INCBIN_U32("graphics/object_events/pics/people/alain/fishing.4bpp");
+const u16 gObjectEventPal_Alain[] = INCBIN_U16("graphics/object_events/palettes/alain.gbapal");
+
 #endif // IS_FRLG

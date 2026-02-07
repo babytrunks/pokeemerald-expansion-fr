@@ -464,6 +464,19 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnSurfing
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnFishing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DawnRunning;
+// HGSS Lyra
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LyraNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LyraMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LyraSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LyraFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LyraFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LyraRunning;
+// XY Alain
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainMachBike;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainFishing;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -924,6 +937,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LYRA_FIELD_MOVE] =     &gObjectEventGraphicsInfo_LyraFieldMove,
     [OBJ_EVENT_GFX_LYRA_FISHING] =        &gObjectEventGraphicsInfo_LyraFishing,
     [OBJ_EVENT_GFX_LYRA_RUNNING] =        &gObjectEventGraphicsInfo_LyraRunning,
+    // XY Alain
+    [OBJ_EVENT_GFX_ALAIN_NORMAL] =        &gObjectEventGraphicsInfo_AlainNormal,
+    [OBJ_EVENT_GFX_ALAIN_MACH_BIKE] =     &gObjectEventGraphicsInfo_AlainMachBike,
+    [OBJ_EVENT_GFX_ALAIN_SURFING] =       &gObjectEventGraphicsInfo_AlainSurfing,
+    [OBJ_EVENT_GFX_ALAIN_FIELD_MOVE] =    &gObjectEventGraphicsInfo_AlainFieldMove,
+    [OBJ_EVENT_GFX_ALAIN_FISHING] =       &gObjectEventGraphicsInfo_AlainFishing,
 
 #endif // IS_FRLG
 };

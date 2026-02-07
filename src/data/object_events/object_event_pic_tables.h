@@ -3704,4 +3704,55 @@ static const struct SpriteFrameImage sPicTable_LyraRunning[] = {
     overworld_ascending_frames(gObjectEventPic_LyraRunning, 2, 4),
 };
 
+// XY Alain
+static const struct SpriteFrameImage sPicTable_AlainNormal[] = {
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 0),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 1),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 2),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 3),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 4),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 5),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 6),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 7),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 8),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 9),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 10),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 11),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 12),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 13),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 14),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 15),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 16),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 17),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 18),
+    overworld_frame(gObjectEventPic_AlainNormal, 2, 4, 19),
+};
+
+static const struct SpriteFrameImage sPicTable_AlainMachBike[] = {
+    overworld_ascending_frames(gObjectEventPic_AlainMachBike, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AlainSurfing[] = {
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 0),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 2),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 4),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 0),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 0),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 2),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 2),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 4),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 4),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 1),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 3),
+    overworld_frame(gObjectEventPic_AlainSurfing, 2, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_AlainFieldMove[] = {
+    overworld_ascending_frames(gObjectEventPic_AlainFieldMove, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AlainFishing[] = {
+    overworld_ascending_frames(gObjectEventPic_AlainFishing, 4, 4),
+};
+
 #endif // IS_FRLG
