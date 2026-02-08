@@ -34,6 +34,7 @@ enum SpeakerNames {
     SP_NAME_TREVOR,
     SP_NAME_EDMOND,
     SP_NAME_FUJI,
+    SP_NAME_BILL,
     SP_NAME_COUNT
 };
 

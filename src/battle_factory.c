@@ -170,7 +170,7 @@ static const u16 sInitialRentalMonRanges[][2] =
 {
     // Level 50
     // Level 50
-    {FRONTIER_MON_BULBASAUR,     FRONTIER_MON_EEVEE },  //0 Viridian City
+    {FRONTIER_MON_BULBASAUR,     FRONTIER_MON_MUDKIP },  //0 Viridian City
     {FRONTIER_MON_ODDISH,     FRONTIER_MON_DHELMISE},   // 1 Route 4
     {FRONTIER_MON_SCYTHER, FRONTIER_MON_FALINKS},     // 2 Bugsy Route 25
     {FRONTIER_MON_CARVANHA, FRONTIER_MON_SLOWPOKE_GALAR}, // 267 - 371 3 Route 104

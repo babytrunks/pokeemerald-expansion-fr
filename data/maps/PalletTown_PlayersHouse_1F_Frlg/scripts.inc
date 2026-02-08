@@ -70,10 +70,17 @@ PalletTown_PlayersHouse_1F_EventScript_TVScreenFemale::
 
 
 LevelScript_PalletTownAskStarterRegion:
+    applymovement LOCALID_PLAYER, PlayerWalkToMom
     applymovement LOCALID_MOM, Common_Movement_FaceRight
     waitmovement 0
     goto AskStarters
     end
+
+PlayerWalkToMom:
+    walk_down
+    walk_down
+    walk_left
+    step_end
 
 AskStarters:
     setspeaker SP_NAME_MOM
@@ -91,6 +98,9 @@ endofstarterscript:
     end
 
 AskStarterEnd:
+    setspeaker SP_NAME_MOM
+    msgbox gText_Pallet_SwitchOutOfThoseClothes
+    giveitem ITEM_OUTFIT_BOX
     setvar VAR_PALLET_TOWN_MOM_ASK_STARTER 0x1
     applymovement LOCALID_MOM, Common_Movement_FaceLeft
     waitmovement 0
@@ -282,3 +292,8 @@ gText_Galar::
 
 gText_Paldea::
     .string "Paldea$"
+
+gText_Pallet_SwitchOutOfThoseClothes::
+    .string "Sweetie, you might want to change\n"
+    .string "your clothes before your journey.\l"
+    .string "Take your outfit box before you leave!$"

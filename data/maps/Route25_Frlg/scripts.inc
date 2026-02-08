@@ -109,13 +109,13 @@ Route25_Text_JoeyPostBattle::
 
 Route25_Text_DanIntro::
     .string "Dad took me to a great party on\n"
-    .string "the S.S. ANNE at Vermilion City.$"
+    .string "the S.S. Anne at Vermilion City.$"
 
 Route25_Text_DanDefeat::
     .string "I'm not mad!$"
 
 Route25_Text_DanPostBattle::
-    .string "On the S.S. ANNE, I saw TRAINERS\n"
+    .string "On the S.S. Anne, I saw TRAINERS\n"
     .string "from around the world.$"
 
 Route25_Text_FlintIntro::
@@ -160,11 +160,11 @@ Route25_Text_HaleyDefeat::
     .string "I'm not so jealous!$"
 
 Route25_Text_HaleyPostBattle::
-    .string "You came from MT. MOON?\n"
+    .string "You came from Mt. Moon?\n"
     .string "May I have a CLEFAIRY?$"
 
 Route25_Text_FranklinIntro::
-    .string "I just got down from MT. MOON,\n"
+    .string "I just got down from Mt. Moon,\n"
     .string "but I've still got gas in the tank!$"
 
 Route25_Text_FranklinDefeat::

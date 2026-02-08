@@ -1005,7 +1005,7 @@
     },
     {
       "id": "MAPSEC_MT_MOON",
-      "name": "MT. MOON",
+      "name": "Mt. Moon",
       "x": 9,
       "y": 3,
       "width": 1,
@@ -1013,7 +1013,7 @@
     },
     {
       "id": "MAPSEC_S_S_ANNE",
-      "name": "S.S. ANNE",
+      "name": "S.S. Anne",
       "x": 14,
       "y": 9,
       "width": 1,
@@ -1037,7 +1037,7 @@
     },
     {
       "id": "MAPSEC_DIGLETTS_CAVE",
-      "name": "DIGLETT'S CAVE",
+      "name": "Diglett's Cave",
       "x": 15,
       "y": 9,
       "width": 1,

@@ -145,7 +145,7 @@ RocketHideout_B4F_Text_GiovanniPostBattle::
 
 RocketHideout_B4F_Text_Grunt2Intro::
     .string "I know you!\n"
-    .string "You ruined our plans at MT. MOON!$"
+    .string "You ruined our plans at Mt. Moon!$"
 
 RocketHideout_B4F_Text_Grunt2Defeat::
     .string "Burned again!$"

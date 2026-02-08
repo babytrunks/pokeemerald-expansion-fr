@@ -75,9 +75,11 @@ EventScript_Gacha_UltraRare::
 	end
 
 EventScript_GachaCommon::
+	setflag FLAG_3_PERFECT_IVS
 	playbgm MUS_RG_CINNABAR, FALSE
 	special StartGacha
 	waitstate
+	clearflag FLAG_3_PERFECT_IVS
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, EventScript_RecieveGachaMonParty

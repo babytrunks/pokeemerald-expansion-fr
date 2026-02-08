@@ -33,7 +33,7 @@ Route3_Text_RobinRematchIntro::
 
 Route4_Text_CrissyRematchIntro::
 	.string "I always catch mushroom Pokémon\n"
-	.string "on MT. MOON.$"
+	.string "on Mt. Moon.$"
 
 Route6_Text_RickyRematchIntro::
 	.string "Oh! You're that nosy kid who\n"
@@ -632,7 +632,7 @@ Route25_Text_JoeyRematchIntro::
 
 Route25_Text_DanRematchIntro::
 	.string "Dad took me to a great party on\n"
-	.string "the S.S. ANNE at Vermilion City.$"
+	.string "the S.S. Anne at Vermilion City.$"
 
 Route25_Text_FlintRematchIntro::
 	.string "I'm a cool guy.\n"
@@ -654,7 +654,7 @@ Route25_Text_HaleyRematchIntro::
 	.string "I'm so jealous!$"
 
 Route25_Text_FranklinRematchIntro::
-	.string "I just trained up on MT. MOON,\n"
+	.string "I just trained up on Mt. Moon,\n"
 	.string "but I've still got gas in the tank!$"
 
 Route25_Text_NobRematchIntro::

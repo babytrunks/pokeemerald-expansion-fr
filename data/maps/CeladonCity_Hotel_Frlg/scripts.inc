@@ -38,7 +38,7 @@ EventScript_Jasmine_Battle::
     call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
     setflag FLAG_UNLOCKED_STAT_EDITOR
     callnative SetBuffer1ToEvCap
-	msgbox johtoLeader_Text_CurrentEvCap
+	  msgbox johtoLeader_Text_CurrentEvCap
     msgbox jasmine_Text_7
     giveitem ITEM_TM_IRON_HEAD
     @ msgbox jasmine_Text_Take

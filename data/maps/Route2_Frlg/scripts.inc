@@ -14,7 +14,7 @@ Route2_Text_RouteSign::
     .string "Viridian City - Pewter City$"
 
 Route2_Text_DiglettsCave::
-    .string "DIGLETT'S CAVE$"
+    .string "Diglett's Cave$"
 
 
 Route2_EventScript_ItemMegaStone::

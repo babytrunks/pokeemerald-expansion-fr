@@ -868,7 +868,7 @@ PewterCity_Text_ClefairyCameFromMoon::
     .string "CLEFAIRY came from the moon.\n"
     .string "That's what the rumor is.\p"
     .string "They appeared after MOON STONES\n"
-    .string "fell on MT. MOON.$"
+    .string "fell on Mt. Moon.$"
 
 PewterCity_Text_BrockOnlySeriousTrainerHere::
     .string "There aren't many serious Pokémon\n"
@@ -882,7 +882,7 @@ PewterCity_Text_DidYouCheckOutMuseum::
     .string "Did you check out the MUSEUM?$"
 
 PewterCity_Text_WerentThoseFossilsAmazing::
-    .string "Weren't those fossils from MT. MOON\n"
+    .string "Weren't those fossils from Mt. Moon\n"
     .string "amazing?$"
 
 PewterCity_Text_ReallyYouHaveToGo::
@@ -923,7 +923,7 @@ PewterCity_Text_TrainerTipsEarningEXP::
 PewterCity_Text_CallPoliceIfInfoOnThieves::
     .string "NOTICE!\p"
     .string "Thieves have been stealing Pokémon\n"
-    .string "fossils from MT. MOON.\p"
+    .string "fossils from Mt. Moon.\p"
     .string "Please call the PEWTER POLICE if\n"
     .string "you have any information.$"
 

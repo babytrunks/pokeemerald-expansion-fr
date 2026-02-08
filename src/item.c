@@ -985,6 +985,11 @@ bool32 IsHoldEffectChoice(enum HoldEffect holdEffect)
 }
 
 void Buffer1GachaVouchers(void)
-{
-     ConvertIntToDecimalStringN(gStringVar1, CountTotalItemQuantityInBag(ITEM_GACHA_VOUCHER), STR_CONV_MODE_RIGHT_ALIGN, 2);
+{    u16 gachaVoucherCount = CountTotalItemQuantityInBag(ITEM_GACHA_VOUCHER);
+     if (gachaVoucherCount < 10) 
+        ConvertIntToDecimalStringN(gStringVar1, CountTotalItemQuantityInBag(ITEM_GACHA_VOUCHER), STR_CONV_MODE_RIGHT_ALIGN, 1);
+     else if (gachaVoucherCount < 100)
+        ConvertIntToDecimalStringN(gStringVar1, CountTotalItemQuantityInBag(ITEM_GACHA_VOUCHER), STR_CONV_MODE_RIGHT_ALIGN, 2);
+     else
+        ConvertIntToDecimalStringN(gStringVar1, CountTotalItemQuantityInBag(ITEM_GACHA_VOUCHER), STR_CONV_MODE_RIGHT_ALIGN, 3);
 }

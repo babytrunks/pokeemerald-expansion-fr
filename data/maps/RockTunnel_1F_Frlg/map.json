@@ -119,7 +119,7 @@
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_RED_CARD"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
       "x": 33,
       "y": 22,
       "elevation": 3,
@@ -128,7 +128,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RockTunnel_1F_EventScript_ItemNeverMeltIce",
+      "script": "RockTunnel_1F_EventScript_ItemTMZenHeadbutt",
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_NEVERMELTICE"
     },
     {

@@ -233,7 +233,7 @@ VermilionCity_EventScript_Machop::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MACHOP, CRY_MODE_NORMAL
+	playmoncry SPECIES_INFERNAPE, CRY_MODE_NORMAL
 	msgbox VermilionCity_Text_Machop
 	waitmoncry
 	msgbox VermilionCity_Text_MachopStompingLandFlat
@@ -269,11 +269,11 @@ VermilionCity_Text_GrimerMultipliesInSludge::
     .string "toxic sludge.$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
-    .string "Did you see the S.S. ANNE moored\n"
+    .string "Did you see the S.S. Anne moored\n"
     .string "in the harbor?$"
 
 VermilionCity_Text_SSAnneHasDepartedForYear::
-    .string "So, the S.S. ANNE has departed?\p"
+    .string "So, the S.S. Anne has departed?\p"
     .string "She'll be back in VERMILION about\n"
     .string "this time next year.$"
 
@@ -284,13 +284,13 @@ VermilionCity_Text_BuildingOnThisLand::
     .string "to lay the foundation.$"
 
 VermilionCity_Text_Machop::
-    .string "MACHOP: Guoh! Gogogoh!$"
+    .string "Guoh! Gogogoh!$"
 
 VermilionCity_Text_MachopStompingLandFlat::
-    .string "A MACHOP is stomping the land flat.$"
+    .string "An Infernape is stomping the land flat.$"
 
 VermilionCity_Text_SSAnneVisitsOnceAYear::
-    .string "The S.S. ANNE is a famous luxury\n"
+    .string "The S.S. Anne is a famous luxury\n"
     .string "cruise ship.\p"
     .string "It visits VERMILION once a year.$"
 
@@ -319,16 +319,16 @@ VermilionCity_Text_VermilionHarbor::
     .string "VERMILION HARBOR$"
 
 VermilionCity_Text_WelcomeToTheSSAnne::
-    .string "Welcome to the S.S. ANNE!$"
+    .string "Welcome to the S.S. Anne!$"
 
 VermilionCity_Text_DoYouHaveATicket::
-    .string "Welcome to the S.S. ANNE!\p"
+    .string "Welcome to the S.S. Anne!\p"
     .string "Excuse me, do you have a ticket?$"
 
 VermilionCity_Text_FlashedSSTicket::
     .string "{FONT_NORMAL}{PLAYER} flashed the S.S. TICKET!\p"
     .string "{FONT_MALE}Great!\n"
-    .string "Welcome to the S.S. ANNE!$"
+    .string "Welcome to the S.S. Anne!$"
 
 VermilionCity_Text_DontHaveNeededSSTicket::
     .string "{FONT_NORMAL}{PLAYER} doesn't have the needed\n"

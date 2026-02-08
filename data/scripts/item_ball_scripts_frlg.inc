@@ -10,8 +10,8 @@ Route2_EventScript_ItemTMRest::
 	finditem ITEM_TM_REST
 	end
 
-Route2_EventScript_ItemAbilityCapsule::
-	finditem ITEM_ABILITY_CAPSULE
+Route2_EventScript_ItemGachaVoucher::
+	finditem ITEM_GACHA_VOUCHER
 	end
 
 Route3_EventScript_ItemWideLens::
@@ -155,8 +155,8 @@ RocketHideout_B3F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-RocketHideout_B3F_EventScript_ItemTMZenHeadbutt::
-	finditem ITEM_TM_ZEN_HEADBUTT 
+RocketHideout_B3F_EventScript_ItemTMFutureSight::
+	finditem ITEM_TM_FUTURE_SIGHT 
 	end
 
 RocketHideout_B4F_EventScript_ItemTMSludgeBomb::
@@ -483,8 +483,8 @@ RockTunnel_1F_EventScript_ItemRedCard::
 	finditem ITEM_RED_CARD
 	end
 
-RockTunnel_1F_EventScript_ItemNeverMeltIce::
-	finditem ITEM_NEVER_MELT_ICE
+RockTunnel_1F_EventScript_ItemTMZenHeadbutt::
+	finditem ITEM_TM_ZEN_HEADBUTT
 	end
 
 RockTunnel_1F_EventScript_ItemEverstone::

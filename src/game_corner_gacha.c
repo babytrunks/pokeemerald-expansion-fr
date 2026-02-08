@@ -3505,7 +3505,23 @@ static void UpdateWagerDigit(int direction)
         d = d / 10;
     }
     // maxWager = GetCoins();  // Maximum wager is the current coins updated here
-    maxWager = MathMin(CountTotalItemQuantityInBag (ITEM_GACHA_VOUCHER), 1);  // Maximum wager is the current coins
+    switch (sGacha->GachaId)
+    {
+        default:
+        case GACHA_BASIC:
+            maxWager = GACHA_BASIC_MIN_WAGER;
+            break;
+        case GACHA_GREAT:
+            maxWager = GACHA_GREAT_MIN_WAGER;
+            break;
+        case GACHA_ULTRA:
+            maxWager = GACHA_ULTRA_MIN_WAGER;
+            break;
+        case GACHA_MASTER:
+            maxWager = GACHA_MASTER_MIN_WAGER;
+            break;
+    }
+    maxWager = MathMin(CountTotalItemQuantityInBag (ITEM_GACHA_VOUCHER), maxWager);  // Maximum wager is the current coins
     
     // wagerDigits[0] = Thousands place
     // wagerDigits[1] = Hundreds place

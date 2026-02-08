@@ -99,7 +99,7 @@ Route12_FishingHouse_EventScript_MagikarpRecordSignRecordSet::
 	end
 
 Route12_FishingHouse_Text_DoYouLikeToFish::
-    .string "I'm the FISHING GURU's younger\n"
+    .string "I'm the Fishing Guru's younger\n"
     .string "brother.\p"
     .string "I simply looove fishing!\n"
     .string "I can't bear to go without.\p"
@@ -112,7 +112,7 @@ Route12_FishingHouse_Text_TakeThisAndFish::
 
 Route12_FishingHouse_Text_ReceivedSuperRod::
     .string "{PLAYER} received a SUPER ROD from\n"
-    .string "the FISHING GURU's brother.$"
+    .string "the Fishing Guru's brother.$"
 
 Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe::
     .string "Fishing is a way of life!\n"

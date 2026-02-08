@@ -32,7 +32,7 @@ FuchsiaCity_House2_EventScript_NoRoomForGoodRod::
 	end
 
 FuchsiaCity_House2_Text_DoYouLikeToFish::
-    .string "I'm the FISHING GURU's older\n"
+    .string "I'm the Fishing Guru's older\n"
     .string "brother.\p"
     .string "I simply looove fishing!\n"
     .string "I can't bear to go without.\p"
@@ -45,7 +45,7 @@ FuchsiaCity_House2_Text_LikeYourStyleTakeThis::
 
 FuchsiaCity_House2_Text_ReceivedGoodRod::
     .string "{PLAYER} received a GOOD ROD from\n"
-    .string "the FISHING GURU's brother.$"
+    .string "the Fishing Guru's brother.$"
 
 FuchsiaCity_House2_Text_GoodRodCanCatchBetterMons::
     .string "Fishing is a way of life!\n"

@@ -5,8 +5,8 @@ DiglettsCave_NorthEntrance_EventScript_Hiker::
 	msgbox DiglettsCave_NorthEntrance_RockTunnelPitchBlack, MSGBOX_NPC
 	end
 
-DiglettsCave_NorthEntrance_EventScript_ItemHardStone::
-    finditem ITEM_HARD_STONE
+DiglettsCave_NorthEntrance_EventScript_ItemResisterFeather::
+    finditem ITEM_RESIST_FEATHER
 	end
 
 

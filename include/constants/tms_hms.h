@@ -69,7 +69,8 @@
     F(FLASH_CANNON) \
     F(WILL_O_WISP) \
     F(THUNDER_WAVE) \
-    F(BODY_PRESS) 
+    F(BODY_PRESS) \
+    F(FUTURE_SIGHT)
 
     
 #define FOREACH_HM(F) \

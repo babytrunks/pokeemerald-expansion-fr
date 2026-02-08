@@ -96,6 +96,7 @@ EventScript_falkner_Start::
     waitmovement 0
     waitse                  @ checksound
     applymovement LOCALID_FALKNER, Common_Movement_FacePlayer
+    applymovement LOCALID_PEWTER_MUSEUM_PIDGEOTTO, Common_Movement_FacePlayer
     waitmovement 0
     setspeaker SP_NAME_FALKNER
     msgbox falkner_Text_2
@@ -220,7 +221,7 @@ PewterCity_Museum_1F_Text_SpaceShuttle::
     .string "Space Shuttle$"
 
 PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
-    .string "A meteorite that fell on MT. MOON.\n"
+    .string "A meteorite that fell on Mt. Moon.\n"
     .string "It is thought to be a MOON STONE.$"
 
 

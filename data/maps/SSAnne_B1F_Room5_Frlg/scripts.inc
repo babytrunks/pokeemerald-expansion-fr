@@ -2,7 +2,13 @@ SSAnne_B1F_Room5_Frlg_MapScripts::
 	.byte 0
 
 SSAnne_B1F_Room5_EventScript_Boy::
+	goto_if_set FLAG_HIDE_SSANNE_B1F_ROOM5_WATER_STONE, SSAnne_B1F_Room5_EventScript_WheredMyWaterStone
 	msgbox SSAnne_B1F_Room5_Text_MachokeHasStrengthToMoveRocks, MSGBOX_NPC
+	end
+
+SSAnne_B1F_Room5_EventScript_WheredMyWaterStone::
+	msgbox SSAnne_B1F_Room5_Text_WheredMyWaterStone, MSGBOX_NPC
+	release
 	end
 
 SSAnne_B1F_Room5_EventScript_Machoke::
@@ -23,5 +29,7 @@ SSAnne_B1F_Room5_Text_MachokeHasStrengthToMoveRocks::
 	.string "he's evolved!$"
 
 SSAnne_B1F_Room5_Text_Machoke::
-    .string "Poliwhirl: Poli!$"
+    .string "Poli!$"
 
+SSAnne_B1F_Room5_Text_WheredMyWaterStone::
+	.string "Huh? Where'd my Water Stone go?!$"

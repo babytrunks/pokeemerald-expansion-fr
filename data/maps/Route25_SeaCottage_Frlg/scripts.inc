@@ -31,17 +31,20 @@ Route25_SeaCottage_EventScript_Bill::
 	end
 
 Route25_SeaCottage_EventScript_BillAskForHelpMale::
+	setspeaker SP_NAME_BILL
 	msgbox Route25_SeaCottage_Text_ImBillHelpMeOutPal, MSGBOX_YESNO
 	goto Route25_SeaCottage_EventScript_BillAskForHelp
 	end
 
 Route25_SeaCottage_EventScript_BillAskForHelpFemale::
+	setspeaker SP_NAME_BILL
 	msgbox Route25_SeaCottage_Text_ImBillHelpMeOutLady, MSGBOX_YESNO
 	goto Route25_SeaCottage_EventScript_BillAskForHelp
 	end
 
 Route25_SeaCottage_EventScript_BillAskForHelp::
 	call_if_eq VAR_RESULT, NO, Route25_SeaCottage_EventScript_DeclineHelpBill
+	setspeaker SP_NAME_BILL
 	msgbox Route25_SeaCottage_Text_RunCellSeparationOnPC
 	closemessage
 	delay 10
@@ -69,10 +72,12 @@ Route25_SeaCottage_EventScript_DeclineHelpBill::
 	return
 
 Route25_SeaCottage_EventScript_DeclineHelpBillMale::
+	setspeaker SP_NAME_BILL
 	msgbox Route25_SeaCottage_Text_NoPleaseChief
 	return
 
 Route25_SeaCottage_EventScript_DeclineHelpBillFemale::
+	setspeaker SP_NAME_BILL
 	msgbox Route25_SeaCottage_Text_NoPleaseBeautiful
 	return
 
@@ -87,11 +92,13 @@ Route25_SeaCottage_EventScript_BillWalkToTeleporter::
 	return
 
 Route25_SeaCottage_EventScript_BillGoToSSAnne::
+	setspeaker SP_NAME_BILL
 	msgbox Route25_SeaCottage_Text_SSAnnePartyYouGoInstead
 	release
 	end
 
 Route25_SeaCottage_EventScript_BillGiveSSTicket::
+	setspeaker SP_NAME_BILL
 	famechecker FAMECHECKER_BILL, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route25_SeaCottage_EventScript_BillThanksMale
@@ -120,6 +127,7 @@ Route25_SeaCottage_EventScript_NoRoomForSSTicket::
 	end
 
 Route25_SeaCottage_EventScript_BillGoLookAtPC::
+	setspeaker SP_NAME_BILL
 	msgbox Route25_SeaCottage_Text_CheckOutRareMonsOnPC
 	release
 	end
@@ -298,7 +306,7 @@ Route25_SeaCottage_Movement_BillExitTeleporter::
 Route25_SeaCottage_Text_ImBillHelpMeOutPal::
     .string "Hiya! I'm a Pokémon…\n"
     .string "…No I'm not!\p"
-    .string "Call me BILL!\n"
+    .string "Call me Bill!\n"
     .string "I'm a true-blue POKéMANIAC!\p"
     .string "Hey!\n"
     .string "What's with that skeptical look?\p"
@@ -311,7 +319,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutPal::
 Route25_SeaCottage_Text_ImBillHelpMeOutLady::
     .string "Hiya! I'm a Pokémon…\n"
     .string "…No I'm not!\p"
-    .string "Call me BILL!\n"
+    .string "Call me Bill!\n"
     .string "I'm a true-blue POKéMANIAC!\p"
     .string "Hey!\n"
     .string "What's with that skeptical look?\p"
@@ -348,7 +356,7 @@ Route25_SeaCottage_Text_NoPleaseBeautiful::
     .string "All right!$"
 
 Route25_SeaCottage_Text_ThanksBudTakeThis::
-    .string "BILL: Yeehah!\n"
+    .string "Yeehah!\n"
     .string "Thanks, bud! I owe you one!\p"
     .string "So, did you come to see my\n"
     .string "Pokémon collection?\p"
@@ -358,7 +366,7 @@ Route25_SeaCottage_Text_ThanksBudTakeThis::
     .string "Oh, here, maybe this'll do.$"
 
 Route25_SeaCottage_Text_ThanksLadyTakeThis::
-    .string "BILL: Yeehah!\n"
+    .string "Yeehah!\n"
     .string "Thanks, lady! I owe you one!\p"
     .string "So, did you come to see my\n"
     .string "Pokémon collection?\p"
@@ -375,7 +383,7 @@ Route25_SeaCottage_Text_YouveGotTooMuchStuff::
     .string "You've got too much stuff!$"
 
 Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
-    .string "That cruise ship S.S. ANNE is in\n"
+    .string "That cruise ship S.S. Anne is in\n"
     .string "Vermilion City.\p"
     .string "I hear there are lots of TRAINERS\n"
     .string "on board, too.\p"
@@ -385,7 +393,7 @@ Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
     .string "Go on and have a good time.$"
 
 Route25_SeaCottage_Text_CheckOutRareMonsOnPC::
-    .string "BILL: Feel like checking out some\n"
+    .string "Feel like checking out some\n"
     .string "of my rare Pokémon on my PC?\p"
     .string "Go on, check out my PC.$"
 

@@ -21,7 +21,7 @@ Route4_Text_TrippedOverGeodude::
     .string "Pokémon, GEODUDE!$"
 
 Route4_Text_CrissyIntro::
-    .string "I came to MT. MOON in search of\n"
+    .string "I came to Mt. Moon in search of\n"
     .string "mushroom Pokémon.$"
 
 Route4_Text_CrissyDefeat::
@@ -33,12 +33,12 @@ Route4_Text_CrissyPostBattle::
     .string "I think I got them all.$"
 
 Route4_Text_MtMoonEntrance::
-    .string "MT. MOON\n"
+    .string "Mt. Moon\n"
     .string "Tunnel Entrance$"
 
 Route4_Text_RouteSign::
     .string "Route 4\n"
-    .string "MT. MOON - Cerulean City$"
+    .string "Mt. Moon - Cerulean City$"
 
 Text_BlackBeltGuy_BitFeisty::
     .string "Sorry, my partner can be a bit feisty.\p"
