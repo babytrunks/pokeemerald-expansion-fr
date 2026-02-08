@@ -4510,7 +4510,7 @@ static void HandleTurnActionSelectionState(void)
                     MarkBattlerForControllerExec(battler);
                     break;
                 case B_ACTION_BATTLE_INFO:
-                    BtlController_EmitDebugMenu(battler, B_COMM_TO_CONTROLLER);
+                    BtlController_EmitBattleInfoMenu(battler, B_COMM_TO_CONTROLLER);
                     MarkBattlerForControllerExec(battler);
                     break;
                 }

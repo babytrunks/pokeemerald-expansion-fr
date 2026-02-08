@@ -10,6 +10,7 @@
 #include "battle_tv.h"
 #include "battle_z_move.h"
 #include "battle_gimmick.h"
+#include "battle_info_menu.h"
 #include "bg.h"
 #include "data.h"
 #include "item.h"
@@ -404,7 +405,7 @@ static void HandleInputChooseAction(u32 battler)
     }
     else if (JOY_NEW(R_BUTTON))
     {
-        BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_DEBUG, 0);
+        BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_BATTLE_INFO, 0);
         BtlController_Complete(battler);
     }
     else if (B_LAST_USED_BALL == TRUE && B_LAST_USED_BALL_CYCLE == FALSE
@@ -2451,7 +2452,7 @@ static void PlayerHandleBattleDebug(u32 battler)
 static void PlayerHandleBattleInfoMenu(u32 battler)
 {
     BeginNormalPaletteFade(-1, 0, 0, 0x10, 0);
-    SetMainCallback2(CB2_BattleDebugMenu);
+    SetMainCallback2(CB2_BattleInfoMenu);
     gBattlerControllerFuncs[battler] = Controller_WaitForDebug;
 }
 
