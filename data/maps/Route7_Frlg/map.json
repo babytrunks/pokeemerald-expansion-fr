@@ -32,6 +32,19 @@
       "y": 12,
       "target_local_id": "LOCALID_CELADON_BORDER_TREE",
       "target_map": "MAP_CELADON_CITY"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 15,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_110_PASSHO",
+      "script": "BerryTreeScript",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -62,8 +75,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 16,
-      "y": 15,
+      "x": 14,
+      "y": 0,
       "elevation": 3,
       "item": "ITEM_WEPEAR_BERRY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE7_WEPEAR_BERRY",

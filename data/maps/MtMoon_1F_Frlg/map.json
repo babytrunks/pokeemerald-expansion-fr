@@ -145,7 +145,7 @@
       "flag": "FLAG_HIDE_MT_MOON_1F_BERRY_JUICE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
       "x": 42,
       "y": 35,
       "elevation": 3,
@@ -154,7 +154,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "MtMoon_1F_EventScript_ItemRareCandy",
+      "script": "MtMoon_1F_EventScript_ItemKalosFossil",
       "flag": "FLAG_HIDE_MT_MOON_1F_RARE_CANDY"
     },
     {

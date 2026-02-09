@@ -21,6 +21,7 @@
 #include "strings.h"
 #include "battle_ai_main.h"
 #include "battle_ai_util.h"
+#include "battle_util.h"
 #include "list_menu.h"
 #include "decompress.h"
 #include "trainer_pokemon_sprites.h"
@@ -64,6 +65,7 @@ enum
     LIST_ITEM_AI_PARTY,
     LIST_ITEM_STAT_STAGES,
     LIST_ITEM_SIDE_STATUS,
+    LIST_ITEM_WEATHER,
     LIST_ITEM_COUNT
 };
 
@@ -75,9 +77,10 @@ enum
 // const rom data
 static const struct ListMenuItem sMainListItems[] =
 {
-    {COMPOUND_STRING("AI Party"),     LIST_ITEM_AI_PARTY},
-    {COMPOUND_STRING("Stat Stages"),  LIST_ITEM_STAT_STAGES},
-    {COMPOUND_STRING("Side Status"),  LIST_ITEM_SIDE_STATUS},
+    {COMPOUND_STRING("Enemy Party"),      LIST_ITEM_AI_PARTY},
+    {COMPOUND_STRING("Stat Stages"),   LIST_ITEM_STAT_STAGES},
+    {COMPOUND_STRING("Side Status"),   LIST_ITEM_SIDE_STATUS},
+    {COMPOUND_STRING("Weather/Field Eff."), LIST_ITEM_WEATHER},
 };
 
 static const struct ListMenuTemplate sMainListTemplate =
@@ -86,7 +89,7 @@ static const struct ListMenuTemplate sMainListTemplate =
     .moveCursorFunc = NULL,
     .itemPrintFunc = NULL,
     .totalItems = ARRAY_COUNT(sMainListItems),
-    .maxShowed = 3,
+    .maxShowed = 4,
     .windowId = 0,
     .header_X = 0,
     .item_X = 8,
@@ -107,8 +110,8 @@ static const struct WindowTemplate sMainListWindowTemplate =
     .bg = 0,
     .tilemapLeft = 1,
     .tilemapTop = 3,
-    .width = 11,
-    .height = 6,
+    .width = 13,
+    .height = 8,
     .paletteNum = 0xF,
     .baseBlock = 0x1
 };
@@ -155,6 +158,7 @@ static void Task_InfoMenuFadeIn(u8 taskId);
 static void Task_ShowAiParty(u8 taskId);
 static void Task_ShowStatStages(u8 taskId);
 static void Task_ShowSideStatus(u8 taskId);
+static void Task_ShowWeather(u8 taskId);
 
 // code
 static struct BattleInfoMenu *GetStructPtr(u8 taskId)
@@ -291,6 +295,10 @@ static void Task_InfoMenuProcessInput(u8 taskId)
                 data->aiViewState = 0;
                 gTasks[taskId].func = Task_ShowSideStatus;
                 return;
+            case LIST_ITEM_WEATHER:
+                data->aiViewState = 0;
+                gTasks[taskId].func = Task_ShowWeather;
+                return;
             }
         }
     }
@@ -378,6 +386,9 @@ static void SwitchToMainMenuFromAiParty(u8 taskId)
     }
     ClearWindowTilemap(data->aiMovesWindowId);
     RemoveWindow(data->aiMovesWindowId);
+
+    PutWindowTilemap(data->mainListWindowId);
+    CopyWindowToVram(data->mainListWindowId, COPYWIN_FULL);
 
     gTasks[taskId].func = Task_InfoMenuProcessInput;
 }
@@ -502,6 +513,9 @@ static void SwitchToMainMenuFromSubView(u8 taskId)
     ClearWindowTilemap(data->aiMovesWindowId);
     RemoveWindow(data->aiMovesWindowId);
 
+    PutWindowTilemap(data->mainListWindowId);
+    CopyWindowToVram(data->mainListWindowId, COPYWIN_FULL);
+
     gTasks[taskId].func = Task_InfoMenuProcessInput;
 }
 
@@ -580,53 +594,95 @@ static u16 GetSideStatusTimer(const struct SideTimer *sideTimer, u32 index)
     }
 }
 
-static void PrintSideStatusInfo(struct BattleInfoMenu *data)
+static u32 PrintSideStatusForSide(struct BattleInfoMenu *data, u32 side, u32 yPos)
 {
-    u32 i, side;
+    u32 i;
     u8 text[30];
     u8 *txtPtr;
+    bool8 anyActive = FALSE;
+
+    // Side statuses (Reflect, Light Screen, etc.)
+    for (i = 0; i < ARRAY_COUNT(sSideStatusEntries); i++)
+    {
+        if (gSideStatuses[side] & sSideStatusEntries[i].statusFlag)
+        {
+            u16 timer = GetSideStatusTimer(&gSideTimers[side], i);
+            txtPtr = StringCopy(text, sSideStatusEntries[i].name);
+            *txtPtr++ = CHAR_SPACE;
+            txtPtr = ConvertIntToDecimalStringN(txtPtr, timer, STR_CONV_MODE_LEFT_ALIGN, 2);
+            *txtPtr = EOS;
+            AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+            yPos += 12;
+            anyActive = TRUE;
+        }
+    }
+
+    // Hazards
+    if (IsHazardOnSide(side, HAZARDS_STEALTH_ROCK))
+    {
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, COMPOUND_STRING("Stealth Rock"), 3, yPos, 0, NULL);
+        yPos += 12;
+        anyActive = TRUE;
+    }
+    if (IsHazardOnSide(side, HAZARDS_SPIKES))
+    {
+        txtPtr = StringCopy(text, COMPOUND_STRING("Spikes x"));
+        txtPtr = ConvertIntToDecimalStringN(txtPtr, gSideTimers[side].spikesAmount, STR_CONV_MODE_LEFT_ALIGN, 1);
+        *txtPtr = EOS;
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+        yPos += 12;
+        anyActive = TRUE;
+    }
+    if (IsHazardOnSide(side, HAZARDS_TOXIC_SPIKES))
+    {
+        txtPtr = StringCopy(text, COMPOUND_STRING("Toxic Spikes x"));
+        txtPtr = ConvertIntToDecimalStringN(txtPtr, gSideTimers[side].toxicSpikesAmount, STR_CONV_MODE_LEFT_ALIGN, 1);
+        *txtPtr = EOS;
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+        yPos += 12;
+        anyActive = TRUE;
+    }
+    if (IsHazardOnSide(side, HAZARDS_STICKY_WEB))
+    {
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, COMPOUND_STRING("Sticky Web"), 3, yPos, 0, NULL);
+        yPos += 12;
+        anyActive = TRUE;
+    }
+    if (IsHazardOnSide(side, HAZARDS_STEELSURGE))
+    {
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, COMPOUND_STRING("Steelsurge"), 3, yPos, 0, NULL);
+        yPos += 12;
+        anyActive = TRUE;
+    }
+
+    if (!anyActive)
+    {
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, COMPOUND_STRING("None"), 3, yPos, 0, NULL);
+        yPos += 12;
+    }
+
+    return yPos;
+}
+
+static void PrintSideStatusInfo(struct BattleInfoMenu *data)
+{
+    u32 yPos;
 
     FillWindowPixelBuffer(data->aiMovesWindowId, 0x11);
 
-    // Player side header
-    AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("Player Side"), 3, 0, 0, NULL);
-    side = B_SIDE_PLAYER;
-    for (i = 0; i < ARRAY_COUNT(sSideStatusEntries); i++)
-    {
-        u16 timer = GetSideStatusTimer(&gSideTimers[side], i);
-        txtPtr = StringCopy(text, sSideStatusEntries[i].name);
-        *txtPtr++ = CHAR_SPACE;
-        if (gSideStatuses[side] & sSideStatusEntries[i].statusFlag)
-        {
-            txtPtr = ConvertIntToDecimalStringN(txtPtr, timer, STR_CONV_MODE_LEFT_ALIGN, 2);
-        }
-        else
-        {
-            *txtPtr++ = CHAR_HYPHEN;
-        }
-        *txtPtr = EOS;
-        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, 15 + i * 12, 0, NULL);
-    }
+    yPos = 0;
 
-    // Opponent side header
-    AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("Opponent Side"), 3, 15 + ARRAY_COUNT(sSideStatusEntries) * 12 + 5, 0, NULL);
-    side = B_SIDE_OPPONENT;
-    for (i = 0; i < ARRAY_COUNT(sSideStatusEntries); i++)
-    {
-        u16 timer = GetSideStatusTimer(&gSideTimers[side], i);
-        txtPtr = StringCopy(text, sSideStatusEntries[i].name);
-        *txtPtr++ = CHAR_SPACE;
-        if (gSideStatuses[side] & sSideStatusEntries[i].statusFlag)
-        {
-            txtPtr = ConvertIntToDecimalStringN(txtPtr, timer, STR_CONV_MODE_LEFT_ALIGN, 2);
-        }
-        else
-        {
-            *txtPtr++ = CHAR_HYPHEN;
-        }
-        *txtPtr = EOS;
-        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, 15 + ARRAY_COUNT(sSideStatusEntries) * 12 + 20 + i * 12, 0, NULL);
-    }
+    // Player side
+    AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("Player Side"), 3, yPos, 0, NULL);
+    yPos += 15;
+    yPos = PrintSideStatusForSide(data, B_SIDE_PLAYER, yPos);
+
+    yPos += 5;
+
+    // Opponent side
+    AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("Opponent Side"), 3, yPos, 0, NULL);
+    yPos += 15;
+    PrintSideStatusForSide(data, B_SIDE_OPPONENT, yPos);
 
     CopyWindowToVram(data->aiMovesWindowId, COPYWIN_FULL);
 }
@@ -646,6 +702,155 @@ static void Task_ShowSideStatus(u8 taskId)
         data->aiMovesWindowId = AddWindow(&winTemplate);
         PutWindowTilemap(data->aiMovesWindowId);
         PrintSideStatusInfo(data);
+        data->aiViewState++;
+        break;
+    case 1:
+        if (JOY_NEW(SELECT_BUTTON | B_BUTTON))
+        {
+            SwitchToMainMenuFromSubView(taskId);
+            HideBg(1);
+            ShowBg(0);
+            return;
+        }
+        break;
+    }
+}
+
+// ==================== WEATHER / FIELD VIEW ====================
+
+static void PrintWeatherInfo(struct BattleInfoMenu *data)
+{
+    u32 yPos;
+    u8 text[30];
+    u8 *txtPtr;
+
+    FillWindowPixelBuffer(data->aiMovesWindowId, 0x11);
+
+    yPos = 0;
+
+    // Weather
+    AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("Weather"), 3, yPos, 0, NULL);
+    yPos += 15;
+
+    if (gBattleWeather == B_WEATHER_NONE)
+    {
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, COMPOUND_STRING("None"), 3, yPos, 0, NULL);
+        yPos += 12;
+    }
+    else
+    {
+        if (gBattleWeather & B_WEATHER_RAIN)
+            txtPtr = StringCopy(text, COMPOUND_STRING("Rain"));
+        else if (gBattleWeather & B_WEATHER_SUN)
+            txtPtr = StringCopy(text, COMPOUND_STRING("Sun"));
+        else if (gBattleWeather & B_WEATHER_SANDSTORM)
+            txtPtr = StringCopy(text, COMPOUND_STRING("Sandstorm"));
+        else if (gBattleWeather & B_WEATHER_HAIL)
+            txtPtr = StringCopy(text, COMPOUND_STRING("Hail"));
+        else if (gBattleWeather & B_WEATHER_SNOW)
+            txtPtr = StringCopy(text, COMPOUND_STRING("Snow"));
+        else if (gBattleWeather & B_WEATHER_STRONG_WINDS)
+            txtPtr = StringCopy(text, COMPOUND_STRING("Strong Winds"));
+        else if (gBattleWeather & B_WEATHER_FOG)
+            txtPtr = StringCopy(text, COMPOUND_STRING("Fog"));
+        else
+            txtPtr = StringCopy(text, COMPOUND_STRING("Unknown"));
+        if (gWishFutureKnock.weatherDuration > 0)
+        {
+            *txtPtr++ = CHAR_SPACE;
+            txtPtr = ConvertIntToDecimalStringN(txtPtr, gWishFutureKnock.weatherDuration, STR_CONV_MODE_LEFT_ALIGN, 2);
+        }
+        *txtPtr = EOS;
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+        yPos += 12;
+    }
+
+    yPos += 5;
+
+    // Field effects
+    AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("Field Effects"), 3, yPos, 0, NULL);
+    yPos += 15;
+    {
+        bool8 anyActive = FALSE;
+
+        if (gFieldStatuses & STATUS_FIELD_TRICK_ROOM)
+        {
+            txtPtr = StringCopy(text, COMPOUND_STRING("Trick Room "));
+            txtPtr = ConvertIntToDecimalStringN(txtPtr, gFieldTimers.trickRoomTimer, STR_CONV_MODE_LEFT_ALIGN, 2);
+            *txtPtr = EOS;
+            AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+            yPos += 12;
+            anyActive = TRUE;
+        }
+        if (gFieldStatuses & STATUS_FIELD_GRAVITY)
+        {
+            txtPtr = StringCopy(text, COMPOUND_STRING("Gravity "));
+            txtPtr = ConvertIntToDecimalStringN(txtPtr, gFieldTimers.gravityTimer, STR_CONV_MODE_LEFT_ALIGN, 2);
+            *txtPtr = EOS;
+            AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+            yPos += 12;
+            anyActive = TRUE;
+        }
+        if (gFieldStatuses & STATUS_FIELD_MAGIC_ROOM)
+        {
+            txtPtr = StringCopy(text, COMPOUND_STRING("Magic Room "));
+            txtPtr = ConvertIntToDecimalStringN(txtPtr, gFieldTimers.magicRoomTimer, STR_CONV_MODE_LEFT_ALIGN, 2);
+            *txtPtr = EOS;
+            AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+            yPos += 12;
+            anyActive = TRUE;
+        }
+        if (gFieldStatuses & STATUS_FIELD_WONDER_ROOM)
+        {
+            txtPtr = StringCopy(text, COMPOUND_STRING("Wonder Room "));
+            txtPtr = ConvertIntToDecimalStringN(txtPtr, gFieldTimers.wonderRoomTimer, STR_CONV_MODE_LEFT_ALIGN, 2);
+            *txtPtr = EOS;
+            AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+            yPos += 12;
+            anyActive = TRUE;
+        }
+        if (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY)
+        {
+            if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+                txtPtr = StringCopy(text, COMPOUND_STRING("Grassy Terrain "));
+            else if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
+                txtPtr = StringCopy(text, COMPOUND_STRING("Misty Terrain "));
+            else if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
+                txtPtr = StringCopy(text, COMPOUND_STRING("Electric Terrain "));
+            else
+                txtPtr = StringCopy(text, COMPOUND_STRING("Psychic Terrain "));
+
+            txtPtr = ConvertIntToDecimalStringN(txtPtr, gFieldTimers.terrainTimer, STR_CONV_MODE_LEFT_ALIGN, 2);
+            *txtPtr = EOS;
+            AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, text, 3, yPos, 0, NULL);
+            yPos += 12;
+            anyActive = TRUE;
+        }
+
+        if (!anyActive)
+        {
+            AddTextPrinterParameterized(data->aiMovesWindowId, FONT_SMALL, COMPOUND_STRING("None"), 3, yPos, 0, NULL);
+        }
+    }
+
+    CopyWindowToVram(data->aiMovesWindowId, COPYWIN_FULL);
+}
+
+static void Task_ShowWeather(u8 taskId)
+{
+    struct WindowTemplate winTemplate;
+    struct BattleInfoMenu *data = GetStructPtr(taskId);
+
+    switch (data->aiViewState)
+    {
+    case 0:
+        HideBg(0);
+        ShowBg(1);
+
+        winTemplate = CreateWindowTemplate(1, 0, 0, 26, 20, 15, 0x200);
+        data->aiMovesWindowId = AddWindow(&winTemplate);
+        PutWindowTilemap(data->aiMovesWindowId);
+        PrintWeatherInfo(data);
         data->aiViewState++;
         break;
     case 1:

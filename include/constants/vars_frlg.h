@@ -176,7 +176,7 @@
 #define VAR_SS_ANNE_TREVOR_EDMOND_BATTLE                0x40A0
 #define VAR_PRESET_TOTEM_BOSS                           0x40A1
 #define VAR_SILPH_CO_POLICEMAN_GAVE_MEGA_RING           0x40A2
-#define VAR_0x40A3                 0x40A3
+#define VAR_SCRIPT_TEMP                                 0x40A3
 #define VAR_0x40A4                 0x40A4
 #define VAR_0x40A5                 0x40A5
 #define VAR_0x40A6                 0x40A6

@@ -3079,3 +3079,10 @@
     pokevial VIAL_INCREASE VIAL_SIZE 1
     specialvar VAR_RESULT,PokevialRefill
     .endm
+
+	@ Stores a random integer between 0 and limit (exclusive of limit) in VAR_RESULT using trainerId as a seed
+	.macro randomSeeded limit:req
+	callnative BufferRandomSeed
+	.2byte \limit
+	.endm
+	

@@ -2139,6 +2139,14 @@
 #define FLAG_REVIVED_DOME                                0
 #define FLAG_REVIVED_HELIX                               0
 #define FLAG_REVIVED_AMBER                               0
+#define FLAG_REVIVED_ROOT                                0
+#define FLAG_REVIVED_CLAW                                0
+#define FLAG_REVIVED_ARMOR                               0
+#define FLAG_REVIVED_SKULL                               0
+#define FLAG_REVIVED_COVER                               0
+#define FLAG_REVIVED_PLUME                               0
+#define FLAG_REVIVED_JAW                                 0
+#define FLAG_REVIVED_SAIL                                0
 #define FLAG_GOT_HM06                                    0
 #define FLAG_FOUGHT_LUGIA                                0
 #define FLAG_FOUGHT_HO_OH                                0

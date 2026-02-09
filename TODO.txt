@@ -17,8 +17,8 @@ HIGHEST PRIORITY:
 - Testing, obviously
 
 MEDIUM PRIORITY:
-- Convert rest of trainers into trainers.party format (babytrunks has script for this)
-- Trainer battle sprites, new object events
+- Convert rest of trainers into trainers.party format 
+- Trainer battle sprites, new object events (mostly done)
 - FRU Exclusive Megas, Regional forms
 - FRU Exclusive Items/Functionality
 - FRU Exclusive moves (there aren't many ?)
@@ -26,7 +26,6 @@ MEDIUM PRIORITY:
 - Randomization Options (Species, Ability, Moves)
 - Max Boxes is only 14, need to research on how to expand..
 - Some FRU Ability exclusive abilities still need implementation (can see //fru todo in constants/abilities.h)
-- Team Preview
 
 LOW PRIORITY:
 - Music (Team Rocket battle, Rival battle, Johto Rival battle, etc )
@@ -35,8 +34,6 @@ LOW PRIORITY:
 - Title screen update
 - Decapitalization (species name, moves, abilities, items are decapped, most in-game text are not)
 - Graphics updates (battle interface, textbox, etc)
-- Costume switching 
-    - https://github.com/rh-hideout/pokeemerald-expansion/compare/master...mudskipper13:pokeemerald:feature/outfits-system-rhh
 
 ALREADY DONE:
 - base stats (ability, stats, type changes) updated to match FRU
@@ -57,7 +54,9 @@ ALREADY DONE:
     - (this was like 1.1% of space but... fugg it)
 - Implement dynamic trainer levelling 
     - https://github.com/GraionDilach/spinarakgreen/wiki/Dynamic-level-scaling-(pokeemerald%E2%80%90expansion)
-
+- Team Preview DONE (Battle Info is essentially improved version)
+- Costume switching DONE (implementation in, just need to add more costumes)
+    - https://github.com/rh-hideout/pokeemerald-expansion/compare/master...mudskipper13:pokeemerald:feature/outfits-system-rhh
 
 Stuff going to be out of scope:
 Raid battles (probably replace with hidden grottos)

@@ -42,8 +42,19 @@ MtMoon_B2F_EventScript_ItemBerryJuice::
 	finditem ITEM_BERRY_JUICE
 	end
 
-MtMoon_1F_EventScript_ItemRareCandy::
-	finditem ITEM_RARE_CANDY
+MtMoon_1F_EventScript_ItemKalosFossil::
+	randomSeeded 2
+	switch VAR_RESULT
+	case 0, MtMoon_B2F_EventScript_JawFossil
+	case 1, MtMoon_B2F_EventScript_SailFossil
+	end
+
+MtMoon_B2F_EventScript_JawFossil:
+	finditem ITEM_JAW_FOSSIL
+	end
+
+MtMoon_B2F_EventScript_SailFossil:
+	finditem ITEM_SAIL_FOSSIL
 	end
 
 MtMoon_1F_EventScript_ItemEscapeRope::
@@ -54,8 +65,19 @@ MtMoon_1F_EventScript_ItemMoonStone::
 	finditem ITEM_MOON_STONE
 	end
 
-MtMoon_B2F_EventScript_ItemGeniusFeather::
-	finditem ITEM_GENIUS_FEATHER
+MtMoon_B2F_EventScript_ItemHoennFossil::
+	randomSeeded 2
+	switch VAR_RESULT
+	case 0, MtMoon_B2F_EventScript_ClawFossil
+	case 1, MtMoon_B2F_EventScript_RootFossil
+	end
+
+MtMoon_B2F_EventScript_ClawFossil:
+	finditem ITEM_CLAW_FOSSIL
+	end
+
+MtMoon_B2F_EventScript_RootFossil:
+	finditem ITEM_ROOT_FOSSIL
 	end
 
 MtMoon_B2F_EventScript_ItemTMHiddenPower::
@@ -447,8 +469,19 @@ ViridianForest_EventScript_ItemResistFeather::
 	finditem ITEM_RESIST_FEATHER
 	end
 
-MtMoon_B2F_EventScript_ItemHealth_Feather::
-	finditem ITEM_HEALTH_FEATHER
+MtMoon_B2F_EventScript_ItemSinnohFossil::
+	randomSeeded 2
+	switch VAR_RESULT
+	case 0, MtMoon_B2F_EventScript_SkullFossil
+	case 1, MtMoon_B2F_EventScript_ArmorFossil
+	end
+
+MtMoon_B2F_EventScript_SkullFossil:
+	finditem ITEM_SKULL_FOSSIL
+	end
+
+MtMoon_B2F_EventScript_ArmorFossil:
+	finditem ITEM_ARMOR_FOSSIL
 	end
 
 MtMoon_B2F_EventScript_ItemCleverFeather::
@@ -479,6 +512,10 @@ Route8_EventScript_ItemLaxMint::
 	finditem ITEM_LAX_MINT
 	end
 
+RockTunnel_1F_EventScript_ItemFossilizedBird::
+	finditem ITEM_FOSSILIZED_BIRD
+	end
+
 RockTunnel_1F_EventScript_ItemRedCard::
 	finditem ITEM_RED_CARD
 	end
@@ -491,13 +528,21 @@ RockTunnel_1F_EventScript_ItemEverstone::
 	finditem ITEM_EVERSTONE
 	end
 
-RockTunnel_B1F_EventScript_ItemCleverFeather::
-	finditem ITEM_CLEVER_FEATHER
+RockTunnel_B1F_EventScript_ItemSinnohFossil::
+	randomSeeded 2
+	switch VAR_RESULT
+	case 0, MtMoon_B2F_EventScript_ArmorFossil
+	case 1, MtMoon_B2F_EventScript_SkullFossil
 	end
 
-RockTunnel_B1F_EventScript_ItemGeniusFeather::
-	finditem ITEM_GENIUS_FEATHER
+RockTunnel_B1F_EventScript_ItemFossilisedFish::
+	finditem ITEM_FOSSILIZED_FISH
 	end
+
+RockTunnel_B1F_EventScript_ItemFossilizedDino::
+	finditem ITEM_FOSSILIZED_DINO
+	end
+
 
 SilphCo_8F_EventScript_ItemIron::
 	finditem ITEM_IRON

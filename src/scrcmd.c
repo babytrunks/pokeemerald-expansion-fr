@@ -65,7 +65,8 @@
 #include "constants/event_objects.h"
 #include "constants/map_types.h"
 #include "pokevial.h" //Pokevial Branch
-
+#include "util.h"
+#include "new_game.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
@@ -3562,4 +3563,20 @@ bool8 ScrCmd_subquestmenu(struct ScriptContext *ctx)
     }
 
     return TRUE;
+}
+
+void BufferRandomSeed(struct ScriptContext *ctx)
+{
+    u16 randomLength = ScriptReadHalfword(ctx);
+    u32 id = GetTrainerId(gSaveBlock2Ptr->playerTrainerId); 
+    if (id == 0 ) 
+        id = 1;
+    u32 index;
+    murmurhash2a_init(index);
+    murmurhash2a_update(index, id);
+    murmurhash2a_final(index);
+    
+    index = index % (u32) randomLength;
+
+    gSpecialVar_Result = index; 
 }

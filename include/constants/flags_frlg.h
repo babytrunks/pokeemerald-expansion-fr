@@ -519,7 +519,7 @@
 #define FLAG_DEFEATED_PRYCE                                     0x21A
 #define FLAG_HIDE_MTMOON_TM_HIDDEN_POWER                        0x21B
 #define FLAG_CERULEAN_GAVE_LUXURY_BALL                          0x21C
-#define FLAG_0x21D               0x21D
+#define FLAG_HIDE_ROCK_TUNNEL_KALOS_FOSSIL                      0x21D
 #define FLAG_0x21E               0x21E
 #define FLAG_0x21F               0x21F
 #define FLAG_0x220               0x220
@@ -752,15 +752,14 @@
 #define FLAG_NO_ROOM_FOR_JOYFUL_GAME_CORNER_MOON_STONE   0x2FE
 #define FLAG_OAKS_RATING_IS_VIA_PC                       0x2FF
 
-// Unused?
-#define FLAG_0x300               0x300
-#define FLAG_0x301               0x301
-#define FLAG_0x302               0x302
-#define FLAG_0x303               0x303
-#define FLAG_0x304               0x304
-#define FLAG_0x305               0x305
-#define FLAG_0x306               0x306
-#define FLAG_0x307               0x307
+#define FLAG_0x300                                0x300
+#define FLAG_0x301                                0x301
+#define FLAG_0x302                               0x302
+#define FLAG_0x303                               0x303
+#define FLAG_0x304                               0x304
+#define FLAG_0x305                               0x305
+#define FLAG_0x306                                 0x306
+#define FLAG_0x307                                0x307
 #define FLAG_0x308               0x308
 #define FLAG_0x309               0x309
 #define FLAG_0x30A               0x30A
