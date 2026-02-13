@@ -11052,6 +11052,10 @@ bool32 CanMoveSkipAccuracyCalc(u32 battlerAtk, u32 battlerDef, enum Ability abil
         effect = TRUE;
         ability = ABILITY_NO_GUARD;
     }
+    else if (GetBattlerHoldEffectParam(battlerAtk) == HOLD_EFFECT_REAPER_CLOTH && gBattleMons[battlerAtk].species == SPECIES_DUSKNOIR)
+    {
+        effect = TRUE;
+    }
     // If the target is under the effects of Telekinesis, and the move isn't a OH-KO move, move hits.
     else if (gBattleMons[battlerDef].volatiles.telekinesis
           && !IsSemiInvulnerable(battlerDef, CHECK_ALL)

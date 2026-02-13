@@ -3,7 +3,7 @@
   "name": "PetalburgCity",
   "layout": "LAYOUT_PETALBURG_CITY",
   "music": "MUS_PETALBURG",
-  "region_map_section": "MAPSEC_PETALBURG_CITY",
+  "region_map_section": "MAPSEC_ONE_ISLAND",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
   "map_type": "MAP_TYPE_CITY",
@@ -11,7 +11,9 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "region": "REGION_KANTO",
   "connections": [
     {
       "map": "MAP_ROUTE104",
@@ -157,7 +159,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 7,
+      "x": 6,
       "y": 5,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_CITY_WALLYS_HOUSE",
@@ -171,7 +173,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 20,
+      "x": 21,
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_PETALBURG_CITY_POKEMON_CENTER_1F",
@@ -285,7 +287,7 @@
     },
     {
       "type": "sign",
-      "x": 21,
+      "x": 19,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -301,7 +303,7 @@
     },
     {
       "type": "sign",
-      "x": 22,
+      "x": 20,
       "y": 16,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",

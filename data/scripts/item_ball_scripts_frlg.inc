@@ -193,8 +193,8 @@ RocketHideout_B4F_EventScript_ItemCalcium::
 	finditem ITEM_CALCIUM
 	end
 
-PokemonTower_3F_EventScript_ItemScopeLens::
-	finditem ITEM_SPELL_TAG
+PokemonTower_3F_EventScript_ItemReaperCloth::
+	finditem ITEM_REAPER_CLOTH
 	end
 
 PokemonTower_4F_EventScript_ItemMetronome::

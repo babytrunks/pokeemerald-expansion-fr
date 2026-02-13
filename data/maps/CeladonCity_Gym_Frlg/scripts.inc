@@ -102,12 +102,12 @@ CeladonCity_Gym_Text_ErikaIntro::
     .string "It's so pleasant…\p"
     .string "…Oh, dear…\n"
     .string "I must have dozed off. Welcome.\p"
-    .string "My name is ERIKA.\n"
-    .string "I am the LEADER of CELADON GYM.\p"
+    .string "My name is Erika.\n"
+    .string "I am the Leader of Celadon Gym.\p"
     .string "I am a student of the art of\n"
     .string "flower arranging.\p"
     .string "My Pokémon are solely of the\n"
-    .string "GRASS type.\p"
+    .string "Grass type.\p"
     .string "…Oh, I'm sorry, I had no idea that\n"
     .string "you wished to challenge me.\p"
     .string "Very well, but I shall not lose.{PLAY_BGM MUS_RG_ENCOUNTER_GYM_LEADER}$"
@@ -117,7 +117,7 @@ CeladonCity_Gym_Text_ErikaDefeat::
     .string "I concede defeat.\l"
     .string "You are remarkably strong.\p"
     .string "I must confer on you the\n"
-    .string "RAINBOWBADGE.$"
+    .string "Rainbow Badge.$"
 
 CeladonCity_Gym_Text_ErikaPostBattle::
     .string "You are cataloging Pokémon?\n"
@@ -126,18 +126,17 @@ CeladonCity_Gym_Text_ErikaPostBattle::
     .string "they were unattractive.$"
 
 CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
-    .string "The RAINBOWBADGE will make\n"
-    .string "Pokémon up to Lv. 50 obey.\p"
-    .string "It also allows Pokémon to use\n"
-    .string "STRENGTH in and out of battle.\p"
+    .string "The Rainbow Badge will allow\n"
+    .string "Pokémon to use Strength out of\l"
+    .string "battle.\p"
     .string "Please also take this with you.$"
 
 CeladonCity_Gym_Text_ReceivedTM19FromErika::
     .string "{PLAYER} received TM19\n"
-    .string "from ERIKA.$"
+    .string "from Erika.$"
 
 CeladonCity_Gym_Text_ExplainTM19::
-    .string "TM19 contains GIGA DRAIN.\p"
+    .string "TM19 contains Giga Drain.\p"
     .string "Half the damage it inflicts is\n"
     .string "drained to heal your Pokémon.\p"
     .string "Wouldn't you agree that it's a\n"
@@ -156,7 +155,7 @@ CeladonCity_Gym_Text_KayDefeat::
 
 CeladonCity_Gym_Text_KayPostBattle::
     .string "Bleaah!\n"
-    .string "I hope ERIKA wipes you out!$"
+    .string "I hope Erika wipes you out!$"
 
 CeladonCity_Gym_Text_BridgetIntro::
     .string "Oh, welcome.\n"

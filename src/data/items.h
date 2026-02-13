@@ -411,9 +411,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Luxury Ball"),
         .price = (I_PRICE >= GEN_8) ? 3000 : 1000,
         .description = COMPOUND_STRING(
-            "A cozy Ball that\n"
-            "makes Pokémon\n"
-            "more friendly."),
+            "A Ball that gives\n"
+            "caught Pokémon\n"
+            "3 Perfect IVs."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -4420,10 +4420,11 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Reaper Cloth"),
         .pluralName = ITEM_PLURAL_NAME("Reaper Cloths"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .holdEffect = HOLD_EFFECT_REAPER_CLOTH,
         .description = COMPOUND_STRING(
-            "Loved by a certain\n"
-            "Pokémon. Imbued\n"
-            "with spirit energy."),
+            "Moves don't miss\n"
+            "when held by a\n"
+            "Dusknoir."),
         .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,

@@ -1021,13 +1021,13 @@ u16 LockOutfit(u16 id)
 
 bool8 GetOutfitStatus(u16 id)
 {
-    return TRUE;
     u16 *ptr = GetOutfitPointer(id);
 
     // return false if GetOutfitPointer returns NULL
     if (!ptr)
         return FALSE;
-
+    return TRUE;
+    
     // return false if flag is not set
     if (!(((*ptr) >> (id & 7)) & 1))
         return FALSE;

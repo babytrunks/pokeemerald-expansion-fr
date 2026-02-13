@@ -614,4 +614,7 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
     {
         .onSwitchIn = TRUE,
     },
+    [HOLD_EFFECT_REAPER_CLOTH] = 
+    {
+    }
 };
