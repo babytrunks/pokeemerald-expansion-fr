@@ -5,25 +5,25 @@
 
 #define TRAINER_NONE                               0
 #define TRAINER_YOUNGSTER_BEN                      1
-#define TRAINER_YOUNGSTER_CALVIN                   2
-#define TRAINER_YOUNGSTER_JOSH                     3
+#define TRAINER_YOUNGSTER_CALVIN                   2 // unused
+#define TRAINER_YOUNGSTER_JOSH                     3 // unused
 #define TRAINER_YOUNGSTER_TIMMY                    4
 #define TRAINER_YOUNGSTER_JOEY                     5
-#define TRAINER_YOUNGSTER_DAN                      6
+#define TRAINER_YOUNGSTER_DAN                      6 // unused
 #define TRAINER_YOUNGSTER_CHAD                     7
 #define TRAINER_YOUNGSTER_TYLER                    8
 #define TRAINER_YOUNGSTER_EDDIE                    9
-#define TRAINER_YOUNGSTER_DILLON                   10
+#define TRAINER_YOUNGSTER_DILLON                   10 // unused
 #define TRAINER_YOUNGSTER_YASU                     11
-#define TRAINER_YOUNGSTER_DAVE                     12
+#define TRAINER_YOUNGSTER_DAVE                     12 // unused
 #define TRAINER_BRENDAN_1                          13
 #define TRAINER_BUG_CATCHER_RICK                   14
 #define TRAINER_BUG_CATCHER_DOUG                   15
 #define TRAINER_BUG_CATCHER_SAMMY                  16
 #define TRAINER_BUG_CATCHER_COLTON                 17
-#define TRAINER_BUG_CATCHER_GREG                   18
+#define TRAINER_BUG_CATCHER_GREG                   18 // unused
 #define TRAINER_BUG_CATCHER_JAMES                  19
-#define TRAINER_BUG_CATCHER_KENT                   20
+#define TRAINER_BUG_CATCHER_KENT                   20 // unused
 #define TRAINER_BUG_CATCHER_ROBBY                  21
 #define TRAINER_BUG_CATCHER_CALE                   22
 #define TRAINER_BUG_CATCHER_KEIGO                  23
@@ -60,7 +60,7 @@
 #define TRAINER_CAMPER_ETHAN                       54
 #define TRAINER_CAMPER_RICKY                       55
 #define TRAINER_CAMPER_JEFF                        56
-#define TRAINER_CAMPER_CHRIS                       57
+#define TRAINER_CAMPER_CHRIS                       57 // unused
 #define TRAINER_CAMPER_DREW                        58
 #define TRAINER_PICNICKER_DIANA                    59
 #define TRAINER_PICNICKER_NANCY                    60
@@ -69,7 +69,7 @@
 #define TRAINER_PICNICKER_ALICIA                   63
 #define TRAINER_PICNICKER_CAITLIN                  64
 #define TRAINER_PICNICKER_HEIDI                    65
-#define TRAINER_PICNICKER_CAROL                    66
+#define TRAINER_PICNICKER_CAROL                    66 // unused
 #define TRAINER_PICNICKER_SOFIA                    67
 #define TRAINER_PICNICKER_MARTHA                   68
 #define TRAINER_PICNICKER_TINA                     69
@@ -77,7 +77,7 @@
 #define TRAINER_POKEMANIAC_MARK                    71
 #define TRAINER_POKEMANIAC_HERMAN                  72
 #define TRAINER_POKEMANIAC_COOPER                  73
-#define TRAINER_POKEMANIAC_STEVE                   74
+#define TRAINER_POKEMANIAC_STEVE                   74 // unused
 #define TRAINER_POKEMANIAC_WINSTON                 75
 #define TRAINER_POKEMANIAC_DAWSON                  76
 #define TRAINER_POKEMANIAC_ASHTON                  77
@@ -93,17 +93,17 @@
 #define TRAINER_HIKER_MARCOS                       87
 #define TRAINER_HIKER_FRANKLIN                     88
 #define TRAINER_HIKER_NOB                          89
-#define TRAINER_HIKER_WAYNE                        90
+#define TRAINER_HIKER_WAYNE                        90 // unused
 #define TRAINER_HIKER_ALAN                         91
-#define TRAINER_HIKER_BRICE                        92
+#define TRAINER_HIKER_BRICE                        92 // unused
 #define TRAINER_HIKER_CLARK                        93
 #define TRAINER_HIKER_TRENT                        94
-#define TRAINER_HIKER_DUDLEY                       95
+#define TRAINER_HIKER_DUDLEY                       95 // unused
 #define TRAINER_HIKER_ALLEN                        96
 #define TRAINER_HIKER_ERIC                         97
 #define TRAINER_HIKER_LENNY                        98
 #define TRAINER_HIKER_OLIVER                       99
-#define TRAINER_HIKER_LUCAS                        100
+#define TRAINER_HIKER_LUCAS                        100 // unused
 #define TRAINER_BIKER_JARED                        101
 #define TRAINER_BIKER_MALIK                        102
 #define TRAINER_BIKER_ERNEST                       103
@@ -164,11 +164,11 @@
 #define TRAINER_CUE_BALL_CHASE                     158
 #define TRAINER_GAMER_HUGO                         159
 #define TRAINER_GAMER_JASPER                       160
-#define TRAINER_GAMER_DIRK                         161
+#define TRAINER_GAMER_DIRK                         161 // unused
 #define TRAINER_GAMER_DARIAN                       162
-#define TRAINER_GAMER_STAN                         163
+#define TRAINER_GAMER_STAN                         163 // unused
 #define TRAINER_GAMER_RICH                         164
-#define TRAINER_BEAUTY_BRIDGET                     165
+#define TRAINER_BEAUTY_BRIDGET                     165 // unused
 #define TRAINER_BEAUTY_TAMIA                       166
 #define TRAINER_BEAUTY_LORI                        167
 #define TRAINER_BEAUTY_LOLA                        168
@@ -265,7 +265,7 @@
 #define TRAINER_TEAM_ROCKET_GRUNT_9                259
 #define TRAINER_TEAM_ROCKET_GRUNT_10               260
 #define TRAINER_TEAM_ROCKET_GRUNT_11               261
-#define TRAINER_TEAM_ROCKET_GRUNT_12               262
+#define TRAINER_TEAM_ROCKET_GRUNT_12               262 // unused
 #define TRAINER_TEAM_ROCKET_GRUNT_13               263
 #define TRAINER_TEAM_ROCKET_GRUNT_14               264
 #define TRAINER_TEAM_ROCKET_GRUNT_15               265
@@ -345,18 +345,18 @@
 #define TRAINER_CHAMPION_FIRST_BULBASAUR           339
 #define TRAINER_CHAMPION_FIRST_CHARMANDER          340
 #define TRAINER_CHANNELER_PATRICIA                 341
-#define TRAINER_CHANNELER_CARLY                    342
+#define TRAINER_CHANNELER_CARLY                    342 // unused
 #define TRAINER_CHANNELER_HOPE                     343
 #define TRAINER_CHANNELER_PAULA                    344
 #define TRAINER_CHANNELER_LAUREL                   345
 #define TRAINER_CHANNELER_JODY                     346
-#define TRAINER_CHANNELER_TAMMY                    347
+#define TRAINER_CHANNELER_TAMMY                    347 // unused
 #define TRAINER_CHANNELER_RUTH                     348
 #define TRAINER_CHANNELER_KARINA                   349
-#define TRAINER_CHANNELER_JANAE                    350
+#define TRAINER_CHANNELER_JANAE                    350 // unused
 #define TRAINER_CHANNELER_ANGELICA                 351
 #define TRAINER_CHANNELER_EMILIA                   352
-#define TRAINER_CHANNELER_JENNIFER                 353
+#define TRAINER_CHANNELER_JENNIFER                 353 // unused
 #define TRAINER_CHANNELER_AMANDA                   354
 #define TRAINER_CHANNELER_STACY                    355
 #define TRAINER_CHANNELER_TASHA                    356
@@ -371,7 +371,7 @@
 #define TRAINER_PICNICKER_IRENE                    365
 #define TRAINER_PICNICKER_DANA                     366
 #define TRAINER_PICNICKER_ARIANA                   367
-#define TRAINER_PICNICKER_LEAH                     368
+#define TRAINER_PICNICKER_LEAH                     368 // unused 
 #define TRAINER_CAMPER_JUSTIN                      369
 #define TRAINER_PICNICKER_YAZMIN                   370
 #define TRAINER_PICNICKER_KINDRA                   371
@@ -420,7 +420,7 @@
 #define TRAINER_TWINS_ELI_ANNE_2                   414
 #define TRAINER_YOUNGSTER_JOHNSON                  415
 #define TRAINER_BIKER_RICARDO                      416
-#define TRAINER_BIKER_JAREN                        417
+#define TRAINER_BIKER_JAREN                        417 // unused
 #define TRAINER_TEAM_ROCKET_GRUNT_43               418
 #define TRAINER_TEAM_ROCKET_GRUNT_44               419
 #define TRAINER_TEAM_ROCKET_GRUNT_45               420

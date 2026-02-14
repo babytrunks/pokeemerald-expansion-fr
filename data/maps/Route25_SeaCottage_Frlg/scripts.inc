@@ -383,12 +383,12 @@ Route25_SeaCottage_Text_YouveGotTooMuchStuff::
     .string "You've got too much stuff!$"
 
 Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
-    .string "That cruise ship S.S. Anne is in\n"
-    .string "Vermilion City.\p"
-    .string "I hear there are lots of TRAINERS\n"
-    .string "on board, too.\p"
-    .string "They invited me to their party, but\n"
-    .string "I can't stand fancy do's.\p"
+    .string "That ship S.S. Anne is in Vermilion\n"
+    .string "City.\p"
+    .string "I hear its headed to a special\n"
+    .string "destination this time around.\p"
+    .string "They invited me to go, but I\n"
+    .string "can't stand leaving the region.\p"
     .string "Why don't you go instead of me?\n"
     .string "Go on and have a good time.$"
 

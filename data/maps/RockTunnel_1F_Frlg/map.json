@@ -11,10 +11,12 @@
   "allow_escaping": true,
   "allow_running": true,
   "show_map_name": true,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER_FRLG",
       "x": 26,
       "y": 28,
@@ -28,6 +30,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER_FRLG",
       "x": 39,
       "y": 27,
@@ -41,32 +44,35 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER_FRLG",
-      "x": 45,
-      "y": 24,
+      "x": 47,
+      "y": 26,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "RockTunnel_1F_EventScript_Leah",
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_HIKER_FRLG",
-      "x": 20,
+      "x": 26,
       "y": 17,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "RockTunnel_1F_EventScript_Lucas",
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_HIKER_FRLG",
       "x": 5,
       "y": 20,
@@ -80,6 +86,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_HIKER_FRLG",
       "x": 7,
       "y": 5,
@@ -93,6 +100,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_POKEMANIAC",
       "x": 27,
       "y": 10,
@@ -106,6 +114,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 37,
       "y": 5,
@@ -119,6 +128,7 @@
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_RED_CARD"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
       "x": 33,
       "y": 22,
@@ -132,6 +142,7 @@
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_NEVERMELTICE"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 22,
       "y": 22,
@@ -145,6 +156,7 @@
       "flag": "FLAG_HIDE_ROCK_TUNNEL_1F_EVERSTONE"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
       "x": 1,
       "y": 28,
@@ -213,6 +225,5 @@
       "script": "RockTunnel_1F_EventScript_RouteSign"
     }
   ],
-  "floor_number": 0,
   "region": "REGION_KANTO"
 }

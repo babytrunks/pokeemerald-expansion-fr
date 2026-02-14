@@ -838,7 +838,7 @@ Route110_Text_TwoRoads:
 	.string "Perhaps that is right and fair.$"
 
 Route110_Text_WalkOnTheLowRoad:
-	.string "I don't have a BIKE, so I'll take\n"
+	.string "I don't have a Bike, so I'll take\n"
 	.string "a leisurely walk on the low road.$"
 
 Route110_Text_BikeTechniques:
@@ -848,10 +848,8 @@ Route110_Text_BikeTechniques:
 	.string "reach only by using a BIKE technique.$"
 
 Route110_Text_WhichShouldIChoose:
-	.string "Which should I choose?\p"
-	.string "Make a beeline for MAUVILLE on\n"
-	.string "CYCLING ROAD, or take the low road\l"
-	.string "and look for Pokémon?$"
+	.string "Sorry, the Cycling Road is closed\p"
+	.string "at the moment$.\n"
 
 Route110_Text_CyclingChallengeResultSummary:
 	.string "Number of collisions:\n"

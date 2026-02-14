@@ -11,6 +11,7 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
@@ -26,6 +27,7 @@
   ],
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 19,
       "y": 8,
@@ -39,6 +41,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 16,
       "y": 17,
@@ -52,32 +55,35 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
-      "x": 31,
-      "y": 8,
+      "x": 30,
+      "y": 0,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "Route11_EventScript_Dillon",
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 28,
-      "y": 10,
+      "y": 0,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_RIGHT_LEFT_UP",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 8,
       "movement_range_y": 4,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "Route11_EventScript_Dave",
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 38,
       "y": 15,
@@ -91,6 +97,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 50,
       "y": 4,
@@ -104,6 +111,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ELECTRICIAN",
       "x": 42,
       "y": 8,
@@ -117,6 +125,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 50,
       "y": 14,
@@ -130,19 +139,21 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
-      "x": 57,
-      "y": 16,
+      "x": 29,
+      "y": 0,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "Route11_EventScript_Dirk",
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ELECTRICIAN",
       "x": 32,
       "y": 18,
@@ -156,6 +167,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 42,
       "y": 12,
@@ -169,6 +181,7 @@
       "flag": "FLAG_HIDE_ROUTE11_THUNDER_STONE"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 63,
       "y": 13,
@@ -182,6 +195,7 @@
       "flag": "FLAG_HIDE_ROUTE11_DREAM_BALL"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
       "x": 13,
       "y": 3,
@@ -196,6 +210,7 @@
     },
     {
       "local_id": "LOCALID_WHITNEY",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WHITNEY",
       "x": 57,
       "y": 5,
@@ -210,6 +225,7 @@
     },
     {
       "local_id": "LOCALID_ROUTE11_MILTANK",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILTANK)",
       "x": 57,
       "y": 4,
@@ -267,6 +283,5 @@
       "underfoot": false
     }
   ],
-  "floor_number": 0,
   "region": "REGION_KANTO"
 }

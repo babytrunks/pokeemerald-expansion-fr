@@ -11,6 +11,7 @@
   "allow_escaping": true,
   "allow_running": true,
   "show_map_name": true,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
@@ -21,6 +22,7 @@
   ],
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 35,
       "y": 65,
@@ -34,6 +36,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BOY",
       "x": 53,
       "y": 65,
@@ -47,22 +50,24 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER_FRLG",
-      "x": 49,
-      "y": 45,
+      "x": 37,
+      "y": 41,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianForest_EventScript_Rick",
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER_FRLG",
       "x": 47,
-      "y": 29,
+      "y": 30,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -73,6 +78,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER_FRLG",
       "x": 13,
       "y": 29,
@@ -86,6 +92,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 11,
       "y": 48,
@@ -99,6 +106,7 @@
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_RARE_CANDY"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 55,
       "y": 51,
@@ -112,6 +120,7 @@
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_WISE_GLASSES"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 28,
       "y": 41,
@@ -125,6 +134,7 @@
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_SILVER_POWDER"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BUG_CATCHER_FRLG",
       "x": 45,
       "y": 12,
@@ -139,6 +149,7 @@
     },
     {
       "local_id": "LOCALID_VIRIDIAN_LASS_REPEL_GIRL",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LASS_FRLG",
       "x": 29,
       "y": 25,
@@ -152,6 +163,7 @@
       "flag": "FLAG_INF_REPEL_GIRL"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 56,
       "y": 68,
@@ -166,6 +178,7 @@
     },
     {
       "local_id": "LOCALID_VIRIDIAN_FOREST_BRENDAN",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_RIVAL_BRENDAN_NORMAL",
       "x": 46,
       "y": 52,
@@ -180,6 +193,7 @@
     },
     {
       "local_id": "LOCALID_VIRIDIAN_FOREST_TREECKO",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TREECKO)",
       "x": 46,
       "y": 51,
@@ -193,6 +207,7 @@
       "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
       "x": 54,
       "y": 16,
@@ -349,6 +364,5 @@
       "underfoot": false
     }
   ],
-  "floor_number": 0,
   "region": "REGION_KANTO"
 }

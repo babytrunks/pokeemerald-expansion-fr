@@ -11,11 +11,13 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_SS_ANNE_CAPTAIN",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CAPTAIN",
       "x": 5,
       "y": 4,
@@ -65,6 +67,5 @@
       "script": "SSAnne_CaptainsOffice_EventScript_Book"
     }
   ],
-  "floor_number": 0,
   "region": "REGION_KANTO"
 }

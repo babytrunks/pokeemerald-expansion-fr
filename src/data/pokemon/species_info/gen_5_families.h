@@ -11148,7 +11148,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sMienfooLevelUpLearnset,
         .teachableLearnset = sMienfooTeachableLearnset,
         .eggMoveLearnset = sMienfooEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_MIENSHAO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MIENSHAO}),
     },
 
     [SPECIES_MIENSHAO] =
