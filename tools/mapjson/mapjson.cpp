@@ -636,8 +636,7 @@ void process_groups(string groups_filepath, vector<string> &map_filepaths, strin
         }
         string map_name = json_to_string(map_data, "name");
 
-        if ((version == "emerald" && region != "REGION_HOENN")
-         || (version == "firered" && region != "REGION_KANTO")) {
+        if (region != "REGION_HOENN" && region != "REGION_KANTO") {
             invalid_maps.push_back(map_name);
         }
     }
@@ -666,8 +665,7 @@ string generate_layout_headers_text(Json layouts_data) {
     for (auto &layout : layouts_data["layouts"].array_items()) {
         if (layout == Json::object()) continue;
         string layout_version = json_to_string(layout, "layout_version");
-        if ((version == "emerald" && layout_version != "emerald")
-         || (version == "firered" && layout_version != "frlg"))
+        if (layout_version != "emerald" && layout_version != "frlg")
             continue;
         string layoutName = json_to_string(layout, "name");
         string border_label = layoutName + "_Border";
@@ -716,7 +714,7 @@ string generate_layouts_table_text(Json layouts_data) {
 
     for (auto &layout : layouts_data["layouts"].array_items()) {
         string layout_version = json_to_string(layout, "layout_version");
-        if ((version == "emerald" && layout_version != "emerald") || (version == "firered" && layout_version != "frlg")) {
+        if (layout_version != "emerald" && layout_version != "frlg") {
             text << "\t.4byte NULL\n";
         } else {
             string layout_name = json_to_string(layout, "name", true);
