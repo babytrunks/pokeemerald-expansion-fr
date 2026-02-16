@@ -5701,3 +5701,64 @@ bool8 CheckAddCoins(void)
     else
         return TRUE;
 }
+
+// Furfrou Trimming - callnative functions for NPC grooming script
+
+void CheckIfPartyMonIsFurfrou(struct ScriptContext *ctx)
+{
+    u16 species;
+
+    if (gSpecialVar_0x8004 >= PARTY_SIZE)
+    {
+        gSpecialVar_Result = FALSE;
+        return;
+    }
+
+    species = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES);
+    switch (species)
+    {
+    case SPECIES_FURFROU_NATURAL:
+    case SPECIES_FURFROU_HEART:
+    case SPECIES_FURFROU_STAR:
+    case SPECIES_FURFROU_DIAMOND:
+    case SPECIES_FURFROU_DEBUTANTE:
+    case SPECIES_FURFROU_MATRON:
+    case SPECIES_FURFROU_DANDY:
+    case SPECIES_FURFROU_LA_REINE:
+    case SPECIES_FURFROU_KABUKI:
+    case SPECIES_FURFROU_PHARAOH:
+        gSpecialVar_Result = TRUE;
+        break;
+    default:
+        gSpecialVar_Result = FALSE;
+        break;
+    }
+}
+
+// Sets the Furfrou at party slot gSpecialVar_0x8004 to the form in gSpecialVar_0x8005.
+void SetFurfrouForm(struct ScriptContext *ctx)
+{
+    static const u16 sFurfrouForms[] = {
+        [0] = SPECIES_FURFROU_HEART,
+        [1] = SPECIES_FURFROU_STAR,
+        [2] = SPECIES_FURFROU_DIAMOND,
+        [3] = SPECIES_FURFROU_DEBUTANTE,
+        [4] = SPECIES_FURFROU_MATRON,
+        [5] = SPECIES_FURFROU_DANDY,
+        [6] = SPECIES_FURFROU_LA_REINE,
+        [7] = SPECIES_FURFROU_KABUKI,
+        [8] = SPECIES_FURFROU_PHARAOH,
+        [9] = SPECIES_FURFROU_NATURAL,
+    };
+    u16 targetSpecies;
+    struct Pokemon *mon;
+
+    if (gSpecialVar_0x8004 >= PARTY_SIZE || gSpecialVar_0x8005 >= ARRAY_COUNT(sFurfrouForms))
+        return;
+
+    targetSpecies = sFurfrouForms[gSpecialVar_0x8005];
+    mon = &gPlayerParty[gSpecialVar_0x8004];
+    SetMonData(mon, MON_DATA_SPECIES, &targetSpecies);
+    TrySetDayLimitToFormChange(mon);
+    CalculateMonStats(mon);
+}
