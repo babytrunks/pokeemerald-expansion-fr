@@ -14784,3 +14784,203 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Muk
 Level: 39
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_DAVID ===
+Name: DAVID
+Class: Swimmer M Frlg
+Pic: Swimmer M Frlg
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Carvanha
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ALICE ===
+Name: ALICE
+Class: Swimmer F Frlg
+Pic: Swimmer F Frlg
+Gender: Female
+Music: Swimmer
+Double Battle: No
+AI: Check Bad Move
+
+Goldeen
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Wingull
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Goldeen
+Level: 24
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_EDMOND ===
+Name: EDMOND
+Class: Sailor Frlg
+Pic: Sailor Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move
+
+Wingull
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_RICKY_1 ===
+Name: RICKY
+Class: Tuber Frlg
+Pic: Tuber F Frlg
+Gender: Male
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Zigzagoon
+Level: 13
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Sand Attack
+- Headbutt
+- Tail Whip
+- Surf
+
+=== TRAINER_LOLA_1 ===
+Name: LOLA
+Class: Tuber Frlg
+Pic: Tuber F Frlg
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Azurill
+Level: 12
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Azurill
+Level: 12
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_AUSTINA ===
+Name: AUSTINA
+Class: Tuber Frlg
+Pic: Tuber F Frlg
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Marill
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GWEN ===
+Name: GWEN
+Class: Tuber Frlg
+Pic: Tuber F Frlg
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Marill
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_CARTER ===
+Name: CARTER
+Class: Fisherman Frlg
+Pic: Fisherman Frlg
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Check Bad Move
+
+Wailmer
+Level: 25
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+Tentacruel
+Level: 25
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+
+=== TRAINER_MEL_AND_PAUL ===
+Name: MEL & PAUL
+Class: Young Couple Frlg
+Pic: Young Couple Frlg
+Gender: Male
+Music: Girl
+Double Battle: Yes
+AI: Check Bad Move
+
+Dustox
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Gust
+- Psybeam
+- Toxic
+- Protect
+
+Beautifly
+Level: 27
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Gust
+- Mega Drain
+- Attract
+- Stun Spore
+
+=== TRAINER_CHANDLER ===
+Name: CHANDLER
+Class: Tuber Frlg
+Pic: Tuber F Frlg
+Gender: Male
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Tentacool
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Tentacool
+Level: 12
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_HAILEY ===
+Name: HAILEY
+Class: Tuber Frlg
+Pic: Tuber F Frlg
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+
+Marill
+Level: 13
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ELIJAH ===
+Name: ELIJAH
+Class: Bird Keeper Frlg
+Pic: Bird Keeper Frlg
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Check Bad Move
+
+Skarmory
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Skarmory
+Level: 25
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

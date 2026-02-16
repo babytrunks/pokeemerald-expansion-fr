@@ -1592,18 +1592,18 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
 
     if (FlagGet(FLAG_RARE_POKEMON_SCREEN)) 
     {
-        if FlagGet(FLAG_BADGE06_GET)
-            lvl = 40;
-        else if FlagGet(FLAG_BADGE05_GET) 
-            lvl = 35;
-        else if FlagGet(FLAG_BADGE04_GET) 
-            lvl = 30;
-        else if FlagGet(FLAG_BADGE03_GET)
-            lvl = 25;
-        else if FlagGet(FLAG_BADGE02_GET) 
-            lvl = 20;
-        else if FlagGet(FLAG_BADGE01_GET) 
-            lvl = 15;
+        if (FlagGet(FLAG_BADGE06_GET))
+            level = 40;
+        else if (FlagGet(FLAG_BADGE05_GET))
+            level = 35;
+        else if (FlagGet(FLAG_BADGE04_GET))
+            level = 30;
+        else if (FlagGet(FLAG_BADGE03_GET))
+            level = 25;
+        else if (FlagGet(FLAG_BADGE02_GET))
+            level = 20;
+        else if (FlagGet(FLAG_BADGE01_GET) )
+            level = 15;
     }
     CreateMon(dst, fmon->species, level, fixedIV, TRUE, personality, otID, OT_ID_PRESET);
 

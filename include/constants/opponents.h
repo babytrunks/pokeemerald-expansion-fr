@@ -2,6 +2,7 @@
 #define GUARD_CONSTANTS_OPPONENTS_H
 
 #include "constants/battle_partner.h"
+#include "constants/global.h"
 #include "constants/opponents_frlg.h"
 
 #define TRAINER_NONE                          0
@@ -61,14 +62,18 @@
 #define TRAINER_GABBY_AND_TY_4               54
 #define TRAINER_GABBY_AND_TY_5               55
 #define TRAINER_GABBY_AND_TY_6               56
+#if !IS_FRLG
 #define TRAINER_LOLA_1                       57
 #define TRAINER_AUSTINA                      58
 #define TRAINER_GWEN                         59
+#endif
 #define TRAINER_LOLA_2                       60
 #define TRAINER_LOLA_3                       61
 #define TRAINER_LOLA_4                       62
 #define TRAINER_LOLA_5                       63
+#if !IS_FRLG
 #define TRAINER_RICKY_1                      64
+#endif
 #define TRAINER_SIMON                        65
 #define TRAINER_CHARLIE                      66
 #define TRAINER_RICKY_2                      67
@@ -162,7 +167,9 @@
 #define TRAINER_TONY_1                      155
 #define TRAINER_JEROME                      156
 #define TRAINER_MATTHEW                     157
+#if !IS_FRLG
 #define TRAINER_DAVID                       158
+#endif
 #define TRAINER_SPENCER                     159
 #define TRAINER_ROLAND                      160
 #define TRAINER_NOLEN                       161
@@ -349,7 +356,9 @@
 #define TRAINER_NOLAN                       342
 #define TRAINER_BARNY                       343
 #define TRAINER_WADE                        344
+#if !IS_FRLG
 #define TRAINER_CARTER                      345
+#endif
 #define TRAINER_ELLIOT_2                    346
 #define TRAINER_ELLIOT_3                    347
 #define TRAINER_ELLIOT_4                    348
@@ -452,7 +461,9 @@
 #define TRAINER_BETH                        445
 #define TRAINER_TARA                        446
 #define TRAINER_MISSY                       447
+#if !IS_FRLG
 #define TRAINER_ALICE                       448
+#endif
 #define TRAINER_JENNY_1                     449
 #define TRAINER_GRACE                       450
 #define TRAINER_TANYA                       451
@@ -495,7 +506,9 @@
 #define TRAINER_AMY_AND_LIV_5               488
 #define TRAINER_AMY_AND_LIV_6               489
 #define TRAINER_HUEY                        490
+#if !IS_FRLG
 #define TRAINER_EDMOND                      491
+#endif
 #define TRAINER_ERNEST_1                    492
 #define TRAINER_DWAYNE                      493
 #define TRAINER_PHILLIP                     494
@@ -684,7 +697,9 @@
 #define TRAINER_TORI_AND_TIA                677
 #define TRAINER_KIM_AND_IRIS                678
 #define TRAINER_TYRA_AND_IVY                679
+#if !IS_FRLG
 #define TRAINER_MEL_AND_PAUL                680
+#endif
 #define TRAINER_JOHN_AND_JAY_1              681
 #define TRAINER_JOHN_AND_JAY_2              682
 #define TRAINER_JOHN_AND_JAY_3              683
@@ -701,8 +716,10 @@
 #define TRAINER_DAWSON                      694
 #define TRAINER_SARAH                       695
 #define TRAINER_DARIAN                      696
+#if !IS_FRLG
 #define TRAINER_HAILEY                      697
 #define TRAINER_CHANDLER                    698
+#endif
 #define TRAINER_KALEB                       699
 #define TRAINER_JOSEPH                      700
 #define TRAINER_ALYSSA                      701
@@ -746,7 +763,9 @@
 #define TRAINER_CAMRON                      739
 #define TRAINER_CORY_1                      740
 #define TRAINER_CAROLINA                    741
+#if !IS_FRLG
 #define TRAINER_ELIJAH                      742
+#endif
 #define TRAINER_CELIA                       743
 #define TRAINER_BRYAN                       744
 #define TRAINER_BRANDEN                     745

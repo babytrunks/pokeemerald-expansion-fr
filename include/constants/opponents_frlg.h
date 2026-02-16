@@ -514,16 +514,16 @@
 #define TRAINER_CAMPER_JEFF_2                      508
 #define TRAINER_CAMPER_JEFF_3                      509
 #define TRAINER_CAMPER_JEFF_4                      510
-#define TRAINER_PICNICKER_ISABELLE_2               511
-#define TRAINER_PICNICKER_ISABELLE_3               512
-#define TRAINER_PICNICKER_ISABELLE_4               513
-#define TRAINER_YOUNGSTER_YASU_2                   514
-#define TRAINER_YOUNGSTER_YASU_3                   515
-#define TRAINER_ENGINEER_BERNIE_2                  516
-#define TRAINER_GAMER_DARIAN_2                     517
-#define TRAINER_CAMPER_CHRIS_2                     518
-#define TRAINER_CAMPER_CHRIS_3                     519
-#define TRAINER_CAMPER_CHRIS_4                     520
+#define TRAINER_PICNICKER_ISABELLE_2               511 // unused 
+#define TRAINER_PICNICKER_ISABELLE_3               512 // unused
+#define TRAINER_PICNICKER_ISABELLE_4               513 // unused 
+#define TRAINER_YOUNGSTER_YASU_2                   514 // unused
+#define TRAINER_YOUNGSTER_YASU_3                   515 // unused
+#define TRAINER_ENGINEER_BERNIE_2                  516 // unused
+#define TRAINER_GAMER_DARIAN_2                     517 // unused
+#define TRAINER_CAMPER_CHRIS_2                     518 // unused
+#define TRAINER_CAMPER_CHRIS_3                     519 // unused
+#define TRAINER_CAMPER_CHRIS_4                     520 // unused
 #define TRAINER_PICNICKER_ALICIA_2                 521
 #define TRAINER_PICNICKER_ALICIA_3                 522
 #define TRAINER_PICNICKER_ALICIA_4                 523
@@ -628,11 +628,27 @@
 #define TRAINER_CHAMPION_REMATCH_CHARMANDER        622
 #define TRAINER_CUE_BALL_PAXTON                    623
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is 
-//       only space for 25 additional trainers before trainer flag space overflows.
+// Route 109 trainers (Emerald maps used in FireRed)
+#if IS_FRLG
+#define TRAINER_DAVID                              624
+#define TRAINER_ALICE                              625
+#define TRAINER_EDMOND                             626
+#define TRAINER_RICKY_1                            627
+#define TRAINER_LOLA_1                             628
+#define TRAINER_AUSTINA                            629
+#define TRAINER_GWEN                               630
+#define TRAINER_CARTER                             631
+#define TRAINER_MEL_AND_PAUL                       632
+#define TRAINER_CHANDLER                           633
+#define TRAINER_HAILEY                             634
+#define TRAINER_ELIJAH                             635
+#endif
+
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is
+//       only space for 13 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT_FRLG can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_FRLG                      624
+#define TRAINERS_COUNT_FRLG                      636
 #define MAX_TRAINERS_COUNT_FRLG                  768
 #define TRAINER_PARTNER_FRLG(partner)           (MAX_TRAINERS_COUNT_FRLG + partner)
 
