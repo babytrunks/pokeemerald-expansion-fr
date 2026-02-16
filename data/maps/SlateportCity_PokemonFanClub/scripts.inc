@@ -252,6 +252,53 @@ SlateportCity_PokemonFanClub_EventScript_Azumarill::
 	release
 	end
 
+
+SlateportCity_PokemonFanClub_EventScript_FurfrouTrimmer::
+	lock
+	faceplayer
+	msgbox SlateportCity_PokemonFanClub_Text_WantToTrimFurfrou, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SlateportCity_PokemonFanClub_EventScript_TrimmerDecline
+	msgbox SlateportCity_PokemonFanClub_Text_ChooseYourFurfrou, MSGBOX_DEFAULT
+	special ChoosePartyMon
+	waitstate
+	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SlateportCity_PokemonFanClub_EventScript_TrimmerNoSelection
+	callnative CheckIfPartyMonIsFurfrou
+	goto_if_eq VAR_RESULT, FALSE, SlateportCity_PokemonFanClub_EventScript_TrimmerNotFurfrou
+	bufferpartymonnick STR_VAR_1, VAR_0x8004
+	msgbox SlateportCity_PokemonFanClub_Text_ChooseTrimStyle, MSGBOX_DEFAULT
+	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, SlateportCity_PokemonFanClub_Text_TrimHeart, SlateportCity_PokemonFanClub_Text_TrimStar, SlateportCity_PokemonFanClub_Text_TrimDiamond, SlateportCity_PokemonFanClub_Text_TrimDebutante, SlateportCity_PokemonFanClub_Text_TrimMatron, SlateportCity_PokemonFanClub_Text_TrimDandy, SlateportCity_PokemonFanClub_Text_TrimLaReine, SlateportCity_PokemonFanClub_Text_TrimKabuki, SlateportCity_PokemonFanClub_Text_TrimPharaoh, SlateportCity_PokemonFanClub_Text_TrimNatural
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, SlateportCity_PokemonFanClub_EventScript_TrimmerCancel
+	copyvar VAR_0x8005, VAR_RESULT
+	callnative SetFurfrouForm
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	msgbox SlateportCity_PokemonFanClub_Text_TrimComplete, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportCity_PokemonFanClub_EventScript_TrimmerDecline::
+	msgbox SlateportCity_PokemonFanClub_Text_TrimmerComeBack, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportCity_PokemonFanClub_EventScript_TrimmerNoSelection::
+	lock
+	faceplayer
+	msgbox SlateportCity_PokemonFanClub_Text_TrimmerComeBack, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportCity_PokemonFanClub_EventScript_TrimmerNotFurfrou::
+	bufferpartymonnick STR_VAR_1, VAR_0x8004
+	msgbox SlateportCity_PokemonFanClub_Text_TrimmerNotFurfrou, MSGBOX_DEFAULT
+	release
+	end
+
+SlateportCity_PokemonFanClub_EventScript_TrimmerCancel::
+	msgbox SlateportCity_PokemonFanClub_Text_TrimmerComeBack, MSGBOX_DEFAULT
+	release
+	end
+
 SlateportCity_PokemonFanClub_Text_MeetChairman:
 	.string "Er-hem! I am the CHAIRMAN of the\n"
 	.string "Pokémon FAN CLUB!\p"
@@ -398,72 +445,25 @@ SlateportCity_PokemonFanClub_Text_Zigzagoon:
 SlateportCity_PokemonFanClub_Text_Azumarill:
 	.string "Fur fur!$"
 
-@ Furfrou Trimmer NPC
-SlateportCity_PokemonFanClub_EventScript_FurfrouTrimmer::
-	lock
-	faceplayer
-	msgbox SlateportCity_PokemonFanClub_Text_WantToTrimFurfrou, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, SlateportCity_PokemonFanClub_EventScript_TrimmerDecline
-	msgbox SlateportCity_PokemonFanClub_Text_ChooseYourFurfrou, MSGBOX_DEFAULT
-	special ChoosePartyMon
-	waitstate
-	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, SlateportCity_PokemonFanClub_EventScript_TrimmerNoSelection
-	callnative CheckIfPartyMonIsFurfrou
-	goto_if_eq VAR_RESULT, FALSE, SlateportCity_PokemonFanClub_EventScript_TrimmerNotFurfrou
-	bufferpartymonnick STR_VAR_1, VAR_0x8004
-	msgbox SlateportCity_PokemonFanClub_Text_ChooseTrimStyle, MSGBOX_DEFAULT
-	dynmultichoice 0, 0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, SlateportCity_PokemonFanClub_Text_TrimHeart, SlateportCity_PokemonFanClub_Text_TrimStar, SlateportCity_PokemonFanClub_Text_TrimDiamond, SlateportCity_PokemonFanClub_Text_TrimDebutante, SlateportCity_PokemonFanClub_Text_TrimMatron, SlateportCity_PokemonFanClub_Text_TrimDandy, SlateportCity_PokemonFanClub_Text_TrimLaReine, SlateportCity_PokemonFanClub_Text_TrimKabuki, SlateportCity_PokemonFanClub_Text_TrimPharaoh, SlateportCity_PokemonFanClub_Text_TrimNatural
-	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, SlateportCity_PokemonFanClub_EventScript_TrimmerCancel
-	copyvar VAR_0x8005, VAR_RESULT
-	callnative SetFurfrouForm
-	playfanfare MUS_OBTAIN_ITEM
-	waitfanfare
-	msgbox SlateportCity_PokemonFanClub_Text_TrimComplete, MSGBOX_DEFAULT
-	release
-	end
-
-SlateportCity_PokemonFanClub_EventScript_TrimmerDecline::
-	msgbox SlateportCity_PokemonFanClub_Text_TrimmerComeBack, MSGBOX_DEFAULT
-	release
-	end
-
-SlateportCity_PokemonFanClub_EventScript_TrimmerNoSelection::
-	lock
-	faceplayer
-	msgbox SlateportCity_PokemonFanClub_Text_TrimmerComeBack, MSGBOX_DEFAULT
-	release
-	end
-
-SlateportCity_PokemonFanClub_EventScript_TrimmerNotFurfrou::
-	bufferpartymonnick STR_VAR_1, VAR_0x8004
-	msgbox SlateportCity_PokemonFanClub_Text_TrimmerNotFurfrou, MSGBOX_DEFAULT
-	release
-	end
-
-SlateportCity_PokemonFanClub_EventScript_TrimmerCancel::
-	msgbox SlateportCity_PokemonFanClub_Text_TrimmerComeBack, MSGBOX_DEFAULT
-	release
-	end
-
 SlateportCity_PokemonFanClub_Text_WantToTrimFurfrou:
 	.string "Hello there! I'm a Pokémon Stylist.\p"
-	.string "I can give your FURFROU a fabulous\n"
+	.string "I can give your Furfrou a fabulous\n"
 	.string "new look with a trim!\p"
 	.string "Would you like me to trim\n"
-	.string "your FURFROU?$"
+	.string "your Furfrou?$"
 
 SlateportCity_PokemonFanClub_Text_ChooseYourFurfrou:
 	.string "Wonderful! Please choose the\n"
-	.string "FURFROU you'd like me to trim.$"
+	.string "Furfrou you'd like me to trim.$"
 
 SlateportCity_PokemonFanClub_Text_TrimmerNotFurfrou:
-	.string "Oh… {STR_VAR_1} isn't a FURFROU.\p"
+	.string "Oh… {STR_VAR_1} isn't a Furfrou.\p"
 	.string "I'm sorry, but I can only style\n"
-	.string "a FURFROU's fur.$"
+	.string "a Furfrou's fur.$"
 
 SlateportCity_PokemonFanClub_Text_ChooseTrimStyle:
 	.string "Ah, {STR_VAR_1}! What a lovely\n"
-	.string "FURFROU!\p"
+	.string "Furfrou!\p"
 	.string "Which style would you like?$"
 
 SlateportCity_PokemonFanClub_Text_TrimComplete:
