@@ -103,9 +103,9 @@ Route25_SeaCottage_EventScript_BillGiveSSTicket::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route25_SeaCottage_EventScript_BillThanksMale
 	call_if_eq VAR_RESULT, FEMALE, Route25_SeaCottage_EventScript_BillThanksFemale
-	checkitemspace ITEM_SS_TICKET
+	checkitemspace ITEM_SLATEPORT_TICKET
 	goto_if_eq VAR_RESULT, FALSE, Route25_SeaCottage_EventScript_NoRoomForSSTicket
-	giveitem_msg Route25_SeaCottage_Text_ReceivedSSTicketFromBill, ITEM_SS_TICKET, 1, MUS_RG_OBTAIN_KEY_ITEM
+	giveitem_msg Route25_SeaCottage_Text_ReceivedSSTicketFromBill, ITEM_SLATEPORT_TICKET, 1, MUS_RG_OBTAIN_KEY_ITEM
 	setflag FLAG_GOT_SS_TICKET_DUP
 	setflag FLAG_HIDE_NUGGET_BRIDGE_ROCKET
 	setflag FLAG_GOT_SS_TICKET
@@ -376,17 +376,15 @@ Route25_SeaCottage_Text_ThanksLadyTakeThis::
     .string "Oh, here, maybe this'll do.$"
 
 Route25_SeaCottage_Text_ReceivedSSTicketFromBill::
-    .string "{PLAYER} received an S.S. TICKET\n"
+    .string "{PLAYER} received an Slateport Ticket\n"
     .string "from BILL.$"
 
 Route25_SeaCottage_Text_YouveGotTooMuchStuff::
     .string "You've got too much stuff!$"
 
 Route25_SeaCottage_Text_SSAnnePartyYouGoInstead::
-    .string "That ship S.S. Anne is in Vermilion\n"
+    .string "The boarding ship is in Vermilion\n"
     .string "City.\p"
-    .string "I hear its headed to a special\n"
-    .string "destination this time around.\p"
     .string "They invited me to go, but I\n"
     .string "can't stand leaving the region.\p"
     .string "Why don't you go instead of me?\n"

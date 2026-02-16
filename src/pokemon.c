@@ -1229,7 +1229,7 @@ static const u32 sCompressedStatuses[] =
 // If a developer has added enough new items so that ITEMS_COUNT now equals 1200, they could...
 // 1) remove new items until ITEMS_COUNT is 1023, the max value that will fit in 10 bits.
 // 2) change heldItem:10 to heldItem:11 AND change the below assert for ITEMS_COUNT to check for (1 << 11).
-// 3) repurpose IDs from other items that aren't being used, like ITEM_GOLD_TEETH or ITEM_SS_TICKET until ITEMS_COUNT equals 1023, the max value that will fit in 10 bits.
+// 3) repurpose IDs from other items that aren't being used, like ITEM_GOLD_TEETH or ITEM_SLATEPORT_TICKET until ITEMS_COUNT equals 1023, the max value that will fit in 10 bits.
 
 STATIC_ASSERT(NUM_SPECIES < (1 << 11), PokemonSubstruct0_species_TooSmall);
 STATIC_ASSERT(NUMBER_OF_MON_TYPES + 1 <= (1 << 5), PokemonSubstruct0_teraType_TooSmall);

@@ -194,9 +194,18 @@ VermilionCity_EventScript_CheckTicket::
 	goto_if_eq VAR_MAP_SCENE_VERMILION_CITY, 3, VermilionCity_EventScript_CheckSeagallopPresentTrigger
 	msgbox VermilionCity_Text_DoYouHaveATicket
 	goto_if_unset FLAG_GOT_SS_TICKET, VermilionCity_EventScript_DontHaveSSTicket
-	msgbox VermilionCity_Text_FlashedSSTicket
+	msgbox VermilionCity_Text_FlashedSSTicket, MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, VermilionCity_EventScript_Leave
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 1
-	releaseall
+	setvar VAR_0x8006, SEAGALLOP_SLATEPORT_CITY
+	goto EventScript_SailToDest
+	end
+
+VermilionCity_EventScript_Leave::
+	applymovement LOCALID_PLAYER, Common_Movement_WalkUp
+	waitmovement
+	release
 	end
 
 VermilionCity_EventScript_DontHaveSSTicket::
@@ -320,20 +329,20 @@ VermilionCity_Text_VermilionHarbor::
     .string "VERMILION HARBOR$"
 
 VermilionCity_Text_WelcomeToTheSSAnne::
-    .string "Welcome to the S.S. Anne!$"
+    .string "Welcome!$"
 
 VermilionCity_Text_DoYouHaveATicket::
-    .string "Welcome to the S.S. Anne!\p"
+    .string "Welcome!\p"
     .string "Excuse me, do you have a ticket?$"
 
 VermilionCity_Text_FlashedSSTicket::
-    .string "{FONT_NORMAL}{PLAYER} flashed the S.S. TICKET!\p"
+    .string "{FONT_NORMAL}{PLAYER} flashed the Slateport Ticket!\p"
     .string "{FONT_MALE}Great!\n"
-    .string "Welcome to the S.S. Anne!$"
+    .string "Do you want to board now?$"
 
 VermilionCity_Text_DontHaveNeededSSTicket::
     .string "{FONT_NORMAL}{PLAYER} doesn't have the needed\n"
-    .string "S.S. TICKET.\p"
+    .string "Ticket.\p"
     .string "{FONT_MALE}Sorry!\p"
     .string "You need a ticket to get aboard.$"
 

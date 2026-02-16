@@ -13780,14 +13780,14 @@ const struct Item gItemsInfo[] =
 
 // Story Key Items
 
-    [ITEM_SS_TICKET] =
+    [ITEM_SLATEPORT_TICKET] =
     {
-        .name = ITEM_NAME("S.S. Ticket"),
+        .name = ITEM_NAME("Slateport Ticket"),
         .price = 0,
         .description = COMPOUND_STRING(
             "The ticket required\n"
-            "for sailing on a\n"
-            "ferry."),
+            "for sailing to\n"
+            "Slateport City."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

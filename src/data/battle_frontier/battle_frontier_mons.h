@@ -207,17 +207,17 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     },
 
     [FRONTIER_MON_ODDISH] = {
-        .species = SPECIES_ODDISH,
+        .species = SPECIES_VILEPLUME,
         .moves = {MOVE_ABSORB, MOVE_MEGA_DRAIN, MOVE_ACID, MOVE_SWEET_SCENT},
-        .heldItem = ITEM_LEAF_STONE,
+        .heldItem = ITEM_NONE,
         .nature = NATURE_DOCILE,
     .ball = BALL_PREMIER,},
 
 
     [FRONTIER_MON_BELLSPROUT] = {
-        .species = SPECIES_BELLSPROUT,
+        .species = SPECIES_VICTREEBEL,
         .moves = {MOVE_VINE_WHIP, MOVE_ACID, MOVE_WRAP, MOVE_SLEEP_POWDER},
-        .heldItem = ITEM_LEAF_STONE,
+        .heldItem = ITEM_NONE,
         .nature = NATURE_DOCILE,
     .ball = BALL_PREMIER,},
 
@@ -323,8 +323,8 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 
 
     [FRONTIER_MON_CAPSAKID] = {
-        .heldItem = ITEM_FIRE_STONE,
-        .species = SPECIES_CAPSAKID,
+        .heldItem = ITEM_NONE,
+        .species = SPECIES_SCOVILLAIN,
         .moves = {MOVE_LEER, MOVE_LEAFAGE, MOVE_BITE, MOVE_NONE},
         .nature = NATURE_DOCILE,
         .ball = BALL_PREMIER,

@@ -383,12 +383,7 @@ Route109_EventScript_Alice::
 	trainerbattle_single TRAINER_ALICE, Route109_Text_AliceIntro, Route109_Text_AliceDefeated
 	msgbox Route109_Text_AlicePostBattle, MSGBOX_AUTOCLOSE
 	end
-
-Route109_EventScript_Huey::
-	trainerbattle_single TRAINER_HUEY, Route109_Text_HueyIntro, Route109_Text_HueyDefeated
-	msgbox Route109_Text_HueyPostBattle, MSGBOX_AUTOCLOSE
-	end
-
+	
 Route109_EventScript_Edmond::
 	trainerbattle_single TRAINER_EDMOND, Route109_Text_EdmondIntro, Route109_Text_EdmondDefeated
 	msgbox Route109_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE

@@ -4,10 +4,10 @@ SlateportCity_MapScripts::
 	.byte 0
 
 SlateportCity_OnTransition:
-	setvar VAR_SLATEPORT_MUSEUM_1F_STATE, 0
+	@ setvar VAR_SLATEPORT_MUSEUM_1F_STATE, 0
 	call SlateportCity_EventScript_EnterSlateport
-	call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_MovePeopleForSternInterview
-	call_if_eq VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_SetReadyForScottScene
+	@ call_if_eq VAR_SLATEPORT_CITY_STATE, 1, SlateportCity_EventScript_MovePeopleForSternInterview
+	@ call_if_eq VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_SetReadyForScottScene
 	end
 
 SlateportCity_EventScript_EnterSlateport::
@@ -244,12 +244,6 @@ SlateportCity_EventScript_Man1SternInterview::
 SlateportCity_EventScript_Woman1::
 	lock
 	faceplayer
-	goto_if_set FLAG_DOCK_REJECTED_DEVON_GOODS, SlateportCity_EventScript_Woman1AquaGone
-	msgbox SlateportCity_Text_WhatsLongLineOverThere, MSGBOX_DEFAULT
-	release
-	end
-
-SlateportCity_EventScript_Woman1AquaGone::
 	msgbox SlateportCity_Text_VisitedMuseumOften, MSGBOX_DEFAULT
 	release
 	end
@@ -998,10 +992,6 @@ SlateportCity_Text_EveryoneCallsHimCaptStern:
 	.string "MUSEUM, also happens to be the leader\l"
 	.string "of an undersea exploration team.\p"
 	.string "So, everyone calls him CAPT. STERN.$"
-
-SlateportCity_Text_WhatsLongLineOverThere:
-	.string "What is that over there?\n"
-	.string "That long line…$"
 
 SlateportCity_Text_VisitedMuseumOften:
 	.string "When I was a child, I visited\n"

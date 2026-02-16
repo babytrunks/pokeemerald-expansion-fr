@@ -227,10 +227,6 @@ Route110_EventScript_BenjaminRematch::
 	msgbox Route110_Text_BenjaminRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route110_EventScript_Jasmine::
-	trainerbattle_single TRAINER_JASMINE, Route110_Text_JasmineIntro, Route110_Text_JasmineDefeated
-	msgbox Route110_Text_JasminePostBattle, MSGBOX_AUTOCLOSE
-	end
 
 Route110_EventScript_Abigail::
 	trainerbattle_single TRAINER_ABIGAIL_1, Route110_Text_AbigailIntro, Route110_Text_AbigailDefeated, Route110_EventScript_AbigailRegisterMatchCallAfterBattle

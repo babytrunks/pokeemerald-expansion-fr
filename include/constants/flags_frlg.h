@@ -1227,7 +1227,7 @@
 #define FLAG_CELADON_BOUGHT_ABSOLITE                0x4C8
 #define FLAG_CANT_RUN                               0x4C9
 #define FLAG_DEFEATED_MAROWAK_GHOST                 0x4CA
-#define FLAG_0x4CB               0x4CB
+#define FLAG_VISITED_SLATEPORT_CITY                 0x4CB
 #define FLAG_0x4CC               0x4CC
 #define FLAG_0x4CD               0x4CD
 #define FLAG_0x4CE               0x4CE
@@ -2505,7 +2505,7 @@
 #define FLAG_VISITED_VERDANTURF_TOWN                0
 #define FLAG_VISITED_PACIFIDLOG_TOWN                0
 #define FLAG_VISITED_PETALBURG_CITY                 0
-#define FLAG_VISITED_SLATEPORT_CITY                 0
+// #define FLAG_VISITED_SLATEPORT_CITY                 0
 #define FLAG_VISITED_MAUVILLE_CITY                  0
 #define FLAG_VISITED_RUSTBORO_CITY                  0
 #define FLAG_VISITED_FORTREE_CITY                   0

@@ -169,34 +169,6 @@ Route103_Text_AndrewPostBattle:
 	.string "Gah, I'm still boiling mad…\n"
 	.string "Grrrrr…$"
 
-Route103_Text_MiguelIntro:
-	.string "My Pokémon is delightfully adorable!\n"
-	.string "Don't be shy--I'll show you!$"
-
-Route103_Text_MiguelDefeated:
-	.string "Oh, my gosh!\n"
-	.string "My darling Pokémon!$"
-
-Route103_Text_MiguelPostBattle:
-	.string "My delightful Pokémon looks darling\n"
-	.string "even when it's fainted!$"
-
-Route103_Text_MiguelRegister:
-	.string "I'll get you to come out and look in\n"
-	.string "on my delightful Pokémon again!$"
-
-Route103_Text_MiguelRematchIntro:
-	.string "Hi, you! My delightfully adorable\n"
-	.string "Pokémon has become more darling!$"
-
-Route103_Text_MiguelRematchDefeated:
-	.string "Oh!\n"
-	.string "My darling Pokémon!$"
-
-Route103_Text_MiguelRematchPostBattle:
-	.string "The more I spend time with it,\n"
-	.string "the more adorable my Pokémon becomes.$"
-
 Route103_Text_PeteIntro:
 	.string "This sort of distance…\n"
 	.string "You should just swim it!$"
@@ -822,17 +794,6 @@ Route109_Text_AliceDefeated:
 Route109_Text_AlicePostBattle:
 	.string "Cheeks are the most prone to burning!$"
 
-Route109_Text_HueyIntro:
-	.string "I've laid anchor in ports around\n"
-	.string "the world, but SLATEPORT's the best.$"
-
-Route109_Text_HueyDefeated:
-	.string "You're the best!$"
-
-Route109_Text_HueyPostBattle:
-	.string "In the best port was the best\n"
-	.string "TRAINER…$"
-
 Route109_Text_EdmondIntro:
 	.string "Urrrrppp…\n"
 	.string "Battle? With me?$"
@@ -1080,17 +1041,6 @@ Route110_Text_AbigailRematchDefeated:
 Route110_Text_AbigailRematchPostBattle:
 	.string "Were you going after a record?\p"
 	.string "I'm sorry if I held you up!$"
-
-Route110_Text_JasmineIntro:
-	.string "I've been riding without stopping.\n"
-	.string "My thighs are like rocks!$"
-
-Route110_Text_JasmineDefeated:
-	.string "I'm worried about muscle cramps…$"
-
-Route110_Text_JasminePostBattle:
-	.string "Oh, you have some GYM BADGES?\n"
-	.string "No wonder you're so strong!$"
 
 Route110_Text_EdwardIntro:
 	.string "I have foreseen your intentions!\n"
