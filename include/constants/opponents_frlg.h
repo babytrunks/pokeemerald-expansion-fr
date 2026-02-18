@@ -629,7 +629,7 @@
 #define TRAINER_CUE_BALL_PAXTON                    623
 
 // Route 109 trainers (Emerald maps used in FireRed)
-#if IS_FRLG
+
 #define TRAINER_DAVID                              624
 #define TRAINER_ALICE                              625
 #define TRAINER_EDMOND                             626
@@ -642,13 +642,14 @@
 #define TRAINER_CHANDLER                           633
 #define TRAINER_HAILEY                             634
 #define TRAINER_ELIJAH                             635
-#endif
+#define TRAINER_GRUNT_MUSEUM_1                     636
+#define TRAINER_GRUNT_MUSEUM_2                     637
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is
 //       only space for 13 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT_FRLG can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_FRLG                      636
+#define TRAINERS_COUNT_FRLG                      638
 #define MAX_TRAINERS_COUNT_FRLG                  768
 #define TRAINER_PARTNER_FRLG(partner)           (MAX_TRAINERS_COUNT_FRLG + partner)
 

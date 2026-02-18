@@ -12,8 +12,8 @@ SlateportCity_OnTransition:
 
 SlateportCity_EventScript_EnterSlateport::
 	setflag FLAG_VISITED_SLATEPORT_CITY
-	setvar VAR_CONTEST_HALL_STATE, 0
-	setflag FLAG_HIDE_SLATEPORT_CITY_CONTEST_REPORTER
+	@ setvar VAR_CONTEST_HALL_STATE, 0
+	@ setflag FLAG_HIDE_SLATEPORT_CITY_CONTEST_REPORTER
 	return
 
 SlateportCity_EventScript_MovePeopleForSternInterview::
@@ -81,7 +81,7 @@ SlateportCity_EventScript_ScottScene::
 	setobjectxyperm LOCALID_SLATEPORT_SCOTT, 10, 12
 	setobjectmovementtype LOCALID_SLATEPORT_SCOTT, MOVEMENT_TYPE_FACE_DOWN
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
-	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 2
+	@ setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 2
 	addvar VAR_SCOTT_STATE, 1
 	releaseall
 	end
@@ -875,7 +875,7 @@ SlateportCity_EventScript_ScottBattleTentScene::
 	waitmovement 0
 	removeobject LOCALID_SLATEPORT_SCOTT
 	addvar VAR_SCOTT_STATE, 1
-	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3
+	@ setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3
 	releaseall
 	end
 
@@ -911,6 +911,13 @@ SlateportCity_EventScript_BerryCrushRankingsSign::
 	special ShowBerryCrushRankings
 	waitstate
 	releaseall
+	end
+
+SlateportCity_EventScript_BattleTentRenovations::
+	lockall
+	faceplayer
+	msgbox SlateportCity_Text_BattleTentUndergoingRenovations
+	release
 	end
 
 SlateportCity_Text_EnergyGuruSellWhatYouNeed:
@@ -1342,3 +1349,7 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+SlateportCity_Text_BattleTentUndergoingRenovations:
+	.string "Sorry, the Battle Tent is currently\n"
+	.string "undergoing renovations.$"

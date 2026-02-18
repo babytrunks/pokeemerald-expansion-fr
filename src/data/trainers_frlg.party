@@ -14792,15 +14792,15 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Tentacool
 Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Carvanha
 Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ALICE ===
 Name: ALICE
@@ -14809,19 +14809,19 @@ Pic: Swimmer F Frlg
 Gender: Female
 Music: Swimmer
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Goldeen
 Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Wingull
 Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Goldeen
 Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_EDMOND ===
 Name: EDMOND
@@ -14830,11 +14830,11 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Wingull
 Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_RICKY_1 ===
 Name: RICKY
@@ -14843,7 +14843,7 @@ Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Zigzagoon
 Level: 13
@@ -14860,7 +14860,7 @@ Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Azurill
 Level: 12
@@ -14877,11 +14877,11 @@ Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Marill
 Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GWEN ===
 Name: GWEN
@@ -14890,11 +14890,11 @@ Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Marill
 Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CARTER ===
 Name: CARTER
@@ -14903,7 +14903,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Wailmer
 Level: 25
@@ -14920,11 +14920,11 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Dustox
 Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Gust
 - Psybeam
 - Toxic
@@ -14932,7 +14932,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Beautifly
 Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Gust
 - Mega Drain
 - Attract
@@ -14945,15 +14945,15 @@ Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Tentacool
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tentacool
 Level: 12
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_HAILEY ===
 Name: HAILEY
@@ -14962,11 +14962,11 @@ Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Marill
 Level: 13
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ELIJAH ===
 Name: ELIJAH
@@ -14975,12 +14975,70 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Check Bad Move
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Skarmory
 Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Skarmory
 Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+
+=== TRAINER_GRUNT_MUSEUM_1 ===
+Name: Grunt
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Blue
+
+Overqwil @ Sitrus Berry
+Ability: Intimidate
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Waterfall
+- Throat Chop
+- Barb Barrage
+- Pain Split
+
+Bruxish @ Colbur Berry
+Ability: Strong Jaw
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Waterfall
+- Crunch
+- Ice Fang
+- Poison Fang
+
+=== TRAINER_GRUNT_MUSEUM_2 ===
+Name: Grunt
+Class: Team Aqua
+Pic: Aqua Grunt M
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Blue
+
+Thievul @ Focus Sash
+Ability: Stakeout
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mud Shot
+- Dark Pulse
+- Burning Jealousy
+- Nasty Plot
+
+Vullaby @ Eviolite
+Level: 26
+Ability: Overcoat
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Foul Play
+- Roost
+- Dual Wingbeat
+- Toxic

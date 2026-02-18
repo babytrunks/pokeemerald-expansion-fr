@@ -520,13 +520,13 @@
 #define FLAG_HIDE_MTMOON_TM_HIDDEN_POWER                        0x21B
 #define FLAG_CERULEAN_GAVE_LUXURY_BALL                          0x21C
 #define FLAG_HIDE_ROCK_TUNNEL_KALOS_FOSSIL                      0x21D
-#define FLAG_0x21E               0x21E
-#define FLAG_0x21F               0x21F
-#define FLAG_0x220               0x220
-#define FLAG_0x221               0x221
-#define FLAG_0x222               0x222
-#define FLAG_0x223               0x223
-#define FLAG_0x224               0x224
+#define FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION                   0x21E
+#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE       0x21F
+#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1               0x220
+#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_2               0x221
+#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN               0x222
+#define FLAG_HIDE_ROUTE_110_TEAM_AQUA                           0x223
+#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS               0x224
 #define FLAG_0x225               0x225
 #define FLAG_0x226               0x226
 #define FLAG_0x227               0x227
@@ -2180,11 +2180,11 @@
 #define FLAG_HIDE_RUSTURF_TUNNEL_PEEKO                              0
 #define FLAG_HIDE_BRINEYS_HOUSE_PEEKO                               0
 #define FLAG_HIDE_SLATEPORT_CITY_TEAM_AQUA                          0
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS         0
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1     0
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_2     0
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE           0
-#define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN    0
+// #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS         0
+// #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_1     0
+// #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_AQUA_GRUNT_2     0
+// #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_ARCHIE           0
+// #define FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN    0
 #define FLAG_HIDE_BATTLE_TOWER_OPPONENT                             0
 #define FLAG_HIDE_LITTLEROOT_TOWN_BIRCHS_LAB_RIVAL                  0
 #define FLAG_HIDE_ROUTE_119_TEAM_AQUA                               0
@@ -2197,7 +2197,7 @@
 #define FLAG_HIDE_ROUTE_101_BIRCH                                   0
 #define FLAG_HIDE_ROUTE_103_BIRCH                                   0
 #define FLAG_HIDE_TRICK_HOUSE_END_MAN                               0
-#define FLAG_HIDE_ROUTE_110_TEAM_AQUA                               0
+// #define FLAG_HIDE_ROUTE_110_TEAM_AQUA                               0
 #define FLAG_HIDE_ROUTE_118_GABBY_AND_TY_2                          0
 #define FLAG_HIDE_ROUTE_120_GABBY_AND_TY_2                          0
 #define FLAG_HIDE_ROUTE_111_GABBY_AND_TY_3                          0
@@ -2258,7 +2258,7 @@
 #define FLAG_RECEIVED_SHOAL_SHELL_3                                 0
 #define FLAG_RECEIVED_SHOAL_SHELL_4                                 0
 #define FLAG_HIDE_ROUTE_111_SECRET_POWER_MAN                        0
-#define FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION                       0
+// #define FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION                       0
 #define FLAG_HIDE_LILYCOVE_DEPARTMENT_STORE_ROOFTOP_SALE_WOMAN      0
 #define FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL                          0
 #define FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL                          0
