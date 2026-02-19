@@ -309,6 +309,7 @@ static void HandleInputChooseAction(u32 battler)
     {
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
+        TryHideBattleInfoSprite();
 
         switch (gActionSelectionCursor[battler])
         {
@@ -405,6 +406,7 @@ static void HandleInputChooseAction(u32 battler)
     }
     else if (JOY_NEW(R_BUTTON))
     {
+        TryHideBattleInfoSprite();
         BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_BATTLE_INFO, 0);
         BtlController_Complete(battler);
     }
@@ -2106,6 +2108,7 @@ static void PlayerHandleChooseAction(u32 battler)
         ActionSelectionDestroyCursorAt(i);
 
     TryRestoreLastUsedBall();
+    TryAddBattleInfoSprite();
     ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
     PREPARE_MON_NICK_BUFFER(gBattleTextBuff1, battler, gBattlerPartyIndexes[battler]);
     BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillPkmnDo);

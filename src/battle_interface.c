@@ -729,6 +729,7 @@ u8 CreateBattlerHealthboxSprites(u8 battler)
     gBattleStruct->ballSpriteIds[0] = MAX_SPRITES;
     gBattleStruct->ballSpriteIds[1] = MAX_SPRITES;
     gBattleStruct->moveInfoSpriteId = MAX_SPRITES;
+    gBattleStruct->battleInfoSpriteId = MAX_SPRITES;
 
     return healthboxLeftSpriteId;
 }
@@ -2525,6 +2526,7 @@ enum
     TAG_ABILITY_POP_UP_PLAYER2,
     TAG_ABILITY_POP_UP_OPPONENT2,
     TAG_LAST_BALL_WINDOW,
+    TAG_BATTLE_INFO_WINDOW,
 };
 
 static const u32 sAbilityPopUpGfx[] = INCBIN_U32("graphics/battle_interface/ability_pop_up.4bpp");
@@ -3032,7 +3034,8 @@ void TryAddLastUsedBallItemSprites(void)
 static void DestroyLastUsedBallWinGfx(struct Sprite *sprite)
 {
     FreeSpriteTilesByTag(TAG_LAST_BALL_WINDOW);
-    if (GetSpriteTileStartByTag(MOVE_INFO_WINDOW_TAG) == 0xFFFF)
+    if (GetSpriteTileStartByTag(MOVE_INFO_WINDOW_TAG) == 0xFFFF
+     && GetSpriteTileStartByTag(TAG_BATTLE_INFO_WINDOW) == 0xFFFF)
         FreeSpritePaletteByTag(TAG_ABILITY_POP_UP);
     DestroySprite(sprite);
     gBattleStruct->ballSpriteIds[1] = MAX_SPRITES;
@@ -3070,7 +3073,8 @@ void TryToHideMoveInfoWindow(void)
 static void DestroyMoveInfoWinGfx(struct Sprite *sprite)
 {
     FreeSpriteTilesByTag(MOVE_INFO_WINDOW_TAG);
-    if (GetSpriteTileStartByTag(TAG_LAST_BALL_WINDOW) == 0xFFFF)
+    if (GetSpriteTileStartByTag(TAG_LAST_BALL_WINDOW) == 0xFFFF
+     && GetSpriteTileStartByTag(TAG_BATTLE_INFO_WINDOW) == 0xFFFF)
         FreeSpritePaletteByTag(TAG_ABILITY_POP_UP);
     DestroySprite(sprite);
     gBattleStruct->moveInfoSpriteId = MAX_SPRITES;
@@ -3290,6 +3294,106 @@ void ArrowsChangeColorLastBallCycle(bool32 showArrows)
         pltOutline->b = defaultPlttOutline->b;
     }
 #endif
+}
+
+// battle info button prompt (shows during Trainer Battles)
+
+static const struct OamData sOamData_BattleInfoWindow =
+{
+    .y = 0,
+    .affineMode = 0,
+    .objMode = 0,
+    .mosaic = 0,
+    .bpp = 0,
+    .shape = SPRITE_SHAPE(32x32),
+    .x = 0,
+    .matrixNum = 0,
+    .size = SPRITE_SIZE(32x32),
+    .tileNum = 0,
+    .priority = 1,
+    .paletteNum = 0,
+    .affineParam = 0,
+};
+
+static void SpriteCB_BattleInfoWin(struct Sprite *sprite);
+
+static const struct SpriteTemplate sSpriteTemplate_BattleInfoWindow =
+{
+    .tileTag = TAG_BATTLE_INFO_WINDOW,
+    .paletteTag = TAG_ABILITY_POP_UP,
+    .oam = &sOamData_BattleInfoWindow,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_BattleInfoWin
+};
+
+static const u8 sBattleInfoWindowGfx[] = INCBIN_U8("graphics/battle_interface/battle_info_r.4bpp");
+
+static const struct SpriteSheet sSpriteSheet_BattleInfoWindow =
+{
+    sBattleInfoWindowGfx, sizeof(sBattleInfoWindowGfx), TAG_BATTLE_INFO_WINDOW
+};
+
+static void DestroyBattleInfoWinGfx(struct Sprite *sprite)
+{
+    FreeSpriteTilesByTag(TAG_BATTLE_INFO_WINDOW);
+    if (GetSpriteTileStartByTag(TAG_LAST_BALL_WINDOW) == 0xFFFF
+     && GetSpriteTileStartByTag(MOVE_INFO_WINDOW_TAG) == 0xFFFF)
+        FreeSpritePaletteByTag(TAG_ABILITY_POP_UP);
+    DestroySprite(sprite);
+    gBattleStruct->battleInfoSpriteId = MAX_SPRITES;
+}
+
+static void SpriteCB_BattleInfoWin(struct Sprite *sprite)
+{
+    if (sprite->sHide)
+    {
+        if (sprite->x != LAST_BALL_WIN_X_0)
+            sprite->x--;
+
+        if (sprite->x == LAST_BALL_WIN_X_0)
+            DestroyBattleInfoWinGfx(sprite);
+    }
+    else
+    {
+        if (sprite->x != LAST_BALL_WIN_X_F)
+            sprite->x++;
+    }
+}
+
+void TryAddBattleInfoSprite(void)
+{
+    if (!B_SHOW_BATTLE_INFO_BUTTON)
+        return;
+    if (!(gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_FRONTIER)))
+        return;
+
+    // Restore if already created but hidden (e.g. sliding off-screen)
+    if (gBattleStruct->battleInfoSpriteId != MAX_SPRITES)
+    {
+        gSprites[gBattleStruct->battleInfoSpriteId].sHide = FALSE;
+        return;
+    }
+
+    LoadSpritePalette(&sSpritePalette_AbilityPopUp);
+    if (GetSpriteTileStartByTag(TAG_BATTLE_INFO_WINDOW) == 0xFFFF)
+        LoadSpriteSheet(&sSpriteSheet_BattleInfoWindow);
+
+    gBattleStruct->battleInfoSpriteId = CreateSprite(&sSpriteTemplate_BattleInfoWindow,
+                                                     LAST_BALL_WIN_X_0,
+                                                     LAST_USED_WIN_Y, 5);
+    gSprites[gBattleStruct->battleInfoSpriteId].sHide = FALSE;
+}
+
+void TryHideBattleInfoSprite(void)
+{
+    if (!B_SHOW_BATTLE_INFO_BUTTON)
+        return;
+    if (gBattleStruct->battleInfoSpriteId == MAX_SPRITES)
+        return;
+
+    gSprites[gBattleStruct->battleInfoSpriteId].sHide = TRUE;
 }
 
 void CategoryIcons_LoadSpritesGfx(void)
