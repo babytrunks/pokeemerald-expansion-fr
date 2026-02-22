@@ -83,6 +83,7 @@ static EWRAM_DATA struct {
 } *sFlyMap = NULL;
 
 static bool32 sDrawFlyDestTextWindow;
+static mapsec_u16_t *sActiveFlyIconMapSecId = NULL;
 
 static u8 ProcessRegionMapInput_Full(void);
 static u8 MoveRegionMapCursor_Full(void);
@@ -2108,9 +2109,25 @@ void LoadFlyDestIcons(void)
 {
     struct SpriteSheet sheet;
 
+    sActiveFlyIconMapSecId = &sFlyMap->regionMap.mapSecId;
     DecompressDataWithHeaderWram(sFlyTargetIcons_Gfx, sFlyMap->tileBuffer);
     sheet.data = sFlyMap->tileBuffer;
     sheet.size = sizeof(sFlyMap->tileBuffer);
+    sheet.tag = TAG_FLY_ICON;
+    LoadSpriteSheet(&sheet);
+    LoadSpritePalette(&sFlyTargetIconsSpritePalette);
+    CreateFlyDestIcons();
+    TryCreateRedOutlineFlyDestIcons();
+}
+
+void LoadFlyDestIconsForFieldMap(u8 *tileBuffer, mapsec_u16_t *mapSecIdPtr)
+{
+    struct SpriteSheet sheet;
+
+    sActiveFlyIconMapSecId = mapSecIdPtr;
+    DecompressDataWithHeaderWram(sFlyTargetIcons_Gfx, tileBuffer);
+    sheet.data = tileBuffer;
+    sheet.size = 0x1c0;
     sheet.tag = TAG_FLY_ICON;
     LoadSpriteSheet(&sheet);
     LoadSpritePalette(&sFlyTargetIconsSpritePalette);
@@ -2392,7 +2409,7 @@ static void TryCreateRedOutlineFlyDestIcons(void)
 // Flickers fly destination icon color (by hiding the fly icon sprite) if the cursor is currently on it
 static void SpriteCB_FlyDestIcon(struct Sprite *sprite)
 {
-    if (sFlyMap->regionMap.mapSecId == sprite->sIconMapSec)
+    if (*sActiveFlyIconMapSecId == sprite->sIconMapSec)
     {
         if (++sprite->sFlickerTimer > 16)
         {
