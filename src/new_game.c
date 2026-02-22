@@ -56,6 +56,7 @@
 #include "follower_npc.h"
 #include "text.h"
 #include "tx_registered_items_menu.h"
+#include "randomizer.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
 extern const u8 EventScript_ResetAllMapFlagsFrlg[];
@@ -262,6 +263,9 @@ void NewGameInitData(void)
     ResetDexNav();
     ClearFollowerNPCData();
     QuestMenu_ResetMenuSaveData();
+    #if (RANDOMIZER_AVAILABLE == TRUE) && (RANDOMIZER_DYNAMIC_SPECIES == TRUE)
+        PreloadRandomizationTables();
+    #endif
 }
 
 static void ResetMiniGamesRecords(void)

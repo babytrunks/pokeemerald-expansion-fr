@@ -743,7 +743,7 @@ static void PrintMonStats(bool8 calcInitialEvTotal)
     // ConvertIntToDecimalStringN(gStringVar1, lives, STR_CONV_MODE_RIGHT_ALIGN, 1);
     // StringExpandPlaceholders(gStringVar2, sText_MonLives);
     AddTextPrinterParameterized4(WINDOW_3, FONT_SMALL_NARROW, 4, 50, 0, 0, sMenuWindowFontColors[FONT_WHITE], 0xFF, gStringVar2);
-    u16 ability = GetAbilityBySpecies(sStatEditorDataPtr->speciesID, GetMonData(ReturnPartyMon(), MON_DATA_ABILITY_NUM));
+    u16 ability = GetAbilityBySpecies(sStatEditorDataPtr->speciesID, GetMonData(ReturnPartyMon(), MON_DATA_ABILITY_NUM), FALSE);
     StringCopy(gStringVar2, gAbilitiesInfo[ability].name);
     AddTextPrinterParameterized4(WINDOW_3, FONT_SMALL_NARROW, 4, 34, 0, 0, sMenuWindowFontColors[FONT_WHITE], 0xFF, gStringVar2);
 

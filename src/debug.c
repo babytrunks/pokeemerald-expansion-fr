@@ -78,6 +78,7 @@
 #include "rtc.h"
 #include "fake_rtc.h"
 #include "save.h"
+#include "randomizer.h"
 
 enum FollowerNPCCreateDebugMenu
 {
@@ -88,6 +89,86 @@ enum FollowerNPCCreateDebugMenu
     DEBUG_FNPC_RED,
     DEBUG_FNPC_LEAF,
     DEBUG_FNPC_COUNT,
+};
+
+enum DebugMainMenuItems
+{
+    DEBUG_MENU_ITEM_UTILITIES,
+    DEBUG_MENU_ITEM_PCBAG,
+    DEBUG_MENU_ITEM_PARTY,
+    DEBUG_MENU_ITEM_GIVE,
+    DEBUG_MENU_ITEM_SCRIPTS,
+    DEBUG_MENU_ITEM_FLAGVAR,
+    //DEBUG_MENU_ITEM_BATTLE,
+    DEBUG_MENU_ITEM_SOUND,
+    DEBUG_MENU_ITEM_CANCEL,
+};
+
+enum UtilDebugMenu
+{
+    DEBUG_UTIL_MENU_ITEM_FLY,
+    DEBUG_UTIL_MENU_ITEM_WARP,
+    DEBUG_UTIL_MENU_ITEM_SAVEBLOCK,
+    DEBUG_UTIL_MENU_ITEM_ROM_SPACE,
+    DEBUG_UTIL_MENU_ITEM_WEATHER,
+    DEBUG_UTIL_MENU_ITEM_FONT_TEST,
+    DEBUG_UTIL_MENU_ITEM_CHECKWALLCLOCK,
+    DEBUG_UTIL_MENU_ITEM_SETWALLCLOCK,
+    DEBUG_UTIL_MENU_ITEM_WATCHCREDITS,
+    DEBUG_UTIL_MENU_ITEM_PLAYER_NAME,
+    DEBUG_UTIL_MENU_ITEM_PLAYER_GENDER,
+    DEBUG_UTIL_MENU_ITEM_PLAYER_ID,
+    DEBUG_UTIL_MENU_ITEM_CHEAT,
+    DEBUG_UTIL_MENU_ITEM_EXPANSION_VER,
+    DEBUG_UTIL_MENU_ITEM_BERRY_FUNCTIONS,
+    DEBUG_UTIL_MENU_ITEM_EWRAM_COUNTERS,
+    #if RANDOMIZER_AVAILABLE == TRUE
+    DEBUG_UTIL_MENU_ITEM_RANDOMIZER,
+    #endif
+    DEBUG_UTIL_MENU_ITEM_STEVEN_MULTI,
+};
+
+enum GivePCBagDebugMenu
+{
+    DEBUG_PCBAG_MENU_ITEM_ACCESS_PC,
+    DEBUG_PCBAG_MENU_ITEM_FILL,
+    DEBUG_PCBAG_MENU_ITEM_CLEAR_BAG,
+    DEBUG_PCBAG_MENU_ITEM_CLEAR_BOXES,
+};
+
+enum GivePCBagFillDebugMenu
+{
+    DEBUG_PCBAG_MENU_ITEM_FILL_PC_BOXES_FAST,
+    DEBUG_PCBAG_MENU_ITEM_FILL_PC_BOXES_SLOW,
+    DEBUG_PCBAG_MENU_ITEM_FILL_PC_ITEMS,
+    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_ITEMS,
+    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BALLS,
+    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_TMHM,
+    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_BERRIES,
+    DEBUG_PCBAG_MENU_ITEM_FILL_POCKET_KEY_ITEMS,
+};
+
+enum PartyDebugMenu
+{
+    DEBUG_PARTY_MENU_ITEM_MOVE_REMINDER,
+    DEBUG_PARTY_MENU_ITEM_HATCH_AN_EGG,
+    DEBUG_PARTY_MENU_ITEM_HEAL_PARTY,
+    DEBUG_PARTY_MENU_ITEM_INFLICT_STATUS1,
+    DEBUG_PARTY_MENU_ITEM_CHECK_EVS,
+    DEBUG_PARTY_MENU_ITEM_CHECK_IVS,
+    DEBUG_PARTY_MENU_ITEM_CLEAR_PARTY,
+};
+
+enum ScriptDebugMenu
+{
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_1,
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_2,
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_3,
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_4,
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_5,
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_6,
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_7,
+    DEBUG_UTIL_MENU_ITEM_SCRIPT_8,
 };
 
 enum FlagsVarsDebugMenu
@@ -2557,7 +2638,7 @@ static void DebugAction_Give_Pokemon_SelectNature(u8 taskId)
         gTasks[taskId].tInput = 0;
         gTasks[taskId].tDigit = 0;
 
-        enum Ability abilityId = GetAbilityBySpecies(sDebugMonData->species, 0);
+        enum Ability abilityId = GetAbilityBySpecies(sDebugMonData->species, 0, FALSE);
         Debug_Display_Ability(abilityId, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
 
         gTasks[taskId].func = DebugAction_Give_Pokemon_SelectAbility;
@@ -2602,11 +2683,11 @@ static void DebugAction_Give_Pokemon_SelectAbility(u8 taskId)
                 gTasks[taskId].tInput = 0;
         }
 
-        while (GetAbilityBySpecies(sDebugMonData->species, gTasks[taskId].tInput - i) == ABILITY_NONE && gTasks[taskId].tInput - i < NUM_ABILITY_SLOTS)
+        while (GetAbilityBySpecies(sDebugMonData->species, gTasks[taskId].tInput - i, FALSE) == ABILITY_NONE && gTasks[taskId].tInput - i < NUM_ABILITY_SLOTS)
         {
             i++;
         }
-        enum Ability abilityId = GetAbilityBySpecies(sDebugMonData->species, gTasks[taskId].tInput - i);
+        enum Ability abilityId = GetAbilityBySpecies(sDebugMonData->species, gTasks[taskId].tInput - i, FALSE);
         Debug_Display_Ability(abilityId, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
     }
 
@@ -2997,11 +3078,11 @@ static void DebugAction_Give_Pokemon_ComplexCreateMon(u8 taskId) //https://githu
     }
 
     //Ability
-    if (abilityNum == 0xFF || GetAbilityBySpecies(species, abilityNum) == ABILITY_NONE)
+    if (abilityNum == 0xFF || GetAbilityBySpecies(species, abilityNum, FALSE) == ABILITY_NONE)
     {
         do {
             abilityNum = Random() % NUM_ABILITY_SLOTS;  // includes hidden abilities
-        } while (GetAbilityBySpecies(species, abilityNum) == ABILITY_NONE);
+        } while (GetAbilityBySpecies(species, abilityNum, FALSE) == ABILITY_NONE);
     }
 
     SetMonData(&mon, MON_DATA_ABILITY_NUM, &abilityNum);
@@ -4160,9 +4241,9 @@ static void DebugAction_Party_HealParty(u8 taskId)
 void DebugNative_GetAbilityNames(void)
 {
     u32 species = GetMonData(&gPlayerParty[gSpecialVar_0x8004], MON_DATA_SPECIES);
-    StringCopy(gStringVar1, gAbilitiesInfo[GetAbilityBySpecies(species, 0)].name);
-    StringCopy(gStringVar2, gAbilitiesInfo[GetAbilityBySpecies(species, 1)].name);
-    StringCopy(gStringVar3, gAbilitiesInfo[GetAbilityBySpecies(species, 2)].name);
+    StringCopy(gStringVar1, gAbilitiesInfo[GetAbilityBySpecies(species, 0, FALSE)].name);
+    StringCopy(gStringVar2, gAbilitiesInfo[GetAbilityBySpecies(species, 1, FALSE)].name);
+    StringCopy(gStringVar3, gAbilitiesInfo[GetAbilityBySpecies(species, 2, FALSE)].name);
 }
 
 #define tPartyId               data[5]
@@ -4259,7 +4340,7 @@ const struct Trainer* GetDebugAiTrainer(void)
 static void DebugAction_Party_SetParty(u8 taskId)
 {
     ZeroPlayerPartyMons();
-    CreateNPCTrainerPartyFromTrainer(gPlayerParty, &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER], TRUE, BATTLE_TYPE_TRAINER);
+    CreateNPCTrainerPartyFromTrainer(gPlayerParty, &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER], TRUE, BATTLE_TYPE_TRAINER, 0);
     ScriptContext_Enable();
     Debug_DestroyMenu_Full(taskId);
 }
@@ -4268,8 +4349,8 @@ static void DebugAction_Party_BattleSingle(u8 taskId)
 {
     ZeroPlayerPartyMons();
     ZeroEnemyPartyMons();
-    CreateNPCTrainerPartyFromTrainer(gPlayerParty, &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER], TRUE, BATTLE_TYPE_TRAINER);
-    CreateNPCTrainerPartyFromTrainer(gEnemyParty, GetDebugAiTrainer(), FALSE, BATTLE_TYPE_TRAINER);
+    CreateNPCTrainerPartyFromTrainer(gPlayerParty, &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER], TRUE, BATTLE_TYPE_TRAINER, 0);
+    CreateNPCTrainerPartyFromTrainer(gEnemyParty, GetDebugAiTrainer(), FALSE, BATTLE_TYPE_TRAINER, 0);
 
     gBattleTypeFlags = BATTLE_TYPE_TRAINER;
     gDebugAIFlags = sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_AI].aiFlags;

@@ -67,6 +67,7 @@
 #include "pokevial.h" //Pokevial Branch
 #include "util.h"
 #include "new_game.h"
+#include "randomizer.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
@@ -1996,6 +1997,16 @@ bool8 ScrCmd_showmonpic(struct ScriptContext *ctx)
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
 
+    #if RANDOMIZER_AVAILABLE == TRUE
+        u16 i = 0;
+        for(i = 0; i < STARTER_AND_GIFT_MON_COUNT; i++)
+        {
+            if(gStarterAndGiftMonTable[i] == species)
+                break;
+        }
+        species = RandomizeStarterAndGiftMon(i, gStarterAndGiftMonTable);
+    #endif
+
     ScriptMenu_ShowPokemonPic(species, x, y);
     return FALSE;
 }
@@ -2514,6 +2525,13 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
     u16 item2 = ScriptReadHalfword(ctx);
 
     Script_RequestEffects(SCREFF_V1);
+    #if RANDOMIZER_AVAILABLE == TRUE
+        u8 mapNum = gSaveBlock1Ptr->location.mapNum;
+        u8 mapGroup = gSaveBlock1Ptr->location.mapGroup;
+        u8 localId = gObjectEvents[gSelectedObjectEvent].localId;
+
+        species = RandomizeFixedEncounterMon(species, mapNum, mapGroup, localId);
+    #endif
 
     sIsScriptedWildOneVsTwo = FALSE;
 
@@ -2524,6 +2542,10 @@ bool8 ScrCmd_setwildbattle(struct ScriptContext *ctx)
     }
     else
     {
+        #if RANDOMIZER_AVAILABLE == TRUE
+            species2 = RandomizeFixedEncounterMon(species2, mapNum, mapGroup, localId);
+        #endif
+
         CreateScriptedDoubleWildMon(species, level, item, species2, level2, item2);
         sIsScriptedWildDouble = TRUE;
     }

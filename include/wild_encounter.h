@@ -13,6 +13,7 @@ enum WildPokemonArea {
     WILD_AREA_FISHING,
     WILD_AREA_HIDDEN
 };
+typedef enum WildPokemonArea WildArea;
 
 struct WildPokemon
 {

@@ -1699,6 +1699,23 @@ bool32 AI_IsAbilityOnSide(u32 battlerId, enum Ability ability)
         return FALSE;
 }
 
+u32 AI_GetBattlerAbility(u32 battler)
+{
+    u16 abilityToUse = GetAbilityBySpecies(gBattleMons[battler].species, gBattleMons[battler].abilityNum, gBattleMons[battler].cantRandomizeAbility);
+    if (gAbilitiesInfo[abilityToUse].cantBeSuppressed)
+        return abilityToUse;
+
+    if (gBattleMons[battler].volatiles.gastroAcid)
+        return ABILITY_NONE;
+
+    if (IsNeutralizingGasOnField()
+     && abilityToUse != ABILITY_NEUTRALIZING_GAS
+     && GetBattlerHoldEffectIgnoreAbility(battler) != HOLD_EFFECT_ABILITY_SHIELD)
+        return ABILITY_NONE;
+
+    return abilityToUse;
+}
+
 // does NOT include ability suppression checks
 enum Ability AI_DecideKnownAbilityForTurn(u32 battlerId)
 {

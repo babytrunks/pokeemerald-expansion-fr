@@ -106,8 +106,9 @@ struct Trainer
     /*0x23*/ u8 poolPickIndex;
     /*0x24*/ u8 poolPruneIndex;
     /*0x25*/ u16 overrideTrainer;
-    /*0x26*/ u8 trainerBackPic;
-    /*0x27*/ u8 dynamicLevelRatio;
+    /*0x27*/ u8 trainerBackPic;
+    /*0x28*/ u8 dynamicLevelRatio;
+    /*0x29*/ bool8 isBossTrainer:1;
 };
 
 struct TrainerClass
@@ -317,6 +318,14 @@ static inline const u8 GetTrainerDynamicPartyLevelFromId(u16 trainerId)
     return GetTrainerStructFromId(trainerId)->dynamicLevelRatio;
 }
 
+static inline const bool32 IsBossTrainerBattle(u16 trainerId)
+{
+    u32 sanitizedTrainerId = SanitizeTrainerId(trainerId);
+    enum DifficultyLevel difficulty = GetTrainerDifficultyLevel(sanitizedTrainerId);
+
+    return gTrainers[difficulty][sanitizedTrainerId].isBossTrainer;
+}
+
 //! outfits
 
 struct Outfit
@@ -339,5 +348,6 @@ extern const struct Outfit gOutfits[OUTFIT_COUNT];
 
 #define GFX 0
 #define PAL 1
+
 
 #endif // GUARD_DATA_H
