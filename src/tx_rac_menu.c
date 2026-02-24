@@ -652,6 +652,7 @@ static const u8 *const OptionTextRight(u8 menuItem)
     case MENU_DIFFICULTY:       return sOptionMenuItemsNamesDifficulty[menuItem];
     case MENU_CHALLENGES:       return sOptionMenuItemsNamesChallenges[menuItem];
     }
+    return 0;
 }
 
 // Menu left side text conditions
@@ -729,27 +730,27 @@ static bool8 CheckConditions(int selection)
         switch(selection)
         {
         case MENUITEM_NUZLOCKE_SPECIES_CLAUSE:
-            if ((gSaveBlock1Ptr->tx_Nuzlocke_EasyMode) == 0)
+            if ((TX_NUZLOCKE_MINI_MODE) == 0)
                 return sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
             else
                 return !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
         case MENUITEM_NUZLOCKE_SHINY_CLAUSE:
-            if ((gSaveBlock1Ptr->tx_Nuzlocke_EasyMode) == 0)
+            if ((TX_NUZLOCKE_MINI_MODE) == 0)
                 return sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
             else
                 return !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
         case MENUITEM_NUZLOCKE_NICKNAMING:
-            if ((gSaveBlock1Ptr->tx_Nuzlocke_EasyMode) == 0)
+            if ((TX_NUZLOCKE_MINI_MODE) == 0)
                 return sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
             else
                 return !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
         case MENUITEM_NUZLOCKE_DELETION:
-            if ((gSaveBlock1Ptr->tx_Nuzlocke_EasyMode) == 0)
+            if ((TX_NUZLOCKE_MINI_MODE) == 0)
                 return sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
             else
                 return !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
         case MENUITEM_NUZLOCKE_RARE_CANDY:
-            if ((gSaveBlock1Ptr->tx_Nuzlocke_EasyMode) == 0)
+            if ((TX_NUZLOCKE_MINI_MODE) == 0)
                 return sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
             else
                 return sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE];
@@ -768,6 +769,7 @@ static bool8 CheckConditions(int selection)
         default:                                return TRUE;
         }
     }
+    return 0;
 }
 
 // Descriptions
@@ -1167,6 +1169,8 @@ static const u8 *const OptionTextDescription(void)
         else
             return sOptionMenuItemDescriptionsChallenges[menuItem][selection];
     }
+    return 0;
+
 }
 
 static u8 MenuItemCount(void)
@@ -1180,6 +1184,7 @@ static u8 MenuItemCount(void)
     case MENU_DIFFICULTY:   return MENUITEM_DIFFICULTY_COUNT;
     case MENU_CHALLENGES:   return MENUITEM_CHALLENGES_COUNT;
     }
+    return 0;
 }
 
 static u8 MenuItemCountFromIndex(u8 index)
@@ -1193,6 +1198,7 @@ static u8 MenuItemCountFromIndex(u8 index)
     case MENU_DIFFICULTY:   return MENUITEM_DIFFICULTY_COUNT;
     case MENU_CHALLENGES:   return MENUITEM_CHALLENGES_COUNT;
     }
+    return 0;
 }
 
 static u8 MenuItemCancel(void)
@@ -1206,6 +1212,7 @@ static u8 MenuItemCancel(void)
     case MENU_DIFFICULTY:   return MENUITEM_DIFFICULTY_NEXT;
     case MENU_CHALLENGES:   return MENUITEM_CHALLENGES_SAVE;
     }
+    return 0;
 }
 
 // Main code
@@ -1445,157 +1452,157 @@ void CB2_InitTxRandomizerChallengesMenu(void)
     case 6:
         //tx_randomizer_and_challenges
         //gSaveBlock1Ptr->tx_Mode_AlternateSpawns                  = tx_Mode_AlternateSpawns;
-        gSaveBlock1Ptr->tx_Mode_InfiniteTMs                 = TX_MODE_INFINITE_TMS;
-        gSaveBlock1Ptr->tx_Mode_PoisonSurvive               = TX_MODE_SURVIVE_POISON;
-        gSaveBlock1Ptr->tx_Mode_Synchronize                 = TX_MODE_NEW_SYNCHRONIZE;
-        gSaveBlock1Ptr->tx_Mode_Mints                       = TX_MODE_MINTS;
-        gSaveBlock1Ptr->tx_Mode_New_Citrus                  = TX_MODE_NEW_CITRUS;
-        gSaveBlock1Ptr->tx_Mode_Modern_Types                = TX_MODE_MODERN_TYPES;
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types                 = TX_MODE_FAIRY_TYPES;
-        gSaveBlock1Ptr->tx_Mode_New_Stats                   = TX_MODE_NEW_STATS;
-        gSaveBlock1Ptr->tx_Mode_Sturdy                      = TX_MODE_STURDY;
-        gSaveBlock1Ptr->tx_Mode_Modern_Moves                = TX_MODE_MODERN_MOVES;
-        gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = TX_MODE_LEGENDARY_ABILITIES;
-        gSaveBlock1Ptr->tx_Mode_New_Legendaries             = TX_MODE_NEW_LEGENDARIES;
+        //gSaveBlock1Ptr->tx_Mode_InfiniteTMs                 = TX_MODE_INFINITE_TMS;
+        //gSaveBlock1Ptr->tx_Mode_PoisonSurvive               = TX_MODE_SURVIVE_POISON;
+        //gSaveBlock1Ptr->tx_Mode_Synchronize                 = TX_MODE_NEW_SYNCHRONIZE;
+        //gSaveBlock1Ptr->tx_Mode_Mints                       = TX_MODE_MINTS;
+        //gSaveBlock1Ptr->tx_Mode_New_Citrus                  = TX_MODE_NEW_CITRUS;
+        //gSaveBlock1Ptr->tx_Mode_Modern_Types                = TX_MODE_MODERN_TYPES;
+        //gSaveBlock1Ptr->tx_Mode_Fairy_Types                 = TX_MODE_FAIRY_TYPES;
+        //gSaveBlock1Ptr->tx_Mode_New_Stats                   = TX_MODE_NEW_STATS;
+        //gSaveBlock1Ptr->tx_Mode_Sturdy                      = TX_MODE_STURDY;
+        //gSaveBlock1Ptr->tx_Mode_Modern_Moves                = TX_MODE_MODERN_MOVES;
+        //gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = TX_MODE_LEGENDARY_ABILITIES;
+        //gSaveBlock1Ptr->tx_Mode_New_Legendaries             = TX_MODE_NEW_LEGENDARIES;
         //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = TX_MODE_TYPE_EFFECTIVENESS;
 
-        gSaveBlock1Ptr->tx_Features_RTCType                 = TX_FEATURES_RTC_TYPE;
-        gSaveBlock1Ptr->tx_Features_ShinyChance             = TX_FEATURES_SHINY_CHANCE;
-        gSaveBlock1Ptr->tx_Features_WildMonDropItems        = TX_FEATURES_ITEM_DROP;
+        //gSaveBlock1Ptr->tx_Features_RTCType                 = TX_FEATURES_RTC_TYPE;
+        //gSaveBlock1Ptr->tx_Features_ShinyChance             = TX_FEATURES_SHINY_CHANCE;
+        //gSaveBlock1Ptr->tx_Features_WildMonDropItems        = TX_FEATURES_ITEM_DROP;
         //gSaveBlock1Ptr->tx_Features_EasierFeebas            = TX_FEATURES_EASIER_FEEBAS;
-        gSaveBlock1Ptr->tx_Features_Unlimited_WT            = TX_FEATURES_UNLIMITED_WT;
-        gSaveBlock1Ptr->tx_Features_FrontierBans            = TX_FEATURES_FRONTIER_BANS;
-        gSaveBlock1Ptr->tx_Features_ShinyColors             = TX_FEATURES_SHINY_COLORS;
+        //gSaveBlock1Ptr->tx_Features_Unlimited_WT            = TX_FEATURES_UNLIMITED_WT;
+        //gSaveBlock1Ptr->tx_Features_FrontierBans            = TX_FEATURES_FRONTIER_BANS;
+        //gSaveBlock1Ptr->tx_Features_ShinyColors             = TX_FEATURES_SHINY_COLORS;
 
-        gSaveBlock1Ptr->tx_Random_Starter                   = TX_RANDOM_STARTER;
-        gSaveBlock1Ptr->tx_Random_WildPokemon               = TX_RANDOM_WILD_POKEMON;
-        gSaveBlock1Ptr->tx_Random_Trainer                   = TX_RANDOM_TRAINER;
-        gSaveBlock1Ptr->tx_Random_Static                    = TX_RANDOM_STATIC;
-        gSaveBlock1Ptr->tx_Random_Similar                   = TX_RANDOM_SIMILAR;
-        gSaveBlock1Ptr->tx_Random_MapBased                  = TX_RANDOM_MAP_BASED;
-        gSaveBlock1Ptr->tx_Random_IncludeLegendaries        = TX_RANDOM_INCLUDE_LEGENDARIES;
-        gSaveBlock1Ptr->tx_Random_Type                      = TX_RANDOM_TYPE;
-        gSaveBlock1Ptr->tx_Random_Moves                     = TX_RANDOM_MOVES;
-        gSaveBlock1Ptr->tx_Random_Abilities                 = TX_RANDOM_ABILITIES;
-        gSaveBlock1Ptr->tx_Random_Evolutions                = TX_RANDOM_EVOLUTION;
-        gSaveBlock1Ptr->tx_Random_EvolutionMethods          = TX_RANDOM_EVOLUTION_METHODE;
-        gSaveBlock1Ptr->tx_Random_TypeEffectiveness         = TX_RANDOM_TYPE_EFFECTIVENESS;
-        gSaveBlock1Ptr->tx_Random_Items                     = TX_RANDOM_ITEMS;
-        gSaveBlock1Ptr->tx_Random_Chaos                     = TX_RANDOM_CHAOS_MODE;
-        gSaveBlock1Ptr->tx_Challenges_LessEscapes           = TX_CHALLENGES_LESS_ESCAPES;
+        //gSaveBlock1Ptr->tx_Random_Starter                   = TX_RANDOM_STARTER;
+        //gSaveBlock1Ptr->tx_Random_WildPokemon               = TX_RANDOM_WILD_POKEMON;
+        //gSaveBlock1Ptr->tx_Random_Trainer                   = TX_RANDOM_TRAINER;
+        //gSaveBlock1Ptr->tx_Random_Static                    = TX_RANDOM_STATIC;
+        //gSaveBlock1Ptr->tx_Random_Similar                   = TX_RANDOM_SIMILAR;
+        //gSaveBlock1Ptr->tx_Random_MapBased                  = TX_RANDOM_MAP_BASED;
+        //gSaveBlock1Ptr->tx_Random_IncludeLegendaries        = TX_RANDOM_INCLUDE_LEGENDARIES;
+        //gSaveBlock1Ptr->tx_Random_Type                      = TX_RANDOM_TYPE;
+        //gSaveBlock1Ptr->tx_Random_Moves                     = TX_RANDOM_MOVES;
+        //gSaveBlock1Ptr->tx_Random_Abilities                 = TX_RANDOM_ABILITIES;
+        //gSaveBlock1Ptr->tx_Random_Evolutions                = TX_RANDOM_EVOLUTION;
+        //gSaveBlock1Ptr->tx_Random_EvolutionMethods          = TX_RANDOM_EVOLUTION_METHODE;
+        //gSaveBlock1Ptr->tx_Random_TypeEffectiveness         = TX_RANDOM_TYPE_EFFECTIVENESS;
+        //gSaveBlock1Ptr->tx_Random_Items                     = TX_RANDOM_ITEMS;
+        //gSaveBlock1Ptr->tx_Random_Chaos                     = TX_RANDOM_CHAOS_MODE;
+        //gSaveBlock1Ptr->tx_Challenges_LessEscapes           = TX_CHALLENGES_LESS_ESCAPES;
 
-        gSaveBlock1Ptr->tx_Challenges_Nuzlocke              = TX_NUZLOCKE_NUZLOCKE;
-        gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore      = TX_NUZLOCKE_NUZLOCKE_HARDCORE;
-        gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause           = TX_NUZLOCKE_SPECIES_CLAUSE;
-        gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause             = TX_NUZLOCKE_SHINY_CLAUSE;
-        gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming              = TX_NUZLOCKE_NICKNAMING;
-        gSaveBlock1Ptr->tx_Nuzlocke_Deletion                = TX_NUZLOCKE_DELETION;
-        gSaveBlock1Ptr->tx_Nuzlocke_RareCandy               = TX_NUZLOCKE_RARE_CANDY;
+        //gSaveBlock1Ptr->tx_Challenges_Nuzlocke              = TX_NUZLOCKE_NUZLOCKE;
+        //gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore      = TX_NUZLOCKE_NUZLOCKE_HARDCORE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause           = TX_NUZLOCKE_SPECIES_CLAUSE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause             = TX_NUZLOCKE_SHINY_CLAUSE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming              = TX_NUZLOCKE_NICKNAMING;
+        //gSaveBlock1Ptr->tx_Nuzlocke_Deletion                = TX_NUZLOCKE_DELETION;
+        //gSaveBlock1Ptr->tx_Nuzlocke_RareCandy               = TX_NUZLOCKE_RARE_CANDY;
     
-        gSaveBlock1Ptr->tx_Challenges_PartyLimit            = TX_DIFFICULTY_PARTY_LIMIT;
-        gSaveBlock1Ptr->tx_Challenges_LevelCap              = TX_DIFFICULTY_LEVEL_CAP;
-        gSaveBlock1Ptr->tx_Challenges_ExpMultiplier         = TX_DIFFICULTY_EXP_MULTIPLIER;
-        gSaveBlock1Ptr->tx_Challenges_NoItemPlayer          = TX_DIFFICULTY_NO_ITEM_PLAYER;
-        gSaveBlock1Ptr->tx_Challenges_NoItemTrainer         = TX_DIFFICULTY_NO_ITEM_TRAINER;
-        gSaveBlock1Ptr->tx_Challenges_NoEVs                 = TX_DIFFICULTY_NO_EVS;
-        gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs     = TX_DIFFICULTY_SCALING_IVS;
-        gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs     = TX_DIFFICULTY_SCALING_EVS;
-        gSaveBlock1Ptr->tx_Challenges_PkmnCenter            = TX_DIFFICULTY_PKMN_CENTER;
+        //gSaveBlock1Ptr->tx_Challenges_PartyLimit            = TX_DIFFICULTY_PARTY_LIMIT;
+        //gSaveBlock1Ptr->tx_Challenges_LevelCap              = TX_DIFFICULTY_LEVEL_CAP;
+        //gSaveBlock1Ptr->tx_Challenges_ExpMultiplier         = TX_DIFFICULTY_EXP_MULTIPLIER;
+        //gSaveBlock1Ptr->tx_Challenges_NoItemPlayer          = TX_DIFFICULTY_NO_ITEM_PLAYER;
+        //gSaveBlock1Ptr->tx_Challenges_NoItemTrainer         = TX_DIFFICULTY_NO_ITEM_TRAINER;
+        //gSaveBlock1Ptr->tx_Challenges_NoEVs                 = TX_DIFFICULTY_NO_EVS;
+        //gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs     = TX_DIFFICULTY_SCALING_IVS;
+        //gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs     = TX_DIFFICULTY_SCALING_EVS;
+        //gSaveBlock1Ptr->tx_Challenges_PkmnCenter            = TX_DIFFICULTY_PKMN_CENTER;
         //gSaveBlock1Ptr->tx_Features_LimitDifficulty         = TX_DIFFICULTY_LIMIT_DIFFICULTY;
-        gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs           = TX_DIFFICULTY_MAX_PARTY_IVS;
-        gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig         = TX_DIFFICULTY_ESCAPE_ROPE_DIG;
+        //gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs           = TX_DIFFICULTY_MAX_PARTY_IVS;
+        //gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig         = TX_DIFFICULTY_ESCAPE_ROPE_DIG;
         //gSaveBlock1Ptr->tx_Difficulty_HardExp               = TX_DIFFICULTY_HARD_EXP;
 
-        gSaveBlock1Ptr->tx_Challenges_PCHeal                = TX_CHALLENGE_PCHEAL;
-        gSaveBlock1Ptr->tx_Challenges_Expensive             = TX_CHALLENGES_EXPENSIVE;
-        gSaveBlock1Ptr->tx_Challenges_EvoLimit              = TX_CHALLENGE_EVO_LIMIT;
-        gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge      = TX_CHALLENGE_TYPE;
-        gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer     = TX_CHALLENGE_BASE_STAT_EQUALIZER;
-        gSaveBlock1Ptr->tx_Challenges_Mirror                = TX_CHALLENGE_MIRROR;
-        gSaveBlock1Ptr->tx_Challenges_Mirror_Thief          = TX_CHALLENGE_MIRROR_THIEF;
+        //gSaveBlock1Ptr->tx_Challenges_PCHeal                = TX_CHALLENGE_PCHEAL;
+        //gSaveBlock1Ptr->tx_Challenges_Expensive             = TX_CHALLENGES_EXPENSIVE;
+        //gSaveBlock1Ptr->tx_Challenges_EvoLimit              = TX_CHALLENGE_EVO_LIMIT;
+        //gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge      = TX_CHALLENGE_TYPE;
+        //gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer     = TX_CHALLENGE_BASE_STAT_EQUALIZER;
+        //gSaveBlock1Ptr->tx_Challenges_Mirror                = TX_CHALLENGE_MIRROR;
+        //gSaveBlock1Ptr->tx_Challenges_Mirror_Thief          = TX_CHALLENGE_MIRROR_THIEF;
                
 
         sOptions = AllocZeroed(sizeof(*sOptions));
         //MENU MODE
         sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN]         = FALSE;
         //sOptions->sel_mode[MENUITEM_MODE_ALTERNATE_SPAWNS]       = gSaveBlock1Ptr->tx_Mode_AlternateSpawns;
-        sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]           = gSaveBlock1Ptr->tx_Mode_InfiniteTMs;
-        sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]         = gSaveBlock1Ptr->tx_Mode_PoisonSurvive;  
-        sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]            = gSaveBlock1Ptr->tx_Mode_Synchronize;
-        sOptions->sel_mode[MENUITEM_MODE_MINTS]                  = gSaveBlock1Ptr->tx_Mode_Mints;
-        sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]             = gSaveBlock1Ptr->tx_Mode_New_Citrus;
+        sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]           = TX_MODE_INFINITE_TMS;
+        sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]         = TX_MODE_SURVIVE_POISON;  
+        sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]            = TX_MODE_NEW_SYNCHRONIZE;
+        sOptions->sel_mode[MENUITEM_MODE_MINTS]                  = TX_MODE_MINTS;
+        sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]             = TX_MODE_NEW_CITRUS;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]           = gSaveBlock1Ptr->tx_Mode_Modern_Types;
-        sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]            = gSaveBlock1Ptr->tx_Mode_Fairy_Types;
+        sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]            = TX_MODE_FAIRY_TYPES;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]              = gSaveBlock1Ptr->tx_Mode_New_Stats;
-        sOptions->sel_mode[MENUITEM_MODE_STURDY]                 = gSaveBlock1Ptr->tx_Mode_Sturdy;
-        sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]           = gSaveBlock1Ptr->tx_Mode_Modern_Moves;
-        sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]    = gSaveBlock1Ptr->tx_Mode_Legendary_Abilities;
+        sOptions->sel_mode[MENUITEM_MODE_STURDY]                 = TX_MODE_STURDY;
+        sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]           = TX_MODE_MODERN_MOVES;
+        sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]    = TX_MODE_LEGENDARY_ABILITIES;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]        = gSaveBlock1Ptr->tx_Mode_New_Legendaries;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]      = gSaveBlock1Ptr->tx_Mode_TypeEffectiveness;
         //MENU FEATURES
-        sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]               = gSaveBlock1Ptr->tx_Features_RTCType;
-        sOptions->sel_features[MENUITEM_FEATURES_SHINY_CHANCE]           = gSaveBlock1Ptr->tx_Features_ShinyChance;
-        sOptions->sel_features[MENUITEM_FEATURES_ITEM_DROP]              = gSaveBlock1Ptr->tx_Features_WildMonDropItems;
+        sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]               = TX_FEATURES_RTC_TYPE;
+        sOptions->sel_features[MENUITEM_FEATURES_SHINY_CHANCE]           = TX_FEATURES_SHINY_CHANCE;
+        sOptions->sel_features[MENUITEM_FEATURES_ITEM_DROP]              = TX_FEATURES_ITEM_DROP;
         //sOptions->sel_features[MENUITEM_FEATURES_EASY_FEEBAS]            = gSaveBlock1Ptr->tx_Features_EasierFeebas;
         //sOptions->sel_features[MENUITEM_FEATURES_UNLIMITED_WT]           = gSaveBlock1Ptr->tx_Features_Unlimited_WT;
-        sOptions->sel_features[MENUITEM_FEATURES_FRONTIER_BANS]          = gSaveBlock1Ptr->tx_Features_FrontierBans;
-        sOptions->sel_features[MENUITEM_FEATURES_SHINY_COLOR]            = gSaveBlock1Ptr->tx_Features_ShinyColors;
+        sOptions->sel_features[MENUITEM_FEATURES_FRONTIER_BANS]          = TX_FEATURES_FRONTIER_BANS;
+        sOptions->sel_features[MENUITEM_FEATURES_SHINY_COLOR]            = TX_FEATURES_SHINY_COLORS;
         
         //MENU RANDOMIZER
         sOptions->sel_randomizer[MENUITEM_RANDOM_OFF_ON]                     = FALSE;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_STARTER]                    = gSaveBlock1Ptr->tx_Random_Starter;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_WILD_PKMN]                  = gSaveBlock1Ptr->tx_Random_WildPokemon;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_TRAINER]                    = gSaveBlock1Ptr->tx_Random_Trainer;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_STATIC]                     = gSaveBlock1Ptr->tx_Random_Static;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_SIMILAR_EVOLUTION_LEVEL]    = !gSaveBlock1Ptr->tx_Random_Similar;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_INCLUDE_LEGENDARIES]        = gSaveBlock1Ptr->tx_Random_IncludeLegendaries;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE]                       = gSaveBlock1Ptr->tx_Random_Type;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_MOVES]                      = gSaveBlock1Ptr->tx_Random_Moves;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_ABILITIES]                  = gSaveBlock1Ptr->tx_Random_Abilities;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS]                 = gSaveBlock1Ptr->tx_Random_Evolutions;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS_METHODS]         = gSaveBlock1Ptr->tx_Random_EvolutionMethods;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE_EFFEC]                 = gSaveBlock1Ptr->tx_Random_TypeEffectiveness;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_ITEMS]                      = gSaveBlock1Ptr->tx_Random_Items;
-        sOptions->sel_randomizer[MENUITEM_RANDOM_CHAOS]                      = gSaveBlock1Ptr->tx_Random_Chaos;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_STARTER]                    = TX_RANDOM_STARTER;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_WILD_PKMN]                  = TX_RANDOM_WILD_POKEMON;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_TRAINER]                    = TX_RANDOM_TRAINER;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_STATIC]                     = TX_RANDOM_STATIC;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_SIMILAR_EVOLUTION_LEVEL]    = !TX_RANDOM_SIMILAR;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_INCLUDE_LEGENDARIES]        = TX_RANDOM_INCLUDE_LEGENDARIES;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE]                       = TX_RANDOM_TYPE;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_MOVES]                      = TX_RANDOM_MOVES;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_ABILITIES]                  = TX_RANDOM_ABILITIES;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS]                 = TX_RANDOM_EVOLUTION;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS_METHODS]         = TX_RANDOM_EVOLUTION_METHODE;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE_EFFEC]                 = TX_RANDOM_TYPE_EFFECTIVENESS;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_ITEMS]                      = TX_RANDOM_ITEMS;
+        sOptions->sel_randomizer[MENUITEM_RANDOM_CHAOS]                      = TX_RANDOM_CHAOS_MODE;
 
         // MENU_NUZLOCKE
-        if (gSaveBlock1Ptr->tx_Challenges_Nuzlocke && gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore)
+        if (TX_NUZLOCKE_NUZLOCKE && TX_NUZLOCKE_NUZLOCKE)
             sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE] = 3;
-        else if (gSaveBlock1Ptr->tx_Challenges_Nuzlocke)
+        else if (TX_NUZLOCKE_NUZLOCKE)
             sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE] = 2;
-        else if (gSaveBlock1Ptr->tx_Nuzlocke_EasyMode)
+        else if (TX_NUZLOCKE_MINI_MODE)
             sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE] = 1;
         else
             sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE] = 0;
-        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SPECIES_CLAUSE]    = !gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause;
-        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SHINY_CLAUSE]      = !gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause;
-        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NICKNAMING]        = !gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming;
-        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_DELETION]          = gSaveBlock1Ptr->tx_Nuzlocke_Deletion;
-        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY]        = gSaveBlock1Ptr->tx_Nuzlocke_RareCandy;
+        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SPECIES_CLAUSE]    = !TX_NUZLOCKE_SPECIES_CLAUSE;
+        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SHINY_CLAUSE]      = !TX_NUZLOCKE_SHINY_CLAUSE;
+        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NICKNAMING]        = !TX_NUZLOCKE_NICKNAMING;
+        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_DELETION]          = TX_NUZLOCKE_DELETION;
+        sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY]        = TX_NUZLOCKE_RARE_CANDY;
         
         // MENU_DIFFICULTY
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_PARTY_LIMIT]    = gSaveBlock1Ptr->tx_Challenges_PartyLimit;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LEVEL_CAP]      = gSaveBlock1Ptr->tx_Challenges_LevelCap;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_EXP_MULTIPLIER] = gSaveBlock1Ptr->tx_Challenges_ExpMultiplier;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LESS_ESCAPES]   = gSaveBlock1Ptr->tx_Challenges_LessEscapes;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_PLAYER]    = gSaveBlock1Ptr->tx_Challenges_NoItemPlayer;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_TRAINER]   = gSaveBlock1Ptr->tx_Challenges_NoItemTrainer;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_NO_EVS]         = gSaveBlock1Ptr->tx_Challenges_NoEVs;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_IVS]    = gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_EVS]    = gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs; 
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_PARTY_LIMIT]    = TX_DIFFICULTY_PARTY_LIMIT;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LEVEL_CAP]      = TX_DIFFICULTY_LEVEL_CAP;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_EXP_MULTIPLIER] = TX_DIFFICULTY_EXP_MULTIPLIER;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LESS_ESCAPES]   = TX_CHALLENGES_LESS_ESCAPES;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_PLAYER]    = TX_DIFFICULTY_NO_ITEM_PLAYER;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_TRAINER]   = TX_DIFFICULTY_NO_ITEM_TRAINER;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_NO_EVS]         = TX_DIFFICULTY_NO_EVS;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_IVS]    = TX_DIFFICULTY_SCALING_IVS;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_EVS]    = TX_DIFFICULTY_SCALING_EVS; 
         //sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LIMIT_DIFFICULTY]      = gSaveBlock1Ptr->tx_Features_LimitDifficulty;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_MAX_PARTY_IVS]         = gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs;
-        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ESCAPE_ROPE_DIG]       = gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_MAX_PARTY_IVS]         = TX_DIFFICULTY_MAX_PARTY_IVS;
+        sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ESCAPE_ROPE_DIG]       = TX_DIFFICULTY_ESCAPE_ROPE_DIG;
         //sOptions->sel_difficulty[MENUITEM_DIFFICULTY_HARD_EXP]              = gSaveBlock1Ptr->tx_Difficulty_HardExp;
         // MENU_CHALLENGES
-        sOptions->sel_challenges[MENUITEM_DIFFICULTY_POKECENTER]             = gSaveBlock1Ptr->tx_Challenges_PkmnCenter;
-        sOptions->sel_challenges[MENUITEM_CHALLENGES_PCHEAL]                 = gSaveBlock1Ptr->tx_Challenges_PCHeal;
-        sOptions->sel_challenges[MENUITEM_CHALLENGES_EXPENSIVE]              = gSaveBlock1Ptr->tx_Challenges_Expensive;
-        sOptions->sel_challenges[MENUITEM_CHALLENGES_EVO_LIMIT]              = gSaveBlock1Ptr->tx_Challenges_EvoLimit;
-        sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE]     = gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge;
-        sOptions->sel_challenges[MENUITEM_CHALLENGES_BASE_STAT_EQUALIZER]    = gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer;
-        sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR]                 = gSaveBlock1Ptr->tx_Challenges_Mirror;
-        sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR_THIEF]           = gSaveBlock1Ptr->tx_Challenges_Mirror_Thief;
+        sOptions->sel_challenges[MENUITEM_DIFFICULTY_POKECENTER]             = TX_DIFFICULTY_PKMN_CENTER;
+        sOptions->sel_challenges[MENUITEM_CHALLENGES_PCHEAL]                 = TX_CHALLENGE_PCHEAL;
+        sOptions->sel_challenges[MENUITEM_CHALLENGES_EXPENSIVE]              = TX_CHALLENGES_EXPENSIVE;
+        sOptions->sel_challenges[MENUITEM_CHALLENGES_EVO_LIMIT]              = TX_CHALLENGE_EVO_LIMIT;
+        sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE]     = TX_CHALLENGE_TYPE;
+        sOptions->sel_challenges[MENUITEM_CHALLENGES_BASE_STAT_EQUALIZER]    = TX_CHALLENGE_BASE_STAT_EQUALIZER;
+        sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR]                 = TX_CHALLENGE_MIRROR;
+        sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR_THIEF]           = TX_CHALLENGE_MIRROR_THIEF;
 
         sOptions->submenu = MENU_MODE;
 
@@ -1874,134 +1881,134 @@ void SaveData_TxRandomizerAndChallenges(void)
     PrintCurrentSelections();
     //MENU MODE
     //gSaveBlock1Ptr->tx_Mode_AlternateSpawns                  = sOptions->sel_mode[MENUITEM_MODE_ALTERNATE_SPAWNS]; 
-    gSaveBlock1Ptr->tx_Mode_InfiniteTMs                 = sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]; 
-    gSaveBlock1Ptr->tx_Mode_PoisonSurvive               = sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]; 
-    gSaveBlock1Ptr->tx_Mode_Synchronize                 = sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]; 
-    gSaveBlock1Ptr->tx_Mode_Mints                       = sOptions->sel_mode[MENUITEM_MODE_MINTS]; 
-    gSaveBlock1Ptr->tx_Mode_New_Citrus                  = sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]; 
+    //gSaveBlock1Ptr->tx_Mode_InfiniteTMs                 = sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]; 
+    //gSaveBlock1Ptr->tx_Mode_PoisonSurvive               = sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]; 
+    //gSaveBlock1Ptr->tx_Mode_Synchronize                 = sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]; 
+    //gSaveBlock1Ptr->tx_Mode_Mints                       = sOptions->sel_mode[MENUITEM_MODE_MINTS]; 
+    //gSaveBlock1Ptr->tx_Mode_New_Citrus                  = sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]; 
     //gSaveBlock1Ptr->tx_Mode_Modern_Types                = sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]; 
-    gSaveBlock1Ptr->tx_Mode_Fairy_Types                 = sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]; 
+    //gSaveBlock1Ptr->tx_Mode_Fairy_Types                 = sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]; 
     //gSaveBlock1Ptr->tx_Mode_New_Stats                   = sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]; 
-    gSaveBlock1Ptr->tx_Mode_Sturdy                      = sOptions->sel_mode[MENUITEM_MODE_STURDY]; 
-    gSaveBlock1Ptr->tx_Mode_Modern_Moves                = sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]; 
-    gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]; 
+    //gSaveBlock1Ptr->tx_Mode_Sturdy                      = sOptions->sel_mode[MENUITEM_MODE_STURDY]; 
+    //gSaveBlock1Ptr->tx_Mode_Modern_Moves                = sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]; 
+    //gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]; 
     //gSaveBlock1Ptr->tx_Mode_New_Legendaries             = sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]; 
     //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS];
     //MENU FEAUTRES
-    gSaveBlock1Ptr->tx_Features_RTCType                     = sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]; 
-    gSaveBlock1Ptr->tx_Features_ShinyChance                 = sOptions->sel_features[MENUITEM_FEATURES_SHINY_CHANCE]; 
-    gSaveBlock1Ptr->tx_Features_WildMonDropItems            = sOptions->sel_features[MENUITEM_FEATURES_ITEM_DROP]; 
+    //gSaveBlock1Ptr->tx_Features_RTCType                     = sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]; 
+    //gSaveBlock1Ptr->tx_Features_ShinyChance                 = sOptions->sel_features[MENUITEM_FEATURES_SHINY_CHANCE]; 
+    //gSaveBlock1Ptr->tx_Features_WildMonDropItems            = sOptions->sel_features[MENUITEM_FEATURES_ITEM_DROP]; 
     //gSaveBlock1Ptr->tx_Features_EasierFeebas                = sOptions->sel_features[MENUITEM_FEATURES_EASY_FEEBAS]; 
     //gSaveBlock1Ptr->tx_Features_Unlimited_WT                = sOptions->sel_features[MENUITEM_FEATURES_UNLIMITED_WT]; 
-    gSaveBlock1Ptr->tx_Features_FrontierBans                = sOptions->sel_features[MENUITEM_FEATURES_FRONTIER_BANS]; 
-    gSaveBlock1Ptr->tx_Features_ShinyColors                 = sOptions->sel_features[MENUITEM_FEATURES_SHINY_COLOR];
+    //gSaveBlock1Ptr->tx_Features_FrontierBans                = sOptions->sel_features[MENUITEM_FEATURES_FRONTIER_BANS]; 
+    //gSaveBlock1Ptr->tx_Features_ShinyColors                 = sOptions->sel_features[MENUITEM_FEATURES_SHINY_COLOR];
     // MENU_RANDOMIZER
-    if (sOptions->sel_randomizer[MENUITEM_RANDOM_OFF_ON] == TRUE)
-    {
-        gSaveBlock1Ptr->tx_Random_Starter            = sOptions->sel_randomizer[MENUITEM_RANDOM_STARTER];
-        gSaveBlock1Ptr->tx_Random_WildPokemon        = sOptions->sel_randomizer[MENUITEM_RANDOM_WILD_PKMN];
-        gSaveBlock1Ptr->tx_Random_Trainer            = sOptions->sel_randomizer[MENUITEM_RANDOM_TRAINER];
-        gSaveBlock1Ptr->tx_Random_Static             = sOptions->sel_randomizer[MENUITEM_RANDOM_STATIC];
-        gSaveBlock1Ptr->tx_Random_Similar            = !sOptions->sel_randomizer[MENUITEM_RANDOM_SIMILAR_EVOLUTION_LEVEL];
-        gSaveBlock1Ptr->tx_Random_MapBased           = TX_RANDOM_MAP_BASED;
-        gSaveBlock1Ptr->tx_Random_IncludeLegendaries = sOptions->sel_randomizer[MENUITEM_RANDOM_INCLUDE_LEGENDARIES];
-        gSaveBlock1Ptr->tx_Random_Type               = sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE];
-        gSaveBlock1Ptr->tx_Random_Moves              = sOptions->sel_randomizer[MENUITEM_RANDOM_MOVES];
-        gSaveBlock1Ptr->tx_Random_Abilities          = sOptions->sel_randomizer[MENUITEM_RANDOM_ABILITIES];
-        gSaveBlock1Ptr->tx_Random_Evolutions         = sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS];
-        gSaveBlock1Ptr->tx_Random_EvolutionMethods   = sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS_METHODS];
-        gSaveBlock1Ptr->tx_Random_TypeEffectiveness  = sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE_EFFEC];
-        gSaveBlock1Ptr->tx_Random_Items              = sOptions->sel_randomizer[MENUITEM_RANDOM_ITEMS];
-        gSaveBlock1Ptr->tx_Random_Chaos              = sOptions->sel_randomizer[MENUITEM_RANDOM_CHAOS];
-    }
-    else
-    {
-        gSaveBlock1Ptr->tx_Random_Starter            = FALSE;
-        gSaveBlock1Ptr->tx_Random_WildPokemon        = FALSE;
-        gSaveBlock1Ptr->tx_Random_Trainer            = FALSE;
-        gSaveBlock1Ptr->tx_Random_Static             = FALSE;
-        gSaveBlock1Ptr->tx_Random_Similar            = FALSE;
-        gSaveBlock1Ptr->tx_Random_MapBased           = FALSE;
-        gSaveBlock1Ptr->tx_Random_IncludeLegendaries = FALSE;
-        gSaveBlock1Ptr->tx_Random_Type               = FALSE;
-        gSaveBlock1Ptr->tx_Random_Moves              = FALSE;
-        gSaveBlock1Ptr->tx_Random_Abilities          = FALSE;
-        gSaveBlock1Ptr->tx_Random_Evolutions         = FALSE;
-        gSaveBlock1Ptr->tx_Random_EvolutionMethods   = FALSE;
-        gSaveBlock1Ptr->tx_Random_TypeEffectiveness  = FALSE;
-        gSaveBlock1Ptr->tx_Random_Chaos              = FALSE;
-    } 
+    // if (sOptions->sel_randomizer[MENUITEM_RANDOM_OFF_ON] == TRUE)
+    // {
+        //gSaveBlock1Ptr->tx_Random_Starter            = sOptions->sel_randomizer[MENUITEM_RANDOM_STARTER];
+        //gSaveBlock1Ptr->tx_Random_WildPokemon        = sOptions->sel_randomizer[MENUITEM_RANDOM_WILD_PKMN];
+        //gSaveBlock1Ptr->tx_Random_Trainer            = sOptions->sel_randomizer[MENUITEM_RANDOM_TRAINER];
+        //gSaveBlock1Ptr->tx_Random_Static             = sOptions->sel_randomizer[MENUITEM_RANDOM_STATIC];
+        //gSaveBlock1Ptr->tx_Random_Similar            = !sOptions->sel_randomizer[MENUITEM_RANDOM_SIMILAR_EVOLUTION_LEVEL];
+        //gSaveBlock1Ptr->tx_Random_MapBased           = TX_RANDOM_MAP_BASED;
+        //gSaveBlock1Ptr->tx_Random_IncludeLegendaries = sOptions->sel_randomizer[MENUITEM_RANDOM_INCLUDE_LEGENDARIES];
+        //gSaveBlock1Ptr->tx_Random_Type               = sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE];
+        //gSaveBlock1Ptr->tx_Random_Moves              = sOptions->sel_randomizer[MENUITEM_RANDOM_MOVES];
+        //gSaveBlock1Ptr->tx_Random_Abilities          = sOptions->sel_randomizer[MENUITEM_RANDOM_ABILITIES];
+        //gSaveBlock1Ptr->tx_Random_Evolutions         = sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS];
+        //gSaveBlock1Ptr->tx_Random_EvolutionMethods   = sOptions->sel_randomizer[MENUITEM_RANDOM_EVOLUTIONS_METHODS];
+        //gSaveBlock1Ptr->tx_Random_TypeEffectiveness  = sOptions->sel_randomizer[MENUITEM_RANDOM_TYPE_EFFEC];
+        //gSaveBlock1Ptr->tx_Random_Items              = sOptions->sel_randomizer[MENUITEM_RANDOM_ITEMS];
+        //gSaveBlock1Ptr->tx_Random_Chaos              = sOptions->sel_randomizer[MENUITEM_RANDOM_CHAOS];
+    // }
+    // else
+    // {
+        //gSaveBlock1Ptr->tx_Random_Starter            = FALSE;
+        //gSaveBlock1Ptr->tx_Random_WildPokemon        = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Trainer            = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Static             = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Similar            = FALSE;
+        //gSaveBlock1Ptr->tx_Random_MapBased           = FALSE;
+        //gSaveBlock1Ptr->tx_Random_IncludeLegendaries = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Type               = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Moves              = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Abilities          = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Evolutions         = FALSE;
+        //gSaveBlock1Ptr->tx_Random_EvolutionMethods   = FALSE;
+        //gSaveBlock1Ptr->tx_Random_TypeEffectiveness  = FALSE;
+        //gSaveBlock1Ptr->tx_Random_Chaos              = FALSE;
+    // } 
     //MENU_NUZLOCKE
     switch (sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NUZLOCKE])
     {
     case 0:
-        gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = FALSE;
-        gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = FALSE;
-        gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = FALSE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = FALSE;
+        //gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = FALSE;
+        //gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = FALSE;
         break;
     case 1:
-        gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = TRUE;
-        gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = FALSE;
-        gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = FALSE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = TRUE;
+        //gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = FALSE;
+        //gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = FALSE;
         break;
     case 2:
-        gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = FALSE;
-        gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = TRUE;
-        gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = FALSE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = FALSE;
+        //gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = TRUE;
+        //gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = FALSE;
         break;
     case 3:
-        gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = FALSE;
-        gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = TRUE;
-        gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = TRUE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_EasyMode           = FALSE;
+        //gSaveBlock1Ptr->tx_Challenges_Nuzlocke          = TRUE;
+        //gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  = TRUE;
         break;
     }
-    if (gSaveBlock1Ptr->tx_Nuzlocke_EasyMode)
-    {
-        gSaveBlock1Ptr->tx_Nuzlocke_RareCandy        = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY];
-    }
-    if (gSaveBlock1Ptr->tx_Challenges_Nuzlocke)
-    {
-        gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause   = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SPECIES_CLAUSE];
-        gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause     = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SHINY_CLAUSE];
-        gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming      = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NICKNAMING];
-        gSaveBlock1Ptr->tx_Nuzlocke_Deletion        = sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_DELETION];
-        gSaveBlock1Ptr->tx_Nuzlocke_RareCandy        = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY];
-    }
-    else
-    {
-        gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause   = FALSE;
-        gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause     = FALSE;
-        gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming      = FALSE;
-    }
+    // if (TX_NUZLOCKE_MINI_MODE)
+    // {
+        //gSaveBlock1Ptr->tx_Nuzlocke_RareCandy        = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY];
+    // }
+    // if (TX_NUZLOCKE_NUZLOCKE)
+    // {
+        //gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause   = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SPECIES_CLAUSE];
+        //gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause     = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_SHINY_CLAUSE];
+        //gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming      = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NICKNAMING];
+        //gSaveBlock1Ptr->tx_Nuzlocke_Deletion        = sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_DELETION];
+        //gSaveBlock1Ptr->tx_Nuzlocke_RareCandy        = !sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY];
+    // }
+    // else
+    // {
+        //gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause   = FALSE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause     = FALSE;
+        //gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming      = FALSE;
+    // }
     // MENU_DIFFICULTY
-    gSaveBlock1Ptr->tx_Challenges_PartyLimit    = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_PARTY_LIMIT];
-    gSaveBlock1Ptr->tx_Challenges_LevelCap      = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LEVEL_CAP];
-    gSaveBlock1Ptr->tx_Challenges_ExpMultiplier = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_EXP_MULTIPLIER];
-    gSaveBlock1Ptr->tx_Challenges_LessEscapes   = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LESS_ESCAPES];
-    gSaveBlock1Ptr->tx_Challenges_NoItemPlayer  = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_PLAYER];
-    gSaveBlock1Ptr->tx_Challenges_NoItemTrainer = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_TRAINER];
-    gSaveBlock1Ptr->tx_Challenges_NoEVs                 = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_NO_EVS];
-    gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs     = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_IVS];
-    gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs     = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_EVS];
+    //gSaveBlock1Ptr->tx_Challenges_PartyLimit    = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_PARTY_LIMIT];
+    //gSaveBlock1Ptr->tx_Challenges_LevelCap      = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LEVEL_CAP];
+    //gSaveBlock1Ptr->tx_Challenges_ExpMultiplier = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_EXP_MULTIPLIER];
+    //gSaveBlock1Ptr->tx_Challenges_LessEscapes   = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LESS_ESCAPES];
+    //gSaveBlock1Ptr->tx_Challenges_NoItemPlayer  = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_PLAYER];
+    //gSaveBlock1Ptr->tx_Challenges_NoItemTrainer = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ITEM_TRAINER];
+    //gSaveBlock1Ptr->tx_Challenges_NoEVs                 = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_NO_EVS];
+    //gSaveBlock1Ptr->tx_Challenges_TrainerScalingIVs     = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_IVS];
+    //gSaveBlock1Ptr->tx_Challenges_TrainerScalingEVs     = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_SCALING_EVS];
     //gSaveBlock1Ptr->tx_Features_LimitDifficulty              = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_LIMIT_DIFFICULTY];
-    gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs                         = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_MAX_PARTY_IVS];
+    //gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs                         = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_MAX_PARTY_IVS];
     // MENU_CHALLENGES
-    gSaveBlock1Ptr->tx_Challenges_EvoLimit             = sOptions->sel_challenges[MENUITEM_CHALLENGES_EVO_LIMIT];
-    if (sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] > NUMBER_OF_MON_TYPES-1)
-        gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = TX_CHALLENGE_TYPE_OFF;
-    else if (sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] == NUMBER_OF_MON_TYPES-1)
-        gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = GetRandomType();
-    else if (sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] >= TYPE_MYSTERY)
-        gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] + 1;
-    else
-        gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE];
-    gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer    = sOptions->sel_challenges[MENUITEM_CHALLENGES_BASE_STAT_EQUALIZER];
-    gSaveBlock1Ptr->tx_Challenges_Mirror               = sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR]; 
-    gSaveBlock1Ptr->tx_Challenges_Mirror_Thief         = sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR_THIEF]; 
-    gSaveBlock1Ptr->tx_Challenges_PCHeal               = sOptions->sel_challenges[MENUITEM_CHALLENGES_PCHEAL]; 
-    gSaveBlock1Ptr->tx_Challenges_PkmnCenter           = sOptions->sel_challenges[MENUITEM_DIFFICULTY_POKECENTER];
-    gSaveBlock1Ptr->tx_Challenges_Expensive            = sOptions->sel_challenges[MENUITEM_CHALLENGES_EXPENSIVE];
-    gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig        = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ESCAPE_ROPE_DIG];
+    //gSaveBlock1Ptr->tx_Challenges_EvoLimit             = sOptions->sel_challenges[MENUITEM_CHALLENGES_EVO_LIMIT];
+    // if (sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] > NUMBER_OF_MON_TYPES-1)
+        //gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = TX_CHALLENGE_TYPE_OFF;
+    // else if (sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] == NUMBER_OF_MON_TYPES-1)
+        //gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = GetRandomType();
+    // else if (sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] >= TYPE_MYSTERY)
+        //gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE] + 1;
+    // else
+        //gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge = sOptions->sel_challenges[MENUITEM_CHALLENGES_ONE_TYPE_CHALLENGE];
+    //gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer    = sOptions->sel_challenges[MENUITEM_CHALLENGES_BASE_STAT_EQUALIZER];
+    //gSaveBlock1Ptr->tx_Challenges_Mirror               = sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR]; 
+    //gSaveBlock1Ptr->tx_Challenges_Mirror_Thief         = sOptions->sel_challenges[MENUITEM_CHALLENGES_MIRROR_THIEF]; 
+    //gSaveBlock1Ptr->tx_Challenges_PCHeal               = sOptions->sel_challenges[MENUITEM_CHALLENGES_PCHEAL]; 
+    //gSaveBlock1Ptr->tx_Challenges_PkmnCenter           = sOptions->sel_challenges[MENUITEM_DIFFICULTY_POKECENTER];
+    //gSaveBlock1Ptr->tx_Challenges_Expensive            = sOptions->sel_challenges[MENUITEM_CHALLENGES_EXPENSIVE];
+    //gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig        = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_ESCAPE_ROPE_DIG];
     //gSaveBlock1Ptr->tx_Difficulty_HardExp              = sOptions->sel_difficulty[MENUITEM_DIFFICULTY_HARD_EXP];
 
     PrintTXSaveData();
@@ -2252,8 +2259,7 @@ static void ReDrawAll(void)
     else
     {
         if (sOptions->arrowTaskId == TASK_NONE)
-            sOptions->arrowTaskId = sOptions->arrowTaskId = AddScrollIndicatorArrowPairParameterized(SCROLL_ARROW_UP, 240 / 2, 20, 110, MenuItemCount() - 1, 110, 110, 0);
-
+            sOptions->arrowTaskId = AddScrollIndicatorArrowPairParameterized(SCROLL_ARROW_UP, 240 / 2, 20, 110, MenuItemCount() - 1, 110, 110, 0);
     }
 
     FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
@@ -2299,33 +2305,33 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         //sOptions->sel_mode[MENUITEM_MODE_ALTERNATE_SPAWNS]          = tx_Mode_AlternateSpawns;
         //gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 0;
         sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]              = !TX_MODE_INFINITE_TMS;
-        gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 1;
-        FlagClear (FLAG_FINITE_TMS);
+        //gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 1;
+        // FlagClear (FLAG_FINITE_TMS);
         sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]            = !TX_MODE_SURVIVE_POISON;
-        gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1;
+        //gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1;
         sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]               = !TX_MODE_NEW_SYNCHRONIZE;
-        gSaveBlock1Ptr->tx_Mode_Synchronize = 1;
+        //gSaveBlock1Ptr->tx_Mode_Synchronize = 1;
         sOptions->sel_mode[MENUITEM_MODE_MINTS]                     = !TX_MODE_MINTS;
-        gSaveBlock1Ptr->tx_Mode_Mints = 1;
-        FlagSet (FLAG_MINTS_ENABLED);
+        //gSaveBlock1Ptr->tx_Mode_Mints = 1;
+        // FlagSet (FLAG_MINTS_ENABLED);
         sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]                = !TX_MODE_NEW_CITRUS;
-        gSaveBlock1Ptr->tx_Mode_New_Citrus = 1;
+        //gSaveBlock1Ptr->tx_Mode_New_Citrus = 1;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]              = TX_MODE_MODERN_TYPES;
         //gSaveBlock1Ptr->tx_Mode_Modern_Types = 0;
         sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]               = !TX_MODE_FAIRY_TYPES;
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1;
+        //gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]                 = TX_MODE_NEW_STATS;
         //gSaveBlock1Ptr->tx_Mode_New_Stats = 0;
         sOptions->sel_mode[MENUITEM_MODE_STURDY]                    = !TX_MODE_STURDY;
-        gSaveBlock1Ptr->tx_Mode_Sturdy = 1;
+        //gSaveBlock1Ptr->tx_Mode_Sturdy = 1;
         sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]              = !TX_MODE_MODERN_MOVES;
-        gSaveBlock1Ptr->tx_Mode_Modern_Moves = 1;
+        //gSaveBlock1Ptr->tx_Mode_Modern_Moves = 1;
         sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]       = !TX_MODE_LEGENDARY_ABILITIES;
-        gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 1;
+        //gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 1;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]           = TX_MODE_NEW_LEGENDARIES;
         //gSaveBlock1Ptr->tx_Mode_New_Legendaries = 0;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]         = TX_MODE_TYPE_EFFECTIVENESS;
-        gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 1;
+        //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 1;
     }
 }
 
@@ -2455,7 +2461,7 @@ static void DrawChoices_Challenges_Nuzlocke(int selection, int y)
         sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NICKNAMING]        = !TX_NUZLOCKE_NICKNAMING;
         sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_DELETION]          = TX_NUZLOCKE_DELETION;
         sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY]          = !TX_NUZLOCKE_RARE_CANDY;
-        gSaveBlock1Ptr->tx_Nuzlocke_EasyMode = 0; //off
+        //gSaveBlock1Ptr->tx_Nuzlocke_EasyMode = 0; //off
     }
     else if (selection == 1)
     {
@@ -2464,10 +2470,11 @@ static void DrawChoices_Challenges_Nuzlocke(int selection, int y)
         sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_NICKNAMING]        = !TX_NUZLOCKE_NICKNAMING;
         sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_DELETION]          = TX_NUZLOCKE_DELETION;
         sOptions->sel_nuzlocke[MENUITEM_NUZLOCKE_RARE_CANDY]          = !TX_NUZLOCKE_RARE_CANDY;
-        gSaveBlock1Ptr->tx_Nuzlocke_EasyMode = 1; //on
+        //gSaveBlock1Ptr->tx_Nuzlocke_EasyMode = 1; //on
     }
-    else
-        gSaveBlock1Ptr->tx_Nuzlocke_EasyMode = 0; //off
+    // else
+        //gSaveBlock1Ptr->tx_Nuzlocke_EasyMode = 0; //off
+
 }
 
 
@@ -2628,10 +2635,10 @@ static void DrawChoices_Challenges_OneTypeChallenge(int selection, int y)
         StringCopyPadded(gStringVar1, sText_Off, 0, 15);
     else if (n == NUMBER_OF_MON_TYPES-1)
         StringCopyPadded(gStringVar1, sText_Random, 0, 15);
-    else if (n >= TYPE_MYSTERY)
-        StringCopyPadded(gStringVar1, gTypeNames[n+1], 0, 10);
-    else
-        StringCopyPadded(gStringVar1, gTypeNames[n], 0, 10);
+    // else if (n >= TYPE_MYSTERY)
+    //     StringCopyPadded(gStringVar1, gTypeNames[n+1], 0, 10);
+    // else
+    //     StringCopyPadded(gStringVar1, gTypeNames[n], 0, 10);
 
     DrawOptionMenuChoice(gStringVar1, 104, y, 1, active);
 }
@@ -2679,11 +2686,11 @@ static void DrawChoices_Features_Rtc_Type(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_RTCType = 0; //Off, RTC
+        //gSaveBlock1Ptr->tx_Features_RTCType = 0; //Off, RTC
     }
     else
     {
-        gSaveBlock1Ptr->tx_Features_RTCType = 1; //On, Fake RTC
+        //gSaveBlock1Ptr->tx_Features_RTCType = 1; //On, Fake RTC
     }
 
     DrawOptionMenuChoice(sText_Features_RTC_RTC, 104, y, styles[0], active);
@@ -2702,15 +2709,15 @@ static const u8 sText_Encounters_Modern_Long[]    = _("MODERN");
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 0; //Vanilla, unmodified encounters
+        //gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 0; //Vanilla, unmodified encounters
     }
     else if (selection == 1)
     {
-        gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 1; //Full modern encounters
+        //gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 1; //Full modern encounters
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 2; //Vanilla encounters, with post-game pokémon
+        //gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 2; //Vanilla encounters, with post-game pokémon
     }
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla, 104, y, styles[0], active);
@@ -2726,11 +2733,11 @@ static const u8 sText_Encounters_Modern_Long[]    = _("MODERN");
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_LimitDifficulty = 0; //Don't limit difficulty
+        //gSaveBlock1Ptr->tx_Features_LimitDifficulty = 0; //Don't limit difficulty
     }
     else
     {
-        gSaveBlock1Ptr->tx_Features_LimitDifficulty = 1; //limit difficulty
+        //gSaveBlock1Ptr->tx_Features_LimitDifficulty = 1; //limit difficulty
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
@@ -2749,15 +2756,15 @@ static void DrawChoices_Challenges_MaxPartyIVs(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs = 0; //Ivs set to normal
+        //gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs = 0; //Ivs set to normal
     }
     else if (selection == 1)
     {
-        gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs = 1; //Ivs are always 31
+        //gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs = 1; //Ivs are always 31
     }
     else
     {
-        gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs = 2; //Ivs are set between 30 and 31
+        //gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs = 2; //Ivs are set between 30 and 31
     }
 
 
@@ -2774,11 +2781,11 @@ static void DrawChoices_Features_ItemDrop(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_WildMonDropItems = 0; //items don't drop
+        //gSaveBlock1Ptr->tx_Features_WildMonDropItems = 0; //items don't drop
     }
     else
     {
-        gSaveBlock1Ptr->tx_Features_WildMonDropItems = 1; //items do drop
+        //gSaveBlock1Ptr->tx_Features_WildMonDropItems = 1; //items do drop
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
@@ -2791,16 +2798,16 @@ static void DrawChoices_Mode_InfiniteTMs(int selection, int y)
     u8 styles[2] = {0};
     styles[selection] = 1;
 
-    if (selection == 0)
-    {
-        gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 0; //TMs are finite
-        FlagSet (FLAG_FINITE_TMS);
-    }
-    else
-    {
-        gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 1; //TMs are infinite
-        FlagClear (FLAG_FINITE_TMS);
-    }
+    // if (selection == 0)
+    // {
+    //     gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 0; //TMs are finite
+    //     FlagSet (FLAG_FINITE_TMS);
+    // }
+    // else
+    // {
+    //     gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 1; //TMs are infinite
+    //     FlagClear (FLAG_FINITE_TMS);
+    // }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
     DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
@@ -2814,11 +2821,11 @@ static void DrawChoices_Mode_SurvivePoison(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 0; //Poison will kill
+        //gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 0; //Poison will kill
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1; //1hp survive poison
+        //gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1; //1hp survive poison
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
@@ -2833,11 +2840,11 @@ static void DrawChoices_Mode_SurvivePoison(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_EasierFeebas = 0; //off
+        //gSaveBlock1Ptr->tx_Features_EasierFeebas = 0; //off
     }
     else
     {
-        gSaveBlock1Ptr->tx_Features_EasierFeebas = 1; //on
+        //gSaveBlock1Ptr->tx_Features_EasierFeebas = 1; //on
     }
 
     //DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
@@ -2852,11 +2859,11 @@ static void DrawChoices_Challenges_PCHeal(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Challenges_PCHeal = 0; //PC heal enabled
+        //gSaveBlock1Ptr->tx_Challenges_PCHeal = 0; //PC heal enabled
     }
     else
     {
-        gSaveBlock1Ptr->tx_Challenges_PCHeal = 1; //PC heal disabled
+        //gSaveBlock1Ptr->tx_Challenges_PCHeal = 1; //PC heal disabled
     }
 
     DrawOptionMenuChoice(sText_Yes, 104, y, styles[0], active);
@@ -2876,23 +2883,23 @@ static void DrawChoices_Features_ShinyChance(int selection, int y)
     
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_ShinyChance = 0; // 1/8192
+        //gSaveBlock1Ptr->tx_Features_ShinyChance = 0; // 1/8192
     }
     else if (selection == 1)
     {
-        gSaveBlock1Ptr->tx_Features_ShinyChance = 1; // 1/4096 -> Gen VI
+        //gSaveBlock1Ptr->tx_Features_ShinyChance = 1; // 1/4096 -> Gen VI
     }
     else if (selection == 2)
     {
-        gSaveBlock1Ptr->tx_Features_ShinyChance = 2; // 1/2048
+        //gSaveBlock1Ptr->tx_Features_ShinyChance = 2; // 1/2048
     }
     else if (selection == 3)
     {
-        gSaveBlock1Ptr->tx_Features_ShinyChance = 3; // 1/1024
+        //gSaveBlock1Ptr->tx_Features_ShinyChance = 3; // 1/1024
     }
     else //(selection == 4)
     {
-        gSaveBlock1Ptr->tx_Features_ShinyChance = 4; // 1/512
+        //gSaveBlock1Ptr->tx_Features_ShinyChance = 4; // 1/512
     }
 }
 
@@ -2904,12 +2911,12 @@ static void DrawChoices_Features_ShinyChance(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_Unlimited_WT = 0; //WTs are capped to 3 daily
+        //gSaveBlock1Ptr->tx_Features_Unlimited_WT = 0; //WTs are capped to 3 daily
         FlagClear (FLAG_UNLIMITIED_WONDERTRADE);
     }
     else
     {
-        gSaveBlock1Ptr->tx_Features_Unlimited_WT = 1; //WTs are uncapped
+        //gSaveBlock1Ptr->tx_Features_Unlimited_WT = 1; //WTs are uncapped
         FlagSet (FLAG_UNLIMITIED_WONDERTRADE);
     }
 
@@ -2925,11 +2932,11 @@ static void DrawChoices_Mode_Synchronize(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_Synchronize = 0; //Old synchronize
+        //gSaveBlock1Ptr->tx_Mode_Synchronize = 0; //Old synchronize
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_Synchronize = 1; //New synchronize
+        //gSaveBlock1Ptr->tx_Mode_Synchronize = 1; //New synchronize
     }
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
@@ -2942,16 +2949,16 @@ static void DrawChoices_Mode_Mints(int selection, int y)
     u8 styles[2] = {0};
     styles[selection] = 1;
 
-    if (selection == 0)
-    {
-        gSaveBlock1Ptr->tx_Mode_Mints = 0; //No mints
-        FlagClear (FLAG_MINTS_ENABLED);
-    }
-    else
-    {
-        gSaveBlock1Ptr->tx_Mode_Mints = 1; //Yes mints
-        FlagSet (FLAG_MINTS_ENABLED);
-    }
+    // if (selection == 0)
+    // {
+    //     gSaveBlock1Ptr->tx_Mode_Mints = 0; //No mints
+    //     FlagClear (FLAG_MINTS_ENABLED);
+    // }
+    // else
+    // {
+    //     gSaveBlock1Ptr->tx_Mode_Mints = 1; //Yes mints
+    //     FlagSet (FLAG_MINTS_ENABLED);
+    // }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
     DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
@@ -2965,11 +2972,11 @@ static void DrawChoices_Mode_New_Citrus(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_New_Citrus = 0; //No new citrus, old citrus
+        //gSaveBlock1Ptr->tx_Mode_New_Citrus = 0; //No new citrus, old citrus
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_New_Citrus = 1; //Yes new citrus
+        //gSaveBlock1Ptr->tx_Mode_New_Citrus = 1; //Yes new citrus
     }
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
@@ -2984,11 +2991,11 @@ static void DrawChoices_Mode_New_Citrus(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_Modern_Types = 0; //No type changes, except fairy
+        //gSaveBlock1Ptr->tx_Mode_Modern_Types = 0; //No type changes, except fairy
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_Modern_Types = 1; //New typings
+        //gSaveBlock1Ptr->tx_Mode_Modern_Types = 1; //New typings
     }
 
     //DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
@@ -3003,11 +3010,11 @@ static void DrawChoices_Mode_Fairy_Types(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types = 0; //Pkmn who have fairy since GEN VI don't have it
+        //gSaveBlock1Ptr->tx_Mode_Fairy_Types = 0; //Pkmn who have fairy since GEN VI don't have it
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1; //They do now
+        //gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1; //They do now
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
@@ -3022,11 +3029,11 @@ static void DrawChoices_Mode_Fairy_Types(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_New_Stats = 0; //Old stats
+        //gSaveBlock1Ptr->tx_Mode_New_Stats = 0; //Old stats
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_New_Stats = 1; //New stats
+        //gSaveBlock1Ptr->tx_Mode_New_Stats = 1; //New stats
     }
 
     //DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
@@ -3041,11 +3048,11 @@ static void DrawChoices_Mode_Sturdy(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_Sturdy = 0; //Old sturdy
+        //gSaveBlock1Ptr->tx_Mode_Sturdy = 0; //Old sturdy
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_Sturdy = 1; //New sturdy
+        //gSaveBlock1Ptr->tx_Mode_Sturdy = 1; //New sturdy
     }
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
@@ -3060,11 +3067,11 @@ static void DrawChoices_Mode_Modern_Moves(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_Modern_Moves = 0; //Old movepool, and moves
+        //gSaveBlock1Ptr->tx_Mode_Modern_Moves = 0; //Old movepool, and moves
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_Modern_Moves = 1; //New movepool, and moves
+        //gSaveBlock1Ptr->tx_Mode_Modern_Moves = 1; //New movepool, and moves
     }
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
@@ -3079,11 +3086,11 @@ static void DrawChoices_Mode_Modern_Moves(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 0; //Old type chart
+        //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 0; //Old type chart
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 1; //New type chart
+        //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 1; //New type chart
     }
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
@@ -3098,11 +3105,11 @@ static void DrawChoices_Mode_Legendary_Abilities(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 0; //Pressure as main ability
+        //gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 0; //Pressure as main ability
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 1; //New abilities
+        //gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 1; //New abilities
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
@@ -3117,12 +3124,12 @@ static void DrawChoices_Mode_Legendary_Abilities(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_New_Legendaries = 0; //No extra legendaries
+        //gSaveBlock1Ptr->tx_Mode_New_Legendaries = 0; //No extra legendaries
         FlagClear (FLAG_EXTRA_LEGENDARIES);
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_New_Legendaries = 1; //7 extra legendaries
+        //gSaveBlock1Ptr->tx_Mode_New_Legendaries = 1; //7 extra legendaries
         FlagSet (FLAG_EXTRA_LEGENDARIES);
     }
 
@@ -3138,11 +3145,11 @@ static void DrawChoices_Challenges_LessEscapes(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Challenges_LessEscapes = 0; //Run away as usual
+        //gSaveBlock1Ptr->tx_Challenges_LessEscapes = 0; //Run away as usual
     }
     else
     {
-        gSaveBlock1Ptr->tx_Challenges_LessEscapes = 1; //Less running away
+        //gSaveBlock1Ptr->tx_Challenges_LessEscapes = 1; //Less running away
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
@@ -3168,11 +3175,11 @@ static void DrawChoices_Difficulty_Escape_Rope_Dig(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig = 0; //YES, Escape rope and dig are allowed. DEFAULT.
+        //gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig = 0; //YES, Escape rope and dig are allowed. DEFAULT.
     }
     else
     {
-        gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig = 1; //NO, Escape rope and dig are disallowed
+        //gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig = 1; //NO, Escape rope and dig are disallowed
     }
 
     DrawOptionMenuChoice(sText_Yes, 104, y, styles[0], active);
@@ -3189,11 +3196,11 @@ static void DrawChoices_Features_FrontierBans(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_FrontierBans = 0; //Ban
+        //gSaveBlock1Ptr->tx_Features_FrontierBans = 0; //Ban
     }
     else
     {
-        gSaveBlock1Ptr->tx_Features_FrontierBans = 1; //Unban
+        //gSaveBlock1Ptr->tx_Features_FrontierBans = 1; //Unban
     }
 
     DrawOptionMenuChoice(sText_Features_Frontier_Ban, 104, y, styles[0], active);
@@ -3210,11 +3217,11 @@ static void DrawChoices_Difficulty_HardExp(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Difficulty_HardExp = 0; //50% EXP gain in HARD
+        //gSaveBlock1Ptr->tx_Difficulty_HardExp = 0; //50% EXP gain in HARD
     }
     else
     {
-        gSaveBlock1Ptr->tx_Difficulty_HardExp = 1; //100% (usual) EXP gain in HARD
+        //gSaveBlock1Ptr->tx_Difficulty_HardExp = 1; //100% (usual) EXP gain in HARD
     }
 
     DrawOptionMenuChoice(sText_Difficulty_HardExp_Enabled, 104, y, styles[0], active);
@@ -3229,11 +3236,11 @@ static void DrawChoices_Features_Shiny_Colors(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Features_ShinyColors = 0; //Old shinies
+        //gSaveBlock1Ptr->tx_Features_ShinyColors = 0; //Old shinies
     }
     else
     {
-        gSaveBlock1Ptr->tx_Features_ShinyColors = 1; //New shinies
+        //gSaveBlock1Ptr->tx_Features_ShinyColors = 1; //New shinies
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);

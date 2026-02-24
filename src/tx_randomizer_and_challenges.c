@@ -12,76 +12,79 @@
 // Generic functions
 bool8 AreFeaturesActivated(void)
 {
-    if (gSaveBlock1Ptr->tx_Features_ShinyChance
-        || gSaveBlock1Ptr->tx_Features_WildMonDropItems
-        || gSaveBlock1Ptr->tx_Mode_AlternateSpawns
-        || gSaveBlock1Ptr->tx_Mode_InfiniteTMs
-        || gSaveBlock1Ptr->tx_Mode_PoisonSurvive)
-        //|| gSaveBlock1Ptr->tx_Features_EasierFeebas)
-        return TRUE;
+    // if (gSaveBlock1Ptr->tx_Features_ShinyChance
+    //     || gSaveBlock1Ptr->tx_Features_WildMonDropItems
+    //     || gSaveBlock1Ptr->tx_Mode_AlternateSpawns
+    //     || gSaveBlock1Ptr->tx_Mode_InfiniteTMs
+    //     || gSaveBlock1Ptr->tx_Mode_PoisonSurvive)
+    //     //|| gSaveBlock1Ptr->tx_Features_EasierFeebas)
+    //     return TRUE;
 
     return FALSE;
 }
 
 bool8 IsRandomizerActivated(void)
 {
-    if (gSaveBlock1Ptr->tx_Random_Chaos
-        || gSaveBlock1Ptr->tx_Random_WildPokemon
-        || gSaveBlock1Ptr->tx_Random_Similar
-        || gSaveBlock1Ptr->tx_Random_MapBased
-        || gSaveBlock1Ptr->tx_Random_IncludeLegendaries
-        || gSaveBlock1Ptr->tx_Random_Type
-        || gSaveBlock1Ptr->tx_Random_TypeEffectiveness
-        || gSaveBlock1Ptr->tx_Random_Abilities
-        || gSaveBlock1Ptr->tx_Random_Moves
-        || gSaveBlock1Ptr->tx_Random_Trainer
-        || gSaveBlock1Ptr->tx_Random_Evolutions
-        || gSaveBlock1Ptr->tx_Random_EvolutionMethods
-        || gSaveBlock1Ptr->tx_Random_Items)
-        return TRUE;
+    // if (gSaveBlock1Ptr->tx_Random_Chaos
+    //     || gSaveBlock1Ptr->tx_Random_WildPokemon
+    //     || gSaveBlock1Ptr->tx_Random_Similar
+    //     || gSaveBlock1Ptr->tx_Random_MapBased
+    //     || gSaveBlock1Ptr->tx_Random_IncludeLegendaries
+    //     || gSaveBlock1Ptr->tx_Random_Type
+    //     || gSaveBlock1Ptr->tx_Random_TypeEffectiveness
+    //     || gSaveBlock1Ptr->tx_Random_Abilities
+    //     || gSaveBlock1Ptr->tx_Random_Moves
+    //     || gSaveBlock1Ptr->tx_Random_Trainer
+    //     || gSaveBlock1Ptr->tx_Random_Evolutions
+    //     || gSaveBlock1Ptr->tx_Random_EvolutionMethods
+    //     || gSaveBlock1Ptr->tx_Random_Items)
+    //     return TRUE;
 
     return FALSE;
 }
 
 bool8 IsRandomItemsActivated(void)
 {
-    return gSaveBlock1Ptr->tx_Random_Items;
+    // return gSaveBlock1Ptr->tx_Random_Items;
+    return FALSE;
 }
 
 bool8 IsRandomMovesActivated(void)
 {
-    return gSaveBlock1Ptr->tx_Random_Moves;
+    // return gSaveBlock1Ptr->tx_Random_Moves;
+    return FALSE;
 }
 
 bool8 IsDifficultyOptionsActivated(void)
 {
-    if (gSaveBlock1Ptr->tx_Challenges_PartyLimit
-        || gSaveBlock1Ptr->tx_Challenges_LevelCap
-        || gSaveBlock1Ptr->tx_Challenges_ExpMultiplier
-        || gSaveBlock1Ptr->tx_Challenges_NoItemPlayer
-        || gSaveBlock1Ptr->tx_Challenges_NoItemTrainer
-        || gSaveBlock1Ptr->tx_Challenges_PkmnCenter
-        || gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig)
-        return TRUE;
+    // if (gSaveBlock1Ptr->tx_Challenges_PartyLimit
+    //     || gSaveBlock1Ptr->tx_Challenges_LevelCap
+    //     || gSaveBlock1Ptr->tx_Challenges_ExpMultiplier
+    //     || gSaveBlock1Ptr->tx_Challenges_NoItemPlayer
+    //     || gSaveBlock1Ptr->tx_Challenges_NoItemTrainer
+    //     || gSaveBlock1Ptr->tx_Challenges_PkmnCenter
+    //     || gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig)
+    //     return TRUE;
 
     return FALSE;
 }
 
 bool8 IsOneTypeChallengeActive(void)
 {
-    return (gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge != TX_CHALLENGE_TYPE_OFF);
+    // return (gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge != TX_CHALLENGE_TYPE_OFF);
+    return FALSE;
 }
 
 bool8 AreAnyChallengesActive(void)
 {
-    if (gSaveBlock1Ptr->tx_Challenges_EvoLimit
-        || gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer
-        || gSaveBlock1Ptr->tx_Challenges_Mirror
-        || gSaveBlock1Ptr->tx_Challenges_Mirror_Thief
-        || gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs
-        || gSaveBlock1Ptr->tx_Features_LimitDifficulty
-        || IsOneTypeChallengeActive())
-        return TRUE;
+    // if (gSaveBlock1Ptr->tx_Challenges_EvoLimit
+    //     || gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer
+    //     || gSaveBlock1Ptr->tx_Challenges_Mirror
+    //     || gSaveBlock1Ptr->tx_Challenges_Mirror_Thief
+    //     || gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs
+    //     || gSaveBlock1Ptr->tx_Features_LimitDifficulty
+    //     || IsOneTypeChallengeActive())
+    //     return TRUE;
 
     return FALSE;
 }
@@ -90,39 +93,41 @@ bool8 IsNuzlockeActive(void)
 {
     if (!FlagGet(FLAG_SYS_POKEMON_GET))     //Nuzlocke has not started
         return FALSE;
-    if (!FlagGet(FLAG_ADVENTURE_STARTED))   //Nuzlocke has not started
-        return FALSE;
+    // if (!FlagGet(FLAG_ADVENTURE_STARTED))   //Nuzlocke has not started
+    //     return FALSE;
     //if (FlagGet(FLAG_IS_CHAMPION))          //Player is champion and Nuzlocke stopped
     //    return FALSE;
-    if (FlagGet(FLAG_DEFEATED_RED))          //Player is defeats Red and Nuzlocke stopped
-        return FALSE;
-
-    return gSaveBlock1Ptr->tx_Challenges_Nuzlocke;
+    // if (FlagGet(FLAG_DEFEATED_RED))          //Player is defeats Red and Nuzlocke stopped
+    //     return FALSE;
+    return FALSE;
+    // return gSaveBlock1Ptr->tx_Challenges_Nuzlocke;
 }
 
 bool8 IsNuzlockeNicknamingActive(void)
 {
-    if (!gSaveBlock1Ptr->tx_Challenges_Nuzlocke)
-        return FALSE;
+    // if (!gSaveBlock1Ptr->tx_Challenges_Nuzlocke)
+    //     return FALSE;
     //if (FlagGet(FLAG_IS_CHAMPION))
     //    return FALSE;
-    if (FlagGet(FLAG_DEFEATED_RED))          //Player is defeats Red and Nuzlocke stopped
-        return FALSE;
-
-    return gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming;
+    // if (FlagGet(FLAG_DEFEATED_RED))          //Player is defeats Red and Nuzlocke stopped
+    //     return FALSE;
+    return FALSE;
+    // return gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming;
 }
 
 bool8 IsPokecenterChallengeActivated(void)
 {
-    return gSaveBlock1Ptr->tx_Challenges_PkmnCenter;
+    // return gSaveBlock1Ptr->tx_Challenges_PkmnCenter;
+    return FALSE;
 }
 
 bool8 HMsOverwriteOptionActive(void)
 {
-    return (gSaveBlock1Ptr->tx_Challenges_Nuzlocke 
-            || gSaveBlock1Ptr->tx_Challenges_Mirror 
-            || gSaveBlock1Ptr->tx_Random_Moves
-            || IsOneTypeChallengeActive());
+    // return (gSaveBlock1Ptr->tx_Challenges_Nuzlocke 
+    //         || gSaveBlock1Ptr->tx_Challenges_Mirror 
+    //         || gSaveBlock1Ptr->tx_Random_Moves
+    //         || IsOneTypeChallengeActive());
+    return FALSE;
 }
 
 // Nuzlocke code
@@ -373,14 +378,14 @@ void PrintTXSaveData(void)
 {
     #ifndef NDEBUG
     
-    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_WildPokemon"          , gSaveBlock1Ptr->tx_Random_WildPokemon);
-    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Moves"                , gSaveBlock1Ptr->tx_Random_Moves);
-    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Abilities"            , gSaveBlock1Ptr->tx_Random_Abilities);
-    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Items"                , gSaveBlock1Ptr->tx_Random_Items);
+    // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_WildPokemon"          , gSaveBlock1Ptr->tx_Random_WildPokemon);
+    // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Moves"                , gSaveBlock1Ptr->tx_Random_Moves);
+    // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Abilities"            , gSaveBlock1Ptr->tx_Random_Abilities);
+    // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Items"                , gSaveBlock1Ptr->tx_Random_Items);
 
 
 
-    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Challenges_PartyLimit"       , gSaveBlock1Ptr->tx_Challenges_PartyLimit);
+    // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Challenges_PartyLimit"       , gSaveBlock1Ptr->tx_Challenges_PartyLimit);
 
 
 

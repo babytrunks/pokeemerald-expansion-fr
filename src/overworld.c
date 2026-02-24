@@ -80,6 +80,7 @@
 #include "constants/trainer_hill.h"
 #include "constants/weather.h"
 #include "randomizer.h"
+#include "tx_randomizer_and_challenges.h"
 
 STATIC_ASSERT((B_FLAG_FOLLOWERS_DISABLED == 0 || OW_FOLLOWERS_ENABLED), FollowersFlagAssignedWithoutEnablingThem);
 
@@ -4045,5 +4046,20 @@ static void Task_OvwldCredits_WaitFade(u8 taskId)
         CleanupOverworldWindowsAndTilemaps();
         SetMainCallback2(CB2_LoadMap);
         DestroyTask(taskId);
+    }
+}
+
+void CB2_ReturnToField_SaveChallengesData(void)
+{
+    if (IsOverworldLinkActive() == TRUE)
+    {
+        SetMainCallback2(CB2_ReturnToFieldLink);
+        SaveData_TxRandomizerAndChallenges();
+    }
+    else
+    {
+        FieldClearVBlankHBlankCallbacks();
+        SetMainCallback2(CB2_ReturnToFieldLocal);
+        SaveData_TxRandomizerAndChallenges();
     }
 }
