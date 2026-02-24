@@ -1,0 +1,480 @@
+#include "global.h"
+#include "event_data.h"
+#include "item.h"
+#include "tx_randomizer_and_challenges.h"
+#include "party_menu.h"
+#include "pokemon.h"
+#include "pokemon_storage_system.h"
+#include "constants/items.h"
+#include "constants/party_menu.h"
+#include "constants/region_map_sections.h"
+
+// Generic functions
+bool8 AreFeaturesActivated(void)
+{
+    if (gSaveBlock1Ptr->tx_Features_ShinyChance
+        || gSaveBlock1Ptr->tx_Features_WildMonDropItems
+        || gSaveBlock1Ptr->tx_Mode_AlternateSpawns
+        || gSaveBlock1Ptr->tx_Mode_InfiniteTMs
+        || gSaveBlock1Ptr->tx_Mode_PoisonSurvive)
+        //|| gSaveBlock1Ptr->tx_Features_EasierFeebas)
+        return TRUE;
+
+    return FALSE;
+}
+
+bool8 IsRandomizerActivated(void)
+{
+    if (gSaveBlock1Ptr->tx_Random_Chaos
+        || gSaveBlock1Ptr->tx_Random_WildPokemon
+        || gSaveBlock1Ptr->tx_Random_Similar
+        || gSaveBlock1Ptr->tx_Random_MapBased
+        || gSaveBlock1Ptr->tx_Random_IncludeLegendaries
+        || gSaveBlock1Ptr->tx_Random_Type
+        || gSaveBlock1Ptr->tx_Random_TypeEffectiveness
+        || gSaveBlock1Ptr->tx_Random_Abilities
+        || gSaveBlock1Ptr->tx_Random_Moves
+        || gSaveBlock1Ptr->tx_Random_Trainer
+        || gSaveBlock1Ptr->tx_Random_Evolutions
+        || gSaveBlock1Ptr->tx_Random_EvolutionMethods
+        || gSaveBlock1Ptr->tx_Random_Items)
+        return TRUE;
+
+    return FALSE;
+}
+
+bool8 IsRandomItemsActivated(void)
+{
+    return gSaveBlock1Ptr->tx_Random_Items;
+}
+
+bool8 IsRandomMovesActivated(void)
+{
+    return gSaveBlock1Ptr->tx_Random_Moves;
+}
+
+bool8 IsDifficultyOptionsActivated(void)
+{
+    if (gSaveBlock1Ptr->tx_Challenges_PartyLimit
+        || gSaveBlock1Ptr->tx_Challenges_LevelCap
+        || gSaveBlock1Ptr->tx_Challenges_ExpMultiplier
+        || gSaveBlock1Ptr->tx_Challenges_NoItemPlayer
+        || gSaveBlock1Ptr->tx_Challenges_NoItemTrainer
+        || gSaveBlock1Ptr->tx_Challenges_PkmnCenter
+        || gSaveBlock1Ptr->tx_Difficulty_EscapeRopeDig)
+        return TRUE;
+
+    return FALSE;
+}
+
+bool8 IsOneTypeChallengeActive(void)
+{
+    return (gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge != TX_CHALLENGE_TYPE_OFF);
+}
+
+bool8 AreAnyChallengesActive(void)
+{
+    if (gSaveBlock1Ptr->tx_Challenges_EvoLimit
+        || gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer
+        || gSaveBlock1Ptr->tx_Challenges_Mirror
+        || gSaveBlock1Ptr->tx_Challenges_Mirror_Thief
+        || gSaveBlock1Ptr->tx_Challenges_MaxPartyIVs
+        || gSaveBlock1Ptr->tx_Features_LimitDifficulty
+        || IsOneTypeChallengeActive())
+        return TRUE;
+
+    return FALSE;
+}
+
+bool8 IsNuzlockeActive(void)
+{
+    if (!FlagGet(FLAG_SYS_POKEMON_GET))     //Nuzlocke has not started
+        return FALSE;
+    if (!FlagGet(FLAG_ADVENTURE_STARTED))   //Nuzlocke has not started
+        return FALSE;
+    //if (FlagGet(FLAG_IS_CHAMPION))          //Player is champion and Nuzlocke stopped
+    //    return FALSE;
+    if (FlagGet(FLAG_DEFEATED_RED))          //Player is defeats Red and Nuzlocke stopped
+        return FALSE;
+
+    return gSaveBlock1Ptr->tx_Challenges_Nuzlocke;
+}
+
+bool8 IsNuzlockeNicknamingActive(void)
+{
+    if (!gSaveBlock1Ptr->tx_Challenges_Nuzlocke)
+        return FALSE;
+    //if (FlagGet(FLAG_IS_CHAMPION))
+    //    return FALSE;
+    if (FlagGet(FLAG_DEFEATED_RED))          //Player is defeats Red and Nuzlocke stopped
+        return FALSE;
+
+    return gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming;
+}
+
+bool8 IsPokecenterChallengeActivated(void)
+{
+    return gSaveBlock1Ptr->tx_Challenges_PkmnCenter;
+}
+
+bool8 HMsOverwriteOptionActive(void)
+{
+    return (gSaveBlock1Ptr->tx_Challenges_Nuzlocke 
+            || gSaveBlock1Ptr->tx_Challenges_Mirror 
+            || gSaveBlock1Ptr->tx_Random_Moves
+            || IsOneTypeChallengeActive());
+}
+
+// Nuzlocke code
+
+//These are the places where the nuzlocke encounter is active.
+//Only locations with wild encounters should be here.
+//After the first encounter, no more encounters will be possible.
+
+//Egg hatching counts as encounter, plus hatching locations that are not in the list
+//below prevent hatching. Next time you walk on a map section that hasn't got an encounter, the egg
+//will hatch as expected.
+//Eg. Hatching in Olivine Lighthouse is impossible, as there aren't encounters there, and it's
+//not on the list. 
+
+//Special Pokémon obtained from events do not prevent the capture of new species in their obtained route.
+//It includes all given Pokémon. No default code to block this type of static Pokémon exists.
+//Eg. Kenya is obtained in Route 35, but you can still do a Route 35 encounter after obtaining Kenya.
+//Also works in revers: you can catch a Pokémon in Route 35, yet Kenya is still obtainable.
+
+// const u8 NuzlockeLUT[] = 
+// {
+//     //0
+//     //Kanto Routes
+//     [MAPSEC_ROUTE_1]          = 0x0,
+//     [MAPSEC_ROUTE_2]          = 0x1,
+//     [MAPSEC_ROUTE_3]          = 0x2,
+//     [MAPSEC_ROUTE_4]          = 0x3,
+//     [MAPSEC_ROUTE_5]          = 0x4,
+//     [MAPSEC_ROUTE_6]          = 0x5,
+//     [MAPSEC_ROUTE_7]          = 0x6,
+//     [MAPSEC_ROUTE_8]          = 0x7,
+//     //1
+//     [MAPSEC_ROUTE_9]          = 0x8,
+//     [MAPSEC_ROUTE_10]         = 0x9,
+//     [MAPSEC_ROUTE_11]         = 0xA,
+//     [MAPSEC_ROUTE_12]         = 0xB,
+//     [MAPSEC_ROUTE_13]         = 0xC,
+//     [MAPSEC_ROUTE_14]         = 0xD,
+//     [MAPSEC_ROUTE_15]         = 0xE,
+//     [MAPSEC_ROUTE_16]         = 0xF,
+//     //2
+//     [MAPSEC_ROUTE_17]         = 0x10,
+//     [MAPSEC_ROUTE_18]         = 0x11,
+//     [MAPSEC_ROUTE_19]         = 0x12,
+//     [MAPSEC_ROUTE_20]         = 0x13,
+//     [MAPSEC_ROUTE_21]         = 0x14,
+//     [MAPSEC_ROUTE_22]         = 0x15,
+//     [MAPSEC_ROUTE_23]         = 0x16,
+//     [MAPSEC_ROUTE_24]         = 0x17,
+//     //3
+//     [MAPSEC_ROUTE_25]         = 0x18,
+//     //Johto-Kanto Routes
+//     [MAPSEC_ROUTE_26]         = 0x19,
+//     [MAPSEC_ROUTE_27]         = 0x1A,
+//     [MAPSEC_ROUTE_28]         = 0x1B,
+//     //Johto Routes
+//     [MAPSEC_ROUTE_29]         = 0x1C,
+//     [MAPSEC_ROUTE_30]         = 0x1D,
+//     [MAPSEC_ROUTE_31]         = 0x1E,
+//     [MAPSEC_ROUTE_32]         = 0x1F,
+//     //4
+//     [MAPSEC_ROUTE_33]         = 0x20,
+//     [MAPSEC_ROUTE_34]         = 0x21,
+//     [MAPSEC_ROUTE_35]         = 0x22,
+//     [MAPSEC_ROUTE_36]         = 0x23,
+//     [MAPSEC_ROUTE_37]         = 0x24,
+//     [MAPSEC_ROUTE_38]         = 0x25,
+//     [MAPSEC_ROUTE_39]         = 0x26,
+//     [MAPSEC_ROUTE_40]         = 0x27,
+//     //5
+//     [MAPSEC_ROUTE_41]         = 0x28,
+//     [MAPSEC_ROUTE_42]         = 0x29,
+//     [MAPSEC_ROUTE_43]         = 0x2A,
+//     [MAPSEC_ROUTE_44]         = 0x2B,
+//     [MAPSEC_ROUTE_45]         = 0x2C,
+//     [MAPSEC_ROUTE_46]         = 0x2D,
+//     [MAPSEC_ROUTE_47]         = 0x2E,
+//     [MAPSEC_ROUTE_48]         = 0x2F,
+//     //6
+//     //Dungeons: Johto
+//     [MAPSEC_DARK_CAVE]        = 0x30,
+//     [MAPSEC_SPROUT_TOWER]     = 0x31,
+//     [MAPSEC_RUINS_OF_ALPH]    = 0x32,
+//     [MAPSEC_UNION_CAVE]       = 0x33,
+//     [MAPSEC_SLOWPOKE_WELL]    = 0x34,
+//     [MAPSEC_ILEX_FOREST]      = 0x35,
+//     [MAPSEC_NATIONAL_PARK]    = 0x36,
+//     [MAPSEC_LAKE_OF_RAGE]     = 0x37,
+//     //7
+//     [MAPSEC_ICE_PATH]         = 0x38,
+//     [MAPSEC_MT_SILVER]        = 0x39,
+//     [MAPSEC_TOHJO_FALLS]      = 0x3A,
+//     [MAPSEC_SAFARI_ZONE_GATE] = 0x3B, //Covers the whole Safari Zone
+//     [MAPSEC_DRAGONS_DEN]      = 0x3C,
+//     [MAPSEC_CLIFF_CAVE]       = 0x3D,
+//     [MAPSEC_ROCKET_HIDEOUT]   = 0x3E,
+//     [MAPSEC_TIN_TOWER]        = 0x3F,
+//     //8
+//     [MAPSEC_MT_MORTAR]        = 0x40,
+//     [MAPSEC_WHIRL_ISLANDS]    = 0x41,
+//     [MAPSEC_BURNED_TOWER]     = 0x42,
+//     [MAPSEC_SAFARI_ZONE]      = 0x43, //This one only affects one Safari Zone area: Safari Top Left (might be a bug?)
+//     //Dungeons: Kanto
+//     [MAPSEC_ROCK_TUNNEL]      = 0x44,
+//     [MAPSEC_SEAFOAM_ISLANDS]  = 0x45,
+//     [MAPSEC_VIRIDIAN_FOREST]  = 0x46,
+//     [MAPSEC_MT_MOON]          = 0x47,
+//     //9
+//     [MAPSEC_DIGLETTS_CAVE]    = 0x48,
+//     [MAPSEC_VICTORY_ROAD]     = 0x49,
+//     [MAPSEC_CERULEAN_CAVE]    = 0x4A,
+//     //Cities and towns: Johto
+//     [MAPSEC_OLIVINE_CITY]     = 0x4B,
+//     [MAPSEC_BLACKTHORN_CITY]  = 0x4C,
+//     [MAPSEC_AZALEA_TOWN]      = 0x4D,
+//     [MAPSEC_MAHOGANY_TOWN]    = 0x4E,
+//     [MAPSEC_CIANWOOD_CITY]    = 0x4F,
+//     //10
+//     [MAPSEC_GOLDENROD_CITY]   = 0x50,
+//     [MAPSEC_CHERRYGROVE_CITY] = 0x51,
+//     [MAPSEC_NEW_BARK_TOWN]    = 0x52,
+//     [MAPSEC_VIOLET_CITY]      = 0x53,
+//     [MAPSEC_ECRUTEAK_CITY]    = 0x54,
+//     //Cities and towns: Kanto
+//     [MAPSEC_VERMILION_CITY]   = 0x55,
+//     [MAPSEC_CERULEAN_CITY]    = 0x56,
+//     [MAPSEC_CINNABAR_ISLAND]  = 0x57,
+//     //11
+//     [MAPSEC_SAFFRON_CITY]     = 0x58,
+//     [MAPSEC_FUCHSIA_CITY]     = 0x59, //This covers the Safari Zone too
+//     [MAPSEC_CELADON_CITY]     = 0x5A,
+//     [MAPSEC_PALLET_TOWN]      = 0x5B,
+//     [MAPSEC_VIRIDIAN_CITY]    = 0x5C,
+//     [MAPSEC_PEWTER_CITY]      = 0x5D,
+//     [MAPSEC_LAVENDER_TOWN]    = 0x5E,
+//     [MAPSEC_BATTLE_FRONTIER]  = 0x5F
+// };
+
+//tx_randomizer_and_challenges
+u8 NuzlockeFlagSet(u16 mapsec) // @Kurausukun
+{
+    // u16 id = NuzlockeLUT[mapsec];
+    // u8 * ptr = &gSaveBlock1Ptr->NuzlockeEncounterFlags[id / 8];
+    // u8 i;
+    // if (ptr)
+    //     * ptr |= 1 << (id & 7);
+
+    // #ifndef NDEBUG
+    // MgbaPrintf(MGBA_LOG_DEBUG, "NuzlockeFlagSet Id=%d", id);
+    // for (i=0; i<9; i++)
+    //     MgbaPrintf(MGBA_LOG_DEBUG, "gSaveBlock1Ptr->NuzlockeEncounterFlags[%d] = %d" , i, gSaveBlock1Ptr->NuzlockeEncounterFlags[i]);
+    // #endif
+
+    return 0;
+}
+u8 NuzlockeFlagClear(u16 mapsec) // @Kurausukun
+{
+    // u16 id = NuzlockeLUT[mapsec];
+    // u8 * ptr = &gSaveBlock1Ptr->NuzlockeEncounterFlags[id / 8];
+    // if (ptr)
+    //     * ptr &= ~(1 << (id & 7));
+    return 0;
+}
+u8 NuzlockeFlagGet(u16 mapsec) // @Kurausukun
+{
+    // u16 id = NuzlockeLUT[mapsec];
+    // u8 * ptr = &gSaveBlock1Ptr->NuzlockeEncounterFlags[id / 8];
+
+    // #ifndef NDEBUG
+    // MgbaPrintf(MGBA_LOG_DEBUG, "NuzlockeFlagGet Id=%d", id);
+    // #endif
+
+    // if (!ptr)
+    //     return 0;
+
+    // if (!(((*ptr) >> (id & 7)) & 1))
+    //     return 0;
+    return 1;
+}
+
+void NuzlockeDeletePartyMon(u8 position)
+{
+    // if (!gSaveBlock1Ptr->tx_Nuzlocke_Deletion)
+    // {
+    //     struct Pokemon *pokemon = &gPlayerParty[position];
+    //     u8 val[1] = {TRUE};
+        
+    //     SetMonData(pokemon, MON_DATA_NUZLOCKE_RIBBON, val);
+    //     CopyMonToPC(&gPlayerParty[position]);
+    // }
+    // PurgeMonOrBoxMon(TOTAL_BOXES_COUNT, position);
+}
+
+void NuzlockeDeletePartyMonOption(u8 position)
+{
+    // struct Pokemon *pokemon = &gPlayerParty[position];
+    // u8 val[1] = {TRUE};
+        
+    // SetMonData(pokemon, MON_DATA_NUZLOCKE_RIBBON, val);
+    // CopyMonToPC(&gPlayerParty[position]);
+    // PurgeMonOrBoxMon(TOTAL_BOXES_COUNT, position);
+}
+
+void NuzlockeDeleteFaintedPartyPokemon(void) // @Kurausukun
+{
+    // u8 i;
+    // struct Pokemon *pokemon;
+    // u32 monItem;
+    // u16 item = ITEM_NONE;
+
+    // for (i = 0; i < PARTY_SIZE; i++)
+    // {
+    //     pokemon = &gPlayerParty[i];
+    //     if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES, NULL) && !GetMonData(pokemon, MON_DATA_IS_EGG, NULL))
+    //     {
+    //         if (GetMonAilment(pokemon) == AILMENT_FNT)
+    //         {
+    //             monItem = GetMonData(pokemon, MON_DATA_HELD_ITEM, NULL);
+
+    //             if (monItem != ITEM_NONE)
+    //             {
+    //                 AddBagItem(monItem, 1);
+    //                 SetMonData(pokemon, MON_DATA_HELD_ITEM, &item);
+    //             }
+    //             if ((gSaveBlock1Ptr->tx_Nuzlocke_EasyMode) && (!IsNuzlockeActive()))
+    //                 NuzlockeDeletePartyMonOption(i);
+    //             else
+    //                 NuzlockeDeletePartyMon(i);
+    //         }
+    //     }
+    // }
+    // CompactPartySlots();
+}
+
+// Difficulty
+u8 GetMaxPartySize(void)
+{
+    return 6;
+    // return (6 - gSaveBlock1Ptr->tx_Challenges_PartyLimit);
+}
+
+
+// Challenges
+
+
+// DEBUG
+void PrintTXSaveData(void)
+{
+    #ifndef NDEBUG
+    
+    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_WildPokemon"          , gSaveBlock1Ptr->tx_Random_WildPokemon);
+    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Moves"                , gSaveBlock1Ptr->tx_Random_Moves);
+    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Abilities"            , gSaveBlock1Ptr->tx_Random_Abilities);
+    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Items"                , gSaveBlock1Ptr->tx_Random_Items);
+
+
+
+    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Challenges_PartyLimit"       , gSaveBlock1Ptr->tx_Challenges_PartyLimit);
+
+
+
+    #endif
+}
+
+void TestRandomizerValues(u8 type)
+{
+    // #ifndef NDEBUG
+    // u16 i, j;
+    // u8 real_j;
+    // u16 tmp;
+    // u16 array[10];
+    // u8 save_values[30];
+
+    // //save saveblock values
+    // save_values[0]  = gSaveBlock1Ptr->tx_Random_Chaos;
+    // save_values[1]  = gSaveBlock1Ptr->tx_Random_WildPokemon;
+    // save_values[2]  = gSaveBlock1Ptr->tx_Random_Similar;
+    // save_values[3]  = gSaveBlock1Ptr->tx_Random_MapBased;
+    // save_values[4]  = gSaveBlock1Ptr->tx_Random_IncludeLegendaries;
+    // save_values[5]  = gSaveBlock1Ptr->tx_Random_Type;
+    // save_values[6]  = gSaveBlock1Ptr->tx_Random_TypeEffectiveness;
+    // save_values[7]  = gSaveBlock1Ptr->tx_Random_Abilities;
+    // save_values[8]  = gSaveBlock1Ptr->tx_Random_Moves;
+    // save_values[9]  = gSaveBlock1Ptr->tx_Random_Trainer;
+    // save_values[10] = gSaveBlock1Ptr->tx_Random_Evolutions;
+    // save_values[11] = gSaveBlock1Ptr->tx_Random_EvolutionMethods;
+    // save_values[12] = gSaveBlock1Ptr->tx_Challenges_EvoLimit;
+    // save_values[13] = gSaveBlock1Ptr->tx_Challenges_Nuzlocke;
+    // save_values[14] = gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore;
+    // save_values[15] = gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge;
+    // save_values[16] = gSaveBlock1Ptr->tx_Challenges_PartyLimit;
+    // save_values[17] = gSaveBlock1Ptr->tx_Challenges_NoItemPlayer;
+    // save_values[18] = gSaveBlock1Ptr->tx_Challenges_NoItemTrainer;
+    // save_values[19] = gSaveBlock1Ptr->tx_Challenges_PkmnCenter;
+    // save_values[20] = gSaveBlock1Ptr->tx_Challenges_LessEscapes;
+    // save_values[21] = gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer;
+    // save_values[22] = gSaveBlock1Ptr->tx_Challenges_LevelCap;
+    // save_values[23] = gSaveBlock1Ptr->tx_Random_Items;
+    // save_values[24] = gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause;
+    // save_values[25] = gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause;
+    // save_values[26] = gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming;
+
+    // gSaveBlock1Ptr->tx_Random_WildPokemon           = TRUE;
+    // gSaveBlock1Ptr->tx_Random_Similar               = FALSE;
+    // gSaveBlock1Ptr->tx_Random_MapBased              = FALSE;
+    // gSaveBlock1Ptr->tx_Random_IncludeLegendaries    = FALSE;
+
+
+    // for (i=0; i<10; i++)
+    // {
+    //     for (j=0; j<NUM_SPECIES; j++)
+    //     {
+    //     //tmp = RandomSeededModulo(j, NUM_SPECIES);
+    //     tmp = GetSpeciesRandomSeeded(j, type, 0);
+        
+    //     real_j = j % 10;
+    //     array[real_j] = tmp;
+    //     if (real_j == 9)
+    //         MgbaPrintf(MGBA_LOG_DEBUG, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,", array[0],array[1],array[2],array[3],array[4],array[5],array[6],array[7],array[8],array[9]);
+    //     }
+    // }
+
+
+
+
+    // //restore saveblock values
+    // gSaveBlock1Ptr->tx_Random_Chaos                 =   save_values[0];
+    // gSaveBlock1Ptr->tx_Random_WildPokemon           =   save_values[1];
+    // gSaveBlock1Ptr->tx_Random_Similar               =   save_values[2];
+    // gSaveBlock1Ptr->tx_Random_MapBased              =   save_values[3];
+    // gSaveBlock1Ptr->tx_Random_IncludeLegendaries    =   save_values[4];
+    // gSaveBlock1Ptr->tx_Random_Type                  =   save_values[5];
+    // gSaveBlock1Ptr->tx_Random_TypeEffectiveness     =   save_values[6];
+    // gSaveBlock1Ptr->tx_Random_Abilities             =   save_values[7];
+    // gSaveBlock1Ptr->tx_Random_Moves                 =   save_values[8];
+    // gSaveBlock1Ptr->tx_Random_Trainer               =   save_values[9];
+    // gSaveBlock1Ptr->tx_Random_Evolutions            =   save_values[10];
+    // gSaveBlock1Ptr->tx_Random_EvolutionMethods      =   save_values[11];
+    // gSaveBlock1Ptr->tx_Challenges_EvoLimit          =   save_values[12];
+    // gSaveBlock1Ptr->tx_Challenges_Nuzlocke          =   save_values[13];
+    // gSaveBlock1Ptr->tx_Challenges_NuzlockeHardcore  =   save_values[14];
+    // gSaveBlock1Ptr->tx_Challenges_OneTypeChallenge  =   save_values[15];
+    // gSaveBlock1Ptr->tx_Challenges_PartyLimit        =   save_values[16];
+    // gSaveBlock1Ptr->tx_Challenges_NoItemPlayer      =   save_values[17];
+    // gSaveBlock1Ptr->tx_Challenges_NoItemTrainer     =   save_values[18];
+    // gSaveBlock1Ptr->tx_Challenges_PkmnCenter        =   save_values[19];
+    // gSaveBlock1Ptr->tx_Challenges_LessEscapes       =   save_values[20];
+    // gSaveBlock1Ptr->tx_Challenges_BaseStatEqualizer =   save_values[21];
+    // gSaveBlock1Ptr->tx_Challenges_LevelCap          =   save_values[22];
+    // gSaveBlock1Ptr->tx_Random_Items                 =   save_values[23];
+    // gSaveBlock1Ptr->tx_Nuzlocke_SpeciesClause       =   save_values[24];
+    // gSaveBlock1Ptr->tx_Nuzlocke_ShinyClause         =   save_values[25];
+    // gSaveBlock1Ptr->tx_Nuzlocke_Nicknaming          =   save_values[26];
+    // #endif
+}
