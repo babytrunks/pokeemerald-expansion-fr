@@ -1467,12 +1467,12 @@ static void Task_NewGameOakSpeech_WaitToShowChallengeMenu(u8 taskId)
 
 static void Task_NewGameOakSpeech_ChooseChallenge(u8 taskId)
 {
-    if ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON)))
-    {
+    // if ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON)))
+    // {
         gMain.savedCallback = CB2_NewGameOakSpeech_ReturnFromTxRandomizerChallengesOptions;
         SetMainCallback2(CB2_InitTxRandomizerChallengesMenu);
         DestroyTask(taskId);
-    }
+    // }
 }
 
 
