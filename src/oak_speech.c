@@ -21,6 +21,7 @@
 #include "util.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
+#include "tx_randomizer_and_challenges.h"
 
 #if IS_FRLG
 
@@ -101,6 +102,9 @@ static void Task_OakSpeech_FadePlayerPicWhite(u8);
 static void Task_OakSpeech_FadePlayerPicToBlack(u8);
 static void Task_OakSpeech_WaitForFade(u8);
 static void Task_OakSpeech_FreeResources(u8);
+
+static void Task_NewGameOakSpeech_WaitToShowChallengeMenu(u8);
+static void Task_NewGameOakSpeech_ChooseChallenge(u8);
 
 static void CB2_ReturnFromNamingScreen(void);
 static void CreateNidoranFSprite(u8);
@@ -1100,6 +1104,84 @@ static void Task_PikachuIntro_Clear(u8 taskId)
     }
 }
 
+static void CB2_NewGameOakSpeech_ReturnFromTxRandomizerChallengesOptions(void)
+{
+    u8 taskId;
+
+    switch (gMain.state)
+    {
+    case 0:
+        SetVBlankCallback(NULL);
+        DmaFill16(3, 0, VRAM, VRAM_SIZE);
+        DmaFill32(3, 0, OAM, OAM_SIZE);
+        DmaFill16(3, RGB_BLACK, PLTT + sizeof(u16), PLTT_SIZE - sizeof(u16));
+        ResetPaletteFade();
+        ScanlineEffect_Stop();
+        ResetSpriteData();
+        FreeAllSpritePalettes();
+        ResetTempTileDataBuffers();
+        break;
+    case 1:
+        ResetBgsAndClearDma3BusyFlags(0);
+        InitBgsFromTemplates(1, sBgTemplates, ARRAY_COUNT(sBgTemplates));
+        SetBgTilemapBuffer(1, sOakSpeechResources->bg1TilemapBuffer);
+        SetBgTilemapBuffer(2, sOakSpeechResources->bg2TilemapBuffer);
+        ChangeBgX(1, 0, BG_COORD_SET);
+        ChangeBgY(1, 0, BG_COORD_SET);
+        ChangeBgX(2, 0, BG_COORD_SET);
+        ChangeBgY(2, 0, BG_COORD_SET);
+        break;
+    case 2:
+        SetGpuReg(REG_OFFSET_WIN0H, 0);
+        SetGpuReg(REG_OFFSET_WIN0V, 0);
+        SetGpuReg(REG_OFFSET_WININ, 0);
+        SetGpuReg(REG_OFFSET_WINOUT, 0);
+        SetGpuReg(REG_OFFSET_BLDCNT, 0);
+        SetGpuReg(REG_OFFSET_BLDALPHA, 0);
+        SetGpuReg(REG_OFFSET_BLDY, 0);
+        break;
+    case 3:
+        FreeAllWindowBuffers();
+        InitStandardTextBoxWindows();
+        InitTextBoxGfxAndPrinters();
+        // Below is reading 48 colors beyond the background palette (into the tiles that follow it).
+        // This color range is used by the player and rival pic, which will overwrite them with the correct colors.
+#ifdef BUGFIX
+        LoadPalette(sOakSpeech_Background_Pals, BG_PLTT_ID(0), sizeof(sOakSpeech_Background_Pals));
+#else
+        LoadPalette(sOakSpeech_Background_Pals, BG_PLTT_ID(0), sizeof(sOakSpeech_Background_Pals) + PLTT_SIZEOF(48));
+#endif
+        break;
+    case 4:
+        DecompressAndCopyTileDataToVram(1, sOakSpeech_Background_Tiles, 0, 0, 0);
+        break;
+    case 5:
+        if (FreeTempTileDataBuffersIfPossible())
+            return;
+        FillBgTilemapBufferRect_Palette0(1, 0, 0, 0, 30, 20);
+        CopyToBgTilemapBuffer(1, sOakSpeech_Background_Tilemap, 0, 0);
+        FillBgTilemapBufferRect_Palette0(2, 0, 0, 0, 30, 20);
+        CopyBgTilemapBufferToVram(1);
+        CopyBgTilemapBufferToVram(2);
+        break;
+    case 6:
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 16, 0, RGB_BLACK);
+        SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_1D_MAP | DISPCNT_OBJ_ON);
+        ShowBg(0);
+        ShowBg(1);
+        ShowBg(2);
+        EnableInterrupts(INTR_FLAG_VBLANK);
+        taskId = CreateTask(Task_OakSpeech_FadeOutForPlayerNamingScreen, 0);
+        gTasks[taskId].tTimer = 5;
+        SetVBlankCallback(VBlankCB_NewGameScene);
+        gTextFlags.canABSpeedUpPrint = TRUE;
+        SetMainCallback2(CB2_NewGameScene);
+        return;
+    }
+
+    gMain.state++;
+}
+
 static void Task_OakSpeech_Init(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
@@ -1330,6 +1412,7 @@ static void Task_OakSpeech_HandleGenderInput(u8 taskId)
 
 }
 
+
 static void Task_OakSpeech_ClearGenderWindows(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
@@ -1367,10 +1450,31 @@ static void Task_OakSpeech_YourNameWhatIsIt(u8 taskId)
         {
             tTrainerPicPosX = 0;
             OakSpeechPrintMessage(gOakSpeech_Text_YourNameWhatIsIt, sOakSpeechResources->textSpeed, FALSE);
-            gTasks[taskId].func = Task_OakSpeech_FadeOutForPlayerNamingScreen;
+            gTasks[taskId].func = Task_NewGameOakSpeech_WaitToShowChallengeMenu;
         }
     }
 }
+
+static void Task_NewGameOakSpeech_WaitToShowChallengeMenu(u8 taskId)
+{
+    if (!IsTextPrinterActive(WIN_INTRO_TEXTBOX))
+    {
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+        sOakSpeechResources->hasPlayerBeenNamed = FALSE;
+        gTasks[taskId].func = Task_NewGameOakSpeech_ChooseChallenge;
+    }
+}
+
+static void Task_NewGameOakSpeech_ChooseChallenge(u8 taskId)
+{
+    if ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON)))
+    {
+        gMain.savedCallback = CB2_NewGameOakSpeech_ReturnFromTxRandomizerChallengesOptions;
+        SetMainCallback2(CB2_InitTxRandomizerChallengesMenu);
+        DestroyTask(taskId);
+    }
+}
+
 
 static void Task_OakSpeech_FadeOutForPlayerNamingScreen(u8 taskId)
 {
