@@ -725,7 +725,7 @@
 #define FLAG_USED_CUT_ON_RUIN_VALLEY_BRAILLE             0x2E3
 #define FLAG_FOUGHT_DEOXYS                               0x2E4
 #define FLAG_HIDE_ROCK_TUNNEL_TM_ROCK_SLIDE              0x2E5
-#define FLAG_0x2E6                                       0x2E6
+#define FLAG_RANDOMIZER_MOVES                            0x2E6
 #define FLAG_0x2E7                                       0x2E7
 #define FLAG_0x2E8                                       0x2E8
 #define FLAG_0x2E9                                       0x2E9
@@ -1228,10 +1228,10 @@
 #define FLAG_CANT_RUN                               0x4C9
 #define FLAG_DEFEATED_MAROWAK_GHOST                 0x4CA
 #define FLAG_VISITED_SLATEPORT_CITY                 0x4CB
-#define FLAG_0x4CC               0x4CC
-#define FLAG_0x4CD               0x4CD
-#define FLAG_0x4CE               0x4CE
-#define FLAG_0x4CF               0x4CF
+#define FLAG_DISABLE_EVS                            0x4CC
+#define FLAG_EASY_MODE                              0x4CD
+#define FLAG_HARDCORE_MODE                          0x4CE
+#define FLAG_RESTRICTED_MODE                        0x4CF
 #define FLAG_0x4D0               0x4D0
 #define FLAG_0x4D1               0x4D1
 #define FLAG_0x4D2               0x4D2

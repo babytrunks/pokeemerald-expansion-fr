@@ -177,8 +177,8 @@
 #define VAR_PRESET_TOTEM_BOSS                           0x40A1
 #define VAR_SILPH_CO_POLICEMAN_GAVE_MEGA_RING           0x40A2
 #define VAR_SCRIPT_TEMP                                 0x40A3
-#define VAR_0x40A4                 0x40A4
-#define VAR_0x40A5                 0x40A5
+#define VAR_PARTY_LIMIT                                 0x40A4
+#define VAR_RANDOMIZER_SPECIES_MODE                     0x40A5
 #define VAR_0x40A6                 0x40A6
 #define VAR_0x40A7                 0x40A7
 #define VAR_0x40A8                 0x40A8
