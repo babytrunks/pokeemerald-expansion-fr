@@ -25,12 +25,8 @@
 // ---- Paging ----
 enum
 {
-    VIEWER_PAGE_MODE = 0,   // page 1
-    VIEWER_PAGE_2,          // page 2
-    VIEWER_PAGE_3,          // page 3
-    VIEWER_PAGE_4,          // page 4
-    VIEWER_PAGE_5,          // page 5
-    VIEWER_PAGE_6,          // page 6  <-- add this
+    VIEWER_PAGE_MODE = 0,       // page 1 (gamemode)
+    VIEWER_PAGE_RANDOMIZER,     // page 2 (randomizer)
     VIEWER_PAGE_COUNT
 };
 
@@ -971,12 +967,8 @@ static void Viewer_DrawRow_Page6(u8 visRow, u16 idx)
 
 static const struct ViewerPage sPages[VIEWER_PAGE_COUNT] =
 {
-    { Viewer_DrawRow_Page1, sBoolRows,        ARRAY_COUNT(sBoolRows)        }, // Page 1
-    { Viewer_DrawRow_Page2, sBoolRows_Page2,  ARRAY_COUNT(sBoolRows_Page2)  }, // Page 2
-    { Viewer_DrawRow_Page3, sBoolRows_Page3,  ARRAY_COUNT(sBoolRows_Page3)  }, // Page 3
-    { Viewer_DrawRow_Page4, sBoolRows_Page4,  ARRAY_COUNT(sBoolRows_Page4) + 1 }, // Page 4 (header+subs)
-    { Viewer_DrawRow_Page5, sBoolRows_Page5,  ARRAY_COUNT(sBoolRows_Page5)  }, // Page 5
-    { Viewer_DrawRow_Page6, sBoolRows_Page6,  ARRAY_COUNT(sBoolRows_Page6)  }, // Page 6
+    { Viewer_DrawRow_Page1, sBoolRows,        ARRAY_COUNT(sBoolRows)        }, // Page 1 (Gamemode)
+    { Viewer_DrawRow_Page3, sBoolRows_Page3,  ARRAY_COUNT(sBoolRows_Page3)  }, // Page 2 (Randomizer)
 };
 
 
