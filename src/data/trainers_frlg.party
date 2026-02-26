@@ -237,6 +237,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Green
+Boss: Yes
 
 Corphish 
 Level: 8
@@ -1280,6 +1281,7 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Purple
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Smeargle @ Choice Scarf
@@ -4421,6 +4423,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Hitmontop @ Focus Sash
@@ -4743,6 +4746,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Staravia @ Muscle Band
@@ -4797,6 +4801,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Staravia @ Muscle Band
@@ -4852,6 +4857,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Staravia @ Muscle Band
@@ -5164,6 +5170,7 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
+Boss: Yes
 
 Nidoking @ Life Orb
 Nature: Timid
@@ -5240,6 +5247,7 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
+Boss: Yes
 
 Hippowdon @ Smooth Rock
 Nature: Adamant
@@ -6770,6 +6778,7 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Purple
+Boss: Yes
 
 Weavile @ Focus Sash
 Nature: Jolly
@@ -7167,6 +7176,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Purple
+Boss: Yes
 
 Dewgong
 Level: 52
@@ -7217,6 +7227,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Green
+Boss: Yes
 
 Onix
 Level: 51
@@ -7267,6 +7278,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Pink
+Boss: Yes
 
 Gengar
 Level: 54
@@ -7317,6 +7329,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Blue
+Boss: Yes
 
 Gyarados
 Level: 56
@@ -7359,7 +7372,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Wing Attack
 
 === TRAINER_LEADER_BROCK ===
-Name: BROCK
+Name: Brock
 Class: Leader Frlg
 Pic: Leader Brock Frlg
 Gender: Male
@@ -7367,6 +7380,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
+Boss: Yes
 
 Geodude-Alola @ Custap Berry
 Nature: Adamant
@@ -7419,6 +7433,7 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Blue
+Boss: Yes
 
 Frogadier @ Eviolite
 Nature: Bashful
@@ -7474,6 +7489,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Pincurchin @ Terrain Extender
 Nature: Bold
@@ -7540,6 +7556,7 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Green
+Boss: Yes
 
 Rillaboom @ Terrain Extender
 Nature: Jolly
@@ -7881,6 +7898,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Dynamic Level Ratio: 90
 Mugshot: Yellow 
+Boss: Yes
 
 Staraptor @ Sharp Beak
 Level: 34
@@ -7946,6 +7964,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Dynamic Level Ratio: 90
 Mugshot: Yellow 
+Boss: Yes
 
 Staraptor @ Sharp Beak
 Level: 34
@@ -8010,6 +8029,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Dynamic Level Ratio: 90
 Mugshot: Yellow 
+Boss: Yes
 
 Staraptor @ Sharp Beak
 Level: 34
@@ -8072,6 +8092,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Staraptor @ Sharp Beak
 Nature: Jolly
@@ -8137,6 +8158,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Staraptor @ Sharp Beak
 Nature: Jolly
@@ -8202,6 +8224,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Staraptor @ Sharp Beak
 Nature: Jolly
@@ -8438,6 +8461,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Pidgeot
 Level: 59
@@ -8496,6 +8520,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Pidgeot
 Level: 59
@@ -8554,6 +8579,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Pidgeot
 Level: 59
@@ -9193,6 +9219,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Green
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Loudred @ Chople Berry
@@ -9303,6 +9330,7 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / Sequence Switching
 Mugshot: Pink
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Tatsugiri @ Toxic Orb
@@ -13336,6 +13364,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Blue
+Boss: Yes
 
 Rufflet @ Berry Juice
 Nature: Bashful
@@ -13379,6 +13408,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Green
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Lokix @ Silver Powder
@@ -13434,6 +13464,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Green
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Kleavor @ Focus Sash
@@ -13511,6 +13542,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Pink
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Tinkaton @ Sitrus Berry
@@ -13577,6 +13609,7 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Purple
+Boss: Yes
 Dynamic Level Ratio: 90
 
 Bronzong @ Iapapa Berry
@@ -14403,6 +14436,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Purple
+Boss: Yes
 
 Dewgong
 Level: 64
@@ -14453,6 +14487,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Green
+Boss: Yes
 
 Steelix
 Level: 65
@@ -14503,6 +14538,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Pink
+Boss: Yes
 
 Gengar
 Level: 66
@@ -14553,6 +14589,7 @@ Music: Elite Four
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Blue
+Boss: Yes
 
 Gyarados
 Level: 68
@@ -14603,6 +14640,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Heracross
 Level: 72
@@ -14661,6 +14699,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Heracross
 Level: 72
@@ -14719,6 +14758,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Yellow
+Boss: Yes
 
 Heracross
 Level: 72
@@ -14995,6 +15035,7 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Blue
+Boss: Yes
 
 Overqwil @ Sitrus Berry
 Ability: Intimidate
@@ -15023,6 +15064,7 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Mugshot: Blue
+Boss: Yes
 
 Thievul @ Focus Sash
 Ability: Stakeout

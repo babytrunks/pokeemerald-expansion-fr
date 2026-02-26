@@ -1,5 +1,6 @@
 #include "global.h"
 #include "malloc.h"
+#include "tx_randomizer_and_challenges.h"
 #include "apprentice.h"
 #include "battle.h"
 #include "battle_ai_switch_items.h"
@@ -3563,13 +3564,13 @@ u8 GiveMonToPlayer(struct Pokemon *mon)
     SetMonData(mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
     SetMonData(mon, MON_DATA_OT_ID, gSaveBlock2Ptr->playerTrainerId);
 
-    for (i = 0; i < PARTY_SIZE; i++)
+    for (i = 0; i < GetMaxPartySize(); i++) //tx_randomizer_and_challenges
     {
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
             break;
     }
 
-    if (i >= PARTY_SIZE)
+    if (i >= GetMaxPartySize()) //tx_randomizer_and_challenges
         return CopyMonToPC(mon);
 
     CopyMon(&gPlayerParty[i], mon, sizeof(*mon));
@@ -3640,7 +3641,12 @@ u8 CalculatePartyCountOfSide(u32 battler, struct Pokemon *party)
 
 u8 CalculatePlayerPartyCount(void)
 {
-    gPlayerPartyCount = CalculatePartyCount(gPlayerParty);
+    gPlayerPartyCount = 0;
+    while (gPlayerPartyCount < GetMaxPartySize() //tx_randomizer_and_challenges
+        && GetMonData(&gPlayerParty[gPlayerPartyCount], MON_DATA_SPECIES, NULL) != SPECIES_NONE)
+    {
+        gPlayerPartyCount++;
+    }
     return gPlayerPartyCount;
 }
 

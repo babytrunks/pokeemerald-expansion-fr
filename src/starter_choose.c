@@ -356,7 +356,11 @@ u16 GetStarterPokemon(u16 chosenStarterId)
         chosenStarterId = 0;
 
     #if RANDOMIZER_AVAILABLE == TRUE
-        species = RandomizeStarterAndGiftMon(chosenStarterId, sStarterMon);
+        // species = RandomizeStarterAndGiftMon(chosenStarterId, sStarterMon);
+        u8 mapNum = gSaveBlock1Ptr->location.mapNum;
+        u8 mapGroup = gSaveBlock1Ptr->location.mapGroup;
+        u8 localId = gObjectEvents[gSelectedObjectEvent].localId;
+        species = RandomizeFixedEncounterMon(chosenStarterId, mapNum, mapGroup, localId);
     #else
         species = sStarterMon[chosenStarterId];
     #endif

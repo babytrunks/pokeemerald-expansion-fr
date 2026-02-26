@@ -662,7 +662,7 @@ static const u8 sText_Description_Mode_New_Legendaries_On[]       = _("Extra leg
 static const u8 sText_Description_Mode_New_Effectiveness_Original[]  = _("Original type effectiveness\nfor all types.");
 static const u8 sText_Description_Mode_New_Effectiveness_Modern[]    = _("New and balanced type effectiveness\nfor certain types.");
 static const u8 sText_Description_Mode_Next[]                           = _("Continue to Randomizer options.");
-static const u8 sText_Description_Mode_Difficulty_Easy[]                = _("Trainer levels are reduced, &\nthe Level Cap is more lenient.");
+static const u8 sText_Description_Mode_Difficulty_Easy[]                = _("Trainer levels are reduced, & the\nLevel Cap is more lenient.");
 static const u8 sText_Description_Mode_Difficulty_Normal[]              = _("The intended difficulty to play\nthe game.");
 static const u8 sText_Description_Mode_Difficulty_Hardcore[]            = _("Bosses are absurd. Certain moves &\nabilties are banned for the player.");
 static const u8 sText_Description_Mode_NoEVs_Off[]                      = _("{PKMN} gain effort values\nas expected.");
@@ -953,6 +953,8 @@ static const u8 *const OptionTextDescription(void)
     case MENU_MODE:
         if (!CheckConditions(menuItem) && sOptionMenuItemDescriptionsDisabledMode[menuItem] != sText_Empty)
             return sOptionMenuItemDescriptionsDisabledMode[menuItem];
+        if (sOptions->menuCursor[MENU_MODE] == MENUITEM_MODE_PARTY_LIMIT)
+            return sOptionMenuItemDescriptionsMode[menuItem][0];
         selection = sOptions->sel_mode[menuItem];  
         return sOptionMenuItemDescriptionsMode[menuItem][selection];
     case MENU_RANDOMIZER:
@@ -1266,7 +1268,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         //MENU MODE
         sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN]    = FALSE;     // default: RECOMMENDED
         sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY]        = 1;         // default: Normal
-        sOptions->sel_mode[MENUITEM_MODE_NO_EVS]            = FALSE;     // default: EVs enabled
+        sOptions->sel_mode[MENUITEM_MODE_NO_EVS]            = 1;     // default: EVs enabled
         sOptions->sel_mode[MENUITEM_MODE_PARTY_LIMIT]    = TX_DIFFICULTY_PARTY_LIMIT;
         //MENU FEATURES
         sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]               = TX_FEATURES_RTC_TYPE;
@@ -1539,7 +1541,7 @@ void SaveData_TxRandomizerAndChallenges(void)
     else if(sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] == 2)
         FlagSet(FLAG_HARDCORE_MODE);
     
-    if (sOptions->sel_mode[MENUITEM_MODE_NO_EVS] == TRUE)
+    if (sOptions->sel_mode[MENUITEM_MODE_NO_EVS] == FALSE)
         FlagSet(FLAG_DISABLE_EVS);
 
     // MENU_RANDOMIZER
@@ -1558,6 +1560,8 @@ void SaveData_TxRandomizerAndChallenges(void)
             FlagSet(FLAG_RANDOMIZER_MOVES);
         if (sOptions->sel_randomizer[MENUITEM_RANDOM_ABILITIES] == TRUE)
             FlagSet(FLAG_RANDOMIZER_ABILITIES);
+        if (sOptions->sel_randomizer[MENUITEM_RANDOM_ITEMS] == TRUE)
+            FlagSet(FLAG_RANDOMIZER_FIELD_ITEM);
     }
 
 
@@ -1925,7 +1929,7 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
     if (selection == 0) // RECOMMENDED: lock to Normal difficulty, EVs on
     {
         sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] = 1; // Normal
-        sOptions->sel_mode[MENUITEM_MODE_NO_EVS]     = 0; // EVs enabled
+        sOptions->sel_mode[MENUITEM_MODE_NO_EVS]     = 1; // EVs enabled
         sOptions->sel_mode[MENUITEM_MODE_PARTY_LIMIT] = 0;
     }
 }

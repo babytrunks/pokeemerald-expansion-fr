@@ -377,14 +377,14 @@ void PrintTXSaveData(void)
 {
     #ifndef NDEBUG
     
-    // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_WildPokemon"          , gSaveBlock1Ptr->tx_Random_WildPokemon);
+    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_WildPokemon"          , FlagGet(FLAG_RANDOMIZER_WILD_MON));
     // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Moves"                , gSaveBlock1Ptr->tx_Random_Moves);
     // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Abilities"            , gSaveBlock1Ptr->tx_Random_Abilities);
     // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Random_Items"                , gSaveBlock1Ptr->tx_Random_Items);
 
 
 
-    // MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Challenges_PartyLimit"       , gSaveBlock1Ptr->tx_Challenges_PartyLimit);
+    MgbaPrintf(MGBA_LOG_DEBUG, "%d tx_Challenges_PartyLimit"       , VarGet(VAR_PARTY_LIMIT));
 
 
 

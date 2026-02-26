@@ -212,8 +212,8 @@ gOakSpeech_Text_TellMeALittleAboutYourself::
     .string "yourself.\p$"
 
 gOakSpeech_Text_YourNameWhatIsIt::
-    .string "Let's begin with your name.\n"
-    .string "What is it?\p$"
+    .string "Let's choose your game settings,\n"
+    .string "and set your name.\p$"
 
 gOakSpeech_Text_SoYourNameIsPlayer::
     .string "Right…\n"

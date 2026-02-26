@@ -540,6 +540,11 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
     u8 spAtkIv        = Random() % (MAX_PER_STAT_IVS + 1);
     u8 spDefIv        = Random() % (MAX_PER_STAT_IVS + 1);
 
+    u8 mapNum = gSaveBlock1Ptr->location.mapNum;
+    u8 mapGroup = gSaveBlock1Ptr->location.mapGroup;
+    u8 localId = gObjectEvents[gSelectedObjectEvent].localId;
+
+    species = RandomizeFixedEncounterMon(species, mapNum, mapGroup, localId);
     // Perfect IV calculation
     u32 i;
     enum Stat availableIVs[NUM_STATS];
@@ -617,7 +622,12 @@ void ScrCmd_createmonrandom(struct ScriptContext *ctx)
             if(gStarterAndGiftMonTable[j] == species)
                 break;
         }
-        species = RandomizeStarterAndGiftMon(j, gStarterAndGiftMonTable);
+        // species = RandomizeStarterAndGiftMon(j, gStarterAndGiftMonTable);
+        u8 mapNum = gSaveBlock1Ptr->location.mapNum;
+        u8 mapGroup = gSaveBlock1Ptr->location.mapGroup;
+        u8 localId = gObjectEvents[gSelectedObjectEvent].localId;
+
+        species = RandomizeFixedEncounterMon(species, mapNum, mapGroup, localId);
     #endif
 
     u32 flags         = ScriptReadWord(ctx);

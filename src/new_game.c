@@ -56,6 +56,7 @@
 #include "follower_npc.h"
 #include "text.h"
 #include "tx_registered_items_menu.h"
+#include "tx_randomizer_and_challenges.h"
 #include "randomizer.h"
 
 extern const u8 EventScript_ResetAllMapFlags[];
@@ -229,6 +230,7 @@ void NewGameInitData(void)
     DeactivateAllRoamers();
     gSaveBlock1Ptr->registeredItemSelect = ITEM_NONE;
     ClearBag();
+    SaveData_TxRandomizerAndChallenges();
     NewGameInitPCItems();
     TxRegItemsMenu_RegisteredItemsMenuNewGame();
     ClearPokeblocks();
@@ -266,6 +268,7 @@ void NewGameInitData(void)
     #if (RANDOMIZER_AVAILABLE == TRUE) && (RANDOMIZER_DYNAMIC_SPECIES == TRUE)
         PreloadRandomizationTables();
     #endif
+
 }
 
 static void ResetMiniGamesRecords(void)
