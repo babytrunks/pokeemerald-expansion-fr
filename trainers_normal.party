@@ -7336,7 +7336,7 @@ Ability: Guts
 Level: 59
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 252 Atk / 4 Def
-Ball: BALL_TYPE_HISUIAN_BALL
+Ball: Ultra Ball
 - Protect
 - High Horsepower
 - Facade

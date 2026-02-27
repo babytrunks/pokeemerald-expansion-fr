@@ -47,8 +47,52 @@ SlateportCity_EventScript_MoveScottLeft::
 	return
 
 SlateportCity_OnFrame:
-	map_script_2 VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_ScottScene
+	map_script_2 VAR_BRENDAN_SLATEPORT_CITY, 0, SlateportCity_EventScript_Brendan
+	@ map_script_2 VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1, SlateportCity_EventScript_ScottScene
 	.2byte 0
+
+SlateportCity_EventScript_Brendan::
+	lockall
+	addobject LOCALID_BRENDAN_SLATEPORT 
+	applymovement LOCALID_BRENDAN_SLATEPORT, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_BRENDAN_SLATEPORT, SlateportCity_Movement_BrendanApproach
+	waitmovement 0
+    playbgm MUS_ENCOUNTER_BRENDAN, FALSE
+	textcolor NPC_TEXT_COLOR_MALE
+	setspeaker SP_NAME_BRENDAN
+	msgbox SlateportCity_Text_BrendanIntro, MSGBOX_DEFAULT
+	setvar VAR_LAST_TALKED, LOCALID_BRENDAN_SLATEPORT
+	trainerbattle_no_intro TRAINER_BRENDAN_2, SlateportCity_Text_BrendanDefeat
+	setspeaker SP_NAME_BRENDAN
+	msgbox SlateportCity_Text_BrendanPostBattle, MSGBOX_DEFAULT
+	closemessage
+	setspeaker SP_NAME_BRENDAN
+	msgbox SlateportCity_Text_BrendanPostBattle2, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_BRENDAN_SLATEPORT, SlateportCity_Movement_BrendanLeave
+	waitmovement 0
+	removeobject LOCALID_VIRIDIAN_FOREST_BRENDAN
+	setvar VAR_BRENDAN_SLATEPORT_CITY, 1
+	releaseall
+	end
+
+SlateportCity_Movement_BrendanApproach::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+SlateportCity_Movement_BrendanLeave::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
 
 SlateportCity_EventScript_ScottScene::
 	lockall
@@ -456,16 +500,6 @@ SlateportCity_Movement_DelayAquaGrunt:
 
 SlateportCity_EventScript_AquaGrunt10::
 	msgbox SlateportCity_Text_ShouldveBroughtMyGameBoy, MSGBOX_SIGN
-	end
-
-SlateportCity_EventScript_AquaGrunt11::
-	lock
-	faceplayer
-	msgbox SlateportCity_Text_HotSpringsAfterOperation, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_SLATEPORT_GRUNT_11, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
 	end
 
 SlateportCity_EventScript_DollClerk::
@@ -1353,3 +1387,24 @@ SlateportCity_Text_TakingBattleTentChallenge:
 SlateportCity_Text_BattleTentUndergoingRenovations:
 	.string "Sorry, the Battle Tent is currently\n"
 	.string "undergoing renovations.$"
+
+SlateportCity_Text_BrendanIntro::
+	.string "{COLOR BLUE}Oh hey {PLAYER}!\n"
+	.string "Welcome to Hoenn!\p"
+	.string "Say, have you got any stronger?\p"
+	.string "Let's find out!$"
+
+SlateportCity_Text_BrendanDefeat::
+	.string "Rats, still not quite there…$"
+
+SlateportCity_Text_BrendanPostBattle::
+	.string "{COLOR BLUE}Ha, you've definitely grown since\n"
+	.string "we last battled.\p"
+	.string "Slateport's a great town - there's\n"
+	.string "a market and even a museum.\p"
+	.string "Worth taking a look around while\n"
+	.string "you're here.$"
+
+SlateportCity_Text_BrendanPostBattle2::
+	.string "{COLOR BLUE}Well, it's back to training for me.\p"
+	.string "Thanks for the battle, {PLAYER}.$"
