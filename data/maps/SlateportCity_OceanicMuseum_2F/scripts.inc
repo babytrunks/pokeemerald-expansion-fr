@@ -74,7 +74,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
-	setspeaker SP_NAME_CAPTAIN__STERN
+	setspeaker SP_NAME_CAPTAIN_STERN
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT
 	addobject LOCALID_BRENDAN_SLATEPORT_MUSEUM
     playbgm MUS_ENCOUNTER_BRENDAN, FALSE

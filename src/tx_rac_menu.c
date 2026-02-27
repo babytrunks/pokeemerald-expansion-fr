@@ -1536,6 +1536,7 @@ void SaveData_TxRandomizerAndChallenges(void)
     PrintCurrentSelections();
     //MENU MODE
     VarSet(VAR_PARTY_LIMIT, sOptions->sel_mode[MENUITEM_MODE_PARTY_LIMIT]);
+    VarSet(VAR_DIFFICULTY, DIFFICULTY_NORMAL);
     if (sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] == 0)
         FlagSet(FLAG_EASY_MODE);
     else if(sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] == 2)

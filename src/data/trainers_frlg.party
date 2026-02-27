@@ -4690,6 +4690,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
 
 Starly
 Level: 9
@@ -4707,6 +4709,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
 
 Starly
 Level: 9
@@ -4728,6 +4732,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
 
 Starly
 Level: 9
@@ -15138,6 +15144,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Difficulty: Hard
 Mugshot: Yellow
+Boss: Yes
 
 Snubbull @ Muscle Band
 Nature: Adamant
@@ -15178,6 +15185,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Difficulty: Hard
 Mugshot: Yellow
+Boss: Yes
 
 Snubbull @ Muscle Band
 Nature: Adamant
@@ -15218,6 +15226,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Difficulty: Hard
 Mugshot: Yellow
+Boss: Yes
 
 Snubbull @ Muscle Band
 Nature: Adamant
@@ -15316,6 +15325,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Difficulty: Hard
 Mugshot: Yellow
+Boss: Yes
 
 Kricketune @ Lum Berry
 Nature: Bashful
@@ -15504,6 +15514,7 @@ Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 Difficulty: Hard
 Mugshot: Yellow
+Boss: Yes
 
 Thwackey @ Eviolite
 Nature: Adamant
@@ -15567,6 +15578,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Difficulty: Hard
 Mugshot: Blue
+Boss: Yes
 
 Glimmet @ Shuca Berry
 Nature: Bashful

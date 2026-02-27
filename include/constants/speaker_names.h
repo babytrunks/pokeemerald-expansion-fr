@@ -35,6 +35,7 @@ enum SpeakerNames {
     SP_NAME_EDMOND,
     SP_NAME_FUJI,
     SP_NAME_BILL,
+    SP_NAME_CAPTAIN_STERN,
     SP_NAME_GRUNT,
     SP_NAME_ARCHIE,
     SP_NAME_COUNT
