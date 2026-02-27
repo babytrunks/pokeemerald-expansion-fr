@@ -70,6 +70,7 @@
 #include "constants/union_room.h"
 #include "constants/weather.h"
 #include "assertf.h"
+#include "randomizer.h"
 
 #define FRIENDSHIP_EVO_THRESHOLD ((P_FRIENDSHIP_EVO_THRESHOLD >= GEN_8) ? 160 : 220)
 
@@ -3729,11 +3730,13 @@ enum Ability GetAbilityBySpecies(u16 species, u8 abilityNum, u8 cantRandomizeAbi
         gLastUsedAbility = GetSpeciesAbility(species, i);
     }
 
+    DebugPrintf("In GetAbilityBySpecies, species: %d, ability: %d", species, gLastUsedAbility);
     #if RANDOMIZER_AVAILABLE == TRUE
-        if(!cantRandomizeAbility && gLastUsedAbility != ABILITY_NONE)
-        {
-            gLastUsedAbility = RandomizeAbility(species, abilityNum, gLastUsedAbility);
-        }
+    if (!cantRandomizeAbility &&  gLastUsedAbility != ABILITY_NONE)
+    {
+        DebugPrintf("In condition");
+        gLastUsedAbility = RandomizeAbility(species, abilityNum, gLastUsedAbility);
+    }
     #endif
 
     return gLastUsedAbility;

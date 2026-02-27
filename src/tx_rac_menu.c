@@ -486,7 +486,7 @@ static const u8 *const sOptionMenuItemsNamesFeatures[MENUITEM_FEATURES_COUNT] =
 };
 
 static const u8 sText_Dummy[] =                     _("DUMMY");
-static const u8 sText_Randomizer[] =                _("RANDOMIZER");
+static const u8 sText_Randomizer[] =                _("Randomizer");
 static const u8 sText_Starter[] =                   _("STARTER POKéMON");
 static const u8 sText_WildPkmn[] =                  _("WILD POKéMON");
 static const u8 sText_Trainer[] =                   _("TRAINER");
@@ -494,15 +494,15 @@ static const u8 sText_Static[] =                    _("STATIC POKéMON");
 static const u8 sText_SimiliarEvolutionLevel[] =    _("BALANCE ON TIERS");
 static const u8 sText_InlcudeLegendaries[]=         _("LEGENDARIES");
 static const u8 sText_Type[] =                      _("TYPE");
-static const u8 sText_Moves[] =                     _("MOVES");
-static const u8 sText_Abilities[] =                 _("ABILITIES");
+static const u8 sText_Moves[] =                     _("Moves");
+static const u8 sText_Abilities[] =                 _("Abilities");
 static const u8 sText_Evolutions[] =                _("EVOLUTIONS");
 static const u8 sText_EvolutionMethods[] =          _("EVO LINES");
 static const u8 sText_TypeEff[] =                   _("EFFECTIVENESS");
-static const u8 sText_Items[] =                     _("ITEMS");
+static const u8 sText_Items[] =                     _("Items");
 static const u8 sText_Chaos[] =                     _("CHAOS MODE");
-static const u8 sText_Species[] =                   _("SPECIES");
-static const u8 sText_Random_Save[] =               _("SAVE");
+static const u8 sText_Species[] =                   _("Species");
+static const u8 sText_Random_Save[] =               _("Save");
 static const u8 *const sOptionMenuItemsNamesRandom[MENUITEM_RANDOM_COUNT] =
 {
     [MENUITEM_RANDOM_OFF_ON]    = sText_Randomizer,
@@ -1899,9 +1899,9 @@ static void ReDrawAll(void)
 
 // Draw Choices functions ****SPECIFIC****
 // MENU_RANDOMIZER
-static const u8 sText_Off[]  = _("OFF");
-static const u8 sText_On[]   = _("ON");
-static const u8 sText_None[] = _("NONE");
+static const u8 sText_Off[]  = _("Off");
+static const u8 sText_On[]   = _("On");
+static const u8 sText_None[] = _("None");
 static void DrawChoices_Random_OffOn(int selection, int y, bool8 active)
 {
     u8 styles[2] = {0};
@@ -1952,7 +1952,7 @@ static void DrawChoices_Mode_NoEVs(int selection, int y)
     DrawChoices_Random_OffOn(selection, y, active);
 }
 
-static const u8 sText_Random[]  = _("RANDOM");
+static const u8 sText_Random[]  = _("Random");
 static void DrawChoices_Random_OffRandom(int selection, int y, bool8 active)
 {
     u8 styles[2] = {0};
