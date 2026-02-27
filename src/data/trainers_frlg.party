@@ -7424,6 +7424,60 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulldoze
 - Facade
 
+=== TRAINER_LEADER_BROCK ===
+Name: Brock
+Class: Leader Frlg
+Pic: Leader Brock Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Geodude-Alola @ Custap Berry
+Nature: Adamant
+Ability: Sturdy
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bulldoze
+- Rock Tomb
+- Spark
+- Selfdestruct
+
+Varoom @ Air Balloon
+Nature: Brave
+Ability: Filter
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Gyro Ball
+- Bulldoze
+- Toxic
+- Protect
+
+Onix @ Liechi Berry
+Nature: Bashful
+Ability: Sturdy
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Tomb
+- Bulldoze
+- Sleep Talk
+
+Archen @ Berry Juice
+Nature: Jolly
+Ability: Defeatist
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pluck
+- Rock Tomb
+- Bulldoze
+- Facade
+
 === TRAINER_LEADER_MISTY ===
 Name: MISTY
 Class: Leader Frlg

@@ -1539,8 +1539,10 @@ void SaveData_TxRandomizerAndChallenges(void)
     if (sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] == 0)
         FlagSet(FLAG_EASY_MODE);
     else if(sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] == 2)
+    {
         FlagSet(FLAG_HARDCORE_MODE);
-    
+        VarSet(VAR_DIFFICULTY, DIFFICULTY_HARD);
+    }
     if (sOptions->sel_mode[MENUITEM_MODE_NO_EVS] == FALSE)
         FlagSet(FLAG_DISABLE_EVS);
 
