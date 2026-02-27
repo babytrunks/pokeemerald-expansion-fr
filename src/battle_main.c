@@ -2083,7 +2083,14 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
                     level = partyData[monIndex].lvl;
                 }
             }
-
+            
+            if (FlagGet(FLAG_EASY_MODE) && isTrainerBossTrainer)
+            {
+                if (level < 4) 
+                    level = 1;
+                else
+                    level = level - 3;
+            }
             if (trainer->battleType != TRAINER_BATTLE_TYPE_SINGLES)
                 personalityValue = 0x80;
             else if (trainer->encounterMusic_gender & F_TRAINER_FEMALE)
@@ -2109,7 +2116,7 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
 
             CustomTrainerPartyAssignMoves(&party[i], &partyData[monIndex]);
             SetMonData(&party[i], MON_DATA_IVS, &(partyData[monIndex].iv));
-            if (partyData[monIndex].ev != NULL)
+            if (partyData[monIndex].ev != NULL && !FlagGet(FLAG_DISABLE_EVS) && !FlagGet(FLAG_EASY_MODE))
             {
                 SetMonData(&party[i], MON_DATA_HP_EV, &(partyData[monIndex].ev[0]));
                 SetMonData(&party[i], MON_DATA_ATK_EV, &(partyData[monIndex].ev[1]));

@@ -346,7 +346,8 @@ enum __attribute__((packed)) Ability
     ABILITY_QUILL_RUSH = 322, //bull rush clone
     ABILITY_FELINE_PROWESS = 323, 
     ABILITY_FROZEN_MIST = 324, //shield dust buff
-    ABILITY_BLUBBER_DEFENSE = 325, //multiscale lul 
+    ABILITY_BLUBBER_DEFENSE = 325, //multiscale lul
+    ABILITY_CASH_SPLASH = 326, // water bubble for whiscash
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

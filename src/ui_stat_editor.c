@@ -1044,6 +1044,8 @@ static const u32 sEVCapFlagMap[EV_CAP_COUNT][2] =
 static u16 getEvCap(void) {
     u32 evCap = 0;
     u8 capIndex = 0;
+    if (FlagGet(FLAG_DISABLE_EVS))
+        return 0;
     for (u8 i = 0; i < ARRAY_COUNT(sEVCapFlagMap); i++)
     {
         if (FlagGet(sEVCapFlagMap[i][0])) {

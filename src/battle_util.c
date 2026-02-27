@@ -6197,7 +6197,7 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, enum Ability abil
         {
             battleScript = BattleScript_NotAffected;
         }
-        else if (abilityDef == ABILITY_WATER_VEIL || abilityDef == ABILITY_WATER_BUBBLE)
+        else if (abilityDef == ABILITY_WATER_VEIL || abilityDef == ABILITY_WATER_BUBBLE || abilityDef == ABILITY_CASH_SPLASH)
         {
             abilityAffected = TRUE;
             battleScript = BattleScript_ImmunityProtected;
@@ -7460,6 +7460,7 @@ u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_WATER_BUBBLE:
+    case ABILITY_CASH_SPLASH:
         if (moveType == TYPE_WATER)
            modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
         break;
@@ -7542,6 +7543,7 @@ u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
     {
     case ABILITY_HEATPROOF:
     case ABILITY_WATER_BUBBLE:
+    case ABILITY_CASH_SPLASH:
         if (moveType == TYPE_FIRE)
         {
             modifier = uq4_12_multiply(modifier, UQ_4_12(0.5));
@@ -9811,6 +9813,7 @@ u32 TryImmunityAbilityHealStatus(u32 battler)
         break;
     case ABILITY_WATER_VEIL:
     case ABILITY_WATER_BUBBLE:
+    case ABILITY_CASH_SPLASH:
     case ABILITY_THERMAL_EXCHANGE:
         if (gBattleMons[battler].status1 & STATUS1_BURN)
         {

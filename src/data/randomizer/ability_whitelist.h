@@ -315,6 +315,7 @@ static const u16 sRandomizerAbilityWhitelist[] =
     ABILITY_TERA_SHELL,
     ABILITY_TERAFORM_ZERO,
     ABILITY_POISON_PUPPETEER,
+    ABILITY_BULL_RUSH,
 };
 
 #define ABILITY_WHITELIST_SIZE     (NELEMS(sRandomizerAbilityWhitelist))

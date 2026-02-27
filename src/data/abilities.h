@@ -1489,14 +1489,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_WATER_BUBBLE] =
         {
             .name = _("Water Bubble"),
-            .description = COMPOUND_STRING("Guards from fire and burns."),
+            .description = COMPOUND_STRING("Reduces damage from Fire moves by 50% and doubles damage from Water moves."),
             .aiRating = 8,
         },
 
         [ABILITY_STEELWORKER] =
         {
             .name = _("Steelworker"),
-            .description = COMPOUND_STRING("Powers up Steel moves."),
+            .description = COMPOUND_STRING("Powers up Steel moves by 50%."),
             .aiRating = 6,
         },
 
@@ -2493,5 +2493,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Fatal Precision"),
         .description = COMPOUND_STRING("Super effective moves can't miss & boosted by 20%."),
         .aiRating = 10,
-    }
+    },
+    [ABILITY_CASH_SPLASH] =
+    {
+        .name = _("Cash Splash"),
+        .description = COMPOUND_STRING("Reduces damage from Fire moves by 50% and doubles damage from Water moves."),
+        .aiRating = 6,
+        .breakable = TRUE,
+    },
 };

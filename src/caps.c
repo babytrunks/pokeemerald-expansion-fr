@@ -3,6 +3,7 @@
 #include "event_data.h"
 #include "caps.h"
 #include "pokemon.h"
+#include "util.h"
 
 #define LEVEL_CAP_COUNT 13
 u32 GetCurrentLevelCap(void)
@@ -41,7 +42,9 @@ u32 GetCurrentLevelCap(void)
 
     if (capIndex >= LEVEL_CAP_COUNT) 
         return MAX_LEVEL;
-    else 
+    else if (FlagGet(FLAG_EASY_MODE))
+        return MathMax(sLevelCapFlagMap[capIndex][1] + 2, MAX_LEVEL);
+    else
         return sLevelCapFlagMap[capIndex][1];
 
     return MAX_LEVEL;
