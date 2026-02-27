@@ -7424,60 +7424,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulldoze
 - Facade
 
-=== TRAINER_LEADER_BROCK ===
-Name: Brock
-Class: Leader Frlg
-Pic: Leader Brock Frlg
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-Mugshot: Yellow
-Boss: Yes
-Difficulty: Hard
-
-Geodude-Alola @ Custap Berry
-Nature: Adamant
-Ability: Sturdy
-Level: 13
-IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bulldoze
-- Rock Tomb
-- Spark
-- Selfdestruct
-
-Varoom @ Air Balloon
-Nature: Brave
-Ability: Filter
-Level: 13
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
-- Gyro Ball
-- Bulldoze
-- Toxic
-- Protect
-
-Onix @ Liechi Berry
-Nature: Bashful
-Ability: Sturdy
-Level: 14
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rock Tomb
-- Bulldoze
-- Sleep Talk
-
-Archen @ Berry Juice
-Nature: Jolly
-Ability: Defeatist
-Level: 12
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Pluck
-- Rock Tomb
-- Bulldoze
-- Facade
-
 === TRAINER_LEADER_MISTY ===
 Name: MISTY
 Class: Leader Frlg
@@ -15138,3 +15084,488 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Roost
 - Dual Wingbeat
 - Toxic
+
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Snubbull @ Muscle Band
+Nature: Adamant
+Ability: intimidate
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Jovial Bash
+- Thunder Wave
+- Fire Fang
+
+Slowpoke @ Leftovers
+Nature: Bold
+Ability: Regenerator
+Level: 9
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Wave
+- Water Pulse
+- Psybeam
+- Teleport
+
+Bulbasaur @ Oran Berry
+Nature: Timid
+Ability: overgrow
+Level: 9
+- Sleep Powder
+- Mega Drain
+- Sludge
+- Growth
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Snubbull @ Muscle Band
+Nature: Adamant
+Ability: intimidate
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Jovial Bash
+- Thunder Wave
+- Fire Fang
+
+Litleo @ Wise Glasses
+Nature: Timid
+Ability: RIVALRY
+Level: 9
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+- Incinerate
+- Round
+- Hidden Power
+- Sleep Talk
+
+Squirtle @ Oran Berry
+Nature: Adamant
+Ability: Torrent
+Level: 9
+- Power Up Punch
+- Aqua Jet
+- Rock Tomb
+- Curse
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Snubbull @ Muscle Band
+Nature: Adamant
+Ability: intimidate
+Level: 8
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Jovial Bash
+- Thunder Wave
+- Fire Fang
+
+Slowpoke @ Leftovers
+Nature: Bold
+Ability: Regenerator
+Level: 9
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Wave
+- Water Pulse
+- Psybeam
+- Teleport
+
+Charmander @ Muscle Band
+Nature: Jolly
+Ability: flame body
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Fire Fang
+- Thunder Punch
+- Slash
+
+=== TRAINER_BRENDAN_1 ===
+Name: Brendan
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Green
+Boss: Yes
+Difficulty: Hard
+
+Meditite @ Muscle Band
+Nature: Adamant
+Ability: Pure Power
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Fake Out
+- Rock Smash
+- Bullet Punch
+- Rock Tomb
+
+Corphish @ Mystic Water
+Nature: Adamant
+Ability: Adaptability
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Aqua Jet
+- Aerial Ace
+- Rock Tomb
+- Knock Off
+
+Numel @ Passho Berry
+Nature: Lonely
+Ability: Simple
+Level: 9
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Ancient Power
+- Flame Charge
+- Rock Tomb
+- Bulldoze
+
+Treecko @ Oran Berry
+Nature: Adamant
+Ability: Unburden
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Power Up Punch
+- Bullet Seed
+- Drain Punch
+- Rock Tomb
+
+
+=== TRAINER_BUG_CATCHER_SAMMY ===
+Name: Sammy
+Class: Bug Catcher Frlg
+Pic: Bug Catcher Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Kricketune @ Lum Berry
+Nature: Bashful
+Ability: Technician
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Bug Bite
+- Bullet Seed
+- Bulldoze
+- Rock Tomb
+
+Dustox @ Black Sludge
+Nature: Bashful
+Ability: shield dust
+Level: 10
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Toxic
+- Protect
+- Roost
+- Psybeam
+
+Volbeat @ Lum Berry
+Nature: Bashful
+Ability: prankster
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Struggle Bug
+- Mega Drain
+- Shock Wave
+- Water Pulse
+
+
+=== TRAINER_FALKNER ===
+Name: Falkner
+Class: Leader
+Pic: Leader Falkner
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Blue
+Boss: Yes
+Difficulty: Hard
+
+Trumbeak @ Lum Berry
+Nature: Bashful
+Ability: Skill Link
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Flame Charge
+- Pluck
+- Bullet Seed
+- Sleep Talk
+
+Emolga @ Berry Juice
+Nature: Bashful
+Ability: Volt Absorb
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 31 Spe
+Ball: Great Ball
+- Volt Switch
+- Air Slash
+- Hidden Power
+- Sleep Talk
+
+Yanma @ Lum Berry
+Nature: Bashful
+Ability: Speed Boost
+Level: 11
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Mega Drain
+- Ancient Power
+- Hidden Power
+- Air Cutter
+
+Squawkabilly @ Muscle Band
+Nature: Bashful
+Ability: Hustle
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Aerial Ace
+- Quick Attack
+- Reversal
+- Parting Shot
+
+Farfetchd Galar @ Leek
+Nature: Bashful
+Ability: Scrappy
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Rock Smash
+- Slam
+- Brutal Swing
+- Roost
+
+=== TRAINER_LEADER_BROCK ===
+Name: Brock
+Class: Leader Frlg
+Pic: Leader Brock Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Hippopotas @ Berry Juice
+Nature: Careful
+Ability: Sand Stream
+Level: 11
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Bulldoze
+- Rock Tomb
+- Toxic
+- Slack Off
+
+Cacnea @ Eviolite
+Nature: Bashful
+Ability: Sand Rush
+Level: 12
+Ball: Great Ball
+- Power Up Punch
+- Bullet Seed
+- Thunder Punch
+- Pin Missile
+
+Lunatone @ Lum Berry
+Nature: Bashful
+Ability: Levitate
+Level: 12
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 31 Spe
+Ball: Ultra Ball
+- Ancient Power
+- Psybeam
+- Hidden Power
+- Icy Wind
+
+Lileep @ Oran Berry
+Nature: Bashful
+Ability: storm drain
+Level: 12
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Stockpile
+- Recover
+- Hidden Power
+- Mega Drain
+
+Archen @ Iapapa Berry
+Nature: Bashful
+Ability: Defeatist
+Level: 13
+Ball: Great Ball
+- Wing Attack
+- Rock Tomb
+- Bulldoze
+- Facade
+
+Varoom @ Air Balloon
+Nature: Bashful
+Ability: Filter
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Bulldoze
+- Gyro Ball
+- Toxic
+- Protect
+
+=== TRAINER_SUPER_NERD_MIGUEL ===
+Name: Miguel
+Class: Super Nerd Frlg
+Pic: Super Nerd Frlg
+Gender: Male
+Music: Suspicious
+Double Battle: Yes
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Thwackey @ Eviolite
+Nature: Adamant
+Ability: Grassy Surge
+Level: 16
+Ball: Great Ball
+- Fake Out
+- Grassy Glide
+- Knock Off
+- U Turn
+
+Voltorb Hisui @ Focus Sash
+Nature: Naive
+Ability: Reckless
+Level: 16
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Mega Drain
+- Self Destruct
+- Volt Switch
+- Hidden Power
+
+Swoobat @ Grassy Seed
+Nature: Timid
+Ability: Simple
+Level: 15
+Ball: Ultra Ball
+- Calm Mind
+- Air Cutter
+- Psybeam
+- Roost
+
+Skiddo @ Miracle Seed
+Nature: Impish
+Ability: Grass Pelt
+Level: 15
+Ball: Great Ball
+- Horn Leech
+- Brick Break
+- Rock Slide
+- Milk Drink
+
+Sableye @ Leftovers
+Nature: Careful
+Ability: Prankster
+Level: 15
+Ball: Great Ball
+- Will O Wisp
+- Recover
+- Protect
+- Foul Play
+
+
+=== TRAINER_MT_MOON_ARCHER ===
+Name: Archer
+Class: Team Rocket Frlg
+Pic: Archer
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Glimmet @ Shuca Berry
+Nature: Bashful
+Ability: Toxic Debris
+Level: 16
+Ball: Great Ball
+- Ancient Power
+- Venoshock
+- Mud Shot
+- Protect
+
+Seviper @ Shuca Berry
+Nature: Bashful
+Ability: FATAL PRECISION
+Level: 15
+Ball: Great Ball
+- Mega Drain
+- Poison Fang
+- Bulldoze
+- Hypnosis
+
+Houndour @ Focus Sash
+Nature: Timid
+Level: 16
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Dusk Ball
+- Nasty Plot
+- Incinerate
+- Snarl
+- Hidden Power /* grass */
+
+Mightyena @ Berry Juice
+Nature: Bashful
+Ability: Strong Jaw
+Level: 18
+Ball: Ultra Ball
+- Bite
+- Ice Fang
+- Poison Fang
+- Howl
+
+Fearow @ Muscle Band
+Nature: Bashful
+Ability: Technician
+Level: 16
+Ball: Great Ball
+- Pursuit
+- Pluck
+- Drill Run
+- Double Hit

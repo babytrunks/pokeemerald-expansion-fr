@@ -1,0 +1,9645 @@
+=== TRAINER_HC_TESTHIGHESTDAMAGE ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Necrozma Dusk Mane @ Weakness Policy
+Nature: Jolly
+Ability: Full Metal Body
+Level: 1
+Ball: Dusk Ball
+- Dragon Dance
+- Sunsteel Strike
+- Stone Edge
+- High Horsepower
+
+=== TRAINER_BRENDAN_1 ===
+Name: Brendan
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Green
+Boss: Yes
+Difficulty: Hard
+
+Meditite @ Muscle Band
+Nature: Adamant
+Ability: HUGE POWER
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Fake Out
+- Rock Smash
+- Bullet Punch
+- Rock Tomb
+
+Corphish @ Mystic Water
+Nature: Adamant
+Ability: ADAPTABILITY
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Aqua Jet
+- Aerial Ace
+- Rock Tomb
+- Knock Off
+
+Numel @ Passho Berry
+Nature: Lonely
+Ability: Simple
+Level: 1
+Ball: Great Ball
+- Ancient Power
+- Flame Charge
+- Rock Tomb
+- Bulldoze
+
+Treecko @ Oran Berry
+Nature: Adamant
+Ability: UNBURDEN
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Power Up Punch
+- Bullet Seed
+- Drain Punch
+- Rock Tomb
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_SQUIRTLE ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Snubbull @ Muscle Band
+Nature: Adamant
+Ability: intimidate
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Covet
+- Thunder Wave
+- Fire Fang
+
+Litleo @ Wise Glasses
+Nature: Timid
+Ability: RIVALRY
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+- Incinerate
+- Round
+- Hidden Power
+- Sleep Talk
+
+Squirtle @ Oran Berry
+Nature: Adamant
+Ability: Torrent
+Level: 1
+- Power Up Punch
+- Aqua Jet
+- Rock Tomb
+- Curse
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Snubbull @ Muscle Band
+Nature: Adamant
+Ability: intimidate
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Covet
+- Thunder Wave
+- Fire Fang
+
+Slowpoke @ Leftovers
+Nature: Bold
+Ability: Regenerator
+Level: 1
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Wave
+- Water Pulse
+- Psybeam
+- Teleport
+
+Bulbasaur @ Oran Berry
+Nature: Timid
+Ability: overgrow
+Level: 1
+- Sleep Powder
+- Mega Drain
+- Sludge
+- Growth
+
+=== TRAINER_RIVAL_ROUTE22_EARLY_CHARMANDER ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Snubbull @ Muscle Band
+Nature: Adamant
+Ability: intimidate
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Covet
+- Thunder Wave
+- Fire Fang
+
+Slowpoke @ Leftovers
+Nature: Bold
+Ability: Regenerator
+Level: 1
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Wave
+- Water Pulse
+- Psybeam
+- Teleport
+
+Charmander @ Muscle Band
+Nature: Jolly
+Ability: flame body
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Power Up Punch
+- Fire Fang
+- Thunder Punch
+- Slash
+
+=== TRAINER_HC_VIRIDIANBUG_MINIBOSS ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Kricketune @ Lum Berry
+Nature: Bashful
+Ability: Technician
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Bug Bite
+- Bullet Seed
+- Bulldoze
+- Rock Tomb
+
+Dustox @ Black Sludge
+Nature: Bold
+Ability: shield dust
+Level: 1
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Toxic
+- Protect
+- Roost
+- Psybeam
+
+Volbeat @ Lum Berry
+Nature: Bashful
+Ability: prankster
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Hidden Power
+- Mega Drain
+- Flash
+- Water Pulse
+
+=== TRAINER_FALKNER ===
+Name: Falkner
+Class: Leader
+Pic: Leader Falkner
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Blue
+Boss: Yes
+Difficulty: Hard
+
+Trumbeak @ Lum Berry
+Nature: Bashful
+Ability: SKILL LINK
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Flame Charge
+- Pluck
+- Bullet Seed
+- Sleep Talk
+
+Wattrel @ Berry Juice
+Nature: Modest
+Ability: Volt Absorb
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 31 Spe
+Ball: Great Ball
+- Volt Switch
+- Air Slash
+- Hidden Power
+- Sleep Talk
+
+Yanma @ Lum Berry
+Nature: Bashful
+Ability: SPEEDBOOST
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Mega Drain
+- Ancient Power
+- Hidden Power
+- Air Cutter
+
+Squawkabilly @ Muscle Band
+Nature: Bashful
+Ability: Hustle
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Aerial Ace
+- Quick Attack
+- Reversal
+- Parting Shot
+
+Farfetchd G @ Leek
+Nature: Bashful
+Ability: SCRAPPY
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Rock Smash
+- Slam
+- Brutal Swing
+- Roost
+
+=== TRAINER_LEADER_BROCK ===
+Name: Brock
+Class: Leader Frlg
+Pic: Leader Brock Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Hippopotas @ Berry Juice
+Nature: Careful
+Ability: SAND STREAM
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Bulldoze
+- Rock Tomb
+- Toxic
+- Slack Off
+
+Cacnea @ Eviolite
+Nature: Bashful
+Ability: Sand Rush
+Level: 15
+Ball: Great Ball
+- Power Up Punch
+- Bullet Seed
+- Thunder Punch
+- Pin Missile
+
+Lunatone @ Lum Berry
+Nature: Bashful
+Ability: Levitate
+Level: 14
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 31 Spe
+Ball: Ultra Ball
+- Ancient Power
+- Psybeam
+- Hidden Power
+- Icy Wind
+
+Lileep @ Oran Berry
+Nature: Bold
+Ability: storm drain
+Level: 16
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Stockpile
+- Recover
+- Hidden Power
+- Mega Drain
+
+Archen @ Iapapa Berry
+Nature: Bashful
+Ability: doodoo thing
+Level: 14
+Ball: Great Ball
+- Wing Attack
+- Rock Tomb
+- Bulldoze
+- Facade
+
+Varoom @ Air Balloon
+Nature: Careful
+Ability: Filter
+Level: 15
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Bulldoze
+- Gyro Ball
+- Toxic
+- Protect
+
+=== TRAINER_HC_ROUTE3_LASSMINIBOSS ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pikachu Flying @ Light Ball
+Nature: Naive
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Zippy Zap
+- Hidden Power
+- Extreme Speed
+- Grass Knot
+
+Oricorio S @ Spell Tag
+Nature: Timid
+Level: 1
+IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 30 SpD / 31 Spe
+Ball: Ultra Ball
+- Calm Mind
+- Air Cutter
+- Hidden Power
+- Roost
+
+Whimsicott @ Leftovers
+Nature: Modest
+Ability: prankster
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Leech Seed
+- Protect
+- Mega Drain
+- Hidden Power
+
+Mawile @ Leftovers
+Nature: Impish
+Ability: intimidate
+Level: 1
+Ball: Great Ball
+- Toxic
+- Covet
+- Metal Claw
+- Fire Fang
+
+=== TRAINER_MT_MOON_ARCHER ===
+Name: Archer
+Class: Team Rocket Frlg
+Pic: Archer
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Glimmet @ Shuca Berry
+Nature: Bashful
+Ability: Toxic Debris
+Level: 1
+Ball: Great Ball
+- Ancient Power
+- Venoshock
+- Mud Shot
+- Protect
+
+Seviper @ Shuca Berry
+Nature: Bashful
+Ability: FATAL PRECISION
+Level: 1
+Ball: Great Ball
+- Mega Drain
+- Poison Fang
+- Bulldoze
+- Hypnosis
+
+Houndour @ Focus Sash
+Nature: Timid
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Dusk Ball
+- Nasty Plot
+- Incinerate
+- Snarl
+- Hidden Power
+
+Mightyena @ Berry Juice
+Nature: Bashful
+Ability: Strong Jaw
+Level: 1
+Ball: Ultra Ball
+- Bite
+- Ice Fang
+- Poison Fang
+- Howl
+
+Fearow @ Muscle Band
+Nature: Bashful
+Ability: Technician
+Level: 1
+Ball: Great Ball
+- Pursuit
+- Pluck
+- Drill Run
+- Double Hit
+
+=== TRAINER_HC_MTMOON_SCIENTIST ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Thwackey @ Eviolite
+Nature: Adamant
+Ability: Grassy Surge
+Level: 1
+Ball: Great Ball
+- Fake Out
+- Grassy Glide
+- Knock Off
+- U Turn
+
+Voltorb H @ Focus Sash
+Nature: Naive
+Ability: Reckless
+Level: 1
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: BALL_TYPE_HISUIAN_BALL
+- Mega Drain
+- Self Destruct
+- Volt Switch
+- Hidden Power
+
+Swoobat @ Grassy Seed
+Nature: Timid
+Ability: Simple
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Air Cutter
+- Psybeam
+- Roost
+
+Skiddo @ Miracle Seed
+Nature: Impish
+Ability: Grass Pelt
+Level: 1
+Ball: Great Ball
+- Horn Leech
+- Brick Break
+- Rock Slide
+- Milk Drink
+
+Sableye @ Leftovers
+Nature: Careful
+Ability: Prankster
+Level: 1
+Ball: Great Ball
+- Will O Wisp
+- Recover
+- Protect
+- Foul Play
+
+=== TRAINER_RIVAL_CERULEAN_SQUIRTLE ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Hitmonlee @ Black Belt
+Nature: Jolly
+Ability: Striker
+Level: 1
+Ball: Great Ball
+- Bullet Punch
+- Knock Off
+- Fake Out
+- Low Sweep
+
+Eevee @ Eevium Z
+Nature: Rash
+Ability: Adaptability
+Level: 1
+- Last Resort
+- Round
+- Double Kick
+- Bite
+
+Clefable @ Life Orb
+Nature: Timid
+Level: 1
+Ball: Great Ball
+- Charge Beam
+- Draining Kiss
+- Icy Wind
+- Mystical Fire
+
+Simisear @ Charcoal
+Nature: Timid
+Ability: Sage Power
+Level: 1
+IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Incinerate
+- Grass Knot
+- Hidden Power
+- Sleep Talk
+
+Arbok @ Poison Barb
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Poison Jab
+- Sucker Punch
+- Crunch
+- Thunder Fang
+
+Wartortle @ Eviolite
+Nature: Modest
+Ability: Torrent
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+- Shell Smash
+- Water Pulse
+- Icy Wind
+- Hidden Power
+
+=== TRAINER_RIVAL_CERULEAN_BULBASAUR ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Hitmonchan @ Black Belt
+Nature: Jolly
+Ability: Iron Fist
+Level: 1
+Ball: Great Ball
+- Drain Punch
+- Ice Punch
+- Mach Punch
+- Sucker Punch
+
+Clefable @ Life Orb
+Nature: Timid
+Ability: Magic Guard
+Level: 1
+Ball: Great Ball
+- Charge Beam
+- Draining Kiss
+- Icy Wind
+- Mystical Fire
+
+Simipour @ Mystic Water
+Nature: Timid
+Ability: Sage Power
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Water Pulse
+- Icy Wind
+- Hidden Power
+- Grass Knot
+
+Arbok @ Poison Barb
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Poison Jab
+- Sucker Punch
+- Crunch
+- Thunder Fang
+
+Eevee @ Eevium Z
+Nature: Lonely
+Ability: Adaptability
+Level: 1
+- Last Resort
+- Round
+- Double Kick
+- Bite
+
+Ivysaur @ Eviolite
+Nature: Timid
+Ability: Overgrow
+Level: 1
+- Leech Seed
+- Protect
+- Sludge
+- Giga Drain
+
+=== TRAINER_RIVAL_CERULEAN_CHARMANDER ===
+Name: TERRY
+Class: Rival Early Frlg
+Pic: Rival Early Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Hitmontop @ Black Belt
+Nature: Jolly
+Ability: Technician
+Level: 1
+Ball: Great Ball
+- Fake Out
+- Bullet Punch
+- Rock Smash
+- Thief
+
+Clefable @ Life Orb
+Nature: Timid
+Ability: Magic Guard
+Level: 1
+Ball: Great Ball
+- Charge Beam
+- Draining Kiss
+- Icy Wind
+- Mystical Fire
+
+Simisage @ Miracle Seed
+Nature: Timid
+Ability: Sage Power
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Mega Drain
+- Hidden Power
+- Power Gem
+- Sleep Talk
+
+Arbok @ Poison Barb
+Nature: Jolly
+Ability: INtimidate
+Level: 1
+Ball: Great Ball
+- Poison Jab
+- Sucker Punch
+- Crunch
+- Thunder Fang
+
+Eevee @ Eevium Z
+Nature: Lonely
+Ability: Adaptability
+Level: 1
+- Last Resort
+- Round
+- Double Kick
+- Bite
+
+Charmeleon @ Eviolite
+Nature: Jolly
+Ability: Blaze
+Level: 1
+- Dragon Dance
+- Fire Punch
+- Thunder Punch
+- Brick Break
+
+=== TRAINER_HC_NUGGETBRIDGE_TRAINER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Vivillon @ Charti Berry
+Nature: Bashful
+Ability: Friend Guard
+Level: 1
+- Struggle Bug
+- Electroweb
+- Air Cutter
+- Draining Kiss
+
+Butterfree @ Sitrus Berry
+Nature: Timid
+Level: 1
+- Sleep Powder
+- Mega Drain
+- Air Cutter
+- Bug Buzz
+
+Wormadam Sandy @ Rocky Helmet
+Nature: Careful
+Ability: Overcoat
+Level: 1
+- Bulldoze
+- Bug Bite
+- Rock Tomb
+- Sucker Punch
+
+=== TRAINER_HC_NUGGETBRIDGE_TRAINER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Jigglypuff @ Eviolite
+Nature: Bold
+Ability: Friend Guard
+Level: 1
+- Round
+- Draining Kiss
+- Incinerate
+- Icy Wind
+
+Amaura @ Chople Berry
+Nature: Modest
+Ability: Refrigerate
+Level: 1
+- Round
+- Ancient Power
+- Water Pulse
+- Mud Shot
+
+Brionne @ Sitrus Berry
+Nature: Modest
+Ability: Liquid Voice
+Level: 1
+- Round
+- Draining Kiss
+- Icy Wind
+- Aqua Jet
+
+=== TRAINER_HC_NUGGETBRIDGE_TRAINER3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Plusle @ Shuca Berry
+Nature: Timid
+Ability: Plus
+Level: 1
+- Grass Knot
+- Electroweb
+- Signal Beam
+- Charge Beam
+
+Electrike @ Magnet
+Nature: Timid
+Level: 1
+- Shock Wave
+- Round
+- Flame Burst
+- Signal Beam
+
+Snover @ Occa Berry
+Nature: Bashful
+Ability: Soundproof
+Level: 1
+- Ice Shard
+- Mega Drain
+- Icicle Crash
+- Water Pulse
+
+=== TRAINER_HC_NUGGETBRIDGE_TRAINER4 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Greedent @ Sitrus Berry
+Nature: Bashful
+Ability: Cheek Pouch
+Level: 1
+- Stomping Tantrum
+- Facade
+- Seed Bomb
+- Swords Dance
+
+Togetic @ Eviolite
+Nature: Bashful
+Level: 1
+- Air Slash
+- Thunder Wave
+- Draining Kiss
+- Magical Leaf
+
+Clamperl @ Deep Sea Tooth
+Nature: Modest
+Ability: Battle Armor
+Level: 1
+- Water Pulse
+- Icy Wind
+- Rest
+- Sleep Talk
+
+=== TRAINER_HC_NUGGETBRIDGE_TRAINER5 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Mabosstiff @ Black Glasses
+Nature: Bashful
+Ability: Intimidate
+Level: 1
+- Trailblaze
+- Bite
+- Fire Fang
+- Ice Fang
+
+Salandit @ Black Sludge
+Nature: Timid
+Level: 1
+- Toxic
+- Substitute
+- Protect
+- Incinerate
+
+Misdreavus @ Eviolite
+Nature: Bashful
+Ability: Levitate
+Level: 1
+- Hex
+- Will O Wisp
+- Icy Wind
+- Shock Wave
+
+=== TRAINER_HC_NUGGETBRIDGE_ROCKET ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Arcanine @ Sitrus Berry
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Dragon Rage
+- Flame Wheel
+- Thunder Fang
+- Bulldoze
+
+Druddigon @ Leftovers
+Nature: Impish
+Level: 1
+Ball: Ultra Ball
+- Toxic
+- Protect
+- Dragon Tail
+- Poison Tail
+
+Togedemaru @ Rocky Helmet
+Nature: Careful
+Ability: Iron barbs
+Level: 1
+Ball: Great Ball
+- U Turn
+- Zippy Zap
+- Iron Head
+- Nuzzle
+
+Komala @ Silk Scarf
+Nature: Adamant
+Ability: Comatose
+Level: 1
+Ball: Great Ball
+- Sleep Talk
+- Last Resort
+
+=== TRAINER_BUGSY ===
+Name: Bugsy
+Class: Leader
+Pic: Leader Bugsy
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Green
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Kleavor @ Focus Sash
+Nature: Jolly
+Ability: Sharpness
+Level: 24
+Ball: Great Ball
+- X Scissor
+- U Turn
+- Stone Axe
+- Night Slash
+
+Scizor @ Assault Vest
+Nature: Careful
+Level: 24
+Ball: Ultra Ball
+- Bullet Punch
+- Aerial Ace
+- U Turn
+- Rock Smash
+
+Scyther @ Muscle Band
+Nature: Adamant
+Ability: Technician
+Level: 23
+Ball: Great Ball
+- Swords Dance
+- Aerial Ace
+- U Turn
+- Rock Smash
+
+Lokix @ Silver Powder
+Nature: Jolly
+Ability: Tinted Lens
+Level: 23
+Ball: Dusk Ball
+- U Turn
+- First Impression
+- Sucker Punch
+- Knock Off
+
+Araquanid @ Leftovers
+Nature: Impish
+Ability: Water Bubble
+Level: 23
+Ball: Great Ball
+- Bug Bite
+- Waterfall
+- Protect
+- Toxic
+
+Vikavolt @ Magnet
+Nature: Modest
+Ability: Levitate
+Level: 23
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Volt Switch
+- Signal Beam
+- Roost
+- Hidden Power
+
+=== TRAINER_BUGSY_POST_SURGE ===
+Name: Bugsy
+Class: Leader
+Pic: Leader Bugsy
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Green
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Kleavor @ Focus Sash
+Nature: Jolly
+Ability: Sharpness
+Level: 24
+Ball: Great Ball
+- Stone Axe
+- X Scissor
+- U Turn
+- Night Slash
+
+Scizor @ Scizorite
+Nature: Careful
+Level: 24
+Ball: Ultra Ball
+- Bullet Punch
+- Dual Wingbeat
+- U Turn
+- Rock Smash
+
+Scyther @ Eviolite
+Nature: Adamant
+Ability: Technician
+Level: 23
+Ball: Great Ball
+- Swords Dance
+- Dual Wingbeat
+- Bug Bite
+- Rock Smash
+
+Lokix @ Bug Gem
+Nature: Jolly
+Ability: Tinted Lens
+Level: 23
+Ball: Great Ball
+- First Impression
+- U Turn
+- Knock Off
+- Sucker Punch
+
+Araquanid @ Leftovers
+Nature: Impish
+Ability: Water Bubble
+Level: 23
+Ball: Great Ball
+- X Scissor
+- Liquidation
+- Protect
+- Toxic
+
+Vikavolt @ Magnet
+Nature: Modest
+Ability: Levitate
+Level: 23
+Ball: Great Ball
+- Thunder
+- Bug Buzz
+- Volt Switch
+- Energy Ball
+
+=== TRAINER_LEADER_MISTY ===
+Name: MISTY
+Class: Leader Frlg
+Pic: Leader Misty Frlg
+Gender: Male
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Blue
+Boss: Yes
+Difficulty: Hard
+
+Politoed @ Iapapa Berry
+Nature: Sassy
+Ability: Drizzle
+Level: 27
+Ball: Great Ball
+- Flip Turn
+- Scald
+- Earthquake
+- Toxic
+
+Ludicolo @ Sitrus Berry
+Nature: Mild
+Level: 28
+Ball: Ultra Ball
+- Giga Drain
+- Scald
+- Aurora Beam
+- Thunder Punch
+
+Mantine @ Wacan Berry
+Nature: Modest
+Ability: Swift Swim
+Level: 27
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Scald
+- Hurricane
+- Roost
+- Hidden Power
+
+Clodsire @ Black Sludge
+Nature: Careful
+Ability: Water Absorb
+Level: 28
+Ball: Great Ball
+- Poison Jab
+- Bulldoze
+- Recover
+- Toxic
+
+Starmie @ Mystic Water
+Nature: Modest
+Ability: Analytic
+Level: 28
+Ball: Ultra Ball
+- Scald
+- Thunderbolt
+- Psyshock
+- Aurora Beam
+
+Toxicroak @ Life Orb
+Nature: Jolly
+Ability: dry skin
+Level: 27
+Ball: Great Ball
+- Swords Dance
+- Drain Punch
+- Poison Jab
+- Sucker Punch
+
+=== TRAINER_HC_CERULEAN_ROCKET ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Persian A @ Black Glasses
+Nature: Timid
+Ability: Feline Power
+Level: 1
+Ball: Great Ball
+- Dark Pulse
+- Water Pulse
+- Parting Shot
+- Shock Wave
+
+Crobat @ Scope Lens
+Nature: Naive
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Ultra Ball
+- Mega Drain
+- Cross Poison
+- Air Cutter
+- Hidden Power
+
+Raticate @ Flame Orb
+Nature: Jolly
+Ability: Guts
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Facade
+- Stomping Tantrum
+- Sucker Punch
+- U Turn
+
+Veluza @ Expert Belt
+Nature: Jolly
+Ability: Sharpness
+Level: 1
+Ball: Ultra Ball
+- Aqua Cutter
+- Psycho Cut
+- Aqua Jet
+- Crunch
+
+=== TRAINER_HC_ROUTE6_MINIBOSS ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ambipom @ Chople Berry
+Nature: Jolly
+Ability: TEchnician
+Level: 1
+Ball: Great Ball
+- Fake Out
+- Beat Up
+- Arm Thrust
+- Tail Slap
+
+Mr Mime G @ Eviolite
+Nature: Timid
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Freeze Dry
+- Psyshock
+- Shadow Ball
+- Hidden Power
+
+Perrserker @ Metal Coat
+Nature: Adamant
+Ability: Tough Claws
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- U Turn
+- Bullet Punch
+- Iron Head
+
+Boltund @ Expert Belt
+Nature: Jolly
+Ability: Strong Jaw
+Level: 1
+Ball: Ultra Ball
+- Thunder Fang
+- Ice Fang
+- Fire Fang
+- Psychic Fangs
+
+Granbull @ Iapapa Berry
+Nature: Adamant
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Brick Break
+- Play Rough
+- Fire Punch
+- Thunder Punch
+
+=== TRAINER_HC_SSANNE_TRAINER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Samurott @ Lum Berry
+Nature: Bashful
+Ability: Battle Armor
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Water Pledge
+- Flash Cannon
+- Ice Beam
+- Hidden Power
+
+Simisear @ Choice Scarf
+Nature: Timid
+Ability: Sage Power
+Level: 1
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Fire Pledge
+- Focus Blast
+- Grass Knot
+- Hidden Power
+
+=== TRAINER_HC_SSANNE_TRAINER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Decidueye @ Miracle Seed
+Nature: Bashful
+Ability: Tinted Lens
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Spirit Shackle
+- Grass Pledge
+- Air Slash
+- Hidden Power
+
+Simisage @ Choice Scarf
+Nature: Timid
+Ability: Sage Power
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Grass Pledge
+- Focus Blast
+- Hidden Power
+- Power Gem
+
+Wigglytuff @ Life Orb
+Nature: Modest
+Level: 1
+Ball: Great Ball
+- Moonblast
+- Thunderbolt
+- Flamethrower
+- Ice Beam
+
+=== TRAINER_HC_SSANNE_SAILOR1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Cradily @ Assault Vest
+Nature: Modest
+Ability: Storm Drain
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Power Gem
+- Giga Drain
+- Earth Power
+- Hidden Power
+
+Lumineon @ Mystic Water
+Nature: Timid
+Ability: Storm Drain
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Hydro Pump
+- Ice Beam
+- Hidden Power
+- Flip Turn
+
+Tatsugiri @ Assault Vest
+Nature: Calm
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Scald
+- Dragon Pulse
+- Hidden Power
+- Icy Wind
+
+=== TRAINER_HC_SSANNE_SAILOR2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Cramorant @ Focus Sash
+Nature: Timid
+Level: 1
+Ball: Great Ball
+- Surf
+- U Turn
+- Ice Beam
+- Safeguard
+
+Nidoqueen @ Assault Vest
+Nature: Timid
+Ability: Sheer Force
+Level: 1
+Ball: Great Ball
+- Surf
+- Earth Power
+- Ice Beam
+- Reflect
+
+Masquerain @ Sitrus Berry
+Nature: Timid
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Surf
+- Bug Buzz
+- Energy Ball
+- Safeguard
+
+=== TRAINER_BRENDAN_2 ===
+Name: Brendan
+Class: Pkmn Trainer 1
+Pic: Brendan
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Green
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Crawdaunt @ Focus Sash
+Nature: Adamant
+Level: 30
+Ball: Great Ball
+- Aqua Jet
+- Liquidation
+- Knock Off
+- X Scissor
+
+Slaking @ Leftovers
+Nature: Jolly
+Ability: Truant
+Level: 30
+Ball: Great Ball
+- Body Slam
+- Knock Off
+- Brick Break
+- Slack Off
+
+Plusle @ Magnet
+Nature: Timid
+Ability: Transistor
+Level: 30
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Volt Switch
+- Grass Knot
+- Surf
+- Hidden Power
+
+Gardevoir @ Leftovers
+Nature: Timid
+Ability: Trace
+Level: 30
+Ball: Great Ball
+- Psychic
+- Calm Mind
+- Moonblast
+- Mystical Fire
+
+Sceptile @ Life Orb
+Nature: Jolly
+Ability: Overgrow
+Level: 30
+- Swords Dance
+- Leaf Blade
+- Drain Punch
+- Rock Slide
+
+Hariyama @ Flame Orb
+Nature: Adamant
+Ability: Guts
+Level: 30
+Ball: Great Ball
+- Drain Punch
+- Bullet Punch
+- Knock Off
+- Fake Out
+
+=== TRAINER_WHITNEY ===
+Name: Whitney
+Class: Leader
+Pic: Leader Whitney
+Gender: Female
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Pink
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Pyroar @ Focus Sash
+Nature: Timid
+Ability: Adaptability
+Level: 30
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Torch Song
+- Hyper Voice
+- Hidden Power
+- Sleep Talk
+
+Farigiraf @ Normal Gem
+Nature: Timid
+Ability: Parental Bond
+Level: 30
+- Charge Beam
+- Hyper Voice
+- Psychic
+- Dazzling Gleam
+
+Luvdisc @ Mystic Water
+Nature: Timid
+Ability: soul heart
+Level: 30
+Ball: Great Ball
+- Lovely Kiss
+- Surf
+- Moonblast
+- Ice Beam
+
+Swellow @ Normal Gem
+Nature: Jolly
+Ability: Guts
+Level: 30
+Ball: Love Ball
+- Brave Bird
+- Facade
+- U Turn
+- Quick Attack
+
+Togekiss @ Leftovers
+Nature: Timid
+Ability: Serene Grace
+Level: 30
+Ball: Great Ball
+- Roost
+- Air Slash
+- Thunder Wave
+- Mystical Fire
+
+Altaria @ Altarianite
+Nature: Timid
+Ability: natural cure
+Level: 30
+Ball: Great Ball
+- Calm Mind
+- Hyper Voice
+- Flamethrower
+- Roost
+
+=== TRAINER_HC_TWOISLAND_WHITNEY ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Zangoose @ Focus Sash
+Nature: Jolly
+Ability: Toxic Boost
+Level: 1
+- Facade
+- Close Combat
+- Quick Attack
+- Fake Out
+
+Miltank @ Kasib Berry
+Nature: Jolly
+Ability: Thick Fat
+Level: 1
+Ball: Great Ball
+- Body Slam
+- Thunder Wave
+- Stealth Rock
+- Milk Drink
+
+Exploud @ Choice Scarf
+Nature: Timid
+Ability: Punk Rock
+Level: 1
+- Boomburst
+
+Zoroark H @ Focus Sash
+Nature: Timid
+Ability: Serene Grace
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Shadow Ball
+- Hyper Voice
+- Flamethrower
+- U Turn
+
+Ursaluna @ Assault Vest
+Nature: Careful
+Ability: Guts
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Facade
+- Earthquake
+- Sucker Punch
+- Shadow Claw
+
+Snorlax @ Snorlaxite
+Nature: Impish
+Ability: Thick Fat
+Level: 1
+- Curse
+- Rest
+- Sleep Talk
+- Body Slam
+
+=== TRAINER_HC_TWOISLAND_ACET ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Infernape @ Focus Sash
+Nature: Jolly
+Ability: Blaze
+Level: 1
+- Pyro Ball
+- Close Combat
+- Thunder Punch
+- Stealth Rock
+
+Sceptile @ Sceptilite
+Nature: Jolly
+Ability: Overgrow/Technician
+Level: 1
+- Swords Dance
+- Bullet Seed
+- Scale Shot
+- Rock Tomb
+
+Torterra @ Yache Berry
+Nature: Jolly
+Ability: Rock Head
+Level: 1
+- Shell Smash
+- Wood Hammer
+- Headlong Rush
+- Head Smash
+
+Blaziken @ Blazikenite
+Nature: Jolly
+Ability: Striker/Speed Boost
+Level: 1
+- Close Combat
+- Flare Blitz
+- Knock Off
+- U Turn
+
+Greninja @ Life Orb
+Nature: Careful
+Ability: Protean
+Level: 1
+- Hydro Cannon
+- Dark Hole
+- Ice Beam
+- U Turn
+
+Inteleon @ Scope Lens
+Nature: Timid
+Ability: Sniper
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+- Snipe Shot
+- Ice Beam
+- Hidden Power
+- U Turn
+
+=== TRAINER_HC_PKMNTOWER_ACET1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Krookodile @ Assault Vest
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+- High Horsepower
+- Stone Edge
+- Close Combat
+- Wicked Blow
+
+Enamorus @ Focus Sash
+Nature: Hasty
+Ability: Contrary
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Fleur Cannon
+- Psychic
+- Superpower
+- Mystical Fire
+
+Salamence @ Salamencite
+Nature: Naive
+Ability: Intimidate
+Level: 1
+- Double Edge
+- Dragon Rush
+- Hyper Voice
+- Fire Blast
+
+Aegislash @ Ghostium Z
+Nature: Quiet
+Ability: Striker/Speed Boost
+Level: 1
+- Kings Shield
+- Shadow Ball
+- Flash Cannon
+- Sacred Sword
+
+Victini @ White Herb
+Nature: Hasty
+Ability: Victory Star
+Level: 1
+- V Create
+- Bolt Strike
+- Glaciate
+- Zen Headbutt
+
+Keldeo @ Water Gem
+Nature: Timid
+Ability: Sharpness
+Level: 1
+- Hydro Pump
+- Sacred Sword
+- Icy Wind
+- Protect
+
+=== TRAINER_HC_PKMNTOWER_ACET2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Torkoal @ Sitrus Berry
+Nature: Relaxed
+Ability: Drought
+Level: 1
+- Stealth Rock
+- Lava Plume
+- Body Press
+- Earth Power
+
+Charizard @ Choice Specs
+Nature: Timid
+Ability: Solar Power
+Level: 1
+- Solar Beam
+- Weather Ball
+- Air Slash
+- Flamethrower
+
+Volcanion @ Assault Vest
+Nature: Modest
+Ability: Water Absorb
+Level: 1
+Ball: Ultra Ball
+- Flamethrower
+- Solar Beam
+- Earth Power
+- Sludge Wave
+
+Dodrio S @ Focus Sash
+Nature: Jolly
+Ability: Rock Head
+Level: 1
+- Headlong Rush
+- Flare Blitz
+- Head Smash
+- Double Edge
+
+Tyranitar @ Assault Vest
+Nature: Brave
+Ability: Unnerve
+Level: 1
+- Fire Blast
+- Solar Beam
+- Stone Edge
+- Earthquake
+
+Garchomp @ Garchompite
+Nature: Timid
+Ability: Rough Skin
+Level: 1
+- Swords Dance
+- Scale Shot
+- Earthquake
+- Fire Fang
+
+=== TRAINER_HC_PKMNTOWER_ACET3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Rillaboom @ Grassy Seed
+Nature: Jolly
+Ability: Grassy Surge
+Level: 1
+- Grassy Glide
+- U Turn
+- Knock Off
+- Wood Hammer
+
+Dragonite @ Lum Berry
+Nature: Jolly
+Ability: Solar Power
+Level: 1
+- Dual Wingbeat
+- Dragon Dance
+- Fire Punch
+- Ice Punch
+
+Zebstrika S @ Life Orb
+Nature: Timid
+Ability: Illuminate
+Level: 1
+- Blizzard
+- Thunder
+- Freeze Dry
+- Volt Switch
+
+Alcremie Strawberry @ Alcremite
+Nature: Bold
+Ability: Self Sufficient
+Level: 1
+- Calm Mind
+- Moonblast
+- Mystical Fire
+- Acid Armor
+
+Samurott H @ White Herb
+Nature: Jolly
+Ability: Sharpness
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Shell Smash
+- Ceaseless Edge
+- Razor Shell
+- Megahorn
+
+Decidueye H @ Focus Sash
+Nature: Adamant
+Ability: Striker
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- High Jump Kick
+- Grassy Glide
+- Swords Dance
+- Knock Off
+
+=== TRAINER_HC_PKMNTOWER_MORTY ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Mimikyu @ Ghostium Z
+Nature: Jolly
+Ability: Disguise
+Level: 1
+Ball: Dusk Ball
+- Shadow Claw
+- Play Rough
+- Shadow Sneak
+- Swords Dance
+
+Marshadow @ Focus Sash
+Nature: Jolly
+Ability: Technician
+Level: 1
+Ball: Master Ball
+- Bulk Up
+- Drain Punch
+- Spectral Thief
+- Shadow Sneak
+
+Silvally Fairy @ Leftovers
+Nature: Timid
+Ability: Battle Armor
+Level: 1
+- Thunder Wave
+- Multi Attack
+- Flamethrower
+- Parting Shot
+
+Urshifu Single @ Black Glasses
+Nature: Jolly
+Ability: urshifu thingy
+Level: 1
+Ball: Dusk Ball
+- U Turn
+- Close Combat
+- Wicked Blow
+- Sucker Punch
+
+Gengar @ Gengarite
+Nature: Timid
+Ability: Levitate Shadow Tag
+Level: 1
+Ball: Dusk Ball
+- Shadow Ball
+- Sludge Wave
+- Focus Blast
+- Destiny Bond
+
+Zarude @ Leftovers
+Nature: Jolly
+Ability: Defiant
+Level: 1
+Ball: Dusk Ball
+- U Turn
+- Power Whip
+- Knock Off
+- Close Combat
+
+=== TRAINER_HC_VERMILION_LTSURGEGYMTRAINER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Alakazam @ Focus Sash
+Nature: Timid
+Ability: Magic Guard
+Level: 1
+IVs: 31 HP / 31 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Psyshock
+- Shadow Ball
+- Energy Ball
+- Hidden Power
+
+Farfetchd @ Leek
+Nature: Jolly
+Ability: Sharpness
+Level: 1
+Ball: Great Ball
+- Sacred Sword
+- Night Slash
+- Cut
+- Brave Bird
+
+Swanna @ Sharp Beak
+Nature: Timid
+Ability: No Guard
+Level: 1
+Ball: Ultra Ball
+- Hurricane
+- Hydro Pump
+- Ice Beam
+
+Pikachu Surfing @ Light Ball
+Nature: Naive
+Ability: Lightningrod
+Level: 1
+Ball: Great Ball
+- Bouncy Bubble
+- Zippy Zap
+- Extreme Speed
+- Knock Off
+
+Dugtrio @ Life Orb
+Nature: Jolly
+Ability: Arena Trap
+Level: 1
+Ball: Ultra Ball
+- Earthquake
+- Rock Slide
+- Night Slash
+- Aerial Ace
+
+=== TRAINER_LEADER_LT_SURGE ===
+Name: Lt. Surge
+Class: Leader Frlg
+Pic: Leader Lt Surge Frlg
+Items: Mega Ring
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Rotom Frost @ Icium Z
+Nature: Timid
+Ability: levitate
+Level: 35
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Thunderbolt
+- Blizzard
+- Freeze Dry
+- Nasty Plot
+
+Electrode H @ Life Orb
+Nature: Naive
+Ability: Reckless
+Level: 36
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Chloroblast
+- Volt Switch
+- Hidden Power
+- Explosion
+
+Raichu A @ Focus Sash
+Nature: Modest
+Ability: Surge Surfer
+Level: 36
+Ball: Great Ball
+- Rising Voltage
+- Psyshock
+- Nasty Plot
+- Surf
+
+Hitmonlee @ Electric Seed
+Nature: Adamant
+Ability: unburden
+Level: 36
+Ball: Great Ball
+- Knock Off
+- Close Combat
+- Rock Slide
+- Bulk Up
+
+Pawmot @ Punching Glove
+Nature: Jolly
+Ability: Iron Fist
+Level: 36
+Ball: Ultra Ball
+- Plasma Fists
+- Mach Punch
+- Ice Punch
+- Close Combat
+
+Ampharos @ Ampharosite
+Nature: Modest
+Ability: Mold Breaker
+Level: 36
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Volt Switch
+- Dragon Pulse
+- Focus Blast
+- Hidden Power
+
+=== TRAINER_HC_ROUTE9_COOLTRAINER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Roserade @ Focus Sash
+Nature: Timid
+Ability: Technician
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Clear Smog
+- Mega Drain
+- Hidden Power
+- Sleep Powder
+
+Bruxish @ Life Orb
+Nature: Jolly
+Ability: Strong Jaw
+Level: 1
+Ball: Great Ball
+- Aqua Fang
+- Psychic Fangs
+- Crunch
+- Aqua Jet
+
+Flareon @ Toxic Orb
+Nature: Jolly
+Ability: Toxic Boost (poison doesn't self damage)
+Level: 1
+Ball: Ultra Ball
+- Flame Charge
+- Sacred Fire
+- Facade
+- Stomping Tantrum
+
+Chatot @ Silk Scarf
+Nature: Timid
+Ability: Punk Rock
+Level: 1
+Ball: Great Ball
+- Chatter
+- Boomburst
+- Heat Wave
+- U Turn
+
+=== TRAINER_HC_ROUTE9_COOLTRAINER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Smeargle @ Choice Scarf
+Nature: Jolly
+Ability: Own Tempo
+Level: 1
+Ball: Great Ball
+- V Create
+- Dragon Ascent
+- Trick
+- Close Combat
+
+Spinda @ Choice Scarf
+Nature: Jolly
+Ability: Technician
+Level: 1
+Ball: Great Ball
+- Assist
+
+Sneasel H @ Eviolite
+Nature: Jolly
+Ability: Inner Focus
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Assist
+
+Liepard @ Focus Sash
+Nature: Adamant
+Ability: Prankster
+Level: 1
+Ball: Ultra Ball
+- Assist
+
+=== TRAINER_HC_ROCKTUNNEL_COOLTRAINER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ribombee @ Focus Sash
+Nature: Naive
+Ability: Shield Dust
+Level: 1
+Ball: Great Ball
+- Sticky Web
+- U Turn
+- Moonblast
+- Stun Spore
+
+Bouffalant @ Silk Scarf
+Nature: Jolly
+Ability: Bull Rush
+Level: 1
+Ball: Great Ball
+- Head Charge
+- Throat Chop
+- Earthquake
+- Rock Slide
+
+Clawitzer @ Expert Belt
+Nature: Timid
+Ability: Mega Launcher
+Level: 1
+Ball: Ultra Ball
+- Water Pulse
+- Dark Pulse
+- Aura Sphere
+- Ice Beam
+
+Rampardos @ Hard Stone
+Nature: Jolly
+Ability: mold breaker
+Level: 1
+Ball: Great Ball
+- Power Up Punch
+- Accelerock
+- Earthquake
+- Head Smash
+
+Magmortar @ Magmarizer
+Nature: Timid
+Ability: mega launcher
+Level: 1
+Ball: Great Ball
+- Flamethrower
+- Aura Sphere
+- Thunderbolt
+- Dark Pulse
+
+=== TRAINER_HC_ROUTE10_POKENERD ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ninetales @ Air Balloon
+Nature: Timid
+Ability: Drought
+Level: 1
+Ball: Great Ball
+- Heat Wave
+- Solar Beam
+- Scorching Sands
+- Psyshock
+
+Victreebel @ Life Orb
+Nature: Rash
+Ability: Chlorophyll
+Level: 1
+Ball: Ultra Ball
+- Giga Drain
+- Sludge Bomb
+- Solar Blade
+- Weather Ball
+
+Cherrim @ Miracle Seed
+Nature: Lonely
+Ability: Flower Gift
+Level: 1
+Ball: Great Ball
+- Solar Blade
+- X Scissor
+- Weather Ball
+- Return
+
+Sylveon @ Pixie Plate
+Nature: Modest
+Ability: Pixilate
+Level: 1
+Ball: Great Ball
+- Hyper Voice
+- Weather Ball
+- Misty Explosion
+- Psyshock
+
+=== TRAINER_HC_ROUTE8_POKENERD ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Armarouge @ Weakness Policy
+Nature: Modest
+Ability: Weak Armor
+Level: 1
+- Flamethrower
+- Stored Power
+- Shadow Ball
+- Aura Sphere
+
+Tsareena @ Choice Scarf
+Nature: Adamant
+Ability: Queenly Majesty
+Level: 1
+Ball: Great Ball
+- Brutal Swing
+- Power Whip
+- Knock Off
+- U Turn
+
+Arcanine H @ Focus Sash
+Nature: Jolly
+Ability: Rock Head
+Level: 1
+Ball: Great Ball
+- Flare Blitz
+- Head Smash
+- Accelerock
+- Wild Charge
+
+Basculegion F @ Weakness Policy
+Nature: Naive
+Ability: Adaptability
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Shadow Ball
+- Hydro Pump
+- Ice Beam
+- Shadow Sneak
+
+Braviary H @ Life Orb
+Nature: Modest
+Ability: Sheer Force
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Psychic
+- Heat Wave
+- Air Slash
+- Esper Wing
+
+=== TRAINER_HC_CELADON_GYMTRAINER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Weavile @ Focus Sash
+Nature: Jolly
+Ability: Infiltrator
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Surf
+- Knock Off
+- Icicle Crash
+- Reflect
+
+Coalossal @ Weakness Policy
+Nature: Hasty
+Ability: Steam Engine
+Level: 1
+Ball: Great Ball
+- Heat Wave
+- Rock Slide
+- Earth Power
+- Scald
+
+Maractus @ Life Orb
+Nature: Adamant
+Ability: Grassy Surge
+Level: 1
+- Grassy Glide
+- Drain Punch
+- Spiky Shield
+- Sucker Punch
+
+Copperajah @ Grassy Seed
+Nature: Adamant
+Ability: Heavy Metal
+Level: 1
+Ball: Great Ball
+- Heavy Slam
+- Body Press
+- Heat Crash
+- Power Whip
+
+=== TRAINER_LEADER_ERIKA ===
+Name: Erika
+Class: Leader Frlg
+Pic: Leader Erika Frlg
+Items: Mega Ring
+Gender: Male
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Green
+Boss: Yes
+Difficulty: Hard
+
+Ogerpon Rock @ Cornerstone Mask
+Nature: Jolly
+Ability: Sturdy
+Level: 44
+Ball: Ultra Ball
+- Ivy Cudgel
+- U Turn
+- Power Whip
+- Knock Off
+
+Hawlucha @ Grassy Seed
+Nature: Adamant
+Ability: Unburden
+Level: 44
+Ball: Great Ball
+- Swords Dance
+- Acrobatics
+- Close Combat
+- Stone Edge
+
+Sceptile @ Sceptilite
+Nature: Jolly
+Ability: Technician in Mega
+Level: 44
+Ball: Ultra Ball
+- Swords Dance
+- Bullet Seed
+- Draco Barrage
+- High Horsepower
+
+Toxtricity @ Life Orb
+Nature: Timid
+Ability: punk rock
+Level: 44
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Boomburst
+- Volt Switch
+- Overdrive
+- Hidden Power
+
+Slowbro G @ Black Sludge
+Nature: Bold
+Ability: Regenerator
+Level: 44
+Ball: Great Ball
+- Thunder Wave
+- Sludge Bomb
+- Flamethrower
+- Teleport
+
+Kartana @ Life Orb
+Nature: Jolly
+Ability: Beast Boost
+Level: 44
+Ball: BALL_TYPE_BEAST_BALL
+- Swords Dance
+- Grassy Glide
+- Cut
+- Sacred Sword
+
+=== TRAINER_HC_LAVENDER_MORTY ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Krookodile @ Chople Berry
+Nature: Jolly
+Ability: Intimidate
+Level: 44
+Ball: Great Ball
+- Stealth Rock
+- Wicked Blow
+- Earthquake
+- Stone Edge
+
+Dusknoir @ Reaper Cloth
+Nature: Adamant
+Ability: HUstle
+Level: 44
+Ball: Great Ball
+- Shadow Punch
+- Shadow Sneak
+- Dynamic Punch
+- Will O Wisp
+
+Mismagius @ Spell Tag
+Nature: Timid
+Ability: Levitate
+Level: 44
+Ball: Great Ball
+- Nasty Plot
+- Shadow Ball
+- Moonblast
+- Thunderbolt
+
+Ceruledge @ Focus Sash
+Nature: Jolly
+Ability: Weak Armor
+Level: 44
+Ball: Great Ball
+- Swords Dance
+- Shadow Sneak
+- Bitter Blade
+- Close Combat
+
+Weavile @ Life Orb
+Nature: Jolly
+Ability: infiltrator
+Level: 44
+Ball: Great Ball
+- Swords Dance
+- Triple Axel
+- Knock Off
+- Low Kick
+
+Gengar @ Gengarite
+Nature: Timid
+Ability: Levitate
+Level: 44
+Ball: Ultra Ball
+- Sludge Wave
+- Shadow Ball
+- Focus Blast
+- Nasty Plot
+
+=== TRAINER_HC_GAMECORNER_ROCKET1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Hypno @ Colbur Berry
+Nature: Calm
+Ability: Bad Dreams (bypasses Sleep Clause)
+Level: 1
+Ball: Dusk Ball
+- Dark Void
+- Psychic
+- Knock Off
+- Shadow Ball
+
+Aerodactyl @ Focus Sash
+Nature: Jolly
+Ability: Unnerve
+Level: 1
+Ball: Dusk Ball
+- Rock Slide
+- Dual Wingbeat
+- Headlong Rush
+- Iron Head
+
+Tinkaton @ Steel Gem
+Nature: Jolly
+Ability: Own Tempo
+Level: 1
+Ball: Great Ball
+- Gigaton Hammer
+- Play Rough
+- Knock Off
+- Ice Hammer
+
+Inteleon @ Mystic Water
+Nature: Timid
+Ability: Sniper
+Level: 1
+Ball: Great Ball
+- Snipe Shot
+- Ice Beam
+- Dark Pulse
+- Air Slash
+
+=== TRAINER_HC_ROCKETHIDEOUT_GRUNTMINI1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Weezing G @ Shuca Berry
+Nature: Bold
+Ability: Neutralizingg Gas
+Level: 1
+- Sludge Bomb
+- Strange Steam
+- Flamethrower
+- Will O Wisp
+
+Slaking @ Normal Gem
+Nature: Jolly
+Ability: Truant
+Level: 1
+- Double Edge
+- Fire Punch
+- Knock Off
+- Ice Punch
+
+Lilligant H @ Miracle Seed
+Nature: Jolly
+Ability: Hustle
+Level: 1
+Ball: Great Ball
+- Leaf Blade
+- Close Combat
+- Stone Edge
+- Knock Off
+
+Rotom Frost @ Charti Berry
+Nature: Timid
+Ability: Levitate
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Thunderbolt
+- Frost Breath
+- Freeze Dry
+- Hidden Power
+
+=== TRAINER_HC_ROCKETHIDEOUT_GRUNTMINI2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Talonflame @ Wide Lens
+Nature: Timid
+Ability: Gale Wings
+Level: 1
+- Tailwind
+- Hurricane
+- Fire Blast
+- Will O Wisp
+
+Shiftry @ Focus Sash
+Nature: Jolly
+Ability: Wind Rider
+Level: 1
+- Ceaseless Edge
+- Leaf Blade
+- Low Kick
+- X Scissor
+
+Okidogi @ Fighting Gem
+Nature: Jolly
+Ability: Toxic Chain
+Level: 1
+Ball: Great Ball
+- Poison Jab
+- Drain Punch
+- Mach Punch
+- Knock Off
+
+Rotom Wash @ Sitrus Berry
+Nature: Timid
+Ability: Levitate
+Level: 1
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Thunderbolt
+- Hydro Pump
+- Shadow Ball
+- Hidden Power
+
+=== TRAINER_BOSS_GIOVANNI ===
+Name: Giovanni
+Class: Boss Frlg
+Pic: Leader Giovanni Frlg
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Infernape @ Focus Sash
+Nature: Jolly
+Ability: Blaze
+Level: 47
+Ball: Great Ball
+- Pyro Ball
+- Close Combat
+- Thunder Punch
+- Stealth Rock
+
+Nidoking @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 47
+Ball: Great Ball
+- Earth Power
+- Sludge Wave
+- Fire Blast
+- Thunderbolt
+
+Torterra @ White Herb
+Nature: Jolly
+Ability: Rock Head
+Level: 47
+Ball: Great Ball
+- Shell Smash
+- Earthquake
+- Wood Hammer
+- Head Smash
+
+Orthworm @ Sitrus Berry
+Nature: Impish
+Ability: Earth Eater
+Level: 47
+Ball: Ultra Ball
+- Heavy Slam
+- Body Press
+- Shed Tail
+- Earthquake
+
+Gyarados @ Flyinium Z
+Nature: Jolly
+Ability: Intimidate
+Level: 47
+Ball: Great Ball
+- Dragon Dance
+- Waterfall
+- Earthquake
+- Bounce
+
+Kangaskhan @ Kangaskhanite
+Nature: Jolly
+Ability: Inner Focus
+Level: 47
+Ball: Ultra Ball
+- Power Up Punch
+- Body Slam
+- Crunch
+- Rock Tomb
+
+=== TRAINER_HC_LAVENDER_CHANNELER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pincurchin @ Sitrus Berry
+Nature: Modest
+Ability: electric surge
+Level: 1
+Ball: Great Ball
+- Rising Voltage
+- Bouncy Bubble
+- Volt Switch
+- Spikes
+
+Grimmsnarl @ Light Clay
+Nature: Careful
+Ability: Levitate
+Level: 1
+Ball: Dusk Ball
+- Spirit Break
+- Light Screen
+- Reflect
+- Darkest Lariat
+
+Drifblim @ Electric Seed
+Nature: Modest
+Ability: Unburden
+Level: 1
+Ball: Great Ball
+- Calm Mind
+- Shadow Ball
+- Air Slash
+- Strength Sap
+
+Cresselia @ Electric Seed
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Psyshock
+- Moonblast
+- Moonlight
+
+Polteageist @ White Herb
+Nature: Timid
+Ability: Cursed Body
+Level: 1
+IVs: 31 HP / 31 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Shell Smash
+- Shadow Ball
+- Stored Power
+- Hidden Power
+
+=== TRAINER_HC_LAVENDER_ROCKET1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pelipper @ Wacan Berry
+Nature: Modest
+Ability: DRIZZLE
+Level: 1
+Ball: Great Ball
+- Weather Ball
+- Hurricane
+- U Turn
+- Tailwind
+
+Overqwil @ Life Orb
+Nature: Adamant
+Ability: Swift Swim
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Waterfall
+- Gunk Shot
+- Throat Chop
+- Destiny Bond
+
+Ninetales A @ Choice Specs
+Nature: Timid
+Ability: Serene Grace
+Level: 1
+Ball: Great Ball
+- Moonblast
+- Blizzard
+- Freeze Dry
+- Weather Ball
+
+Mr Rime @ Wide Lens
+Nature: Modest
+Ability: Ice Body
+Level: 1
+Ball: Great Ball
+- Freeze Dry
+- Thunder
+- Psychic
+- Hypnosis
+
+Arctovish @ Water Gem
+Nature: Jolly
+Ability: Water Absorb
+Level: 1
+Ball: Ultra Ball
+- Freeze Dry
+- Psychic Fangs
+- Icicle Crash
+- Fishious Rend
+
+=== TRAINER_HC_LAVENDER_ROCKET2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Klefki @ Focus Sash
+Nature: Careful
+Ability: Prankster
+Level: 1
+Ball: Great Ball
+- Spikes
+- Thunder Wave
+- Foul Play
+- Play Rough
+
+Obstagoon @ Flame Orb
+Nature: Jolly
+Ability: Guts
+Level: 1
+Ball: Great Ball
+- Knock Off
+- Facade
+- Parting Shot
+- Close Combat
+
+Braviary @ Fighting Gem
+Nature: Jolly
+Ability: Defiant
+Level: 1
+Ball: Great Ball
+- Bulk Up
+- Brave Bird
+- Close Combat
+- Roost
+
+Dragalge @ Black Sludge
+Nature: Modest
+Ability: adaptability
+Level: 1
+Ball: Great Ball
+- Dragon Pulse
+- Sludge Wave
+- Flip Turn
+- Scald
+
+Honchkrow @ Scope Lens
+Nature: Naive
+Ability: Super Luck
+Level: 1
+Ball: Great Ball
+- Drill Peck
+- Night Slash
+- Heat Wave
+- Sucker Punch
+
+=== TRAINER_HC_LAVENDER_ROCKET3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Slurpuff @ Focus Sash
+Nature: Timid
+Ability: Unburden
+Level: 1
+Ball: Great Ball
+- Dazzling Gleam
+- Misty Explosion
+- Fire Blast
+- Thunderbolt
+
+Hydreigon @ Life Orb
+Nature: Timid
+Ability: levitate
+Level: 1
+Ball: Great Ball
+- Dark Pulse
+- Fickle Beam
+- Fire Blast
+- U Turn
+
+Magnezone @ Focus Sash
+Nature: Timid
+Ability: Magnet Pull
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Volt Switch
+- Flash Cannon
+- Thunderbolt
+- Hidden Power
+
+Golurk @ Assault Vest
+Nature: Jolly
+Ability: Iron Fist
+Level: 1
+Ball: Great Ball
+- Earthquake
+- Shadow Punch
+- Heat Crash
+- Ice Punch
+
+Primarina @ Leftovers
+Nature: Timid
+Ability: Liquid Voice
+Level: 1
+Ball: Great Ball
+- Calm Mind
+- Draining Kiss
+- Hyper Voice
+- Psychic
+
+=== TRAINER_HC_ROUTE16_BIKER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Mienshao @ Life Orb
+Nature: Jolly
+Ability: inner Focus
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- Close Combat
+- Knock Off
+- U Turn
+
+Heliolisk @ Focus Sash
+Nature: Timid
+Ability: Sand Veil
+Level: 1
+Ball: Great Ball
+- Volt Switch
+- Boomburst
+- Weather Ball
+- Surf
+
+Dugtrio A @ Life Orb
+Nature: Naive
+Ability: Sand Force
+Level: 1
+Ball: Great Ball
+- Earthquake
+- Iron Head
+- Sucker Punch
+- Stone Edge
+
+=== TRAINER_HC_ROUTE16_BIKER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Zygarde 10 @ Life Orb
+Nature: Jolly
+Ability: Aura Break
+Level: 1
+Ball: Ultra Ball
+- Thousand Arrows
+- Extreme Speed
+- Draco Barrage
+- Glare
+
+Hariyama @ Assault Vest
+Nature: Careful
+Ability: Thick Fat
+Level: 1
+Ball: Great Ball
+- Fake Out
+- Knock Off
+- Drain Punch
+- Heavy Slam
+
+Golem @ Rock Gem
+Nature: Adamant
+Ability: Sand Veil
+Level: 1
+Ball: Great Ball
+- Head Smash
+- Headlong Rush
+- Sucker Punch
+- Explosion
+
+=== TRAINER_HC_ROUTE16_BIKER3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Kingler @ Kinglerite
+Nature: Jolly
+Ability: Hyper Cutter Tough Claws Mega
+Level: 1
+Ball: Ultra Ball
+- Crabhammer
+- Meteor Mash
+- Close Combat
+- Aqua Jet
+
+Dracozolt @ Electric Gem
+Nature: Jolly
+Ability: Sand Rush
+Level: 1
+Ball: Great Ball
+- Bolt Beak
+- Dragon Claw
+- Earthquake
+- Fire Blast
+
+=== TRAINER_HC_ROUTE16_BIKER4 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Stunfisk @ Focus Sash
+Nature: Calm
+Ability: Sand Veil
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Thunder Wave
+- Earth Power
+- Volt Switch
+
+Dracovish @ Mystic Water
+Nature: Jolly
+Ability: Sand Rush
+Level: 1
+Ball: Great Ball
+- Fishious Rend
+- Dragon Claw
+- Psychic Fangs
+- Crunch
+
+Beedrill @ Beedrillite
+Nature: Jolly
+Ability: Adaptability Mega
+Level: 1
+Ball: Great Ball
+- U Turn
+- Drill Run
+- Poison Jab
+- Pursuit
+
+Rotom Heat @ Firium Z
+Nature: Timid
+Ability: Levitate
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Volt Switch
+- Overheat
+- Thunder Wave
+- Hidden Power
+
+Greninja @ Life Orb
+Nature: Naive
+Ability: Protean
+Level: 1
+Ball: Ultra Ball
+- U Turn
+- Hydro Pump
+- Gunk Shot
+- Ice Beam
+
+Aron @ Shell Bell
+Nature: Bashful
+Ability: STURDY
+Level: 1
+IVs: 0 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Endeavor
+
+=== TRAINER_HC_ROUTE16_BIKER5 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Accelgor @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 1
+Ball: Great Ball
+- U Turn
+- Bug Buzz
+- Focus Blast
+- Sludge Bomb
+
+Excadrill @ Air Balloon
+Nature: Adamant
+Ability: Sand Rush
+Level: 1
+Ball: Great Ball
+- Earthquake
+- Iron Head
+- Stone Edge
+- Swords Dance
+
+Gigalith @ Assault Vest
+Nature: Careful
+Ability: Sand Force
+Level: 1
+Ball: Great Ball
+- Earthquake
+- Stone Edge
+- Explosion
+- Body Press
+
+Roserade @ Fire Gem
+Nature: Timid
+Ability: Technician
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Giga Drain
+- Weather Ball
+- Hidden Power
+- Sleep Powder
+
+Lopunny @ Lopunnite
+Nature: Jolly
+Ability: Limber
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- Return
+- Close Combat
+- Triple Axel
+
+=== TRAINER_HC_ROUTE16_BIKER6 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Swampert @ Rindo Berry
+Nature: Sassy
+Ability: Damp
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Flip Turn
+- Earthquake
+- Yawn
+
+Aerodactyl @ Rock Gem
+Nature: Jolly
+Ability: Rock Head
+Level: 1
+Ball: Great Ball
+- Brave Bird
+- Head Smash
+- Earthquake
+- U Turn
+
+Scizor @ Scizorite
+Nature: Adamant
+Ability: Technician Mega
+Level: 1
+Ball: Great Ball
+- U Turn
+- Bullet Punch
+- Rock Smash
+- Knock Off
+
+Garchomp @ Focus Sash
+Nature: Jolly
+Ability: Sand Veil
+Level: 1
+Ball: Great Ball
+- Swords Dance
+- Earthquake
+- Stone Edge
+- Scale Shot
+
+Cacturne @ Life Orb
+Nature: Jolly
+Ability: Sand Rush
+Level: 1
+Ball: Great Ball
+- Needle Arm
+- Sucker Punch
+- Knock Off
+- Swords Dance
+
+=== TRAINER_HC_ROUTE18_BIKER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Magnezone @ Custap Berry
+Nature: Naive
+Ability: Sturdy
+Level: 1
+Ball: Great Ball
+- Thunder
+- Volt Switch
+- Explosion
+- Body Press
+
+Bisharp @ Eviolite
+Nature: Jolly
+Ability: Defiant
+Level: 1
+Ball: Great Ball
+- Swords Dance
+- Knock Off
+- Sucker Punch
+- Iron Head
+
+Whiscash @ Flyinium Z
+Nature: Jolly
+Ability: Water Bubble
+Level: 1
+Ball: Great Ball
+- Dragon Dance
+- Wave Crash
+- Earthquake
+- Bounce
+
+Salamence @ Flying Gem
+Nature: Naive
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Hurricane
+- Hydro Pump
+- Iron Head
+- Earthquake
+
+Starmie @ Life Orb
+Nature: Timid
+Ability: Analytic
+Level: 1
+Ball: Great Ball
+- Flip Turn
+- Hydro Pump
+- Thunder
+- Psychic
+
+=== TRAINER_HC_ROUTE18_TRAINER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Cramorant Gorging @ Focus Sash
+Nature: Timid
+Ability: gulp missile
+Level: 1
+Ball: Great Ball
+- Surf
+- Hurricane
+- Ice Beam
+- Roost
+
+Ogerpon Water @ Wellspring Mask
+Nature: Jolly
+Ability: Water Absorb
+Level: 1
+Ball: Great Ball
+- Ivy Cudgel
+- Power Whip
+- Play Rough
+- U Turn
+
+Porygon2 @ Eviolite
+Nature: Bold
+Ability: Download
+Level: 1
+Ball: Great Ball
+- Thunder
+- Ice Beam
+- Foul Play
+- Teleport
+
+Raikou @ Air Balloon
+Nature: Timid
+Ability: Inner Focus
+Level: 1
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Master Ball
+- Electro Shot
+- Scald
+- Hidden Power
+- Shadow Ball
+
+Nidoqueen @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 1
+Ball: Great Ball
+- Thunder
+- Earth Power
+- Sludge Wave
+- Bubble Beam
+
+=== TRAINER_HC_ROUTE18_TRAINER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Regice @ Assault Vest
+Nature: Bold
+Ability: Filter
+Level: 1
+Ball: Great Ball
+- Bulldoze
+- Thunder
+- Focus Blast
+- Freeze Dry
+
+Milotic @ Sitrus Berry
+Nature: Modest
+Ability: Competitive
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Bouncy Bubble
+- Ice Beam
+- Mirror Coat
+- Hidden Power
+
+Lapras @ Laprasite
+Nature: Modest
+Ability: Water Absorb Liquid Voice
+Level: 1
+Ball: Great Ball
+- Boomburst
+- Draco Barrage
+- Thunder
+- Freeze Dry
+
+Latias @ Soul Dew
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Surf
+- Draco Barrage
+- Thunder Wave
+- Aura Sphere
+
+Dragonite @ Flying Gem
+Nature: Modest
+Ability: Multiscale
+Level: 1
+Ball: Great Ball
+- Hurricane
+- Thunder
+- Hydro Pump
+- Ice Beam
+
+=== TRAINER_HC_ROUTE18_TRAINER3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Dragapult @ Ghostium Z
+Nature: Timid
+Ability: Cursed Body
+Level: 1
+Ball: Dusk Ball
+- Shadow Ball
+- Thunder
+- Draco Barrage
+- U Turn
+
+Kabutops @ Water Gem
+Nature: Adamant
+Ability: Swift Swim
+Level: 1
+Ball: Great Ball
+- Waterfall
+- Stone Axe
+- Sacred Sword
+- Aqua Jet
+
+Pinsir @ Pinsirite
+Nature: Jolly
+Ability: Hyper Cutter
+Level: 1
+Ball: Great Ball
+- X Scissor
+- Double Edge
+- Quick Attack
+- Close Combat
+
+Omastar @ Focus Sash
+Nature: Modest
+Ability: Swift Swim
+Level: 1
+- Shell Smash
+- Hydro Pump
+- Ice Beam
+- Power Gem
+
+Kilowattrel @ Flying Gem
+Nature: Timid
+Ability: Volt Absorb
+Level: 1
+- Thunder
+- Weather Ball
+- Hurricane
+- Volt Switch
+
+=== TRAINER_HC_ROUTE13_TRAINER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Landorus Therian @ Yache Berry
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: Ultra Ball
+- U Turn
+- Earthquake
+- Stealth Rock
+- Stone Edge
+
+Charizard @ Charizardite X
+Nature: Jolly
+Ability: Blaze Tough Claws
+Level: 1
+- Dragon Dance
+- Flare Blitz
+- Draco Barrage
+- Earthquake
+
+Togekiss @ Scope Lens
+Nature: Timid
+Ability: Super Luck
+Level: 1
+Ball: Great Ball
+- Aeroblast
+- Fire Blast
+- Moonblast
+- Roost
+
+Blaziken @ Fighting Gem
+Nature: Adamant
+Ability: Speed Boost
+Level: 1
+- Swords Dance
+- Flare Blitz
+- Close Combat
+- Thunder Punch
+
+Tropius @ Focus Sash
+Nature: Adamant
+Ability: Chlorophyll
+Level: 1
+- Growth
+- Giga Drain
+- Weather Ball
+- Dragon Pulse
+
+=== TRAINER_HC_ROUTE13_TRAINER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Shiftry @ Life Orb
+Nature: Adamant
+Ability: Chlorophyll
+Level: 1
+- Fake Out
+- Solar Blade
+- Knock Off
+- Parting Shot
+
+Goodra @ Assault Vest
+Nature: Modest
+Ability: Sap Sipper
+Level: 1
+- Fire Blast
+- Draco Barrage
+- Sludge Bomb
+- Thunderbolt
+
+Sylveon @ Eevium Z
+Nature: Timid
+Ability: Pixilate
+Level: 1
+- Last Resort
+- Hyper Voice
+- Weather Ball
+- Stored Power
+
+Heatran @ Air Balloon
+Nature: Timid
+Ability: Flash Fire
+Level: 1
+Ball: Ultra Ball
+- Magma Storm
+- Solar Beam
+- Earth Power
+- Protect
+
+Alcremie Strawberry @ Alcremite
+Nature: Bold
+Ability: Sweet Veil
+Level: 1
+Ball: Ultra Ball
+- Moonblast
+- Mystical Fire
+- Misty Explosion
+- Recover
+
+=== TRAINER_HC_ROUTE13_TRAINER3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Krookodile @ Focus Sash
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+- Stealth Rock
+- Wicked Blow
+- Earthquake
+- Rock Slide
+
+Tangrowth @ Assault Vest
+Nature: Timid
+Ability: Chlorophyll
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+- Solar Beam
+- Hidden Power
+- Sludge Bomb
+- Knock Off
+
+Chansey @ Eviolite
+Nature: Bold
+Ability: Natural Cure
+Level: 1
+- Thunder Wave
+- Seismic Toss
+- Teleport
+- Soft Boiled
+
+Chandelure @ Choice Scarf
+Nature: Timid
+Ability: Shadow Tag
+Level: 1
+Ball: Ultra Ball
+- Fire Blast
+- Solar Beam
+- Shadow Ball
+- Trick
+
+Altaria @ Altarianite
+Nature: Bold
+Ability: Natural Cure
+Level: 1
+Ball: Ultra Ball
+- Fire Blast
+- Hyper Voice
+- Roost
+- Earthquake
+
+=== TRAINER_HC_ROUTE13_TRAINER4 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Cherrim @ Focus Sash
+Nature: Jolly
+Ability: Flower Gift 1.5x speed and attack in sun
+Level: 1
+Ball: Ultra Ball
+- Petal Blizzard
+- Safeguard
+- X Scissor
+- Return
+
+Venusaur @ Sitrus Berry
+Nature: Naive
+Ability: Chlorophyll
+Level: 1
+Ball: Ultra Ball
+- Petal Blizzard
+- Safeguard
+- Earth Power
+- Weather Ball
+
+Florges @ Assault Vest
+Nature: Calm
+Ability: Natural Cure
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Ultra Ball
+- Petal Blizzard
+- Moonblast
+- Safeguard
+- Hidden Power
+
+=== TRAINER_HC_ROUTE13_TRAINER5 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Goodra @ Assault Vest
+Nature: Adamant
+Ability: Sap Sipper
+Level: 1
+Ball: Ultra Ball
+- Dragon Hammer
+- Fire Punch
+- Drain Punch
+- Power Whip
+
+Bouffalant @ Normal Gem
+Nature: Adamant
+Ability: Sap Sipper
+Level: 1
+- Head Charge
+- High Horsepower
+- Zen Headbutt
+- Close Combat
+
+Zebstrika @ Electrium Z
+Nature: Jolly
+Ability: Sap Sipper
+Level: 1
+- Bolt Strike
+- Flare Blitz
+- Low Kick
+- Return
+
+=== TRAINER_HC_ROUTE13_TRAINER6 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Rhyperior @ Rindo Berry
+Nature: Careful
+Ability: Solid Rock
+Level: 1
+- Stealth Rock
+- Stone Edge
+- Earthquake
+- Fire Punch
+
+Sunflora @ Assault Vest
+Nature: Calm
+Ability: Solar Power
+Level: 1
+- Solar Beam
+- Fiery Dance
+- Earth Power
+- Sludge Bomb
+
+Ogerpon Fire @ Hearthflame Mask
+Nature: Jolly
+Ability: Mold Breaker
+Level: 1
+Ball: Ultra Ball
+- Ivy Cudgel
+- Power Whip
+- U Turn
+- Play Rough
+
+Rapidash @ Fire Gem
+Nature: Jolly
+Ability: Blazing Soul
+Level: 1
+- Fire Lash
+- Solar Blade
+- Jump Kick
+- High Horsepower
+
+Dragapult @ Ghostium Z
+Nature: Timid
+Ability: Cursed Body
+Level: 1
+Ball: Dusk Ball
+- Shadow Ball
+- Draco Barrage
+- Fire Blast
+- U Turn
+
+=== TRAINER_HC_ROUTE13_TRAINER7 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Crustle @ Custap Berry
+Nature: Adamant
+Ability: Sturdy
+Level: 1
+Ball: Ultra Ball
+- Stealth Rock
+- Spikes
+- Stone Edge
+- Earthquake
+
+Leavanny @ Focus Sash
+Nature: Adamant
+Ability: Chlorophyll
+Level: 1
+- Solar Blade
+- Swords Dance
+- X Scissor
+- Sacred Sword
+
+Camerupt @ Cameruptite
+Nature: Modest
+Ability: Solid Rock
+Level: 1
+- Fire Blast
+- Earth Power
+- Solar Beam
+- Ancient Power
+
+Eelektross @ Assault Vest
+Nature: Calm
+Ability: Levitate
+Level: 1
+- Thunderbolt
+- Fire Blast
+- Giga Drain
+- Volt Switch
+
+Mamoswine @ Icium Z
+Nature: Jolly
+Ability: Thick Fat
+Level: 1
+- Headlong Rush
+- Mountain Gale
+- Ice Shard
+- Rock Tomb
+
+=== TRAINER_HC_ROUTE13_TRAINER8 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Exeggutor @ Focus Sash
+Nature: Timid
+Ability: Chlorophyll
+Level: 1
+- Sleep Powder
+- Solar Beam
+- Psyshock
+- Weather Ball
+
+Archeops @ Sharp Beak
+Nature: Jolly
+Ability: Defeatist
+Level: 1
+- Brave Bird
+- Head Smash
+- Earthquake
+- U Turn
+
+Emboar @ Fire Gem
+Nature: Naive
+Ability: Bull Rush
+Level: 1
+- Flare Blitz
+- Close Combat
+- Wild Charge
+- Solar Beam
+
+Jolteon @ Eevium Z
+Nature: Timid
+Ability: Volt Absorb
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+- Last Resort
+- Thunderbolt
+- Weather Ball
+- Hidden Power
+
+Druddigon @ Rocky Helmet
+Nature: Careful
+Ability: Rough Skin
+Level: 1
+- Glare
+- Dragon Hammer
+- Gunk Shot
+- Fire Punch
+
+=== TRAINER_HC_ROUTE12_ELECTRICIAN ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Rotom Frost @ Icium Z
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Blizzard
+- Volt Switch
+- Thunder Wave
+- Thunderbolt
+
+Tornadus @ Flying Gem
+Nature: Jolly
+Ability: Defiant
+Level: 1
+Ball: Great Ball
+- Bulk Up
+- Acrobatics
+- Knock Off
+- Superpower
+
+Nidoqueen @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 1
+Ball: Great Ball
+- Earth Power
+- Blizzard
+- Fire Blast
+- Thunderbolt
+
+Yanmega @ Choice Specs
+Nature: Timid
+Ability: Tinted Lens
+Level: 1
+Ball: Great Ball
+- Bug Buzz
+- Air Slash
+- U Turn
+- Giga Drain
+
+Blastoise @ Blastoisinite
+Nature: Timid
+Ability: Mega Launcher Mega
+Level: 1
+- Shell Smash
+- Blizzard
+- Aura Sphere
+- Dark Pulse
+
+Walrein @ Leftovers
+Nature: Bold
+Ability: Ice Body
+Level: 1
+- Blizzard
+- Substitute
+- Protect
+- Toxic
+
+=== TRAINER_HC_ROUTE12_COOLTRAINER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Darmanitan G @ Charti Berry
+Nature: Jolly
+Ability: Zen Mode
+Level: 1
+Ball: Great Ball
+- U Turn
+- Flare Blitz
+- Icicle Crash
+- Earthquake
+
+Cetitan @ Sitrus Berry
+Nature: Jolly
+Ability: Slush Rush
+Level: 1
+Ball: Great Ball
+- Belly Drum
+- Icicle Crash
+- Earthquake
+- Play Rough
+
+Conkeldurr @ Assault Vest
+Nature: Careful
+Ability: Iron Fist
+Level: 1
+Ball: Great Ball
+- Drain Punch
+- Mach Punch
+- Knock Off
+- Thunder Punch
+
+Gengar @ Ghostium Z
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Nasty Plot
+- Shadow Ball
+- Focus Blast
+- Sludge Wave
+
+=== TRAINER_HC_ROUTE12_FISHERMAN ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Froslass @ Light Clay
+Nature: Timid
+Ability: Snow Cloak
+Level: 1
+Ball: Great Ball
+- Aurora Veil
+- Blizzard
+- Shadow Ball
+- Destiny Bond
+
+Barbaracle @ White Herb
+Nature: Jolly
+Ability: Tough Claws
+Level: 1
+Ball: Great Ball
+- Shell Smash
+- Liquidation
+- Close Combat
+- Stone Edge
+
+Baxcalibur @ Dragonium Z
+Nature: Jolly
+Ability: Thermal Exchange
+Level: 1
+Ball: Great Ball
+- Dragon Dance
+- Icicle Crash
+- Glaive Rush
+- Earthquake
+
+=== TRAINER_RIVAL_SILPH_SQUIRTLE ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Azelf @ Focus Sash
+Nature: Naive
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Explosion
+- Flamethrower
+- Psychic
+
+Celesteela @ Weakness Policy
+Nature: Modest
+Ability: Weakness policy
+Level: 1
+Ball: BALL_TYPE_BEAST_BALL
+- Autotomize
+- Air Slash
+- Flamethrower
+- Giga Drain
+
+Electivire @ Electirizer
+Nature: Jolly
+Ability: Iron Fist
+Level: 1
+Ball: Great Ball
+- Mach Punch
+- Plasma Fists
+- Close Combat
+- Ice Punch
+
+Jumpluff @ Sharp Beak
+Nature: Jolly
+Ability: Aerilate
+Level: 1
+Ball: Great Ball
+- Spore
+- Double Edge
+- Leaf Blade
+- Swords Dance
+
+Darmanitan @ Life Orb
+Nature: Jolly
+Ability: sheer force
+Level: 1
+Ball: Great Ball
+- Flare Blitz
+- Rock Slide
+- U Turn
+- Earthquake
+
+Blastoise @ Blastoisinite
+Nature: Modest
+Ability: Torrent
+Level: 1
+Ball: Great Ball
+- Shell Smash
+- Water Pulse
+- Dark Pulse
+- Aura Sphere
+
+=== TRAINER_RIVAL_SILPH_BULBASAUR ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Azelf @ Focus Sash
+Nature: Naive
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Explosion
+- Flamethrower
+- Psychic
+
+Celesteela @ Weakness Policy
+Nature: Modest
+Ability: Beast Boost
+Level: 1
+Ball: BALL_TYPE_BEAST_BALL
+- Autotomize
+- Air Slash
+- Flamethrower
+- Giga Drain
+
+Electivire @ Electirizer
+Nature: Jolly
+Ability: Iron Fist
+Level: 1
+Ball: Great Ball
+- Mach Punch
+- Plasma Fists
+- Close Combat
+- Ice Punch
+
+Gorebyss @ White Herb
+Nature: Timid
+Ability: Dazzling
+Level: 1
+Ball: Great Ball
+- Shell Smash
+- Surf
+- Moonblast
+- Psychic
+
+Darmanitan @ Life Orb
+Nature: Jolly
+Ability: sheer force
+Level: 1
+Ball: Great Ball
+- Flare Blitz
+- Rock Slide
+- U Turn
+- Earthquake
+
+Venusaur @ Venusaurite
+Nature: Timid
+Ability: Thick Fat
+Level: 1
+Ball: Great Ball
+- Sleep Powder
+- Giga Drain
+- Sludge Bomb
+- Earth Power
+
+=== TRAINER_RIVAL_SILPH_CHARMANDER ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Azelf @ Focus Sash
+Nature: Naive
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Explosion
+- Flamethrower
+- Psychic
+
+Jumpluff @ Sharp Beak
+Nature: Jolly
+Ability: Aerilate
+Level: 1
+Ball: Great Ball
+- Spore
+- Double Edge
+- Leaf Blade
+- Swords Dance
+
+Celesteela @ Weakness Policy
+Nature: Modest
+Ability: Beast Boost
+Level: 1
+Ball: BALL_TYPE_BEAST_BALL
+- Autotomize
+- Air Slash
+- Flamethrower
+- Giga Drain
+
+Electivire @ Electirizer
+Nature: Jolly
+Ability: Iron Fist
+Level: 1
+Ball: Great Ball
+- Mach Punch
+- Plasma Fists
+- Close Combat
+- Ice Punch
+
+Gorebyss @ White Herb
+Nature: Timid
+Ability: Dazzling
+Level: 1
+Ball: Great Ball
+- Shell Smash
+- Surf
+- Moonblast
+- Psychic
+
+Charizard @ Charizardite X
+Nature: Jolly
+Ability: Flame Body, Tough Claws in Mega
+Level: 1
+- Dragon Dance
+- Dragon Claw
+- Flare Blitz
+- Earthquake
+
+=== TRAINER_HC_SILPHCO_ARIANA ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Incineroar @ Sitrus Berry
+Nature: Careful
+Ability: Intimidate
+Level: 55
+Ball: Great Ball
+- Fake Out
+- Knock Off
+- Will O Wisp
+- Flare Blitz
+
+Primarina @ Throat Spray
+Nature: Modest
+Ability: Liquid Voice
+Level: 55
+Ball: Great Ball
+- Hyper Voice
+- Scald
+- Psychic
+- Energy Ball
+
+Mawile @ Mawilite
+Nature: Adamant
+Ability: Intimidate
+Level: 56
+Ball: Great Ball
+- Play Rough
+- Sucker Punch
+- Iron Head
+- Thunder Punch
+
+=== TRAINER_HC_SILPHCO_ARCHER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Articuno G @ Colbur Berry
+Nature: Timid
+Ability: Competitive
+Level: 55
+Ball: Ultra Ball
+- Psychic
+- Focus Blast
+- Roost
+- Air Slash
+
+Gholdengo @ Ghostium Z
+Nature: Timid
+Ability: Stance Change
+Level: 55
+Ball: Great Ball
+- Shadow Ball
+- Make It Rain
+- Focus Blast
+- Recover
+
+Houndoom @ Houndoominite
+Nature: Naive
+Ability: Early Bird, Dark Aura Mega
+Level: 56
+Ball: Dusk Ball
+- Pursuit
+- Fiery Wrath
+- Heat Wave
+- Scorching Sands
+
+=== TRAINER_BOSS_GIOVANNI_2 ===
+Name: Giovanni
+Class: Boss Frlg
+Pic: Leader Giovanni Frlg
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Mamoswine @ Focus Sash
+Nature: Jolly
+Ability: Thick Fat
+Level: 57
+Ball: Great Ball
+- Stone Edge
+- Ice Shard
+- Headlong Rush
+- Icicle Crash
+
+Dracovish @ Water Gem
+Nature: Adamant
+Ability: Sand Rush
+Level: 57
+Ball: Great Ball
+- Fishious Rend
+- Psychic Fangs
+- Crunch
+- Dragon Claw
+
+Gyarados @ Flyinium Z
+Nature: Jolly
+Ability: Moxie
+Level: 57
+Ball: Great Ball
+- Dragon Dance
+- Waterfall
+- Earthquake
+- Bounce
+
+Garganacl @ Leftovers
+Nature: Careful
+Ability: Purifying Salt
+Level: 57
+Ball: Great Ball
+- Iron Defense
+- Body Press
+- Salt Cure
+- Recover
+
+Excadrill @ Focus Sash
+Nature: Jolly
+Ability: Sand Rush
+Level: 57
+Ball: Ultra Ball
+- Swords Dance
+- Earthquake
+- Iron Head
+- Rock Slide
+
+Garchomp @ Garchompite
+Nature: Jolly
+Ability: Sand Veil, Sand Force Mega
+Level: 57
+Ball: BALL_TYPE_CHERISH_BALL
+- Swords Dance
+- Earthquake
+- Scale Shot
+- Stone Edge
+
+=== TRAINER_HC_SAFFRON_CHUCK ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ironcrown @ Rocky Helmet
+Nature: Timid
+Ability: Sharpness
+Level: 1
+Ball: Great Ball
+- Psychic Noise
+- Tachyon Cutter
+- Secret Sword
+- Volt Switch
+
+Sneasler @ Liechi Berry
+Nature: Jolly
+Ability: Unburden
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Close Combat
+- Poison Jab
+- Knock Off
+- Earthquake
+
+Kommo O @ Kommonium Z
+Nature: Naive
+Ability: Poison Heal
+Level: 1
+Ball: Great Ball
+- Clanging Scales
+- Close Combat
+- Poison Jab
+- Flamethrower
+
+Annihilape @ Salac Berry
+Nature: Jolly
+Ability: Defiant
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Bulk Up
+- Drain Punch
+- Rage Fist
+- Ice Punch
+
+Zamazenta @ Rusted Shield
+Nature: Jolly
+Ability: Dauntless Shield
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Bulk Up
+- Behemoth Bash
+- Body Press
+- Wild Charge
+
+Gallade @ Galladite
+Nature: Jolly
+Ability: Sharpness
+Level: 1
+Ball: Ultra Ball
+- Bulk Up
+- Drain Punch
+- Psycho Cut
+- Night Slash
+
+=== TRAINER_LEADER_SABRINA ===
+Name: SABRINA
+Class: Leader Frlg
+Pic: Leader Sabrina Frlg
+Gender: Male
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Tapu Fini @ Focus Sash
+Nature: Quiet
+Ability: Misty Surge
+Level: 59
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Love Ball
+- Misty Explosion
+- Muddy Water
+- Moonblast
+- Flip Turn
+
+Camerupt @ Cameruptite
+Nature: Quiet
+Ability: Sheer Force
+Level: 59
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Flamethrower
+- Earth Power
+- Steam Eruption
+- Slack Off
+
+Glastrier @ Iapapa Berry
+Nature: Brave
+Ability: Moxie
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Ultra Ball
+- Swords Dance
+- Ice Hammer
+- Close Combat
+- High Horsepower
+
+Magearna @ Fightinium Z
+Nature: Quiet
+Ability: Soul Heart
+Level: 59
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Ultra Ball
+- Moonblast
+- Flash Cannon
+- Focus Blast
+- Thunderbolt
+
+Ironhands @ Booster Energy
+Nature: Brave
+Ability: Quark Drive
+Level: 59
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Drain Punch
+- Plasma Fists
+- Knock Off
+- Ice Punch
+
+Jellicent @ Mystic Water
+Nature: Quiet
+Ability: Water bubble
+Level: 59
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Water Spout
+- Shadow Ball
+- Strength Sap
+- Hydro Pump
+
+=== TRAINER_HC_SAFFRON_DUMBASSKID ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Beartic @ Focus Sash
+Nature: Jolly
+Ability: Swift Swim
+Level: 1
+Ball: Great Ball
+- Swords Dance
+- Ice Hammer
+- Liquidation
+- Close Combat
+
+Zapdos @ Flyinium Z
+Nature: Timid
+Ability: Static
+Level: 1
+Ball: Great Ball
+- Volt Switch
+- Thunder
+- Hurricane
+- Weather Ball
+
+Frosmoth @ Leftovers
+Nature: Timid
+Ability: Ice Scales
+Level: 1
+Ball: Ultra Ball
+- Quiver Dance
+- Hurricane
+- Weather Ball
+- Ice Beam
+
+Goodra @ Leftovers
+Nature: Impish
+Ability: Hydration
+Level: 1
+Ball: Ultra Ball
+- Curse
+- Rest
+- Draco Barrage
+- Earthquake
+
+Scizor @ Assault Vest
+Nature: Adamant
+Ability: Technician
+Level: 1
+Ball: Great Ball
+- Bullet Punch
+- U Turn
+- Dual Wingbeat
+- Rock Smash
+
+Swampert @ Swampertite
+Nature: Adamant
+Ability: Damp, Swift Swim in Mega
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Power Up Punch
+- Waterfall
+- Earthquake
+- Ice Punch
+
+=== TRAINER_HC_PEWTER_BROCKREMATCH ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ironboulder @ Lum Berry
+Nature: Jolly
+Ability: Justified
+Level: 68
+Ball: BALL_TYPE_CHERISH_BALL
+- Stealth Rock
+- Close Combat
+- Mighty Cleave
+- Zen Headbutt
+
+Landorus @ Life Orb
+Nature: Naive
+Ability: Sand Force
+Level: 68
+Ball: Great Ball
+- U Turn
+- Earthquake
+- Stone Edge
+- Grass Knot
+
+Zygarde @ Leftovers
+Nature: Careful
+Ability: power construct
+Level: 68
+Ball: BALL_TYPE_CHERISH_BALL
+- Coil
+- Thousand Arrows
+- Rest
+- Sleep Talk
+
+Irontreads @ Booster Energy
+Nature: Jolly
+Ability: Quark Drive
+Level: 68
+Ball: Ultra Ball
+- Knock Off
+- Earthquake
+- Iron Head
+- Ice Spinner
+
+Ursaluna Blood @ Leftovers
+Nature: Modest
+Ability: Scrappy
+Level: 68
+Ball: Great Ball
+- Blood Moon
+- Earth Power
+- Vacuum Wave
+- Hyper Voice
+
+Aerodactyl @ Aerodactylite
+Nature: Jolly
+Ability: Pressure
+Level: 68
+Ball: BALL_TYPE_CHERISH_BALL
+- Dragon Dance
+- Stone Edge
+- Earthquake
+- Dual Wingbeat
+
+=== TRAINER_HC_CERULEAN_MISTYREMATCH ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ironbundle @ Focus Sash
+Nature: Timid
+Ability: Quark Drive
+Level: 68
+Ball: Ultra Ball
+- Hydro Pump
+- Freeze Dry
+- Flip Turn
+- Ice Beam
+
+Palafin Hero @ Mystic Water
+Nature: Jolly
+Ability: Mold Breaker KEKW
+Level: 68
+Ball: Ultra Ball
+- Jet Punch
+- Waterfall
+- Drain Punch
+- Bulk Up
+
+Kingdra @ Life Orb
+Nature: Modest
+Ability: Swift Swim
+Level: 68
+Ball: Great Ball
+- Hydro Pump
+- Draco Barrage
+- Hurricane
+- Flip Turn
+
+Archaludon @ Assault Vest
+Nature: Calm
+Ability: Stamina
+Level: 68
+Ball: Ultra Ball
+- Body Press
+- Electro Shot
+- Dragon Pulse
+- Flash Cannon
+
+Thundurus Therian @ Fightinium Z
+Nature: Timid
+Ability: Volt Absorb
+Level: 68
+Ball: Great Ball
+- Nasty Plot
+- Thunder
+- Weather Ball
+- Focus Blast
+
+Gyarados @ Gyaradosite
+Nature: Jolly
+Ability: Intimidate
+Level: 68
+Ball: Ultra Ball
+- Dragon Dance
+- Waterfall
+- Crunch
+- Earthquake
+
+=== TRAINER_HC_VERMILION_LTSURGEREMATCH ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pawmot @ Focus Sash
+Nature: Jolly
+Ability: Iron Fist
+Level: 1
+Ball: Great Ball
+- Thunder Punch
+- Close Combat
+- Mach Punch
+- Ice Punch
+
+Ironthorns @ Lum Berry
+Nature: Jolly
+Ability: Quark Drive
+Level: 1
+Ball: Ultra Ball
+- Dragon Dance
+- Fusion Bolt
+- Stone Edge
+- Ice Punch
+
+Ironmoth @ Fire Gem
+Nature: Timid
+Ability: Quark Drive
+Level: 1
+Ball: Ultra Ball
+- Fiery Dance
+- Sludge Wave
+- Energy Ball
+- Dazzling Gleam
+
+Ironhands @ Assault Vest
+Nature: Careful
+Ability: Quark Drive
+Level: 1
+Ball: Ultra Ball
+- Plasma Fists
+- Drain Punch
+- Ice Punch
+- Fake Out
+
+Miraidon @ Leftovers
+Nature: Timid
+Ability: Hadron Engine
+Level: 1
+Ball: Master Ball
+- Calm Mind
+- Parabolic Charge
+- Dragon Pulse
+- Dazzling Gleam
+
+Manectric @ Manectite
+Nature: Timid
+Ability: Intimidate
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Rising Voltage
+- Hidden Power
+- Flamethrower
+- Volt Switch
+
+=== TRAINER_HC_ROUTE8_CENTIMINIBOSS ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Druddigon @ Rocky Helmet
+Nature: Impish
+Ability: Rough Skin
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Dragon Hammer
+- Glare
+- Roost
+
+Moltres G @ Weakness Policy
+Nature: Timid
+Ability: Berserk
+Level: 1
+Ball: Great Ball
+- Agility
+- Fiery Wrath
+- Air Slash
+- Scorching Sands
+
+Tapu Fini @ Leftovers
+Nature: Bold
+Ability: misty Surge
+Level: 1
+Ball: Great Ball
+- Calm Mind
+- Surf
+- Draining Kiss
+- Ice Beam
+
+Landorus Therian @ Flyinium Z
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Swords Dance
+- Earthquake
+- Fly
+- Stone Edge
+
+Ferrothorn @ Rocky Helmet
+Nature: Relaxed
+Ability: Iron Barbs
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Leech Seed
+- Explosion
+- Power Whip
+- Gyro Ball
+
+Centiskorch @ Centiskite
+Nature: Jolly
+Ability: Flash Fire
+Level: 1
+Ball: Ultra Ball
+- Coil
+- Fire Lash
+- Leech Life
+- Knock Off
+
+=== TRAINER_HC_CELADON_FLAPPLE1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Tapu Koko @ Focus Sash
+Nature: Naive
+Ability: Electric Surge
+Level: 1
+Ball: Great Ball
+- Volt Switch
+- Thunderbolt
+- Play Rough
+- Grass Knot
+
+Hitmonlee @ Electric Seed
+Nature: Adamant
+Ability: Unburden
+Level: 1
+Ball: Great Ball
+- Bulk Up
+- Close Combat
+- Knock Off
+- Poison Jab
+
+Vaporeon @ Eevium Z
+Nature: Timid
+Ability: Water Absorb
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Last Resort
+- Surf
+- Ice Beam
+- Hidden Power
+
+Flapple @ Applite
+Nature: Naive
+Ability: Intimidate
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Scale Shot
+- Grav Apple
+- Draco Meteor
+- Sucker Punch
+
+=== TRAINER_HC_CELADON_FLAPPLE2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Dodrio @ Focus Sash
+Nature: Jolly
+Ability: Rock head
+Level: 1
+Ball: Great Ball
+- Pursuit
+- Brave Bird
+- Double Edge
+- Jump Kick
+
+Klinklang @ Fightinium Z
+Nature: Adamant
+Ability: Steel Worker
+Level: 1
+Ball: Great Ball
+- Shift Gear
+- Gear Grind
+- Volt Tackle
+- Superpower
+
+Cinderace @ Life Orb
+Nature: Jolly
+Ability: Protean
+Level: 1
+Ball: Great Ball
+- Pyro Ball
+- U Turn
+- High Jump Kick
+- Sucker Punch
+
+Appletun @ Applite
+Nature: Modest
+Ability: Intimidate
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Draco Meteor
+- Superpower
+- Leaf Storm
+- Recover
+
+=== TRAINER_HC_FUSCHIA_SANDACONDITE ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Silvally Fairy @ Leftovers
+Nature: Jolly
+Ability: Battle Armor
+Level: 1
+Ball: Great Ball
+- Multi Attack
+- Thunder Wave
+- Parting Shot
+- Explosion
+
+Escavalier @ Assault Vest
+Nature: Adamant
+Ability: Overcoat
+Level: 1
+Ball: Great Ball
+- Double Iron Bash
+- Megahorn
+- Close Combat
+- Knock Off
+
+Hawlucha @ Power Herb
+Nature: Adamant
+Ability: Unburden
+Level: 1
+Ball: Great Ball
+- Sky Attack
+- Swords Dance
+- Close Combat
+- Acrobatics
+
+Starmie @ Power Herb
+Nature: Timid
+Ability: Illuminate
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Meteor Beam
+- Hydro Pump
+- Blizzard
+- Psyshock
+
+Cursola @ Power Herb
+Nature: Timid
+Ability: Unburden
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Meteor Beam
+- Shadow Ball
+- Earth Power
+- Mystical Fire
+
+Sandaconda @ Sandacondite
+Nature: Adamant
+Ability: Shed Skin
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Earthquake
+- Body Slam
+- Coil
+- Glare
+
+=== TRAINER_HC_FUSCHIA_KOGAGYMTRAINER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Mr Mime @ Life Orb
+Nature: Timid
+Ability: MISTY SURGE
+Level: 1
+Ball: Great Ball
+- Misty Explosion
+- Psyshock
+- Mystical Fire
+- Focus Blast
+
+Hatterene @ Life Orb
+Nature: Bold
+Ability: Magic Bounce
+Level: 1
+Ball: Great Ball
+- Misty Explosion
+- Psyshock
+- Mystical Fire
+- Draining Kiss
+
+Electrode @ Life Orb
+Nature: Naive
+Ability: GALVANIZE
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Explosion
+- Hyper Voice
+- Focus Blast
+- Hidden Power
+
+Turtonator @ Leftovers
+Nature: Brave
+Ability: Dauntless Shield
+Level: 1
+Ball: Great Ball
+- Explosion
+- Flamethrower
+- Dragon Pulse
+- Focus Blast
+
+Silvally @ Life Orb
+Nature: Jolly
+Ability: Battle Armor
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Explosion
+- Multi Attack
+- Parting Shot
+- Shadow Claw
+
+Volcanion @ Life Orb
+Nature: Naive
+Ability: Water Absorb
+Level: 1
+Ball: Master Ball
+- Explosion
+- Steam Eruption
+- Flamethrower
+- Earth Power
+
+=== TRAINER_HC_FUSCHIA_BRENDAN ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Gengar @ Focus Sash
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Shadow Ball
+- Sludge Wave
+- Focus Blast
+- Giga Drain
+
+Nihilego @ Power Herb
+Nature: Timid
+Ability: Beast Boost
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 21 SpD / 31 Spe
+Ball: BALL_TYPE_BEAST_BALL
+- Meteor Beam
+- Sludge Wave
+- Thunderbolt
+- Grass Knot
+
+Tapu Koko @ Leftovers
+Nature: Naive
+Ability: Electric Terrain
+Level: 1
+Ball: Great Ball
+- Wild Charge
+- Play Rough
+- Rising Voltage
+- Grass Knot
+
+Urshifu Rapid @ Mystic Water
+Nature: Jolly
+Ability: Unseen Fist
+Level: 1
+Ball: Great Ball
+- Surging Strikes
+- Close Combat
+- Aqua Jet
+- U Turn
+
+Deoxys Attack @ Life Orb
+Nature: Naive
+Ability: Pressure
+Level: 1
+Ball: Master Ball
+- Psychic
+- Ice Beam
+- Extreme Speed
+- Fire Punch
+
+Sceptile @ Sceptilite
+Nature: Jolly
+Ability: Overgrow, Technician in Mega
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Dragon Dance
+- Dual Chop
+- Bullet Seed
+- Earthquake
+
+=== TRAINER_LEADER_KOGA ===
+Name: KOGA
+Class: Leader Frlg
+Pic: Leader Koga Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Tapu Lele @ Twisted Spoon
+Nature: Modest
+Ability: Psychic Surge
+Level: 68
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Ultra Ball
+- Psyshock
+- Moonblast
+- Focus Blast
+- Hidden Power
+
+Hoopa Unbound @ Darkinium Z
+Nature: Modest
+Ability: Magician
+Level: 68
+Ball: Dusk Ball
+- Dark Pulse
+- Expanding Force
+- Thunderbolt
+- Focus Blast
+
+Krookodile @ Black Glasses
+Nature: Adamant
+Ability: Moxie
+Level: 68
+Ball: Dusk Ball
+- Wicked Blow
+- Earthquake
+- Close Combat
+- Stone Edge
+
+Chi Yu @ Focus Sash
+Nature: Modest
+Ability: Beads of Ruin
+Level: 68
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Master Ball
+- Dark Pulse
+- Flamethrower
+- Psychic
+- Hidden Power
+
+Nidoking @ Life Orb
+Nature: Rash
+Ability: Sheer Force
+Level: 68
+Ball: Ultra Ball
+- Earth Power
+- Poison Jab
+- Ice Beam
+- Thunderbolt
+
+Toxtricity @ Toxtricitite
+Nature: Rash
+Ability: Punk Rock
+Level: 68
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: BALL_TYPE_CHERISH_BALL
+- Boomburst
+- Overdrive
+- Drain Punch
+- Hidden Power
+
+=== TRAINER_HC_SEAFOAM_PRYCE1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Jynx @ Focus Sash
+Nature: Timid
+Ability: Dry Skin
+Level: 1
+Ball: Great Ball
+- Lovely Kiss
+- Psystrike
+- Blizzard
+- Focus Blast
+
+Cloyster @ White Herb
+Nature: Jolly
+Ability: Skill Link
+Level: 1
+Ball: Great Ball
+- Shell Smash
+- Icicle Spear
+- Waterfall
+- Rock Blast
+
+Clefable @ Life Orb
+Nature: Modest
+Ability: Magic Guard
+Level: 1
+Ball: Great Ball
+- Thunder Wave
+- Teleport
+- Light Of Ruin
+- Flamethrower
+
+Kyurem Black @ Icium Z
+Nature: Jolly
+Ability: Teravolt
+Level: 1
+Ball: Great Ball
+- Dragon Dance
+- Icicle Crash
+- Fusion Bolt
+- Roost
+
+Arctozolt @ Life Orb
+Nature: Lonely
+Ability: Slush Rush
+Level: 1
+Ball: Ultra Ball
+- Bolt Beak
+- Icicle Crash
+- Freeze Dry
+- Low Kick
+
+Glalie @ Glalitite
+Nature: Jolly
+Ability: Ice Body, Refrigerate Mega
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- Quick Attack
+- Earthquake
+- Double Edge
+
+=== TRAINER_HC_SEAFOAM_PRYCE2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Sandslash A @ Focus Sash
+Nature: Adamant
+Ability: Slush Rush
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Earthquake
+- Icicle Spear
+- Iron Head
+
+Reuniclus @ Leftovers
+Nature: Bold
+Ability: Magic Guard
+Level: 1
+Ball: Great Ball
+- Calm Mind
+- Recover
+- Psychic
+- Focus Blast
+
+Clefable @ Life Orb
+Nature: Modest
+Ability: Magic Guard
+Level: 1
+Ball: Great Ball
+- Thunder Wave
+- Teleport
+- Light Of Ruin
+- Flamethrower
+
+Kyurem Black @ Icium Z
+Nature: Jolly
+Ability: Teravolt
+Level: 1
+Ball: Great Ball
+- Dragon Dance
+- Icicle Crash
+- Fusion Bolt
+- Roost
+
+Arctovish @ Life Orb
+Nature: Adamant
+Ability: Slush Rush
+Level: 1
+Ball: Ultra Ball
+- Fishious Rend
+- Icicle Crash
+- Stone Edge
+- Psychic Fangs
+
+Glalie @ Glalitite
+Nature: Jolly
+Ability: Ice Body, Refrigerate Mega
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- Quick Attack
+- Earthquake
+- Double Edge
+
+=== TRAINER_HC_SEAFOAM_PRYCE3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Jynx @ Focus Sash
+Nature: Timid
+Ability: Dry Skin
+Level: 1
+Ball: Great Ball
+- Lovely Kiss
+- Psystrike
+- Blizzard
+- Focus Blast
+
+Cloyster @ White Herb
+Nature: Jolly
+Ability: Skill Link
+Level: 1
+Ball: Great Ball
+- Shell Smash
+- Icicle Spear
+- Waterfall
+- Rock Blast
+
+Clefable @ Life Orb
+Nature: Modest
+Ability: Magic Guard
+Level: 1
+Ball: Great Ball
+- Blizzard
+- Teleport
+- Light Of Ruin
+- Flamethrower
+
+Kyurem Black @ Icium Z
+Nature: Jolly
+Ability: Teravolt
+Level: 1
+Ball: Great Ball
+- Dragon Dance
+- Icicle Crash
+- Fusion Bolt
+- Roost
+
+Arctozolt @ Life Orb
+Nature: Lonely
+Ability: Slush Rush
+Level: 1
+Ball: Ultra Ball
+- Bolt Beak
+- Icicle Crash
+- Freeze Dry
+- Low Kick
+
+Glalie @ Glalitite
+Nature: Jolly
+Ability: Ice Body, Refrigerate Mega
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- Quick Attack
+- Earthquake
+- Double Edge
+
+=== TRAINER_HC_CELADON_ERIKARE ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Meowscarada @ Life Orb
+Nature: Jolly
+Ability: Striker
+Level: 68
+Ball: Great Ball
+- Flower Trick
+- Triple Axel
+- Knock Off
+- U Turn
+
+Serperior @ Focus Sash
+Nature: Timid
+Ability: Contrary
+Level: 68
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Leaf Storm
+- Hidden Power
+- Dragon Pulse
+- Knock Off
+
+Hawlucha @ Grassy Seed
+Nature: Adamant
+Ability: Unburden
+Level: 68
+Ball: BALL_TYPE_CHERISH_BALL
+- Swords Dance
+- Close Combat
+- Acrobatics
+- Stone Edge
+
+Kartana @ Life Orb
+Nature: Jolly
+Ability: Beast Boost
+Level: 68
+Ball: BALL_TYPE_BEAST_BALL
+- Swords Dance
+- Grassy Glide
+- Cut
+- Sacred Sword
+
+Magearna @ Grassy Seed
+Nature: Bold
+Ability: Soul Heart
+Level: 68
+Ball: Ultra Ball
+- Calm Mind
+- Draining Kiss
+- Stored Power
+- Aura Sphere
+
+Ampharos @ Ampharosite
+Nature: Modest
+Ability: Static, Thick Fat mega
+Level: 68
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Volt Switch
+- Draco Barrage
+- Signal Beam
+- Focus Blast
+
+=== TRAINER_HC_CINNABAR_MAY ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Aggron @ Custap Berry
+Nature: Adamant
+Ability: Sturdy
+Level: 73
+Ball: Great Ball
+- Stone Edge
+- Heavy Slam
+- Heat Crash
+- Endeavor
+
+Jumpluff @ Flying Gem
+Nature: Jolly
+Ability: Aerilate
+Level: 73
+Ball: Great Ball
+- Double Edge
+- U Turn
+- Spore
+- Synthesis
+
+Regieleki @ Life Orb
+Nature: Naive
+Ability: Transistor
+Level: 73
+Ball: BALL_TYPE_CHERISH_BALL
+- Thunderbolt
+- Electro Ball
+- Volt Switch
+- Explosion
+
+Slowbro @ Leftovers
+Nature: Bold
+Ability: Regenerator
+Level: 73
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Scald
+- Body Press
+- Teleport
+- Slack Off
+
+Snorlax @ Leftovers
+Nature: Careful
+Ability: Thick Fat
+Level: 73
+Ball: Ultra Ball
+- Body Slam
+- Darkest Lariat
+- Curse
+- Rest
+
+Blaziken @ Blazikenite
+Nature: Jolly
+Ability: Speed Boost
+Level: 73
+- Swords Dance
+- Flare Blitz
+- Close Combat
+- Thunder Punch
+
+=== TRAINER_HC_CINNABAR_MANSION1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Froslass @ Focus Sash
+Nature: Jolly
+Ability: Cursed Body
+Level: 1
+Ball: Great Ball
+- Spikes
+- Triple Axel
+- Poltergeist
+- Destiny Bond
+
+Samurott H @ Mystic Water
+Nature: Jolly
+Ability: Sharpness
+Level: 1
+Ball: Ultra Ball
+- Ceaseless Edge
+- Razor Shell
+- Aqua Jet
+- Sacred Sword
+
+Pidgeot @ Pidgeotite
+Nature: Timid
+Ability: No Guard
+Level: 1
+Ball: Great Ball
+- Hurricane
+- Focus Blast
+- Heat Wave
+- U Turn
+
+Emboar @ Fighting Gem
+Nature: Naive
+Ability: Bull Rush
+Level: 1
+- Close Combat
+- Flare Blitz
+- Wild Charge
+- Grass Knot
+
+Leafeon @ Eevium Z
+Nature: Jolly
+Ability: Sap Sipper
+Level: 1
+Ball: Ultra Ball
+- Last Resort
+- Sappy Seed
+- Jump Kick
+- Knock Off
+
+Flygon @ Life Orb
+Nature: Naive
+Ability: Tinted Lens
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Earthquake
+- Draco Barrage
+- U Turn
+- Stone Edge
+
+=== TRAINER_HC_CINNABAR_MANSION2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Arcanine @ Leftovers
+Nature: Adamant
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Will O Wisp
+- Extreme Speed
+- Flare Blitz
+- Morning Sun
+
+Rillaboom @ Assault Vest
+Nature: Adamant
+Ability: Grassy Surge
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- Grassy Glide
+- U Turn
+- Knock Off
+
+Drapion @ Life Orb
+Nature: Jolly
+Ability: Sniper
+Level: 1
+Ball: Great Ball
+- Leech Life
+- Poison Jab
+- Wicked Blow
+- Aqua Tail
+
+Lopunny @ Lopunnite
+Nature: Jolly
+Ability: Limber
+Level: 1
+Ball: Great Ball
+- U Turn
+- Return
+- Close Combat
+- Triple Axel
+
+Spectrier @ Ghostium Z
+Nature: Timid
+Ability: Grim Neigh
+Level: 1
+IVs: 31 HP / 31 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Ball: BALL_TYPE_CHERISH_BALL
+- Shadow Ball
+- Hidden Power
+- Dark Pulse
+- Sleep Talk
+
+Articuno G @ Grassy Seed
+Nature: Timid
+Ability: Competitive
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Calm Mind
+- Roost
+- Freezing Glare
+- Air Slash
+
+=== TRAINER_LEADER_JASMINE ===
+Name: Jasmine
+Class: Leader
+Pic: Leader Jasmine
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Purple
+Boss: Yes
+Dynamic Level Ratio: 90
+Difficulty: Hard
+
+Gliscor @ Toxic Orb
+Nature: Jolly
+Ability: Poison Heal
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- High Horsepower
+- Protect
+- Toxic
+
+Tapu Bulu @ Life Orb
+Nature: Jolly
+Ability: Grassy Surge
+Level: 1
+Ball: Ultra Ball
+- Grassy Glide
+- Play Rough
+- Close Combat
+- Swords Dance
+
+Necrozma Dusk Mane @ Weakness Policy
+Nature: Jolly
+Ability: Full Metal Body
+Level: 1
+Ball: Dusk Ball
+- Dragon Dance
+- Sunsteel Strike
+- Stone Edge
+- High Horsepower
+
+Genesect @ Life Orb
+Nature: Naive
+Ability: Download
+Level: 1
+Ball: Great Ball
+- Extreme Speed
+- U Turn
+- Flamethrower
+- Thunderbolt
+
+Magnezone @ Assault Vest
+Nature: Modest
+Ability: Sturdy
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Thunderbolt
+- Flash Cannon
+- Hidden Power
+- Body Press
+
+Aggron @ Aggronite
+Nature: Careful
+Ability: Sturdy, Filter mega
+Level: 1
+Ball: Ultra Ball
+- Curse
+- Heavy Slam
+- Rest
+- Sleep Talk
+
+=== TRAINER_HC_CINNABAR_ACETRAINER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Zapdos G @ Flying Gem
+Nature: Jolly
+Ability: Defiant
+Level: 1
+- Acrobatics
+- Close Combat
+- U Turn
+- Thunderous Kick
+
+Arcanine H @ Fire Gem
+Nature: Jolly
+Ability: Rock Head
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Head Smash
+- Flare Blitz
+- Wild Charge
+- Accelerock
+
+Rhyperior @ Rockium Z
+Nature: Jolly
+Ability: Solid Rock
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Stone Edge
+- Earthquake
+- Fire Punch
+- Megahorn
+
+Delphox @ Life Orb
+Nature: Timid
+Ability: Magic Guard
+Level: 1
+- Mind Blown
+- Psychic
+- Grass Knot
+- Shadow Ball
+
+Centiskorch @ Centiskite
+Nature: Jolly
+Ability: Flash Fire, Mountaineer Mega
+Level: 1
+- Flare Blitz
+- Leech Life
+- Power Whip
+- Coil
+
+=== TRAINER_HC_CINNABAR_ACETRAINER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Lycanroc @ Focus Sash
+Nature: Jolly
+Ability: Steadfast
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Endeavor
+- Accelerock
+- Rock Tomb
+
+Darmanitan @ Life Orb
+Nature: Jolly
+Ability: Sheer Force
+Level: 1
+- Flare Blitz
+- U Turn
+- Rock Slide
+- Earthquake
+
+Gliscor @ Flying Gem
+Nature: Jolly
+Ability: Hyper Cutter
+Level: 1
+- Swords Dance
+- Earthquake
+- Acrobatics
+- Rock Slide
+
+Ragingbolt @ Assault Vest
+Nature: Modest
+Ability: Protosynthesis boost SpA
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Volt Switch
+- Weather Ball
+- Thunderclap
+- Solar Beam
+
+Charizard @ Firium Z
+Nature: Timid
+Ability: Solar Power
+Level: 1
+- Fire Blast
+- Solar Beam
+- Air Slash
+- Scorching Sands
+
+=== TRAINER_HC_CINNABAR_ACETRAINER3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Cinderace @ Focus Sash
+Nature: Jolly
+Ability: Libero
+Level: 1
+Ball: Great Ball
+- Pyro Ball
+- High Jump Kick
+- Gunk Shot
+- Sucker Punch
+
+Salamence @ Salamencite
+Nature: Naive
+Ability: intimidate
+Level: 1
+- Heat Wave
+- Tailwind
+- Double Edge
+- Draco Barrage
+
+Braviary H @ Life Orb
+Nature: Timid
+Ability: Tinted Lens
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Air Slash
+- Heat Wave
+- Roost
+- Esper Wing
+
+Excadrill @ Ground Gem
+Nature: Adamant
+Ability: Mold Breaker
+Level: 1
+Ball: Great Ball
+- High Horsepower
+- Iron Head
+- Earthquake
+- Rock Slide
+
+Volcarona @ Fire Gem
+Nature: Timid
+Ability: Flame Body
+Level: 1
+- Fire Blast
+- Bug Buzz
+- Giga Drain
+- Psychic
+
+=== TRAINER_LEADER_BLAINE ===
+Name: BLAINE
+Class: Leader Frlg
+Pic: Leader Blaine Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Sandyshocks @ Shuca Berry
+Nature: Timid
+Ability: Protosynthesis
+Level: 76
+Ball: Ultra Ball
+- Earth Power
+- Volt Switch
+- Thunderbolt
+- Hidden Power
+
+Greattusk @ Fighting Gem
+Nature: Jolly
+Ability: Protosynthesis
+Level: 76
+Ball: Ultra Ball
+- Ice Spinner
+- Knock Off
+- Headlong Rush
+- Close Combat
+
+Walkingwake @ Water Gem
+Nature: Timid
+Ability: Protosynthesis
+Level: 76
+Ball: Master Ball
+- Draco Barrage
+- Hydro Steam
+- Flamethrower
+- Sleep Talk
+
+Venusaur @ Focus Sash
+Nature: Modest
+Ability: Chlorophyll
+Level: 76
+Ball: Great Ball
+- Growth
+- Solar Beam
+- Sludge Bomb
+- Weather Ball
+
+Ho Oh @ Flyinium Z
+Nature: Jolly
+Ability: Phoenix Down
+Level: 76
+Ball: Master Ball
+- Sacred Fire
+- Brave Bird
+- Earthquake
+- Solar Beam
+
+Charizard @ Charizardite X
+Nature: Jolly
+Ability: Tough Claws Mega
+Level: 76
+Ball: Ultra Ball
+- Dragon Dance
+- Flare Blitz
+- Dragon Claw
+- Earthquake
+
+=== TRAINER_HC_CERULEANCAVE_GRUNT1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Grimmsnarl @ Light Clay
+Nature: Careful
+Ability: Prankster
+Level: 1
+Ball: Great Ball
+- Reflect
+- Light Screen
+- Spirit Break
+- Darkest Lariat
+
+Ursaring @ Eviolite
+Nature: Adamant
+Ability: Guts
+Level: 1
+Ball: Great Ball
+- Crunch
+- Facade
+- Close Combat
+- Play Rough
+
+Kingambit @ Life Orb
+Nature: Jolly
+Ability: Supreme OVerlord
+Level: 1
+Ball: Great Ball
+- Swords Dance
+- Sucker Punch
+- Knock Off
+- Iron Head
+
+Annihilape @ Leftovers
+Nature: Jolly
+Ability: Defiant
+Level: 1
+Ball: Great Ball
+- Bulk Up
+- Drain Punch
+- Rage Fist
+- Ice Punch
+
+Espathra @ Focus Sash
+Nature: Modest
+Ability: Speed Boost
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Protect
+- Psychic
+- Calm Mind
+- Dazzling Gleam
+
+Sharpedo @ Sharpedonite
+Nature: Jolly
+Ability: Speed Boost, Strong Jaw Mega
+Level: 1
+Ball: Ultra Ball
+- Aqua Fang
+- Crunch
+- Close Combat
+- Aqua Jet
+
+=== TRAINER_HC_CERULEANCAVE_GRUNT2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Glimmora @ Focus Sash
+Nature: Timid
+Ability: Toxic Debris
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Spikes
+- Earth Power
+- Sludge Wave
+
+Mandibuzz @ Leftovers
+Nature: Careful
+Ability: Overcoat
+Level: 1
+Ball: Dusk Ball
+- Foul Play
+- Roost
+- Toxic
+- U Turn
+
+Blissey @ Leftovers
+Nature: Bold
+Ability: Natural Cure
+Level: 1
+Ball: Great Ball
+- Seismic Toss
+- Soft Boiled
+- Teleport
+- Toxic
+
+Tangrowth @ Assault Vest
+Nature: Sassy
+Ability: Regenerator
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Giga Drain
+- Knock Off
+- Earthquake
+- Hidden Power
+
+Slowbro @ Leftovers
+Nature: Bold
+Ability: Regenerator
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Scald
+- Ice Beam
+- Future Sight
+- Teleport
+
+Garbodor @ Garbodorite
+Nature: Adamant
+Ability: Gooey, Parasitic Waste Mega
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Poison Jab
+- Drain Punch
+- Fire Punch
+- Earthquake
+
+=== TRAINER_HC_CERULEANCAVE_ARCHER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ninetales @ Charcoal
+Nature: Timid
+Ability: drought
+Level: 1
+Ball: Great Ball
+- Weather Ball
+- Solar Beam
+- Scorching Sands
+- Hypnosis
+
+Exeggutor @ Life Orb
+Nature: Timid
+Ability: Chlorophyll
+Level: 1
+Ball: Great Ball
+- Solar Beam
+- Psyshock
+- Weather Ball
+- Earth Power
+
+Landorus Therian @ Flyinium Z
+Nature: Jolly
+Ability: INtimidate
+Level: 1
+Ball: Master Ball
+- Earthquake
+- Fly
+- Stone Edge
+- Swords Dance
+
+Houndoom @ Houndoominite
+Nature: Naive
+Ability: Flash Fire, Solar Power Mega
+Level: 1
+Ball: Dusk Ball
+- Dark Hole
+- Flamethrower
+- Sucker Punch
+- Solar Beam
+
+Sunflora @ Focus Sash
+Nature: Timid
+Ability: Chlorophyll
+Level: 1
+IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: Great Ball
+- Growth
+- Solar Beam
+- Weather Ball
+- Hidden Power
+
+=== TRAINER_HC_CERULEANCAVE_ARIANA ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Wailord @ Mystic Water
+Nature: Modest
+Ability: Blubber Defense (same as Multiscale)
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ball: Dive Ball
+- Bouncy Bubble
+- Ice Beam
+- Hidden Power
+
+Espeon @ Eevium Z
+Nature: Timid
+Ability: Magic Bounce
+Level: 1
+Ball: Great Ball
+- Last Resort
+- Psychic
+- Mystical Fire
+- Shadow Ball
+
+Buzzwole @ Coba Berry
+Nature: Jolly
+Ability: Beast Boost
+Level: 1
+Ball: BALL_TYPE_BEAST_BALL
+- Victory Dance
+- Drain Punch
+- Leech Life
+- Ice Punch
+
+Mawile @ Mawilite
+Nature: Adamant
+Ability: Intimidate
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Dusk Ball
+- Sucker Punch
+- Double Iron Bash
+- Play Rough
+- Fire Fang
+
+=== TRAINER_HC_CERULEANCAVE_GIOVANNI ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Spiritomb @ Figy Berry
+Nature: Sassy
+Ability: Intimidate
+Level: 80
+Ball: Dusk Ball
+- Will O Wisp
+- Parting Shot
+- Shadow Ball
+- Sucker Punch
+
+Delphox @ Focus Sash
+Nature: Timid
+Ability: Magic Guard
+Level: 80
+- Heat Wave
+- Expanding Force
+- Grass Knot
+- Shadow Ball
+
+Silvally Fairy @ Leftovers
+Nature: Jolly
+Ability: Battle Armor
+Level: 80
+Ball: Great Ball
+- Multi Attack
+- Flamethrower
+- Parting Shot
+- Thunder Wave
+
+Moltres G @ Flyinium Z
+Nature: Timid
+Ability: Berserk
+Level: 80
+Ball: Dusk Ball
+- Nasty Plot
+- Fiery Wrath
+- Hurricane
+- Roost
+
+Genesect @ Assault Vest
+Nature: Hasty
+Ability: Download
+Level: 80
+Ball: Great Ball
+- U Turn
+- Iron Head
+- Ice Beam
+- Flamethrower
+
+Mewtwo
+Nature: Timid
+Ability: unnerve
+Level: 80
+Ball: Master Ball
+- Expanding Force
+- Soulstrike
+- Flamethrower
+- Aura Sphere
+
+=== TRAINER_HC_CERULEANCAVE_KETCHUP1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Necrozma @ Power Herb
+Nature: Modest
+Ability: Prism Armor
+Level: 1
+Ball: Ultra Ball
+- Stealth Rock
+- Meteor Beam
+- Psyshock
+- Heat Wave
+
+Thundurus Therian @ Life Orb
+Nature: Modest
+Ability: Volt Absorb
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 30 Spe
+Ball: Dusk Ball
+- Nasty Plot
+- Thunderbolt
+- Hidden Power
+- Focus Blast
+
+Magmortar @ Life Orb
+Nature: Modest
+Ability: Mega Launcher
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Flamethrower
+- Aura Sphere
+- Dark Pulse
+- Steam Eruption
+
+Banette @ Banettite
+Nature: Adamant
+Ability: Insomnia/Prankster
+Level: 1
+Ball: Dusk Ball
+- Double Edge
+- Poltergeist
+- Shadow Sneak
+- Destiny Bond
+
+Urshifu Rapid @ Life Orb
+Nature: Jolly
+Ability: Unseen Fist
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Bulk Up
+- Surging Strikes
+- Drain Punch
+- Aqua Jet
+
+Urshifu Single @ Life Orb
+Nature: Jolly
+Ability: Unseen Fist
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Wicked Blow
+- Close Combat
+- Poison Jab
+- U Turn
+
+=== TRAINER_HC_CERULEANCAVE_KETCHUP2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Galvantula @ Petaya Berry
+Nature: Timid
+Ability: Compound Eyes
+Level: 1
+Ball: Great Ball
+- Sticky Web
+- Thunder
+- Bug Buzz
+- Energy Ball
+
+Cloyster @ White Herb
+Nature: Jolly
+Ability: Skill Link
+Level: 1
+Ball: Dusk Ball
+- Shell Smash
+- Liquidation
+- Icicle Spear
+- Rock Blast
+
+Celesteela @ Weakness Policy
+Nature: Timid
+Ability: Soul Heart
+Level: 1
+Ball: BALL_TYPE_BEAST_BALL
+- Autotomize
+- Air Slash
+- Flamethrower
+- Flash Cannon
+
+Dragapult @ Ghostium Z
+Nature: Jolly
+Ability: Clear Body
+Level: 1
+Ball: Dusk Ball
+- Dragon Dance
+- Spirit Shackle
+- Dragon Darts
+- Iron Tail
+
+Urshifu Rapid @ Salac Berry
+Nature: Jolly
+Ability: Unseen Fist
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Bulk Up
+- Surging Strikes
+- Drain Punch
+- Aqua Jet
+
+Urshifu Single @ Choice Scarf
+Nature: Jolly
+Ability: Unseen Fist
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Wicked Blow
+- Close Combat
+- Poison Jab
+- U Turn
+
+=== TRAINER_HC_VIRIDIAN_CLAIR ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Shuckle @ Sitrus Berry
+Nature: Impish
+Ability: Solid Rock
+Level: 81
+Ball: Great Ball
+- Stealth Rock
+- Sticky Web
+- Knock Off
+- Toxic
+
+Roaringmoon @ Booster Energy
+Nature: Jolly
+Ability: Protosynthesis
+Level: 81
+Ball: Dusk Ball
+- Dragon Dance
+- Knock Off
+- Earthquake
+- Scale Shot
+
+Magearna @ Weakness Policy
+Nature: Modest
+Ability: Soul Heart
+Level: 81
+Ball: Love Ball
+- Shift Gear
+- Moonblast
+- Thunderbolt
+- Aura Sphere
+
+Necrozma Dusk Mane @ Ultranecrozium Z
+Nature: Adamant
+Ability: Prism Armor/Neuroforce
+Level: 81
+Ball: Ultra Ball
+- Dragon Dance
+- Photon Geyser
+- Earthquake
+- Dragon Hammer
+
+Eternatus @ Power Herb
+Nature: Timid
+Ability: Pressure
+Level: 81
+Ball: Master Ball
+- Dynamax Cannon
+- Meteor Beam
+- Flamethrower
+- Recover
+
+Archaludon @ Assault Vest
+Nature: Timid
+Ability: Bad Company
+Level: 81
+Ball: Ultra Ball
+- Draco Meteor
+- Steel Beam
+- Thunderbolt
+- Body Press
+
+=== TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Charizard @ Charizardite Y
+Nature: Timid
+Ability: Blaze, Drought Mega
+Level: 1
+- Weather Ball
+- Solar Beam
+- Focus Blast
+- Protect
+
+Garchomp @ Yache Berry
+Nature: Jolly
+Ability: Rough Skin
+Level: 1
+- Swords Dance
+- Scale Shot
+- Earthquake
+- Stone Edge
+
+Sunflora @ Focus Sash
+Nature: Timid
+Ability: Chlorophyll
+Level: 1
+IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe
+Ball: BALL_TYPE_CHERISH_BALL
+- Growth
+- Solar Beam
+- Fiery Dance
+- Hidden Power
+
+Zamazenta @ Rusted Shield
+Nature: Jolly
+Ability: Dauntless Shield
+Level: 1
+Ball: Master Ball
+- Body Press
+- Bulk Up
+- Wild Charge
+- Behemoth Bash
+
+Gliscor @ Toxic Orb
+Nature: Jolly
+Ability: Poison Heal
+Level: 1
+Ball: Great Ball
+- Swords Dance
+- Protect
+- Earthquake
+- Facade
+
+Latias @ Leftovers
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Love Ball
+- Calm Mind
+- Roost
+- Mist Ball
+- Mystical Fire
+
+=== TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Ironhands @ Assault Vest
+Nature: Jolly
+Ability: Quark Drive
+Level: 1
+Ball: Great Ball
+- Drain Punch
+- Plasma Fists
+- Knock Off
+- Ice Punch
+
+Kingambit @ Chople Berry
+Nature: Adamant
+Ability: Supreme Overlord
+Level: 1
+Ball: Dusk Ball
+- Swords Dance
+- Iron Head
+- Knock Off
+- Brick Break
+
+Primarina @ Leftovers
+Nature: Modest
+Ability: Liquid Voice
+Level: 1
+Ball: Love Ball
+- Calm Mind
+- Draining Kiss
+- Hyper Voice
+- Ice Beam
+
+Chandelure @ Life Orb
+Nature: Timid
+Ability: Shadow Tag
+Level: 1
+Ball: Dusk Ball
+- Flamethrower
+- Shadow Ball
+- Energy Ball
+- Calm Mind
+
+Hydreigon @ Darkinium Z
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Dusk Ball
+- Nasty Plot
+- Dark Pulse
+- Flash Cannon
+- Flamethrower
+
+Venusaur @ Venusaurite
+Nature: Timid
+Ability: Overgrow
+Level: 1
+Ball: Ultra Ball
+- Chloroblast
+- Sludge Bomb
+- Earth Power
+- Sleep Powder
+
+=== TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
+Name: TERRY
+Class: Rival Late Frlg
+Pic: Rival Late Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Difficulty: Hard
+
+Zapdos @ Flyinium Z
+Nature: Timid
+Ability: Static
+Level: 1
+Ball: Master Ball
+- Hurricane
+- Thunder
+- Weather Ball
+- Roost
+
+Ferrothorn @ Rocky Helmet
+Nature: Relaxed
+Ability: Iron Barbs
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Leech Seed
+- Power Whip
+- Gyro Ball
+- Thunder
+
+Celesteela @ Weakness Policy
+Nature: Naive
+Ability: Beast Boost
+Level: 1
+Ball: BALL_TYPE_BEAST_BALL
+- Autotomize
+- Iron Head
+- Air Slash
+- Giga Drain
+
+Basculegion @ Mystic Water
+Nature: Jolly
+Ability: Swift Swim
+Level: 1
+Ball: Dive Ball
+- Wave Crash
+- Last Respects
+- Flip Turn
+- Zen Headbutt
+
+Goodra @ Leftovers
+Nature: Modest
+Ability: hydration
+Level: 1
+Ball: Ultra Ball
+- Thunder
+- Hydro Pump
+- Ice Beam
+- Rest
+
+Blastoise @ Blastoisinite
+Nature: Timid
+Ability: Rain Dish
+Level: 1
+Ball: Ultra Ball
+- Shell Smash
+- Dark Pulse
+- Hydro Pump
+- Ice Beam
+
+=== TRAINER_HC_VIRIDIAN_BRENDANFINAL ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Tyrantrum @ Focus Sash
+Nature: Adamant
+Ability: Rock Head
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Dragon Claw
+- Head Smash
+- Earthquake
+- Close Combat
+
+Marowak A @ Thick Club
+Nature: Adamant
+Ability: Bone Zone
+Level: 1
+Ball: Great Ball
+- Shadow Bone
+- Fire Punch
+- Bonemerang
+- Swords Dance
+
+Empoleon @ Leftovers
+Nature: Bold
+Ability: Competitive
+Level: 1
+- Calm Mind
+- Roost
+- Scald
+- Ice Beam
+
+Landorus @ Life Orb
+Nature: Rash
+Ability: Sheer Force
+Level: 1
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Earth Power
+- Rock Slide
+- Psychic
+- Hidden Power
+
+Ursaluna Blood @ Assault Vest
+Nature: Timid
+Ability: Scrappy
+Level: 1
+Ball: Great Ball
+- Hyper Voice
+- Earth Power
+- Blood Moon
+- Aura Sphere
+
+Sceptile @ Sceptilite
+Nature: Jolly
+Ability: Overgrow Technician Mega
+Level: 1
+- Swords Dance
+- Dual Chop
+- Bullet Seed
+- Earthquake
+
+=== TRAINER_HC_VICTORYROAD_ACETRAINER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Maushold @ Wide Lens
+Nature: Jolly
+Ability: Technician
+Level: 1
+Ball: Great Ball
+- Population Bomb
+- Bullet Seed
+- U Turn
+- Beat Up
+
+Veluza @ Sitrus Berry
+Nature: Jolly
+Ability: Sharpness
+Level: 1
+Ball: Great Ball
+- Fillet Away
+- Aqua Cutter
+- Psycho Cut
+- Aqua Jet
+
+Shedinja @ Focus Sash
+Nature: Adamant
+Ability: Wonder Guard
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Will O Wisp
+- Poltergeist
+- Shadow Sneak
+- X Scissor
+
+Absol @ Absolite
+Nature: Naive
+Ability: Super Luck Sharpness
+Level: 1
+Ball: Dusk Ball
+- Night Slash
+- Sucker Punch
+- Play Rough
+- Psycho Cut
+
+Galvantula @ Focus Sash
+Nature: Timid
+Ability: Compound eyes
+Level: 1
+Ball: Net Ball
+- Volt Switch
+- Energy Ball
+- Bug Buzz
+- Thunder
+
+Blacephalon @ Ghostium Z
+Nature: Timid
+Ability: Beast Boost
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Shadow Ball
+- Flamethrower
+- Psyshock
+
+=== TRAINER_HC_VICTORYROAD_ACETRAINER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Cyclizar @ Sitrus Berry
+Nature: Jolly
+Ability: Regenerator
+Level: 1
+Ball: Great Ball
+- Shed Tail
+- Knock Off
+- Body Slam
+- Dragon Claw
+
+Volcanion @ Waterium Z
+Nature: Timid
+Ability: Water Absorb
+Level: 1
+Ball: Ultra Ball
+- Steam Eruption
+- Flamethrower
+- Sludge Bomb
+- Earth Power
+
+Flygon @ Life Orb
+Nature: Jolly
+Ability: Levitate
+Level: 1
+Ball: Great Ball
+- Dragon Dance
+- Earthquake
+- Dragon Claw
+- Fire Punch
+
+Crobat @ Sitrus Berry
+Nature: Timid
+Ability: Sniper
+Level: 1
+- Nasty Plot
+- Hurricane
+- Heat Wave
+- Giga Drain
+
+Kingler @ Kinglerite
+Nature: Jolly
+Ability: Hyper Cutter Tough Claws Mega
+Level: 1
+Ball: Ultra Ball
+- Crabhammer
+- Close Combat
+- Ice Hammer
+- Aqua Jet
+
+Hatterene @ Leftovers
+Nature: Modest
+Ability: Magic Bounce
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Draining Kiss
+- Psyshock
+- Mystical Fire
+
+=== TRAINER_HC_VICTORYROAD_ACETRAINER3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Clefable @ Life Orb
+Nature: Modest
+Ability: Magic Guard
+Level: 1
+Ball: Great Ball
+- Moonblast
+- Fire Blast
+- Thunderbolt
+- Stealth Rock
+
+Dondozo @ Leftovers
+Nature: Careful
+Ability: Unaware
+Level: 1
+Ball: Love Ball
+- Body Press
+- Liquidation
+- Earthquake
+- Toxic
+
+Mew @ Leftovers
+Nature: Jolly
+Ability: Synchronize
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Dragon Dance
+- Drain Punch
+- Psycho Cut
+- Knock Off
+
+Mienshao @ Life Orb
+Nature: Jolly
+Ability: Regenerator
+Level: 1
+- Fake Out
+- Knock Off
+- Close Combat
+- U Turn
+
+Irontreads @ Booster Energy
+Nature: Jolly
+Ability: Quark Drive
+Level: 1
+Ball: Ultra Ball
+- Earthquake
+- Iron Head
+- Knock Off
+- Wild Charge
+
+Infernape @ Focus Sash
+Nature: Timid
+Ability: Blaze
+Level: 1
+Ball: Ultra Ball
+- Nasty Plot
+- Fire Blast
+- Aura Sphere
+- Vacuum Wave
+
+=== TRAINER_HC_VICTORYROAD_ACETRAINER4 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Lopunny @ Lopunnite
+Nature: Jolly
+Ability: Limber Scrappy Hidden
+Level: 1
+Ball: Love Ball
+- Fake Out
+- Return
+- Close Combat
+- U Turn
+
+Bellossom @ Leftovers
+Nature: Timid
+Ability: Chlorophyll
+Level: 1
+- Quiver Dance
+- Sleep Powder
+- Giga Drain
+- Fiery Dance
+
+Stakataka @ Assault Vest
+Nature: Sassy
+Ability: Beast Boost
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: BALL_TYPE_BEAST_BALL
+- Body Press
+- Gyro Ball
+- Rock Blast
+- Earthquake
+
+Morpeko @ Life Orb
+Nature: Jolly
+Ability: Hunger Switch
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Aura Wheel
+- Seed Bomb
+- Zippy Zap
+- Parting Shot
+
+Latias @ Dragonium Z
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Draco Barrage
+- Psyshock
+- Mystical Fire
+
+Simisear @ Choice Scarf
+Nature: Modest
+Ability: Sage Power
+Level: 1
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Flamethrower
+- Focus Blast
+- Grass Knot
+- Hidden Power
+
+=== TRAINER_HC_VICTORYROAD_ACETRAINER5 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Arcanine @ Leftovers
+Nature: Adamant
+Ability: Intimidate
+Level: 1
+Ball: Great Ball
+- Will O Wisp
+- Extreme Speed
+- Flare Blitz
+- Teleport
+
+Diancie @ Diancite
+Nature: Timid
+Ability: Clear Body Magic Bounce
+Level: 1
+Ball: Dusk Ball
+- Moonblast
+- Diamond Storm
+- Earth Power
+- Misty Explosion
+
+Ironleaves @ Scope Lens
+Nature: Jolly
+Ability: Sharpness
+Level: 1
+Ball: Ultra Ball
+- Swords Dance
+- Leaf Blade
+- Sacred Sword
+- Psycho Cut
+
+Muk A @ Assault Vest
+Nature: Adamant
+Ability: Poison Touch
+Level: 1
+Ball: Dusk Ball
+- Pursuit
+- Knock Off
+- Poison Jab
+- Fire Punch
+
+Mismagius @ Ghostium Z
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Dusk Ball
+- Nasty Plot
+- Moonblast
+- Shadow Ball
+- Mystical Fire
+
+Grapploct @ Leftovers
+Nature: Adamant
+Ability: Technician
+Level: 1
+Ball: Ultra Ball
+- Arm Thrust
+- Aqua Jet
+- Mach Punch
+- Ice Punch
+
+=== TRAINER_HC_VICTORYROAD_ACETRAINER6 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Metagross @ Focus Sash
+Nature: Jolly
+Ability: Tough Claws
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Explosion
+- Meteor Mash
+- Earthquake
+
+Starmie @ Life Orb
+Nature: Timid
+Ability: Illuminate
+Level: 1
+Ball: Love Ball
+- Thunder
+- Hydro Pump
+- Blizzard
+- Psyshock
+
+Pangoro @ Black Glasses
+Nature: Adamant
+Ability: Iron Fist
+Level: 1
+Ball: Dusk Ball
+- Bullet Punch
+- Drain Punch
+- Wicked Blow
+- Sucker Punch
+
+Espeon @ Eevium Z
+Nature: Timid
+Ability: Magic Bounce
+Level: 1
+Ball: Great Ball
+- Last Resort
+- Stored Power
+- Fiery Dance
+- Dazzling Gleam
+
+Tauros @ Life Orb
+Nature: Naive
+Ability: Sheer Force
+Level: 1
+Ball: Great Ball
+- Head Charge
+- Close Combat
+- Ice Beam
+- Flamethrower
+
+Pinsir @ Pinsirite
+Nature: Jolly
+Ability: Hyper Cutter
+Level: 1
+Ball: Ultra Ball
+- Return
+- Quick Attack
+- Close Combat
+- Swords Dance
+
+=== TRAINER_HC_VICTORYROAD_ACETRAINER7 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Darmanitan @ Iapapa Berry
+Nature: Quiet
+Ability: Zen Mode
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Trick Room
+- Flamethrower
+- Psychic
+- Focus Blast
+
+Scrafty @ Assault Vest
+Nature: Brave
+Ability: Intimidate
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Fake Out
+- Knock Off
+- Drain Punch
+- Ice Punch
+
+Copperajah @ Copperajite
+Nature: Brave
+Ability: Sheer Force Mega
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: BALL_TYPE_CHERISH_BALL
+- Double Iron Bash
+- Close Combat
+- Heat Crash
+- Power Whip
+
+Runerigus @ Iapapa Berry
+Nature: Relaxed
+Ability: Shadow Shield
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Dusk Ball
+- Will O Wisp
+- Trick Room
+- Earthquake
+- Poltergeist
+
+Dragalge @ Poison Barb
+Nature: Quiet
+Ability: Adaptabilty
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Sludge Wave
+- Flamethrower
+- Draco Barrage
+- Scald
+
+Vikavolt @ Magnet
+Nature: Quiet
+Ability: Levitate
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Great Ball
+- Thunderbolt
+- Bug Buzz
+- Energy Ball
+- Volt Switch
+
+=== TRAINER_ELITE_FOUR_LORELEI ===
+Name: LORELEI
+Class: Elite Four Frlg
+Pic: Elite Four Lorelei Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Purple
+Boss: Yes
+Difficulty: Hard
+
+Ludicolo @ Focus Sash
+Nature: Modest
+Ability: Swift Swim
+Level: 1
+Ball: Great Ball
+- Fake Out
+- Hydro Pump
+- Energy Ball
+- Ice Beam
+
+Ironbundle @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 1
+Ball: Great Ball
+- Hydro Pump
+- Freeze Dry
+- Icy Wind
+- Sleep Talk
+
+Genesect @ Assault Vest
+Nature: Hasty
+Ability: Download
+Level: 1
+Ball: Ultra Ball
+- U Turn
+- Iron Head
+- Thunder
+- Ice Beam
+
+Dragonite @ Flyinium Z
+Nature: Mild
+Ability: Multiscale
+Level: 1
+Ball: Great Ball
+- Hurricane
+- Thunder
+- Aqua Tail
+- Extreme Speed
+
+Palkia O @ Lustrous Orb
+Nature: Timid
+Ability: Pressure
+Level: 1
+Ball: Master Ball
+- Draco Barrage
+- Hydro Pump
+- Thunder
+- Aura Sphere
+
+Swampert @ Swampertite
+Nature: Adamant
+Ability: Damp Swift Swim Mega
+Level: 1
+Ball: Ultra Ball
+- Waterfall
+- Earthquake
+- Ice Punch
+- Brick Break
+
+=== TRAINER_ELITE_FOUR_LORELEI_2 ===
+Name: LORELEI
+Class: Elite Four Frlg
+Pic: Elite Four Lorelei Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Purple
+Boss: Yes
+Difficulty: Hard
+
+Glaceon @ Choice Specs
+Nature: Modest
+Ability: Slush Rush
+Level: 85
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Great Ball
+- Blizzard
+- Earth Power
+- Freeze Dry
+- Hidden Power
+
+Landorus Therian @ Assault Vest
+Nature: Jolly
+Ability: Intimidate
+Level: 85
+Ball: Ultra Ball
+- High Horsepower
+- Stone Edge
+- U Turn
+- Knock Off
+
+Chien Pao @ Focus Sash
+Nature: Jolly
+Ability: Sword of Ruin
+Level: 85
+Ball: Dusk Ball
+- Icicle Crash
+- Knock Off
+- Sacred Sword
+- Ice Shard
+
+Tapu Fini @ Leftovers
+Nature: Modest
+Ability: Misty Surge
+Level: 85
+Ball: Ultra Ball
+- Calm Mind
+- Muddy Water
+- Moonblast
+- Blizzard
+
+Kyurem White @ Dragonium Z
+Nature: Timid
+Ability: Teravolt thingy
+Level: 85
+Ball: Master Ball
+- Blizzard
+- Fusion Flare
+- Draco Barrage
+- Freeze Dry
+
+Abomasnow @ Abomasite
+Nature: Naive
+Ability: Soundproof Slush Rush Mega
+Level: 85
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+Ball: Ultra Ball
+- Giga Drain
+- Blizzard
+- Earthquake
+- Hidden Power
+
+=== TRAINER_ELITE_FOUR_BRUNO ===
+Name: BRUNO
+Class: Elite Four Frlg
+Pic: Elite Four Bruno Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Green
+Boss: Yes
+Difficulty: Hard
+
+Infernape @ Focus Sash
+Nature: Jolly
+Ability: Blaze
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Pyro Ball
+- Close Combat
+- Thunder Punch
+
+Zeraora @ Misty Seed
+Nature: Jolly
+Ability: Volt Absorb
+Level: 1
+Ball: Great Ball
+- Bulk Up
+- Drain Punch
+- Plasma Fists
+- Knock Off
+
+Ironvaliant @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Moonblast
+- Psyshock
+- Shadow Ball
+
+Necrozma Dusk Mane @ Weakness Policy
+Nature: Adamant
+Ability: Prism Armor
+Level: 1
+Ball: Ultra Ball
+- Dragon Dance
+- Sunsteel Strike
+- Earthquake
+- Stone Edge
+
+Zacian @ Rusted Sword
+Nature: Jolly
+Ability: Intrepid Sword
+Level: 1
+Ball: Master Ball
+- Swords Dance
+- Behemoth Blade
+- Close Combat
+- Wild Charge
+
+Lucario @ Lucarionite
+Nature: Jolly
+Ability: Inner Focus Adaptability
+Level: 1
+Ball: Ultra Ball
+- Swords Dance
+- Close Combat
+- Bullet Punch
+- Meteor Mash
+
+=== TRAINER_ELITE_FOUR_BRUNO_2 ===
+Name: BRUNO
+Class: Elite Four Frlg
+Pic: Elite Four Bruno Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Green
+Boss: Yes
+Difficulty: Hard
+
+Urshifu Single @ Focus Sash
+Nature: Jolly
+Ability: Unseen Fist
+Level: 1
+Ball: Great Ball
+- Wicked Blow
+- Close Combat
+- U Turn
+- Poison Jab
+
+Hawlucha @ Misty Seed
+Nature: Adamant
+Ability: Unburden
+Level: 1
+Ball: Dusk Ball
+- Swords Dance
+- Acrobatics
+- Close Combat
+- Roost
+
+Ironvaliant @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Moonblast
+- Shadow Ball
+- Psyshock
+
+Necrozma Dusk Mane @ Weakness Policy
+Nature: Adamant
+Ability: Prism Armor
+Level: 1
+Ball: Ultra Ball
+- Dragon Dance
+- Sunsteel Strike
+- Earthquake
+- Stone Edge
+
+Zacian @ Rusted Sword
+Nature: Jolly
+Ability: Intrepid Sword
+Level: 1
+Ball: Master Ball
+- Swords Dance
+- Behemoth Blade
+- Close Combat
+- Wild Charge
+
+Medicham @ Medichamite
+Nature: Jolly
+Ability: Huge Power
+Level: 1
+Ball: Ultra Ball
+- Fake Out
+- Close Combat
+- Zen Headbutt
+- Thunder Punch
+
+=== TRAINER_ELITE_FOUR_AGATHA ===
+Name: AGATHA
+Class: Elite Four Frlg
+Pic: Elite Four Agatha Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Pink
+Boss: Yes
+Difficulty: Hard
+
+Krookodile @ Focus Sash
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: Dusk Ball
+- Stealth Rock
+- Earthquake
+- Knock Off
+- Stone Edge
+
+Mewtwo @ Mewtwonite X
+Nature: Naive
+Ability: Unnerve, Insomnia
+Level: 1
+Ball: Ultra Ball
+- Drain Punch
+- Expanding Force
+- Stone Edge
+- Bulk Up
+
+Yveltal @ Assault Vest
+Nature: Timid
+Ability: Dark Aura
+Level: 1
+Ball: Dusk Ball
+- Oblivion Wing
+- Dark Hole
+- Heat Wave
+- U Turn
+
+Fluttermane @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 1
+Ball: Dusk Ball
+- Shadow Ball
+- Moonblast
+- Mystical Fire
+- Psyshock
+
+Victini @ Normalium Z
+Nature: Hasty
+Ability: Victory Star
+Level: 1
+Ball: Ultra Ball
+- Celebrate
+- Expanding Force
+- Pyro Ball
+- Focus Blast
+
+Calyrex Shadow @ Colbur Berry
+Nature: Timid
+Ability: As One Spectrier
+Level: 1
+Ball: Master Ball
+- Draining Kiss
+- Expanding Force
+- Astral Barrage
+- Nasty Plot
+
+=== TRAINER_ELITE_FOUR_AGATHA_2 ===
+Name: AGATHA
+Class: Elite Four Frlg
+Pic: Elite Four Agatha Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Pink
+Boss: Yes
+Difficulty: Hard
+
+Krookodile @ Focus Sash
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: Dusk Ball
+- Stealth Rock
+- Earthquake
+- Knock Off
+- Stone Edge
+
+Fluttermane @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 1
+Ball: Dusk Ball
+- Shadow Ball
+- Moonblast
+- Psyshock
+- Mystical Fire
+
+Mewtwo @ Mewtwonite X
+Nature: Naive
+Ability: Unnerve, Steadfast
+Level: 1
+Ball: Ultra Ball
+- Drain Punch
+- Expanding Force
+- Stone Edge
+- Bulk Up
+
+Yveltal @ Assault Vest
+Nature: Timid
+Ability: Dark Aura
+Level: 1
+Ball: Dusk Ball
+- Oblivion Wing
+- Dark Hole
+- Heat Wave
+- U Turn
+
+Victini @ Normalium Z
+Nature: Hasty
+Ability: Victory Star
+Level: 1
+Ball: Ultra Ball
+- Celebrate
+- Expanding Force
+- Pyro Ball
+- Focus Blast
+
+Calyrex Shadow @ Colbur Berry
+Nature: Timid
+Ability: As One Spectrier
+Level: 1
+Ball: Master Ball
+- Draining Kiss
+- Expanding Force
+- Astral Barrage
+- Nasty Plot
+
+=== TRAINER_ELITE_FOUR_LANCE ===
+Name: LANCE
+Class: Elite Four Frlg
+Pic: Elite Four Lance Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Blue
+Boss: Yes
+Difficulty: Hard
+
+Glimmora @ Focus Sash
+Nature: Timid
+Ability: Pressure
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Power Gem
+- Earth Power
+- Energy Ball
+
+Melmetal @ Assault Vest
+Nature: Careful
+Ability: Clear Body
+Level: 1
+Ball: Great Ball
+- Double Iron Bash
+- Ice Punch
+- Earthquake
+- Thunder Punch
+
+Arceus @ Pixie Plate
+Nature: Timid
+Ability: Multitype
+Level: 1
+Ball: Ultra Ball
+- Calm Mind
+- Judgment
+- Flamethrower
+- Recover
+
+Dragonite @ Lum Berry
+Nature: Adamant
+Ability: Multiscale
+Level: 1
+- Dragon Dance
+- Dual Wingbeat
+- Earthquake
+- Extreme Speed
+
+Dialga @ Adamant Orb
+Nature: Calm
+Ability: Pressure, Primal Armor Primal form
+Level: 1
+Ball: Master Ball
+- Roar Of Time
+- Flash Cannon
+- Rest
+- Sleep Talk
+
+Rayquaza @ Sharp Beak
+Nature: Naive
+Ability: Delta Stream
+Level: 1
+Ball: Ultra Ball
+- Extreme Speed
+- Flamethrower
+- Earthquake
+- Dragon Ascent
+
+=== TRAINER_ELITE_FOUR_LANCE_2 ===
+Name: LANCE
+Class: Elite Four Frlg
+Pic: Elite Four Lance Frlg
+Gender: Male
+Music: Elite Four
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Blue
+Boss: Yes
+Difficulty: Hard
+
+Glimmora @ Focus Sash
+Nature: Timid
+Ability: Pressure
+Level: 1
+Ball: Ultra Ball
+- Stealth Rock
+- Power Gem
+- Sludge Wave
+- Energy Ball
+
+Melmetal @ Assault Vest
+Nature: Careful
+Ability: Clear Body
+Level: 1
+Ball: Great Ball
+- Double Iron Bash
+- Ice Punch
+- Earthquake
+- Thunder Punch
+
+Arceus @ Pixie Plate
+Nature: Timid
+Ability: Multitype
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Calm Mind
+- Judgment
+- Flamethrower
+- Recover
+
+Dragonite @ Flyinium Z
+Nature: Adamant
+Ability: Multiscale
+Level: 1
+- Dragon Dance
+- Dual Wingbeat
+- Earthquake
+- Extreme Speed
+
+Dialga @ Adamant Orb
+Nature: Bold
+Ability: Pressure, Primal Armor Primal form
+Level: 1
+Ball: Master Ball
+- Roar Of Time
+- Flash Cannon
+- Rest
+- Sleep Talk
+
+Rayquaza @ Sharp Beak
+Nature: Naive
+Ability: Delta Stream
+Level: 1
+Ball: Ultra Ball
+- Extreme Speed
+- Flamethrower
+- Earthquake
+- Dragon Ascent
+
+=== TRAINER_CHAMPION_FIRST_SQUIRTLE ===
+Name: TERRY
+Class: Champion Frlg
+Pic: Champion Rival Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Kyogre @ Blue Orb
+Nature: Timid
+Ability: Drizzle Thingy STAYS UPON SWITCHING
+Level: 1
+Ball: Great Ball
+- Origin Pulse
+- Ice Beam
+- Thunder
+- Liquidation
+
+Swampert @ Swampertite
+Nature: Adamant
+Ability: Damp/Swift Swim
+Level: 1
+- Waterfall
+- Earthquake
+- Ice Punch
+- Stone Edge
+
+Eternatus @ Eternamax Orb
+Nature: Timid
+Ability: Pressure/Levitate
+Level: 1
+Ball: Ultra Ball
+- Draco Barrage
+- Sludge Wave
+- Thunder
+- Recover
+
+Necrozma Dawn Wings @ Ultranecrozium Z
+Nature: Jolly
+Ability: Prism Armor
+Level: 1
+Ball: Dusk Ball
+- Dragon Dance
+- Photon Geyser
+- Earthquake
+- Stone Edge
+
+Arceus @ Normalium Z
+Nature: Jolly
+Ability: Multitype
+Level: 1
+Ball: Master Ball
+- Swords Dance
+- Extreme Speed
+- Shadow Claw
+- Recover
+
+Walkingwake @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 1
+Ball: Ultra Ball
+- Hydro Pump
+- Draco Barrage
+- Flamethrower
+- Hurricane
+
+=== TRAINER_CHAMPION_FIRST_BULBASAUR ===
+Name: TERRY
+Class: Champion Frlg
+Pic: Champion Rival Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Kyogre @ Blue Orb
+Nature: Timid
+Ability: Drizzle STAYS UPON SWITCHING
+Level: 1
+Ball: Great Ball
+- Origin Pulse
+- Ice Beam
+- Thunder
+- Liquidation
+
+Swampert @ Swampertite
+Nature: Adamant
+Ability: Damp/Swift Swim
+Level: 1
+- Waterfall
+- Earthquake
+- Ice Punch
+- Stone Edge
+
+Walkingwake @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 1
+Ball: Ultra Ball
+- Hydro Pump
+- Draco Barrage
+- Scald
+- Hurricane
+
+Eternatus @ Eternamax Orb
+Nature: Timid
+Ability: Pressure/Levitate
+Level: 1
+Ball: Ultra Ball
+- Draco Barrage
+- Sludge Wave
+- Thunder
+- Recover
+
+Xerneas @ Power Herb
+Nature: Timid
+Ability: Fairy Aura
+Level: 1
+Ball: Love Ball
+- Geomancy
+- Moonblast
+- Thunderbolt
+- Focus Blast
+
+Arceus @ Steelium Z
+Nature: Jolly
+Ability: Multitype
+Level: 1
+Ball: Master Ball
+- Swords Dance
+- Iron Head
+- Earthquake
+- Stone Edge
+
+=== TRAINER_CHAMPION_FIRST_CHARMANDER ===
+Name: TERRY
+Class: Champion Frlg
+Pic: Champion Rival Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Yellow
+Boss: Yes
+Difficulty: Hard
+
+Groudon @ Red Orb
+Nature: Jolly
+Ability: Desolate Land
+Level: 1
+Ball: Great Ball
+- Stealth Rock
+- Precipice Blades
+- Heat Crash
+- Rock Tomb
+
+Gougingfire @ Leftovers
+Nature: Jolly
+Ability: Protosynthesis boosts Defense
+Level: 1
+Ball: Ultra Ball
+- Dragon Dance
+- Flare Blitz
+- Draco Barrage
+- Morning Sun
+
+Koraidon @ Roseli Berry
+Nature: Jolly
+Ability: Orichalchum Pulse
+Level: 1
+Ball: Ultra Ball
+- Swords Dance
+- Flare Blitz
+- Collision Course
+- Draco Barrage
+
+Arceus @ Groundium Z
+Nature: Timid
+Ability: Multitype
+Level: 1
+Ball: Master Ball
+- Calm Mind
+- Earth Power
+- Ice Beam
+- Recover
+
+Xerneas @ Power Herb
+Nature: Timid
+Ability: Fairy Aura
+Level: 1
+Ball: Love Ball
+- Geomancy
+- Moonblast
+- Thunderbolt
+- Focus Blast
+
+Eternatus @ Eternamax Orb
+Nature: Timid
+Ability: Pressure/Levitate
+Level: 1
+Ball: Dusk Ball
+- Draco Barrage
+- Sludge Wave
+- Flamethrower
+- Recover
+
+=== TRAINER_HC_PRYCE_REMATCH ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Abomasnow @ Abomasite
+Nature: Quiet
+Ability: Snow Warning//Snow Warning
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 2 Spe
+Ball: Great Ball
+- Earth Power
+- Blizzard
+- Wood Hammer
+- Hidden Power
+
+Calyrex Ice @ Lum Berry
+Nature: Brave
+Ability: As One Calyrex Ice
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Master Ball
+- Swords Dance
+- Glacial Lance
+- Zen Headbutt
+- High Horsepower
+
+Kyurem @ Icium Z
+Nature: Quiet
+Ability: Pressure//Turboblaze
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Ball: Master Ball
+- Blizzard
+- Draco Barrage
+- Earth Power
+- Freeze Dry
+
+Wishiwashi Sevi @ Sitrus Berry
+Nature: Quiet
+Ability: Schooling
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+Ball: Dusk Ball
+- Draco Barrage
+- Shadow Ball
+- Nasty Plot
+- Thunderbolt
+
+Donphan @ Lum Berry
+Nature: Brave
+Ability: Technician
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+- Ice Shard
+- Rock Tomb
+- Bonemerang
+- Knock Off
+
+Heracross @ Heracronite
+Nature: Brave
+Ability: Moxie//Skill Link
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 0 Spe
+- Arm Thrust
+- Bullet Seed
+- Pin Missile
+- Rock Blast
+
+=== TRAINER_HC_ONEISL_BUGSY ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pheromosa @ Focus Sash
+Nature: Hasty
+Ability: Beast Boost
+Level: 1
+Ball: BALL_TYPE_BEAST_BALL
+- Close Combat
+- Ice Beam
+- U Turn
+- Drill Run
+
+Clawitzer S @ Focus Sash
+Nature: Modest
+Ability: As One Calyrex Ice
+Level: 1
+Ball: Dive Ball
+- Origin Pulse
+- Dark Pulse
+- Aura Sphere
+- Bug Buzz
+
+Genesect @ Douse Drive
+Nature: Naive
+Ability: Download
+Level: 1
+Ball: Ultra Ball
+- U Turn
+- Techno Blast
+- Thunderbolt
+- Ice Beam
+
+Magnezone @ Life Orb
+Nature: Timid
+Ability: Magnet Pull
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+- Thunderbolt
+- Flash Cannon
+- Volt Switch
+- Hidden Power
+
+Arceus Bug @ Buginium Z
+Nature: Jolly
+Ability: Multitype
+Level: 1
+Ball: Master Ball
+- Megahorn
+- Earthquake
+- Iron Head
+- Swords Dance
+
+Pinsir @ Pinsirite
+Nature: Jolly
+Ability: Hyper Cutter
+Level: 1
+- Megahorn
+- Extreme Speed
+- Close Combat
+- Swords Dance
+
+=== TRAINER_HC_CAPEBRINK_DHBATTLE ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Tyranitar @ Chople Berry
+Nature: Jolly
+Ability: Unnerve
+Level: 1
+Ball: Dusk Ball
+- Stealth Rock
+- Stone Edge
+- Knock Off
+- Fire Punch
+
+Darkrai @ Focus Sash
+Nature: Timid
+Ability: Bad Dreams
+Level: 1
+Ball: Dusk Ball
+- Dark Hole
+- Nasty Plot
+- Dark Void
+- Focus Blast
+
+Zoroark H @ Choice Scarf
+Nature: Naive
+Ability: Illusion
+Level: 1
+Ball: Dusk Ball
+- U Turn
+- Double Edge
+- Shadow Ball
+- Knock Off
+
+Sneasler @ Life Orb
+Nature: Jolly
+Ability: Poison Touch
+Level: 1
+Ball: Dusk Ball
+- Poison Jab
+- Close Combat
+- Stone Edge
+- Earthquake
+
+Hydreigon @ Life Orb
+Nature: Timid
+Ability: Levitate
+Level: 1
+Ball: Dusk Ball
+- Dark Hole
+- Draco Barrage
+- Focus Blast
+- Earth Power
+
+Absol @ Absolite
+Nature: Jolly
+Ability: Super Luck, Sharpness Mega
+Level: 1
+Ball: Dusk Ball
+- Night Slash
+- Sucker Punch
+- Psycho Cut
+- Play Rough
+
+=== TRAINER_HC_CERULEAN_MISTYPOSTGAME ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pikachu Flying @ Light Ball
+Nature: Timid
+Ability: Lightningrod
+Level: 1
+- Thunder
+- Hurricane
+- Electroweb
+- Fake Out
+
+Kyogre @ Blue Orb
+Nature: Hasty
+Ability: Primordial Sea
+Level: 1
+Ball: Master Ball
+- Earthquake
+- Water Spout
+- Origin Pulse
+- Thunder
+
+Goodra H @ Assault Vest
+Nature: Bold
+Ability: Gooey
+Level: 1
+Ball: Great Ball
+- Draco Barrage
+- Flash Cannon
+- Thunder
+- Muddy Water
+
+Kingdra @ Waterium Z
+Nature: Timid
+Ability: Swift Swim
+Level: 1
+Ball: Ultra Ball
+- Draco Barrage
+- Hydro Pump
+- Muddy Water
+- Hurricane
+
+Drednaw @ Drednawite
+Nature: Jolly
+Ability: Battle Armor
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Jaw Lock
+- Aqua Fang
+- Crunch
+- Shell Smash
+
+Floatzel @ Focus Sash
+Nature: Jolly
+Ability: Technician
+Level: 1
+Ball: Ultra Ball
+- Surging Strikes
+- Fake Out
+- Flip Turn
+- Pursuit
+
+=== TRAINER_HC_VIRIDIAN_CLAIRPOSTGAME ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Dragapult @ Focus Sash
+Nature: Hasty
+Ability: Soul Heart
+Level: 1
+Ball: Dusk Ball
+- Dragon Darts
+- Spirit Shackle
+- U Turn
+- Draco Meteor
+
+Dialga @ Adamant Orb
+Nature: Timid
+Ability: Primal Armor lul
+Level: 1
+Ball: Master Ball
+- Roar Of Time
+- Flamethrower
+- Flash Cannon
+- Thunderbolt
+
+Dragonite @ Weakness Policy
+Nature: Lonely
+Ability: Multiscale
+Level: 1
+Ball: Master Ball
+- Dual Wingbeat
+- Fire Blast
+- Dragon Hammer
+- Dragon Dance
+
+Flapple @ Applite
+Nature: Naive
+Ability: Dragons Maw
+Level: 1
+- Dragon Energy
+- Energy Ball
+- Sucker Punch
+- U Turn
+
+Kyurem Black @ Lum Berry
+Nature: Jolly
+Ability: Pressure
+Level: 1
+Ball: Master Ball
+- Dragon Dance
+- Dragon Hammer
+- Fusion Bolt
+- Ice Hammer
+
+Genesect @ Life Orb
+Nature: Hasty
+Ability: Download
+Level: 1
+Ball: Ultra Ball
+- U Turn
+- Extreme Speed
+- Ice Beam
+- Flamethrower
+
+=== TRAINER_HC_SAFFRON_DUMBASSKIDPOSTGAME ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Magearna P @ Sitrus Berry
+Nature: Calm
+Ability: Soul Heart
+Level: 1
+Ball: Love Ball
+- Helping Hand
+- Moonblast
+- Flash Cannon
+- Protect
+
+Swampert @ Swampertite
+Nature: Jolly
+Ability: Damp
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- High Horsepower
+- Ice Punch
+- Waterfall
+- Flip Turn
+
+Necrozma Dusk Mane @ Solganium Z
+Nature: Adamant
+Ability: Prism Armor
+Level: 1
+Ball: Master Ball
+- Sunsteel Strike
+- Dragon Dance
+- Stone Edge
+- Psychic Fangs
+
+Ashgreninja @ Life Orb
+Nature: Timid
+Ability: Battle Bond
+Level: 1
+Ball: Dusk Ball
+- Water Shuriken
+- Dark Pulse
+- Ice Beam
+- Hydro Pump
+
+Palkia O @ Lustrous Orb
+Nature: Timid
+Ability: Pressure
+Level: 1
+Ball: Master Ball
+- Hydro Pump
+- Spacial Rend
+- Thunder
+- Aura Sphere
+
+Shaymin Sky @ Choice Specs
+Nature: Timid
+Ability: Serene Grace
+Level: 1
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Seed Flare
+- Hurricane
+- Earth Power
+- Hidden Power
+
+=== TRAINER_HC_TREASUREBEACH_RED ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pikachu Libre @ Light Ball
+Nature: Jolly
+Ability: Lightningrod
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Fake Out
+- Aura Wheel
+- Close Combat
+- Knock Off
+
+Venusaur @ Venusaurite
+Nature: Modest
+Ability: Overgrow
+Level: 1
+- Giga Drain
+- Sludge Bomb
+- Earth Power
+- Sleep Powder
+
+Blastoise @ Blastoisinite
+Nature: Modest
+Ability: Torrent/Mega Launcher
+Level: 1
+- Shell Smash
+- Ice Beam
+- Dark Pulse
+- Origin Pulse
+
+Charizard @ Charizardite X
+Nature: Jolly
+Ability: Blaze
+Level: 1
+- Dragon Dance
+- Flare Blitz
+- Earthquake
+- Dragon Claw
+
+Snorlax @ Leftovers
+Nature: Adamant
+Ability: Thick Fat
+Level: 1
+- Body Slam
+- Earthquake
+- Darkest Lariat
+- Fire Punch
+
+Mewtwo @ Mewtwonite X
+Nature: Jolly
+Ability: Pressure/Steadfast
+Level: 1
+Ball: Master Ball
+- Bulk Up
+- Zen Headbutt
+- Close Combat
+- Stone Edge
+
+=== TRAINER_HC_FALKNER_REMATCH ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Pidgeot @ Pidgeotite
+Nature: Timid
+Ability: Frisk
+Level: 1
+Ball: Ultra Ball
+- Hurricane
+- Heat Wave
+- Focus Blast
+- U Turn
+
+Yanmega @ Choice Specs
+Nature: Timid
+Ability: Tinted Lens
+Level: 1
+Ball: Great Ball
+- Bug Buzz
+- Air Slash
+- Giga Drain
+- U Turn
+
+Shaymin Sky @ Focus Sash
+Nature: Timid
+Ability: Serene Grace
+Level: 1
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Master Ball
+- Seed Flare
+- Air Slash
+- Earth Power
+- Hidden Power
+
+Enamorus @ Flying Gem
+Nature: Jolly
+Ability: Contrary
+Level: 1
+Ball: Love Ball
+- Superpower
+- Acrobatics
+- Play Rough
+- Knock Off
+
+Ho Oh @ Lum Berry
+Nature: Jolly
+Ability: Phoenix Down
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+Ball: Master Ball
+- Brave Bird
+- Sacred Fire
+- Earthquake
+- Roost
+
+Gyarados @ Flyinium Z
+Nature: Jolly
+Ability: Moxie
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Dragon Dance
+- Waterfall
+- Earthquake
+- Bounce
+
+=== TRAINER_HC_MTEMBER_ARIANA ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Lopunny @ Lopunnite
+Nature: Jolly
+Ability: Limber/Scrappy
+Level: 1
+Ball: Love Ball
+- Fake Out
+- Double Edge
+- Close Combat
+- U Turn
+
+Greninja @ Waterium Z
+Nature: Naive
+Ability: Protein
+Level: 1
+- Hydro Pump
+- Ice Beam
+- Gunk Shot
+- U Turn
+
+Dragonite @ Lum Berry
+Nature: Jolly
+Ability: Multi Scale
+Level: 1
+- Dragon Dance
+- Dual Wingbeat
+- Earthquake
+- Fire Punch
+
+Delphox @ Life Orb
+Nature: Timid
+Ability: Magic Guard
+Level: 1
+- Mind Blown
+- Psyshock
+- Grass Knot
+- Dazzling Gleam
+
+Xerneas @ Power Herb
+Nature: Jolly
+Ability: Fairy Aura
+Level: 1
+Ball: Master Ball
+- Geomancy
+- Moonblast
+- Thunderbolt
+- Draining Kiss
+
+Mawile @ Mawilite
+Nature: Adamant
+Ability: Intimidate
+Level: 1
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Iron Head
+- Play Rough
+- Knock Off
+- Thunder Punch
+
+=== TRAINER_HC_MTEMBER_ARCHER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Aerodactyl @ Sharp Beak
+Nature: Jolly
+Ability: Rock Head
+Level: 1
+Ball: Ultra Ball
+- Brave Bird
+- Stone Edge
+- Headlong Rush
+- Fire Fang
+
+Heliolisk @ Focus Sash
+Nature: Timid
+Ability: Solar Power
+Level: 1
+- Boomburst
+- Thunderbolt
+- Grass Knot
+- Weather Ball
+
+Zygarde @ Groundium Z
+Nature: Impish
+Ability: Power Construct
+Level: 1
+Ball: Master Ball
+- Thousand Arrows
+- Extreme Speed
+- Glare
+- Dragon Dance
+
+Heatran @ Air Balloon
+Nature: Timid
+Ability: Flash Fire
+Level: 1
+Ball: Ultra Ball
+- Protect
+- Flamethrower
+- Flash Cannon
+- Earth Power
+
+Salamence @ Salamencite
+Nature: Naive
+Ability: Intimidate/Aerilate
+Level: 1
+Ball: Ultra Ball
+- Double Edge
+- Flamethrower
+- Roost
+- Protect
+
+Houndoom @ Houndoominite
+Nature: Timid
+Ability: Flash Fire Solar Power
+Level: 1
+Ball: Dusk Ball
+- Dark Hole
+- Fire Blast
+- Sludge Bomb
+- Solar Beam
+
+=== TRAINER_HC_THREEISLAND_BIKER1 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Overqwil @ Dark Gem
+Nature: Jolly
+Ability: Intimidate
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Knock Off
+- Gunk Shot
+- Waterfall
+- Thunder Wave
+
+Dusknoir @ Reaper Cloth
+Nature: Adamant
+Ability: Battle Armor
+Level: 1
+Ball: Dusk Ball
+- Shadow Punch
+- Dynamic Punch
+- Shadow Sneak
+- Ice Punch
+
+=== TRAINER_HC_THREEISLAND_BIKER2 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Grimmsnarl @ Light Clay
+Nature: Impish
+Ability: Prankster
+Level: 1
+Ball: Dusk Ball
+- Reflect
+- Light Screen
+- Thunder Wave
+- Spirit Break
+
+Flygon @ Groundium Z
+Nature: Jolly
+Ability: Tinted Lens
+Level: 1
+- Headlong Rush
+- Dragon Claw
+- U Turn
+- Fire Punch
+
+Kleavor @ Rock Gem
+Nature: Jolly
+Ability: Technician
+Level: 1
+Ball: Dusk Ball
+- Accelerock
+- U Turn
+- Close Combat
+- Stone Edge
+
+=== TRAINER_HC_THREEISLAND_BIKER3 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Avalugg H @ Focus Sash
+Nature: Adamant
+Ability: Technician
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Rock Blast
+- Icicle Spear
+- Headlong Rush
+- Ice Shard
+
+Braviary H @ Life Orb
+Nature: Modest
+Ability: Sheer Force
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Hurricane
+- Psychic
+- Heat Wave
+- Roost
+
+Sharpedo @ Sharpedonite
+Nature: Jolly
+Ability: Speed Boost
+Level: 1
+Ball: Dive Ball
+- Protect
+- Fishious Rend
+- Crunch
+- Close Combat
+
+=== TRAINER_HC_THREEISLAND_BIKER4 ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Emboar @ Fightinium Z
+Nature: Jolly
+Ability: Bull Rush
+Level: 1
+- Close Combat
+- Flare Blitz
+- Head Smash
+- Wild Charge
+
+Centiskorch S @ Centiskite
+Nature: Jolly
+Ability: Clear Body/Arena Trap
+Level: 1
+Ball: BALL_TYPE_CHERISH_BALL
+- Earthquake
+- Leech Life
+- Coil
+- Stone Edge
+
+Goodra H @ Assault Vest
+Nature: Modest
+Ability: Sap Sipper
+Level: 1
+Ball: BALL_TYPE_HISUIAN_BALL
+- Dragon Pulse
+- Flash Cannon
+- Flamethrower
+- Sludge Bomb
+
+Hawlucha @ Flying Gem
+Nature: Jolly
+Ability: unburden
+Level: 1
+- Swords Dance
+- Acrobatics
+- Brave Bird
+- Throat Chop
+
+=== TRAINER_HC_PUZZLEBATTLESHEDINJA ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Shedinja @ Focus Sash
+Nature: Jolly
+Ability: Wonder Guard
+Level: 100
+Ball: Great Ball
+- X Scissor
+- Shadow Sneak
+
+Shedinja @ Focus Sash
+Nature: Jolly
+Ability: Wonder Guard
+Level: 100
+Ball: Great Ball
+- X Scissor
+- Shadow Sneak
+
+Shedinja @ Focus Sash
+Nature: Jolly
+Ability: Wonder Guard
+Level: 100
+Ball: Great Ball
+- Shadow Sneak
+- X Scissor
+
+Shedinja @ Focus Sash
+Nature: Jolly
+Ability: Wonder Guard
+Level: 100
+Ball: Great Ball
+- X Scissor
+- Shadow Sneak
+
+Shedinja @ Focus Sash
+Nature: Jolly
+Ability: Wonder Guard
+Level: 100
+Ball: Great Ball
+- Shadow Sneak
+- X Scissor
+
+Shedinja @ Heavy Duty Boots
+Nature: Jolly
+Ability: Wonder Guard
+Level: 100
+Ball: Great Ball
+- Shadow Sneak
+- X Scissor
+
+=== TRAINER_HC_PUZZLEBATTLETEACHER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Aron @ Focus Sash
+Nature: Jolly
+Ability: Rock Head
+Level: 5
+Ball: Great Ball
+- Stealth Rock
+- Double Edge
+- Rock Slide
+- Bulldoze
+
+Pikachu Belle @ Light Ball
+Nature: Jolly
+Ability: Lightningrod
+Level: 5
+Ball: Great Ball
+- Thunderbolt
+- Freezy Frost
+- Volt Tackle
+
+Gastly @ Life Orb
+Nature: Timid
+Ability: Levitate
+Level: 5
+Ball: Great Ball
+- Thunderbolt
+- Shadow Ball
+- Sludge Bomb
+- Giga Drain
+
+Skorupi @ Black Sludge
+Nature: Brave
+Ability: Battle Armor
+Level: 5
+IVs: 31 HP / 31 Atk / 0 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Poison Jab
+- X Scissor
+
+Timburr @ Choice Scarf
+Nature: Timid
+Ability: Sheer Force
+Level: 5
+IVs: 31 HP / 0 Atk / 15 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Ice Punch
+
+Larvesta @ Rocky Helmet
+Nature: Bashful
+Ability: Flame Body
+Level: 5
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 15 Spe
+Ball: Great Ball
+- Flare Blitz
+- U Turn
+- Morning Sun
+- Will O Wisp
+
+=== TRAINER_HC_PUZZLEBATTLEPOSTGAME ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Noctowl @ Leftovers
+Nature: Careful
+Level: 100
+- Psycho Shift
+- Air Slash
+- Roost
+- Heat Wave
+
+Ferrothorn @ Rocky Helmet
+Nature: Gentle
+Ability: Lightningrod
+Level: 100
+IVs: 26 HP / 31 Atk / 0 Def / 31 SpA / 31 SpD / 0 Spe
+- Gyro Ball
+- Power Whip
+- Bulldoze
+- Body Press
+
+Toxtricity @ Life Orb
+Nature: Timid
+Ability: Punk Rock
+Level: 100
+- Overdrive
+- Boomburst
+- Sludge Wave
+- Snarl
+
+Breloom @ Life Orb
+Nature: Adamant
+Ability: Technician
+Level: 100
+Ball: Great Ball
+- Mach Punch
+- Bullet Seed
+- Rock Tomb
+- Low Sweep
+
+Tyranitar @ Hard Stone
+Nature: Adamant
+Ability: Sand Stream
+Level: 100
+Ball: Great Ball
+- Rock Slide
+- Knock Off
+- Fire Punch
+- Earthquake
+
+Arcanine H @ Life Orb
+Nature: Adamant
+Ability: Rock Head
+Level: 100
+Ball: Great Ball
+- Flare Blitz
+- Rock Slide
+- Earthquake
+- Extreme Speed
+
+=== TRAINER_HC_PUZZLEBATTLEPOSTGAMETWO ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Aggron @ Leftovers
+Nature: Adamant
+Ability: Rock Head
+Level: 100
+- Rock Slide
+- Iron Head
+- Earthquake
+- Body Press
+
+Machamp @ Flame Orb
+Nature: Adamant
+Ability: Guts
+Level: 100
+Ball: Great Ball
+- Mach Punch
+- Rock Slide
+- Earthquake
+- Drain Punch
+
+Archeops @ Hard Stone
+Nature: Bashful
+Ability: Lightningrod
+Level: 100
+- Rock Slide
+- Earthquake
+- Dual Wingbeat
+- Zen Headbutt
+
+Darmanitan G @ Choice Band
+Nature: Adamant
+Ability: Gorilla Tactics
+Level: 100
+- Rock Slide
+- Flare Blitz
+- Earthquake
+- Superpower
+
+Tyranitar @ Hard Stone
+Nature: Adamant
+Ability: Sand Stream
+Level: 100
+Ball: Great Ball
+- Rock Slide
+- Knock Off
+- Fire Punch
+- Earthquake
+
+Arcanine H @ Life Orb
+Nature: Adamant
+Ability: Rock Head
+Level: 100
+Ball: BALL_TYPE_HISUIAN_BALL
+- Flare Blitz
+- Rock Slide
+- Earthquake
+- Extreme Speed
+
+=== TRAINER_HC_PUZZLEBATTLECHRIS ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Ironboulder @ Booster Energy
+Nature: Adamant
+Ability: Quark Drive
+Level: 100
+IVs: 31 HP / 31 Atk / 20 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Master Ball
+- Psycho Cut
+- Close Combat
+- Mighty Cleave
+
+Articuno G @ Sharp Beak
+Nature: Timid
+Ability: Competitive
+Level: 100
+Ball: Dusk Ball
+- Psycho Shift
+- Aura Sphere
+- Air Cutter
+
+Greattusk @ Booster Energy
+Nature: Jolly
+Ability: Booster Energy
+Level: 100
+IVs: 31 HP / 31 Atk / 0 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Ultra Ball
+- Close Combat
+- Headlong Rush
+- Zen Headbutt
+
+Rotom @ Spell Tag
+Nature: Modest
+Ability: Levitate
+Level: 100
+Ball: Dusk Ball
+- Parabolic Charge
+- Shadow Ball
+- Shadow Sneak
+
+Dugtrio A @ Lum Berry
+Nature: Jolly
+Ability: Gooey
+Level: 100
+IVs: 31 HP / 10 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ball: Great Ball
+- Bulldoze
+- Iron Head
+
+Hawlucha @ Flying Gem
+Nature: Jolly
+Ability: Unburden
+Level: 100
+IVs: 0 HP / 31 Atk / 31 Def / 31 SpA / 0 SpD / 31 Spe
+Ball: Great Ball
+- Acrobatics
+- Close Combat
+
+=== TRAINER_HC_RENTALBATTLEEEVEE ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Overqwil @ Black Sludge
+Nature: Careful
+Ability: Intimidate
+Level: 100
+Ball: Ultra Ball
+- Toxic Spikes
+- Throat Chop
+- Poison Jab
+- Waterfall
+
+Goodra H @ Assault Vest
+Nature: Modest
+Ability: Sap Sipper
+Level: 100
+Ball: Heavy Ball
+- Dragon Pulse
+- Flash Cannon
+- Flamethrower
+- Thunderbolt
+
+Arcanine H @ Life Orb
+Nature: Jolly
+Ability: Rock Head
+Level: 100
+Ball: BALL_TYPE_CHERISH_BALL
+- Flare Blitz
+- Head Smash
+- Accelerock
+- Teleport
+
+Lilligant H @ Focus Sash
+Nature: Jolly
+Ability: Hustle
+Level: 100
+Ball: Great Ball
+- Victory Dance
+- Drain Punch
+- Leaf Blade
+- Stone Edge
+
+Avalugg H @ Leftovers
+Nature: Impish
+Ability: Sturdy
+Level: 100
+Ball: Great Ball
+- Icicle Crash
+- Stone Edge
+- Ice Shard
+- Recover
+
+Kleavor @ Life Orb
+Nature: Jolly
+Ability: Sharpness
+Level: 100
+Ball: Net Ball
+- Swords Dance
+- X Scissor
+- Accelerock
+- Stone Axe
+
+=== TRAINER_HC_RENTALGAMBLER ===
+Name: Placeholder
+Class: Pkmn Trainer 1
+Pic: Hiker Frlg
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+Difficulty: Hard
+
+Dusknoir @ Reaper Cloth
+Nature: Careful
+Ability: Hustle
+Level: 100
+Ball: Dusk Ball
+- Metronome
+
+Ludicolo @ Leppa Berry
+Nature: Bashful
+Ability: Own Tempo
+Level: 100
+Ball: Net Ball
+- Metronome
+
+Medicham @ Medichamite
+Nature: Jolly
+Ability: Huge Power
+Level: 100
+Ball: BALL_TYPE_CHERISH_BALL
+- Metronome
+
+Alakazam @ Life Orb
+Nature: Timid
+Ability: Magic Guard
+Level: 100
+Ball: Great Ball
+- Metronome
+
+Clefable @ Life Orb
+Nature: Quiet
+Ability: Magic Guard
+Level: 100
+Ball: Great Ball
+- Metronome
+
+Snorlax @ Leftovers
+Nature: Impish
+Ability: Thick Fat
+Level: 100
+Ball: Net Ball
+- Metronome
