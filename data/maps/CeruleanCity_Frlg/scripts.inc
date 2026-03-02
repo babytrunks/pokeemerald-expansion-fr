@@ -58,6 +58,8 @@ CeruleanCity_EventScript_Rival::
 	msgbox CeruleanCity_Text_OhRightLittlePresentAsFavor
 	setvar VAR_MAP_SCENE_CERULEAN_CITY_RIVAL, 1
 	giveitem ITEM_GACHA_VOUCHER
+	checkitem ITEM_TOWN_MAP
+	call_if_eq VAR_RESULT, FALSE, CeruleanCity_EventScript_Rival_GiveTownMap
 	setspeaker SP_NAME_RIVAL
 	msgbox CeruleanCity_Text_ExplainFameCheckerSmellYa
 	closemessage
@@ -67,6 +69,14 @@ CeruleanCity_EventScript_Rival::
 	removeobject LOCALID_CERULEAN_RIVAL
 	releaseall
 	end
+
+CeruleanCity_EventScript_Rival_GiveTownMap:
+	setspeaker SP_NAME_RIVAL
+	msgbox CeruleanCity_Text_WhyDontYouHaveTownMap
+	giveitem ITEM_TOWN_MAP
+	setvar VAR_MAP_SCENE_PALLET_TOWN_RIVALS_HOUSE, 2
+	setflag FLAG_HIDE_TOWN_MAP
+	return
 
 CeruleanCity_EventScript_RivalSquirtle::
 	trainerbattle_no_intro TRAINER_RIVAL_CERULEAN_SQUIRTLE, CeruleanCity_Text_RivalDefeat
@@ -361,7 +371,7 @@ CeruleanCity_EventScript_GymSign::
 	end
 
 CeruleanCity_Text_RivalIntro::
-    .string "{RIVAL}: Yo! {PLAYER}!\p"
+    .string "Yo! {PLAYER}!\p"
     .string "You're still struggling along back\n"
     .string "here?\p"
     .string "I'm doing great! I caught a bunch\n"
@@ -375,13 +385,13 @@ CeruleanCity_Text_RivalDefeat::
     .string "You won already!$"
 
 CeruleanCity_Text_RivalPostBattle::
-    .string "{RIVAL}: Hey, guess what?\p"
+    .string "Hey, guess what?\p"
     .string "I went to BILL's and got him to\n"
     .string "show me his rare Pokémon.\p"
     .string "That added a lot of pages to my\n"
     .string "Pokédex!\p"
     .string "After all, BILL's world famous as a\n"
-    .string "POKéMANIAC.\p"
+    .string "PokéManiac.\p"
     .string "He invented the Pokémon Storage\n"
     .string "System on PC, too.\p"
     .string "Since you're using his system,\n"
@@ -402,6 +412,12 @@ CeruleanCity_Text_ExplainFameCheckerSmellYa::
     .string "like that would keep you entertained.\p"
     .string "All right, this time I really am\n"
     .string "gone. Smell ya!$"
+
+CeruleanCity_Text_WhyDontYouHaveTownMap::
+	.string "Anyway, why don't you have a Town\n"
+	.string "Map?\p"
+	.string "How'd you expect to get around with-\n"
+	.string "out this?$"
 
 CeruleanCity_Text_GruntIntro::
     .string "Hey! Stay out!\n"
@@ -466,39 +482,39 @@ CeruleanCity_Text_PeopleHereWereRobbed::
     .string "trouble with the ROCKETS!$"
 
 CeruleanCity_Text_SlowbroUseSonicboom::
-    .string "Okay! SLOWBRO!\n"
+    .string "Okay! Slowbro!\n"
     .string "Mega Evolve!$"
 
 CeruleanCity_Text_SlowbroPayAttention::
-    .string "Come on, SLOWBRO, pay attention!$"
+    .string "Come on, Slowbro, pay attention!$"
 
 CeruleanCity_Text_SlowbroPunch::
-    .string "SLOWBRO, punch!$"
+    .string "Slowbro, regenerate!$"
 
 CeruleanCity_Text_NoYouBlewItAgain::
     .string "No!\n"
     .string "You blew it again!$"
 
 CeruleanCity_Text_SlowbroWithdraw::
-    .string "SLOWBRO, WITHDRAW!$"
+    .string "Slowbro, Withdraw!$"
 
 CeruleanCity_Text_HardToControlMonsObedience::
     .string "No! That's wrong!\n"
     .string "It's so hard to control Pokémon!\p"
     .string "Your Pokémon's obedience depends\n"
-    .string "on your abilities as a TRAINER.$"
+    .string "on your abilities as a Trainer.$"
 
 CeruleanCity_Text_SlowbroTookSnooze::
-    .string "SLOWBRO took a snooze…$"
+    .string "Slowbro took a snooze…$"
 
 CeruleanCity_Text_SlowbroLoafingAround::
-    .string "SLOWBRO is loafing around…$"
+    .string "Slowbro is loafing around…$"
 
 CeruleanCity_Text_SlowbroTurnedAway::
-    .string "SLOWBRO turned away…$"
+    .string "Slowbro turned away…$"
 
 CeruleanCity_Text_SlowbroIgnoredOrders::
-    .string "SLOWBRO ignored orders…$"
+    .string "Slowbro ignored orders…$"
 
 CeruleanCity_Text_WantBrightRedBicycle::
     .string "I want a bright red bicycle.\p"
@@ -537,6 +553,3 @@ CeruleanCity_Text_GymSign::
     .string "Cerulean City Pokémon GYM\n"
     .string "LEADER: MISTY\l"
     .string "The Tomboyish Mermaid!$"
-
-CeruleanCity_Text_ReceivedAnEgg:
-	.string "You received a mysterious egg.$"

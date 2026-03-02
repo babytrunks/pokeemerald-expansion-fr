@@ -75,8 +75,8 @@
 #define TRAINER_LOLA_5                       63
 #if !IS_FRLG
 #define TRAINER_RICKY_1                      64
-#endif
 #define TRAINER_SIMON                        65
+#endif
 #define TRAINER_CHARLIE                      66
 #define TRAINER_RICKY_2                      67
 #define TRAINER_RICKY_3                      68
@@ -512,7 +512,10 @@
 #define TRAINER_EDMOND                      491
 #endif
 #define TRAINER_ERNEST_1                    492
+#if !IS_FRLG
 #define TRAINER_DWAYNE                      493
+#endif
+
 #define TRAINER_PHILLIP                     494
 #define TRAINER_LEONARD                     495
 #define TRAINER_DUNCAN                      496
@@ -666,7 +669,9 @@
 #define TRAINER_KIRA_AND_DAN_3              644
 #define TRAINER_KIRA_AND_DAN_4              645
 #define TRAINER_KIRA_AND_DAN_5              646
+#if !IS_FRLG
 #define TRAINER_JOHANNA                     647
+#endif
 #define TRAINER_GERALD                      648
 #define TRAINER_VIVIAN                      649
 #define TRAINER_DANIELLE                    650

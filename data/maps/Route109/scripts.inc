@@ -326,28 +326,6 @@ Route109_EventScript_SandCastleBoy::
 	release
 	end
 
-Route109_EventScript_SoftSandGirl::
-	lock
-	faceplayer
-	special GetPlayerBigGuyGirlString
-	goto_if_set FLAG_RECEIVED_SOFT_SAND, Route109_EventScript_AlreadyReceivedSoftSand
-	msgbox Route109_Text_YouCanHaveThis, MSGBOX_DEFAULT
-	giveitem ITEM_SOFT_SAND
-	goto_if_eq VAR_RESULT, 0, Common_EventScript_ShowBagIsFull
-	closemessage
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	setflag FLAG_RECEIVED_SOFT_SAND
-	release
-	end
-
-Route109_EventScript_AlreadyReceivedSoftSand::
-	msgbox Route109_Text_WereGoingToMakeBigCastle, MSGBOX_DEFAULT
-	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
-
 Route109_EventScript_Woman::
 	msgbox Route109_Text_LittleKidsDartAround, MSGBOX_NPC
 	end
@@ -387,27 +365,6 @@ Route109_EventScript_Alice::
 Route109_EventScript_Edmond::
 	trainerbattle_single TRAINER_EDMOND, Route109_Text_EdmondIntro, Route109_Text_EdmondDefeated
 	msgbox Route109_Text_EdmondPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route109_EventScript_Ricky::
-	trainerbattle_single TRAINER_RICKY_1, Route109_Text_RickyIntro, Route109_Text_RickyDefeated, Route109_EventScript_RickyRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_RickyRematch
-	msgbox Route109_Text_RickyPostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-Route109_EventScript_RickyRegisterMatchCallAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route109_Text_RickyRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_RICKY_1
-	release
-	end
-
-Route109_EventScript_RickyRematch::
-	trainerbattle_rematch TRAINER_RICKY_1, Route109_Text_RickyRematchIntro, Route109_Text_RickyRematchDefeated
-	msgbox Route109_Text_RickyRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route109_EventScript_Lola::
@@ -455,12 +412,7 @@ Route109_EventScript_Mel::
 	trainerbattle_double TRAINER_MEL_AND_PAUL, Route109_Text_MelIntro, Route109_Text_MelDefeated, Route109_Text_MelNotEnoughPokemon
 	msgbox Route109_Text_MelPostBattle, MSGBOX_AUTOCLOSE
 	end
-
-Route109_EventScript_Chandler::
-	trainerbattle_single TRAINER_CHANDLER, Route109_Text_ChandlerIntro, Route109_Text_ChandlerDefeated
-	msgbox Route109_Text_ChandlerPostBattle, MSGBOX_AUTOCLOSE
-	end
-
+	
 Route109_EventScript_Hailey::
 	trainerbattle_single TRAINER_HAILEY, Route109_Text_HaileyIntro, Route109_Text_HaileyDefeated
 	msgbox Route109_Text_HaileyPostBattle, MSGBOX_AUTOCLOSE
@@ -521,7 +473,7 @@ Route109_Text_LittleKidsDartAround:
 	.string "should be okay, but…$"
 
 Route109_Text_SandCastleTakingLongTime:
-	.string "Our sand castle's taking a long time\n"
+	.string "My sand castle's taking a long time\n"
 	.string "to make.$"
 
 Route109_Text_YouCanHaveThis:

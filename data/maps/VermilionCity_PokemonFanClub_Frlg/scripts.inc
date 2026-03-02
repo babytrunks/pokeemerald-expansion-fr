@@ -222,6 +222,7 @@ VermilionCity_FanClub_EventScript_FossilScientist::
 	goto_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_REVIVE_STATE, 2, VermilionCity_FanClub_EventScript_GiveRevivedMon
 	goto_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND_POKEMON_LAB_EXPERIMENT_ROOM_REVIVE_STATE, 1, VermilionCity_FanClub_EventScript_FossilStillReviving
 	call VermilionCity_FanClub_EventScript_CheckIfAnyFossils
+	msgbox VermilionCity_FanClub_Text_HaveYouAFossilForMe
 	goto_if_eq VAR_SCRIPT_TEMP, NO, VermilionCity_FanClub_EventScript_DontShowFossil
 	checkitem ITEM_HELIX_FOSSIL
 	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_FossilScientist_AddHelixFossilToList
@@ -342,7 +343,6 @@ VermilionCity_FanClub_EventScript_SetVarTempTrue::
 	return
 
 VermilionCity_FanClub_EventScript_DontShowFossil::
-	msgbox VermilionCity_FanClub_Text_HaveYouAFossilForMe
 	msgbox VermilionCity_FanClub_Text_NoIsTooBad
 	release
 	end

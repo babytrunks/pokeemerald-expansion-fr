@@ -15,10 +15,7 @@ MtMoon_1F_EventScript_Marcos::
 	msgbox MtMoon_1F_Text_MarcosPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-MtMoon_1F_EventScript_Josh::
-	trainerbattle_single TRAINER_YOUNGSTER_JOSH, MtMoon_1F_Text_JoshIntro, MtMoon_1F_Text_JoshDefeat
-	msgbox MtMoon_1F_Text_JoshPostBattle, MSGBOX_AUTOCLOSE
-	end
+
 
 MtMoon_1F_EventScript_Miriam::
 	trainerbattle_single TRAINER_LASS_MIRIAM, MtMoon_1F_Text_MiriamIntro, MtMoon_1F_Text_MiriamDefeat

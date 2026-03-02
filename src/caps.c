@@ -5,7 +5,7 @@
 #include "pokemon.h"
 #include "util.h"
 
-#define LEVEL_CAP_COUNT 13
+#define LEVEL_CAP_COUNT 14
 u32 GetCurrentLevelCap(void)
 {
     static const u32 sLevelCapFlagMap[LEVEL_CAP_COUNT][2] =
@@ -13,6 +13,7 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE01_GET, 14},
         {FLAG_BEAT_MT_MOON_ARCHER, 18},
         {FLAG_BADGE02_GET, LEVEL_CAP_GYM_2},
+        {FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_2F_CAPTAIN_STERN, 25},
         {FLAG_BADGE03_GET, LEVEL_CAP_GYM_3}, //28
         {FLAG_BADGE04_GET, LEVEL_CAP_GYM_4}, //35
         {FLAG_HIDE_CELADON_ROCKETS, LEVEL_CAP_GIOVANNI_CELADON}, //37

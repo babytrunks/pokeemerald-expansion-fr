@@ -23,39 +23,84 @@ Rattata Alola
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_YOUNGSTER_CALVIN ===
-Name: Calvin
-Class: Youngster Frlg
-Pic: Youngster Frlg
+=== TRAINER_DWAYNE ===
+Name: Dwayne
+Class: Sailor
+Pic: Sailor
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
+Mugshot: Blue
+Boss: Yes
 
-Zigzagoon Galar
-Level: 14
+Machoke @ Black Belt
+Ability: No Guard
+Nature: Modest
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Focus Blast
+- Fire Blast
+- Vacuum Wave
 
-=== TRAINER_YOUNGSTER_JOSH ===
-Name: Josh
-Class: Youngster Frlg
-Pic: Youngster Frlg
-Gender: Male
-Music: Male
+Dhelmise @ Colbur Berry
+Ability: Steelworker
+Nature: Bashful
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ominous Wind
+- Giga Drain
+- Flash Cannon
+
+Mawile @ Air Balloon
+Ability: Sheer Force
+Nature: Bashful
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Flash Cannon
+- Ice Beam
+
+=== TRAINER_JOHANNA ===
+Name: Johanna
+Class: Beauty
+Pic: Beauty
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
+Boss: Yes
 
-Wooloo
-Level: 10
+Seviper @ Expert Belt
+Ability: Fatal Precision
+Level: 23
+Nature: Bashful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Venoshock
+- Hypnosis
+- Giga Drain
+- Bulldoze
 
-Chewtle
-Level: 10
+Furret @ Silk Scarf
+Ability: Adaptability
+Nature: Bashful
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Extreme Speed
+- Jovial Bash
+- Knock Off
 
-Woobat
-Level: 11
+Kecleon @ Assault Vest
+Level: 23
+Ability: Protean
+Nature: Impish
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drain Punch
+- Shadow Sneak
+- Ice Beam
+- Sucker Punch
 
 === TRAINER_YOUNGSTER_TIMMY ===
 Name: Timmy
@@ -117,18 +162,45 @@ Raticate Alola
 Level: 18
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_YOUNGSTER_DAN ===
-Name: Dan
-Class: Youngster Frlg
-Pic: Youngster Frlg
+=== TRAINER_SIMON ===
+Name: Simon
+Class: Tuber M
+Pic: Tuber M
 Gender: Male
-Music: Male
+Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
+Boss: Yes
 
-Slowpoke
-Level: 17
+Sandygast @ Rindo Berry
+Ability: Water Compaction
+Level: 24
+Nature: Bashful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hex
+- Scorching Sands
+- Giga Drain
+
+Donphan @ Soft Sand
+Ability: Technician
+Nature: Bashful
+Level: 25
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulldoze
+- Ice Shard
+- Rock Tomb
+
+Poliwhirl @ Eviolite
+Level: 24
+Nature: Jolly
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Belly Drum
+- Waterfall
+- Ice Punch
+- Brick Break
+
 
 === TRAINER_YOUNGSTER_CHAD ===
 Name: Chad
@@ -411,7 +483,8 @@ Gender: Male
 Music: Male
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
-Dynamic Level Ratio: 75
+Dynamic Level Ratio: 80
+Boss: Yes
 
 Vivillon @ Charti Berry
 Nature: Bashful
@@ -625,6 +698,7 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
+Boss: Yes
 
 Greedent @ Sitrus Berry
 Nature: Bashful
@@ -668,6 +742,7 @@ Music: Female
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
+Boss: Yes
 
 Jigglypuff @ Eviolite
 Nature: Bold
@@ -1081,6 +1156,7 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
+Boss: Yes
 
 Mabosstiff @ Black Glasses
 Nature: Bashful
@@ -1586,6 +1662,8 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
 
 Thwackey @ Eviolite
 Nature: Adamant
@@ -5451,6 +5529,7 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
+Boss: Yes
 
 Persian-Alola @ Black Glasses
 Nature: Bashful
@@ -5505,6 +5584,8 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
+Mugshot: Yellow
+Boss: Yes
 
 Growlithe @ Eviolite
 Nature: Bashful
@@ -9271,7 +9352,7 @@ Boss: Yes
 Dynamic Level Ratio: 90
 
 Loudred @ Chople Berry
-Level: 26
+Level: 23
 Nature: Naive
 Ability: Punk Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -9281,8 +9362,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Ball
 
 Lunatone @ Colbur Berry
-Level: 26
-Nature: Modest
+Level: 23
+Nature: Bashful
 Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psyshock
@@ -9290,18 +9371,19 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hypnosis
 - Calm Mind
 
-Crawdaunt  @ Focus Sash
-Level: 26
+Corphish  @ Focus Sash
+Level: 24
 Nature: Adamant
 Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aqua Jet
 - Waterfall
 - Knock Off
 - X-Scissor
 
 Grovyle @ Eviolite
-Level: 27
+Level: 25
 Nature: Adamant
 Ability: Overgrow
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -11947,6 +12029,8 @@ Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Blue
+Boss: Yes
 
 Glimmet @ Shuca Berry
 Nature: Timid
@@ -13874,6 +13958,7 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
+Boss: Yes
 
 Monferno @ Focus Sash
 Nature: Bashful
@@ -13903,6 +13988,7 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Boss: Yes
 
 Dartrix @ Eviolite
 Nature: Bashful
@@ -15085,9 +15171,9 @@ AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viab
 Mugshot: Blue
 Boss: Yes
 
-Overqwil @ Sitrus Berry
+Qwilfish-Hisui @ Eviolite
 Ability: Intimidate
-Level: 26
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Waterfall
 - Throat Chop
@@ -15096,7 +15182,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Bruxish @ Colbur Berry
 Ability: Strong Jaw
-Level: 25
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Waterfall
 - Crunch
@@ -15116,7 +15202,7 @@ Boss: Yes
 
 Thievul @ Focus Sash
 Ability: Stakeout
-Level: 25
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Mud Shot
 - Dark Pulse
@@ -15124,7 +15210,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Nasty Plot
 
 Vullaby @ Eviolite
-Level: 26
+Level: 25
 Ability: Overcoat
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

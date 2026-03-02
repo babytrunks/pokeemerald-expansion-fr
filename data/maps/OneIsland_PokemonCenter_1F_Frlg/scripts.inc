@@ -163,17 +163,6 @@ OneIsland_PokemonCenter_1F_Movement_BillWalkToCelio::
 	walk_in_place_faster_right
 	step_end
 
-@ Unused
-OneIsland_PokemonCenter_1F_Movement_WalkUp:
-	walk_up
-	step_end
-
-@ Unused
-OneIsland_PokemonCenter_1F_Movement_StepAsideLeft::
-	walk_left
-	walk_in_place_faster_right
-	step_end
-
 OneIsland_PokemonCenter_1F_EventScript_Nurse::
 	lock
 	faceplayer

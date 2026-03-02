@@ -5,11 +5,11 @@
 
 #define TRAINER_NONE                               0
 #define TRAINER_YOUNGSTER_BEN                      1
-#define TRAINER_YOUNGSTER_CALVIN                   2 // unused
-#define TRAINER_YOUNGSTER_JOSH                     3 // unused
+#define TRAINER_DWAYNE                             2 
+#define TRAINER_JOHANNA                            3 
 #define TRAINER_YOUNGSTER_TIMMY                    4
 #define TRAINER_YOUNGSTER_JOEY                     5
-#define TRAINER_YOUNGSTER_DAN                      6 // unused
+#define TRAINER_SIMON                              6 
 #define TRAINER_YOUNGSTER_CHAD                     7
 #define TRAINER_YOUNGSTER_TYLER                    8
 #define TRAINER_YOUNGSTER_EDDIE                    9
@@ -633,13 +633,13 @@
 #define TRAINER_DAVID                              624
 #define TRAINER_ALICE                              625
 #define TRAINER_EDMOND                             626
-#define TRAINER_RICKY_1                            627
+#define TRAINER_RICKY_1                            627 // unused
 #define TRAINER_LOLA_1                             628
 #define TRAINER_AUSTINA                            629
 #define TRAINER_GWEN                               630
 #define TRAINER_CARTER                             631
 #define TRAINER_MEL_AND_PAUL                       632
-#define TRAINER_CHANDLER                           633
+#define TRAINER_CHANDLER                           633 // unused
 #define TRAINER_HAILEY                             634
 #define TRAINER_ELIJAH                             635
 #define TRAINER_GRUNT_MUSEUM_1                     636

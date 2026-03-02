@@ -10,18 +10,6 @@ Route3_EventScript_BenRematch::
 	msgbox Route3_Text_BenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route3_EventScript_Calvin::
-	trainerbattle_single TRAINER_YOUNGSTER_CALVIN, Route3_Text_CalvinIntro, Route3_Text_CalvinDefeat
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route3_EventScript_CalvinRematch
-	msgbox Route3_Text_CalvinPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route3_EventScript_CalvinRematch::
-	trainerbattle_rematch TRAINER_YOUNGSTER_CALVIN, Route3_Text_CalvinRematchIntro, Route3_Text_CalvinDefeat
-	msgbox Route3_Text_CalvinPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route3_EventScript_Colton::
 	trainerbattle_single TRAINER_BUG_CATCHER_COLTON, Route3_Text_ColtonIntro, Route3_Text_ColtonDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
@@ -188,18 +176,6 @@ Route25_EventScript_Joey::
 Route25_EventScript_JoeyRematch::
 	trainerbattle_rematch TRAINER_YOUNGSTER_JOEY, Route25_Text_JoeyRematchIntro, Route25_Text_JoeyDefeat
 	msgbox Route25_Text_JoeyPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route25_EventScript_Dan::
-	trainerbattle_single TRAINER_YOUNGSTER_DAN, Route25_Text_DanIntro, Route25_Text_DanDefeat
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route25_EventScript_DanRematch
-	msgbox Route25_Text_DanPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route25_EventScript_DanRematch::
-	trainerbattle_rematch TRAINER_YOUNGSTER_DAN, Route25_Text_DanRematchIntro, Route25_Text_DanDefeat
-	msgbox Route25_Text_DanPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route25_EventScript_Chad::

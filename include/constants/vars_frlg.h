@@ -187,11 +187,11 @@
 #define VAR_QLBAK_TRAINER_REMATCHES 0x40AA // array of 4
 #define VAR_QLBAK_MAP_LAYOUT        0x40AE
 
-#define VAR_0x40AF                 0x40AF
-#define VAR_0x40B0                 0x40B0
-#define VAR_0x40B1                 0x40B1
-#define VAR_0x40B2                 0x40B2
-#define VAR_0x40B3                 0x40B3
+#define VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR                 0x40AF
+#define VAR_TRICK_HOUSE_PRIZE_PICKUP                 0x40B0
+#define VAR_TRICK_HOUSE_FOUND_TRICK_MASTER                 0x40B1
+#define VAR_TRICK_HOUSE_ENTRANCE_STATE                 0x40B2
+#define VAR_TRICK_HOUSE_BEING_WATCHED_STATE                 0x40B3
 #define VAR_PORTHOLE               0x40B4
 #define VAR_EVENT_PICHU_SLOT       0x40B5
 #define VAR_MYSTERY_GIFT_1         0x40B6
@@ -201,16 +201,16 @@
 #define VAR_MYSTERY_GIFT_5         0x40BA
 #define VAR_MYSTERY_GIFT_6         0x40BB
 #define VAR_MYSTERY_GIFT_7         0x40BC
-#define VAR_0x40BD                 0x40BD
-#define VAR_0x40BE                 0x40BE
-#define VAR_0x40BF                 0x40BF
-#define VAR_0x40C0                 0x40C0
-#define VAR_0x40C1                 0x40C1
-#define VAR_0x40C2                 0x40C2
-#define VAR_0x40C3                 0x40C3
-#define VAR_0x40C4                 0x40C4
-#define VAR_0x40C5                 0x40C5
-#define VAR_0x40C6                 0x40C6
+#define VAR_TRICK_HOUSE_PUZZLE_1_STATE                 0x40BD
+#define VAR_TRICK_HOUSE_PUZZLE_2_STATE                 0x40BE
+#define VAR_TRICK_HOUSE_PUZZLE_3_STATE                 0x40BF
+#define VAR_TRICK_HOUSE_PUZZLE_4_STATE                 0x40C0
+#define VAR_TRICK_HOUSE_PUZZLE_5_STATE                 0x40C1
+#define VAR_TRICK_HOUSE_PUZZLE_6_STATE                 0x40C2
+#define VAR_TRICK_HOUSE_PUZZLE_7_STATE                 0x40C3
+#define VAR_TRICK_HOUSE_PUZZLE_8_STATE                 0x40C4
+#define VAR_TRICK_HOUSE_LEVEL                 0x40C5
+#define VAR_TRICK_HOUSE_PUZZLE_7_STATE_2                 0x40C6
 #define VAR_0x40C7                 0x40C7
 #define VAR_0x40C8                 0x40C8
 #define VAR_0x40C9                 0x40C9

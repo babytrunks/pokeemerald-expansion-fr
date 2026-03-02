@@ -58,6 +58,8 @@ SlateportCity_EventScript_Brendan::
 	waitmovement 0
 	applymovement LOCALID_BRENDAN_SLATEPORT, SlateportCity_Movement_BrendanApproach
 	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
     playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 	textcolor NPC_TEXT_COLOR_MALE
 	setspeaker SP_NAME_BRENDAN
@@ -72,7 +74,7 @@ SlateportCity_EventScript_Brendan::
 	closemessage
 	applymovement LOCALID_BRENDAN_SLATEPORT, SlateportCity_Movement_BrendanLeave
 	waitmovement 0
-	removeobject LOCALID_VIRIDIAN_FOREST_BRENDAN
+	removeobject LOCALID_BRENDAN_SLATEPORT
 	setvar VAR_BRENDAN_SLATEPORT_CITY, 1
 	releaseall
 	end
@@ -83,9 +85,13 @@ SlateportCity_Movement_BrendanApproach::
 	walk_right
 	walk_right
 	walk_right
+	walk_right
+	walk_right
 	step_end
 
 SlateportCity_Movement_BrendanLeave::
+	walk_left
+	walk_left
 	walk_left
 	walk_left
 	walk_left
@@ -1259,7 +1265,7 @@ SlateportCity_Text_OceanicMuseumSign:
 	.string "OCEANIC MUSEUM$"
 
 SlateportCity_Text_CitySign:
-	.string "SLATEPORT CITY\p"
+	.string "Slateport City\p"
 	.string "“The port where people and Pokémon\n"
 	.string "cross paths.”$"
 

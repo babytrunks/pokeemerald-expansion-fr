@@ -70,7 +70,8 @@
     F(WILL_O_WISP) \
     F(THUNDER_WAVE) \
     F(BODY_PRESS) \
-    F(FUTURE_SIGHT)
+    F(FUTURE_SIGHT) \
+    F(SCORCHING_SANDS) 
 
     
 #define FOREACH_HM(F) \

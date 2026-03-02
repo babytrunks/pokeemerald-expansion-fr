@@ -87,7 +87,10 @@
 #define VAR_FANCLUB_FAN_COUNTER                          0x4041
 #define VAR_FANCLUB_LOSE_FAN_TIMER                       0x4042
 #define VAR_DEPT_STORE_FLOOR                             0x4043
+#if !IS_FRLG
 #define VAR_TRICK_HOUSE_LEVEL                            0x4044
+#endif
+
 #define VAR_POKELOT_PRIZE_ITEM                           0x4045
 #define VAR_NATIONAL_DEX                                 0x4046
 #define VAR_SEEDOT_SIZE_RECORD                           0x4047
@@ -184,12 +187,15 @@
 #define VAR_SEAFLOOR_CAVERN_STATE                        0x40A2
 #define VAR_CABLE_CAR_STATION_STATE                      0x40A3
 #define VAR_SAFARI_ZONE_STATE                            0x40A4  // 0: In or out of SZ, 1: Player exiting SZ, 2: Player entering SZ
+#if !IS_FRLG
 #define VAR_TRICK_HOUSE_BEING_WATCHED_STATE              0x40A5
 #define VAR_TRICK_HOUSE_FOUND_TRICK_MASTER               0x40A6
 #define VAR_TRICK_HOUSE_ENTRANCE_STATE                   0x40A7
+#endif
 #define VAR_UNUSED_0x40A8                                0x40A8 // Unused Var
 #define VAR_CYCLING_CHALLENGE_STATE                      0x40A9
 #define VAR_SLATEPORT_MUSEUM_1F_STATE                    0x40AA
+#if !IS_FRLG
 #define VAR_TRICK_HOUSE_PUZZLE_1_STATE                   0x40AB
 #define VAR_TRICK_HOUSE_PUZZLE_2_STATE                   0x40AC
 #define VAR_TRICK_HOUSE_PUZZLE_3_STATE                   0x40AD
@@ -198,10 +204,15 @@
 #define VAR_TRICK_HOUSE_PUZZLE_6_STATE                   0x40B0
 #define VAR_TRICK_HOUSE_PUZZLE_7_STATE                   0x40B1
 #define VAR_TRICK_HOUSE_PUZZLE_8_STATE                   0x40B2
+#endif
+
 #define VAR_WEATHER_INSTITUTE_STATE                      0x40B3
 #define VAR_SS_TIDAL_STATE                               0x40B4
+#if !IS_FRLG
 #define VAR_TRICK_HOUSE_ENTER_FROM_CORRIDOR              0x40B5
 #define VAR_TRICK_HOUSE_PUZZLE_7_STATE_2                 0x40B6 // Leftover from RS, never set
+#endif
+
 #define VAR_SLATEPORT_FAN_CLUB_STATE                     0x40B7
 #define VAR_UNUSED_0x40B8                                0x40B8 // Unused Var
 #define VAR_MT_PYRE_STATE                                0x40B9
@@ -212,7 +223,9 @@
 #define VAR_GLASS_WORKSHOP_STATE                         0x40BE
 #define VAR_METEOR_FALLS_STATE                           0x40BF
 #define VAR_SOOTOPOLIS_MYSTERY_EVENTS_STATE              0x40C0
+#if !IS_FRLG
 #define VAR_TRICK_HOUSE_PRIZE_PICKUP                     0x40C1
+#endif
 #define VAR_PACIFIDLOG_TM_RECEIVED_DAY                   0x40C2
 #define VAR_VICTORY_ROAD_1F_STATE                        0x40C3
 #define VAR_FOSSIL_RESURRECTION_STATE                    0x40C4

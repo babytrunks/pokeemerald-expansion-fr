@@ -63,6 +63,7 @@ Route3_EventScript_CamperQuestDoYouWantToGive::
 Route3_EventScript_CamperQuest_GiveBerryReceiveGrass::
     msgbox Route3_Text_PlayerGaveCamperBerryJuice
     closemessage
+    removeitem ITEM_BERRY_JUICE
     checkflag FLAG_BADGE02_GET
     call_if_unset FLAG_BADGE02_GET, EventScript_Camper_SetCandyFlag 
     msgbox Route3_Text_CamperGiveGrassMon

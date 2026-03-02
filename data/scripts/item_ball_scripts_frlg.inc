@@ -80,7 +80,7 @@ MtMoon_B2F_EventScript_RootFossil:
 	finditem ITEM_ROOT_FOSSIL
 	end
 
-MtMoon_B2F_EventScript_ItemTMHiddenPower::
+MtMoon_B2F_EventScript_ItemTMHiddenPower:: @ unused
 	finditem ITEM_TM_HIDDEN_POWER
 	end
 

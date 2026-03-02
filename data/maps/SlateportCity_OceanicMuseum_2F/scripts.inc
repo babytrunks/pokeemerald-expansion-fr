@@ -80,6 +80,8 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
     playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 	applymovement LOCALID_BRENDAN_SLATEPORT_MUSEUM, SlateportCity_OceanicMuseum_2F_Movement_BrendanEnter
 	waitmovement 0
+	applymovement LOCALID_OCEANIC_MUSEUM_2F_CAPT_STERN Common_Movement_FaceUp
+	waitmovement 0
 	@ setvar VAR_0x8004, ITEM_DEVON_PARTS
 	@ call Common_EventScript_PlayerHandedOverTheItem
 	setspeaker SP_NAME_BRENDAN
@@ -99,6 +101,15 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	clearflag FLAG_HIDE_ROUTE_116_DEVON_EMPLOYEE
 	@ setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_CORP_3F_EMPLOYEE
 	@ setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 1
+	fadescreen FADE_FROM_BLACK
+	applymovement LOCALID_BRENDAN_SLATEPORT_MUSEUM, SlateportCity_OceanicMuseum_2F_Movement_ComeToYou
+	waitmovement 0
+	setspeaker SP_NAME_BRENDAN
+	msgbox SlateportCity_OceanicMuseum_2F_Text_BrendanTookCare, MSGBOX_DEFAULT
+	giveitem ITEM_GACHA_VOUCHER
+	msgbox SlateportCity_OceanicMuseum_2F_Text_BrendanLookingForCut, MSGBOX_DEFAULT
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_BRENDAN_SLATEPORT_MUSEUM
 	fadescreen FADE_FROM_BLACK
 	release
 	end
@@ -137,6 +148,11 @@ SlateportCity_OceanicMuseum_2F_Movement_PlayerApproachGruntWest:
 	walk_in_place_faster_left
 	step_end
 
+SlateportCity_OceanicMuseum_2F_Movement_ComeToYou::
+	walk_down
+	face_left
+	step_end
+
 SlateportCity_OceanicMuseum_2F_Movement_Unused:
 	walk_up
 	walk_left
@@ -172,15 +188,16 @@ SlateportCity_OceanicMuseum_2F_Movement_ArchieEnter:
 SlateportCity_OceanicMuseum_2F_Movement_BrendanEnter:
 	walk_down
 	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
 	walk_down
 	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_down
 	step_end
 
 SlateportCity_OceanicMuseum_2F_Movement_GruntApproachToBattle:
@@ -460,3 +477,16 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“S.S. Anne\p"
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
+
+SlateportCity_OceanicMuseum_2F_Text_BrendanTookCare::
+	.string "Hey, took care of those Grunts for me\n"
+	.string "did ya?\p"
+	.string "Hah, thanks for that. Here, have this.$"
+
+SlateportCity_OceanicMuseum_2F_Text_BrendanLookingForCut::
+	.string "Also, if you're looking to get past the\n"
+	.string "tree blocking the Gym in Vermilion, you\l"
+	.string "should pay a visit to the Trick Master in"
+	.string "Route 110.\p"
+	.string "I heard he can give the HM Cut as a reward.\p"
+	.string "Well, catch you later!$"

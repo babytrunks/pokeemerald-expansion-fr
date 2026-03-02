@@ -18106,6 +18106,7 @@ static const struct LevelUpMove sDrampaLevelUpLearnset[] = {
 #endif //P_FAMILY_DRAMPA
 
 #if P_FAMILY_DHELMISE
+// done
 static const struct LevelUpMove sDhelmiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_RAPID_SPIN),
@@ -18115,7 +18116,7 @@ static const struct LevelUpMove sDhelmiseLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_SHADOW_SNEAK),
     LEVEL_UP_MOVE(18, MOVE_SWITCHEROO),
     LEVEL_UP_MOVE(21, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(24, MOVE_GRASSY_GLIDE),
+    LEVEL_UP_MOVE(24, MOVE_OMINOUS_WIND),
     LEVEL_UP_MOVE(27, MOVE_HEAVY_SLAM),
     LEVEL_UP_MOVE(30, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(33, MOVE_ANCHOR_SHOT),

@@ -448,10 +448,6 @@ PkmnCenterNurse_Tutor_SignalBeam:
 	setvar VAR_0x8005, MOVE_SIGNAL_BEAM
 	goto PkmnCenterNurse_Tutor_TeachMove
 
-PkmnCenterNurse_Tutor_ScorchingSands:
-	setvar VAR_0x8005, MOVE_SCORCHING_SANDS
-	goto PkmnCenterNurse_Tutor_TeachMove
-
 PkmnCenterNurse_Tutor_TailSlap:
 	setvar VAR_0x8005, MOVE_TAIL_SLAP
 	goto PkmnCenterNurse_Tutor_TeachMove

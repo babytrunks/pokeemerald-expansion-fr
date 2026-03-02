@@ -844,8 +844,8 @@ Route110_Text_BikeTechniques:
 	.string "reach only by using a BIKE technique.$"
 
 Route110_Text_WhichShouldIChoose:
-	.string "Sorry, the Cycling Road is closed\p"
-	.string "at the moment$.\n"
+	.string "Sorry, the Cycling Road is closed\n"
+	.string "at the moment.$"
 
 Route110_Text_CyclingChallengeResultSummary:
 	.string "Number of collisions:\n"
@@ -904,7 +904,7 @@ Route110_Text_AcroBikesDoNotQualify:
 
 Route110_Text_SlateportCitySign:
 	.string "Route 110\n"
-	.string "{DOWN_ARROW} SLATEPORT CITY$"
+	.string "{DOWN_ARROW} Slateport City$"
 
 Route110_Text_CyclingRoadSign:
 	.string "SEASIDE CYCLING ROAD$"

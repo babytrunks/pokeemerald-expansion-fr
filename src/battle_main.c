@@ -4211,13 +4211,13 @@ u8 IsRunningFromBattleImpossible(u32 battler)
     if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
         return BATTLE_RUN_SUCCESS;
 
-    if ((i = IsAbilityPreventingEscape(battler)))
-    {
-        gBattleScripting.battler = i - 1;
-        gLastUsedAbility = gBattleMons[i - 1].ability;
-        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PREVENTS_ESCAPE;
-        return BATTLE_RUN_FAILURE;
-    }
+    // if ((i = IsAbilityPreventingEscape(battler)))
+    // {
+    //     gBattleScripting.battler = i - 1;
+    //     gLastUsedAbility = gBattleMons[i - 1].ability;
+    //     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_PREVENTS_ESCAPE;
+    //     return BATTLE_RUN_FAILURE;
+    // }
 
     if (!CanBattlerEscape(battler))
     {

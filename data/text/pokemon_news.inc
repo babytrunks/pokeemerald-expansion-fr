@@ -23,7 +23,7 @@ gPokeNewsTextSlateport_Ongoing::
 	.string "for it stupendously in the MARKET!\p"
 	.string "He promises unbeatable bargain\n"
 	.string "prices on CALCIUM and PROTEIN!\p"
-	.string "A trip to SLATEPORT CITY sounds\n"
+	.string "A trip to Slateport City sounds\n"
 	.string "worthwhile. Why not visit and shop\l"
 	.string "to your heart's content?\p"
 	.string "That's the news on Pokémon NEWS.$"
@@ -39,7 +39,7 @@ gPokeNewsTextSlateport_Ending::
 	.string "prices on CALCIUM and PROTEIN!\p"
 	.string "According to the ENERGY GURU, he\n"
 	.string "still has ample merchandise left.\p"
-	.string "Why not visit SLATEPORT CITY for\n"
+	.string "Why not visit Slateport City for\n"
 	.string "a most enjoyable shopping trip?\p"
 	.string "That's the news on Pokémon NEWS.$"
 
