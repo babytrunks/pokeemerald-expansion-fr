@@ -348,6 +348,8 @@ enum __attribute__((packed)) Ability
     ABILITY_FROZEN_MIST = 324, //shield dust buff
     ABILITY_BLUBBER_DEFENSE = 325, //multiscale lul
     ABILITY_CASH_SPLASH = 326, // water bubble for whiscash
+    ABILITY_MEGA_SOL = 327,
+    ABILITY_DRAGONIZE = 328,
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

@@ -7117,7 +7117,7 @@ static inline u32 CalcMoveBasePower(struct DamageContext *ctx)
             basePower *= 2;
         break;
     case EFFECT_WEATHER_BALL:
-        if (ctx->weather & B_WEATHER_ANY)
+        if ((ctx->weather & B_WEATHER_ANY) || GetBattlerAbility(battlerAtk) == ABILITY_MEGA_SOL)
             basePower *= 2;
         break;
     case EFFECT_PURSUIT:
@@ -7482,6 +7482,10 @@ u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         break;
     case ABILITY_AERILATE:
         if (moveType == TYPE_FLYING && gBattleStruct->battlerState[battlerAtk].ateBoost)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(GetGenConfig(GEN_CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3));
+        break;
+    case ABILITY_DRAGONIZE:
+        if (moveType == TYPE_DRAGON && gBattleStruct->battlerState[battlerAtk].ateBoost)
             modifier = uq4_12_multiply(modifier, UQ_4_12(GetGenConfig(GEN_CONFIG_ATE_MULTIPLIER) >= GEN_7 ? 1.2 : 1.3));
         break;
     case ABILITY_NORMALIZE:
@@ -10258,6 +10262,10 @@ bool32 PickupHasValidTarget(u32 battler)
 
 bool32 IsBattlerWeatherAffected(u32 battler, u32 weatherFlags)
 {
+    // Mega Sol: treats all sun-dependent checks as if sun is active
+    if ((weatherFlags & B_WEATHER_SUN) && GetBattlerAbility(battler) == ABILITY_MEGA_SOL)
+        return TRUE;
+
     if (gBattleWeather & weatherFlags && HasWeatherEffect())
     {
         // given weather is active -> check if its sun, rain against utility umbrella (since only 1 weather can be active at once)

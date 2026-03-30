@@ -2501,4 +2501,16 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 6,
         .breakable = TRUE,
     },
+    [ABILITY_MEGA_SOL] =
+    {
+        .name = _("Mega Sol"),
+        .description = COMPOUND_STRING("Sun-boosted moves work without sunlight."),
+        .aiRating = 7,
+    },
+    [ABILITY_DRAGONIZE] =
+    {
+        .name = _("Dragonize"),
+        .description = COMPOUND_STRING("Normal moves become Dragon type."),
+        .aiRating = 8,
+    },
 };

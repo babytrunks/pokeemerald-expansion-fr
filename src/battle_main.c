@@ -5986,6 +5986,9 @@ enum Type TrySetAteType(u32 move, u32 battlerAtk, enum Ability attackerAbility)
     case ABILITY_AERILATE:
         ateType = TYPE_FLYING;
         break;
+    case ABILITY_DRAGONIZE:
+        ateType = TYPE_DRAGON;
+        break;
     case ABILITY_GALVANIZE:
         ateType = TYPE_ELECTRIC;
         break;
@@ -6037,6 +6040,8 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, u32 move, u32 battler, enum Mo
     case EFFECT_WEATHER_BALL:
         if (state == MON_IN_BATTLE)
         {
+            if (ability == ABILITY_MEGA_SOL)
+                return TYPE_FIRE;
             if (HasWeatherEffect())
             {
                 if (gBattleWeather & B_WEATHER_RAIN && holdEffect != HOLD_EFFECT_UTILITY_UMBRELLA)
