@@ -2415,6 +2415,9 @@ static void Cmd_resultmessage(void)
         switch (*moveResultFlags & ~MOVE_RESULT_MISSED)
         {
         case MOVE_RESULT_SUPER_EFFECTIVE:
+        case MOVE_RESULT_SUPER_EFFECTIVE | MOVE_RESULT_EXTREMELY_EFFECTIVE:
+        {
+            bool32 isExtreme = (*moveResultFlags & MOVE_RESULT_EXTREMELY_EFFECTIVE) != 0;
             if (IsDoubleSpreadMove())
             {
                 if (ShouldPrintTwoFoesMessage(MOVE_RESULT_SUPER_EFFECTIVE))
@@ -2422,16 +2425,21 @@ static void Cmd_resultmessage(void)
                 else if (ShouldRelyOnTwoFoesMessage(MOVE_RESULT_SUPER_EFFECTIVE))
                     stringId = 0; // Was handled or will be handled as a double string
                 else
-                    stringId = STRINGID_SUPEREFFECTIVE;
+                    stringId = isExtreme ? STRINGID_EXTREMELYEFFECTIVE : STRINGID_SUPEREFFECTIVE;
             }
             else if (!gMultiHitCounter)  // Don't print effectiveness on each hit in a multi hit attack
             {
-                stringId = STRINGID_SUPEREFFECTIVE;
+                stringId = isExtreme ? STRINGID_EXTREMELYEFFECTIVE : STRINGID_SUPEREFFECTIVE;
             }
-            if (stringId == STRINGID_SUPEREFFECTIVE || stringId == STRINGID_SUPEREFFECTIVETWOFOES)
+            if (stringId == STRINGID_SUPEREFFECTIVE || stringId == STRINGID_SUPEREFFECTIVETWOFOES
+             || stringId == STRINGID_EXTREMELYEFFECTIVE)
                 TryInitializeTrainerSlidePlayerLandsFirstSuperEffectiveHit(gBattlerTarget);
             break;
+        }
         case MOVE_RESULT_NOT_VERY_EFFECTIVE:
+        case MOVE_RESULT_NOT_VERY_EFFECTIVE | MOVE_RESULT_MOSTLY_INEFFECTIVE:
+        {
+            bool32 isMostly = (*moveResultFlags & MOVE_RESULT_MOSTLY_INEFFECTIVE) != 0;
             if (IsDoubleSpreadMove())
             {
                 if (ShouldPrintTwoFoesMessage(MOVE_RESULT_NOT_VERY_EFFECTIVE))
@@ -2439,13 +2447,14 @@ static void Cmd_resultmessage(void)
                 else if (ShouldRelyOnTwoFoesMessage(MOVE_RESULT_NOT_VERY_EFFECTIVE))
                     stringId = 0; // Was handled or will be handled as a double string
                 else
-                    stringId = STRINGID_NOTVERYEFFECTIVE; // Needs a string
+                    stringId = isMostly ? STRINGID_MOSTLYINEFFECTIVE : STRINGID_NOTVERYEFFECTIVE;
             }
             else if (!gMultiHitCounter)
             {
-                stringId = STRINGID_NOTVERYEFFECTIVE;
+                stringId = isMostly ? STRINGID_MOSTLYINEFFECTIVE : STRINGID_NOTVERYEFFECTIVE;
             }
             break;
+        }
         case MOVE_RESULT_ONE_HIT_KO:
             stringId = STRINGID_ONEHITKO;
             break;
