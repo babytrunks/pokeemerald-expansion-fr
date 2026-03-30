@@ -530,9 +530,9 @@
 #define FLAG_ITEM_ROUTE_109_POTION                              0x225
 #define FLAG_RECEIVED_TM_SCORCHING_SANDS                        0x226
 #define FLAG_DEFEATED_SEASHORE_HOUSE                            0x227
-#define FLAG_0x228               0x228
-#define FLAG_0x229               0x229
-#define FLAG_0x22A               0x22A
+#define FLAG_HIDE_TRICK_HOUSE_ENTRANCE_MAN                      0x228
+#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL              0x229
+#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                0x22A
 #define FLAG_0x22B               0x22B
 #define FLAG_0x22C               0x22C
 #define FLAG_0x22D               0x22D
@@ -2169,7 +2169,7 @@
 #define FLAG_HIDE_SLATEPORT_CITY_STERNS_SHIPYARD_MR_BRINEY          0
 #define FLAG_HIDE_LANETTES_HOUSE_LANETTE                            0
 #define FLAG_HIDE_FALLARBOR_POKEMON_CENTER_LANETTE                  0
-#define FLAG_HIDE_TRICK_HOUSE_ENTRANCE_MAN                          0
+// #define FLAG_HIDE_TRICK_HOUSE_ENTRANCE_MAN                          0
 #define FLAG_HIDE_LILYCOVE_CONTEST_HALL_BLEND_MASTER_REPLACEMENT    0
 #define FLAG_HIDE_DESERT_UNDERPASS_FOSSIL                           0
 #define FLAG_HIDE_ROUTE_111_PLAYER_DESCENT                          0
@@ -2360,8 +2360,8 @@
 #define FLAG_ITEM_PETALBURG_WOODS_ETHER                             0
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL                  0
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0
+// #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0
+// #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_WOOD_MAIL                    0
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_4_MECH_MAIL                    0

@@ -73,8 +73,8 @@
 #define TRAINER_LOLA_3                       61
 #define TRAINER_LOLA_4                       62
 #define TRAINER_LOLA_5                       63
-#if !IS_FRLG
 #define TRAINER_RICKY_1                      64
+#if !IS_FRLG
 #define TRAINER_SIMON                        65
 #endif
 #define TRAINER_CHARLIE                      66
@@ -287,14 +287,18 @@
 #define TRAINER_TATE_AND_LIZA_1             271
 #define TRAINER_JUAN_1                      272
 #define TRAINER_JERRY_1                     273
+#if !IS_FRLG
 #define TRAINER_TED                         274
 #define TRAINER_PAUL                        275
+#endif
 #define TRAINER_JERRY_2                     276
 #define TRAINER_JERRY_3                     277
 #define TRAINER_JERRY_4                     278
 #define TRAINER_JERRY_5                     279
 #define TRAINER_KAREN_1                     280
+#if !IS_FRLG
 #define TRAINER_GEORGIA                     281
+#endif
 #define TRAINER_KAREN_2                     282
 #define TRAINER_KAREN_3                     283
 #define TRAINER_KAREN_4                     284
@@ -315,7 +319,9 @@
 #define TRAINER_VICTORIA                    299
 #define TRAINER_VANESSA                     300
 #define TRAINER_BETHANY                     301
+#if !IS_FRLG
 #define TRAINER_ISABEL_1                    302
+#endif
 #define TRAINER_ISABEL_2                    303
 #define TRAINER_ISABEL_3                    304
 #define TRAINER_ISABEL_4                    305
@@ -726,8 +732,8 @@
 #if !IS_FRLG
 #define TRAINER_HAILEY                      697
 #define TRAINER_CHANDLER                    698
-#endif
 #define TRAINER_KALEB                       699
+#endif
 #define TRAINER_JOSEPH                      700
 #define TRAINER_ALYSSA                      701
 #define TRAINER_MARCOS                      702

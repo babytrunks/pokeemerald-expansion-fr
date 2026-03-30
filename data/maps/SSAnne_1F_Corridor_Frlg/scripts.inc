@@ -12,7 +12,7 @@ SSAnne_1F_Corridor_EventScript_Sailor::
 SSAnne_1F_Corridor_EventScript_LassDouble_Trigger::
 SSAnne_1F_Corridor_EventScript_LassDouble::
     lock
-    goto_if_defeated TRAINER_ANN, SSAnne_1F_Corridor_AnnBeaten
+    @ goto_if_defeated TRAINER_ANN, SSAnne_1F_Corridor_AnnBeaten
     applymovement LOCALID_SSANNE_ANN, SSAnne_1F_Corridor_Movement_GirlFacePlayer
     waitmovement 0
     playbgm TRAINER_ENCOUNTER_MUSIC_COOL, FALSE
@@ -21,11 +21,11 @@ SSAnne_1F_Corridor_EventScript_LassDouble::
     applymovement LOCALID_SSANNE_BROOKS, Common_Movement_ExclamationMark
     waitmovement 0
     playbgm MUS_ENCOUNTER_MALE, FALSE
-    setspeaker SP_NAME_BROOKS
+    @ setspeaker SP_NAME_BROOKS
     msgbox SSAnne_2F_Room2_Text_BrooksIntro
-	trainerbattle_two_trainers TRAINER_ANN, SSAnne_1F_Room2_Text_AnnDefeat, TRAINER_BROOKS, SSAnne_2F_Room2_Text_BrooksDefeat
-	settrainerflag TRAINER_ANN
-    settrainerflag TRAINER_BROOKS
+	@ trainerbattle_two_trainers TRAINER_ANN, SSAnne_1F_Room2_Text_AnnDefeat, TRAINER_BROOKS, SSAnne_2F_Room2_Text_BrooksDefeat
+	@ settrainerflag TRAINER_ANN
+    @ settrainerflag TRAINER_BROOKS
     setvar VAR_SS_ANNE_ANN_BROOKS_BATTLE, 0x1
     end
 

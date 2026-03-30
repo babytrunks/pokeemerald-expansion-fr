@@ -86,8 +86,11 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	@ call Common_EventScript_PlayerHandedOverTheItem
 	setspeaker SP_NAME_BRENDAN
 	msgbox SlateportCity_OceanicMuseum_2F_Text_BrendanHeresTheParts, MSGBOX_DEFAULT
+		setspeaker SP_NAME_BRENDAN
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT
 	closemessage
+	savebgm MUS_DUMMY
+	fadedefaultbgm
 	fadescreen FADE_TO_BLACK
 	playfanfare MUS_HEAL
 	waitfanfare
@@ -107,6 +110,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	setspeaker SP_NAME_BRENDAN
 	msgbox SlateportCity_OceanicMuseum_2F_Text_BrendanTookCare, MSGBOX_DEFAULT
 	giveitem ITEM_GACHA_VOUCHER
+	setspeaker SP_NAME_BRENDAN
 	msgbox SlateportCity_OceanicMuseum_2F_Text_BrendanLookingForCut, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_BRENDAN_SLATEPORT_MUSEUM
@@ -481,12 +485,14 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 SlateportCity_OceanicMuseum_2F_Text_BrendanTookCare::
 	.string "Hey, took care of those Grunts for me\n"
 	.string "did ya?\p"
-	.string "Hah, thanks for that. Here, have this.$"
+	.string "Hah, have this for taking care of that\n"
+	.string "for me.$"
 
 SlateportCity_OceanicMuseum_2F_Text_BrendanLookingForCut::
 	.string "Also, if you're looking to get past the\n"
 	.string "tree blocking the Gym in Vermilion, you\l"
-	.string "should pay a visit to the Trick Master in"
+	.string "should pay a visit to the Trick Master in\l"
 	.string "Route 110.\p"
-	.string "I heard he can give the HM Cut as a reward.\p"
+	.string "I heard he can give the HM Cut as a \n"
+	.string "reward.\p"
 	.string "Well, catch you later!$"

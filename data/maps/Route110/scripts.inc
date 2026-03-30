@@ -179,10 +179,10 @@ Route110_EventScript_Edwin::
 	end
 
 Route110_EventScript_EdwinRegisterMatchCallAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route110_Text_EdwinRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_EDWIN_1
+	@ special PlayerFaceTrainerAfterBattle
+	@ waitmovement 0
+	@ msgbox Route110_Text_EdwinRegister, MSGBOX_DEFAULT
+	@ register_matchcall TRAINER_EDWIN_1
 	release
 	end
 
@@ -215,10 +215,10 @@ Route110_EventScript_Benjamin::
 	end
 
 Route110_EventScript_BenjaminRegisterMatchCallAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route110_Text_BenjaminRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_BENJAMIN_1
+	@ special PlayerFaceTrainerAfterBattle
+	@ waitmovement 0
+	@ msgbox Route110_Text_BenjaminRegister, MSGBOX_DEFAULT
+	@ register_matchcall TRAINER_BENJAMIN_1
 	release
 	end
 
@@ -237,10 +237,10 @@ Route110_EventScript_Abigail::
 	end
 
 Route110_EventScript_AbigailRegisterMatchCallAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route110_Text_AbigailRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ABIGAIL_1
+	@ special PlayerFaceTrainerAfterBattle
+	@ waitmovement 0
+	@ msgbox Route110_Text_AbigailRegister, MSGBOX_DEFAULT
+	@ register_matchcall TRAINER_ABIGAIL_1
 	release
 	end
 
@@ -258,10 +258,10 @@ Route110_EventScript_Isabel::
 	end
 
 Route110_EventScript_IsabelRegisterMatchCallAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route110_Text_IsabelRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ISABEL_1
+	@ special PlayerFaceTrainerAfterBattle
+	@ waitmovement 0
+	@ msgbox Route110_Text_IsabelRegister, MSGBOX_DEFAULT
+	@ register_matchcall TRAINER_ISABEL_1
 	release
 	end
 
@@ -614,10 +614,10 @@ Route110_EventScript_BirchScene::
 	msgbox Route110_Text_HeardYouInstallMatchCall, MSGBOX_DEFAULT
 	closemessage
 	delay 30
-	playfanfare MUS_REGISTER_MATCH_CALL
-	msgbox Route110_Text_RegisteredBirchInPokenav, MSGBOX_DEFAULT
-	waitfanfare
-	closemessage
+	@ playfanfare MUS_REGISTER_MATCH_CALL
+	@ msgbox Route110_Text_RegisteredBirchInPokenav, MSGBOX_DEFAULT
+	@ waitfanfare
+	@ closemessage
 	delay 30
 	setflag FLAG_ENABLE_PROF_BIRCH_MATCH_CALL
 	msgbox Route110_Text_KeepAnEyeOutForRival, MSGBOX_DEFAULT

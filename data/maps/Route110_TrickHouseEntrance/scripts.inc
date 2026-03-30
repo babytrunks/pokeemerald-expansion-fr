@@ -57,7 +57,7 @@ Route110_TrickHouseEntrance_EventScript_CheckReadyForNextPuzzle::
 	return
 
 Route110_TrickHouseEntrance_EventScript_CheckReadyForPuzzle2::
-	call_if_unset FLAG_BADGE03_GET, Route110_TrickHouseEntrance_EventScript_NotReadyForPuzzle
+	@ call_if_unset FLAG_BADGE03_GET, Route110_TrickHouseEntrance_EventScript_NotReadyForPuzzle
 	return
 
 Route110_TrickHouseEntrance_EventScript_CheckReadyForPuzzle3::
@@ -470,14 +470,14 @@ Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom::
 	applymovement LOCALID_PLAYER, Route110_TrickHouseEntrance_Movement_EnterRoom
 	waitmovement 0
 	switch VAR_TRICK_HOUSE_LEVEL
-	case 0, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom1
-	case 1, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom2
-	case 2, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom3
-	case 3, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom4
-	case 4, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom5
-	case 5, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom6
-	case 6, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom7
-	case 7, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom8
+	case 0, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom2
+	case 1, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom3
+	case 2, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom4
+	case 3, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom5
+	case 4, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom6
+	case 5, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom7
+	case 6, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom8
+	@ case 7, Route110_TrickHouseEntrance_EventScript_EnterPuzzleRoom8
 	end
 
 Route110_TrickHouseEntrance_Movement_EnterRoom:
@@ -551,8 +551,8 @@ Route110_TrickHouseEntrance_EventScript_LeftOnJourneyNote2::
 Route110_TrickHousePuzzle_EventScript_Door::
 	lockall
 	switch VAR_TRICK_HOUSE_LEVEL
-	case 0, Route110_TrickHousePuzzle1_EventScript_Door
-	case 1, Route110_TrickHousePuzzle2_EventScript_Door
+	case 0, Route110_TrickHousePuzzle2_EventScript_Door
+	case 1, Route110_TrickHousePuzzle1_EventScript_Door
 	case 2, Route110_TrickHousePuzzle3_EventScript_Door
 	case 3, Route110_TrickHousePuzzle4_EventScript_Door
 	case 4, Route110_TrickHousePuzzle5_EventScript_Door

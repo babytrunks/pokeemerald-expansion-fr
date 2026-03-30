@@ -594,8 +594,8 @@
 #define TRAINER_YOUNG_COUPLE_GIA_JES_3             588
 #define TRAINER_BIRD_KEEPER_MILO_2                 589
 #define TRAINER_BIRD_KEEPER_CHAZ_2                 590
-#define TRAINER_ANN               591
-#define TRAINER_BROOKS            592
+#define TRAINER_ISABEL_1                           591
+#define TRAINER_KALEB                              592
 #define TRAINER_PSYCHIC_JACLYN_2                   593
 #define TRAINER_SWIMMER_MALE_SAMIR_2               594
 #define TRAINER_HIKER_EARL_2                       595
@@ -633,23 +633,24 @@
 #define TRAINER_DAVID                              624
 #define TRAINER_ALICE                              625
 #define TRAINER_EDMOND                             626
-#define TRAINER_RICKY_1                            627 // unused
+#define TRAINER_TED                                627 
 #define TRAINER_LOLA_1                             628
 #define TRAINER_AUSTINA                            629
 #define TRAINER_GWEN                               630
 #define TRAINER_CARTER                             631
 #define TRAINER_MEL_AND_PAUL                       632
-#define TRAINER_CHANDLER                           633 // unused
+#define TRAINER_PAUL                               633 
 #define TRAINER_HAILEY                             634
 #define TRAINER_ELIJAH                             635
 #define TRAINER_GRUNT_MUSEUM_1                     636
 #define TRAINER_GRUNT_MUSEUM_2                     637
+#define TRAINER_GEORGIA                            638
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is
 //       only space for 13 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT_FRLG can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_FRLG                      638
+#define TRAINERS_COUNT_FRLG                      639
 #define MAX_TRAINERS_COUNT_FRLG                  768
 #define TRAINER_PARTNER_FRLG(partner)           (MAX_TRAINERS_COUNT_FRLG + partner)
 

@@ -780,7 +780,7 @@
               {
                 "min_level": 22,
                 "max_level": 24,
-                "species": "SPECIES_ELECTRIKE"
+                "species": "SPECIES_TROPIUS"
               },
               {
                 "min_level": 22,
@@ -795,7 +795,7 @@
               {
                 "min_level": 22,
                 "max_level": 24,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_ORICORIO_BAILE"
               },
               {
                 "min_level": 22,
@@ -942,7 +942,7 @@
               {
                 "min_level": 22,
                 "max_level": 24,
-                "species": "SPECIES_ELECTRIKE"
+                "species": "SPECIES_TROPIUS"
               },
               {
                 "min_level": 22,
@@ -962,7 +962,7 @@
               {
                 "min_level": 22,
                 "max_level": 24,
-                "species": "SPECIES_SCRAGGY"
+                "species": "SPECIES_ORICORIO_PAU"
               },
               {
                 "min_level": 22,
@@ -17681,12 +17681,12 @@
               {
                 "min_level": 30,
                 "max_level": 32,
-                "species": "SPECIES_SNEASEL"
+                "species": "SPECIES_LOUDRED"
               },
               {
                 "min_level": 30,
                 "max_level": 32,
-                "species": "SPECIES_SNEASEL"
+                "species": "SPECIES_LOUDRED"
               },
               {
                 "min_level": 30,
@@ -24749,7 +24749,7 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_MEDITITE"
+                "species": "SPECIES_BUNEARY"
               },
               {
                 "min_level": 3,
@@ -24826,7 +24826,7 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_MEDITITE"
+                "species": "SPECIES_PURRLOIN"
               },
               {
                 "min_level": 3,
@@ -24920,7 +24920,7 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_STUNKY"
+                "species": "SPECIES_GLAMEOW"
               },
               {
                 "min_level": 10,
@@ -24997,7 +24997,7 @@
               {
                 "min_level": 10,
                 "max_level": 12,
-                "species": "SPECIES_GLAMEOW"
+                "species": "SPECIES_STUNKY"
               },
               {
                 "min_level": 10,
@@ -26087,7 +26087,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_STANTLER"
               },
               {
                 "min_level": 20,
@@ -26249,7 +26249,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_STANTLER"
               },
               {
                 "min_level": 20,
@@ -26279,12 +26279,12 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_CROAGUNK"
+                "species": "SPECIES_SNEASEL"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_CROAGUNK"
+                "species": "SPECIES_SNEASEL"
               }
             ]
           }
@@ -29048,7 +29048,7 @@
               {
                 "min_level": 16,
                 "max_level": 18,
-                "species": "SPECIES_WHISMUR"
+                "species": "SPECIES_ORICORIO_POM_POM"
               },
               {
                 "min_level": 16,
@@ -29210,7 +29210,7 @@
               {
                 "min_level": 16,
                 "max_level": 18,
-                "species": "SPECIES_PURRLOIN"
+                "species": "SPECIES_ORICORIO_SENSU"
               },
               {
                 "min_level": 16,

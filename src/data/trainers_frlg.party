@@ -13732,6 +13732,17 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 - Coil
 
+Clefable @ Life Orb
+Nature: Timid
+Ability: Magic Guard
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
+- Dazzling Gleam
+- Mystical Fire
+- Soft Boiled
+- Thunder Wave
+
 === TRAINER_LEADER_JASMINE ===
 Name: Jasmine
 Class: Leader
@@ -13949,15 +13960,16 @@ Fearow
 Level: 55
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_ANN ===
-Name: Ann
-Class: Lass Frlg
-Pic: Lass Frlg
+=== TRAINER_ISABEL_1 ===
+Name: Isabel
+Class: Pokefan
+Pic: Pokefan F
 Gender: Female
-Music: Cool
+Music: Twins
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
-Dynamic Level Ratio: 80
+Dynamic Level Ratio: 90
+Mugshot: Yellow
 Boss: Yes
 
 Monferno @ Focus Sash
@@ -13980,14 +13992,16 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Low Kick
 - Grass Knot
 
-=== TRAINER_BROOKS ===
-Name: Brooks
-Class: Gentleman Frlg
-Pic: Gentleman Frlg
+=== TRAINER_KALEB ===
+Name: Kaleb
+Class: Pokefan
+Pic: Pokefan M
 Gender: Male
-Music: Male
+Music: Twins
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
+Mugshot: Yellow
 Boss: Yes
 
 Dartrix @ Eviolite
@@ -15006,26 +15020,49 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Wingull
-Level: 13
+Pelipper
+Level: 22
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_RICKY_1 ===
-Name: RICKY
-Class: Tuber Frlg
-Pic: Tuber F Frlg
+=== TRAINER_TED ===
+Name: Ted
+Class: School Kid
+Pic: School Kid M
 Gender: Male
-Music: Girl
+Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Boss: Yes
+Mugshot: Blue
 
-Zigzagoon
-Level: 13
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
+Kirlia
+Ability: Trace
+Level: 24
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Draining Kiss
+- Psychic Noise
+- Shadow Ball
+- Magical Leaf
+
+Roselia @ Eviolite
+Ability: Poison Point
+Level: 24
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mega Drain
+- Sludge
+- Extrasensory
+
+Lickitung @ Sitrus Berry
+Ability: Oblivious
+Level: 24
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Press
+- Body Slam
+- Wish
+- Knock Off
 
 === TRAINER_LOLA_1 ===
 Name: LOLA
@@ -15036,38 +15073,38 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Azumarill
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Azurill
-Level: 12
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Furfrou
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_AUSTINA ===
 Name: AUSTINA
-Class: Tuber Frlg
+Class: Tuber F
 Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Marill
-Level: 26
+Oricorio Baile
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GWEN ===
-Name: GWEN
-Class: Tuber Frlg
-Pic: Tuber F Frlg
+Name: Gwen
+Class: Tuber F
+Pic: Tuber F 
 Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Marill
-Level: 26
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CARTER ===
@@ -15081,11 +15118,11 @@ AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viab
 
 Wailmer
 Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tentacruel
 Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_MEL_AND_PAUL ===
 Name: MEL & PAUL
@@ -15112,25 +15149,46 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Attract
 - Stun Spore
 
-=== TRAINER_CHANDLER ===
-Name: CHANDLER
-Class: Tuber Frlg
-Pic: Tuber F Frlg
+=== TRAINER_PAUL ===
+Name: Paul
+Class: School Kid
+Pic: School Kid M
 Gender: Male
-Music: Girl
+Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+Mugshot: Blue
+Boss: Yes
 
-Tentacool
-Level: 12
+Magcargo @ Air Balloon
+Nature: Bashful
+Ability: Flame Body
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Lava Plume
+- Ancient Power
+- Scorching Sands
 
-Tentacool
-Level: 12
+Vileplume @ Sitrus Berry
+Nature: Bashful
+Ability: Effect Spore
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mega Drain
+- Sludge
+- Strength Sap
+
+Pelipper @ Wacan Berry
+Level: 24
+Ability: Rain Dish
+Nature: Bashful
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Slash
+- Scald
+- Icy Wind
 
 === TRAINER_HAILEY ===
-Name: HAILEY
+Name: Hailey
 Class: Tuber Frlg
 Pic: Tuber F Frlg
 Gender: Female
@@ -15138,8 +15196,8 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Marill
-Level: 13
+Swanna
+Level: 22 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ELIJAH ===
@@ -15219,6 +15277,44 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dual Wingbeat
 - Toxic
 
+=== TRAINER_GEORGIA ===
+Name: GEORGIA
+Class: School Kid
+Pic: School Kid F
+Gender: Female
+Music: Girl
+Double Battle: No
+AI: Check Bad Move
+Mugshot: Purple
+Boss: Yes
+
+Lopunny @ Silk Scarf
+Ability: Limber
+Nature: Adamant
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Drain Punch
+- Thunder Punch
+- Jovial Bash
+
+Delcatty @ Sitrus Berry
+Ability: Feline Prowess
+Nature: Bashful
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Charge Beam
+- Hyper Voice
+- Icy Wind
+- Shadow Ball
+
+Fletchinder
+Ability: Gale Wings
+Nature: Lonely
+Level: 23
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Acrobatics
+- Flamethrower
 
 === TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR ===
 Name: TERRY
