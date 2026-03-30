@@ -158,8 +158,18 @@ SlateportCity_Harbor_EventScript_FerryAttendant::
 	lock
 	faceplayer
 	goto_if_set FLAG_SYS_GAME_CLEAR, SlateportCity_Harbor_EventScript_AskForTicket
+	checkitem ITEM_HM_CUT
+	goto_if_eq VAR_RESULT, TRUE, SlateportCity_Harbor_EventScript_AskGoBackToVermilion
 	msgbox SlateportCity_Harbor_Text_FerryServiceUnavailable, MSGBOX_DEFAULT
 	release
+	end
+
+SlateportCity_Harbor_EventScript_AskGoBackToVermilion:
+	msgbox SlateportCity_Harbor_Text_WouldYouLikeToGoBackToVermilion, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_CancelDestinationSelect
+	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 0
+	setvar VAR_0x8006, SEAGALLOP_VERMILION_CITY
+	goto EventScript_SailToDest
 	end
 
 SlateportCity_Harbor_EventScript_AskForTicket::
@@ -385,6 +395,10 @@ SlateportCity_Harbor_Text_FerryServiceUnavailable:
 	.string "You're looking to board?\p"
 	.string "I'm sorry, the ferry service isn't\n"
 	.string "available at present…$"
+
+SlateportCity_Harbor_Text_WouldYouLikeToGoBackToVermilion:
+	.string "Hello! Would you like to sail back\n"
+	.string "to Vermilion City?$"
 
 SlateportCity_Harbor_Text_MayISeeYourTicket:
 	.string "Hello, are you here for the ferry?\n"

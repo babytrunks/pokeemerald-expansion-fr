@@ -7611,27 +7611,27 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Thunder Wave
 - Hidden Power
 
-Raichu-Alola @ Focus Sash
-Nature: Modest
-Ability: Surge Surfer
+Eelektrik @ Eviolite
+Nature: Relaxed
+Ability: Levitate
+Level: 26
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Giga Drain
+- Volt Switch
+- Knock Off
+- Crunch
+
+Raichu @ Raichunite X
+Nature: Jolly
+Ability: Static
 Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Nasty Plot
-- Discharge
-- Psyshock
-- Grass Knot
-
-Manectric @ Manectite
-Nature: Timid
-Ability: Intimidate
-Level: 26
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Charge Beam
+- Thunder Punch
 - Volt Switch
-- Flame Burst
-- Hidden Power
+- Brick Break
+- Extreme Speed
 
 === TRAINER_LEADER_ERIKA ===
 Name: Erika
@@ -7907,10 +7907,46 @@ Gender: Male
 Music: Rich
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yes
 
-Luxio
-Level: 26
+Kadabra @ Focus Sash
+Level: 24
+Ability: Magic Guard
+Nature: Bashful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic Noise
+- Shadow Ball
+- Dazzling Gleam
+- Aura Sphere
+
+Dugtrio @ Soft Sand
+Level: 24
+Ability: Arena Trap
+Nature: Bashful
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stomping Tantrum
+- Sucker Punch
+- Rock Slide
+- Shadow Claw
+
+Kilowattrel @ Charti Berry
+Level: 25
+Ability: Volt Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Slash
+- Volt Switch
+- Roost
+- Endeavor
+
+Noctowl @ Sitrus Berry
+Ability: Tinted Lens
+Nature: Bashful
+Level: 24
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Slash
+- Hypnosis
+- Hex
+- Hyper Voice
 
 === TRAINER_GENTLEMAN_NORTON ===
 Name: NORTON
@@ -15811,3 +15847,105 @@ Ball: Great Ball
 - Pluck
 - Drill Run
 - Double Hit
+
+=== TRAINER_AMY_AND_LIV_1 ===
+Name: Amy & Liv
+Class: Twins 
+Pic: Twins 
+Gender: Male
+Music: Twins
+Double Battle: Yes
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Plusle
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Minun
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ANDREW ===
+Name: Andrew
+Class: Fisherman 
+Pic: Fisherman 
+Gender: Male
+Music: Hiker
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Remoraid
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Corphish
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_MARCOS ===
+Name: Marcos
+Class: Bird Keeper 
+Pic: Bird Keeper 
+Gender: Male
+Music: Cool
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Taillow
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Natu
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_RHETT ===
+Name: Rhett
+Class: Black Belt 
+Pic: Black Belt 
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Makuhita
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Meditite
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_PETE ===
+Name: Pete
+Class: Swimmer M 
+Pic: Swimmer M 
+Gender: Male
+Music: Swimmer
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Seel
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Frillish
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+=== TRAINER_ISABELLE ===
+Name: Isabelle
+Class: Swimmer F 
+Pic: Swimmer F 
+Gender: Male
+Music: Female
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
+
+Sealeo
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+
+Wailmer
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe

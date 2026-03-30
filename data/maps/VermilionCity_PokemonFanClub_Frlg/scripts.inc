@@ -250,7 +250,7 @@ VermilionCity_FanClub_EventScript_FossilScientist::
 	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_FossilScientist_AddFossilizedDrakeToList
 	checkitem ITEM_FOSSILIZED_DINO
 	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_FossilScientist_AddFossilizedDinoToList
-	dynmultistack 10, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 2, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case 0, VermilionCity_FanClub_EventScript_ShowHelixFossil
 	case 1, VermilionCity_FanClub_EventScript_ShowDomeFossil

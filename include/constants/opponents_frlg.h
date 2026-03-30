@@ -646,11 +646,20 @@
 #define TRAINER_GRUNT_MUSEUM_2                     637
 #define TRAINER_GEORGIA                            638
 
+// Route 103 trainers (Emerald maps used in FireRed)
+
+#define TRAINER_AMY_AND_LIV_1                      639
+#define TRAINER_ANDREW                             640
+#define TRAINER_MARCOS                             641
+#define TRAINER_RHETT                              642
+#define TRAINER_PETE                               643
+#define TRAINER_ISABELLE                           644
+
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is
-//       only space for 13 additional trainers before trainer flag space overflows.
+//       only space for 7 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT_FRLG can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT_FRLG                      639
+#define TRAINERS_COUNT_FRLG                      645
 #define MAX_TRAINERS_COUNT_FRLG                  768
 #define TRAINER_PARTNER_FRLG(partner)           (MAX_TRAINERS_COUNT_FRLG + partner)
 

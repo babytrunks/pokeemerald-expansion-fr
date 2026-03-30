@@ -355,7 +355,9 @@
 #define TRAINER_ALLEN                       333
 #define TRAINER_TIMMY                       334
 #define TRAINER_WALLACE                     335
+#if !IS_FRLG
 #define TRAINER_ANDREW                      336
+#endif
 #define TRAINER_IVAN                        337
 #define TRAINER_CLAUDE                      338
 #define TRAINER_ELLIOT_1                    339
@@ -504,7 +506,9 @@
 #define TRAINER_DIANA_3                     478
 #define TRAINER_DIANA_4                     479
 #define TRAINER_DIANA_5                     480
+#if !IS_FRLG
 #define TRAINER_AMY_AND_LIV_1               481
+#endif
 #define TRAINER_AMY_AND_LIV_2               482
 #define TRAINER_GINA_AND_MIA_1              483
 #define TRAINER_MIU_AND_YUKI                484
@@ -736,8 +740,10 @@
 #endif
 #define TRAINER_JOSEPH                      700
 #define TRAINER_ALYSSA                      701
+#if !IS_FRLG
 #define TRAINER_MARCOS                      702
 #define TRAINER_RHETT                       703
+#endif
 #define TRAINER_TYRON                       704
 #define TRAINER_CELINA                      705
 #define TRAINER_BIANCA                      706
@@ -769,8 +775,10 @@
 #define TRAINER_TABITHA_MAGMA_HIDEOUT       732
 #define TRAINER_DARCY                       733
 #define TRAINER_MAXIE_MOSSDEEP              734
+#if !IS_FRLG
 #define TRAINER_PETE                        735
 #define TRAINER_ISABELLE                    736
+#endif
 #define TRAINER_ANDRES_1                    737
 #define TRAINER_JOSUE                       738
 #define TRAINER_CAMRON                      739

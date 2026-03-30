@@ -533,8 +533,8 @@
 #define FLAG_HIDE_TRICK_HOUSE_ENTRANCE_MAN                      0x228
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL              0x229
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                0x22A
-#define FLAG_0x22B               0x22B
-#define FLAG_0x22C               0x22C
+#define FLAG_ITEM_ROUTE_103_GUARD_SPEC                          0x22B
+#define FLAG_ITEM_ROUTE_103_PP_UP                               0x22C
 #define FLAG_0x22D               0x22D
 #define FLAG_0x22E               0x22E
 #define FLAG_0x22F               0x22F
@@ -2413,7 +2413,7 @@
 #define FLAG_ITEM_FIERY_PATH_FIRE_STONE                             0
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_TM_HAIL                       0
 #define FLAG_ITEM_SHOAL_CAVE_ICE_ROOM_NEVER_MELT_ICE                0
-#define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0
+// #define FLAG_ITEM_ROUTE_103_GUARD_SPEC                              0
 #define FLAG_ITEM_ROUTE_104_X_ACCURACY                              0
 #define FLAG_ITEM_MAUVILLE_CITY_X_SPEED                             0
 #define FLAG_ITEM_PETALBURG_WOODS_PARALYZE_HEAL                     0
@@ -2436,7 +2436,7 @@
 #define FLAG_ITEM_ROUTE_119_NUGGET                                  0
 #define FLAG_ITEM_ROUTE_104_POTION                                  0
 #define FLAG_UNUSED_0x470                                           0 // Unused Flag
-#define FLAG_ITEM_ROUTE_103_PP_UP                                   0
+// #define FLAG_ITEM_ROUTE_103_PP_UP                                   0
 #define FLAG_UNUSED_0x472                                           0 // Unused Flag
 #define FLAG_ITEM_ROUTE_108_STAR_PIECE                              0
 // #define FLAG_ITEM_ROUTE_109_POTION                                  0
