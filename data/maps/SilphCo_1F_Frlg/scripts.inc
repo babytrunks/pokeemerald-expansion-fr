@@ -32,6 +32,8 @@ EventScript_SilphCo_Growlithe::
 	end
 
 SilphCo_1F_EventScript_PoliceMan_GaveRing:
+	lock
+	faceplayer
 	msgbox SilphCo_1F_Text_DontGetPaid
 	release
 	end

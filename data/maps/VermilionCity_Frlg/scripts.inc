@@ -279,13 +279,11 @@ VermilionCity_Text_GrimerMultipliesInSludge::
     .string "toxic sludge.$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
-    .string "Did you see the S.S. Anne moored\n"
+    .string "Did you see the ship moored\n"
     .string "in the harbor?$"
 
 VermilionCity_Text_SSAnneHasDepartedForYear::
-    .string "So, the S.S. Anne has departed?\p"
-    .string "She'll be back in VERMILION about\n"
-    .string "this time next year.$"
+    .string "So, the ship has departed?$"
 
 VermilionCity_Text_BuildingOnThisLand::
     .string "I'm putting up a building on this\n"

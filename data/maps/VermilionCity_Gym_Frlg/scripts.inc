@@ -279,18 +279,18 @@ VermilionCity_Gym_EventScript_GymStatuePostVictory::
 	releaseall
 	end
 
-VermilionCity_Gym_EventScript_Manectric::
+VermilionCity_Gym_EventScript_Raichu::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_MANECTRIC_MEGA, CRY_MODE_NORMAL
-	msgbox VermilionCity_Gym_Text_Manectric
+	playmoncry SPECIES_RAICHU, CRY_MODE_NORMAL
+	msgbox VermilionCity_Gym_Text_Raichu
 	waitmoncry
 	release
 	end
 
-VermilionCity_Gym_Text_Manectric::
-    .string "Manectric: Manec!$"
+VermilionCity_Gym_Text_Raichu::
+    .string "Raichu: Chu chu!$"
 
 VermilionCity_Gym_Text_LtSurgeIntro::
     .string "Hey, kid! What do you think you're\n"

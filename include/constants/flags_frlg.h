@@ -1232,7 +1232,7 @@
 #define FLAG_EASY_MODE                              0x4CD
 #define FLAG_HARDCORE_MODE                          0x4CE
 #define FLAG_RESTRICTED_MODE                        0x4CF
-#define FLAG_0x4D0               0x4D0
+#define FLAG_CANT_CATCH                             0x4D0
 #define FLAG_0x4D1               0x4D1
 #define FLAG_0x4D2               0x4D2
 #define FLAG_0x4D3               0x4D3

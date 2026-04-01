@@ -10,8 +10,10 @@ CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall::
 	faceplayer
 	setvar VAR_TEMP_1, SPECIES_EEVEE
 	setflag FLAG_FORCE_SHINY
+	setflag FLAG_3_PERFECT_IVS
 	givemon SPECIES_EEVEE, 25
 	clearflag FLAG_FORCE_SHINY
+	clearflag FLAG_3_PERFECT_IVS
 	goto_if_eq VAR_RESULT, 0, CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveeParty
 	goto_if_eq VAR_RESULT, 1, CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveePC
 	goto_if_eq VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon

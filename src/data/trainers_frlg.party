@@ -5638,6 +5638,8 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
+Mugshot: Yellow
+Boss: Yes
 
 Hypno @ Colbur Berry
 Nature: Calm
@@ -7901,26 +7903,27 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_GENTLEMAN_TUCKER ===
 Name: Tucker
-Class: Gentleman Frlg
-Pic: Gentleman Frlg
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
-Mugshot: Yellow
+Mugshot: Purple
+Boss: Yes
 
-Kadabra @ Focus Sash
-Level: 24
-Ability: Magic Guard
+Noctowl @ Sitrus Berry
+Ability: Tinted Lens
 Nature: Bashful
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic Noise
-- Shadow Ball
-- Dazzling Gleam
-- Aura Sphere
+- Air Slash
+- Hypnosis
+- Hex
+- Hyper Voice
 
 Dugtrio @ Soft Sand
-Level: 24
+Level: 25
 Ability: Arena Trap
 Nature: Bashful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -7937,16 +7940,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Volt Switch
 - Roost
 - Endeavor
-
-Noctowl @ Sitrus Berry
-Ability: Tinted Lens
-Nature: Bashful
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Air Slash
-- Hypnosis
-- Hex
-- Hyper Voice
 
 === TRAINER_GENTLEMAN_NORTON ===
 Name: NORTON

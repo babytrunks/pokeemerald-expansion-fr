@@ -1525,6 +1525,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sCrabominableTeachableLearnset,
         .formSpeciesIdTable = sCrabominableFormSpeciesIdTable,
         .formChangeTable = sCrabominableFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 #endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_CRABRAWLER
@@ -4225,6 +4226,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sGolisopodTeachableLearnset,
         .formSpeciesIdTable = sGolisopodFormSpeciesIdTable,
         .formChangeTable = sGolisopodFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 #endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_WIMPOD
@@ -5421,6 +5423,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sDrampaTeachableLearnset,
         .formSpeciesIdTable = sDrampaFormSpeciesIdTable,
         .formChangeTable = sDrampaFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 #endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_DRAMPA
@@ -7297,6 +7300,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sMagearnaTeachableLearnset,
         .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
         .formChangeTable = sMagearnaFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
     
     [SPECIES_MAGEARNA_ORIGINAL_MEGA] =
@@ -7357,6 +7361,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sMagearnaTeachableLearnset,
         .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
         .formChangeTable = sMagearnaOriginalFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 #endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_MAGEARNA
@@ -7827,6 +7832,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .teachableLearnset = sZeraoraTeachableLearnset,
         .formSpeciesIdTable = sZeraoraFormSpeciesIdTable,
         .formChangeTable = sZeraoraFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 #endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_ZERAORA

@@ -40,7 +40,8 @@ Route9_Text_DrewPostBattle::
 
 Route9_Text_CaitlinIntro::
     .string "When you lock eyes with a Cooltrainer,\n"
-    .string "you better be ready for something serious!$"
+    .string "you better be ready for a serious\l"
+    .string "battle!$"
 
 Route9_Text_CaitlinDefeat::
     .string "No!\n"

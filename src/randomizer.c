@@ -60,36 +60,47 @@ static const u16 sPreevolutionBabyMons[] =
 
 bool32 RandomizerFeatureEnabled(enum RandomizerFeature feature)
 {
+    
     switch(feature)
     {
         case RANDOMIZE_WILD_MON:
             #ifdef FORCE_RANDOMIZE_WILD_MON
                 return FORCE_RANDOMIZE_WILD_MON;
             #else
+                if (FlagGet(FLAG_DONT_RANDOMIZE))
+                    return FALSE;
                 return FlagGet(RANDOMIZER_FLAG_WILD_MON);
             #endif
         case RANDOMIZE_FIELD_ITEMS:
             #ifdef FORCE_RANDOMIZE_FIELD_ITEMS
                 return FORCE_RANDOMIZE_FIELD_ITEMS;
             #else
+                if (FlagGet(FLAG_DONT_RANDOMIZE))
+                    return FALSE;
                 return FlagGet(RANDOMIZER_FLAG_FIELD_ITEMS);
             #endif
         case RANDOMIZE_TRAINER_MON:
             #ifdef FORCE_RANDOMIZE_TRAINER_MON
                 return FORCE_RANDOMIZE_TRAINER_MON;
             #else
+                if (FlagGet(FLAG_DONT_RANDOMIZE))
+                    return FALSE;
                 return FlagGet(RANDOMIZER_FLAG_TRAINER_MON);
             #endif
         case RANDOMIZE_FIXED_MON:
             #ifdef FORCE_RANDOMIZE_FIXED_MON
                 return FORCE_RANDOMIZE_FIXED_MON;
             #else
+                if (FlagGet(FLAG_DONT_RANDOMIZE))
+                    return FALSE;
                 return FlagGet(RANDOMIZER_FLAG_FIXED_MON);
             #endif
         case RANDOMIZE_STARTER_AND_GIFT_MON:
             #ifdef FORCE_RANDOMIZE_STARTER_AND_GIFT_MON
                 return FORCE_RANDOMIZE_STARTER_AND_GIFT_MON;
             #else
+                if (FlagGet(FLAG_DONT_RANDOMIZE))
+                    return FALSE;
                 return FlagGet(RANDOMIZER_FLAG_STARTER_AND_GIFT_MON);
             #endif
         case RANDOMIZE_ABILITIES:
