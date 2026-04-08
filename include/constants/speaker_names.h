@@ -38,6 +38,8 @@ enum SpeakerNames {
     SP_NAME_CAPTAIN_STERN,
     SP_NAME_GRUNT,
     SP_NAME_ARCHIE,
+    SP_NAME_PRESIDENT,
+    SP_NAME_SECRETARY,
     SP_NAME_COUNT
 };
 

@@ -3,7 +3,6 @@
   "name": "SilphCo_11F_Frlg",
   "layout": "LAYOUT_SILPH_CO_11F",
   "music": "MUS_RG_SILPH",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_SILPH_CO",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -89,19 +88,49 @@
       "flag": "FLAG_HIDE_SILPH_CO_11F_ZINC"
     },
     {
-      "local_id": "LOCALID_SILPH_CO_11F_GRUNT2",
+      "local_id": "LOCALID_SILPHCO_ARIANA",
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
+      "graphics_id": "OBJ_EVENT_GFX_ARIANA",
       "x": 2,
-      "y": 19,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "5",
-      "script": "SilphCo_11F_EventScript_Grunt2",
-      "flag": "FLAG_HIDE_SILPH_ROCKETS"
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
+    },
+    {
+      "local_id": "LOCALID_SILPHCO_ARCHER",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ARCHER",
+      "x": 1,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
+    },
+    {
+      "local_id": "LOCALID_SILPHCO_BRENDAN",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
     }
   ],
   "warp_events": [
@@ -145,6 +174,24 @@
       "var": "VAR_MAP_SCENE_SILPH_CO_11F",
       "var_value": "0",
       "script": "SilphCo_11F_EventScript_GiovanniTriggerRight"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_MAP_SCENE_SILPH_CO_11F_ARCHER",
+      "var_value": "0",
+      "script": "SilphCo_11F_EventScript_ArcherArianaTriggerLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_MAP_SCENE_SILPH_CO_11F_ARCHER",
+      "var_value": "0",
+      "script": "SilphCo_11F_EventScript_ArcherArianaTriggerRight"
     }
   ],
   "bg_events": [
@@ -198,5 +245,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SilphCo_11F_EventScript_FloorSign"
     }
-  ]
+  ],
+  "region": "REGION_KANTO"
 }

@@ -44,3 +44,44 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 - Protect
 - Solar Beam
 - Dragon Claw
+
+=== PARTNER_SILPH_BRENDAN ===
+Name: Brendan
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Back Pic: Brendan
+AI: Smart Trainer
+
+Masquerain @ Iapapa Berry
+Modest Nature
+Ability: Intimidate
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 204 SpA 
+- Scald
+- Bug Buzz
+- Giga Drain
+- Stun Spore
+
+Exploud @ Silk Scarf
+Timid Nature
+Ability: Punk Rock
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 6 SpA / 252 SpD
+- Flamethrower
+- Surf
+- Focus Blast
+- Hyper Voice
+
+Sceptile @ Sceptilite
+Adamant Nature
+Level: 44
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 252 Atk / 252 SpA / 6 SpD
+- Leaf Blade
+- Dragon Claw
+- Focus Blast
+- Hidden Power

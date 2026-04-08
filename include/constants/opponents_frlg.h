@@ -294,7 +294,7 @@
 #define TRAINER_TEAM_ROCKET_GRUNT_38               288
 #define TRAINER_TEAM_ROCKET_GRUNT_39               289
 #define TRAINER_TEAM_ROCKET_GRUNT_40               290
-#define TRAINER_TEAM_ROCKET_GRUNT_41               291
+#define TRAINER_TEAM_ROCKET_GRUNT_41               291 // unused
 #define TRAINER_COOLTRAINER_SAMUEL                 292
 #define TRAINER_COOLTRAINER_GEORGE                 293
 #define TRAINER_COOLTRAINER_COLBY                  294
@@ -505,9 +505,9 @@
 #define TRAINER_CAMPER_RILEY                       499
 #define TRAINER_PICNICKER_MARCY                    500
 #define TRAINER_RUIN_MANIAC_LAYTON                 501
-#define TRAINER_MT_MOON_ARCHER                 502
-#define TRAINER_PICNICKER_KELSEY_3                 503
-#define TRAINER_PICNICKER_KELSEY_4                 504
+#define TRAINER_MT_MOON_ARCHER                     502
+#define TRAINER_SILPH_CO_ARCHER                    503
+#define TRAINER_SILPH_CO_ARIANA                    504
 #define TRAINER_CAMPER_RICKY_2                     505
 #define TRAINER_CAMPER_RICKY_3                     506
 #define TRAINER_CAMPER_RICKY_4                     507

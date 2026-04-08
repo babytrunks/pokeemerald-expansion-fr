@@ -12093,39 +12093,91 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Howl
 - Fire Fang
 
-=== TRAINER_PICNICKER_KELSEY_3 ===
-Name: Kelsey
-Class: Picnicker Frlg
-Pic: Picnicker Frlg
+=== TRAINER_SILPH_CO_ARCHER ===
+Name: Archer
+Class: Team Rocket Frlg
+Pic: Archer
 Gender: Male
-Music: Girl
+Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Boss: Yes
 
-Nidorino
-Level: 29
+Gothitelle @ Colbur Berry
+Nature: Modest
+Ability: Competitive
+Level: 42
+IVs: 31 HP / 31 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+EVs: 252 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 0 Spe
+- Psychic
+- Shadow Ball
+- Hidden Power
+- Thunder Wave
+
+Gholdengo @ Sitrus Berry
+Nature: Modest
+Ability: Good As Gold
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 54 Spe
+- Shadow Ball
+- Make It Rain
+- Focus Blast
+- Recover
 
-Nidorina
-Level: 29
+Houndoom @ Houndoominite
+Nature: Naive
+Ability: Early Bird
+Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 252 Spe
+- Heat Wave
+- Dark Pulse
+- Sucker Punch
+- Scorching Sands
 
-=== TRAINER_PICNICKER_KELSEY_4 ===
-Name: Kelsey
-Class: Picnicker Frlg
-Pic: Picnicker Frlg
-Gender: Male
-Music: Girl
+=== TRAINER_SILPH_CO_ARIANA ===
+Name: Ariana
+Class: Team Rocket Frlg
+Pic: Ariana
+Gender: Female
+Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Boss: Yes
 
-Nidorino
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Incineroar @ Sitrus Berry
+Nature: Careful
+Ability: Intimidate
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fake Out
+- Knock Off
+- Will-O-Wisp
+- Flare Blitz
 
-Nidorina
-Level: 49
+Primarina @ Throat Spray
+Nature: Modest
+Ability: Liquid Voice
+Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
+- Hyper Voice
+- Scald
+- Psychic
+- Energy Ball
+
+Mawile @ Mawilite
+Nature: Adamant
+Ability: Intimidate
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Play Rough
+- Sucker Punch
+- Iron Head
+- Thunder Punch
 
 === TRAINER_CAMPER_RICKY_2 ===
 Name: Ricky

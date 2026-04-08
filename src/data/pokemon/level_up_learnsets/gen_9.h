@@ -4854,7 +4854,6 @@ static const struct LevelUpMove sDragonairLevelUpLearnset[] = {
 static const struct LevelUpMove sDragoniteLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_HURRICANE),
     LEVEL_UP_MOVE( 1, MOVE_ROOST),
-    LEVEL_UP_MOVE( 1, MOVE_EXTREME_SPEED),
     LEVEL_UP_MOVE( 1, MOVE_TWISTER),
     LEVEL_UP_MOVE( 1, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
@@ -4871,6 +4870,7 @@ static const struct LevelUpMove sDragoniteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_SAFEGUARD),
     LEVEL_UP_MOVE(53, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE(62, MOVE_DRAGON_DANCE),
+    LEVEL_UP_MOVE(68, MOVE_EXTREME_SPEED),
     LEVEL_UP_MOVE(80, MOVE_HYPER_BEAM),
     LEVEL_UP_END
 };

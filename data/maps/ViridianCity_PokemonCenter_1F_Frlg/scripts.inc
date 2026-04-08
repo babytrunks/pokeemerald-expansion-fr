@@ -150,10 +150,10 @@ GachaMachine_Text_Uncommon::
 	.string "Uncommon$"
 
 GachaMachine_Text_Pseudos::
-	.string "Pseudos$"
+	.string "Rare$"
 
 GachaMachine_Text_UltraRare::
-	.string "Rare$"
+	.string "Ultra Rare$"
 
 GatchaMachine_Text_CantBuyWithNo2Voucher::
 	.string "You need 2 Gatcha Vouchers to play.$"

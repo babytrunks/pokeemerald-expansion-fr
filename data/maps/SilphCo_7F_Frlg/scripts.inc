@@ -117,11 +117,21 @@ SilphCo_7F_EventScript_LaprasGuy::
 	faceplayer
 	goto_if_set FLAG_GOT_LAPRAS_FROM_SILPH, SilphCo_7F_EventScript_AlreadyGotLapras
 	msgbox SilphCo_7F_Text_HaveMonForSavingUs
-	setvar VAR_TEMP_1, SPECIES_LAPRAS
-	givemon SPECIES_LAPRAS, 25
-	goto_if_eq VAR_RESULT, 0, SilphCo_7F_EventScript_ReceiveLaprasParty
-	goto_if_eq VAR_RESULT, 1, SilphCo_7F_EventScript_ReceiveLaprasPC
-	goto_if_eq VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon
+	setflag FLAG_RARE_POKEMON_SCREEN
+	setflag FLAG_3_PERFECT_IVS 
+	setflag FLAG_FORCE_SHINY
+    setvar VAR_RARE_POKEMON_COUNTER, 4
+    factory_generaterentalmons
+	factory_rentmons
+	waitstate
+	clearflag FLAG_RARE_POKEMON_SCREEN
+	clearflag FLAG_3_PERFECT_IVS
+	goto SilphCo_7F_EventScript_EndReceiveLapras
+	@ setvar VAR_TEMP_1, SPECIES_LAPRAS
+	@ givemon SPECIES_LAPRAS, 25
+	@ goto_if_eq VAR_RESULT, 0, SilphCo_7F_EventScript_ReceiveLaprasParty
+	@ goto_if_eq VAR_RESULT, 1, SilphCo_7F_EventScript_ReceiveLaprasPC
+	@ goto_if_eq VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon
 	release
 	end
 
@@ -233,10 +243,10 @@ SilphCo_7F_EventScript_Grunt3::
 	end
 
 SilphCo_7F_Text_HaveMonForSavingUs::
-    .string "Oh! Hi! You're not a ROCKET!\n"
+    .string "Oh! Hi! You're not a Rocket!\n"
     .string "You came to save us?\l"
     .string "Why, thank you!\p"
-    .string "I want you to have this Pokémon\n"
+    .string "I want you to have a rare Pokémon\n"
     .string "for saving us.$"
 
 SilphCo_7F_Text_ObtainedLaprasFromEmployee::
@@ -244,14 +254,9 @@ SilphCo_7F_Text_ObtainedLaprasFromEmployee::
     .string "the SILPH employee!$"
 
 SilphCo_7F_Text_ExplainLapras::
-    .string "It's a LAPRAS.\n"
-    .string "It's a very intelligent Pokémon.\p"
-    .string "We kept it in our lab, but it will\n"
-    .string "be much better off with you.\p"
-    .string "I think you will be a good TRAINER\n"
-    .string "for LAPRAS!\p"
-    .string "It's a good swimmer.\n"
-    .string "It'll give you a lift across water!$"
+    .string "I've got some rare Pokémon\p"
+    .string "working in Silph Co.\p"
+    .string "They'll be much better off with you.$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom::
     .string "Team Rocket's BOSS went to the\n"

@@ -440,8 +440,9 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 
     [FRONTIER_MON_DRATINI] = {
         .species = SPECIES_DRATINI,
-        .moves = {MOVE_WRAP, MOVE_LEER, MOVE_TWISTER, MOVE_THUNDER_WAVE},
+        .moves = {MOVE_WRAP, MOVE_EXTREME_SPEED, MOVE_TWISTER, MOVE_THUNDER_WAVE},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -449,6 +450,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_LARVITAR,
         .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_ROCK_THROW, MOVE_PAYBACK},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -456,6 +458,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_BAGON,
         .moves = {MOVE_LEER, MOVE_EMBER, MOVE_BITE, MOVE_DRAGON_BREATH},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -463,6 +466,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_BELDUM,
         .moves = {MOVE_TACKLE},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -470,6 +474,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_DEINO,
         .moves = {MOVE_TACKLE, MOVE_FOCUS_ENERGY, MOVE_DRAGON_BREATH, MOVE_BITE},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -477,6 +482,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_GOOMY,
         .moves = {MOVE_TACKLE, MOVE_ABSORB, MOVE_WATER_GUN, MOVE_DRAGON_BREATH},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -484,6 +490,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_JANGMO_O,
         .moves = {MOVE_TACKLE, MOVE_GROWL, MOVE_LEER, MOVE_DRAGON_BREATH},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -491,6 +498,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_DREEPY,
         .moves = {MOVE_BITE, MOVE_QUICK_ATTACK, MOVE_ASTONISH, MOVE_INFESTATION},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
@@ -498,6 +506,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .species = SPECIES_FRIGIBAX,
         .moves = {MOVE_TACKLE, MOVE_LEER, MOVE_DRAGON_TAIL, MOVE_ICY_WIND},
         .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
     .ball = BALL_PREMIER,},
 
 
