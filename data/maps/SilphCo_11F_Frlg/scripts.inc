@@ -17,6 +17,7 @@ SilphCo_11F_EventScript_President::
 	checkitemspace ITEM_MASTER_BALL
 	goto_if_eq VAR_RESULT, FALSE, SilphCo_11F_EventScript_NoRoomForMasterBall
 	giveitem_msg SilphCo_11F_Text_ObtainedMasterBallFromPresident, ITEM_MASTER_BALL, 1, MUS_RG_OBTAIN_KEY_ITEM
+	setspeaker SP_NAME_PRESIDENT
 	msgbox SilphCo_11F_Text_ThatsOurSecretPrototype
 	setflag FLAG_GOT_MASTER_BALL_FROM_SILPH
 	release
@@ -249,6 +250,7 @@ SilphCo_11F_EventScript_ArcherArianaScene::
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox SilphCo_11F_Text_BrendanFarewell3
 	giveitem ITEM_TM_DRAGON_CLAW
+	setspeaker SP_NAME_BRENDAN
 	msgbox SilphCo_11F_Text_BrendanFarewell4
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_SILPHCO_BRENDAN
@@ -524,4 +526,3 @@ SilphCo_11F_Text_MonitorHasMonsOnIt::
 SilphCo_11F_Text_FloorSign::
     .string "Silph Co. Head Office\n"
     .string "11F$"
-

@@ -254,12 +254,12 @@ SilphCo_7F_Text_ObtainedLaprasFromEmployee::
     .string "the SILPH employee!$"
 
 SilphCo_7F_Text_ExplainLapras::
-    .string "I've got some rare Pokémon\p"
-    .string "working in Silph Co.\p"
+    .string "I've got some rare Pokémon\n"
+    .string "working here in Silph Co.\p"
     .string "They'll be much better off with you.$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom::
-    .string "Team Rocket's BOSS went to the\n"
+    .string "Team Rocket's Boss went to the\n"
     .string "boardroom!\p"
     .string "Is our PRESIDENT okay?\n"
     .string "I'm worried.$"
@@ -298,12 +298,12 @@ SilphCo_7F_Text_Grunt3Defeat::
     .string "Lights out!$"
 
 SilphCo_7F_Text_Grunt3PostBattle::
-    .string "You won't find my BOSS by just\n"
+    .string "You won't find my Boss by just\n"
     .string "scurrying around!$"
 
 SilphCo_7F_Text_JoshuaIntro::
     .string "Heheh!\p"
-    .string "You mistook me for a SILPH worker?$"
+    .string "You mistook me for a Silph worker?$"
 
 SilphCo_7F_Text_JoshuaDefeat::
     .string "I'm done!$"
@@ -333,7 +333,7 @@ SilphCo_7F_Text_Grunt2Defeat::
     .string "I lost!$"
 
 SilphCo_7F_Text_Grunt2PostBattle::
-    .string "Go on home before my BOSS gets\n"
+    .string "Go on home before my Boss gets\n"
     .string "ticked off!$"
 
 SilphCo_7F_Text_RivalWhatKeptYou::
@@ -349,7 +349,7 @@ SilphCo_7F_Text_RivalIntro::
 
 SilphCo_7F_Text_RivalDefeat::
     .string "Oh, man!\n"
-    .string "So, you are ready for BOSS\l"
+    .string "So, you are ready for Boss\l"
     .string "ROCKET!$"
 
 SilphCo_7F_Text_RivalPostBattle::

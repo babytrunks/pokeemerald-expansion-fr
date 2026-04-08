@@ -5172,19 +5172,19 @@ u16 InitElevatorFloorSelectMenuPos(void)
             break;
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_4F):
             sElevatorScroll = 0;
-            sElevatorCursorPos = 1;
+            sElevatorCursorPos = 0;
             break;
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_3F):
             sElevatorScroll = 0;
-            sElevatorCursorPos = 2;
+            sElevatorCursorPos = 1;
             break;
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_2F):
             sElevatorScroll = 0;
-            sElevatorCursorPos = 3;
+            sElevatorCursorPos = 2;
             break;
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_1F):
             sElevatorScroll = 0;
-            sElevatorCursorPos = 4;
+            sElevatorCursorPos = 3;
             break;
         }
     }
