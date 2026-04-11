@@ -5272,7 +5272,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Strikes the foe with a bone\n"
             "in hand 2 to 5 times."),
         .effect = EFFECT_MULTI_HIT,
-        .power = 25,
+        .power = 30,
         .type = TYPE_GROUND,
         .accuracy = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 80,
         .pp = 10,
@@ -13938,7 +13938,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Throws two steel gears\n"
             "that strike twice."),
         .effect = EFFECT_HIT,
-        .power = 50,
+        .power = 60,
         .type = TYPE_STEEL,
         .accuracy = 85,
         .pp = 15,
@@ -15966,7 +15966,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "After being hit, foes can\n"
             "no longer escape."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 10,
@@ -16338,7 +16338,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Strangles the foe with a\n"
             "chain. The foe can't escape."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_STEEL,
         .accuracy = 100,
         .pp = 20,
@@ -16606,7 +16606,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "An intense kick from the\n"
             "tropics. Lowers Attack."),
         .effect = EFFECT_HIT,
-        .power = 70,
+        .power = 85,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 15,
@@ -16659,7 +16659,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Heats beak to attack last.\n"
             "Burns foe on contact."),
         .effect = EFFECT_BEAK_BLAST,
-        .power = 100,
+        .power = 120,
         .type = TYPE_FLYING,
         .accuracy = 100,
         .pp = 15,
@@ -16715,7 +16715,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Swings its whole body\n"
             "like a hammer to damage."),
         .effect = EFFECT_HIT,
-        .power = 90,
+        .power = 100,
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 15,
@@ -17793,7 +17793,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Double power if the user\n"
             "moves before the target."),
         .effect = EFFECT_BOLT_BEAK,
-        .power = 85,
+        .power = 80,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 10,
@@ -18172,7 +18172,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Attacks with tart apple acid\n"
             "to lower the foe's Sp. Def."),
         .effect = EFFECT_HIT,
-        .power = 80,
+        .power = 90,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 10,
@@ -18198,7 +18198,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Drops an apple from above.\n"
             "Lowers the foe's Defense."),
         .effect = EFFECT_GRAV_APPLE,
-        .power = 80,
+        .power = 90,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = 10,
@@ -19101,7 +19101,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Sends a frightful amount\n"
             "of small ghosts at foes."),
         .effect = EFFECT_HIT,
-        .power = 120,
+        .power = 110,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 5,
@@ -19172,7 +19172,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Hits a foe with psychic\n"
             "energy. May raise Defense."),
         .effect = EFFECT_HIT,
-        .power = 70,
+        .power = 90,
         .type = TYPE_PSYCHIC,
         .accuracy = 90,
         .pp = 10,
@@ -19348,7 +19348,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Giant chunks of ice damage\n"
             "the foe. It may flinch."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 120,
         .type = TYPE_ICE,
         .accuracy = 90,
         .pp = B_UPDATED_MOVE_DATA >= GEN_9 ? 10 : 5,
@@ -19532,7 +19532,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Hurts a foe harder if it has\n"
             "an ailment. May leave a burn."),
         .effect = EFFECT_DOUBLE_POWER_ON_ARG_STATUS,
-        .power = 60,
+        .power = 65,
         .type = TYPE_GHOST,
         .accuracy = 100,
         .pp = 15,
@@ -20430,7 +20430,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "A spinning pointed part\n"
             "bypasses a foe's Protect."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 120,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 5,
@@ -20801,7 +20801,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Unleashes the blood moon.\n"
             "Can't be used twice in a row."),
         .effect = EFFECT_HIT,
-        .power = 140,
+        .power = 120,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 5,
