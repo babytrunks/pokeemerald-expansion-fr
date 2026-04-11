@@ -507,7 +507,6 @@ SilphCo_11F_Text_GiovanniPostBattle::
     .string "Pokémon exist for Team Rocket!\p"
     .string "I must go, but I shall return!$"
 
-
 SilphCo_11F_Text_Grunt1Intro::
     .string "Halt! Do you have an appointment\n"
     .string "with my Boss?$"

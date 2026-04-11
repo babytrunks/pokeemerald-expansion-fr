@@ -7785,12 +7785,12 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fire Blast
 
 === TRAINER_LEADER_SABRINA ===
-Name: SABRINA
+Name: Sabrina
 Class: Leader Frlg
 Pic: Leader Sabrina Frlg
 Gender: Male
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Difficulty: Normal
 Mugshot: Purple
@@ -7850,21 +7850,21 @@ Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 52 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Ball: Ultra Ball
-- Protect
+- Fire Punch
 - High Horsepower
 - Facade
 - Crunch
 
-Gardevoir @ Gardevoirite
+Chimecho @ Chimechite
 Nature: Quiet
-Ability: Trace 
-Level: 43
+Ability: Levitate
+Level: 45
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 0 Spe
 Ball: Ultra Ball
-- Hyper Voice
-- Expanding Force
-- Shadow Ball
+- Psychic
+- Flash Cannon
+- Ally Switch
 - Trick Room
 
 === TRAINER_GENTLEMAN_THOMAS ===

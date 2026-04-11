@@ -10308,7 +10308,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
 #if P_GEN_9_MEGA_EVOLUTIONS
     [SPECIES_CHIMECHO_MEGA] =
     {
-        .baseHP        = 75,
+        .baseHP        = 90,
         .baseAttack    = 50,
         .baseDefense   = 110,
         .baseSpeed     = 65,

@@ -1,4 +1,5 @@
 SaffronCity_Gym_Frlg_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, SaffronCityGym_SetmaptileScript
 	.byte 0
 
 SaffronCity_Gym_EventScript_Sabrina::
@@ -8,6 +9,53 @@ SaffronCity_Gym_EventScript_Sabrina::
 	msgbox SaffronCity_Gym_Text_ExplainTM04
 	release
 	end
+
+SaffronCity_Gym_EventScript_SabrinaSetTile::
+    lock
+	special SpawnCameraObject
+	applymovement LOCALID_CAMERA, SaffronCity_Gym_Movement_PanCameraDown
+	waitmovement 0
+	playse SE_DOOR
+	setmetatile 0xA, 0x14, 0x293, FALSE
+	special DrawWholeMapView
+	waitse
+	applymovement LOCALID_CAMERA, SaffronCity_Gym_Movement_PanCameraUp
+	waitmovement 0
+	special RemoveCameraObject
+	setvar VAR_SAFFRON_GYM_WARP_TILE, 1
+	release
+	end
+
+SaffronCity_Gym_Movement_PanCameraDown::
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+SaffronCity_Gym_Movement_PanCameraUp::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+SaffronCityGym_SetmaptileScript::
+	compare VAR_SAFFRON_GYM_WARP_TILE 0x1 
+	call_if_eq SaffronCityGym_SetTiles 
+	end 
+
+SaffronCityGym_SetTiles:
+	setmetatile 0xA, 0x14, 0x293, FALSE
+	return 
 
 SaffronCity_Gym_EventScript_DefeatedSabrina::
 	famechecker FAMECHECKER_SABRINA, 2
@@ -94,6 +142,8 @@ SaffronCity_Gym_EventScript_GymStatuePostVictory::
 	msgbox SaffronCity_Gym_Text_GymStatuePlayerWon
 	releaseall
 	end
+
+
 
 SaffronCity_Gym_Text_SabrinaIntro::
     .string "I had a vision of your arrival.\p"

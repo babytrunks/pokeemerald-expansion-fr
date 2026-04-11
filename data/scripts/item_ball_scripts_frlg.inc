@@ -302,7 +302,7 @@ SilphCo_5F_EventScript_ItemTMBodyPress::
 	end
 
 SilphCo_5F_EventScript_ItemCardKey::
-	finditem ITEM_CARD_KEY
+	giveitem ITEM_CARD_KEY
 	end
 
 SilphCo_6F_EventScript_ItemHPUp::
@@ -386,7 +386,7 @@ PokemonMansion_B1F_EventScript_ItemTM22::
 	end
 
 PokemonMansion_B1F_EventScript_ItemSecretKey::
-	finditem ITEM_SECRET_KEY
+	giveitem ITEM_SECRET_KEY
 	end
 
 VictoryRoad_1F_EventScript_ItemRareCandy::
