@@ -977,10 +977,10 @@ static inline bool32 IsAbilityIllegal(u16 ability)
 // Given a species and an abilityNum, returns a replacement for that ability.
 u16 RandomizeAbility(u16 species, u8 abilityNum, u16 originalAbility)
 {
-    DebugPrintf("In Randomize Ability");
+    // DebugPrintf("In Randomize Ability");
     if (FlagGet(FLAG_RANDOMIZER_ABILITIES) && originalAbility != ABILITY_NONE)
     {  
-        DebugPrintf("Randomize ability %d, species: %d", abilityNum, species);
+        // DebugPrintf("Randomize ability %d, species: %d", abilityNum, species);
         struct Sfc32State state;
         u16 result;
         u32 seed;
