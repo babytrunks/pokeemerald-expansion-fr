@@ -11885,6 +11885,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .teachableLearnset = sSalamenceTeachableLearnset,
         .formSpeciesIdTable = sSalamenceFormSpeciesIdTable,
         .formChangeTable = sSalamenceFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 #endif //P_MEGA_EVOLUTIONS
 #endif //P_FAMILY_BAGON

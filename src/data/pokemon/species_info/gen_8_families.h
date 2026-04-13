@@ -382,7 +382,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sRabootLevelUpLearnset,
         .teachableLearnset = sRabootTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_CINDERACE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CINDERACE}),
     },
 
     [SPECIES_CINDERACE] =

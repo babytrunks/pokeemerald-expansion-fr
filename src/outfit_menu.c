@@ -576,7 +576,7 @@ static u32 CountAndFilterTotalOutfit(void)
             continue; // skip
         }
 
-        DebugPrintf("i: %d, j: %d, list: %S", i, j, gOutfits[j].name);
+        // DebugPrintf("i: %d, j: %d, list: %S", i, j, gOutfits[j].name);
         i++;
         j++;
     }
@@ -726,7 +726,7 @@ static u32 BuildOutfitLists(void)
         }
 
         sOutfitMenu->list[i] = j;
-        DebugPrintf("i: %d, j: %d, list: %S", i, j, gOutfits[sOutfitMenu->list[i]].name);
+        // DebugPrintf("i: %d, j: %d, list: %S", i, j, gOutfits[sOutfitMenu->list[i]].name);
         i++;
         j++;
     }
@@ -847,7 +847,7 @@ static inline void CloseOutfitMenu(u8 taskId)
 
 static void UpdateCursorPosition(void)
 {
-    DebugPrintf("Cursor pos");
+    // DebugPrintf("Cursor pos");
     u32 row = sOutfitMenu->grid->selectedItem / sOutfitMenu->grid->maxCols;
     u32 col = sOutfitMenu->grid->selectedItem % sOutfitMenu->grid->maxCols;
     u32 x = ((col % GRID_COLS) < ARRAY_COUNT(sGridPosX)) ? sGridPosX[col] : sGridPosX[0];
@@ -915,7 +915,7 @@ static void Task_CloseOutfitMenu(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
-        DebugPrintf("Got here 4");
+        // DebugPrintf("Got here 4");
         SetMainCallback2(sOutfitMenu->retCB);
         FreeOutfitMenuResources();
         DestroyTask(taskId);
