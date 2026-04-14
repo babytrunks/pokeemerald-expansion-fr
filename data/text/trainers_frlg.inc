@@ -576,7 +576,7 @@ Route20_Text_NoraRematchIntro::
 	.string "And, they've grown bigger!$"
 
 Route20_Text_MissyRematchIntro::
-	.string "I swam here from CINNABAR ISLAND.\n"
+	.string "I swam here from Cinnabar Island.\n"
 	.string "It wasn't easy, like I said.$"
 
 Route20_Text_MelissaRematchIntro::

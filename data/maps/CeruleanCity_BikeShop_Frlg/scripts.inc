@@ -43,12 +43,6 @@ CeruleanCity_BikeShop_EventScript_AlreadyGotBicycle::
 	release
 	end
 
-@ Unused
-CeruleanCity_BikeShop_EventScript_NoRoomForBicycle::
-	msgbox CeruleanCity_BikeShop_Text_MakeRoomForBicycle
-	release
-	end
-
 CeruleanCity_BikeShop_EventScript_Woman::
 	msgbox CeruleanCity_BikeShop_Text_CityBikeGoodEnoughForMe, MSGBOX_NPC
 	end
@@ -72,8 +66,8 @@ CeruleanCity_BikeShop_EventScript_Bicycle::
 
 CeruleanCity_BikeShop_Text_WelcomeToBikeShop::
     .string "Hi!\n"
-    .string "Welcome to our BIKE SHOP.\p"
-    .string "Have we got just the BIKE for\n"
+    .string "Welcome to our Bike Shop.\p"
+    .string "Have we got just the Bike for\n"
     .string "you!$"
 
 CeruleanCity_BikeShop_Text_SorryYouCantAffordIt::
@@ -82,27 +76,27 @@ CeruleanCity_BikeShop_Text_SorryYouCantAffordIt::
 
 CeruleanCity_BikeShop_Text_OhBikeVoucherHereYouGo::
     .string "Oh, that's…\p"
-    .string "A BIKE VOUCHER!\p"
+    .string "A Bike Voucher!\p"
     .string "Okay!\n"
     .string "Here you go!$"
 
 CeruleanCity_BikeShop_Text_ExchangedVoucherForBicycle::
     .string "{PLAYER} exchanged the\n"
-    .string "BIKE VOUCHER for a BICYCLE.$"
+    .string "Bike Voucher for a Bicycle.$"
 
 CeruleanCity_BikeShop_Text_ThankYouComeAgain::
     .string "Thank you!\n"
     .string "Come back again sometime!$"
 
 CeruleanCity_BikeShop_Text_HowDoYouLikeNewBicycle::
-    .string "How do you like your new BICYCLE?\n"
+    .string "How do you like your new Bicycle?\n"
     .string "Do you like how it rides?\p"
-    .string "You can take it out on CYCLING\n"
-    .string "ROAD and even into caves!$"
+    .string "You can take it out on Cycling\n"
+    .string "Road and even into caves!$"
 
 CeruleanCity_BikeShop_Text_MakeRoomForBicycle::
     .string "You better make room for your\n"
-    .string "BICYCLE!$"
+    .string "Bicycle!$"
 
 CeruleanCity_BikeShop_Text_CityBikeGoodEnoughForMe::
     .string "A plain city bike is good enough\n"
@@ -116,14 +110,8 @@ CeruleanCity_BikeShop_Text_BikesCoolButExpensive::
 
 CeruleanCity_BikeShop_Text_WowYourBikeIsCool::
     .string "Wow.\n"
-    .string "Your BIKE is really cool!$"
-
-@ Unused
-CeruleanCity_BikeShop_Text_GermanFoldableBicyleFinallyOnMarket::
-    .string "ついに　はつばい！\p"
-    .string "ドイツ　せい　さいこうきゅう\n"
-    .string "おりたたみ　じてんしゃ！$"
+    .string "Your Bike is really cool!$"
 
 CeruleanCity_BikeShop_Text_ShinyNewBicycle::
-    .string "A shiny new BICYCLE!$"
+    .string "A shiny new Bicycle!$"
 

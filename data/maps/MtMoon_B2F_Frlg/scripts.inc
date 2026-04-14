@@ -295,10 +295,8 @@ MtMoon_B2F_Text_ThenThisFossilIsMine::
     .string "Then this fossil is mine!$"
 
 MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils::
-    .string "Far away, on CINNABAR ISLAND,\n"
-    .string "there's a Pokémon LAB.\p"
-    .string "They do research on regenerating\n"
-    .string "fossils.$"
+    .string "Supposedly, someone in the Vermilion\n"
+    .string "Fan Club can regenerate fossils.$"
 
 MtMoon_B2F_Text_Grunt1Intro::
     .string "We, Team Rocket, shall find the\n"

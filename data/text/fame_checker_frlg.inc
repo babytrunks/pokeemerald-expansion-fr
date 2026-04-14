@@ -224,7 +224,7 @@ gFameCheckerFlavorText_Erika5:: @ 0x81AE247
 
 gFameCheckerFlavorText_Koga0:: @ 0x81AE2B6
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}FUCHSIA CITY Pokémon GYM\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Fuchsia City Pokémon GYM\n"
 	.string "LEADER: KOGA\l"
 	.string "The Poisonous Ninja Master$"
 
@@ -300,7 +300,7 @@ gFameCheckerFlavorText_Sabrina5:: @ 0x81AE841
 
 gFameCheckerFlavorText_Blaine0:: @ 0x81AE89E
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
-	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}CINNABAR ISLAND Pokémon GYM\n"
+	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Cinnabar Island Pokémon GYM\n"
 	.string "LEADER: BLAINE\l"
 	.string "The Hotheaded Quiz Master!$"
 
@@ -906,7 +906,7 @@ gFameCheckerFlavorTextOriginLocation_Erika5::
 	.string "CELADON MANSION$"
 
 gFameCheckerFlavorTextOriginLocation_Koga0::
-	.string "FUCHSIA CITY$"
+	.string "Fuchsia City$"
 
 gFameCheckerFlavorTextOriginLocation_Koga1::
 	.string "FUCHSIA GYM$"
@@ -915,10 +915,10 @@ gFameCheckerFlavorTextOriginLocation_Koga2::
 	.string "FUCHSIA GYM$"
 
 gFameCheckerFlavorTextOriginLocation_Koga3::
-	.string "FUCHSIA CITY$"
+	.string "Fuchsia City$"
 
 gFameCheckerFlavorTextOriginLocation_Koga4::
-	.string "FUCHSIA CITY$"
+	.string "Fuchsia City$"
 
 gFameCheckerFlavorTextOriginLocation_Koga5::
 	.string "SAFARI ZONE$"
@@ -942,7 +942,7 @@ gFameCheckerFlavorTextOriginLocation_Sabrina5::
 	.string "SAFFRON GYM$"
 
 gFameCheckerFlavorTextOriginLocation_Blaine0::
-	.string "CINNABAR ISLAND$"
+	.string "Cinnabar Island$"
 
 gFameCheckerFlavorTextOriginLocation_Blaine1::
 	.string "CINNABAR GYM$"
@@ -951,7 +951,7 @@ gFameCheckerFlavorTextOriginLocation_Blaine2::
 	.string "CINNABAR GYM$"
 
 gFameCheckerFlavorTextOriginLocation_Blaine3::
-	.string "CINNABAR ISLAND$"
+	.string "Cinnabar Island$"
 
 gFameCheckerFlavorTextOriginLocation_Blaine4::
 	.string "CINNABAR GYM$"
@@ -999,10 +999,10 @@ gFameCheckerFlavorTextOriginLocation_Agatha0::
 	.string "Pokémon LEAGUE$"
 
 gFameCheckerFlavorTextOriginLocation_Agatha1::
-	.string "INDIGO PLATEAU$"
+	.string "Indigo Plateau$"
 
 gFameCheckerFlavorTextOriginLocation_Agatha2::
-	.string "INDIGO PLATEAU$"
+	.string "Indigo Plateau$"
 
 gFameCheckerFlavorTextOriginLocation_Agatha3::
 	.string "SEVEN ISLAND$"
@@ -1026,10 +1026,10 @@ gFameCheckerFlavorTextOriginLocation_Lance3::
 	.string "CELADON DEPT.$"
 
 gFameCheckerFlavorTextOriginLocation_Lance4::
-	.string "INDIGO PLATEAU$"
+	.string "Indigo Plateau$"
 
 gFameCheckerFlavorTextOriginLocation_Lance5::
-	.string "INDIGO PLATEAU$"
+	.string "Indigo Plateau$"
 
 gFameCheckerFlavorTextOriginLocation_Bill0::
 	.string "Cerulean City$"
@@ -1038,7 +1038,7 @@ gFameCheckerFlavorTextOriginLocation_Bill1::
 	.string "Cerulean City$"
 
 gFameCheckerFlavorTextOriginLocation_Bill2::
-	.string "FUCHSIA CITY$"
+	.string "Fuchsia City$"
 
 gFameCheckerFlavorTextOriginLocation_Bill3::
 	.string "ONE ISLAND$"
@@ -1065,7 +1065,7 @@ gFameCheckerFlavorTextOriginLocation_MrFuji4::
 	.string "CINNABAR GYM$"
 
 gFameCheckerFlavorTextOriginLocation_MrFuji5::
-	.string "CINNABAR ISLAND$"
+	.string "Cinnabar Island$"
 
 gFameCheckerFlavorTextOriginLocation_Giovanni0::
 	.string "Rocket Hideout$"

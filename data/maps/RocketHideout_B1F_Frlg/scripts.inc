@@ -4,7 +4,7 @@ RocketHideout_B1F_Frlg_MapScripts::
 	.byte 0
 
 RocketHideout_B1F_OnLoad::
-	call_if_not_defeated TRAINER_TEAM_ROCKET_GRUNT_12 RocketHideout_B1F_EventScript_SetBarrier
+	call_if_not_defeated TRAINER_TEAM_ROCKET_GRUNT_8 RocketHideout_B1F_EventScript_SetBarrier
 	end
 
 RocketHideout_B1F_OnTransition::
@@ -12,8 +12,8 @@ RocketHideout_B1F_OnTransition::
 	end
 
 RocketHideout_B1F_EventScript_Grunt1::
-	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_8, RocketHideout_B1F_Text_Grunt1Intro, RocketHideout_B1F_Text_Grunt1Defeat
-	msgbox RocketHideout_B1F_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_TEAM_ROCKET_GRUNT_8, RocketHideout_B1F_Text_Grunt5Intro, RocketHideout_B1F_Text_Grunt5Defeat, RocketHideout_B1F_EventScript_DefeatedGrunt5
+	msgbox RocketHideout_B1F_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
 	end
 
 RocketHideout_B1F_EventScript_Grunt2::

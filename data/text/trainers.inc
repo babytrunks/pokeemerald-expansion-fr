@@ -1028,7 +1028,7 @@ Route110_Text_AbigailPostBattle:
 
 Route110_Text_AbigailRegister:
 	.string "You know, I like you!\n"
-	.string "Let's have a rematch on CYCLING ROAD.$"
+	.string "Let's have a rematch on Cycling Road.$"
 
 Route110_Text_AbigailRematchIntro:
 	.string "Isn't it neat to hold a battle while\n"
@@ -1148,7 +1148,7 @@ Route110_Text_TimmyPostBattle:
 	.string "just caught.$"
 
 Route110_Text_AlyssaIntro:
-	.string "I fell off CYCLING ROAD…\p"
+	.string "I fell off Cycling Road…\p"
 	.string "I'll get over my embarrassment by\n"
 	.string "battling with you!$"
 

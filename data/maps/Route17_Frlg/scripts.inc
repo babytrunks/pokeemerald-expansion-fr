@@ -34,7 +34,7 @@ Route17_Text_RaulDefeat::
 
 Route17_Text_RaulPostBattle::
     .string "You can find good stuff lying\n"
-    .string "around on CYCLING ROAD.\p"
+    .string "around on Cycling Road.\p"
     .string "There's good money in picking them\n"
     .string "up and selling them.$"
 
@@ -145,7 +145,7 @@ Route17_Text_PressBToStayInPlace::
 
 Route17_Text_RouteSign::
     .string "Route 17\n"
-    .string "Celadon City - FUCHSIA CITY$"
+    .string "Celadon City - Fuchsia City$"
 
 Route17_Text_DontThrowGameThrowBalls::
     .string "It's a notice!\p"
@@ -153,6 +153,6 @@ Route17_Text_DontThrowGameThrowBalls::
     .string "BALLS instead!$"
 
 Route17_Text_CyclingRoadSign::
-    .string "CYCLING ROAD\n"
+    .string "Cycling Road\n"
     .string "Slope ends here!$"
 

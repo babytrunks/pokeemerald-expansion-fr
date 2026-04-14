@@ -211,10 +211,12 @@ SilphCo_11F_EventScript_ArcherArianaScene::
 	waitmovement 0
 	@ textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox SilphCo_11F_Text_ArcherArianaPreBattle
+SilphCo_11F_EventScript_ArcherArianaChooseTeam:
 	special SavePlayerParty
 	fadescreen FADE_TO_BLACK
 	special ChooseHalfPartyForBattle
 	waitstate
+	goto_if_eq VAR_RESULT, 0, SilphCo_11F_EventScript_ArcherArianaChooseTeam
 	@ Tag battle: Player + Brendan vs Archer + Ariana
 	multi_2_vs_2 TRAINER_SILPH_CO_ARCHER, SilphCo_11F_Text_ArcherDefeat, TRAINER_SILPH_CO_ARIANA, SilphCo_11F_Text_ArianaDefeat, PARTNER_SILPH_BRENDAN
 	@ Post-battle

@@ -160,7 +160,7 @@ FuchsiaCity_Text_ItemBallInThere::
     .string "…Huh? That's a Pokémon?$"
 
 FuchsiaCity_Text_CitySign::
-    .string "FUCHSIA CITY\n"
+    .string "Fuchsia City\n"
     .string "Behold! It's Passion Pink!$"
 
 FuchsiaCity_Text_SafariZoneSign::
@@ -181,7 +181,7 @@ FuchsiaCity_Text_SafariZoneOfficeSign::
     .string "SAFARI ZONE OFFICE$"
 
 FuchsiaCity_Text_GymSign::
-    .string "FUCHSIA CITY Pokémon GYM\n"
+    .string "Fuchsia City Pokémon GYM\n"
     .string "LEADER: KOGA\l"
     .string "The Poisonous Ninja Master$"
 

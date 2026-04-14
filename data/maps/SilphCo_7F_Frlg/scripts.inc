@@ -126,6 +126,7 @@ SilphCo_7F_EventScript_LaprasGuy::
 	waitstate
 	clearflag FLAG_RARE_POKEMON_SCREEN
 	clearflag FLAG_3_PERFECT_IVS
+	clearflag FLAG_FORCE_SHINY
 	goto SilphCo_7F_EventScript_EndReceiveLapras
 	@ setvar VAR_TEMP_1, SPECIES_LAPRAS
 	@ givemon SPECIES_LAPRAS, 25

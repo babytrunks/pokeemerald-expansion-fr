@@ -635,11 +635,11 @@
 #define FLAG_SILPH_9F_DOOR_4                             0x28B
 #define FLAG_SILPH_10F_DOOR                              0x28C
 #define FLAG_SILPH_11F_DOOR                              0x28D
-#define FLAG_RANDOMIZER_FIELD_ITEM                                       0x28E
+#define FLAG_RANDOMIZER_FIELD_ITEM                       0x28E
 #define FLAG_0x28F                                       0x28F
 #define FLAG_MET_STICKER_MAN                             0x290
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0x291
-#define FLAG_GOT_VS_SEEKER                               0x292 // UNUSED
+#define FLAG_ITEM_ROUTE_110_DIRE_HIT                     0x292 // UNUSED
 #define FLAG_GOT_TM19_FROM_ERIKA                         0x293
 #define FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL                  0x294
 #define FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL                  0x295
@@ -2306,7 +2306,7 @@
 #define FLAG_ITEM_ROUTE_106_PROTEIN                                 0
 // #define FLAG_ITEM_ROUTE_109_PP_UP                                   0
 #define FLAG_ITEM_ROUTE_110_RARE_CANDY                              0
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0
+// #define FLAG_ITEM_ROUTE_110_DIRE_HIT                                0
 #define FLAG_ITEM_ROUTE_111_TM_HIGH_HORSEPOWER                            0
 #define FLAG_ITEM_ROUTE_111_STARDUST                                0
 #define FLAG_ITEM_ROUTE_111_HP_UP                                   0

@@ -108,7 +108,7 @@ Class: Youngster Frlg
 Pic: Youngster Frlg
 Gender: Male
 Music: Male
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 80
 
@@ -1351,7 +1351,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_PICNICKER_CAITLIN ===
 Name: Caitlin
 Class: Cooltrainer Frlg
-Pic: Cooltrainer M Frlg
+Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
@@ -5255,6 +5255,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
 Boss: Yes
+Items: Mega Ring
 
 Nidoking @ Life Orb
 Nature: Timid
@@ -5332,6 +5333,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Mugshot: Yellow
 Boss: Yes
+Items: Mega Ring
 
 Hippowdon @ Smooth Rock
 Nature: Adamant
@@ -7790,11 +7792,12 @@ Class: Leader Frlg
 Pic: Leader Sabrina Frlg
 Gender: Male
 Music: Female
-Double Battle: Yes
+Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 Difficulty: Normal
 Mugshot: Purple
 Boss: Yes
+Items: Mega Ring
 
 Hatterene @ Psychic Seed
 Nature: Quiet
@@ -13761,7 +13764,7 @@ Dynamic Level Ratio: 90
 Tinkaton @ Sitrus Berry
 Nature: Jolly
 Ability: Mold Breaker
-Level: 32
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Play Rough
@@ -13772,7 +13775,7 @@ EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Girafarig @ Eviolite
 Nature: Modest
 Ability: Sap Sipper
-Level: 32
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psychic
@@ -13783,7 +13786,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Miltank @ Chople Berry
 Nature: Adamant
 Ability: Thick Fat
-Level: 33
+Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Body Slam
@@ -13794,7 +13797,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Drampa @ Normal Gem
 Nature: Modest
 Ability: Sap Sipper
-Level: 32
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dragon Breath
@@ -13805,7 +13808,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dudunsparce @ Leftovers
 Nature: Careful
 Ability: Serene Grace
-Level: 33
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Body Slam
@@ -13816,7 +13819,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Clefable @ Life Orb
 Nature: Timid
 Ability: Magic Guard
-Level: 33
+Level: 25
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Dazzling Gleam

@@ -367,14 +367,14 @@ CinnabarIsland_Text_ScientistsExperimentInMansion::
     .string "Pokémon MANSION.$"
 
 CinnabarIsland_Text_IslandSign::
-    .string "CINNABAR ISLAND\n"
+    .string "Cinnabar Island\n"
     .string "The Fiery Town of Burning Desire$"
 
 CinnabarIsland_Text_PokemonLab::
     .string "Pokémon LAB$"
 
 CinnabarIsland_Text_GymSign::
-    .string "CINNABAR ISLAND Pokémon GYM\n"
+    .string "Cinnabar Island Pokémon GYM\n"
     .string "LEADER: BLAINE\l"
     .string "The Hotheaded Quiz Master!$"
 

@@ -2391,7 +2391,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_FLOWER_VEIL, ABILITY_NONE, ABILITY_SYMBIOSIS },
+        .abilities = { ABILITY_FAIRY_AURA, ABILITY_NONE, ABILITY_FAIRY_AURA },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Floette"),
         .cryId = CRY_FLOETTE_ETERNAL, // CRY_FLOETTE_MEGA,
@@ -2658,7 +2658,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sPanchamLevelUpLearnset,
         .teachableLearnset = sPanchamTeachableLearnset,
         .eggMoveLearnset = sPanchamEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_PANGORO, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DARK})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_PANGORO, CONDITIONS({IF_TYPE_IN_PARTY, TYPE_DARK})}),
     },
 
     [SPECIES_PANGORO] =
@@ -7239,6 +7239,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .teachableLearnset = sZygardeTeachableLearnset,
         .formSpeciesIdTable = sZygardeFormSpeciesIdTable,
         .formChangeTable = sZygardeCompleteFormChangeTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS

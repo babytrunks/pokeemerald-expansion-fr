@@ -97,11 +97,13 @@ ViridianForest_EventScript_BrendanOne_Battle::
     setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_BrendanOhHello 
     trainerbattle_no_intro TRAINER_BRENDAN_1, ViridianForest_Text_Brendan1Defeat
-    fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
-    removeobject LOCALID_VIRIDIAN_FOREST_TREECKO     
-    playse 0xF                                        @ sound 0xF
-    waitse
-    fadescreen FADE_FROM_BLACK  
+    @ fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
+    applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_TreeckoEnterPokeball
+    waitmovement 0
+    @ removeobject LOCALID_VIRIDIAN_FOREST_TREECKO     
+    @ playse 0xF                                        @ sound 0xF
+    @ waitse
+    @ fadescreen FADE_FROM_BLACK  
     setspeaker SP_NAME_BRENDAN
     msgbox ViridianForest_Text_PostDefeat
     giveitem ITEM_EXP_SHARE
@@ -116,6 +118,10 @@ ViridianForest_EventScript_BrendanOne_Battle::
     setvar VAR_VIRIDIAN_FOREST_BRENDAN_BATTLE, 1 
     release
     end
+
+EventScript_TreeckoEnterPokeball:
+    enter_pokeball
+    step_end
 
 ViridianForest_EventScript_BrendanApproachLeftTile::
     applymovement LOCALID_VIRIDIAN_FOREST_BRENDAN, EventScript_Brendan_MoveApproachLeftTile
@@ -263,15 +269,24 @@ EventScript_Viridian_LassRepelGirl::
     giveitem ITEM_INFINITE_REPEL
     setspeaker SP_NAME_ANNE
     msgbox Viridian_Text_LassRepel3  
-    fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
-    @ hidesprite 0x16
+    @ fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
+    applymovement LOCALID_VIRIDIAN_LASS_REPEL_GIRL, Movement_Viridian_LassRepelLeave
+    waitmovement 0
     removeobject LOCALID_VIRIDIAN_LASS_REPEL_GIRL      @ ??? 0x16; use proper local id
     setflag FLAG_INF_REPEL_GIRL
-    playse SE_EXIT                                        @ sound 0xF
-    waitse                                            @ checksound
-    fadescreen FADE_FROM_BLACK                        @ fadescreen 0x0
+    @ playse SE_EXIT                                        @ sound 0xF
+    @ waitse                                            @ checksound
+    @ fadescreen FADE_FROM_BLACK                        @ fadescreen 0x0
     release
     end
+
+Movement_Viridian_LassRepelLeave:
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    step_end
 
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with some friends to\n"

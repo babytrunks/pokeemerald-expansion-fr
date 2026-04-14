@@ -4450,6 +4450,13 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                 break;
         // Fallthrough
         case ABILITY_ZEN_MODE:
+            if (TryBattleFormChange(battler, FORM_CHANGE_BEGIN_BATTLE))
+            {
+                BattleScriptCall(BattleScript_BattlerFormChange);
+                effect++;
+            }
+            break;
+
         case ABILITY_SHIELDS_DOWN:
             if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT))
             {
@@ -9591,7 +9598,7 @@ bool32 TryBattleFormChange(u32 battler, enum FormChanges method)
     {
         // Saves the original species on the first form change.
 
-        if (GetBattlerPartyState(battler)->changedSpecies == SPECIES_NONE)
+        if (GetBattlerPartyState(battler)->changedSpecies == SPECIES_NONE && method != FORM_CHANGE_BATTLE_AFTER_MOVE)
             GetBattlerPartyState(battler)->changedSpecies = gBattleMons[battler].species;
 
         TryToSetBattleFormChangeMoves(&party[monId], method);

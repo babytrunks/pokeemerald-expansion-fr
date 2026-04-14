@@ -804,7 +804,7 @@ Route110_Text_BrendanExplainItemfinder:
 
 Route110_Text_RideBikeAtFullSpeed:
 	.string "Wouldn't it be great to ride a BIKE\n"
-	.string "at full speed on CYCLING ROAD?$"
+	.string "at full speed on Cycling Road?$"
 
 Route110_Text_HairStreamsBehindMe:
 	.string "How do you like the way my raven-\n"
@@ -884,7 +884,7 @@ Route110_Text_ChallengeReactionWorst:
 	.string "returning that BIKE to RYDEL.$"
 
 Route110_Text_RatedForNumberOfCollisions:
-	.string "This is CYCLING ROAD.\p"
+	.string "This is Cycling Road.\p"
 	.string "If you were to ride from MAUVILLE to\n"
 	.string "SLATEPORT on a MACH BIKE, you would\l"
 	.string "be rated for the number of collisions\l"
@@ -896,7 +896,7 @@ Route110_Text_AlwaysAimHigher:
 	.string "Always aim higher!$"
 
 Route110_Text_AcroBikesDoNotQualify:
-	.string "On this CYCLING ROAD, those riding\n"
+	.string "On this Cycling Road, those riding\n"
 	.string "MACH BIKES are rated for their number\l"
 	.string "of collisions and their total times.\p"
 	.string "ACRO BIKES do not qualify for rating.\n"
@@ -907,7 +907,7 @@ Route110_Text_SlateportCitySign:
 	.string "{DOWN_ARROW} Slateport City$"
 
 Route110_Text_CyclingRoadSign:
-	.string "SEASIDE CYCLING ROAD$"
+	.string "SEASIDE Cycling Road$"
 
 Route110_Text_AquaWasHere:
 	.string "“TEAM AQUA was here!”\p"

@@ -5271,7 +5271,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sCroagunkLevelUpLearnset,
         .teachableLearnset = sCroagunkTeachableLearnset,
         .eggMoveLearnset = sCroagunkEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_TOXICROAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_TOXICROAK}),
     },
 
     [SPECIES_TOXICROAK] =
@@ -5523,7 +5523,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sFinneonLevelUpLearnset,
         .teachableLearnset = sFinneonTeachableLearnset,
         .eggMoveLearnset = sFinneonEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_LUMINEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2, SPECIES_LUMINEON}),
     },
 
     [SPECIES_LUMINEON] =
@@ -5691,7 +5691,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sSnoverLevelUpLearnset,
         .teachableLearnset = sSnoverTeachableLearnset,
         .eggMoveLearnset = sSnoverEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_ABOMASNOW}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_4 + 1, SPECIES_ABOMASNOW}),
     },
 
     [SPECIES_ABOMASNOW] =

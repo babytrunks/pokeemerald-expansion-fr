@@ -41,7 +41,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_STURDY] =
         {
             .name = _("Sturdy"),
-            .description = COMPOUND_STRING("The user cannot be knocked out with one hit causing the Pokemon to have 1 HP remaining."),
+            .description = COMPOUND_STRING("The user cannot be knocked out with one hit."),
             .aiRating = 6,
             .breakable = TRUE,
         },
@@ -49,7 +49,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_DAMP] =
         {
             .name = _("Damp"),
-            .description = COMPOUND_STRING("Prevents the use of explosive, self-destructing moves while the user is in the battlefield."),
+            .description = COMPOUND_STRING("Prevents the use of explosive, self-destructing moves."),
             .aiRating = 2,
             .breakable = TRUE,
         },
@@ -173,21 +173,21 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_INTIMIDATE] =
         {
             .name = _("Intimidate"),
-            .description = COMPOUND_STRING("The user lower's the opponent's Attack by 1 stage whenever it enters the battlefield."),
-            .aiRating = 7,
+            .description = COMPOUND_STRING("Lowers the opponent's Attack by 1 stage when it enters battle."),
+            .aiRating = 8,
         },
 
         [ABILITY_SHADOW_TAG] =
         {
             .name = _("Shadow Tag"),
-            .description = COMPOUND_STRING("Prevents the opponent from escaping or switching out while the user is on the battlefield."),
+            .description = COMPOUND_STRING("Prevents non-Ghost Type opponents from escaping or switching out."),
             .aiRating = 10,
         },
 
         [ABILITY_ROUGH_SKIN] =
         {
             .name = _("Rough Skin"),
-            .description = COMPOUND_STRING("The attacker takes 1/3 of its HP worth of damage when it makes direct contact with the user."),
+            .description = COMPOUND_STRING("When hit by a contact move, attacker takes damage equal to 1/8 of its max HP."),
             .aiRating = 6,
         },
 
@@ -843,14 +843,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_SCRAPPY] =
         {
             .name = _("Scrappy"),
-            .description = COMPOUND_STRING("The user can hit Ghost-type Pokemon with Normal-type and Fighting-type moves, the user also becomes unaffected by Intimidate."),
+            .description = COMPOUND_STRING("Can hit Ghost-types with Normal/Fighting moves. Unaffected by Intimidate."),
             .aiRating = 6,
         },
 
         [ABILITY_STORM_DRAIN] =
         {
             .name = _("Storm Drain"),
-            .description = COMPOUND_STRING("The user draws in all Water-type moves, will boost its Special Attack by 1 stage."),
+            .description = COMPOUND_STRING("The user draws in Water-type moves & boosts its Special Atk by 1 stage."),
             .aiRating = 7,
             .breakable = TRUE,
         },
@@ -1140,7 +1140,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_MUMMY] =
         {
             .name = _("Mummy"),
-            .description = COMPOUND_STRING("Spreads with contact."),
+            .description = COMPOUND_STRING("This ability is transferred on contact."),
             .aiRating = 5,
         },
 
@@ -1154,7 +1154,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_JUSTIFIED] =
         {
             .name = _("Justified"),
-            .description = COMPOUND_STRING("Dark hits raise Attack."),
+            .description = COMPOUND_STRING("Dark hits raises Attack by one stage."),
             .aiRating = 4,
         },
 
@@ -1198,14 +1198,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_IRON_BARBS] =
         {
             .name = _("Iron Barbs"),
-            .description = COMPOUND_STRING("Hurts to touch."),
+            .description = COMPOUND_STRING("When hit by a contact move, attacker takes damage equal to 1/8 of its max HP."),
             .aiRating = 6,
         },
 
-        [ABILITY_ZEN_MODE] = //fru todo
+        [ABILITY_ZEN_MODE] = 
         {
             .name = _("Zen Mode"),
-            .description = COMPOUND_STRING("Transforms at Half HP."),
+            .description = COMPOUND_STRING("Transforms to Zen Form."),
             .aiRating = -1,
             .cantBeCopied = TRUE,
             .cantBeSwapped = TRUE,
@@ -1717,28 +1717,28 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_ELECTRIC_SURGE] =
         {
             .name = _("Electric Surge"),
-            .description = COMPOUND_STRING("The user applies Electric Terrain to the battlefield for 5 turns when it enters a battle."),
+            .description = COMPOUND_STRING("The user activates Electric Terrain for 5 turns when it enters a battle."),
             .aiRating = 8,
         },
 
         [ABILITY_PSYCHIC_SURGE] =
         {
             .name = _("Psychic Surge"),
-            .description = COMPOUND_STRING("The user applies Psychic Terrain to the battlefield for 5 turns when it enters a battle."),
+            .description = COMPOUND_STRING("The user activates Psychic Terrain for 5 turns when it enters a battle."),
             .aiRating = 8,
         },
 
         [ABILITY_MISTY_SURGE] =
         {
             .name = _("Misty Surge"),
-            .description = COMPOUND_STRING("The user applies Misty Terrain to the battlefield for 5 turns when it enters a battle."),
+            .description = COMPOUND_STRING("The user activates Misty Terrain for 5 turns when it enters a battle."),
             .aiRating = 8,
         },
 
         [ABILITY_GRASSY_SURGE] =
         {
             .name = _("Grassy Surge"),
-            .description = COMPOUND_STRING("The user applies Grassy Terrain to the battlefield for 5 turns when it enters a battle."),
+            .description = COMPOUND_STRING("The user activates Grassy Terrain for 5 turns when it enters a battle."),
             .aiRating = 8,
         },
 
@@ -2050,7 +2050,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_SEED_SOWER] =
         {
             .name = _("Seed Sower"),
-            .description = COMPOUND_STRING("Summons Grassy Terrain in the field when the Pokemon\nis hit by an attack. Lasts five turns"),
+            .description = COMPOUND_STRING("Summons Grassy Terrain in the field when hit by an attack. Lasts five turns"),
             .aiRating = 5,
         },
 

@@ -32,8 +32,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": 24,
-      "y": 12,
+      "x": 22,
+      "y": 26,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 1,
@@ -74,7 +74,7 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
-      "x": -1,
+      "x": -2,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_INVISIBLE",

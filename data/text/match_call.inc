@@ -1055,7 +1055,7 @@ MatchCall_PersonalizedText35::
 	.string "It exhilarates me as if I were\n"
 	.string "flying!\p"
 	.string "Okay! Today, I'm going to set a new\n"
-	.string "CYCLING ROAD record!\p"
+	.string "Cycling Road record!\p"
 	.string "You should make the challenge, too!\n"
 	.string "See you!$"
 

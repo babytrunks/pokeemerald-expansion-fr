@@ -7171,7 +7171,6 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .levelUpLearnset = sMagearnaLevelUpLearnset,
         .teachableLearnset = sMagearnaTeachableLearnset,
         .formSpeciesIdTable = sMagearnaFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_RANDOM_FORM,
     },
     [SPECIES_MAGEARNA_ORIGINAL] =
     {

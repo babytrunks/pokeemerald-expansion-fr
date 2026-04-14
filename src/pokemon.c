@@ -988,7 +988,7 @@ const struct NatureInfo gNaturesInfo[NUM_NATURES] =
 
 #define PP_UP_SHIFTS(val)           val,        (val) << 2,        (val) << 4,        (val) << 6
 #define PP_UP_SHIFTS_INV(val) (u8)~(val), (u8)~((val) << 2), (u8)~((val) << 4), (u8)~((val) << 6)
-
+ 
 // PP Up bonuses are stored for a Pokémon as a single byte.
 // There are 2 bits (a value 0-3) for each move slot that
 // represent how many PP Ups have been applied.
@@ -3730,11 +3730,11 @@ enum Ability GetAbilityBySpecies(u16 species, u8 abilityNum, u8 cantRandomizeAbi
         gLastUsedAbility = GetSpeciesAbility(species, i);
     }
 
-    DebugPrintf("In GetAbilityBySpecies, species: %d, ability: %d", species, gLastUsedAbility);
+    // DebugPrintf("In GetAbilityBySpecies, species: %d, ability: %d", species, gLastUsedAbility);
     #if RANDOMIZER_AVAILABLE == TRUE
     if (!cantRandomizeAbility &&  gLastUsedAbility != ABILITY_NONE)
     {
-        DebugPrintf("In condition");
+        // DebugPrintf("In condition");
         gLastUsedAbility = RandomizeAbility(species, abilityNum, gLastUsedAbility);
     }
     #endif
@@ -4231,8 +4231,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
 
                         u8 param = GetItemHoldEffectParam(item);
                         ivChange = sIndividualValueVitaminTable[param - 1];
-                        DebugPrintf("IV Change: %d", ivChange); 
-                        DebugPrintf("Data signed 1: %d", dataSigned);
+                        // DebugPrintf("IV Change: %d", ivChange); 
+                        // DebugPrintf("Data signed 1: %d", dataSigned);
                         // evChange = temp2;
 
                         if (ivChange > 0) // Increasing IV (HP or Atk)
@@ -4292,7 +4292,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             dataSigned = 0;
                         }
 
-                        DebugPrintf("Data signed: %d", dataSigned); 
+                        // DebugPrintf("Data signed: %d", dataSigned); 
                         // Update IVs and stats
                         SetMonData(mon, sGetMonDataIVConstants[temp1], &dataSigned);
                         CalculateMonStats(mon);
@@ -4428,8 +4428,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         temp2 = itemEffect[itemEffectParam];
                         dataSigned = GetMonData(mon, sGetMonDataIVConstants[temp1 + 2], NULL);
                         ivChange = sIndividualValueVitaminTable[temp2 - 1];
-                        DebugPrintf("IV Change: %d", ivChange); 
-                        DebugPrintf("Data signed 1: %d", dataSigned);
+                        // DebugPrintf("IV Change: %d", ivChange); 
+                        // DebugPrintf("Data signed 1: %d", dataSigned);
                         if (ivChange > 0) // Increasing EV
                         {
                             // Check if the total EV limit is reached
@@ -7525,7 +7525,7 @@ bool32 TryFormChange(u32 monId, enum BattleSide side, enum FormChanges method)
     u32 currentSpecies = GetMonData(&party[monId], MON_DATA_SPECIES);
     u32 targetSpecies = GetFormChangeTargetSpecies(&party[monId], method, 0);
 
-    if (targetSpecies == currentSpecies && gBattleStruct != NULL && gBattleStruct->partyState[side][monId].changedSpecies != SPECIES_NONE)
+    if (targetSpecies == currentSpecies && gBattleStruct != NULL && gBattleStruct->partyState[side][monId].changedSpecies != SPECIES_NONE) 
         targetSpecies = gBattleStruct->partyState[side][monId].changedSpecies;
 
     if (targetSpecies != currentSpecies)

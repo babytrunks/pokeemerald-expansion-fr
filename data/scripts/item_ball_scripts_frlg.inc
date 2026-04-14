@@ -302,7 +302,10 @@ SilphCo_5F_EventScript_ItemTMBodyPress::
 	end
 
 SilphCo_5F_EventScript_ItemCardKey::
-	giveitem ITEM_CARD_KEY
+	removeobject VAR_LAST_TALKED
+	giveitem ITEM_CARD_KEY 
+	setflag FLAG_HIDE_SILPH_CO_5F_CARD_KEY
+	release
 	end
 
 SilphCo_6F_EventScript_ItemHPUp::
@@ -500,8 +503,8 @@ Route10_EventScript_ItemTMIcyWind::
 	finditem ITEM_TM_ICY_WIND
 	end
 
-Route9_EventScript_ItemLeafStone::
-	finditem ITEM_LEAF_STONE
+Route9_EventScript_ItemShinyStone::
+	finditem ITEM_SHINY_STONE
 	end
 
 Route8_EventScript_ItemTMDualWingbeat::
