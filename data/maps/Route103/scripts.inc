@@ -208,9 +208,9 @@ Route103_EventScript_Amy::
 	end
 
 Route102_EventScript_AmyRegisterMatchCallAfterBattle::
-	msgbox Route103_Text_AmyLivRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_AMY_AND_LIV_1
-	release
+	@ msgbox Route103_Text_AmyLivRegister, MSGBOX_DEFAULT
+	@ register_matchcall TRAINER_AMY_AND_LIV_1
+	@ release
 	end
 
 Route102_EventScript_AmyRematch::

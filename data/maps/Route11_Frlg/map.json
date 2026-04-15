@@ -271,16 +271,6 @@
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route11_EventScript_DiglettsCaveSign"
-    },
-    {
-      "type": "hidden_item",
-      "x": 59,
-      "y": -1,
-      "elevation": 0,
-      "item": "ITEM_ESCAPE_ROPE",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE11_ESCAPE_ROPE",
-      "quantity": 1,
-      "underfoot": false
     }
   ],
   "region": "REGION_KANTO"

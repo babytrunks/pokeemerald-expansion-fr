@@ -517,7 +517,7 @@
 #define FLAG_DEFEATED_JASMINE                                   0x218
 #define FLAG_DEFEATED_MORTY                                     0x219
 #define FLAG_DEFEATED_PRYCE                                     0x21A
-#define FLAG_HIDE_MTMOON_TM_HIDDEN_POWER                        0x21B // unused
+#define FLAG_RECEIVED_SOOTHE_BELL                               0x21B 
 #define FLAG_CERULEAN_GAVE_LUXURY_BALL                          0x21C
 #define FLAG_HIDE_ROCK_TUNNEL_KALOS_FOSSIL                      0x21D
 #define FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION                   0x21E
@@ -1704,7 +1704,7 @@
 #define FLAG_RECEIVED_QUICK_CLAW             0
 #define FLAG_RECEIVED_KINGS_ROCK             0
 #define FLAG_RECEIVED_MACHO_BRACE            0
-#define FLAG_RECEIVED_SOOTHE_BELL            0
+// #define FLAG_RECEIVED_SOOTHE_BELL            0
 #define FLAG_RECEIVED_WHITE_HERB             0
 #define FLAG_RECEIVED_SOFT_SAND              0
 #define FLAG_ENABLE_PROF_BIRCH_MATCH_CALL    0

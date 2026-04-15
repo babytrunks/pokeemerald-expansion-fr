@@ -376,10 +376,10 @@ Route109_EventScript_Lola::
 	end
 
 Route109_EventScript_LolaRegisterMatchCallAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	msgbox Route109_Text_LolaRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_LOLA_1
+	@ special PlayerFaceTrainerAfterBattle
+	@ waitmovement 0
+	@ msgbox Route109_Text_LolaRegister, MSGBOX_DEFAULT
+	@ register_matchcall TRAINER_LOLA_1
 	release
 	end
 
