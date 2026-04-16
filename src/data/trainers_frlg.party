@@ -1390,7 +1390,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Liepard @ Focus Sash
 Nature: Bashful
 Ability: Prankster
-Level: 29
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Assist
@@ -7551,7 +7551,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Starmie @ Sitrus Berry
 Nature: Bashful
 Ability: Analytic
-Level: 19
+Level: 21
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psybeam
@@ -7618,13 +7618,13 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Eelektrik @ Eviolite
 Nature: Relaxed
 Ability: Levitate
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Level: 28
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Giga Drain
 - Volt Switch
 - Knock Off
-- Crunch
+- Hidden Power
 
 Raichu @ Raichunite X
 Nature: Jolly
@@ -13764,7 +13764,7 @@ Dynamic Level Ratio: 90
 Tinkaton @ Sitrus Berry
 Nature: Jolly
 Ability: Mold Breaker
-Level: 25
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Play Rough
@@ -13775,7 +13775,7 @@ EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Girafarig @ Eviolite
 Nature: Modest
 Ability: Sap Sipper
-Level: 25
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Psychic
@@ -13786,7 +13786,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Miltank @ Chople Berry
 Nature: Adamant
 Ability: Thick Fat
-Level: 26
+Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Body Slam
@@ -13797,7 +13797,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Drampa @ Normal Gem
 Nature: Modest
 Ability: Sap Sipper
-Level: 25
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Dragon Breath
@@ -13808,7 +13808,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Dudunsparce @ Leftovers
 Nature: Careful
 Ability: Serene Grace
-Level: 25
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Body Slam
@@ -13819,7 +13819,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Clefable @ Life Orb
 Nature: Timid
 Ability: Magic Guard
-Level: 25
+Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Dazzling Gleam
@@ -13876,7 +13876,7 @@ Nature: Jolly
 Ability: Hustle
 Level: 37
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 4 SpD / 252 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
 - Iron Head
 - Close Combat
 - X-Scissor
@@ -15315,7 +15315,7 @@ Boss: Yes
 
 Qwilfish-Hisui @ Eviolite
 Ability: Intimidate
-Level: 23
+Level: 24
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Waterfall
 - Throat Chop

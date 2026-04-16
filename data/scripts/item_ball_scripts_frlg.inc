@@ -504,7 +504,7 @@ Route10_EventScript_ItemTMIcyWind::
 	end
 
 Route9_EventScript_ItemShinyStone::
-	finditem ITEM_SHINY_STONE
+	finditem ITEM_LEAF_STONE
 	end
 
 Route8_EventScript_ItemTMDualWingbeat::
