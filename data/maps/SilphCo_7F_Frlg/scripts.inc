@@ -345,13 +345,13 @@ SilphCo_7F_Text_RivalIntro::
     .string "turn up if I waited here!\p"
     .string "I guess Team Rocket slowed you\n"
     .string "down! Not that I care!\p"
-    .string "I saw you in SAFFRON, so I decided\n"
+    .string "I saw you in Saffron, so I decided\n"
     .string "to see if you got better!$"
 
 SilphCo_7F_Text_RivalDefeat::
     .string "Oh, man!\n"
     .string "So, you are ready for Boss\l"
-    .string "ROCKET!$"
+    .string "Rocket!$"
 
 SilphCo_7F_Text_RivalPostBattle::
     .string "Well, {PLAYER}!\n"
@@ -369,6 +369,6 @@ SilphCo_7F_Text_RivalPostBattle::
     .string "Smell ya!$"
 
 SilphCo_7F_Text_FloorSign::
-    .string "Silph Co. HEAD OFFICE\n"
+    .string "Silph Co. Head Office\n"
     .string "7F$"
 

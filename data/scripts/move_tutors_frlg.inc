@@ -482,6 +482,20 @@ FourIsland_House5_EventScript_BodySlamTutor::
 	goto EventScript_BodySlamTaught
 	end
 
+FourIsland_House6_EventScript_BodySlamTutor::
+	lock
+	faceplayer
+	msgbox Text_BodySlamTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	call EventScript_CanOnlyBeLearnedOnce
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	msgbox Text_BodySlamWhichMon
+	setvar VAR_0x8005, MOVE_BUG_BITE
+	call EventScript_ChooseMoveTutorMon
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
+	goto EventScript_BodySlamTaught
+	end
+
 
 EventScript_BodySlamDeclined::
 	msgbox Text_BodySlamDeclined

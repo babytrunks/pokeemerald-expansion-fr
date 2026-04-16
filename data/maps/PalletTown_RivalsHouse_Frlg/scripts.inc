@@ -167,12 +167,12 @@ PalletTown_RivalsHouse_EventScript_Picture::
 	end
 
 PalletTown_RivalsHouse_Text_HiBrothersAtLab::
-    .string "DAISY: Hi, {PLAYER}!\p"
+    .string "Hi, {PLAYER}!\p"
     .string "My brother, {RIVAL}, is out at\n"
     .string "Grandpa's LAB.$"
 
 PalletTown_RivalsHouse_Text_HeardYouBattledRival::
-    .string "DAISY: {PLAYER}, I heard you had\n"
+    .string "{PLAYER}, I heard you had\n"
     .string "a battle against {RIVAL}.\p"
     .string "I wish I'd seen that!$"
 
@@ -196,7 +196,7 @@ PalletTown_RivalsHouse_Text_ExplainTownMap::
     .string "names of places.$"
 
 PalletTown_RivalsHouse_Text_PleaseGiveMonsRest::
-    .string "DAISY: Just like people, Pokémon\n"
+    .string "Just like people, Pokémon\n"
     .string "are living things.\p"
     .string "When they get tired, please give\n"
     .string "them a rest.$"
@@ -210,7 +210,7 @@ PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks::
     .string "books on Pokémon.$"
 
 PalletTown_RivalsHouse_Text_LikeMeToGroomMon::
-    .string "DAISY: Hi, {PLAYER}!\n"
+    .string "Hi, {PLAYER}!\n"
     .string "Good timing.\p"
     .string "I'm about to have some tea.\n"
     .string "Would you like to join me?\p"
@@ -226,16 +226,16 @@ PalletTown_RivalsHouse_Text_GroomWhichOne::
     .string "Which one should I groom?$"
 
 PalletTown_RivalsHouse_Text_LookingNiceInNoTime::
-    .string "DAISY: Okay, I'll get it looking\n"
+    .string "Okay, I'll get it looking\n"
     .string "nice in no time.$"
 
 PalletTown_RivalsHouse_Text_ThereYouGoAllDone::
 #ifdef BUGFIX @ The localizers missed what should be a textcolor change in the localizations.
     .string "{COLOR DARK_GRAY}{STR_VAR_1} looks dreamily content…\p"
-    .string "{COLOR RED}DAISY: There you go! All done.\n"
+    .string "{COLOR RED}There you go! All done.\n"
 #else @ In the JP games, gender-based text used a different font instead of different colors.
     .string "{FONT_NORMAL}{STR_VAR_1} looks dreamily content…\p"
-    .string "{FONT_FEMALE}DAISY: There you go! All done.\n"
+    .string "{FONT_FEMALE}There you go! All done.\n"
 #endif
     .string "See? Doesn't it look nice?\p"
     .string "Giggle…\n"
@@ -246,7 +246,7 @@ PalletTown_RivalsHouse_Text_CantGroomAnEgg::
     .string "groom an EGG.$"
 
 PalletTown_RivalsHouse_Text_MayISeeFirstMon::
-    .string "DAISY: Your Pokémon grow to love\n"
+    .string "Your Pokémon grow to love\n"
     .string "you if you raise them with love.\p"
     .string "For example, {PLAYER}, may I see\n"
     .string "your first Pokémon?$"

@@ -321,7 +321,7 @@ SilphCo_7F_EventScript_ItemCalcium::
 	end
 
 SilphCo_7F_EventScript_ItemTM08::
-	finditem ITEM_TM08
+	finditem ITEM_TM_FUTURE_SIGHT
 	end
 
 SilphCo_10F_EventScript_ItemCarbos::
@@ -636,7 +636,7 @@ OneIsland_KindleRoad_EventScript_ItemEther::
 	end
 
 OneIsland_KindleRoad_EventScript_ItemMaxRepel::
-	finditem ITEM_MAX_REPEL
+	finditem ITEM_BIG_NUGGET
 	end
 
 OneIsland_KindleRoad_EventScript_ItemCarbos::

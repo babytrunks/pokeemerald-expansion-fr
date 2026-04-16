@@ -28,6 +28,10 @@ EventScript_TooDark::
 	msgbox sText_TooDark, MSGBOX_SIGN
 	end
 
+EventScript_SearchCanceled::
+	msgbox sText_SearchCanceled, MSGBOX_SIGN
+	end
+
 sText_NotFoundNearby:
 	.string "It couldn't be found nearby.\n"
 	.string "Try looking in a different area!$"
@@ -45,3 +49,6 @@ sText_LostSignal:
 
 sText_TooDark:
 	.string "It's too dark to search\nfor a Pokémon!$"
+
+sText_SearchCanceled:
+	.string "The search was canceled.$"

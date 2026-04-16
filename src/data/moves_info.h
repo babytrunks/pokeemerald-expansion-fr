@@ -21210,7 +21210,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Breakthrough"),
         .description = COMPOUND_STRING(
-            "Adds 5 IVs to a random offensive stat and raises it for the user upon KO in a trainer battle."),
+            "Adds 5 IVs to a random offensive stat for the user upon KO in a trainer battle."),
         .effect = EFFECT_BREAKTHROUGH,
         .power = 40,
         .type = TYPE_NORMAL,
@@ -21227,7 +21227,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Fortify"),
         .description = COMPOUND_STRING(
-            "Adds 5 IVs to a random defensive stat and raises it for the user upon KO\nin a trainer battle."),
+            "Adds 5 IVs to a random defensive stat for the user upon KO in a trainer battle."),
         .effect = EFFECT_FORTIFY,
         .power = 40,
         .type = TYPE_ROCK,

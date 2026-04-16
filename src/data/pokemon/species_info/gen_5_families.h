@@ -3418,7 +3418,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sPalpitoadLevelUpLearnset,
         .teachableLearnset = sPalpitoadTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_SEISMITOAD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 29, SPECIES_SEISMITOAD}),
     },
 
     [SPECIES_SEISMITOAD] =

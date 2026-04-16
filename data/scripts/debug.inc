@@ -85,7 +85,7 @@ Debug_CheatStartFrlg::
 	special SetUnlockedPokedexFlags
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 6 @ state after handing in parcel and getting pokedex
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 2
-	setvar VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 1
+	@ setvar VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 1
 	setvar VAR_MAP_SCENE_PALLET_TOWN_RIVALS_HOUSE, 1
 	setvar VAR_MAP_SCENE_ROUTE22, 1
 	setvar VAR_MAP_SCENE_POKEMON_CENTER_TEALA, 1 @ end
@@ -203,7 +203,8 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
-	trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Gym_Text_ErikaIntro, CeladonCity_Gym_Text_ErikaDefeat, CeladonCity_Gym_EventScript_DefeatedErika, NO_MUSIC
+	@ trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Gym_Text_ErikaIntro, CeladonCity_Gym_Text_ErikaDefeat, CeladonCity_Gym_EventScript_DefeatedErika, NO_MUSIC
+	trainerbattle_no_intro TRAINER_SUPER_NERD_MIGUEL, adminmtmoonleft_Text_Defeat
 	release
 	end
 

@@ -1115,6 +1115,13 @@ static void Task_DexNavSearch(u8 taskId)
         return;
     }
 
+    if (JOY_NEW(B_BUTTON))
+	{
+		PlaySE(SE_POKENAV_OFF);
+		EndDexNavSearchSetupScript(EventScript_SearchCanceled, taskId);
+		return;
+	}
+
     if (sDexNavSearchDataPtr->proximity < 1)
     {
         gDexNavSpecies = sDexNavSearchDataPtr->species;
