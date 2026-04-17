@@ -22,6 +22,7 @@
 #include "regions.h"
 #include "region_map.h"
 #include "roamer.h"
+#include "pokemon_icon.h"
 #include "decompress.h"
 #include "data.h"
 #include "heal_location.h"
@@ -85,6 +86,7 @@ static EWRAM_DATA struct {
 
 static bool32 sDrawFlyDestTextWindow;
 static mapsec_u16_t *sActiveFlyIconMapSecId = NULL;
+static EWRAM_DATA u8 sRoamerIconSpriteIds[ROAMER_COUNT];
 
 static u8 ProcessRegionMapInput_Full(void);
 static u8 MoveRegionMapCursor_Full(void);
@@ -832,6 +834,8 @@ void BlendRegionMap(u16 color, u32 coeff)
 
 void FreeRegionMapIconResources(void)
 {
+    u32 i;
+
     if (sRegionMap->cursorSprite != NULL)
     {
         DestroySprite(sRegionMap->cursorSprite);
@@ -844,6 +848,15 @@ void FreeRegionMapIconResources(void)
         FreeSpriteTilesByTag(sRegionMap->playerIconTileTag);
         FreeSpritePaletteByTag(sRegionMap->playerIconPaletteTag);
     }
+    for (i = 0; i < ROAMER_COUNT; i++)
+    {
+        if (sRoamerIconSpriteIds[i] != MAX_SPRITES)
+        {
+            FreeAndDestroyMonIconSprite(&gSprites[sRoamerIconSpriteIds[i]]);
+            sRoamerIconSpriteIds[i] = MAX_SPRITES;
+        }
+    }
+    FreeMonIconPalettes();
 }
 
 u8 DoRegionMapInputCallback(void)
@@ -2106,24 +2119,20 @@ static void DrawFlyDestTextWindow(void)
     }
 }
 
-// Blinks unconditionally so roamer icons are visually distinct from fly destination icons
-static void SpriteCB_RoamerIcon(struct Sprite *sprite)
-{
-    if (++sprite->data[1] > 30)
-    {
-        sprite->data[1] = 0;
-        sprite->invisible = sprite->invisible ? FALSE : TRUE;
-    }
-}
-
 static void CreateRoamerIcons(void)
 {
     enum RegionMapType regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
     u32 i;
     u8 mapGroup, mapNum;
     mapsec_u16_t mapSecId;
-    u16 x, y, width, height;
+    u16 mx, my, width, height;
+    s16 x, y;
     u8 spriteId;
+
+    for (i = 0; i < ROAMER_COUNT; i++)
+        sRoamerIconSpriteIds[i] = MAX_SPRITES;
+
+    LoadMonIconPalettes();
 
     for (i = 0; i < ROAMER_COUNT; i++)
     {
@@ -2131,23 +2140,26 @@ static void CreateRoamerIcons(void)
             continue;
 
         GetRoamerLocation(i, &mapGroup, &mapNum);
-
         mapSecId = Overworld_GetMapHeaderByGroupAndId(mapGroup, mapNum)->regionMapSectionId;
-        DebugPrintf("Roamer Location: %d %d", mapGroup, mapNum);
 
         if (mapSecId == MAPSEC_NONE || GetRegionMapType(mapSecId) != regionMapType)
             continue;
 
-        GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
-        x = (x + MAPCURSOR_X_MIN) * 8 + 4;
-        y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
+        GetMapSecDimensions(mapSecId, &mx, &my, &width, &height);
+        // Center the 32x32 icon on the 8x8 map section tile.
+        x = (s16)((mx + MAPCURSOR_X_MIN) * 8 + 4) - 16;
+        y = (s16)((my + MAPCURSOR_Y_MIN) * 8 + 4) - 16;
 
-        spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 9);
+        spriteId = CreateMonIcon(
+            gSaveBlock1Ptr->roamer[i].species,
+            SpriteCB_MonIcon,
+            x, y,
+            /*subpriority=*/9,
+            gSaveBlock1Ptr->roamer[i].personality
+        );
+
         if (spriteId != MAX_SPRITES)
-        {
-            StartSpriteAnim(&gSprites[spriteId], SPRITE_SHAPE(8x8));
-            gSprites[spriteId].callback = SpriteCB_RoamerIcon;
-        }
+            sRoamerIconSpriteIds[i] = spriteId;
     }
 }
 
