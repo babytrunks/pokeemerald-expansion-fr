@@ -28,7 +28,8 @@ SaffronCity_TriggerRoamer::
 	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump2
 	waitmovement 0
 	playse SE_LEDGE
-	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump2
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump3
 	waitmovement 0
 	playse SE_LEDGE
 	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump3
@@ -39,6 +40,15 @@ SaffronCity_TriggerRoamer::
 	playse SE_LEDGE
 	setvar VAR_TRIGGER_ROAMER_SAFFRON, 1
 	removeobject LOCALID_SAFFRON_SUICUNE
+	setvar VAR_0x8004, SPECIES_ENTEI
+	special InitRoamer
+	setvar VAR_0x8004, SPECIES_SUICUNE
+	special InitRoamer
+	setvar VAR_0x8004, SPECIES_RAIKOU
+	special InitRoamer
+	setseenmon SPECIES_ENTEI
+	setseenmon SPECIES_RAIKOU
+	setseenmon SPECIES_SUICUNE
 	release
 	end
 
@@ -50,11 +60,8 @@ SaffronCity_Movement_SuicuneJump2::
 	jump_down
 	step_end
 
-SaffronCity_Movement_SuicuneJump2::
-	jump_left
-	step_end
 
-SaffronCity_Movement_SuicuneJump2::
+SaffronCity_Movement_SuicuneJump3::
 	jump_left
 	step_end
 

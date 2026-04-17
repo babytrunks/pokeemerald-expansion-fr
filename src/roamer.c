@@ -6,7 +6,7 @@
 
 // Despite having a variable to track it, the roamer is
 // hard-coded to only ever be in map group 0
-#define ROAMER_MAP_GROUP 0
+#define ROAMER_MAP_GROUP 37
 
 enum
 {
@@ -178,7 +178,7 @@ void InitRoamer(void)
     //     TryAddRoamer(SPECIES_LATIAS, 40);
     // else
     //     TryAddRoamer(SPECIES_LATIOS, 40);
-    TryAddRoamer(gSpecialVar_0x8004, 50);
+    TryAddRoamer(gSpecialVar_0x8004, 40);
 }
 
 void UpdateLocationHistoryForRoamer(void)

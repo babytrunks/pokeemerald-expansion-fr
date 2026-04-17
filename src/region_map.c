@@ -21,6 +21,7 @@
 #include "fldeff.h"
 #include "regions.h"
 #include "region_map.h"
+#include "roamer.h"
 #include "decompress.h"
 #include "data.h"
 #include "heal_location.h"
@@ -2105,6 +2106,51 @@ static void DrawFlyDestTextWindow(void)
     }
 }
 
+// Blinks unconditionally so roamer icons are visually distinct from fly destination icons
+static void SpriteCB_RoamerIcon(struct Sprite *sprite)
+{
+    if (++sprite->data[1] > 30)
+    {
+        sprite->data[1] = 0;
+        sprite->invisible = sprite->invisible ? FALSE : TRUE;
+    }
+}
+
+static void CreateRoamerIcons(void)
+{
+    enum RegionMapType regionMapType = GetRegionMapType(gMapHeader.regionMapSectionId);
+    u32 i;
+    u8 mapGroup, mapNum;
+    mapsec_u16_t mapSecId;
+    u16 x, y, width, height;
+    u8 spriteId;
+
+    for (i = 0; i < ROAMER_COUNT; i++)
+    {
+        if (!gSaveBlock1Ptr->roamer[i].active)
+            continue;
+
+        GetRoamerLocation(i, &mapGroup, &mapNum);
+
+        mapSecId = Overworld_GetMapHeaderByGroupAndId(mapGroup, mapNum)->regionMapSectionId;
+        DebugPrintf("Roamer Location: %d %d", mapGroup, mapNum);
+
+        if (mapSecId == MAPSEC_NONE || GetRegionMapType(mapSecId) != regionMapType)
+            continue;
+
+        GetMapSecDimensions(mapSecId, &x, &y, &width, &height);
+        x = (x + MAPCURSOR_X_MIN) * 8 + 4;
+        y = (y + MAPCURSOR_Y_MIN) * 8 + 4;
+
+        spriteId = CreateSprite(&sFlyDestIconSpriteTemplate, x, y, 9);
+        if (spriteId != MAX_SPRITES)
+        {
+            StartSpriteAnim(&gSprites[spriteId], SPRITE_SHAPE(8x8));
+            gSprites[spriteId].callback = SpriteCB_RoamerIcon;
+        }
+    }
+}
+
 void LoadFlyDestIcons(void)
 {
     struct SpriteSheet sheet;
@@ -2118,6 +2164,7 @@ void LoadFlyDestIcons(void)
     LoadSpritePalette(&sFlyTargetIconsSpritePalette);
     CreateFlyDestIcons();
     TryCreateRedOutlineFlyDestIcons();
+    CreateRoamerIcons();
 }
 
 void LoadFlyDestIconsForFieldMap(u8 *tileBuffer, mapsec_u16_t *mapSecIdPtr)
@@ -2133,6 +2180,7 @@ void LoadFlyDestIconsForFieldMap(u8 *tileBuffer, mapsec_u16_t *mapSecIdPtr)
     LoadSpritePalette(&sFlyTargetIconsSpritePalette);
     CreateFlyDestIcons();
     TryCreateRedOutlineFlyDestIcons();
+    CreateRoamerIcons();
 }
 
 struct FlyLocation
