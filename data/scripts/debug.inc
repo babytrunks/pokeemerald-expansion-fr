@@ -204,7 +204,7 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 	@ trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Gym_Text_ErikaIntro, CeladonCity_Gym_Text_ErikaDefeat, CeladonCity_Gym_EventScript_DefeatedErika, NO_MUSIC
-	trainerbattle_no_intro TRAINER_SUPER_NERD_MIGUEL, adminmtmoonleft_Text_Defeat
+	trainerbattle_no_intro TRAINER_CHANNELER_CARLY, adminmtmoonleft_Text_Defeat
 	release
 	end
 

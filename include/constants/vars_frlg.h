@@ -181,7 +181,7 @@
 #define VAR_RANDOMIZER_SPECIES_MODE                     0x40A5
 #define VAR_DIFFICULTY                                  0x40A6
 #define VAR_BRENDAN_SLATEPORT_CITY                      0x40A7
-#define VAR_0x40A8                 0x40A8
+#define VAR_TRIGGER_ROAMER_SAFFRON                      0x40A8
 #define VAR_0x40A9                 0x40A9
 
 #define VAR_QLBAK_TRAINER_REMATCHES 0x40AA // array of 4

@@ -949,7 +949,7 @@
   "GRIMER": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [      "MOVE_BRICK_BREAK"],
     "EggMoves": [],
     "TutorMoves": []
   },

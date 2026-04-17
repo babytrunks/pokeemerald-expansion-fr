@@ -45,12 +45,11 @@ CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom1F::
 
 CeladonCity_DepartmentStore_Elevator_EventScript_ChooseFloor::
 	switch VAR_RESULT
-	case 0, CeladonCity_DepartmentStore_Elevator_EventScript_To5F
-	case 1, CeladonCity_DepartmentStore_Elevator_EventScript_To4F
-	case 2, CeladonCity_DepartmentStore_Elevator_EventScript_To3F
-	case 3, CeladonCity_DepartmentStore_Elevator_EventScript_To2F
-	case 4, CeladonCity_DepartmentStore_Elevator_EventScript_To1F
-	case 5, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
+	case 0, CeladonCity_DepartmentStore_Elevator_EventScript_To4F
+	case 1, CeladonCity_DepartmentStore_Elevator_EventScript_To3F
+	case 2, CeladonCity_DepartmentStore_Elevator_EventScript_To2F
+	case 3, CeladonCity_DepartmentStore_Elevator_EventScript_To1F
+	case 4, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
 	case 127, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
 	end
 

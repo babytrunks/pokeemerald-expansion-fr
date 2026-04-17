@@ -1269,7 +1269,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
 Drednaw
-Level: 22
+Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PICNICKER_NANCY ===
@@ -7585,7 +7585,7 @@ Boss: Yes
 Pincurchin @ Terrain Extender
 Nature: Bold
 Ability: Electric Surge
-Level: 26
+Level: 25
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Volt Switch
@@ -8804,15 +8804,17 @@ Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CHANNELER_CARLY ===
-Name: Carly
+Name: TestBattle
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Items: Mega Ring
+Boss: Yes
 
-Misdreavus
+Chimecho @ Chimechite
 Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
@@ -10208,16 +10210,22 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Stufful @ Oran Berry
 Ability: Fluffy
-Level: 8
+Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Tackle
 - Rock Smash
 
 Audino
-Level: 8
+Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Swagger
 - Tackle
+
+Clefairy @ Life Orb 
+Ability: Magic Guard
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Metronome
 
 === TRAINER_TWINS_ELI_ANNE_2 ===
 Name: ELI & ANNE

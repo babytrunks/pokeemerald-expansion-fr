@@ -2,6 +2,62 @@ SaffronCity_Frlg_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SaffronCity_OnTransition
 	.byte 0
 
+SaffronCity_TriggerRoamer::
+	lock
+	addobject LOCALID_SAFFRON_SUICUNE
+	playmoncry SPECIES_SUICUNE, CRY_MODE_ENCOUNTER
+	waitmoncry
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	waitmovement 0
+	waitse
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump1
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump1
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump1
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump2
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump2
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump2
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump3
+	waitmovement 0
+	playse SE_LEDGE
+	applymovement LOCALID_SAFFRON_SUICUNE, SaffronCity_Movement_SuicuneJump3
+	waitmovement 0
+	playse SE_LEDGE
+	setvar VAR_TRIGGER_ROAMER_SAFFRON, 1
+	removeobject LOCALID_SAFFRON_SUICUNE
+	release
+	end
+
+SaffronCity_Movement_SuicuneJump1::
+	jump_right
+	step_end
+
+SaffronCity_Movement_SuicuneJump2::
+	jump_down
+	step_end
+
+SaffronCity_Movement_SuicuneJump2::
+	jump_left
+	step_end
+
+SaffronCity_Movement_SuicuneJump2::
+	jump_left
+	step_end
+
 SaffronCity_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_SAFFRON_CITY
 	call_if_unset FLAG_RESCUED_MR_FUJI, SaffronCity_EventScript_MoveDoorGuardGrunt

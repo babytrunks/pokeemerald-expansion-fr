@@ -12059,7 +12059,7 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("TM22"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Deals double damage\n"
+            "Deals 2x damage\n"
             "if the foe is\n"
             "poisoned."),
         .importance = I_REUSABLE_TMS,
@@ -12381,7 +12381,7 @@ const struct Item gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "A kiss that absorbs\n"
-            "over half the damage\n"
+            "75% of damage\n"
             "dealt to the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
