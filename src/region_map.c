@@ -2147,8 +2147,8 @@ static void CreateRoamerIcons(void)
 
         GetMapSecDimensions(mapSecId, &mx, &my, &width, &height);
         // Center the 32x32 icon on the 8x8 map section tile.
-        x = (s16)((mx + MAPCURSOR_X_MIN) * 8 + 4) - 16;
-        y = (s16)((my + MAPCURSOR_Y_MIN) * 8 + 4) - 16;
+        x = (s16)((mx + MAPCURSOR_X_MIN) * 8 + 4);
+        y = (s16)((my + MAPCURSOR_Y_MIN) * 8 + 4) - 8;
 
         spriteId = CreateMonIcon(
             gSaveBlock1Ptr->roamer[i].species,
