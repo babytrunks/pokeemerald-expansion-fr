@@ -241,20 +241,14 @@ SaffronCity_Dojo_Text_HitoshiPostBattle::
     .string "train here.$"
 
 SaffronCity_Dojo_Text_YouWantHitmonlee::
-    .string "You want the hard-kicking\n"
-    .string "HITMONLEE?$"
+    .string "You want the Tauros Blaze Breed?$"
 
 SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster::
     .string "{PLAYER} received the {STR_VAR_1}\n"
     .string "from the KARATE MASTER.$"
 
 SaffronCity_Dojo_Text_YouWantHitmonchan::
-    .string "You want the piston-punching\n"
-    .string "HITMONCHAN?$"
-
-SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster2::
-    .string "{PLAYER}は　カラテ　だいおう　から\n"
-    .string "{STR_VAR_1}を　もらった！$"
+    .string "You want the Tauros Aqua Breed?$"
 
 SaffronCity_Dojo_Text_BetterNotGetGreedy::
     .string "Better not get greedy…$"

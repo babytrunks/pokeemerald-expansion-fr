@@ -243,7 +243,7 @@
 #define TRAINER_SCIENTIST_JERRY                    237
 #define TRAINER_SCIENTIST_JOSE                     238
 #define TRAINER_SCIENTIST_RODNEY                   239
-#define TRAINER_SCIENTIST_BEAU                     240
+#define TRAINER_SCIENTIST_BEAU                     240 // unused
 #define TRAINER_SCIENTIST_TAYLOR                   241
 #define TRAINER_SCIENTIST_JOSHUA                   242
 #define TRAINER_SCIENTIST_PARKER                   243
@@ -277,7 +277,7 @@
 #define TRAINER_TEAM_ROCKET_GRUNT_21               271
 #define TRAINER_TEAM_ROCKET_GRUNT_22               272
 #define TRAINER_TEAM_ROCKET_GRUNT_23               273
-#define TRAINER_TEAM_ROCKET_GRUNT_24               274
+#define TRAINER_TEAM_ROCKET_GRUNT_24               274 // unused
 #define TRAINER_TEAM_ROCKET_GRUNT_25               275
 #define TRAINER_TEAM_ROCKET_GRUNT_26               276
 #define TRAINER_TEAM_ROCKET_GRUNT_27               277
@@ -285,7 +285,7 @@
 #define TRAINER_TEAM_ROCKET_GRUNT_29               279
 #define TRAINER_TEAM_ROCKET_GRUNT_30               280
 #define TRAINER_TEAM_ROCKET_GRUNT_31               281
-#define TRAINER_TEAM_ROCKET_GRUNT_32               282
+#define TRAINER_TEAM_ROCKET_GRUNT_32               282 // unused
 #define TRAINER_TEAM_ROCKET_GRUNT_33               283
 #define TRAINER_TEAM_ROCKET_GRUNT_34               284
 #define TRAINER_TEAM_ROCKET_GRUNT_35               285

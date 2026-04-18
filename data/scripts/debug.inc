@@ -605,51 +605,51 @@ Debug_EventScript_InflictStatus1_Text_KO:
 Debug_EventScript_ChangeNature_Text_Hardy:
 	.string "Hardy$"
 Debug_EventScript_ChangeNature_Text_Lonely:
-	.string "Lonely$"
+	.string "Lonely {FONT_SMALL_NARROWER}{COLOR RED}+Atk {COLOR BLUE}-Def$"
 Debug_EventScript_ChangeNature_Text_Brave:
-	.string "Brave$"
+	.string "Brave {FONT_SMALL_NARROWER}{COLOR RED}+Atk {COLOR BLUE}-Speed$"
 Debug_EventScript_ChangeNature_Text_Adamant:
-	.string "Adamant$"
+	.string "Adamant {FONT_SMALL_NARROWER}{COLOR RED}+Atk {COLOR BLUE}-SpA$"
 Debug_EventScript_ChangeNature_Text_Naughty:
-	.string "Naughty$"
+	.string "Naughty {FONT_SMALL_NARROWER}{COLOR RED}+Atk {COLOR BLUE}-SpDef$"
 Debug_EventScript_ChangeNature_Text_Bold:
-	.string "Bold$"
+	.string "Bold {FONT_SMALL_NARROWER}{COLOR RED}+Def {COLOR BLUE}-Atk$"
 Debug_EventScript_ChangeNature_Text_Docile:
 	.string "Docile$"
 Debug_EventScript_ChangeNature_Text_Relaxed:
-	.string "Relaxed$"
+	.string "Relaxed {FONT_SMALL_NARROWER}{COLOR RED}+Def {COLOR BLUE}-Speed$"
 Debug_EventScript_ChangeNature_Text_Impish:
-	.string "Impish$"
+	.string "Impish {FONT_SMALL_NARROWER}{COLOR RED}+Def {COLOR BLUE}-SpA$"
 Debug_EventScript_ChangeNature_Text_Lax:
-	.string "Lax$"
+	.string "Lax {FONT_SMALL_NARROWER}{COLOR RED}+Def {COLOR BLUE}-SpDef$"
 Debug_EventScript_ChangeNature_Text_Timid:
-	.string "Timid$"
+	.string "Timid {FONT_SMALL_NARROWER}{COLOR RED}+Speed {COLOR BLUE}-Atk$"
 Debug_EventScript_ChangeNature_Text_Hasty:
-	.string "Hasty$"
+	.string "Hasty {FONT_SMALL_NARROWER}{COLOR RED}+Speed {COLOR BLUE}-Def$"
 Debug_EventScript_ChangeNature_Text_Serious:
 	.string "Serious$"
 Debug_EventScript_ChangeNature_Text_Jolly:
-	.string "Jolly$"
+	.string "Jolly {FONT_SMALL_NARROWER}{COLOR RED}+Speed {COLOR BLUE}-SpA$"
 Debug_EventScript_ChangeNature_Text_Naive:
-	.string "Naive$"
+	.string "Naive {FONT_SMALL_NARROWER}{COLOR RED}+Speed {COLOR BLUE}-SpDef$"
 Debug_EventScript_ChangeNature_Text_Modest:
-	.string "Modest$"
+	.string "Modest {FONT_SMALL_NARROWER}{COLOR RED}+SpA {COLOR BLUE}-Atk$"
 Debug_EventScript_ChangeNature_Text_Mild:
-	.string "Mild$"
+	.string "Mild {FONT_SMALL_NARROWER}{COLOR RED}+SpA {COLOR BLUE}-Def$"
 Debug_EventScript_ChangeNature_Text_Quiet:
-	.string "Quiet$"
+	.string "Quiet {FONT_SMALL_NARROWER}{COLOR RED}+SpA {COLOR BLUE}-Speed$"
 Debug_EventScript_ChangeNature_Text_Bashful:
 	.string "Bashful$"
 Debug_EventScript_ChangeNature_Text_Rash:
-	.string "Rash$"
+	.string "Rash {FONT_SMALL_NARROWER}{COLOR RED}+SpA {COLOR BLUE}-SpDef$"
 Debug_EventScript_ChangeNature_Text_Calm:
-	.string "Calm$"
+	.string "Calm {FONT_SMALL_NARROWER}{COLOR RED}+SpDef {COLOR BLUE}-Atk$"
 Debug_EventScript_ChangeNature_Text_Gentle:
-	.string "Gentle$"
+	.string "Gentle {FONT_SMALL_NARROWER}{COLOR RED}+SpDef {COLOR BLUE}-Def$"
 Debug_EventScript_ChangeNature_Text_Sassy:
-	.string "Sassy$"
+	.string "Sassy {FONT_SMALL_NARROWER}{COLOR RED}+SpDef {COLOR BLUE}-Speed$"
 Debug_EventScript_ChangeNature_Text_Careful:
-	.string "Careful$"
+	.string "Careful {FONT_SMALL_NARROWER}{COLOR RED}+SpDef {COLOR BLUE}-SpA$"
 Debug_EventScript_ChangeNature_Text_Quirky:
 	.string "Quirky$"
 

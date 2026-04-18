@@ -40,15 +40,28 @@ SaffronCity_TriggerRoamer::
 	playse SE_LEDGE
 	setvar VAR_TRIGGER_ROAMER_SAFFRON, 1
 	removeobject LOCALID_SAFFRON_SUICUNE
+	msgbox SaffronCity_Text_RoamersAreAround
 	setvar VAR_0x8004, SPECIES_ENTEI
 	special InitRoamer
 	setvar VAR_0x8004, SPECIES_SUICUNE
 	special InitRoamer
 	setvar VAR_0x8004, SPECIES_RAIKOU
 	special InitRoamer
+	setvar VAR_0x8004, SPECIES_CELEBI
+	special InitRoamer
+	setvar VAR_0x8004, SPECIES_AZELF
+	special InitRoamer
+	setvar VAR_0x8004, SPECIES_UXIE
+	special InitRoamer
+	setvar VAR_0x8004, SPECIES_MESPRIT
+	special InitRoamer
 	setseenmon SPECIES_ENTEI
 	setseenmon SPECIES_RAIKOU
 	setseenmon SPECIES_SUICUNE
+	setseenmon SPECIES_CELEBI
+	setseenmon SPECIES_AZELF
+	setseenmon SPECIES_UXIE
+	setseenmon SPECIES_MESPRIT
 	release
 	end
 
@@ -301,3 +314,7 @@ SaffronCity_Text_HowCanClubNotRecognizeLance::
     .string "He's cool, and yet passionate!\l"
     .string "He's the greatest, LANCE!$"
 
+SaffronCity_Text_RoamersAreAround::
+	.string "It appears some legendary Pokémon\n"
+	.string "may be roaming in Kanto.\p"
+	.string "Check your Town Map!$"

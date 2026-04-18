@@ -130,7 +130,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sFloragatoLevelUpLearnset,
         .teachableLearnset = sFloragatoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MEOWSCARADA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MEOWSCARADA}),
     },
 
     [SPECIES_MEOWSCARADA] =

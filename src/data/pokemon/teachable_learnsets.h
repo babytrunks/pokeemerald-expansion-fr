@@ -4677,6 +4677,7 @@ static const u16 sVoltorbHisuiTeachableLearnset[] = {
     MOVE_RAIN_DANCE,
     MOVE_REFLECT,
     MOVE_REST,
+    MOVE_SHOCK_WAVE,
     MOVE_SWIFT,
     MOVE_TAUNT,
     MOVE_THUNDER,

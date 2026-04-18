@@ -251,7 +251,7 @@ SilphCo_11F_EventScript_ArcherArianaChooseTeam:
 
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox SilphCo_11F_Text_BrendanFarewell3
-	giveitem ITEM_TM_DRAGON_CLAW
+	giveitem ITEM_HM_ROCK_SMASH
 	setspeaker SP_NAME_BRENDAN
 	msgbox SilphCo_11F_Text_BrendanFarewell4
 	fadescreen FADE_TO_BLACK

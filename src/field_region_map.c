@@ -185,11 +185,11 @@ static void FieldUpdateRegionMap(void)
                     PrintRegionMapSecName();
                     PrintTitleWindowText();
                     break;
-                case MAP_INPUT_A_BUTTON:
+                // case MAP_INPUT_A_BUTTON:
                 case MAP_INPUT_B_BUTTON:
                     sFieldRegionMapHandler->state++;
                     break;
-                case MAP_INPUT_R_BUTTON:
+                case MAP_INPUT_A_BUTTON:
                     if (sFieldRegionMapHandler->regionMap.mapSecType == MAPSECTYPE_CITY_CANFLY 
                         && FlagGet(OW_FLAG_POKE_RIDER) && Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
                     {
@@ -233,7 +233,7 @@ static void PrintRegionMapSecName(void)
 
 static void PrintTitleWindowText(void)
 {
-    static const u8 FlyPromptText[] = _("{R_BUTTON} FLY");
+    static const u8 FlyPromptText[] = _("{A_BUTTON} Fly");
     u32 hoennOffset = GetStringCenterAlignXOffset(FONT_NORMAL, gText_KantoReg, 0x38);
     u32 flyOffset = GetStringCenterAlignXOffset(FONT_NORMAL, FlyPromptText, 0x38);
 
