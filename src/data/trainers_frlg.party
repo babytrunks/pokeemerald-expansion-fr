@@ -15,13 +15,22 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 11
+Yungoos @ Chople Berry
+Level: 13
+Nature: Adamant
+Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headbutt
+- Bite
 
-Rattata Alola
-Level: 11
+Zigzagoon-Galar @ Salac Berry
+Level: 14
+Nature: Jolly
+Ability: Gluttony
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headbutt
+- Thief
+- Belly Drum
 
 === TRAINER_DWAYNE ===
 Name: Dwayne
@@ -154,13 +163,25 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Raticate
+Raticate @ Wide Lens
 Level: 18
+Nature: Docile
+Ability: Hustle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Hyper Fang
+- Sucker Punch
+- Quick Attack
 
-Raticate Alola
-Level: 18
+Raticate Alola @ Chople Berry
+Level: 19
+Nature: Docile
+Ability: Hustle
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hyper Fang
+- Quick Attack
+- Knock Off
+- Zen Headbutt
 
 === TRAINER_SIMON ===
 Name: Simon
@@ -213,11 +234,23 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Volbeat
 Level: 19
+Nature: Docile
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Confuse Ray
+- Thunder Wave
+- Struggle Bug
+- Flash
 
-Shroomish
+Illumise
 Level: 19
+Nature: Docile
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bug Bite
+- Jovial Bash
+- Charm
+- Quick Attack
 
 === TRAINER_YOUNGSTER_TYLER ===
 Name: Tyler
@@ -383,17 +416,33 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Dottler
-Level: 10
+Dottler @ Oran Berry
+Level: 13
+Nature: Modest
+Ability: Swarm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Struggle Bug
+- Psybeam
+- Reflect
+- Light Screen
 
-Spewpa
-Level: 10
+Charjabug @ Occa Berry
+Level: 14
+Nature: Adamant
+Ability: Swarm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bug Bite
+- Spark
+- Bite
+- Mud Slap
 
-Snom
-Level: 11
+Mothim @ Charti Berry
+Level: 14
+Nature: Modest
+Ability:  Tinted Lens
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Silver Wind
+- Gust
 
 === TRAINER_BUG_CATCHER_GREG ===
 Name: Greg
@@ -600,13 +649,35 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Fidough
-Level: 10
+Wooper-Paldea @ Shuca Berry
+Level: 15
+Nature: Hardy
+Ability: Poison Point
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spikes
+- Mud Shot
+- Acid Spray
+- Ancient Power
 
-Nidoran F
-Level: 11
+Fidough @ Oran Berry
+Level: 15
+Nature: Adamant
+Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Jovial Bash
+- Ice Fang
+- Fire Fang
+- Trailblaze
+
+Jigglypuff @ Wise Glasses
+Level: 16
+Nature: Modest
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Round
+- Charge Beam
+- Bubble Beam
+- Icy Wind
 
 === TRAINER_LASS_SALLY ===
 Name: Sally
@@ -786,17 +857,32 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Illumise
+Pineco
 Level: 19
+Nature: Docile
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Take Down
+- Bug Bite
+- Rock Smash
+- Sand Tomb
 
-Tandemaus
+Aipom @ Muscle Band
 Level: 18
+Nature: Adamant
+Ability: Skill link
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Swipes 
 
 Audino
 Level: 18
+Nature: Docile
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Uproar
+- Draining Kiss
+- Rest
+- Sleep Talk
 
 === TRAINER_LASS_ANN ===
 Name: Ann
@@ -1321,11 +1407,33 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 
 Nidorino
 Level: 18
+Nature: Docile
+Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Tail
+- Toxic Spikes
+- Strength
+- Stomping Tantrum
 
-Dolliv
-Level: 19
+Nidorina
+Level: 18
+Nature: Docile
+Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Venoshock
+- Venom Drench
+- Toxic
+- Dig
+
+Mareanie
+Level: 19
+Nature: Docile
+Ability: Merciless
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Venoshock
+- Icy Wind
+- Toxic
+- Protect
 
 === TRAINER_PICNICKER_ALICIA ===
 Name: Alicia
@@ -1874,13 +1982,25 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Timburr
-Level: 17
+Timburr @ Life Orb
+Level: 21
+Nature: Modest
+Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Focus Blast
+- Grass Knot
+- Hidden Power
+- Work Up
 
-Geodude Alola
-Level: 18
+Klawf
+Level: 17
+Nature: Adamant
+Ability: Shell Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Blast
+- Body Slam
+- Metal Claw
+- Bulldoze
 
 === TRAINER_HIKER_NOB ===
 Name: Nob
@@ -1891,21 +2011,45 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Phanpy
-Level: 17
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Sandile
-Level: 17
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Machop
+Cranidos @ Quick Claw
 Level: 18
+Nature: Adamant
+Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Headbutt
+- Zen Headbutt
+- Iron Tail
+- Rock Slide
+
+Dunsparce @ Shell Bell
+Level: 18
+Nature: Docile
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ancient Power
+- Headbutt
+- Air Slash
+- Bite
 
 Makuhita
-Level: 19
+Level: 18
+Nature: Docile
+Ability: Thick Fat
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam
+- Force Palm
+- Thunder Punch
+- Smelling Salts
+
+Solrock
+Level: 18
+Nature: Docile
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Spin
+- Cosmic Power
+- Protect
+- Pain Split
 
 === TRAINER_HIKER_WAYNE ===
 Name: Wayne
@@ -2258,23 +2402,33 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Boss: Yes
+Mugshot: Yellow
 
-Grimer
-Level: 29
+Mienshao @ Life Orb
+Nature: Jolly
+Ability: Inner Focus
+Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+EVs: 54 Atk / 252 Spe
+Ball: Ultra Ball
+- Fake Out
+- Close Combat
+- Knock Off
+- U Turn
 
-Koffing
-Level: 29
+Heliolisk @ Focus Sash
+Nature: Timid
+Ability: Sand Veil
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Volt Switch
+- Boomburst
+- Weather Ball
+- Surf
 
 === TRAINER_BIKER_HIDEO ===
 Name: Hideo
@@ -3199,19 +3353,22 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Boss: Yes
+Mugshot: Yellow
 
-Machop
-Level: 28
+Lycanroc @ Hard Stone
+Nature: Adamant
+Ability: Sand Rush
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Accelerock
+- Stone Edge
+- Close Combat
+- Zen Headbutt
 
-Mankey
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Machop
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CUE_BALL_LUKE ===
 Name: Luke
@@ -3220,15 +3377,33 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Boss: Yes
+Mugshot: Yellow
 
-Mankey
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Machop
-Level: 29
+Dugtrio @ Life Orb
+Nature: Jolly
+Ability: Arena Trap
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 Atk / 252 Spe
+- Earthquake
+- Stone Edge
+- Aerial Ace
+- Sucker Punch
+
+Hariyama @ Assault Vest
+Nature: Careful
+Ability: Thick Fat
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 Atk
+Ball: Great Ball
+- Fake Out
+- Knock Off
+- Drain Punch
+- Heavy Slam
 
 === TRAINER_CUE_BALL_CAMRON ===
 Name: Camron
@@ -9176,12 +9351,24 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
 Farfetchd Galar
-Level: 17
+Level: 20
+Nature: Docile
+Ability: Scrappy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Smash
+- Brutal Swing
+- Slam
+- Cut
 
-Greedent
+Cufant @ Sitrus Berry
+Nature: Modest
+Ability: Sheer Force
 Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Belch
+- Earth Power
+- Flash Cannon
+- Sleep Talk
 
 === TRAINER_PICNICKER_MISSY ===
 Name: MISSY
@@ -13178,17 +13365,50 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Weezing
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Accelgor @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 50
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- U-Turn
+- Bug Buzz
+- Focus Blast
+- Sludge Bomb
 
-Weezing
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Gigalith @ Assault Vest
+Nature: Careful
+Ability: Sand Force
+Level: 50
+EVs: 252 HP / 54 Atk 
+Ball: Great Ball
+- Earthquake
+- Stone Edge
+- Explosion
+- Body Press
 
-Weezing
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Roserade @ Lum Berry
+Nature: Timid
+Ability: Technician
+Level: 50
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Giga Drain
+- Weather Ball
+- Hidden Power
+- Sleep Powder
+
+Houndstone @ Spell Tag
+Nature: Jolly
+Ability: Sand Rush
+Level: 50
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Last Respects
+- Body Press
+- Fire Fang
+- Ice Fang
 
 === TRAINER_CUE_BALL_CAMRON_2 ===
 Name: Camron

@@ -429,10 +429,12 @@ static void Task_ShowAiParty(u8 taskId)
 
             gSprites[data->spriteIds.aiPartyIcons[i]].sConditionSpriteId = CreateSprite(&gSpriteTemplate_StatusIcons, (i * 41) + 15, 7, 0);
             gSprites[gSprites[data->spriteIds.aiPartyIcons[i]].sConditionSpriteId].oam.priority = 0;
-            u32 ailment = GetMonData(mon, MON_DATA_STATUS);
 
             if (GetMonData(mon, MON_DATA_HP) == 0)
                 ailment = AILMENT_FNT;
+            else
+                ailment = GetAilmentFromStatus(GetMonData(mon, MON_DATA_STATUS));
+
             if (ailment != AILMENT_NONE)
                 StartSpriteAnim(&gSprites[gSprites[data->spriteIds.aiPartyIcons[i]].sConditionSpriteId], ailment - 1);
             else
