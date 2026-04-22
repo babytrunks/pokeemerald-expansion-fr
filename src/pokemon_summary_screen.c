@@ -310,6 +310,7 @@ static void StopPokemonAnimations(void);
 static void CreateMonMarkingsSprite(struct Pokemon *);
 static void RemoveAndCreateMonMarkingsSprite(struct Pokemon *);
 static void CreateCaughtBallSprite(struct Pokemon *);
+static void CreateFriendshipHeartSprite(void);
 static void CreateSetStatusSprite(void);
 static void CreateMoveSelectorSprites(u8);
 static void SpriteCB_MoveSelector(struct Sprite *);
@@ -786,6 +787,7 @@ static const u8 sMovesPPLayout[] = _("{PP}{DYNAMIC 0}/{DYNAMIC 1}");
 #define TAG_CATEGORY_ICONS 30004
 #define TAG_MON_SHADOW 30005
 #define TAG_TERA_TYPE 30006
+#define TAG_FRIENDSHIP_HEART 30007
 
 static const struct OamData sOamData_CategoryIcons =
 {
@@ -1362,6 +1364,32 @@ static const struct SpriteTemplate sSpriteTemplate_StatusCondition =
     .callback = SpriteCallbackDummy
 };
 static const u16 sMarkings_Pal[] = INCBIN_U16("graphics/summary_screen/markings.gbapal");
+
+static const u32 sFriendshipHeartGfx[] = INCBIN_U32("graphics/summary_screen/friendship_heart.4bpp.smol");
+static const u16 sFriendshipHeartPal[] = INCBIN_U16("graphics/summary_screen/friendship_heart.gbapal");
+
+static const struct OamData sOamData_FriendshipHeart =
+{
+    .affineMode = ST_OAM_AFFINE_OFF,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .mosaic = FALSE,
+    .bpp = ST_OAM_4BPP,
+    .shape = SPRITE_SHAPE(8x8),
+    .size = SPRITE_SIZE(8x8),
+    .priority = 2,
+};
+static const struct SpriteTemplate sSpriteTemplate_FriendshipHeart =
+{
+    .tileTag = TAG_FRIENDSHIP_HEART,
+    .paletteTag = TAG_FRIENDSHIP_HEART,
+    .oam = &sOamData_FriendshipHeart,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
+static const struct CompressedSpriteSheet sFriendshipHeartSpriteSheet = {sFriendshipHeartGfx, (8 * 8 * 5) / 2, TAG_FRIENDSHIP_HEART};
+static const struct SpritePalette sFriendshipHeartSpritePalette = {sFriendshipHeartPal, TAG_FRIENDSHIP_HEART};
 
 // code
 static u8 ShowCategoryIcon(enum DamageCategory category)
@@ -2294,8 +2322,14 @@ static void Task_ChangeSummaryMon(u8 taskId)
         DestroySpriteAndFreeResources(&gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]]);
         break;
     case 2:
-        DestroySpriteAndFreeResources(&gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]]);
+    {
+        u8 ballSpriteId = sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL];
+        u8 heartSpriteId = gSprites[ballSpriteId].data[0];
+        DestroySpriteAndFreeResources(&gSprites[ballSpriteId]);
+        if (heartSpriteId < MAX_SPRITES)
+            DestroySpriteAndFreeResources(&gSprites[heartSpriteId]);
         break;
+    }
     case 3:
         CopyMonToSummaryStruct(&sMonSummaryScreen->currentMon);
         sMonSummaryScreen->switchCounter = 0;
@@ -4994,6 +5028,44 @@ static void CreateCaughtBallSprite(struct Pokemon *mon)
     sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL] = CreateSprite(&gBallSpriteTemplates[ball], 8, 152, 0);
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].callback = SpriteCallbackDummy;
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].oam.priority = 3;
+    CreateFriendshipHeartSprite();
+}
+
+static void CreateFriendshipHeartSprite(void)
+{
+    u8 ballSpriteId = sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL];
+    struct Sprite *ballSprite = &gSprites[ballSpriteId];
+    u8 friendship = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_FRIENDSHIP);
+
+    if (friendship >= 80
+        && !GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_STATUS)
+        && sMonSummaryScreen->summary.currentHP > 0)
+    {
+        u16 imageNum = 0;
+        u8 heartSpriteId;
+
+        LoadCompressedSpriteSheetUsingHeap(&sFriendshipHeartSpriteSheet);
+        LoadSpritePalette(&sFriendshipHeartSpritePalette);
+
+        heartSpriteId = CreateSprite(&sSpriteTemplate_FriendshipHeart, ballSprite->x + 14, ballSprite->y, 0);
+        ballSprite->data[0] = heartSpriteId;
+
+        if (heartSpriteId < MAX_SPRITES)
+        {
+            switch (friendship)
+            {
+                case 80 ... 129:  imageNum = 4; break;
+                case 130 ... 179: imageNum = 3; break;
+                case 180 ... 219: imageNum = 2; break;
+                case 220 ... 254: imageNum = 1; break;
+            }
+            gSprites[heartSpriteId].oam.tileNum += imageNum;
+        }
+    }
+    else
+    {
+        ballSprite->data[0] = MAX_SPRITES;
+    }
 }
 
 static void CreateSetStatusSprite(void)
