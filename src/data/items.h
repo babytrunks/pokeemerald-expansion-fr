@@ -14881,7 +14881,7 @@ const struct Item gItemsInfo[] =
             "A mysterious string\n"
             "that makes some\n"
             "Pokémon evolve."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,

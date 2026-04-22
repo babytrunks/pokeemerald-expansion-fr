@@ -3674,7 +3674,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sGlameowLevelUpLearnset,
         .teachableLearnset = sGlameowTeachableLearnset,
         .eggMoveLearnset = sGlameowEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 21, SPECIES_PURUGLY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2, SPECIES_PURUGLY}),
     },
 
     [SPECIES_PURUGLY] =
@@ -3818,7 +3818,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sStunkyLevelUpLearnset,
         .teachableLearnset = sStunkyTeachableLearnset,
         .eggMoveLearnset = sStunkyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_SKUNTANK}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_SKUNTANK}),
     },
 
     [SPECIES_SKUNTANK] =

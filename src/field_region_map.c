@@ -233,7 +233,7 @@ static void PrintRegionMapSecName(void)
 
 static void PrintTitleWindowText(void)
 {
-    static const u8 FlyPromptText[] = _("{A_BUTTON} Fly");
+    static const u8 FlyPromptText[] = _("{A_BUTTON}  Fly");
     u32 hoennOffset = GetStringCenterAlignXOffset(FONT_NORMAL, gText_KantoReg, 0x38);
     u32 flyOffset = GetStringCenterAlignXOffset(FONT_NORMAL, FlyPromptText, 0x38);
 

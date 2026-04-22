@@ -68,13 +68,11 @@ Route3_EventScript_CamperQuest_GiveBerryReceiveGrass::
     call_if_unset FLAG_BADGE02_GET, EventScript_Camper_SetCandyFlag 
     msgbox Route3_Text_CamperGiveGrassMon
 	setflag FLAG_RARE_POKEMON_SCREEN
-	setflag FLAG_3_PERFECT_IVS 
     setvar VAR_RARE_POKEMON_COUNTER, 1
     factory_generaterentalmons
 	factory_rentmons
 	waitstate
 	clearflag FLAG_RARE_POKEMON_SCREEN
-	clearflag FLAG_3_PERFECT_IVS
     completequest QUEST_FIND_BERRY_JUICE
     waitmessage
     release

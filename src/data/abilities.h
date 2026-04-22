@@ -1343,7 +1343,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_GRASS_PELT] =
         {
             .name = _("Grass Pelt"),
-            .description = COMPOUND_STRING("Ups Defense by 20% in Grassy Terrain."),
+            .description = COMPOUND_STRING("Ups Defense by 50% in Grassy Terrain."),
             .aiRating = 2,
             .breakable = TRUE,
         },

@@ -35,6 +35,7 @@ CeladonCity_DepartmentStore_Roof_EventScript_AskGiveDrink::
 	msgbox CeladonCity_DepartmentStore_Roof_Text_ImThirstyGiveHerDrink, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, CeladonCity_DepartmentStore_Roof_EventScript_DontGiveDrink
 	textcolor NPC_TEXT_COLOR_NEUTRAL
+	lock
 	message CeladonCity_DepartmentStore_Roof_Text_GiveWhichDrink
 	waitmessage
 	textcolor NPC_TEXT_COLOR_FEMALE
@@ -114,6 +115,7 @@ CeladonCity_DepartmentStore_Roof_EventScript_GiveFreshWater::
 	setvar VAR_0x8009, ITEM_BANETTITE
 	goto_if_set FLAG_GOT_TM16_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
 	msgbox CeladonCity_DepartmentStore_Roof_Text_YayFreshWaterHaveThis
+	setflag FLAG_GOT_TM16_FROM_THIRSTY_GIRL
 	goto CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink
 	end
 
@@ -122,6 +124,7 @@ CeladonCity_DepartmentStore_Roof_EventScript_GiveSodaPop::
 	setvar VAR_0x8009, ITEM_CAMERUPTITE
 	goto_if_set FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
 	msgbox CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis
+	setflag FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL
 	goto CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink
 	end
 
@@ -130,6 +133,7 @@ CeladonCity_DepartmentStore_Roof_EventScript_GiveLemonade::
 	setvar VAR_0x8009, ITEM_AUDINITE
 	goto_if_set FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL, CeladonCity_DepartmentStore_Roof_EventScript_NotThirstyAfterAll
 	msgbox CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis
+	setflag FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL
 	goto CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink
 	end
 
@@ -145,11 +149,11 @@ CeladonCity_DepartmentStore_Roof_EventScript_GiveDrink::
 	message Text_ReceivedItemFromLittleGirl
 	waitmessage
 	waitfanfare
-	putitemaway VAR_0x8009
-	call EventScript_RestorePrevTextColor
-	call_if_eq VAR_0x8008, ITEM_FRESH_WATER, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM16
-	call_if_eq VAR_0x8008, ITEM_SODA_POP, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM20
-	call_if_eq VAR_0x8008, ITEM_LEMONADE, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM33
+	@ putitemaway VAR_0x8009
+	@ call EventScript_RestorePrevTextColor
+	call_if_eq VAR_0x8009, ITEM_BANETTITE, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM16
+	call_if_eq VAR_0x8009, ITEM_CAMERUPTITE, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM20
+	call_if_eq VAR_0x8009, ITEM_AUDINITE, CeladonCity_DepartmentStore_Roof_EventScript_ExplainTM33
 	release
 	end
 
@@ -333,7 +337,7 @@ CeladonCity_DepartmentStore_Roof_Text_ImNotThirstyAfterAll::
     .string "I'm not thirsty after all!$"
 
 CeladonCity_DepartmentStore_Roof_Text_MySisterIsImmature::
-    .string "My sister is a TRAINER, believe it\n"
+    .string "My sister is a Trainer, believe it\n"
     .string "or not.\p"
     .string "But, she's so immature, she drives\n"
     .string "me nuts!$"
@@ -343,8 +347,8 @@ CeladonCity_DepartmentStore_Roof_Text_ImThirstyIWantDrink::
     .string "I want something to drink!$"
 
 CeladonCity_DepartmentStore_Roof_Text_FloorSign::
-    .string "ROOFTOP SQUARE:\n"
-    .string "VENDING MACHINES$"
+    .string "Rooftop Square:\n"
+    .string "Vending Machines$"
 
 CeladonCity_DepartmentStore_Roof_Text_VendingMachineWhatDoesItHave::
     .string "A vending machine!\n"
@@ -361,4 +365,3 @@ CeladonCity_DepartmentStore_Roof_Text_NoMoreRoomForStuff::
 
 CeladonCity_DepartmentStore_Roof_Text_NotThirsty::
     .string "Not thirsty!$"
-

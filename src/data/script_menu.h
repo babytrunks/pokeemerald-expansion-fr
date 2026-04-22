@@ -223,9 +223,9 @@ static const struct MenuAction MultichoiceList_Mechadoll5_Q3[] =
 
 static const struct MenuAction MultichoiceList_VendingMachine[] =
 {
-    {COMPOUND_STRING("FRESH WATER{CLEAR_TO 0x48}¥200")},
-    {COMPOUND_STRING("SODA POP{CLEAR_TO 0x48}¥300")},
-    {COMPOUND_STRING("LEMONADE{CLEAR_TO 0x48}¥350")},
+    {COMPOUND_STRING("Fresh Water{CLEAR_TO 0x48}¥200")},
+    {COMPOUND_STRING("Soda Pop{CLEAR_TO 0x48}¥300")},
+    {COMPOUND_STRING("Lemonade{CLEAR_TO 0x48}¥350")},
     {gText_Exit},
 };
 
@@ -943,15 +943,15 @@ static const struct MenuAction sMultichoiceList_LinkedDirectUnion[] = {
 };
 
 static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
-    { COMPOUND_STRING("FRESH WATER{CLEAR_TO 0x57}{FONT_SMALL}¥200") },
-    { COMPOUND_STRING("SODA POP{CLEAR_TO 0x57}{FONT_SMALL}¥300") },
-    { COMPOUND_STRING("LEMONADE{CLEAR_TO 0x57}{FONT_SMALL}¥350") },
+    { COMPOUND_STRING("Fresh Water{CLEAR_TO 0x57}{FONT_SMALL}¥200") },
+    { COMPOUND_STRING("Soda Pop{CLEAR_TO 0x57}{FONT_SMALL}¥300") },
+    { COMPOUND_STRING("Lemonade{CLEAR_TO 0x57}{FONT_SMALL}¥350") },
     { gText_Exit }
 };
 
-const u8 sText_FreshWater[] = _("FRESH WATER");
-const u8 sText_SodaPop[] = _("SODA POP");
-const u8 sText_Lemonade[] = _("LEMONADE");
+const u8 sText_FreshWater[] = _("Fresh Water");
+const u8 sText_SodaPop[] = _("Soda Pop");
+const u8 sText_Lemonade[] = _("Lemonade");
 
 static const struct MenuAction sMultichoiceList_ThirstyGirlFreshWater[] = {
     { sText_FreshWater },
