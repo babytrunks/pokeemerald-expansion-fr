@@ -13,6 +13,7 @@ ViridianCity_School_EventScript_Lass::
 
 ViridianCity_School_EventScript_Woman::
 	lock
+	goto_if_set FLAG_BEAT_VIRIDIAN_CITY_TEACHER, ViridianCity_EventScript_SchoolTeacher
 	msgbox ViridianCity_School_Text_ReadBlackboardCarefully
 	closemessage
 	faceplayer
@@ -26,7 +27,6 @@ ViridianCity_School_EventScript_WomanEnd::
 	end
 
 CheckIfBeatAllViridianForestTrainers:
-	goto_if_set FLAG_BEAT_VIRIDIAN_CITY_TEACHER, ViridianCity_EventScript_SchoolTeacher
 	goto_if_not_defeated TRAINER_LASS_ANNE, ViridianCity_School_EventScript_WomanEnd
 	goto_if_not_defeated TRAINER_BUG_CATCHER_ANTHONY, ViridianCity_School_EventScript_WomanEnd
 	goto_if_not_defeated TRAINER_BUG_CATCHER_SAMMY, ViridianCity_School_EventScript_WomanEnd

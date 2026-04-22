@@ -312,8 +312,8 @@ SilphCo_6F_EventScript_ItemHPUp::
 	finditem ITEM_HP_UP
 	end
 
-SilphCo_6F_EventScript_ItemAudinite::
-	finditem ITEM_AUDINITE
+SilphCo_6F_EventScript_ItemGlalitite::
+	finditem ITEM_GLALITITE
 	end
 
 SilphCo_7F_EventScript_ItemCalcium::
