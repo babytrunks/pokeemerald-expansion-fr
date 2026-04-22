@@ -1365,8 +1365,16 @@ static const struct SpriteTemplate sSpriteTemplate_StatusCondition =
 };
 static const u16 sMarkings_Pal[] = INCBIN_U16("graphics/summary_screen/markings.gbapal");
 
-static const u32 sFriendshipHeartGfx[] = INCBIN_U32("graphics/summary_screen/friendship_heart.4bpp.smol");
-static const u16 sFriendshipHeartPal[] = INCBIN_U16("graphics/summary_screen/friendship_heart.gbapal");
+static const u32 sFriendshipHeartGfx_255[] = INCBIN_U32("graphics/summary_screen/friendship_heart_255.4bpp.smol");
+static const u16 sFriendshipHeartPal_255[] = INCBIN_U16("graphics/summary_screen/friendship_heart_255.gbapal");
+static const u32 sFriendshipHeartGfx_220[] = INCBIN_U32("graphics/summary_screen/friendship_heart_220.4bpp.smol");
+static const u16 sFriendshipHeartPal_220[] = INCBIN_U16("graphics/summary_screen/friendship_heart_220.gbapal");
+static const u32 sFriendshipHeartGfx_180[] = INCBIN_U32("graphics/summary_screen/friendship_heart_180.4bpp.smol");
+static const u16 sFriendshipHeartPal_180[] = INCBIN_U16("graphics/summary_screen/friendship_heart_180.gbapal");
+static const u32 sFriendshipHeartGfx_130[] = INCBIN_U32("graphics/summary_screen/friendship_heart_130.4bpp.smol");
+static const u16 sFriendshipHeartPal_130[] = INCBIN_U16("graphics/summary_screen/friendship_heart_130.gbapal");
+static const u32 sFriendshipHeartGfx_80[]  = INCBIN_U32("graphics/summary_screen/friendship_heart_80.4bpp.smol");
+static const u16 sFriendshipHeartPal_80[]  = INCBIN_U16("graphics/summary_screen/friendship_heart_80.gbapal");
 
 static const struct OamData sOamData_FriendshipHeart =
 {
@@ -1388,8 +1396,21 @@ static const struct SpriteTemplate sSpriteTemplate_FriendshipHeart =
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy,
 };
-static const struct CompressedSpriteSheet sFriendshipHeartSpriteSheet = {sFriendshipHeartGfx, (8 * 8 * 5) / 2, TAG_FRIENDSHIP_HEART};
-static const struct SpritePalette sFriendshipHeartSpritePalette = {sFriendshipHeartPal, TAG_FRIENDSHIP_HEART};
+
+static const struct CompressedSpriteSheet sFriendshipHeartSheets[5] = {
+    {sFriendshipHeartGfx_255, (8 * 8) / 2, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartGfx_220, (8 * 8) / 2, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartGfx_180, (8 * 8) / 2, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartGfx_130, (8 * 8) / 2, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartGfx_80,  (8 * 8) / 2, TAG_FRIENDSHIP_HEART},
+};
+static const struct SpritePalette sFriendshipHeartPalettes[5] = {
+    {sFriendshipHeartPal_255, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartPal_220, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartPal_180, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartPal_130, TAG_FRIENDSHIP_HEART},
+    {sFriendshipHeartPal_80,  TAG_FRIENDSHIP_HEART},
+};
 
 // code
 static u8 ShowCategoryIcon(enum DamageCategory category)
@@ -5041,26 +5062,23 @@ static void CreateFriendshipHeartSprite(void)
         && !GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_STATUS)
         && sMonSummaryScreen->summary.currentHP > 0)
     {
-        u16 imageNum = 0;
+        u8 index;
         u8 heartSpriteId;
 
-        LoadCompressedSpriteSheetUsingHeap(&sFriendshipHeartSpriteSheet);
-        LoadSpritePalette(&sFriendshipHeartSpritePalette);
+        switch (friendship)
+        {
+            case 80 ... 129:  index = 4; break;
+            case 130 ... 179: index = 3; break;
+            case 180 ... 219: index = 2; break;
+            case 220 ... 254: index = 1; break;
+            default:          index = 0; break;
+        }
+
+        LoadCompressedSpriteSheetUsingHeap(&sFriendshipHeartSheets[index]);
+        LoadSpritePalette(&sFriendshipHeartPalettes[index]);
 
         heartSpriteId = CreateSprite(&sSpriteTemplate_FriendshipHeart, ballSprite->x + 14, ballSprite->y, 0);
         ballSprite->data[0] = heartSpriteId;
-
-        if (heartSpriteId < MAX_SPRITES)
-        {
-            switch (friendship)
-            {
-                case 80 ... 129:  imageNum = 4; break;
-                case 130 ... 179: imageNum = 3; break;
-                case 180 ... 219: imageNum = 2; break;
-                case 220 ... 254: imageNum = 1; break;
-            }
-            gSprites[heartSpriteId].oam.tileNum += imageNum;
-        }
     }
     else
     {

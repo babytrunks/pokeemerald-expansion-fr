@@ -100,7 +100,7 @@ ViridianForest_EventScript_BrendanOne_Battle::
     @ fadescreen FADE_TO_BLACK                          @ fadescreen 0x1
     applymovement LOCALID_VIRIDIAN_FOREST_TREECKO, EventScript_TreeckoEnterPokeball
     waitmovement 0
-    @ removeobject LOCALID_VIRIDIAN_FOREST_TREECKO     
+    removeobject LOCALID_VIRIDIAN_FOREST_TREECKO     
     @ playse 0xF                                        @ sound 0xF
     @ waitse
     @ fadescreen FADE_FROM_BLACK  
@@ -229,6 +229,7 @@ EventScript_Brendan_MoveLeaveRightTile::
     walk_down
     walk_down
     walk_down
+    walk_down
     step_end
 
 EventScript_Treecko_MoveLeaveLeftTile::
@@ -239,11 +240,13 @@ EventScript_Treecko_MoveLeaveLeftTile::
     walk_down
     walk_down
     walk_down
+    walk_down
     step_end
 
 EventScript_Treecko_MoveLeaveRightTile::
     walk_right
     walk_left
+    walk_down
     walk_down
     walk_down
     walk_down
@@ -281,11 +284,14 @@ EventScript_Viridian_LassRepelGirl::
     end
 
 Movement_Viridian_LassRepelLeave:
-    walk_down
-    walk_down
-    walk_down
-    walk_down
-    walk_down
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
     step_end
 
 ViridianForest_Text_FriendsItchingToBattle::
