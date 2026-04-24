@@ -3826,6 +3826,10 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_CASINO_PLUS_8)            \
     X(MUS_CASINO_PLUS_9)            \
     X(MUS_CASINO_PLUS_GACHA)        \
+    X(MUS_HG_VS_GYM_LEADER)        \
+    X(MUS_HG_VS_RIVAL)             \
+    X(MUS_HG_VS_ROCKET)            \
+    X(MUS_HG_VS_TRAINER_KANTO)     \
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

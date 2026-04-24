@@ -6282,13 +6282,35 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Seviper
-Level: 34
+Purugly @ Loaded Dice
+Ability: Own Tempo  
+Level: 32
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Swipes
+- Bite
+- Iron Tail
+- Wake-Up Slap
 
-Malamar
-Level: 34
+Skuntank @ King's Rock
+Ability: Aftermath
+Level: 31
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Jab
+- Night Slash
+- Trailblaze 
+- Temper Flare
+
+Toxicroak @ Scope Lens
+Ability: Dry Skin
+Level: 31
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Cross Poison
+- Dual Chop
+- Bulldoze
+- Meditate
 
 === TRAINER_TEAM_ROCKET_GRUNT_9 ===
 Name: Grunt
@@ -6299,13 +6321,44 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Toxicroak
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+=== TRAINER_TEAM_ROCKET_GRUNT_9 ===
+Name: Grunt
+Class: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Linoone-Galar
-Level: 34
+Houndoom @ Chople Berry  
+Ability: Early Bird  
+Level: 32  
+Nature: Calm  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+- Fire Spin  
+- Snarl  
+- Mud Shot  
+- Rest
+
+Sandaconda @ Passho Berry  
+Ability: Shed Skin  
+Level: 33  
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+- Sand Tomb  
+- Dig  
+- Rock Tomb  
+- Rest
+
+Venomoth @ Chesto Berry  
+Ability: Wonder Skin  
+Level: 31  
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Infestation
+- Psychic Noise  
+- Acid Spray  
+- Rest
 
 === TRAINER_TEAM_ROCKET_GRUNT_10 ===
 Name: Grunt
@@ -6316,17 +6369,44 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Muk-Alola
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+=== TRAINER_TEAM_ROCKET_GRUNT_10 ===
+Name: Grunt
+Class: Team Rocket Frlg
+Pic: Rocket Grunt M Frlg
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party
 
-Slowbro-Galar
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Wigglytuff @ Zoom Lens  
+Ability: Sheer Force  
+Level: 33  
+Nature: Brave 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Zap Cannon  
+- Dynamic Punch  
+- Draining Kiss  
+- Sing
 
-Swalot
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nidorino @ Eviolite  
+Ability: Hustle  
+Level: 35  
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe   
+- Poison Jab  
+- Drill Run  
+- Shadow Claw  
+- Sucker Punch
+
+Raticate-Alola @ Blunder Policy  
+Ability: Hustle  
+Level: 33  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Crunch  
+- Zen Headbutt  
+- Revenge  
+- Pursuit
 
 === TRAINER_TEAM_ROCKET_GRUNT_11 ===
 Name: Grunt
@@ -6337,21 +6417,45 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Murkrow
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Squawkabilly-Yellow @ Muscle Band  
+Ability: Sheer Force  
+Level: 34  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Nature: Jolly  
+- Dual Wingbeat
+- Headbutt
+- Iron Head
+- Bulk Up
 
-Vullaby
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Bruxish @ Muscle Band  
+Ability: Strong Jaw  
+Level: 33  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Nature: Careful
+- Aqua Fang  
+- Psychic Fangs  
+- Poison Fang  
+- Bulk Up
 
-Liepard
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Boltund @ Muscle Band  
+Ability: Strong Jaw  
+Level: 33  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Nature: Adamant  
+- Thunder Fang  
+- Fire Fang  
+- Play Rough  
+- Bulk Up
 
-Mabosstiff
-Level: 35
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Sableye @ Muscle Band  
+Ability: Prankster  
+Level: 34  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+Nature: Careful
+- Shadow Claw  
+- Drain Punch  
+- Poison Jab  
+- Bulk Up
 
 === TRAINER_TEAM_ROCKET_GRUNT_12 ===
 Name: Grunt
@@ -6379,25 +6483,35 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Raticate-Alola
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Gumshoos @ Red Card  
+Ability: Stakeout  
+Level: 31  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Strength  
+- Fire Punch  
+- Pluck  
+- Thunder Punch  
 
-Houndstone
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Spidops @ Red Card  
+Ability: Stakeout  
+Level: 33  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Skitter Smack  
+- Brick Break  
+- Cross Poison  
+- Rock Tomb  
 
-Lokix
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Watchog
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Galvantula
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Thievul @ Red Card  
+Ability: Stakeout  
+Level: 31  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Snarl  
+- Grass Knot  
+- Icy Wind  
+- Burning Jealousy
 
 === TRAINER_TEAM_ROCKET_GRUNT_14 ===
 Name: Grunt
@@ -6408,17 +6522,46 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Skuntank
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Ursaring
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Persian-Alola @ Sitrus Berry  
+Ability: Fur Coat  
+Level: 33  
+Nature: Jolly 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Night Slash  
+- Skitter Smack  
+- Roar  
+- Spikes  
 
-Sirfetch'd
-Level: 33
+Carbink @ Babiri Berry  
+Ability: Clear Body  
+Level: 34  
+Nature: Sassy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Press  
+- Ancient Power  
+- Wonder Room  
+- Spikes  
+
+Seviper @ Dragon Fang  
+Ability: Shed Skin  
+Level: 34  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Tail  
+- Iron Tail  
+- Aqua Tail  
+- Dragon Tail  
+
+Grapploct @ Black Belt  
+Ability: Limber  
+Level: 32  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Circle Throw  
+- Brick Break  
+- Waterfall  
+- Brutal Swing  
 
 === TRAINER_TEAM_ROCKET_GRUNT_15 ===
 Name: Grunt
@@ -6429,13 +6572,44 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Hariyama
-Level: 34
+Golbat @ Poison Barb  
+Ability: Corrosion  
+Level: 34  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Venoshock  
+- Air Slash    
+- Roost  
 
-Grapploct
-Level: 33
+Granbull @ Kebia Berry  
+Ability: Intimidate  
+Level: 32  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Wave  
+- Smelling Salts  
+- Play Rough  
+- Stomping Tantrum  
+
+Lampent (M) @ Wide Lens  
+Ability: Flame Body  
+Level: 34  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Will-O-Wisp  
+- Hex  
+- Flame Burst  
+- Taunt  
+
+Musharna @ Twisted Spoon  
+Ability: Forewarn  
+Level: 32  
+Nature: Quiet
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Hypnosis  
+- Dream Eater  
+- Nightmare  
+- Yawn
 
 === TRAINER_TEAM_ROCKET_GRUNT_16 ===
 Name: Grunt
@@ -6443,20 +6617,48 @@ Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Sandslash
-Level: 34
+Weezing-Galar @ Shuca Berry  
+Ability: Levitate  
+Level: 35  
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower  
+- Sludge Bomb  
+- Strange Steam  
+- Will-O-Wisp  
 
-Wugtrio
-Level: 36
+Slaking @ Lum Berry  
+Ability: Truant  
+Level: 35  
+Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Slam  
+- Fire Punch  
+- Ice Punch  
+- Knock Off  
 
-Sandslash-Alola
-Level: 35
+Turtonator @ Rocky Helmet  
+Ability: Dauntless Shield  
+Level: 35  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower  
+- Dragon Pulse  
+- Body Press  
+- Burning Bulwark  
+
+Sinistcha @ Colbur Berry  
+Ability: Hospitality  
+Level: 35  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Matcha Gotcha  
+- Shadow Ball  
+- Scald  
+- Will-O-Wisp  
 
 === TRAINER_TEAM_ROCKET_GRUNT_17 ===
 Name: Grunt
@@ -6464,20 +6666,48 @@ Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Morpeko
-Level: 35
+Talonflame @ Wide Lens  
+Ability: Gale Wings  
+Level: 35  
+Nature: Timid  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Blast  
+- Hurricane  
+- Will-O-Wisp  
+- Tailwind  
 
-Scrafty
-Level: 36
+Brambleghast @ Focus Sash  
+Ability: Wind Rider  
+Level: 35  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Power Whip  
+- Phantom Force  
+- Skitter Smack  
+- Spikes  
 
-Cacturne
-Level: 35
+Toxicroak @ Lum Berry  
+Ability: Dry Skin  
+Level: 35  
+Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drain Punch  
+- Ice Punch  
+- Knock Off  
+- Poison Jab  
+
+Eelektross @ Expert Belt  
+Ability: Levitate  
+Level: 35  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Pulse  
+- Flamethrower  
+- Giga Drain  
+- Thunderbolt  
 
 === TRAINER_TEAM_ROCKET_GRUNT_18 ===
 Name: Grunt
@@ -6488,13 +6718,35 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pangoro
-Level: 35
+Drednaw @ Loaded Dice  
+Ability: Shell Armor  
+Level: 32  
+Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Razor Shell  
+- Rock Blast  
+- Scale Shot  
+- Gastro Acid  
 
-Umbreon
-Level: 35
+Solrock @ Sharp Beak  
+Ability: Levitate  
+Level: 33  
+Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fly  
+- Self-Destruct  
+- Rock Slide  
+- Zen Headbutt  
+
+Pangoro @ Rocky Helmet  
+Ability: Mold Breaker  
+Level: 34  
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Rock Smash  
+- Rock Slide  
+- Rock Climb  
+- Rock Tomb 
 
 === TRAINER_TEAM_ROCKET_GRUNT_19 ===
 Name: Grunt

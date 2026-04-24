@@ -501,7 +501,12 @@
 #define MUS_CASINO_PLUS_8           567
 #define MUS_CASINO_PLUS_9           568
 #define MUS_CASINO_PLUS_GACHA       569
-#define END_MUS                     MUS_CASINO_PLUS_GACHA
+// HeartGold & SoulSilver battle music
+#define MUS_HG_VS_GYM_LEADER        610  // Battle! (Gym Leader - Johto Version)
+#define MUS_HG_VS_RIVAL             611  // Battle! (Rival)
+#define MUS_HG_VS_ROCKET            612  // Battle! (Team Rocket)
+#define MUS_HG_VS_TRAINER_KANTO     613  // Battle! (Trainer Battle - Kanto Version)
+#define END_MUS                     MUS_HG_VS_TRAINER_KANTO
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.
