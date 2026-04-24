@@ -2041,7 +2041,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thief
 - Toxic
 
-Farfetch'd @ Charti Berry
+Farfetchd @ Charti Berry
 Level: 17
 Nature: Jolly
 Ability: Sharpness
@@ -6321,15 +6321,6 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-=== TRAINER_TEAM_ROCKET_GRUNT_9 ===
-Name: Grunt
-Class: Team Rocket Frlg
-Pic: Rocket Grunt M Frlg
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
-
 Houndoom @ Chople Berry  
 Ability: Early Bird  
 Level: 32  
@@ -6359,15 +6350,6 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Psychic Noise  
 - Acid Spray  
 - Rest
-
-=== TRAINER_TEAM_ROCKET_GRUNT_10 ===
-Name: Grunt
-Class: Team Rocket Frlg
-Pic: Rocket Grunt M Frlg
-Gender: Male
-Music: Aqua
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
 
 === TRAINER_TEAM_ROCKET_GRUNT_10 ===
 Name: Grunt
