@@ -4332,8 +4332,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_UPGRADE,
         .description = COMPOUND_STRING(
             "{FONT_SMALL}Boosts speed by 50%\n"
-            "{FONT_SMALL}but cannot use same\n"
-            "{FONT_SMALL}move twice for Porygon-Z."),
+            "{FONT_SMALL}for Porygon-Z,\n"
+            "{FONT_SMALL}but is tormented."),
         .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
@@ -4374,7 +4374,7 @@ const struct Item gItemsInfo[] =
         .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .holdEffectParam = 20,
+        .holdEffectParam = 50,
         .flingPower = 80,
         .iconPic = gItemIcon_Electirizer,
         .iconPalette = gItemIconPalette_Electirizer,
@@ -12758,11 +12758,14 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM73] =
+    [ITEM_TM_HEAT_CRASH] =
     {
         .name = ITEM_NAME("TM73"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+         .description = COMPOUND_STRING(
+            "Does more damage\n"
+            "when user outweighs\n"
+            "the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -15466,6 +15469,24 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_OutfitBox,
 	.iconPic = gItemIcon_OutfitBox,
 	.iconPalette = gItemIconPalette_OutfitBox,
+    },
+    [ITEM_BURNT_SEED] =
+    {
+        .name = ITEM_NAME("Burnt Seed"),
+        .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
+        .holdEffect = HOLD_EFFECT_BURNT_SEED,
+        .description = COMPOUND_STRING(
+            "{FONT_SMALL}Boosts Fire and Grass\n"
+            "{FONT_SMALL}moves by 50% when\n"
+            "{FONT_SMALL}held by Sunflora."),
+        .pocket = POCKET_BATTLE_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .holdEffectParam = 50,
+        .flingPower = 80,
+        .iconPic = gItemIcon_BurntSeed,
+        .iconPalette = gItemIconPalette_BurntSeed,
     },
 };
 

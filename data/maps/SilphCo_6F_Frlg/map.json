@@ -115,7 +115,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilphCo_6F_EventScript_ItemHPUp",
+      "script": "SilphCo_6F_EventScript_ItemUpgrade",
       "flag": "FLAG_HIDE_SILPH_CO_6F_HP_UP"
     },
     {

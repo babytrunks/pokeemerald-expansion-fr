@@ -418,7 +418,7 @@
 #define ITEM_LOPUNNITE 332
 #define ITEM_GARCHOMPITE 333
 #define ITEM_LUCARIONITE 334
-#define ITEM_ABOMASITE 335
+#define ITEM_ABOMASITE 335 // done
 #define ITEM_GALLADITE 336
 #define ITEM_AUDINITE 337 // done
 #define ITEM_DIANCITE 338
@@ -1007,7 +1007,7 @@
 #define ITEM_EELEKTROSSITE 841
 #define ITEM_CHANDELURITE 842
 #define ITEM_CHESNAUGHTITE 843
-#define ITEM_DELPHOXITE 844
+#define ITEM_DELPHOXITE 844 // done
 #define ITEM_GRENINJITE 845
 #define ITEM_PYROARITE 846
 #define ITEM_FLOETTITE 847
@@ -1039,8 +1039,8 @@
 #define ITEM_GLIMMORANITE  873
 
 #define ITEM_OUTFIT_BOX 874
-
-#define ITEMS_COUNT 875
+#define ITEM_BURNT_SEED  875
+#define ITEMS_COUNT 876
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

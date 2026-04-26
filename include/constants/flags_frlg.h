@@ -688,7 +688,7 @@
 #define FLAG_FOUGHT_ARTICUNO                             0x2BE
 #define FLAG_FOUGHT_ZAPDOS                               0x2BF
 #define FLAG_TUTOR_DOUBLE_EDGE                           0x2C0 // Unused
-#define FLAG_TUTOR_THUNDER_WAVE                          0x2C1 // Unused
+#define FLAG_TUTOR_THUNDER_WAVE                          0x2C1 
 #define FLAG_TUTOR_ROCK_SLIDE                            0x2C2 // Unused
 #define FLAG_TUTOR_EXPLOSION                             0x2C3
 #define FLAG_GIVE_BLACK_BELT                             0x2C4
@@ -729,8 +729,8 @@
 #define FLAG_LANDMARK_TRICK_HOUSE                        0x2E7
 #define FLAG_HIDE_ROUTE12_SLOWBRONITE                    0x2E8
 #define FLAG_HIDE_ROUTE12_TM_SEED_BOMB                   0x2E9
-#define FLAG_0x2EA                                       0x2EA
-#define FLAG_0x2EB                                       0x2EB
+#define FLAG_HIDE_ROUTE13_BURNT_SEED                     0x2EA
+#define FLAG_HIDE_ROUTE13_DELPHOXITE                     0x2EB
 #define FLAG_REVIVED_DOME                                0x2EC
 #define FLAG_REVIVED_HELIX                               0x2ED
 #define FLAG_REVIVED_AMBER                               0x2EE

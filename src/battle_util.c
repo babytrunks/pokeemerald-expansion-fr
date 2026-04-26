@@ -7662,7 +7662,10 @@ u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_ELECTIVIRE && (moveType == TYPE_ELECTRIC || moveType == TYPE_FIGHTING))
             modifier = uq4_12_multiply(modifier, holdEffectModifier);
         break;
-
+    case HOLD_EFFECT_BURNT_SEED:
+        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_SUNFLORA && (moveType == TYPE_FIRE || moveType == TYPE_GRASS))
+            modifier = uq4_12_multiply(modifier, holdEffectModifier);
+        break;
     default:
         break;
     }

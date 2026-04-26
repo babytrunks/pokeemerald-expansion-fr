@@ -2117,3 +2117,6 @@ const u16 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U16("graphics/items/icon
 
 const u32 gItemIcon_OutfitBox[] = INCBIN_U32("graphics/items/icons/outfit_box.4bpp.smolTM");
 const u16 gItemIconPalette_OutfitBox[] = INCBIN_U16("graphics/items/icon_palettes/outfit_box.gbapal");
+
+const u32 gItemIcon_BurntSeed[] = INCBIN_U32("graphics/items/icons/burnt_seed.4bpp.smol");
+const u16 gItemIconPalette_BurntSeed[] = INCBIN_U16("graphics/items/icon_palettes/burnt_seed.gbapal");

@@ -73,7 +73,8 @@
     F(FUTURE_SIGHT) \
     F(SCORCHING_SANDS) \
     F(TRICK_ROOM) \
-    F(SEED_BOMB) 
+    F(SEED_BOMB) \
+    F(HEAT_CRASH) 
     
 #define FOREACH_HM(F) \
     F(CUT) \

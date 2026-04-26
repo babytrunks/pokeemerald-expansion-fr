@@ -226,7 +226,7 @@ Route12_EventScript_ItemTMHurricane::
 	end
 
 Route12_EventScript_ItemIron::
-	finditem ITEM_IRON
+	finditem ITEM_ABOMASITE
 	end
 
 Route15_EventScript_ItemTM18::
@@ -308,8 +308,8 @@ SilphCo_5F_EventScript_ItemCardKey::
 	release
 	end
 
-SilphCo_6F_EventScript_ItemHPUp::
-	finditem ITEM_HP_UP
+SilphCo_6F_EventScript_ItemUpgrade::
+	finditem ITEM_UPGRADE
 	end
 
 SilphCo_6F_EventScript_ItemGlalitite::

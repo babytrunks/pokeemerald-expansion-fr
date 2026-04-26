@@ -624,4 +624,7 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
     {
         .onAttackerAfterHit = TRUE,
     },
+    [HOLD_EFFECT_BURNT_SEED] = 
+    {
+    },
 };

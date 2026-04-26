@@ -9786,7 +9786,6 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_BODY_PRESS_HEAT_CRASH"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -9815,7 +9814,8 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_BODY_PRESS_HEAT_CRASH"
+      "MOVE_BODY_PRESS",
+      "MOVE_HEAT_CRASH"
     ],
     "EggMoves": [],
     "TutorMoves": []
