@@ -33,6 +33,8 @@ RocketHideout_B4F_EventScript_Giovanni::
 	setflag FLAG_HIDE_CELADON_ROCKETS
 	famechecker FAMECHECKER_GIOVANNI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	fadescreen FADE_FROM_BLACK
+	callnative SetBuffer1ToLevelCap
+	msgbox RocketHideout_B4F_Text_GiovanniLevelCapIncreased
 	release
 	end
 
@@ -176,3 +178,6 @@ RocketHideout_B4F_Text_Grunt1PostBattle::
     .string "Oh, no!\n"
     .string "I dropped the Lift Key!$"
 
+RocketHideout_B4F_Text_GiovanniLevelCapIncreased::
+	.string "Your Level Cap increased to\n"
+	.string "{STR_VAR_1}.$"

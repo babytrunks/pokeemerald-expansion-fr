@@ -616,5 +616,11 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
     },
     [HOLD_EFFECT_REAPER_CLOTH] = 
     {
-    }
+    },
+    [HOLD_EFFECT_ELECTIRIZER] = 
+    {
+    },
+    [HOLD_EFFECT_MAGMARIZER] = 
+    {
+    },
 };

@@ -221,8 +221,8 @@ PokemonTower_6F_EventScript_ItemSablenite::
 	finditem ITEM_SABLENITE
 	end
 
-Route12_EventScript_ItemTM48::
-	finditem ITEM_TM48
+Route12_EventScript_ItemTMHurricane::
+	finditem ITEM_TM_HURRICANE
 	end
 
 Route12_EventScript_ItemIron::
@@ -547,8 +547,8 @@ RockTunnel_B1F_EventScript_ItemFossilizedDino::
 	end
 
 
-SilphCo_8F_EventScript_ItemIron::
-	finditem ITEM_IRON
+SilphCo_8F_EventScript_ItemIronBall::
+	finditem ITEM_IRON_BALL
 	end
 
 SilphCo_11F_EventScript_ItemZinc::

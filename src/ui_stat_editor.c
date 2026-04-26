@@ -1,4 +1,5 @@
 #include "global.h"
+#include "caps.h"
 #include "ui_stat_editor.h"
 #include "strings.h"
 #include "bg.h"
@@ -1059,13 +1060,24 @@ static u16 getEvCap(void) {
     return evCap;
 }
 
-static bool8 checkIfEVCapReached(void) {
+static bool8 checkIfEVCapReached(void) 
+{
     u32 evCap = getEvCap();
 
     return ((sStatEditorDataPtr->editingStat == 252) || (sStatEditorDataPtr->evTotal >= evCap));
 }
 
-void SetBuffer1ToEvCap(void) {
+void SetBuffer1ToEvCap(void) 
+{
     u32 evCap = getEvCap();
     ConvertIntToDecimalStringN(gStringVar1, evCap, STR_CONV_MODE_RIGHT_ALIGN, 3);
+}
+
+void SetBuffer1ToLevelCap(void)
+{
+    u32 levelCap = GetCurrentLevelCap();
+    if (levelCap > 100)
+        ConvertIntToDecimalStringN(gStringVar1, levelCap, STR_CONV_MODE_RIGHT_ALIGN, 2);
+    else
+        ConvertIntToDecimalStringN(gStringVar1, levelCap, STR_CONV_MODE_RIGHT_ALIGN, 3);
 }

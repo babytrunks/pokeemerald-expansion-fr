@@ -21,6 +21,7 @@ CeruleanCity_Gym_EventScript_MistyDefeated::
 	end
 
 CeruleanCity_Gym_EventScript_GiveTM54::
+    callnative SetBuffer1ToLevelCap
     setspeaker SP_NAME_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainCascadeBadge
 	giveitem_msg CeruleanCity_Gym_Text_ReceivedTM54FromMisty, ITEM_TM_FLIP_TURN
@@ -97,6 +98,8 @@ CeruleanCity_Gym_Text_ExplainCascadeBadge::
     .string "You can Cut down small trees to\n"
     .string "open new pathways, if you haved the\l"
     .string "HM.\p"
+    .string "It also raises your Levle Cap to\n"
+    .string "{STR_VAR_1}.\p"
     .string "You can also have my favorite TM.$"
 
 CeruleanCity_Gym_Text_ReceivedTM54FromMisty::

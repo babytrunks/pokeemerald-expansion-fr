@@ -71,8 +71,9 @@
     F(THUNDER_WAVE) \
     F(BODY_PRESS) \
     F(FUTURE_SIGHT) \
-    F(SCORCHING_SANDS) 
-
+    F(SCORCHING_SANDS) \
+    F(TRICK_ROOM) \
+    F(SEED_BOMB) 
     
 #define FOREACH_HM(F) \
     F(CUT) \

@@ -53,6 +53,7 @@ PewterCity_Gym_EventScript_GiveTM39::
 	msgbox PewterCity_Gym_Text_TakeThisWithYou
 	giveitem_msg PewterCity_Gym_Text_ReceivedTM39FromBrock, ITEM_TM39
     setspeaker SP_NAME_BROCK
+    callnative SetBuffer1ToLevelCap
 	msgbox PewterCity_Gym_Text_ExplainTM39
 	release
 	end
@@ -159,7 +160,9 @@ PewterCity_Gym_Text_ExplainTM39::
     .string "Anyways…\n"
     .string "TM39 contains Rock Tomb.\p"
     .string "It hurls boulders at the foe and\n"
-    .string "lowers its Speed.$"
+    .string "lowers its Speed.\p"
+    .string "Also, your Level Cap has been raised\n"
+    .string "to {STR_VAR_1}.$"
 
 PewterCity_Gym_Text_BrockPostBattle::
     .string "There are all kinds of trainers in\n"

@@ -173,7 +173,6 @@ EventScript_AdminMtMoonMain_Start::
 
     msgbox adminmtmoonleft_Text_4
     waitmessage
-
     call_if_eq VAR_TEMP_2, 1, MtMoon_AdminMtMoon_ComeDownLeft
     call_if_eq VAR_TEMP_2, 2, MtMoon_AdminMtMoon_ComeDownRight
 
@@ -182,6 +181,8 @@ EventScript_AdminMtMoonMain_Start::
     setflag FLAG_BEAT_MT_MOON_ARCHER
     playse SE_EXIT    
     waitse
+    callnative SetBuffer1ToLevelCap
+    msgbox adminmtmoonleft_Text_LevelCapRaised
     release
     end
 
@@ -348,20 +349,19 @@ MtMoon_B2F_Text_Grunt4PostBattle::
     .string "people came.$"
 
 MtMoon_B2F_Text_YouWantDomeFossil::
-    .string "Do you want the DOME FOSSIL?$"
+    .string "Do you want the Dome Fossil?$"
 
 MtMoon_B2F_Text_YouWantHelixFossil::
-    .string "Do you want the HELIX FOSSIL?$"
+    .string "Do you want the Helix Fossil?$"
 
 MtMoon_B2F_Text_ObtainedHelixFossil::
-    .string "Obtained the HELIX FOSSIL!$"
+    .string "Obtained the Helix Fossil!$"
 
 MtMoon_B2F_Text_ObtainedDomeFossil::
-    .string "Obtained the DOME FOSSIL!$"
+    .string "Obtained the Dome Fossil!$"
 
 adminmtmoonleft_Text_1::
   .string "HEY YOU! Wait right there!$"
-
 
 adminmtmoonleft_Text_2::
   .string "Are you the twerp messing with my\n"
@@ -370,10 +370,8 @@ adminmtmoonleft_Text_2::
   .string "eh?\p"
   .string "I'll teach you a valuable lesson.$"
 
-
 adminmtmoonleft_Text_Defeat::
   .string "What a shameful blunder…$"
-
 
 adminmtmoonleft_Text_4::
   .string "Whatever, we've done everything we\n"
@@ -381,3 +379,7 @@ adminmtmoonleft_Text_4::
   .string "I won't be as nice to you next\n"
   .string "time.\p"
   .string "…I'll be seeing you.$"
+
+adminmtmoonleft_Text_LevelCapRaised::
+    .string "Your Level Cap has been raised to\n"
+    .string "{STR_VAR_1}.$"

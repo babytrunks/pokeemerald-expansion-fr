@@ -68,10 +68,11 @@ SaffronCity_Gym_EventScript_DefeatedSabrina::
 	end
 
 SaffronCity_Gym_EventScript_GiveTM04::
+	callnative SetBuffer1ToLevelCap
 	msgbox SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis
-	checkitemspace ITEM_TM04
+	checkitemspace ITEM_TM_TRICK_ROOM
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_Gym_EventScript_NoRoomForTM04
-	giveitem_msg SaffronCity_Gym_Text_ReceivedTM04FromSabrina, ITEM_TM04
+	giveitem_msg SaffronCity_Gym_Text_ReceivedTM71FromSabrina, ITEM_TM_TRICK_ROOM
 	setflag FLAG_GOT_TM04_FROM_SABRINA
 	msgbox SaffronCity_Gym_Text_SabrinaPostBattle
 	release
@@ -143,8 +144,6 @@ SaffronCity_Gym_EventScript_GymStatuePostVictory::
 	releaseall
 	end
 
-
-
 SaffronCity_Gym_Text_SabrinaIntro::
     .string "I had a vision of your arrival.\p"
     .string "I have had psychic powers since\n"
@@ -160,7 +159,7 @@ SaffronCity_Gym_Text_SabrinaDefeat::
     .string "I admit, I didn't work hard enough\n"
     .string "to win.\p"
     .string "Your victory has earned you the\n"
-    .string "MARSHBADGE.$"
+    .string "Marsh Badge.$"
 
 SaffronCity_Gym_Text_SabrinaPostBattle::
     .string "Psychic power isn't something that\n"
@@ -169,22 +168,21 @@ SaffronCity_Gym_Text_SabrinaPostBattle::
     .string "People just don't realize it.$"
 
 SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
-    .string "The MARSHBADGE makes Pokémon up\n"
-    .string "to Lv. 70 obey you.\p"
-    .string "Stronger Pokémon will become wild,\n"
-    .string "ignoring your orders in battle.\p"
-    .string "Just don't raise your Pokémon too\n"
-    .string "much to avoid that problem.\p"
+    .string "The Marsh Badge raises the Level Cap to\n"
+    .string "{STR_VAR_1}.\p"
+	.string "It also allows you to use HM Rock Smash\n"
+	.string "outside of battle.\p"
     .string "Wait, please take this TM with you.$"
 
-SaffronCity_Gym_Text_ReceivedTM04FromSabrina::
-    .string "{PLAYER} received TM04 from\n"
-    .string "SABRINA.$"
+SaffronCity_Gym_Text_ReceivedTM71FromSabrina::
+    .string "{PLAYER} received TM71 from\n"
+    .string "Sabrina.$"
 
 SaffronCity_Gym_Text_ExplainTM04::
-    .string "TM04 is CALM MIND.\p"
-    .string "It makes the Pokémon concentrate\n"
-    .string "to raise both SP. ATK and SP. DEF.$"
+    .string "TM71 is Trick Room.\p"
+    .string "It flips dimensions to allow\n"
+    .string "slower Pokémon to move first.\p"
+	.string "It's particularly strong in Doubles.$"
 
 SaffronCity_Gym_Text_BagFullOfOtherItems::
     .string "Your BAG is full of other items.$"
@@ -209,7 +207,7 @@ SaffronCity_Gym_Text_JohanDefeat::
     .string "I never foresaw this!$"
 
 SaffronCity_Gym_Text_JohanPostBattle::
-    .string "PSYCHIC Pokémon fear only ghosts\n"
+    .string "Psychic Pokémon fear only ghosts\n"
     .string "and bugs!$"
 
 SaffronCity_Gym_Text_StacyIntro::

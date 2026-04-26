@@ -25,6 +25,7 @@ CeladonCity_Gym_EventScript_GiveTM19::
 	goto_if_eq VAR_RESULT, FALSE, CeladonCity_Gym_EventScript_NoRoomForTM19
 	giveitem_msg CeladonCity_Gym_Text_ReceivedTM19FromErika, ITEM_TM19
 	setflag FLAG_GOT_TM19_FROM_ERIKA
+    callnative SetBuffer1ToLevelCap
 	msgbox CeladonCity_Gym_Text_ExplainTM19
 	release
 	end
@@ -140,7 +141,9 @@ CeladonCity_Gym_Text_ExplainTM19::
     .string "Half the damage it inflicts is\n"
     .string "drained to heal your Pokémon.\p"
     .string "Wouldn't you agree that it's a\n"
-    .string "wonderful move?$"
+    .string "wonderful move\p?"
+    .string "Your Level Cap has also been\n"
+    .string "raised to {STR_VAR_1}.$"
 
 CeladonCity_Gym_Text_ShouldMakeRoomForThis::
     .string "You should make room for this.$"

@@ -274,9 +274,25 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Arbok
-Level: 23
+Scraggy @ Quick Claw
+Level: 22
+Nature: Adamant
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Brick Break
+- Rock Tomb
+- Fake Out
+
+Diggersby @ Sitrus Berry
+Level: 22
+Nature: Adamant
+Ability: Cheek Pouch
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulldoze
+- Quick Attack
+- Rock Tomb
+- Double Kick
 
 === TRAINER_YOUNGSTER_DILLON ===
 Name: Dillon
@@ -1972,9 +1988,44 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Jolteon
-Level: 28
+Vaporeon @ Mystic Water  
+Ability: Water Absorb  
+Level: 29  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious    
+- Water Pulse  
+- Icy Wind  
+
+Jolteon @ Magnet  
+Ability: Volt Absorb  
+Level: 29  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious  
+- Shock Wave  
+- Electroweb  
+- Flash  
+
+Flareon @ Charcoal  
+Ability: Flash Fire  
+Level: 29  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious  
+- Fire Fang  
+- Double Kick  
+
+Eevee @ Eviolite  
+Ability: Adaptability  
+Level: 30  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious  
+- Return  
+- Quick Attack  
+- Double Kick  
+- Bite
 
 === TRAINER_POKEMANIAC_DAWSON ===
 Name: Dawson
@@ -2006,13 +2057,39 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rhyhorn
-Level: 27
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Lickitung
-Level: 28
+Solrock  
+Ability: Levitate  
+Level: 29  
+Nature: Serious
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Slide  
+- Zen Headbutt  
+- Stomping Tantrum  
+- Will-O-Wisp  
+
+Lunatone  
+Ability: Levitate  
+Level: 29 
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious 
+- Power Gem  
+- Psybeam  
+- Icy Wind  
+- Charge Beam  
+
+Lickitung @ Eviolite  
+Ability: Oblivious  
+Level: 30  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious
+- Body Slam  
+- Knock Off  
+- Bulldoze  
+- Power-Up Punch
 
 === TRAINER_SUPER_NERD_JOVAN ===
 Name: Jovan
@@ -2507,9 +2584,38 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Piloswine
-Level: 30
+Bergmite @ Eviolite  
+Ability: Own Tempo  
+Level: 30  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious
+- Avalanche  
+- Bulldoze  
+- Rapid Spin  
+- Curse  
+
+Cetoddle @ Never-Melt Ice  
+Ability: Sheer Force  
+Level: 30  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious
+- Icicle Crash  
+- Ice Shard  
+- Liquidation  
+- Bulldoze
+
+Piloswine @ Sitrus Berry  
+Ability: Oblivious  
+Level: 31  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Serious
+- Ice Fang  
+- Ice Shard  
+- Bulldoze  
+- Rock Slide
 
 === TRAINER_HIKER_ERIC ===
 Name: Eric
@@ -2742,6 +2848,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
 Mugshot: Yellow
+Dynamic Level Ratio: 90
 
 Mienshao @ Life Orb
 Nature: Jolly
@@ -2775,10 +2882,47 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
 
-Weezing
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Stunfisk @ Focus Sash
+Nature: Calm
+Ability: Sand Veil
+Level: 51
+EVs: 252 HP / 54 SpA
+Ball: Great Ball
+- Stealth Rock
+- Thunder Wave
+- Earth Power
+- Volt Switch
+
+Dracovish @ Mystic Water
+Nature: Jolly
+Ability: Sand Rush
+Level: 51
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Fishious Rend
+- Dragon Claw
+- Psychic Fangs
+- Crunch
+
+Beedrill @ Beedrillite
+Nature: Jolly
+Ability: Sniper
+Level: 52
+EVs: 54 Atk / 252 Spe
+Ball: Great Ball
+- U Turn
+- Drill Run
+- Poison Jab
+- Pursuit
+
+Aron @ Shell Bell
+Nature: Bashful
+Ability: Sturdy
+Level: 1
+IVs: 0 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Endeavor
 
 === TRAINER_BIKER_RUBEN ===
 Name: Ruben
@@ -2788,30 +2932,53 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
 
-Weezing
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
 
-Koffing
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Accelgor @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 50
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- U-Turn
+- Bug Buzz
+- Focus Blast
+- Sludge Bomb
 
-Weezing
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Gigalith @ Assault Vest
+Nature: Careful
+Ability: Sand Force
+Level: 50
+EVs: 252 HP / 54 Atk 
+Ball: Great Ball
+- Earthquake
+- Stone Edge
+- Explosion
+- Body Press
+
+Roserade @ Lum Berry
+Nature: Timid
+Ability: Technician
+Level: 50
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Giga Drain
+- Weather Ball
+- Hidden Power
+- Sleep Powder
+
+Houndstone @ Spell Tag
+Nature: Jolly
+Ability: Sand Rush
+Level: 50
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Last Respects
+- Body Press
+- Fire Fang
+- Ice Fang
 
 === TRAINER_BIKER_BILLY ===
 Name: Billy
@@ -2884,46 +3051,51 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
 
-Koffing
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Magnezone @ Custap Berry
+Nature: Naive
+Ability: Sturdy
+Level: 51
+EVs: 252 SpA / 54 Spe
+Ball: Great Ball
+- Thunder
+- Volt Switch
+- Explosion
+- Body Press
 
-Weezing
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Whiscash @ Rindo Berry
+Nature: Jolly
+Ability: Water Bubble
+Level: 1
+EVs: 54 Atk / 252 Spe
+Ball: Great Ball
+- Dragon Dance
+- Waterfall
+- Earthquake
+- Bounce
 
-Koffing
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+Salamence @ Yache Berry
+Nature: Naive
+Ability: Intimidate
+Level: 51
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Hurricane
+- Dragon Pulse
+- Hydro Pump
+- Earthquake
 
-Koffing
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
-
-Weezing
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Self Destruct
-- Tackle
+Starmie @ Life Orb
+Nature: Timid
+Ability: Analytic
+Level: 51
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Flip Turn
+- Hydro Pump
+- Thunder
+- Psychic
 
 === TRAINER_BIKER_LUKAS ===
 Name: Lukas
@@ -3693,6 +3865,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
 Mugshot: Yellow
+Dynamic Level Ratio: 90
 
 Lycanroc @ Hard Stone
 Nature: Adamant
@@ -3717,7 +3890,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
 Mugshot: Yellow
-
+Dynamic Level Ratio: 90
 
 Dugtrio @ Life Orb
 Nature: Jolly
@@ -3750,14 +3923,51 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
 
-Mankey
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Swampert @ Leftovers
+Nature: Sassy
+Ability: Damp
+Level: 51
+EVs: 252 HP / 54 Def
+Ball: Great Ball
+- Stealth Rock
+- Flip Turn
+- Earthquake
+- Yawn
 
-Machop
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Revavroom @ Air Balloon
+Nature: Jolly
+Ability: Filter
+Level: 52
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Shift Gear
+- Iron Head
+- Gunk Shot
+- High Horsepower
+
+Scizor @ Scizorite
+Nature: Adamant
+Ability: Technician
+Level: 51
+EVs: 54 HP / 252 Atk 
+Ball: Great Ball
+- U Turn
+- Bullet Punch
+- Rock Smash
+- Knock Off
+
+Cacturne @ Life Orb
+Nature: Jolly
+Ability: Sand Rush
+Level: 51
+EVs: 54 Atk / 252 Spe
+Ball: Great Ball
+- Needle Arm
+- Sucker Punch
+- Knock Off
+- Swords Dance
 
 === TRAINER_CUE_BALL_RAUL ===
 Name: Raul
@@ -3878,13 +4088,22 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Poliwhirl
+Baltoy @ Choice Band
 Level: 22
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+Ability: Levitate
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Self Destruct
 
-Falinks
-Level: 23
+Sigilyph @ Scope Lens
+Level: 22
+Nature: Modest
+Ability: Magic Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Cutter
+- Thunder Wave
+- Psybeam
+- Charge Beam
 
 === TRAINER_GAMER_JASPER ===
 Name: Jasper
@@ -3895,13 +4114,35 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Weepinbell
-Level: 23
+Drowzee @ Eviolite
+Level: 22
+Nature: Adamant
+Ability: Bad Dreams
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hypnosis
+- Wake Up Slap
+- Disable
+- Thief
 
-Flamigo
+Gligar @ Toxic Orb
 Level: 23
+Nature: Impish
+Ability: Immunity
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fling
+- Dig
+- Roost
+- Sand Attack
+
+Gimmighoul @ Eviolite
+Level: 23
+Nature: Modest
+Ability: Clear Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Hex
+- Power Gem
+- Reflect
 
 === TRAINER_GAMER_DIRK ===
 Name: Dirk
@@ -4036,17 +4277,25 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 27
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Bouffalant @ Silk Scarf
+Nature: Adamant
+Ability: Sap Sipper
+Level: 52
+EVs: 54 HP / 252 Atk 
+- Head Charge
+- High Horsepower
+- Zen Headbutt
+- Close Combat
 
-Pikachu
-Level: 27
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Rattata
-Level: 27
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Zebstrika @ Magnet
+Nature: Jolly
+Ability: Sap Sipper
+Level: 51
+EVs: 54 Atk / 252 Spe
+- Bolt Strike
+- Flare Blitz
+- Low Kick
+- Return
 
 === TRAINER_BEAUTY_SHEILA ===
 Name: Sheila
@@ -4057,13 +4306,28 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Clefairy
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Cherrim @ Focus Sash
+Nature: Jolly
+Ability: Flower Gift 
+Level: 52
+EVs: 54 Atk / 252 Spe
+Ball: Ultra Ball
+- Petal Blizzard
+- Safeguard
+- X Scissor
+- Return
 
-Meowth
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Venusaur @ Sitrus Berry
+Nature: Naive
+Ability: Chlorophyll
+Level: 52
+EVs: 54 SpA / 252 Spe
+Ball: Ultra Ball
+- Petal Blizzard
+- Safeguard
+- Earth Power
+- Weather Ball
+
 
 === TRAINER_SWIMMER_FEMALE_TIFFANY ===
 Name: Tiffany
@@ -4364,14 +4628,53 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
+Mugshot: Yellow
+Boss: Yes
 
-Voltorb
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Piloswine @ Eviolite
+Nature: Careful
+Ability: Thick Fat
+Level: 52
+EVs: 252 HP / 54 SpD
+Ball: Great Ball
+- Stealth Rock
+- Earthquake
+- Roar
+- Icicle Crash
 
-Electrode
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Heliolisk @ Life Orb
+Nature: Timid
+Ability: Dry Skin
+Level: 50
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Boomburst
+- Surf
+- Weather Ball
+- Volt Switch
+
+Yanmega @ Choice Specs
+Nature: Timid
+Ability: Tinted Lens
+Level: 51
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Bug Buzz
+- Air Slash
+- U Turn
+- Giga Drain
+
+Walrein @ Leftovers
+Nature: Bold
+Ability: Ice Body
+Level: 51
+EVs: 252 HP / 54 Def 
+- Blizzard
+- Substitute
+- Protect
+- Toxic
+
 
 === TRAINER_JUGGLER_DALTON ===
 Name: Dalton
@@ -4664,13 +4967,48 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgey
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Pidgeotto
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Gliscor @ Toxic Orb
+Nature: Jolly
+Ability: Poison Heal
+Level: 52
+EVs: 252 HP / 54 Spe
+Ball: Ultra Ball
+- U-Turn
+- Earthquake
+- Stealth Rock
+- Dual Wingbeat
+
+Charizard @ Charizardite X
+Nature: Jolly
+Ability: Blaze 
+Level: 52
+EVs: 54 Atk / 252 Spe
+- Dragon Dance
+- Flare Blitz
+- Dragon Claw
+- Earthquake
+
+Togekiss @ Leftovers
+Nature: Modest
+Ability: Serene Grace
+Level: 51
+EVs: 252 SpA / 54 Spe
+Ball: Great Ball
+- Air Slash
+- Fire Blast
+- Thunder Wave
+- Roost
+
+Tropius @ Focus Sash
+Nature: Modest
+Ability: Chlorophyll
+Level: 52
+EVs: 252 SpA / 54 Spe
+- Growth
+- Giga Drain
+- Weather Ball
+- Dragon Pulse
 
 === TRAINER_BIRD_KEEPER_PERRY ===
 Name: PERRY
@@ -4803,59 +5141,164 @@ Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIRD_KEEPER_WILTON ===
-Name: WILTON
+Name: Wilton
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
 
-Spearow
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Swanna @ Focus Sash
+Nature: Naive
+Ability: No Guard
+Level: 52
+EVs: 54 SpA / 252 Spe
+- Hydro Pump
+- Hurricane
+- Blizzard
+- Aqua Jet
 
-Fearow
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Decidueye @ Spell Tag
+Nature: Naive
+Ability: Tinted Lens
+Level: 52
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- U-Turn
+- Hurricane
+- Spirit Shackle
+- Leaf Blade
+
+Mantine @ Sharp Beak
+Nature: Modest
+Ability: Swift Swim
+Level: 52
+EVs: 252 SpA / 54 Spe
+- Hydro Pump
+- Ice Beam
+- Flip Turn
+- Hurricane
+
+Nidoqueen @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 51
+EVs: 54 HP / 252 SpA 
+Ball: Great Ball
+- Thunder
+- Earth Power
+- Sludge Wave
+- Bubble Beam
 
 === TRAINER_BIRD_KEEPER_RAMIRO ===
-Name: RAMIRO
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
+Name: Ramiro
+Class: Dragon Tamer
+Pic: Dragon Tamer
 Gender: Male
 Music: Cool
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
 
-Dodrio
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Pikachu Alola @ Focus Sash
+Nature: Timid
+Ability: Lightning Rod
+Level: 52
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Bouncy Bubble
+- Thunder
+- Fake Out
+- Electroweb
+
+Milotic @ Sitrus Berry
+Nature: Modest
+Ability: Competitive
+Level: 52
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 SpA
+Ball: Great Ball
+- Bouncy Bubble
+- Ice Beam
+- Mirror Coat
+- Hidden Power
+
+Tatsugiri @ Tatsugirinite
+Nature: Modest
+Ability: Storm Drain
+Level: 52
+EVs: 54 HP / 252 SpA
+Ball: Great Ball
+- Muddy Water
+- Dragon Pulse
+- Icy Wind
+- Rapid Spin
+
+Goodra Hisui @ Assault Vest
+Nature: Modest
+Ability: Gooey
+Level: 51
+EVs: 252 HP / 54 Def
+- Surf
+- Dragon Pulse
+- Flash Cannon
+- Thunder
 
 === TRAINER_BIRD_KEEPER_JACOB ===
 Name: JACOB
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
 
-Spearow
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Dragapult @ Focus Sash
+Nature: Timid
+Ability: Cursed Body
+Level: 51
+EVs: 252 SpA / 54 Spe
+Ball: Dusk Ball
+- Shadow Ball
+- Thunder
+- Draco Meteor
+- U Turn
 
-Spearow
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Kilowattrel @ Sharp Beak
+Nature: Timid
+Ability: Volt Absorb
+Level: 52
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Hurricane
+- Thunder
+- Weather Ball
+- Volt Switch
 
-Fearow
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Pinsir @ Pinsirite
+Nature: Jolly
+Ability: Hyper Cutter
+Level: 51
+EVs: 54 Atk / 252 Spe
+Ball: Great Ball
+- X Scissor
+- Double Edge
+- Quick Attack
+- Close Combat
 
-Spearow
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Omastar @ White Herb
+Nature: Modest
+Ability: Swift Swim
+Level: 52
+EVs: 252 SpA / 54 Spe
+- Shell Smash
+- Hydro Pump
+- Ice Beam
+- Power Gem
 
 === TRAINER_BIRD_KEEPER_ROGER ===
 Name: ROGER
@@ -8611,7 +9054,7 @@ Class: Leader Frlg
 Pic: Leader Sabrina Frlg
 Gender: Male
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Difficulty: Normal
 Mugshot: Purple
@@ -9881,7 +10324,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Shadow Sneak
 
 === TRAINER_PICNICKER_ALMA ===
-Name: ALMA
+Name: Alma
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
 Gender: Male
@@ -9889,17 +10332,48 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Goldeen
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tangrowth @ Assault Vest
+Nature: Timid
+Ability: Chlorophyll
+Level: 51
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 54 SpA / 252 Spe
+- Solar Beam
+- Hidden Power
+- Sludge Bomb
+- Knock Off
 
-Poliwag
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Chansey @ Eviolite
+Nature: Bold
+Ability: Natural Cure
+Level: 52
+EVs: 252 HP / 54 Def 
+- Thunder Wave
+- Seismic Toss
+- Teleport
+- Soft Boiled
 
-Horsea
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Chandelure @ Choice Scarf
+Nature: Timid
+Ability: Shadow Tag
+Level: 51
+EVs: 252 SpA / 54 Spe
+Ball: Ultra Ball
+- Fire Blast
+- Solar Beam
+- Shadow Ball
+- Trick
+
+Altaria @ Altarianite
+Nature: Bold
+Ability: Natural Cure
+Level: 51
+EVs: 252 HP / 54 Def 
+Ball: Ultra Ball
+- Fire Blast
+- Hyper Voice
+- Roost
+- Earthquake
 
 === TRAINER_PICNICKER_SUSIE ===
 Name: SUSIE
@@ -9910,25 +10384,47 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgey
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Shiftry @ Life Orb
+Nature: Adamant
+Ability: Chlorophyll
+Level: 51
+EVs: 252 Atk / 54 Spe
+- Fake Out
+- Solar Blade
+- Knock Off
+- Parting Shot
 
-Meowth
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Espeon @ Twisted Spoon
+Nature: Timid
+Ability: Magic Bounce
+Level: 51
+EVs: 54 SpA / 252 Spe
+- Calm Mind
+- Psychic
+- Weather Ball
+- Shadow Ball
 
-Rattata
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Arcanine Hisui @ Air Balloon
+Nature: Adamant
+Ability: Rock Head
+Level: 51
+EVs: 252 Atk / 4 Def / 252 Spe
+Ball: Ultra Ball
+- Head Smash
+- Solar Beam
+- Flare Blitz
+- Accelerock
 
-Pikachu
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Meowth
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Scovillain @ Scovillainite
+Nature: Bold
+Ability: Chlorophyll
+Level: 52
+EVs: 252 HP / 54 Def 
+Ball: Ultra Ball
+- Flamethrower
+- Solar Beam
+- Knock Off
+- Synthesis
 
 === TRAINER_PICNICKER_VALERIE ===
 Name: VALERIE
@@ -10136,7 +10632,7 @@ Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_CAMPER_JUSTIN ===
-Name: JUSTIN
+Name: Justin
 Class: Camper Frlg
 Pic: Camper Frlg
 Gender: Male
@@ -10144,13 +10640,38 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Nidoran M
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Darmanitan Galar @ Choice Scarf
+Nature: Jolly
+Ability: Gorilla Tactics
+Level: 51
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- U Turn
+- Flare Blitz
+- Icicle Crash
+- Earthquake
 
-Nidorino
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Sandslash Alola @ Focus Sash
+Nature: Jolly
+Ability: Slush Rush
+Level: 51
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Swords Dance
+- Earthquake
+- Iron Head
+- Icicle Crash
+
+Conkeldurr @ Assault Vest
+Nature: Careful
+Ability: Iron Fist
+Level: 51
+EVs: 252 HP / 54 SpD
+Ball: Great Ball
+- Drain Punch
+- Mach Punch
+- Knock Off
+- Thunder Punch
 
 === TRAINER_PICNICKER_YAZMIN ===
 Name: YAZMIN
@@ -14708,7 +15229,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 - Coil
 
-Clefable @ Life Orb
+Clefable @ Clefablite
 Nature: Timid
 Ability: Magic Guard
 Level: 28
@@ -16807,20 +17328,34 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ANDREW ===
 Name: Andrew
-Class: Fisherman 
-Pic: Fisherman 
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Remoraid
-Level: 21
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Froslass @ Light Clay
+Nature: Timid
+Ability: Snow Cloak
+Level: 52
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Aurora Veil
+- Blizzard
+- Shadow Ball
+- Freeze Dry
 
-Corphish
-Level: 22
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Arctozolt @ Magnet
+Nature: Naive
+Ability: Slush Rush
+Level: 52
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Bolt Beak
+- Blizzard
+- Low Kick
+- Stone Edge
 
 === TRAINER_MARCOS ===
 Name: Marcos

@@ -204,6 +204,7 @@ VermilionCity_Gym_EventScript_SetBeamsOn::
 VermilionCity_Gym_EventScript_LtSurge::
 	famechecker FAMECHECKER_LTSURGE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeIntro, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, NO_MUSIC
+	callnative SetBuffer1ToLevelCap
 	setspeaker SP_NAME_LT_SURGE
 	msgbox VermilionCity_Gym_Text_LtSurgePostBattle
 	release
@@ -304,7 +305,9 @@ VermilionCity_Gym_Text_LtSurgeIntro::
     .string "The same as I'll do to you!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 VermilionCity_Gym_Text_LtSurgePostBattle::
-    .string "A little word of advice, kid!\p"
+    .string "The Thunder Badge raises your Level Cap\n"
+	.string "to {STR_VAR_1}.\p"
+	.string "A little word of advice, kid!\p"
     .string "Electricity is sure powerful!\p"
     .string "But, it's useless against Ground-\n"
     .string "type Pokémon!$"
@@ -327,7 +330,7 @@ VermilionCity_Gym_Text_MakeRoomInYourBag::
 VermilionCity_Gym_Text_LtSurgeDefeat::
     .string "Now that's a shocker!\p"
     .string "You're the real deal, kid!\p"
-    .string "Fine, then, take the THUNDERBADGE!$"
+    .string "Fine, then, take the Thunder Badge!$"
 
 VermilionCity_Gym_Text_TuckerIntro::
     .string "When I was in the Army, Lt. Surge\n"

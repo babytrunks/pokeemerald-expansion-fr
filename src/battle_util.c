@@ -7636,6 +7636,11 @@ u32 CalcMoveBasePowerAfterModifiers(struct DamageContext *ctx)
         if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_OGERPON)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
+    case HOLD_EFFECT_ELECTIRIZER:
+        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_ELECTIVIRE && (moveType == TYPE_ELECTRIC || moveType == TYPE_FIGHTING))
+            modifier = uq4_12_multiply(modifier, holdEffectModifier);
+        break;
+
     default:
         break;
     }

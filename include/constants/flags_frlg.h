@@ -535,9 +535,9 @@
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                0x22A
 #define FLAG_ITEM_ROUTE_103_GUARD_SPEC                          0x22B
 #define FLAG_ITEM_ROUTE_103_PP_UP                               0x22C
-#define FLAG_0x22D               0x22D
-#define FLAG_0x22E               0x22E
-#define FLAG_0x22F               0x22F
+#define FLAG_HIDE_ROUTE17_AMPHAROSITE                           0x22D
+#define FLAG_HIDE_ROUTE18_ALTARIANITE                           0x22E
+#define FLAG_HIDE_SILPH_CO_KANGASKHANITE                        0x22F
 
 // Story flags
 #define STORY_FLAGS_START                                0x230
@@ -727,8 +727,8 @@
 #define FLAG_HIDE_ROCK_TUNNEL_TM_ROCK_SLIDE              0x2E5
 #define FLAG_RANDOMIZER_MOVES                            0x2E6
 #define FLAG_LANDMARK_TRICK_HOUSE                        0x2E7
-#define FLAG_0x2E8                                       0x2E8
-#define FLAG_0x2E9                                       0x2E9
+#define FLAG_HIDE_ROUTE12_SLOWBRONITE                    0x2E8
+#define FLAG_HIDE_ROUTE12_TM_SEED_BOMB                   0x2E9
 #define FLAG_0x2EA                                       0x2EA
 #define FLAG_0x2EB                                       0x2EB
 #define FLAG_REVIVED_DOME                                0x2EC
