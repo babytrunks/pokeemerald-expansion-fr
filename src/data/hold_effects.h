@@ -620,7 +620,8 @@ const struct HoldEffectInfo gHoldEffectsInfo[HOLD_EFFECT_COUNT] =
     [HOLD_EFFECT_ELECTIRIZER] = 
     {
     },
-    [HOLD_EFFECT_MAGMARIZER] = 
+    [HOLD_EFFECT_MAGMARIZER] =
     {
+        .onAttackerAfterHit = TRUE,
     },
 };

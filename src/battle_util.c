@@ -1546,6 +1546,25 @@ u32 TrySetCantSelectMoveBattleScript(u32 battler)
         }
     }
 
+    if (DYNAMAX_BYPASS_CHECK && GetActiveGimmick(battler) != GIMMICK_Z_MOVE
+     && holdEffect == HOLD_EFFECT_UPGRADE
+     && gBattleMons[battler].species == SPECIES_PORYGON_Z
+     && move == gLastMoves[battler]
+     && move != MOVE_STRUGGLE)
+    {
+        CancelMultiTurnMoves(battler, SKY_DROP_IGNORE);
+        if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
+        {
+            gPalaceSelectionBattleScripts[battler] = BattleScript_SelectingTormentedMoveInPalace;
+            gProtectStructs[battler].palaceUnableToUseMove = TRUE;
+        }
+        else
+        {
+            gSelectionBattleScripts[battler] = BattleScript_SelectingTormentedMove;
+            limitations++;
+        }
+    }
+
     if (GetActiveGimmick(battler) != GIMMICK_Z_MOVE && gDisableStructs[battler].tauntTimer != 0 && IsBattleMoveStatus(move))
     {
         if ((GetActiveGimmick(battler) == GIMMICK_DYNAMAX))
@@ -1670,6 +1689,7 @@ u32 TrySetCantSelectMoveBattleScript(u32 battler)
         }
     }
 
+
     gPotentialItemEffectBattler = battler;
     if (DYNAMAX_BYPASS_CHECK && IsHoldEffectChoice(holdEffect) && *choicedMove != MOVE_NONE && *choicedMove != MOVE_UNAVAILABLE && *choicedMove != move)
     {
@@ -1777,8 +1797,10 @@ u32 CheckMoveLimitations(u32 battler, u8 unusableMoves, u16 check)
         // Disable
         else if (check & MOVE_LIMITATION_DISABLED && move == gDisableStructs[battler].disabledMove)
             unusableMoves |= 1u << i;
-        // Torment
-        else if (check & MOVE_LIMITATION_TORMENTED && move == gLastMoves[battler] && gBattleMons[battler].volatiles.torment == TRUE)
+        // Torment / Upgrade (Porygon-Z)
+        else if (check & MOVE_LIMITATION_TORMENTED && move == gLastMoves[battler]
+              && (gBattleMons[battler].volatiles.torment == TRUE
+                  || (holdEffect == HOLD_EFFECT_UPGRADE && gBattleMons[battler].species == SPECIES_PORYGON_Z)))
             unusableMoves |= 1u << i;
         // Taunt
         else if (check & MOVE_LIMITATION_TAUNT && gDisableStructs[battler].tauntTimer && IsBattleMoveStatus(move))

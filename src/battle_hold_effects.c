@@ -987,6 +987,25 @@ static enum ItemEffect TrySetMicleBerry(u32 battler, u32 itemId)
     return effect;
 }
 
+static enum ItemEffect TryMagmarizer(u32 itemBattler, u32 battler)
+{
+    enum ItemEffect effect = ITEM_NO_EFFECT;
+
+    if (gBattleMons[itemBattler].species == SPECIES_MAGMORTAR
+     && GetBattleMoveType(gCurrentMove) == TYPE_FIRE
+     && IsBattlerTurnDamaged(battler)
+     && IsBattlerAlive(battler)
+     && !gDisableStructs[battler].tarShot
+     && GetActiveGimmick(battler) != GIMMICK_TERA)
+    {
+        gDisableStructs[battler].tarShot = TRUE;
+        BattleScriptCall(BattleScript_MagmarizerTarShot);
+        effect = ITEM_EFFECT_OTHER;
+    }
+
+    return effect;
+}
+
 enum ItemEffect ItemBattleEffects(u32 itemBattler, u32 battler, enum HoldEffect holdEffect, ActivationTiming timing)
 {
     enum ItemEffect effect = ITEM_NO_EFFECT;
@@ -1174,6 +1193,9 @@ enum ItemEffect ItemBattleEffects(u32 itemBattler, u32 battler, enum HoldEffect 
         break;
     case HOLD_EFFECT_MICLE_BERRY:
         effect = TrySetMicleBerry(itemBattler, item);
+        break;
+    case HOLD_EFFECT_MAGMARIZER:
+        effect = TryMagmarizer(itemBattler, battler);
         break;
     default:
         break;
