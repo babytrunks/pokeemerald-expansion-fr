@@ -242,20 +242,15 @@ EventScript_SwordsDanceTaught::
 PewterCity_Museum_1F_EventScript_SeismicTossTutor::
 	lock
 	faceplayer
-.if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_SEISMIC_TOSS, EventScript_SeismicTossTaught
-.endif
+	setflag FLAG_TUTOR_SEISMIC_TOSS
 	msgbox Text_SeismicTossTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_SeismicTossDeclined
-	call EventScript_CanOnlyBeLearnedOnce
+	@ call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_SeismicTossDeclined
 	msgbox Text_SeismicTossWhichMon
 	setvar VAR_0x8005, MOVE_SEISMIC_TOSS
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SeismicTossDeclined
-.if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_SEISMIC_TOSS
-.endif
 	goto EventScript_SeismicTossTaught
 	end
 
@@ -272,20 +267,15 @@ EventScript_SeismicTossTaught::
 EventScript_CounterTutor::
 	lock
 	faceplayer
-.if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_COUNTER, EventScript_CounterTaught
-.endif
 	msgbox Text_CounterTeach, MSGBOX_YESNO
+	setflag FLAG_TUTOR_COUNTER
 	goto_if_eq VAR_RESULT, NO, EventScript_CounterDeclined
-	call EventScript_CanOnlyBeLearnedOnce
+	@ call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_CounterDeclined
 	msgbox Text_CounterWhichMon
 	setvar VAR_0x8005, MOVE_COUNTER
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CounterDeclined
-.if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_COUNTER
-.endif
 	goto EventScript_CounterTaught
 	end
 

@@ -1070,14 +1070,14 @@ static bool8 checkIfEVCapReached(void)
 void SetBuffer1ToEvCap(void) 
 {
     u32 evCap = getEvCap();
-    ConvertIntToDecimalStringN(gStringVar1, evCap, STR_CONV_MODE_RIGHT_ALIGN, 3);
+    ConvertIntToDecimalStringN(gStringVar1, evCap, STR_CONV_MODE_LEFT_ALIGN, 3);
 }
 
 void SetBuffer1ToLevelCap(void)
 {
     u32 levelCap = GetCurrentLevelCap();
     if (levelCap > 100)
-        ConvertIntToDecimalStringN(gStringVar1, levelCap, STR_CONV_MODE_RIGHT_ALIGN, 2);
+        ConvertIntToDecimalStringN(gStringVar1, levelCap, STR_CONV_MODE_LEFT_ALIGN, 2);
     else
-        ConvertIntToDecimalStringN(gStringVar1, levelCap, STR_CONV_MODE_RIGHT_ALIGN, 3);
+        ConvertIntToDecimalStringN(gStringVar1, levelCap, STR_CONV_MODE_LEFT_ALIGN, 3);
 }

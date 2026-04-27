@@ -56,12 +56,12 @@ PostBugsy:
     msgbox gText_bugsy_6_1
     giveitem ITEM_TM_U_TURN
     msgbox gText_bugsy_7, MSGBOX_DEFAULT
-    fadescreen FADE_TO_BLACK
+    fadescreenswapbuffers FADE_TO_BLACK
     removeobject LOCALID_BUGSY 
     removeobject LOCALID_ROUTE25_SCYTHER               
     playse SE_PIN                                @ ??? map to proper SE_* constant
     waitse
-    fadescreen FADE_FROM_BLACK
+    fadescreenswapbuffers FADE_FROM_BLACK
     setflag FLAG_DEFEATED_BUGSY                           
     setweather 0x3                            
     doweather

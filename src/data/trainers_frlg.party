@@ -2706,30 +2706,54 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Dynamic Level Ratio: 90
+Boss: Yes
+Mugshot: Yellow
 
-Koffing
-Level: 28
+Crustle @ Custap Berry
+Nature: Adamant
+Ability: Sturdy
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Poison Gas
+EVs: 252 HP / 54 Atk 
+Ball: Ultra Ball
+- Stealth Rock
+- Spikes
+- Stone Edge
+- Earthquake
 
-Koffing
-Level: 28
+Leavanny @ Focus Sash
+Nature: Adamant
+Ability: Chlorophyll
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 252 Atk / 54 Spe
+- Solar Blade
+- Swords Dance
+- X Scissor
+- Sacred Sword
 
-Koffing
-Level: 28
+Camerupt @ Cameruptite
+Nature: Modest
+Ability: Solid Rock
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 252 HP / 54 SpA
+- Fire Blast
+- Earth Power
+- Solar Beam
+- Ancient Power
+
+Mamoswine @ Soft Sand
+Nature: Jolly
+Ability: Thick Fat
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 54 Spe
+- Headlong Rush
+- Icicle Crash
+- Ice Shard
+- Rock Tomb
 
 === TRAINER_BIKER_MALIK ===
 Name: Malik
@@ -3560,13 +3584,27 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magikarp
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Froslass @ Light Clay
+Nature: Timid
+Ability: Snow Cloak
+Level: 52
+EVs: 54 SpA / 252 Spe
+Ball: Great Ball
+- Aurora Veil
+- Blizzard
+- Shadow Ball
+- Freeze Dry
 
-Magikarp
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Arctozolt @ Magnet
+Nature: Naive
+Ability: Slush Rush
+Level: 52
+EVs: 252 Atk / 54 Spe
+Ball: Great Ball
+- Bolt Beak
+- Blizzard
+- Low Kick
+- Stone Edge
 
 === TRAINER_SWIMMER_MALE_LUIS ===
 Name: Luis
@@ -5011,36 +5049,65 @@ EVs: 252 SpA / 54 Spe
 - Dragon Pulse
 
 === TRAINER_BIRD_KEEPER_PERRY ===
-Name: PERRY
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
+Name: Perry
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Mugshot: Yellow
+Boss: Yes
+Dynamic Level Ratio: 90
 
-Spearow
-Level: 25
+Rhyperior @ Rindo Berry
+Nature: Careful
+Ability: Solid Rock
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 Atk 
+- Stealth Rock
+- Stone Edge
+- Earthquake
+- Fire Punch
 
-Pidgey
-Level: 25
+Gardevoir @ Lum Berry
+Nature: Timid
+Ability: Trace
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 SpA / 252 Spe
+Ball: Ultra Ball
+- Calm Mind
+- Psychic
+- Moonblast
+- Mystical Fire
 
-Pidgey
-Level: 25
+Rapidash @ Charcoal
+Nature: Jolly
+Ability: Blazing Soul
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 Atk / 252 Spe
+- Fire Lash
+- Solar Blade
+- Jump Kick
+- High Horsepower
 
-Spearow
-Level: 25
+Dragapult @ Spell Tag
+Nature: Naive
+Ability: Cursed Body
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Spearow
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 SpA / 252 Spe
+Ball: Dusk Ball
+- Shadow Ball
+- Dragon Darts
+- Fire Blast
+- U Turn
 
 === TRAINER_BIRD_KEEPER_ROBERT ===
-Name: ROBERT
+Name: Robert
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -5048,21 +5115,49 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgey
-Level: 26
+Exeggutor @ Focus Sash
+Nature: Timid
+Ability: Chlorophyll
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 SpA / 252 Spe
+- Sleep Powder
+- Solar Beam
+- Psyshock
+- Weather Ball
 
-Pidgeotto
-Level: 26
+Archeops @ Sharp Beak
+Nature: Jolly
+Ability: Defeatist
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 Atk / 252 Spe
+- Brave Bird
+- Head Smash
+- Earthquake
+- U Turn
 
-Spearow
-Level: 26
+Emboar @ Charcoal
+Nature: Naive
+Ability: Bull Rush
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 54 Atk / 252 Spe
+- Flare Blitz
+- Close Combat
+- Wild Charge
+- Solar Beam
 
-Fearow
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Jolteon @ Life Orb
+Nature: Timid
+Ability: Volt Absorb
+Level: 52
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 54 SpA / 252 Spe
+- Volt Switch
+- Thunderbolt
+- Weather Ball
+- Hidden Power
 
 === TRAINER_BIRD_KEEPER_DONALD ===
 Name: DONALD
@@ -5450,7 +5545,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 === TRAINER_BLACK_BELT_CHUCK ===
 Name: Chuck
 Class: Leader Frlg 
-Pic: Black Belt Frlg
+Pic: Leader Chuck
 Gender: Male
 Music: Intense
 Double Battle: No
@@ -10882,7 +10977,7 @@ Ability: Aftermath
 Level: 34
 Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Explosion
 
 Dondozo @ Leftovers
@@ -10890,7 +10985,7 @@ Level: 35
 Nature: Adamant
 Ability: Unaware
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 252 HP / 0 Atk / 54 Def / 0 SpA / 0 SpD / 0 Spe
 - Order Up
 - Liquidation
 - Earthquake
@@ -10901,7 +10996,7 @@ Level: 33
 Nature: Jolly
 Ability: Costar
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
+EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Dual Wingbeat
 - Close Combat
 - Throat Chop
@@ -10911,11 +11006,22 @@ Floette-Eternal @ Floettite
 Level: 34
 Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 204 SpA / 0 SpD / 0 Spe
+EVs: 54 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
 - Dazzling Gleam
 - Psychic Noise
 - Giga Drain 
 - Synthesis
+
+Pikachu-Belle @ Light Ball
+Level: 34
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 252 Spe
+- Blizzard
+- Thunderbolt
+- Extreme Speed
+- Focus Blast
+
 
 === TRAINER_TWINS_KIRI_JAN ===
 Name: KIRI & JAN
@@ -17328,34 +17434,20 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_ANDREW ===
 Name: Andrew
-Class: Cooltrainer Frlg
-Pic: Cooltrainer M Frlg
+Class: Fisherman
+Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Froslass @ Light Clay
-Nature: Timid
-Ability: Snow Cloak
-Level: 52
-EVs: 54 SpA / 252 Spe
-Ball: Great Ball
-- Aurora Veil
-- Blizzard
-- Shadow Ball
-- Freeze Dry
+Remoraid
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Arctozolt @ Magnet
-Nature: Naive
-Ability: Slush Rush
-Level: 52
-EVs: 252 Atk / 54 Spe
-Ball: Great Ball
-- Bolt Beak
-- Blizzard
-- Low Kick
-- Stone Edge
+Corphish
+Level: 22
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_MARCOS ===
 Name: Marcos

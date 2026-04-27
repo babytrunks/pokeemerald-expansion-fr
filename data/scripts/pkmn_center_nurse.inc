@@ -324,6 +324,7 @@ PkmnCenterNurse_EventScript_FangTutors:
 
 PkmnCenterNurse_EventScript_CascadeMoveTutors:
 	call_if_quest_complete QUEST_FAN_CLUB_TUTOR, PkmnCenterNurse_EventScript_VermFanClubTutors
+	call_if_set FLAG_TUTOR_SEISMIC_TOSS, PkmnCenterNurse_EventScript_SeismicTossTutor
 	dynmultipush PkmnCenterNurse_Text_Hex, 6
 	dynmultipush PkmnCenterNurse_Text_StompingTantrum, 7
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
@@ -337,6 +338,7 @@ PkmnCenterNurse_EventScript_CascadeMoveTutors:
 	case 5, PkmnCenterNurse_Tutor_HoneClaws
 	case 6, PkmnCenterNurse_Tutor_Hex
 	case 7, PkmnCenterNurse_Tutor_StompingTantrum
+	case 8, PkmnCenterNurse_Tutor_SeismicToss
 	end
 
 PkmnCenterNurse_EventScript_VermFanClubTutors:
@@ -346,6 +348,10 @@ PkmnCenterNurse_EventScript_VermFanClubTutors:
 	dynmultipush PkmnCenterNurse_Text_ChargeBeam, 3
 	dynmultipush PkmnCenterNurse_Text_WorkUp, 4
 	dynmultipush PkmnCenterNurse_Text_HoneClaws, 5
+	return
+
+PkmnCenterNurse_EventScript_SeismicTossTutor:
+	dynmultipush PkmnCenterNurse_Text_SeismicToss, 8
 	return
 
 PkmnCenterNurse_Tutor_Swift:
@@ -423,6 +429,9 @@ PkmnCenterNurse_Tutor_HoneClaws:
 	setvar VAR_0x8005, MOVE_HONE_CLAWS
 	goto PkmnCenterNurse_Tutor_TeachMove
 
+PkmnCenterNurse_Tutor_SeismicToss:
+	setvar VAR_0x8005, MOVE_SEISMIC_TOSS
+	goto PkmnCenterNurse_Tutor_TeachMove
 
 PkmnCenterNurse_Tutor_IcyWind:
 	setvar VAR_0x8005, MOVE_ICY_WIND
@@ -460,6 +469,10 @@ PkmnCenterNurse_Tutor_IcicleSpear:
 	setvar VAR_0x8005, MOVE_ICICLE_SPEAR
 	goto PkmnCenterNurse_Tutor_TeachMove
 
+PkmnCenterNurse_Tutor_Counter:
+	setvar VAR_0x8005, MOVE_COUNTER
+	goto PkmnCenterNurse_Tutor_TeachMove
+
 PkmnCenterNurse_Tutor_BugBuzz:
 	setvar VAR_0x8005, MOVE_BUG_BUZZ
 	goto PkmnCenterNurse_Tutor_TeachMove
@@ -491,6 +504,7 @@ PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_TailSlap, 3
 	dynmultipush PkmnCenterNurse_Text_RockBlast, 4
 	dynmultipush PkmnCenterNurse_Text_IcicleSpear, 5
+	call_if_set FLAG_TUTOR_COUNTER, PkmnCenterNurse_EventScript_CounterTutor
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
@@ -500,7 +514,12 @@ PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	case 3, PkmnCenterNurse_Tutor_TailSlap
 	case 4, PkmnCenterNurse_Tutor_RockBlast
 	case 5, PkmnCenterNurse_Tutor_IcicleSpear
+	case 6, PkmnCenterNurse_Tutor_Counter
 	end
+
+PkmnCenterNurse_EventScript_CounterTutor:
+	dynmultipush PkmnCenterNurse_Text_Counter, 6
+	return
 
 PkmnCenterNurse_EventScript_RainbowMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_BugBuzz, 0
@@ -752,6 +771,12 @@ PkmnCenterNurse_Text_PowerGem:
 
 PkmnCenterNurse_Text_FocusPunch:
 	.string "Focus Punch$"
+
+PkmnCenterNurse_Text_Counter:
+	.string "Counter$"
+
+PkmnCenterNurse_Text_SeismicToss:
+	.string "Seismic Toss$"
 
 PkmnCenterNurse_Text_StartingTutors:
 	.string "Starting Tutors$"

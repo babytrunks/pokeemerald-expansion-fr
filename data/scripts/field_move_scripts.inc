@@ -66,21 +66,22 @@ EventScript_UseRockSmash::
 @ Interact with smashable rock
 EventScript_RockSmash::
 	lockall
-	checkfieldmove FIELD_MOVE_ROCK_SMASH, TRUE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
-	setfieldeffectargument 0, VAR_RESULT
-	bufferpartymonnick STR_VAR_1, VAR_RESULT
-	buffermovename STR_VAR_2, MOVE_ROCK_SMASH
-	msgbox Text_WantToSmash, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
-	msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
-	closemessage
+	goto_if_unset FLAG_BADGE05_GET, EventScript_CantSmashRock
+	checkitem ITEM_HM_ROCK_SMASH
+	goto_if_eq VAR_RESULT, FALSE, EventScript_CantSmashRock
+	@ setfieldeffectargument 0, VAR_RESULT
+	@ bufferpartymonnick STR_VAR_1, VAR_RESULT
+	@ buffermovename STR_VAR_2, MOVE_ROCK_SMASH
+	@ msgbox Text_WantToSmash, MSGBOX_YESNO
+	@ goto_if_eq VAR_RESULT, NO, EventScript_CancelSmash
+	@ msgbox Text_MonUsedFieldMove, MSGBOX_DEFAULT
+	@ closemessage
 EventScript_RockSmashCommon:
 	@ check if follower should use the field move
-	isfollowerfieldmoveuser VAR_0x8004
-	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
-	dofieldeffect FLDEFF_USE_ROCK_SMASH
-	waitstate
+	@ isfollowerfieldmoveuser VAR_0x8004
+	@ setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	@ dofieldeffect FLDEFF_USE_ROCK_SMASH
+	@ waitstate
 EventScript_SmashRock:: @ fallthrough
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove

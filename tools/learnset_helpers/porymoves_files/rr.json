@@ -783,16 +783,10 @@
       {
         "Level": 60,
         "Move": "MOVE_HEAD_SMASH"
-      },
-      {
-        "Level": 68,
-        "Move": "MOVE_VOLT_TACKLE"
       }
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_BODY_PRESS",
-      "MOVE_HEAT_CRASH"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -817,10 +811,6 @@
       {
         "Level": 60,
         "Move": "MOVE_HEAD_SMASH"
-      },
-      {
-        "Level": 68,
-        "Move": "MOVE_VOLT_TACKLE"
       }
     ],
     "PreEvoMoves": [],

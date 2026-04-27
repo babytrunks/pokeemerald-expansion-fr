@@ -144,5 +144,5 @@ jasmine_Text_9::
 jasmine_Text_10::
   .string "{COLOR RED}Steel Pokémon are essential to a\n"
   .string "balanced team. They do well against the\l"
-  .string "mighty Dragon-type and the annoying Fairy-\l"
-  .string "type.$"
+  .string "mighty Dragon-type and the annoying\l"
+  .string "Fairy-type.$"

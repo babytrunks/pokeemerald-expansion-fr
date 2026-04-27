@@ -162,10 +162,10 @@ SaffronCity_Gym_Text_SabrinaDefeat::
     .string "Marsh Badge.$"
 
 SaffronCity_Gym_Text_SabrinaPostBattle::
-    .string "Psychic power isn't something that\n"
-    .string "only a few people have.\p"
-    .string "Everyone has psychic power.\n"
-    .string "People just don't realize it.$"
+    .string "TM71 is Trick Room.\p"
+    .string "It flips dimensions to allow\n"
+    .string "slower Pokémon to move first.\p"
+	.string "It's particularly strong in Doubles.$"
 
 SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
     .string "The Marsh Badge raises the Level Cap to\n"

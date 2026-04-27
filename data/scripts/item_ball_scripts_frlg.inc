@@ -229,8 +229,8 @@ Route12_EventScript_ItemIron::
 	finditem ITEM_ABOMASITE
 	end
 
-Route15_EventScript_ItemTM18::
-	finditem ITEM_TM18
+Route15_EventScript_ItemTMHydroPump::
+	finditem ITEM_TM_HYDRO_PUMP
 	end
 
 SafariZone_Center_EventScript_ItemNugget::
