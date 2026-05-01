@@ -5099,17 +5099,17 @@ EVs: 54 Atk / 252 Spe
 - Jump Kick
 - High Horsepower
 
-Dragapult @ Spell Tag
+Duraludon @ Eviolite
 Nature: Naive
-Ability: Cursed Body
+Ability: Stalwart
 Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 54 SpA / 252 Spe
-Ball: Dusk Ball
-- Shadow Ball
-- Dragon Darts
+Ball: Great Ball
+- Dragon Pulse
+- Flash Cannon
 - Fire Blast
-- U Turn
+- Body Press
 
 === TRAINER_BIRD_KEEPER_ROBERT ===
 Name: Robert
@@ -5379,16 +5379,16 @@ Ball: Great Ball
 - Weather Ball
 - Volt Switch
 
-Pinsir @ Pinsirite
-Nature: Jolly
-Ability: Hyper Cutter
+Drampa @ Drampanite
+Nature: Modest
+Ability: Berserk
 Level: 51
-EVs: 54 Atk / 252 Spe
+EVs: 252 HP / 54 SpA
 Ball: Great Ball
-- X Scissor
-- Double Edge
-- Quick Attack
-- Close Combat
+- Roost
+- Dragon Pulse
+- Hydro Pump
+- Thunder
 
 Omastar @ White Herb
 Nature: Modest

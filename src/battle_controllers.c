@@ -2171,7 +2171,7 @@ static void Controller_HitAnimation(u32 battler)
 {
     u32 spriteId = gBattlerSpriteIds[battler];
 
-    if (gSprites[spriteId].data[1] == 32)
+    if (gSprites[spriteId].data[1] == 16)
     {
         gSprites[spriteId].data[1] = 0;
         gSprites[spriteId].invisible = FALSE;

@@ -19,6 +19,11 @@ Route13_EventScript_SheilaDouble::
     setvar VAR_ROUTE13_DOUBLE_BATTLE, 0x1
     end
 
+Route13_Corridor_Movement_GirlFacePlayer::
+    emote_exclamation_mark
+    face_player
+    step_end
+
 Route13_EventScript_SheilaBeaten::
     lock
     faceplayer
