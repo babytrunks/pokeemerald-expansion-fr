@@ -26,7 +26,7 @@ SSAnne_1F_Corridor_EventScript_LassDouble::
 	@ trainerbattle_two_trainers TRAINER_ANN, SSAnne_1F_Room2_Text_AnnDefeat, TRAINER_BROOKS, SSAnne_2F_Room2_Text_BrooksDefeat
 	@ settrainerflag TRAINER_ANN
     @ settrainerflag TRAINER_BROOKS
-    setvar VAR_SS_ANNE_ANN_BROOKS_BATTLE, 0x1
+    setvar VAR_ROUTE13_DOUBLE_BATTLE, 0x1
     end
 
 SSAnne_1F_Corridor_AnnBeaten::

@@ -22,6 +22,7 @@ static void Task_DoFieldMove_Init(u8 taskId);
 static void Task_DoFieldMove_ShowMonAfterPose(u8 taskId);
 static void Task_DoFieldMove_WaitForMon(u8 taskId);
 static void Task_DoFieldMove_RunFunc(u8 taskId);
+static void Task_RockSmash_Init(u8 taskId);
 
 static void FieldCallback_RockSmash(void);
 static void FieldMove_RockSmash(void);
@@ -148,9 +149,23 @@ static void FieldCallback_RockSmash(void)
     ScriptContext_SetupScript(EventScript_UseRockSmash);
 }
 
+// Skip player pose and show-mon animation; only play the smash sound
+static void Task_RockSmash_Init(u8 taskId)
+{
+    u8 objEventId = gPlayerAvatar.objectEventId;
+
+    LockPlayerFieldControls();
+    gPlayerAvatar.preventStep = TRUE;
+    if (!ObjectEventIsMovementOverridden(&gObjectEvents[objEventId])
+     || ObjectEventClearHeldMovementIfFinished(&gObjectEvents[objEventId]))
+    {
+        gTasks[taskId].func = Task_DoFieldMove_RunFunc;
+    }
+}
+
 bool8 FldEff_UseRockSmash(void)
 {
-    u8 taskId = CreateFieldMoveTask();
+    u8 taskId = CreateTask(Task_RockSmash_Init, 8);
 
     gTasks[taskId].data[8] = (u32)FieldMove_RockSmash >> 16;
     gTasks[taskId].data[9] = (u32)FieldMove_RockSmash;

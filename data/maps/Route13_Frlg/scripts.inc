@@ -1,6 +1,31 @@
 Route13_Frlg_MapScripts::
 	.byte 0
 
+Route13_EventScript_SheilaDouble::
+    goto_if_defeated TRAINER_BEAUTY_SHEILA, Route13_EventScript_SheilaBeaten
+    playbgm MUS_ENCOUNTER_FEMALE, FALSE
+    applymovement LOCALID_ROUTE13_SHEILA, Route13_Corridor_Movement_GirlFacePlayer
+    waitmovement 0
+    setspeaker SP_NAME_SHEILA
+    msgbox Route13_Text_SheilaIntro
+    playbgm MUS_ENCOUNTER_FEMALE, FALSE
+    applymovement LOCALID_ROUTE13_LOLA, Common_Movement_ExclamationMark
+    waitmovement 0
+    setspeaker SP_NAME_LOLA
+    msgbox Route13_Text_LolaIntro
+	trainerbattle_two_trainers TRAINER_BEAUTY_SHEILA, Route13_Text_SheilaDefeat, TRAINER_BEAUTY_LOLA, Route13_Text_LolaDefeat
+	settrainerflag TRAINER_BEAUTY_SHEILA
+    settrainerflag TRAINER_BEAUTY_LOLA
+    setvar VAR_ROUTE13_DOUBLE_BATTLE, 0x1
+    end
+
+Route13_EventScript_SheilaBeaten::
+    lock
+    faceplayer
+    msgbox Route13_Text_SheilaPostBattle 
+    release
+    end
+
 Route13_EventScript_TrainerTips1::
 	msgbox Route13_Text_LookToLeftOfThatPost, MSGBOX_SIGN
 	end

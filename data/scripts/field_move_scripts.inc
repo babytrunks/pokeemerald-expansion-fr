@@ -79,9 +79,9 @@ EventScript_RockSmash::
 EventScript_RockSmashCommon:
 	@ check if follower should use the field move
 	@ isfollowerfieldmoveuser VAR_0x8004
-	@ setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
-	@ dofieldeffect FLDEFF_USE_ROCK_SMASH
-	@ waitstate
+	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	dofieldeffect FLDEFF_USE_ROCK_SMASH
+	waitstate
 EventScript_SmashRock:: @ fallthrough
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove

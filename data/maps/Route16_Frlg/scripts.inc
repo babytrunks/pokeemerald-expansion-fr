@@ -30,7 +30,7 @@ Route16_OnWarpCyclingRoad::
 
 Route16_EventScript_Snorlax::
 	lock
-	faceplayer
+	@ faceplayer
 	goto_if_unset FLAG_GOT_POKE_FLUTE, Route16_EventScript_SnorlaxNoPokeFlute
 	msgbox Text_WantToUsePokeFlute, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route16_EventScript_DontUsePokeFlute
@@ -50,6 +50,62 @@ Route16_EventScript_Snorlax::
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route16_EventScript_FoughtSnorlax
 	release
 	end
+
+Route16_EventScript_ThreeBackToBack::
+    lock
+    playbgm MUS_RG_ENCOUNTER_BOY, FALSE
+    applymovement LOCALID_ROUTE16_LAO, Route16_Movement_TrevorFacePlayer
+    waitmovement 0
+    setspeaker SP_NAME_LAO
+    msgbox Route16_Text_LaoIntro
+    @ applymovement LOCALID_SSANNE_EDMOND, Common_Movement_ExclamationMark
+    @ waitmovement 0
+    @ playbgm MUS_ENCOUNTER_COOL, FALSE
+    @ setspeaker SP_NAME_EDMOND
+    @ msgbox SSAnne_Deck_Text_EdmondIntro
+	trainerbattle_no_intro TRAINER_BIKER_LAO, Route16_Text_LaoDefeat
+    @ settrainerflag TRAINER_BIKER_LAO
+    playbgm MUS_RG_ENCOUNTER_BOY, FALSE
+    applymovement LOCALID_ROUTE16_KOJI, Route16_Movement_TrevorFacePlayer
+    waitmovement 0
+    setvar VAR_ROUTE16_3_BACK_TO_BACK, 0x1
+    setspeaker SP_NAME_KOJI
+    msgbox Route16_Text_KojiIntro
+	trainerbattle_no_intro TRAINER_CUE_BALL_KOJI, Route16_Text_KojiDefeat
+    setspeaker SP_NAME_LUKE
+    playbgm MUS_RG_ENCOUNTER_BOY, FALSE
+    applymovement LOCALID_ROUTE16_LUKE, Route16_Movement_LukeFacePlayer
+    waitmovement 0
+    msgbox Route16_Text_LukeIntro
+	trainerbattle_no_intro TRAINER_CUE_BALL_LUKE, Route16_Text_LukeDefeat
+    settrainerflag TRAINER_BIKER_LAO
+    settrainerflag TRAINER_CUE_BALL_KOJI
+    settrainerflag TRAINER_CUE_BALL_LUKE
+    applymovement LOCALID_ROUTE16_LUKE, Route16_Movement_LukeMoveOutOfWay
+    waitmovement 0
+    end
+
+Route16_Movement_TrevorFacePlayer:
+	emote_exclamation_mark
+	face_player
+    delay_16
+    delay_16
+	step_end
+
+Route16_Movement_LukeFacePlayer:
+	emote_exclamation_mark
+	face_player
+    delay_16
+    delay_16
+    walk_right
+    walk_right
+	step_end
+
+Route16_Movement_LukeMoveOutOfWay:
+    walk_left
+    walk_down
+    face_up
+    step_end
 
 Route16_EventScript_DontUsePokeFlute::
 	release
@@ -84,7 +140,7 @@ Route16_Text_LaoPostBattle::
     .string "What's it to you?$"
 
 Route16_Text_KojiIntro::
-    .string "Nice BIKE!\n"
+    .string "Nice Bike!\n"
     .string "Hand it over!$"
 
 Route16_Text_KojiDefeat::

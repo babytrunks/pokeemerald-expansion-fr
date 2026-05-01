@@ -2907,6 +2907,8 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
+Boss: Yes
+Mugshot: Yellow
 
 Stunfisk @ Focus Sash
 Nature: Calm
@@ -2957,7 +2959,8 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
-
+Boss: Yes
+Mugshot: Yellow
 
 Accelgor @ Life Orb
 Nature: Timid
@@ -3962,6 +3965,8 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
+Boss: Yes
+Mugshot: Yellow
 
 Swampert @ Leftovers
 Nature: Sassy

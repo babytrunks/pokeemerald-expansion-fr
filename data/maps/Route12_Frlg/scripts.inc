@@ -12,7 +12,7 @@ Route12_EventScript_TryRemoveSnorlax::
 
 Route12_EventScript_Snorlax::
 	lock
-	faceplayer
+	@ faceplayer
 	goto_if_unset FLAG_GOT_POKE_FLUTE, Route12_EventScript_SnorlaxNoPokeFlute
 	msgbox Text_WantToUsePokeFlute, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route12_EventScript_DontUsePokeFlute

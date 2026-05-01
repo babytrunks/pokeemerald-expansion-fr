@@ -40,6 +40,11 @@ enum SpeakerNames {
     SP_NAME_ARCHIE,
     SP_NAME_PRESIDENT,
     SP_NAME_SECRETARY,
+    SP_NAME_KOJI,
+    SP_NAME_LUKE,
+    SP_NAME_LAO,
+    SP_NAME_SHEILA,
+    SP_NAME_LOLA,
     SP_NAME_COUNT
 };
 

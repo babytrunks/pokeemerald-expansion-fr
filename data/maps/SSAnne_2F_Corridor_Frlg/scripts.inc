@@ -18,7 +18,7 @@ SSAnne_2F_Corridor_EventScript_SailorDouble::
 	trainerbattle_two_trainers TRAINER_SAILOR_TREVOR, SSAnne_Deck_Text_EdmondDefeat, TRAINER_SAILOR_EDMOND, SSAnne_Deck_Text_TrevorDefeat
 	settrainerflag TRAINER_SAILOR_TREVOR
     settrainerflag TRAINER_SAILOR_EDMOND
-    setvar VAR_SS_ANNE_TREVOR_EDMOND_BATTLE, 0x1
+    setvar VAR_ROUTE16_3_BACK_TO_BACK, 0x1
     end
 
 SSAnne_2F_Corridor_Movement_SailorFacePlayer:

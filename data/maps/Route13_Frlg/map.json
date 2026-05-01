@@ -69,6 +69,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_ROUTE13_SHEILA",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY_FRLG",
       "x": 46,
@@ -79,10 +80,11 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route13_EventScript_Sheila",
+      "script": "Route13_EventScript_SheilaDouble",
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_ROUTE13_LOLA",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY_FRLG",
       "x": 47,
@@ -210,7 +212,17 @@
     }
   ],
   "warp_events": [],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 46,
+      "y": 6,
+      "elevation": 0,
+      "var": "VAR_ROUTE13_DOUBLE_BATTLE",
+      "var_value": "0",
+      "script": "Route13_EventScript_SheilaDouble"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

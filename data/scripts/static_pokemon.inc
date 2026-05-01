@@ -19,5 +19,6 @@ EventScript_AwakenSnorlax::
     waitmessage
     playfanfare MUS_RG_POKE_FLUTE
     waitfanfare
+    faceplayer
     msgbox Text_SnorlaxWokeUp
     return

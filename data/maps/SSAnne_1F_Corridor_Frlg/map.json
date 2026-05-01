@@ -173,7 +173,7 @@
       "x": 10,
       "y": 10,
       "elevation": 0,
-      "var": "VAR_SS_ANNE_ANN_BROOKS_BATTLE",
+      "var": "VAR_ROUTE13_DOUBLE_BATTLE",
       "var_value": "0",
       "script": "SSAnne_1F_Corridor_EventScript_LassDouble_Trigger"
     },
@@ -182,7 +182,7 @@
       "x": 10,
       "y": 9,
       "elevation": 0,
-      "var": "VAR_SS_ANNE_ANN_BROOKS_BATTLE",
+      "var": "VAR_ROUTE13_DOUBLE_BATTLE",
       "var_value": "0",
       "script": "SSAnne_1F_Corridor_EventScript_LassDouble_Trigger"
     }

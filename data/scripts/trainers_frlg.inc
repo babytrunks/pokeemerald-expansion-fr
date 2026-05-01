@@ -901,8 +901,8 @@ Route13_EventScript_LolaRematch::
 
 Route13_EventScript_Sheila::
 	trainerbattle_single TRAINER_BEAUTY_SHEILA, Route13_Text_SheilaIntro, Route13_Text_SheilaDefeat
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route13_EventScript_SheilaRematch
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ goto_if_eq VAR_RESULT, TRUE, Route13_EventScript_SheilaRematch
 	msgbox Route13_Text_SheilaPostBattle, MSGBOX_AUTOCLOSE
 	end
 

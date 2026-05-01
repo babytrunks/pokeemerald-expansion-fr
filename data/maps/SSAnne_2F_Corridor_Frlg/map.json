@@ -173,7 +173,7 @@
       "x": 1,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_SS_ANNE_TREVOR_EDMOND_BATTLE",
+      "var": "VAR_ROUTE16_3_BACK_TO_BACK",
       "var_value": "0",
       "script": "SSAnne_2F_Corridor_EventScript_SailorDouble_Trigger"
     },
@@ -182,7 +182,7 @@
       "x": 2,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_SS_ANNE_TREVOR_EDMOND_BATTLE",
+      "var": "VAR_ROUTE16_3_BACK_TO_BACK",
       "var_value": "0",
       "script": "SSAnne_2F_Corridor_EventScript_SailorDouble_Trigger"
     },
@@ -191,7 +191,7 @@
       "x": 3,
       "y": 7,
       "elevation": 0,
-      "var": "VAR_SS_ANNE_TREVOR_EDMOND_BATTLE",
+      "var": "VAR_ROUTE16_3_BACK_TO_BACK",
       "var_value": "0",
       "script": "SSAnne_2F_Corridor_EventScript_SailorDouble_Trigger"
     }
