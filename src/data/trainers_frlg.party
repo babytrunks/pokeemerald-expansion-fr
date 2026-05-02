@@ -9067,7 +9067,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 204 SpA / 0 SpD / 0 Spe
 - Explosion
 
 === TRAINER_LEADER_KOGA ===
-Name: KOGA
+Name: Koga
 Class: Leader Frlg
 Pic: Leader Koga Frlg
 Gender: Male
@@ -9075,37 +9075,58 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Koffing
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Self Destruct
-- Sludge
-- Smokescreen
-- Toxic
 
-Muk
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Minimize
-- Sludge
-- Acid Armor
-- Toxic
+Swellow @ Choice Specs
+Nature: Timid
+Ability: Aerilate
+Level: 67
+IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 SpD / 252 Spe
+Ball: Great Ball
+- Boomburst
+- U Turn
 
-Koffing
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Self Destruct
-- Sludge
-- Smokescreen
-- Toxic
+Accelgor @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 68
+EVs: 252 SpA / 4 SpD / 252 Spe
+Ball: Great Ball
+- Bug Buzz
+- U Turn
+- Focus Blast
+- Sludge Bomb
 
-Weezing
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tackle
-- Sludge
-- Smokescreen
-- Toxic
+Greninja @ Greninjite
+Nature: Timid
+Ability: Battle Bond
+Level: 68
+EVs: 252 SpA / 4 SpD / 252 Spe
+Ball: Dusk Ball
+- Hydro Pump
+- Water Shuriken
+- Dark Pulse
+- Ice Beam
+
+Drapion @ Choice Scarf
+Nature: Adamant
+Ability: Sniper
+Level: 54
+EVs: 252 Atk / 4 SpD / 252 Spe
+Ball: Ultra Ball
+- Wicked Blow
+- Cross Poison
+
+Iron Valiant @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 54
+EVs: 252 Atk / 4 Def / 252 Spe
+Ball: Ultra Ball
+- Close Combat
+- Spirit Break
+- Knock Off
+- Liquidation
 
 === TRAINER_LEADER_BLAINE ===
 Name: BLAINE
@@ -11710,22 +11731,79 @@ Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Metronome
 
-=== TRAINER_TWINS_ELI_ANNE_2 ===
-Name: ELI & ANNE
-Class: Twins Frlg
-Pic: Twins Frlg
+=== TRAINER_DUMBASS_KID ===
+Name: Kid
+Class: Dumbass
+Pic: School Kid M
 Gender: Male
 Music: Twins
-Double Battle: Yes
+Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
+Boss: Yes
+Mugshot: Blue
+Dynamic Level Ratio: 90
 
-Clefairy
-Level: 28
+Swampert @ Rindo Berry
+Level: 45
+Ability: Torrent
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk
+- Stealth Rock
+- Flip Turn
+- Liquidation
+- Earthquake
 
-Jigglypuff
-Level: 28
+Pelipper @ Damp Rock
+Level: 44
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 252 Spe
+- Hydro Pump
+- U-Turn
+- Hurricane
+- Roost
+
+Scizor @ Metal Coat
+Level: 45
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk
+- Swords Dance
+- u-Turn
+- Bullet Punch
+- Close Combat
+
+Frosmoth @ Leftovers
+Level: 45
+Ability: Ice Scales
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 SpD / 252 SpA / 252 Spe
+- Quiver Dance
+- Ice Beam
+- Bug Buzz
+- Hurricane
+
+Sandy Shocks @ Booster Energy
+Level: 45
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 48 HP / 208 SpA / 252 Spe
+- Thunder
+- Earth Power
+- Power Gem
+- Volt Switch
+
+Swampert @ Swampertite
+Level: 45
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 252 Spe
+- Earthquake
+- Ice Punch
+- Waterfall
+- Earthquake
 
 === TRAINER_YOUNGSTER_JOHNSON ===
 Name: JOHNSON
@@ -13763,26 +13841,84 @@ Raticate
 Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
-=== TRAINER_PICNICKER_ISABELLE_2 ===
-Name: Isabelle
-Class: Picnicker Frlg
-Pic: Picnicker Frlg
+=== TRAINER_BRENDAN_FUSCHIA ===
+Name: Brendan
+Class: Pkmn Trainer 1
+Pic: Brendan
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Green
+Boss: Yes
+Dynamic Level Ratio: 90
 
-Sinistea
-Level: 22
+Metagross @ Air Balloon
+Ability: Clear Body
+Nature: Adamant
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Stealth Rock
+- Explosion
+- Meteor Mash
+- Earthquake
 
-Swadloon
-Level: 22
+Medicham @ Choice Scarf
+Ability: Pure Power
+Nature: Adamant
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 252 Spe
+- Close Combat
+- Zen Headbutt
+- Ice Punch
+- Thunder Punch
 
-Lombre
-Level: 21
+Crawdaunt @ Focus Sash
+Nature: Jolly
+Ability: Adaptability
+Level: 54
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Dragon Dance
+- Crabhammer
+- Knock Off
+- Close Combat
+
+Exploud @ Silk Scarf
+Nature: Modest
+Ability: Punk Rock
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Boomburst
+- Surf
+- Flamethrower
+- Shadow Ball
+
+Gardevoir @ Pixie Plate
+Nature: Timid
+Ability: Trace
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+- Psychic
+- Moonblast
+- Focus Blast
+- Thunderbolt
+
+Sceptile @ Sceptilite
+Nature: Jolly
+Ability: Overgrow
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Leaf Blade
+- Dragon Claw
+- Earthquake
+- Swords Dance
+
 
 === TRAINER_PICNICKER_ISABELLE_3 ===
 Name: Isabelle

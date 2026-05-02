@@ -664,9 +664,12 @@ static const u8 sText_Description_Mode_New_Effectiveness_Modern[]    = _("New an
 static const u8 sText_Description_Mode_Next[]                           = _("Continue to Randomizer options.");
 static const u8 sText_Description_Mode_Difficulty_Easy[]                = _("Trainer levels are reduced, & the\nLevel Cap is more lenient.");
 static const u8 sText_Description_Mode_Difficulty_Normal[]              = _("The intended difficulty to play\nthe game.");
-static const u8 sText_Description_Mode_Difficulty_Hardcore[]            = _("Bosses are absurd. Certain moves &\nabilties are banned for the player.");
-static const u8 sText_Description_Mode_NoEVs_Off[]                      = _("{PKMN} gain effort values\nas expected.");
-static const u8 sText_Description_Mode_NoEVs_On[]                       = _("Your {PKMN} and opposing {PKMN} do\n{COLOR 7}{COLOR 8}NOT{COLOR 1}{COLOR 2} gain any effort values!");
+static const u8 sText_Description_Mode_Difficulty_Hardcore[]            = _("{COLOR RED}Unimplemented!");
+// _("Bosses are absurd. Certain moves &\nabilties are banned for the player.");
+static const u8 sText_Description_Mode_NoEVs_Off[]                      = _("{COLOR RED}Unimplemented!");
+// {PKMN} gain effort values\nas expected.");
+static const u8 sText_Description_Mode_NoEVs_On[]                       = _("{COLOR RED}Unimplemented!");
+// _("Your {PKMN} and opposing {PKMN} do\n{COLOR 7}{COLOR 8}NOT{COLOR 1}{COLOR 2} gain any effort values!");
 static const u8 sText_Description_Mode_Party_Limit[]              = _("Limit the amount of {PKMN} in the\nplayers party.");
 static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
 {
@@ -726,8 +729,10 @@ static const u8 sText_Description_Random_IncludeLegendaries_Off[]   = _("Legenda
 static const u8 sText_Description_Random_IncludeLegendaries_On[]    = _("Include legendary POKéMON in\nrandomization!");
 static const u8 sText_Description_Random_Types_Off[]                = _("POKéMON types stay the same as in\nthe base game.");
 static const u8 sText_Description_Random_Types_On[]                 = _("Randomize all POKéMON types.");
-static const u8 sText_Description_Random_Moves_Off[]                = _("POKéMON moves stay the same as in\nthe base game.");
-static const u8 sText_Description_Random_Moves_On[]                 = _("Randomize all POKéMON moves.");
+static const u8 sText_Description_Random_Moves_Off[]                = _("Unimplemented!");
+//POKéMON moves stay the same as in\nthe base game.");
+static const u8 sText_Description_Random_Moves_On[]                 = _("Unimplemented!");
+// _("Randomize all POKéMON moves.");
 static const u8 sText_Description_Random_Abilities_Off[]            = _("POKéMON abilities stay the same as in\nthe base game.");
 static const u8 sText_Description_Random_Abilities_On[]             = _("Randomize all POKéMON abilities.");
 static const u8 sText_Description_Random_Evos_Off[]                 = _("POKéMON evolutions stay the same as\nin the base game.");

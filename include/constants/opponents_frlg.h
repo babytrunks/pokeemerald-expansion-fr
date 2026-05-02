@@ -417,7 +417,7 @@
 #define TRAINER_BIKER_GOON_3                       411
 #define TRAINER_BUG_CATCHER_ANTHONY                412
 #define TRAINER_LASS_ANNE                413
-#define TRAINER_TWINS_ELI_ANNE_2                   414
+#define TRAINER_DUMBASS_KID                        414
 #define TRAINER_YOUNGSTER_JOHNSON                  415
 #define TRAINER_BIKER_RICARDO                      416
 #define TRAINER_BIKER_JAREN                        417 // unused
@@ -514,7 +514,7 @@
 #define TRAINER_CAMPER_JEFF_2                      508
 #define TRAINER_CAMPER_JEFF_3                      509
 #define TRAINER_CAMPER_JEFF_4                      510
-#define TRAINER_PICNICKER_ISABELLE_2               511 // unused 
+#define TRAINER_BRENDAN_FUSCHIA               511 // unused 
 #define TRAINER_PICNICKER_ISABELLE_3               512 // unused
 #define TRAINER_PICNICKER_ISABELLE_4               513 // unused 
 #define TRAINER_YOUNGSTER_YASU_2                   514 // unused

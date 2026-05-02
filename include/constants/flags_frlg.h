@@ -753,7 +753,7 @@
 #define FLAG_OAKS_RATING_IS_VIA_PC                       0x2FF
 
 #define FLAG_ROUTE14_TM_PLAY_ROUGH                       0x300
-#define FLAG_0x301                                0x301
+#define FLAG_SAFFRON_BEAT_DUMBASS_KID                    0x301
 #define FLAG_0x302                               0x302
 #define FLAG_0x303                               0x303
 #define FLAG_0x304                               0x304
@@ -1188,7 +1188,7 @@
 
 // Unused hidden item flags
 #define FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_2                            0x4A7 // Unused Flag
-#define FLAG_UNUSED_0x4A8               0x4A8 // Unused Flag
+#define FLAG_NES_EZCATCH                0x4A8
 #define FLAG_UNUSED_0x4A9               0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA               0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB               0x4AB // Unused Flag

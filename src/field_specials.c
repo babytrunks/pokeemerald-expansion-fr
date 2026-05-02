@@ -4471,10 +4471,13 @@ void GetCodeFeedback(void)
 {
     static const u8 sText_Woyaopp[] = _("Woyaopp");
     static const u8 sText_DexAll[] = _("DexAll");
+    static const u8 sText_EZCatch[] = _("EZCatch");
     if (!StringCompare(gStringVar2, sText_Woyaopp))
         gSpecialVar_Result = 1;
     else if (!StringCompare(gStringVar2, sText_DexAll))
         gSpecialVar_Result = 2;
+    else if (!StringCompare(gStringVar2, sText_EZCatch))
+        gSpecialVar_Result = 3;
     else
         gSpecialVar_Result = 0;
 }

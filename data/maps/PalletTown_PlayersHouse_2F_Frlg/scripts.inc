@@ -30,12 +30,13 @@ PalletTown_EventScript_NESDone:
 	end
 
 PalletTown_EventScript_NESAskCode::
-	special EnterCode 
+	special EnterCode
 	waitstate
 	special GetCodeFeedback
 	goto_if_eq VAR_RESULT, 0, NESCodeFailed
 	goto_if_eq VAR_RESULT, 1, NESGiveInfCandy
 	goto_if_eq VAR_RESULT, 2, NESActivateDexAll
+	goto_if_eq VAR_RESULT, 3, NESActivateEZCatch
 
 NESCodeFailed::
 	msgbox PalletTown_Text_NESInvalidCode
@@ -57,6 +58,13 @@ NESActivateDexAll::
 	release
 	end
 
+
+NESActivateEZCatch::
+	goto_if_set FLAG_NES_EZCATCH, PalletTown_EventScript_NES_AlreadyGaveCode
+	msgbox PalletTown_Text_NESEZCatchActivate
+	setflag FLAG_NES_EZCATCH
+	release
+	end
 
 PalletTown_EventScript_NES_AlreadyGaveCode::
 	msgbox PalletTown_Text_NES_AlreadyGave
@@ -81,6 +89,9 @@ PalletTown_Text_NESDexAllActivate::
 
 PalletTown_Text_NESInfCandyCode::
 	.string "…Infinite Candy code received.$"
+
+PalletTown_Text_NESEZCatchActivate::
+	.string "…EZCatch activated.\nAll Pokéballs now catch without fail.$"
 
 PalletTown_PlayersHouse_2F_Text_PlayedWithNES::
     .string "{PLAYER} played with the NES.\p"

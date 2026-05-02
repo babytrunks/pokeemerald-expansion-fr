@@ -138,6 +138,70 @@ FuchsiaCity_EventScript_OmanyteSign::
 	releaseall
 	end
 
+EventScript_brendanfuschia_Start::
+    opendoor 0x18, 0x5
+    waitdooranim
+    addobject LOCALID_FUSCHIA_BRENDAN
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_brendanfuschia_Lookup
+    waitmovement 0
+    applymovement LOCALID_FUSCHIA_BRENDAN, Movement_brendanfuschia_Movedown
+    waitmovement 0
+    closedoor 0x18, 0x5
+    waitdooranim
+    msgbox gText_brendanfuschia_1, MSGBOX_NPC
+    trainerbattle_no_intro TRAINER_BRENDAN_FUSCHIA, gText_brendanfuschia_Defeat  
+    msgbox gText_brendanfuschia_2, MSGBOX_NPC
+    giveitem ITEM_SCEPTILITE  
+    msgbox gText_brendanfuschia_3, MSGBOX_NPC
+    setvar VAR_TRIGGER_BRENDAN_FUSCHIA, 1 
+    applymovement 0x11, Movement_brendanfuschia_Movedown2
+    waitmovement 0
+	removeobject LOCALID_FUSCHIA_BRENDAN
+    release
+    end
+
+
+Movement_brendanfuschia_Movedown:
+    walk_down  @ CFRU byte 0x10 = walk south one step
+    step_end
+
+Movement_brendanfuschia_Lookup:
+    walk_down
+    face_up
+    step_end
+
+Movement_brendanfuschia_Movedown2:
+	walk_left
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    step_end
+
+gText_brendanfuschia_1:
+    .string "Oh hey {PLAYER}!\p"
+    .string "Fancy meeting you here.\p"
+    .string "I've recently obtained the Mega Ring{COLOR BLUE},\n"
+    .string "so I'd like to put myself to the test!\p"
+    .string "I see you've got one too!\p"
+    .string "Let's not hold back then!$"
+
+gText_brendanfuschia_Defeat:
+    .string "Heh, not bad.\n$"
+
+gText_brendanfuschia_2:
+    .string "Thanks for being a good sport, as\n"
+    .string "always.\p"
+    .string "Here, let me share my favorite Mega\n"
+    .string "Stone.$"
+
+gText_brendanfuschia_3:
+    .string "Safe travels pal!$"
+
 FuchsiaCity_Text_DidYouTrySafariGame::
     .string "Did you try the SAFARI GAME?\p"
     .string "There are some rare Pokémon that\n"

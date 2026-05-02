@@ -3594,7 +3594,7 @@ static void PrintNotEggInfo(void)
     StringAppend(gStringVar1, gText_Slash);
     ConvertIntToDecimalStringN(gStringVar2, GetCurrentLevelCap(), STR_CONV_MODE_LEFT_ALIGN, 3);
     StringAppend(gStringVar1, gStringVar2);
-    PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gStringVar1, 0, 17, 0, 1);
+    PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gStringVar1, 10, 17, 0, 1);
     GetMonNickname(mon, gStringVar1);
     PrintTextOnWindowToFitPx(PSS_LABEL_WINDOW_PORTRAIT_NICKNAME, gStringVar1, 0, 1, 0, 1, WindowWidthPx(PSS_LABEL_WINDOW_PORTRAIT_NICKNAME) - 9);
     PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gText_Slash, 0, 1, 0, 1);
@@ -3620,10 +3620,10 @@ static void PrintGenderSymbol(struct Pokemon *mon, u16 species)
         switch (GetMonGender(mon))
         {
         case MON_MALE:
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gText_MaleSymbol, 57, 17, 0, 3);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gText_MaleSymbol, 62, 17, 0, 3);
             break;
         case MON_FEMALE:
-            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gText_FemaleSymbol, 57, 17, 0, 4);
+            PrintTextOnWindow(PSS_LABEL_WINDOW_PORTRAIT_SPECIES, gText_FemaleSymbol, 62, 17, 0, 4);
             break;
         }
     }
@@ -4726,20 +4726,29 @@ static void HidePageSpecificSprites(void)
 {
     // Keeps Pok�mon, caught ball and status sprites visible.
     u8 i;
+    u8 heartSpriteId;
 
     for (i = SPRITE_ARR_ID_TYPE; i < ARRAY_COUNT(sMonSummaryScreen->spriteIds); i++)
     {
         if (sMonSummaryScreen->spriteIds[i] != SPRITE_NONE)
             SetSpriteInvisibility(i, TRUE);
     }
+
+    heartSpriteId = gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].data[0];
+    if (heartSpriteId < MAX_SPRITES)
+        gSprites[heartSpriteId].invisible = TRUE;
 }
 
 static void SetTypeIcons(void)
 {
+    u8 heartSpriteId = gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].data[0];
+
     switch (sMonSummaryScreen->currPageIndex)
     {
     case PSS_PAGE_INFO:
         SetMonTypeIcons();
+        if (heartSpriteId < MAX_SPRITES)
+            gSprites[heartSpriteId].invisible = FALSE;
         break;
     case PSS_PAGE_BATTLE_MOVES:
         SetMoveTypeIcons();
@@ -5046,7 +5055,7 @@ static void CreateCaughtBallSprite(struct Pokemon *mon)
     enum PokeBall ball = GetMonData(mon, MON_DATA_POKEBALL);
 
     LoadBallGfx(ball);
-    sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL] = CreateSprite(&gBallSpriteTemplates[ball], 8, 152, 0);
+    sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL] = CreateSprite(&gBallSpriteTemplates[ball], 8, 135, 0);
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].callback = SpriteCallbackDummy;
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].oam.priority = 3;
     CreateFriendshipHeartSprite();
@@ -5077,7 +5086,7 @@ static void CreateFriendshipHeartSprite(void)
         LoadCompressedSpriteSheetUsingHeap(&sFriendshipHeartSheets[index]);
         LoadSpritePalette(&sFriendshipHeartPalettes[index]);
 
-        heartSpriteId = CreateSprite(&sSpriteTemplate_FriendshipHeart, ballSprite->x + 14, ballSprite->y, 0);
+        heartSpriteId = CreateSprite(&sSpriteTemplate_FriendshipHeart, 200, 56, 0);
         ballSprite->data[0] = heartSpriteId;
     }
     else

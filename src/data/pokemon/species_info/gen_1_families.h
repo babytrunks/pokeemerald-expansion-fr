@@ -18843,7 +18843,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .teachableLearnset = sPorygonTeachableLearnset,
     #if P_GEN_2_CROSS_EVOS
         .evolutions = EVOLUTION({EVO_TRADE, 0, SPECIES_PORYGON2, CONDITIONS({IF_HOLD_ITEM, ITEM_UPGRADE})},
-                                {EVO_ITEM, ITEM_LINK_CABLE, SPECIES_PORYGON2}),
+                                {EVO_ITEM, ITEM_LINKING_CORD, SPECIES_PORYGON2}),
     #endif
     },
 

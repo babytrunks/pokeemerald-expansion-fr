@@ -9185,7 +9185,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_JAZMYN ===
 Name: JAZMYN
-Class: Cooltrainer 2
+Class: Cooltrainer 
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
