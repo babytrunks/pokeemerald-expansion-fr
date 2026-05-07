@@ -2716,7 +2716,6 @@ Ability: Sturdy
 Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 54 Atk 
-Ball: Ultra Ball
 - Stealth Rock
 - Spikes
 - Stone Edge
@@ -2880,7 +2879,6 @@ Ability: Inner Focus
 Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 54 Atk / 252 Spe
-Ball: Ultra Ball
 - Fake Out
 - Close Combat
 - Knock Off
@@ -2892,7 +2890,6 @@ Ability: Sand Veil
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Volt Switch
 - Boomburst
 - Weather Ball
@@ -2915,7 +2912,6 @@ Nature: Calm
 Ability: Sand Veil
 Level: 51
 EVs: 252 HP / 54 SpA
-Ball: Great Ball
 - Stealth Rock
 - Thunder Wave
 - Earth Power
@@ -2926,7 +2922,6 @@ Nature: Jolly
 Ability: Sand Rush
 Level: 51
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - Fishious Rend
 - Dragon Claw
 - Psychic Fangs
@@ -2937,7 +2932,6 @@ Nature: Jolly
 Ability: Sniper
 Level: 52
 EVs: 54 Atk / 252 Spe
-Ball: Great Ball
 - U Turn
 - Drill Run
 - Poison Jab
@@ -2967,7 +2961,6 @@ Nature: Timid
 Ability: Sheer Force
 Level: 50
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - U-Turn
 - Bug Buzz
 - Focus Blast
@@ -2978,7 +2971,6 @@ Nature: Careful
 Ability: Sand Force
 Level: 50
 EVs: 252 HP / 54 Atk 
-Ball: Great Ball
 - Earthquake
 - Stone Edge
 - Explosion
@@ -2990,7 +2982,6 @@ Ability: Technician
 Level: 50
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Giga Drain
 - Weather Ball
 - Hidden Power
@@ -3001,7 +2992,6 @@ Nature: Jolly
 Ability: Sand Rush
 Level: 50
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - Last Respects
 - Body Press
 - Fire Fang
@@ -3085,7 +3075,6 @@ Nature: Naive
 Ability: Sturdy
 Level: 51
 EVs: 252 SpA / 54 Spe
-Ball: Great Ball
 - Thunder
 - Volt Switch
 - Explosion
@@ -3096,7 +3085,6 @@ Nature: Jolly
 Ability: Water Bubble
 Level: 1
 EVs: 54 Atk / 252 Spe
-Ball: Great Ball
 - Dragon Dance
 - Waterfall
 - Earthquake
@@ -3107,7 +3095,6 @@ Nature: Naive
 Ability: Intimidate
 Level: 51
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Hurricane
 - Dragon Pulse
 - Hydro Pump
@@ -3118,7 +3105,6 @@ Nature: Timid
 Ability: Analytic
 Level: 51
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Flip Turn
 - Hydro Pump
 - Thunder
@@ -3592,7 +3578,6 @@ Nature: Timid
 Ability: Snow Cloak
 Level: 52
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Aurora Veil
 - Blizzard
 - Shadow Ball
@@ -3603,7 +3588,6 @@ Nature: Naive
 Ability: Slush Rush
 Level: 52
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - Bolt Beak
 - Blizzard
 - Low Kick
@@ -3914,7 +3898,6 @@ Ability: Sand Rush
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - Accelerock
 - Stone Edge
 - Close Combat
@@ -3950,7 +3933,6 @@ Ability: Thick Fat
 Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 54 Atk
-Ball: Great Ball
 - Fake Out
 - Knock Off
 - Drain Punch
@@ -3973,7 +3955,6 @@ Nature: Sassy
 Ability: Damp
 Level: 51
 EVs: 252 HP / 54 Def
-Ball: Great Ball
 - Stealth Rock
 - Flip Turn
 - Earthquake
@@ -3984,7 +3965,6 @@ Nature: Jolly
 Ability: Filter
 Level: 52
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - Shift Gear
 - Iron Head
 - Gunk Shot
@@ -3995,7 +3975,6 @@ Nature: Adamant
 Ability: Technician
 Level: 51
 EVs: 54 HP / 252 Atk 
-Ball: Great Ball
 - U Turn
 - Bullet Punch
 - Rock Smash
@@ -4006,7 +3985,6 @@ Nature: Jolly
 Ability: Sand Rush
 Level: 51
 EVs: 54 Atk / 252 Spe
-Ball: Great Ball
 - Needle Arm
 - Sucker Punch
 - Knock Off
@@ -4354,7 +4332,6 @@ Nature: Jolly
 Ability: Flower Gift 
 Level: 52
 EVs: 54 Atk / 252 Spe
-Ball: Ultra Ball
 - Petal Blizzard
 - Safeguard
 - X Scissor
@@ -4365,7 +4342,6 @@ Nature: Naive
 Ability: Chlorophyll
 Level: 52
 EVs: 54 SpA / 252 Spe
-Ball: Ultra Ball
 - Petal Blizzard
 - Safeguard
 - Earth Power
@@ -4680,7 +4656,6 @@ Nature: Careful
 Ability: Thick Fat
 Level: 52
 EVs: 252 HP / 54 SpD
-Ball: Great Ball
 - Stealth Rock
 - Earthquake
 - Roar
@@ -4691,7 +4666,6 @@ Nature: Timid
 Ability: Dry Skin
 Level: 50
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Boomburst
 - Surf
 - Weather Ball
@@ -4702,7 +4676,6 @@ Nature: Timid
 Ability: Tinted Lens
 Level: 51
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Bug Buzz
 - Air Slash
 - U Turn
@@ -5016,7 +4989,6 @@ Nature: Jolly
 Ability: Poison Heal
 Level: 52
 EVs: 252 HP / 54 Spe
-Ball: Ultra Ball
 - U-Turn
 - Earthquake
 - Stealth Rock
@@ -5037,7 +5009,6 @@ Nature: Modest
 Ability: Serene Grace
 Level: 51
 EVs: 252 SpA / 54 Spe
-Ball: Great Ball
 - Air Slash
 - Fire Blast
 - Thunder Wave
@@ -5082,7 +5053,6 @@ Ability: Trace
 Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 54 SpA / 252 Spe
-Ball: Ultra Ball
 - Calm Mind
 - Psychic
 - Moonblast
@@ -5105,7 +5075,6 @@ Ability: Stalwart
 Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Dragon Pulse
 - Flash Cannon
 - Fire Blast
@@ -5249,6 +5218,8 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
+Boss: Yes
+Mugshot: Blue
 
 Swanna @ Focus Sash
 Nature: Naive
@@ -5265,7 +5236,6 @@ Nature: Naive
 Ability: Tinted Lens
 Level: 52
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - U-Turn
 - Hurricane
 - Spirit Shackle
@@ -5286,7 +5256,6 @@ Nature: Timid
 Ability: Sheer Force
 Level: 51
 EVs: 54 HP / 252 SpA 
-Ball: Great Ball
 - Thunder
 - Earth Power
 - Sludge Wave
@@ -5301,14 +5270,15 @@ Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
+Boss: Yes
+Mugshot: Blue
 
-Pikachu Alola @ Focus Sash
+Pikachu @ Focus Sash
 Nature: Timid
 Ability: Lightning Rod
 Level: 52
 IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Bouncy Bubble
 - Thunder
 - Fake Out
@@ -5318,13 +5288,22 @@ Milotic @ Sitrus Berry
 Nature: Modest
 Ability: Competitive
 Level: 52
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 54 SpA
-Ball: Great Ball
 - Bouncy Bubble
 - Ice Beam
 - Mirror Coat
 - Hidden Power
+
+Goodra Hisui @ Assault Vest
+Nature: Modest
+Ability: Gooey
+Level: 51
+EVs: 252 HP / 54 Def
+- Surf
+- Dragon Pulse
+- Flash Cannon
+- Thunder
 
 Tatsugiri @ Tatsugirinite
 Nature: Modest
@@ -5336,16 +5315,6 @@ Ball: Great Ball
 - Dragon Pulse
 - Icy Wind
 - Rapid Spin
-
-Goodra Hisui @ Assault Vest
-Nature: Modest
-Ability: Gooey
-Level: 51
-EVs: 252 HP / 54 Def
-- Surf
-- Dragon Pulse
-- Flash Cannon
-- Thunder
 
 === TRAINER_BIRD_KEEPER_JACOB ===
 Name: JACOB
@@ -5362,7 +5331,6 @@ Nature: Timid
 Ability: Cursed Body
 Level: 51
 EVs: 252 SpA / 54 Spe
-Ball: Dusk Ball
 - Shadow Ball
 - Thunder
 - Draco Meteor
@@ -5373,7 +5341,6 @@ Nature: Timid
 Ability: Volt Absorb
 Level: 52
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Hurricane
 - Thunder
 - Weather Ball
@@ -5384,7 +5351,6 @@ Nature: Modest
 Ability: Berserk
 Level: 51
 EVs: 252 HP / 54 SpA
-Ball: Great Ball
 - Roost
 - Dragon Pulse
 - Hydro Pump
@@ -9082,7 +9048,6 @@ Ability: Aerilate
 Level: 67
 IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe
-Ball: Great Ball
 - Boomburst
 - U Turn
 
@@ -9091,7 +9056,6 @@ Nature: Timid
 Ability: Sheer Force
 Level: 68
 EVs: 252 SpA / 4 SpD / 252 Spe
-Ball: Great Ball
 - Bug Buzz
 - U Turn
 - Focus Blast
@@ -9102,7 +9066,6 @@ Nature: Timid
 Ability: Battle Bond
 Level: 68
 EVs: 252 SpA / 4 SpD / 252 Spe
-Ball: Dusk Ball
 - Hydro Pump
 - Water Shuriken
 - Dark Pulse
@@ -9113,7 +9076,6 @@ Nature: Adamant
 Ability: Sniper
 Level: 54
 EVs: 252 Atk / 4 SpD / 252 Spe
-Ball: Ultra Ball
 - Wicked Blow
 - Cross Poison
 
@@ -9122,7 +9084,6 @@ Nature: Timid
 Ability: Quark Drive
 Level: 54
 EVs: 252 Atk / 4 Def / 252 Spe
-Ball: Ultra Ball
 - Close Combat
 - Spirit Break
 - Knock Off
@@ -9188,7 +9149,6 @@ Ability: Magic Bounce
 Level: 43
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 0 Spe
-Ball: Love Ball
 - Trick Room
 - Expanding Force
 - Draining Kiss
@@ -9211,7 +9171,6 @@ Ability: Protosynthesis
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Ball: Dusk Ball
 - Knock Off
 - Leaf Blade
 - Close Combat
@@ -9223,7 +9182,6 @@ Ability: Trace
 Level: 43
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 0 Atk / 54 Def / 0 SpA / 0 SpD / 0 Spe
-Ball: Ultra Ball
 - Trick Room
 - Teleport
 - Ice Beam
@@ -9235,7 +9193,6 @@ Ability: Guts
 Level: 45
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 52 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Ball: Ultra Ball
 - Fire Punch
 - High Horsepower
 - Facade
@@ -9247,7 +9204,6 @@ Ability: Levitate
 Level: 45
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 EVs: 252 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 0 Spe
-Ball: Ultra Ball
 - Psychic
 - Flash Cannon
 - Ally Switch
@@ -10192,14 +10148,31 @@ Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 Items: Mega Ring
 Boss: Yes
 
-Chimecho @ Chimechite
-Level: 33
+Tatsugiri @ Tatsugirinite
+Nature: Modest
+Ability: Storm Drain
+Level: 52
+EVs: 54 HP / 252 SpA
+Ball: Great Ball
+- Muddy Water
+- Dragon Pulse
+- Icy Wind
+- Rapid Spin
+
+Milotic @ Sitrus Berry
+Ability: Competitive
+Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 54 SpA
+- Bouncy Bubble
+- Aerial Ace
+- Slash
+- Fire Spin
 
 === TRAINER_CHANNELER_HOPE ===
 Name: Hope
@@ -10479,7 +10452,6 @@ Nature: Timid
 Ability: Shadow Tag
 Level: 51
 EVs: 252 SpA / 54 Spe
-Ball: Ultra Ball
 - Fire Blast
 - Solar Beam
 - Shadow Ball
@@ -10490,7 +10462,6 @@ Nature: Bold
 Ability: Natural Cure
 Level: 51
 EVs: 252 HP / 54 Def 
-Ball: Ultra Ball
 - Fire Blast
 - Hyper Voice
 - Roost
@@ -10530,7 +10501,6 @@ Nature: Adamant
 Ability: Rock Head
 Level: 51
 EVs: 252 Atk / 4 Def / 252 Spe
-Ball: Ultra Ball
 - Head Smash
 - Solar Beam
 - Flare Blitz
@@ -10541,7 +10511,6 @@ Nature: Bold
 Ability: Chlorophyll
 Level: 52
 EVs: 252 HP / 54 Def 
-Ball: Ultra Ball
 - Flamethrower
 - Solar Beam
 - Knock Off
@@ -10766,7 +10735,6 @@ Nature: Jolly
 Ability: Gorilla Tactics
 Level: 51
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - U Turn
 - Flare Blitz
 - Icicle Crash
@@ -10777,7 +10745,6 @@ Nature: Jolly
 Ability: Slush Rush
 Level: 51
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - Swords Dance
 - Earthquake
 - Iron Head
@@ -10788,7 +10755,6 @@ Nature: Careful
 Ability: Iron Fist
 Level: 51
 EVs: 252 HP / 54 SpD
-Ball: Great Ball
 - Drain Punch
 - Mach Punch
 - Knock Off
@@ -14802,7 +14768,6 @@ Nature: Timid
 Ability: Sheer Force
 Level: 50
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - U-Turn
 - Bug Buzz
 - Focus Blast
@@ -14813,7 +14778,6 @@ Nature: Careful
 Ability: Sand Force
 Level: 50
 EVs: 252 HP / 54 Atk 
-Ball: Great Ball
 - Earthquake
 - Stone Edge
 - Explosion
@@ -14825,7 +14789,6 @@ Ability: Technician
 Level: 50
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
 EVs: 54 SpA / 252 Spe
-Ball: Great Ball
 - Giga Drain
 - Weather Ball
 - Hidden Power
@@ -14836,7 +14799,6 @@ Nature: Jolly
 Ability: Sand Rush
 Level: 50
 EVs: 252 Atk / 54 Spe
-Ball: Great Ball
 - Last Respects
 - Body Press
 - Fire Fang
@@ -17201,7 +17163,6 @@ Nature: Adamant
 Ability: Pure Power
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Fake Out
 - Rock Smash
 - Bullet Punch
@@ -17212,7 +17173,6 @@ Nature: Adamant
 Ability: Adaptability
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Aqua Jet
 - Aerial Ace
 - Rock Tomb
@@ -17223,7 +17183,6 @@ Nature: Lonely
 Ability: Simple
 Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Ancient Power
 - Flame Charge
 - Rock Tomb
@@ -17234,7 +17193,6 @@ Nature: Adamant
 Ability: Unburden
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Ultra Ball
 - Power Up Punch
 - Bullet Seed
 - Drain Punch
@@ -17258,7 +17216,6 @@ Nature: Bashful
 Ability: Technician
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Bug Bite
 - Bullet Seed
 - Bulldoze
@@ -17269,7 +17226,6 @@ Nature: Bashful
 Ability: shield dust
 Level: 10
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Ultra Ball
 - Toxic
 - Protect
 - Roost
@@ -17280,7 +17236,6 @@ Nature: Bashful
 Ability: prankster
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Struggle Bug
 - Mega Drain
 - Shock Wave
@@ -17304,7 +17259,6 @@ Nature: Bashful
 Ability: Skill Link
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Flame Charge
 - Pluck
 - Bullet Seed
@@ -17315,7 +17269,6 @@ Nature: Bashful
 Ability: Volt Absorb
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 31 Spe
-Ball: Great Ball
 - Volt Switch
 - Air Slash
 - Hidden Power
@@ -17326,7 +17279,6 @@ Nature: Bashful
 Ability: Speed Boost
 Level: 11
 IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 30 SpD / 30 Spe
-Ball: Great Ball
 - Mega Drain
 - Ancient Power
 - Hidden Power
@@ -17337,7 +17289,6 @@ Nature: Bashful
 Ability: Hustle
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Aerial Ace
 - Quick Attack
 - Reversal
@@ -17348,7 +17299,6 @@ Nature: Bashful
 Ability: Scrappy
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Ultra Ball
 - Rock Smash
 - Slam
 - Brutal Swing
@@ -17371,7 +17321,6 @@ Nature: Careful
 Ability: Sand Stream
 Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Bulldoze
 - Rock Tomb
 - Toxic
@@ -17381,7 +17330,6 @@ Cacnea @ Eviolite
 Nature: Bashful
 Ability: Sand Rush
 Level: 12
-Ball: Great Ball
 - Power Up Punch
 - Bullet Seed
 - Thunder Punch
@@ -17392,7 +17340,6 @@ Nature: Bashful
 Ability: Levitate
 Level: 12
 IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 30 SpD / 31 Spe
-Ball: Ultra Ball
 - Ancient Power
 - Psybeam
 - Hidden Power
@@ -17403,7 +17350,6 @@ Nature: Bashful
 Ability: storm drain
 Level: 12
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe
-Ball: Great Ball
 - Stockpile
 - Recover
 - Hidden Power
@@ -17413,7 +17359,6 @@ Archen @ Iapapa Berry
 Nature: Bashful
 Ability: Defeatist
 Level: 13
-Ball: Great Ball
 - Wing Attack
 - Rock Tomb
 - Bulldoze
@@ -17424,7 +17369,6 @@ Nature: Bashful
 Ability: Filter
 Level: 14
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
-Ball: Great Ball
 - Bulldoze
 - Gyro Ball
 - Toxic
@@ -17446,7 +17390,6 @@ Thwackey @ Eviolite
 Nature: Adamant
 Ability: Grassy Surge
 Level: 16
-Ball: Great Ball
 - Fake Out
 - Grassy Glide
 - Knock Off
@@ -17457,7 +17400,6 @@ Nature: Naive
 Ability: Reckless
 Level: 16
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
-Ball: Great Ball
 - Mega Drain
 - Self Destruct
 - Volt Switch
@@ -17467,7 +17409,6 @@ Swoobat @ Grassy Seed
 Nature: Timid
 Ability: Simple
 Level: 15
-Ball: Ultra Ball
 - Calm Mind
 - Air Cutter
 - Psybeam
@@ -17477,7 +17418,6 @@ Skiddo @ Miracle Seed
 Nature: Impish
 Ability: Grass Pelt
 Level: 15
-Ball: Great Ball
 - Horn Leech
 - Brick Break
 - Rock Slide
@@ -17487,7 +17427,6 @@ Sableye @ Leftovers
 Nature: Careful
 Ability: Prankster
 Level: 15
-Ball: Great Ball
 - Will O Wisp
 - Recover
 - Protect
@@ -17510,7 +17449,6 @@ Glimmet @ Shuca Berry
 Nature: Bashful
 Ability: Toxic Debris
 Level: 16
-Ball: Great Ball
 - Ancient Power
 - Venoshock
 - Mud Shot
@@ -17520,7 +17458,6 @@ Seviper @ Shuca Berry
 Nature: Bashful
 Ability: FATAL PRECISION
 Level: 15
-Ball: Great Ball
 - Mega Drain
 - Poison Fang
 - Bulldoze
@@ -17530,7 +17467,6 @@ Houndour @ Focus Sash
 Nature: Timid
 Level: 16
 IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
-Ball: Dusk Ball
 - Nasty Plot
 - Incinerate
 - Snarl
@@ -17540,7 +17476,6 @@ Mightyena @ Berry Juice
 Nature: Bashful
 Ability: Strong Jaw
 Level: 18
-Ball: Ultra Ball
 - Bite
 - Ice Fang
 - Poison Fang
@@ -17550,7 +17485,6 @@ Fearow @ Muscle Band
 Nature: Bashful
 Ability: Technician
 Level: 16
-Ball: Great Ball
 - Pursuit
 - Pluck
 - Drill Run

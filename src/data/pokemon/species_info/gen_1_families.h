@@ -3303,6 +3303,63 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .randomizerMode = MON_RANDOMIZER_INVALID
     },
 
+    
+    [SPECIES_PIKACHU_ALOLA] =
+    {
+        .baseHP        = 35,
+        .baseAttack    = 55,
+        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
+        .baseSpeed     = 90,
+        .baseSpAttack  = 50,
+        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
+        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_WATER),
+        .catchRate = 190,
+        .expYield = PIKACHU_EXP_YIELD,
+        .evYield_Speed = 2,
+        .genderRatio = MON_MALE,
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
+        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("Pikachu"),
+        .cryId = CRY_PIKACHU,
+        .natDexNum = NATIONAL_DEX_PIKACHU,
+        .categoryName = _("Mouse"),
+        .height = 4,
+        .weight = 60,
+        .description = COMPOUND_STRING(
+            "This Pikachu wears its partner's cap, which\n"
+            "is proof of the strong bond Pikachu and\n"
+            "its partner formed during adventures\n"
+            "across the Alola region together."),
+        .pokemonScale = 479,
+        .pokemonOffset = 19,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_PikachuAlola,
+        .frontPicSize = MON_COORDS_SIZE(48, 48),
+        .frontPicYOffset = 9,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_PikachuAlola,
+        .backPicSize = MON_COORDS_SIZE(64, 56),
+        .backPicYOffset = 4,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_PikachuAlola,
+        .shinyPalette = gMonShinyPalette_PikachuAlola,
+        .iconSprite = gMonIcon_PikachuAlola,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
+        SHADOW(-3, 5, SHADOW_SIZE_M)
+        FOOTPRINT(Pikachu)
+        .levelUpLearnset = sPikachuLevelUpLearnset,
+        .teachableLearnset = sPikachuTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
+        .randomizerMode = MON_RANDOMIZER_INVALID
+    },
+    
 #endif //P_COSPLAY_PIKACHU_FORMS
 
 #if P_CAP_PIKACHU_FORMS
@@ -3587,61 +3644,6 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .randomizerMode = MON_RANDOMIZER_INVALID
     },
 
-    [SPECIES_PIKACHU_ALOLA] =
-    {
-        .baseHP        = 35,
-        .baseAttack    = 55,
-        .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
-        .baseSpeed     = 90,
-        .baseSpAttack  = 50,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_6 ? 50 : 40,
-        .types = MON_TYPES(TYPE_ELECTRIC, TYPE_WATER),
-        .catchRate = 190,
-        .expYield = PIKACHU_EXP_YIELD,
-        .evYield_Speed = 2,
-        .genderRatio = MON_MALE,
-        .eggCycles = 10,
-        .friendship = STANDARD_FRIENDSHIP,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
-        .bodyColor = BODY_COLOR_YELLOW,
-        .speciesName = _("Pikachu"),
-        .cryId = CRY_PIKACHU,
-        .natDexNum = NATIONAL_DEX_PIKACHU,
-        .categoryName = _("Mouse"),
-        .height = 4,
-        .weight = 60,
-        .description = COMPOUND_STRING(
-            "This Pikachu wears its partner's cap, which\n"
-            "is proof of the strong bond Pikachu and\n"
-            "its partner formed during adventures\n"
-            "across the Alola region together."),
-        .pokemonScale = 479,
-        .pokemonOffset = 19,
-        .trainerScale = 256,
-        .trainerOffset = 0,
-        .frontPic = gMonFrontPic_PikachuAlola,
-        .frontPicSize = MON_COORDS_SIZE(48, 48),
-        .frontPicYOffset = 9,
-        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
-        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        .backPic = gMonBackPic_PikachuAlola,
-        .backPicSize = MON_COORDS_SIZE(64, 56),
-        .backPicYOffset = 4,
-        //.backAnimId = BACK_ANIM_NONE,
-        .palette = gMonPalette_PikachuAlola,
-        .shinyPalette = gMonShinyPalette_PikachuAlola,
-        .iconSprite = gMonIcon_PikachuAlola,
-        .iconPalIndex = 0,
-        .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
-        SHADOW(-3, 5, SHADOW_SIZE_M)
-        FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
-    },
 
     [SPECIES_PIKACHU_PARTNER] =
     {

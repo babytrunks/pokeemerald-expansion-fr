@@ -1006,6 +1006,12 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_PikachuLibre[] = INCBIN_U16("graphics/pokemon/pikachu/libre/shiny.gbapal");
     const u8 gMonIcon_PikachuLibre[] = INCBIN_U8("graphics/pokemon/pikachu/libre/icon.4bpp");
 
+    const u32 gMonFrontPic_PikachuAlola[] = INCBIN_U32("graphics/pokemon/pikachu/alola/front.4bpp.smol");
+    const u16 gMonPalette_PikachuAlola[] = INCBIN_U16("graphics/pokemon/pikachu/alola/normal.gbapal");
+    const u32 gMonBackPic_PikachuAlola[] = INCBIN_U32("graphics/pokemon/pikachu/alola/back.4bpp.smol");
+    const u16 gMonShinyPalette_PikachuAlola[] = INCBIN_U16("graphics/pokemon/pikachu/alola/shiny.gbapal");
+    const u8 gMonIcon_PikachuAlola[] = INCBIN_U8("graphics/pokemon/pikachu/alola/icon.4bpp");
+
 #if OW_POKEMON_OBJECT_EVENTS
     // const u32 gObjectEventPic_PikachuCosplay[] = INCBIN_COMP("graphics/pokemon/pikachu/cosplay/overworld.4bpp");
     // const u32 gObjectEventPic_PikachuRockStar[] = INCBIN_COMP("graphics/pokemon/pikachu/rock_star/overworld.4bpp");
@@ -1047,11 +1053,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_PikachuKalos[] = INCBIN_U16("graphics/pokemon/pikachu/kalos/shiny.gbapal");
     const u8 gMonIcon_PikachuKalos[] = INCBIN_U8("graphics/pokemon/pikachu/kalos/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuAlola[] = INCBIN_U32("graphics/pokemon/pikachu/alola/front.4bpp.smol");
-    const u16 gMonPalette_PikachuAlola[] = INCBIN_U16("graphics/pokemon/pikachu/alola/normal.gbapal");
-    const u32 gMonBackPic_PikachuAlola[] = INCBIN_U32("graphics/pokemon/pikachu/alola/back.4bpp.smol");
-    const u16 gMonShinyPalette_PikachuAlola[] = INCBIN_U16("graphics/pokemon/pikachu/alola/shiny.gbapal");
-    const u8 gMonIcon_PikachuAlola[] = INCBIN_U8("graphics/pokemon/pikachu/alola/icon.4bpp");
+
 
     const u32 gMonFrontPic_PikachuPartner[] = INCBIN_U32("graphics/pokemon/pikachu/partner/front.4bpp.smol");
     const u16 gMonPalette_PikachuPartner[] = INCBIN_U16("graphics/pokemon/pikachu/partner/normal.gbapal");
