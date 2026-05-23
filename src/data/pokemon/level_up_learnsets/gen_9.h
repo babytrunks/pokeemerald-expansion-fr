@@ -1265,7 +1265,6 @@ static const struct LevelUpMove sGloomLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sVileplumeLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_PETAL_BLIZZARD),
     LEVEL_UP_MOVE( 1, MOVE_ACID),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
@@ -1277,7 +1276,8 @@ static const struct LevelUpMove sVileplumeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
     LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
-    LEVEL_UP_MOVE(33, MOVE_GIGA_DRAIN),
+    LEVEL_UP_MOVE(34, MOVE_PETAL_BLIZZARD),
+    LEVEL_UP_MOVE(37, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE(38, MOVE_GROWTH),
     LEVEL_UP_MOVE(46, MOVE_STRENGTH_SAP),
     LEVEL_UP_END
@@ -1285,7 +1285,6 @@ static const struct LevelUpMove sVileplumeLevelUpLearnset[] = {
 
 #if P_GEN_2_CROSS_EVOS
 static const struct LevelUpMove sBellossomLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_PETAL_BLIZZARD),
     LEVEL_UP_MOVE( 1, MOVE_ACID),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),
@@ -1297,7 +1296,8 @@ static const struct LevelUpMove sBellossomLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_GIGA_DRAIN),
     LEVEL_UP_MOVE( 1, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 1, MOVE_MOONLIGHT),
-    LEVEL_UP_MOVE(33, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(34, MOVE_PETAL_BLIZZARD),
+    LEVEL_UP_MOVE(37, MOVE_MOONBLAST),
     LEVEL_UP_MOVE(44, MOVE_QUIVER_DANCE),
     LEVEL_UP_MOVE(51, MOVE_STRENGTH_SAP),
     LEVEL_UP_END
@@ -2017,10 +2017,6 @@ static const struct LevelUpMove sWeepinbellLevelUpLearnset[] = {
 
 //done
 static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_LEAF_BLADE),
-    LEVEL_UP_MOVE( 1, MOVE_STOCKPILE),
-    LEVEL_UP_MOVE( 1, MOVE_SPIT_UP),
-    LEVEL_UP_MOVE( 1, MOVE_SWALLOW),
     LEVEL_UP_MOVE( 1, MOVE_VINE_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 1, MOVE_ACID),
@@ -2033,8 +2029,12 @@ static const struct LevelUpMove sVictreebelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_GASTRO_ACID),
     LEVEL_UP_MOVE(30, MOVE_GROWTH),
     LEVEL_UP_MOVE(33, MOVE_POISON_JAB),
+    LEVEL_UP_MOVE(35, MOVE_LEAF_BLADE),
     LEVEL_UP_MOVE(36, MOVE_SLAM),
     LEVEL_UP_MOVE(39, MOVE_POWER_WHIP),
+    LEVEL_UP_MOVE(42, MOVE_STOCKPILE),
+    LEVEL_UP_MOVE(42, MOVE_SPIT_UP),
+    LEVEL_UP_MOVE(42, MOVE_SWALLOW),
     LEVEL_UP_MOVE(44, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE(48, MOVE_STRENGTH_SAP),
     LEVEL_UP_END

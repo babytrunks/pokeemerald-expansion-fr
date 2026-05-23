@@ -2449,10 +2449,10 @@ PalletTown_ProfessorOaksLab_Text_HelpWithNatureSubQuest4::
 	.string "the subject's traits for testing.$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsNotALaxNature:
-	.string "Eh, no.$"
+	.string "No, I need a Pokémon with a Lax\nNature following you.$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsNotAPersimBerry:
-	.string "Eh, no.$"
+	.string "No, I need a Persim Berry.$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsALaxNature:
 	.string ".{PAUSE 200}.{PAUSE 200}.{PAUSE 200}Yes, that's a Lax Nature Pokémon!\n"
@@ -2474,7 +2474,7 @@ PalletTown_ProfessorOaksLab_Text_NeedGenderless:
 	.string "Pokémon. Can you bring one?$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsNotAGenderless:
-	.string "Eh, no.$"
+	.string "No, I need a gender-less Pokémon\nfollowing you.$"
 
 PalletTown_ProfessorOaksLab_Text_ThatsGenderless:
 	.string "Yes, that's what I'm looking for! One sec…$"
@@ -2502,7 +2502,7 @@ PalletTown_ProfessorOaksLab_Text_ThatsEverstone:
 	.string "Aide should be able to help you as well.$"
 
 PalletTown_ProfessorOaksLab_Text_Aide2StartNatureChangeChecks_NoEverstone:
-	.string "Eh, no.$"
+	.string "No, I still need an Everstone.$"
 
 PalletTown_ProfessorOaksLab_Text_InterestedInNatureChange:
 	.string "{COLOR BLUE}Are you interested in swapping\n"

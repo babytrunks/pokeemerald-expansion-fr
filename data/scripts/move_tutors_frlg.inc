@@ -514,6 +514,61 @@ FourIsland_House8_EventScript_BodySlamTutor::
 	goto EventScript_BodySlamTaught
 	end
 
+FourIsland_House9_EventScript_BodySlamTutor::
+	lock
+	faceplayer
+	msgbox Text_BodySlamTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	call EventScript_CanOnlyBeLearnedOnce
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	msgbox Text_BodySlamWhichMon
+	setvar VAR_0x8005, MOVE_ALLURING_VOICE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_TAIL_SLAP
+	special ChooseMonForMoveTutor
+	setvar VAR_0x8005, MOVE_ROCK_BLAST
+	special ChooseMonForMoveTutor
+	setvar VAR_0x8005, MOVE_ICICLE_SPEAR
+	special ChooseMonForMoveTutor
+	setvar VAR_0x8005, MOVE_FOUL_PLAY
+	special ChooseMonForMoveTutor
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
+	goto EventScript_BodySlamTaught
+	end
+
+FourIsland_House10_EventScript_BodySlamTutor::
+	lock
+	faceplayer
+	msgbox Text_BodySlamTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	call EventScript_CanOnlyBeLearnedOnce
+	goto_if_eq VAR_RESULT, NO, EventScript_BodySlamDeclined
+	msgbox Text_BodySlamWhichMon
+	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_DRILL_RUN
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_BLAZE_KICK
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_PAIN_SPLIT
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_SWORDS_DANCE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_NASTY_PLOT
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_IRON_DEFENSE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_BULK_UP
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_CALM_MIND
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_METEOR_BEAM
+	call EventScript_ChooseMoveTutorMon
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
+	goto EventScript_BodySlamTaught
+	end
+
+
 EventScript_BodySlamDeclined::
 	msgbox Text_BodySlamDeclined
 	release

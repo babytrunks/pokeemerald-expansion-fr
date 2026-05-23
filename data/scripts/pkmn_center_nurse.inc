@@ -314,6 +314,8 @@ PkmnCenterNurse_EventScript_BoulderMoveTutors:
 	case 5, PkmnCenterNurse_Tutor_OminousWind
 	case 6, PkmnCenterNurse_Tutor_AncientPower
 	case 7, PkmnCenterNurse_Tutor_VacuumWave
+	goto PkmnCenterNurse_EventScript_WantMoveTutor
+	
 	end
 
 PkmnCenterNurse_EventScript_FangTutors:
@@ -339,6 +341,7 @@ PkmnCenterNurse_EventScript_CascadeMoveTutors:
 	case 6, PkmnCenterNurse_Tutor_Hex
 	case 7, PkmnCenterNurse_Tutor_StompingTantrum
 	case 8, PkmnCenterNurse_Tutor_SeismicToss
+	goto PkmnCenterNurse_EventScript_WantMoveTutor
 	end
 
 PkmnCenterNurse_EventScript_VermFanClubTutors:
@@ -497,6 +500,50 @@ PkmnCenterNurse_Tutor_FocusPunch:
 	setvar VAR_0x8005, MOVE_FOCUS_PUNCH
 	goto PkmnCenterNurse_Tutor_TeachMove
 
+PkmnCenterNurse_Tutor_PsychicFangs:
+	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_DrillRun:
+	setvar VAR_0x8005, MOVE_DRILL_RUN
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_BlazeKick:
+	setvar VAR_0x8005, MOVE_BLAZE_KICK
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_PainSplit:
+	setvar VAR_0x8005, MOVE_PAIN_SPLIT
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_AlluringVoice:
+	setvar VAR_0x8005, MOVE_ALLURING_VOICE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_FoulPlay:
+	setvar VAR_0x8005, MOVE_FOUL_PLAY
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_SwordsDance:
+	setvar VAR_0x8005, MOVE_SWORDS_DANCE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_NastyPlot:
+	setvar VAR_0x8005, MOVE_NASTY_PLOT
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_BulkUp:
+	setvar VAR_0x8005, MOVE_BULK_UP
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_CalmMind:
+	setvar VAR_0x8005, MOVE_CALM_MIND
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_MeteorBeam:
+	setvar VAR_0x8005, MOVE_METEOR_BEAM
+	goto PkmnCenterNurse_Tutor_TeachMove
+
 PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_AirSlash, 0
 	dynmultipush PkmnCenterNurse_Text_MysticalFire, 1
@@ -515,6 +562,7 @@ PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	case 4, PkmnCenterNurse_Tutor_RockBlast
 	case 5, PkmnCenterNurse_Tutor_IcicleSpear
 	case 6, PkmnCenterNurse_Tutor_Counter
+	goto PkmnCenterNurse_EventScript_WantMoveTutor
 	end
 
 PkmnCenterNurse_EventScript_CounterTutor:
@@ -528,6 +576,7 @@ PkmnCenterNurse_EventScript_RainbowMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_LeafBlade, 3
 	dynmultipush PkmnCenterNurse_Text_PowerGem, 4
 	dynmultipush PkmnCenterNurse_Text_FocusPunch, 5
+	dynmultipush PkmnCenterNurse_Text_PsychicFangs, 6
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
@@ -537,13 +586,40 @@ PkmnCenterNurse_EventScript_RainbowMoveTutors:
 	case 3, PkmnCenterNurse_Tutor_LeafBlade
 	case 4, PkmnCenterNurse_Tutor_PowerGem
 	case 5, PkmnCenterNurse_Tutor_FocusPunch
-	goto EventScript_PkmnCenterNurse_Aide
+	case 6, PkmnCenterNurse_Tutor_PsychicFangs
+	goto PkmnCenterNurse_EventScript_WantMoveTutor
 
 PkmnCenterNurse_EventScript_SoulMoveTutors:
-	goto EventScript_PkmnCenterNurse_Aide
+	dynmultipush PkmnCenterNurse_Text_DrillRun, 0
+	dynmultipush PkmnCenterNurse_Text_BlazeKick, 1
+	dynmultipush PkmnCenterNurse_Text_PainSplit, 2
+	dynmultipush PkmnCenterNurse_Text_AlluringVoice, 3
+	dynmultipush PkmnCenterNurse_Text_FoulPlay, 4
+	dynmultistack 0, 0, FALSE, 5, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_Tutor_DrillRun
+	case 1, PkmnCenterNurse_Tutor_BlazeKick
+	case 2, PkmnCenterNurse_Tutor_PainSplit
+	case 3, PkmnCenterNurse_Tutor_AlluringVoice
+	case 4, PkmnCenterNurse_Tutor_FoulPlay
+	goto PkmnCenterNurse_EventScript_WantMoveTutor
 
 PkmnCenterNurse_EventScript_MarshMoveTutors:
-	goto EventScript_PkmnCenterNurse_Aide
+	dynmultipush PkmnCenterNurse_Text_SwordsDance, 0
+	dynmultipush PkmnCenterNurse_Text_NastyPlot, 1
+	dynmultipush PkmnCenterNurse_Text_BulkUp, 2
+	dynmultipush PkmnCenterNurse_Text_CalmMind, 3
+	dynmultipush PkmnCenterNurse_Text_MeteorBeam, 4
+	dynmultistack 0, 0, FALSE, 5, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_Tutor_SwordsDance
+	case 1, PkmnCenterNurse_Tutor_NastyPlot
+	case 2, PkmnCenterNurse_Tutor_BulkUp
+	case 3, PkmnCenterNurse_Tutor_CalmMind
+	case 4, PkmnCenterNurse_Tutor_MeteorBeam
+	goto PkmnCenterNurse_EventScript_WantMoveTutor
 
 PkmnCenterNurse_EventScript_VolcanoMoveTutors:
 	goto EventScript_PkmnCenterNurse_Aide
@@ -772,8 +848,41 @@ PkmnCenterNurse_Text_PowerGem:
 PkmnCenterNurse_Text_FocusPunch:
 	.string "Focus Punch$"
 
+PkmnCenterNurse_Text_PsychicFangs:
+	.string "Psychic Fangs$"
+
 PkmnCenterNurse_Text_Counter:
 	.string "Counter$"
+
+PkmnCenterNurse_Text_DrillRun:
+	.string "Drill Run$"
+
+PkmnCenterNurse_Text_BlazeKick:
+	.string "Blaze Kick$"
+
+PkmnCenterNurse_Text_PainSplit:
+	.string "Pain Split$"
+
+PkmnCenterNurse_Text_AlluringVoice:
+	.string "Alluring Voice$"
+
+PkmnCenterNurse_Text_FoulPlay:
+	.string "Foul Play$"
+
+PkmnCenterNurse_Text_SwordsDance:
+	.string "Swords Dance$"
+
+PkmnCenterNurse_Text_NastyPlot:
+	.string "Nasty Plot$"
+
+PkmnCenterNurse_Text_BulkUp:
+	.string "Bulk Up$"
+
+PkmnCenterNurse_Text_CalmMind:
+	.string "Calm Mind$"
+
+PkmnCenterNurse_Text_MeteorBeam:
+	.string "Meteor Beam$"
 
 PkmnCenterNurse_Text_SeismicToss:
 	.string "Seismic Toss$"

@@ -458,7 +458,7 @@
     },
     {
       "id": "MAPSEC_SAFARI_ZONE",
-      "name": "SAFARI ZONE",
+      "name": "Safari Zone",
       "x": 16,
       "y": 2,
       "width": 1,
@@ -1077,7 +1077,7 @@
     },
     {
       "id": "MAPSEC_KANTO_SAFARI_ZONE",
-      "name": "SAFARI ZONE",
+      "name": "Safari Zone",
       "x": 12,
       "y": 12,
       "width": 1,

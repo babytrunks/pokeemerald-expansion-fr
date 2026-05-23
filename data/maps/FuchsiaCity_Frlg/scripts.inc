@@ -148,11 +148,14 @@ EventScript_brendanfuschia_Start::
     waitmovement 0
     closedoor 0x18, 0x5
     waitdooranim
-    msgbox gText_brendanfuschia_1, MSGBOX_NPC
+    playbgm MUS_ENCOUNTER_BRENDAN, FALSE
+    msgbox gText_brendanfuschia_1
     trainerbattle_no_intro TRAINER_BRENDAN_FUSCHIA, gText_brendanfuschia_Defeat  
-    msgbox gText_brendanfuschia_2, MSGBOX_NPC
+    msgbox gText_brendanfuschia_2
     giveitem ITEM_SCEPTILITE  
-    msgbox gText_brendanfuschia_3, MSGBOX_NPC
+    msgbox gText_brendanfuschia_3, MSGBOX_DEFAULT
+	closemessage
+
     setvar VAR_TRIGGER_BRENDAN_FUSCHIA, 1 
     applymovement 0x11, Movement_brendanfuschia_Movedown2
     waitmovement 0
@@ -162,7 +165,7 @@ EventScript_brendanfuschia_Start::
 
 
 Movement_brendanfuschia_Movedown:
-    walk_down  @ CFRU byte 0x10 = walk south one step
+    walk_down  
     step_end
 
 Movement_brendanfuschia_Lookup:
@@ -175,6 +178,9 @@ Movement_brendanfuschia_Movedown2:
     walk_down
     walk_down
     walk_down
+    walk_left
+    walk_left
+    walk_left
     walk_down
     walk_down
     walk_down
@@ -185,7 +191,7 @@ Movement_brendanfuschia_Movedown2:
 gText_brendanfuschia_1:
     .string "Oh hey {PLAYER}!\p"
     .string "Fancy meeting you here.\p"
-    .string "I've recently obtained the Mega Ring{COLOR BLUE},\n"
+    .string "I've recently obtained the Mega Ring,\n"
     .string "so I'd like to put myself to the test!\p"
     .string "I see you've got one too!\p"
     .string "Let's not hold back then!$"
@@ -200,7 +206,13 @@ gText_brendanfuschia_2:
     .string "Stone.$"
 
 gText_brendanfuschia_3:
-    .string "Safe travels pal!$"
+    .string "If you're looking where to go next,\n"
+    .string "you can find HM Surf in the Safari Zone.\p"
+    .string "That'll allow you to travel to\n"
+    .string "Cinnabar Island. Though, you'll need\l"
+    .string "Koga's badge to Surf.\p"
+    .string "Anyway, I'm sure you already have it\n"
+    .string "figured out. Safe travels pal!$"  
 
 FuchsiaCity_Text_DidYouTrySafariGame::
     .string "Did you try the SAFARI GAME?\p"
@@ -280,10 +292,6 @@ FuchsiaCity_Text_KabutoSign::
     .string "An extremely rare Pokémon that was\l"
     .string "regenerated from a fossil.$"
 
-@ Unused. May have been meant to be the placeholder text for the zoo mons, similar to RB's "!" text
-FuchsiaCity_Text_Ellipsis::
-    .string "……$"
-
 Text_SubstituteTeach::
     .string "Aww, I wish I was a KANGASKHAN\n"
     .string "baby.\p"
@@ -313,4 +321,3 @@ FuchsiaCity_Text_MyFatherIsGymLeader::
     .string "this town.\p"
     .string "I'm training to use POISON Pokémon\n"
     .string "as well as my father.$"
-

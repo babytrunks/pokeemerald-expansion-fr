@@ -1110,13 +1110,25 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Lopunny
-Level: 30
+Whimsicott @ Wide Lens
+Level: 31
+Nature: Modest
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Cotton Spore
+- Leech Seed
+- Growth
+- Mega Drain
 
-Pachirisu
-Level: 32
+Sylveon @ Fairy Feather 
+Level: 33
+Nature: Modest
+Ability: Pixilate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Swift
+- Mystical Fire
+- Psyshock
+- Shadow Ball
 
 === TRAINER_LASS_ANDREA ===
 Name: Andrea
@@ -2192,21 +2204,43 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electrode-Hisui
-Level: 30
+Porygon @ Eviolite
+Nature: Docile
+Ability: Analytic
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Lock On 
+- Blizzard
+- Thunder
 
-Weezing-Galar
+Morgrem @ Eviolite
+Level: 33
+Nature: Adamant
+Ability: Frisk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- False Surrender
+- Fake Out
+- Jovial Bash
+- Sucker Punch
+
+Clodsire @ Clear Amulet
+Nature: Modest
+Ability: Unaware
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Yawn
+- Mud Shot
+- Sludge Wave
+- Surf
 
-Magneton
+Absol @ Scope Lens
+Nature: Docile
+Ability: Super Luck
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Porygon
-Level: 30
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Slash
+- Shadow Claw
+- Night Slash
 
 === TRAINER_SUPER_NERD_GLENN ===
 Name: Glenn
@@ -5273,7 +5307,7 @@ Dynamic Level Ratio: 90
 Boss: Yes
 Mugshot: Blue
 
-Pikachu @ Focus Sash
+Pikachu Alola @ Light Ball
 Nature: Timid
 Ability: Lightning Rod
 Level: 52
@@ -9041,11 +9075,10 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-
 Swellow @ Choice Specs
 Nature: Timid
 Ability: Aerilate
-Level: 67
+Level: 53
 IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Boomburst
@@ -9054,7 +9087,7 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 Accelgor @ Life Orb
 Nature: Timid
 Ability: Sheer Force
-Level: 68
+Level: 54
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Bug Buzz
 - U Turn
@@ -9064,7 +9097,7 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 Greninja @ Greninjite
 Nature: Timid
 Ability: Battle Bond
-Level: 68
+Level: 54
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Hydro Pump
 - Water Shuriken
@@ -9080,7 +9113,7 @@ EVs: 252 Atk / 4 SpD / 252 Spe
 - Cross Poison
 
 Iron Valiant @ Booster Energy
-Nature: Timid
+Nature: Jolly
 Ability: Quark Drive
 Level: 54
 EVs: 252 Atk / 4 Def / 252 Spe
@@ -9089,8 +9122,19 @@ EVs: 252 Atk / 4 Def / 252 Spe
 - Knock Off
 - Liquidation
 
+Weavile @ Focus Sash
+Nature: Jolly
+Ability: Pickpocket
+Level: 54
+EVs: 252 Atk / 4 Def / 252 Spe
+- Triple Axel
+- Knock Off
+- Low Kick
+- Liquidation
+
+
 === TRAINER_LEADER_BLAINE ===
-Name: BLAINE
+Name: Blaine
 Class: Leader Frlg
 Pic: Leader Blaine Frlg
 Gender: Male
@@ -13812,7 +13856,7 @@ Name: Brendan
 Class: Pkmn Trainer 1
 Pic: Brendan
 Gender: Male
-Music: Girl
+Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Mugshot: Green
@@ -16726,9 +16770,24 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Pelipper
-Level: 22
+Pelipper 
+Ability: Drizzle
+Level: 23
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
+- Air Cutter
+- Knock Off
+- Tailwind
+
+Clauncher @ Wise Glasses
+Ability: Mega Launcher
+Level: 21
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
+- Venoshock
+- Mud Shot
 
 === TRAINER_TED ===
 Name: Ted
@@ -16779,13 +16838,35 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Azumarill
-Level: 21
+Azumarill @ Leftovers
+Ability: Sap Sipper
+Level: 22
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rollout
+- Aqua Tail
+- Defense Curl
+- Aqua Ring
 
-Furfrou
-Level: 21
+Furfrou @ Sitrus Berry
+Ability: Fur Coat
+Level: 22
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Take Down
+- Bite
+- Rock Smash
+- Work Up
+
+Sandygast @ Binding Band
+Ability: Water Compaction
+Level: 22 
+Nature: Quiet
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ominous Wind
+- Sand Tomb
+- Rest
+- Sleep Talk
 
 === TRAINER_AUSTINA ===
 Name: AUSTINA
@@ -16903,8 +16984,24 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
 Swanna
-Level: 22 
+Ability: Hydration
+Level: 23
+Nature: Hasty
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
+- Aerial Ace
+- Icy Wind
+- Feather Dance
+
+Skrelp @ Black Sludge
+Ability: Adaptability
+Level: 21
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Acid Spray
+- Chilling Water
+- Mud Shot
+- Toxic
 
 === TRAINER_ELIJAH ===
 Name: ELIJAH
@@ -17492,20 +17589,50 @@ Level: 16
 
 === TRAINER_AMY_AND_LIV_1 ===
 Name: Amy & Liv
-Class: Twins 
-Pic: Twins 
+Class: Twins
+Pic: Twins
 Gender: Male
 Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Plusle
-Level: 22
+Plusle 
+Ability: Lightning Rod
+Level: 24
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Discharge
+- Grass Knot
 
-Minun
-Level: 22
+Minun 
+Level: 24
+Ability: Volt Absorb
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Discharge
+- Fake Tears
+- Encore
+- Helping Hand
+
+Volbeat @ Heat Rock
+Level: 24
+Ability: Prankster
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Struggle Bug
+- Flash
+- Sunny Day
+- Thunder Wave
+
+Illumise 
+Level: 24
+Ability: Tinted Lens
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Jovial Bash
+- Pounce
+- Growth
+- Moonlight
 
 === TRAINER_ANDREW ===
 Name: Andrew
@@ -17516,47 +17643,94 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Remoraid
-Level: 21
+Octillery
+Ability: Skill Link
+Level: 25
+Nature: Brave
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bullet Seed
+- Rock Blast
+- Bubble Beam
+- Wring Out
 
-Corphish
-Level: 22
+Corphish @ Metronome
+Ability: Shell Armor
+Level: 24
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bubble Beam
+- Hidden Power 
+- Icy Wind
+- Rain Dance
+
+Krabby @ Salac Berry
+Ability: Sheer Force
+Level: 24
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Endure
+- Flail
+- Rock Smash
+- Misty Splatter
 
 === TRAINER_MARCOS ===
 Name: Marcos
-Class: Bird Keeper 
-Pic: Bird Keeper 
+Class: Bird Keeper
+Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Taillow
-Level: 21
+Taillow @ Berry Juice
+Ability: Scrappy
+Level: 24
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rage
+- Wing Attack
+- Quick Attack
+- Reversal
 
-Natu
-Level: 22
+Natu @ Adrenaline Orb
+Ability: Synchronize
+Level: 24
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Me First
+- Night Shade
+- Air Cutter
+- Synchronoise
+
 
 === TRAINER_RHETT ===
 Name: Rhett
-Class: Black Belt 
-Pic: Black Belt 
+Class: Black Belt
+Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Makuhita
-Level: 21
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Stufful @ Red Card
+Ability: Fluffy
+Level: 24
+Nature: Impish
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brutal Swing
+- Stomp
+- Force Palm
+- Wide Guard
 
 Meditite
-Level: 22
+Ability: Pure Power
+Level: 24
+Nature: Hasty
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Calm Mind
+- Confusion
+- Vacuum Wave
 
 === TRAINER_PETE ===
 Name: Pete

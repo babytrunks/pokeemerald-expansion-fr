@@ -1653,7 +1653,7 @@
 #define FLAG_WINGULL_DELIVERED_MAIL          0
 #define FLAG_RECEIVED_20_COINS               0
 #define FLAG_RECEIVED_STARTER_DOLL           0
-#define FLAG_RECEIVED_GOOD_ROD               0
+// #define FLAG_RECEIVED_GOOD_ROD               0
 #define FLAG_REGI_DOORS_OPENED               0
 #define FLAG_RECEIVED_TM_RETURN              0
 #define FLAG_RECEIVED_TM_SLUDGE_BOMB         0
