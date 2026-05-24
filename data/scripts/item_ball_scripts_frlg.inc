@@ -277,8 +277,8 @@ SafariZone_West_EventScript_ItemMaxRevive::
 	finditem ITEM_MAX_REVIVE
 	end
 
-SilphCo_3F_EventScript_ItemGachaVoucher::
-	finditem ITEM_GACHA_VOUCHER
+SilphCo_3F_EventScript_ItemLoadedDice::
+	finditem ITEM_LOADED_DICE
 	end
 
 SilphCo_4F_EventScript_ItemTMDragonClaw::

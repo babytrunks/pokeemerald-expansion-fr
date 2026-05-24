@@ -76,7 +76,8 @@
     F(SEED_BOMB) \
     F(HEAT_CRASH) \
     F(PLAY_ROUGH) \
-    F(HYDRO_PUMP) 
+    F(HYDRO_PUMP) \
+    F(EARTH_POWER)
     
 #define FOREACH_HM(F) \
     F(CUT) \
