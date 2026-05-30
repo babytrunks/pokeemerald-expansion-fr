@@ -793,7 +793,9 @@
     "SixIsland_DottedHole_SapphireRoom_Frlg",
     "SixIsland_PatternBush_Frlg",
     "SixIsland_AlteringCave_Frlg",
-    "ViridianForest_Frlg_2"
+    "ViridianForest_Frlg_2",
+    "SafariZone_Extra_Frlg",
+    "RockTunnel_Extra_Frlg"
   ],
   "gMapGroup_SpecialArea_Frlg": [
     "NavelRock_Exterior_Frlg",

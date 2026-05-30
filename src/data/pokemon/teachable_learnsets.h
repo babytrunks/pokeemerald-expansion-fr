@@ -25632,6 +25632,7 @@ static const u16 sPyroarTeachableLearnset[] = {
     MOVE_ROAR,
     MOVE_ROCK_SMASH,
     MOVE_ROUND,
+    MOVE_SCORCHING_SANDS,
     MOVE_SNARL,
     MOVE_STRENGTH,
     MOVE_SWIFT,

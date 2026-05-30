@@ -115,7 +115,7 @@
 #define TRAINER_BIKER_NIKOLAS                      109
 #define TRAINER_BIKER_JAXON                        110
 #define TRAINER_BIKER_WILLIAM                      111
-#define TRAINER_BIKER_LUKAS                        112
+#define TRAINER_BIKER_LUKAS                        112 // unused
 #define TRAINER_BIKER_ISAAC                        113
 #define TRAINER_BIKER_GERALD                       114
 #define TRAINER_BURGLAR_QUINN                      115
@@ -219,7 +219,7 @@
 #define TRAINER_BIRD_KEEPER_CARTER                 213
 #define TRAINER_BIRD_KEEPER_MITCH                  214
 #define TRAINER_BIRD_KEEPER_BECK                   215
-#define TRAINER_BIRD_KEEPER_MARLON                 216
+#define TRAINER_BIRD_KEEPER_MARLON                 216 // unused
 #define TRAINER_BLACK_BELT_CHUCK                  217
 #define TRAINER_BLACK_BELT_MIKE                    218
 #define TRAINER_BLACK_BELT_HIDEKI                  219

@@ -5042,21 +5042,44 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Drowzee
-Level: 31
+Golem @ Hard Stone
+Ability: Sturdy
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+- Stone Edge
+- Headlong Rush
+- Accelerock
+- Explosion
 
-Drowzee
-Level: 31
+Amoonguss @ Sitrus Berry
+Ability: Regenerator
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+- Spore
+- Giga Drain
+- Clear Smog
+- Foul Play
 
-Kadabra
-Level: 31
+Reuniclus @ Life Orb
+Ability: Magic Guard
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 4 Def 
+- Psyshock
+- Aura Sphere
+- Dazzling Gleam
+- Recover
 
-Drowzee
-Level: 31
+Falinks @ Falinksite
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- No Retreat
+- Close Combat
+- Throat Chop
+- Rock Slide
 
 === TRAINER_JUGGLER_SHAWN ===
 Name: Shawn
@@ -5067,13 +5090,50 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Drowzee
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Forretress @ Custap Berry
+Ability: Sturdy
+Level: 51
+Nature: Relaxed
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+EVs: 252 HP / 4 Def / 252 SpD 
+- Gyro Ball
+- Volt Switch
+- Explosion
+- Stealth Rock
 
-Hypno
-Level: 34
+Weezing-Galar @ Sitrus Berry
+Level: 52
+Ability: Levitate
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 4 SpD 
+- Sludge Wave
+- Fire Blast
+- Will-O-Wisp
+- Strange Steam
+
+Feraligatr @ Life Orb
+Level: 52
+Ability: Sheer Force
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Dragon Dance
+- Waterfall
+- Ice Punch
+- Crunch
+
+Crabominable @ Crabominite
+Level: 52
+Ability: Iron Fist
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD 
+- Mach Punch
+- Ice Shard
+- Ice Hammer
+- Drain Punch
+
 
 === TRAINER_JUGGLER_GREGORY ===
 Name: Gregory
@@ -5142,9 +5202,48 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Hypno
-Level: 38
+Machamp @ Assault Vest
+Level: 50
+Ability: No Guard
+Nature: Adamant
+EVs: 252 HP / 252 Atk
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dynamic Punch
+- Stone Edge
+- Knock Off
+- Bullet Punch
+
+Mr Mime @ White Herb
+Level: 51
+Ability: Soundproof
+Nature: Timid
+EVs: 252 SpA / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psycho Boost
+- Moonblast
+- Focus Blast
+- Thunderbolt
+
+Magmortar @ Magmarizer
+Level: 51
+Ability: Quick Draw
+Nature: Modest
+EVs: 252 SpA / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psycho Boost
+- Moonblast
+- Focus Blast
+- Thunderbolt
+
+Electrode @ Magnet
+Level: 51
+Ability: Galvanize
+Nature: Naive
+EVs: 4 Atk / 252 SpA / 252 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunderbolt
+- Explosion
+- Focus Blast
 
 === TRAINER_JUGGLER_NATE ===
 Name: Nate
@@ -5172,13 +5271,47 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Sandslash
-Level: 34
+Luxray @ Flame Orb
+Ability: Guts
+Nature: Adamant
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Volt Tackle
+- Facade
+- Sucker Punch
+- Trailblaze
 
-Arbok
-Level: 34
+Bewear @ Assault Vest
+Level: 52
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpD 
+- Drain Punch
+- Body Slam
+- Darkest Lariat
+- Iron Head
+
+Jolteon @ Choice Specs
+Level: 52
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 Def / 252 Spe 
+- Volt Switch
+- Thunderbolt
+- Alluring Voice
+- Shadow Ball
+
+Absol @ Absolite Z
+Level: 51
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe 
+- Shadow Sneak
+- Bite
+- Rock Tomb
+- Rock Smash
+
 
 === TRAINER_TAMER_EDGAR ===
 Name: Edgar
@@ -5189,17 +5322,45 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Arbok
-Level: 33
+Tauros @ Life Orb
+Ability: Sheer Force
+Level: 51
+Nature: Naive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpA / 252 Spe
+- Head Charge
+- Rock Slide
+- Ice Beam
+- Fire Blast
 
-Sandslash
-Level: 33
+Ursaring @ Eviolite
+Ability: Guts
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def
+- Body Slam
+- Knock Off
+- Rest
+- Sleep Talk
 
-Arbok
-Level: 33
+Noivern @ Sharp Beak
+Ability: Infiltrator
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 Def / 252 Spe 
+- Aeroblast
+- Dragon Pulse
+- Fire Blast
+- U-Turn
+
+Pyroar @ Pyroarite
+Level: 52
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Torch Song
+- Hyper Voice
+- Scorching Sands
+- Dark Pulse
 
 === TRAINER_TAMER_JASON ===
 Name: Jason

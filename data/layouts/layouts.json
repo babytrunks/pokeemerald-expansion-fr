@@ -10218,6 +10218,32 @@
       "border_filepath": "data/layouts/ViridianForest_2/border.bin",
       "blockdata_filepath": "data/layouts/ViridianForest_2/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_SAFARI_ZONE_EXTRA_FRLG",
+      "name": "SafariZone_Extra_Frlg_Layout",
+      "width": 48,
+      "height": 36,
+      "border_width": 3,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General_Frlg",
+      "secondary_tileset": "gTileset_FuchsiaCity",
+      "border_filepath": "data/layouts/SafariZone_Extra_Frlg/border.bin",
+      "blockdata_filepath": "data/layouts/SafariZone_Extra_Frlg/map.bin",
+      "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_ROCK_TUNNEL_EXTRA_FRLG",
+      "name": "RockTunnel_Extra_Frlg_Layout",
+      "width": 48,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General_Frlg",
+      "secondary_tileset": "gTileset_RockTunnel",
+      "border_filepath": "data/layouts/RockTunnel_Extra2_Frlg_Layout/border.bin",
+      "blockdata_filepath": "data/layouts/RockTunnel_Extra2_Frlg_Layout/map.bin",
+      "layout_version": "frlg"
     }
   ]
 }

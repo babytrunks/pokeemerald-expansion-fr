@@ -805,6 +805,10 @@
         "Move": "MOVE_RAPID_SPIN"
       },
       {
+        "Level": 45,
+        "Move": "MOVE_ACCELEROCK"
+      },
+      {
         "Level": 46,
         "Move": "MOVE_HEADLONG_RUSH"
       },
@@ -3729,7 +3733,10 @@
     "TutorMoves": []
   },
   "ABSOL": {
-    "LevelMoves": [],
+    "LevelMoves": [      {
+        "Level": 1,
+        "Move": "MOVE_SHADOW_SNEAK"
+      }],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -7128,7 +7135,7 @@
   "PYROAR": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [ "MOVE_SCORCHING_SANDS"],
     "EggMoves": [],
     "TutorMoves": []
   },

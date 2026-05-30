@@ -754,9 +754,9 @@
 
 #define FLAG_ROUTE14_TM_PLAY_ROUGH                       0x300
 #define FLAG_SAFFRON_BEAT_DUMBASS_KID                    0x301
-#define FLAG_0x302                               0x302
-#define FLAG_0x303                               0x303
-#define FLAG_0x304                               0x304
+#define FLAG_HIDE_SAFARI_ZONE_MAGMARIZER                 0x302
+#define FLAG_FOUGHT_TERRAKION                            0x303
+#define FLAG_HIDE_TERRAKION                              0x304
 #define FLAG_0x305                               0x305
 #define FLAG_0x306                                 0x306
 #define FLAG_0x307                                0x307

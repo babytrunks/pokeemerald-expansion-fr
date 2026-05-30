@@ -1730,3 +1730,9 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/maps/ViridianForest_Frlg_2/scripts.inc"
 	.include "data/scripts/apricorn_tree.inc"
+
+	.include "data/maps/SafariZone_Extra_Frlg/scripts.inc"
+	.include "data/maps/SafariZone_Extra_Frlg/text.inc"
+
+	.include "data/maps/RockTunnel_Extra_Frlg/scripts.inc"
+	.include "data/maps/RockTunnel_Extra_Frlg/text.inc"
