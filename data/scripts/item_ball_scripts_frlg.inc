@@ -596,7 +596,7 @@ CeladonCity_EventScript_ItemScovillainite::
 	end
 
 RocketHideout_B3F_EventScript_ItemAmuletCoin::
-	finditem ITEM_AMULET_COIN
+	finditem ITEM_RED_CARD
 	end
 
 SafariZone_North_EventScript_ItemQuickClaw::

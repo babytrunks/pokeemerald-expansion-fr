@@ -545,23 +545,18 @@ PkmnCenterNurse_Tutor_MeteorBeam:
 	goto PkmnCenterNurse_Tutor_TeachMove
 
 PkmnCenterNurse_EventScript_ThunderMoveTutors:
-	dynmultipush PkmnCenterNurse_Text_AirSlash, 0
-	dynmultipush PkmnCenterNurse_Text_MysticalFire, 1
-	dynmultipush PkmnCenterNurse_Text_SignalBeam, 2
-	dynmultipush PkmnCenterNurse_Text_TailSlap, 3
-	dynmultipush PkmnCenterNurse_Text_RockBlast, 4
-	dynmultipush PkmnCenterNurse_Text_IcicleSpear, 5
+	dynmultipush PkmnCenterNurse_Text_SignalBeam, 0
+	dynmultipush PkmnCenterNurse_Text_TailSlap, 1
+	dynmultipush PkmnCenterNurse_Text_RockBlast, 2
+	dynmultipush PkmnCenterNurse_Text_IcicleSpear, 3
 	call_if_set FLAG_TUTOR_COUNTER, PkmnCenterNurse_EventScript_CounterTutor
 	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
-	case 0, PkmnCenterNurse_Tutor_AirSlash
-	case 1, PkmnCenterNurse_Tutor_MysticalFire
-	case 2, PkmnCenterNurse_Tutor_SignalBeam
-	case 3, PkmnCenterNurse_Tutor_TailSlap
-	case 4, PkmnCenterNurse_Tutor_RockBlast
-	case 5, PkmnCenterNurse_Tutor_IcicleSpear
-	case 6, PkmnCenterNurse_Tutor_Counter
+	case 0, PkmnCenterNurse_Tutor_SignalBeam
+	case 1, PkmnCenterNurse_Tutor_TailSlap
+	case 2, PkmnCenterNurse_Tutor_RockBlast
+	case 3, PkmnCenterNurse_Tutor_IcicleSpear
 	goto PkmnCenterNurse_EventScript_WantMoveTutor
 	end
 

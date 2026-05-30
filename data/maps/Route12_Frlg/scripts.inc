@@ -41,8 +41,6 @@ Route12_EventScript_Jes::
 	msgbox Route12_Text_GiaIntro
 	trainerbattle_no_intro TRAINER_YOUNG_COUPLE_GIA_JES, Route12_Text_GiaDefeat
 	msgbox Route12_Text_GiaPostBattle
-	giveitem ITEM_TM_DAZZLING_GLEAM
-	msgbox Route12_Text_GiaGiveFloettite
 	giveitem ITEM_FLOETTITE
     release
 	settrainerflag TRAINER_YOUNG_COUPLE_GIA_JES
@@ -55,8 +53,6 @@ Route12_EventScript_Gia::
 	msgbox Route12_Text_GiaIntro
 	trainerbattle_no_intro TRAINER_YOUNG_COUPLE_GIA_JES, Route12_Text_GiaDefeat
 	msgbox Route12_Text_GiaPostBattle
-	giveitem ITEM_TM_DAZZLING_GLEAM
-	msgbox Route12_Text_GiaGiveFloettite
 	giveitem ITEM_FLOETTITE
     release
 	settrainerflag TRAINER_YOUNG_COUPLE_GIA_JES
@@ -226,11 +222,9 @@ Route12_Text_JesNotEnoughMons::
 Route12_Text_GiaPostBattle::
     .string "We thought our love was unbeat-\n"
     .string "able. What a tragic revelation.\p"
-    .string "Take this TM for showing us our\n"
+    .string "Take this Mega Stone for revealing our\n"
     .string "weaknesses.$"
 
-Route12_Text_GiaGiveFloettite:
-    .string "This Mega Stone may suit you too.$"
 
 Route12_Text_GiaIntro::
     .string "Gia: Hey, Jes\p"

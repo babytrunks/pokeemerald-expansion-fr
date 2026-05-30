@@ -19,7 +19,7 @@
     F(DARK_PULSE) \
     F(LIGHT_SCREEN) \
     F(PROTECT) \
-    F(RAIN_DANCE) \
+    F(AIR_SLASH) \
     F(GIGA_DRAIN) \
     F(HYPER_VOICE) \
     F(ICY_WIND) \
@@ -43,7 +43,7 @@
     F(ROCK_TOMB) \
     F(AERIAL_ACE) \
     F(LIQUIDATION) \
-    F(FACADE) \
+    F(MYSTICAL_FIRE) \
     F(DEFOG) \
     F(REST) \
     F(DRAINING_KISS) \
@@ -77,7 +77,10 @@
     F(HEAT_CRASH) \
     F(PLAY_ROUGH) \
     F(HYDRO_PUMP) \
-    F(EARTH_POWER)
+    F(EARTH_POWER) \
+    F(WEATHER_BALL) \
+    F(DRAGON_PULSE) \
+    F(SHADOW_CLAW) 
     
 #define FOREACH_HM(F) \
     F(CUT) \

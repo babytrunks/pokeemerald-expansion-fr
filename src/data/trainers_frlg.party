@@ -320,17 +320,32 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Rattata
-Level: 17
+Lickitung 
+Level: 23
+Nature: Hardy
+Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Disable
+- Stomp
+- Thunder Wave
+- Knock Off
 
-Rattata
-Level: 17
+Oinkologne @ Throat Spray
+Level: 23
+Nature: Modest
+Ability: Thick Fat
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Echoed Voice
+- Snarl
 
-Raticate
-Level: 17
+Trumbeak @ Silk Scarf
+Level: 23
+Nature: Adamant
+Ability: Skill Link
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Attack
+- Bullet Seed
+- Rock Blast
 
 === TRAINER_YOUNGSTER_DAVE ===
 Name: Dave
@@ -398,17 +413,21 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Ledyba
-Level: 7
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Spinarak
-Level: 7
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Beautifly
+Butterfree
+Ability: Compound Eyes
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sleep Powder
+- Mega Drain
+- Confusion
+
+Beedrill
+Ability: Sniper
+Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Focus Energy
+- Twineedle
+- Tackle
 
 === TRAINER_BUG_CATCHER_SAMMY ===
 Name: Sammy
@@ -419,9 +438,33 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Tarountula
+Beautifly 
+Nature: Bashful
+Ability: Swarm
 Level: 10
+IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
+- Air Cutter
+- Struggle Bug
+
+Dustox 
+Nature: Bashful
+Ability: shield dust
+Level: 10
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Protect
+- Roost
+- Confusion
+
+Volbeat 
+Nature: Bashful
+Ability: prankster
+Level: 9
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Struggle Bug
+- Mega Drain
+- Shock Wave
+- Water Pulse
 
 === TRAINER_BUG_CATCHER_COLTON ===
 Name: Colton
@@ -1139,17 +1182,35 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Beautifly
-Level: 30
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Delcatty
+Sigilyph @ Flame Orb
 Level: 31
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+Ability: Magic Guard
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psycho Shift
+- Esper Wing
+- Heat Wave
+- Roost
 
-Cinccino
+Mismagius @ Spell Tag
+Level: 31
+Nature: Timid
+Ability: Levitate
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hex
+- Dazzling Gleam
+- Mystical Fire
+- Thunder Wave
+
+Ambipom @ Silk Scarf
 Level: 32
+Nature: Docile
+Ability: Technician
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Double Hit
+- Rock Smash
+- Knock Off
 
 === TRAINER_LASS_MEGAN ===
 Name: Megan
@@ -1160,21 +1221,35 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgeotto
+Carnivine @ Sitrus Berry
+Nature: Docile
+Ability: Levitate
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bullet Seed
+- Leech Life
+- Knock Off
+- Cut
+
+Luvdisc @ Leftovers
+Nature: Modest
+Ability: Swift Swim
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Charm
+- Draining Kiss
+- Icy Wind
+- Flip Turn
+
+Cinccino @ Muscle Band
+Nature: Docile
+Ability: Skill Link
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Raticate-Alola
-Level: 30
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Purugly
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Pikachu-Pop-Star
-Level: 31
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tail Slap
+- Knock Off
+- Bullet Seed
+- U-Turn
 
 === TRAINER_LASS_JULIA ===
 Name: Julia
@@ -1185,13 +1260,36 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Sylveon
-Level: 30
+Probopass @ Chople Berry
+Level: 32
+Nature: Docile
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Gravity
+- Volt Switch
+- Zap Cannon
 
-Whimsicott
-Level: 31
+Grotle @ Yache Berry
+Level: 33
+Nature: Adamant
+Ability: Self Sufficient
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Grav Apple
+- Bulldoze
+
+Rapidash @ Wide Lens
+Level: 32
+Nature: Modest
+Ability: Blazing Soul
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Inferno
+
+Electabuzz @ Eviolite
+Level: 33
+Nature: Adamant
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dynamic Punch
 
 === TRAINER_LASS_KAY ===
 Name: Kay
@@ -1962,17 +2060,37 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Slowpoke-Galar
-Level: 27
+Slowpoke-Galar @ Salac Berry  
+Ability: Gluttony  
+Level: 30  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Jolly
+- Zen Headbutt  
+- Headbutt  
+- Bulldoze  
 
-Porygon
-Level: 28
+Porygon @ Cell Battery  
+Ability: Trace  
+Level: 30  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Brave
+- Facade  
+- Iron Tail  
+- Aerial Ace  
+- Sharpen
 
-Flareon
-Level: 27
+Quilava @ Passho Berry 
+Ability: Blaze  
+Level: 29  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Quirky 
+- Flame Burst 
+- Extrasensory
+- Swift 
+- Roar
 
 === TRAINER_POKEMANIAC_STEVE ===
 Name: Steve
@@ -2068,7 +2186,6 @@ Gender: Male
 Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
-
 
 Solrock  
 Ability: Levitate  
@@ -2251,17 +2368,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Muk
-Level: 30
+Cradily @ Big Root
+Nature: Modest
+Ability: Storm Drain
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Ancient Power
+- Ingrain
+- Rock Polish
 
-Garbodor
+Armaldo @ Muscle Band
+Nature: Docile
+Ability: Battle Armor
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Pin Missile
+- Aqua Jet
+- Metal Claw
+- Rock Slide
 
-Toxtricity
-Level: 30
+Swalot @ Black Sludge
+Nature: Docile
+Ability: Magic Guard
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Yawn
+- Acid Spray
+- Amnesia
+- Acid Armor
 
 === TRAINER_SUPER_NERD_LESLIE ===
 Name: Leslie
@@ -2272,9 +2407,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electivire
+Pikachu-PhD @ Light Ball
+Nature: Modest
+Ability: Lightning Rod
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic Noise
+- Thunderbolt
+- Volt Switch
+- Grass Knot
+
+Oranguru @ Wise Glasses
+Nature: Docile
+Ability: Sage Power
+Level: 31
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic 
+- Energy Ball
+- Charge Beam
+- Hyper Voice
+
+Girafarig @ Colbur Berry
+Nature: Docile
+Ability: Sap Sipper
+Level: 32
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Twin Beam
+- Dazzling Gleam
+- Energy Ball
+- Hyper Voice
 
 === TRAINER_SUPER_NERD_ERIK ===
 Name: Erik
@@ -2702,17 +2863,38 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machoke
-Level: 28
+Magcargo  
+Ability: Simple  
+Level: 30  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Calm
+- Flame Burst  
+- Scald  
+- Clear Smog  
+- Defense Curl  
 
-Sudowoodo
-Level: 29
+Gabite  
+Ability: Sand Veil  
+Level: 30  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant
+- Breaking Swipe  
+- Stomping Tantrum  
+- Bite  
+- Laser Focus  
 
-Gligar
-Level: 27
+Minior  
+Ability: Shields Down  
+Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Quirky
+- Ancient Power  
+- Fly  
+- Flash 
+- Confuse Ray 
 
 === TRAINER_HIKER_LUCAS ===
 Name: Lucas
@@ -3367,9 +3549,31 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magnemite
-Level: 21
+Graveler-Alola @ Magnet
+Level: 23
+Nature: Adamant
+Ability: Clear Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Defense Curl
+- Rollout
+- Spark
+
+Luxio @ Flame Orb
+Level: 23
+Nature: Hardy
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spark
+- Trailblaze
+- Ice Fang
+
+Emolga @ Charti Berry
+Level: 24
+Nature: Hardy
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shock Wave
+- Air Cutter
 
 === TRAINER_ENGINEER_BERNIE ===
 Name: Bernie
@@ -3380,17 +3584,33 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magneton
+Pachirisu @ Light Clay
 Level: 23
+Nature: Modest
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Reflect
+- Light Screen
+- U-turn
+- Charge Beam
 
-Tadbulb
+Helioptile @ Magnet
 Level: 23
+Nature: Modest
+Ability: Dry Skin
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Parabolic Charge
+- Electroweb
+- Glare
+- Grass Knot
 
-Electabuzz
+Voltorb-Hisui @ Miracle Seed
 Level: 23
+Nature: Modest
+Ability: Soundproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Electro Ball
+- Mega Drain
 
 === TRAINER_FISHERMAN_DALE ===
 Name: Dale
@@ -4181,7 +4401,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Gligar @ Toxic Orb
 Level: 23
-Nature: Impish
+Nature: Adamant
 Ability: Immunity
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fling
@@ -4225,14 +4445,27 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Growlithe
-Level: 24
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Baltoy @ Choice Band
+Level: 23
+Nature: Timid
+Ability: Levitate
+IVs: 31 HP / 15 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Self Destruct
 
-
-Gimmighoul
-Level: 24
+Dugtrio
+Level: 23
+Nature: Hardy
+Ability: Arena Trap
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulldoze
+- Rock Tomb
+
+Kricketune
+Level: 24
+Nature: Jolly
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fury Cutter
 
 === TRAINER_GAMER_STAN ===
 Name: Stan
@@ -4264,13 +4497,45 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Arcanine
-Level: 31
+Simipour @ Salac Berry
+Nature: Docile
+Ability: Gluttony
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald
+- Aura Sphere
+- Icy Wind
+- Uproar
 
-Ninetales
-Level: 32
+Simisage @ Salac Berry
+Nature: Docile
+Ability: Gluttony
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Aura Sphere
+- Flash
+- Power Gem
+
+Simisear @ Salac Berry
+Nature: Docile
+Ability: Gluttony
+Level: 30
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Mystical Fire
+- Aura Sphere
+- Scorching Sands
+- Uproar
+
+Passimian @ Choice Specs
+Nature: Modest
+Ability: Receiver
+Level: 33
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Focus Blast
+- Energy Ball
+- Shadow Ball
+- Vacuum Wave
 
 === TRAINER_BEAUTY_BRIDGET ===
 Name: Bridget
@@ -10955,13 +11220,25 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Clefable
+Swanna @ Focus Sash
 Level: 31
+Nature: Docile
+Ability:
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
+- Icy Wind
+- Air Slash
+- Roost
 
-Granbull
-Level: 30
+Seaking @ Rindo Berry
+Nature: Docile
+Ability: Lightning Rod
+Level: 33
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Jab
+- Megahorn
+- Aqua Jet
+- Waterfall
 
 === TRAINER_COOL_COUPLE_RAY_TYRA ===
 Name: Ray & Tyra
@@ -11706,12 +11983,18 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
 Kricketune
+Ability: Technician
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bug Bite
 
 Sewaddle
-Level: 10
+Ability: Swarm
+Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Calm Mind
+- Mega Drain
+- Struggle Bug
 
 === TRAINER_LASS_ANNE ===
 Name: Anne
@@ -11845,19 +12128,25 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Grafaiai
-Level: 30
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-
-Whirlipede
+Arcanine @ Absorb Bulb
+Nature: Docile
+Ability: Intimidate
 Level: 31
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Pulse
+- Scorching Sands
+- Snarl
+- Flamethrower
 
-Overqwil
+Tentacruel @ Sitrus Berry
+Nature: Modest
+Ability: Liquid Ooze
 Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
+- Sludge Bomb
+- Scald
+- Barrier
+- Hex
 
 === TRAINER_BIKER_JAREN ===
 Name: Jaren
