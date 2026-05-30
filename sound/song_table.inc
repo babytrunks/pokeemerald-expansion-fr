@@ -616,12 +616,12 @@ gSongTable::
 	song ph_nurse_blend, MUSIC_PLAYER_SE2, 2
 	song ph_nurse_held, MUSIC_PLAYER_SE2, 2
 	song ph_nurse_solo, MUSIC_PLAYER_SE2, 2
-	song mus_hg_vs_gym_leader, MUSIC_PLAYER_BGM, 0
-	song mus_hg_vs_rival, MUSIC_PLAYER_BGM, 0
-	song mus_hg_vs_rocket, MUSIC_PLAYER_BGM, 0
-	song mus_hg_vs_trainer_kanto, MUSIC_PLAYER_BGM, 0
+	song mus_vs_team_rocket_boss, MUSIC_PLAYER_BGM, 0
+	song mus_vs_gym_leader_rival, MUSIC_PLAYER_BGM, 0
+	song mus_vs_team_rocket, MUSIC_PLAYER_BGM, 0
+	song mus_vs_trainer_kanto, MUSIC_PLAYER_BGM, 0
 	song mus_vs_gym_leader_johto, MUSIC_PLAYER_BGM, 0
-	
+
 	.align 2
 dummy_song_header:
 	.byte 0, 0, 0, 0

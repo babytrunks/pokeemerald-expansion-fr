@@ -5814,7 +5814,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BLACK_BELT_CHUCK ===
 Name: Chuck
-Class: Leader Frlg 
+Class: Leader Johto
 Pic: Leader Chuck
 Gender: Male
 Music: Intense
@@ -15528,7 +15528,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
 === TRAINER_FALKNER ===
 Name: Falkner
-Class: Leader
+Class: Leader Johto
 Pic: Leader Falkner
 Gender: Male
 Music: Intense
@@ -15572,7 +15572,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BUGSY ===
 Name: Bugsy
-Class: Leader
+Class: Leader Johto
 Pic: Leader Bugsy
 Gender: Male
 Music: Intense
@@ -15706,7 +15706,7 @@ EVs: 252 HP / 0 Atk / 4 Def / 252 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WHITNEY ===
 Name: Whitney
-Class: Leader
+Class: Leader Johto
 Pic: Leader Whitney
 Gender: Female
 Music: Intense
@@ -15784,7 +15784,7 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 
 === TRAINER_LEADER_JASMINE ===
 Name: Jasmine
-Class: Leader
+Class: Leader Johto
 Pic: Leader Jasmine
 Gender: Female
 Music: Girl
