@@ -27,9 +27,85 @@ Route20_EventScript_ResetSeafoamBouldersForB4F::
 	setflag FLAG_HIDE_SEAFOAM_B4F_BOULDER_2
 	return
 
+
+Route20_EventScript_Pryce::
+    lockall
+    faceplayer
+    setspeaker SP_NAME_PRYCE
+    msgbox gText_pryce_1
+	goto_if_not_defeated TRAINER_SWIMMER_FEMALE_MELISSA, Route20_EventScript_PryceNotReady
+	goto_if_not_defeated TRAINER_PICNICKER_MISSY, Route20_EventScript_PryceNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_DEAN, Route20_EventScript_PryceNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_FEMALE_NORA, Route20_EventScript_PryceNotReady
+	goto_if_not_defeated TRAINER_BIRD_KEEPER_ROGER, Route20_EventScript_PryceNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_BARRY, Route20_EventScript_PryceNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_FEMALE_SHIRLEY, Route20_EventScript_PryceNotReady
+    setspeaker SP_NAME_PRYCE
+    msgbox gText_pryce_askChallenge, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, 1, EventScript_Pryce_Battle
+    msgbox gText_pryce_Reject
+    release
+    end
+
+Route20_EventScript_PryceNotReady::
+    msgbox gText_Pryce_NotReady 
+    release
+    end
+
+EventScript_Pryce_Battle::
+    setspeaker SP_NAME_PRYCE
+    msgbox gText_pryce_2
+    @ special HealPlayerParty                  @ special 0x0
+    trainerbattle_no_intro TRAINER_LEADER_PRYCE, pryce_Text_Defeat   @ 0x31
+    setflag FLAG_DEFEATED_PRYCE            @ 0x933
+    setspeaker SP_NAME_PRYCE
+    call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Pryce_StatEditExplain
+    call_if_unset FLAG_DISABLE_EVS, EventScript_Pryce_StatEditTellCap
+    setspeaker SP_NAME_PRYCE
+    msgbox gText_pryce_3
+    giveitem ITEM_FROSLASSITE
+    setspeaker SP_NAME_PRYCE
+    msgbox gText_pryce_4
+    fadescreen FADE_TO_BLACK                 @ fadescreen 0x1
+    playse SE_EXIT                            @ sound 0x9
+    waitse                                   @ checksound
+    removeobject LOCALID_ROUTE20_PRYCE             @ hidesprite 0x2
+    removeobject LOCALID_ROUTE20_FROSLASS
+    fadescreen FADE_FROM_BLACK               @ fadescreen 0x0
+    release
+    end
+
+EventScript_Pryce_StatEditExplain::
+    call_if_unset FLAG_DISABLE_EVS, EventScript_Pryce_StatEditExplain2
+    return
+
+EventScript_Pryce_StatEditExplain2:
+    msgbox pryce_Text_StatEditor_Explain
+    return
+
+EventScript_Pryce_StatEditTellCap:
+    callnative SetBuffer1ToEvCap
+    msgbox johtoLeader_Text_CurrentEvCap
+    setflag FLAG_UNLOCKED_STAT_EDITOR
+    return
+
+
+Route20_EventScript_Froslass::	
+    lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_FROSLASS, CRY_MODE_NORMAL
+	msgbox Route20_Text_Froslass
+	waitmoncry
+	release
+	end
+
 Route20_EventScript_SeafoamIslandsSign::
 	msgbox Route20_Text_SeafoamIslands, MSGBOX_SIGN
 	end
+
+Route20_Text_Froslass:
+    .string "Fros!$"
 
 Route20_Text_BarryIntro::
     .string "The water is shallow here.\n"
@@ -151,3 +227,51 @@ Route20_Text_MistyTrainsHere::
     .string "are common sights in these parts.\p"
     .string "They say that MISTY of the\n"
     .string "CERULEAN GYM trains here.$"
+
+gText_pryce_1::
+  .string "Ah, hello.\p"
+  .string "The Seafoam Islands is a very nostalgic\n"
+  .string "spot for me…\p"
+  .string "I've spent time training at this spot since\n"
+  .string "before you were born.$"
+
+gText_pryce_askChallenge::
+  .string "I have a lifetime worth of experience behind\n"
+  .string "me, is this a challenge you wish to seek?$"
+gText_pryce_2::
+    .string "{COLOR RED}I, the winter trainer, shall demonstrate\n"
+    .string "my power!$"
+
+gText_pryce_Reject::
+  .string "Fine, then. I do not face cowards.$"
+
+pryce_Text_Defeat::
+  .string "Ah, well fought.\n"
+  .string "It appears a strong will can overcome even\n"
+  .string "my extended experience.$"
+
+gText_pryce_3::
+  .string "Here, you are worthy of this.$"
+
+pryce_Text_StatEditor_Explain::
+  .string "I can raise your Effort Values cap\n"
+  .string "so your team can grow even stronger.\p"
+  .string "The Edit Stats option is now avail-\n"
+  .string "able when viewing your Pokémon in\l"
+  .string "the party menu.$"
+
+gText_pryce_4::
+  .string "There's always new things to be learned.\n"
+  .string "Megas Froslass is a relatively new discovery,\l"
+  .string "making it a very formidable Pokémon.\p"
+  .string "It is common knowledge that Articuno\n"
+  .string "reigns in Seafoam Islands, but I've\l"
+  .string "heard of rumors of other Mythical\l"
+  .string "Pokémon making their stay here.\p"
+  .string "Do what you will with that info.\n"
+  .string "I'll be going away now.\p"
+  .string "So long, challenger.$"
+
+gText_Pryce_NotReady::
+    .string "I'll only fight you once you've\n"
+    .string "defeated all the trainers in this Route.$"

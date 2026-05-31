@@ -19,8 +19,7 @@ VictoryRoad_3F_EventScript_FloorSwitch::
 	playse SE_ICE_BREAK
 	special DrawWholeMapView
 	waitse
-	copyobjectxytoperm LOCALID_VICTORY_ROAD_3F_BOULDER1
-	copyobjectxytoperm LOCALID_VICTORY_ROAD_3F_BOULDER2
+	copyobjectxytoperm LOCALID_ROCK_TUNNEL_EXTRA_BOULDER_1
 	setvar VAR_MAP_SCENE_VICTORY_ROAD_3F, 100
 	releaseall
 	end

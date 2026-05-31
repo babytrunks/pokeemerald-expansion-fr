@@ -27,6 +27,8 @@ CeladonCity_Gym_EventScript_GiveTM19::
 	setflag FLAG_GOT_TM19_FROM_ERIKA
     callnative SetBuffer1ToLevelCap
 	msgbox CeladonCity_Gym_Text_ExplainTM19
+    giveitem ITEM_VICTREEBELITE
+	msgbox CeladonCity_Gym_Text_Victreebelite
 	release
 	end
 
@@ -142,9 +144,18 @@ CeladonCity_Gym_Text_ExplainTM19::
     .string "drained to heal your Pokémon.\p"
     .string "Wouldn't you agree that it's a\n"
     .string "wonderful move\p?"
-    .string "Your Level Cap has also been\n"
-    .string "raised to {STR_VAR_1}.$"
+    .string "Your Level Cap has been raised\n"
+    .string "to {STR_VAR_1}.\p"
+    .string "Please, take my favorite Mega Stone\n"
+    .string "as well.$"
 
+CeladonCity_Gym_Text_Victreebelite::
+    .string "You can't make use of that without\n"
+    .string "a Mega Ring. Mega Victreebel admitting-\l" 
+    .string "ly isn't the greatest use of a Mega\l"
+    .string "Stone, but that's how you catch\l"
+    .string "your opponents off guard!$"
+    
 CeladonCity_Gym_Text_ShouldMakeRoomForThis::
     .string "You should make room for this.$"
 

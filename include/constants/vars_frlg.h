@@ -213,9 +213,9 @@
 #define VAR_TRICK_HOUSE_PUZZLE_7_STATE_2               0x40C6
 #define VAR_MAP_SCENE_SILPH_CO_11F_ARCHER              0x40C7
 #define VAR_SAFFRON_GYM_WARP_TILE                      0x40C8
-#define VAR_0x40C9                 0x40C9
-#define VAR_0x40CA                 0x40CA
-#define VAR_0x40CB                 0x40CB
+#define VAR_ROCK_TUNNEL_EXTRA_STRENGTH_1               0x40C9
+#define VAR_ROCK_TUNNEL_EXTRA_STRENGTH_2               0x40CA
+#define VAR_ROCK_TUNNEL_EXTRA_STRENGTH_3               0x40CB
 #define VAR_0x40CC                 0x40CC
 #define VAR_0x40CD                 0x40CD
 #define VAR_0x40CE                 0x40CE

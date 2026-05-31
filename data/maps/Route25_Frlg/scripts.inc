@@ -19,6 +19,13 @@ Route25_EventScript_Bugsy::
     waitmovement 0
     setspeaker SP_NAME_BUGSY
     msgbox gText_bugsy_2
+	goto_if_not_defeated TRAINER_LASS_HALEY, Route25_EventScript_BugsyNotReady
+	goto_if_not_defeated TRAINER_YOUNGSTER_CHAD, Route25_EventScript_BugsyNotReady
+	goto_if_not_defeated TRAINER_CAMPER_FLINT, Route25_EventScript_BugsyNotReady
+	goto_if_not_defeated TRAINER_HIKER_NOB, Route25_EventScript_BugsyNotReady
+	goto_if_not_defeated TRAINER_PICNICKER_KELSEY, Route25_EventScript_BugsyNotReady
+	goto_if_not_defeated TRAINER_YOUNGSTER_JOEY, Route25_EventScript_BugsyNotReady
+	goto_if_not_defeated TRAINER_HIKER_FRANKLIN, Route25_EventScript_BugsyNotReady
     setspeaker SP_NAME_BUGSY
     msgbox gText_bugsy_3, MSGBOX_YESNO        @ 0x5 -> yes/no box; sets VAR_RESULT
     goto_if_eq VAR_RESULT, 1, EventScript_Bugsy_Battle
@@ -28,10 +35,16 @@ Route25_EventScript_Bugsy::
     end
 
 
+Route25_EventScript_BugsyNotReady:
+    setspeaker SP_NAME_BUGSY      
+    msgbox gText_bugsy_NotReady, MSGBOX_DEFAULT
+    release
+    end
+
 EventScript_Bugsy_Battle::        
     setspeaker SP_NAME_BUGSY      
     msgbox gText_bugsy_5, MSGBOX_DEFAULT
-    special HealPlayerParty                               
+    @ special HealPlayerParty                               
     goto CheckBadges                          
 
 
@@ -214,12 +227,12 @@ Route25_Text_AreYouHereAlone::
     .string "Well, it should be as a couple.$"
 
 gText_bugsy_1::
-  .string "{COLOR BLUE}I better keep my ass in this rainy\n"
+  .string "I better keep my ass in this rainy\n"
   .string "weather!!! or im FINISHED!!$"
 
 
 gText_bugsy_2::
-  .string "{COLOR BLUE}Oh, didn't see you there. I hope you\n"
+  .string "Oh, didn't see you there. I hope you\n"
   .string "can disregard what I just said…\p"
   .string "The name's Bugsy.\p"
   .string "…Oh? You've met my colleague\n"
@@ -231,26 +244,25 @@ gText_bugsy_2::
 
 
 gText_bugsy_3::
-  .string "{COLOR BLUE}Well, since you're here, I'm assuming\n"
+  .string "Well, since you're here, I'm assuming\n"
   .string "you want a battle?$"
 
 
 gText_bugsy_4::
-  .string "{COLOR BLUE}Suit yourself. I'll be here in case\n"
+  .string "Suit yourself. I'll be here in case\n"
   .string "you change your mind.$"
 
 
 gText_bugsy_5::
-  .string "{COLOR BLUE}Don't consider me weak just because I\n"
+  .string "Don't consider me weak just because I\n"
   .string "use Bug types, I'll show you how\l"
   .string "fearsome they can be!$"
-
 
 gText_bugsy_Defeat::
   .string "Gah… It's just not cutting it!$"
 
 gText_bugsy_6::
-  .string "{COLOR BLUE}Frankly, I'm a bit disappointed in\n"
+  .string "Frankly, I'm a bit disappointed in\n"
   .string "myself.\p"
   .string "I'm struggling to win even in the\n"
   .string "rain. It's hard to stay competitive\l"
@@ -260,8 +272,12 @@ gText_bugsy_6::
   .string "ther with them than me.$"
 
 gText_bugsy_6_1::
-  .string "{COLOR BLUE}Here, have my favorite TM too.$"
+  .string "Here, have my favorite TM too.$"
 
 gText_bugsy_7::
-  .string "{COLOR BLUE}Anywho, it's nice meeting you, but I'll\n"
+  .string "Anywho, it's nice meeting you, but I'll\n"
   .string "be taking my leave.$"
+
+gText_bugsy_NotReady::
+    .string "I'll only fight you once you've\n"
+    .string "defeated all the trainers in this Route.$"

@@ -757,11 +757,11 @@
 #define FLAG_HIDE_SAFARI_ZONE_MAGMARIZER                 0x302
 #define FLAG_FOUGHT_TERRAKION                            0x303
 #define FLAG_HIDE_TERRAKION                              0x304
-#define FLAG_0x305                               0x305
-#define FLAG_0x306                                 0x306
-#define FLAG_0x307                                0x307
-#define FLAG_0x308               0x308
-#define FLAG_0x309               0x309
+#define FLAG_FOUGHT_HEATRAN                              0x305
+#define FLAG_HIDE_HEATRAN                                0x306
+#define FLAG_HIDE_ROCK_TUNNEL_EXTRA_ABSOLITE_Z           0x307
+#define FLAG_HIDE_ABSOLITE_Z                             0x308
+#define FLAG_HIDE_ROCK_TUNNEL_EXTRA_GACHA                0x309
 #define FLAG_0x30A               0x30A
 #define FLAG_0x30B               0x30B
 #define FLAG_0x30C               0x30C

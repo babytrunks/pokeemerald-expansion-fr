@@ -5,7 +5,7 @@
   "music": "MUS_RG_ROUTE3",
   "region_map_section": "MAPSEC_ROUTE_20",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
+  "weather": "WEATHER_SNOW",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -97,18 +97,19 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_ROUTE20_FROSLASS",
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_PICNICKER_FRLG",
-      "x": 73,
-      "y": 16,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FROSLASS)",
+      "x": 57,
+      "y": 11,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
-      "script": "Route20_EventScript_Irene",
-      "flag": "0"
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route20_EventScript_Froslass",
+      "flag": "FLAG_DEFEATED_PRYCE"
     },
     {
       "type": "object",
@@ -127,10 +128,10 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "x": 106,
-      "y": 11,
+      "x": 101,
+      "y": 1,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_DOWN_LEFT_UP_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 5,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -153,18 +154,19 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_ROUTE20_PRYCE",
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "x": 54,
+      "graphics_id": "OBJ_EVENT_GFX_PRYCE",
+      "x": 58,
       "y": 11,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route20_EventScript_Tiffany",
-      "flag": "0"
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route20_EventScript_Pryce",
+      "flag": "FLAG_DEFEATED_PRYCE"
     },
     {
       "type": "object",

@@ -17,7 +17,7 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGEARNA)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(HEATRAN)",
       "x": 2,
       "y": 5,
       "elevation": 3,
@@ -26,8 +26,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "RockTunnel_B1F_EventScript_Cooper",
-      "flag": "0"
+      "script": "RockTunnel_Extra_EventScript_Heatran",
+      "flag": "FLAG_HIDE_HEATRAN"
     },
     {
       "type": "object",
@@ -58,6 +58,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_ROCK_TUNNEL_EXTRA_BOULDER_3",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER_FRLG",
       "x": 11,
@@ -88,8 +89,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG",
-      "x": 1,
-      "y": 22,
+      "x": 37,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -102,8 +103,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG",
-      "x": 4,
-      "y": 23,
+      "x": 37,
+      "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -129,45 +130,46 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG",
-      "x": 39,
-      "y": 26,
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 29,
+      "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_16"
+      "trainer_sight_or_berry_tree_id": "ITEM_GACHA_VOUCHER",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_ROCK_TUNNEL_EXTRA_GACHA"
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG",
-      "x": 42,
-      "y": 26,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_17"
-    },
-    {
-      "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK_FRLG",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
       "x": 43,
-      "y": 28,
+      "y": 26,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_ABSOLITE_Z",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_ROCK_TUNNEL_EXTRA_ABSOLITE_Z"
+    },
+    {
+      "local_id": "LOCALID_ROCK_TUNNEL_EXTRA_BOULDER_2",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER_FRLG",
+      "x": 37,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_RockSmash",
-      "flag": "FLAG_TEMP_18"
+      "script": "EventScript_StrengthBoulder",
+      "flag": "0"
     },
     {
       "type": "object",
@@ -198,6 +200,7 @@
       "flag": "FLAG_HIDE_TERRAKION"
     },
     {
+      "local_id": "LOCALID_ROCK_TUNNEL_EXTRA_BOULDER_1",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER_FRLG",
       "x": 21,
@@ -263,7 +266,35 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_ROCK_TUNNEL_EXTRA_STRENGTH_1",
+      "var_value": "63",
+      "script": "EventScript_StrengthTile1"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROCK_TUNNEL_EXTRA_STRENGTH_2",
+      "var_value": "63",
+      "script": "EventScript_StrengthTile2"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 1,
+      "elevation": 0,
+      "var": "VAR_ROCK_TUNNEL_EXTRA_STRENGTH_3",
+      "var_value": "63",
+      "script": "EventScript_StrengthTile3"
+    }
+  ],
   "bg_events": [],
   "region": "REGION_KANTO"
 }

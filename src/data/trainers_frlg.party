@@ -2755,20 +2755,48 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magcargo
-Level: 30
+Armaldo @ Assault Vest
+Ability: Skill Link
+Nature: Adamant
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+- Rock Blast
+- Pin Missile
+- Aqua Jet
+- Earthquake
 
-
-Tyrunt
-Level: 31
+Magcargo @ Air Balloon
+Nature: Timid
+Ability: Simple
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- No Retreat
+- Fire Blast
+- Ancient Power
+- Earth Power
 
-
-Anorith
-Level: 30
+Flamigo @ Power Herb
+Ability: Scrappy
+Nature: Jolly
+Level: 52
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Sky Attack
+- Acrobatics
+- Close Combat
+- Throat Chop
 
+Pangoro @ Roseli Berry
+Ability: Iron Fist
+Nature: Adamant
+Level: 51
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def 
+- Wicked Blow
+- Drain Punch
+- Bullet Punch
+- Sucker Punch
 
 === TRAINER_HIKER_ALLEN ===
 Name: Allen
@@ -5770,7 +5798,6 @@ Nature: Modest
 Ability: Storm Drain
 Level: 52
 EVs: 54 HP / 252 SpA
-Ball: Great Ball
 - Muddy Water
 - Dragon Pulse
 - Icy Wind
@@ -10628,7 +10655,6 @@ Nature: Modest
 Ability: Storm Drain
 Level: 52
 EVs: 54 HP / 252 SpA
-Ball: Great Ball
 - Muddy Water
 - Dragon Pulse
 - Icy Wind
@@ -16020,22 +16046,77 @@ EVs: 204 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Body Press
 - Roar
 
-=== TRAINER_TWINS_JOY_MEG_2 ===
-Name: JOY & MEG
-Class: Twins Frlg
-Pic: Twins Frlg
+=== TRAINER_LEADER_PRYCE ===
+Name: Pryce
+Class: Leader Johto
+Pic: Leader Pryce
 Gender: Male
-Music: Twins
-Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Blue
+Boss: Yes
+Dynamic Level Ratio: 90
 
-Clefairy
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Jynx @ Focus Sash
+Nature: Timid
+Ability: Dry Skin
+Level: 57
+EVs: 252 SpA / 4 SpD / 252 Spe
+- Lovely Kiss
+- Psystrike
+- Freeze Dry
+- Focus Blast
 
-Clefairy
-Level: 49
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Cloyster @ White Herb
+Nature: Jolly
+Ability: Skill Link
+Level: 58
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Shell Smash
+- Icicle Spear
+- Waterfall
+- Rock Blast
+
+Walrein @ Leftovers
+Nature: Calm
+Ability: Ice Body
+Level: 58
+EVs: 252 HP / 4 Def / 252 SpD
+- Toxic
+- Rest
+- Sleep Talk
+- Surf
+
+Baxcalibur @ Dragon Fang
+Nature: Jolly
+Ability: Thermal Exchange
+Level: 58
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Dragon Dance
+- Icicle Crash
+- Glaive Rush
+- Earthquake
+
+Arctozolt @ Life Orb
+Nature: Lonely
+Ability: Slush Rush
+Level: 57
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Bolt Beak
+- Icicle Crash
+- Freeze Dry
+- Low Kick
+
+Froslass @ Froslassite
+Nature: Timid
+Ability: Ice Body
+Level: 58
+EVs: 252 SpA / 4 SpD / 252 Spe
+- Blizzard
+- Shadow Ball
+- Thunderbolt
+- Will-O-Wisp
 
 === TRAINER_PAINTER_RAYNA_2 ===
 Name: RAYNA

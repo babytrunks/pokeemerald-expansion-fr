@@ -666,9 +666,9 @@ static const u8 sText_Description_Mode_Difficulty_Easy[]                = _("Tra
 static const u8 sText_Description_Mode_Difficulty_Normal[]              = _("The intended difficulty to play\nthe game.");
 static const u8 sText_Description_Mode_Difficulty_Hardcore[]            = _("{COLOR RED}Unimplemented!");
 // _("Bosses are absurd. Certain moves &\nabilties are banned for the player.");
-static const u8 sText_Description_Mode_NoEVs_Off[]                      = _("{COLOR RED}Unimplemented!");
+static const u8 sText_Description_Mode_NoEVs_Off[]                      = _("{COLOR RED}EVs are enabled for both\nthe player and NPCs.");
 // {PKMN} gain effort values\nas expected.");
-static const u8 sText_Description_Mode_NoEVs_On[]                       = _("{COLOR RED}Unimplemented!");
+static const u8 sText_Description_Mode_NoEVs_On[]                       = _("{COLOR RED}EVs are disabled for both\nthe player and NPCs.");
 // _("Your {PKMN} and opposing {PKMN} do\n{COLOR 7}{COLOR 8}NOT{COLOR 1}{COLOR 2} gain any effort values!");
 static const u8 sText_Description_Mode_Party_Limit[]              = _("Limit the amount of {PKMN} in the\nplayers party.");
 static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =

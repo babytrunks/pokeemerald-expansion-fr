@@ -1,7 +1,7 @@
 Route11_Frlg_MapScripts::
 	.byte 0
 
-@ Whitney intro script (map label is a guess, rename as needed)
+
 Route11_EventScript_Whitney::
     lockall
     setspeaker SP_NAME_WHITNEY
@@ -10,7 +10,13 @@ Route11_EventScript_Whitney::
     waitmovement 0
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_2
-    call_if_unset FLAG_BADGE03_GET, Route11_EventScript_Whitney_NotReady
+	goto_if_not_defeated TRAINER_GAMER_DARIAN, Route11_EventScript_WhitneyNotReady
+	goto_if_not_defeated TRAINER_YOUNGSTER_YASU, Route11_EventScript_WhitneyNotReady
+	goto_if_not_defeated TRAINER_ENGINEER_BRAXTON, Route11_EventScript_WhitneyNotReady
+	goto_if_not_defeated TRAINER_GAMER_JASPER, Route11_EventScript_WhitneyNotReady
+	goto_if_not_defeated TRAINER_ENGINEER_BERNIE, Route11_EventScript_WhitneyNotReady
+	goto_if_not_defeated TRAINER_YOUNGSTER_EDDIE, Route11_EventScript_WhitneyNotReady
+	goto_if_not_defeated TRAINER_GAMER_HUGO, Route11_EventScript_WhitneyNotReady
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_3, MSGBOX_YESNO     @ player choice; sets VAR_RESULT
     goto_if_eq VAR_RESULT, 1, EventScript_Whitney_Battle
@@ -21,8 +27,10 @@ Route11_EventScript_Whitney::
 
 Route11_EventScript_Whitney_NotReady:
     setspeaker SP_NAME_WHITNEY
-    msgbox gText_whitney_3_1
+    msgbox gText_whitney_2_1
     return
+
+Route11_EventScript_WhitneyNotReady:
 
 EventScript_Whitney_Battle::
     setspeaker SP_NAME_WHITNEY
@@ -33,9 +41,7 @@ EventScript_Whitney_Battle::
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_6
     call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Whitney_StatEditExplain
-    callnative SetBuffer1ToEvCap
-    msgbox johtoLeader_Text_CurrentEvCap
-    setflag FLAG_UNLOCKED_STAT_EDITOR
+    call_if_unset FLAG_DISABLE_EVS, EventScript_Whitney_StatEditTellCap
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_7_2
     giveitem ITEM_EVIOLITE
@@ -51,7 +57,17 @@ EventScript_Whitney_Battle::
     end
 
 EventScript_Whitney_StatEditExplain::
+    call_if_unset FLAG_DISABLE_EVS, EventScript_Whitney_StatEditExplain2
+    return
+
+EventScript_Whitney_StatEditExplain2:
     msgbox whitney_Text_StatEditor_Explain
+    return
+
+EventScript_Whitney_StatEditTellCap:
+    callnative SetBuffer1ToEvCap
+    msgbox johtoLeader_Text_CurrentEvCap
+    setflag FLAG_UNLOCKED_STAT_EDITOR
     return
 
 Movement_Whitney_Look:
@@ -188,8 +204,6 @@ Route11_Text_DavePostBattle::
 Route11_Text_DiglettsCave::
     .string "Diglett's Cave$"
 
-
-
 gText_whitney_1::
   .string "{COLOR RED}Jeez, Meganium and Feraligatr got new\n"
   .string "Megas, but Miltank gets no love!\p"
@@ -205,15 +219,14 @@ gText_whitney_2::
   .string "Johto region, fearsome for my\l"
   .string "Miltank! Perhaps you've heard of me?$"
 
+gText_whitney_2_1::
+  .string "{COLOR RED}Though, if you want to face me,\n"
+  .string "you'll have to beat all the trainers\l"
+  .string "on this Route first.$"
 
 gText_whitney_3::
   .string "{COLOR RED}If an intense battle is what you want,\n"
   .string "then that's what you're going to get!$"
-
-gText_whitney_3_1::
-  .string "{COLOR RED}Though, I will warn you I don't\n"
-  .string "think your Pokémon are quite ready to\l"
-  .string "take me on…$"
 
 gText_whitney_4::
   .string "{COLOR RED}Scared of Miltank, aren't ya?$"
@@ -233,11 +246,11 @@ gText_whitney_6::
   .string "my Miltank isn't quite as threatening\l"
   .string "anymore. But, I'm determined to still\l"
   .string "make it work!\p"
-  .string "Anyway, thanks for the battle. I can\n"
-  .string "raise your Effort Values cap so your\l"
-  .string "team can grow even stronger!$"
+  .string "Anyway, thanks for the battle.$"
 
 whitney_Text_StatEditor_Explain::
+  .string "I can raise your Effort Values cap\n"
+  .string "so your team can grow even stronger.\p"
   .string "The Edit Stats option is now avail-\n"
   .string "able when viewing your Pokémon in\l"
   .string "the party menu.$"
@@ -248,7 +261,6 @@ johtoLeader_Text_CurrentEvCap::
 gText_whitney_7_2::
   .string "{COLOR RED} Have this as well.$"
 
-
 gText_whitney_8::
   .string "{COLOR RED}Eviolite boosts the defenses of Poké-\n"
   .string "mon that can still evolve.\p"
@@ -257,4 +269,3 @@ gText_whitney_8::
   .string "Anyway, I need to Bounce.\n"
   .string "Too many creeps on this Route.\p"
   .string "I hope we see each other soon.$"
-

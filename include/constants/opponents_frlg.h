@@ -173,7 +173,7 @@
 #define TRAINER_BEAUTY_LORI                        167
 #define TRAINER_BEAUTY_LOLA                        168
 #define TRAINER_BEAUTY_SHEILA                      169
-#define TRAINER_SWIMMER_FEMALE_TIFFANY             170
+#define TRAINER_SWIMMER_FEMALE_TIFFANY             170 // unused
 #define TRAINER_SWIMMER_FEMALE_NORA                171
 #define TRAINER_SWIMMER_FEMALE_MELISSA             172
 #define TRAINER_BEAUTY_GRACE                       173
@@ -368,7 +368,7 @@
 #define TRAINER_BIKER_VIRGIL                       362
 #define TRAINER_CAMPER_FLINT                       363
 #define TRAINER_PICNICKER_MISSY                    364
-#define TRAINER_PICNICKER_IRENE                    365
+#define TRAINER_PICNICKER_IRENE                    365 // unused
 #define TRAINER_PICNICKER_DANA                     366
 #define TRAINER_PICNICKER_ARIANA                   367
 #define TRAINER_PICNICKER_LEAH                     368 // unused 
@@ -586,7 +586,7 @@
 #define TRAINER_BUGSY_POST_SURGE                   580
 #define TRAINER_WHITNEY                581
 #define TRAINER_LEADER_JASMINE                      582
-#define TRAINER_TWINS_JOY_MEG_2                    583
+#define TRAINER_LEADER_PRYCE                    583
 #define TRAINER_PAINTER_RAYNA_2                    584
 #define TRAINER_YOUNGSTER_DESTIN_2                 585
 #define TRAINER_PKMN_BREEDER_ALIZE_2               586
