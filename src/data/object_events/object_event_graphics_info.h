@@ -7489,7 +7489,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GoldItemBall = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Birdkeeper = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_PSYCHIC_M,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BIRDKEEPER,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7508,7 +7508,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Birdkeeper = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Burglar = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_PSYCHIC_M,
+    .paletteTag = OBJ_EVENT_PAL_TAG_BURGLAR,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -7546,7 +7546,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Electrician = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Juggler = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_PSYCHIC_M,
+    .paletteTag = OBJ_EVENT_PAL_TAG_JUGGLER,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,

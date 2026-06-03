@@ -582,7 +582,7 @@
 #define FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE                0x256
 #define FLAG_DID_MARC_TRADE                              0x257
 #define FLAG_BEAT_RIVAL_IN_OAKS_LAB                      0x258
-#define FLAG_GOT_TM06_FROM_KOGA                          0x259
+#define FLAG_GOT_TM06_FROM_KOGA                          0x259 // unused
 #define FLAG_HIDE_ROUTE8_TM_DUAL_WINGBEAT                0x25A
 #define FLAG_GOT_TM27                                    0x25B
 #define FLAG_RECEIVED_MUSCLE_BAND                        0x25C

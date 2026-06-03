@@ -17932,6 +17932,153 @@
             ]
           }
         },
+
+                {
+          "map": "MAP_ROCK_TUNNEL_EXTRA_FRLG",
+          "base_label": "sRockTunnelExtra_FireRed_Morning",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                  "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_GRAVELER"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_ARON"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_FERROTHORN"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_MAWILE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_CARKOL"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_CARBINK"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_MINIOR"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_FERROSEED"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_STONJOURNER"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_HEATMOR"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_DURANT"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_DURANT"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_ROCK_TUNNEL_EXTRA_FRLG",
+          "base_label": "sRockTunnelExtra_FireRed_Day"
+        },
+        {
+          "map": "MAP_ROCK_TUNNEL_EXTRA_FRLG",
+          "base_label": "sRockTunnelExtra_FireRed_Evening"
+        },
+        {
+          "map": "MAP_ROCK_TUNNEL_EXTRA_FRLG",
+          "base_label": "sRockTunnelExtra_FireRed_Night",
+          "land_mons": {
+            "encounter_rate": 7,
+            "mons": [
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_GRAVELER_ALOLA"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_ARON"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_DWEBBLE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_MAWILE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_ONIX"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_CARBINK"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_MINIOR"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_FERROSEED"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_STONJOURNER"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_HEATMOR"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_DURANT"
+              },
+              {
+                "min_level": 50,
+                "max_level": 54,
+                "species": "SPECIES_DURANT"
+              }
+            ]
+          }
+        },
         {
           "map": "MAP_SEAFOAM_ISLANDS_1F",
           "base_label": "sSeafoamIslands1F_FireRed_Morning",

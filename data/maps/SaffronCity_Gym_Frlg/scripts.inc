@@ -75,6 +75,7 @@ SaffronCity_Gym_EventScript_GiveTM04::
 	giveitem_msg SaffronCity_Gym_Text_ReceivedTM71FromSabrina, ITEM_TM_TRICK_ROOM
 	setflag FLAG_GOT_TM04_FROM_SABRINA
 	msgbox SaffronCity_Gym_Text_SabrinaPostBattle
+	giveitem ITEM_CHIMECHITE
 	release
 	end
 
@@ -165,7 +166,9 @@ SaffronCity_Gym_Text_SabrinaPostBattle::
     .string "TM71 is Trick Room.\p"
     .string "It flips dimensions to allow\n"
     .string "slower Pokémon to move first.\p"
-	.string "It's particularly strong in Doubles.$"
+	.string "It's particularly strong in Doubles."
+	.string "A decent Trick Room user would be\n"
+	.string "Mega Chimecho.$"
 
 SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
     .string "The Marsh Badge raises the Level Cap to\n"

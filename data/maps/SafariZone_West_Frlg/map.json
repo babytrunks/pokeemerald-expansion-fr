@@ -40,7 +40,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_TM_DAZZLING_GLEAM",
-      "script": "SafariZone_West_EventScript_ItemTM32",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_SAFARI_ZONE_WEST_TM32"
     },
     {

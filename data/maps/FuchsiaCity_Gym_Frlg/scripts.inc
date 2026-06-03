@@ -4,7 +4,6 @@ FuchsiaCity_Gym_Frlg_MapScripts::
 FuchsiaCity_Gym_EventScript_Koga::
 	famechecker FAMECHECKER_KOGA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM06_FROM_KOGA, FuchsiaCity_Gym_EventScript_GiveTM06
 	msgbox FuchsiaCity_Gym_Text_KogaPostBattle
 	release
 	end
@@ -20,18 +19,13 @@ FuchsiaCity_Gym_EventScript_DefeatedKoga::
 
 FuchsiaCity_Gym_EventScript_GiveTM06::
 	msgbox FuchsiaCity_Gym_Text_KogaExplainSoulBadge
-	checkitemspace ITEM_TM06
-	goto_if_eq VAR_RESULT, FALSE, FuchsiaCity_Gym_EventScript_NoRoomForTM06
-	giveitem_msg FuchsiaCity_Gym_Text_ReceivedTM06FromKoga, ITEM_TM06
-	setflag FLAG_GOT_TM06_FROM_KOGA
-	msgbox FuchsiaCity_Gym_Text_KogaExplainTM06
+	giveitem ITEM_GRENINJITE
+	msgbox FuchsiaCity_Gym_Text_KogaExplainGreninjite
+    giveitem ITEM_LIFE_ORB
+    msgbox FuchsiaCity_Gym_Text_KogaPostBattle
 	release
 	end
 
-FuchsiaCity_Gym_EventScript_NoRoomForTM06::
-	msgbox FuchsiaCity_Gym_Text_MakeSpaceForThis
-	release
-	end
 
 FuchsiaCity_Gym_EventScript_Phil::
 	trainerbattle_single TRAINER_TAMER_PHIL, FuchsiaCity_Gym_Text_PhilIntro, FuchsiaCity_Gym_Text_PhilDefeat
@@ -90,36 +84,35 @@ FuchsiaCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 FuchsiaCity_Gym_Text_KogaIntro::
-    .string "KOGA: Fwahahaha!\p"
+    .string "Fwahahaha!\p"
     .string "A mere child like you dares to\n"
     .string "challenge me?\p"
     .string "The very idea makes me shiver\n"
     .string "with mirth!\p"
     .string "Very well, I shall show you true\n"
     .string "terror as a ninja master.\p"
-    .string "Poison brings steady doom.\n"
-    .string "Sleep renders foes helpless.\p"
-    .string "Despair to the creeping horror of\n"
-    .string "POISON-type Pokémon!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "Swiftness brings abrupt doom.\n"
+    .string "Being outran can render foes\n"
+    .string "helpless.\p"
+    .string "Despair to the frightening horror of\n"
+    .string "my speed demons!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 FuchsiaCity_Gym_Text_KogaDefeat::
     .string "Humph!\n"
     .string "You have proven your worth!\p"
     .string "Here!\n"
-    .string "Take the SOULBADGE!$"
+    .string "Take the Soul Badge!$"
 
 FuchsiaCity_Gym_Text_KogaPostBattle::
-    .string "When afflicted by TOXIC, a Pokémon\n"
-    .string "suffers more and more.\p"
-    .string "It suffers worsening damage as the\n"
-    .string "battle wears on!\p"
-    .string "It will surely terrorize foes!$"
+    .string "The Life Orb allows you to deal more\n"
+    .string "damage at the cost of some of the user's\l"
+    .string "HP.\p"
+    .string "Despite its drawback, it can often\n"
+    .string "be the difference in killing the foe.$"
 
 FuchsiaCity_Gym_Text_KogaExplainSoulBadge::
-    .string "Now that you have the SOULBADGE,\n"
-    .string "the DEFENSE of your Pokémon rises.\p"
-    .string "It also lets you SURF outside of\n"
-    .string "battle.\p"
+    .string "Now that you have the Soul Badge,\n"
+    .string "you can now Surf outside of battle.\p"
     .string "Ah!\n"
     .string "Take this, too!$"
 
@@ -127,11 +120,11 @@ FuchsiaCity_Gym_Text_ReceivedTM06FromKoga::
     .string "{PLAYER} received TM06\n"
     .string "from KOGA.$"
 
-FuchsiaCity_Gym_Text_KogaExplainTM06::
-    .string "Sealed within that TM06 lies\n"
-    .string "TOXIC!\p"
-    .string "It is a secret technique dating\n"
-    .string "back some four hundred years.$"
+FuchsiaCity_Gym_Text_KogaExplainGreninjite::
+    .string "That allows you to use Mega Greninja!\p"
+    .string "Any true ninja master should use it.\p"
+    .string "I don't have a TM to give, so perhaps\n"
+    .string "I should compensate with this.$"
 
 FuchsiaCity_Gym_Text_MakeSpaceForThis::
     .string "Make space for this, child!$"
