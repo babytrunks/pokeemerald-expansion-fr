@@ -17942,17 +17942,17 @@
               {
                   "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_ARON"
+                "species": "SPECIES_RHYPERIOR"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_FERROTHORN"
+                "species": "SPECIES_AGGRON"
               },
               {
                 "min_level": 50,
@@ -17962,12 +17962,12 @@
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_CARKOL"
+                "species": "SPECIES_FERROTHORN"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_CARBINK"
+                "species": "SPECIES_FERROTHORN"
               },
               {
                 "min_level": 50,
@@ -18019,17 +18019,17 @@
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_GRAVELER_ALOLA"
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_ARON"
+                "species": "SPECIES_RHYPERIOR"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_DWEBBLE"
+                "species": "SPECIES_AGGRON"
               },
               {
                 "min_level": 50,
@@ -18039,22 +18039,22 @@
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_ONIX"
+                "species": "SPECIES_FERROTHORN"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_CARBINK"
+                "species": "SPECIES_FERROTHORN"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_MINIOR"
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 50,
                 "max_level": 54,
-                "species": "SPECIES_FERROSEED"
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 50,
@@ -27555,12 +27555,12 @@
               {
                 "min_level": 49,
                 "max_level": 51,
-                "species": "SPECIES_FERROTHORN"
+                "species": "SPECIES_DITTO"
               },
               {
                 "min_level": 49,
                 "max_level": 51,
-                "species": "SPECIES_FERROTHORN"
+                "species": "SPECIES_DITTO"
               },
               {
                 "min_level": 49,
@@ -27632,12 +27632,12 @@
               {
                 "min_level": 49,
                 "max_level": 51,
-                "species": "SPECIES_FERROTHORN"
+                "species": "SPECIES_DITTO"
               },
               {
                 "min_level": 49,
                 "max_level": 51,
-                "species": "SPECIES_FERROTHORN"
+                "species": "SPECIES_DITTO"
               },
               {
                 "min_level": 49,
