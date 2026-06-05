@@ -10874,8 +10874,7 @@ const struct Item gItemsInfo[] =
         .price = 1,
         .description = COMPOUND_STRING(
             "Makes a Pokémon\n"
-            "friendly but lowers\n"
-            "HP EVs."),
+            "more friendly."), 
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,

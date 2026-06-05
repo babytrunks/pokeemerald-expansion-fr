@@ -5387,8 +5387,13 @@ void ItemUseCB_ReduceEV(u8 taskId, TaskFunc task)
     u16 newFriendship = GetMonData(mon, MON_DATA_FRIENDSHIP);
     u16 newEv = ItemEffectToMonIv(mon, effectType);
 
+    DebugPrintf("In ItemUseCB_ReduceEV 0");
     if (cannotUseEffect || (friendship == newFriendship && ev == newEv))
     {
+        if (cannotUseEffect)
+            DebugPrintf("In ItemUseCB_ReduceEV 1");
+        if ((friendship == newFriendship && ev == newEv))
+            DebugPrintf("In ItemUseCB_ReduceEV 2");
         gPartyMenuUseExitCallback = FALSE;
         PlaySE(SE_SELECT);
         DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
@@ -5407,7 +5412,7 @@ void ItemUseCB_ReduceEV(u8 taskId, TaskFunc task)
             if (ev != newEv)
                 StringExpandPlaceholders(gStringVar4, gText_PkmnFriendlyBaseVar2Fell);
             else
-                StringExpandPlaceholders(gStringVar4, gText_PkmnFriendlyBaseVar2CantFall);
+                StringExpandPlaceholders(gStringVar4, gText_PkmnFriendlyBase);
         }
         else
         {

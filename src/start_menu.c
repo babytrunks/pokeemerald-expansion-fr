@@ -100,7 +100,7 @@ COMMON_DATA bool8 (*gMenuCallback)(void) = NULL;
 
 // EWRAM
 EWRAM_DATA static u8 sSafariBallsWindowId = 0;
-EWRAM_DATA static u8 sStartClockWindowId = 0;
+// EWRAM_DATA static u8 sSafariBallsWindowId = 0;
 EWRAM_DATA static u8 sBattlePyramidFloorWindowId = 0;
 EWRAM_DATA static u8 sStartMenuCursorPos = 0;
 EWRAM_DATA static u8 sNumStartMenuActions = 0;
@@ -501,9 +501,9 @@ static void RemoveExtraStartMenuWindows(void)
     }
     else 
     {
-        ClearStdWindowAndFrameToTransparent(sStartClockWindowId, FALSE);
-        // CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
-        RemoveWindow(sStartClockWindowId);
+        ClearStdWindowAndFrameToTransparent(sSafariBallsWindowId, FALSE);
+        // CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
+        RemoveWindow(sSafariBallsWindowId);
     }
 }
 
@@ -1581,49 +1581,39 @@ const u8 *const gDayNameStringsTable[7] = {
 };
 
 void DrawTime(void) {
-    const u8 *suffix;
-    u8* ptr;
     u8 convertedHours;
+    const u8 *suffix;
+    u8 *ptr;
 
-	sStartClockWindowId = AddWindow(&sWindowTemplate_StartClock);
-	PutWindowTilemap(sStartClockWindowId);
-	DrawStdWindowFrame(sStartClockWindowId, FALSE);
-    // FormatDecimalTimeWithoutSeconds(gStringVar1, s8 hour, s8 minute, bool32 is24Hour)
-	if (gLocalTime.hours < 12)
-    {
-        if (gLocalTime.hours == 0)
-            convertedHours = 12;
-        else
-            convertedHours = gLocalTime.hours;
+    sSafariBallsWindowId = AddWindow(&sWindowTemplate_StartClock);
+    PutWindowTilemap(sSafariBallsWindowId);
+    DrawStdWindowFrame(sSafariBallsWindowId, FALSE);
+
+    if (gLocalTime.hours < 12) {
+        convertedHours = (gLocalTime.hours == 0) ? 12 : gLocalTime.hours;
         suffix = gText_AM;
-    }
-    else if (gLocalTime.hours == 12)
-    {
+    } else if (gLocalTime.hours == 12) {
         convertedHours = 12;
-        if (suffix == gText_AM);
-            suffix = gText_PM;
-    }
-    else
-    {
+        suffix = gText_PM;
+    } else {
         convertedHours = gLocalTime.hours - 12;
         suffix = gText_PM;
     }
 
-    // StringExpandPlaceholders(gStringVar4, gDayNameStringsTable[(gLocalTime.days % 7)]);
+    // Build full string: "Day: H:MM AM" or "Night: H:MM PM"
     {
         enum TimeOfDay tod = GetTimeOfDay();
         const u8 *label = (tod == TIME_NIGHT || tod == TIME_EVENING) ? gText_StartMenu_Night : gText_StartMenu_Day;
-        StringExpandPlaceholders(gStringVar4, label);
+        ptr = StringCopy(gStringVar4, label);
     }
-    AddTextPrinterParameterized(sStartClockWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL); 
+    ptr = ConvertIntToDecimalStringN(ptr, convertedHours, STR_CONV_MODE_LEFT_ALIGN, 2);
+    *ptr++ = CHAR_COLON;
+    ptr = ConvertIntToDecimalStringN(ptr, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
+    *ptr++ = CHAR_SPACE;
+    StringCopy(ptr, suffix);
 
-    ptr = ConvertIntToDecimalStringN(gStringVar4, convertedHours, STR_CONV_MODE_LEFT_ALIGN, 3);
-    *ptr = 0xF0;
-
-    ConvertIntToDecimalStringN(ptr + 1, gLocalTime.minutes, STR_CONV_MODE_LEADING_ZEROS, 2);
-    AddTextPrinterParameterized(sStartClockWindowId, 1, gStringVar4, GetStringRightAlignXOffset(1, suffix, CLOCK_WINDOW_WIDTH) - (CLOCK_WINDOW_WIDTH - GetStringRightAlignXOffset(1, gStringVar4, CLOCK_WINDOW_WIDTH) + 3), 1, 0xFF, NULL); // print time
-    AddTextPrinterParameterized(sStartClockWindowId, 1, suffix, GetStringRightAlignXOffset(1, suffix, CLOCK_WINDOW_WIDTH), 1, 0xFF, NULL); // print am/pm
-    CopyWindowToVram(sStartClockWindowId, COPYWIN_GFX);
+    AddTextPrinterParameterized(sSafariBallsWindowId, 1, gStringVar4, 0, 1, 0xFF, NULL);
+    CopyWindowToVram(sSafariBallsWindowId, COPYWIN_GFX);
 }
 
 // static bool8 StartMenuStatEditorCallback(void)

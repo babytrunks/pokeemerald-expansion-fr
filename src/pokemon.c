@@ -4048,8 +4048,9 @@ bool8 ExecuteTableBasedItemEffect(struct Pokemon *mon, u16 item, u8 partyIndex, 
 #define UPDATE_FRIENDSHIP_FROM_ITEM()                                                                   \
 {                                                                                                       \
     if ((retVal == 0 || friendshipOnly) && !ShouldSkipFriendshipChange() && friendshipChange == 0)      \
-    {                                                                                                   \
+    {                                                                                                    \
         friendshipChange = itemEffect[itemEffectParam];                                                 \
+        DebugPrintf("In UPDATE_FRIENDSHIP_FROM_ITEM %d", friendshipChange);                             \
         friendship = GetMonData(mon, MON_DATA_FRIENDSHIP, NULL);                                        \
         friendship += CalculateFriendshipBonuses(mon,friendshipChange,holdEffect);                      \
         if (friendship < 0)                                                                             \
@@ -4274,6 +4275,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             if (dataSigned == 0)
                             {
                                 // No EVs to lose, but make sure friendship updates anyway
+                                DebugPrintf("In reset evs 0");
                                 friendshipOnly = TRUE;
                                 itemEffectParam++;
                                 break;
@@ -4287,7 +4289,13 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         else // Reset EV (HP or Atk)
                         {
                             if (dataSigned == 0)
+                            {
+                                // No EVs to lose, but make sure friendship updates anyway
+                                DebugPrintf("In reset evs 1");
+                                friendshipOnly = TRUE;
+                                itemEffectParam++;
                                 break;
+                            }
 
                             dataSigned = 0;
                         }
@@ -4515,21 +4523,32 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         // how much friendship the Pokémon already has.
                         // In general, Pokémon with lower friendship receive more,
                         // and Pokémon with higher friendship receive less.
+                        friendshipOnly = TRUE;
+                        if (!ShouldSkipFriendshipChange() && friendshipChange == 0)  
+                            DebugPrintf("friendshipOnly %d" , friendshipOnly );                        
                         if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 100)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
+
                         itemEffectParam++;
+                        retVal = FALSE;
                         break;
 
                     case 6: // ITEM5_FRIENDSHIP_MID
+                        DebugPrintf("In ITEM5_FRIENDSHIP_MID");    
                         if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 100 && GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 200)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
+                        friendshipOnly = TRUE;
                         itemEffectParam++;
+                        retVal = FALSE;
                         break;
 
                     case 7: // ITEM5_FRIENDSHIP_HIGH
+                        DebugPrintf("In ITEM5_FRIENDSHIP_HIGH");   
                         if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 200)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
+                        friendshipOnly = TRUE;
                         itemEffectParam++;
+                        retVal = FALSE;
                         break;
                     }
                 }
@@ -4860,7 +4879,10 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
         case IF_TIME:
             if (GetTimeOfDay() == params[i].arg1)
                 currentCondition = TRUE;
-
+            if (GetTimeOfDay() == TIME_EVENING && params[i].arg1 == TIME_NIGHT && GetMonData(mon, MON_DATA_SPECIES, NULL) != SPECIES_ROCKRUFF)
+                currentCondition = TRUE;
+            if (GetTimeOfDay() == TIME_MORNING && params[i].arg1 == TIME_DAY)
+                currentCondition = TRUE;
             break;
         case IF_NOT_TIME:
             if (GetTimeOfDay() != params[i].arg1)
@@ -7035,8 +7057,8 @@ bool8 ShouldSkipFriendshipChange(void)
 {
     if (gMain.inBattle && gBattleTypeFlags & (BATTLE_TYPE_FRONTIER))
         return TRUE;
-    if (!gMain.inBattle && (InBattlePike() || CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE))
-        return TRUE;
+    // if (!gMain.inBattle && (InBattlePike() || CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE))
+    //     return TRUE;
     return FALSE;
 }
 

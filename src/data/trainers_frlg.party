@@ -421,7 +421,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Mega Drain
 - Confusion
 
-Beedrill
+Beedrill @ Iron Ball
 Ability: Sniper
 Level: 10
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -6513,7 +6513,7 @@ Weezing
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_SCIENTIST_CONNOR ===
+ === TRAINER_SCIENTIST_CONNOR ===
 Name: Connor
 Class: Scientist Frlg
 Pic: Scientist Frlg
@@ -6522,23 +6522,60 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Muk
-Level: 39
+Muk @ Sitrus Berry  
+Ability: Sticky Hold  
+Level: 40  
+EVs: 68 Def / 116 SpA  
+Quiet Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Moonblast  
+- Fire Blast  
+- Giga Drain  
+- Acid Spray  
 
-Magneton
-Level: 40
+Beheeyem @ Metal Coat  
+Ability: Analytic  
+Level: 37  
+EVs: 172 Atk  
+Adamant Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Steel Wing  
+- Zen Headbutt  
+- Rock Slide  
+- Agility  
 
-Porygon2
-Level: 40
+Luxray @ Power Bracer  
+Ability: Rivalry  
+Level: 41  
+EVs: 204 Atk  
+Adamant Nature  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Fang  
+- Bite  
+- Iron Tail  
+- Quick Attack  
+
+Musharna  
+Ability: Synchronize  
+Level: 37  
+EVs: 88 HP / 64 SpA  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psyshock  
+- Energy Ball  
+- Shadow Ball  
+- Sonic Boom
 
-Weezing-Galar
-Level: 41
+Revavroom @ Cell Battery  
+Ability: Overcoat  
+Level: 37  
+EVs: 64 Atk / 104 Def  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Head  
+- Poison Jab  
+- High Horsepower  
+- U-turn 
 
-=== TRAINER_SCIENTIST_JERRY ===
+ === TRAINER_SCIENTIST_JERRY ===
 Name: Jerry
 Class: Scientist Frlg
 Pic: Scientist Frlg
@@ -6547,17 +6584,49 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electrode
-Level: 39
+Electrode @ Air Balloon  
+Ability: Soundproof  
+Level: 39  
+EVs: 68 HP / 136 SpA  
+Nature: Quiet  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rising Voltage  
+- Aura Sphere  
+- Foul Play  
+- Electric Terrain  
 
-Gardevoir
-Level: 40
+Glalie @ Muscle Band  
+Ability: Inner Focus  
+Level: 40  
+EVs: 96 Atk / 96 SpD  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Icicle Spear  
+- Crunch  
+- Trailblaze  
+- Explosion  
 
-Swoobat
-Level: 41
+Forretress @ Occa Berry  
+Ability: Sturdy  
+Level: 40  
+EVs: 8 HP / 196 Atk  
+Nature: Brave  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Lunge  
+- Gyro Ball  
+- Earthquake  
+- Volt Switch  
+
+Duosion @ Colbur Berry  
+Ability: Overcoat  
+Level: 41  
+EVs: 204 SpA  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic  
+- Signal Beam  
+- Shadow Ball  
+- Recover 
 
 === TRAINER_SCIENTIST_JOSE ===
 Name: JOSE
@@ -6568,13 +6637,49 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magnezone
-Level: 40
+Exeggutor-Alola @ Yache Berry  
+Ability: Harvest  
+Level: 39  
+EVs: 104 Atk / 100 SpA  
+Nature: Brave
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain  
+- Dragon Hammer  
+- Low Kick  
+- Protect  
 
-Exeggutor-Alola
-Level: 40
+Linoone-Galar @ Eviolite  
+Ability: Quick Feet  
+Level: 39  
+EVs: 196 HP / 4 Atk  
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Throat Chop  
+- Body Slam  
+- Pin Missile  
+- Pursuit  
+
+Braviary-Hisui @ Wise Glasses  
+Ability: Frisk  
+Level: 39  
+EVs: 88 HP / 112 SpA / 4 Spe  
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Esper Wing  
+- Air Slash  
+- Flash  
+- U-turn  
+
+Tauros-Paldea-Combat @ Sitrus Berry  
+Ability: Intimidate  
+Level: 39  
+EVs: 96 Atk / 104 Def  
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Raging Bull  
+- Outrage  
+- Rock Tomb  
+- Reversal
 
 === TRAINER_SCIENTIST_RODNEY ===
 Name: RODNEY
@@ -7806,7 +7911,7 @@ Koffing
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_TEAM_ROCKET_GRUNT_23 ===
+ === TRAINER_TEAM_ROCKET_GRUNT_23 ===
 Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
@@ -7815,13 +7920,46 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Golbat
-Level: 39
+Noivern  
+Ability: Infiltrator  
+Level: 39  
+EVs: 56 SpA / 156 Spe  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Pulse  
+- Air Slash  
+- Heat Wave  
+- Super Fang  
 
-Raticate
-Level: 40
+Swoobat  
+Ability: Unaware  
+Level: 39  
+EVs: 200 Atk  
+Nature: Adamant
+- Heart Stamp  
+- Air Slash  
+- Thunder Wave  
+
+Golbat  
+Ability: Infiltrator  
+Level: 39  
+EVs: 120 HP / 68 SpD  
+Nature: Quirky
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Fang  
+- Leech Life  
+- Heat Wave  
+- Confuse Ray
+
+Gligar  
+Ability: Sand Veil  
+Level: 39  
+EVs: 204 SpD  
+Nature: Careful  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake  
+- Rock Slide  
+- Substitute  
+- Sandstorm 
 
 === TRAINER_TEAM_ROCKET_GRUNT_24 ===
 Name: Grunt
@@ -7852,7 +7990,7 @@ Houndoom
 Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_TEAM_ROCKET_GRUNT_25 ===
+ === TRAINER_TEAM_ROCKET_GRUNT_25 ===
 Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
@@ -7861,17 +7999,49 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Muk
-Level: 39
+Weepinbell (M) @ Salac Berry  
+Ability: Gluttony  
+Level: 41  
+EVs: 204 SpA  
+Modest Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Belch  
+- Energy Ball  
+- Sludge Bomb  
+- Thief  
 
-Hypno
-Level: 40
+Heatmor (M) @ Lansat Berry  
+Ability: Gluttony  
+Level: 37  
+EVs: 8 HP / 92 SpA / 96 Spe  
+Bashful Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Belch  
+- Flamethrower  
+- Giga Drain  
+- Thief  
 
-Honchkrow
-Level: 41
+Oinkologne-F @ Liechi Berry  
+Ability: Gluttony  
+Level: 40  
+EVs: 104 SpA / 96 Spe  
+Hardy Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Belch  
+- Body Slam  
+- High Horsepower  
+- Thief
+
+Copperajah @ Petaya Berry  
+Ability: Sheer Force  
+Level: 39    
+EVs: 204 SpA  
+Modest Nature  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Belch  
+- Flash Cannon  
+- Earth Power  
+- Taunt  
 
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
 Name: Grunt
