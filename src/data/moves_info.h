@@ -1952,7 +1952,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Mega Drain"),
         .description = sMegaDrainDescription,
         .effect = EFFECT_ABSORB,
-        .power = 50,
+        .power = 60,
         .type = TYPE_GRASS,
         .accuracy = 100,
         .pp = B_UPDATED_MOVE_DATA >= GEN_4 ? 15 : 10,
@@ -11718,7 +11718,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Charge Beam"),
         .description = COMPOUND_STRING(
             "Fires a beam of electricity.\n"
-            "May raise Sp. Atk."),
+            "Raises Sp. Atk."),
         .effect = EFFECT_HIT,
         .power = 50,
         .type = TYPE_ELECTRIC,

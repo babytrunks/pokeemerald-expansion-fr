@@ -2538,7 +2538,8 @@ void CheckFollowerPokemonIsDog(void)
         case SPECIES_MANECTRIC:
         case SPECIES_SMEARGLE:
         // Gen 4
-
+        case SPECIES_RIOLU: 
+        case SPECIES_LUCARIO:
         // Gen 5
         case SPECIES_LILLIPUP:
         case SPECIES_HERDIER:
@@ -2546,7 +2547,7 @@ void CheckFollowerPokemonIsDog(void)
 
         // Gen 6
         case SPECIES_FURFROU:
-
+        case SPECIES_ZYGARDE_10:
         // Gen 7
         case SPECIES_ROCKRUFF:
         case SPECIES_LYCANROC_MIDDAY:
@@ -2566,9 +2567,7 @@ void CheckFollowerPokemonIsDog(void)
         case SPECIES_MABOSSTIFF:
         case SPECIES_GREAVARD:
         case SPECIES_HOUNDSTONE:
-        case SPECIES_RIOLU: 
-        case SPECIES_LUCARIO:
-        case SPECIES_ZYGARDE_10:
+        case SPECIES_OKIDOGI:
             gSpecialVar_Result = TRUE;
             break;
         default:

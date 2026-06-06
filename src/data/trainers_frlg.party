@@ -6497,7 +6497,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bite
 
 === TRAINER_SCIENTIST_TED ===
-Name: TED
+Name: Ted
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -6513,7 +6513,7 @@ Weezing
 Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
- === TRAINER_SCIENTIST_CONNOR ===
+=== TRAINER_SCIENTIST_CONNOR ===
 Name: Connor
 Class: Scientist Frlg
 Pic: Scientist Frlg
@@ -6526,7 +6526,7 @@ Muk @ Sitrus Berry
 Ability: Sticky Hold  
 Level: 40  
 EVs: 68 Def / 116 SpA  
-Quiet Nature  
+Nature: Quiet
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Moonblast  
 - Fire Blast  
@@ -6537,7 +6537,7 @@ Beheeyem @ Metal Coat
 Ability: Analytic  
 Level: 37  
 EVs: 172 Atk  
-Adamant Nature  
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Steel Wing  
 - Zen Headbutt  
@@ -6548,7 +6548,7 @@ Luxray @ Power Bracer
 Ability: Rivalry  
 Level: 41  
 EVs: 204 Atk  
-Adamant Nature  
+Nature: Adamant
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder Fang  
 - Bite  
@@ -6570,12 +6570,12 @@ Ability: Overcoat
 Level: 37  
 EVs: 64 Atk / 104 Def  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Iron Head  
+- Iron Head 
 - Poison Jab  
 - High Horsepower  
 - U-turn 
 
- === TRAINER_SCIENTIST_JERRY ===
+=== TRAINER_SCIENTIST_JERRY ===
 Name: Jerry
 Class: Scientist Frlg
 Pic: Scientist Frlg
@@ -6629,7 +6629,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Recover 
 
 === TRAINER_SCIENTIST_JOSE ===
-Name: JOSE
+Name: Jose
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -6728,25 +6728,37 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Venomoth
+Ninetales-Alola @ Icy Rock
+Ability: Snow Warning
+Level: 38
+EVs: 152 SpA
+Nature: Quiet
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Freeze Dry
+- Moonblast
+- Psyshock
+- Weather Ball
+
+Glalie @ Never-Melt Ice
+Ability: Ice Body
+Level: 38
+EVs: 152 SpA
+Nature: Modest
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Blizzard
+- Icy Wind
+- Fake Out
+- Ice Beam
+
+Mamoswine @ Bright Powder
+Ability: Snow Cloak
 Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Raichu
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Alakazam
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Nidoqueen
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Rotom
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ancient Power
+- Earth Power
+- Blizzard
+- Snowscape
 
 === TRAINER_SCIENTIST_JOSHUA ===
 Name: JOSHUA
@@ -7816,7 +7828,7 @@ Ability: Levitate
 Level: 33  
 Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fly  
+- Fly
 - Self-Destruct  
 - Rock Slide  
 - Zen Headbutt  
@@ -7825,9 +7837,9 @@ Pangoro @ Rocky Helmet
 Ability: Mold Breaker  
 Level: 34  
 Nature: Adamant
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
-- Rock Smash  
-- Rock Slide  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Smash
+- Rock Slide
 - Rock Climb  
 - Rock Tomb 
 
@@ -7911,7 +7923,7 @@ Koffing
 Level: 26
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
- === TRAINER_TEAM_ROCKET_GRUNT_23 ===
+=== TRAINER_TEAM_ROCKET_GRUNT_23 ===
 Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
@@ -7990,7 +8002,7 @@ Houndoom
 Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
- === TRAINER_TEAM_ROCKET_GRUNT_25 ===
+=== TRAINER_TEAM_ROCKET_GRUNT_25 ===
 Name: Grunt
 Class: Team Rocket Frlg
 Pic: Rocket Grunt M Frlg
@@ -8003,7 +8015,7 @@ Weepinbell (M) @ Salac Berry
 Ability: Gluttony  
 Level: 41  
 EVs: 204 SpA  
-Modest Nature  
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belch  
 - Energy Ball  
@@ -8014,7 +8026,7 @@ Heatmor (M) @ Lansat Berry
 Ability: Gluttony  
 Level: 37  
 EVs: 8 HP / 92 SpA / 96 Spe  
-Bashful Nature  
+Nature: Bashful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belch  
 - Flamethrower  
@@ -8025,7 +8037,7 @@ Oinkologne-F @ Liechi Berry
 Ability: Gluttony  
 Level: 40  
 EVs: 104 SpA / 96 Spe  
-Hardy Nature  
+Nature: Hardy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belch  
 - Body Slam  
@@ -8036,7 +8048,7 @@ Copperajah @ Petaya Berry
 Ability: Sheer Force  
 Level: 39    
 EVs: 204 SpA  
-Modest Nature  
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belch  
 - Flash Cannon  
@@ -8116,13 +8128,48 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Skuntank
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Accelgor @ Petaya Berry
+Ability: Unburden
+Level: 38
+Nature: Modest
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bug Buzz
+- Endure
+- Acid Spray
+- Giga Drain
 
-Machamp
-Level: 41
+Pidgeot @ Wise Glasses
+Ability: No Guard
+Level: 38
+EVs: 102 SpA / 102 Spe
+Nature: Timid
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hurricane
+- Heat Wave
+- U-turn
+- Roost
+
+Arbok @ Black Glasses
+Ability: Shed Skin
+Level: 39
+EVs: 152 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Coil
+- Sucker Punch
+- Poison Jab
+- Crunch
+
+Copperajah @ Metal Coat
+Ability: Heavy Metal
+Level: 39
+EVs: 152 Atk
+Nature: Adamant
+IVs: 31 HP / 15 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Heavy Slam
+- Bulldoze
+- Heat Crash
+- Zen Headbutt
 
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
 Name: Grunt
