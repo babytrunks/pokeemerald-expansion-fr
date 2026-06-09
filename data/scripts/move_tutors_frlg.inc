@@ -564,6 +564,22 @@ FourIsland_House10_EventScript_BodySlamTutor::
 	call EventScript_ChooseMoveTutorMon
 	setvar VAR_0x8005, MOVE_METEOR_BEAM
 	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_OUTRAGE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_SOLAR_BEAM
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_SOLAR_BLADE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_POWER_WHIP
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_FLARE_BLITZ
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_STORED_POWER
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_TAILWIND
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_MEGAHORN
+	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
 	goto EventScript_BodySlamTaught
 	end

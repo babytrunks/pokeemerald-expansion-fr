@@ -372,10 +372,6 @@ VermilionCity_FanClub_EventScript_CheckIfAnyFossils:
 	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_SetVarTempTrue
 	checkitem ITEM_SAIL_FOSSIL
 	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_SetVarTempTrue
-	checkitem ITEM_FOSSILIZED_BIRD
-	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_SetVarTempTrue
-	checkitem ITEM_FOSSILIZED_FISH
-	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_SetVarTempTrue
 	checkitem ITEM_FOSSILIZED_DRAKE
 	call_if_eq VAR_RESULT, TRUE, VermilionCity_FanClub_EventScript_SetVarTempTrue
 	checkitem ITEM_FOSSILIZED_DINO

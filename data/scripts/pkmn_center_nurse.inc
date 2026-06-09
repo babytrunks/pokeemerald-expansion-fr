@@ -166,7 +166,7 @@ EventScript_PkmnCenterNurse_Aide::
 	case 1, PkmnCenterNurse_EventScript_WantMoveTutor
 	case 2, PkmnCenterNurse_EventScript_PartyToLvlCap
 	case 3, PkmnCenterNurse_EventScript_PkmnToLvlCap
-	case 4, PkmnCenterNurse_EventScript_SwapGender
+	@ case 4, PkmnCenterNurse_EventScript_SwapGender
 	release
 	end
 
@@ -544,6 +544,38 @@ PkmnCenterNurse_Tutor_MeteorBeam:
 	setvar VAR_0x8005, MOVE_METEOR_BEAM
 	goto PkmnCenterNurse_Tutor_TeachMove
 
+PkmnCenterNurse_Tutor_Outrage:
+	setvar VAR_0x8005, MOVE_OUTRAGE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_SolarBeam:
+	setvar VAR_0x8005, MOVE_SOLAR_BEAM
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_SolarBlade:
+	setvar VAR_0x8005, MOVE_SOLAR_BLADE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_PowerWhip:
+	setvar VAR_0x8005, MOVE_POWER_WHIP
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_FlareBlitz:
+	setvar VAR_0x8005, MOVE_FLARE_BLITZ
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_StoredPower:
+	setvar VAR_0x8005, MOVE_STORED_POWER
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_Tailwind:
+	setvar VAR_0x8005, MOVE_TAILWIND
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_Megahorn:
+	setvar VAR_0x8005, MOVE_MEGAHORN
+	goto PkmnCenterNurse_Tutor_TeachMove
+
 PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_SignalBeam, 0
 	dynmultipush PkmnCenterNurse_Text_TailSlap, 1
@@ -601,22 +633,34 @@ PkmnCenterNurse_EventScript_SoulMoveTutors:
 	goto PkmnCenterNurse_EventScript_WantMoveTutor
 
 PkmnCenterNurse_EventScript_MarshMoveTutors:
-	dynmultipush PkmnCenterNurse_Text_SwordsDance, 0
-	dynmultipush PkmnCenterNurse_Text_NastyPlot, 1
-	dynmultipush PkmnCenterNurse_Text_BulkUp, 2
-	dynmultipush PkmnCenterNurse_Text_CalmMind, 3
-	dynmultipush PkmnCenterNurse_Text_MeteorBeam, 4
+	dynmultipush PkmnCenterNurse_Text_MeteorBeam, 0
+	dynmultipush PkmnCenterNurse_Text_Outrage, 1
+	dynmultipush PkmnCenterNurse_Text_SolarBeam, 2
+	dynmultipush PkmnCenterNurse_Text_SolarBlade, 3
+	dynmultipush PkmnCenterNurse_Text_PowerWhip, 4
 	dynmultistack 0, 0, FALSE, 5, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
-	case 0, PkmnCenterNurse_Tutor_SwordsDance
-	case 1, PkmnCenterNurse_Tutor_NastyPlot
-	case 2, PkmnCenterNurse_Tutor_BulkUp
-	case 3, PkmnCenterNurse_Tutor_CalmMind
-	case 4, PkmnCenterNurse_Tutor_MeteorBeam
+	case 0, PkmnCenterNurse_Tutor_MeteorBeam
+	case 1, PkmnCenterNurse_Tutor_Outrage
+	case 2, PkmnCenterNurse_Tutor_SolarBeam
+	case 3, PkmnCenterNurse_Tutor_SolarBlade
+	case 4, PkmnCenterNurse_Tutor_PowerWhip
 	goto PkmnCenterNurse_EventScript_WantMoveTutor
 
 PkmnCenterNurse_EventScript_VolcanoMoveTutors:
+	dynmultipush PkmnCenterNurse_Text_FlareBlitz, 0
+	dynmultipush PkmnCenterNurse_Text_StoredPower, 1
+	dynmultipush PkmnCenterNurse_Text_Tailwind, 2
+	dynmultipush PkmnCenterNurse_Text_Megahorn, 3
+	dynmultistack 0, 0, FALSE, 4, FALSE, 0, NULL
+	switch VAR_RESULT
+	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	case 0, PkmnCenterNurse_Tutor_FlareBlitz
+	case 1, PkmnCenterNurse_Tutor_StoredPower
+	case 2, PkmnCenterNurse_Tutor_Tailwind
+	case 3, PkmnCenterNurse_Tutor_Megahorn
+	goto PkmnCenterNurse_EventScript_WantMoveTutor
 	goto EventScript_PkmnCenterNurse_Aide
 
 PkmnCenterNurse_EventScript_EarthMoveTutors:
@@ -878,6 +922,30 @@ PkmnCenterNurse_Text_CalmMind:
 
 PkmnCenterNurse_Text_MeteorBeam:
 	.string "Meteor Beam$"
+
+PkmnCenterNurse_Text_Outrage:
+	.string "Outrage$"
+
+PkmnCenterNurse_Text_SolarBeam:
+	.string "Solar Beam$"
+
+PkmnCenterNurse_Text_SolarBlade:
+	.string "Solar Blade$"
+
+PkmnCenterNurse_Text_PowerWhip:
+	.string "Power Whip$"
+
+PkmnCenterNurse_Text_FlareBlitz:
+	.string "Flare Blitz$" 
+
+PkmnCenterNurse_Text_StoredPower:
+	.string "Stored Power$"
+
+PkmnCenterNurse_Text_Tailwind:
+	.string "Tailwind$"
+
+PkmnCenterNurse_Text_Megahorn:
+	.string "Megahorn$"
 
 PkmnCenterNurse_Text_SeismicToss:
 	.string "Seismic Toss$"

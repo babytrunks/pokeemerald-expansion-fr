@@ -2086,9 +2086,6 @@ static const u16 sGachaUltraSpeciesCommon[] = {
    SPECIES_REGICE, 
    SPECIES_REGISTEEL,
    SPECIES_COSMOG,
-   SPECIES_UXIE,
-   SPECIES_MESPRIT,
-   SPECIES_AZELF,
    SPECIES_OKIDOGI,
    SPECIES_MUNKIDORI,
    SPECIES_FEZANDIPITI,
@@ -2842,16 +2839,17 @@ void DeterminePokemonRarityAndNewStatus(void)
         // Calculate the total number of Pokémon the player doesn't own
         totalNotOwned = totalMax - totalOwned;
 
-        if (totalNotOwned <= 0)
-        {
-            // If all Pokémon of the selected rarity are owned, restart the process (reroll)
-            continue;  // This will make the loop restart from the beginning
-        }
+        // if (totalNotOwned <= 0)
+        // {
+        //     // If all Pokémon of the selected rarity are owned, restart the process (reroll)
+        //     continue;  // This will make the loop restart from the beginning
+        // }
 
         // Generate a random value for the chances
         randomValue = Random() % 100;  // Generate random value between 0-99
 
         // Check if we should get a new Pokémon based on the odds
+        u16 i = 0;
         if (sGacha->newMonOdds >= randomValue)
         {
             // Loop until a new (not owned) Pokémon is found
@@ -2865,14 +2863,14 @@ void DeterminePokemonRarityAndNewStatus(void)
                     randomValue = (Random() % 100);  // Generate random value between 0 and 100
 
                     // Determine Rarity based on the chances
-                    if (randomValue < RARITY_COMMON_ODDS)
+                    // if (randomValue < RARITY_COMMON_ODDS)
                         sGacha->Rarity = RARITY_COMMON;
-                    else if (randomValue < (RARITY_COMMON_ODDS + RARITY_UNCOMMON_ODDS))
-                        sGacha->Rarity = RARITY_UNCOMMON;
-                    else if (randomValue < (RARITY_COMMON_ODDS + RARITY_UNCOMMON_ODDS + RARITY_RARE_ODDS))
-                        sGacha->Rarity = RARITY_RARE;
-                    else
-                        sGacha->Rarity = RARITY_ULTRA_RARE;
+                    // else if (randomValue < (RARITY_COMMON_ODDS + RARITY_UNCOMMON_ODDS))
+                    //     sGacha->Rarity = RARITY_UNCOMMON;
+                    // else if (randomValue < (RARITY_COMMON_ODDS + RARITY_UNCOMMON_ODDS + RARITY_RARE_ODDS))
+                    //     sGacha->Rarity = RARITY_RARE;
+                    // else
+                    //     sGacha->Rarity = RARITY_ULTRA_RARE;
                 }
                 // If the Pokémon is not owned, we found a new Pokémon
             } while (IsNotValidUnownedSpecies(species));  // Continue if owned (IsNotValidUnownedSpecies returns TRUE)

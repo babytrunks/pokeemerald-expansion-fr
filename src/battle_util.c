@@ -11097,6 +11097,14 @@ bool32 CanMoveSkipAccuracyCalc(u32 battlerAtk, u32 battlerDef, enum Ability abil
     {
         effect = TRUE;
     }
+    else if (move == MOVE_THUNDER_WAVE && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_ELECTRIC))
+    {
+        effect = TRUE;
+    }
+    else if (move == MOVE_WILL_O_WISP && IS_BATTLER_OF_TYPE(battlerAtk, TYPE_FIRE))
+    {
+        effect = TRUE;
+    }
     // If the attacker has the ability No Guard and they aren't targeting a Pokemon involved in a Sky Drop with the move Sky Drop, move hits.
     else if (abilityAtk == ABILITY_NO_GUARD
           && gBattleMons[battlerDef].volatiles.semiInvulnerable != STATE_COMMANDER

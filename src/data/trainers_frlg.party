@@ -10862,12 +10862,12 @@ Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: Yes
+Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Items: Mega Ring
 Boss: Yes
 
-Tatsugiri @ Tatsugirinite
+Basculegion @ Colbur Berry
 Nature: Modest
 Ability: Storm Drain
 Level: 52
@@ -16335,22 +16335,82 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 - Thunderbolt
 - Will-O-Wisp
 
-=== TRAINER_PAINTER_RAYNA_2 ===
-Name: RAYNA
-Class: Painter Frlg
-Pic: Painter Frlg
+=== TRAINER_LEADER_MORTY ===
+Name: Morty
+Class: Leader Johto
+Pic: Leader Pryce
 Gender: Male
-Music: Female
+Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Purple
+Boss: Yes
+Dynamic Level Ratio: 90
 
-Smeargle
-Level: 54
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
-- Cross Chop
-- Megahorn
-- Double Edge
-- Self Destruct
+Mimikyu @ Lum Berry
+Nature: Jolly
+Ability: Disguise
+Level: 67
+EVs: 252 Atk / 4 Def / 252 Spe
+- Play Rough
+- Shadow Claw
+- Shadow Sneak
+- Swords Dance
+
+Dusknoir @ Reaper Cloth
+Nature: Adamant
+Ability: Hustle
+Level: 67
+EVs: 252 HP / 252 Atk / 4 Def
+- Shadow Punch
+- Shadow Sneak
+- Dynamic Punch
+- Will O Wisp
+
+Zoroark Hisui @ Colbur Berry
+Nature: Timid
+Ability: Illusion
+Level: 67
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Hyper Voice
+- Shadow Ball
+- Flamethrower
+- U-Turn
+
+Skeledirge @ Leftovers
+Nature: Timid
+Ability: Unaware
+Level: 67
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 248 HP / 8 SpA / 252 SpD
+- Torch Song
+- Will O Wisp
+- Hex
+- Slack Off
+
+Gengar @ Gengarite
+Nature: Timid
+Ability: Levitate
+Level: 68
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Sludge Wave
+- Shadow Ball
+- Focus Blast
+- Nasty Plot
+
+Ceruledge @ Focus Sash
+Nature: Jolly
+Ability: Weak Armor
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Bitter Blade
+- Shadow Sneak
+- Close Combat
+- Swords Dance
+
 
 === TRAINER_YOUNGSTER_DESTIN_2 ===
 Name: DESTIN

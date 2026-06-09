@@ -143,7 +143,7 @@
 #define TRAINER_SWIMMER_MALE_REECE                 137
 #define TRAINER_SWIMMER_MALE_MATTHEW               138
 #define TRAINER_SWIMMER_MALE_DOUGLAS               139
-#define TRAINER_SWIMMER_MALE_DAVID                 140
+#define TRAINER_SWIMMER_MALE_DAVID                 140 // unused
 #define TRAINER_SWIMMER_MALE_TONY                  141
 #define TRAINER_SWIMMER_MALE_AXLE                  142
 #define TRAINER_SWIMMER_MALE_BARRY                 143
@@ -179,7 +179,7 @@
 #define TRAINER_BEAUTY_GRACE                       173
 #define TRAINER_BEAUTY_OLIVIA                      174
 #define TRAINER_BEAUTY_LAUREN                      175
-#define TRAINER_SWIMMER_FEMALE_ANYA                176
+#define TRAINER_SWIMMER_FEMALE_ANYA                176 // unused
 #define TRAINER_SWIMMER_FEMALE_ALICE               177
 #define TRAINER_SWIMMER_FEMALE_CONNIE              178
 #define TRAINER_SWIMMER_FEMALE_SHIRLEY             179
@@ -587,7 +587,7 @@
 #define TRAINER_WHITNEY                581
 #define TRAINER_LEADER_JASMINE                      582
 #define TRAINER_LEADER_PRYCE                    583
-#define TRAINER_PAINTER_RAYNA_2                    584
+#define TRAINER_LEADER_MORTY                   584
 #define TRAINER_YOUNGSTER_DESTIN_2                 585
 #define TRAINER_PKMN_BREEDER_ALIZE_2               586
 #define TRAINER_YOUNG_COUPLE_GIA_JES_2             587
