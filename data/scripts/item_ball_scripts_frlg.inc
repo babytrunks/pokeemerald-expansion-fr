@@ -772,5 +772,5 @@ SevenIsland_SevaultCanyon_House_EventScript_ItemLuckyPunch::
 	end
 
 SilphCo_4F_EventScript_ItemTM41::
-	finditem ITEM_TM41
+	finditem ITEM_TM_SCALD
 	end

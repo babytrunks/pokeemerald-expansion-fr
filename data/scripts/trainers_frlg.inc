@@ -996,14 +996,14 @@ Route13_EventScript_GwenRematch::
 	end
 
 Route14_EventScript_Malik::
-	trainerbattle_single TRAINER_BIKER_MALIK, Route14_Text_MalikIntro, Route14_Text_MalikDefeat
+	trainerbattle_single TRAINER_CHANNELER_MALIK, Route14_Text_MalikIntro, Route14_Text_MalikDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route14_EventScript_MalikRematch
 	msgbox Route14_Text_MalikPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route14_EventScript_MalikRematch::
-	trainerbattle_rematch TRAINER_BIKER_MALIK, Route14_Text_MalikRematchIntro, Route14_Text_MalikDefeat
+	trainerbattle_rematch TRAINER_CHANNELER_MALIK, Route14_Text_MalikRematchIntro, Route14_Text_MalikDefeat
 	msgbox Route14_Text_MalikPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -1044,26 +1044,26 @@ Route14_EventScript_GeraldRematch::
 	end
 
 Route14_EventScript_Donald::
-	trainerbattle_single TRAINER_BIRD_KEEPER_DONALD, Route14_Text_DonaldIntro, Route14_Text_DonaldDefeat
+	trainerbattle_single TRAINER_GENTLEMAN_DONALD, Route14_Text_DonaldIntro, Route14_Text_DonaldDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route14_EventScript_DonaldRematch
 	msgbox Route14_Text_DonaldPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route14_EventScript_DonaldRematch::
-	trainerbattle_rematch TRAINER_BIRD_KEEPER_DONALD, Route14_Text_DonaldRematchIntro, Route14_Text_DonaldDefeat
+	trainerbattle_rematch TRAINER_GENTLEMAN_DONALD, Route14_Text_DonaldRematchIntro, Route14_Text_DonaldDefeat
 	msgbox Route14_Text_DonaldPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route14_EventScript_Benny::
-	trainerbattle_single TRAINER_BIRD_KEEPER_BENNY, Route14_Text_BennyIntro, Route14_Text_BennyDefeat
+	trainerbattle_single TRAINER_GENTLEMAN_BENNY, Route14_Text_BennyIntro, Route14_Text_BennyDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route14_EventScript_BennyRematch
 	msgbox Route14_Text_BennyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route14_EventScript_BennyRematch::
-	trainerbattle_rematch TRAINER_BIRD_KEEPER_BENNY, Route14_Text_BennyRematchIntro, Route14_Text_BennyDefeat
+	trainerbattle_rematch TRAINER_GENTLEMAN_BENNY, Route14_Text_BennyRematchIntro, Route14_Text_BennyDefeat
 	msgbox Route14_Text_BennyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
@@ -1080,26 +1080,26 @@ Route14_EventScript_CarterRematch::
 	end
 
 Route14_EventScript_Mitch::
-	trainerbattle_single TRAINER_BIRD_KEEPER_MITCH, Route14_Text_MitchIntro, Route14_Text_MitchDefeat
+	trainerbattle_single TRAINER_FISHERMAN_MITCH, Route14_Text_MitchIntro, Route14_Text_MitchDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route14_EventScript_MitchRematch
 	msgbox Route14_Text_MitchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route14_EventScript_MitchRematch::
-	trainerbattle_rematch TRAINER_BIRD_KEEPER_MITCH, Route14_Text_MitchRematchIntro, Route14_Text_MitchDefeat
+	trainerbattle_rematch TRAINER_FISHERMAN_MITCH, Route14_Text_MitchRematchIntro, Route14_Text_MitchDefeat
 	msgbox Route14_Text_MitchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route14_EventScript_Beck::
-	trainerbattle_single TRAINER_BIRD_KEEPER_BECK, Route14_Text_BeckIntro, Route14_Text_BeckDefeat
+	trainerbattle_single TRAINER_ROCKER_BECK, Route14_Text_BeckIntro, Route14_Text_BeckDefeat
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route14_EventScript_BeckRematch
 	msgbox Route14_Text_BeckPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route14_EventScript_BeckRematch::
-	trainerbattle_rematch TRAINER_BIRD_KEEPER_BECK, Route14_Text_BeckRematchIntro, Route14_Text_BeckDefeat
+	trainerbattle_rematch TRAINER_ROCKER_BECK, Route14_Text_BeckRematchIntro, Route14_Text_BeckDefeat
 	msgbox Route14_Text_BeckPostBattle, MSGBOX_AUTOCLOSE
 	end
 

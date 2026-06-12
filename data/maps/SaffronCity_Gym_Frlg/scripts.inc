@@ -166,7 +166,7 @@ SaffronCity_Gym_Text_SabrinaPostBattle::
     .string "TM71 is Trick Room.\p"
     .string "It flips dimensions to allow\n"
     .string "slower Pokémon to move first.\p"
-	.string "It's particularly strong in Doubles."
+	.string "It's particularly strong in Doubles\p."
 	.string "A decent Trick Room user would be\n"
 	.string "Mega Chimecho.$"
 

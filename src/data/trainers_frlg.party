@@ -1937,22 +1937,41 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Name: Sofia
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Steenee
-Level: 29
+Steenee  
+Ability: Oblivious  
+Level: 30  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stomp  
+- Trailblaze  
+- Low Sweep  
 
-Dubwool
-Level: 30
+Dubwool  
+Ability: Fluffy  
+Level: 29  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stomp  
+- Double Kick  
+- Bounce  
+- Thunder Wave  
 
-Perrserker
-Level: 30
+Marshtomp  
+Ability: Damp  
+Level: 30  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stomp  
+- Dive  
+- Low Kick  
 
 === TRAINER_PICNICKER_MARTHA ===
 Name: Martha
@@ -2849,13 +2868,38 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Golett 
-Level: 30
+Baltoy @ Light Clay  
+Ability: Levitate  
+Level: 31  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Impish
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Gravity  
+- Sand Tomb  
+- Toxic  
+- Light Screen  
 
-Baltoy
-Level: 29
+Golett @ Eviolite  
+Ability: Iron Fist  
+Level: 31  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Nature: Adamant 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Gravity  
+- Earthquake  
+- Shadow Punch  
+- Mega Kick  
+
+Dugtrio  
+Ability: Arena Trap  
+Level: 31  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Smack Down  
+- Stomping Tantrum  
+- Pursuit  
+- Secret Power
 
 === TRAINER_HIKER_LENNY ===
 Name: Lenny
@@ -2866,21 +2910,41 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Graveler
-Level: 28
+Graveler @ Metronome  
+Ability: Sturdy  
+Level: 31  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Impish 
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rollout  
+- Defense Curl  
 
-Onix
-Level: 27
+Onix @ Metronome  
+Ability: Sturdy  
+Level: 31  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant  
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rollout  
+- Defense Curl  
 
-Carkol
-Level: 29
+Lairon @ Metronome  
+Ability: Sturdy  
+Level: 31  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Careful 
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rollout  
+- Defense Curl  
 
-Diggersby
-Level: 28
+Loudred @ Metronome  
+Ability: Soundproof  
+Level: 31  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant 
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rollout  
+- Defense Curl  
 
 === TRAINER_HIKER_OLIVER ===
 Name: Oliver
@@ -2998,30 +3062,58 @@ EVs: 252 Atk / 54 Spe
 - Ice Shard
 - Rock Tomb
 
-=== TRAINER_BIKER_MALIK ===
+=== TRAINER_CHANNELER_MALIK ===
 Name: Malik
-Class: Biker Frlg
-Pic: Biker Frlg
+Class: Channeler Frlg
+Pic: Channeler Frlg
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Koffing
-Level: 29
+Sableye @ Focus Sash  
+Ability: Prankster 
+Level: 50 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 153 Def / 153 SpD  
+Nature: Relaxed 
+- Fake Out  
+- Will-O-Wisp  
+- Foul Play  
+- Taunt
 
-Grimer
-Level: 29
+Gogoat @ Sitrus Berry
+Ability: Sap Sipper  
+Level: 49  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+EVs: 153 Atk / 153 HP  
+Nature: Adamant
+- Horn Leech
+- Work Up  
+- Stomping Tantrum 
+- Milk Drink
+
+Runerigus @ Leftovers
+Ability: Wandering Spirit
+Level: 49
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk / 153 Def
+Nature: Sassy  
+- Curse 
+- Earthquake 
+- Shadow Claw
+- Shadow Sneak
+
+Simisage @ Eject Pack
+Ability: Gluttony
+Level: 51 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 SpA/ 153 Spe
+Nature: Timid
+- Leaf Storm
+- Knock Off 
+- Leech Seed
+- Grass Whistle
 
 === TRAINER_BIKER_ERNEST ===
 Name: Ernest
@@ -3081,29 +3173,60 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Koffing
-Level: 28
+Accelgor @ Focus Sash
+Ability: Unburden
+Level: 50
+EVs: 252 HP / 52 Spe
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- Venom Drench
+- Toxic Spikes
+- Final Gambit
+- Bug Buzz
 
-Grimer
-Level: 28
+Tentacruel @ Black Sludge  
+Ability: Liquid Ooze
+Level: 50
+EVs: 252 HP / 52 Def  
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+- Venom Drench
+- Rest  
+- Sleep Talk
+- Infestation
 
-Weezing
-Level: 28
+Salazzle @ Charcoal
+Ability: Corrosion
+Level: 51
+EVs: 104 SpA / 152 Spe
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+- Venom Drench
+- Toxic
+- Venoshock
+- Flamethrower
+
+Garbodor @ Petaya Berry
+Ability: Aftermath
+Level: 52
+EVs: 252 HP / 52 SpA  
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Venom Drench
+- Belch
+- Swallow
+- Stockpile
+
+Pyukumuku @ Mental Herb
+Ability: Unaware
+Level: 52
+EVs: 252 HP / 52 SpD
+Nature: Careful
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Venom Drench
+- Purify
+- Curse
+- Toxic
 
 === TRAINER_BIKER_LAO ===
 Name: Lao
@@ -3404,29 +3527,49 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Grimer
-Level: 28
+Basculin-Blue-Striped @ Mystic Water  
+Ability: Adaptability
+Level: 50 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+EVs: 153 Atk / 153 Spe  
+Nature: Jolly 
+- Flip Turn  
+- Waterfall  
+- Ice Fang  
+- Agility
 
-Grimer
-Level: 28
+Jolteon @ Magnet
+Ability: Volt Absorb 
+Level: 50  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+EVs: 153 SpA / 153 Spe  
+Nature: Timid
+- Volt Switch
+- Discharge  
+- Reflect 
+- Alluring Voice
 
-Koffing
-Level: 28
+Furfrou @ Leftovers
+Ability: Fur Coat
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 153 Spe / 153 Def
+Nature: Jolly  
+- Body Slam 
+- U-turn 
+- Charm
+- Wild Charge
+
+Bewear @ Muscle Band
+Ability: Fluffy
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP/ 153 Atk
+Nature: Careful
+- Darkest Lariat
+- Hammer Arm
+- Rest
+- Sleep Talk
 
 === TRAINER_BIKER_GERALD ===
 Name: Gerald
@@ -3437,21 +3580,49 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Koffing
-Level: 29
+Lunatone @ Colbur Berry  
+Ability: Levitate
+Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 153 SpA / 153 HP  
+Nature: Timid
+- Cosmic Power  
+- Sand Tomb  
+- Psyshock  
+- Power Gem
 
-Muk
-Level: 29
+Golduck @ Mystic Water
+Ability: Cloud Nine 
+Level: 49  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+EVs: 153 SpA / 153 Spe  
+Nature: Timid
+- Psychic
+- Whirlpool  
+- Knock Off 
+- Scald
+
+Camerupt @ Sitrus Berry
+Ability: Solid Rock
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP / 153 SpD
+Nature: Sassy  
+- Magma Storm 
+- Earth Power 
+- Curse
+- Ancient Power
+
+Seviper @ Binding Band
+Ability: Fatal Precision
+Level: 49
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 SpA/ 153 Spe
+Nature: Timid
+- Wrap
+- Sludge Bomb
+- Giga Drain
+- Trailblaze
 
 === TRAINER_BURGLAR_QUINN ===
 Name: Quinn
@@ -3901,13 +4072,49 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Tentacool
-Level: 30
+Swampert @ Rindo Berry
+Level: 51
+EVs: 80 Hp / 100 SpD
+Nature: Adamant
+Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Waterfall
+- Earthquake
+- Mirror Coat
+- Flip Turn
 
-Shellder
-Level: 30
+Palossand @ Passho Berry
+Level: 52
+EVs: 120 Hp / 80 SpA
+Nature: Calm
+Ability: Water Compaction
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Ball
+- Earth Power
+- Shore Up
+- Sandstorm
+
+Gastrodon-East @ Rindo Berry
+Level: 51
+EVs: 200 Hp
+Nature: Calm
+Ability: Storm Drain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Icy Wind
+- Flash
+- Scald
+- Recover
+
+Slowbro @ Leftovers
+Level: 51
+EVs: 80 Hp / 80 SpA / 80 SpD
+Nature: Calm
+Ability: Regenerator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic Noise
+- Scald
+- Weather Ball
+- Slack Off
 
 === TRAINER_SWIMMER_MALE_REECE ===
 Name: Reece
@@ -3918,17 +4125,49 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Goldeen
-Level: 29
+Seismitoad @ Rindo Berry
+Level: 51
+EVs: 80 Hp / 100 Atk
+Nature: Adamant
+Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wave Crash
+- Earthquake
+- Icy Wind
+- Knock Off
 
-Horsea
-Level: 29
+Runerigus @ Leftovers
+Level: 52
+EVs: 200 Hp
+Nature: Calm
+Ability: Shadow Shield
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Claw
+- Earthquake
+- Destiny Bond
+- Will-O-Wisp
 
-Staryu
-Level: 29
+Gastrodon-West @ Rindo Berry
+Level: 51
+EVs: 120 Hp / 80 SpA
+Nature: Calm
+Ability: Storm Drain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Beam
+- Earth Power
+- Scald
+- Mirror Coat
+
+Starmie @ Expert Belt 
+Level: 51
+EVs: 80 SpA / 120 Spe
+Nature: Calm
+Ability: Natural Cure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dazzling Gleam
+- Scald
+- Thunder Bolt
+- Ice Beam
 
 === TRAINER_SWIMMER_MALE_MATTHEW ===
 Name: Matthew
@@ -3939,13 +4178,60 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Poliwag
-Level: 30
+Qwilfish-Hisui @ Eviolite
+Level: 58
+EVs: 120 Hp / 60 Def / 100 SpDef
+Nature: Bold
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flip Turn
+- Poison Jab
+- Spikes
+- Explosion
 
-Poliwhirl
-Level: 30
+Murkrow @ Damp Rock
+Level: 56
+EVs: 252 Hp
+Nature: Jolly
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rain Dance
+- Toxic
+- Roost
+- U-turn
+
+Golduck @ Expert Belt
+Level: 57
+EVs: 160 SpA / 60 Spe
+Nature: Timid
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald
+- Mud Bomb
+- Icy Wind
+- Flip Turn
+
+Seadra @ Leftovers
+Level: 58
+EVs: 120 Hp / 100 Def
+Nature: Bold
+Ability: Poison Point
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flip Turn
+- Surf
+- Sleep Talk
+- Rest
+
+Kingdra @ Blunder Policy
+Level: 57
+EVs: 160 Hp / 60 SpA
+Nature: Serious
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Blizzard
+- Dragon Pulse
+- Signal Beam
 
 === TRAINER_SWIMMER_MALE_DOUGLAS ===
 Name: Douglas
@@ -3956,21 +4242,60 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Horsea
-Level: 27
+Liepard @ Damp Rock
+Level: 56
+EVs: 252 Hp
+Nature: Timid
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rain Dance
+- Fake Out
+- Assist
+- U-turn
 
-Tentacool
-Level: 27
+Slowking @ Sitrus Berry
+Level: 56
+EVs: 160 Hp / 60 SpA
+Nature: Bold
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Psychic
+- Recover
+- Ice Beam
 
-Tentacool
-Level: 27
+Lanturn @ Sitrus Berry
+Level: 58
+EVs: 220 SpA
+Nature: Modest
+Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Parabolic Charge
+- Charge Beam
+- Thunder Wave
+- Soak
 
-Goldeen
-Level: 27
+Dewgong @ Leftovers
+Level: 56
+EVs: 252 Hp
+Nature: Bold
+Ability: Ice Scales
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald
+- Signal Beam
+- Icy Wind
+- Toxic
+
+Lapras @ Throat Spray
+Level: 57
+EVs: 220 SpA
+Nature: Modest
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Alluring Voice
+- Dragon Pulse
+- Sparkling Aria
+- Thunderbolt
 
 === TRAINER_SWIMMER_MALE_DAVID ===
 Name: David
@@ -4002,13 +4327,60 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Horsea
-Level: 30
+Whiscash @ Rindo Berry
+Level: 57
+EVs: 100 Atk / 120 Spe
+Nature: Adamant
+Ability: Cash Splash
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Slide
+- Liquidation
+- Earthquake
+- Dragon Dance
 
-Horsea
-Level: 30
+Crawdaunt @ Blackglasses
+Level: 57
+EVs: 60 Atk / 160 Spe
+Nature: Adamant
+Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crabhammer
+- Knock Off
+- Aqua Jet
+- Dragon Dance
+
+Feraligatr @ Mystic Water
+Level: 57
+EVs: 120 Hp / 100 Spe
+Nature: Jolly
+Ability: Strong Jaw
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Fang
+- Jaw Lock
+- Ice Fang
+- Dragon Dance
+
+Gyarados @ Wacan Berry
+Level: 57
+EVs: 100 Hp / 120 Spe
+Nature: Jolly
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Waterfall
+- Power Whip
+- Crunch
+- Dragon Dance
+
+Masquerain @ Charti Berry
+Level: 56
+EVs: 120 SpA / 100 Spe
+Nature: Modest
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bug Buzz
+- Hydro Pump
+- Air Slash
+- Quiver Dance
 
 === TRAINER_SWIMMER_MALE_AXLE ===
 Name: Axle
@@ -4019,25 +4391,60 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Tentacool
-Level: 27
+Toxapex @ Black Sludge
+Level: 56
+EVs: 220 Hp
+Nature: Calm
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic Spikes
+- Toxic
+- Baneful Bunker
+- Recover
 
-Tentacool
-Level: 27
+Pincurchin @ Leftovers
+Level: 58
+EVs: 160 Hp / 60 Def
+Nature: Bold
+Ability: Lightning Rod
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spikes
+- Protect
+- Toxic Spikes
+- Recover
 
-Staryu
-Level: 27
+Quagsire @ Sitrus Berry
+Level: 56
+EVs: 160 Hp / 60 SpD
+Nature: Calm
+Ability: Unaware
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Protect
+- Curse
+- Recover
 
-Horsea
-Level: 27
+Bruxish @ Light Clay
+Level: 57
+EVs: 100 Atk / 120 Spe
+Nature: Adamant
+Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic Fangs
+- Flip Turn
+- Reflect
+- Light Screen
 
-Tentacruel
-Level: 27
+Golisopod @ Silver Powder
+Level: 56
+EVs: 140 Hp / 80 Atk
+Nature: Adamant
+Ability: Emergency Exit
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Razor Shell
+- First Impression
+- Leech Life
+- Aqua Jet
 
 === TRAINER_SWIMMER_MALE_BARRY ===
 Name: Barry
@@ -4735,13 +5142,38 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgeotto
-Level: 29
+Sceptile @ Watmel Berry
+Ability: Unburden
+Level: 50
+EVs: 152 Atk / 104 Spe
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Natural Gift
+- Dual Chop
+- Leaf Blade
+- Swords Dance
 
-Wigglytuff
-Level: 29
+Talonflame @ Apicot Berry
+Ability: Gale Wings
+Level: 50
+EVs: 152 Atk / 104 Spe
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Natural Gift
+- Flare Blitz
+- Brave Bird
+- Swords Dance
+
+Snorlax @ Maranga Berry
+Ability: Thick Fat
+Level: 52
+EVs: 152 HP / 104 SpD
+Nature: Careful
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Natural Gift
+- Body Slam
+- Curse
+- Rest
 
 === TRAINER_BEAUTY_OLIVIA ===
 Name: Olivia
@@ -4814,39 +5246,118 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Name: Alice
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Goldeen
-Level: 30
+Pikachu-Surfing @ Light Ball
+Level: 58
+EVs: 100 SpA / 120 Spe
+Nature: Modest
+Ability: Lightning Rod
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Surf
+- Tunderbolt
+- Volt Switch
 
-Seaking
-Level: 30
+Kabutops @ Rindo Berry
+Level: 58
+EVs: 120 Hp / 60 Atk / 40 Spe
+Nature: Adamant
+Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stone Axe
+- Aqua Cutter
+- Aerial Ace
+- Aqua Jet
+
+Mantine @ Leftovers
+Level: 56
+EVs: 60 Hp / 160 Spe
+Nature: Timid
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tailwind
+- Hydro Pump
+- Air Slash
+- Icy Wind
+
+Blastoise @ Blastoisinite
+Level: 57
+EVs: 100 SpA / 120 Spe
+Nature: Timid
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
+- Aura Sphere
+- Dragon Pulse
+- Rapid Spin
 
 === TRAINER_SWIMMER_FEMALE_CONNIE ===
 Name: Connie
 Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
-Gender: Male
+Gender: Female
 Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Staryu
-Level: 29
+Grapploct @ Expert Belt
+Level: 58
+EVs: 100 Hp / 120 Atk
+Nature: Adamant
+Ability: Technician
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brutal Swing
+- Arm Thrust
+- Dual Chop
+- Mach Punch
 
-Staryu
-Level: 29
+Wugtrio @ Soft Sand
+Level: 56
+EVs: 120 Atk / 100 Spe
+Nature: Adamant
+Ability: Arena Trap
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Triple Dive
+- Throat Chop
+- Earthquake
+- Sucker Punch
 
-Staryu
-Level: 29
+Veluza @ Sitrus Berry
+Level: 57
+EVs: 252 Hp
+Nature: Jolly
+Ability: Water Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic Fangs
+- Drill Run
+- Fillet Away
+- Aqua Jet
+
+Samurott @ Leftovers
+Level: 58
+EVs: 60 Hp / 60 Atk / 120 Spe
+Nature: Timid
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aqua Cutter
+- Cut
+- Sacred Sword
+- X-Scissor
+
+Sharpedo @ Sharpedonite
+Level: 56
+EVs: 60 Hp / 100 Atk / 60 Spe
+Nature: Timid
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Poison Fang
+- Ice Fang
+- Protect
 
 === TRAINER_SWIMMER_FEMALE_SHIRLEY ===
 Name: Shirley
@@ -5028,13 +5539,62 @@ Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Mr Mime
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Hypno
+Druddigon @ Rocky Helmet
+Ability: Rough Skin
 Level: 41
+EVs: 76 HP / 100 Def
+Nature: Careful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Roost
+- Dragon Tail
+- Stealth Rock
+- Fire Punch
+
+Quagsire @ Rindo Berry
+Ability: Unaware
+Level: 40
+EVs: 104 HP / 100 Def
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Recover
+- Whirlpool
+- Spikes
+
+Throh @ Shell Bell
+Ability: Technician
+Level: 41
+EVs: 48 HP / 104 Atk
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Circle Throw
+- Taunt
+- Toxic
+- Rock Tomb
+
+Copperajah @ Figy Berry
+Ability: Heavy Metal
+Level: 41
+EVs: 76 Def / 64 SpD / 36 Spe
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Press
+- Heavy Slam
+- Stealth Rock
+- Whirlwind
+
+Aggron @ Chople Berry
+Ability: Sturdy
+Level: 42
+EVs: 60 HP / 124 Def / 16 SpD
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Tail
+- Iron Tail
+- Iron Defense
+- Rock Slide
+
 
 === TRAINER_JUGGLER_NELSON ===
 Name: Nelson
@@ -5621,38 +6181,114 @@ EVs: 54 SpA / 252 Spe
 - Weather Ball
 - Hidden Power
 
-=== TRAINER_BIRD_KEEPER_DONALD ===
-Name: DONALD
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
+=== TRAINER_GENTLEMAN_DONALD ===
+Name: Donald
+Class: Gentleman Frlg
+Pic: Gentleman Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Farfetchd
-Level: 33
+Aggron @ Leftovers  
+Ability: Sturdy
+Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP / 153 Atk  
+Nature: Relaxed
+- Stomping Tantrum  
+- Iron Head  
+- Rock Slide  
+- Curse
 
-=== TRAINER_BIRD_KEEPER_BENNY ===
-Name: BENNY
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
+Gumshoos @ Silk Scarf
+Ability: Stakeout 
+Level: 51  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk / 153 HP 
+Nature: Brave
+- Return
+- Crunch  
+- Super Fang 
+- Substitute
+
+Persian @ Loaded Dice
+Ability: Technician 
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk / 153 Spe
+Nature: Adamant  
+- Fake Out 
+- Fury Swipes 
+- Bullet Seed
+- Foul Play
+
+Garbodor @ Black Sludge
+Ability: Gooey
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP/ 153 Def
+Nature: Adamant
+- Autotomize
+- Poison Jab
+- Drain Punch
+- Toxic
+
+=== TRAINER_GENTLEMAN_BENNY ===
+Name: Benny
+Class: Gentleman Frlg
+Pic: Gentleman Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Spearow
-Level: 29
+Smeargle @ Focus Sash  
+Ability: Own Tempo
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP / 153 Spe
+Nature: Timid
+- Toxic Spikes  
+- Super Fang  
+- Foul Play  
+- Tailwind
 
-Fearow
-Level: 29
+Arcanine @ Sitrus Berry
+Ability: Intimidate 
+Level: 51  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk / 153 HP 
+Nature: Impish
+- Temper Flare
+- Wild Charge  
+- Will-O-Wisp
+- Morning Sun
+
+Dachsbun @ Leftovers
+Ability: Well-Baked-Body 
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Def / 153 Spe
+Nature: Jolly
+- Play Rough 
+- Body Press 
+- Rest
+- Sleep Talk
+
+Lucario @ Liechi Berry
+Ability: Inner Focus
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk/ 153 Spe
+Nature: Naive
+- Extreme Speed
+- Drain Punch
+- Substitute
+- Flash Cannon
 
 === TRAINER_BIRD_KEEPER_EDWIN ===
-Name: EDWIN
+Name: Edwin
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
@@ -5660,21 +6296,60 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgeotto
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Togekiss @ Leftovers  
+Ability: Serene Grace  
+Level: 50  
+EVs: 100 HP / 52 Atk / 104 Spe  
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Sky Attack  
+- Roost  
+- Substitute  
+- Thunder Wave
 
-Farfetchd
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Honchkrow @ Power Herb  
+Ability: Super Luck  
+Level: 50  
+EVs: 252 HP / 52 Atk 
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Sky Attack  
+- Comeuppance  
+- Roost  
+- Substitute
 
-Doduo
-Level: 26
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Fearow @ Power Herb  
+Ability: Sniper  
+Level: 50  
+EVs: 252 Atk / 52 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Sky Attack  
+- Laser Focus  
+- Drill Run  
+- Drill Peck
 
-Pidgey
-Level: 26
+Squawkabilly-White @ Life Orb  
+Ability: Sheer Force  
+Level: 50   
+EVs: 52 SpA / 252 Spe  
+Nature: Hasty
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sky Attack  
+- Hurricane  
+- Heat Wave  
+- Air Slash
+
+Skarmory @ Zoom Lens
+Ability: Sturdy
+Level: 51
+EVs: 252 HP / 52 Atk 
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sky Attack  
+- Mud-Slap  
+- Substitute  
+- Roost
 
 === TRAINER_BIRD_KEEPER_CHESTER ===
 Name: CHESTER
@@ -5937,47 +6612,111 @@ Pidgeotto
 Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_BIRD_KEEPER_MITCH ===
-Name: MITCH
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
+=== TRAINER_FISHERMAN_MITCH ===
+Name: Mitch
+Class: Fisherman Frlg
+Pic: Fisherman Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgey
-Level: 26
+Muk @ Iapapa Berry  
+Ability: Regenerator 
+Level: 50 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP / 153 SpD  
+Nature: Relaxed 
+- Poison Jab  
+- Acid Armor  
+- Knock Off  
+- Shadow Sneak
 
-Spearow
-Level: 26
+Raticate @ Silk Scarf
+Ability: Hustle  
+Level: 49  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk / 153 Spe  
+Nature: Jolly
+- Cut
+- Body Slam  
+- Pursuit 
+- U-turn
 
-Pidgey
-Level: 26
+Wugtrio @ Mystic Water
+Ability: Gooey
+Level: 50 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk / 153 Spe
+Nature: Jolly  
+- Triple Dive 
+- Sucker Punch 
+- Ice Spinner
+- Sleep Talk
 
-Fearow
-Level: 26
+Lanturn @ Leftovers
+Ability: Volt Absorb
+Level: 51 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 SpA/ 153 HP
+Nature: Bold
+- Stockpile
+- Thunder Wave 
+- Scald
+- Parabolic Charge
 
-=== TRAINER_BIRD_KEEPER_BECK ===
-Name: BECK
-Class: Bird Keeper Frlg
-Pic: Bird Keeper Frlg
+=== TRAINER_ROCKER_BECK ===
+Name: Beck
+Class: Rocker Frlg
+Pic: Rocker Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgeotto
-Level: 29
+Dustox @ Focus Sash  
+Ability: Shield Dust  
+Level: 51  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP / 153 SpD  
+Nature: Bold 
+- Toxic  
+- Moonlight  
+- Quiver Dance  
+- Bug Buzz
 
-Fearow
-Level: 29
+Electrode @ Magnet
+Ability: Galvanize  
+Level: 49  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 SpA / 153 Spe  
+Nature: Modest
+- Tri Attack
+- Volt Switch  
+- Foul Play 
+- Taunt
+
+Pinsir @ Weakness Policy
+Ability: Hyper Cutter 
+Level: 49 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 Atk / 153 HP  
+Nature: Impish  
+- X-scissor 
+- Knock Off 
+- Iron Defense
+- Rock Smash
+
+Ampharos @ Leftovers
+Ability: Static
+Level: 51 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 SpA/ 153 SpD
+Nature: Modest
+- Cotton Guard
+- Discharge 
+- Dragon Pulse
+- Charge Beam
 
 === TRAINER_BIRD_KEEPER_MARLON ===
 Name: MARLON
@@ -6761,7 +7500,7 @@ IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Snowscape
 
 === TRAINER_SCIENTIST_JOSHUA ===
-Name: JOSHUA
+Name: Joshua
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -6769,16 +7508,41 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Ampharos
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Gengar
+Klinklang @ Metal Coat
+Ability: Clear Body
 Level: 41
+EVs: 204 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shift Gear
+- Gear Grind
+- Wild Charge
+- Facade
+
+Golem-Alola @ Magnet
+Ability: Galvanize
+Level: 42
+EVs: 204 HP
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Explosion
+- Rock Slide
+- Heavy Slam
+- Body Slam
+
+Mudsdale @ Leftovers
+Ability: Striker
+Level: 42
+EVs: 204 Atk
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Low Kick
+- High Horsepower
+- Heavy Slam
+- Mega Kick
 
 === TRAINER_SCIENTIST_PARKER ===
-Name: PARKER
+Name: Parker
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -6786,13 +7550,38 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Luxray
-Level: 40
+Toxicroak @ Scope Lens
+Ability: Poison Touch
+Level: 42
+EVs: 204 Spe
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Cross Poison
+- Sucker Punch
+- Cross Chop
+- Swords Dance
 
-Toxicroak
-Level: 40
+Tentacruel @ Black Sludge
+Ability: Clear Body
+Level: 42
+EVs: 204 Spe
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Waterfall
+- Poison Jab
+- Reflect Type
+- Swords Dance
+
+Slowbro-Galar @ Quick Claw
+Ability: Quick Draw
+Level: 42
+EVs: 204 HP
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Belly Drum
+- Drain Punch
+- Shell Side Arm
+- Zen Headbutt
 
 === TRAINER_SCIENTIST_ED ===
 Name: ED
@@ -6803,20 +7592,52 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Porygon-Z
+Slowking-Galar @ Black Sludge
+Ability: Regenerator
 Level: 39
+EVs: 204 HP
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Chilly Reception
+- Eerie Spell
+- Sludge Bomb
+- Flamethrower
 
-Scolipede
+Carracosta @ Mystic Water
+Ability: Sturdy
+Level: 39
+EVs: 100 HP / 104 Atk
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flip Turn
+- Aqua Jet
+- Crunch
+- Rock Tomb
+
+Klang @ Shuca Berry
+Ability: Clear Body
 Level: 40
+EVs: 100 Atk / 104 Spe
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Gear Grind
+- Volt Switch
+- Wild Charge
+- Thunder Wave
 
-Manectric
-Level: 41
+Cetitan @ Never-Melt Ice
+Ability: Slush Rush
+Level: 40
+EVs: 204 Atk
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Spinner
+- Liquidation
+- Play Rough
+- Stomping Tantrum
 
 === TRAINER_SCIENTIST_TRAVIS ===
-Name: TRAVIS
+Name: Travis
 Class: Scientist Frlg
 Pic: Scientist Frlg
 Gender: Male
@@ -6824,13 +7645,49 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Lanturn
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Drapion
+Relicanth @ Mental Herb
+Ability: Sturdy
 Level: 41
+EVs: 204 HP
+Nature: Calm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Yawn
+- Liquidation
+- Rock Tomb
+
+Aurorus @ Power Herb
+Ability: Refrigerate
+Level: 40
+EVs: 204 Spe
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Meteor Beam
+- Boomburst
+- Freeze-Dry
+- Earth Power
+
+Armaldo @ Heavy-Duty Boots
+Ability: Skill Link
+Level: 40
+EVs: 104 HP / 100 Atk
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Pin Missile
+- Rock Blast
+- Knock Off
+- Superpower
+
+Archeops @ Iapapa Berry
+Ability: Defeatist
+Level: 41
+EVs: 204 Spe
+Nature: Serious
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dual Wingbeat
+- Rock Slide
+- Earthquake
+- Agility
 
 === TRAINER_SCIENTIST_BRAYDON ===
 Name: BRAYDON
@@ -7852,17 +8709,38 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Swoobat
+Stoutland @ Silk Scarf  
 Level: 39
+Ability: Scrappy  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Impact  
 
-Weezing
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Annihilape
+Typhlosion @ Charcoal
 Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Flash Fire 
+Nature: Docile  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Blast Burn  
+
+Decidueye @ Miracle Seed  
+Level: 39
+Ability: Overgrow  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Frenzy Plant  
+
+Samurott-Hisui @ Mystic Water  
+Level: 39
+Ability: Shell Armor  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Cannon  
+
+Exploud @ Silk Scarf  
+Level: 39
+Ability: Scrappy  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hyper Beam 
 
 === TRAINER_TEAM_ROCKET_GRUNT_20 ===
 Name: Grunt
@@ -7873,13 +8751,55 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Drapion
+Fearow @ Adrenaline Orb  
 Level: 40
+Ability: Technician  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Double Hit  
+- Dual Wingbeat  
+- Assurance  
+- Drill Run  
 
-Bruxish
-Level: 39
+Persian @ Adrenaline Orb  
+Level: 40
+Ability: Technician  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out  
+- Bullet Seed  
+- Jovial Bash
+- Bite  
+
+Donphan @ Adrenaline Orb  
+Level: 40
+Ability: Technician  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulldoze  
+- Ice Shard  
+- Rock Tomb  
+- Trailblaze  
+
+Avalugg-Hisui @ Adrenaline Orb  
+Level: 40
+Ability: Technician  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Tomb  
+- Ice Shard  
+- Bulldoze  
+- Accelerock  
+
+Throh @ Adrenaline Orb  
+Level: 40
+Ability: Technician  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Circle Throw  
+- Assurance  
+- Rock Tomb  
+- Bulldoze
 
 === TRAINER_TEAM_ROCKET_GRUNT_21 ===
 Name: Grunt
@@ -7890,21 +8810,56 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Slowking-Galar
+
+Tauros @ Wise Glasses  
 Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ability: Sheer Force  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Beam
+- Flamethrower
+- Thunderbolt  
+- Surf  
 
-Orbeetle
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Krokorok
+Decidueye-Hisui @ Eject Button 
 Level: 40
+Ability: Quill Rush
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Triple Arrows 
+- Sucker Punch  
+- Trop Kick  
+- U-Turn  
 
-Bombirdier
-Level: 39
+Emboar @ Eject Button
+Level: 40
+Ability: Bull Rush
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Punch
+- Arm Thrust 
+- Iron Head  
+- Stomping Tantrum
+
+Granbull @ Eject Button
+Level: 40
+Ability: Bull Rush
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Play Rough 
+- Drain Punch  
+- Ice Punch 
+- Rock Slide  
+
+Bouffalant @ Eject Button 
+Level: 40
+Ability: Bull Rush  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Raging Bull  
+- Iron Head  
+- Rock Slide  
+- Megahorn  
 
 === TRAINER_TEAM_ROCKET_GRUNT_22 ===
 Name: Grunt
@@ -8093,6 +9048,7 @@ Sneasel
 Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
+
 === TRAINER_TEAM_ROCKET_GRUNT_28 ===
 Name: Grunt
 Class: Team Rocket Frlg
@@ -8102,9 +9058,59 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Weavile
-Level: 41
+Spidops @ Focus Sash
+Ability: Insomnia
+Level: 40
+EVs: 108 HP / 80 Def
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sticky Web
+- Silk Trap
+- Toxic
+- X-Scissor
+
+Ariados @ Scope Lens
+Ability: Sniper
+Level: 42
+EVs: 52 HP / 164 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Cross Poison
+- X-Scissor
+- Night Slash
+- Swords Dance
+
+Araquanid @ Mystic Water
+Ability: Water Bubble
+Level: 40
+EVs: 92 HP / 108 Atk
+Nature: Relaxed
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Liquidation
+- Bug Bite
+- Poison Jab
+- Crunch
+
+Galvantula @ Wide Lens
+Ability: Compound Eyes
+Level: 41
+EVs: 40 Def / 88 SpA / 68 Spe
+Nature: Rash
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder
+- Volt Switch
+- Bug Buzz
+
+Centiskorch @ Charti Berry
+Ability: Flame Body
+Level: 40
+EVs: 56 Atk / 48 Def / 104 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Coil
+- Leech Life
+- Flame Charge
+- Fire Fang
 
 === TRAINER_TEAM_ROCKET_GRUNT_29 ===
 Name: Grunt
@@ -8115,9 +9121,62 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Annihilape
-Level: 41
+
+Stoutland @ Sitrus Berry
+Ability: Scrappy
+Level: 39
+EVs: 40 HP / 44 Atk / 20 Def / 8 SpD / 104 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Take Down
+- Psychic Fangs
+- Ice Fang
+- Yawn
+
+Boltund @ Expert Belt
+Ability: Strong Jaw
+Level: 41
+EVs: 40 HP / 52 Atk / 108 Spe
+Nature: Hasty
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Fang
+- Fire Fang
+- Ice Fang
+- Agility
+
+Mightyena @ Muscle Band
+Ability: Strong Jaw
+Level: 40
+EVs: 88 Atk / 104 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Fire Fang
+- Sucker Punch
+- Swagger
+
+Furfrou @ Silk Scarf
+Ability: Fur Coat
+Level: 40
+EVs: 100 Atk / 72 Spe
+Nature: Lonely
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Retaliate
+- Body Slam
+- Thunder Wave
+- Psychic Fangs
+
+Greavard @ Focus Sash
+Ability: Fluffy
+Level: 40
+EVs: 204 Atk
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poltergeist
+- Play Rough
+- Shadow Sneak
+- Crunch
+
 
 === TRAINER_TEAM_ROCKET_GRUNT_30 ===
 Name: Grunt
@@ -8180,17 +9239,49 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Dugtrio
+Grimmsnarl @ Black Glasses
+Ability: Prankster
 Level: 39
+EVs: 152 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulk Up
+- Sucker Punch
+- False Surrender
+- Spirit Break
 
-Sableye
-Level: 40
+Pangoro @ Roseli Berry
+Ability: Mold Breaker
+Level: 39
+EVs: 152 HP
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulk Up
+- Bullet Punch
+- Drain Punch
+- Darkest Lariat
 
-Toxtricity
-Level: 41
+Incineroar @ Charcoal
+Ability: Intimidate
+Level: 39
+EVs: 152 SpA
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower
+- Dark Pulse
+- Scorching Sands
+- Aura Sphere
+
+Bisharp @ Eviolite
+Ability: Defiant
+Level: 39
+EVs: 152 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Throat Chop
+- Iron Head
+- Brick Break
+- Sucker Punch
 
 === TRAINER_TEAM_ROCKET_GRUNT_32 ===
 Name: Grunt
@@ -8226,13 +9317,38 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Absol
-Level: 40
+Sneasel-Hisui @ Focus Sash
+Ability: Inner Focus
+Level: 39
+EVs: 204 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat
+- Gunk Shot
+- Shadow Claw
+- Thunder Punch
 
-Obstagoon
-Level: 41
+Slowking-Galar @ Black Sludge
+Ability: Regenerator
+Level: 40
+EVs: 152 SpA
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Eerie Spell
+- Disable
+- Slack Off
+- Sludge Bomb
+
+Drapion @ Air Balloon
+Ability: Battle Armor
+Level: 40
+EVs: 152 HP
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Acupressure
+- Rest
+- Sleep Talk
+- Knock Off
 
 === TRAINER_TEAM_ROCKET_GRUNT_34 ===
 Name: Grunt
@@ -8243,13 +9359,38 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Crawdaunt
+Crawdaunt @ Mystic Water
+Ability: Adaptability
 Level: 40
+EVs: 152 HP
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Razor Shell
+- Aqua Jet
+- Night Slash
+- Aerial Ace
 
-Drapion
+Toxtricity @ Muscle Band
+Ability: Technician
 Level: 41
+EVs: 152 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shift Gear
+- Trailblaze
+- Poison Jab
+- Wild Charge
+
+Polteageist @ Salac Berry
+Ability: Weak Armor
+Level: 41
+EVs: 152 HP
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Teatime
+- Nasty Plot
+- Shadow Ball
+- Giga Drain
 
 === TRAINER_TEAM_ROCKET_GRUNT_35 ===
 Name: Grunt
@@ -8260,21 +9401,47 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Mightyena
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Liepard
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Cacturne
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Bisharp
+Garbodor @ Normal Gem
+Ability: Weak Armor
 Level: 41
+EVs: 152 HP
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic Spikes
+- Explosion
+
+Crobat @ Sitrus Berry
+Ability: Corrosion
+Level: 41
+EVs: 152 HP
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fly
+- Venom Drench
+- Toxic
+- Roost
+
+Seviper @ Poison Barb
+Ability: Merciless
+Level: 42
+EVs: 204 Atk
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Poison Jab
+- Venom Drench
+- Earthquake
+- Iron Tail
+
+Seismitoad @ Rindo Berry
+Ability: Poison Touch
+Level: 42
+EVs: 204 HP
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sludge Wave
+- Venom Drench
+- Surf
+- Earth Power
 
 === TRAINER_TEAM_ROCKET_GRUNT_36 ===
 Name: Grunt
@@ -8285,17 +9452,38 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Seviper
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Spiritomb
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Zoroark
+Spiritomb @ Leftovers
+Ability: Pressure
 Level: 41
+EVs: 204 HP
+Nature: Relaxed
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spite
+- Ominous Wind
+- Rest
+- Sleep Talk
+
+Steelix @ Custap Berry
+Ability: Sturdy
+Level: 41
+EVs: 204 Atk
+Nature: Relaxed
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Body Press
+- Curse
+- Earthquake
+- Iron Head
+
+Druddigon @ Life Orb
+Ability: Sheer Force
+Level: 42
+EVs: 204 HP
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Focus Blast
+- Flamethrower
+- Sludge Bomb
+- Dragon Pulse
 
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
 Name: Grunt
@@ -8306,17 +9494,49 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Mandibuzz
+Banette @ Custap Berry
+Ability: Wandering Spirit
 Level: 39
+EVs: 104 HP / 100 Def
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Will-O-Wisp
+- Destiny Bond
+- Shadow Claw
+- Shadow Sneak
 
-Toxicroak
-Level: 40
+Exeggutor @ Sitrus Berry
+Ability: Harvest
+Level: 39
+EVs: 104 HP / 100 SpD
+Nature: Calm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic
+- Bulldoze
+- Flash
+- Giga Drain
 
-Pangoro
-Level: 41
+Tauros-Paldea-Blaze @ Charcoal
+Ability: Intimidate
+Level: 39
+EVs: 100 Atk / 104 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat
+- Raging Bull
+- Iron Head
+- Flame Charge
+
+Huntail @ Expert Belt
+Ability: Intimidate
+Level: 39
+EVs: 100 Atk / 104 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sucker Punch
+- Aqua Tail
+- Psychic Fangs
+- Ice Fang
 
 === TRAINER_TEAM_ROCKET_GRUNT_38 ===
 Name: Grunt
@@ -8327,17 +9547,49 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Morpeko
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Thievul
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Grimmsnarl
+Electrode @ Magnet
+Ability: Galvanize
 Level: 41
+EVs: 204 Spe
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tri-Attack
+- Aura Sphere
+- Flash Cannon
+- Volt Switch
+
+Claydol @ Red Card
+Ability: Levitate
+Level: 40
+EVs: 104 HP / 100 SpD
+Nature: Calm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earth Power
+- Psyshock
+- Toxic
+- Shore Up
+
+Florges @ Shed Shell
+Ability: Natural Cure
+Level: 40
+EVs: 104 HP / 100 Def
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Moonblast
+- Psychic Noise
+- Toxic
+- Wish
+
+Victreebel @ Liechi Berry
+Ability: Gluttony
+Level: 39
+EVs: 104 Atk / 100 Spe
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Strength Sap
+- Barb Barrage
+- Power Whip
+- Knock Off
 
 === TRAINER_TEAM_ROCKET_GRUNT_39 ===
 Name: Grunt
@@ -8348,9 +9600,49 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Incineroar
-Level: 41
+Shiftry @ Focus Sash
+Ability: Wind Rider
+Level: 39
+EVs: 104 Atk / 100 Spe
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tailwind
+- Leaf Blade
+- Knock Off
+- Fake Out
+
+Braviary-Hisui @ Expert Belt
+Ability: Sheer Force
+Level: 41
+EVs: 204 SpA
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Esper Wing
+- Hurricane
+- Heat Wave
+- Aura Sphere
+
+Krookodile @ Black Glasses
+Ability: Moxie
+Level: 40
+EVs: 204 Atk
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Pursuit
+- Dig
+- Crunch
+- Brick Break
+
+Primeape @ Eviolite
+Ability: Defiant
+Level: 41
+EVs: 204 HP
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat
+- Knock Off
+- Poison Jab
+- Rock Slide
 
 === TRAINER_TEAM_ROCKET_GRUNT_40 ===
 Name: Grunt
@@ -8361,25 +9653,60 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Umbreon
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Overqwil
-Level: 39
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Arbok
+Scyther @ Charti Berry
+Ability: Technician
 Level: 40
+EVs: 100 Atk / 104 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dual Wingbeat
+- Quick Attack
+- Bug Bite
+- Thief
 
-Gliscor
+Stunfisk-Galar @ Covert Cloak
+Ability: Iron Barbs
+Level: 39
+EVs: 104 HP / 100 Def
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Defense
+- Stomping Tantrum
+- Foul Play
+- Pain Split
+
+Tatsugiri-Stretchy @ Shell Bell
+Ability: Storm Drain
 Level: 40
+EVs: 100 HP / 104 SpD
+Nature: Calm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Pulse
+- Scald
+- Rapid Spin
+- Icy Wind
 
-Sneasler
+Spiritomb @ Black Glasses
+Ability: Pressure
 Level: 41
+EVs: 100 HP / 104 SpD
+Nature: Calm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spite
+- Protect
+- Sucker Punch
+- Foul Play
+
+Snorlax @ Figy Berry
+Ability: Gluttony
+Level: 40
+EVs: 204 HP
+Nature: Calm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Curse
+- Recycle
+- Body Slam
+- Heavy Slam
 
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
 Name: Grunt
@@ -8906,7 +10233,7 @@ Boss: Yes
 Weavile @ Focus Sash
 Nature: Jolly
 Ability: Infiltrator
-Level: 31
+Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 0 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 - Surf
@@ -9812,37 +11139,66 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
 
-Growlithe
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Roar
-- Take Down
-- Fire Blast
+Armarouge @ Focus Sash
+Nature: Timid
+Ability: Mega Launcher
+Level: 61
+EVs: 4 Def / 252 SpA / 252 Spe
+- Armor Cannon
+- Psyshock
+- Aura Sphere
+- Energy Ball
 
-Ponyta
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
+Slither-Wing @ Life Orb
+Nature: Jolly
+Ability: Protosynthesis
+Level: 61
+EVs: 252 Atk / 4 Def / 252 Spe
+- First Impression
+- U Turn
+- Close Combat
+- Flare Blitz
 
-Rapidash
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Stomp
-- Bounce
-- Fire Spin
-- Fire Blast
+Exeggutor @ Lum Berry
+Nature: Timid
+Ability: Chlorophyll
+Level: 61
+EVs: 4 Def / 252 SpA / 252 Spe
+- Growth
+- Giga Drain
+- Psyshock
+- Weather Ball
 
-Arcanine
-Level: 47
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bite
-- Roar
-- Take Down
-- Fire Blast
+Typhlosion @ Heavy Duty Boots
+Nature: Modest
+Ability: Blazing Soul
+Level: 61
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Eruption
+- Heat Wave
+- Hidden Power
+- Focus Blast
+
+Ogerpon-Hearthflame @ Hearthflame Mask
+Nature: Jolly
+Ability: Mold Breaker
+Level: 61
+EVs: 252 Atk / 4 Def / 252 Spe
+- Ivy Cudgel
+- Horn Leech
+- Knock Off
+- U-Turn
+
+Charizard @ Charizardite Y
+Nature: Timid
+Ability: Blaze
+Level: 61
+EVs: 4 Def / 252 SpA / 252 Spe
+- Heat Wave
+- Air Slash
+- Solar Beam
+- Dragon Pulse
 
 === TRAINER_LEADER_SABRINA ===
 Name: Sabrina
@@ -10852,9 +12208,55 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Haunter
-Level: 34
+Zoroark @ Heavy-Duty Boots  
+Level: 35
+Ability: Illusion  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Knock Off  
+- Low Kick  
+- U-turn  
+- Hone Claws  
+
+Zoroark @ Heavy-Duty Boots  
+Level: 35
+Ability: Illusion  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower  
+- Aura Sphere  
+- Hyper Voice  
+- U-turn  
+
+Zoroark-Hisui @ Heavy-Duty Boots  
+Level: 35
+Ability: Illusion  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hyper Voice  
+- Aura Sphere  
+- Flamethrower  
+- U-turn  
+
+Zoroark-Hisui @ Heavy-Duty Boots  
+Level: 35
+Ability: Illusion  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Knock Off  
+- Low Kick  
+- U-turn  
+- Hone Claws  
+
+Spiritomb @ Heavy-Duty Boots  
+Level: 35
+Ability: Pressure  
+Nature: Docile  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dark Pulse  
+- Sucker Punch  
+- Foul Play  
+- Parting Shot
 
 === TRAINER_CHANNELER_CARLY ===
 Name: TestBattle
@@ -10867,7 +12269,7 @@ AI: Smart Trainer / Prediction / Know Opponent Party
 Items: Mega Ring
 Boss: Yes
 
-Basculegion @ Colbur Berry
+Steelix @ Steelixite
 Nature: Modest
 Ability: Storm Drain
 Level: 52
@@ -10896,9 +12298,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Duskull
+Rotom @ Eviolite  
 Level: 35
+Ability: Levitate  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Wave  
+- Hex  
+- Volt Switch  
+- Pain Split  
+
+Sinistcha @ Big Root  
+Level: 35
+Ability: Heatproof  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Matcha Gotcha  
+- Hex  
+- Stun Spore  
+- Calm Mind  
+
+Typhlosion-Hisui @ Metronome  
+Level: 35
+Ability: Blaze  
+Nature: Modest  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Infernal Parade  
+- Aura Sphere  
+- Lava Plume  
+- Nature Power
 
 === TRAINER_CHANNELER_PAULA ===
 Name: Paula
@@ -10909,9 +12337,45 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Shuppet
-Level: 34
+Rotom-Fan @ Jaboca Berry  
+Level: 35
+Ability: Motor Drive  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Air Slash  
+- Discharge  
+- Shadow Ball  
+- Nasty Plot
+
+Claydol @ Jaboca Berry  
+Level: 35
+Ability: Levitate  
+Nature: Calm  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Cosmic Power  
+- Stored Power  
+- Earth Power
+- Shore Up  
+
+Cofagrigus @ Jaboca Berry  
+Level: 35
+Ability: Shadow Shield  
+Nature: Careful  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Iron Defense  
+- Rest  
+- Body Press  
+- Disable  
+
+Umbreon @ Jaboca Berry  
+Level: 35
+Ability: Synchronize  
+Nature: Calm  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dark Pulse  
+- Toxic  
+- Wish  
+- Taunt  
 
 === TRAINER_CHANNELER_LAUREL ===
 Name: Laurel
@@ -10939,9 +12403,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Lampent
-Level: 33
+Farigiraf @ Rowap Berry  
+Level: 35
+Ability: Parental Bond  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dazzling Gleam  
+- Hyper Voice  
+- Psychic Noise  
+- Shadow Ball  
+
+Mabosstiff @ Rowap Berry  
+Level: 35
+Ability: Intimidate  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch  
+- Fire Fang  
+- Play Rough  
+- Trailblaze  
+
+Runerigus @ Rowap Berry  
+Level: 35
+Ability: Shadow Shield  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake  
+- Knock Off  
+- Shadow Claw  
+- Haze
 
 === TRAINER_CHANNELER_TAMMY ===
 Name: Tammy
@@ -10965,9 +12455,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Phantump
-Level: 34
+Rotom-Frost @ Blunder Policy  
+Level: 36
+Ability: Levitate  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Blizzard  
+- Thunder  
+- Volt Switch  
+- Shadow Ball  
+
+Marowak @ Thick Club  
+Level: 36
+Ability: Bone Zone  
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Bonemerang  
+- Knock Off  
+- Thrash  
+- Rock Slide  
+
+Trevenant @ Jaboca Berry  
+Level: 36
+Ability: Harvest  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Leech Seed  
+- Ingrain  
+- Drain Punch  
+- Horn Leech  
 
 === TRAINER_CHANNELER_KARINA ===
 Name: Karina
@@ -10978,9 +12494,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Frillish
-Level: 33
+Rotom-Heat @ Ability Shield  
+Level: 36
+Ability: Levitate  
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Shadow Ball
+- Volt Switch  
+- Flamethrower  
+- Thunderbolt  
+
+Bombirdier @ Hard Stone  
+Level: 36
+Ability: Rocky Payload  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rock Blast  
+- Dual Wingbeat  
+- Knock Off  
+- U-turn  
+
+Banette @ Red Card  
+Level: 36
+Ability: Wandering Spirit  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Claw  
+- Shadow Sneak  
+- Throat Chop  
+- Gunk Shot  
 
 === TRAINER_CHANNELER_JANAE ===
 Name: Janae
@@ -11004,17 +12546,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Dusclops
-Level: 34
+Rotom-Mow @ Ability Shield  
+Level: 36
+Ability: Levitate  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain  
+- Discharge  
+- Shadow Ball  
+- Volt Switch  
 
-Drifblim
-Level: 33
+Dusclops @ Punching Glove  
+Level: 36
+Ability: Pressure  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shadow Punch  
+- Fire Punch  
+- Ice Punch  
+- Thunder Punch  
 
-Litwick
-Level: 35
+Morpeko @ Expert Belt  
+Level: 36
+Ability: Hunger Switch  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Knock Off  
+- Aura Wheel  
+- Seed Bomb  
+- Stomping Tantrum 
 
 === TRAINER_CHANNELER_EMILIA ===
 Name: Emilia
@@ -11025,9 +12585,35 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Sableye
-Level: 34
+Rotom-Wash @ Ability Shield  
+Level: 36
+Ability: Levitate  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump  
+- Discharge  
+- Shadow Ball  
+- Will-O-Wisp  
+
+Doublade @ Eviolite  
+Level: 36
+Ability: Sharpness  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Night Slash  
+- Cut  
+- Psycho Cut  
+- Shadow Claw  
+
+Krokorok @ Eviolite  
+Level: 36
+Ability: Intimidate  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Knock Off  
+- Stomping Tantrum  
+- Rock Slide  
+- Iron Tail
 
 === TRAINER_CHANNELER_JENNIFER ===
 Name: JENNIFER
@@ -11375,47 +12961,84 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Name: DANA
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Fletchinder
-Level: 28
+Pikachu-Cosplay @ Eviolite  
+Ability: Lightning Rod  
+Level: 31  
+Nature: Hardy  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Thunderbolt  
+- Iron Tail  
+- Quick Attack  
+- Electro Ball  
 
-Lilligant
-Level: 26
+Floette-Blue @ Floettite  
+Ability: Flower Veil  
+Level: 31  
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Dazzling Gleam  
+- Energy Ball  
+- Wish  
+- Lucky Chant  
 
-Azumarill
-Level: 26
+Snorunt (M) @ Dawn Stone  
+Ability: Inner Focus  
+Level: 31  
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ice Beam  
+- Shadow Ball  
+- Flash  
 
 === TRAINER_PICNICKER_ARIANA ===
-Name: ARIANA
+Name: Ariana
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
-Gender: Male
+Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Delcatty
-Level: 27
+Corsola @ Leftovers  
+Ability: Regenerator  
+Level: 30  
+Nature: Calm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ingrain  
+- Aqua Ring  
+- Recover  
+- Salt Cure  
 
-Gloom
-Level: 28
+Bayleef @ Leftovers  
+Ability: Overgrow  
+Level: 31  
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Giga Drain  
+- Leech Seed  
+- Grassy Terrain  
+- Synthesis  
 
-Nidorina
-Level: 29
+Aromatisse @ Leftovers  
+Ability: Healer  
+Level: 29  
+Nature: Brave 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Cherrim
-Level: 27
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Draining Kiss  
+- Drain Punch  
+- Wish  
+- Aromatherapy  
 
 === TRAINER_PICNICKER_LEAH ===
 Name: Leah
@@ -11474,7 +13097,7 @@ EVs: 252 HP / 54 SpD
 - Thunder Punch
 
 === TRAINER_PICNICKER_YAZMIN ===
-Name: YAZMIN
+Name: Yazmin
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
 Gender: Male
@@ -11482,20 +13105,63 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Bellsprout
-Level: 29
+Vivillon @ Silver Powder
+Ability: Compound Eyes
+Level: 50 
+EVs: 252 HP / 52 Spe
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Powder
+- Sleep Powder
+- Poison Powder
+- Hurricane
 
-Oddish
-Level: 29
+Hatterene @ Bright Powder 
+Ability: Magic Bounce
+Level: 50 
+EVs: 252 HP / 52 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Magic Powder
+- Shadow Claw
+- Swords Dance
+- Life Dew
 
-Tangela
-Level: 29
+Eldegoss @ Metal Powder
+Ability: Cotton Down  
+Level: 50  
+EVs: 252 HP / 52 Def  
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Cotton Spore  
+- Stun Spore  
+- Cotton Guard  
+- Leech Seed
+
+Castform @ Icy Rock
+Ability: Forecast
+Level: 51 
+EVs: 252 SpA / 52 Spe
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Powder Snow
+- Weather Ball
+- Fire Blast
+- Sandstorm
+
+Toedscruel @ Quick Powder
+Ability: Mold Breaker
+Level: 52 
+EVs: 52 SpA / 252 Spe
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spore
+- Rage Powder
+- Acupressure
+- Giga Drain
 
 === TRAINER_PICNICKER_KINDRA ===
-Name: KINDRA
+Name: Kindra
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
 Gender: Male
@@ -11503,17 +13169,50 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Gloom
-Level: 28
+Lapras @ Bright Powder  
+Ability: Water Absorb  
+Level: 50  
+Tera Type: Water  
+EVs: 252 Atk / 52 SpA  
+Quiet Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sheer Cold  
+- Fissure  
+- Horn Drill  
+- Ancient Power
 
-Oddish
-Level: 28
+Blissey @ Bright Powder  
+Ability: Serene Grace
+Level: 50 
+EVs: 252 HP / 52 Def  
+Nature: Relaxed
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Present  
+- Metronome  
+- Rock Climb  
+- Soft-Boiled
 
-Oddish
-Level: 28
+Slowbro-Galar @ Quick Claw
+Ability: Quick Draw
+Level: 52
+EVs: 252 HP / 52 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shell Side Arm
+- Zen Headbutt
+- Earthquake
+- Belly Drum
+
+Magmortar @ Quick Claw
+Ability: Quick Draw
+Level: 52
+EVs: 52 Atk / 252 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Temper Flare
+- Thunder Punch
+- Earthquake
+- Belly Drum
 
 === TRAINER_PICNICKER_BECKY ===
 Name: BECKY
@@ -11524,16 +13223,41 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pikachu
-Level: 29
+Parasect @ Snowball
+Ability: Effect Spore
+Level: 50
+EVs: 152 HP / 104 Atk
+Nature: Brave
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Rototiller
+- Leech Life
+- Leaf Blade
+- Sludge Bomb
 
-Raichu
-Level: 29
+Toxtricity-Low-Key @ Black Sludge
+Ability: Minus
+Level: 50
+EVs: 252 HP / 52 SpA
+Nature: Docile
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Magnetic Flux
+- Stored Power
+- Power-Up Punch
+- Protect
+
+Ampharos @ Leftovers
+Ability: Plus
+Level: 50
+EVs: 252 HP / 52 SpA
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Magnetic Flux
+- Magnet Rise
+- Charge Beam
+- Dragon Pulse
 
 === TRAINER_PICNICKER_CELIA ===
-Name: CELIA
+Name: Celia
 Class: Picnicker Frlg
 Pic: Picnicker Frlg
 Gender: Male
@@ -11541,9 +13265,32 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Clefairy
-Level: 33
+Dudunsparce @ Metronome
+Ability: Rattled
+Level: 50
+EVs: 252 HP / 52 SpA
+Nature: Quiet
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Trump Card
+- Last Resort
+
+Minun @ Metronome
+Ability: Galvanize
+Level: 50
+EVs: 252 HP / 52 SpA
+Nature: Rash
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Trump Card
+- Last Resort
+
+Sylveon @ Metronome
+Ability: Pixilate
+Level: 50
+EVs: 252 HP / 52 Atk
+Nature: Brave
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Trump Card
+- Last Resort
 
 === TRAINER_BRENDAN_2 ===
 Name: Brendan
@@ -11749,16 +13496,30 @@ Music: Twins
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Charmander
-Level: 29
+Chatot @ Silk Scarf
+Ability: Frisk 
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Squirtle
-Level: 29
+EVs: 153 SpA / 153 Spe
+Nature: Timid
+- Round
+- Chatter 
+- Protect
+- Agility
+ 
+Aurorus @ Focus Sash
+Ability: Refrigerate
+Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 153 HP/ 153 SpD
+Nature: Modest
+- Round
+- Thunder Wave
+- Earth Power
+- Freeze-Dry
 
 === TRAINER_CRUSH_KIN_RON_MYA ===
-Name: RON & MYA
+Name: Ron & Mya
 Class: Crush Kin Frlg
 Pic: Crush Kin Frlg
 Gender: Male
@@ -11766,13 +13527,50 @@ Music: Intense
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Hitmonchan @ Black Belt
-Level: 29
+Poliwrath @ Leftovers
+Ability: Water Absorb
+Level: 51
+EVs: 52 HP / 252 SpD
+Nature: Careful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surging Strikes
+- Icy Wind
+- Coaching
+- Hypnosis
 
-Hitmonlee @ Black Belt
-Level: 29
+Conkeldurr @ Flame Orb
+Ability: Guts
+Level: 51 
+EVs: 252 HP / 52 Atk
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wake-Up Slap
+- Smelling Salts
+- Knock Off
+- Protect
+
+
+Breloom @ Focus Sash  
+Ability: Effect Spore
+Level: 52
+EVs: 52 HP / 252 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat  
+- Coaching  
+- Stun Spore  
+- Spore
+
+Hariyama @ Assault Vest
+Ability: Thick Fat
+Level: 52 
+EVs: 52 HP / 252 Atk
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wake-Up Slap
+- Smelling Salts
+- Stone Edge
+- Fake Out
 
 === TRAINER_YOUNG_COUPLE_LEA_JED ===
 Name: LEA & JED
@@ -11792,7 +13590,7 @@ Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SIS_AND_BRO_LIA_LUC ===
-Name: LIA & LUC
+Name: Lia & Luc
 Class: Sis And Bro Frlg
 Pic: Sis And Bro Frlg
 Gender: Male
@@ -11800,13 +13598,71 @@ Music: Swimmer
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Goldeen
-Level: 30
+Lumineon @ Mystic Water
+Level: 58
+EVs: 120 SpA / 100 Spe
+Nature: Timid
+Ability: Storm Drain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hydro Pump
+- Hurricane
+- Tailwind
+- Flip Turn
 
-Seaking
-Level: 30
+Tatusgiri @ Assault Vest
+Level: 57
+EVs: 60 Hp / 160 SpA
+Nature: Modest
+Ability: Storm Drain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald
+- Dragon Pulse
+- Icy Wind
+- Hydro Pump
+
+Cradily @ Assault Vest
+Level: 56
+EVs: 60 Hp / 160 SpA
+Nature: Modest
+Ability: Storm Drain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Giga Drain
+- Power Gem
+- Earth Power
+- Sludge Bomb
+
+Poliwrath @ Sitrus Berry
+Level: 58
+EVs: 252 Hp
+Nature: Jolly
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Jet Punch
+- Drain Punch
+- Poison Jab
+
+Tauros-Paldea-Aqua @ Mystic Water
+Level: 57
+EVs: 252 Hp
+Nature: Jolly
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Rock Slide
+- Body Slam
+- Raging Bull
+
+Quaquaval @ Black Belt
+Level: 57
+EVs: 252 Hp
+Nature: Jolly
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Surf
+- Close Combat
+- Liquidation
+- Dual Chop
 
 === TRAINER_SIS_AND_BRO_LIL_IAN ===
 Name: LIL & IAN
@@ -15254,7 +17110,7 @@ Weezing
 Level: 47
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_BIRD_KEEPER_BENNY_2 ===
+=== TRAINER_GENTLEMAN_BENNY_2 ===
 Name: BENNY
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
@@ -15271,7 +17127,7 @@ Fearow
 Level: 32
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_BIRD_KEEPER_BENNY_3 ===
+=== TRAINER_GENTLEMAN_BENNY_3 ===
 Name: BENNY
 Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg

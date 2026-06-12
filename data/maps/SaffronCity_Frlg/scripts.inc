@@ -248,7 +248,7 @@ SaffronCity_Text_FlewHereOnPidgeot::
     .string "I missed the media action…$"
 
 SaffronCity_Text_Pidgeot::
-    .string "PIDGEOT: Bi bibii!$"
+    .string "Starrrrrr!$"
 
 SaffronCity_Text_SawRocketBossEscaping::
     .string "I saw the ROCKET BOSS escaping\n"

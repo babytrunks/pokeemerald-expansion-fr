@@ -105,7 +105,7 @@
 #define TRAINER_HIKER_OLIVER                       99
 #define TRAINER_HIKER_LUCAS                        100 // unused
 #define TRAINER_BIKER_JARED                        101
-#define TRAINER_BIKER_MALIK                        102
+#define TRAINER_CHANNELER_MALIK                        102
 #define TRAINER_BIKER_ERNEST                       103
 #define TRAINER_BIKER_ALEX                         104
 #define TRAINER_BIKER_LAO                          105
@@ -206,8 +206,8 @@
 #define TRAINER_BIRD_KEEPER_SEBASTIAN              200
 #define TRAINER_BIRD_KEEPER_PERRY                  201
 #define TRAINER_BIRD_KEEPER_ROBERT                 202
-#define TRAINER_BIRD_KEEPER_DONALD                 203
-#define TRAINER_BIRD_KEEPER_BENNY                  204
+#define TRAINER_GENTLEMAN_DONALD                 203
+#define TRAINER_GENTLEMAN_BENNY                  204
 #define TRAINER_BIRD_KEEPER_EDWIN                  205
 #define TRAINER_BIRD_KEEPER_CHESTER                206
 #define TRAINER_BIRD_KEEPER_WILTON                 207
@@ -217,8 +217,8 @@
 #define TRAINER_BIRD_KEEPER_REED                   211
 #define TRAINER_BIRD_KEEPER_KEITH                  212
 #define TRAINER_BIRD_KEEPER_CARTER                 213
-#define TRAINER_BIRD_KEEPER_MITCH                  214
-#define TRAINER_BIRD_KEEPER_BECK                   215
+#define TRAINER_FISHERMAN_MITCH                  214
+#define TRAINER_ROCKER_BECK                   215
 #define TRAINER_BIRD_KEEPER_MARLON                 216 // unused
 #define TRAINER_BLACK_BELT_CHUCK                  217
 #define TRAINER_BLACK_BELT_MIKE                    218
@@ -546,8 +546,8 @@
 #define TRAINER_PICNICKER_SUSIE_3                  540
 #define TRAINER_PICNICKER_SUSIE_4                  541
 #define TRAINER_BIKER_LUKAS_2                      542
-#define TRAINER_BIRD_KEEPER_BENNY_2                543
-#define TRAINER_BIRD_KEEPER_BENNY_3                544
+#define TRAINER_GENTLEMAN_BENNY_2                543
+#define TRAINER_GENTLEMAN_BENNY_3                544
 #define TRAINER_BIRD_KEEPER_MARLON_2               545
 #define TRAINER_BIRD_KEEPER_MARLON_3               546
 #define TRAINER_BEAUTY_GRACE_2                     547

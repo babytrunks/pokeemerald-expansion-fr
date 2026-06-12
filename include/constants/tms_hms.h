@@ -80,7 +80,8 @@
     F(EARTH_POWER) \
     F(WEATHER_BALL) \
     F(DRAGON_PULSE) \
-    F(SHADOW_CLAW) 
+    F(SHADOW_CLAW) \
+    F(SCALD)
     
 #define FOREACH_HM(F) \
     F(CUT) \

@@ -2480,7 +2480,7 @@ void ShowScrollableMultichoice(void)
         task->tTaskId = taskId;
         break;
     case SCROLL_MULTI_SILPHCO_FLOORS:
-        task->tMaxItemsOnScreen = 7;
+        task->tMaxItemsOnScreen = MAX_SCROLL_MULTI_ON_SCREEN;
         task->tNumItems = 12;
         task->tLeft = 1;
         task->tTop = 1;
