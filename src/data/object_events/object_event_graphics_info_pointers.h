@@ -477,7 +477,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainMachBi
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainSurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlainFishing;
-
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PlainInsane;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -943,7 +943,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ALAIN_SURFING] =       &gObjectEventGraphicsInfo_AlainSurfing,
     [OBJ_EVENT_GFX_ALAIN_FIELD_MOVE] =    &gObjectEventGraphicsInfo_AlainFieldMove,
     [OBJ_EVENT_GFX_ALAIN_FISHING] =       &gObjectEventGraphicsInfo_AlainFishing,
-
+    [OBJ_EVENT_GFX_PLAININSANE] =         &gObjectEventGraphicsInfo_PlainInsane,
 #endif // IS_FRLG
 };
 

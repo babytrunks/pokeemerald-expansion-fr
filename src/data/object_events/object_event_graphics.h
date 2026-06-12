@@ -768,4 +768,7 @@ const u32 gObjectEventPic_AlainFieldMove[] = INCBIN_U32("graphics/object_events/
 const u32 gObjectEventPic_AlainFishing[] = INCBIN_U32("graphics/object_events/pics/people/alain/fishing.4bpp");
 const u16 gObjectEventPal_Alain[] = INCBIN_U16("graphics/object_events/palettes/alain.gbapal");
 
+// Custom RRR bosses
+const u32 gObjectEventPic_PlainInsane[] = INCBIN_U32("graphics/object_events/pics/people/plaininsane.4bpp");
+const u16 gObjectEventPal_PlainInsane[] = INCBIN_U16("graphics/object_events/palettes/plaininsane.gbapal");
 #endif // IS_FRLG

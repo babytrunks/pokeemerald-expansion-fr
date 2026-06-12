@@ -14616,7 +14616,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Damages adjacent Pokémon\n"
             "and heals up by half of it."),
         .effect = EFFECT_ABSORB,
-        .power = 75,
+        .power = 65,
         .type = TYPE_ELECTRIC,
         .accuracy = 100,
         .pp = 20,

@@ -392,7 +392,7 @@
 #define TRAINER_STARTER_TEACHER                    386
 #define TRAINER_LASS_RELI_2                        387
 #define TRAINER_LASS_RELI_3                        388
-#define TRAINER_YOUNGSTER_TIMMY_2                  389
+#define TRAINER_PLAININSANE                  389
 #define TRAINER_YOUNGSTER_TIMMY_3                  390
 #define TRAINER_YOUNGSTER_TIMMY_4                  391
 #define TRAINER_YOUNGSTER_CHAD_3                   392

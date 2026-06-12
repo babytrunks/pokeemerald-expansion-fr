@@ -5505,6 +5505,7 @@ static const struct LevelUpMove sXatuLevelUpLearnset[] = {
 #endif //P_FAMILY_NATU
 
 #if P_FAMILY_MAREEP
+//done
 static const struct LevelUpMove sMareepLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -5524,6 +5525,7 @@ static const struct LevelUpMove sMareepLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//done
 static const struct LevelUpMove sFlaaffyLevelUpLearnset[] = {
 	LEVEL_UP_MOVE( 0, MOVE_POWER_GEM),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -5543,6 +5545,7 @@ static const struct LevelUpMove sFlaaffyLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//done
 static const struct LevelUpMove sAmpharosLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_VOLT_SWITCH),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
@@ -5564,6 +5567,7 @@ static const struct LevelUpMove sAmpharosLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THUNDER),
     LEVEL_UP_MOVE(48, MOVE_COTTON_GUARD),
 	LEVEL_UP_MOVE(LEVEL_CAP_GYM_6, MOVE_TAIL_GLOW),
+	LEVEL_UP_MOVE(LEVEL_CAP_GYM_8, MOVE_PARABOLIC_CHARGE),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_MAREEP

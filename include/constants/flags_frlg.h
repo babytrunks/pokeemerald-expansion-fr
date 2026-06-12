@@ -762,7 +762,7 @@
 #define FLAG_HIDE_ROCK_TUNNEL_EXTRA_ABSOLITE_Z           0x307
 #define FLAG_HIDE_ABSOLITE_Z                             0x308
 #define FLAG_HIDE_ROCK_TUNNEL_EXTRA_GACHA                0x309
-#define FLAG_0x30A               0x30A
+#define FLAG_DEFEATED_PLAININSANE                        0x30A
 #define FLAG_0x30B               0x30B
 #define FLAG_0x30C               0x30C
 #define FLAG_0x30D               0x30D

@@ -1082,6 +1082,7 @@ EventScript_AfterWhiteOutMomHeal::
 	waitmovement 0
 	msgbox gText_HadQuiteAnExperienceTakeRest
 	call Common_EventScript_OutOfCenterPartyHeal
+	setspeaker SP_NAME_MOM
 	msgbox gText_MomExplainHPGetPotions
 	fadedefaultbgm
 	releaseall
@@ -1428,17 +1429,17 @@ gText_HadQuiteAnExperienceTakeRest::
 	.string "rest.$"
 
 gText_MomExplainHPGetPotions::
-	.string "MOM: Oh, good! You and your\n"
+	.string "Oh, good! You and your\n"
 	.string "Pokémon are looking great.\p"
-	.string "I just heard from PROF. BIRCH.\p"
+	.string "I just heard from Prof Oak.\p"
 	.string "He said that Pokémon's energy is\n"
 	.string "measured in HP.\p"
 	.string "If your Pokémon lose their HP,\n"
 	.string "you can restore them at any\l"
-	.string "Pokémon CENTER.\p"
+	.string "Pokémon Center.\p"
 	.string "If you're going to travel far away,\n"
-	.string "the smart TRAINER stocks up on\l"
-	.string "POTIONS at the Pokémon MART.\p"
+	.string "the smart trainer stocks up on\l"
+	.string "PokéVials.\p"
 	.string "Make me proud, honey!\p"
 	.string "Take care!$"
 

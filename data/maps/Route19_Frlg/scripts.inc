@@ -1,6 +1,38 @@
 Route19_Frlg_MapScripts::
 	.byte 0
 
+
+Route19_EventScript_PlainInsane::
+    lockall
+    faceplayer
+    msgbox gText_plaininsane_1
+    msgbox gText_plaininsane_askChallenge, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, 1, EventScript_PlainInsane_Battle
+    msgbox gText_plaininsane_Reject
+    releaseall
+    end
+
+Route19_EventScript_PlainInsaneNotReady::
+    msgbox gText_PlainInsane_NotReady 
+    releaseall
+    end
+
+EventScript_PlainInsane_Battle::
+    msgbox gText_plaininsane_2
+    trainerbattle_no_intro TRAINER_PLAININSANE, plaininsane_Text_Defeat  
+    setflag FLAG_DEFEATED_PLAININSANE          
+    msgbox gText_plaininsane_3
+    giveitem ITEM_STARMINITE
+    giveitem ITEM_ASSAULT_VEST
+    msgbox gText_plaininsane_4
+    fadescreen FADE_TO_BLACK                
+    playse SE_EXIT                            
+    waitse                                  
+    removeobject LOCALID_ROUTE19_PLAINSANE             
+    fadescreen FADE_FROM_BLACK              
+    releaseall
+    end
+
 Route19_EventScript_RouteSign::
 	msgbox Route19_Text_RouteSign, MSGBOX_SIGN
 	end
@@ -125,37 +157,71 @@ Route19_Text_RouteSign::
     .string "Fuchsia City - SEAFOAM ISLANDS$"
 
 Route19_Text_LiaIntro::
-    .string "LIA: I'm looking after my brother.\n"
+    .string "I'm looking after my brother.\n"
     .string "He just became a TRAINER.$"
 
 Route19_Text_LiaDefeat::
-    .string "LIA: That's no way to treat my\n"
+    .string "That's no way to treat my\n"
     .string "little brother!$"
 
 Route19_Text_LiaPostBattle::
-    .string "LIA: Do you have a younger\n"
+    .string "Do you have a younger\n"
     .string "brother?\p"
     .string "I hope you're teaching him all\n"
     .string "sorts of things.$"
 
 Route19_Text_LiaNotEnoughMons::
-    .string "LIA: I want to battle together\n"
+    .string "I want to battle together\n"
     .string "with my little brother.\p"
     .string "Don't you have two Pokémon?$"
 
 Route19_Text_LucIntro::
-    .string "LUC: My big sis taught me how\n"
+    .string "My big sis taught me how\n"
     .string "to swim and train Pokémon.$"
 
 Route19_Text_LucDefeat::
-    .string "LUC: Oh, wow!\n"
+    .string "Oh, wow!\n"
     .string "Someone tougher than my big sis!$"
 
 Route19_Text_LucPostBattle::
-    .string "LUC: My big sis is strong and nice.\n"
+    .string "My big sis is strong and nice.\n"
     .string "I think she's awesome!$"
 
 Route19_Text_LucNotEnoughMons::
-    .string "LUC: I don't want to if I can't\n"
+    .string "I don't want to if I can't\n"
     .string "battle you with my big sis.\p"
     .string "Don't you have two Pokémon?$"
+
+
+gText_plaininsane_1::
+  .string "Hello there.$"
+
+
+gText_plaininsane_askChallenge::
+  .string "Are you ready for a surprise?$"
+
+gText_plaininsane_2::
+    .string "Surprise!\n"
+    .string "I'll show you how to battle with\l"
+    .string "an all out ASSAULT!$"
+
+gText_plaininsane_Reject::
+  .string "Ah, well…$"
+
+plaininsane_Text_Defeat::
+  .string "Hmm, that checks out.$"
+
+gText_plaininsane_3::
+  .string "Well done! I knew you looked\n"
+  .string "like a MEGA STAR! Take these!$"
+
+gText_plaininsane_4::
+  .string "Make sure to use those gifts you\n"
+  .string "earned! You'll need them in the\l"
+  .string "Elite 4!\p"
+  .string "Anyway, I'll be off to try and\n"
+  .string "surprise more trainers!$"
+
+gText_PlainInsane_NotReady::
+    .string "Defeat the trainers in this area and\n"
+    .string "I'll give you surprise!$"
