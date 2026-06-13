@@ -13627,9 +13627,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Town Map"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Can be viewed\n"
-            "anytime. Shows your\n"
-            "present location."),
+            "View your location,\n"
+            "and traverse to\n"
+            "known places."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,

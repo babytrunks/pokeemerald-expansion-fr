@@ -13856,22 +13856,71 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fire Fang
 - Bite
 
-=== TRAINER_LASS_RELI_2 ===
-Name: RELI
-Class: Lass Frlg
-Pic: Lass Frlg
+=== TRAINER_POWER_PLANT_JOJO_FAN ===
+Name: Jojo Fan
+Class: Dumbass
+Pic: Guitarist
 Gender: Male
-Music: Female
+Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Dynamic Level Ratio: 95
+Mugshot: Yellow
 
-Pidgey
-Level: 20
+Stone Mask (Ogerpon) @ Cornerstone Mask
+Nature: Jolly
+Ability: Sturdy
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Ivy Cudgel
+- U Turn
+- Horn Leech
+- Knock Off
 
-Nidoran F
-Level: 20
+Polnareff (Aegislash) @ Leftovers
+Nature: Quiet
+Ability: Stance Change
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Atk / 252 SpA
+- Shadow Ball
+- Kings Shield
+- Shadow Sneak
+- Flash Cannon
+
+Avdol (Moltres) @ Charti Berry
+Nature: Timid
+Ability: Flame Body
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Fire Blast
+- Hurricane
+- U Turn
+- Scorching Sands
+
+ZA WARUDO (Celebi) @ Life Orb
+Nature: Timid
+Ability: Natural Cure
+Level: 61
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Hidden Power
+- Giga Drain
+- Psychic
+- Earth Power
+
+ORAORAORA(Barbaracle) @ Barbaracite
+Nature: Adamant
+Ability: Guts
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def
+- Shell Smash
+- Drain Punch
+- Ice Punch
+- Stone Edge
 
 === TRAINER_LASS_RELI_3 ===
 Name: RELI

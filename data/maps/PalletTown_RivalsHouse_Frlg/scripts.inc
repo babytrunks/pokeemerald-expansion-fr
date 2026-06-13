@@ -141,6 +141,7 @@ PalletTown_RivalsHouse_EventScript_GiveTownMap::
 	waitmovement 0
 	delay 12
 	giveitem_msg PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy, ITEM_TOWN_MAP, 1, MUS_RG_OBTAIN_KEY_ITEM
+	msgbox PalletTown_RivalsHouse_Text_DaisyThatsTownMap
 	release
 	end
 
@@ -183,8 +184,13 @@ PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
     .string "Here, this will help you.$"
 
 PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
-    .string "{PLAYER} received a TOWN MAP\n"
+    .string "{PLAYER} received a Town Map\n"
     .string "from DAISY.$"
+
+PalletTown_RivalsHouse_Text_DaisyThatsTownMap::
+    .string "It's a map of the Kanto region.\n"
+    .string "It allows you to traverse to already\l"
+    .string "seen places as well.$"
 
 PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
     .string "You don't have space for this in\n"
