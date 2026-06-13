@@ -1153,6 +1153,19 @@ static void Cmd_attackcanceler(void)
         return;
     }
 
+    if (gSpecialStatuses[gBattlerAttacker].parentalBondState == PARENTAL_BOND_OFF
+     && ctx.abilities[ctx.battlerAtk] == ABILITY_ORAORAORAORA
+     && IsMoveAffectedByParentalBond(gCurrentMove, gBattlerAttacker)
+     && IsPunchingMove(gCurrentMove)
+     && !(gAbsentBattlerFlags & (1u << gBattlerTarget))
+     && GetActiveGimmick(gBattlerAttacker) != GIMMICK_Z_MOVE)
+    {
+        gSpecialStatuses[gBattlerAttacker].parentalBondState = PARENTAL_BOND_1ST_HIT;
+        gMultiHitCounter = 2;
+        PREPARE_BYTE_NUMBER_BUFFER(gBattleScripting.multihitString, 1, 0)
+        return;
+    }
+
     if (CanAbilityBlockMove(
             ctx.battlerAtk,
             ctx.battlerDef,

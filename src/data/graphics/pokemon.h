@@ -2779,7 +2779,6 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
     const u32 gMonFrontPic_MachampGmax[] = INCBIN_U32("graphics/pokemon/machamp/gmax/front.4bpp.smol");
     const u32 gMonBackPic_MachampGmax[] = INCBIN_U32("graphics/pokemon/machamp/gmax/back.4bpp.smol");
     const u16 gMonPalette_MachampGmax[] = INCBIN_U16("graphics/pokemon/machamp/gmax/normal.gbapal");
@@ -2792,7 +2791,6 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     // const u16 gShinyOverworldPalette_MachampGmax[] = INCBIN_U16("graphics/pokemon/machamp/gmax/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_MACHOP
 
 #if P_FAMILY_BELLSPROUT
@@ -4013,7 +4011,7 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+
     const u32 gMonFrontPic_KinglerGmax[] = INCBIN_U32("graphics/pokemon/kingler/gmax/front.4bpp.smol");
     const u32 gMonBackPic_KinglerGmax[] = INCBIN_U32("graphics/pokemon/kingler/gmax/back.4bpp.smol");
     const u16 gMonPalette_KinglerGmax[] = INCBIN_U16("graphics/pokemon/kingler/gmax/normal.gbapal");
@@ -4026,7 +4024,6 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
     // const u16 gShinyOverworldPalette_KinglerGmax[] = INCBIN_U16("graphics/pokemon/kingler/gmax/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_KRABBY
 
 #if P_FAMILY_VOLTORB

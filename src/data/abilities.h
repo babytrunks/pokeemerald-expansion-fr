@@ -1386,7 +1386,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_PARENTAL_BOND] =
         {
             .name = _("Parental Bond"),
-            .description = COMPOUND_STRING("Moves hit twice."),
+            .description = COMPOUND_STRING("Moves hit a second time for 25% damage."),
             .aiRating = 10,
         },
 
@@ -2511,6 +2511,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("Dragonize"),
         .description = COMPOUND_STRING("Normal moves become Dragon type."),
+        .aiRating = 8,
+    },
+    [ABILITY_ORAORAORAORA] =
+    {
+        .name = _("ORAORAORAORA!"),
+        .description = COMPOUND_STRING("Punching moves hit a second time for 50% damage."),
         .aiRating = 8,
     },
 };

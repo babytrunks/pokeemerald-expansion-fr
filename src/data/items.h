@@ -7182,6 +7182,42 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Glimmoranite,
     },
 
+    [ITEM_KINGLERITE] =
+    {
+        .name = ITEM_NAME("Kinglerite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Kingler to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_MEGA_STONES,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Glimmoranite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Glimmoranite,
+    },
+
+    [ITEM_MACHAMPITE] =
+    {
+        .name = ITEM_NAME("Machampite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Machamp to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_MEGA_STONES,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Glimmoranite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Glimmoranite,
+    },
+
 
 // Gems
 

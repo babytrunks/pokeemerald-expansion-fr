@@ -856,6 +856,19 @@ static inline void CalcDynamicMoveDamage(struct DamageContext *ctx, u16 *medianD
         maximum += maximum / (B_PARENTAL_BOND_DMG >= GEN_7 ? 4 : 2);
     }
 
+    
+    if (ctx->abilityAtk == ABILITY_ORAORAORAORA
+        && !strikeCount
+        && effect != EFFECT_TRIPLE_KICK
+        && effect != EFFECT_MULTI_HIT
+        && IsPunchingMove(ctx->move)
+        && !AI_IsDoubleSpreadMove(ctx->battlerAtk, ctx->move))
+    {
+        median  += median  / 2;
+        minimum += minimum / 2;
+        maximum += maximum / 2;
+    }
+
     if (median == 0)
         median = 1;
     if (minimum == 0)

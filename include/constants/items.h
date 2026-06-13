@@ -992,8 +992,8 @@
 
 #define ITEM_STRANGE_BALL 828
 
-#define ITEM_CLEFABLITE 829
-#define ITEM_VICTREEBELITE 830
+#define ITEM_CLEFABLITE 829 // DONE (Whitney)
+#define ITEM_VICTREEBELITE 830 // DONE (Erika)
 #define ITEM_STARMINITE 831 // DONE (Erika defeated)
 #define ITEM_DRAGONINITE 832
 #define ITEM_MEGANIUMITE 833
@@ -1040,7 +1040,9 @@
 
 #define ITEM_OUTFIT_BOX 874
 #define ITEM_BURNT_SEED  875
-#define ITEMS_COUNT 876
+#define ITEM_KINGLERITE  876
+#define ITEM_MACHAMPITE 877
+#define ITEMS_COUNT 878
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

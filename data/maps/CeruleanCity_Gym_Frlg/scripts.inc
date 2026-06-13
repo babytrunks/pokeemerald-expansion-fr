@@ -96,10 +96,10 @@ CeruleanCity_Gym_Text_ExplainCascadeBadge::
     .string "The Cascade Badge allows you to\n"
     .string "use Cut outside of battle.\p"
     .string "You can Cut down small trees to\n"
-    .string "open new pathways, if you haved the\l"
+    .string "open new pathways if you have the\l"
     .string "HM.\p"
-    .string "It also raises your Levle Cap to\n"
-    .string "{STR_VAR_1}.\p"
+    .string "Not only that, it raises your Level Cap\n"
+    .string "to {STR_VAR_1}.\p"
     .string "You can also have my favorite TM.$"
 
 CeruleanCity_Gym_Text_ReceivedTM54FromMisty::

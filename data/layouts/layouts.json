@@ -10244,6 +10244,19 @@
       "border_filepath": "data/layouts/RockTunnel_Extra2_Frlg_Layout/border.bin",
       "blockdata_filepath": "data/layouts/RockTunnel_Extra2_Frlg_Layout/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_MT_MOON_EXTRA_FRLG",
+      "name": "MtMoon_Extra_Frlg_Layout",
+      "width": 30,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General_Frlg",
+      "secondary_tileset": "gTileset_Cave_Frlg",
+      "border_filepath": "data/layouts/MtMoon_Extra_Frlg/border.bin",
+      "blockdata_filepath": "data/layouts/MtMoon_Extra_Frlg/map.bin",
+      "layout_version": "frlg"
     }
   ]
 }

@@ -255,9 +255,7 @@ static const u16 sAlakazamFormSpeciesIdTable[] = {
 #if P_FAMILY_MACHOP
 static const u16 sMachampFormSpeciesIdTable[] = {
     SPECIES_MACHAMP,
-#if P_GIGANTAMAX_FORMS
-    SPECIES_MACHAMP_GMAX,
-#endif
+    SPECIES_MACHAMP_MEGA,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_MACHOP
@@ -403,9 +401,8 @@ static const u16 sSteelixFormSpeciesIdTable[] = {
 #if P_FAMILY_KRABBY
 static const u16 sKinglerFormSpeciesIdTable[] = {
     SPECIES_KINGLER,
-#if P_GIGANTAMAX_FORMS
-    SPECIES_KINGLER_GMAX,
-#endif
+    SPECIES_KINGLER_MEGA,
+
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_KRABBY

@@ -9069,14 +9069,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     },
 
 #if P_GIGANTAMAX_FORMS
-    [SPECIES_MACHAMP_GMAX] =
+    [SPECIES_MACHAMP_MEGA] =
     {
         .baseHP        = 90,
-        .baseAttack    = 130,
-        .baseDefense   = 80,
-        .baseSpeed     = 55,
+        .baseAttack    = 145,
+        .baseDefense   = 110,
+        .baseSpeed     = 75,
         .baseSpAttack  = 65,
-        .baseSpDefense = P_UPDATED_STATS >= GEN_2 ? 85 : 65,
+        .baseSpDefense = 115,
         .types = MON_TYPES(TYPE_FIGHTING),
         .catchRate = 45,
         .expYield = MACHAMP_EXP_YIELD,
@@ -9087,7 +9087,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_HUMAN_LIKE),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_GUTS, ABILITY_NO_GUARD, ABILITY_STEADFAST },
+        .abilities = { ABILITY_ORAORAORAORA, ABILITY_ORAORAORAORA, ABILITY_ORAORAORAORA },
     #else
         .abilities = { ABILITY_GUTS, ABILITY_NONE, ABILITY_STEADFAST },
     #endif
@@ -12921,16 +12921,15 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sKinglerFormChangeTable,
     },
 
-#if P_GIGANTAMAX_FORMS
-    [SPECIES_KINGLER_GMAX] =
+    [SPECIES_KINGLER_MEGA] =
     {
         .baseHP        = 55,
-        .baseAttack    = 130,
-        .baseDefense   = 115,
-        .baseSpeed     = 75,
+        .baseAttack    = 150,
+        .baseDefense   = 135,
+        .baseSpeed     = 110,
         .baseSpAttack  = 50,
-        .baseSpDefense = 50,
-        .types = MON_TYPES(TYPE_WATER),
+        .baseSpDefense = 75,
+        .types = MON_TYPES(TYPE_WATER, TYPE_STEEL),
         .catchRate = 60,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 166 : 206,
         .evYield_Attack = 2,
@@ -12939,7 +12938,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_HYPER_CUTTER, ABILITY_SHELL_ARMOR, ABILITY_SHEER_FORCE },
+        .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
         .speciesName = _("Kingler"),
@@ -12980,7 +12979,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formChangeTable = sKinglerFormChangeTable,
         .randomizerMode = MON_RANDOMIZER_INVALID,
     },
-#endif //P_GIGANTAMAX_FORMS
+
 #endif //P_FAMILY_KRABBY
 
 #if P_FAMILY_VOLTORB

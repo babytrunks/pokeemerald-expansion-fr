@@ -41,7 +41,6 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
-Mugshot: Blue
 Boss: Yes
 
 Machoke @ Black Belt
@@ -1859,7 +1858,6 @@ Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Purple
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -2284,7 +2282,6 @@ Gender: Male
 Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Yellow
 Boss: Yes
 
 Thwackey @ Eviolite
@@ -2504,33 +2501,124 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_SUPER_NERD_DEREK ===
 Name: Derek
-Class: Super Nerd Frlg
-Pic: Super Nerd Frlg
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Rapidash
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Mienshao @ Life Orb
+Nature: Jolly
+Ability: Inner Focus
+Level: 58
+EVs: 252 Atk / 4 Def / 252 Spe
+- Fake Out
+- Close Combat
+- U Turn
+- Knock Off
+
+Arcanine Hisui @ Charcoal
+Nature: Jolly
+Ability: Rock Head
+Level: 58
+EVs: 252 Atk / 4 Def / 252 Spe
+- Head Smash
+- Flare Blitz
+- Wild Charge
+- Accelerock
+
+Rhyperior @ Hard Stone
+Nature: Adamant
+Ability: Solid Rock
+Level: 59
+EVs: 252 HP / 252 Atk / 4 Def
+- Stone Edge
+- Earthquake
+- Fire Punch
+- Megahorn
+
+Centiskorch @ Leftovers
+Nature: Adamant
+Ability: Flash Fire
+Level: 58
+EVs: 252 HP / 252 Atk / 4 Def
+- Flare Blitz
+- Leech Life
+- Power Whip
+- Knock Off
+
+Sunflora @ Burnt Seed
+Nature: Timid
+Ability: Chlorophyll
+Level: 59
+IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Growth
+- Solar Beam
+- Flamethrower
+- Hidden Power
 
 === TRAINER_SUPER_NERD_ZAC ===
 Name: Zac
-Class: Super Nerd Frlg
-Pic: Super Nerd Frlg
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Dynamic Level Ratio: 90
 
-Growlithe
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nidoking @ Life Orb
+Nature: Timid
+Ability: Sheer Force
+Level: 58
+EVs: 4 Def / 252 SpA / 252 Spe
+- Earth Power
+- Sludge Wave
+- Fire Blast
+- Ice Beam
 
-Vulpix
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Noivern @ Focus Sash
+Nature: Naive
+Ability: Infiltrator
+Level: 59
+EVs: 4 Def / 252 SpA / 252 Spe
+- Heat Wave
+- Tailwind
+- Aeroblast
+- Dragon Pulse
+
+Braviary Hisui @ Life Orb
+Nature: Modest
+Ability: Tinted Lens
+Level: 59
+EVs: 4 Def / 252 SpA / 252 Spe
+- Air Slash
+- Heat Wave
+- Shadow Ball
+- Esper Wing
+
+Excadrill @ Soft Sand
+Nature: Adamant
+Ability: Mold Breaker
+Level: 58
+EVs: 252 Atk / 4 Def / 252 Spe
+- High Horsepower
+- Iron Head
+- Rapid Spin
+- Rock Slide
+
+Volcarona @ Charcoal
+Nature: Timid
+Ability: Flame Body
+Level: 58
+EVs: 4 Def / 252 SpA / 252 Spe
+- Fire Blast
+- Bug Buzz
+- Giga Drain
+- Psychic
+
 
 === TRAINER_HIKER_MARCOS ===
 Name: Marcos
@@ -3016,7 +3104,6 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
 Boss: Yes
-Mugshot: Yellow
 
 Crustle @ Custap Berry
 Nature: Adamant
@@ -3237,7 +3324,6 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
-Mugshot: Yellow
 Dynamic Level Ratio: 90
 
 Mienshao @ Life Orb
@@ -3272,7 +3358,6 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
 Boss: Yes
-Mugshot: Yellow
 
 Stunfisk @ Focus Sash
 Nature: Calm
@@ -3321,7 +3406,6 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
 Boss: Yes
-Mugshot: Yellow
 
 Accelgor @ Life Orb
 Nature: Timid
@@ -3659,21 +3743,64 @@ Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BURGLAR_DUSTY ===
-Name: Dusty
-Class: Burglar Frlg
-Pic: Burglar Frlg
-Gender: Male
+Name: Lucy
+Class: Cooltrainer Frlg
+Pic: Cooltrainer F Frlg
+Gender: Female
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Vulpix
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Lycanroc @ Focus Sash
+Nature: Jolly
+Ability: Steadfast
+Level: 58
+EVs: 252 Atk / 4 Def / 252 Spe
+Ball: Great Ball
+- Stealth Rock
+- Endeavor
+- Accelerock
+- Rock Tomb
 
-Growlithe
-Level: 37
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Darmanitan Galar @ Life Orb
+Nature: Jolly
+Ability: Zen Mode
+Level: 58
+EVs: 252 Atk / 4 Def / 252 Spe
+- Flare Blitz
+- U Turn
+- Icicle Crash
+- Earthquake
+
+Gliscor @ Toxic Orb
+Nature: Jolly
+Ability: Poison Heal
+Level: 60
+EVs: 252 Atk / 252 Spe
+- Swords Dance
+- Earthquake
+- Dual Wingbeat
+- Facade
+
+Ursaluna @ Flame Orb
+Nature: Adamant
+Ability: Guts
+Level: 58
+EVs: 252 Atk / 4 Def / 252 Spe
+- Headlong Rush
+- Facade
+- Close Combat
+- Knock Off
+
+Charizard @ Charcoal
+Nature: Timid
+Ability: Solar Power
+Level: 59
+EVs: 4 Def / 252 SpA / 252 Spe
+- Fire Blast
+- Solar Beam
+- Air Slash
+- Scorching Sands
 
 === TRAINER_BURGLAR_ARNIE ===
 Name: Arnie
@@ -4578,7 +4705,6 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
-Mugshot: Yellow
 Dynamic Level Ratio: 90
 
 Lycanroc @ Hard Stone
@@ -4602,7 +4728,6 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
-Mugshot: Yellow
 Dynamic Level Ratio: 90
 
 Dugtrio @ Life Orb
@@ -4637,7 +4762,6 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
 Boss: Yes
-Mugshot: Yellow
 
 Swampert @ Leftovers
 Nature: Sassy
@@ -5486,7 +5610,6 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
-Mugshot: Yellow
 Boss: Yes
 
 Piloswine @ Eviolite
@@ -6080,7 +6203,6 @@ Gender: Male
 Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
-Mugshot: Yellow
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -6382,7 +6504,6 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
 Boss: Yes
-Mugshot: Blue
 
 Swanna @ Focus Sash
 Nature: Naive
@@ -6434,7 +6555,6 @@ Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party
 Dynamic Level Ratio: 90
 Boss: Yes
-Mugshot: Blue
 
 Pikachu Alola @ Light Ball
 Nature: Timid
@@ -8141,7 +8261,6 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
-Mugshot: Yellow
 Boss: Yes
 
 Growlithe @ Eviolite
@@ -8195,7 +8314,6 @@ Music: Aqua
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
-Mugshot: Yellow
 Boss: Yes
 
 Hypno @ Colbur Berry
@@ -10227,7 +10345,6 @@ Gender: Male
 Music: Cool
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Purple
 Boss: Yes
 
 Weavile @ Focus Sash
@@ -11127,8 +11244,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 - Triple Axel
 - Knock Off
 - Low Kick
-- Liquidation
-
+- Pursuit
 
 === TRAINER_LEADER_BLAINE ===
 Name: Blaine
@@ -11321,7 +11437,6 @@ Gender: Male
 Music: Rich
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Purple
 Boss: Yes
 
 Noctowl @ Sitrus Berry
@@ -13414,7 +13529,6 @@ Gender: Male
 Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Pink
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -18428,7 +18542,6 @@ Music: Twins
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
-Mugshot: Yellow
 Boss: Yes
 
 Monferno @ Focus Sash
@@ -18460,7 +18573,6 @@ Music: Twins
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
-Mugshot: Yellow
 Boss: Yes
 
 Dartrix @ Eviolite
@@ -19507,7 +19619,6 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
-Mugshot: Blue
 
 Kirlia
 Ability: Trace
@@ -19653,7 +19764,6 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Blue
 Boss: Yes
 
 Magcargo @ Air Balloon
@@ -19790,14 +19900,13 @@ EVs: 102 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Toxic
 
 === TRAINER_GEORGIA ===
-Name: GEORGIA
+Name: Georgia
 Class: School Kid
 Pic: School Kid F
 Gender: Female
 Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Purple
 Boss: Yes
 
 Lopunny @ Silk Scarf
@@ -20014,7 +20123,6 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Difficulty: Hard
-Mugshot: Yellow
 Boss: Yes
 
 Kricketune @ Lum Berry
@@ -20189,7 +20297,6 @@ Music: Suspicious
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Difficulty: Hard
-Mugshot: Yellow
 Boss: Yes
 
 Thwackey @ Eviolite

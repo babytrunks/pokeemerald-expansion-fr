@@ -1604,9 +1604,9 @@
 #define SPECIES_BUTTERFREE_GMAX                         1492
 #define SPECIES_PIKACHU_GMAX                            1493
 #define SPECIES_MEOWTH_GMAX                             1494
-#define SPECIES_MACHAMP_GMAX                            1495
+#define SPECIES_MACHAMP_MEGA                            1495
 #define SPECIES_GENGAR_GMAX                             1496
-#define SPECIES_KINGLER_GMAX                            1497
+#define SPECIES_KINGLER_MEGA                            1497
 #define SPECIES_LAPRAS_GMAX                             1498
 #define SPECIES_EEVEE_GMAX                              1499
 #define SPECIES_SNORLAX_GMAX                            1500

@@ -1737,3 +1737,6 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 
 	.include "data/maps/RockTunnel_Extra_Frlg/scripts.inc"
 	.include "data/maps/RockTunnel_Extra_Frlg/text.inc"
+
+	.include "data/maps/MtMoon_Extra_Frlg/scripts.inc"
+	.include "data/maps/MtMoon_Extra_Frlg/text.inc"

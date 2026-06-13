@@ -8203,11 +8203,15 @@ static inline uq4_12_t GetTargetDamageModifier(struct DamageContext *ctx)
     return UQ_4_12(1.0);
 }
 
-static inline uq4_12_t GetParentalBondModifier(u32 battlerAtk)
+static inline uq4_12_t GetParentalBondModifier(struct DamageContext *ctx)
 {
-    if (gSpecialStatuses[battlerAtk].parentalBondState != PARENTAL_BOND_2ND_HIT)
+    if (gSpecialStatuses[ctx->battlerAtk].parentalBondState != PARENTAL_BOND_2ND_HIT)
         return UQ_4_12(1.0);
-    return B_PARENTAL_BOND_DMG >= GEN_7 ? UQ_4_12(0.25) : UQ_4_12(0.5);
+    if (ctx->abilityAtk == ABILITY_ORAORAORAORA)
+        return UQ_4_12(0.5);
+    else 
+        return UQ_4_12(0.25);
+    // return B_PARENTAL_BOND_DMG >= GEN_7 ? UQ_4_12(0.25) : UQ_4_12(0.5);
 }
 
 static inline uq4_12_t GetSameTypeAttackBonusModifier(struct DamageContext *ctx)
@@ -8566,7 +8570,7 @@ static inline s32 DoMoveDamageCalcVars(struct DamageContext *ctx)
 
     dmg = CalculateBaseDamage(gBattleMovePower, userFinalAttack, gBattleMons[ctx->battlerAtk].level, targetFinalDefense);
     DAMAGE_APPLY_MODIFIER(GetTargetDamageModifier(ctx));
-    DAMAGE_APPLY_MODIFIER(GetParentalBondModifier(ctx->battlerAtk));
+    DAMAGE_APPLY_MODIFIER(GetParentalBondModifier(ctx));
     DAMAGE_APPLY_MODIFIER(GetWeatherDamageModifier(ctx));
     DAMAGE_APPLY_MODIFIER(GetCriticalModifier(ctx->isCrit));
     DAMAGE_APPLY_MODIFIER(GetGlaiveRushModifier(ctx->battlerDef));

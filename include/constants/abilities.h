@@ -350,6 +350,7 @@ enum __attribute__((packed)) Ability
     ABILITY_CASH_SPLASH = 326, // water bubble for whiscash
     ABILITY_MEGA_SOL = 327,
     ABILITY_DRAGONIZE = 328,
+    ABILITY_ORAORAORAORA = 329,
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

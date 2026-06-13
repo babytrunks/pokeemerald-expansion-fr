@@ -113,9 +113,9 @@ static const struct FormChange sAlakazamFormChangeTable[] = {
 #if P_FAMILY_MACHOP
 static const struct FormChange sMachampFormChangeTable[] =
 {
-#if P_GIGANTAMAX_FORMS
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_MACHAMP_GMAX},
-#endif
+
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_MACHAMP_MEGA, ITEM_MACHAMPITE},
+
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_MACHOP
@@ -164,9 +164,7 @@ static const struct FormChange sSteelixFormChangeTable[] = {
 #if P_FAMILY_KRABBY
 static const struct FormChange sKinglerFormChangeTable[] =
 {
-#if P_GIGANTAMAX_FORMS
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_KINGLER_GMAX},
-#endif
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM, SPECIES_KINGLER_MEGA, ITEM_KINGLERITE},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_KRABBY
