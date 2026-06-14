@@ -179,7 +179,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM30::
 	checkitem ITEM_TM_DARK_PULSE
 	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_DARK_PULSE
-	setvar VAR_TEMP_2, 4500
+	setvar VAR_TEMP_2, 4000
 	buffermovename STR_VAR_2, MOVE_DARK_PULSE
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
 	end
@@ -449,7 +449,7 @@ CeladonCity_GameCorner_PrizeRoom_Text_TMThunderboltSold::
 	.string "{FONT_SMALL_NARROW}TM Thunderbolt{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlamethrower::
-	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}4500 Coins$"
+	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}4000 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlamethrowerSold::
 	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
