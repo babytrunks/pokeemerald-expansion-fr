@@ -227,16 +227,19 @@ Text_CantSmash:
 
 EventScript_StrengthBoulder::
 	lockall
-	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
-	checkfieldmove FIELD_MOVE_STRENGTH, TRUE
-	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
-	setfieldeffectargument 0, VAR_RESULT
-	msgbox Text_WantToStrength, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength
-	closemessage
-	dofieldeffect FLDEFF_USE_STRENGTH
-	waitstate
-	goto EventScript_ActivateStrength
+	checkitem ITEM_HM_STRENGTH 
+	goto_if_eq VAR_RESULT, TRUE, EventScript_CheckActivatedBoulder
+	goto EventScript_CantStrength
+	@ goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
+	@ checkfieldmove FIELD_MOVE_STRENGTH, TRUE
+	@ goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
+	@ setfieldeffectargument 0, VAR_RESULT
+	@ msgbox Text_WantToStrength, MSGBOX_YESNO
+	@ goto_if_eq VAR_RESULT, NO, EventScript_CancelStrength
+	@ closemessage
+	@ dofieldeffect FLDEFF_USE_STRENGTH
+	@ waitstate
+	@ goto EventScript_ActivateStrength
 	end
 
 EventScript_UseStrength::

@@ -3307,8 +3307,6 @@ u8 FldEff_UseSurf(void)
 
 static void (*const sSurfFieldEffectFuncs[])(struct Task *) = {
     SurfFieldEffect_Init,
-    SurfFieldEffect_FieldMovePose,
-    SurfFieldEffect_ShowMon,
     SurfFieldEffect_JumpOnSurfBlob,
     SurfFieldEffect_End,
 };

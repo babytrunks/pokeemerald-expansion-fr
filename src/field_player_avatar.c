@@ -1032,7 +1032,8 @@ static bool8 ShouldJumpLedge(s16 x, s16 y, u8 direction)
 
 static bool8 TryPushBoulder(s16 x, s16 y, u8 direction)
 {
-    if (FlagGet(FLAG_SYS_USE_STRENGTH))
+    //if (FlagGet(FLAG_SYS_USE_STRENGTH))
+    if (FlagGet(FLAG_BADGE04_GET) && CheckBagHasItem(ITEM_HM_STRENGTH,1) )
     {
         u8 objectEventId = GetObjectEventIdByXY(x, y);
 
