@@ -11,6 +11,7 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "event_data.h"
 
 static u32 GetBattlerSideForMessage(u32 side)
 {
@@ -1361,6 +1362,23 @@ static bool32 HandleEndTurnDynamax(u32 battler)
     return effect;
 }
 
+static bool32 HandleEndTurnZaWarudo(u32 battler)
+{
+    gBattleStruct->eventState.endTurn++;
+
+    if (!FlagGet(FLAG_ZA_WARUDO_BATTLE) || gBattleTurnCounter % 3 != 0)
+        return FALSE;
+
+    for (u32 i = 0; i < gBattlersCount; i++)
+    {
+        if (GetBattlerSide(i) == B_SIDE_PLAYER && IsBattlerAlive(i))
+            gDisableStructs[i].zaWarudoFrozen = 1;
+    }
+
+    BattleScriptExecute(BattleScript_ZaWarudoMessage);
+    return TRUE;
+}
+
 /*
  * Various end turn effects that happen after all battlers moved.
  * Each Case will apply the effects for each battler. Moving to the next case when all battlers are done.
@@ -1423,6 +1441,7 @@ static bool32 (*const sEndTurnEffectHandlers[])(u32 battler) =
     [ENDTURN_FORM_CHANGE_ABILITIES] = HandleEndTurnFormChangeAbilities,
     [ENDTURN_EJECT_PACK] = HandleEndTurnEjectPack,
     [ENDTURN_DYNAMAX] = HandleEndTurnDynamax,
+    [ENDTURN_ZA_WARUDO] = HandleEndTurnZaWarudo,
 };
 
 u32 DoEndTurnEffects(void)

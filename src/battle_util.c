@@ -2286,6 +2286,21 @@ static enum MoveCanceler CancelerTruant(struct BattleContext *ctx)
     return MOVE_STEP_SUCCESS;
 }
 
+static enum MoveCanceler CancelerZaWarudo(struct BattleContext *ctx)
+{
+    if (gDisableStructs[ctx->battlerAtk].zaWarudoFrozen && GetBattlerSide(ctx->battlerAtk) == B_SIDE_PLAYER)
+    {
+        gDisableStructs[ctx->battlerAtk].zaWarudoFrozen = 0;
+        CancelMultiTurnMoves(ctx->battlerAtk, SKY_DROP_ATTACKCANCELER_CHECK);
+        gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
+        gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_LOAFING;
+        gBattlescriptCurrInstr = BattleScript_MoveUsedLoafingAroundMsg;
+        gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_MISSED;
+        return MOVE_STEP_FAILURE;
+    }
+    return MOVE_STEP_SUCCESS;
+}
+
 static enum MoveCanceler CancelerFocus(struct BattleContext *ctx)
 {
     u32 focusPunchFailureConfig = GetGenConfig(GEN_CONFIG_FOCUS_PUNCH_FAILURE);
@@ -3143,6 +3158,7 @@ static enum MoveCanceler (*const sMoveSuccessOrderCancelers[])(struct BattleCont
     [CANCELER_OBEDIENCE] = CancelerObedience,
     [CANCELER_POWER_POINTS] = CancelerPowerPoints,
     [CANCELER_TRUANT] = CancelerTruant,
+    [CANCELER_ZA_WARUDO] = CancelerZaWarudo,
     [CANCELER_FOCUS] = CancelerFocus,
     [CANCELER_FLINCH] = CancelerFlinch,
     [CANCELER_DISABLED] = CancelerDisabled,
@@ -5936,6 +5952,8 @@ bool32 CanBattlerEscape(u32 battler) // no ability check
     else if (B_GHOSTS_ESCAPE >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return TRUE;
     else if (gBattleMons[battler].volatiles.escapePrevention)
+        return FALSE;
+    else if (gDisableStructs[battler].zaWarudoFrozen)
         return FALSE;
     else if (gBattleMons[battler].volatiles.wrapped)
         return FALSE;

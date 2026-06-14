@@ -51,6 +51,7 @@ extern const u8 BattleScript_Pausex20[];
 extern const u8 BattleScript_LevelUp[];
 extern const u8 BattleScript_WeatherContinues[];
 extern const u8 BattleScript_WeatherFaded[];
+extern const u8 BattleScript_ZaWarudoMessage[];
 extern const u8 BattleScript_DamagingWeatherContinues[];
 extern const u8 BattleScript_DamagingWeather[];
 extern const u8 BattleScript_FogEnded_Ret[];
@@ -833,4 +834,5 @@ extern const u8 BattleScript_EffectMistAttack[];
 extern const u8 BattleScript_BreakthroughRaisesStat[];
 extern const u8 BattleScript_BreakthroughRaisesHP[];
 
+extern const u8 BattleScript_MoveUsedLoafingAroundMsg[]; // Za Warudo
 #endif // GUARD_BATTLE_SCRIPTS_H

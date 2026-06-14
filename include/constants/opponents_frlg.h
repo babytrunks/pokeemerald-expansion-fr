@@ -393,7 +393,7 @@
 #define TRAINER_POWER_PLANT_JOJO_FAN                        387
 #define TRAINER_LASS_RELI_3                        388
 #define TRAINER_PLAININSANE                  389
-#define TRAINER_YOUNGSTER_TIMMY_3                  390
+#define TRAINER_SILVA                  390
 #define TRAINER_YOUNGSTER_TIMMY_4                  391
 #define TRAINER_YOUNGSTER_CHAD_3                   392
 #define TRAINER_LASS_JANICE_2                      393

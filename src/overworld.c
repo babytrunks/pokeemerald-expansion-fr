@@ -456,6 +456,7 @@ void Overworld_ResetBattleFlagsAndVars(void)
     FlagClear(B_FLAG_SKY_BATTLE);
     FlagClear(B_FLAG_NO_WHITEOUT);
     FlagClear(FLAG_DONT_RANDOMIZE);
+    FlagClear(FLAG_ZA_WARUDO_BATTLE);
 }
 #endif
 

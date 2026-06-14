@@ -377,9 +377,9 @@
 // Mega Stones
 #define ITEM_VENUSAURITE 292 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_CHARIZARDITE_X 293 // DONE (Celadon Game Corner, 3000 coins)
-#define ITEM_CHARIZARDITE_Y 294
+#define ITEM_CHARIZARDITE_Y 294 // DONE (Blaine)
 #define ITEM_BLASTOISINITE 295 // DONE (Celadon Game Corner, 3000 coins)
-#define ITEM_BEEDRILLITE 296
+#define ITEM_BEEDRILLITE 296 // DONE  
 #define ITEM_PIDGEOTITE 297 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_ALAKAZITE 298
 #define ITEM_SLOWBRONITE 299 // DONE (Route 12, map object)
@@ -1005,7 +1005,7 @@
 #define ITEM_SCOLIPITE 839
 #define ITEM_SCRAFTINITE 840 // DONE (safari zone)
 #define ITEM_EELEKTROSSITE 841 // DONE (safari zone)
-#define ITEM_CHANDELURITE 842
+#define ITEM_CHANDELURITE 842 // DONE
 #define ITEM_CHESNAUGHTITE 843
 #define ITEM_DELPHOXITE 844 // DONE (Route 13, map object)
 #define ITEM_GRENINJITE 845 // DONE (Koga)

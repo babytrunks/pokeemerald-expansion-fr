@@ -13531,6 +13531,7 @@ Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
 Dynamic Level Ratio: 90
+Mugshot: Pink
 
 Tatsugiri @ Toxic Orb
 Ability: Commander
@@ -14015,26 +14016,81 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ice Spinner
 - Bulk Up
 
-=== TRAINER_YOUNGSTER_TIMMY_3 ===
-Name: Timmy
-Class: Youngster Frlg
-Pic: Youngster Frlg
+=== TRAINER_SILVA ===
+Name: Silva
+Class: Cooltrainer
+Pic: Cooltrainer M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Dynamic Level Ratio: 90
 
-Raticate
-Level: 27
+Porygon-Z @ Up-Grade  
+Level: 55
+EVs: 252 SpA / 252 Spe 
+Ability: Adaptability  
+Nature: Timid  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tri Attack  
+- Ice Beam  
+- Thunderbolt  
+- Shadow Ball  
 
-Ekans
-Level: 27
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Roserade @ Life Orb  
+Level: 55
+EVs: 252 SpA / 252 Spe 
+Ability: Technician  
+Nature: Timid  
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+- Mega Drain  
+- Ancient Power  
+- Sludge Bomb  
+- Hidden Power Ice
 
-Golbat
-Level: 27
+Chandelure @ Chandelurite
+Level: 55
+EVs: 252 SpA / 252 Spe 
+Ability: Shadow Tag  
+Nature: Timid  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower  
+- Energy Ball  
+- Shadow Ball  
+- Calm Mind  
+
+Staraptor @ Heavy-Duty Boots  
+Level: 55
+EVs: 252 Atk / 252 Spe 
+Ability: Reckless  
+Nature: Jolly  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird  
+- Close Combat  
+- U-turn  
+- Double-Edge  
+
+Donphan @ Loaded Dice  
+Level: 55
+EVs: 252 HP / 252 Atk
+Ability: Technician  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulldoze 
+- Ice Shard  
+- Rock Blast  
+- Trailblaze  
+
+Lanturn @ Leftovers  
+Level: 55
+EVs: 252 HP/ 252 SpD / 4 Def
+Ability: Water Absorb  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Parabolic Charge  
+- Scald  
+- Volt Switch  
+- Dazzling Gleam  
 
 === TRAINER_YOUNGSTER_TIMMY_4 ===
 Name: Timmy
@@ -18349,7 +18405,7 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 - Freeze Dry
 - Focus Blast
 
-Cloyster @ White Herb
+Cloyster @ Kings Rock
 Nature: Jolly
 Ability: Skill Link
 Level: 58

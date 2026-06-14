@@ -4767,6 +4767,16 @@ BattleScript_WeatherFaded::
 	call BattleScript_ActivateWeatherAbilities
 	end2
 
+BattleScript_ZaWarudoMessage::
+	trainerslidein BS_OPPONENT1
+	waitstate
+	printstring STRINGID_ZAWARUDO
+	waitmessage 180
+	trainerslideout BS_OPPONENT1
+	waitstate
+	handletrainerslidemsg BS_OPPONENT1, RESTORE_BATTLER_SLIDE_CONTROL
+	end2
+
 BattleScript_DamagingWeather::
 	printfromtable gSandStormHailDmgStringIds
 	waitmessage B_WAIT_TIME_LONG

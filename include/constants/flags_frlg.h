@@ -1189,7 +1189,7 @@
 // Unused hidden item flags
 #define FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_2                            0x4A7 // Unused Flag
 #define FLAG_NES_EZCATCH                0x4A8
-#define FLAG_UNUSED_0x4A9               0x4A9 // Unused Flag
+#define FLAG_ZA_WARUDO_BATTLE           0x4A9
 #define FLAG_UNUSED_0x4AA               0x4AA // Unused Flag
 #define FLAG_UNUSED_0x4AB               0x4AB // Unused Flag
 #define FLAG_UNUSED_0x4AC               0x4AC // Unused Flag

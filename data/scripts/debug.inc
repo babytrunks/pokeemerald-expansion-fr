@@ -203,7 +203,9 @@ Debug_EventScript_Text_DefensiveIVs:
 	.string "HP IVs: {STR_VAR_1}, DEF IVs: {STR_VAR_2}, SPDEF IVs: {STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
+	setflag FLAG_ZA_WARUDO_BATTLE
 	trainerbattle_no_intro TRAINER_CHANNELER_CARLY, adminmtmoonleft_Text_Defeat
+	clearflag FLAG_ZA_WARUDO_BATTLE
 	release
 	end
 

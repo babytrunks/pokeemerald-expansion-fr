@@ -891,6 +891,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_THREWBAIT]                            = COMPOUND_STRING("{B_PLAYER_NAME} threw some BAIT\nat the {B_OPPONENT_MON1_NAME}!"),
     [STRINGID_PKMNANGRY]                            = COMPOUND_STRING("{B_OPPONENT_MON1_NAME} is angry!"),
     [STRINGID_PKMNEATING]                           = COMPOUND_STRING("{B_OPPONENT_MON1_NAME} is eating!"),
+    [STRINGID_ZAWARUDO]                             = COMPOUND_STRING("ZA WARUDO! Time has stopped.{PAUSE_UNTIL_PRESS}"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
