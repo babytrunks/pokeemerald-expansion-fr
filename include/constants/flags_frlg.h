@@ -1233,8 +1233,8 @@
 #define FLAG_HARDCORE_MODE                          0x4CE
 #define FLAG_RESTRICTED_MODE                        0x4CF
 #define FLAG_CANT_CATCH                             0x4D0
-#define FLAG_DOWSING_MACHINE                   0x4D1
-#define FLAG_0x4D2               0x4D2
+#define FLAG_DOWSING_MACHINE                        0x4D1
+#define FLAG_DEFEATED_POWER_PLANT_JOJO_FAN          0x4D2
 #define FLAG_0x4D3               0x4D3
 #define FLAG_0x4D4               0x4D4
 #define FLAG_0x4D5               0x4D5

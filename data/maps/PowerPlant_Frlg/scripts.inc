@@ -113,3 +113,47 @@ PowerPlant_EventScript_FoughtElectrode2::
 	setflag FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2
 	goto EventScript_RemoveStaticMon
 	end
+
+PowerPlant_EventScript_JojoFan::
+    lockall
+    faceplayer
+    setspeaker SP_NAME_JOJO_FAN
+    msgbox gText_jojo_fan_askChallenge, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, 1, EventScript_JojoFan_Battle
+    msgbox gText_jojo_fan_Reject
+    release
+    end
+
+EventScript_JojoFan_Battle::
+    setspeaker SP_NAME_UNKNOWN
+    msgbox gText_jojo_fan_2
+    @ special HealPlayerParty                  @ special 0x0
+    setflag FLAG_ZA_WARUDO_BATTLE
+	trainerbattle_no_intro TRAINER_LEADER_JOJO_FAN, jojo_fan_Text_Defeat   @ 0x31
+    setflag FLAG_DEFEATED_POWER_PLANT_JOJO_FAN
+	clearflag FLAG_ZA_WARUDO_BATTLE
+	setspeaker SP_NAME_JOJO_FAN
+    msgbox gText_jojo_fan_3
+    giveitem ITEM_TM_CLOSE_COMBAT
+    setspeaker SP_NAME_JOJO_FAN
+    msgbox gText_jojo_fan_4
+    fadescreen FADE_TO_BLACK                 @ fadescreen 0x1
+    playse SE_EXIT                            @ sound 0x9
+    waitse                                   @ checksound
+    removeobject LOCALID_CINNABAR_JOJO_FAN             @ hidesprite 0x2
+    removeobject LOCALID_CINNABAR_GENGAR
+    fadescreen FADE_FROM_BLACK               @ fadescreen 0x0
+    release
+    end
+
+
+gText_jojo_fan_askChallenge::
+  .string "Ho… Are you approaching me?$"
+
+gText_jojo_fan_Reject::
+  .string "Heh, my aura frightens you, doesn't it?$"
+
+gText_jojo_fan_2::
+	.string "Ho… Then come as close as you'd\n"
+	.string "like!$"
+

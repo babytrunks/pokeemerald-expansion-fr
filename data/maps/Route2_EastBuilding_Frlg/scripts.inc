@@ -9,15 +9,6 @@ Route2_EastBuilding_EventScript_Aide::
 	call Route2_EastBuilding_EventScript_GetAideRequestInfo
 	goto_if_set FLAG_GOT_HM05, Route2_EastBuilding_EventScript_AlreadyGotHM05
 	msgbox Route2_EastBuilding_Text_GiveHM05IfSeen10Mons, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, Aide_EventScript_DeclineCheckMons
-	setvar VAR_0x8004, 1
-	specialvar VAR_RESULT, GetFrlgPokedexCount
-	buffernumberstring STR_VAR_3, VAR_0x8006
-	call Route2_EastBuilding_EventScript_GetAideRequestInfo
-	goto_if_lt VAR_0x8006, REQUIRED_SEEN_MONS, Aide_EventScript_HaventCaughtEnough
-	msgbox Route2_EastBuilding_Text_GreatHereYouGo
-	checkitemspace ITEM_HM05
-	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
 	giveitem_msg Route2_EastBuilding_Text_ReceivedHM05FromAide, ITEM_HM05
 	setflag FLAG_GOT_HM05
 	msgbox Route2_EastBuilding_Text_ExplainHM05
@@ -40,15 +31,13 @@ Route2_EastBuilding_EventScript_Rocker::
 
 Route2_EastBuilding_Text_GiveHM05IfSeen10Mons::
     .string "Hi! Remember me?\n"
-    .string "I'm one of Prof. Oak's AIDES.\p"
+    .string "I'm one of Prof. Oak's Aides.\p"
     .string "If your Pokédex has complete data\n"
     .string "on ten species, I'm supposed to\l"
     .string "give you a reward.\p"
-    .string "Prof. Oak entrusted me with\n"
-    .string "HM05 for you.\p"
-    .string "So, {PLAYER}, let me ask you.\p"
-    .string "Have you gathered data on at least\n"
-    .string "ten kinds of Pokémon?$"
+    .string "Prof. Oak entrusted me with{PAUSE 30}.{PAUSE 30}.{PAUSE30}.\p"
+    .string "Eh, you know what?\p"
+    .string "You can just have it, {PLAYER}.$"
 
 Route2_EastBuilding_Text_GreatHereYouGo::
     .string "Great! You have caught or owned\n"
@@ -58,13 +47,13 @@ Route2_EastBuilding_Text_GreatHereYouGo::
 
 Route2_EastBuilding_Text_ReceivedHM05FromAide::
     .string "{PLAYER} received HM05\n"
-    .string "from the AIDE.$"
+    .string "from the burnt out Aide.$"
 
 Route2_EastBuilding_Text_ExplainHM05::
-    .string "HM05 contains the hidden move\n"
-    .string "Flash.\p"
-    .string "Flash lights up even the darkest\n"
-    .string "of caves and dungeons.$"
+    .string "Uh, yeah. That HM helps you get\n"
+    .string "through dark places.\p"
+    .string "I sure could use something like\n"
+    .string "that right now.$"
 
 Route2_EastBuilding_Text_CanGetThroughRockTunnel::
     .string "Once you get the HM Flash, you\n"
