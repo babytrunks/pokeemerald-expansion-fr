@@ -1024,9 +1024,9 @@ static void Task_MenuEditingStat(u8 taskId) // This function should be refactore
         HandleEditingStatInput(EDIT_INPUT_DECREASE_STATE);
     else if (JOY_NEW(DPAD_RIGHT))
         HandleEditingStatInput(EDIT_INPUT_INCREASE_STATE);
-    else if (JOY_NEW(DPAD_UP) || JOY_NEW(R_BUTTON))
+    else if (JOY_NEW(DPAD_UP) )
         HandleEditingStatInput(EDIT_INPUT_MAX_INCREASE_STATE);
-    else if (JOY_NEW(DPAD_DOWN) || JOY_NEW(L_BUTTON))
+    else if (JOY_NEW(DPAD_DOWN) )
         HandleEditingStatInput(EDIT_INPUT_MAX_DECREASE_STATE);
 
 }

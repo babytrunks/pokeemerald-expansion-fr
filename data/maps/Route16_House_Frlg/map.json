@@ -11,13 +11,15 @@
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": false,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1_FRLG",
       "x": 4,
-      "y": 2,
+      "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -28,8 +30,9 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_FEAROW",
-      "x": 9,
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(FEAROW)",
+      "x": 2,
       "y": 3,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -39,6 +42,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route16_House_EventScript_Fearow",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
+      "x": 7,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route16_EventScript_Silva",
+      "flag": "FLAG_DEFEATED_ROUTE_16_SILVA"
     }
   ],
   "warp_events": [
@@ -66,6 +83,5 @@
   ],
   "coord_events": [],
   "bg_events": [],
-  "floor_number": 0,
   "region": "REGION_KANTO"
 }

@@ -35,7 +35,7 @@ Route2_EastBuilding_Text_GiveHM05IfSeen10Mons::
     .string "If your Pokédex has complete data\n"
     .string "on ten species, I'm supposed to\l"
     .string "give you a reward.\p"
-    .string "Prof. Oak entrusted me with{PAUSE 30}.{PAUSE 30}.{PAUSE30}.\p"
+    .string "Prof. Oak entrusted me with{PAUSE 200}.{PAUSE 200}.{PAUSE 200}.\p"
     .string "Eh, you know what?\p"
     .string "You can just have it, {PLAYER}.$"
 

@@ -13,6 +13,7 @@
 #include "field_player_avatar.h"
 #include "fieldmap.h"
 #include "follower_npc.h"
+#include "item.h"
 #include "menu.h"
 #include "metatile_behavior.h"
 #include "oras_dowse.h"

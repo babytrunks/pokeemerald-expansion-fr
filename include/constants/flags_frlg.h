@@ -774,7 +774,7 @@
 #define FLAG_FLAG_HIDE_MT_MOON_2_SCOPE_LENS              0x313
 #define FLAG_FOUGHT_COBALION                             0x314
 #define FLAG_HIDE_COBALION                               0x315
-#define FLAG_0x316               0x316
+#define FLAG_DEFEATED_ROUTE_16_SILVA               0x316
 #define FLAG_0x317               0x317
 #define FLAG_0x318               0x318
 #define FLAG_0x319               0x319

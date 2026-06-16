@@ -3534,7 +3534,7 @@ EVs: 252 SpA / 54 Spe
 Whiscash @ Rindo Berry
 Nature: Jolly
 Ability: Water Bubble
-Level: 1
+Level: 51
 EVs: 54 Atk / 252 Spe
 - Dragon Dance
 - Waterfall
@@ -4717,7 +4717,6 @@ EVs: 252 Atk / 54 Spe
 - Stone Edge
 - Close Combat
 - Zen Headbutt
-
 
 === TRAINER_CUE_BALL_LUKE ===
 Name: Luke
@@ -6939,7 +6938,7 @@ EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
 
 
 === TRAINER_BLACK_BELT_MIKE ===
-Name: MIKE
+Name: Mike
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -6947,20 +6946,28 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Mankey @ Black Belt
+Sneasel-Hisui @ Papaya Berry
 Level: 31
+Nature: Jolly
+Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Cross Poison
+- Rock Smash
+- U-turn
 
-Mankey @ Black Belt
-Level: 31
+Mightyena @ Expert Belt
+Level: 32
+Nature: Jolly
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Primeape @ Black Belt
-Level: 31
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Crunch
+- Ice Fang
+- Psychic Fangs
+- Fire Fang
 
 === TRAINER_BLACK_BELT_HIDEKI ===
-Name: HIDEKI
+Name: Hideki
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -6968,16 +6975,28 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop @ Black Belt
-Level: 32
+Hariyama @ Black Belt
+Level: 31
+Nature: Adamant
+Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Smelling Salts
+- Poison Jab
+- Knock Off
 
-Machoke @ Black Belt
+Hitmonchan @ Punching Glove
 Level: 32
+Nature: Brave
+Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Focus Punch
+- Jet Punch
+- Mach Punch
+- Bullet Punch
 
 === TRAINER_BLACK_BELT_AARON ===
-Name: AARON
+Name: Aaron
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -6985,12 +7004,28 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Primeape @ Black Belt
-Level: 36
+Unfezant-Male @ Scope Lens
+Level: 33
+Ability: Super Luck
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Drill Peck
+- Slash
+- Night Slash
+- Drill Run
+
+Hitmonlee @ Fighting Gem
+Level: 31
+Nature: Jolly
+Ability: Unburden
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Revenge
+- Stomping Tantrum
+- Low Sweep
+- Poison Jab
 
 === TRAINER_BLACK_BELT_HITOSHI ===
-Name: HITOSHI
+Name: Hitoshi
 Class: Black Belt Frlg
 Pic: Black Belt Frlg
 Gender: Male
@@ -6998,17 +7033,26 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop @ Black Belt
+Pikachu-Libre @ Light Ball
 Level: 31
+Nature: Naive
+Ability: Static
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Nuzzle
+- Grass Knot
+- Brick Break
+- Thunder Punch
 
-Mankey @ Black Belt
-Level: 31
+Riolu @ Eviolite
+Level: 32
+Nature: Jolly
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Follow Me
+- Coaching
+- Helping Hand
+- Screech
 
-Primeape @ Black Belt
-Level: 31
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BLACK_BELT_ATSUSHI ===
 Name: ATSUSHI
@@ -13923,22 +13967,80 @@ EVs: 252 HP / 252 Atk / 4 Def
 - Ice Punch
 - Stone Edge
 
-=== TRAINER_LASS_RELI_3 ===
-Name: RELI
-Class: Lass Frlg
-Pic: Lass Frlg
+=== TRAINER_ROUTE16_SILVA ===
+Name: Silva
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Pidgeotto
-Level: 28
+Porygon-Z @ Up-Grade  
+Level: 55
+EVs: 252 SpA / 252 Spe 
+Ability: Adaptability  
+Nature: Timid  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tri Attack  
+- Ice Beam  
+- Thunderbolt  
+- Shadow Ball  
 
-Nidorina
-Level: 28
+Roserade @ Life Orb  
+Level: 55
+EVs: 252 SpA / 252 Spe 
+Ability: Technician  
+Nature: Timid  
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+- Mega Drain  
+- Ancient Power  
+- Sludge Bomb  
+- Hidden Power
+
+Chandelure @ Chandelurite
+Level: 55
+EVs: 252 SpA / 252 Spe 
+Ability: Shadow Tag  
+Nature: Timid  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flamethrower  
+- Energy Ball  
+- Shadow Ball  
+- Calm Mind  
+
+Staraptor @ Heavy-Duty Boots  
+Level: 55
+EVs: 252 Atk / 252 Spe 
+Ability: Reckless  
+Nature: Jolly  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird  
+- Close Combat  
+- U-turn  
+- Double-Edge  
+
+Donphan @ Loaded Dice  
+Level: 55
+EVs: 252 HP / 252 Atk
+Ability: Technician  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Bulldoze 
+- Ice Shard  
+- Rock Blast  
+- Trailblaze  
+
+Lanturn @ Leftovers  
+Level: 55
+EVs: 252 HP/ 252 SpD / 4 Def
+Ability: Water Absorb  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Parabolic Charge  
+- Scald  
+- Volt Switch  
+- Dazzling Gleam
 
 === TRAINER_PLAININSANE ===
 Name: Plain
@@ -14046,7 +14148,7 @@ IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 - Mega Drain  
 - Ancient Power  
 - Sludge Bomb  
-- Hidden Power Ice
+- Hidden Power
 
 Chandelure @ Chandelurite
 Level: 55
