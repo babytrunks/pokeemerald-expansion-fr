@@ -1,28 +1,33 @@
 PowerPlant_Frlg_MapScripts::
-	map_script MAP_SCRIPT_ON_RESUME, PowerPlant_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, PowerPlant_OnTransition
 	.byte 0
 
-PowerPlant_OnResume::
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, PowerPlant_EventScript_TryRemoveStaticMon
-	end
-
-PowerPlant_EventScript_TryRemoveStaticMon::
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
-	removeobject VAR_LAST_TALKED
-	return
-
 PowerPlant_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_POWER_PLANT
-	call_if_unset FLAG_FOUGHT_ZAPDOS, PowerPlant_EventScript_ShowZapdos
 	call_if_unset FLAG_FOUGHT_POWER_PLANT_ELECTRODE_1, PowerPlant_EventScript_ShowElectrode1
 	call_if_unset FLAG_FOUGHT_POWER_PLANT_ELECTRODE_2, PowerPlant_EventScript_ShowElectrode2
+	gettimeofday
+	call_if_eq VAR_0x8000, TIME_NIGHT, PowerPlant_OnTransition_NightZapdos
+	call_if_ne VAR_0x8000, TIME_NIGHT, PowerPlant_OnTransition_DayZapdos
+
+	goto_if_set FLAG_FOUGHT_ZAPDOS, PowerPlant_OnTransition_HideZapdos
 	end
 
-PowerPlant_EventScript_ShowZapdos::
-	clearflag FLAG_HIDE_ZAPDOS
+PowerPlant_OnTransition_NightZapdos::
+	setflag FLAG_HIDE_ZAPDOS
+	clearflag FLAG_HIDE_ZAPDOS_GALAR
 	return
+
+PowerPlant_OnTransition_HideZapdos::
+	setflag FLAG_HIDE_ZAPDOS
+	setflag FLAG_HIDE_ZAPDOS_GALAR
+	end
+
+PowerPlant_OnTransition_DayZapdos:
+	clearflag FLAG_HIDE_ZAPDOS
+	setflag FLAG_HIDE_ZAPDOS_GALAR
+	return
+
 
 PowerPlant_EventScript_ShowElectrode1::
 	clearflag FLAG_HIDE_POWER_PLANT_ELECTRODE_1
@@ -63,6 +68,40 @@ PowerPlant_EventScript_DefeatedZapdos::
 
 PowerPlant_EventScript_RanFromZapdos::
 	setvar VAR_0x8004, SPECIES_ZAPDOS
+	goto EventScript_MonFlewAway
+	end
+
+PowerPlant_EventScript_ZapdosGalar::
+	lock
+	faceplayer
+	setwildbattle SPECIES_ZAPDOS_GALAR, 50
+	waitse
+	playmoncry SPECIES_ZAPDOS_GALAR, CRY_MODE_ENCOUNTER
+	message Text_Gyaoo
+	waitmessage
+	waitmoncry
+	delay 10
+	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, 0
+	waitbuttonpress
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PowerPlant_EventScript_DefeatedZapdosGalar
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_RanFromZapdosGalar
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_RanFromZapdosGalar
+	setflag FLAG_FOUGHT_ZAPDOS
+	release
+	end
+
+PowerPlant_EventScript_DefeatedZapdosGalar::
+	setflag FLAG_FOUGHT_ZAPDOS
+	goto EventScript_RemoveStaticMon
+	end
+
+PowerPlant_EventScript_RanFromZapdosGalar::
+	setvar VAR_0x8004, SPECIES_ZAPDOS_GALAR
 	goto EventScript_MonFlewAway
 	end
 

@@ -65,7 +65,7 @@
 #define FLAG_HIDE_OAK_IN_CHAMP_ROOM                        0x05A
 #define FLAG_HIDE_GAME_CORNER_ROCKET                       0x05B
 #define FLAG_HIDE_CERULEAN_CAVE_GUARD                      0x05C
-#define FLAG_HIDE_ZAPDOS                                   0x05D
+#define FLAG_0x05D                                   0x05D
 #define FLAG_HIDE_TOWER_ROCKET_1                           0x05E
 #define FLAG_HIDE_CELADON_ROCKETS                          0x05F
 #define FLAG_HIDE_DOJO_HITMONLEE_BALL                      0x060
@@ -686,7 +686,7 @@
 #define FLAG_FOUGHT_MEWTWO                               0x2BC
 #define FLAG_FOUGHT_MOLTRES                              0x2BD
 #define FLAG_FOUGHT_ARTICUNO                             0x2BE
-#define FLAG_FOUGHT_ZAPDOS                               0x2BF
+#define FLAG_0x2BF                                       0x2BF
 #define FLAG_TUTOR_DOUBLE_EDGE                           0x2C0 // Unused
 #define FLAG_TUTOR_THUNDER_WAVE                          0x2C1 
 #define FLAG_TUTOR_ROCK_SLIDE                            0x2C2 // Unused
@@ -779,8 +779,8 @@
 #define FLAG_HIDE_ROCK_TUNNEL_EXTRA_STEELIXITE           0x318
 #define FLAG_HIDE_ROUTE_20_MEGA_STONE                0x319
 #define FLAG_HIDE_MEW_VERMILION                          0x31A
-#define FLAG_0x31B               0x31B
-#define FLAG_0x31C               0x31C
+#define FLAG_HIDE_ZAPDOS               0x31B
+#define FLAG_HIDE_ZAPDOS_GALAR               0x31C
 #define FLAG_0x31D               0x31D
 #define FLAG_0x31E               0x31E
 #define FLAG_0x31F               0x31F
@@ -899,7 +899,7 @@
 
 #define DAILY_FLAGS_START                           (FLAG_0x38F + (8 - FLAG_0x38F % 8))
 
-#define FLAG_0x390               0x390
+#define FLAG_FOUGHT_ZAPDOS       0x390
 #define FLAG_0x391               0x391
 #define FLAG_0x392               0x392
 #define FLAG_0x393               0x393
