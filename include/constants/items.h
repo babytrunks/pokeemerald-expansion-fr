@@ -382,8 +382,8 @@
 #define ITEM_BEEDRILLITE 296 // DONE  
 #define ITEM_PIDGEOTITE 297 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_ALAKAZITE 298
-#define ITEM_SLOWBRONITE 299 // DONE (Route 12, map object)
-#define ITEM_GENGARITE 300
+#define ITEM_SLOWBRONITE 299 // DONE (Route 12, post surf)
+#define ITEM_GENGARITE 300 // DONE (Morty Cinnabar Island)
 #define ITEM_KANGASKHANITE 301 // DONE (Silph Co 11F, map object)
 #define ITEM_PINSIRITE 302 // DONE (Route 6, item ball)
 #define ITEM_GYARADOSITE 303
@@ -996,8 +996,8 @@
 #define ITEM_VICTREEBELITE 830 // DONE (Erika)
 #define ITEM_STARMINITE 831 // DONE (Erika defeated)
 #define ITEM_DRAGONINITE 832
-#define ITEM_MEGANIUMITE 833
-#define ITEM_FERALIGITE 834
+#define ITEM_MEGANIUMITE 833 // DONE (Route 12, post Snorlax, boss fight)
+#define ITEM_FERALIGITE 834 // DONE (Route 12, post Rock Smash/Snorlax)
 #define ITEM_SKARMORITE 835
 #define ITEM_FROSLASSITE 836 // DONE (Pryce)
 #define ITEM_EMBOARITE 837

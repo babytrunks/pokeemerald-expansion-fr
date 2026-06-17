@@ -143,7 +143,7 @@ CeladonCity_Gym_Text_ExplainTM19::
     .string "Half the damage it inflicts is\n"
     .string "drained to heal your Pokémon.\p"
     .string "Wouldn't you agree that it's a\n"
-    .string "wonderful move\p?"
+    .string "wonderful move?\p"
     .string "Your Level Cap has been raised\n"
     .string "to {STR_VAR_1}.\p"
     .string "Please, take my favorite Mega Stone\n"

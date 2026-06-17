@@ -89,7 +89,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SNORLAX)",
+      "graphics_id": "OBJ_EVENT_GFX_SNORLAX",
       "x": 14,
       "y": 70,
       "elevation": 3,
@@ -181,8 +181,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route12_EventScript_ItemIron",
+      "trainer_sight_or_berry_tree_id": "ITEM_FERALIGITE",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_ROUTE12_IRON"
     },
     {

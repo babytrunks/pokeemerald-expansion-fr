@@ -6946,7 +6946,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Sneasel-Hisui @ Papaya Berry
+Sneasel-Hisui @ Payapa Berry
 Level: 31
 Nature: Jolly
 Ability: Poison Touch
@@ -7004,7 +7004,7 @@ Music: Intense
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Unfezant-Male @ Scope Lens
+Unfezant (M) @ Scope Lens
 Level: 33
 Ability: Super Luck
 Nature: Jolly
@@ -13574,7 +13574,7 @@ Music: Girl
 Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
-Dynamic Level Ratio: 90
+Dynamic Level Ratio: 95
 Mugshot: Pink
 
 Tatsugiri @ Toxic Orb
@@ -13615,15 +13615,15 @@ EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Throat Chop
 - Sleep Talk
 
-Floette-Eternal @ Floettite
-Level: 34
+Meganium @ Meganiumite
+Level: 36
 Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 54 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
-- Dazzling Gleam
-- Psychic Noise
-- Giga Drain 
-- Synthesis
+- Solar Beam
+- Weather Ball
+- Moonblast
+- Earth Power
 
 Pikachu-Belle @ Light Ball
 Level: 34

@@ -2090,6 +2090,10 @@ static const u16 sGachaUltraSpeciesCommon[] = {
    SPECIES_MUNKIDORI,
    SPECIES_FEZANDIPITI,
    SPECIES_TYPE_NULL,
+   SPECIES_SHAYMIN,
+   SPECIES_HEATRAN,
+   SPECIES_CRESSELIA,
+   SPECIES_VOLCANION
 };
 
 static const u16 sGachaMasterSpeciesCommon[] = {

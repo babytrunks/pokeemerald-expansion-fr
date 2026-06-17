@@ -181,6 +181,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route20_EventScript_Camper",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
+      "x": 24,
+      "y": 6,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_KINGLERITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_ROUTE_20_MEGA_STONE"
     }
   ],
   "warp_events": [
@@ -219,8 +233,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 23,
-      "y": 6,
+      "x": 19,
+      "y": 1,
       "elevation": 3,
       "item": "ITEM_STARDUST",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE20_STARDUST",

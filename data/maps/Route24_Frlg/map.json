@@ -192,8 +192,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 18,
-      "y": -1,
+      "x": 7,
+      "y": 0,
       "elevation": 3,
       "item": "ITEM_PECHA_BERRY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE24_PECHA_BERRY",

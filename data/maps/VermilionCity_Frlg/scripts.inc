@@ -276,6 +276,38 @@ VermilionCity_EventScript_GymSign::
 	releaseall
 	end
 
+
+Vermilion_EventScript_Mew::
+	lock
+	faceplayer
+	setwildbattle SPECIES_MEW, 50
+	waitse
+	playmoncry SPECIES_MEW, CRY_MODE_ENCOUNTER
+	message Text_Mew
+	waitmessage
+	waitmoncry
+	delay 10
+	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, 0
+	waitbuttonpress
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Vermilion_EventScript_DefeatedMew
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Vermilion_EventScript_RanFromMew
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Vermilion_EventScript_RanFromMew
+	release
+	end
+
+Vermilion_EventScript_DefeatedMew::
+	goto EventScript_RemoveStaticMon
+	end
+
+Vermilion_EventScript_RanFromMew::
+	release
+	end
+
 VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 	end
@@ -284,6 +316,9 @@ VermilionCity_Text_GrimerMultipliesInSludge::
     .string "We're careful about pollution here.\p"
     .string "We've heard GRIMER multiplies in\n"
     .string "toxic sludge.$"
+
+Text_Mew::
+	.string "Mew!$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
     .string "Did you see the ship moored\n"

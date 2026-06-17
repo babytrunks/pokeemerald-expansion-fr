@@ -65,10 +65,9 @@ CinnabarIsland_Gym_EventScript_DefeatedBlaine::
 	end
 
 CinnabarIsland_Gym_EventScript_GiveTM38::
+	callnative SetBuffer1ToLevelCap
 	msgbox CinnabarIsland_Gym_Text_ExplainVolcanoBadge
-	checkitemspace ITEM_TM38
-	goto_if_eq VAR_RESULT, FALSE, CinnabarIsland_Gym_EventScript_NoRoomForTM38
-	giveitem_msg CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine, ITEM_TM38
+	giveitem_msg CinnabarIsland_Gym_Text_ReceivedTM07FromBlaine, ITEM_TM_HEAT_WAVE
 	setflag FLAG_GOT_TM38_FROM_BLAINE
 	msgbox CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove
 	release
@@ -731,19 +730,18 @@ CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove::
 
 CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
     .string "Hah!\p"
-    .string "The VOLCANOBADGE heightens the\n"
-    .string "SPECIAL stats of your Pokémon.\p"
+    .string "The Volcano Badge increases your\n"
+    .string "level cap to {STR_VAR_1}.\p"
     .string "Here, you can have this, too!$"
 
-CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine::
-    .string "{PLAYER} received TM38\n"
+CinnabarIsland_Gym_Text_ReceivedTM07FromBlaine::
+    .string "{PLAYER} received TM07\n"
     .string "from BLAINE.$"
 
 CinnabarIsland_Gym_Text_BlainePostBattle::
-    .string "TM38 contains FIRE BLAST.\n"
-    .string "Teach it to FIRE-type Pokémon.\p"
-    .string "VULPIX or CHARMELEON would be\n"
-    .string "ideal for that move.$"
+    .string "TM07 contains Heat Wave.\n"
+    .string "Even non-Fire Pokémon can make\p"
+    .string "use of it!$"
 
 CinnabarIsland_Gym_Text_MakeSpaceForThis::
     .string "Make space for this, child!$"

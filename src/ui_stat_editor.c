@@ -98,7 +98,7 @@ static void SelectorCallback(struct Sprite *sprite);
 static struct Pokemon *ReturnPartyMon();
 static u8 CreateSelector();
 static void DestroySelector();
-static bool8 checkIfEVCapReached(void);
+static bool8 checkIfEVCapReached(u16 otherStatsEvTotal);
 static u16 getEvCap(void);
 //==========CONST=DATA==========//
 static const struct BgTemplate sStatEditorBgTemplates[] =
@@ -930,9 +930,11 @@ static void ChangeAndUpdateStat()
 }
 
 #define EDIT_INPUT_INCREASE_STATE           0
-#define EDIT_INPUT_MAX_INCREASE_STATE       1
-#define EDIT_INPUT_DECREASE_STATE           2
-#define EDIT_INPUT_MAX_DECREASE_STATE       3
+#define EDIT_INPUT_MEDIUM_INCREASE_STATE    1
+#define EDIT_INPUT_MAX_INCREASE_STATE       2
+#define EDIT_INPUT_DECREASE_STATE           3
+#define EDIT_INPUT_MEDIUM_DECREASE_STATE    4
+#define EDIT_INPUT_MAX_DECREASE_STATE       5
 
 #define STAT_MINIMUM          0  
 #define IV_MAX_SINGLE_STAT    31   
@@ -944,7 +946,13 @@ static void ChangeAndUpdateStat()
 static void HandleEditingStatInput(u32 input)
 {
     u16 iterator = 0;
-    if((input <= EDIT_INPUT_MAX_INCREASE_STATE) && checkIfEVCapReached())
+    // EVs contributed by the other 5 stats; constant for the duration of this call, since only
+    // the stat being edited changes. Using this (instead of the cached evTotal field directly)
+    // keeps the cap check accurate across multiple increments within a single call (e.g. the
+    // medium +10 step), where evTotal itself isn't refreshed until ChangeAndUpdateStat() below.
+    u16 otherStatsEvTotal = sStatEditorDataPtr->evTotal - sStatEditorDataPtr->editingStat;
+
+    if((input <= EDIT_INPUT_MAX_INCREASE_STATE) && checkIfEVCapReached(otherStatsEvTotal))
     {
         StartSpriteAnim(&gSprites[sStatEditorDataPtr->selectorSpriteId], 2);
         return;
@@ -957,11 +965,21 @@ static void HandleEditingStatInput(u32 input)
     }
 
     #define INCREASE_DECREASE_AMOUNT 1
+    #define MEDIUM_INCREASE_DECREASE_AMOUNT 10
 
     switch(input)
     {
         case EDIT_INPUT_DECREASE_STATE:
             for (iterator = 0; iterator < INCREASE_DECREASE_AMOUNT; iterator++)
+            {
+                if(!(sStatEditorDataPtr->editingStat == STAT_MINIMUM))
+                    sStatEditorDataPtr->editingStat--;
+                else
+                    break;
+            }
+            break;
+        case EDIT_INPUT_MEDIUM_DECREASE_STATE:
+            for (iterator = 0; iterator < MEDIUM_INCREASE_DECREASE_AMOUNT; iterator++)
             {
                 if(!(sStatEditorDataPtr->editingStat == STAT_MINIMUM))
                     sStatEditorDataPtr->editingStat--;
@@ -975,7 +993,16 @@ static void HandleEditingStatInput(u32 input)
         case EDIT_INPUT_INCREASE_STATE:
             for (iterator = 0; iterator < INCREASE_DECREASE_AMOUNT; iterator++)
             {
-                if(!checkIfEVCapReached())
+                if(!checkIfEVCapReached(otherStatsEvTotal))
+                    sStatEditorDataPtr->editingStat++;
+                else
+                    break;
+            }
+            break;
+        case EDIT_INPUT_MEDIUM_INCREASE_STATE:
+            for (iterator = 0; iterator < MEDIUM_INCREASE_DECREASE_AMOUNT; iterator++)
+            {
+                if(!checkIfEVCapReached(otherStatsEvTotal))
                     sStatEditorDataPtr->editingStat++;
                 else
                     break;
@@ -1001,7 +1028,7 @@ static void HandleEditingStatInput(u32 input)
     ChangeAndUpdateStat();
 
     // if(CHECK_IF_STAT_CANT_INCREASE)
-    if (checkIfEVCapReached())
+    if (checkIfEVCapReached(otherStatsEvTotal))
         StartSpriteAnim(&gSprites[sStatEditorDataPtr->selectorSpriteId], 2);
     else if(sStatEditorDataPtr->editingStat == STAT_MINIMUM)
         StartSpriteAnim(&gSprites[sStatEditorDataPtr->selectorSpriteId], 1); 
@@ -1028,6 +1055,10 @@ static void Task_MenuEditingStat(u8 taskId) // This function should be refactore
         HandleEditingStatInput(EDIT_INPUT_MAX_INCREASE_STATE);
     else if (JOY_NEW(DPAD_DOWN) )
         HandleEditingStatInput(EDIT_INPUT_MAX_DECREASE_STATE);
+    else if (JOY_NEW(L_BUTTON))
+        HandleEditingStatInput(EDIT_INPUT_MEDIUM_DECREASE_STATE);
+    else if (JOY_NEW(R_BUTTON))
+        HandleEditingStatInput(EDIT_INPUT_MEDIUM_INCREASE_STATE);
 
 }
 
@@ -1061,11 +1092,15 @@ static u16 getEvCap(void) {
     return evCap;
 }
 
-static bool8 checkIfEVCapReached(void) 
+static bool8 checkIfEVCapReached(u16 otherStatsEvTotal)
 {
-    u32 evCap = getEvCap();
+    u32 evCap;
 
-    return ((sStatEditorDataPtr->editingStat == 252) || (sStatEditorDataPtr->evTotal >= evCap));
+    if (sStatEditorDataPtr->selector_x == EDITING_IVS)
+        return (sStatEditorDataPtr->editingStat >= IV_MAX_SINGLE_STAT);
+
+    evCap = getEvCap();
+    return ((sStatEditorDataPtr->editingStat == EV_MAX_SINGLE_STAT) || ((otherStatsEvTotal + sStatEditorDataPtr->editingStat) >= evCap));
 }
 
 void SetBuffer1ToEvCap(void) 

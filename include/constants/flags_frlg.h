@@ -774,11 +774,11 @@
 #define FLAG_FLAG_HIDE_MT_MOON_2_SCOPE_LENS              0x313
 #define FLAG_FOUGHT_COBALION                             0x314
 #define FLAG_HIDE_COBALION                               0x315
-#define FLAG_DEFEATED_ROUTE_16_SILVA               0x316
-#define FLAG_0x317               0x317
-#define FLAG_0x318               0x318
-#define FLAG_0x319               0x319
-#define FLAG_0x31A               0x31A
+#define FLAG_DEFEATED_ROUTE_16_SILVA                     0x316
+#define FLAG_HIDE_ROUTE_14_MEGA_STONE                    0x317
+#define FLAG_HIDE_ROCK_TUNNEL_EXTRA_STEELIXITE           0x318
+#define FLAG_HIDE_ROUTE_20_MEGA_STONE                0x319
+#define FLAG_HIDE_MEW_VERMILION                          0x31A
 #define FLAG_0x31B               0x31B
 #define FLAG_0x31C               0x31C
 #define FLAG_0x31D               0x31D

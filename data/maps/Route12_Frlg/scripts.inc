@@ -41,7 +41,7 @@ Route12_EventScript_Jes::
 	msgbox Route12_Text_GiaIntro
 	trainerbattle_no_intro TRAINER_YOUNG_COUPLE_GIA_JES, Route12_Text_GiaDefeat
 	msgbox Route12_Text_GiaPostBattle
-	giveitem ITEM_FLOETTITE
+	giveitem ITEM_MEGANIUMITE
     release
 	settrainerflag TRAINER_YOUNG_COUPLE_GIA_JES
 	end
@@ -53,7 +53,7 @@ Route12_EventScript_Gia::
 	msgbox Route12_Text_GiaIntro
 	trainerbattle_no_intro TRAINER_YOUNG_COUPLE_GIA_JES, Route12_Text_GiaDefeat
 	msgbox Route12_Text_GiaPostBattle
-	giveitem ITEM_FLOETTITE
+	giveitem ITEM_MEGANIUMITE
     release
 	settrainerflag TRAINER_YOUNG_COUPLE_GIA_JES
 	end
@@ -202,22 +202,14 @@ Route12_Text_SportfishingArea::
     .string "SPORTFISHING AREA$"
 
 Route12_Text_JesIntro::
-    .string "Jes: If I win, I'm going to\n"
+    .string "If I win, I'm going to\n"
     .string "propose to GIA.$"
 
 Route12_Text_JesDefeat::
-    .string "Jes: Oh, please, why couldn't you\n"
+    .string "Oh, please, why couldn't you\n"
     .string "let us win?$"
 
-Route12_Text_JesPostBattle::
-    .string "Jes: Oh, Gia, forgive me,\n"
-    .string "my love!$"
 
-Route12_Text_JesNotEnoughMons::
-    .string "Jes: Gia and I, we'll be\n"
-    .string "together forever.\p"
-    .string "We won't battle unless you have\n"
-    .string "two Pokémon of your own.$"
 
 Route12_Text_GiaPostBattle::
     .string "We thought our love was unbeat-\n"

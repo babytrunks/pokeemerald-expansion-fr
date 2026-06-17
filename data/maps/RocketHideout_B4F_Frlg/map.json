@@ -11,11 +11,13 @@
   "allow_escaping": true,
   "allow_running": true,
   "show_map_name": true,
+  "floor_number": -4,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_2",
   "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_HIDEOUT_GIOVANNI",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
       "x": 19,
       "y": 4,
@@ -30,6 +32,7 @@
     },
     {
       "local_id": "LOCALID_SILPH_SCOPE",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 20,
       "y": 5,
@@ -43,6 +46,7 @@
       "flag": "FLAG_HIDE_SILPH_SCOPE"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
       "x": 4,
       "y": 2,
@@ -57,6 +61,7 @@
     },
     {
       "local_id": "LOCALID_LIFT_KEY",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 3,
       "y": 2,
@@ -70,6 +75,7 @@
       "flag": "FLAG_HIDE_LIFT_KEY"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
       "x": 19,
       "y": 14,
@@ -83,6 +89,7 @@
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
       "x": 16,
       "y": 14,
@@ -96,6 +103,7 @@
       "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
       "x": 1,
       "y": 6,
@@ -109,6 +117,7 @@
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_TM49"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 4,
       "y": 14,
@@ -122,6 +131,7 @@
       "flag": "FLAG_HIDE_ROCKET_HIDEOUT_B4F_MAX_ETHER"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 6,
       "y": 23,
@@ -181,6 +191,5 @@
       "underfoot": false
     }
   ],
-  "floor_number": -4,
   "region": "REGION_KANTO"
 }
