@@ -5520,6 +5520,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
     case ABILITY_GRIM_NEIGH:
     case ABILITY_AS_ONE_SHADOW_RIDER:
     case ABILITY_BEAST_BOOST:
+    case ABILITY_ELEVATE:
         {
             if (!IsBattlerAlive(battlerAtk) || NoAliveMonsForEitherParty())
                 break;
@@ -5527,7 +5528,7 @@ static bool32 HandleMoveEndAbilityBlock(u32 battlerAtk, u32 battlerDef, u32 move
             enum Stat stat = STAT_ATK;
             u32 numMonsFainted = NumFaintedBattlersByAttacker(battlerAtk);
 
-            if (abilityAtk == ABILITY_BEAST_BOOST)
+            if (abilityAtk == ABILITY_BEAST_BOOST || abilityAtk == ABILITY_ELEVATE)
                 stat = GetHighestStatId(battlerAtk);
             else if (abilityAtk == ABILITY_GRIM_NEIGH || abilityAtk == ABILITY_AS_ONE_SHADOW_RIDER)
                 stat = STAT_SPATK;

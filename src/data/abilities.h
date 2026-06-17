@@ -1702,6 +1702,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .aiRating = 7,
         },
 
+        [ABILITY_ELEVATE] =
+        {
+            .name = _("Elevate"),
+            .description = COMPOUND_STRING("Immune to Ground moves. KOs boost the user's best stat."),
+            .aiRating = 9,
+            .breakable = TRUE,
+        },
+
         [ABILITY_RKS_SYSTEM] =
         {
             .name = _("RKS System"),
@@ -2517,6 +2525,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("ORAORAORAORA!"),
         .description = COMPOUND_STRING("Punching moves hit a second time for 50% damage."),
+        .aiRating = 8,
+    },
+    [ABILITY_FIRE_MANE] =
+    {
+        .name = _("Fire Mane"),
+        .description = COMPOUND_STRING("Powers up Fire-type\nmoves by 50%."),
         .aiRating = 8,
     },
 };

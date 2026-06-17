@@ -6843,7 +6843,7 @@ static bool32 IsBattlerGroundedInverseCheck(u32 battler, enum Ability ability, e
         return FALSE;
     if (holdEffect == HOLD_EFFECT_AIR_BALLOON)
         return FALSE;
-    if (ability == ABILITY_LEVITATE)
+    if (ability == ABILITY_LEVITATE || ability == ABILITY_ELEVATE)
         return FALSE;
     if (IS_BATTLER_OF_TYPE(battler, TYPE_FLYING) && (checkInverse != INVERSE_BATTLE || !FlagGet(B_FLAG_INVERSE_BATTLE)))
         return FALSE;
@@ -7907,6 +7907,10 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         break;
     case ABILITY_DRAGONS_MAW:
         if (moveType == TYPE_DRAGON)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_FIRE_MANE:
+        if (moveType == TYPE_FIRE)
             modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
     case ABILITY_GORILLA_TACTICS:
@@ -9126,13 +9130,13 @@ static inline uq4_12_t CalcTypeEffectivenessMultiplierInternal(struct DamageCont
     else if (ctx->moveType == TYPE_GROUND && !IsBattlerGroundedInverseCheck(ctx->battlerDef, ctx->abilityDef, ctx->holdEffectDef, INVERSE_BATTLE, ctx->isAnticipation) && !(MoveIgnoresTypeIfFlyingAndUngrounded(ctx->move)))
     {
         modifier = UQ_4_12(0.0);
-        if (ctx->updateFlags && ctx->abilityDef == ABILITY_LEVITATE)
+        if (ctx->updateFlags && (ctx->abilityDef == ABILITY_LEVITATE || ctx->abilityDef == ABILITY_ELEVATE))
         {
             gBattleStruct->moveResultFlags[ctx->battlerDef] |= (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE);
-            gLastUsedAbility = ABILITY_LEVITATE;
+            gLastUsedAbility = ctx->abilityDef;
             gLastLandedMoves[ctx->battlerDef] = 0;
             gBattleStruct->missStringId[ctx->battlerDef] = B_MSG_GROUND_MISS;
-            RecordAbilityBattle(ctx->battlerDef, ABILITY_LEVITATE);
+            RecordAbilityBattle(ctx->battlerDef, ctx->abilityDef);
         }
     }
     else if (GetGenConfig(GEN_CONFIG_SHEER_COLD_IMMUNITY) >= GEN_7 && GetMoveEffect(ctx->move) == EFFECT_SHEER_COLD && IS_BATTLER_OF_TYPE(ctx->battlerDef, TYPE_ICE))
@@ -9216,7 +9220,7 @@ uq4_12_t CalcPartyMonTypeEffectivenessMultiplier(u16 move, u16 speciesDef, enum 
         if (GetSpeciesType(speciesDef, 1) != GetSpeciesType(speciesDef, 0))
             MulByTypeEffectiveness(&ctx, &modifier, GetSpeciesType(speciesDef, 1));
 
-        if (ctx.moveType == TYPE_GROUND && abilityDef == ABILITY_LEVITATE && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
+        if (ctx.moveType == TYPE_GROUND && (abilityDef == ABILITY_LEVITATE || abilityDef == ABILITY_ELEVATE) && !(gFieldStatuses & STATUS_FIELD_GRAVITY))
             modifier = UQ_4_12(0.0);
         if (abilityDef == ABILITY_WONDER_GUARD && modifier <= UQ_4_12(1.0) && GetMovePower(move) != 0)
             modifier = UQ_4_12(0.0);
