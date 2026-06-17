@@ -67,8 +67,9 @@ PowerPlant_EventScript_DefeatedZapdos::
 	end
 
 PowerPlant_EventScript_RanFromZapdos::
-	setvar VAR_0x8004, SPECIES_ZAPDOS
-	goto EventScript_MonFlewAway
+	@ setvar VAR_0x8004, SPECIES_ZAPDOS
+	@ goto EventScript_MonFlewAway
+	release
 	end
 
 PowerPlant_EventScript_ZapdosGalar::

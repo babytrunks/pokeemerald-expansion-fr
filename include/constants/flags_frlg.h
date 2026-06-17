@@ -54,7 +54,7 @@
 #define FLAG_HIDE_ROUTE_22_RIVAL                           0x04F
 #define FLAG_HIDE_PEWTER_MUSEUM_GUIDE                      0x050
 #define FLAG_HIDE_TOWER_RIVAL                              0x051
-#define FLAG_HIDE_MOLTRES                                  0x052
+#define FLAG_0x052                                  0x052
 #define FLAG_HIDE_SILPH_ROCKETS                            0x053
 #define FLAG_HIDE_ROUTE_12_SNORLAX                         0x054
 #define FLAG_HIDE_VIRIDIAN_GIOVANNI                        0x055
@@ -102,7 +102,7 @@
 #define FLAG_0x07F                                         0x07F
 #define FLAG_HIDE_ROUTE_16_SNORLAX                         0x080
 #define FLAG_HIDE_MEWTWO                                   0x081
-#define FLAG_HIDE_ARTICUNO                                 0x082
+#define FLAG_0x082                                 0x082
 #define FLAG_HIDE_TOWER_ROCKET_2                           0x083
 #define FLAG_HIDE_TOWER_ROCKET_3                           0x084
 #define FLAG_HIDE_POWER_PLANT_ELECTRODE_1                  0x085
@@ -684,8 +684,8 @@
 
 #define FLAG_HIDE_ROUTE10_TM_FIRE_PUNCH                  0x2BB 
 #define FLAG_FOUGHT_MEWTWO                               0x2BC
-#define FLAG_FOUGHT_MOLTRES                              0x2BD
-#define FLAG_FOUGHT_ARTICUNO                             0x2BE
+#define FLAG_0x2BD                              0x2BD
+#define FLAG_0x2BE                             0x2BE
 #define FLAG_0x2BF                                       0x2BF
 #define FLAG_TUTOR_DOUBLE_EDGE                           0x2C0 // Unused
 #define FLAG_TUTOR_THUNDER_WAVE                          0x2C1 
@@ -777,14 +777,14 @@
 #define FLAG_DEFEATED_ROUTE_16_SILVA                     0x316
 #define FLAG_HIDE_ROUTE_14_MEGA_STONE                    0x317
 #define FLAG_HIDE_ROCK_TUNNEL_EXTRA_STEELIXITE           0x318
-#define FLAG_HIDE_ROUTE_20_MEGA_STONE                0x319
+#define FLAG_HIDE_ROUTE_20_MEGA_STONE                    0x319
 #define FLAG_HIDE_MEW_VERMILION                          0x31A
-#define FLAG_HIDE_ZAPDOS               0x31B
-#define FLAG_HIDE_ZAPDOS_GALAR               0x31C
-#define FLAG_0x31D               0x31D
-#define FLAG_0x31E               0x31E
-#define FLAG_0x31F               0x31F
-#define FLAG_0x320               0x320
+#define FLAG_HIDE_ZAPDOS                                 0x31B
+#define FLAG_HIDE_ZAPDOS_GALAR                           0x31C
+#define FLAG_HIDE_ARTICUNO                               0x31D
+#define FLAG_HIDE_ARTICUNO_GALAR                         0x31E
+#define FLAG_HIDE_MOLTRES                                0x31F
+#define FLAG_HIDE_MOLTRES_GALAR                          0x320
 #define FLAG_0x321               0x321
 #define FLAG_0x322               0x322
 #define FLAG_0x323               0x323
@@ -900,8 +900,8 @@
 #define DAILY_FLAGS_START                           (FLAG_0x38F + (8 - FLAG_0x38F % 8))
 
 #define FLAG_FOUGHT_ZAPDOS       0x390
-#define FLAG_0x391               0x391
-#define FLAG_0x392               0x392
+#define FLAG_FOUGHT_ARTICUNO     0x391
+#define FLAG_FOUGHT_MOLTRES      0x392
 #define FLAG_0x393               0x393
 #define FLAG_0x394               0x394
 #define FLAG_0x395               0x395

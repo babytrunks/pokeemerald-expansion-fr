@@ -2,15 +2,11 @@
 
 SeafoamIslands_B4F_Frlg_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, SeafoamIslands_B4F_OnTransition
-	map_script MAP_SCRIPT_ON_RESUME, SeafoamIslands_B4F_OnResume
 	map_script MAP_SCRIPT_ON_LOAD, SeafoamIslands_B4F_OnLoad
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SeafoamIslands_B4F_OnWarp
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, SeafoamIslands_B4F_OnFrame
 	.byte 0
 
-SeafoamIslands_B4F_OnResume::
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, SeafoamIslands_B4F_EventScript_TryRemoveArticuno
-	end
 
 SeafoamIslands_B4F_EventScript_TryRemoveArticuno::
 	specialvar VAR_RESULT, GetBattleOutcome
@@ -19,10 +15,28 @@ SeafoamIslands_B4F_EventScript_TryRemoveArticuno::
 	return
 
 SeafoamIslands_B4F_OnTransition::
-	call_if_unset FLAG_FOUGHT_ARTICUNO, SeafoamIslands_B4F_EventScript_ShowArticuno
+	gettimeofday
+	call_if_eq VAR_0x8000, TIME_NIGHT, SeafoamIslands_OnTransition_NightArticuno
+	call_if_ne VAR_0x8000, TIME_NIGHT, SeafoamIslands_OnTransition_DayArticuno
 	call_if_unset FLAG_STOPPED_SEAFOAM_B4F_CURRENT, SeafoamIslands_B4F_EventScript_CheckStoppedCurrent
 	call_if_set FLAG_STOPPED_SEAFOAM_B4F_CURRENT, SeafoamIslands_B4F_EventScript_SetNoCurrentLayout
+	goto_if_set FLAG_FOUGHT_ARTICUNO, SeafoamIslands_OnTransition_HideArticuno
 	end
+
+SeafoamIslands_OnTransition_NightArticuno::
+	setflag FLAG_HIDE_ARTICUNO
+	clearflag FLAG_HIDE_ARTICUNO_GALAR
+	return
+
+SeafoamIslands_OnTransition_HideArticuno::
+	setflag FLAG_HIDE_ARTICUNO
+	setflag FLAG_HIDE_ARTICUNO_GALAR
+	end
+
+SeafoamIslands_OnTransition_DayArticuno:
+	clearflag FLAG_HIDE_ARTICUNO
+	setflag FLAG_HIDE_ARTICUNO_GALAR
+	return
 
 SeafoamIslands_B4F_EventScript_CheckStoppedCurrent::
 	setvar NUM_BOULDERS_PRESENT, 0
@@ -181,8 +195,44 @@ SeafoamIslands_B4F_EventScript_DefeatedArticuno::
 	end
 
 SeafoamIslands_B4F_EventScript_RanFromArticuno::
-	setvar VAR_0x8004, SPECIES_ARTICUNO
-	goto EventScript_MonFlewAway
+	@ setvar VAR_0x8004, SPECIES_ARTICUNO
+	@ goto EventScript_MonFlewAway
+	release
+	end
+
+SeafoamIslands_B4F_EventScript_ArticunoGalar::
+	lock
+	faceplayer
+	setwildbattle SPECIES_ARTICUNO_GALAR, 50
+	waitse
+	playmoncry SPECIES_ARTICUNO_GALAR, CRY_MODE_ENCOUNTER
+	message Text_Gyaoo
+	waitmessage
+	waitmoncry
+	delay 10
+	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, 0
+	waitbuttonpress
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, SeafoamIslands_B4F_EventScript_DefeatedArticunoGalar
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SeafoamIslands_B4F_EventScript_RanFromArticunoGalar
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SeafoamIslands_B4F_EventScript_RanFromArticunoGalar
+	setflag FLAG_FOUGHT_ARTICUNO
+	release
+	end
+
+SeafoamIslands_B4F_EventScript_DefeatedArticunoGalar::
+	setflag FLAG_FOUGHT_ARTICUNO
+	goto EventScript_RemoveStaticMon
+	end
+
+SeafoamIslands_B4F_EventScript_RanFromArticunoGalar::
+	@ setvar VAR_0x8004, SPECIES_ARTICUNO_GALAR
+	@ goto EventScript_MonFlewAway
+	release
 	end
 
 SeafoamIslands_B4F_EventScript_BoulderHintSign::
