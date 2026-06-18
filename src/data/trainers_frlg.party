@@ -3811,13 +3811,48 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Charmander
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Charmeleon
-Level: 34
+Rillaboom @ Terrain Extender  
+Ability: Grassy Surge  
+Level: 56  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Nature: Brave 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Grassy Glide  
+- U-turn  
+
+Ninetales-Alola @ Grassy Seed  
+Ability: Serene Grace  
+Level: 57  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Secret Power  
+- Frost Breath  
+- Moonblast  
+- Encore  
+
+Dunsparce @ Eviolite
+Ability: Serene Grace  
+Level: 57  
+EVs: 252 HP / 4 Atk / 252 Spe  
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Secret Power  
+- Thief  
+- Hurricane  
+- Coil  
+
+Togekiss @ Leftovers  
+Ability: Serene Grace  
+Level: 57  
+EVs: 252 HP / 92 Def / 160 SpA / 4 SpD  
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Secret Power  
+- Flash  
+- Moonblast  
+- Roost  
 
 === TRAINER_BURGLAR_SIMON ===
 Name: Simon
@@ -3828,9 +3863,49 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Ninetales
-Level: 38
+Kingambit @ Focus Sash  
+Ability: Pressure  
+Level: 56  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Kowtow Cleave  
+- Metal Burst  
+- Stealth Rock  
+- Taunt
+
+Dragapult @ Light Clay  
+Ability: Infiltrator  
+Level: 56  
+EVs: 8 HP / 248 SpA / 248 Spe  
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Hex  
+- Will-O-Wisp  
+- Light Screen  
+- Reflect
+
+Glimmora @ Power Herb  
+Ability: Corrosion  
+Level: 58  
+EVs: 4 Atk / 248 SpA / 8 SpD / 248 Spe  
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Meteor Beam  
+- Sludge Bomb  
+- Earth Power  
+- Power Gem
+
+Shuckle @ Mental Herb  
+Ability: Solid Rock  
+Level: 58   
+EVs: 248 HP / 252 Def / 4 SpD / 4 Spe  
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Stone Edge  
+- Earthquake  
+- Shell Smash  
+- Power Trick
 
 === TRAINER_BURGLAR_LEWIS ===
 Name: Lewis
@@ -3841,13 +3916,58 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Growlithe
-Level: 34
+Delibird @ Choice Band  
+Ability: Refrigerate  
+Level: 57  
+EVs: 8 HP / 248 Atk / 252 Spe  
+Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Present
 
-Ponyta
-Level: 34
+Sigilyph @ Flame Orb  
+Ability: Magic Guard  
+Level: 57  
+Tera Type: Psychic  
+EVs: 244 HP / 8 Def / 8 SpA / 248 SpD  
+Nature: Calm  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ancient Power  
+- Stored Power  
+- Psycho Shift  
+- Roost
+
+Zangoose @ Toxic Orb  
+Ability: Toxic Boost  
+Level: 58  
+EVs: 8 HP / 248 Atk / 252 Spe  
+Nature: Jolly  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fling  
+- Facade  
+- Close Combat  
+- Swords Dance
+
+Reuniclus @ Sticky Barb  
+Ability: Magic Guard  
+Level: 58  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psyshock  
+- Focus Blast  
+- Calm Mind  
+- Trick
+
+Banette @ Banettite  
+Ability: Wandering Spirit  
+Level: 58   
+EVs: 8 HP / 248 Atk / 252 Spe  
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Poltergeist  
+- Double-Edge  
+- Sucker Punch  
+- Swords Dance
 
 === TRAINER_ENGINEER_BAILY ===
 Name: Baily
@@ -7408,13 +7528,50 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electrode
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-Weezing
-Level: 29
+Slurpuff @ Focus Sash  
+Ability: Unburden  
+Level: 56 
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Nature: Hasty
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Sticky Web  
+- Endeavor  
+- Light Screen  
+- Misty Explosion
+
+Drapion @ Black Glasses  
+Ability: Sniper  
+Level: 57  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wicked Blow  
+- Cross Poison  
+- Stomping Tantrum  
+- Fell Stinger
+
+Smeargle @ Power Herb
+Ability: Own Tempo
+Level: 57
+EVs: 4 HP / 252 SpA / 252 Spe
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stored Power
+- Boomburst
+- Geomancy
+- Spore
+
+Smeargle @ Wide Lens
+Ability: Technician
+Level: 57
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Power Trip
+- Population Bomb
+- Shell Smash
+- Spore
 
 === TRAINER_SCIENTIST_CONNOR ===
 Name: Connor
@@ -7487,16 +7644,16 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Electrode @ Air Balloon  
-Ability: Soundproof  
-Level: 39  
-EVs: 68 HP / 136 SpA  
-Nature: Quiet  
+Gastly @ Life Orb  
+Ability: Levitate  
+Level: 41  
+EVs: 92 SpA / 112 Spe  
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rising Voltage  
-- Aura Sphere  
-- Foul Play  
-- Electric Terrain  
+- Shadow Ball  
+- Sludge Wave  
+- Thunderbolt  
+- Dazzling Gleam
 
 Glalie @ Muscle Band  
 Ability: Inner Focus  
@@ -7562,16 +7719,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Pin Missile  
 - Pursuit  
 
-Braviary-Hisui @ Wise Glasses  
-Ability: Frisk  
+Sliggoo-Hisui @ Clear Amulet  
+Ability: Gooey  
 Level: 39  
-EVs: 88 HP / 112 SpA / 4 Spe  
-Nature: Modest
+EVs: 204 HP  
+Nature: Sassy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Esper Wing  
-- Air Slash  
-- Flash  
-- U-turn  
+- Acid Spray  
+- Flash Cannon  
+- Muddy Water  
+- Mud Shot
 
 Tauros-Paldea-Combat @ Sitrus Berry  
 Ability: Intimidate  
@@ -7756,15 +7913,15 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Slowking-Galar @ Black Sludge
+Slowking @ Sitrus Berry
 Ability: Regenerator
 Level: 39
 EVs: 204 HP
 Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Chilly Reception
-- Eerie Spell
-- Sludge Bomb
+- Future Sight
+- Surf
 - Flamethrower
 
 Carracosta @ Mystic Water
@@ -7778,15 +7935,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Crunch
 - Rock Tomb
 
-Klang @ Shuca Berry
-Ability: Clear Body
+Magneton @ Air Balloon
+Ability: Analytic
 Level: 40
-EVs: 100 Atk / 104 Spe
-Nature: Adamant
+EVs: 100 SpA / 104 Spe
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Gear Grind
+- Flash Cannon
 - Volt Switch
-- Wild Charge
+- Thunderbolt
 - Thunder Wave
 
 Cetitan @ Never-Melt Ice
@@ -7862,17 +8019,60 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magnemite
-Level: 33
+Eiscue @ Ability Shield  
+Ability: Ice Face  
+Level: 56  
+EVs: 248 HP / 204 SpA / 56 SpD  
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Freeze-Dry  
+- Snowscape  
+- Soak  
+- Aqua Ring
 
-Magneton
-Level: 33
+Darmanitan @ Grip Claw  
+Ability: Zen Mode  
+Level: 56  
+EVs: 252 HP / 248 SpA / 8 SpD  
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fire Spin  
+- Snore  
+- Body Press  
+- Rest
 
-Voltorb
-Level: 33
+Aegislash @ Sitrus Berry  
+Ability: Stance Change  
+Level: 57  
+EVs: 248 HP / 12 Atk / 248 SpA  
+Nature: Quiet
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Head Smash  
+- Steel Beam  
+- Shadow Ball  
+- King's Shield
+
+Minior @ Focus Sash  
+Ability: Shields Down  
+Level: 57  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Nature: Timid
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 31 Spe
+- Charge Beam  
+- Earth Power  
+- Power Gem  
+- Hidden Power
+
+Morpeko @ Mirror Herb  
+Ability: Hunger Switch  
+Level: 58    
+EVs: 248 Atk / 4 Def / 4 SpD / 252 Spe  
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aura Wheel  
+- Power Trip  
+- Brick Break  
+- Swagger
 
 === TRAINER_SCIENTIST_IVAN ===
 Name: IVAN
@@ -7883,13 +8083,58 @@ Music: Suspicious
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Magnemite
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Orbeetle @ Mental Herb  
+Ability: Swarm  
+Level: 57    
+EVs: 248 HP / 248 Def / 8 SpA / 4 SpD  
+Nature: Relaxed
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Trick Room  
+- Teleport  
+- Bug Buzz  
+- Recover
 
-Electrode
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Avalugg-Hisui @ Zoom Lens  
+Ability: Sturdy  
+Level: 57  
+EVs: 248 HP / 252 Atk / 4 Def / 4 SpD  
+Nature: Brave
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Mountain Gale  
+- Stone Edge  
+- Body Press  
+- Gyro Ball
+
+Comfey @ Leftovers  
+Ability: Triage  
+Level: 58  
+EVs: 248 HP / 248 Def / 12 SpD  
+Nature: Relaxed
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Draining Kiss  
+- Sparkly Swirl  
+- Calm Mind  
+- Trick Room
+
+Sirfetch’d @ Choice Band  
+Ability: Scrappy  
+Level: 58  
+EVs: 248 HP / 252 Atk / 8 SpD  
+Nature: Brave
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Meteor Assault
+- Swords Dance
+
+Ampharos @ Ampharosite  
+Ability: Plus 
+Level: 58   
+EVs: 248 HP / 248 SpA / 12 SpD  
+Nature: Quiet
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Parabolic Charge
+- Draco Meteor  
+- Aura Sphere  
+- Tail Glow
 
 === TRAINER_BOSS_GIOVANNI ===
 Name: Giovanni
@@ -9161,16 +9406,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - High Horsepower  
 - Thief
 
-Copperajah @ Petaya Berry  
-Ability: Sheer Force  
-Level: 39    
-EVs: 204 SpA  
-Nature: Modest
+Zweilous @ Petaya Berry  
+Ability: Hustle  
+Level: 41  
+EVs: 196 SpA / 8 Spe  
+Nature: Modest 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Belch  
-- Flash Cannon  
+- Dark Pulse  
 - Earth Power  
-- Taunt  
+- Taunt
 
 === TRAINER_TEAM_ROCKET_GRUNT_26 ===
 Name: Grunt
@@ -9859,16 +10104,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sucker Punch
 - Foul Play
 
-Snorlax @ Figy Berry
-Ability: Gluttony
+Lickilicky @ Chesto Berry
+Ability: Unaware
 Level: 40
 EVs: 204 HP
 Nature: Calm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Curse
-- Recycle
+- Rest
 - Body Slam
-- Heavy Slam
+- Gyro Ball
 
 === TRAINER_TEAM_ROCKET_GRUNT_41 ===
 Name: Grunt
@@ -11448,13 +11693,71 @@ Music: Rich
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Growlithe-Hisui
-Level: 22
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Hydreigon @ Life Orb  
+Ability: Levitate  
+Level: 58  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Dark Pulse  
+- Draco Meteor  
+- Flash Cannon  
+- Stealth Rock
 
-Vaporeon
-Level: 22
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Lilligant-Hisui @ Blunder Policy  
+Ability: Hustle  
+Level: 58  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Nature: Adamant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Close Combat  
+- Leaf Blade  
+- Ice Spinner  
+- Knock Off
+
+Wishiwashi @ Wiki Berry
+Ability: Schooling  
+Level: 58  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Nature: Modest
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
+- Hydro Pump  
+- Ice Beam  
+- Flip Turn  
+- Endeavor
+
+Sandaconda @ Rocky Helmet
+Ability: Shed Skin  
+Level: 58  
+EVs: 252 HP / 8 Atk / 248 SpD  
+Nature: Careful
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Earthquake  
+- Stone Edge  
+- Coil  
+- Rest
+
+Floette-Eternal @ Choice Specs  
+Ability: Natural Cure  
+Level: 58  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Nature: Timid
+IVs: 30 HP / 0 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe  
+- Light of Ruin  
+- Moonblast  
+- Psychic  
+- Hidden Power 
+
+Golisopod @ Golisopite
+Ability: Emergency Exit  
+Level: 58  
+EVs: 244 HP / 252 Atk / 12 SpD  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Leech Life  
+- Iron Head  
+- Liquidation  
+- Swords Dance
 
 === TRAINER_GENTLEMAN_ARTHUR ===
 Name: Arthur
@@ -18560,7 +18863,7 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 === TRAINER_LEADER_MORTY ===
 Name: Morty
 Class: Leader Johto
-Pic: Leader Pryce
+Pic: Leader Morty
 Gender: Male
 Music: Male
 Double Battle: No

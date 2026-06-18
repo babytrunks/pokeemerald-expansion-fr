@@ -70,10 +70,10 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
         //! DESC: outfit's name
 
         .name = COMPOUND_STRING("Default"),
-        .desc = COMPOUND_STRING("The usual, but basic Outfit."),
+        .desc = COMPOUND_STRING("The usual, but basic outfit."),
 
         .nameFemale = COMPOUND_STRING("Default"),
-        .descFemale = COMPOUND_STRING("The usual, but basic Outfit."),
+        .descFemale = COMPOUND_STRING("The usual, but basic outfit."),
 
 
         //! DESC: trainer front & back pic index
@@ -303,7 +303,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
 
 
         .name = COMPOUND_STRING("Alain"),
-        .desc = COMPOUND_STRING("An outfit based on Alain from the XY Anime."),
+        .desc = COMPOUND_STRING("An outfit based on Alain\nfrom the XY Anime."),
         .nameFemale = COMPOUND_STRING("Lyra"),
         .descFemale = COMPOUND_STRING("An outfit based on Lyra from HGSS."),
         .trainerPics = {

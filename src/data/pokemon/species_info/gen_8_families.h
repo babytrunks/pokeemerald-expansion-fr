@@ -7939,9 +7939,9 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .weight = 445,
         .description = COMPOUND_STRING(
             "It probes its surroundings with all its\n"
-            "senses save one--it doesn't use its sense\n"
-            "of sight. Spectrier's kicks are said to\n"
-            "separate soul from body."),
+            "senses save one-it doesn't use its\n"
+            "sense of sight. Spectrier's kicks are\n"
+            "said to separate soul from body."),
         .pokemonScale = 261,
         .pokemonOffset = 1,
         .trainerScale = 334,

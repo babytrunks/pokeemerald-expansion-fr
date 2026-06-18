@@ -2073,8 +2073,8 @@ u8 CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Trainer 
             u32 level = partyData[monIndex].lvl;
             u16 species = partyData[monIndex].species;
             #if (RANDOMIZER_AVAILABLE)
-                if(!isTrainerBossTrainer)
-                    species = RandomizeTrainerMon(seed, i, monsCount, species);
+                // if(!isTrainerBossTrainer)
+                //     species = RandomizeTrainerMon(seed, i, monsCount, species);
             #endif
 
             if (trainer->dynamicLevelRatio > 0 && (partyMaxLevel - npcTrainerPartyMaxLevel) > 0)

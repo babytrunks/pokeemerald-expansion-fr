@@ -835,7 +835,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sStaraviaLevelUpLearnset,
         .teachableLearnset = sStaraviaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 34, SPECIES_STARAPTOR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_4 + 1, SPECIES_STARAPTOR}),
     },
 
     [SPECIES_STARAPTOR] =

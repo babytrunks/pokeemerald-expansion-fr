@@ -128,7 +128,7 @@ gText_morty_1::
   .string "Hi, good of you to greet me.\p"
   .string "Kanto has seen quite a surge in\n"
   .string "appearances of Legendary Pokémon,\l"
-  .string "I've spent some time training here\l"
+  .string "so I've spent some time training here\l"
   .string "as of late.$"
 
 gText_morty_askChallenge::
@@ -139,7 +139,7 @@ gText_morty_2::
     .string "Help me reach a higher level!$"
 
 gText_morty_Reject::
-  .string "I see… Fine."
+  .string "I see… Fine.$"
 
 morty_Text_Defeat::
   .string "I have a lot more training to do.$"

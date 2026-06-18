@@ -59,10 +59,10 @@ EventScript_Pryce_Battle::
     trainerbattle_no_intro TRAINER_LEADER_PRYCE, pryce_Text_Defeat   @ 0x31
     setflag FLAG_DEFEATED_PRYCE            @ 0x933
     setspeaker SP_NAME_PRYCE
+    msgbox gText_pryce_3
+    setspeaker SP_NAME_PRYCE
     call_if_unset FLAG_UNLOCKED_STAT_EDITOR, EventScript_Pryce_StatEditExplain
     call_if_unset FLAG_DISABLE_EVS, EventScript_Pryce_StatEditTellCap
-    setspeaker SP_NAME_PRYCE
-    msgbox gText_pryce_3
     giveitem ITEM_FROSLASSITE
     setspeaker SP_NAME_PRYCE
     msgbox gText_pryce_4
@@ -232,14 +232,15 @@ gText_pryce_1::
   .string "Ah, hello.\p"
   .string "The Seafoam Islands is a very nostalgic\n"
   .string "spot for me…\p"
-  .string "I've spent time training at this spot since\n"
-  .string "before you were born.$"
+  .string "I've spent time training at this spot\n"
+  .string "before you were even born.$"
 
 gText_pryce_askChallenge::
-  .string "I have a lifetime worth of experience behind\n"
-  .string "me, is this a challenge you wish to seek?$"
+  .string "I have a lifetime worth of experience\n"
+  .string "behind me, is this a challenge you\l"
+  .string "wish to seek?$"
 gText_pryce_2::
-    .string "{COLOR RED}I, the winter trainer, shall demonstrate\n"
+    .string "I, the winter trainer, shall demonstrate\n"
     .string "my power!$"
 
 gText_pryce_Reject::
@@ -262,9 +263,9 @@ pryce_Text_StatEditor_Explain::
 
 gText_pryce_4::
   .string "There's always new things to be learned.\n"
-  .string "Megas Froslass is a relatively new discovery,\l"
-  .string "making it a very formidable Pokémon.\p"
-  .string "It is common knowledge that Articuno\n"
+  .string "Megas Froslass is a relatively new\l"
+  .string "discovery, yet is very formidable.\p"
+  .string "Anyway, it's known that Articuno\n"
   .string "reigns in Seafoam Islands, but I've\l"
   .string "heard of rumors of other Mythical\l"
   .string "Pokémon making their stay here.\p"

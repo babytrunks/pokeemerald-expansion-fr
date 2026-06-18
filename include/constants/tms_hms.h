@@ -81,7 +81,9 @@
     F(WEATHER_BALL) \
     F(DRAGON_PULSE) \
     F(SHADOW_CLAW) \
-    F(SCALD)
+    F(SCALD) \
+    F(SUPERPOWER) \
+    F(AURA_SPHERE) 
     
 #define FOREACH_HM(F) \
     F(CUT) \

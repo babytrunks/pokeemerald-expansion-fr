@@ -6,6 +6,15 @@ Route19_EventScript_PlainInsane::
     lockall
     faceplayer
     msgbox gText_plaininsane_1
+    goto_if_not_defeated TRAINER_SWIMMER_MALE_REECE, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_RICHARD, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_TONY, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_DOUGLAS, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SIS_AND_BRO_LIA_LUC, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_MATTHEW, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_AXLE, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_FEMALE_CONNIE, Route19_EventScript_PlainInsaneNotReady
+	goto_if_not_defeated TRAINER_SWIMMER_FEMALE_ALICE, Route19_EventScript_PlainInsaneNotReady
     msgbox gText_plaininsane_askChallenge, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, 1, EventScript_PlainInsane_Battle
     msgbox gText_plaininsane_Reject

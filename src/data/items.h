@@ -12904,22 +12904,28 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM81] =
+    [ITEM_TM_SUPERPOWER] =
     {
         .name = ITEM_NAME("TM81"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "A strong attack,\n"
+            "but sharply\n"
+            "lowers Atk stats."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM82] =
+    [ITEM_TM_AURA_SPHERE] =
     {
         .name = ITEM_NAME("TM82"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Attacks with an,\n"
+            "aura blast that\n"
+            "can't miss."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

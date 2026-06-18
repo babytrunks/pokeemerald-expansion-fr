@@ -2839,7 +2839,7 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [ "MOVE_BLAZE_KICK" ]
   },
   "BIDOOF": {
     "LevelMoves": [],

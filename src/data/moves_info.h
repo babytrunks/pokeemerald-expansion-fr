@@ -1781,12 +1781,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Drill Peck"),
         .description = COMPOUND_STRING(
-            "A corkscrewing attack with\n"
-            "the beak acting as a drill."),
+            "Attacks with its beak,\n"
+            "acting as a drill. High critical-hit ratio."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_FLYING,
         .accuracy = 100,
+        .criticalHitStage = 1,
         .pp = 20,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

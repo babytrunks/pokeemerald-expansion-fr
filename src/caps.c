@@ -23,7 +23,7 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE06_GET, LEVEL_CAP_GYM_6}, //54
         {FLAG_BADGE07_GET, LEVEL_CAP_GYM_7}, //60
         {FLAG_BADGE08_GET, LEVEL_CAP_GYM_8}, //68
-        {FLAG_IS_CHAMPION, 70},
+        {FLAG_IS_CHAMPION, LEVEL_CAP_IS_CHAMPION}, // 71
     };
 
     u32 i;
