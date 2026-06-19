@@ -1994,7 +1994,7 @@
 #define FLAG_GOT_LAPRAS_FROM_SILPH                       0
 #define FLAG_GOT_POKEBALLS_FROM_OAK_AFTER_22_RIVAL       0
 #define FLAG_DID_MIMIEN_TRADE                            0
-#define FLAG_BOUGHT_MAGIKARP                             0
+#define FLAG_BOUGHT_JOHTO_EGG                             0
 #define FLAG_DID_ZYNX_TRADE                              0
 #define FLAG_DID_MS_NIDO_TRADE                           0
 #define FLAG_0x24C                                       0

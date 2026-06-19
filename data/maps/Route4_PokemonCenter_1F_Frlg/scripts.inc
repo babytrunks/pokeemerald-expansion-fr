@@ -23,7 +23,7 @@ Route4_PokemonCenter_1F_EventScript_Gentleman::
 Route4_PokemonCenter_1F_EventScript_MagikarpSalesman::
 	lock
 	faceplayer
-	goto_if_set FLAG_BOUGHT_MAGIKARP, Route4_PokemonCenter_1F_EventScript_AlreadyBoughtMagikarp
+	goto_if_set FLAG_BOUGHT_JOHTO_EGG, Route4_PokemonCenter_1F_EventScript_AlreadyBoughtMagikarp
 	showmoneybox 0, 0
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route4_PokemonCenter_1F_EventScript_AskBuyMagikarpMale
@@ -93,7 +93,7 @@ Route4_PokemonCenter_1F_EventScript_EndPurchaseMagikarp::
 	end
 
 Route4_PokemonCenter_1F_EventScript_BoughtMagikarp::
-	setflag FLAG_BOUGHT_MAGIKARP
+	setflag FLAG_BOUGHT_JOHTO_EGG
 	release
 	end
 
@@ -145,6 +145,78 @@ Route4_PokemonCenter_1F_EventScript_Youngster::
 Route4_PokemonCenter_1F_EventScript_Newspaper::
 	lock
 	msgbox Route4_PokemonCenter_1F_Text_ItsANewspaper
+	release
+	end
+
+
+Route4_PokemonCenter_1F_EventScript_EggSalesman::
+	lock
+	faceplayer
+	goto_if_set FLAG_BOUGHT_JOHTO_EGG, Route4_PokemonCenter_1F_EventScript_AlreadyBoughtJohtoEgg
+	showmoneybox 0, 0
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, Route4_PokemonCenter_1F_EventScript_AskBuyEggMale
+	goto_if_eq VAR_RESULT, FEMALE, Route4_PokemonCenter_1F_EventScript_AskBuyEggFemale
+	end
+
+Route4_PokemonCenter_1F_EventScript_AskBuyEggMale::
+	msgbox Route4_PokemonCenter_1F_Text_SportBuyJohtoEgg, MSGBOX_YESNO
+	goto Route4_PokemonCenter_1F_EventScript_TryBuyJohtoEgg
+	end
+
+Route4_PokemonCenter_1F_EventScript_AskBuyEggFemale::
+	msgbox Route4_PokemonCenter_1F_Text_SweetieBuyJohtoEgg, MSGBOX_YESNO
+	goto Route4_PokemonCenter_1F_EventScript_TryBuyJohtoEgg
+	end
+
+Route4_PokemonCenter_1F_EventScript_TryBuyJohtoEgg::
+	goto_if_eq VAR_RESULT, NO, Route4_PokemonCenter_1F_EventScript_DeclineJohtoEgg
+	checkmoney MAGIKARP_PRICE
+	goto_if_eq VAR_RESULT, FALSE, Route4_PokemonCenter_1F_EventScript_NotEnoughMoneyJohtoEgg
+	getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, Route4_PokemonCenter_1F_EventScript_NoRoomForJohtoEgg
+	randomelement SPECIES_PICHU, SPECIES_CLEFFA, SPECIES_IGGLYBUFF, SPECIES_TOGEPI, SPECIES_TYROGUE, SPECIES_SMOOCHUM, SPECIES_ELEKID, SPECIES_MAGBY, SPECIES_AZURILL, SPECIES_WYNAUT, SPECIES_RIOLU, SPECIES_TOXEL, SPECIES_MANTYKE, SPECIES_MUNCHLAX, SPECIES_HAPPINY, SPECIES_MIME_JR, SPECIES_BONSLY, SPECIES_CHINGLING, SPECIES_BUDEW, SPECIES_MAGIKARP
+	copyvar VAR_TEMP_1, VAR_RESULT
+	setflag FLAG_FORCE_SHINY
+	setflag FLAG_3_PERFECT_IVS
+	giveegg VAR_TEMP_1
+	clearflag FLAG_FORCE_SHINY
+	clearflag FLAG_3_PERFECT_IVS
+	call Route4_PokemonCenter_1F_EventScript_PayForJohtoEgg
+	hidemoneybox
+	setflag FLAG_BOUGHT_JOHTO_EGG
+	release
+	end
+
+Route4_PokemonCenter_1F_EventScript_PayForJohtoEgg::
+	removemoney MAGIKARP_PRICE
+	updatemoneybox
+	playfanfare MUS_LEVEL_UP
+	message Route4_PokemonCenter_1F_Text_PaidForJohtoEgg
+	waitmessage
+	waitfanfare
+	return
+
+Route4_PokemonCenter_1F_EventScript_DeclineJohtoEgg::
+	msgbox Route4_PokemonCenter_1F_Text_DeclineJohtoEgg
+	hidemoneybox
+	release
+	end
+
+Route4_PokemonCenter_1F_EventScript_NotEnoughMoneyJohtoEgg::
+	msgbox Route4_PokemonCenter_1F_Text_NotEnoughMoneyJohtoEgg
+	hidemoneybox
+	release
+	end
+
+Route4_PokemonCenter_1F_EventScript_NoRoomForJohtoEgg::
+	msgbox Route4_PokemonCenter_1F_Text_NoRoomForJohtoEgg
+	hidemoneybox
+	release
+	end
+
+Route4_PokemonCenter_1F_EventScript_AlreadyBoughtJohtoEgg::
+	msgbox Route4_PokemonCenter_1F_Text_AlreadyBoughtJohtoEgg
 	release
 	end
 
@@ -201,4 +273,57 @@ Route4_PokemonCenter_1F_Text_ShouldStoreMonsUsingPC::
 
 Route4_PokemonCenter_1F_Text_ItsANewspaper::
     .string "It's a newspaper.$"
+
+Route4_PokemonCenter_1F_Text_SportBuyJohtoEgg::
+    .string "Hey there, sport!\n"
+    .string "You've got the look of a real\l"
+    .string "Pokémon Trainer!\p"
+    .string "I just got back from Johto!\p"
+    .string "The Day-Care Couple there\n"
+    .string "gave me a genuine Egg!\p"
+    .string "No idea what's inside - could\n"
+    .string "be anything! Real rare stuff!\p"
+    .string "I'd never sell this to just\n"
+    .string "anyone, but I like you, kid!\l"
+    .string "Just ¥500! So, you'll buy it?$"
+
+Route4_PokemonCenter_1F_Text_SweetieBuyJohtoEgg::
+    .string "Well, hello, sweetie!\n"
+    .string "You've got the look of a real\l"
+    .string "Pokémon Trainer!\p"
+    .string "I just got back from Johto!\p"
+    .string "The Day-Care Couple there\n"
+    .string "gave me a genuine Egg!\p"
+    .string "No idea what's inside - could\n"
+    .string "be anything! Real rare stuff!\p"
+    .string "I'd never sell this to just\n"
+    .string "anyone, but I like you, hon!\p"
+    .string "Just ¥500! So, you'll buy it?$"
+
+Route4_PokemonCenter_1F_Text_PaidForJohtoEgg::
+    .string "{PLAYER} paid ¥500 for\n"
+    .string "a mysterious Egg…$"
+
+Route4_PokemonCenter_1F_Text_DeclineJohtoEgg::
+    .string "No?! Fine!\n"
+    .string "Your loss, not mine!\p"
+    .string "Don't come cryin' to me when\n"
+    .string "you see what could've hatched!$"
+
+Route4_PokemonCenter_1F_Text_NotEnoughMoneyJohtoEgg::
+    .string "You don't even have ¥500!\n"
+	.string "That's nothin'!\p"
+    .string "Come back when you're not\n"
+    .string "broke!$"
+
+Route4_PokemonCenter_1F_Text_NoRoomForJohtoEgg::
+    .string "Hmph! No room in your party?\n"
+    .string "Come back when you've got\n"
+    .string "some space!$"
+
+Route4_PokemonCenter_1F_Text_AlreadyBoughtJohtoEgg::
+    .string "What?!\n"
+    .string "I only had the one Egg!\p"
+    .string "I'm not runnin' a hatchery here,\n"
+    .string "you know!$"
 

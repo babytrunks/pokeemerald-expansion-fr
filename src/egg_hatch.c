@@ -318,6 +318,9 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     u8 i, friendship, language, gameMet, markings, isModernFatefulEncounter;
     u16 moves[MAX_MON_MOVES];
     u32 ivs[NUM_STATS];
+    bool32 isShiny;
+    u32 hiddenNature;
+    enum Type teraType;
 
     species = GetMonData(egg, MON_DATA_SPECIES);
 
@@ -337,6 +340,12 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     isModernFatefulEncounter = GetMonData(egg, MON_DATA_MODERN_FATEFUL_ENCOUNTER);
     ball = GetMonData(egg, MON_DATA_POKEBALL);
 
+    // These are stored as XOR overrides (not derived from personality/OT-ID), so they
+    // must be carried over explicitly or a forced-shiny egg would re-roll as non-shiny.
+    isShiny = GetMonData(egg, MON_DATA_IS_SHINY);
+    hiddenNature = GetMonData(egg, MON_DATA_HIDDEN_NATURE);
+    teraType = GetMonData(egg, MON_DATA_TERA_TYPE);
+
     CreateMon(temp, species, EGG_HATCH_LEVEL, USE_RANDOM_IVS, TRUE, personality, OT_ID_PLAYER_ID, 0);
 
     for (i = 0; i < MAX_MON_MOVES; i++)
@@ -355,6 +364,10 @@ static void CreateHatchedMon(struct Pokemon *egg, struct Pokemon *temp)
     SetMonData(temp, MON_DATA_POKERUS, &pokerus);
     SetMonData(temp, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
     SetMonData(temp, MON_DATA_POKEBALL, &ball);
+
+    SetMonData(temp, MON_DATA_IS_SHINY, &isShiny);
+    SetMonData(temp, MON_DATA_HIDDEN_NATURE, &hiddenNature);
+    SetMonData(temp, MON_DATA_TERA_TYPE, &teraType);
 
     *egg = *temp;
 }

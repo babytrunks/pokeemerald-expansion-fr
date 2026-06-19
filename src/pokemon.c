@@ -1444,10 +1444,10 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
         SetBoxMonData(boxMon, MON_DATA_SPDEF_IV, &iv);
 
         u8 perfectIVCount = gSpeciesInfo[species].perfectIVCount;
-        if (FlagGet(FLAG_3_PERFECT_IVS)) {
+        if (FlagGet(FLAG_3_PERFECT_IVS)) 
             perfectIVCount = 3;
-        }
-
+        
+    
         if (perfectIVCount != 0)
         {
             iv = MAX_PER_STAT_IVS;

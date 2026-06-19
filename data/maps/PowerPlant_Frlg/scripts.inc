@@ -177,11 +177,49 @@ EventScript_JojoFan_Battle::
     giveitem ITEM_TM_CLOSE_COMBAT
     setspeaker SP_NAME_JOJO_FAN
     msgbox gText_jojo_fan_4
-    fadescreen FADE_TO_BLACK                
-    playse SE_EXIT                         
-    waitse                                  
-    removeobject LOCALID_POWER_PLANT_JOJO_FAN             
-    fadescreen FADE_FROM_BLACK               
+	givemon SPECIES_OGERPON, 55, ITEM_CORNERSTONE_MASK
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, EventScript_JojoFan_ReceiveOgerponParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, EventScript_JojoFan_ReceiveOgerponPC
+	@ goto_if_eq VAR_RESULT, MON_CANT_GIVE, Common_EventScript_NoMoreRoomForPokemon
+	end
+
+EventScript_JojoFan_ReceiveOgerponParty::
+	playfanfare MUS_LEVEL_UP
+	message gText_jojo_fan_5
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_OGERPON
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_JojoFan_LeaveScene
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto EventScript_JojoFan_LeaveScene
+	end
+
+EventScript_JojoFan_ReceiveOgerponPC::
+	playfanfare MUS_LEVEL_UP
+	message gText_jojo_fan_5
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_OGERPON
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_JojoFan_OgerponTransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto EventScript_JojoFan_OgerponTransferredToPC
+	end
+
+EventScript_JojoFan_OgerponTransferredToPC::
+	call Common_EventScript_TransferredToPC
+	goto EventScript_JojoFan_LeaveScene
+	end
+
+EventScript_JojoFan_LeaveScene::
+	msgbox gText_jojo_fan_6
+    fadescreen FADE_TO_BLACK
+    playse SE_EXIT
+    waitse
+    removeobject LOCALID_POWER_PLANT_JOJO_FAN
+    fadescreen FADE_FROM_BLACK
     release
     end
 
@@ -205,9 +243,13 @@ gText_jojo_fan_3::
 	.string "How sugoi. Take this.$"
 
 gText_jojo_fan_4::
-	.string "Not just that, let me update your\n"
-	.string "Stat Scanner capabilities.\p"
-	.string "…You are now be able to edit your\n"
-	.string "Pokémon's IVs.\p"
-	.string "Well, that's all I can do for you.\p"
-	.string "See you around, yeah?$"
+	.string "Not just that, let me give you\n"
+	.string "the Pokémon capable of wearing\l"
+	.string "the Stone Mask.$"
+
+gText_jojo_fan_5::
+	.string "You received an Ogerpon!$"
+
+gText_jojo_fan_6::
+	.string "That's all I got, baka.\n"
+	.string "See you around, I guess.$"

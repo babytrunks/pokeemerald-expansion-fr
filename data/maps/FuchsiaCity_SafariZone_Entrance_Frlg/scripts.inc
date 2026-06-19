@@ -4,7 +4,7 @@ FuchsiaCity_SafariZone_Entrance_Frlg_MapScripts::
 
 FuchsiaCity_SafariZone_Entrance_OnFrame::
 	map_script_2 VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 1, FuchsiaCity_SafariZone_Entrance_EventScript_ExitWarpIn
-	@ map_script_2 VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 2, FuchsiaCity_SafariZone_Entrance_EventScript_ExitEarly
+	map_script_2 VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 2, FuchsiaCity_SafariZone_Entrance_EventScript_ExitEarly
 	map_script_2 VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 3, FuchsiaCity_SafariZone_Entrance_EventScript_ExitWalkIn
 	.2byte 0
 
@@ -42,7 +42,7 @@ FuchsiaCity_SafariZone_Entrance_EventScript_ExitEarly::
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox FuchsiaCity_SafariZone_Entrance_Text_GoingToLeaveSafariZoneEarly, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, FuchsiaCity_SafariZone_Entrance_EventScript_ReturnToSafariZone
-	msgbox FuchsiaCity_SafariZone_Entrance_Text_PleaseReturnSafariBalls
+	@ msgbox FuchsiaCity_SafariZone_Entrance_Text_PleaseReturnSafariBalls
 	closemessage
 	applymovement LOCALID_PLAYER, FuchsiaCity_SafariZone_Entrance_Movement_Exit
 	waitmovement 0
@@ -206,11 +206,11 @@ FuchsiaCity_SafariZone_Entrance_EventScript_ExplainSafariZone::
 	end
 
 FuchsiaCity_SafariZone_Entrance_Text_WelcomeToSafariZone::
-    .string "Welcome to the SAFARI ZONE!$"
+    .string "Welcome to the Safari Zone!$"
 
 FuchsiaCity_SafariZone_Entrance_Text_PlaySafariGameFor500::
     .string "For just ¥500, you can play the\n"
-    .string "SAFARI GAME.\p"
+    .string "Safari Game.\p"
     .string "You can roam the wide-open safari\n"
     .string "and catch what you like.\p"
     .string "Would you like to play?$"

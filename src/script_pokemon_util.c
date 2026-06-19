@@ -74,15 +74,15 @@ u8 ScriptGiveEgg(u16 species)
     struct Pokemon mon;
     u8 isEgg;
     TryRandomizeSpecies(&species);
-    #if RANDOMIZER_AVAILABLE == TRUE
-        u16 i = 0;
-        for(i = 0; i < EGG_MON_COUNT; i++)
-        {
-            if(gEggMonTable[i] == species)
-                break;
-        }
-        species = RandomizeEggMon(i, gEggMonTable);
-    #endif
+    // #if RANDOMIZER_AVAILABLE == TRUE
+    //     u16 i = 0;
+    //     for(i = 0; i < EGG_MON_COUNT; i++)
+    //     {
+    //         if(gEggMonTable[i] == species)
+    //             break;
+    //     }
+    //     species = RandomizeEggMon(i, gEggMonTable);
+    // #endif
 
     CreateEgg(&mon, species, TRUE);
     isEgg = TRUE;
@@ -554,6 +554,7 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
     if (FlagGet(FLAG_3_PERFECT_IVS)) {
         perfectIVCount = 3;
     }
+
     if (perfectIVCount != 0)
     {
         // Initialize a list of IV indices.
@@ -592,6 +593,8 @@ void ScrCmd_createmon(struct ScriptContext *ctx)
     u16 move3                = PARSE_FLAG(19, MOVE_NONE);
     u16 move4                = PARSE_FLAG(20, MOVE_NONE);
     enum ShinyMode shinyMode = PARSE_FLAG(21, SHINY_MODE_RANDOM);
+    if (FlagGet(FLAG_FORCE_SHINY))
+        shinyMode = PARSE_FLAG(21, SHINY_MODE_ALWAYS);
     bool8 gmaxFactor         = PARSE_FLAG(22, FALSE);
     enum Type teraType       = PARSE_FLAG(23, NUMBER_OF_MON_TYPES);
     u8 dmaxLevel             = PARSE_FLAG(24, 0);
