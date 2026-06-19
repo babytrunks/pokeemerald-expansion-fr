@@ -219,6 +219,38 @@ CeladonCity_GameCorner_EventScript_GentlemanAlreadyGotCoins::
 	goto CeladonCity_GameCorner_EventScript_FaceSlotMachine
 	end
 
+CeladonCity_GameCorner_EventScript_FlutterfreeFan::
+	lock
+	faceplayer
+	goto_if_quest_complete QUEST_FLUTTERFREE, CeladonCity_GameCorner_EventScript_FlutterfreeDone
+	goto_if_quest_active QUEST_FLUTTERFREE, CeladonCity_GameCorner_EventScript_FlutterfreeCheck
+	setflag FLAG_SYS_QUEST_MENU_GET
+	msgbox CeladonCity_GameCorner_Text_FlutterfreeIntro
+	closemessage
+	questmenu QUEST_MENU_SET_ACTIVE QUEST_FLUTTERFREE
+	openquestmenu
+	startquest QUEST_FLUTTERFREE
+	release
+	end
+
+CeladonCity_GameCorner_EventScript_FlutterfreeCheck::
+	goto_if_ge FLAPPY_VAR_HIGH_SCORE, 20, CeladonCity_GameCorner_EventScript_FlutterfreeReward
+	msgbox CeladonCity_GameCorner_Text_FlutterfreeNotYet
+	release
+	end
+
+CeladonCity_GameCorner_EventScript_FlutterfreeReward::
+	msgbox CeladonCity_GameCorner_Text_FlutterfreeCongrats
+	giveitem ITEM_GACHA_VOUCHER 3
+	completequest QUEST_FLUTTERFREE
+	release
+	end
+
+CeladonCity_GameCorner_EventScript_FlutterfreeDone::
+	msgbox CeladonCity_GameCorner_Text_FlutterfreePostQuest
+	release
+	end
+
 CeladonCity_GameCorner_EventScript_SlotMachine0::
 CeladonCity_GameCorner_EventScript_Derby::
 	lockall
@@ -712,8 +744,10 @@ CeladonCity_GameCorner_Text_RareMonsForCoins::
     .string "But, I just can't seem to win!$"
 
 CeladonCity_GameCorner_Text_SoEasyToGetHooked::
-    .string "Games are scary!\n"
-    .string "It's so easy to get hooked!$"
+    .string "If your inputs don't seem to be\n"
+    .string "registering with Onix, I'd suggest\l"
+	.string "holding the direction keys rather\l"
+	.string "than tapping them.$"
 
 CeladonCity_GameCorner_Text_WantSomeCoins::
     .string "What's up?\n"
@@ -841,3 +875,25 @@ CeladonCity_GameCorner_Text_Pinball_Diglett:
 CeladonCity_GameCorner_Text_Pinball_Gengar:
 	.string "It's a Gengar Pinball Machine\n"
 	.string "It costs 100 Coins to play.$"
+
+CeladonCity_GameCorner_Text_FlutterfreeIntro:
+	.string "Flutterfree… now THAT was a craze.\p"
+	.string "Back when it was on the App Store,\n"
+	.string "everyone and their MOTHER was tapping\l"
+	.string "away trying to beat my score!\p"
+	.string "Tell you what. If you can beat my\n"
+	.string "high score of 20, I'll give you\l"
+	.string "something real nice.$"
+
+CeladonCity_GameCorner_Text_FlutterfreeNotYet:
+	.string "Score 20 or more in Flutterfree and\n"
+	.string "come back to me. The machine's right\l"
+	.string "over here!$"
+
+CeladonCity_GameCorner_Text_FlutterfreeCongrats:
+	.string "Whoa! You actually beat my score?!\p"
+	.string "A deal's a deal. Take this. You're\n"
+	.string "a true gamer.$"
+
+CeladonCity_GameCorner_Text_FlutterfreePostQuest:
+	.string "Nobody flaps like you, kid.$"

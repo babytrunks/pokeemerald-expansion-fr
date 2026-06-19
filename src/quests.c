@@ -551,12 +551,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
+	side_quest( // Flutterfree Fan quest
 	      gText_SideQuestName_6,
 	      gText_SideQuestDesc_6,
 	      gText_SideQuestDoneDesc_6,
 	      gText_SideQuestMap6,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_GENTLEMAN_FRLG,
 	      OBJECT,
 	      NULL,
 	      0

@@ -20,7 +20,7 @@
 #define QUEST_FIND_BERRY_JUICE          2
 #define QUEST_FANG_TUTOR          3
 #define QUEST_FAN_CLUB_TUTOR          4
-#define QUEST_6          5
+#define QUEST_FLUTTERFREE          5
 #define QUEST_7          6
 #define QUEST_8          7
 #define QUEST_9          8

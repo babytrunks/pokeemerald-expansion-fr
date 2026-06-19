@@ -50,11 +50,11 @@ CeladonCity_Restaurant_Text_TakingBreakRightNow::
 
 CeladonCity_Restaurant_Text_OftenGoToDrugstore::
     .string "My Pokémon are weak, so I often\n"
-    .string "have to go to the DRUGSTORE.$"
+    .string "have to go to the Drug Store.$"
 
 CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner::
     .string "Psst! There's a basement under the\n"
-    .string "GAME CORNER, I hear.$"
+    .string "Game Corner, I hear.$"
 
 CeladonCity_Restaurant_Text_ManLostItAllAtSlots::
     .string "THIS ROM HACK IS SO GOOD I COULD\n"
@@ -81,5 +81,6 @@ CeladonCity_Restaurant_Text_MakeRoomForThis::
 
 CeladonCity_Restaurant_Text_ThoughtIdWinItBack::
     .string "I always thought I was going to\n"
-    .string "win it back…$"
-
+    .string "win it back…\p"
+	.string "Now my wife won't let me see her\n"
+	.string "or the kids.$"
