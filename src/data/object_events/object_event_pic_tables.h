@@ -3759,4 +3759,12 @@ static const struct SpriteFrameImage sPicTable_PlainInsane[] = {
     overworld_ascending_frames(gObjectEventPic_PlainInsane, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Silva[] = {
+    overworld_ascending_frames(gObjectEventPic_Silva, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_JojoFan[] = {
+    overworld_ascending_frames(gObjectEventPic_JojoFan, 2, 4),
+};
+
 #endif // IS_FRLG

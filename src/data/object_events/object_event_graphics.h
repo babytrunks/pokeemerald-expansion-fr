@@ -771,4 +771,10 @@ const u16 gObjectEventPal_Alain[] = INCBIN_U16("graphics/object_events/palettes/
 // Custom RRR bosses
 const u32 gObjectEventPic_PlainInsane[] = INCBIN_U32("graphics/object_events/pics/people/plaininsane.4bpp");
 const u16 gObjectEventPal_PlainInsane[] = INCBIN_U16("graphics/object_events/palettes/plaininsane.gbapal");
+
+const u32 gObjectEventPic_Silva[] = INCBIN_U32("graphics/object_events/pics/people/silva.4bpp");
+const u16 gObjectEventPal_Silva[] = INCBIN_U16("graphics/object_events/palettes/silva.gbapal");
+
+const u32 gObjectEventPic_JojoFan[] = INCBIN_U32("graphics/object_events/pics/people/jojo_fan.4bpp");
+const u16 gObjectEventPal_JojoFan[] = INCBIN_U16("graphics/object_events/palettes/jojo_fan.gbapal");
 #endif // IS_FRLG

@@ -464,6 +464,12 @@ const u16 gTrainerPalette_Alain[] = INCBIN_U16("graphics/trainers/front_pics/ala
 const u32 gTrainerFrontPic_PlainInsane[] = INCBIN_U32("graphics/trainers/front_pics/plaininsane.4bpp.smol");
 const u16 gTrainerPalette_PlainInsane[] = INCBIN_U16("graphics/trainers/palettes/plaininsane.gbapal");
 
+const u32 gTrainerFrontPic_Silva[] = INCBIN_U32("graphics/trainers/front_pics/silva.4bpp.smol");
+const u16 gTrainerPalette_Silva[] = INCBIN_U16("graphics/trainers/palettes/silva.gbapal");
+
+const u32 gTrainerFrontPic_JojoFan[] = INCBIN_U32("graphics/trainers/front_pics/jojo_fan.4bpp.smol");
+const u16 gTrainerPalette_JojoFan[] = INCBIN_U16("graphics/trainers/palettes/jojo_fan.gbapal");
+
 const u32 gTrainerFrontPic_GentlemanFrlg[] = INCBIN_U32("graphics/trainers/front_pics/gentleman_frlg.4bpp.smol");
 const u16 gTrainerPalette_GentlemanFrlg[] = INCBIN_U16("graphics/trainers/palettes/gentleman_frlg.gbapal");
 
@@ -746,6 +752,8 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_LYRA, gTrainerFrontPic_Lyra, gTrainerPalette_Lyra),
     TRAINER_SPRITE(TRAINER_PIC_ALAIN, gTrainerFrontPic_Alain, gTrainerPalette_Alain),
     TRAINER_SPRITE(TRAINER_PIC_PLAININSANE, gTrainerFrontPic_PlainInsane, gTrainerPalette_PlainInsane),
+    TRAINER_SPRITE(TRAINER_PIC_SILVA, gTrainerFrontPic_Silva, gTrainerPalette_Silva),
+    TRAINER_SPRITE(TRAINER_PIC_JOJO_FAN, gTrainerFrontPic_JojoFan, gTrainerPalette_JojoFan),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =
