@@ -157,7 +157,7 @@ PowerPlant_EventScript_FoughtElectrode2::
 PowerPlant_EventScript_JojoFan::
     lockall
     faceplayer
-    setspeaker SP_NAME_JOJO_FAN
+    setspeaker SP_NAME_UNKNOWN
     msgbox gText_jojo_fan_askChallenge, MSGBOX_YESNO
     goto_if_eq VAR_RESULT, 1, EventScript_JojoFan_Battle
     msgbox gText_jojo_fan_Reject
@@ -209,7 +209,7 @@ EventScript_JojoFan_ReceiveOgerponPC::
 	end
 
 EventScript_JojoFan_OgerponTransferredToPC::
-	call Common_EventScript_TransferredToPC
+	bufferspeciesname STR_VAR_1, SPECIES_OGERPON
 	goto EventScript_JojoFan_LeaveScene
 	end
 
@@ -238,14 +238,14 @@ jojo_fan_Text_Defeat::
 	.string "Yare yare daze…$"
 
 gText_jojo_fan_3::
-	.string "How could my team of Jojo ref-\n"
-	.string "erences lose?!\p"
-	.string "How sugoi. Take this.$"
+	.string "How could my team of Jojo references\n"
+	.string "lose?!\p"
+	.string "Sugoi. Take this.$"
 
 gText_jojo_fan_4::
-	.string "Not just that, let me give you\n"
-	.string "the Pokémon capable of wearing\l"
-	.string "the Stone Mask.$"
+	.string "Not just that, let me give you the\n"
+	.string "Pokémon capable of wearing the\l"
+	.string "Stone Mask.$"
 
 gText_jojo_fan_5::
 	.string "You received an Ogerpon!$"

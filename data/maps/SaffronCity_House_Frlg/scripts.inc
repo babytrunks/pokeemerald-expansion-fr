@@ -13,8 +13,48 @@ SaffronCity_House_EventScript_Pidgey::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PIDGEY, CRY_MODE_NORMAL
+	playmoncry SPECIES_TRANQUILL, CRY_MODE_NORMAL
 	msgbox SaffronCity_House_Text_Pidgey
+	waitmoncry
+	release
+	end
+
+SaffronCity_House_EventScript_Glameow::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GLAMEOW, CRY_MODE_NORMAL
+	msgbox SaffronCity_House_Text_Glameow
+	waitmoncry
+	release
+	end
+
+SaffronCity_House_EventScript_Litten::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LITTEN, CRY_MODE_NORMAL
+	msgbox SaffronCity_House_Text_Litten
+	waitmoncry
+	release
+	end
+
+SaffronCity_House_EventScript_Meowstic::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_MEOWSTIC, CRY_MODE_NORMAL
+	msgbox SaffronCity_House_Text_Meowstic
+	waitmoncry
+	release
+	end
+
+SaffronCity_House_EventScript_Skitty::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SKITTY, CRY_MODE_NORMAL
+	msgbox SaffronCity_House_Text_Skitty
 	waitmoncry
 	release
 	end
@@ -24,13 +64,25 @@ SaffronCity_House_EventScript_Letter::
 	end
 
 SaffronCity_House_Text_DontLookAtMyLetter::
-    .string "…Thank you for writing.\n"
+    .string "…Don't take it the wrong way.\n"
     .string "I hope to see you soon!\p"
     .string "…Hey!\n"
     .string "Don't look at my letter!$"
 
 SaffronCity_House_Text_Pidgey::
-    .string "PIDGEY: Kurukkoo!$"
+    .string "Quil!$"
+
+SaffronCity_House_Text_Glameow::
+    .string "Nyaa!$"
+
+SaffronCity_House_Text_Litten::
+    .string "Mrow!$"
+
+SaffronCity_House_Text_Meowstic::
+    .string "Nya!$"
+
+SaffronCity_House_Text_Skitty::
+    .string "Mew!$"
 
 SaffronCity_House_Text_GettingCopycatPokeDoll::
     .string "The COPYCAT is cute!\n"
@@ -41,5 +93,6 @@ SaffronCity_House_Text_ExplainPPUp::
     .string "It's used to increase the PP of\n"
     .string "a Pokémon's move.\p"
     .string "I should use it on a powerful move\n"
-    .string "with only a few PP.$"
+    .string "with only a few PP, but…\p"
+	.string "I think you have other needs.$"
 

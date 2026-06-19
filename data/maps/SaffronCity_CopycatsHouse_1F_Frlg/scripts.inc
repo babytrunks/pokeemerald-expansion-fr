@@ -57,6 +57,17 @@ EventMovement_DumbassKid_JumpUp:
     jump_in_place_up  
     step_end
 
+SaffronCity_CopycatsHouse_1F_EventScript_Swampert::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SWAMPERT, CRY_MODE_NORMAL
+	msgbox SaffronCity_CopycatsHouse_1F_Text_Swampert
+	waitmoncry
+	release
+	end
+
+
 gText_DumbassKid_1:
     .string "i Herd U Liek Mudkipz$"
 
@@ -104,5 +115,7 @@ SaffronCity_CopycatsHouse_1F_Text_DaughterLikesToMimicPeople::
     .string "nickname Copycat around here.$"
 
 SaffronCity_CopycatsHouse_1F_Text_Chansey::
-    .string "CHANSEY: Chaan! Sii!$"
+    .string "Chaan! Sii!$"
 
+SaffronCity_CopycatsHouse_1F_Text_Swampert::
+    .string "Swam! Pii!$"

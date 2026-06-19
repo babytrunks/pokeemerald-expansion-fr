@@ -3453,6 +3453,12 @@ void SwitchInClearSetData(u32 battler, struct Volatiles *volatilesCopy)
     // Clear selected party ID so Revival Blessing doesn't get confused.
     gSelectedMonPartyId = PARTY_SIZE;
 
+    // ZA WARUDO: if a stun is owed this turn, freeze any player mon sent in (e.g. a
+    // replacement for a mon that fainted during end-turn effects) since the end-turn
+    // handler that normally applies the stun has already run by this point.
+    if (gBattleStruct->zaWarudoFreezePending && GetBattlerSide(battler) == B_SIDE_PLAYER)
+        gDisableStructs[battler].zaWarudoFrozen = TRUE;
+
     // Allow for illegal abilities within tests.
     #if TESTING
     if (gTestRunnerEnabled)
@@ -4102,6 +4108,7 @@ void BattleTurnPassed(void)
         return;
 
     gBattleStruct->eventState.faintedAction = 0;
+    gBattleStruct->zaWarudoFreezePending = FALSE; // owed stun has now been applied to any send-in; don't carry into next turn
 
     TurnValuesCleanUp(FALSE);
     gHitMarker &= ~HITMARKER_UNABLE_TO_USE_MOVE;

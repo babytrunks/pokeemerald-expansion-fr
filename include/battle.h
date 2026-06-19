@@ -641,6 +641,7 @@ struct BattleStruct
     u8 expOrderId:3;
     u8 expGetterBattlerId:2;
     u8 teamGotExpMsgPrinted:1; // The 'Rest of your team got msg' has been printed.
+    u8 zaWarudoFreezePending:1; // ZA WARUDO owes a stun this turn; applied to any player mon sent in (e.g. a faint replacement)
     u8 givenExpMons; // Bits for enemy party's pokemon that gave exp to player's party.
     u8 expSentInMons; // As bits for player party mons - not including exp share mons.
     u8 wildVictorySong;

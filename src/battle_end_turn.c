@@ -1369,6 +1369,10 @@ static bool32 HandleEndTurnZaWarudo(u32 battler)
     if (!FlagGet(FLAG_ZA_WARUDO_BATTLE) || gBattleTurnCounter % 3 != 0)
         return FALSE;
 
+    // Mark that a stun is owed this turn so a player mon sent in after this point
+    // (e.g. a replacement for a mon that fainted during end-turn effects) is also frozen.
+    gBattleStruct->zaWarudoFreezePending = TRUE;
+
     for (u32 i = 0; i < gBattlersCount; i++)
     {
         if (GetBattlerSide(i) == B_SIDE_PLAYER && IsBattlerAlive(i))
