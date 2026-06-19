@@ -2790,7 +2790,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDipplinLevelUpLearnset,
         .teachableLearnset = sDipplinTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 44, SPECIES_HYDRAPPLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GIOVANNI_CELADON, SPECIES_HYDRAPPLE}),
     },
 
     [SPECIES_HYDRAPPLE] =
@@ -6518,7 +6518,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sDuraludonFormSpeciesIdTable,
         .formChangeTable = sDuraludonFormChangeTable,
     #if P_GEN_9_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_METAL_ALLOY, SPECIES_ARCHALUDON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 60, SPECIES_ARCHALUDON}),
     #endif
     },
 

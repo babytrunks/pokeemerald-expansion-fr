@@ -3457,9 +3457,38 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Muk
-Level: 33
+Flygon @ Dragon Fang  
+Level: 51
+Ability: Tinted Lens  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Dragon Pulse  
+- Earth Power  
+- Flamethrower  
+- Dragon Tail  
+
+Braviary-Hisui @ Sitrus Berry  
+Level: 51
+Ability: Tinted Lens  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Air Slash  
+- Esper Wing  
+- Shadow Ball  
+- Roost  
+
+Lokix @ Silver Powder  
+Level: 51
+Ability: Tinted Lens  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- First Impression  
+- Knock Off  
+- Leech Life  
+- Sucker Punch  
 
 === TRAINER_BIKER_NIKOLAS ===
 Name: Nikolas
@@ -3470,21 +3499,45 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Voltorb
-Level: 29
+Scolipede @ Sitrus Berry  
+Level: 51
+Ability: Speed Boost  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Charge
+EVs: 252 HP
+- Megahorn  
+- Poison Jab  
+- Aqua Tail  
+- Swords Dance  
 
-Voltorb
-Level: 29
+Espathra @ Leftovers  
+Level: 51
+Ability: Speed Boost  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Lumina Crash  
+- Energy Ball  
+- Dazzling Gleam  
+- Calm Mind  
+
+Sharpedo @ Sharpedonite  
+Level: 51
+Ability: Speed Boost  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Charge
+EVs: 252 HP
+- Aqua Fang  
+- Crunch  
+- Ice Fang  
+- Protect  
+
+Yanmega @ Heavy-Duty Boots  
+Level: 51
+Ability: Speed Boost  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Bug Buzz  
+- Ancient Power  
+- Giga Drain  
+- Air Slash  
 
 === TRAINER_BIKER_JAXON ===
 Name: Jaxon
@@ -3495,21 +3548,60 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Weezing
-Level: 29
+Flapple @ Wide Lens  
+Level: 52
+Ability: Hustle  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge
-- Smokescreen
-- Smog
-- Tackle
+EVs: 252 HP
+- Grav Apple  
+- Sucker Punch  
+- U-turn  
+- Dragon Rush  
 
-Muk
-Level: 29
+Dusknoir @ Reaper Cloth  
+Level: 52
+Ability: Hustle  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Screech
-- Minimize
-- Sludge
-- Disable
+EVs: 252 HP
+- Poltergeist  
+- Fire Punch  
+- Ice Punch  
+- Shadow Sneak  
+
+Durant @ Wide Lens  
+Level: 52
+Ability: Hustle  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- First Impression  
+- Rock Slide  
+- Iron Head  
+- Hone Claws  
+
+Squawkabilly @ Wide Lens  
+Level: 52
+Ability: Hustle  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Brave Bird  
+- Double-Edge  
+- U-turn  
+- Quick Attack  
+
+Delibird @ Wide Lens  
+Level: 52
+Ability: Hustle  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Brave Bird  
+- Ice Spinner  
+- Drill Run  
+- Extreme Speed
 
 === TRAINER_BIKER_WILLIAM ===
 Name: William
@@ -4931,13 +5023,48 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Mankey
-Level: 29
+Tyrantrum @ Muscle Band  
+Level: 50
+Ability: Strong Jaw  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Fire Fang  
+- Ice Fang  
+- Poison Fang  
+- Psychic Fangs  
 
-Primeape
-Level: 29
+Vigoroth @ Eviolite  
+Level: 50
+Ability: Vital Spirit  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Body Slam  
+- Earthquake  
+- Bulk Up  
+- Slack Off  
+
+Magneton @ Eviolite  
+Level: 50
+Ability: Analytic  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Discharge  
+- Flash Cannon  
+- Volt Switch  
+- Magnet Rise  
+
+Cryogonal @ Never-Melt Ice  
+Level: 50
+Ability: Levitate  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Frost Breath  
+- Freeze-Dry  
+- Ancient Power  
+- Flash Cannon 
 
 === TRAINER_CUE_BALL_ISAIAH ===
 Name: Isaiah
@@ -4948,13 +5075,48 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machop
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Rampardos @ Life Orb  
+Level: 50
+Ability: Sheer Force  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Earth Power  
+- Fire Blast  
+- Blizzard  
+- Thunderbolt  
 
-Machamp
-Level: 29
+Toucannon @ Heavy-Duty Boots  
+Level: 50
+Ability: Skill Link  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Flame Charge  
+- Bullet Seed  
+- Drill Peck  
+- Rock Blast  
+
+Wyrdeer @ Leftovers  
+Level: 50
+Ability: Fur Coat  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Psychic Noise  
+- Aura Sphere  
+- Hyper Voice  
+- Charge Beam  
+
+Goodra @ Expert Belt  
+Level: 50
+Ability: Sap Sipper  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Dragon Pulse  
+- Flamethrower  
+- Sludge Bomb  
+- Giga Drain  
 
 === TRAINER_CUE_BALL_ZEEK ===
 Name: Zeek
@@ -4965,9 +5127,49 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Machoke
-Level: 33
+Lickilicky @ Leftovers  
+Level: 51
+Ability: Own Tempo  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Body Slam  
+- Zen Headbutt  
+- Body Press  
+- Swords Dance  
+
+Golurk @ Punching Glove  
+Level: 51
+Ability: Iron Fist  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Shadow Punch  
+- Fire Punch  
+- Ice Punch  
+- Drain Punch  
+
+Malamar @ Ability Shield  
+Level: 51
+Ability: Contrary  
+Nature: Docile  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Psycho Boost  
+- Superpower  
+- Rest  
+- Sleep Talk  
+
+Pawmot @ Punching Glove  
+Level: 51
+Ability: Volt Absorb  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Drain Punch  
+- Ice Punch  
+- Fire Punch  
+- Mach Punch  
 
 === TRAINER_CUE_BALL_JAMAL ===
 Name: Jamal
@@ -4978,21 +5180,59 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Mankey
-Level: 26
+Decidueye @ Salac Berry  
+Level: 52
+Ability: Tinted Lens  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Leaf Blade  
+- Spirit Shackle  
+- Knock Off  
+- Thousand Arrows  
 
-Mankey
-Level: 26
+Blaziken @ Protective Pads  
+Level: 52
+Ability: Striker  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Blaze Kick  
+- High Jump Kick  
+- Poison Jab  
+- U-turn  
 
-Machamp
-Level: 26
+Pidgeot-Mega @ Pidgeotite  
+Level: 52
+Ability: No Guard  
+Nature: Modest  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Hurricane  
+- Heat Wave  
+- Focus Blast  
+- U-turn  
 
-Machop
-Level: 26
+Kilowattrel @ Magnet  
+Level: 52
+Ability: Volt Absorb  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Thunderbolt  
+- Volt Switch  
+- Weather Ball  
+- Air Slash  
+
+Mantine @ Leftovers  
+Level: 52
+Ability: Water Absorb  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Blizzard  
+- Hydro Pump  
+- Hurricane  
+- Flip Turn  
 
 === TRAINER_CUE_BALL_COREY ===
 Name: Corey
@@ -5003,13 +5243,71 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Primeape
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Dedenne @ Terrain Extender  
+Level: 52
+Ability: Electric Surge  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Parabolic Charge  
+- Dazzling Gleam  
+- U-turn  
+- Grass Knot  
 
-Machoke
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Politoed @ Damp Rock  
+Level: 52
+Ability: Drizzle  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Flip Turn  
+- Scald  
+- Ice Beam  
+- Haze  
+
+Ludicolo @ Electric Seed  
+Level: 52
+Ability: Rain Dish  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Nature Power  
+- Giga Drain  
+- Scald  
+- Ice Beam  
+
+Electrode-Hisui @ Expert Belt  
+Level: 52
+Ability: Soundproof  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Weather Ball  
+- Rising Voltage  
+- Energy Ball  
+- Volt Switch  
+
+Arboliva @ Sitrus Berry  
+Level: 52
+Ability: Harvest  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Terrain Pulse  
+- Weather Ball  
+- Giga Drain  
+- Draining Kiss  
+
+Drifblim @ Flame Orb  
+Level: 52
+Ability: Flare Boost  
+Nature: Modest  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Weather Ball  
+- Thunder  
+- Hurricane  
+- Shadow Ball  
 
 === TRAINER_CUE_BALL_CHASE ===
 Name: Chase
@@ -13320,7 +13618,7 @@ Level: 27
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_BIKER_VIRGIL ===
-Name: VIRGIL
+Name: Virgil
 Class: Biker Frlg
 Pic: Biker Frlg
 Gender: Male
@@ -13328,29 +13626,49 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Weezing
-Level: 28
+Ninjask @ Mental Herb  
+Level: 50
+Ability: Speed Boost  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 252 HP
+- Swords Dance  
+- Leech Life  
+- Baton Pass  
+- Drill Run  
 
-Koffing
-Level: 28
+Kingler @ Mystic Water  
+Level: 50
+Ability: Sheer Force  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 252 HP
+- Liquidation  
+- Ice Punch  
+- Swords Dance  
+- Aqua Jet  
 
-Weezing
-Level: 28
+Heracross @ Heracronite  
+Level: 50
+Ability: Moxie  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Smokescreen
-- Sludge
-- Smog
-- Tackle
+EVs: 252 HP
+- Bullet Seed  
+- Rock Blast  
+- Drill Run  
+- Arm Thrust  
+
+Ursaring @ Eviolite  
+Level: 50
+Ability: Guts  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP
+- Thrash  
+- Shadow Claw  
+- High Horsepower  
+- Swords Dance  
 
 === TRAINER_CAMPER_FLINT ===
 Name: Flint

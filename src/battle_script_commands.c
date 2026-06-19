@@ -331,6 +331,7 @@ void ApplyExperienceMultipliers(s32 *expAmount, u8 expGetterMonId, u8 faintedBat
 static void RemoveAllWeather(void);
 static void RemoveAllTerrains(void);
 static bool32 CanAbilityPreventStatLoss(enum Ability abilityDef);
+static bool32 IsSelfStatLoweringMoveEffect(enum MoveEffect moveEffect);
 static u32 GetNextTarget(u32 moveTarget, bool32 excludeCurrent);
 static void TryUpdateEvolutionTracker(u32 evolutionCondition, u32 upAmount, u16 usedMove);
 static void AccuracyCheck(bool32 recalcDragonDarts, const u8 *nextInstr, const u8 *failInstr, u16 move);
@@ -2870,6 +2871,20 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
         moveEffect = MOVE_EFFECT_NONE;
 
     gBattleScripting.moveEffect = moveEffect; // ChangeStatBuffs still needs the global moveEffect
+
+    // Bad Company negates stat drops the holder inflicts on itself via its own move.
+    if (affectsUser && gCurrentMove != MOVE_CURSE
+        && GetBattlerAbility(effectBattler) == ABILITY_BAD_COMPANY
+        && IsSelfStatLoweringMoveEffect(moveEffect))
+    {
+        gBattleScripting.battler = effectBattler;
+        gBattlerAbility = effectBattler;
+        gLastUsedAbility = ABILITY_BAD_COMPANY;
+        RecordAbilityBattle(effectBattler, ABILITY_BAD_COMPANY);
+        BattleScriptPush(battleScript);
+        gBattlescriptCurrInstr = BattleScript_AbilityNoStatLoss;
+        return;
+    }
 
     switch (moveEffect)
     {
@@ -14349,6 +14364,36 @@ static bool32 CanAbilityPreventStatLoss(enum Ability abilityDef)
     case ABILITY_CLEAR_BODY:
     case ABILITY_FULL_METAL_BODY:
     case ABILITY_WHITE_SMOKE:
+        return TRUE;
+    default:
+        break;
+    }
+    return FALSE;
+}
+
+// Move effects that lower the user's own stats as a downside (e.g. Draco Meteor,
+// Overheat, Superpower, Close Combat, V-create). Used by Bad Company to negate them.
+static bool32 IsSelfStatLoweringMoveEffect(enum MoveEffect moveEffect)
+{
+    switch (moveEffect)
+    {
+    case MOVE_EFFECT_ATK_MINUS_1:
+    case MOVE_EFFECT_DEF_MINUS_1:
+    case MOVE_EFFECT_SPD_MINUS_1:
+    case MOVE_EFFECT_SP_ATK_MINUS_1:
+    case MOVE_EFFECT_SP_DEF_MINUS_1:
+    case MOVE_EFFECT_ACC_MINUS_1:
+    case MOVE_EFFECT_EVS_MINUS_1:
+    case MOVE_EFFECT_ATK_MINUS_2:
+    case MOVE_EFFECT_DEF_MINUS_2:
+    case MOVE_EFFECT_SPD_MINUS_2:
+    case MOVE_EFFECT_SP_ATK_MINUS_2:
+    case MOVE_EFFECT_SP_DEF_MINUS_2:
+    case MOVE_EFFECT_ACC_MINUS_2:
+    case MOVE_EFFECT_EVS_MINUS_2:
+    case MOVE_EFFECT_ATK_DEF_DOWN:
+    case MOVE_EFFECT_DEF_SPDEF_DOWN:
+    case MOVE_EFFECT_V_CREATE:
         return TRUE;
     default:
         break;

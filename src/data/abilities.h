@@ -2466,10 +2466,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Doubles the user's Sp. Atk stat."),
         .aiRating = 10,
     }, 
-    [ABILITY_BAD_COMPANY] = //fru todo
-    {        
+    [ABILITY_BAD_COMPANY] =
+    {
         .name = _("Bad Company"),
-        .description = COMPOUND_STRING("Prevents self-lowering stats and recoil."),
+        .description = COMPOUND_STRING("Prevents the user's own attacking moves from lowering its stats."),
         .aiRating = 10,
     },
     [ABILITY_PRIMAL_ARMOR] = 
