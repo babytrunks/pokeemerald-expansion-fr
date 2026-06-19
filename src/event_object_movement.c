@@ -2465,6 +2465,42 @@ void GetFollowerPokemon(void)
     gSpecialVar_Result = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));
 }
 
+// Sets gSpecialVar_Result to TRUE if the first live party mon (the follower) is a
+// feline Pokemon. Forms are collapsed to their base species, but evolutions are
+// listed explicitly. Umbreon is matched directly since its base species (Eevee)
+// is shared with the other Eeveelutions.
+void IsFollowerFeline(void)
+{
+    static const u16 sFelineSpecies[] =
+    {
+        SPECIES_MEOWTH, SPECIES_PERSIAN, SPECIES_PERRSERKER,
+        SPECIES_SHINX, SPECIES_LUXIO, SPECIES_LUXRAY,
+        SPECIES_SKITTY, SPECIES_DELCATTY,
+        SPECIES_GLAMEOW, SPECIES_PURUGLY,
+        SPECIES_LITTEN, SPECIES_TORRACAT, SPECIES_INCINEROAR,
+        SPECIES_ESPURR, SPECIES_MEOWSTIC,
+        SPECIES_SPRIGATITO, SPECIES_FLORAGATO, SPECIES_MEOWSCARADA,
+        SPECIES_RAIKOU, SPECIES_ENTEI, SPECIES_SUICUNE,
+        SPECIES_LITLEO, SPECIES_PYROAR,
+        SPECIES_CHIEN_PAO, SPECIES_ZERAORA,
+        SPECIES_PURRLOIN, SPECIES_LIEPARD,
+        SPECIES_ABSOL, SPECIES_UMBREON,
+    };
+    u32 i;
+    struct Pokemon *mon = GetFirstLiveMon();
+    u16 species = GET_BASE_SPECIES_ID(GetMonData(mon, MON_DATA_SPECIES));
+
+    gSpecialVar_Result = FALSE;
+    for (i = 0; i < ARRAY_COUNT(sFelineSpecies); i++)
+    {
+        if (species == sFelineSpecies[i])
+        {
+            gSpecialVar_Result = TRUE;
+            break;
+        }
+    }
+}
+
 void GetFollowerPokemonNature(void)
 {
 

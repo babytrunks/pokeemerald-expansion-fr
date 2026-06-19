@@ -21,7 +21,7 @@
 #define QUEST_FANG_TUTOR          3
 #define QUEST_FAN_CLUB_TUTOR          4
 #define QUEST_FLUTTERFREE          5
-#define QUEST_7          6
+#define QUEST_CRAZY_CAT_LADY          6   // was QUEST_7
 #define QUEST_8          7
 #define QUEST_9          8
 #define QUEST_10         9

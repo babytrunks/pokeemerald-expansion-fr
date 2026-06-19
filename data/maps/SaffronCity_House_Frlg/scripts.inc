@@ -63,6 +63,39 @@ SaffronCity_House_EventScript_Letter::
 	msgbox SaffronCity_House_Text_ExplainPPUp, MSGBOX_SIGN
 	end
 
+SaffronCity_House_EventScript_CatLady::
+	lock
+	faceplayer
+	goto_if_quest_complete QUEST_CRAZY_CAT_LADY, SaffronCity_House_EventScript_CatLadyDone
+	goto_if_quest_active QUEST_CRAZY_CAT_LADY, SaffronCity_House_EventScript_CatLadyCheck
+	setflag FLAG_SYS_QUEST_MENU_GET
+	msgbox SaffronCity_House_Text_CatLadyIntro
+	closemessage
+	questmenu QUEST_MENU_SET_ACTIVE QUEST_CRAZY_CAT_LADY
+	openquestmenu
+	startquest QUEST_CRAZY_CAT_LADY
+	release
+	end
+
+SaffronCity_House_EventScript_CatLadyCheck::
+	callnative IsFollowerFeline
+	goto_if_eq VAR_RESULT, TRUE, SaffronCity_House_EventScript_CatLadyReward
+	msgbox SaffronCity_House_Text_CatLadyNotYet
+	release
+	end
+
+SaffronCity_House_EventScript_CatLadyReward::
+	msgbox SaffronCity_House_Text_CatLadyCongrats
+	giveitem ITEM_MEOWSTICITE
+	completequest QUEST_CRAZY_CAT_LADY
+	release
+	end
+
+SaffronCity_House_EventScript_CatLadyDone::
+	msgbox SaffronCity_House_Text_CatLadyPostQuest
+	release
+	end
+
 SaffronCity_House_Text_DontLookAtMyLetter::
     .string "…Don't take it the wrong way.\n"
     .string "I hope to see you soon!\p"
@@ -82,7 +115,7 @@ SaffronCity_House_Text_Meowstic::
     .string "Nya!$"
 
 SaffronCity_House_Text_Skitty::
-    .string "Mew!$"
+    .string "Uhhh, meow?$"
 
 SaffronCity_House_Text_GettingCopycatPokeDoll::
     .string "The COPYCAT is cute!\n"
@@ -95,4 +128,36 @@ SaffronCity_House_Text_ExplainPPUp::
     .string "I should use it on a powerful move\n"
     .string "with only a few PP, but…\p"
 	.string "I think you have other needs.$"
+
+SaffronCity_House_Text_CatLadyIntro::
+    .string "Hee hee… do you hear them?\n"
+    .string "My darlings, purring all around!\p"
+    .string "I am the crazy cat lady of Saffron!\n"
+    .string "But I've seen every kitty in this\l"
+    .string "house a thousand times over…\p"
+    .string "Oh, would you show me your cat?\n"
+    .string "Bring me a feline Pokémon!\p"
+    .string "Let it walk beside you, and let me\n"
+    .string "gaze upon its precious face!$"
+
+SaffronCity_House_Text_CatLadyNotYet::
+    .string "Hmm? Let me see your little\n"
+    .string "companion…\p"
+    .string "…That's no cat!\n"
+    .string "I want to see a feline, dearie.\p"
+    .string "Let one lead the way, then come\n"
+    .string "back to me.$"
+
+SaffronCity_House_Text_CatLadyCongrats::
+    .string "Oh! OH!\p"
+    .string "Look at those whiskers!\n"
+    .string "Those darling little paws!\p"
+    .string "What a perfect, precious kitty!\n"
+    .string "I could just melt!\p"
+    .string "Here, take this. A treasure for a\n"
+    .string "true cat lover like yourself!$"
+
+SaffronCity_House_Text_CatLadyPostQuest::
+    .string "Thank you for showing me your\n"
+    .string "wonderful kitty, dearie.$"
 

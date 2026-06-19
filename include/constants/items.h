@@ -1000,11 +1000,11 @@
 #define ITEM_FERALIGITE 834 // DONE (Route 12, post Rock Smash/Snorlax)
 #define ITEM_SKARMORITE 835
 #define ITEM_FROSLASSITE 836 // DONE (Pryce)
-#define ITEM_EMBOARITE 837
+#define ITEM_EMBOARITE 837 // DONE
 #define ITEM_EXCADRITE 838
 #define ITEM_SCOLIPITE 839
 #define ITEM_SCRAFTINITE 840 // DONE (safari zone)
-#define ITEM_EELEKTROSSITE 841 // DONE (safari zone)
+#define ITEM_EELEKTROSSITE 841 // DONE (power plant)
 #define ITEM_CHANDELURITE 842 // DONE
 #define ITEM_CHESNAUGHTITE 843
 #define ITEM_DELPHOXITE 844 // DONE (Route 13, map object)
@@ -1029,7 +1029,7 @@
 #define ITEM_GARCHOMPITE_Z  863
 #define ITEM_LUCARIONITE_Z  864
 #define ITEM_GOLURKITE  865
-#define ITEM_MEOWSTICITE  866
+#define ITEM_MEOWSTICITE  866 // DONE (Cat Lady Quest in Saffron)
 #define ITEM_CRABOMINITE  867
 #define ITEM_GOLISOPITE  868
 #define ITEM_MAGEARNITE  869

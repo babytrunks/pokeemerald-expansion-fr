@@ -561,12 +561,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
+	side_quest( // Crazy Cat Lady quest
 	      gText_SideQuestName_7,
 	      gText_SideQuestDesc_7,
 	      gText_SideQuestDoneDesc_7,
 	      gText_SideQuestMap7,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_WOMAN_2_FRLG,
 	      OBJECT,
 	      NULL,
 	      0

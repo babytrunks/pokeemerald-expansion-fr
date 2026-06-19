@@ -8149,16 +8149,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Heavy Slam
 - Body Slam
 
-Mudsdale @ Leftovers
-Ability: Striker
+Palossand @ Leftovers
+Ability: Water Compaction
 Level: 42
-EVs: 204 Atk
-Nature: Adamant
+EVs: 204 HP
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Low Kick
-- High Horsepower
-- Heavy Slam
-- Mega Kick
+- Hypnosis
+- Dream Eater
+- Earth Power
+- Hex
 
 === TRAINER_SCIENTIST_PARKER ===
 Name: Parker
@@ -9906,7 +9906,7 @@ Pidgeot @ Wise Glasses
 Ability: No Guard
 Level: 38
 EVs: 102 SpA / 102 Spe
-Nature: Timid
+Nature: Modest
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Hurricane
 - Heat Wave
@@ -9924,16 +9924,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Poison Jab
 - Crunch
 
-Copperajah @ Metal Coat
-Ability: Heavy Metal
+Mawile @ Life Orb
+Ability: Sheer Force
 Level: 39
 EVs: 152 Atk
 Nature: Adamant
 IVs: 31 HP / 15 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
-- Heavy Slam
-- Bulldoze
-- Heat Crash
-- Zen Headbutt
+- Iron Head
+- Sucker Punch
+- Play Rough
+- Swords Dance
 
 === TRAINER_TEAM_ROCKET_GRUNT_31 ===
 Name: Grunt
@@ -10126,16 +10126,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Toxic
 - Roost
 
-Seviper @ Poison Barb
-Ability: Merciless
+Weezing-Galar @ Poison Barb
+Ability: Levitate
 Level: 42
-EVs: 204 Atk
-Nature: Jolly
+EVs: 204 SpA
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Poison Jab
-- Venom Drench
-- Earthquake
-- Iron Tail
+- Venoshock
+- Strange Steam
+- flamethrower
+- Ice Beam
 
 Seismitoad @ Rindo Berry
 Ability: Poison Touch
@@ -10157,13 +10157,13 @@ Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party
 
-Spiritomb @ Leftovers
-Ability: Pressure
+Jellicent @ Leftovers
+Ability: Water Bubble
 Level: 41
 EVs: 204 HP
 Nature: Relaxed
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spite
+- Surf
 - Ominous Wind
 - Rest
 - Sleep Talk
@@ -10179,15 +10179,15 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Earthquake
 - Iron Head
 
-Druddigon @ Life Orb
-Ability: Sheer Force
+Tropius @ Sitrus Berry
+Ability: Harvest
 Level: 42
 EVs: 204 HP
 Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Focus Blast
-- Flamethrower
-- Sludge Bomb
+- Leech Seed
+- Substitute
+- Giga Drain
 - Dragon Pulse
 
 === TRAINER_TEAM_ROCKET_GRUNT_37 ===
