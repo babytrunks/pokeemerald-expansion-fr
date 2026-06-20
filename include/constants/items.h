@@ -1042,7 +1042,8 @@
 #define ITEM_BURNT_SEED  875
 #define ITEM_KINGLERITE  876
 #define ITEM_MACHAMPITE 877
-#define ITEMS_COUNT 878
+#define ITEM_CENTISKITE 878
+#define ITEMS_COUNT 879
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

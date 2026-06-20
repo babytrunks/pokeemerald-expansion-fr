@@ -2211,9 +2211,7 @@ static const u16 sToxtricityFormSpeciesIdTable[] = {
 #if P_FAMILY_SIZZLIPEDE
 static const u16 sCentiskorchFormSpeciesIdTable[] = {
     SPECIES_CENTISKORCH,
-#if P_GIGANTAMAX_FORMS
-    SPECIES_CENTISKORCH_GMAX,
-#endif
+    SPECIES_CENTISKORCH_MEGA,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_SIZZLIPEDE

@@ -1624,7 +1624,7 @@
 #define SPECIES_SANDACONDA_GMAX                         1512
 #define SPECIES_TOXTRICITY_AMPED_GMAX                   1513
 #define SPECIES_TOXTRICITY_LOW_KEY_GMAX                 1514
-#define SPECIES_CENTISKORCH_GMAX                        1515
+#define SPECIES_CENTISKORCH_MEGA                        1515
 #define SPECIES_HATTERENE_GMAX                          1516
 #define SPECIES_GRIMMSNARL_GMAX                         1517
 #define SPECIES_ALCREMIE_GMAX                           1518

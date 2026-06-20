@@ -2478,11 +2478,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .description = COMPOUND_STRING("Damage taken by the user from “super effective” attacks are decreased by 50%."),
         .aiRating = 10,
     },
-    [ABILITY_MOUNTAINEER] = 
-    {        
+    [ABILITY_MOUNTAINEER] =
+    {
         .name = _("Mountaineer"),
         .description = COMPOUND_STRING("Immune to Rock attacks and Stealth Rocks."),
         .aiRating = 10,
+        .breakable = TRUE,
     },
     [ABILITY_PHOENIX_DOWN] = //fru todo
     {        

@@ -3811,15 +3811,14 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sCentiskorchFormChangeTable,
     },
 
-#if P_GIGANTAMAX_FORMS
-    [SPECIES_CENTISKORCH_GMAX] =
+    [SPECIES_CENTISKORCH_MEGA] =
     {
         .baseHP        = 100,
-        .baseAttack    = 115,
-        .baseDefense   = 65,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 90,
-        .baseSpDefense = 90,
+        .baseAttack    = 150,
+        .baseDefense   = 80,
+        .baseSpeed     = 85,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 110,
         .types = MON_TYPES(TYPE_FIRE, TYPE_BUG),
         .catchRate = 75,
         .expYield = 184,
@@ -3829,7 +3828,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WHITE_SMOKE, ABILITY_FLAME_BODY },
+        .abilities = { ABILITY_MOUNTAINEER, ABILITY_MOUNTAINEER, ABILITY_MOUNTAINEER },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("Centiskorch"),
         .cryId = CRY_CENTISKORCH,
@@ -3869,7 +3868,6 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formChangeTable = sCentiskorchFormChangeTable,
         .randomizerMode = MON_RANDOMIZER_INVALID,
     },
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_SIZZLIPEDE
 
 #if P_FAMILY_CLOBBOPUS

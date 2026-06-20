@@ -1512,9 +1512,7 @@ static const struct FormChange sToxtricityLowKeyFormChangeTable[] =
 #if P_FAMILY_SIZZLIPEDE
 static const struct FormChange sCentiskorchFormChangeTable[] =
 {
-#if P_GIGANTAMAX_FORMS
-    {FORM_CHANGE_BATTLE_GIGANTAMAX, SPECIES_CENTISKORCH_GMAX},
-#endif
+    {FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,    SPECIES_CENTISKORCH_MEGA, ITEM_CENTISKITE},
     {FORM_CHANGE_TERMINATOR},
 };
 #endif //P_FAMILY_SIZZLIPEDE

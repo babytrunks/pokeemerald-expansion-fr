@@ -24124,7 +24124,7 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
 
-#if P_GIGANTAMAX_FORMS
+
     const u32 gMonFrontPic_CentiskorchGmax[] = INCBIN_U32("graphics/pokemon/centiskorch/gmax/front.4bpp.smol");
     const u32 gMonBackPic_CentiskorchGmax[] = INCBIN_U32("graphics/pokemon/centiskorch/gmax/back.4bpp.smol");
     const u16 gMonPalette_CentiskorchGmax[] = INCBIN_U16("graphics/pokemon/centiskorch/gmax/normal.gbapal");
@@ -24137,7 +24137,6 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
     // const u16 gShinyOverworldPalette_CentiskorchGmax[] = INCBIN_U16("graphics/pokemon/centiskorch/gmax/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
-#endif //P_GIGANTAMAX_FORMS
 #endif //P_FAMILY_SIZZLIPEDE
 
 #if P_FAMILY_CLOBBOPUS

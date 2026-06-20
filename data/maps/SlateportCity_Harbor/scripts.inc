@@ -169,6 +169,7 @@ SlateportCity_Harbor_EventScript_AskGoBackToVermilion:
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_CancelDestinationSelect
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 0
 	setvar VAR_0x8006, SEAGALLOP_VERMILION_CITY
+	setrespawn HEAL_LOCATION_VERMILION_CITY
 	goto EventScript_SailToDest
 	end
 

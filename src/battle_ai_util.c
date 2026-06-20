@@ -3324,7 +3324,7 @@ static bool32 PartyBattlerShouldAvoidHazards(u32 currBattler, u32 switchBattler)
     if (holdEffect == HOLD_EFFECT_HEAVY_DUTY_BOOTS)
         return FALSE;
 
-    if (IsHazardOnSide(side, HAZARDS_STEALTH_ROCK))
+    if (IsHazardOnSide(side, HAZARDS_STEALTH_ROCK) && ability != ABILITY_MOUNTAINEER)
         hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_POINTED_STONES, type1, type2, maxHp);
     if (IsHazardOnSide(side, HAZARDS_STEELSURGE))
         hazardDamage += GetStealthHazardDamageByTypesAndHP(TYPE_SIDE_HAZARD_SHARP_STEEL, type1, type2, maxHp);
@@ -3550,6 +3550,9 @@ bool32 CanKnockOffItem(u32 battler, u32 item)
 // status checks
 bool32 IsBattlerIncapacitated(u32 battler, enum Ability ability)
 {
+    if (gDisableStructs[battler].zaWarudoFrozen)
+        return TRUE;    // ZA WARUDO will stop this mon from moving this turn
+
     if ((gBattleMons[battler].status1 & STATUS1_FREEZE) && !HasThawingMove(battler))
         return TRUE;    // if battler has thawing move we assume they will definitely use it, and thus being frozen should be neglected
 
