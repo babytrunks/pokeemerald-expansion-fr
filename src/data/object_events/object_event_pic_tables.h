@@ -3767,4 +3767,8 @@ static const struct SpriteFrameImage sPicTable_JojoFan[] = {
     overworld_ascending_frames(gObjectEventPic_JojoFan, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_DragonTamer[] = {
+    overworld_ascending_frames(gObjectEventPic_DragonTamer, 2, 4),
+};
+
 #endif // IS_FRLG
