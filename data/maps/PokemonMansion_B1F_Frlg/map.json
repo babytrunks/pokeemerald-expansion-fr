@@ -26,8 +26,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_TM_TOXIC",
-      "script": "PokemonMansion_B1F_EventScript_ItemTM22",
-      "flag": "Common_EventScript_FindItem"
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_TM22"
     },
     {
       "type": "object",

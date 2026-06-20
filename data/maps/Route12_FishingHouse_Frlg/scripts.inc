@@ -85,6 +85,42 @@ Route12_FishingHouse_EventScript_NoRoomForNetBall::
 	release
 	end
 
+Route12_FishingHouse_EventScript_RockGuy::
+	lock
+	faceplayer
+	goto_if_quest_complete QUEST_BLUE_ROCK, Route12_FishingHouse_EventScript_RockGuyDone
+	goto_if_quest_active QUEST_BLUE_ROCK, Route12_FishingHouse_EventScript_RockGuyCheck
+	setflag FLAG_SYS_QUEST_MENU_GET
+	msgbox Route12_FishingHouse_Text_RockGuyIntro
+	closemessage
+	questmenu QUEST_MENU_SET_ACTIVE QUEST_BLUE_ROCK
+	openquestmenu
+	startquest QUEST_BLUE_ROCK
+	release
+	end
+
+Route12_FishingHouse_EventScript_RockGuyCheck::
+	callnative GetFollowerPokemon
+	goto_if_eq VAR_RESULT, SPECIES_SHARPEDO, Route12_FishingHouse_EventScript_RockGuyReward
+	msgbox Route12_FishingHouse_Text_RockGuyNotYet
+	release
+	end
+
+Route12_FishingHouse_EventScript_RockGuyReward::
+	msgbox Route12_FishingHouse_Text_RockGuyReact
+	callnative MegaEvolveSharpedoFollower
+	delay 40
+	msgbox Route12_FishingHouse_Text_RockGuyCongrats
+	giveitem ITEM_SHARPEDONITE
+	completequest QUEST_BLUE_ROCK
+	release
+	end
+
+Route12_FishingHouse_EventScript_RockGuyDone::
+	msgbox Route12_FishingHouse_Text_RockGuyPostQuest
+	release
+	end
+
 Route12_FishingHouse_EventScript_MagikarpRecordSign::
 	lockall
 	goto_if_set FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_MagikarpRecordSignRecordSet
@@ -186,4 +222,37 @@ Route12_FishingHouse_Text_BlankChartOfSomeSort::
     .string "It's a blank chart of some sort.\p"
     .string "It has spaces for writing in\n"
     .string "records of some kind.$"
+
+Route12_FishingHouse_Text_RockGuyIntro::
+    .string "Ahh, a fellow lover of the deep!\p"
+    .string "On one of my dives I hauled up a\n"
+    .string "curious BLUE ROCK with a yellow\l"
+    .string "tint to it.\p"
+    .string "I just know it'll react to the\n"
+    .string "right Pokémon… a fierce one of\l"
+    .string "the sea.\p"
+    .string "Bring such a Pokémon to me, would\n"
+    .string "you? Let it walk by your side!$"
+
+Route12_FishingHouse_Text_RockGuyNotYet::
+    .string "Hmm, the BLUE ROCK is quiet…\p"
+    .string "I need a fierce sea Pokémon\n"
+    .string "following right behind you.$"
+
+Route12_FishingHouse_Text_RockGuyReact::
+    .string "Wait… do you feel that?\p"
+    .string "The BLUE ROCK is glowing!\n"
+    .string "Your SHARPEDO… look at it!$"
+
+Route12_FishingHouse_Text_RockGuyCongrats::
+    .string "Incredible! It Mega Evolved!\p"
+    .string "So this was a Mega Stone all\n"
+    .string "along… the SHARPEDONITE!\p"
+    .string "It belongs with you and your\n"
+    .string "SHARPEDO. Please, take it!$"
+
+Route12_FishingHouse_Text_RockGuyPostQuest::
+    .string "That SHARPEDO of yours is a\n"
+    .string "magnificent beast of the sea.\p"
+    .string "Treasure the SHARPEDONITE!$"
 

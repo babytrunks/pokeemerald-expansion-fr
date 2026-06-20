@@ -2466,6 +2466,22 @@ void GetFollowerPokemon(void)
     gSpecialVar_Result = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));
 }
 
+// Visually mega-evolve the overworld follower into Mega Sharpedo. One-time only:
+// the next UpdateFollowingPokemon (e.g. on map reload) re-derives the sprite from
+// party data and reverts to the normal Sharpedo. Refreshes synchronously because
+// lock/lockall freezes the follower object, preventing the animated transform.
+void MegaEvolveSharpedoFollower(void)
+{
+    struct ObjectEvent *objEvent = GetFollowerObject();
+    if (objEvent == NULL)
+        return;
+    // Swap to Mega Sharpedo, preserving shiny/female bits, then re-render now.
+    objEvent->graphicsId = OBJ_EVENT_MON + SPECIES_SHARPEDO_MEGA
+        + OW_SHINY(objEvent) + OW_FEMALE(objEvent);
+    RefreshFollowerGraphics(objEvent);
+    PlaySE(SE_M_MINIMIZE); // transform SFX (same cue the weather transform uses)
+}
+
 // Sets gSpecialVar_Result to TRUE if the first live party mon (the follower) is a
 // feline Pokemon. Forms are collapsed to their base species, but evolutions are
 // listed explicitly. Umbreon is matched directly since its base species (Eevee)

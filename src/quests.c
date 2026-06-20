@@ -572,12 +572,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
+	side_quest( // The Blue Rock quest
 	      gText_SideQuestName_8,
 	      gText_SideQuestDesc_8,
 	      gText_SideQuestDoneDesc_8,
 	      gText_SideQuestMap8,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_FISHER,
 	      OBJECT,
 	      NULL,
 	      0
