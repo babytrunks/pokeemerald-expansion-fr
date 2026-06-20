@@ -115,9 +115,10 @@ CeladonCity_DepartmentStore_2F_EventScript_ClerkTMs::
 	.align 2
 CeladonCity_DepartmentStore_2F_TMs::
 	.2byte ITEM_TM_ROAR
-	.2byte ITEM_TM_DRAGON_TAIL
-	.2byte ITEM_TM_REFLECT 
 	.2byte ITEM_TM_LIGHT_SCREEN
+	.2byte ITEM_TM_REFLECT 
+	.2byte ITEM_TM_DRAGON_TAIL
+	.2byte ITEM_TM_HYPER_VOICE
 	.2byte ITEM_NONE
 	release
 	end
@@ -135,8 +136,8 @@ CeladonCity_DepartmentStore_2F_Text_FloorSign::
     .string "2F: TRAINER'S MARKET$"
 
 CeladonCity_DepartmentStore_2F_Text_LanceComesToBuyCapes::
-    .string "We have a customer, LANCE, who\n"
+    .string "We have a customer, Lance, who\n"
     .string "occasionally comes.\p"
     .string "He always buys capes.\p"
-    .string "I wonder… Does he have many\n"
-    .string "identical capes at home?$"
+    .string "I wonder… Did he learn that\n"
+    .string "move from Piccolo?$"

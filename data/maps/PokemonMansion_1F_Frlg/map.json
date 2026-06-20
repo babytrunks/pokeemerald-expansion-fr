@@ -3,7 +3,6 @@
   "name": "PokemonMansion_1F_Frlg",
   "layout": "LAYOUT_POKEMON_MANSION_1F",
   "music": "MUS_RG_POKE_MANSION",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_POKEMON_MANSION",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
@@ -14,7 +13,7 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_2",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "type": "object",
@@ -54,8 +53,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PokemonMansion_1F_EventScript_ItemEscapeRope",
+      "trainer_sight_or_berry_tree_id": "ITEM_HEAVY_DUTY_BOOTS",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_POKEMON_MANSION_1F_ESCAPE_ROPE"
     },
     {
@@ -68,8 +67,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PokemonMansion_1F_EventScript_ItemProtein",
+      "trainer_sight_or_berry_tree_id": "ITEM_GACHA_VOUCHER",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_POKEMON_MANSION_1F_PROTEIN"
     },
     {
@@ -159,9 +158,7 @@
       "dest_warp_id": "2"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "sign",
@@ -181,5 +178,6 @@
       "quantity": 1,
       "underfoot": false
     }
-  ]
+  ],
+  "region": "REGION_KANTO"
 }

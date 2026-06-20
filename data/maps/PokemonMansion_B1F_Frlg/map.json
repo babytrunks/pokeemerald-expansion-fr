@@ -17,7 +17,7 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
       "x": 6,
       "y": 21,
       "elevation": 3,
@@ -25,9 +25,9 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_TOXIC",
       "script": "PokemonMansion_B1F_EventScript_ItemTM22",
-      "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_TM22"
+      "flag": "Common_EventScript_FindItem"
     },
     {
       "type": "object",
@@ -59,7 +59,7 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_GOLD_ITEM_BALL",
       "x": 23,
       "y": 4,
       "elevation": 3,
@@ -73,16 +73,16 @@
     },
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
       "x": 2,
       "y": 29,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "PokemonMansion_B1F_EventScript_ItemFullRestore",
+      "trainer_sight_or_berry_tree_id": "ITEM_AERODACTYLITE",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_POKEMON_MANSION_B1F_FULL_RESTORE"
     },
     {

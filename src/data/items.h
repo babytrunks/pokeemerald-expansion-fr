@@ -11804,7 +11804,7 @@ const struct Item gItemsInfo[] =
 
 // TMs/HMs. They don't have a set flingPower, as that's handled by GetFlingPowerFromItemId.
 
-    [ITEM_TM_CLOSE_COMBAT] =
+    [ITEM_TM_CLOSE_COMBAT] = // Jojo Fan in Power Plant
     {
         .name = ITEM_NAME("TM01"),
         .price = 3000,
@@ -11818,7 +11818,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_DRAGON_CLAW] =
+    [ITEM_TM_DRAGON_CLAW] = // Silph Co
     {
         .name = ITEM_NAME("TM02"),
         .price = 3000,
@@ -11832,7 +11832,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_WATER_PULSE] =
+    [ITEM_TM_WATER_PULSE] = //Route 20
     {
         .name = ITEM_NAME("TM03"),
         .price = 3000,
@@ -11860,7 +11860,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_ROAR] =
+    [ITEM_TM_ROAR] = // Celadon Supermart
     {
         .name = ITEM_NAME("TM05"),
         .price = 1000,
@@ -11874,7 +11874,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_TOXIC] =
+    [ITEM_TM_TOXIC] = // Cinnabar Mansion
     {
         .name = ITEM_NAME("TM06"),
         .price = 3000,
@@ -11888,7 +11888,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_HEAT_WAVE] =
+    [ITEM_TM_HEAT_WAVE] = // Blaine
     {
         .name = ITEM_NAME("TM07"),
         .price = 3000,
@@ -11902,7 +11902,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_ZEN_HEADBUTT] =
+    [ITEM_TM_ZEN_HEADBUTT] = // Rock Tunnel
     {
         .name = ITEM_NAME("TM08"),
         .price = 3000,
@@ -11916,7 +11916,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_BULLET_SEED] =
+    [ITEM_TM_BULLET_SEED] = // Mt Moon
     {
         .name = ITEM_NAME("TM09"),
         .price = 3000,
@@ -11930,7 +11930,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_HIDDEN_POWER] =
+    [ITEM_TM_HIDDEN_POWER] = //slateport city
     {
         .name = ITEM_NAME("TM10"),
         .price = 3000,
@@ -11958,7 +11958,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_TAUNT] =
+    [ITEM_TM_TAUNT] = 
     {
         .name = ITEM_NAME("TM12"),
         .price = 3000,
@@ -11972,7 +11972,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_ICE_BEAM] =
+    [ITEM_TM_ICE_BEAM] = //Game Corner
     {
         .name = ITEM_NAME("TM13"),
         .price = 3000,
@@ -11990,7 +11990,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_BLIZZARD] =
+    [ITEM_TM_BLIZZARD] = //Cinnabar Mansion
     {
         .name = ITEM_NAME("TM14"),
         .price = 5500,
@@ -12010,7 +12010,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_DARK_PULSE] =
+    [ITEM_TM_DARK_PULSE] = //Game Corner
     {
         .name = ITEM_NAME("TM15"),
         .price = 7500,
@@ -12024,7 +12024,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_LIGHT_SCREEN] =
+    [ITEM_TM_LIGHT_SCREEN] = //Celadon Supermart
     {
         .name = ITEM_NAME("TM16"),
         .price = 3000,
@@ -12052,7 +12052,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_AIR_SLASH] =
+    [ITEM_TM_AIR_SLASH] = // Route 7
     {
         .name = ITEM_NAME("TM18"),
         .price = 2000,
@@ -12066,7 +12066,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_GIGA_DRAIN] =
+    [ITEM_TM_GIGA_DRAIN] = // Erika
     {
         .name = ITEM_NAME("TM19"),
         .price = 3000,
@@ -12080,7 +12080,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_HYPER_VOICE] =
+    [ITEM_TM_HYPER_VOICE] = //Celadon Supermart
     {
         .name = ITEM_NAME("TM20"),
         .price = 3000,
@@ -12094,7 +12094,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_ICY_WIND] =
+    [ITEM_TM_ICY_WIND] = // Route 10
     {
         .name = ITEM_NAME("TM21"),
         .price = 1000,
@@ -12108,7 +12108,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_VENOSHOCK] =
+    [ITEM_TM_VENOSHOCK] = //Route 6
     {
         .name = ITEM_NAME("TM22"),
         .price = 3000,
@@ -12122,7 +12122,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_IRON_HEAD] =
+    [ITEM_TM_IRON_HEAD] = // Jasmine
     {
         .name = ITEM_NAME("TM23"),
         .price = 3000,
@@ -12136,7 +12136,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_THUNDERBOLT] =
+    [ITEM_TM_THUNDERBOLT] = // Game Corner
     {
         .name = ITEM_NAME("TM24"),
         .price = 3000,
@@ -12150,7 +12150,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_THUNDER] =
+    [ITEM_TM_THUNDER] = // Power Plant
     {
         .name = ITEM_NAME("TM25"),
         .price = 5500,
@@ -12164,7 +12164,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_EARTHQUAKE] =
+    [ITEM_TM_EARTHQUAKE] = // Cerulean Cave
     {
         .name = ITEM_NAME("TM26"),
         .price = 3000,
@@ -12206,7 +12206,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_PSYCHIC] =
+    [ITEM_TM_PSYCHIC] = // Saffron
     {
         .name = ITEM_NAME("TM29"),
         .price = 2000,
@@ -12220,7 +12220,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_SHADOW_BALL] =
+    [ITEM_TM_SHADOW_BALL] = // Lavender Tower behind Rock Smash
     {
         .name = ITEM_NAME("TM30"),
         .price = 3000,

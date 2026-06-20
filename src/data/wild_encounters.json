@@ -26726,12 +26726,12 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SNEASEL_HISUI"
+                "species": "SPECIES_SNEASEL"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SNEASEL_HISUI"
+                "species": "SPECIES_SNEASEL"
               }
             ]
           },

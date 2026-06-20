@@ -210,7 +210,7 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	trainerbattle_no_intro TRAINER_FALKNER, adminmtmoonleft_Text_Defeat
+	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR, adminmtmoonleft_Text_Defeat
 
 	release
 	end
