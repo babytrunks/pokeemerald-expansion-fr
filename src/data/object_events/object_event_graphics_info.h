@@ -8689,6 +8689,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CueBall = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_CUE_BALL,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_CUE_BALL,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_32x32,
+    .subspriteTables = sOamTables_32x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_CueBall,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sans = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_SANS,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_SANS,
     .size = 256,
     .width = 16,
     .height = 32,
@@ -8700,7 +8719,26 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CueBall = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_CueBall,
+    .images = sPicTable_Sans,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Soupercell = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_SOUPERCELL,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_SOUPERCELL,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Soupercell,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 

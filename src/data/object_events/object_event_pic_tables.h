@@ -3775,4 +3775,12 @@ static const struct SpriteFrameImage sPicTable_CueBall[] = {
     overworld_ascending_frames(gObjectEventPic_CueBall, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Sans[] = {
+    overworld_ascending_frames(gObjectEventPic_Sans, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Soupercell[] = {
+    overworld_ascending_frames(gObjectEventPic_Soupercell, 2, 4),
+};
+
 #endif // IS_FRLG

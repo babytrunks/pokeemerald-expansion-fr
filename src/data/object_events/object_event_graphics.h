@@ -785,4 +785,10 @@ const u16 gObjectEventPal_Snorlax[] = INCBIN_U16("graphics/object_events/palette
 
 const u32 gObjectEventPic_CueBall[] = INCBIN_U32("graphics/object_events/pics/people/cue_ball.4bpp");
 const u16 gObjectEventPal_CueBall[] = INCBIN_U16("graphics/object_events/palettes/cue_ball.gbapal");
+
+const u32 gObjectEventPic_Sans[] = INCBIN_U32("graphics/object_events/pics/people/sans.4bpp");
+const u16 gObjectEventPal_Sans[] = INCBIN_U16("graphics/object_events/palettes/sans.gbapal");
+
+const u32 gObjectEventPic_Soupercell[] = INCBIN_U32("graphics/object_events/pics/people/soupercell.4bpp");
+const u16 gObjectEventPal_Soupercell[] = INCBIN_U16("graphics/object_events/palettes/soupercell.gbapal");
 #endif // IS_FRLG
