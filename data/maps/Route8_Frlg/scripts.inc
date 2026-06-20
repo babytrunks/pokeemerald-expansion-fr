@@ -5,6 +5,94 @@ Route8_EventScript_UndergroundPathSign::
 	msgbox Route8_Text_UndergroundPathSign, MSGBOX_SIGN
 	end
 
+Route8_EventScript_Cole::
+	lock
+	faceplayer
+	goto_if_defeated TRAINER_ACE_TRAINER_COLE, Route8_EventScript_ColePostBattle
+	checkitem ITEM_MEGA_RING
+	goto_if_eq VAR_RESULT, FALSE, Route8_EventScript_ColeNoMegaRing
+	goto_if_not_defeated TRAINER_LASS_PAIGE, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_LASS_ANDREA, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_LASS_MEGAN, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_LASS_JULIA, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_GAMER_RICH, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_SUPER_NERD_GLENN, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_SUPER_NERD_LESLIE, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_SUPER_NERD_AIDAN, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_TWINS_ELI_ANNE, Route8_EventScript_ColeNotReady
+	goto_if_not_defeated TRAINER_BIKER_RICARDO, Route8_EventScript_ColeNotReady
+    msgbox Route8_Text_ColeIntro, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route8_EventScript_ColeDecline
+	msgbox Route8_Text_ColeBattleAccept
+	trainerbattle_no_intro TRAINER_ACE_TRAINER_COLE, Route8_Text_ColeDefeat
+	msgbox Route8_Text_ColeReward
+	giveitem ITEM_ROCKY_HELMET
+	giveitem ITEM_CENTISKITE
+	msgbox Route8_Text_ColePostBattle
+	release
+	end
+
+Route8_EventScript_ColePostBattle::
+	msgbox Route8_Text_ColePostBattle
+	release
+	end
+
+
+Route8_EventScript_ColeNoMegaRing::
+	msgbox Route8_Text_ColeNoMegaRing
+	release
+	end
+
+Route8_EventScript_ColeDecline::
+	msgbox Route8_Text_ColeDecline
+	release
+	end
+
+Route8_EventScript_ColeNotReady::
+    msgbox Route8_Text_ColeNotReady
+    release
+    end
+
+Route8_Text_ColeIntro::
+    .string "That ring on your hand…\n"
+    .string "So you've earned a Mega Ring.\p"
+    .string "And you've bested every Trainer on\n"
+    .string "this route. Impressive.\p"
+    .string "Then you're ready.\p"
+    .string "Shall we do battle?$"
+
+Route8_Text_ColeBattleAccept::
+    .string "Let's begin!$"
+
+Route8_Text_ColeDefeat::
+    .string "Ha! Perhaps my thorns weren't\n"
+    .string "sharp enough.$"
+
+Route8_Text_ColeReward::
+    .string "You and your Pokémon are the real\n"
+    .string "deal. Take these.$"
+
+Route8_Text_ColePostBattle::
+    .string "Mega Centiskorch is the only Pokémon\n"
+    .string "immune to Rock.\p"
+    .string "Quite dandy, don't you think?\p"
+    .string "The Rocky Helmet punishes foes for\n"
+    .string "attacking you.\p"
+    .string "Sometimes chip damage makes all the\n"
+    .string "difference!$"
+
+Route8_Text_ColeNoMegaRing::
+    .string "A real Trainer carries a Mega Ring.\p"
+    .string "Come back when you've got one, and\n"
+    .string "I'll give you a battle.$"
+
+Route8_Text_ColeNotReady::
+    .string "Beat every Trainer on this route\n"
+    .string "first. Then we'll talk.$"
+
+Route8_Text_ColeDecline::
+    .string "Tsk, fine.$"
+
 Route8_Text_AidanIntro::
     .string "You look good at Pokémon, but how\n"
     .string "is your chemistry grade?$"
@@ -47,7 +135,9 @@ Route8_Text_PaigeDefeat::
 
 Route8_Text_PaigePostBattle::
     .string "When Pokémon grow up, they get\n"
-    .string "ugly! They shouldn't evolve.$"
+    .string "ugly! They shouldn't evolve.\p"
+    .string "And don't get me started on\n"
+    .string "Megas!$"
 
 Route8_Text_LeslieIntro::
     .string "School is fun, but so are Pokémon.$"
@@ -63,15 +153,14 @@ Route8_Text_LesliePostBattle::
     .string "gates at SAFFRON.$"
 
 Route8_Text_AndreaIntro::
-    .string "MEOWTH is so cute, meow, meow,\n"
-    .string "meow!$"
+    .string "Ambipom is so so cute!$"
 
 Route8_Text_AndreaDefeat::
-    .string "Meeeeyow!$"
+    .string "Yeeeeowch!$"
 
 Route8_Text_AndreaPostBattle::
-    .string "I think PIDGEY and RATTATA are\n"
-    .string "cute, too!$"
+    .string "I think Mismagius is quite classy\n"
+    .string "too!$"
 
 Route8_Text_MeganIntro::
     .string "We must look silly standing here\n"
@@ -116,34 +205,34 @@ Route8_Text_UndergroundPathSign::
     .string "Celadon City - Lavender Town$"
 
 Route8_Text_EliIntro::
-    .string "ELI: Twin power is fantastic.\n"
+    .string "Twin power is fantastic.\n"
     .string "Did you know?$"
 
 Route8_Text_EliDefeat::
-    .string "ELI: But…\n"
+    .string "But…\n"
     .string "We used our twin power…$"
 
 Route8_Text_EliPostBattle::
-    .string "ELI: I caught my Pokémon with\n"
+    .string "I caught my Pokémon with\n"
     .string "ANNE!$"
 
 Route8_Text_EliNotEnoughMons::
-    .string "ELI: We can't battle if you don't\n"
+    .string "We can't battle if you don't\n"
     .string "have two Pokémon.$"
 
 Route8_Text_AnneIntro::
-    .string "ANNE: We'll shock you with our twin\n"
+    .string "We'll shock you with our twin\n"
     .string "power!$"
 
 Route8_Text_AnneDefeat::
-    .string "ANNE: Our twin power…$"
+    .string "Our twin power…$"
 
 Route8_Text_AnnePostBattle::
-    .string "ANNE: I'm raising Pokémon with\n"
+    .string "I'm raising Pokémon with\n"
     .string "ELI.$"
 
 Route8_Text_AnneNotEnoughMons::
-    .string "ANNE: Hi, hi! Let's battle!\n"
+    .string "Hi, hi! Let's battle!\n"
     .string "But bring two Pokémon.$"
 
 Route8_Text_RicardoIntro::

@@ -14814,43 +14814,152 @@ IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Volt Switch  
 - Dazzling Gleam  
 
-=== TRAINER_YOUNGSTER_TIMMY_4 ===
-Name: Timmy
-Class: Youngster Frlg
-Pic: Youngster Frlg
+=== TRAINER_POKEMON_TOWER_SANS ===
+Name: Sans
+Class: Pkmn Trainer 1
+Pic: Sans
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Blue
+Boss: Yes
+Dynamic Level Ratio: 95
 
-Raticate
-Level: 52
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Shuckle @ Mental Herb
+Level: 40
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 248 HP / 252 Def / 8 SpD
+- Sticky Web
+- Final Gambit
 
-Arbok
-Level: 52
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Snorlax @ Leftovers
+Level: 40
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def
+- Body Slam
+- Earthquake
+- Rest
+- Sleep Talk
 
-Golbat
-Level: 52
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Marowak @ Thick Club
+Ability: Bone Zone
+Level: 40  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+- Shadow Bone
+- Bonemerang
+- Stone Edge
+- Knock Off
 
-=== TRAINER_YOUNGSTER_CHAD_3 ===
-Name: Chad
-Class: Youngster Frlg
-Pic: Youngster Frlg
+Gengar @ Life Orb
+Ability: Levitate
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+- Shadow Ball
+- Sludge Wave
+- Aura Sphere
+- Thunderbolt
+
+Ditto @ Choice Scarf
+Ability: Imposter
+Level: 40
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Spe
+- Transform
+
+Glalie @ Glalitite
+Ability: Inner Focus  
+Level: 40  
+Nature: Adamant  
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Fake Out 
+- Quick Attack
+- Earthquake
+- Body Slam
+
+=== TRAINER_ACE_TRAINER_COLE ===
+Name: Cole
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Purple
+Boss: Yes
+Dynamic Level Ratio: 95
 
-Volbeat
-Level: 19
+Yanmega @ Focus Sash
+Ability: Tinted Lens
+Nature: Timid
+Level: 41
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 Def / 252 Spe
+- Bug Buzz
+- Air Slash
+- U-Turn
+- Giga Drain
 
-Shroomish
-Level: 19
+Tyrantrum @ Shuca Berry
+Nature: Jolly
+Ability: Rock Head
+Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Head Smash
+- Dragon Dance
+- Headlong Rush
+- Earthquake
+
+Weezing-Galar @ Rocky Helmet
+Nature: Bold
+Ability: Levitate
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Def / 4 SpD
+- Calm Mind
+- Surf
+- Draining Kiss
+- Ice Beam
+
+Ferrothorn @ Rocky Helmet
+Nature: Relaxed
+Ability: Iron Barbs
+Level: 42
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+EVs: 252 HP / 128 Def / 128 SpD
+- Thunder Wave
+- Gyro Ball
+- Leech Seed
+- Power Whip
+
+Gastrodon @ Rocky Helmet
+Nature: Calm
+Ability: Storm Drain
+Level: 41
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpD
+- Scald
+- Recover
+- Earth Power
+- Mirror Coat
+
+Centiskorch @ Centiskite
+Nature: Adamant
+Ability: Flash Fire
+Level: 43
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpD
+- Coil
+- Fire Lash
+- Leech Life
+- Knock Off
 
 === TRAINER_LASS_JANICE_2 ===
 Name: Janice

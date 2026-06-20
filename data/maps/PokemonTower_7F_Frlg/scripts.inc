@@ -1,5 +1,18 @@
 PokemonTower_7F_Frlg_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PokemonTower_7F_OnTransition
 	.byte 0
+
+PokemonTower_7F_OnTransition::
+	goto_if_defeated TRAINER_POKEMON_TOWER_SANS, PokemonTower_7F_EventScript_HideSans
+	goto_if_set FLAG_GOT_POKE_FLUTE, PokemonTower_7F_EventScript_ShowSans
+	@ Poke Flute not yet obtained -> stay hidden
+PokemonTower_7F_EventScript_HideSans::
+	setflag FLAG_HIDE_TOWER_SANS
+	end
+
+PokemonTower_7F_EventScript_ShowSans::
+	clearflag FLAG_HIDE_TOWER_SANS
+	end
 
 PokemonTower_7F_EventScript_MrFuji::
 	lock
@@ -280,4 +293,64 @@ PokemonTower_7F_Text_MrFujiThankYouFollowMe::
     .string "concern.\p"
     .string "Follow me to my home, Pokémon\n"
     .string "House, at the foot of this tower.$"
+
+PokemonTower_7F_EventScript_Sans::
+	lock
+	faceplayer
+	msgbox PokemonTower_7F_Text_SansIntro, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PokemonTower_7F_EventScript_SansDecline
+	msgbox PokemonTower_7F_Text_SansAccept
+	trainerbattle_no_intro TRAINER_POKEMON_TOWER_SANS, PokemonTower_7F_Text_SansDefeat
+	msgbox PokemonTower_7F_Text_SansReward
+	giveitem ITEM_LAVA_COOKIE
+	goto_if_eq VAR_RESULT, FALSE, PokemonTower_7F_EventScript_SansBagFull
+	msgbox PokemonTower_7F_Text_SansSnark
+	closemessage
+	setflag FLAG_HIDE_TOWER_SANS
+	removeobject LOCALID_POKEMON_TOWER_SANS
+	release
+	end
+
+PokemonTower_7F_EventScript_SansBagFull::
+	msgbox gText_TooBadBagIsFull
+	release
+	end
+
+PokemonTower_7F_EventScript_SansDecline::
+	msgbox PokemonTower_7F_Text_SansNo
+	release
+	end
+
+PokemonTower_7F_Text_SansIntro::
+    .string "heya.\n"
+    .string "you look like you've climbed a\l"
+    .string "real lot of stairs today.\p"
+    .string "tell ya what. let's make a deal.\n"
+    .string "you wanna throw down, kid?$"
+
+PokemonTower_7F_Text_SansAccept::
+    .string "welp.\n"
+    .string "you're gonna have a bad time.$"
+
+PokemonTower_7F_Text_SansDefeat::
+    .string "ya got me.\n"
+    .string "guess i'm all outta… spirit.$"
+
+PokemonTower_7F_Text_SansReward::
+    .string "heh. a deal's a deal.\n"
+    .string "here, a little somethin' for the\l"
+    .string "road.$"
+
+PokemonTower_7F_Text_SansSnark::
+    .string "what, were you expecting\n"
+    .string "something useful?\p"
+    .string "…it's a lava cookie. don't say i\n"
+    .string "never gave ya anything.\p"
+    .string "heh.\n"
+    .string "see ya around, kid.$"
+
+PokemonTower_7F_Text_SansNo::
+    .string "no? eh, fair.\n"
+    .string "i wasn't gonna give it my all\l"
+    .string "anyway.$"
 

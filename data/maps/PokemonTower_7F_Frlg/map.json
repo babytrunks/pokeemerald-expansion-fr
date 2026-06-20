@@ -73,6 +73,21 @@
       "trainer_sight_or_berry_tree_id": "4",
       "script": "PokemonTower_7F_EventScript_Grunt3",
       "flag": "FLAG_HIDE_TOWER_ROCKET_3"
+    },
+    {
+      "local_id": "LOCALID_POKEMON_TOWER_SANS",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SANS",
+      "x": 11,
+      "y": 4,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PokemonTower_7F_EventScript_Sans",
+      "flag": "FLAG_HIDE_TOWER_SANS"
     }
   ],
   "warp_events": [

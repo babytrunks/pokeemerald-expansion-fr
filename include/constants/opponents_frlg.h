@@ -394,8 +394,8 @@
 #define TRAINER_ROUTE16_SILVA                        388
 #define TRAINER_PLAININSANE                  389
 #define TRAINER_SILVA                  390
-#define TRAINER_YOUNGSTER_TIMMY_4                  391
-#define TRAINER_YOUNGSTER_CHAD_3                   392
+#define TRAINER_POKEMON_TOWER_SANS                  391
+#define TRAINER_ACE_TRAINER_COLE                   392
 #define TRAINER_LASS_JANICE_2                      393
 #define TRAINER_LASS_JANICE_3                      394
 #define TRAINER_YOUNGSTER_CHAD_4                   395
