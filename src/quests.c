@@ -150,6 +150,7 @@ static bool8 IsQuestInactiveState(s32 questId);
 static bool8 IsQuestRewardState(s32 questId);
 static bool8 IsQuestCompletedState(s32 questId);
 static bool8 IsSubquestCompletedState(s32 questId);
+static bool8 IsSubquestActiveState(s32 questId);
 
 static void DetermineSpriteType(s32 questId);
 static void QuestMenu_CreateSprite(u16 itemId, u8 idx, u8 spriteType);
@@ -1581,6 +1582,12 @@ u8 QuestMenu_GetSetSubquestState(u8 quest, u8 caseId, u8 childQuest)
 			return gSaveBlock2Ptr->subQuests[index] & mask;
 		case FLAG_SET_COMPLETED:
 			gSaveBlock2Ptr->subQuests[index] |= mask;
+			gSaveBlock2Ptr->subQuests[SUB_FLAGS_COUNT + index] &= ~mask; // clear active on completion
+			return 1;
+		case FLAG_GET_ACTIVE:
+			return gSaveBlock2Ptr->subQuests[SUB_FLAGS_COUNT + index] & mask;
+		case FLAG_SET_ACTIVE:
+			gSaveBlock2Ptr->subQuests[SUB_FLAGS_COUNT + index] |= mask;
 			return 1;
 	}
 
@@ -1843,7 +1850,7 @@ void PopulateQuestName(u8 countQuest)
 
 void PopulateSubquestName(u8 parentQuest, u8 countQuest)
 {
-	if (IsSubquestCompletedState(countQuest))
+	if (IsSubquestCompletedState(countQuest) || IsSubquestActiveState(countQuest))
 	{
 		questNamePointer = StringAppend(questNamePointer,
 		                                sSideQuests[parentQuest].subquests[countQuest].name);
@@ -1984,7 +1991,7 @@ void GenerateQuestFlavorText(s32 questId)
 	}
 	else
 	{
-		if (IsSubquestCompletedState(questId) == TRUE)
+		if (IsSubquestCompletedState(questId) == TRUE || IsSubquestActiveState(questId) == TRUE)
 		{
 			StringCopy(gStringVar1,
 			           sSideQuests[sStateDataPtr->parentQuest].subquests[questId].desc);
@@ -2011,6 +2018,19 @@ bool8 IsSubquestCompletedState(s32 questId)
 {
 	if (QuestMenu_GetSetSubquestState(sStateDataPtr->parentQuest,
 	                                  FLAG_GET_COMPLETED,
+	                                  questId))
+	{
+		return TRUE;
+	}
+	else
+	{
+		return FALSE;
+	}
+}
+bool8 IsSubquestActiveState(s32 questId)
+{
+	if (QuestMenu_GetSetSubquestState(sStateDataPtr->parentQuest,
+	                                  FLAG_GET_ACTIVE,
 	                                  questId))
 	{
 		return TRUE;
@@ -2093,7 +2113,7 @@ void DetermineSpriteType(s32 questId)
 		QuestMenu_CreateSprite(spriteId, sStateDataPtr->spriteIconSlot,
 		                       spriteType);
 	}
-	else if (IsSubquestCompletedState(questId) == TRUE)
+	else if (IsSubquestCompletedState(questId) == TRUE || IsSubquestActiveState(questId) == TRUE)
 	{
 		spriteId =
 		      sSideQuests[sStateDataPtr->parentQuest].subquests[questId].sprite;

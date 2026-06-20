@@ -1418,6 +1418,7 @@ PalletTown_ProfessorOaksLab_EventScript_Aide2::
 	msgbox PalletTown_ProfessorOaksLab_Text_HelpWithNatureQuest
 	setflag FLAG_SYS_QUEST_MENU_GET
  	questmenu QUEST_MENU_SET_ACTIVE QUEST_NATURE_CHANGER
+	setactivesubquest QUEST_NATURE_CHANGER, SUB_QUEST_1
     openquestmenu
     startquest QUEST_NATURE_CHANGER
 	release
@@ -1497,7 +1498,8 @@ PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks2:
 	msgbox PalletTown_ProfessorOaksLab_Text_NeedGenderless
 	setflag FLAG_COMPLETED_NATURE_SUBQUEST_2
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER, SUB_QUEST_2
-	openquestmenu	
+	setactivesubquest QUEST_NATURE_CHANGER, SUB_QUEST_3
+	openquestmenu
 	release
 	end
 
@@ -1532,6 +1534,7 @@ PalletTown_ProfessorOaksLab_EventScript_Aide2StartNatureChangeChecks3:
 	msgbox PalletTown_ProfessorOaksLab_Text_BringEverstone
 	setflag FLAG_COMPLETED_NATURE_SUBQUEST_3
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER, SUB_QUEST_3
+	setactivesubquest QUEST_NATURE_CHANGER, SUB_QUEST_4
 	openquestmenu
 	release
 	end
@@ -1546,6 +1549,7 @@ PalletTown_ProfessorOaksLab_EventScript_CompleteSubquest1:
 	msgbox PalletTown_ProfessorOaksLab_Text_INeedPersimBerry
 	setflag FLAG_COMPLETED_NATURE_SUBQUEST_1
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, QUEST_NATURE_CHANGER, SUB_QUEST_1
+	setactivesubquest QUEST_NATURE_CHANGER, SUB_QUEST_2
 	openquestmenu
 	release
 	end

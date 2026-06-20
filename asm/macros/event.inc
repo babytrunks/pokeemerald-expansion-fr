@@ -2124,6 +2124,10 @@
 	subquestmenu QUEST_MENU_COMPLETE_QUEST, \quest, \subquest
 	.endm
 
+	.macro setactivesubquest quest:req, subquest:req
+	subquestmenu QUEST_MENU_SET_ACTIVE, \quest, \subquest
+	.endm
+
     .macro goto_if_subquest_complete parent:req,child:req, dest:req
     subquestmenu QUEST_MENU_CHECK_COMPLETE \parent \child
     goto_if_eq VAR_RESULT, TRUE, \dest
