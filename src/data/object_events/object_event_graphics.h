@@ -782,4 +782,7 @@ const u32 gObjectEventPic_DragonTamer[] = INCBIN_U32("graphics/object_events/pic
 const u16 gObjectEventPal_DragonTamer[] = INCBIN_U16("graphics/object_events/palettes/dragon_tamer.gbapal");
 
 const u16 gObjectEventPal_Snorlax[] = INCBIN_U16("graphics/object_events/palettes/snorlax.gbapal");
+
+const u32 gObjectEventPic_CueBall[] = INCBIN_U32("graphics/object_events/pics/people/cue_ball.4bpp");
+const u16 gObjectEventPal_CueBall[] = INCBIN_U16("graphics/object_events/palettes/cue_ball.gbapal");
 #endif // IS_FRLG

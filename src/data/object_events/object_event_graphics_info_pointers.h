@@ -481,6 +481,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PlainInsane
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Silva;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_JojoFan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DragonTamer;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CueBall;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -950,6 +951,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SILVA] =               &gObjectEventGraphicsInfo_Silva,
     [OBJ_EVENT_GFX_JOJO_FAN] =            &gObjectEventGraphicsInfo_JojoFan,
     [OBJ_EVENT_GFX_DRAGON_TAMER] =       &gObjectEventGraphicsInfo_DragonTamer,
+    [OBJ_EVENT_GFX_CUE_BALL] =           &gObjectEventGraphicsInfo_CueBall,
 #endif // IS_FRLG
 };
 

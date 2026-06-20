@@ -80,9 +80,9 @@ static const u8 sText_WildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} f
 static const u8 sText_TwoWildFled[] = _("{PLAY_SE SE_FLEE}{B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME} fled!"); //not in gen 5+, replaced with match was forfeited text
 static const u8 sText_PlayerDefeatedLinkTrainerTrainer1[] = _("You defeated {B_TRAINER1_NAME_WITH_CLASS}!\p");
 static const u8 sText_OpponentMon1Appeared[] = _("{B_OPPONENT_MON1_NAME} appeared!\p");
-static const u8 sText_WildPkmnAppeared[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!\p");
-static const u8 sText_LegendaryPkmnAppeared[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!\p");
-static const u8 sText_WildPkmnAppearedPause[] = _("You encountered a wild {B_OPPONENT_MON1_NAME}!{PAUSE 127}");
+static const u8 sText_WildPkmnAppeared[] = _("You encountered a {B_OPPONENT_MON1_NATURE} {B_OPPONENT_MON1_NAME}\nwith {B_OPPONENT_MON1_ABILITY}!\p");
+static const u8 sText_LegendaryPkmnAppeared[] = _("You encountered a {B_OPPONENT_MON1_NATURE} {B_OPPONENT_MON1_NAME}\nwith {B_OPPONENT_MON1_ABILITY}!\p");
+static const u8 sText_WildPkmnAppearedPause[] = _("You encountered a {B_OPPONENT_MON1_NATURE} {B_OPPONENT_MON1_NAME}\nwith {B_OPPONENT_MON1_ABILITY}!{PAUSE 127}");
 static const u8 sText_TwoWildPkmnAppeared[] = _("Oh! A wild {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME} appeared!\p");
 static const u8 sText_GhostAppearedCantId[] = _("The GHOST appeared!\pDarn!\nThe GHOST can't be ID'd!\p");
 static const u8 sText_TheGhostAppeared[] = _("The GHOST appeared!\p");
@@ -2769,6 +2769,12 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
             case B_TXT_OPPONENT_MON1_NAME: // first enemy poke name
                 GetBattlerNick(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT), text);
                 toCpy = text;
+                break;
+            case B_TXT_OPPONENT_MON1_NATURE: // first enemy poke nature
+                toCpy = gNaturesInfo[GetNature(GetBattlerMon(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))].name;
+                break;
+            case B_TXT_OPPONENT_MON1_ABILITY: // first enemy poke ability
+                toCpy = gAbilitiesInfo[GetMonAbility(GetBattlerMon(GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT)))].name;
                 break;
             case B_TXT_PLAYER_MON2_NAME: // second player poke name
                 GetBattlerNick(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT), text);

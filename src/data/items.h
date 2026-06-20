@@ -12941,7 +12941,7 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("TM82"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Attacks with an,\n"
+            "Attacks with an\n"
             "aura blast that\n"
             "can't miss."),
         .importance = I_REUSABLE_TMS,
@@ -12950,22 +12950,28 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM83] =
+    [ITEM_TM_TRIPLE_AXEL] =
     {
         .name = ITEM_NAME("TM83"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "A 3-hit kick that\n"
+            "gets stronger with\n"
+            "each hit."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM84] =
+    [ITEM_TM_ICE_SPINNER] =
     {
         .name = ITEM_NAME("TM84"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "Hits the foe and\n"
+            "removes the\n"
+            "terrain."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

@@ -138,6 +138,19 @@ kwenio: Green OW, Trainer sprites
 
 mid117 - Commissioned Jojo, Silva, PlainInsane sprites
 
+Credits for Battle Speedup (from Emerald Rogue)
+
+- Alexonl1ne
+- pokabbie
+
+Credits for Game Corner Expansion (new minigames + gacha machine):
+
+- Chris Piche
+- agsmgmaster64
+- Pokeabbie (Voltorb Flip)
+- huderlem (Pokemon pinball)
+- AsparagusEduardo
+
 ## Other Credits
 
 ### Mega Evolution Overworld Sprite Credits:
