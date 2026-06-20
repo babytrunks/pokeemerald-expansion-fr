@@ -13,7 +13,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Yungoos @ Chople Berry
 Level: 13
@@ -39,7 +39,7 @@ Pic: Sailor
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -77,7 +77,7 @@ Pic: Beauty
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -117,7 +117,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 80
 
 Plusle @ Shuca Berry
@@ -160,7 +160,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raticate @ Wide Lens
 Level: 18
@@ -189,7 +189,7 @@ Pic: Tuber M
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -229,7 +229,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Volbeat
 Level: 19
@@ -258,7 +258,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Nidoran M
 Level: 21
@@ -271,7 +271,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Scraggy @ Quick Claw
 Level: 22
@@ -300,7 +300,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Phanpy
 Level: 22
@@ -317,7 +317,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lickitung 
 Level: 23
@@ -353,7 +353,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Nidorino
 Level: 22
@@ -370,7 +370,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 
@@ -393,7 +393,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weedle
 Level: 6
@@ -410,7 +410,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Butterfree
 Ability: Compound Eyes
@@ -435,7 +435,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Beautifly 
 Nature: Bashful
@@ -472,7 +472,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dottler @ Oran Berry
 Level: 13
@@ -509,7 +509,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Nincada
 Level: 10
@@ -534,7 +534,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Paras @ Loaded Dice
 Level: 14
@@ -569,7 +569,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Beedrill
 Level: 11
@@ -586,7 +586,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Beautifly @ Silver Powder
 Level: 16
@@ -625,7 +625,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 80
 Boss: Yes
 
@@ -669,7 +669,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sizzlipede
 Nature: Adamant
@@ -706,7 +706,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Masquerain
 Nature: Modest
@@ -735,7 +735,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Spidops 
 Nature: Docile
@@ -773,7 +773,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shuckle @ Wide Lens
 Nature: Adamant
@@ -809,7 +809,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Wooper-Paldea @ Shuca Berry
 Level: 15
@@ -848,7 +848,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Meowth @ Silk Scarf
 Level: 15
@@ -885,7 +885,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Flaaffy @ Magnet
 Level: 14
@@ -913,7 +913,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Paras
 Level: 31
@@ -934,7 +934,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Applin @ Sitrus Berry
 Level: 17
@@ -973,7 +973,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tinkatink @ Metal Coat
 Level: 17
@@ -992,7 +992,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 80
 Boss: Yes
 
@@ -1036,7 +1036,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 80
 Boss: Yes
 
@@ -1080,7 +1080,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pineco
 Level: 19
@@ -1116,7 +1116,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgey
 Level: 18
@@ -1133,7 +1133,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu-Belle
 Level: 24
@@ -1150,7 +1150,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Whimsicott @ Wide Lens
 Level: 31
@@ -1179,7 +1179,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sigilyph @ Flame Orb
 Level: 31
@@ -1218,7 +1218,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Carnivine @ Sitrus Berry
 Nature: Docile
@@ -1257,7 +1257,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Probopass @ Chople Berry
 Level: 32
@@ -1297,7 +1297,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bellossom
 Level: 30
@@ -1314,7 +1314,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Simisage
 Level: 30
@@ -1331,7 +1331,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lileep @ Eviolite
 Nature: Modest
@@ -1362,7 +1362,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party 
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO 
 
 Pelipper @ Focus Sash
 Nature: Timid
@@ -1391,7 +1391,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Palpitoad
 Level: 21
@@ -1404,7 +1404,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Qwilfish-Hisui
 Level: 24
@@ -1425,7 +1425,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Stunfisk
 Level: 24
@@ -1442,7 +1442,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Barboach
 Level: 24
@@ -1463,7 +1463,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke
 Level: 25
@@ -1476,7 +1476,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Plusle
 Level: 24
@@ -1493,7 +1493,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Geodude
 Level: 10
@@ -1515,7 +1515,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bramblin
 Level: 17
@@ -1532,7 +1532,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 80
 Boss: Yes
 
@@ -1576,7 +1576,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Togetic @ Muscle Band
 Nature: Adamant
@@ -1605,7 +1605,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Wormadam-Trash @ Berry Juice
 Level: 23
@@ -1654,7 +1654,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raboot
 Level: 26
@@ -1671,7 +1671,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Delcatty @ Muscle Band
 Level: 29
@@ -1708,7 +1708,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Drednaw
 Level: 20
@@ -1721,7 +1721,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Maractus
 Nature: Docile
@@ -1750,7 +1750,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Kirlia
 Nature: Modest
@@ -1779,7 +1779,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Nidorino
 Level: 18
@@ -1818,7 +1818,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Vileplume @ Berry Juice
 Nature: Docile
@@ -1857,7 +1857,7 @@ Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -1904,7 +1904,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Roselia
 Level: 28
@@ -1921,7 +1921,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Swablu
 Level: 29
@@ -1938,7 +1938,7 @@ Pic: Picnicker Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Steenee  
 Ability: Oblivious  
@@ -1978,7 +1978,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lilligant-Hisui
 Level: 30
@@ -1995,7 +1995,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lilligant
 Level: 31
@@ -2012,7 +2012,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgey
 Level: 24
@@ -2041,7 +2041,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rhyhorn
 Level: 29
@@ -2058,7 +2058,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Munchlax
 Level: 29
@@ -2075,7 +2075,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Slowpoke-Galar @ Salac Berry  
 Ability: Gluttony  
@@ -2116,7 +2116,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Carracosta
 Level: 29
@@ -2133,7 +2133,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Vaporeon @ Mystic Water  
 Ability: Water Absorb  
@@ -2181,7 +2181,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Charmeleon
 Level: 40
@@ -2202,7 +2202,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Solrock  
 Ability: Levitate  
@@ -2244,7 +2244,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Magnemite @ Sitrus Berry
 Level: 16
@@ -2281,7 +2281,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Thwackey @ Eviolite
@@ -2335,7 +2335,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Porygon @ Eviolite
 Nature: Docile
@@ -2382,7 +2382,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Cradily @ Big Root
 Nature: Modest
@@ -2421,7 +2421,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu-PhD @ Light Ball
 Nature: Modest
@@ -2460,7 +2460,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Vulpix
 Level: 36
@@ -2481,7 +2481,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ponyta
 Level: 34
@@ -2506,7 +2506,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 
 Mienshao @ Life Orb
 Nature: Jolly
@@ -2566,7 +2566,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 
 Nidoking @ Life Orb
@@ -2627,7 +2627,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rolycoly @ Passho Berry
 Level: 15
@@ -2666,7 +2666,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Timburr @ Life Orb
 Level: 21
@@ -2695,7 +2695,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Cranidos @ Quick Claw
 Level: 18
@@ -2744,7 +2744,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Naclstack
 Level: 19
@@ -2757,7 +2757,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Stonjourner 
 Nature: Docile
@@ -2805,7 +2805,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Klawf
 Level: 27
@@ -2826,7 +2826,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Graveler-Alola
 Level: 30
@@ -2843,7 +2843,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Crabominable
 Level: 29
@@ -2860,7 +2860,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Armaldo @ Assault Vest
 Ability: Skill Link
@@ -2912,7 +2912,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bergmite @ Eviolite  
 Ability: Own Tempo  
@@ -2954,7 +2954,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Baltoy @ Light Clay  
 Ability: Levitate  
@@ -2996,7 +2996,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Graveler @ Metronome  
 Ability: Sturdy  
@@ -3041,7 +3041,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Magcargo  
 Ability: Simple  
@@ -3083,7 +3083,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Drilbur
 Level: 27
@@ -3101,7 +3101,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -3156,7 +3156,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sableye @ Focus Sash  
 Ability: Prankster 
@@ -3209,7 +3209,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Koffing
 Level: 25
@@ -3258,7 +3258,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Accelgor @ Focus Sash
 Ability: Unburden
@@ -3322,7 +3322,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -3355,7 +3355,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -3403,7 +3403,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -3455,7 +3455,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Flygon @ Dragon Fang  
 Level: 51
@@ -3497,7 +3497,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Scolipede @ Sitrus Berry  
 Level: 51
@@ -3546,7 +3546,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Flapple @ Wide Lens  
 Level: 52
@@ -3610,7 +3610,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 
 Magnezone @ Custap Berry
@@ -3660,7 +3660,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Koffing
 Level: 26
@@ -3701,7 +3701,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Basculin-Blue-Striped @ Mystic Water  
 Ability: Adaptability
@@ -3754,7 +3754,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lunatone @ Colbur Berry  
 Ability: Levitate
@@ -3807,7 +3807,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Growlithe
 Level: 36
@@ -3828,7 +3828,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ponyta
 Level: 41
@@ -3841,14 +3841,13 @@ Pic: Cooltrainer F Frlg
 Gender: Female
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 
 Lycanroc @ Focus Sash
 Nature: Jolly
 Ability: Steadfast
 Level: 58
 EVs: 252 Atk / 4 Def / 252 Spe
-Ball: Great Ball
 - Stealth Rock
 - Endeavor
 - Accelerock
@@ -3901,7 +3900,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 
 Rillaboom @ Terrain Extender  
@@ -3953,7 +3952,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Kingambit @ Focus Sash  
 Ability: Pressure  
@@ -4006,7 +4005,7 @@ Pic: Burglar Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Delibird @ Choice Band  
 Ability: Refrigerate  
@@ -4068,7 +4067,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Voltorb-Hisui
 Level: 24
@@ -4085,7 +4084,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Graveler-Alola @ Magnet
 Level: 23
@@ -4120,7 +4119,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pachirisu @ Light Clay
 Level: 23
@@ -4157,7 +4156,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Goldeen
 Level: 23
@@ -4178,7 +4177,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shellder
 Level: 24
@@ -4199,7 +4198,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seaking
 Level: 31
@@ -4220,7 +4219,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tentacruel
 Level: 31
@@ -4237,7 +4236,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pelipper
 Level: 32
@@ -4250,7 +4249,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Kingdra
 Level: 31
@@ -4271,7 +4270,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seaking
 Level: 28
@@ -4296,7 +4295,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shellder
 Level: 31
@@ -4313,7 +4312,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Magikarp
 Level: 27
@@ -4346,7 +4345,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seaking
 Level: 33
@@ -4363,7 +4362,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Froslass @ Light Clay
 Nature: Timid
@@ -4392,7 +4391,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shellder
 Level: 19
@@ -4409,7 +4408,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Swampert @ Rindo Berry
 Level: 51
@@ -4462,7 +4461,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seismitoad @ Rindo Berry
 Level: 51
@@ -4515,7 +4514,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Qwilfish-Hisui @ Eviolite
 Level: 58
@@ -4579,7 +4578,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Liepard @ Damp Rock
 Level: 56
@@ -4643,7 +4642,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Goldeen
 Level: 29
@@ -4664,7 +4663,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Whiscash @ Rindo Berry
 Level: 57
@@ -4728,7 +4727,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Toxapex @ Black Sludge
 Level: 56
@@ -4792,7 +4791,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shellder
 Level: 31
@@ -4809,7 +4808,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Staryu
 Level: 35
@@ -4822,7 +4821,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Horsea
 Level: 28
@@ -4847,7 +4846,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 33
@@ -4864,7 +4863,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Starmie
 Level: 37
@@ -4877,7 +4876,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Staryu
 Level: 33
@@ -4894,7 +4893,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwhirl
 Level: 32
@@ -4915,7 +4914,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -4937,7 +4936,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -4970,7 +4969,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -5021,7 +5020,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tyrantrum @ Muscle Band  
 Level: 50
@@ -5073,7 +5072,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rampardos @ Life Orb  
 Level: 50
@@ -5125,7 +5124,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lickilicky @ Leftovers  
 Level: 51
@@ -5178,7 +5177,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Decidueye @ Salac Berry  
 Level: 52
@@ -5241,7 +5240,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dedenne @ Terrain Extender  
 Level: 52
@@ -5316,7 +5315,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tentacool
 Level: 31
@@ -5337,7 +5336,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Baltoy @ Choice Band
 Level: 22
@@ -5363,7 +5362,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Drowzee @ Eviolite
 Level: 22
@@ -5402,7 +5401,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Voltorb-Hisui
 Level: 24
@@ -5419,7 +5418,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Baltoy @ Choice Band
 Level: 23
@@ -5450,7 +5449,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwrath
 Level: 30
@@ -5471,7 +5470,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Simipour @ Salac Berry
 Nature: Docile
@@ -5520,7 +5519,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lurantis
 Level: 30
@@ -5541,7 +5540,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Phantump
 Level: 30
@@ -5558,7 +5557,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Flapple
 Level: 31
@@ -5571,7 +5570,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bouffalant @ Silk Scarf
 Nature: Adamant
@@ -5600,7 +5599,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Cherrim @ Focus Sash
 Nature: Jolly
@@ -5630,7 +5629,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seaking
 Level: 35
@@ -5643,7 +5642,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shellder
 Level: 30
@@ -5664,7 +5663,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwag
 Level: 31
@@ -5681,7 +5680,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sceptile @ Watmel Berry
 Ability: Unburden
@@ -5723,7 +5722,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bulbasaur
 Level: 29
@@ -5740,7 +5739,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weepinbell
 Level: 33
@@ -5761,7 +5760,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwag
 Level: 27
@@ -5790,7 +5789,7 @@ Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu Alola @ Light Ball
 Level: 58
@@ -5843,7 +5842,7 @@ Pic: Swimmer F Frlg
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Grapploct @ Expert Belt
 Level: 58
@@ -5907,7 +5906,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 30
@@ -5928,7 +5927,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Kadabra
 Level: 31
@@ -5953,7 +5952,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Mr Mime
 Level: 34
@@ -5970,7 +5969,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Slowpoke
 Level: 33
@@ -5991,7 +5990,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Slowbro
 Level: 38
@@ -6004,7 +6003,7 @@ Pic: Rocker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Voltorb
 Level: 20
@@ -6025,7 +6024,7 @@ Pic: Rocker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -6077,7 +6076,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 
 Druddigon @ Rocky Helmet
@@ -6143,7 +6142,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Drowzee
 Level: 41
@@ -6168,7 +6167,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Golem @ Hard Stone
 Ability: Sturdy
@@ -6216,7 +6215,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Forretress @ Custap Berry
 Ability: Sturdy
@@ -6270,7 +6269,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Mr Mime
 Level: 48
@@ -6287,7 +6286,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Voltorb
 Level: 46
@@ -6328,7 +6327,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machamp @ Assault Vest
 Level: 50
@@ -6380,7 +6379,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Drowzee
 Level: 34
@@ -6397,7 +6396,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Luxray @ Flame Orb
 Ability: Guts
@@ -6448,7 +6447,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tauros @ Life Orb
 Ability: Sheer Force
@@ -6497,7 +6496,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rhyhorn
 Level: 43
@@ -6510,7 +6509,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Arbok
 Level: 39
@@ -6527,7 +6526,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Persian
 Level: 44
@@ -6544,7 +6543,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rhyhorn
 Level: 42
@@ -6569,7 +6568,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 
 Gliscor @ Toxic Orb
@@ -6619,7 +6618,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
 Dynamic Level Ratio: 90
 
@@ -6674,7 +6673,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Exeggutor @ Focus Sash
 Nature: Timid
@@ -6727,7 +6726,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Aggron @ Leftovers  
 Ability: Sturdy
@@ -6780,7 +6779,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Smeargle @ Focus Sash  
 Ability: Own Tempo
@@ -6833,7 +6832,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Togekiss @ Leftovers  
 Ability: Serene Grace  
@@ -6897,7 +6896,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dodrio
 Level: 28
@@ -6918,7 +6917,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -6969,7 +6968,7 @@ Pic: Dragon Tamer
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -7022,7 +7021,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 
 Dragapult @ Focus Sash
@@ -7072,7 +7071,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 30
@@ -7093,7 +7092,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 39
@@ -7118,7 +7117,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Farfetchd
 Level: 39
@@ -7135,7 +7134,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgey
 Level: 28
@@ -7156,7 +7155,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Muk @ Iapapa Berry  
 Ability: Regenerator 
@@ -7209,7 +7208,7 @@ Pic: Rocker Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dustox @ Focus Sash  
 Ability: Shield Dust  
@@ -7262,7 +7261,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Spearow
 Level: 28
@@ -7283,7 +7282,7 @@ Pic: Leader Chuck
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -7362,7 +7361,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sneasel-Hisui @ Payapa Berry
 Level: 31
@@ -7391,7 +7390,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hariyama @ Black Belt
 Level: 31
@@ -7420,7 +7419,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Unfezant (M) @ Scope Lens
 Level: 33
@@ -7449,7 +7448,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu-Libre @ Light Ball
 Level: 31
@@ -7479,7 +7478,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machop @ Black Belt
 Level: 40
@@ -7496,7 +7495,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke @ Black Belt
 Level: 43
@@ -7509,7 +7508,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke @ Black Belt
 Level: 38
@@ -7530,7 +7529,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke @ Black Belt
 Level: 43
@@ -7551,7 +7550,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Squirtle
 Level: 5
@@ -7566,7 +7565,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Bulbasaur
 Level: 5
@@ -7581,7 +7580,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Charmander
 Level: 5
@@ -7596,7 +7595,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -7615,7 +7614,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -7638,7 +7637,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -7657,7 +7656,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -7712,7 +7711,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -7768,7 +7767,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -7824,7 +7823,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 
 Slurpuff @ Focus Sash  
@@ -7878,7 +7877,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Muk @ Sitrus Berry  
 Ability: Sticky Hold  
@@ -7940,7 +7939,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Gastly @ Life Orb  
 Ability: Levitate  
@@ -7993,7 +7992,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Exeggutor-Alola @ Yache Berry  
 Ability: Harvest  
@@ -8046,7 +8045,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Electabuzz
 Level: 41
@@ -8059,7 +8058,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tentacruel
 Level: 39
@@ -8084,7 +8083,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ninetales-Alola @ Icy Rock
 Ability: Snow Warning
@@ -8125,7 +8124,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Klinklang @ Metal Coat
 Ability: Clear Body
@@ -8167,7 +8166,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Toxicroak @ Scope Lens
 Ability: Poison Touch
@@ -8209,7 +8208,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Slowking @ Sitrus Berry
 Ability: Regenerator
@@ -8262,7 +8261,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Relicanth @ Mental Herb
 Ability: Sturdy
@@ -8315,7 +8314,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Eiscue @ Ability Shield  
 Ability: Ice Face  
@@ -8379,7 +8378,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Orbeetle @ Mental Herb  
 Ability: Swarm  
@@ -8441,7 +8440,7 @@ Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 Items: Mega Ring
@@ -8519,7 +8518,7 @@ Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 Items: Mega Ring
@@ -8597,7 +8596,7 @@ Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Rhyhorn
 Level: 45
@@ -8646,7 +8645,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Yungoos @ Sitrus Berry
 Level: 15
@@ -8684,7 +8683,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sandile @ Soft Sand
 Level: 16
@@ -8723,7 +8722,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Zubat @ Scope Lens
 Level: 16
@@ -8762,7 +8761,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Stunky @ Muscle Band
 Level: 17
@@ -8791,7 +8790,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 80
 Boss: Yes
 
@@ -8846,7 +8845,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -8899,7 +8898,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -8955,7 +8954,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Purugly @ Loaded Dice
 Ability: Own Tempo  
@@ -8994,7 +8993,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Houndoom @ Chople Berry  
 Ability: Early Bird  
@@ -9033,7 +9032,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Wigglytuff @ Zoom Lens  
 Ability: Sheer Force  
@@ -9072,7 +9071,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Squawkabilly-Yellow @ Muscle Band  
 Ability: Sheer Force  
@@ -9121,7 +9120,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Thievul
 Level: 33
@@ -9138,7 +9137,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Gumshoos @ Red Card  
 Ability: Stakeout  
@@ -9177,7 +9176,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 
 Persian-Alola @ Sitrus Berry  
@@ -9227,7 +9226,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Golbat @ Poison Barb  
 Ability: Corrosion  
@@ -9275,7 +9274,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weezing-Galar @ Shuca Berry  
 Ability: Levitate  
@@ -9324,7 +9323,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Talonflame @ Wide Lens  
 Ability: Gale Wings  
@@ -9373,7 +9372,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Drednaw @ Loaded Dice  
 Ability: Shell Armor  
@@ -9412,7 +9411,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Stoutland @ Silk Scarf  
 Level: 39
@@ -9454,7 +9453,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow @ Adrenaline Orb  
 Level: 40
@@ -9513,7 +9512,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 
 Tauros @ Wise Glasses  
@@ -9573,7 +9572,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Drowzee
 Level: 26
@@ -9590,7 +9589,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Noivern  
 Ability: Infiltrator  
@@ -9640,7 +9639,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Crobat
 Level: 39
@@ -9669,7 +9668,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weepinbell (M) @ Salac Berry  
 Ability: Gluttony  
@@ -9722,7 +9721,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke
 Level: 40
@@ -9739,7 +9738,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Murkrow
 Level: 39
@@ -9761,7 +9760,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Spidops @ Focus Sash
 Ability: Insomnia
@@ -9824,7 +9823,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 
 Stoutland @ Sitrus Berry
@@ -9890,7 +9889,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Accelgor @ Petaya Berry
 Ability: Unburden
@@ -9942,7 +9941,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Grimmsnarl @ Black Glasses
 Ability: Prankster
@@ -9995,7 +9994,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sharpedo
 Level: 39
@@ -10020,7 +10019,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sneasel-Hisui @ Focus Sash
 Ability: Inner Focus
@@ -10062,7 +10061,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Crawdaunt @ Mystic Water
 Ability: Adaptability
@@ -10104,7 +10103,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Garbodor @ Normal Gem
 Ability: Weak Armor
@@ -10155,7 +10154,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Jellicent @ Leftovers
 Ability: Water Bubble
@@ -10197,7 +10196,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Banette @ Custap Berry
 Ability: Wandering Spirit
@@ -10250,7 +10249,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Electrode @ Magnet
 Ability: Galvanize
@@ -10303,7 +10302,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shiftry @ Focus Sash
 Ability: Wind Rider
@@ -10356,7 +10355,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Scyther @ Charti Berry
 Ability: Technician
@@ -10420,7 +10419,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hydreigon
 Level: 39
@@ -10441,7 +10440,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Sandslash
 Level: 37
@@ -10490,7 +10489,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Exeggutor
 Level: 42
@@ -10539,7 +10538,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Kingler
 Level: 41
@@ -10588,7 +10587,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Slowpoke
 Level: 42
@@ -10637,7 +10636,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Raticate
 Level: 42
@@ -10686,7 +10685,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 42
@@ -10735,7 +10734,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Nidorino
 Level: 42
@@ -10784,7 +10783,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Seel
 Level: 42
@@ -10833,7 +10832,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Sandslash
 Level: 38
@@ -10882,7 +10881,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Marowak
 Level: 37
@@ -10931,7 +10930,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Weavile @ Focus Sash
@@ -10985,7 +10984,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Bellsprout
 Level: 42
@@ -11034,7 +11033,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Clefairy
 Level: 42
@@ -11083,7 +11082,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Beedrill
 Level: 42
@@ -11132,7 +11131,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Persian
 Level: 42
@@ -11181,7 +11180,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Tangela
 Level: 42
@@ -11230,7 +11229,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Rhyhorn
 Level: 42
@@ -11279,7 +11278,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Persian
 Level: 42
@@ -11328,7 +11327,7 @@ Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Purple
 Boss: Yes
 
@@ -11379,7 +11378,7 @@ Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 
@@ -11430,7 +11429,7 @@ Pic: Elite Four Agatha Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Pink
 Boss: Yes
 
@@ -11481,7 +11480,7 @@ Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 
@@ -11532,7 +11531,7 @@ Pic: Leader Brock Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -11585,7 +11584,7 @@ Pic: Leader Misty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 
@@ -11641,7 +11640,7 @@ Items: Mega Ring
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -11708,7 +11707,7 @@ Items: Mega Ring
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 
@@ -11774,7 +11773,7 @@ Pic: Leader Koga Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Swellow @ Choice Specs
 Nature: Timid
@@ -11840,7 +11839,7 @@ Pic: Leader Blaine Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Armarouge @ Focus Sash
 Nature: Timid
@@ -11910,7 +11909,7 @@ Pic: Leader Sabrina Frlg
 Gender: Male
 Music: Female
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Difficulty: Normal
 Mugshot: Purple
 Boss: Yes
@@ -11989,7 +11988,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hydreigon @ Life Orb  
 Ability: Levitate  
@@ -12064,7 +12063,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dachsbun
 Level: 21
@@ -12081,7 +12080,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Noctowl @ Sitrus Berry
@@ -12120,7 +12119,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Persian
 Level: 48
@@ -12133,7 +12132,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Growlithe
 Level: 17
@@ -12150,7 +12149,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
@@ -12175,7 +12174,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
@@ -12200,7 +12199,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
@@ -12225,7 +12224,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Mugshot: Yellow 
 Boss: Yes
@@ -12291,7 +12290,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Mugshot: Yellow 
 Boss: Yes
@@ -12356,7 +12355,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Mugshot: Yellow 
 Boss: Yes
@@ -12420,7 +12419,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -12486,7 +12485,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -12552,7 +12551,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -12618,7 +12617,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pidgeot
 Level: 47
@@ -12675,7 +12674,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pidgeot
 Level: 47
@@ -12732,7 +12731,7 @@ Pic: Rival Late Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pidgeot
 Level: 47
@@ -12789,7 +12788,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -12848,7 +12847,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -12907,7 +12906,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -12966,7 +12965,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Zoroark @ Heavy-Duty Boots  
 Level: 35
@@ -13025,7 +13024,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Items: Mega Ring
 Boss: Yes
 
@@ -13056,7 +13055,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rotom @ Eviolite  
 Level: 35
@@ -13095,7 +13094,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rotom-Fan @ Jaboca Berry  
 Level: 35
@@ -13144,7 +13143,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Haunter
 Level: 33
@@ -13161,7 +13160,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Farigiraf @ Rowap Berry  
 Level: 35
@@ -13200,7 +13199,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Banette
 Level: 35
@@ -13213,7 +13212,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rotom-Frost @ Blunder Policy  
 Level: 36
@@ -13252,7 +13251,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rotom-Heat @ Ability Shield  
 Level: 36
@@ -13291,7 +13290,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Yamask
 Level: 35
@@ -13304,7 +13303,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rotom-Mow @ Ability Shield  
 Level: 36
@@ -13343,7 +13342,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rotom-Wash @ Ability Shield  
 Level: 36
@@ -13382,7 +13381,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Spiritomb
 Level: 35
@@ -13395,7 +13394,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Gastly
 Level: 34
@@ -13412,7 +13411,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Haunter
 Level: 38
@@ -13425,7 +13424,7 @@ Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Gastly
 Level: 33
@@ -13446,7 +13445,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Carbink
 Nature: Docile
@@ -13483,7 +13482,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tangrowth @ Assault Vest
 Nature: Timid
@@ -13533,7 +13532,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shiftry @ Life Orb
 Nature: Adamant
@@ -13582,7 +13581,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwag
 Level: 30
@@ -13599,7 +13598,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgey
 Level: 27
@@ -13624,7 +13623,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ninjask @ Mental Herb  
 Level: 50
@@ -13677,7 +13676,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Farfetchd Galar
 Level: 20
@@ -13706,7 +13705,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Goldeen
 Level: 31
@@ -13723,7 +13722,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Tentacool
 Level: 30
@@ -13744,7 +13743,7 @@ Pic: Picnicker Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu-Cosplay @ Eviolite  
 Ability: Lightning Rod  
@@ -13785,7 +13784,7 @@ Pic: Picnicker Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Corsola @ Leftovers  
 Ability: Regenerator  
@@ -13827,7 +13826,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Floette
 Level: 28
@@ -13844,7 +13843,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sandslash Alola @ Focus Sash
 Nature: Jolly
@@ -13873,7 +13872,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Vivillon @ Silver Powder
 Ability: Compound Eyes
@@ -13937,7 +13936,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lapras @ Bright Powder  
 Ability: Water Absorb  
@@ -13991,7 +13990,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Parasect @ Snowball
 Ability: Effect Spore
@@ -14033,7 +14032,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dudunsparce @ Metronome
 Ability: Rattled
@@ -14069,7 +14068,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -14122,7 +14121,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ponyta-Galar
 Level: 24
@@ -14139,7 +14138,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Swanna @ Focus Sash
 Level: 31
@@ -14168,7 +14167,7 @@ Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Nidoqueen
 Level: 45
@@ -14193,7 +14192,7 @@ Pic: Cool Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 Dynamic Level Ratio: 95
 Mugshot: Pink
@@ -14264,7 +14263,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Chatot @ Silk Scarf
 Ability: Frisk 
@@ -14295,7 +14294,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwrath @ Leftovers
 Ability: Water Absorb
@@ -14349,7 +14348,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rapidash
 Level: 29
@@ -14366,7 +14365,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Lumineon @ Mystic Water
 Level: 58
@@ -14441,7 +14440,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 33
@@ -14458,7 +14457,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raticate
 Level: 28
@@ -14475,7 +14474,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raticate
 Level: 48
@@ -14492,7 +14491,7 @@ Pic: Lady
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rowlet 
 Level: 10  
@@ -14529,7 +14528,7 @@ Pic: Jojo Fan
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 95
 Mugshot: Yellow
 
@@ -14595,7 +14594,7 @@ Pic: Silva
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Porygon-Z @ Up-Grade  
 Level: 55
@@ -14670,7 +14669,7 @@ Pic: Plaininsane
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 
 Samurott-Hisui @ Focus Sash
@@ -14746,7 +14745,7 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 
 Porygon-Z @ Up-Grade  
@@ -14822,7 +14821,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raticate
 Level: 52
@@ -14843,7 +14842,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Volbeat
 Level: 19
@@ -14860,7 +14859,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 20
@@ -14877,7 +14876,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 28
@@ -14894,7 +14893,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Arbok
 Level: 48
@@ -14911,7 +14910,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke
 Level: 25
@@ -14928,7 +14927,7 @@ Pic: Professor Oak Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ekans
 Level: 5
@@ -14941,7 +14940,7 @@ Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Houndour
 Level: 49
@@ -14958,7 +14957,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Natu
 Level: 48
@@ -14991,7 +14990,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Mankey @ Black Belt
 Level: 37
@@ -15008,7 +15007,7 @@ Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwag
 Level: 34
@@ -15029,7 +15028,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu
 Level: 48
@@ -15050,7 +15049,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Weepinbell
 Level: 51
@@ -15075,7 +15074,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Gloom
 Level: 51
@@ -15100,7 +15099,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bellsprout
 Level: 37
@@ -15117,7 +15116,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Graveler
 Level: 48
@@ -15138,7 +15137,7 @@ Pic: Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hoppip @ Stardust
 Level: 48
@@ -15155,7 +15154,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Smeargle
 Level: 50
@@ -15172,7 +15171,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Koffing
 Level: 37
@@ -15197,7 +15196,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Koffing
 Level: 38
@@ -15214,7 +15213,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Grimer
 Level: 38
@@ -15227,7 +15226,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Kricketune
 Ability: Technician
@@ -15250,7 +15249,7 @@ Pic: Lass Frlg
 Gender: Female
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Stufful @ Oran Berry
 Ability: Fluffy
@@ -15278,7 +15277,7 @@ Pic: School Kid M
 Gender: Male
 Music: Twins
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Boss: Yes
 Mugshot: Blue
 Dynamic Level Ratio: 90
@@ -15352,7 +15351,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ekans
 Level: 33
@@ -15373,7 +15372,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Arcanine @ Absorb Bulb
 Nature: Docile
@@ -15402,7 +15401,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Muk-Alola
 Level: 31
@@ -15419,7 +15418,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Cubone
 Level: 37
@@ -15436,7 +15435,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rattata
 Level: 35
@@ -15461,7 +15460,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Zubat
 Level: 38
@@ -15482,7 +15481,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Muk
 Level: 48
@@ -15503,7 +15502,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machop
 Level: 48
@@ -15524,7 +15523,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hypno
 Level: 49
@@ -15541,7 +15540,7 @@ Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Muk
 Level: 52
@@ -15574,7 +15573,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Golbat
 Level: 53
@@ -15607,7 +15606,7 @@ Pic: Scientist Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Voltorb
 Level: 46
@@ -15656,7 +15655,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seel
 Level: 36
@@ -15677,7 +15676,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 37
@@ -15694,7 +15693,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Psyduck
 Level: 35
@@ -15715,7 +15714,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Starmie
 Level: 38
@@ -15728,7 +15727,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Shellder
 Level: 35
@@ -15749,7 +15748,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Goldeen
 Level: 33
@@ -15778,7 +15777,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hitmonlee @ Black Belt
 Level: 38
@@ -15795,7 +15794,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machop @ Black Belt
 Level: 38
@@ -15812,7 +15811,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machop @ Black Belt
 Level: 37
@@ -15829,7 +15828,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Nidorino
 Level: 36
@@ -15850,7 +15849,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Meowth
 Level: 35
@@ -15875,7 +15874,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke @ Black Belt
 Level: 39
@@ -15892,7 +15891,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bulbasaur
 Level: 36
@@ -15913,7 +15912,7 @@ Pic: Tuber F Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Staryu
 Level: 34
@@ -15938,7 +15937,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Clefairy
 Level: 37
@@ -15955,7 +15954,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Kingler
 Level: 38
@@ -15968,7 +15967,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Smeargle
 Level: 50
@@ -15985,7 +15984,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Smeargle
 Level: 50
@@ -16002,7 +16001,7 @@ Pic: Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Mareep @ Stardust
 Level: 47
@@ -16023,7 +16022,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raticate
 Level: 48
@@ -16040,7 +16039,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwhirl
 Level: 48
@@ -16061,7 +16060,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rattata
 Level: 48
@@ -16082,7 +16081,7 @@ Pic: Rocket Grunt M Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Koffing
 Level: 49
@@ -16107,7 +16106,7 @@ Pic: Rocket Grunt F Frlg
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Ekans
 Level: 48
@@ -16128,7 +16127,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgey
 Level: 47
@@ -16145,7 +16144,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Spearow
 Level: 47
@@ -16162,7 +16161,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hoothoot
 Level: 47
@@ -16179,7 +16178,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Qwilfish
 Level: 49
@@ -16196,7 +16195,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Kingler
 Level: 49
@@ -16213,7 +16212,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Marill
 Level: 50
@@ -16226,7 +16225,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwhirl
 Level: 50
@@ -16243,7 +16242,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sunkern
 Level: 49
@@ -16260,7 +16259,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Gyarados
 Level: 50
@@ -16273,7 +16272,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Chinchou
 Level: 49
@@ -16290,7 +16289,7 @@ Pic: Twins Frlg
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu
 Level: 50
@@ -16307,7 +16306,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Onix
 Level: 49
@@ -16324,7 +16323,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Golem
 Level: 50
@@ -16337,7 +16336,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke
 Level: 49
@@ -16354,7 +16353,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sudowoodo
 Level: 50
@@ -16367,7 +16366,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rhyhorn
 Level: 49
@@ -16384,7 +16383,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Girafarig
 Level: 52
@@ -16401,7 +16400,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Natu
 Level: 48
@@ -16434,7 +16433,7 @@ Pic: Aroma Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Bellossom
 Level: 50
@@ -16451,7 +16450,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Golduck
 Level: 50
@@ -16468,7 +16467,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Voltorb
 Level: 47
@@ -16509,7 +16508,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Primeape @ Black Belt
 Level: 48
@@ -16530,7 +16529,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hitmonchan @ Black Belt
 Level: 38
@@ -16547,7 +16546,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sandslash
 Level: 48
@@ -16568,7 +16567,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rhyhorn
 Level: 33
@@ -16585,7 +16584,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Exeggcute
 Level: 37
@@ -16610,7 +16609,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Tangela
 Level: 49
@@ -16643,7 +16642,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Bellsprout
 Level: 38
@@ -16664,7 +16663,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Chansey
 Level: 52
@@ -16681,7 +16680,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Rhydon
 Level: 47
@@ -16730,7 +16729,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Persian
 Level: 47
@@ -16779,7 +16778,7 @@ Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Miltank
 Level: 52
@@ -16804,7 +16803,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Onix
 Level: 50
@@ -16817,7 +16816,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Geodude
 Level: 48
@@ -16850,7 +16849,7 @@ Pic: Painter Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Smeargle
 Level: 50
@@ -16867,7 +16866,7 @@ Pic: Gentleman Frlg
 Gender: Male
 Music: Rich
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Marowak
 Level: 49
@@ -16884,7 +16883,7 @@ Pic: Lady Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Persian @ Nugget
 Level: 49
@@ -16909,7 +16908,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Onix
 Level: 47
@@ -16930,7 +16929,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Natu
 Level: 48
@@ -16951,7 +16950,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Chansey
 Level: 50
@@ -16964,7 +16963,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Clefairy
 Level: 48
@@ -16985,7 +16984,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Heracross
 Level: 49
@@ -16998,7 +16997,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Yanma
 Level: 45
@@ -17023,7 +17022,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Venonat
 Level: 48
@@ -17040,7 +17039,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weepinbell
 Level: 47
@@ -17061,7 +17060,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Farfetchd
 Level: 48
@@ -17078,7 +17077,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hoppip
 Level: 46
@@ -17103,7 +17102,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Snubbull
 Level: 49
@@ -17116,7 +17115,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pinsir
 Level: 49
@@ -17133,7 +17132,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Paras
 Level: 48
@@ -17154,7 +17153,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sandslash
 Level: 48
@@ -17175,7 +17174,7 @@ Pic: Archer
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 
@@ -17218,7 +17217,7 @@ Pic: Archer
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Gothitelle @ Colbur Berry
@@ -17261,7 +17260,7 @@ Pic: Ariana
 Gender: Female
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Incineroar @ Sitrus Berry
@@ -17304,7 +17303,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Squirtle
 Level: 22
@@ -17317,7 +17316,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Wartortle
 Level: 30
@@ -17330,7 +17329,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Wartortle
 Level: 55
@@ -17343,7 +17342,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Spearow
 Level: 21
@@ -17360,7 +17359,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 29
@@ -17377,7 +17376,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 54
@@ -17394,7 +17393,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -17466,26 +17465,84 @@ EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Swords Dance
 
 
-=== TRAINER_PICNICKER_ISABELLE_3 ===
-Name: Isabelle
-Class: Picnicker Frlg
-Pic: Picnicker Frlg
+=== TRAINER_MAY_CINNABAR ===
+Name: May
+Class: Pkmn Trainer 1
+Pic: May
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Pink
+Boss: Yes
+Dynamic Level Ratio: 90
 
-Pidgeotto
-Level: 29
+Solrock @ Focus Sash
+Nature: Adamant
+Ability: Sturdy
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Stealth Rock
+- Photon Geyser
+- Explosion
+- Earthquake
 
-Pidgeotto
-Level: 29
+Breloom @ Toxic Orb
+Nature: Jolly
+Ability: Poison Heal
+Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Spore
+- Substitute
+- Focus Punch
+- Rock Slide
 
-Pidgeotto
-Level: 26
+Manectric @ Choice Specs
+Nature: Timid
+Ability: Intimidate
+Level: 56
+IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+- Thunderbolt
+- Volt Switch
+- Overheat
+- Explosion
+
+Relicanth @ Choice Band
+Nature: Adamant
+Ability: Rock Head
+Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def / 0 SpA / 0 SpD / 0 Spe
+- Head Smash
+- Wave Crash
+- Earthquake
+- Flip Turn
+
+Flygon @ Life Orb
+Nature: Hasty
+Ability: Tinted Lens
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 128 Atk / 4 Def / 128 SpA / 0 SpD / 252 Spe
+- Earthquake
+- Draco Meteor
+- Fire Blast
+- U-Turn
+
+Blaziken @ Blazikenite
+Nature: Jolly
+Ability: Speed Boost
+Level: 57
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Swords Dance
+- Flare Blitz
+- Close Combat
+- Thunder Punch
+
 
 === TRAINER_PICNICKER_ISABELLE_4 ===
 Name: Isabelle
@@ -17494,7 +17551,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 47
@@ -17515,7 +17572,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Gumshoos
 Level: 24
@@ -17536,7 +17593,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raticate
 Level: 47
@@ -17557,7 +17614,7 @@ Pic: Engineer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Magneton
 Level: 28
@@ -17578,7 +17635,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Growlithe
 Level: 29
@@ -17595,7 +17652,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Growlithe
 Level: 24
@@ -17612,7 +17669,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Growlithe
 Level: 29
@@ -17629,7 +17686,7 @@ Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Arcanine
 Level: 54
@@ -17646,7 +17703,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Meowth
 Level: 25
@@ -17659,7 +17716,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Persian
 Level: 30
@@ -17672,7 +17729,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Persian
 Level: 55
@@ -17685,7 +17742,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke
 Level: 30
@@ -17702,7 +17759,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rhydon
 Level: 54
@@ -17719,7 +17776,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Marowak
 Level: 29
@@ -17736,7 +17793,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Marowak
 Level: 54
@@ -17753,7 +17810,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Onix
 Level: 31
@@ -17770,7 +17827,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 22
@@ -17799,7 +17856,7 @@ Pic: Lass Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeot
 Level: 46
@@ -17828,7 +17885,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Muk
 Level: 28
@@ -17849,7 +17906,7 @@ Pic: Gamer Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Growlithe
 Level: 30
@@ -17866,7 +17923,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Muk
 Level: 28
@@ -17883,7 +17940,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwhirl
 Level: 28
@@ -17908,7 +17965,7 @@ Pic: Rocker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Electrode
 Level: 33
@@ -17925,7 +17982,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Clefairy
 Level: 49
@@ -17942,7 +17999,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 28
@@ -17967,7 +18024,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeot
 Level: 47
@@ -17992,7 +18049,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 27
@@ -18021,7 +18078,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 47
@@ -18050,7 +18107,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeot
 Level: 52
@@ -18079,7 +18136,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Koffing
 Level: 47
@@ -18104,7 +18161,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 32
@@ -18121,7 +18178,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 49
@@ -18138,7 +18195,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 30
@@ -18159,7 +18216,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 48
@@ -18180,7 +18237,7 @@ Pic: Beauty Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeot
 Level: 49
@@ -18197,7 +18254,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dodrio
 Level: 30
@@ -18218,7 +18275,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Dodrio
 Level: 48
@@ -18239,7 +18296,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu
 Level: 32
@@ -18256,7 +18313,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu
 Level: 49
@@ -18273,7 +18330,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raichu
 Level: 54
@@ -18290,7 +18347,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hitmonchan @ Black Belt
 Level: 33
@@ -18307,7 +18364,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hitmonchan @ Black Belt
 Level: 51
@@ -18324,7 +18381,7 @@ Pic: Crush Kin Frlg
 Gender: Male
 Music: Intense
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hitmonchan @ Black Belt
 Level: 56
@@ -18341,7 +18398,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Accelgor @ Life Orb
 Nature: Timid
@@ -18391,7 +18448,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Primeape
 Level: 49
@@ -18408,7 +18465,7 @@ Pic: Biker Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weezing
 Level: 49
@@ -18425,7 +18482,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke
 Level: 49
@@ -18442,7 +18499,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Primeape
 Level: 49
@@ -18459,7 +18516,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 28
@@ -18484,7 +18541,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 47
@@ -18509,7 +18566,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seaking
 Level: 49
@@ -18526,7 +18583,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 52
@@ -18551,7 +18608,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seaking
 Level: 49
@@ -18568,7 +18625,7 @@ Pic: Picnicker Frlg
 Gender: Male
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seaking
 Level: 54
@@ -18585,7 +18642,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Magikarp
 Level: 47
@@ -18618,7 +18675,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Starmie
 Level: 50
@@ -18631,7 +18688,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 50
@@ -18648,7 +18705,7 @@ Pic: Sis And Bro Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 55
@@ -18665,7 +18722,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Starmie
 Level: 50
@@ -18678,7 +18735,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Mankey @ Black Belt
 Level: 50
@@ -18695,7 +18752,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Primeape @ Black Belt
 Level: 55
@@ -18712,7 +18769,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hitmonlee @ Black Belt
 Level: 50
@@ -18729,7 +18786,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Hitmonlee @ Black Belt
 Level: 55
@@ -18746,7 +18803,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke @ Black Belt
 Level: 50
@@ -18763,7 +18820,7 @@ Pic: Black Belt Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke @ Black Belt
 Level: 55
@@ -18780,14 +18837,14 @@ Pic: Leader Falkner
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 
 Rufflet @ Berry Juice
 Nature: Bashful
 Ability: Hustle
-Level: 12
+Level: 11
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Aerial Ace
@@ -18824,7 +18881,7 @@ Pic: Leader Bugsy
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -18880,7 +18937,7 @@ Pic: Leader Bugsy
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -18958,7 +19015,7 @@ Pic: Leader Whitney
 Gender: Female
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Pink
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -19036,7 +19093,7 @@ Pic: Leader Jasmine
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Purple
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -19113,7 +19170,7 @@ Pic: Leader Pryce
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -19185,7 +19242,7 @@ Pic: Leader Morty
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Purple
 Boss: Yes
 Dynamic Level Ratio: 90
@@ -19262,7 +19319,7 @@ Pic: Youngster Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Raticate
 Level: 53
@@ -19279,7 +19336,7 @@ Pic: Pokemon Breeder Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu
 Level: 53
@@ -19300,7 +19357,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Nidorina
 Level: 30
@@ -19317,7 +19374,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Nidoking
 Level: 55
@@ -19334,7 +19391,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pidgeotto
 Level: 53
@@ -19351,7 +19408,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Fearow
 Level: 53
@@ -19368,7 +19425,7 @@ Pic: Pokefan F
 Gender: Female
 Music: Twins
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -19399,7 +19456,7 @@ Pic: Pokefan M
 Gender: Male
 Music: Twins
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 Boss: Yes
 
@@ -19430,7 +19487,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Natu
 Level: 52
@@ -19463,7 +19520,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Gyarados
 Level: 55
@@ -19476,7 +19533,7 @@ Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Onix
 Level: 54
@@ -19493,7 +19550,7 @@ Pic: Ruin Maniac Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Machoke
 Level: 54
@@ -19510,7 +19567,7 @@ Pic: Pokemaniac Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Rhydon
 Level: 55
@@ -19527,7 +19584,7 @@ Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Girafarig
 Level: 56
@@ -19544,7 +19601,7 @@ Pic: Psychic F Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Natu
 Level: 53
@@ -19577,7 +19634,7 @@ Pic: Juggler Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Electrode
 Level: 52
@@ -19602,7 +19659,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Victreebel
 Level: 55
@@ -19627,7 +19684,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Vileplume
 Level: 55
@@ -19652,7 +19709,7 @@ Pic: Crush Girl Frlg
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Primeape @ Black Belt
 Level: 54
@@ -19673,7 +19730,7 @@ Pic: Tamer Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sandslash
 Level: 52
@@ -19694,7 +19751,7 @@ Pic: Pokemon Ranger M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Tangela
 Level: 53
@@ -19727,7 +19784,7 @@ Pic: Pokemon Ranger F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Chansey
 Level: 56
@@ -19744,7 +19801,7 @@ Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Rhydon
 Level: 52
@@ -19793,7 +19850,7 @@ Pic: Cooltrainer F Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Persian
 Level: 53
@@ -19842,7 +19899,7 @@ Pic: Cool Couple Frlg
 Gender: Male
 Music: Cool
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Miltank
 Level: 57
@@ -19867,7 +19924,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Metapod
 Level: 19
@@ -19888,7 +19945,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Butterfree
 Level: 27
@@ -19909,7 +19966,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Butterfree
 Level: 51
@@ -19930,7 +19987,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwhirl
 Level: 49
@@ -19947,7 +20004,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seadra
 Level: 49
@@ -19964,7 +20021,7 @@ Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Poliwhirl
 Level: 49
@@ -19981,7 +20038,7 @@ Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Purple
 Boss: Yes
 
@@ -20032,7 +20089,7 @@ Pic: Elite Four Bruno Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 
@@ -20083,7 +20140,7 @@ Pic: Elite Four Agatha Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Pink
 Boss: Yes
 
@@ -20134,7 +20191,7 @@ Pic: Elite Four Lance Frlg
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 
@@ -20185,7 +20242,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -20244,7 +20301,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -20303,7 +20360,7 @@ Pic: Champion Rival Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 
@@ -20362,7 +20419,7 @@ Pic: Cue Ball Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weezing
 Level: 39
@@ -20379,7 +20436,7 @@ Pic: Swimmer M Frlg
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Tentacool
 Level: 25
@@ -20396,7 +20453,7 @@ Pic: Swimmer F Frlg
 Gender: Female
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Goldeen
 Level: 24
@@ -20417,7 +20474,7 @@ Pic: Sailor Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Pelipper 
 Ability: Drizzle
@@ -20445,7 +20502,7 @@ Pic: School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Kirlia
@@ -20484,7 +20541,7 @@ Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Azumarill @ Leftovers
 Ability: Sap Sipper
@@ -20523,7 +20580,7 @@ Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Oricorio Baile
 Level: 24
@@ -20536,7 +20593,7 @@ Pic: Tuber F
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Marill
 Level: 24
@@ -20549,7 +20606,7 @@ Pic: Fisherman Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Wailmer
 Level: 25
@@ -20566,7 +20623,7 @@ Pic: Young Couple Frlg
 Gender: Male
 Music: Girl
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Dustox
 Level: 27
@@ -20591,7 +20648,7 @@ Pic: School Kid M
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Magcargo @ Air Balloon
@@ -20628,7 +20685,7 @@ Pic: Tuber F Frlg
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Swanna
 Ability: Hydration
@@ -20657,7 +20714,7 @@ Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
 Skarmory
 Level: 25
@@ -20675,7 +20732,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 
@@ -20704,7 +20761,7 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 
@@ -20734,7 +20791,7 @@ Pic: School Kid F
 Gender: Female
 Music: Girl
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Boss: Yes
 
 Lopunny @ Silk Scarf
@@ -20772,7 +20829,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Difficulty: Hard
 Mugshot: Yellow
 Boss: Yes
@@ -20813,7 +20870,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Difficulty: Hard
 Mugshot: Yellow
 Boss: Yes
@@ -20854,7 +20911,7 @@ Pic: Rival Early Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Difficulty: Hard
 Mugshot: Yellow
 Boss: Yes
@@ -20896,7 +20953,7 @@ Pic: Brendan
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Green
 Boss: Yes
 Difficulty: Hard
@@ -20949,7 +21006,7 @@ Pic: Bug Catcher Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Difficulty: Hard
 Boss: Yes
 
@@ -20991,7 +21048,7 @@ Pic: Leader Falkner
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Blue
 Boss: Yes
 Difficulty: Hard
@@ -21053,7 +21110,7 @@ Pic: Leader Brock Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Yellow
 Boss: Yes
 Difficulty: Hard
@@ -21123,7 +21180,7 @@ Pic: Super Nerd Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Difficulty: Hard
 Boss: Yes
 
@@ -21181,7 +21238,7 @@ Pic: Archer
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Difficulty: Hard
 Mugshot: Blue
 Boss: Yes
@@ -21238,7 +21295,7 @@ Pic: Twins
 Gender: Male
 Music: Twins
 Double Battle: Yes
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Plusle 
 Ability: Lightning Rod
@@ -21285,7 +21342,7 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Octillery
 Ability: Skill Link
@@ -21324,7 +21381,7 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Taillow @ Berry Juice
 Ability: Scrappy
@@ -21354,7 +21411,7 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Stufful @ Red Card
 Ability: Fluffy
@@ -21383,7 +21440,7 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Seel
 Level: 21
@@ -21400,7 +21457,7 @@ Pic: Swimmer F
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Sealeo
 Level: 21

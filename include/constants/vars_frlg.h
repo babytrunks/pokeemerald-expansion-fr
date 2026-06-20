@@ -216,7 +216,7 @@
 #define VAR_ROCK_TUNNEL_EXTRA_STRENGTH_1               0x40C9
 #define VAR_ROCK_TUNNEL_EXTRA_STRENGTH_2               0x40CA
 #define VAR_ROCK_TUNNEL_EXTRA_STRENGTH_3               0x40CB
-#define VAR_0x40CC                 0x40CC
+#define VAR_TRIGGER_MAY_FUSCHIA                        0x40CC
 #define VAR_0x40CD                 0x40CD
 #define VAR_0x40CE                 0x40CE
 #define VAR_FRONTIER_FACILITY      0x40CF

@@ -515,7 +515,7 @@
 #define TRAINER_CAMPER_JEFF_3                      509
 #define TRAINER_CAMPER_JEFF_4                      510
 #define TRAINER_BRENDAN_FUSCHIA               511 // unused 
-#define TRAINER_PICNICKER_ISABELLE_3               512 // unused
+#define TRAINER_MAY_CINNABAR               512 // unused
 #define TRAINER_PICNICKER_ISABELLE_4               513 // unused 
 #define TRAINER_YOUNGSTER_YASU_2                   514 // unused
 #define TRAINER_YOUNGSTER_YASU_3                   515 // unused

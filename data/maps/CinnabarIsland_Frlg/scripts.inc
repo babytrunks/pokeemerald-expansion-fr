@@ -351,6 +351,54 @@ CinnabarIsland_EventScript_GymSign::
 	releaseall
 	end
 
+EventScript_Cinnabar_May_Start::
+	playse SE_EXIT
+    addobject LOCALID_CINNABAR_MAY
+	waitse
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_Cinnabar_May_Lookup
+    waitmovement 0
+    applymovement LOCALID_CINNABAR_MAY, Movement_Cinnabar_May_Movedown
+    waitmovement 0
+    msgbox gText_Cinnabar_May_1
+    msgbox gText_Cinnabar_May_2
+	playse SE_PIN
+	applymovement LOCALID_CINNABAR_MAY, Common_Movement_ExclamationMark
+	waitmovement 0
+    playbgm MUS_ENCOUNTER_MAY, FALSE
+	msgbox gText_Cinnabar_May_3
+    trainerbattle_no_intro TRAINER_MAY_CINNABAR, gText_Cinnabar_May_Defeat  
+    msgbox gText_Cinnabar_May_4, MSGBOX_DEFAULT
+    giveitem ITEM_BLAZIKENITE  
+	msgbox gText_Cinnabar_May_5, MSGBOX_DEFAULT
+	closemessage
+    setvar VAR_TRIGGER_MAY_FUSCHIA, 1 
+    applymovement 0x11, Movement_Cinnabar_May_Movedown2
+    waitmovement 0
+	removeobject LOCALID_CINNABAR_MAY
+    release
+    end
+
+
+Movement_Cinnabar_May_Movedown:
+    walk_down  
+    step_end
+
+Movement_Cinnabar_May_Lookup:
+    walk_down
+    face_up
+    step_end
+
+Movement_Cinnabar_May_Movedown2:
+	walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    step_end
+
 CinnabarIsland_Text_DoorIsLocked::
     .string "The door is locked…$"
 
@@ -426,3 +474,36 @@ CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain::
     .string "VERMILION PORT.\p"
     .string "All right, thanks for your company!$"
 
+gText_Cinnabar_May_1:
+    .string "Sorry, excuse me…$"
+
+gText_Cinnabar_May_2:
+    .string "Wait, all those gym badges…$"
+
+gText_Cinnabar_May_3::
+	.string "I knew it, you're {PLAYER}!\p"
+	.string "Brendan speaks of you foten.\n"
+	.string "You seem to be a big motivator\l"
+	.string "for him.\p"
+	.string "Oh right! I'm May."
+	.string "I know Brendan from Hoenn.\p"
+	.string "Well, I could use a warm-up before I\n"
+	.string "face Blaine.\p"
+	.string "I may as well see how skilled you\n"
+	.string "are myself!$"
+
+
+gText_Cinnabar_May_Defeat:
+    .string "No way!\n"
+	.string "You have such battle mastery!$"
+
+gText_Cinnabar_May_4:
+    .string "Impressive, I think I got a taste\n"
+    .string "of what's been driving Brendan forward\l"
+    .string "lately.\p"
+	.string "I don't know if we'll bump into each\n"
+	.string "other again, so please, have this.\p"
+
+gText_Cinnabar_May_5:
+    .string "Hope to see you around Hoenn\n"
+	.string "sometime!$"

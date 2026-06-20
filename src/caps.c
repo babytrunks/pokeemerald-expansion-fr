@@ -44,7 +44,7 @@ u32 GetCurrentLevelCap(void)
     if (capIndex >= LEVEL_CAP_COUNT) 
         return MAX_LEVEL;
     else if (FlagGet(FLAG_EASY_MODE))
-        return MathMax(sLevelCapFlagMap[capIndex][1] + 2, MAX_LEVEL);
+        return MathMin(sLevelCapFlagMap[capIndex][1] + 2, MAX_LEVEL);
     else
         return sLevelCapFlagMap[capIndex][1];
 
