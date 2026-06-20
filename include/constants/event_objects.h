@@ -723,6 +723,7 @@
 #define OBJ_EVENT_PAL_TAG_SILVA                   0x118B
 #define OBJ_EVENT_PAL_TAG_JOJO_FAN                0x118C
 #define OBJ_EVENT_PAL_TAG_DRAGON_TAMER            0x118D
+#define OBJ_EVENT_PAL_TAG_SNORLAX                 0x118E 
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

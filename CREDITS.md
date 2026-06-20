@@ -130,11 +130,13 @@ The Radiant Quartz/Prismatic Platinum team for their support
 
 Pokemon HNS:
 
-Johto Gym Leader OW sprites, Kris sprites
+Cesare CBass (Johto Gym Leader OW sprites, Kris sprites)
 
 Hyo: Alt Red, Gold Sprites
 
 kwenio: Green OW, Trainer sprites
+
+mid117 - Commissioned Jojo, Silva, PlainInsane sprites
 
 ## Other Credits
 

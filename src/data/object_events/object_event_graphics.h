@@ -780,4 +780,6 @@ const u16 gObjectEventPal_JojoFan[] = INCBIN_U16("graphics/object_events/palette
 
 const u32 gObjectEventPic_DragonTamer[] = INCBIN_U32("graphics/object_events/pics/people/dragon_tamer.4bpp");
 const u16 gObjectEventPal_DragonTamer[] = INCBIN_U16("graphics/object_events/palettes/dragon_tamer.gbapal");
+
+const u16 gObjectEventPal_Snorlax[] = INCBIN_U16("graphics/object_events/palettes/snorlax.gbapal");
 #endif // IS_FRLG

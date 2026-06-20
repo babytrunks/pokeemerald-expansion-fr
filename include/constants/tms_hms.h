@@ -83,7 +83,8 @@
     F(SHADOW_CLAW) \
     F(SCALD) \
     F(SUPERPOWER) \
-    F(AURA_SPHERE) 
+    F(AURA_SPHERE) \
+    F(TRIPLE_AXEL)
     
 #define FOREACH_HM(F) \
     F(CUT) \

@@ -618,6 +618,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Silva,               OBJ_EVENT_PAL_TAG_SILVA},
     {gObjectEventPal_JojoFan,             OBJ_EVENT_PAL_TAG_JOJO_FAN},
     {gObjectEventPal_DragonTamer,         OBJ_EVENT_PAL_TAG_DRAGON_TAMER},
+    {gObjectEventPal_Snorlax,         OBJ_EVENT_PAL_TAG_SNORLAX},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
@@ -2356,6 +2357,36 @@ u16 GetOverworldWeatherSpecies(u16 species)
     return species;
 }
 
+#if OW_FOLLOWER_MEGA_FORMS && OW_BATTLE_ONLY_FORMS
+// Resolve a follower's battle-only Mega form from its held Mega Stone (or known
+// Mega trigger move, e.g. Rayquaza's Dragon Ascent). Mirrors the trigger checks in
+// GetBattleFormChangeTargetSpecies. Returns the unchanged species if no Mega applies.
+static u16 GetFollowerMegaSpecies(struct Pokemon *mon, u16 species)
+{
+    u32 i;
+    const struct FormChange *formChanges = GetSpeciesFormChanges(species);
+    u16 heldItem = GetMonData(mon, MON_DATA_HELD_ITEM);
+
+    for (i = 0; formChanges != NULL && formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
+    {
+        if (species == formChanges[i].targetSpecies)
+            continue;
+        switch (formChanges[i].method)
+        {
+        case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM:
+            if (heldItem == formChanges[i].param1)
+                return formChanges[i].targetSpecies;
+            break;
+        case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE: // Rayquaza / Dragon Ascent
+            if (MonKnowsMove(mon, formChanges[i].param1))
+                return formChanges[i].targetSpecies;
+            break;
+        }
+    }
+    return species;
+}
+#endif
+
 static bool8 GetMonInfo(struct Pokemon *mon, u32 *species, bool32 *shiny, bool32 *female)
 {
     if (!mon)
@@ -2375,6 +2406,9 @@ static bool8 GetMonInfo(struct Pokemon *mon, u32 *species, bool32 *shiny, bool32
         break;
     default:
         *species = GetOverworldWeatherSpecies(*species);
+#if OW_FOLLOWER_MEGA_FORMS && OW_BATTLE_ONLY_FORMS
+        *species = GetFollowerMegaSpecies(mon, *species);
+#endif
         break;
     }
     return TRUE;

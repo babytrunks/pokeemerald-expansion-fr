@@ -11958,7 +11958,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_TAUNT] = 
+    [ITEM_TM_TAUNT] = // Rocket Game Corner
     {
         .name = ITEM_NAME("TM12"),
         .price = 3000,
