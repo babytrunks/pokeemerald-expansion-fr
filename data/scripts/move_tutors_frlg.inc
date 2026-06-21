@@ -123,7 +123,7 @@ EventScript_DreamEaterTutor::
 	lock
 	faceplayer
 .if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_DREAM_EATER, EventScript_DreamEaterTaught
+	goto_if_set FLAG_HIDE_VIRIDIAN_CITY_TM_ICE_SPINNER, EventScript_DreamEaterTaught
 .endif
 	msgbox Text_DreamEaterTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DreamEaterDeclined
@@ -134,7 +134,7 @@ EventScript_DreamEaterTutor::
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DreamEaterDeclined
 .if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_DREAM_EATER
+	setflag FLAG_HIDE_VIRIDIAN_CITY_TM_ICE_SPINNER
 .endif
 	goto EventScript_DreamEaterTaught
 	end

@@ -343,16 +343,14 @@ static const u8 sTextColor_DarkGray[] = { 0, 2, 3, 0 };
 enum
 {
     PIKACHU_INTRO_PAGE_1,
-    PIKACHU_INTRO_PAGE_2,
-    PIKACHU_INTRO_PAGE_3,
     NUM_PIKACHU_INTRO_PAGES,
 };
 
 static const u8 *const sPikachuIntro_Strings[NUM_PIKACHU_INTRO_PAGES] =
 {
     [PIKACHU_INTRO_PAGE_1] = gPikachuIntro_Text_Page1,
-    [PIKACHU_INTRO_PAGE_2] = gPikachuIntro_Text_Page2,
-    [PIKACHU_INTRO_PAGE_3] = gPikachuIntro_Text_Page3
+    // [PIKACHU_INTRO_PAGE_2] = gPikachuIntro_Text_Page2,
+    // [PIKACHU_INTRO_PAGE_3] = gPikachuIntro_Text_Page3
 };
 
 #define GFX_TAG_PLATFORM     0x1000

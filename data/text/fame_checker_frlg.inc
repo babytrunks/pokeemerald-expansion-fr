@@ -861,7 +861,7 @@ gFameCheckerFlavorTextOriginLocation_Misty2::
 	.string "CERULEAN GYM$"
 
 gFameCheckerFlavorTextOriginLocation_Misty3::
-	.string "SEAFOAM ISLANDS$"
+	.string "Seafoam Islands$"
 
 gFameCheckerFlavorTextOriginLocation_Misty4::
 	.string "CERULEAN CAPE$"
@@ -921,7 +921,7 @@ gFameCheckerFlavorTextOriginLocation_Koga4::
 	.string "Fuchsia City$"
 
 gFameCheckerFlavorTextOriginLocation_Koga5::
-	.string "SAFARI ZONE$"
+	.string "Safari Zone$"
 
 gFameCheckerFlavorTextOriginLocation_Sabrina0::
 	.string "Saffron City$"

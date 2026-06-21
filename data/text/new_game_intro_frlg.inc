@@ -159,14 +159,14 @@ gOakSpeech_Text_AskPlayerGender::
     .string "Or are you a girl?$"
 
 gPikachuIntro_Text_Page1::
-    .string "In the world which you are about to\n"
-    .string "enter, you will embark on a grand\n"
-    .string "adventure with you as the hero.\n"
-    .string "\n"
-    .string "Speak to people and check things\n"
-    .string "wherever you go, be it towns, roads,\n"
-    .string "or caves. Gather information and\n"
-    .string "hints from every source.$"
+    .string "This is a ROM Hack made by soupercell.\n"
+    .string "If you paid for this in any way you\n"
+    .string "you got scammed lmao\n"
+    .string "Please report any bugs to the\n"
+    .string "Discord server: /radicalred\n"
+    .string "Suggested emulators: PC: mGBA\n"
+    .string "Android: Pizza Boy  iOS: Delta\n"
+    .string "PLEASE DO NOT PLAY ON ECLIPSE OR VISUALBOYADVANCE!$"
 
 gPikachuIntro_Text_Page2::
     .string "New paths will open to you by helping\n"

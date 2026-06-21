@@ -948,10 +948,10 @@ u8 GetEggCyclesToSubtract(void)
             if (ability == ABILITY_MAGMA_ARMOR
              || ability == ABILITY_FLAME_BODY
              || ability == ABILITY_STEAM_ENGINE)
-                return 2;
+                return 10; // 5x faster than the original 2
         }
     }
-    return 1;
+    return 5; // 5x faster than the original 1
 }
 
 u16 CountPartyAliveNonEggMons(void)

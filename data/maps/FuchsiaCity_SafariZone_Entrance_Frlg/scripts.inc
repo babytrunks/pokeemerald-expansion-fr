@@ -238,7 +238,7 @@ FuchsiaCity_SafariZone_Entrance_Text_OopsNotEnoughMoney::
 
 FuchsiaCity_SafariZone_Entrance_Text_GoingToLeaveSafariZoneEarly::
     .string "Are you going to leave the\n"
-    .string "SAFARI ZONE early?$"
+    .string "Safari Zone early?$"
 
 FuchsiaCity_SafariZone_Entrance_Text_PleaseReturnSafariBalls::
     .string "Please return any SAFARI BALLS\n"

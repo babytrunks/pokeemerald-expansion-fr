@@ -372,7 +372,7 @@ EventScript_Cinnabar_May_Start::
 	msgbox gText_Cinnabar_May_5, MSGBOX_DEFAULT
 	closemessage
     setvar VAR_TRIGGER_MAY_FUSCHIA, 1 
-    applymovement 0x11, Movement_Cinnabar_May_Movedown2
+    applymovement LOCALID_CINNABAR_MAY, Movement_Cinnabar_May_Movedown2
     waitmovement 0
 	removeobject LOCALID_CINNABAR_MAY
     release
@@ -412,7 +412,7 @@ CinnabarIsland_Text_ScientistsExperimentInMansion::
     .string "Scientists conduct experiments \n"
     .string "in the burned-out building.\p"
     .string "You know, the one they call the\n"
-    .string "Pokémon MANSION.$"
+    .string "Pokémon Mansion.$"
 
 CinnabarIsland_Text_IslandSign::
     .string "Cinnabar Island\n"
@@ -482,10 +482,10 @@ gText_Cinnabar_May_2:
 
 gText_Cinnabar_May_3::
 	.string "I knew it, you're {PLAYER}!\p"
-	.string "Brendan speaks of you foten.\n"
+	.string "Brendan speaks of you often.\n"
 	.string "You seem to be a big motivator\l"
 	.string "for him.\p"
-	.string "Oh right! I'm May."
+	.string "Oh right! I'm May.\n"
 	.string "I know Brendan from Hoenn.\p"
 	.string "Well, I could use a warm-up before I\n"
 	.string "face Blaine.\p"
@@ -502,7 +502,7 @@ gText_Cinnabar_May_4:
     .string "of what's been driving Brendan forward\l"
     .string "lately.\p"
 	.string "I don't know if we'll bump into each\n"
-	.string "other again, so please, have this.\p"
+	.string "other again, so please, have this.$"
 
 gText_Cinnabar_May_5:
     .string "Hope to see you around Hoenn\n"

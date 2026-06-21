@@ -995,7 +995,7 @@
 #define ITEM_CLEFABLITE 829 // DONE (Whitney)
 #define ITEM_VICTREEBELITE 830 // DONE (Erika)
 #define ITEM_STARMINITE 831 // DONE (Erika defeated)
-#define ITEM_DRAGONINITE 832
+#define ITEM_DRAGONINITE 832 // probably Claire?
 #define ITEM_MEGANIUMITE 833 // DONE (Route 12, post Snorlax, boss fight)
 #define ITEM_FERALIGITE 834 // DONE (Route 12, post Rock Smash/Snorlax)
 #define ITEM_SKARMORITE 835
@@ -1031,7 +1031,7 @@
 #define ITEM_GOLURKITE  865
 #define ITEM_MEOWSTICITE  866 // DONE (Cat Lady Quest in Saffron)
 #define ITEM_CRABOMINITE  867
-#define ITEM_GOLISOPITE  868
+#define ITEM_GOLISOPITE  868 // DONE (Pokemon Mansion mde boss)
 #define ITEM_MAGEARNITE  869
 #define ITEM_SCOVILLAINITE  870 // DONE (Celadon City, item ball)
 #define ITEM_BAXCALIBRITE  871

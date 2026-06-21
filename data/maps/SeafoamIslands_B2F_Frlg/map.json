@@ -3,7 +3,6 @@
   "name": "SeafoamIslands_B2F_Frlg",
   "layout": "LAYOUT_SEAFOAM_ISLANDS_B2F",
   "music": "MUS_RG_VIRIDIAN_FOREST",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_SEAFOAM_ISLANDS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -54,8 +53,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "SeafoamIslands_B2F_EventScript_ItemBigPearl",
+      "trainer_sight_or_berry_tree_id": "ITEM_GACHA_VOUCHER",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_SEAFOAM_ISLANDS_B2F_BIG_PEARL"
     }
   ],
@@ -139,5 +138,6 @@
     }
   ],
   "coord_events": [],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_KANTO"
 }

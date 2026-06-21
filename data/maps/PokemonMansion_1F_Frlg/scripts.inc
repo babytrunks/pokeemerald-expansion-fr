@@ -31,6 +31,46 @@ PokemonMansion_1F_EventScript_Johnson::
 	msgbox PokemonMansion_1F_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+PokemonMansion_1F_EventScript_Thomas::
+	lock
+	faceplayer
+	goto_if_defeated TRAINER_COOLTRAINER_THOMAS, PokemonMansion_1F_EventScript_ThomasReward
+	goto_if_not_defeated TRAINER_SCIENTIST_TED, PokemonMansion_1F_EventScript_ThomasNotReady
+	goto_if_not_defeated TRAINER_YOUNGSTER_JOHNSON, PokemonMansion_1F_EventScript_ThomasNotReady
+	goto_if_not_defeated TRAINER_BURGLAR_ARNIE, PokemonMansion_1F_EventScript_ThomasNotReady
+	goto_if_not_defeated TRAINER_BURGLAR_SIMON, PokemonMansion_1F_EventScript_ThomasNotReady
+	goto_if_not_defeated TRAINER_SCIENTIST_BRAYDON, PokemonMansion_1F_EventScript_ThomasNotReady
+	goto_if_not_defeated TRAINER_BURGLAR_LEWIS, PokemonMansion_1F_EventScript_ThomasNotReady
+	goto_if_not_defeated TRAINER_SCIENTIST_IVAN, PokemonMansion_1F_EventScript_ThomasNotReady
+	msgbox PokemonMansion_1F_Text_ThomasIntro, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PokemonMansion_1F_EventScript_ThomasDecline
+	msgbox PokemonMansion_1F_Text_ThomasAccept
+	trainerbattle_no_intro TRAINER_COOLTRAINER_THOMAS, PokemonMansion_1F_Text_ThomasDefeat
+PokemonMansion_1F_EventScript_ThomasReward::
+	msgbox PokemonMansion_1F_Text_ThomasReward
+	giveitem ITEM_GOLISOPITE
+	msgbox PokemonMansion_1F_Text_ThomasPostBattle
+	closemessage
+	setflag FLAG_HIDE_MANSION_THOMAS
+	removeobject LOCALID_POKEMON_MANSION_1F_THOMAS
+	release
+	end
+
+PokemonMansion_1F_EventScript_ThomasBagFull::
+	msgbox gText_TooBadBagIsFull
+	release
+	end
+
+PokemonMansion_1F_EventScript_ThomasNotReady::
+	msgbox PokemonMansion_1F_Text_ThomasNotReady
+	release
+	end
+
+PokemonMansion_1F_EventScript_ThomasDecline::
+	msgbox PokemonMansion_1F_Text_ThomasNo
+	release
+	end
+
 PokemonMansion_1F_Text_TedIntro::
     .string "Who are you?\n"
     .string "There shouldn't be anyone here.$"
@@ -55,3 +95,40 @@ PokemonMansion_1F_Text_JohnsonPostBattle::
     .string "but I feel spooked.\p"
     .string "I ought to go soon.$"
 
+PokemonMansion_1F_Text_ThomasIntro::
+    .string "Hm? Oh yes.\n"
+    .string "I've had my eye on you. Cleared\l"
+    .string "out every trainer here.\p"
+    .string "Fine. A battle, and make it\n"
+    .string "snappy.\p"
+    .string "Well? Yes or no? Don't waste\n"
+    .string "my time.$"
+
+PokemonMansion_1F_Text_ThomasAccept::
+    .string "Good! Let's get this over with.\n"
+    .string "I have a power nap scheduled at\l"
+	.string "three.$"
+
+PokemonMansion_1F_Text_ThomasDefeat::
+    .string "Wha?! That was not what I\n"
+    .string "had planned!$"
+
+PokemonMansion_1F_Text_ThomasReward::
+    .string "Fine, fine. You got me.\n"
+    .string "Here. Consider it a signing\l"
+    .string "bonus. Have it. Maybe it'll\l"
+	.string "get you to leave me alone.$"
+
+PokemonMansion_1F_Text_ThomasPostBattle::
+    .string "Now if you'll excuse me, I have\n"
+    .string "a very important nap to take.$"
+
+PokemonMansion_1F_Text_ThomasNotReady::
+    .string "Mm? You want my time?\p"
+    .string "Sorry. I don't take meetings\n"
+    .string "with amateurs.\p"
+    .string "Clear out every trainer in this\n"
+    .string "mansion first. Then we'll talk.$"
+
+PokemonMansion_1F_Text_ThomasNo::
+    .string "No? Fine. You saved me the trouble.$"

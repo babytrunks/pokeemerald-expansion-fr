@@ -242,20 +242,20 @@ FuchsiaCity_Text_CitySign::
 
 FuchsiaCity_Text_SafariZoneSign::
     .string "Pokémon PARADISE\n"
-    .string "SAFARI ZONE$"
+    .string "Safari Zone$"
 
 FuchsiaCity_Text_SafariGameSign::
     .string "SAFARI GAME\n"
     .string "Pokémon-U-CATCH!$"
 
 FuchsiaCity_Text_WardensHomeSign::
-    .string "SAFARI ZONE\n"
+    .string "Safari Zone\n"
     .string "WARDEN'S HOME$"
 
 FuchsiaCity_Text_SafariZoneOfficeSign::
     .string "Pokémon PARADISE!\n"
     .string "Welcome to the SAFARI ZONE!\l"
-    .string "SAFARI ZONE OFFICE$"
+    .string "Safari Zone OFFICE$"
 
 FuchsiaCity_Text_GymSign::
     .string "Fuchsia City Pokémon GYM\n"

@@ -2098,7 +2098,7 @@
 #define FLAG_TUTOR_EXPLOSION                             0
 #define FLAG_GIVE_BLACK_BELT                            0
 #define FLAG_TM_LOW_KICK                             0
-#define FLAG_TUTOR_DREAM_EATER                           0
+#define FLAG_HIDE_VIRIDIAN_CITY_TM_ICE_SPINNER                           0
 #define FLAG_TUTOR_SOFT_BOILED                           0
 #define FLAG_TUTOR_SUBSTITUTE                            0
 #define FLAG_TUTOR_SWORDS_DANCE                          0

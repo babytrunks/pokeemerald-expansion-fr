@@ -220,7 +220,7 @@ Route20_Text_MelissaPostBattle::
     .string "when a volcano erupted.$"
 
 Route20_Text_SeafoamIslands::
-    .string "SEAFOAM ISLANDS$"
+    .string "Seafoam Islands$"
 
 Route20_Text_MistyTrainsHere::
     .string "Strong TRAINERS and WATER Pokémon\n"

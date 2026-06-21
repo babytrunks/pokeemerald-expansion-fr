@@ -122,7 +122,7 @@ Route19_Text_AnyaDefeat::
 
 Route19_Text_AnyaPostBattle::
     .string "It's still a long way to go to\n"
-    .string "SEAFOAM ISLANDS…\p"
+    .string "Seafoam Islands…\p"
     .string "I want to go back to FUCHSIA…$"
 
 Route19_Text_AliceIntro::
@@ -134,7 +134,7 @@ Route19_Text_AliceDefeat::
 
 Route19_Text_AlicePostBattle::
     .string "My boyfriend wanted to swim to\n"
-    .string "SEAFOAM ISLANDS.$"
+    .string "Seafoam Islands.$"
 
 Route19_Text_AxleIntro::
     .string "Ahoy, there!\n"

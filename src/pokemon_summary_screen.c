@@ -646,6 +646,7 @@ static const struct WindowTemplate sPageInfoTemplate[] =
         .baseBlock = 575,
         #endif
     },
+
 };
 static const struct WindowTemplate sPageSkillsTemplate[] =
 {

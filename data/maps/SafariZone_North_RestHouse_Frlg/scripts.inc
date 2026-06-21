@@ -21,7 +21,7 @@ SafariZone_East_Text_KeepAnyItemFoundOnSafari::
 
 SafariZone_East_Text_PrizeInDeepestPartOfSafariZone::
     .string "Go to the deepest part of the\n"
-    .string "SAFARI ZONE. You will win a prize!$"
+    .string "Safari Zone. You will win a prize!$"
 
 SafariZone_East_Text_MyEeveeEvolvedIntoFlareon::
     .string "My EEVEE evolved into FLAREON.\p"

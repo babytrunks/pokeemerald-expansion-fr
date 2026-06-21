@@ -79,8 +79,10 @@ Route8_Text_ColePostBattle::
     .string "The Rocky Helmet punishes foes for\n"
     .string "attacking you.\p"
     .string "Sometimes chip damage makes all the\n"
-    .string "difference!$"
-
+    .string "difference!\p"
+    .string "Do use those items.\n"
+    .string "Thank you for the fight. Goodbye.$"
+    
 Route8_Text_ColeNoMegaRing::
     .string "A real Trainer carries a Mega Ring.\p"
     .string "Come back when you've got one, and\n"

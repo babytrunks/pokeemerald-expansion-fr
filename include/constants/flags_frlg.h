@@ -693,7 +693,7 @@
 #define FLAG_TUTOR_EXPLOSION                             0x2C3
 #define FLAG_GIVE_BLACK_BELT                             0x2C4
 #define FLAG_TM_LOW_KICK                                 0x2C5
-#define FLAG_TUTOR_DREAM_EATER                           0x2C6
+#define FLAG_HIDE_VIRIDIAN_CITY_TM_ICE_SPINNER                           0x2C6
 #define FLAG_TUTOR_SOFT_BOILED                           0x2C7
 #define FLAG_TUTOR_SUBSTITUTE                            0x2C8
 #define FLAG_TUTOR_SWORDS_DANCE                          0x2C9
@@ -1191,7 +1191,7 @@
 #define FLAG_NES_EZCATCH                0x4A8
 #define FLAG_ZA_WARUDO_BATTLE           0x4A9
 #define FLAG_HIDE_TOWER_SANS            0x4AA
-#define FLAG_UNUSED_0x4AB               0x4AB // Unused Flag
+#define FLAG_HIDE_MANSION_THOMAS        0x4AB
 #define FLAG_UNUSED_0x4AC               0x4AC // Unused Flag
 #define FLAG_UNUSED_0x4AD               0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE               0x4AE // Unused Flag
