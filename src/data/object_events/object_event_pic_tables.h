@@ -3772,7 +3772,7 @@ static const struct SpriteFrameImage sPicTable_DragonTamer[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_CueBall[] = {
-    overworld_ascending_frames(gObjectEventPic_CueBall, 2, 4),
+    overworld_ascending_frames(gObjectEventPic_CueBall, 4, 4),
 };
 
 static const struct SpriteFrameImage sPicTable_Sans[] = {

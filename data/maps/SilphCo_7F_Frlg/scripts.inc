@@ -308,7 +308,7 @@ SilphCo_7F_EventScript_RareExtract::
 	msgbox SilphCo7F_Text_JesseLeave
 	setspeaker SP_NAME_JOSEPH
 	msgbox SilphCo7F_Text_JosephLeave
-	closeonkeypress
+	waitbuttonpress
 	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Leave
 	applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Leave
 	waitmovement 0
