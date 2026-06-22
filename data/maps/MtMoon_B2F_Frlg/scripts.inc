@@ -149,13 +149,10 @@ EventScript_AdminMtMoonMain_Start::
     applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Stop
     waitmovement 0
     msgbox adminmtmoonleft_Text_1
-    waitmessage
-
-    @ playse 0xB3                         @ original: sound 0xB3 @? (pick a proper SE_ constant later)
-    applymovement LOCALID_PLAYER, MtMoon_Movement_AdminMtMoonLeft_Question
+    waitmessage                 
+    applymovement LOCALID_PLAYER, Common_Movement_QuestionMark
     waitmovement 0
-    @ waitse                               @ original used checksound @?
-
+                    
     call_if_eq VAR_TEMP_2, 1, MtMoon_AdminMtMoon_ComeUpLeft
     call_if_eq VAR_TEMP_2, 2, MtMoon_AdminMtMoon_ComeUpRight
 
@@ -166,7 +163,7 @@ EventScript_AdminMtMoonMain_Start::
     fadescreen FADE_TO_BLACK
 
     removeobject LOCALID_MT_MOON_MIGHTYENA
-    playse 0xF                          @ original: sound 0xF when partner disappears @?
+    playse 0xF                      
     waitse
 
     fadescreen FADE_FROM_BLACK
@@ -176,7 +173,7 @@ EventScript_AdminMtMoonMain_Start::
     call_if_eq VAR_TEMP_2, 1, MtMoon_AdminMtMoon_ComeDownLeft
     call_if_eq VAR_TEMP_2, 2, MtMoon_AdminMtMoon_ComeDownRight
 
-    setvar VAR_MT_MOON_ARCHER, 1                    @ TODO: give this a proper VAR_ name in vars.h @?
+    setvar VAR_MT_MOON_ARCHER, 1                   
     removeobject LOCALID_MT_MOON_ARCHER
     setflag FLAG_BEAT_MT_MOON_ARCHER
     playse SE_EXIT    
@@ -260,21 +257,12 @@ MtMoon_Movement_AdminMtMoonRight_ComeDown:
     walk_fast_right
     step_end 
 
-MtMoon_Movement_AdminMtMoonLeft_Question:
-    @ CFRU bytes: 0x63,0xFE
-    @ In FR, 0x63 is a movement/step; name suggests a question-mark emotion.
-    @ If you have a Common_Movement_QuestionMark, you could just use that instead.
-    @ e.g.:
-    @   Common_Movement_QuestionMark
-    step_end @?
 
 MtMoon_Movement_AdminMtMoonLeft_Look:
-    @ CFRU bytes: 0x01,0xFE (Face Up)
     face_up
     step_end
 
 MtMoon_Movement_AdminMtMoonLeft_Stop:
-    @ CFRU bytes: 0x00,0xFE (Face Down)
     face_down
     step_end
 

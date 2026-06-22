@@ -280,11 +280,18 @@ SilphCo_7F_EventScript_OrangeCrateMove::
 
 SilphCo_7F_EventScript_RareExtract::
 	setspeaker SP_NAME_UNKNOWN
+	applymovement LOCALID_PLAYER, Common_Movement_Delay48
+	waitmovement 0
 	msgbox SilphCo_7F_Text_BurglarEvent_SomeonesHere
+	playse SE_M_METRONOME
+	applymovement LOCALID_PLAYER, Common_Movement_QuestionMark
+	waitse
+	waitmovement
 	addobject LOCALID_SILPHCO7_BURGLAR_2
 	addobject LOCALID_SILPHCO7_BURGLAR_1
 	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Approach
 	applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Approach
+	waitmovement 0
 	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
 	setspeaker SP_NAME_UNKNOWN
@@ -292,33 +299,39 @@ SilphCo_7F_EventScript_RareExtract::
 	trainerbattle_no_intro TRAINER_BURGLAR_JESSE, SilphCo7F_Text_JesseDefeat
 	setspeaker SP_NAME_UNKNOWN
 	msgbox SilphCo7F_Text_JosephApproach
-	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Backup
-	waitmovement 0
-	applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Fight
-	waitmovement 0
+	@ applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Backup
+	@ waitmovement 0
+	@ applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Fight
+	@ waitmovement 0
 	trainerbattle_no_intro TRAINER_BURGLAR_JOSEPH, SilphCo7F_Text_JosephDefeat
 	setspeaker SP_NAME_JESSE
 	msgbox SilphCo7F_Text_JesseLeave
 	setspeaker SP_NAME_JOSEPH
 	msgbox SilphCo7F_Text_JosephLeave
+	closeonkeypress
 	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Leave
 	applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Leave
 	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_Delay48
+	waitmovement 0
 	setspeaker SP_NAME_UNKNOWN
 	msgbox SilphCo7F_Text_PoliceManApproach
+	addobject LOCALID_SILPHCO_7_POLICEMAN
 	applymovement LOCALID_SILPHCO_7_POLICEMAN, Movement_SilphCo7_PoliceApproach
 	waitmovement 0
 	trainerbattle_no_intro TRAINER_SILPH_CO_POLICEMAN, SilphCo7F_Text_PolicemanDefeat
 	msgbox SilphCo7F_Text_PoliceManIOweYou
-	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Leave
+	applymovement TRAINER_SILPH_CO_POLICEMAN, Movement_SilphCo7_Burglar1Leave
+	waitmovement 0
 	removeobject LOCALID_SILPHCO_7_POLICEMAN
-	removeobject TRAINER_BURGLAR_JESSE
-	removeobject TRAINER_BURGLAR_JOSEPH
+	removeobject LOCALID_SILPHCO7_BURGLAR_1
+	removeobject LOCALID_SILPHCO7_BURGLAR_2
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
 	finditem ITEM_RARE_EXTRACT
 	end
 
 Movement_SilphCo7_Burglar1Approach:
-	walk_left
 	walk_left
 	walk_up
 	walk_up
@@ -347,9 +360,10 @@ Movement_SilphCo7_Burglar1Leave::
 	walk_down
 	walk_down
 	walk_down
-	walk_down
-	walk_down
 	walk_right
+	walk_right
+	walk_down
+	walk_down
 	step_end
 
 Movement_SilphCo7_Burglar2Leave::
@@ -364,7 +378,6 @@ Movement_SilphCo7_Burglar2Leave::
 	step_end
 
 Movement_SilphCo7_PoliceApproach:
-	walk_faster_left
 	walk_faster_left
 	walk_faster_up
 	walk_faster_up
@@ -557,6 +570,7 @@ SilphCo7F_Text_PolicemanDefeat::
 	.string "Oh jeez.$"
 
 SilphCo7F_Text_PoliceManIOweYou::
+	.string "Wait a sec.{PAUSE 30}.{PAUSE 30}.{PAUSE 30}\p"
 	.string "You're the trainer that took out\n"
 	.string "the Rockets here, right?\p"
 	.string "Sorry, didn't recognize ya.\p"

@@ -59,4 +59,4 @@ tools/compresSmol/compresSmolTilemap
 *.smolTM
 __pycache__
 log.txt
-CLAUDE.md
+post/
