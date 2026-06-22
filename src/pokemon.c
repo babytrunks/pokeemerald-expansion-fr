@@ -4433,9 +4433,9 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                     case 1: // ITEM5_IV_SPEED
                     case 2: // ITEM5_IV_SPDEF
                     case 3: // ITEM5_IV_SPATK
-                        temp2 = itemEffect[itemEffectParam];
                         dataSigned = GetMonData(mon, sGetMonDataIVConstants[temp1 + 2], NULL);
-                        ivChange = sIndividualValueVitaminTable[temp2 - 1];
+                        u8 param = GetItemHoldEffectParam(item);
+                        ivChange = sIndividualValueVitaminTable[param - 1];
                         // DebugPrintf("IV Change: %d", ivChange); 
                         // DebugPrintf("Data signed 1: %d", dataSigned);
                         if (ivChange > 0) // Increasing EV

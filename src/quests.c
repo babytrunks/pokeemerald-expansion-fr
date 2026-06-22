@@ -582,12 +582,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
+	side_quest( // Rare Extract / Vitamin quest
 	      gText_SideQuestName_9,
 	      gText_SideQuestDesc_9,
 	      gText_SideQuestDoneDesc_9,
 	      gText_SideQuestMap9,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_BURGLAR,
 	      OBJECT,
 	      NULL,
 	      0

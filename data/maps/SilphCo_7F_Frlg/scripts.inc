@@ -1,12 +1,14 @@
 SilphCo_7F_Frlg_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, SilphCo_7F_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, SilphCo_7F_OnTransition
+	
 	.byte 0
 
 SilphCo_7F_OnLoad::
 	call_if_unset FLAG_SILPH_7F_DOOR_1, EventScript_Close7FDoor1
 	call_if_unset FLAG_SILPH_7F_DOOR_2, EventScript_Close7FDoor2
 	call_if_unset FLAG_SILPH_7F_DOOR_3, EventScript_Close7FDoor3
+	call_if_set   FLAG_SILPH_7F_MOVED_ORANGE_CRATE, SilphCo_7F_EventScript_OrangeCrateMove
 	end
 
 SilphCo_7F_OnTransition::
@@ -243,6 +245,146 @@ SilphCo_7F_EventScript_Grunt3::
 	msgbox SilphCo_7F_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
+SilphCo_7F_EventScript_OrangeCrate::
+	goto_if_quest_active QUEST_RARE_EXTRACT, SilphCo_7F_EventScript_OrangeCratePush
+	msgbox SilphCo_7F_Text_OrangeCrate, MSGBOX_AUTOCLOSE
+	end
+
+SilphCo_7F_EventScript_OrangeCratePush:
+	goto_if_set FLAG_SILPH_7F_MOVED_ORANGE_CRATE, SilphCo_7F_EventScript_OrangeCrateEnd
+	msgbox SilphCo_7F_Text_OrangeCratePush, MSGBOX_YESNO
+	setflag FLAG_SILPH_7F_MOVED_ORANGE_CRATE
+	fadescreen FADE_TO_BLACK
+	playse SE_M_ROCK_THROW
+	waitse
+	call SilphCo_7F_EventScript_OrangeCrateMove
+	special DrawWholeMapView
+	fadescreen FADE_FROM_BLACK
+	release
+	end
+
+SilphCo_7F_EventScript_OrangeCrateEnd::
+	end
+
+SilphCo_7F_EventScript_OrangeCrateMove::
+	setmetatile 2, 17, 0x310, 1  
+    setmetatile 3, 17, 0x311, 1
+    setmetatile 2, 18, 0x318, 1
+    setmetatile 3, 18, 0x319, 1
+	setmetatile 4, 17, 0x334, 0
+    setmetatile 5, 17, 0x334, 0
+    setmetatile 4, 18, 0x334, 0
+    setmetatile 5, 18, 0x334, 0
+	special DrawWholeMapView
+	return
+
+SilphCo_7F_EventScript_RareExtract::
+	setspeaker SP_NAME_UNKNOWN
+	msgbox SilphCo_7F_Text_BurglarEvent_SomeonesHere
+	addobject LOCALID_SILPHCO7_BURGLAR_2
+	addobject LOCALID_SILPHCO7_BURGLAR_1
+	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Approach
+	applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Approach
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement 0
+	setspeaker SP_NAME_UNKNOWN
+	msgbox SilphCo_7F_Text_BurglarEvent_HandItOver
+	trainerbattle_no_intro TRAINER_BURGLAR_JESSE, SilphCo7F_Text_JesseDefeat
+	setspeaker SP_NAME_UNKNOWN
+	msgbox SilphCo7F_Text_JosephApproach
+	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Backup
+	waitmovement 0
+	applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Fight
+	waitmovement 0
+	trainerbattle_no_intro TRAINER_BURGLAR_JOSEPH, SilphCo7F_Text_JosephDefeat
+	setspeaker SP_NAME_JESSE
+	msgbox SilphCo7F_Text_JesseLeave
+	setspeaker SP_NAME_JOSEPH
+	msgbox SilphCo7F_Text_JosephLeave
+	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Leave
+	applymovement LOCALID_SILPHCO7_BURGLAR_2, Movement_SilphCo7_Burglar2Leave
+	waitmovement 0
+	setspeaker SP_NAME_UNKNOWN
+	msgbox SilphCo7F_Text_PoliceManApproach
+	applymovement LOCALID_SILPHCO_7_POLICEMAN, Movement_SilphCo7_PoliceApproach
+	waitmovement 0
+	trainerbattle_no_intro TRAINER_SILPH_CO_POLICEMAN, SilphCo7F_Text_PolicemanDefeat
+	msgbox SilphCo7F_Text_PoliceManIOweYou
+	applymovement LOCALID_SILPHCO7_BURGLAR_1, Movement_SilphCo7_Burglar1Leave
+	removeobject LOCALID_SILPHCO_7_POLICEMAN
+	removeobject TRAINER_BURGLAR_JESSE
+	removeobject TRAINER_BURGLAR_JOSEPH
+	finditem ITEM_RARE_EXTRACT
+	end
+
+Movement_SilphCo7_Burglar1Approach:
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	step_end
+
+Movement_SilphCo7_Burglar2Approach:
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	face_up
+	step_end
+
+Movement_SilphCo7_Burglar1Leave::
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	step_end
+
+Movement_SilphCo7_Burglar2Leave::
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_right
+	step_end
+
+Movement_SilphCo7_PoliceApproach:
+	walk_faster_left
+	walk_faster_left
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_up
+	walk_faster_left
+	step_end 
+
+Movement_SilphCo7_Burglar1Backup::
+	walk_right
+	face_left
+	step_end
+
+Movement_SilphCo7_Burglar2Fight::
+	walk_up
+	face_left
+	step_end
+
 SilphCo_7F_Text_HaveMonForSavingUs::
     .string "Oh! Hi! You're not a Rocket!\n"
     .string "You came to save us?\l"
@@ -372,3 +514,51 @@ SilphCo_7F_Text_FloorSign::
     .string "Silph Co. Head Office\n"
     .string "7F$"
 
+SilphCo_7F_Text_OrangeCrate::
+	.string "It's a crate.\n"
+	.string "The placement is a little suspicious…$"
+
+SilphCo_7F_Text_OrangeCratePush::
+	.string "…There's a button underneath.\n"
+	.string "Press it?$"
+
+SilphCo_7F_Text_BurglarEvent_SomeonesHere::
+	.string "…Uh, looks like someone got\n"
+	.string "here first.$"
+
+SilphCo_7F_Text_BurglarEvent_HandItOver::
+	.string "Hey, you're gonna have to\n"
+	.string "hand that over.\p"
+	.string ".{PAUSE 30}.{PAUSE 30}.No?\p"
+	.string "Well, you're gonna regret this.$"
+
+SilphCo7F_Text_JesseDefeat::
+	.string "So not cool…$"
+
+SilphCo7F_Text_JosephDefeat::
+	.string "…What?!$"
+
+SilphCo7F_Text_JosephApproach::
+	.string "Alright, let me handle this.$"
+
+SilphCo7F_Text_JesseLeave::
+	.string "Looks like we can't score again.\n"
+	.string "Nice going, Joe.$"
+
+SilphCo7F_Text_JosephLeave::
+	.string "Yeah, whatever bro. Just blame\n"
+	.string "it on me. You're such a pussy.\p"
+	.string "Let's just get outta here.$"
+
+SilphCo7F_Text_PoliceManApproach::
+	.string ".{PAUSE 30}.{PAUSE 30}.{PAUSE 30}What's this racket going on?!$"
+
+SilphCo7F_Text_PolicemanDefeat::
+	.string "Oh jeez.$"
+
+SilphCo7F_Text_PoliceManIOweYou::
+	.string "You're the trainer that took out\n"
+	.string "the Rockets here, right?\p"
+	.string "Sorry, didn't recognize ya.\p"
+	.string "I guess I owe you one so I'll\n"
+	.string "pretend I saw nothin'.$"

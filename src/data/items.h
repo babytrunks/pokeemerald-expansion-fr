@@ -15327,21 +15327,18 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_JubilifeMuffin,
     },
 
-    [ITEM_REMEDY] =
+    [ITEM_RARE_EXTRACT] =
     {
-        .name = ITEM_NAME("Remedy"),
+        .name = ITEM_NAME("Rare Extract"),
         .price = 150,
         .description = COMPOUND_STRING(
-            "A bitter powder\n"
-            "that restores HP\n"
-            "by 20 points."),
-        .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
-        .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_Medicine,
-        .battleUsage = EFFECT_ITEM_RESTORE_HP,
-        .effect = gItemEffect_Remedy,
-        .flingPower = 30,
+            "What could it be?\n"
+            "It's probably not\n"
+            "smart to ingest!"),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_Remedy,
         .iconPalette = gItemIconPalette_Remedy,
     },

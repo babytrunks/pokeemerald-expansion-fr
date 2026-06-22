@@ -165,8 +165,7 @@ gPikachuIntro_Text_Page1::
     .string "Please report any bugs to the\n"
     .string "Discord server: /radicalred\n"
     .string "Suggested emulators: PC: mGBA\n"
-    .string "Android: Pizza Boy  iOS: Delta\n"
-    .string "PLEASE DO NOT PLAY ON ECLIPSE OR VISUALBOYADVANCE!$"
+    .string "Android: Pizza Boy  iOS: Delta$"
 
 gPikachuIntro_Text_Page2::
     .string "New paths will open to you by helping\n"

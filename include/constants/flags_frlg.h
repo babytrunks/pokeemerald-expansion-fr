@@ -381,7 +381,7 @@
 #define FLAG_HIDE_SILPH_CO_5F_CARD_KEY                          0x192
 #define FLAG_HIDE_SILPH_CO_6F_HP_UP                             0x193
 #define FLAG_HIDE_SILPH_CO_6F_AUDINITE                         0x194
-#define FLAG_HIDE_SILPH_CO_7F_CALCIUM                           0x195
+#define FLAG_HIDE_SILPH_CO_7F_CALCIUM                           0x195 // unused
 #define FLAG_HIDE_SILPH_CO_7F_TM08                              0x196
 #define FLAG_HIDE_SILPH_CO_10F_CARBOS                           0x197
 #define FLAG_HIDE_SILPH_CO_10F_DREAM_PATCH                       0x198
@@ -636,7 +636,7 @@
 #define FLAG_SILPH_10F_DOOR                              0x28C
 #define FLAG_SILPH_11F_DOOR                              0x28D
 #define FLAG_RANDOMIZER_FIELD_ITEM                       0x28E
-#define FLAG_0x28F                                       0x28F
+#define FLAG_SILPH_CO_7F_RARE_EXTRACT                    0x28F
 #define FLAG_MET_STICKER_MAN                             0x290
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0x291
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                     0x292 // UNUSED
@@ -684,7 +684,7 @@
 
 #define FLAG_HIDE_ROUTE10_TM_FIRE_PUNCH                  0x2BB 
 #define FLAG_FOUGHT_MEWTWO                               0x2BC
-#define FLAG_0x2BD                              0x2BD
+#define FLAG_SILPH_7F_MOVED_ORANGE_CRATE                 0x2BD
 #define FLAG_0x2BE                             0x2BE
 #define FLAG_0x2BF                                       0x2BF
 #define FLAG_TUTOR_DOUBLE_EDGE                           0x2C0 // Unused

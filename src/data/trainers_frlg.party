@@ -15038,10 +15038,10 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Liquidation  
 - Swords Dance
 
-=== TRAINER_LASS_JANICE_3 ===
-Name: Janice
-Class: Lass Frlg
-Pic: Lass Frlg
+=== TRAINER_BURGLAR_JESSE ===
+Name: Jesse
+Class: Burglar Frlg
+Pic: Burglar Frlg
 Gender: Male
 Music: Female
 Double Battle: No
@@ -15055,12 +15055,12 @@ Pidgeotto
 Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_YOUNGSTER_CHAD_4 ===
-Name: Chad
-Class: Youngster Frlg
-Pic: Youngster Frlg
+=== TRAINER_BURGLAR_JOSEPH ===
+Name: Joseph
+Class: Burglar Frlg
+Pic: Burglar Frlg
 Gender: Male
-Music: Male
+Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
@@ -15072,22 +15072,19 @@ Sandslash
 Level: 48
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_HIKER_FRANKLIN_2 ===
-Name: Franklin
-Class: Hiker Frlg
+=== TRAINER_SILPH_CO_POLICEMAN ===
+Name: Policeman
+Class: Dumbass 
 Pic: Hiker Frlg
 Gender: Male
 Music: Hiker
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Machoke
-Level: 25
+Growlithe
+Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Graveler
-Level: 25
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ember
 
 === TRAINER_PKMN_PROF_PROF_OAK ===
 Name: Prof. Oak

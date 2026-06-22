@@ -147,7 +147,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM13::
 	checkitem ITEM_TM_ICE_BEAM
 	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_ICE_BEAM
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1500
 	buffermovename STR_VAR_2, MOVE_ICE_BEAM
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
 	end
@@ -161,7 +161,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TMFlashCannon::
 	checkitem ITEM_TM_FLASH_CANNON
 	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_FLASH_CANNON
-	setvar VAR_TEMP_2, 3500
+	setvar VAR_TEMP_2, 1500
 	buffermovename STR_VAR_2, MOVE_FLASH_CANNON
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
 	end
@@ -170,7 +170,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM24::
 	checkitem ITEM_TM_THUNDERBOLT
 	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_THUNDERBOLT
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1500
 	buffermovename STR_VAR_2, MOVE_THUNDERBOLT
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
 	end
@@ -179,7 +179,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM30::
 	checkitem ITEM_TM_DARK_PULSE
 	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_DARK_PULSE
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1500
 	buffermovename STR_VAR_2, MOVE_DARK_PULSE
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
 	end
@@ -188,7 +188,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM35::
 	checkitem ITEM_TM_FLAMETHROWER
 	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_FLAMETHROWER
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1500
 	buffermovename STR_VAR_2, MOVE_FLAMETHROWER
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeTM
 	end
@@ -346,42 +346,42 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_AbsoliteSetTextSold:
 CeladonCity_GameCorner_PrizeRoom_EventScript_Venusaurite::
 	goto_if_set FLAG_CELADON_BOUGHT_VENUSAURITE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_VENUSAURITE
-	setvar VAR_TEMP_2, 3000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Blastoisinite::
 	goto_if_set FLAG_CELADON_BOUGHT_BLASTOISINITE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_BLASTOISINITE
-	setvar VAR_TEMP_2, 3000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_CharizarditeX::
 	goto_if_set FLAG_CELADON_BOUGHT_CHARIZARDITE_X, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_CHARIZARDITE_X
-	setvar VAR_TEMP_2, 3000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Pidgeotite::
 	goto_if_set FLAG_CELADON_BOUGHT_PIDGEOTITE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_PIDGEOTITE
-	setvar VAR_TEMP_2, 3000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Heracronite::
 	goto_if_set FLAG_CELADON_BOUGHT_HERACRONITE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_HERACRONITE
-	setvar VAR_TEMP_2, 3000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Absolite::
 	goto_if_set FLAG_CELADON_BOUGHT_ABSOLITE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_ABSOLITE
-	setvar VAR_TEMP_2, 3000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 	end
 
@@ -431,67 +431,67 @@ CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize::
     .string "So, you want the {STR_VAR_1}?$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMIceBeam::
-	.string "{FONT_SMALL_NARROW}TM Ice Beam{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}4000 Coins$"
+	.string "{FONT_SMALL_NARROW}TM Ice Beam{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMIceBeamSold::
 	.string "{FONT_SMALL_NARROW}TM Ice Beam{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlashCannon::
-	.string "{FONT_SMALL_NARROW}TM Flash Cannon{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}3500 Coins$"
+	.string "{FONT_SMALL_NARROW}TM Flash Cannon{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlashCannonSold::
 	.string "{FONT_SMALL_NARROW}TM Flash Cannon{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMThunderbolt::
-	.string "{FONT_SMALL_NARROW}TM Thunderbolt{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}4000 Coins$"
+	.string "{FONT_SMALL_NARROW}TM Thunderbolt{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMThunderboltSold::
 	.string "{FONT_SMALL_NARROW}TM Thunderbolt{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlamethrower::
-	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}4000 Coins$"
+	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlamethrowerSold::
 	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMDarkPulse::
-	.string "{FONT_SMALL_NARROW}TM Dark Pulse{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}4000 Coins$"
+	.string "{FONT_SMALL_NARROW}TM Dark Pulse{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMDarkPulseSold::
 	.string "{FONT_SMALL_NARROW}TM Dark Pulse{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Venusaurite::
-	.string "Venusaurite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}3000 Coins$"
+	.string "Venusaurite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_VenusauriteSold::
 	.string "Venusaurite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Blastoisinite::
-	.string "Blastoisinite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}3000 Coins$"
+	.string "Blastoisinite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_BlastoisiniteSold::
 	.string "Blastoisinite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_CharizarditeX::
-	.string "Charizardite X{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}3000 Coins$"
+	.string "Charizardite X{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_CharizarditeXSold::
 	.string "Charizardite X{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Pidgeotite::
-	.string "Pidgeotite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}3000 Coins$"
+	.string "Pidgeotite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_PidgeotiteSold::
 	.string "Pidgeotite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Heracronite::
-	.string "Heracronite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}3000 Coins$"
+	.string "Heracronite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_HeracroniteSold::
 	.string "Heracronite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Absolite::
-	.string "Absolite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}3000 Coins$"
+	.string "Absolite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_AbsoliteSold::
 	.string "Absolite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"

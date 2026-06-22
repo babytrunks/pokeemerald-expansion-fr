@@ -397,9 +397,9 @@
 #define TRAINER_POKEMON_TOWER_SANS                  391
 #define TRAINER_ACE_TRAINER_COLE                   392
 #define TRAINER_COOLTRAINER_THOMAS                      393
-#define TRAINER_LASS_JANICE_3                      394
-#define TRAINER_YOUNGSTER_CHAD_4                   395
-#define TRAINER_HIKER_FRANKLIN_2                   396
+#define TRAINER_BURGLAR_JESSE                      394
+#define TRAINER_BURGLAR_JOSEPH                   395
+#define TRAINER_SILPH_CO_POLICEMAN                   396
 #define TRAINER_PKMN_PROF_PROF_OAK                 397
 #define TRAINER_TEAM_ROCKET_GRUNT_42               398
 #define TRAINER_PSYCHIC_JACLYN                     399

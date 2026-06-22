@@ -730,6 +730,7 @@
 #define OBJ_EVENT_PAL_TAG_CUE_BALL                0x118F
 #define OBJ_EVENT_PAL_TAG_SANS                    0x1190
 #define OBJ_EVENT_PAL_TAG_SOUPERCELL              0x1191
+#define OBJ_EVENT_PAL_TAG_MEGA_STONE              0x1192
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

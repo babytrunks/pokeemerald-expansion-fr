@@ -159,7 +159,7 @@ EventScript_PkmnCenterNurse_Aide::
 	call_if_set FLAG_NES_GAVE_INFINITE_CANDY, PkmnCenterNurse_LevelCapOptions
 	msgbox PkmnCenterNurse_Text_WhatService
 	@ dynmultipush PkmnCenterNurse_Text_GenderSwap, 4
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, PkmnCenterNurse_Aide_End
 	case 0, PkmnCenterNurse_EventScript_WantNatureChange
@@ -215,7 +215,7 @@ PkmnCenterNurse_EventScript_WantNatureChange::
 	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
 	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
 	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, PalletTown_ProfessorOaks_EventScript_End
 	special SetHiddenNature
@@ -234,7 +234,7 @@ PkmnCenterNurse_EventScript_WantMoveTutor:
 	call_if_set FLAG_BADGE06_GET, PkmnCenterNurse_SetMarshBadgeTutor
 	call_if_set FLAG_BADGE07_GET, PkmnCenterNurse_SetVolcanoBadgeTutor
 	call_if_set FLAG_BADGE08_GET, PkmnCenterNurse_SetEarthBadgeTutor
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_EventScript_StartingMoveTutors
@@ -286,7 +286,7 @@ PkmnCenterNurse_EventScript_StartingMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_MagicalLeaf, 2
 	dynmultipush PkmnCenterNurse_Text_BugBite, 3
 	dynmultipush PkmnCenterNurse_Text_AirCutter, 4
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_Tutor_Swift
@@ -303,7 +303,7 @@ PkmnCenterNurse_EventScript_BoulderMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_OminousWind, 5
 	dynmultipush PkmnCenterNurse_Text_AncientPower, 6
 	dynmultipush PkmnCenterNurse_Text_VacuumWave, 7
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_Tutor_FireFang
@@ -329,7 +329,7 @@ PkmnCenterNurse_EventScript_CascadeMoveTutors:
 	call_if_set FLAG_TUTOR_SEISMIC_TOSS, PkmnCenterNurse_EventScript_SeismicTossTutor
 	dynmultipush PkmnCenterNurse_Text_Hex, 6
 	dynmultipush PkmnCenterNurse_Text_StompingTantrum, 7
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_Tutor_FlameCharge
@@ -582,7 +582,7 @@ PkmnCenterNurse_EventScript_ThunderMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_RockBlast, 2
 	dynmultipush PkmnCenterNurse_Text_IcicleSpear, 3
 	call_if_set FLAG_TUTOR_COUNTER, PkmnCenterNurse_EventScript_CounterTutor
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_Tutor_SignalBeam
@@ -604,7 +604,7 @@ PkmnCenterNurse_EventScript_RainbowMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_PowerGem, 4
 	dynmultipush PkmnCenterNurse_Text_FocusPunch, 5
 	dynmultipush PkmnCenterNurse_Text_PsychicFangs, 6
-	dynmultistack 0, 0, FALSE, 7, FALSE, 0, NULL
+	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_Tutor_BugBuzz

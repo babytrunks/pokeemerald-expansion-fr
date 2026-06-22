@@ -115,9 +115,10 @@ PokemonMansion_1F_Text_ThomasDefeat::
 
 PokemonMansion_1F_Text_ThomasReward::
     .string "Fine, fine. You got me.\n"
-    .string "Here. Consider it a signing\l"
-    .string "bonus. Have it. Maybe it'll\l"
-	.string "get you to leave me alone.$"
+    .string "Here, consider it a signing\l"
+    .string "bonus.\p"
+	.string "Maybe it'll get you to leave\n"
+	.string "me alone.$"
 
 PokemonMansion_1F_Text_ThomasPostBattle::
     .string "Now if you'll excuse me, I have\n"

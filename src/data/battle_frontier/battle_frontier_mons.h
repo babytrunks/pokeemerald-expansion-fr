@@ -460,6 +460,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 
 
     [FRONTIER_MON_DRATINI] = {
+        .ability = ABILITY_MARVEL_SCALE,
         .species = SPECIES_DRATINI,
         .moves = {MOVE_WRAP, MOVE_EXTREME_SPEED, MOVE_TWISTER, MOVE_THUNDER_WAVE},
         .nature = NATURE_DOCILE,
@@ -484,6 +485,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
 
 
     [FRONTIER_MON_BELDUM] = {
+        .ability = ABILITY_MAGNET_PULL,
         .species = SPECIES_BELDUM,
         .moves = {MOVE_TACKLE},
         .nature = NATURE_DOCILE,

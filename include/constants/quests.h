@@ -23,7 +23,7 @@
 #define QUEST_FLUTTERFREE          5
 #define QUEST_CRAZY_CAT_LADY          6   // was QUEST_7
 #define QUEST_BLUE_ROCK          7   // was QUEST_8
-#define QUEST_9          8
+#define QUEST_RARE_EXTRACT       8   // was QUEST_9
 #define QUEST_10         9
 #define QUEST_11        10
 #define QUEST_12        11
