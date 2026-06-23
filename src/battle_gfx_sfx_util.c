@@ -656,8 +656,6 @@ void BattleLoadMonSpriteGfx(struct Pokemon *mon, u32 battler)
     LoadPalette(paletteData, paletteOffset, PLTT_SIZE_4BPP);
     LoadPalette(paletteData, BG_PLTT_ID(8) + BG_PLTT_ID(battler), PLTT_SIZE_4BPP);
 
-    // TimeMixBattleSpritePalette(paletteOffset);
-
     // transform's pink color
     if (gBattleMons[battler].volatiles.transformed)
     {
@@ -694,7 +692,6 @@ void DecompressTrainerFrontPic(u16 frontPicId, u8 battler)
     DecompressPicFromTable(&gTrainerSprites[frontPicId].frontPic,
                            gMonSpritesGfxPtr->spritesGfx[position]);
     LoadSpritePalette(&gTrainerSprites[frontPicId].palette);
-    // TimeMixBattleSpritePalette(OBJ_PLTT_ID(LoadSpritePalette(&gTrainerSprites[frontPicId].palette)));
 }
 
 void DecompressTrainerBackPic(u16 backPicId, u8 battler)
@@ -704,7 +701,6 @@ void DecompressTrainerBackPic(u16 backPicId, u8 battler)
     // Aiming for palette slots 8 and 9 for Player and PlayerPartner to prevent Trainer Slides causing mons to change colour
     LoadPalette(gTrainerBacksprites[backPicId].palette.data,
                           OBJ_PLTT_ID(8 + battler/2), PLTT_SIZE_4BPP);
-    // TimeMixBattleSpritePalette(OBJ_PLTT_ID(8 + battler/2));
 }
 
 void FreeTrainerFrontPicPalette(u16 frontPicId)
@@ -720,7 +716,6 @@ void BattleLoadAllHealthBoxesGfxAtOnce(void)
 
     LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[0]);
     LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[1]);
-    TimeMixBattleBgPalette(TRUE);
     if (!IsDoubleBattle())
     {
         LoadCompressedSpriteSheet(&sSpriteSheet_SinglesPlayerHealthbox);
@@ -749,7 +744,6 @@ bool8 BattleLoadAllHealthBoxesGfx(u8 state)
         {
             LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[0]);
             LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[1]);
-            TimeMixBattleBgPalette(TRUE);
             LoadIndicatorSpritesGfx();
             CategoryIcons_LoadSpritesGfx();
         }
@@ -956,15 +950,16 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, u8 changeType)
             targetSpecies = gBattleMons[battlerAtk].species;
         }
         gBattleSpritesDataPtr->battlerData[battlerAtk].transformSpecies = targetSpecies;
+        
         if (changeType == SPECIES_GFX_CHANGE_TRANSFORM)
         {
-            personalityValue = gBattleMons[battlerAtk].personality;
-            isShiny = gBattleMons[battlerAtk].isShiny;
+            personalityValue = gDisableStructs[battlerAtk].transformedMonPersonality;
+            isShiny = gDisableStructs[battlerAtk].transformedMonShininess;
         }
         else
         {
-            personalityValue = GetMonData(monAtk, MON_DATA_PERSONALITY);
-            isShiny = GetMonData(monAtk, MON_DATA_IS_SHINY);
+            personalityValue = gBattleMons[battlerAtk].personality;
+            isShiny = gBattleMons[battlerAtk].isShiny;
         }
         HandleLoadSpecialPokePic(!IsOnPlayerSide(battlerAtk),
                                  gMonSpritesGfxPtr->spritesGfx[position],
@@ -977,7 +972,6 @@ void HandleSpeciesGfxDataChange(u8 battlerAtk, u8 battlerDef, u8 changeType)
     paletteOffset = OBJ_PLTT_ID(battlerAtk);
     paletteData = GetMonSpritePalFromSpeciesAndPersonality(targetSpecies, isShiny, personalityValue);
     LoadPalette(paletteData, paletteOffset, PLTT_SIZE_4BPP);
-    // TimeMixBattleSpritePalette(paletteOffset);
 
     if (changeType == SPECIES_GFX_CHANGE_GHOST_UNVEIL)
     {

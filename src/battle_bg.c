@@ -643,7 +643,6 @@ static void LoadBattleEnvironmentGfx(u16 terrain)
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tileset, (void *)(BG_CHAR_ADDR(2)));
     DecompressDataWithHeaderVram(gBattleEnvironmentInfo[terrain].background.tilemap, (void *)(BG_SCREEN_ADDR(26)));
     LoadPalette(gBattleEnvironmentInfo[terrain].background.palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-    TimeMixBattleBgPalette(FALSE);
 }
 
 // Loads the entry associated with the battle terrain.
@@ -1133,7 +1132,6 @@ bool8 LoadChosenBattleElement(u8 caseId)
         break;
     case 5:
         LoadPalette(gBattleEnvironmentInfo[GetBattleEnvironmentOverride()].background.palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);
-        TimeMixBattleBgPalette(FALSE);
         break;
     case 6:
         LoadBattleMenuWindowGfx();

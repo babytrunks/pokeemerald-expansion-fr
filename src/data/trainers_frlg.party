@@ -13022,30 +13022,27 @@ Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Items: Mega Ring
 Boss: Yes
 
 Steelix @ Steelixite
-Nature: Modest
-Ability: Storm Drain
+Nature: Jolly
+Ability: Sturdy
 Level: 52
-EVs: 54 HP / 252 SpA
-- Muddy Water
-- Dragon Pulse
+EVs: 54 Atk / 252 Spe
+- Dragon Breath
 - Icy Wind
-- Rapid Spin
+- X Scissor
+- Return
 
-Milotic @ Sitrus Berry
-Ability: Competitive
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 54 SpA
-- Bouncy Bubble
-- Aerial Ace
-- Slash
-- Fire Spin
+Cramorant @ Leftovers
+Nature: Modest
+Ability: Gulp Missile
+Level: 52
+EVs: 252 HP 
+- Surf
 
 === TRAINER_CHANNELER_HOPE ===
 Name: Hope

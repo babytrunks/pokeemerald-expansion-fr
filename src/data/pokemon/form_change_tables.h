@@ -1480,7 +1480,8 @@ static const struct FormChange sSandacondaFormChangeTable[] =
 #endif //P_FAMILY_SILICOBRA
 
 #if P_FAMILY_CRAMORANT
-static const struct FormChange sCramorantFormChangeTable[] = {
+static const struct FormChange sCramorantFormChangeTable[] =
+{
     {FORM_CHANGE_BATTLE_HP_PERCENT, SPECIES_CRAMORANT_GULPING, ABILITY_GULP_MISSILE, HP_HIGHER_THAN,   50},
     {FORM_CHANGE_BATTLE_HP_PERCENT, SPECIES_CRAMORANT_GORGING, ABILITY_GULP_MISSILE, HP_LOWER_EQ_THAN, 50},
     {FORM_CHANGE_HIT_BY_MOVE,       SPECIES_CRAMORANT,         ABILITY_GULP_MISSILE},
@@ -1489,6 +1490,7 @@ static const struct FormChange sCramorantFormChangeTable[] = {
     {FORM_CHANGE_END_BATTLE,        SPECIES_CRAMORANT},
     {FORM_CHANGE_TERMINATOR},
 };
+
 #endif //P_FAMILY_CRAMORANT
 
 #if P_FAMILY_TOXEL
