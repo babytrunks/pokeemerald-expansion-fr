@@ -11545,15 +11545,26 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Spark
 - Selfdestruct
 
-Varoom @ Air Balloon
-Nature: Brave
-Ability: Filter
+Vulpix @ Wide Lens
+Nature: Modest
+Ability: Flash Fire
 Level: 13
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
-- Gyro Ball
-- Bulldoze
-- Toxic
-- Protect
+- Incinerate
+- Foul Play
+- Hex
+- Hypnosis
+
+Croagunk @ Air Balloon
+Nature: Bashful
+Ability: Dry Skin
+Level: 13
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Vacuum Wave
+- Venoshock
+- Rock Tomb
+- Fake Out
 
 Onix @ Liechi Berry
 Nature: Bashful
@@ -11565,19 +11576,8 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Bulldoze
 - Sleep Talk
 
-Archen @ Berry Juice
-Nature: Jolly
-Ability: Defeatist
-Level: 12
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Pluck
-- Rock Tomb
-- Bulldoze
-- Facade
-
 === TRAINER_LEADER_MISTY ===
-Name: MISTY
+Name: Misty
 Class: Leader Frlg
 Pic: Leader Misty Frlg
 Gender: Male
@@ -11598,18 +11598,18 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flip Turn
 - Grass Knot
 
-Floatzel @ Mystic Water
+Krabby @ Mystic Water
 Nature: Bashful
-Ability: Technician
-Level: 20
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Ability: Sheer Force
+Level: 21
+IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Water Pulse
+- Headbutt
+- Misty Splatter
 - Flip Turn
-- Icy Wind
 - Hidden Power 
 
-Starmie @ Sitrus Berry
+Starmie @ Berry Juice
 Nature: Bashful
 Ability: Analytic
 Level: 21
@@ -11620,7 +11620,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Recover
 - Aurora Beam
 
-Clodsire @ Iapapa Berry
+Clodsire @ Sitrus Berry
 Nature: Bashful
 Ability: Water Absorb
 Level: 20
@@ -11629,7 +11629,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Poison Tail
 - Bulldoze
 - Rock Tomb
-- Recover
+- Sleep Talk
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: Lt. Surge

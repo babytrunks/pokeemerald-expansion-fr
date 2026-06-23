@@ -249,7 +249,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_TM_PLAY_ROUGH",
       "script": "Common_EventScript_FindItem",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROUTE_14_TM_PLAY_ROUGH"
     },
     {
       "type": "object",

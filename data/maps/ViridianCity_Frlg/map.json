@@ -160,6 +160,21 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_EventScript_ItemAbilityCapsule",
       "flag": "FLAG_HIDE_VIRIDIAN_CITY_ABILITY_CAPSULE"
+    },
+    {
+      "local_id": "LOCALID_VIRIDIAN_BRENDAN",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 33,
+      "y": 5,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND_SLOWER",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
     }
   ],
   "warp_events": [
@@ -235,6 +250,33 @@
       "var": "VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK",
       "var_value": "1",
       "script": "ViridianCity_EventScript_TutorialTriggerRight"
+    },
+    {
+      "type": "trigger",
+      "x": 39,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_VIRIDIAN_TRIGGER_CERULEAN_CAVE",
+      "var_value": "0",
+      "script": "ViridianCity_EventScript_TriggerBrendanCeruleanCaveLeft"
+    },
+    {
+      "type": "trigger",
+      "x": 40,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_VIRIDIAN_TRIGGER_CERULEAN_CAVE",
+      "var_value": "0",
+      "script": "ViridianCity_EventScript_TriggerBrendanCeruleanCaveMiddle"
+    },
+    {
+      "type": "trigger",
+      "x": 41,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_VIRIDIAN_TRIGGER_CERULEAN_CAVE",
+      "var_value": "0",
+      "script": "ViridianCity_EventScript_TriggerBrendanCeruleanCaveRight"
     }
   ],
   "bg_events": [

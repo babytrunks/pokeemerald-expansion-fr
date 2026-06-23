@@ -85,7 +85,8 @@
     F(SUPERPOWER) \
     F(AURA_SPHERE) \
     F(TRIPLE_AXEL) \
-    F(ICE_SPINNER) 
+    F(ICE_SPINNER) \
+    F(KNOCK_OFF)
     
 #define FOREACH_HM(F) \
     F(CUT) \

@@ -221,6 +221,106 @@ ViridianCity_EventScript_DoTutorialBattle::
 	msgbox ViridianCity_Text_ThatThingsUseless
 	return
 
+ViridianCity_EventScript_TriggerBrendanCeruleanCaveLeft::
+	goto_if_unset FLAG_BADGE07_GET, ViridianCity_EventScript_TriggerNothing
+	msgbox ViridianCity_Text_BrendanToCerulean_Greet
+	waitmessage
+	waitbuttonpress
+	addobject LOCALID_VIRIDIAN_BRENDAN
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	waitse
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_VIRIDIAN_BRENDAN, ViridianCity_Movement_BrendanApproachLeft
+	waitmovement 0
+	goto ViridianCity_EventScript_TriggerBrendanCeruleanCave
+
+ViridianCity_EventScript_TriggerBrendanCeruleanCaveMiddle::
+	goto_if_unset FLAG_BADGE07_GET, ViridianCity_EventScript_TriggerNothing
+	msgbox ViridianCity_Text_BrendanToCerulean_Greet
+	waitmessage
+	waitbuttonpress
+	addobject LOCALID_VIRIDIAN_BRENDAN
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	waitse
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_VIRIDIAN_BRENDAN, ViridianCity_Movement_BrendanApproachMiddle
+	waitmovement 0
+	goto ViridianCity_EventScript_TriggerBrendanCeruleanCave
+
+ViridianCity_EventScript_TriggerBrendanCeruleanCaveRight::
+	goto_if_unset FLAG_BADGE07_GET, ViridianCity_EventScript_TriggerNothing
+	msgbox ViridianCity_Text_BrendanToCerulean_Greet
+	waitmessage
+	waitbuttonpress
+	addobject LOCALID_VIRIDIAN_BRENDAN
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	waitse
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_VIRIDIAN_BRENDAN, ViridianCity_Movement_BrendanApproachRight
+	waitmovement 0
+	goto ViridianCity_EventScript_TriggerBrendanCeruleanCave
+
+ViridianCity_EventScript_TriggerNothing:
+	end
+
+ViridianCity_EventScript_TriggerBrendanCeruleanCave:
+	msgbox ViridianCity_Text_BrendanToCerulean_GladToFindYou
+	msgbox ViridianCity_Text_BrendanToCeruleanNeedYourHelp
+	fadescreen FADE_TO_BLACK
+	playse SE_USE_ITEM
+	waitse
+	special HealPlayerParty
+	fadescreen FADE_FROM_BLACK
+	setflag FLAG_HIDE_CERULEAN_CAVE_GUARD
+	setflag FLAG_HIDE_ROUTE_22_RIVAL
+	setvar VAR_VIRIDIAN_TRIGGER_CERULEAN_CAVE 1
+	warp MAP_CERULEAN_CAVE_1F 33 20
+	waitstate
+	end
+
+
+ViridianCity_Movement_BrendanApproachLeft:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	step_end
+
+ViridianCity_Movement_BrendanApproachMiddle:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	step_end
+
+ViridianCity_Movement_BrendanApproachRight:
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_right
+	walk_faster_down
+	step_end 
+
 ViridianCity_Text_CanCarryMonsAnywhere::
     .string "Those Poké Balls at your waist!\n"
     .string "You have Pokémon, don't you?\p"
@@ -242,7 +342,7 @@ ViridianCity_Text_OhOkayThen::
     .string "Oh, okay then!$"
 
 ViridianCity_Text_ExplainWillyWonka::
-	.string "{COLOR BLUE}…Oh nice, you got the Infinite Candy.\n"
+	.string "…Oh nice, you got the Infinite Candy.\n"
 	.string "If you're curious on how such a\l"
 	.string "thing even works…\p"
 	.string "I heard Soupercell commissioned\n"
@@ -344,3 +444,30 @@ ViridianCity_Text_GymSign::
 
 ViridianCity_Text_GymDoorsAreLocked::
     .string "Viridian Gym's doors are locked…$"
+
+ViridianCity_Text_BrendanToCerulean_Greet::
+    .string "{PLAYER}!$"
+
+ViridianCity_Text_BrendanToCerulean_GladToFindYou::
+	.string "Oh my, I'm so glad to have found\n"
+	.string "you.\p"
+	.string "May told me she had just bumped\n"
+	.string "into you here, so I hurried back\l"
+	.string "over here hoping nto find you.$"
+
+ViridianCity_Text_BrendanToCeruleanNeedYourHelp::
+	.string "I've come looking for your help!\p"
+	.string "You're really the only one I\n"
+	.string "know that could stop this.\p"
+	.string "Team Rocket has occupied Cerulean\n"
+	.string "Cave!\p"
+	.string "There's rumors that a powerful\n"
+	.string "legendary rests there…\p"
+	.string "Could that be what they're after?!\p"
+	.string "It sounds like bad news.\p"
+	.string "Anywho, we need to put an end\n"
+	.string "to it!\p"
+	.string "Oh, you'd like a heal? Sure thing…$"
+
+ViridianCity_Text_BrendanToCerulean_LetsGo::
+	.string "Okay, off we go.$"

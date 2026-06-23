@@ -574,5 +574,7 @@ SilphCo7F_Text_PoliceManIOweYou::
 	.string "You're the trainer that took out\n"
 	.string "the Rockets here, right?\p"
 	.string "Sorry, didn't recognize ya.\p"
+	.string "They don't teach trigger discipline\n"
+	.string "in the Kanto Police academy, hah!\p"
 	.string "I guess I owe you one so I'll\n"
 	.string "pretend I saw nothin'.$"
