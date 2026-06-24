@@ -1,9 +1,6 @@
 VictoryRoad_2F_EventScript_DoubleEdgeTutor::
 	lock
 	faceplayer
-.if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_DOUBLE_EDGE, EventScript_DoubleEdgeTaught
-.endif
 	msgbox Text_DoubleEdgeTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DoubleEdgeDeclined
 	call EventScript_CanOnlyBeLearnedOnce
@@ -12,9 +9,6 @@ VictoryRoad_2F_EventScript_DoubleEdgeTutor::
 	setvar VAR_0x8005, MOVE_DOUBLE_EDGE
 	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DoubleEdgeDeclined
-.if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_DOUBLE_EDGE
-.endif
 	goto EventScript_DoubleEdgeTaught
 	end
 

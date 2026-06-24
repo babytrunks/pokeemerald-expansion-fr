@@ -8480,7 +8480,7 @@ EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Kangaskhan @ Kangaskhanite
 Nature: Adamant
 Ability: Inner Focus
-Level: 36
+Level: 38
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 204 Spe
 - Fake Out
@@ -11715,7 +11715,7 @@ Nature: Jolly
 Ability: Grassy Surge
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 204 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 52 Spe
 - Grassy Glide
 - U-turn
 - High Horsepower
@@ -11726,7 +11726,7 @@ Nature: Jolly
 Ability: Protean
 Level: 34
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 102 Atk / 0 Def / 0 SpA / 0 SpD / 102 Spe
+EVs: 0 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 52 Spe
 - Flower Trick
 - Knock Off
 - U-turn
@@ -11737,7 +11737,7 @@ Nature: Modest
 Ability: Chlorophyll
 Level: 35
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 102 HP / 0 Atk / 0 Def / 102 SpA / 0 SpD / 0 Spe
+EVs: 252 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 0 Spe
 - Giga Drain
 - Sludge Bomb
 - Sleep Powder
@@ -11748,10 +11748,10 @@ Nature: Modest
 Ability: Triage
 Level: 35
 IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
-EVs: 102 HP / 0 Atk / 0 Def / 102 SpA / 0 SpD / 0 Spe
+EVs: 54 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 0 Spe
 - Ancient Power
 - Giga Drain
-- Dazzling Gleam
+- Moonblast
 - Hidden Power 
 
 Electrode-Hisui @ Life Orb
@@ -11759,7 +11759,7 @@ Nature: Naive
 Ability: Reckless
 Level: 35
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 0 HP / 0 Atk / 0 Def / 204 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 54 Spe
 - Thunderbolt
 - Chloroblast
 - Hidden Power 
@@ -17459,31 +17459,115 @@ EVs: 54 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Iron Head
 - Thunder Punch
 
-=== TRAINER_CAMPER_RICKY_2 ===
-Name: Ricky
-Class: Camper Frlg
-Pic: Camper Frlg
+=== TRAINER_CERULEAN_CAVE_ARCHER ===
+Name: Archer
+Class: Team Rocket Frlg
+Pic: Archer
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Blue
+Boss: Yes
+
+Mamoswine  @ Focus Sash
+Ability: Oblivious
+Level: 60
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+- Earthquake
+- Ice Shard
+- Endeavor
+- Icicle Crash
+
+Durant  @ Life Orb
+Ability: Hustle
+Nature: Jolly
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+- Hone Claws
+- Iron Head
+- X-Scissor
+- Close Combat
+
+Mimikyu @ Lum Berry
+Ability: Disguise
+Nature: Jolly
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+- Swords Dance
+- Play Rough
+- Shadow Claw
+- Shadow Sneak
+
+Houndoom @ Houndoominite
+Ability: Unnerve
+Nature: Naive
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Atk / 252 SpA / 252 Spe
+- Fiery Wrath
+- Flamethrower
+- Sucker Punch
+- Sludge Bomb
+
+
+=== TRAINER_CERULEAN_CAVE_ARIANA ===
+Name: Ariana
+Class: Team Rocket Frlg
+Pic: Ariana
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Squirtle
-Level: 22
+Hatterene  @ Sitrus Berry
+Ability: Magic Bounce
+Level: 61
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpA 
+- Trick Room
+- Psychic
+- Dazzling Gleam
+- Mystical Fire
 
-=== TRAINER_CAMPER_RICKY_3 ===
-Name: Ricky
-Class: Camper Frlg
-Pic: Camper Frlg
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-
-Wartortle
-Level: 30
+Rhyperior @ Weakness Policy
+Ability: Solid Rock
+Nature: Adamant
+Level: 62
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+- Earthquake
+- Rock Blast
+- Ice Punch
+- Heat Crash
+
+Honchkrow @ Scope Lens
+Ability: Super Luck
+Nature: Adamant
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def
+- Sucker Punch
+- Night Slash
+- Drill Peck
+- Superpower
+
+Mawile @ Mawilite
+Ability: Intimidate
+Nature: Adamant
+Level: 64
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def 
+- Iron Head
+- Play Rough
+- Sucker Punch
+- Thunder Punch
+
 
 === TRAINER_CAMPER_RICKY_4 ===
 Name: Ricky

@@ -3475,6 +3475,10 @@
   "SEVIPER": {
     "LevelMoves": [
       {
+        "Level": 21,
+        "Move": "MOVE_MEGA_DRAIN"
+      },
+      {
         "Level": 53,
         "Move": "MOVE_GUNK_SHOT"
       },

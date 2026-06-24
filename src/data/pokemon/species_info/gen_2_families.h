@@ -1927,7 +1927,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sNatuLevelUpLearnset,
         .teachableLearnset = sNatuTeachableLearnset,
         .eggMoveLearnset = sNatuEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_XATU}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2, SPECIES_XATU}),
     },
 
     [SPECIES_XATU] =

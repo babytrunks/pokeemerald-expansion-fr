@@ -98,7 +98,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "PokemonMansion_1F_EventScript_Thomas",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MANSION_THOMAS"
     }
   ],
   "warp_events": [

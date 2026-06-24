@@ -83,6 +83,19 @@ FuchsiaCity_Gym_EventScript_GymStatuePostVictory::
 	releaseall
 	end
 
+FuschiaCity_Gym_EventScript_Greninja::
+    lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_GRENINJA, CRY_MODE_NORMAL
+	msgbox FuschiaCity_Gym_Text_Greninja
+	waitmoncry
+	release
+	end
+
+FuschiaCity_Gym_Text_Greninja::
+    .string "Jaa!!$"
+
 FuchsiaCity_Gym_Text_KogaIntro::
     .string "Fwahahaha!\p"
     .string "A mere child like you dares to\n"

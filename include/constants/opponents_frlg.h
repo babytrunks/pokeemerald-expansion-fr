@@ -508,8 +508,8 @@
 #define TRAINER_MT_MOON_ARCHER                     502
 #define TRAINER_SILPH_CO_ARCHER                    503
 #define TRAINER_SILPH_CO_ARIANA                    504
-#define TRAINER_CAMPER_RICKY_2                     505
-#define TRAINER_CAMPER_RICKY_3                     506
+#define TRAINER_CERULEAN_CAVE_ARCHER                     505
+#define TRAINER_CERULEAN_CAVE_ARIANA                     506
 #define TRAINER_CAMPER_RICKY_4                     507
 #define TRAINER_CAMPER_JEFF_2                      508
 #define TRAINER_CAMPER_JEFF_3                      509

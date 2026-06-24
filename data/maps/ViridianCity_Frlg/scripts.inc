@@ -223,6 +223,10 @@ ViridianCity_EventScript_DoTutorialBattle::
 
 ViridianCity_EventScript_TriggerBrendanCeruleanCaveLeft::
 	goto_if_unset FLAG_BADGE07_GET, ViridianCity_EventScript_TriggerNothing
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	waitmovement 0
+	setspeaker SP_NAME_BRENDAN
+	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 	msgbox ViridianCity_Text_BrendanToCerulean_Greet
 	waitmessage
 	waitbuttonpress
@@ -239,6 +243,10 @@ ViridianCity_EventScript_TriggerBrendanCeruleanCaveLeft::
 
 ViridianCity_EventScript_TriggerBrendanCeruleanCaveMiddle::
 	goto_if_unset FLAG_BADGE07_GET, ViridianCity_EventScript_TriggerNothing
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	waitmovement 0
+	setspeaker SP_NAME_BRENDAN
+	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 	msgbox ViridianCity_Text_BrendanToCerulean_Greet
 	waitmessage
 	waitbuttonpress
@@ -255,6 +263,10 @@ ViridianCity_EventScript_TriggerBrendanCeruleanCaveMiddle::
 
 ViridianCity_EventScript_TriggerBrendanCeruleanCaveRight::
 	goto_if_unset FLAG_BADGE07_GET, ViridianCity_EventScript_TriggerNothing
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	waitmovement 0
+	setspeaker SP_NAME_BRENDAN
+	playbgm MUS_ENCOUNTER_BRENDAN, FALSE
 	msgbox ViridianCity_Text_BrendanToCerulean_Greet
 	waitmessage
 	waitbuttonpress
@@ -273,7 +285,9 @@ ViridianCity_EventScript_TriggerNothing:
 	end
 
 ViridianCity_EventScript_TriggerBrendanCeruleanCave:
+	setspeaker SP_NAME_BRENDAN
 	msgbox ViridianCity_Text_BrendanToCerulean_GladToFindYou
+	setspeaker SP_NAME_BRENDAN
 	msgbox ViridianCity_Text_BrendanToCeruleanNeedYourHelp
 	fadescreen FADE_TO_BLACK
 	playse SE_USE_ITEM
@@ -283,12 +297,17 @@ ViridianCity_EventScript_TriggerBrendanCeruleanCave:
 	setflag FLAG_HIDE_CERULEAN_CAVE_GUARD
 	setflag FLAG_HIDE_ROUTE_22_RIVAL
 	setvar VAR_VIRIDIAN_TRIGGER_CERULEAN_CAVE 1
+	setspeaker SP_NAME_BRENDAN
+	msgbox ViridianCity_Text_BrendanToCerulean_LetsGo
+	waitbuttonpress
 	warp MAP_CERULEAN_CAVE_1F 33 20
 	waitstate
 	end
 
 
 ViridianCity_Movement_BrendanApproachLeft:
+	walk_faster_right
+	walk_faster_right
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
@@ -306,10 +325,14 @@ ViridianCity_Movement_BrendanApproachMiddle:
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
+	walk_faster_right
+	walk_faster_right
 	walk_faster_down
 	step_end
 
 ViridianCity_Movement_BrendanApproachRight:
+	walk_faster_right
+	walk_faster_right
 	walk_faster_right
 	walk_faster_right
 	walk_faster_right
@@ -451,22 +474,22 @@ ViridianCity_Text_BrendanToCerulean_Greet::
 ViridianCity_Text_BrendanToCerulean_GladToFindYou::
 	.string "Oh my, I'm so glad to have found\n"
 	.string "you.\p"
-	.string "May told me she had just bumped\n"
-	.string "into you here, so I hurried back\l"
-	.string "over here hoping nto find you.$"
+	.string "May told me she had just bumped into\n"
+	.string "you here, so I hurried back over\l"
+	.string "here hoping nto find you.$"
 
 ViridianCity_Text_BrendanToCeruleanNeedYourHelp::
 	.string "I've come looking for your help!\p"
-	.string "You're really the only one I\n"
-	.string "know that could stop this.\p"
+	.string "You're really the only one I know\n"
+	.string "capable of stopping this.\p"
 	.string "Team Rocket has occupied Cerulean\n"
 	.string "Cave!\p"
 	.string "There's rumors that a powerful\n"
 	.string "legendary rests there…\p"
 	.string "Could that be what they're after?!\p"
 	.string "It sounds like bad news.\p"
-	.string "Anywho, we need to put an end\n"
-	.string "to it!\p"
+	.string "Anywho, we need to put an end to\n"
+	.string "it!\p"
 	.string "Oh, you'd like a heal? Sure thing…$"
 
 ViridianCity_Text_BrendanToCerulean_LetsGo::

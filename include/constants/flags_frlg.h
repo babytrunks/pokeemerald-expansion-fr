@@ -686,8 +686,8 @@
 #define FLAG_FOUGHT_MEWTWO                               0x2BC
 #define FLAG_SILPH_7F_MOVED_ORANGE_CRATE                 0x2BD
 #define FLAG_HIDE_ROUTE_14_TM_PLAY_ROUGH                 0x2BE
-#define FLAG_0x2BF                                       0x2BF
-#define FLAG_TUTOR_DOUBLE_EDGE                           0x2C0 // Unused
+#define FLAG_DEFEATED_CERULEAN_ARCHER_ARIANA             0x2BF
+#define FLAG_DEFEATED_GIOVANNI_CERULEAN_CAVE                           0x2C0 // Unused
 #define FLAG_TUTOR_THUNDER_WAVE                          0x2C1 
 #define FLAG_TUTOR_ROCK_SLIDE                            0x2C2 // Unused
 #define FLAG_TUTOR_EXPLOSION                             0x2C3

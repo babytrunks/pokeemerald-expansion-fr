@@ -59,7 +59,7 @@ CinnabarIsland_Gym_EventScript_DefeatedBlaine::
 	setflag FLAG_BADGE07_GET
 	setrespawn HEAL_LOCATION_CINNABAR_ISLAND
 	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 1
-	clearflag FLAG_HIDE_CINNABAR_BILL
+	@ clearflag FLAG_HIDE_CINNABAR_BILL
 	set_gym_trainers_frlg 7
 	goto CinnabarIsland_Gym_EventScript_GiveTM38
 	end
@@ -206,10 +206,7 @@ CinnabarIsland_Gym_EventScript_Quz1Right::
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz1::
-	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
-	msgbox CinnabarIsland_Gym_Text_QuizQuestion1, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CinnabarIsland_Gym_EventScript_Quiz1Correct
-	goto_if_eq VAR_RESULT, NO, CinnabarIsland_Gym_EventScript_Quiz1Incorrect
+	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_Gym_EventScript_CorrectAnswer::
@@ -296,10 +293,7 @@ CinnabarIsland_Gym_EventScript_Quiz2Right::
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz2::
-	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
-	msgbox CinnabarIsland_Gym_Text_QuizQuestion2, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CinnabarIsland_Gym_EventScript_Quiz2Incorrect
-	goto_if_eq VAR_RESULT, NO, CinnabarIsland_Gym_EventScript_Quiz2Correct
+	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz2Correct::
@@ -377,10 +371,7 @@ CinnabarIsland_Gym_EventScript_Quiz3Right::
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz3::
-	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
-	msgbox CinnabarIsland_Gym_Text_QuizQuestion3, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CinnabarIsland_Gym_EventScript_Quiz3Incorrect
-	goto_if_eq VAR_RESULT, NO, CinnabarIsland_Gym_EventScript_Quiz3Correct
+	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz3Correct::
@@ -449,10 +440,7 @@ CinnabarIsland_Gym_EventScript_Quiz4Right::
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz4::
-	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
-	msgbox CinnabarIsland_Gym_Text_QuizQuestion4, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CinnabarIsland_Gym_EventScript_Quiz4Incorrect
-	goto_if_eq VAR_RESULT, NO, CinnabarIsland_Gym_EventScript_Quiz4Correct
+	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz4Correct::
@@ -521,10 +509,7 @@ CinnabarIsland_Gym_EventScript_Quiz5Right::
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz5::
-	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
-	msgbox CinnabarIsland_Gym_Text_QuizQuestion5, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CinnabarIsland_Gym_EventScript_Quiz5Correct
-	goto_if_eq VAR_RESULT, NO, CinnabarIsland_Gym_EventScript_Quiz5Incorrect
+	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz5Correct::
@@ -593,10 +578,7 @@ CinnabarIsland_Gym_EventScript_Quiz6Right::
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz6::
-	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules
-	msgbox CinnabarIsland_Gym_Text_QuizQuestion6, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, CinnabarIsland_Gym_EventScript_Quiz6Incorrect
-	goto_if_eq VAR_RESULT, NO, CinnabarIsland_Gym_EventScript_Quiz6Correct
+	msgbox CinnabarIsland_Gym_Text_PokemonQuizRules, MSGBOX_AUTOCLOSE
 	end
 
 CinnabarIsland_Gym_EventScript_Quiz6Correct::
@@ -708,25 +690,38 @@ CinnabarIsland_Gym_EventScript_OpenDoor6::
 	setmetatile  7, 10, METATILE_CinnabarGym_Floor_ShadeDiagonal, 0
 	return
 
+CinnabarIsland_Gym_EventScript_Charizard::
+    lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CHARIZARD, CRY_MODE_NORMAL
+	msgbox CinnabarIsland_Gym_Text_Charizard
+	waitmoncry
+	release
+	end
+
+CinnabarIsland_Gym_Text_Charizard::
+	.string "Zar!!$"
+	
 CinnabarIsland_Gym_Text_BlaineIntro::
     .string "Hah!\p"
-    .string "I am BLAINE, the red-hot LEADER\n"
-    .string "of CINNABAR GYM!\p"
+    .string "I am Blaine, the red-hot Leader\n"
+    .string "of Cinnabar Gym!\p"
     .string "My fiery Pokémon are all rough\n"
     .string "and ready with intense heat!\p"
     .string "They incinerate all challengers!\p"
     .string "Hah!\n"
-    .string "You better have BURN HEAL!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "You better have Burn Heal!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 CinnabarIsland_Gym_Text_BlaineDefeat::
     .string "I have burned down to nothing!\n"
     .string "Not even ashes remain!\p"
-    .string "You have earned the VOLCANOBADGE.$"
+    .string "You have earned the Volcano Badge.$"
 
 CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove::
-    .string "FIRE BLAST is the ultimate fire\n"
+    .string "Heat Wave is an awesome fire\n"
     .string "technique.\p"
-    .string "Don't waste it on WATER Pokémon.$"
+    .string "Don't waste it on Water Pokémon.$"
 
 CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
     .string "Hah!\p"
@@ -736,7 +731,7 @@ CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
 
 CinnabarIsland_Gym_Text_ReceivedTM07FromBlaine::
     .string "{PLAYER} received TM07\n"
-    .string "from BLAINE.$"
+    .string "from Blaine.$"
 
 CinnabarIsland_Gym_Text_BlainePostBattle::
     .string "TM07 contains Heat Wave.\n"
@@ -830,17 +825,15 @@ CinnabarIsland_Gym_Text_ZacDefeat::
 
 CinnabarIsland_Gym_Text_ZacPostBattle::
     .string "Water beats fire, of course.\p"
-    .string "But fire melts ice, so the FIRE\n"
-    .string "type beats ICE-type Pokémon.$"
+    .string "But fire melts ice, so the Fire\n"
+    .string "type beats Ice-type Pokémon.$"
 
 CinnabarIsland_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "The hotheaded BLAINE is a FIRE\n"
+    .string "The hotheaded Blaine is a Fire\n"
     .string "Pokémon pro.\p"
-    .string "Douse his spirits with water!\p"
-    .string "You'd better take some\n"
-    .string "BURN HEALS, too.$"
+    .string "Douse his spirits with water!$"
 
 CinnabarIsland_Gym_Text_GymGuyPostVictory::
     .string "{PLAYER}!\n"
@@ -859,14 +852,9 @@ CinnabarIsland_Gym_Text_GymStatuePlayerWon::
     .string "{RIVAL}, {PLAYER}$"
 
 CinnabarIsland_Gym_Text_PokemonQuizRules::
-    .string "Pokémon Quiz!\p"
-    .string "Get it right, and the door opens to\n"
-    .string "the next room.\p"
-    .string "Get it wrong, and face a TRAINER!\p"
-    .string "If you want to conserve your\n"
-    .string "Pokémon for the GYM LEADER…\p"
-    .string "Then get it right!\n"
-    .string "Here we go!$"
+    .string "It seems to be a quiz machine.\p"
+    .string "However, it appears to be under\n"
+    .string "maintenance…$"
 
 CinnabarIsland_Gym_Text_QuizQuestion1::
     .string "CATERPIE evolves into METAPOD?$"

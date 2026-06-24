@@ -389,7 +389,7 @@ PokemonMansion_B1F_EventScript_ItemTM22::
 	end
 
 PokemonMansion_B1F_EventScript_ItemSecretKey::
-	giveitem ITEM_SECRET_KEY
+	finditem ITEM_SECRET_KEY
 	end
 
 VictoryRoad_1F_EventScript_ItemRareCandy::
