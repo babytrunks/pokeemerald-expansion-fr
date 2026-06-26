@@ -433,8 +433,8 @@ CeruleanCity_Text_GruntDefeat::
 
 CeruleanCity_Text_OkayIllReturnStolenTM::
     .string "…Okay.\n"
-    .string "I'll return the TM I stole.\l$"
-    .string "None of my Pokémon can learn it"
+    .string "I'll return the TM I stole.\p"
+    .string "None of my Pokémon can learn it\n"
 	.string "anyway…$"
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::

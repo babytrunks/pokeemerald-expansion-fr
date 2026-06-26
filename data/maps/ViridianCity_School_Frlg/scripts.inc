@@ -41,13 +41,11 @@ ViridianCity_School_EventScript_GiveMon::
 	msgbox ViridianCity_School_Text_HaveYourPick
 	setflag FLAG_RARE_POKEMON_SCREEN
 	setflag FLAG_BEAT_VIRIDIAN_CITY_TEACHER
-	setflag FLAG_3_PERFECT_IVS
 	setvar VAR_RARE_POKEMON_COUNTER, 0
 	factory_generaterentalmons
 	factory_rentmons
 	waitstate
 	clearflag FLAG_RARE_POKEMON_SCREEN
-	clearflag FLAG_3_PERFECT_IVS
 ViridianCity_School_EventScript_BeatenTeacher::
 	msgbox ViridianCity_School_Text_Study
 	release

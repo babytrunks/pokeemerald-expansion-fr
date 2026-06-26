@@ -1605,25 +1605,9 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         else if (FlagGet(FLAG_BADGE01_GET) )
             level = 15;
     }
-    CreateMon(dst, fmon->species, level, fixedIV, TRUE, personality, otID, OT_ID_PRESET);
-
-    friendship = MAX_FRIENDSHIP;
-    // Give the chosen Pokémon its specified moves.
-    for (j = 0; j < MAX_MON_MOVES; j++)
-    {
-        move = fmon->moves[j];
-        if (flags & FLAG_FRONTIER_MON_FACTORY && move == MOVE_RETURN)
-            move = MOVE_FRUSTRATION;
-
-        SetMonMoveSlot(dst, move, j);
-        if (gMovesInfo[move].effect == EFFECT_FRUSTRATION)
-            friendship = 0;  // Frustration is more powerful the lower the pokemon's friendship is.
-    }
-    u16 item = fmon->heldItem;
     u16 species = fmon->species;
-    SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);
     if (fmon->species == SPECIES_EEVEE) 
-    { //randomize stone on eevee
+    { //randomize eeveelution on eevee
         randInd = Random() % 8;
         switch (randInd) 
         {
@@ -1680,6 +1664,24 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         }
         SetMonData(dst, MON_DATA_SPECIES, &species);
     } 
+    CreateMon(dst, species, level, fixedIV, TRUE, personality, otID, OT_ID_PRESET);
+
+    friendship = MAX_FRIENDSHIP;
+    // Give the chosen Pokémon its specified moves.
+    for (j = 0; j < MAX_MON_MOVES; j++)
+    {
+        move = fmon->moves[j];
+        if (flags & FLAG_FRONTIER_MON_FACTORY && move == MOVE_RETURN)
+            move = MOVE_FRUSTRATION;
+
+        SetMonMoveSlot(dst, move, j);
+        if (gMovesInfo[move].effect == EFFECT_FRUSTRATION)
+            friendship = 0;  // Frustration is more powerful the lower the pokemon's friendship is.
+    }
+    u16 item = fmon->heldItem;
+    SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);
+
+
     // else if (Random() % 5 == 0) { //chance for mega
     //     for (u8 i = 0; i < SIZE_OF_PRIZE_MONS; i ++) {
     //         if (monToMegaStoneTable[i].species == fmon->species) {

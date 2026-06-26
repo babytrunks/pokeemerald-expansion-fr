@@ -81,7 +81,7 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Dynamic Level Ratio: 90
 Boss: Yes
 
-Seviper @ Expert Belt
+Seviper @ Shuca Berry
 Ability: Fatal Precision
 Level: 23
 Nature: Bashful
@@ -91,24 +91,24 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Giga Drain
 - Bulldoze
 
-Furret @ Silk Scarf
+Furret @ Lum Berry
 Ability: Adaptability
 Nature: Bashful
-Level: 24
+Level: 23
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
+- Headbutt
 - Jovial Bash
 - Knock Off
 
-Kecleon @ Assault Vest
+Kecleon @ Iapapa Berry
 Level: 23
 Ability: Protean
-Nature: Impish
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Drain Punch
-- Shadow Sneak
+- Charge Beam
+- Water Pulse
+- Grass Knot
 - Ice Beam
-- Sucker Punch
 
 === TRAINER_YOUNGSTER_TIMMY ===
 Name: Timmy
@@ -9276,7 +9276,7 @@ Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Weezing-Galar @ Shuca Berry  
-Ability: Levitate  
+Ability: Neutralizing Gas
 Level: 35  
 Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15044,13 +15044,49 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Pidgeotto
-Level: 28
+Pangoro @ Focus Sash
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP/ 252 Atk / 4 Spe
+Ability: Iron Fist
+Nature: Adamant
+- Bullet Punch
+- Close Combat
+- Wicked Blow
+- Parting Shot
 
-Grafaiai 
-Level: 28
+Ambipom @ Silk Scarf
+Level: 59
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP/ 252 Atk / 252 Spe
+Ability: Technician
+- Fake Out
+- Double Hit
+- Triple Axel
+- U-Turn
+
+Thievul @ Life Orb
+Level: 61
+Ability: Stakeout
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP/ 252 SpA / 252 Spe
+- Dark Pulse
+- Burning Jealousy
+- Foul Play
+- Psychic
+
+Toxtricity @ Throat Spray
+Level: 61
+Ability: Punk Rock
+Nature: Modest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP/ 252 SpA / 252 Spe
+- Shift Gear
+- Overdrive
+- Boomburst
+- Sludge Bomb
 
 === TRAINER_BURGLAR_JOSEPH ===
 Name: Joseph
@@ -15060,14 +15096,38 @@ Gender: Male
 Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Dynamic Level Ratio: 95
 
-Arbok
-Level: 48
+Granbull @ Black Belt 
+Ability: Bull Rush
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP/ 252 Atk / 252 Spe
+- Play Rough
+- Close Combat
+- Ice Punch
+- Fire Punch
 
-Sandslash
-Level: 48
+Delphox 
+Ability: Magician
+Level: 60
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe  
+- Flamethrower
+- Psyshock
+- Grass Knot
+- Aura Sphere
+
+Absol @ Absolite Z
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe  
+Nature: Jolly  
+- Poltergeist
+- Knock Off
+- Pursuit
+- Close Combat
 
 === TRAINER_SILPH_CO_POLICEMAN ===
 Name: Policeman

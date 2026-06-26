@@ -205,14 +205,14 @@ Route11_Text_DiglettsCave::
     .string "Diglett's Cave$"
 
 gText_whitney_1::
-  .string "{COLOR RED}Jeez, Meganium and Feraligatr got new\n"
+  .string "Jeez, Meganium and Feraligatr got new\n"
   .string "Megas, but Miltank gets no love!\p"
   .string "Don't worry buddy, I'm sure your time\n"
   .string "to shine will come soon…$"
 
 
 gText_whitney_2::
-  .string "{COLOR RED}Oh… hello there.\n"
+  .string "Oh… hello there.\n"
   .string "I see you're quite an experienced\l"
   .string "trainer.\p"
   .string "I'm a renowned Gym Leader from the\n"
@@ -220,26 +220,26 @@ gText_whitney_2::
   .string "Miltank! Perhaps you've heard of me?$"
 
 gText_whitney_2_1::
-  .string "{COLOR RED}Though, if you want to face me,\n"
+  .string "Though, if you want to face me,\n"
   .string "you'll have to beat all the trainers\l"
   .string "on this Route first.$"
 
 gText_whitney_3::
-  .string "{COLOR RED}If an intense battle is what you want,\n"
+  .string "If an intense battle is what you want,\n"
   .string "then that's what you're going to get!$"
 
 gText_whitney_4::
-  .string "{COLOR RED}Scared of Miltank, aren't ya?$"
+  .string "Scared of Miltank, aren't ya?$"
 
 gText_whitney_5::
-  .string "{COLOR RED}I hope you don't let my cuteness lull\n"
+  .string "I hope you don't let my cuteness lull\n"
   .string "you. You'll definitely regret it!$"
 
 whitney_Text_Defeat::
   .string "Ah… woe is me…$"
 
 gText_whitney_6::
-  .string "{COLOR RED}In my younger days, Miltank was such\n"
+  .string "In my younger days, Miltank was such\n"
   .string "a big threat. I gave trainers of all\l"
   .string "ages nightmares.\p"
   .string "Though, now with Mega Evolutions, I fear\n"
@@ -259,10 +259,10 @@ johtoLeader_Text_CurrentEvCap::
   .string "Your current EV Cap is {STR_VAR_1}.$"
 
 gText_whitney_7_2::
-  .string "{COLOR RED} Have this as well.$"
+  .string "Have this as well.$"
 
 gText_whitney_8::
-  .string "{COLOR RED}Eviolite boosts the defenses of Poké-\n"
+  .string "Eviolite boosts the defenses of Poké-\n"
   .string "mon that can still evolve.\p"
   .string "It's great if you like using cute\n"
   .string "Pokémon!\p"

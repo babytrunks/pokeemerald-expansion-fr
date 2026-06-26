@@ -5,7 +5,7 @@
     F(CLOSE_COMBAT) \
     F(DRAGON_CLAW) \
     F(WATER_PULSE) \
-    F(CALM_MIND) \
+    F(VACUUM_WAVE) \
     F(ROAR) \
     F(TOXIC) \
     F(HEAT_WAVE) \
@@ -86,7 +86,9 @@
     F(AURA_SPHERE) \
     F(TRIPLE_AXEL) \
     F(ICE_SPINNER) \
-    F(KNOCK_OFF)
+    F(KNOCK_OFF) \
+    F(X_SCISSOR) \
+    F(POISON_JAB) 
     
 #define FOREACH_HM(F) \
     F(CUT) \

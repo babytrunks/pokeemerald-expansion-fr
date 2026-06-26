@@ -536,7 +536,6 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     [FRONTIER_MON_EEVEE] = { 
         .species = SPECIES_EEVEE,
         .moves = {MOVE_TACKLE, MOVE_ATTRACT, MOVE_FLAIL, MOVE_ENDURE},
-        .heldItem = ITEM_WATER_STONE, //can be any of Fire/Water/Electric/Moon/Sun/Ice/Leaf stone
         .nature = NATURE_DOCILE,
     .ball = BALL_PREMIER,},
 

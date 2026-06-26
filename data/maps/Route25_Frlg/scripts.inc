@@ -64,7 +64,6 @@ PostBugsy:
 	factory_rentmons
 	waitstate
 	clearflag FLAG_RARE_POKEMON_SCREEN
-	clearflag FLAG_3_PERFECT_IVS
     setspeaker SP_NAME_BUGSY
     msgbox gText_bugsy_6_1
     giveitem ITEM_TM_U_TURN

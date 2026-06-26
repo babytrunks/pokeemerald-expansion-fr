@@ -392,7 +392,7 @@
 #define ITEM_MEWTWONITE_Y 306
 #define ITEM_AMPHAROSITE 307 // DONE (Route 17, map object)
 #define ITEM_STEELIXITE 308 // DONE (jasmine)
-#define ITEM_SCIZORITE 309
+#define ITEM_SCIZORITE 309 // DONE (route 2 rock smash)
 #define ITEM_HERACRONITE 310 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_HOUNDOOMINITE 311
 #define ITEM_TYRANITARITE 312
