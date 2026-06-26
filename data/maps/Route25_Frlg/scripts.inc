@@ -227,7 +227,7 @@ Route25_Text_AreYouHereAlone::
 
 gText_bugsy_1::
   .string "I better keep my ass in this rainy\n"
-  .string "weather!!! or im FINISHED!!$"
+  .string "weather!!! or im FINISHED!!$" 
 
 
 gText_bugsy_2::
@@ -261,8 +261,6 @@ gText_bugsy_Defeat::
   .string "Gah… It's just not cutting it!$"
 
 gText_bugsy_6::
-  .string "Frankly, I'm a bit disappointed in\n"
-  .string "myself.\p"
   .string "I'm struggling to win even in the\n"
   .string "rain. It's hard to stay competitive\l"
   .string "specializing in Bug-types.\p"

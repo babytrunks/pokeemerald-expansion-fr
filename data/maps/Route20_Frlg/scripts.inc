@@ -66,12 +66,12 @@ EventScript_Pryce_Battle::
     giveitem ITEM_FROSLASSITE
     setspeaker SP_NAME_PRYCE
     msgbox gText_pryce_4
-    fadescreen FADE_TO_BLACK                 @ fadescreen 0x1
+    fadescreenswapbuffers FADE_TO_BLACK                 @ fadescreen 0x1
     playse SE_EXIT                            @ sound 0x9
     waitse                                   @ checksound
     removeobject LOCALID_ROUTE20_PRYCE             @ hidesprite 0x2
     removeobject LOCALID_ROUTE20_FROSLASS
-    fadescreen FADE_FROM_BLACK               @ fadescreen 0x0
+    fadescreenswapbuffers FADE_FROM_BLACK               @ fadescreen 0x0
     release
     end
 

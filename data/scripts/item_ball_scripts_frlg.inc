@@ -529,7 +529,8 @@ RockTunnel_1F_EventScript_ItemTMZenHeadbutt::
 	end
 
 RockTunnel_1F_EventScript_ItemEverstone::
-	finditem ITEM_EVERSTONE
+	giveitem ITEM_EVERSTONE
+	removeobject VAR_LAST_TALKED
 	end
 
 RockTunnel_B1F_EventScript_ItemSinnohFossil::

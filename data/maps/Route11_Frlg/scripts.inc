@@ -47,12 +47,12 @@ EventScript_Whitney_Battle::
     giveitem ITEM_EVIOLITE
     setspeaker SP_NAME_WHITNEY
     msgbox gText_whitney_8
-    fadescreen FADE_TO_BLACK                 @ fadescreen 0x1
+    fadescreenswapbuffers FADE_TO_BLACK                 @ fadescreen 0x1
     playse SE_EXIT                            @ sound 0x9
     waitse                                   @ checksound
     removeobject LOCALID_WHITNEY             @ hidesprite 0x2
     removeobject LOCALID_ROUTE11_MILTANK
-    fadescreen FADE_FROM_BLACK               @ fadescreen 0x0
+    fadescreenswapbuffers FADE_FROM_BLACK               @ fadescreen 0x0
     release
     end
 

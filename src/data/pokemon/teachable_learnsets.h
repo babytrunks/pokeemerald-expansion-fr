@@ -8354,7 +8354,7 @@ static const u16 sDragoniteTeachableLearnset[] = {
     MOVE_FIRE_BLAST,
     MOVE_FIRE_PUNCH,
     MOVE_FLAMETHROWER,
-    MOVE_FLY,
+    MOVE_FLY, 
     MOVE_FOCUS_BLAST,
     MOVE_FOCUS_PUNCH,
     MOVE_HEAT_WAVE,

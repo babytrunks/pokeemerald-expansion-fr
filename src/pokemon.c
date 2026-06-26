@@ -4807,6 +4807,22 @@ u32 GetGMaxTargetSpecies(u32 species)
     return species;
 }
 
+// Folds the time-of-day buckets for evolution checks: morning counts as day and
+// evening counts as night, while TIME_EVENING still matches only the exact 5-8pm window
+// (so Rockruff -> Lycanroc Dusk and Alcremie Rainbow Swirl keep working).
+static bool32 DoesTimeOfDayMatchCondition(enum TimeOfDay condition)
+{
+    enum TimeOfDay now = GetTimeOfDay();
+    switch (condition)
+    {
+    case TIME_DAY:     return now == TIME_MORNING || now == TIME_DAY;   // morning -> day
+    case TIME_NIGHT:   return now == TIME_EVENING || now == TIME_NIGHT; // evening -> night
+    case TIME_EVENING: return now == TIME_EVENING;                      // exact 5-8pm window
+    case TIME_MORNING: return now == TIME_MORNING;                      // exact
+    default:           return now == condition;
+    }
+}
+
 bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct EvolutionParam *params, struct Pokemon *tradePartner, u32 partyId, bool32 *canStopEvo, enum EvoState evoState)
 {
     u32 i, j;
@@ -4877,15 +4893,11 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
                 currentCondition = TRUE;
             break;
         case IF_TIME:
-            if (GetTimeOfDay() == params[i].arg1)
-                currentCondition = TRUE;
-            if (GetTimeOfDay() == TIME_EVENING && params[i].arg1 == TIME_NIGHT && GetMonData(mon, MON_DATA_SPECIES, NULL) != SPECIES_ROCKRUFF)
-                currentCondition = TRUE;
-            if (GetTimeOfDay() == TIME_MORNING && params[i].arg1 == TIME_DAY)
+            if (DoesTimeOfDayMatchCondition(params[i].arg1))
                 currentCondition = TRUE;
             break;
         case IF_NOT_TIME:
-            if (GetTimeOfDay() != params[i].arg1)
+            if (!DoesTimeOfDayMatchCondition(params[i].arg1))
                 currentCondition = TRUE;
             break;
         case IF_HOLD_ITEM:

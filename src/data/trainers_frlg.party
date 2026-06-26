@@ -780,12 +780,13 @@ Nature: Adamant
 Ability: Contrary
 Level: 28
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk
 - Rollout
 
 Skorupi @ Occa Berry
 Nature: Adamant
 Ability: Sniper
-Level: 28
+Level: 30
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Poison Fang
 - Bug Bite
@@ -795,7 +796,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Venomoth
 Nature: Docile
 Ability: Tinted Lens
-Level: 28
+Level: 29
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Bug Buzz
 - Psybeam
@@ -2206,7 +2207,7 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Solrock  
 Ability: Levitate  
-Level: 29  
+Level: 30  
 Nature: Serious
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -2217,7 +2218,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Lunatone  
 Ability: Levitate  
-Level: 29 
+Level: 30 
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Serious 
@@ -13743,7 +13744,7 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Pikachu-Cosplay @ Eviolite  
 Ability: Lightning Rod  
-Level: 31  
+Level: 32  
 Nature: Hardy  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -13754,7 +13755,7 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Floette-Blue @ Floettite  
 Ability: Flower Veil  
-Level: 31  
+Level: 32  
 Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
