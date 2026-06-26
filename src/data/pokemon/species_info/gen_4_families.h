@@ -836,8 +836,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sStaraviaLevelUpLearnset,
         .teachableLearnset = sStaraviaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_4 + 1, SPECIES_STARAPTOR}),
-        .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
-        .formChangeTable = sStaraptorFormChangeTable,
+
     },
 
     [SPECIES_STARAPTOR] =
@@ -923,6 +922,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sStaraptorLevelUpLearnset,
         .teachableLearnset = sStaraptorTeachableLearnset,
+        .formSpeciesIdTable = sStaraptorFormSpeciesIdTable,
+        .formChangeTable = sStaraptorFormChangeTable,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS
@@ -6942,6 +6943,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sHeatranLevelUpLearnset,
         .teachableLearnset = sHeatranTeachableLearnset,
+        .formSpeciesIdTable = sHeatranFormSpeciesIdTable,
+        .formChangeTable = sHeatranFormChangeTable,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS
@@ -7560,6 +7563,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sDarkraiLevelUpLearnset,
         .teachableLearnset = sDarkraiTeachableLearnset,
+        .formSpeciesIdTable = sDarkraiFormSpeciesIdTable,
+        .formChangeTable = sDarkraiFormChangeTable,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS

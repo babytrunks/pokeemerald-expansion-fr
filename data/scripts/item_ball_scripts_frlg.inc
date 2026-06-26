@@ -39,7 +39,8 @@ MtMoon_1F_EventScript_ItemTM09::
 	end
 
 MtMoon_B2F_EventScript_ItemBerryJuice::
-	finditem ITEM_BERRY_JUICE
+	giveitem ITEM_BERRY_JUICE
+	removeobject VAR_LAST_TALKED
 	end
 
 MtMoon_1F_EventScript_ItemKalosFossil::

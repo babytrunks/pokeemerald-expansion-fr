@@ -4690,6 +4690,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sGlimmoraLevelUpLearnset,
         .teachableLearnset = sGlimmoraTeachableLearnset,
+        .formSpeciesIdTable = sGlimmoraFormSpeciesIdTable,
+        .formChangeTable = sGlimmoraFormChangeTable,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS
@@ -5278,6 +5280,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sTatsugiriTeachableLearnset,
         .eggMoveLearnset = sTatsugiriEggMoveLearnset,
         .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
+        .formChangeTable = sTatsugiriCurlyFormChangeTable,
         .randomizerMode = MON_RANDOMIZER_RANDOM_FORM,
     },
 
@@ -5343,6 +5346,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sTatsugiriTeachableLearnset,
         .eggMoveLearnset = sTatsugiriEggMoveLearnset,
         .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
+        .formChangeTable = sTatsugiriDroopyFormChangeTable,
         .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 
@@ -5408,6 +5412,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .teachableLearnset = sTatsugiriTeachableLearnset,
         .eggMoveLearnset = sTatsugiriEggMoveLearnset,
         .formSpeciesIdTable = sTatsugiriFormSpeciesIdTable,
+        .formChangeTable = sTatsugiriStretchyFormChangeTable,
         .randomizerMode = MON_RANDOMIZER_INVALID,
     },
 
@@ -6590,6 +6595,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sBaxcaliburLevelUpLearnset,
         .teachableLearnset = sBaxcaliburTeachableLearnset,
+        .formSpeciesIdTable = sBaxcaliburFormSpeciesIdTable,
+        .formChangeTable = sBaxcaliburFormChangeTable,
     },
 
 #if P_GEN_9_MEGA_EVOLUTIONS

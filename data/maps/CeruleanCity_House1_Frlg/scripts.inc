@@ -6,7 +6,7 @@ CeruleanCity_House1_EventScript_LuxuryBallGuy::
 	faceplayer
     goto_if_set FLAG_CERULEAN_GAVE_LUXURY_BALL, CeruleanCity_House1_EventScript_LuxuryBallGuyDone
 	msgbox CeruleanCity_House1_Text_LuxuryBallClassy
-    giveitem ITEM_LUXURY_BALL
+    giveitem ITEM_LUXURY_BALL 3
     setflag FLAG_CERULEAN_GAVE_LUXURY_BALL
 CeruleanCity_House1_EventScript_LuxuryBallGuyDone:
     msgbox CeruleanCity_House1_Text_LuxuryBallBoostsIVs
