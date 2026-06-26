@@ -2150,7 +2150,6 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .shinyPalette = gMonShinyPalette_Floette ##form,                        \
         .iconSprite = gMonIcon_Floette##form,                                   \
         .iconPalIndex = iconPal,                                                \
-        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,                                      \
         SHADOW(-3, 12, SHADOW_SIZE_S)                                           \
         FOOTPRINT(Floette)                                                      \
         OVERWORLD(                                                              \
@@ -2162,7 +2161,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
             gOverworldPalette_Floette ##form,                                   \
             gShinyOverworldPalette_Floette ##form                               \
         )                                                                       \
-
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE
 
 #define FLOETTE_NORMAL_INFO(form, FORM, iconPal)                                                \
         .baseHP        = 54,                                                                    \
