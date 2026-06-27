@@ -2362,9 +2362,17 @@ u16 GetOverworldWeatherSpecies(u16 species)
 }
 
 #if OW_FOLLOWER_MEGA_FORMS && OW_BATTLE_ONLY_FORMS
+// A species lacks follower overworld graphics when its overworldData was never
+// defined (tileTag stays 0). Mirrors the missing-sprite check in SpeciesToGraphicsInfo.
+static bool32 SpeciesHasFollowerSprite(u16 species)
+{
+    return gSpeciesInfo[species].overworldData.tileTag != 0;
+}
+
 // Resolve a follower's battle-only Mega form from its held Mega Stone (or known
 // Mega trigger move, e.g. Rayquaza's Dragon Ascent). Mirrors the trigger checks in
-// GetBattleFormChangeTargetSpecies. Returns the unchanged species if no Mega applies.
+// GetBattleFormChangeTargetSpecies. Returns the unchanged species if no Mega applies,
+// or if the Mega form has no follower sprite (falls back to the base form).
 static u16 GetFollowerMegaSpecies(struct Pokemon *mon, u16 species)
 {
     u32 i;
@@ -2379,11 +2387,11 @@ static u16 GetFollowerMegaSpecies(struct Pokemon *mon, u16 species)
         {
         case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM:
             if (heldItem == formChanges[i].param1)
-                return formChanges[i].targetSpecies;
+                return SpeciesHasFollowerSprite(formChanges[i].targetSpecies) ? formChanges[i].targetSpecies : species;
             break;
         case FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE: // Rayquaza / Dragon Ascent
             if (MonKnowsMove(mon, formChanges[i].param1))
-                return formChanges[i].targetSpecies;
+                return SpeciesHasFollowerSprite(formChanges[i].targetSpecies) ? formChanges[i].targetSpecies : species;
             break;
         }
     }

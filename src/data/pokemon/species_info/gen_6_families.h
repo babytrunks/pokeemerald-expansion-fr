@@ -1205,7 +1205,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sFletchlingLevelUpLearnset,
         .teachableLearnset = sFletchlingTeachableLearnset,
         .eggMoveLearnset = sFletchlingEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_FLETCHINDER}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_FLETCHINDER}),
     },
 
     [SPECIES_FLETCHINDER] =
