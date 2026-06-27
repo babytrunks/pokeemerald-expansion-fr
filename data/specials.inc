@@ -16,6 +16,8 @@
 		.align 2
 gSpecials::
 	def_special HealPlayerParty
+	def_special ShowTimeChangerMenu
+	def_special ApplyTimeChangerChoice
 	def_special StartBlackJack
 	def_special StartGacha
 	def_special StartBlockStacker

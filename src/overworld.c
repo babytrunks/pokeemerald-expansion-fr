@@ -1658,12 +1658,29 @@ const struct BlendSettings gTimeOfDayBlend[] =
 
 #define MORNING_HOUR_MIDDLE (MORNING_HOUR_BEGIN + ((MORNING_HOUR_END - MORNING_HOUR_BEGIN) / 2))
 
+// Time Changer key item: representative hour for each forced time of day.
+// Index is the VAR_TIME_OF_DAY_OVERRIDE value (TimeOfDay enum + 1); 0 = follow RTC.
+static const u8 sTimeOverrideHour[] = {
+    [TIME_DAY + 1]     = 12, // Day
+    [TIME_EVENING + 1] = 18, // Dusk
+    [TIME_NIGHT + 1]   = 22, // Night
+};
+
 void UpdateTimeOfDay(void)
 {
     s32 hours, minutes;
+    u32 todOverride = VarGet(VAR_TIME_OF_DAY_OVERRIDE);
     RtcCalcLocalTime();
-    hours = sHoursOverride ? sHoursOverride : gLocalTime.hours;
-    minutes = sHoursOverride ? 0 : gLocalTime.minutes;
+    if (todOverride != 0)
+    {
+        hours = sTimeOverrideHour[todOverride];
+        minutes = 0;
+    }
+    else
+    {
+        hours = sHoursOverride ? sHoursOverride : gLocalTime.hours;
+        minutes = sHoursOverride ? 0 : gLocalTime.minutes;
+    }
 
     if (IsBetweenHours(hours, MORNING_HOUR_BEGIN, MORNING_HOUR_MIDDLE)) // night->morning
     {

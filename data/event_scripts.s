@@ -1251,6 +1251,20 @@ EventScript_RegionMap::
 	releaseall
 	end
 
+@ Time Changer key item: pick Day/Dusk/Night to force the time of day (see src/item_use.c).
+EventScript_TimeChanger::
+	message Text_TimeChangerPrompt
+	waitmessage
+	special ShowTimeChangerMenu
+	waitstate
+	special ApplyTimeChangerChoice
+	closemessage
+	releaseall
+	end
+
+Text_TimeChangerPrompt:
+	.string "What time would you like to\nchange to?$"
+
 Common_EventScript_PlayBrineysBoatMusic::
 	setflag FLAG_DONT_TRANSITION_MUSIC
 	playbgm MUS_SAILING, FALSE

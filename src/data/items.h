@@ -13741,6 +13741,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_PokemonBoxLink,
     },
 
+    [ITEM_TIME_CHANGER] =
+    {
+        .name = ITEM_NAME("Time Changer"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Forces the time of\n"
+            "day to Day, Dusk,\n"
+            "or Night."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_TimeChanger,
+        .iconPic = gItemIcon_Scanner,
+        .iconPalette = gItemIconPalette_Scanner,
+    },
+
     [ITEM_COIN_CASE] =
     {
         .name = ITEM_NAME("Coin Case"),

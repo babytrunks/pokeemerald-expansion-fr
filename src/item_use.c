@@ -51,6 +51,13 @@
 #include "tv.h" //Pokevial Branch
 #include "pokevial.h" //Pokevial Branch
 #include "script_pokemon_util.h"
+#include "script_menu.h"
+#include "list_menu.h"
+#include "malloc.h"
+#include "constants/rtc.h"
+#include "constants/script_menu.h"
+
+static void Task_StartTimeChanger(u8);
 
 static void SetUpItemUseCallback(u8);
 static void FieldCB_UseItemOnField(void);
@@ -780,6 +787,93 @@ static void Task_AccessPokemonBoxLink(u8 taskId)
     ScriptContext_SetupScript(EventScript_AccessPokemonBoxLink);
     DestroyTask(taskId);
 }
+
+// Time Changer key item. The forced time of day is persisted in
+// VAR_TIME_OF_DAY_OVERRIDE: 0 = follow the RTC, otherwise (TimeOfDay enum + 1).
+// The three menu options map to these times of day, in display order:
+static const u8 sTimeChangerOptions[] = { TIME_DAY, TIME_EVENING, TIME_NIGHT };
+
+static const u8 sText_TimeChangerDay[]    = _("Day");
+static const u8 sText_TimeChangerDayRed[] = _("{COLOR RED}Day");
+static const u8 sText_TimeChangerDusk[]    = _("Dusk");
+static const u8 sText_TimeChangerDuskRed[] = _("{COLOR RED}Dusk");
+static const u8 sText_TimeChangerNight[]    = _("Night");
+static const u8 sText_TimeChangerNightRed[] = _("{COLOR RED}Night");
+
+static const u8 *const sTimeChangerOptionNames[][2] =
+{
+    // [normal, highlighted-red]
+    {sText_TimeChangerDay,   sText_TimeChangerDayRed},
+    {sText_TimeChangerDusk,  sText_TimeChangerDuskRed},
+    {sText_TimeChangerNight, sText_TimeChangerNightRed},
+};
+
+void ItemUseOutOfBattle_TimeChanger(u8 taskId)
+{
+    sItemUseOnFieldCB = Task_StartTimeChanger;
+    SetUpItemUseOnFieldCallback(taskId);
+}
+
+static void Task_StartTimeChanger(u8 taskId)
+{
+    ScriptContext_SetupScript(EventScript_TimeChanger);
+    DestroyTask(taskId);
+}
+
+#define TIME_CHANGER_OPTION_COUNT ARRAY_COUNT(sTimeChangerOptions)
+
+// Opens the Day / Dusk / Night multichoice. The option matching the currently
+// forced time of day (if any) is printed in red and the cursor starts on it.
+void ShowTimeChangerMenu(void)
+{
+    u32 i;
+    u32 override = VarGet(VAR_TIME_OF_DAY_OVERRIDE);
+    u32 initialRow = 0;
+    struct ListMenuItem *items = AllocZeroed(sizeof(struct ListMenuItem) * TIME_CHANGER_OPTION_COUNT);
+
+    for (i = 0; i < TIME_CHANGER_OPTION_COUNT; i++)
+    {
+        bool32 isActive = (override != 0 && override == sTimeChangerOptions[i] + 1);
+        u8 *nameBuffer = Alloc(32);
+
+        StringCopy(nameBuffer, sTimeChangerOptionNames[i][isActive ? 1 : 0]);
+        items[i].name = nameBuffer;
+        items[i].id = i;
+        if (isActive)
+            initialRow = i;
+    }
+
+    ScriptMenu_MultichoiceDynamic(0, 0, TIME_CHANGER_OPTION_COUNT, items, FALSE,
+                                  TIME_CHANGER_OPTION_COUNT, initialRow, DYN_MULTICHOICE_CB_NONE);
+}
+
+// Reads the player's menu choice and applies / clears the forced time of day.
+void ApplyTimeChangerChoice(void)
+{
+    u32 selection = gSpecialVar_Result;
+    u32 chosen, override;
+
+    if (selection == MULTI_B_PRESSED || selection >= TIME_CHANGER_OPTION_COUNT)
+        return;
+
+    chosen = sTimeChangerOptions[selection] + 1;
+    override = VarGet(VAR_TIME_OF_DAY_OVERRIDE);
+
+    // Re-selecting the active option reverts to following the RTC.
+    if (override == chosen)
+        VarSet(VAR_TIME_OF_DAY_OVERRIDE, 0);
+    else
+        VarSet(VAR_TIME_OF_DAY_OVERRIDE, chosen);
+
+    // Refresh the overworld tint on the spot. Setting the counter to 0 makes the overworld
+    // loop re-run UpdateTimeOfDay() next frame and detect the changed blend, which re-applies
+    // the screen tint (see src/overworld.c). Do NOT call UpdateTimeOfDay() here: doing so
+    // pre-updates gTimeBlend so the loop's change check sees nothing and skips the re-apply
+    // (the tint would then only refresh on the next warp). This mirrors SetTimeOfDay().
+    gTimeUpdateCounter = 0;
+}
+
+#undef TIME_CHANGER_OPTION_COUNT
 
 void ItemUseOutOfBattle_CoinCase(u8 taskId)
 {
