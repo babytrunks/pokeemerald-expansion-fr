@@ -30,6 +30,7 @@ ViridianCity_EventScript_TryUnlockGym::
 	goto_if_unset FLAG_BADGE05_GET, Common_EventScript_NopReturn
 	goto_if_unset FLAG_BADGE06_GET, Common_EventScript_NopReturn
 	goto_if_unset FLAG_BADGE07_GET, Common_EventScript_NopReturn
+	goto_if_unset FLAG_DEFEATED_GIOVANNI_CERULEAN_CAVE, Common_EventScript_NopReturn
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR, 1
 	return
 
@@ -39,6 +40,12 @@ ViridianCity_EventScript_GymDoorLocked::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterUp
 	waitmovement 0
 	delay 20
+	goto_if_unset FLAG_BADGE07_GET, ViridianCity_EventScript_GymDoorLockedNormal
+	goto_if_unset FLAG_DEFEATED_GIOVANNI_CERULEAN_CAVE, ViridianCity_EventScript_GymDoorLockedGoToCC
+	releaseall
+	end
+
+ViridianCity_EventScript_GymDoorLockedNormal:
 	msgbox ViridianCity_Text_GymDoorsAreLocked
 	closemessage
 	applymovement LOCALID_PLAYER, ViridianCity_Movement_JumpDownLedge
@@ -46,6 +53,13 @@ ViridianCity_EventScript_GymDoorLocked::
 	releaseall
 	end
 
+ViridianCity_EventScript_GymDoorLockedGoToCC:
+	msgbox ViridianCity_Text_GymDoorsAreLockedCC
+	closemessage
+	applymovement LOCALID_PLAYER, ViridianCity_Movement_JumpDownLedge
+	waitmovement 0
+	releaseall
+	end
 ViridianCity_Movement_JumpDownLedge::
 	jump_2_down
 	step_end
@@ -467,6 +481,11 @@ ViridianCity_Text_GymSign::
 
 ViridianCity_Text_GymDoorsAreLocked::
     .string "Viridian Gym's doors are locked…$"
+
+ViridianCity_Text_GymDoorsAreLockedCC::
+    .string "Viridian Gym's doors are locked…\n"
+	.string "Perhaps we should help Brendan out in\l"
+	.string "Cerulean Cave?$"
 
 ViridianCity_Text_BrendanToCerulean_Greet::
     .string "{PLAYER}!$"

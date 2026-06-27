@@ -150,8 +150,10 @@ EventScript_AdminMtMoonMain_Start::
     waitmovement 0
     msgbox adminmtmoonleft_Text_1
     waitmessage                 
+    playse SE_M_METRONOME
     applymovement LOCALID_PLAYER, Common_Movement_QuestionMark
     waitmovement 0
+    waitse
                     
     call_if_eq VAR_TEMP_2, 1, MtMoon_AdminMtMoon_ComeUpLeft
     call_if_eq VAR_TEMP_2, 2, MtMoon_AdminMtMoon_ComeUpRight

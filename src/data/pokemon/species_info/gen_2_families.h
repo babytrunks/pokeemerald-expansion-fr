@@ -1252,7 +1252,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sLedybaLevelUpLearnset,
         .teachableLearnset = sLedybaTeachableLearnset,
         .eggMoveLearnset = sLedybaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 15, SPECIES_LEDIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_1 + 1, SPECIES_LEDIAN}),
     },
 
     [SPECIES_LEDIAN] =

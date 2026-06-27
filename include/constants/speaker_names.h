@@ -48,6 +48,8 @@ enum SpeakerNames {
     SP_NAME_JOJO_FAN,
     SP_NAME_JOSEPH,
     SP_NAME_JESSE,
+    SP_NAME_LANCE,
+    SP_NAME_MEWTWO,
     SP_NAME_COUNT
 };
 

@@ -213,6 +213,21 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
+    },
+    {
+      "local_id": "LOCALID_CERULEAN_CAVE_MEWTWO_POKEBALL",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 7,
+      "y": 11,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
     }
   ],
   "warp_events": [
@@ -230,18 +245,18 @@
       "x": 6,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI",
       "var_value": "0",
-      "script": "NULL"
+      "script": "EventScript_ceruleangiovanni_Start_Left"
     },
     {
       "type": "trigger",
       "x": 7,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI",
       "var_value": "0",
-      "script": "NULL"
+      "script": "EventScript_ceruleangiovanni_Start_Right"
     }
   ],
   "bg_events": [],

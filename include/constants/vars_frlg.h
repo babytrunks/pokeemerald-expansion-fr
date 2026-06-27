@@ -220,7 +220,7 @@
 #define VAR_VIRIDIAN_TRIGGER_CERULEAN_CAVE             0x40CD
 #define VAR_TRIGGER_CERULEAN_CAVE_ARCHER_ARIANA        0x40CE
 #define VAR_FRONTIER_FACILITY      0x40CF
-#define VAR_0x40D0                 0x40D0
+#define VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI             0x40D0
 #define VAR_0x40D1                 0x40D1
 #define VAR_0x40D2                 0x40D2
 #define VAR_0x40D3                 0x40D3
