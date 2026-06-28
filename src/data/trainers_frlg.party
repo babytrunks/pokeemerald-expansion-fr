@@ -17584,6 +17584,8 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Boss: Yes
+Mugshot: Pink
 
 Hatterene  @ Sitrus Berry
 Ability: Magic Bounce
@@ -17630,18 +17632,83 @@ EVs: 252 HP / 252 Atk / 4 Def
 - Thunder Punch
 
 
-=== TRAINER_CAMPER_RICKY_4 ===
-Name: Ricky
-Class: Camper Frlg
-Pic: Camper Frlg
+=== TRAINER_CERULEAN_CAVE_GIOVANNI ===
+Name: Giovanni
+Class: Boss Frlg
+Pic: Leader Giovanni Frlg
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Yellow
+Boss: Yes
+Items: Mega Ring
 
-Wartortle
-Level: 55
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Tapu Lele @ Terrain Extender
+Nature: Timid
+Ability: Psychic Surge
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+- Moonblast
+- Psychic
+- Thunderbolt
+- Aura Sphere
+
+Scrafty @ Psychic Seed
+Nature: Adamant
+Ability: Intimidate
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def
+- Roar
+- Knock Off
+- Drain Punch
+- Ice Punch
+
+Excadrill @ Focus Sash
+Nature: Adamant
+Ability: Sand Force
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+- High Horsepower
+- Iron Head
+- Rock Slide
+- Swords Dance
+
+Tyranitar @ Assault Vest
+Nature: Adamant
+Ability: Sand Stream
+Level: 62
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def
+- High Horsepower
+- Knock Off
+- Rock Slide
+- Fire Punch
+
+Celesteela @ Power Herb
+Nature: Modest
+Ability: Beast Boost
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+- Autotomize
+- Meteor Beam
+- Air Slash
+- Flamethrower
+
+Mewtwo
+Nature: Timid
+Ability: Unnerve
+Level: 63
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+- Expanding Force
+- Dazzling Gleam
+- Flamethrower
+- Aura Sphere
 
 === TRAINER_CAMPER_JEFF_2 ===
 Name: Jeff
@@ -19168,7 +19235,6 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Shock Wave
 - Air Cutter
 - Sleep Talk
-- Roost
 
 Pidgeotto @ Eviolite
 Nature: Bashful

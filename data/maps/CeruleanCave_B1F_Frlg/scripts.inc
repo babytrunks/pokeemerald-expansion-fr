@@ -108,9 +108,13 @@ CeruleanCave_EventScript_StartSelectPokemon:
 	waitstate
 	goto_if_eq VAR_RESULT, 0, CeruleanCave_EventScript_StartSelectPokemon
 	@ special 0x28
-	multi_2_vs_1 TRAINER_SILPH_CO_ARCHER, SilphCo_11F_Text_ArcherDefeat, PARTNER_CERULEAN_CAVE_LANCE
+	setvar VAR_TRANSFORM_BATTLE_TYPE, TRANSFORM_BATTLE_MEWTWO
+	setflag FLAG_TRANSFORM_BATTLE
+	multi_2_vs_1 TRAINER_CERULEAN_CAVE_GIOVANNI, gText_ceruleangiovanni_Defeated, PARTNER_CERULEAN_CAVE_LANCE
+	clearflag FLAG_TRANSFORM_BATTLE
 	setflag FLAG_DEFEATED_GIOVANNI_CERULEAN_CAVE
 	setvar VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI, 1
+	setspeaker SP_NAME_GIOVANNI
 	msgbox gText_ceruleangiovanni_9
 	playmoncry SPECIES_MEWTWO, CRY_MODE_ENCOUNTER
 	waitmoncry
@@ -118,6 +122,8 @@ CeruleanCave_EventScript_StartSelectPokemon:
 	addobject LOCALID_CERULEAN_CAVE_MEWTWO
 	playse SE_BALL_OPEN
 	waitse
+	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, Common_Movement_FaceUp
+	waitmovement 0
 	setspeaker SP_NAME_GIOVANNI
 	msgbox gText_ceruleangiovanni_BrokeOutOfMyBall
 	setspeaker SP_NAME_MEWTWO

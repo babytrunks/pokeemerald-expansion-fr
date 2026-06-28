@@ -62,6 +62,7 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 #include "constants/trainer_slide.h"
+#include "constants/transform_battles.h"
 #include "constants/trainers.h"
 #include "test/battle.h"
 #include "battle_util.h"
@@ -4084,6 +4085,33 @@ static void Cmd_clearvolatile(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
+// Maps VAR_TRANSFORM_BATTLE_TYPE -> {species that transforms, species it becomes}.
+// When FLAG_TRANSFORM_BATTLE is set, an opponent of fromSpecies transforms to
+// toSpecies (full HP + mega evo animation) instead of fainting
+static const struct
+{
+    u16 fromSpecies;
+    u16 toSpecies;
+} sTransformBattleTable[] = {
+    [TRANSFORM_BATTLE_MEWTWO] = { SPECIES_MEWTWO, SPECIES_MEWTWO_MEGA_Y },
+};
+
+// Returns the species the battler should transform into instead of fainting, or
+// SPECIES_NONE if it should faint normally
+static u16 GetTransformBattleTargetSpecies(u32 battler)
+{
+    u32 type;
+
+    if (IsOnPlayerSide(battler) || !FlagGet(FLAG_TRANSFORM_BATTLE))
+        return SPECIES_NONE;
+    type = VarGet(VAR_TRANSFORM_BATTLE_TYPE);
+    if (type >= ARRAY_COUNT(sTransformBattleTable))
+        return SPECIES_NONE;
+    if (gBattleMons[battler].species != sTransformBattleTable[type].fromSpecies)
+        return SPECIES_NONE;
+    return sTransformBattleTable[type].toSpecies;
+}
+
 static void Cmd_tryfaintmon(void)
 {
     CMD_ARGS(u8 battler, bool8 isSpikes, const u8 *instr);
@@ -4126,6 +4154,14 @@ static void Cmd_tryfaintmon(void)
         if (!(gAbsentBattlerFlags & (1u << battler))
          && !IsBattlerAlive(battler))
         {
+            if (GetTransformBattleTargetSpecies(battler) != SPECIES_NONE)
+            {
+                gBattleScripting.battler = battler; // so BS_SCRIPTING resolves to this mon
+                BattleScriptPush(cmd->nextInstr);   // resume at moveend afterward
+                gBattlescriptCurrInstr = BattleScript_TransformBattle;
+                return;
+            }
+
             gHitMarker |= HITMARKER_FAINTED(battler);
             gBattleStruct->eventState.faintedAction = 0;
             BattleScriptPush(cmd->nextInstr);
@@ -14141,6 +14177,45 @@ void SaveBattlerAttacker(u32 battler)
         gBattleStruct->savedBattlerAttacker[gBattleStruct->savedAttackerCount++] = battler;
     else
         DebugPrintfLevel(MGBA_LOG_WARN, "Attempting to exceed savedBattlerAttacker array size!");
+}
+
+// Swaps a transform-battle mon to its target species, recalculates its stats and
+// queues a full HP refill. Driven by sTransformBattleTable / GetTransformBattleTargetSpecies.
+void BS_TransformBattleStart(void)
+{
+    NATIVE_ARGS();
+    u32 battler = gBattleScripting.battler;
+    struct Pokemon *mon = GetBattlerMon(battler);
+    u16 targetSpecies = GetTransformBattleTargetSpecies(battler);
+
+    // Buffers for STRINGID_MEGAEVOEVOLVED: "{B_BUFF1} has Mega Evolved into {B_BUFF2}!"
+    PREPARE_SPECIES_BUFFER(gBattleTextBuff1, gBattleMons[battler].species);
+
+    gBattleMons[battler].species = targetSpecies;
+    SetMonData(mon, MON_DATA_SPECIES, &targetSpecies);
+    RecalcBattlerStats(battler, mon, FALSE);
+
+    PREPARE_SPECIES_BUFFER(gBattleTextBuff2, targetSpecies);
+
+    // HP is currently 0; refill to full. Consumed by datahpupdate PASSIVE_HP_UPDATE.
+    SetHealAmount(battler, gBattleMons[battler].maxHP);
+
+    BtlController_EmitSetMonData(battler, B_COMM_TO_CONTROLLER, REQUEST_SPECIES_BATTLE, 1u << gBattlerPartyIndexes[battler], sizeof(gBattleMons[battler].species), &gBattleMons[battler].species);
+    MarkBattlerForControllerExec(battler);
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_TransformBattleUpdateHealthbox(void)
+{
+    NATIVE_ARGS();
+    u32 battler = gBattleScripting.battler;
+
+    UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], GetBattlerMon(battler), HEALTHBOX_ALL);
+    if (!IsOnPlayerSide(battler))
+        SetBattlerShadowSpriteCallback(battler, gBattleMons[battler].species);
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
 void BS_SaveTarget(void)

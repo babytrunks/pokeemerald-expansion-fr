@@ -892,6 +892,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNANGRY]                            = COMPOUND_STRING("{B_OPPONENT_MON1_NAME} is angry!"),
     [STRINGID_PKMNEATING]                           = COMPOUND_STRING("{B_OPPONENT_MON1_NAME} is eating!"),
     [STRINGID_ZAWARUDO]                             = COMPOUND_STRING("ZA WARUDO! Time has stopped.{PAUSE_UNTIL_PRESS}"),
+    [STRINGID_TRANSFORMBATTLEREACT]                 = COMPOUND_STRING("{B_BUFF1} reacted to Giovanni's\nMega Ring!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

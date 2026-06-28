@@ -1,10 +1,11 @@
 Route4_Frlg_MapScripts::
-    map_script MAP_SCRIPT_ON_TRANSITION, Route4_Frlg_OnTransition
+    @ map_script MAP_SCRIPT_ON_TRANSITION, Route4_Frlg_OnTransition
+    map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Route4_Frlg_OnWarp
     map_script MAP_SCRIPT_ON_FRAME_TABLE, Route4_OnFrame
 	.byte 0
 
-Route4_Frlg_OnTransition::
-    call_if_eq VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI, 1, Route4_ShowSprites_PostCeruleanCaveScript
+Route4_Frlg_OnWarp::
+    map_script_2 VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI, 1, Route4_ShowSprites_PostCeruleanCaveScript
     end
 
 Route4_OnFrame::
@@ -14,23 +15,29 @@ Route4_OnFrame::
 Route4_ShowSprites_PostCeruleanCaveScript::
     addobject LOCALID_ROUTE4_GIOVANNI
     addobject LOCALID_ROUTE4_LANCE
-    return
+    end
 
 Route4_EventScript_PostCeruleanCaveScript::
     applymovement LOCALID_ROUTE4_LANCE, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement LOCALID_PLAYER, Common_Movement_FaceRight
     waitmovement 0
     applymovement LOCALID_ROUTE4_GIOVANNI, Common_Movement_FaceLeft
     waitmovement 0
     setspeaker SP_NAME_GIOVANNI
     msgbox gText_ceruleangiovanni_Awaydialogue
-    giveitem ITEM_MEWTWONITE_X 
+    giveitem ITEM_MEWTWONITE_Y
+    setspeaker SP_NAME_GIOVANNI
     msgbox gText_ceruleangiovanni_Farewell
     applymovement LOCALID_ROUTE4_GIOVANNI, Route4_Movement_GiovanniLeaveRight
     waitmovement 0
     removeobject LOCALID_ROUTE4_GIOVANNI
+    applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
     setspeaker SP_NAME_LANCE
     msgbox gText_Route4_Lance_BeatenEvil
     giveitem ITEM_SALAMENCITE
+    setspeaker SP_NAME_LANCE
     msgbox gText_Route4_Lance_InDueTime, MSGBOX_AUTOCLOSE
     fadescreenswapbuffers FADE_TO_BLACK
     playse SE_M_FLY

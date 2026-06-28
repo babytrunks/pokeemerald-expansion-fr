@@ -5739,6 +5739,23 @@ BattleScript_MegaEvolutionAfterString:
 	switchinabilities BS_SCRIPTING
 	end3
 
+@ Entered from Cmd_tryfaintmon when an opponent would faint but FLAG_TRANSFORM_BATTLE
+@ is set and its species matches sTransformBattleTable (Mewtwo Giovanni Cerulean Cave). 
+@ Instead of fainting, mon transforms (full HP + Mega Evolution animation)
+@ mon is referred to in gBattleScripting.battler
+BattleScript_TransformBattle::
+	flushtextbox
+	callnative BS_TransformBattleStart
+	playanimation BS_SCRIPTING, B_ANIM_MEGA_EVOLUTION
+	waitanimation
+	callnative BS_TransformBattleUpdateHealthbox
+	healthbarupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
+	datahpupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
+	printstring STRINGID_TRANSFORMBATTLEREACT
+	waitmessage B_WAIT_TIME_LONG
+	switchinabilities BS_SCRIPTING
+	return
+
 BattleScript_WishMegaEvolution::
 	flushtextbox
 	trytrainerslidemegaevolutionmsg
