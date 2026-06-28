@@ -560,6 +560,22 @@ PkmnCenterNurse_Tutor_PowerWhip:
 	setvar VAR_0x8005, MOVE_POWER_WHIP
 	goto PkmnCenterNurse_Tutor_TeachMove
 
+PkmnCenterNurse_Tutor_GrassyGlide:
+	setvar VAR_0x8005, MOVE_GRASSY_GLIDE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_RisingVoltage:
+	setvar VAR_0x8005, MOVE_RISING_VOLTAGE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_ExpandingForce:
+	setvar VAR_0x8005, MOVE_EXPANDING_FORCE
+	goto PkmnCenterNurse_Tutor_TeachMove
+
+PkmnCenterNurse_Tutor_MistyExplosion:
+	setvar VAR_0x8005, MOVE_MISTY_EXPLOSION
+	goto PkmnCenterNurse_Tutor_TeachMove
+
 PkmnCenterNurse_Tutor_FlareBlitz:
 	setvar VAR_0x8005, MOVE_FLARE_BLITZ
 	goto PkmnCenterNurse_Tutor_TeachMove
@@ -638,7 +654,11 @@ PkmnCenterNurse_EventScript_MarshMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_SolarBeam, 2
 	dynmultipush PkmnCenterNurse_Text_SolarBlade, 3
 	dynmultipush PkmnCenterNurse_Text_PowerWhip, 4
-	dynmultistack 0, 0, FALSE, 5, FALSE, 0, NULL
+	dynmultipush PkmnCenterNurse_Text_GrassyGlide, 5
+	dynmultipush PkmnCenterNurse_Text_RisingVoltage, 6
+	dynmultipush PkmnCenterNurse_Text_ExpandingForce, 7
+	dynmultipush PkmnCenterNurse_Text_MistyExplosion, 8
+	dynmultistack 0, 0, FALSE, 9, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
 	case 0, PkmnCenterNurse_Tutor_MeteorBeam
@@ -646,6 +666,10 @@ PkmnCenterNurse_EventScript_MarshMoveTutors:
 	case 2, PkmnCenterNurse_Tutor_SolarBeam
 	case 3, PkmnCenterNurse_Tutor_SolarBlade
 	case 4, PkmnCenterNurse_Tutor_PowerWhip
+	case 5, PkmnCenterNurse_Tutor_GrassyGlide
+	case 6, PkmnCenterNurse_Tutor_RisingVoltage
+	case 7, PkmnCenterNurse_Tutor_ExpandingForce
+	case 8, PkmnCenterNurse_Tutor_MistyExplosion
 	goto PkmnCenterNurse_EventScript_WantMoveTutor
 
 PkmnCenterNurse_EventScript_VolcanoMoveTutors:
@@ -934,6 +958,18 @@ PkmnCenterNurse_Text_SolarBlade:
 
 PkmnCenterNurse_Text_PowerWhip:
 	.string "Power Whip$"
+
+PkmnCenterNurse_Text_GrassyGlide:
+	.string "Grassy Glide$"
+
+PkmnCenterNurse_Text_RisingVoltage:
+	.string "Rising Voltage$"
+
+PkmnCenterNurse_Text_ExpandingForce:
+	.string "Expanding Force$"
+
+PkmnCenterNurse_Text_MistyExplosion:
+	.string "Misty Explosion$"
 
 PkmnCenterNurse_Text_FlareBlitz:
 	.string "Flare Blitz$" 

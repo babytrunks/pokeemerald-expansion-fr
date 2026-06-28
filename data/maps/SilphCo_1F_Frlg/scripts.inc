@@ -65,7 +65,7 @@ SilphCo_1F_Text_DontGetPaid::
 	.string "main character.$"
 
 SilphCo_1F_Text_OhThankHeavens::
-	.string "Oh thanks Arceus, you got quite\n"
+	.string "Oh thank Arceus, you got quite\n"
 	.string "a few Gym Badges. There's a ruckus\l"
 	.string "going on upstairs with Team Rocket.\p"
 	.string "Me and my level 20 Growlithe can't\n"

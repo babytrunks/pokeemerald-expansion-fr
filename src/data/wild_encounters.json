@@ -17150,63 +17150,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_PARASECT"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_CROBAT"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MACHAMP"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MACHAMP"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MAGNETON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MAGNETON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_SEISMITOAD"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_SEISMITOAD"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               }
             ]
@@ -17342,63 +17342,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_PARASECT"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_CROBAT"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_CONKELDURR"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_CONKELDURR"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MAGNETON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MAGNETON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_SEISMITOAD"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_SEISMITOAD"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               }
             ]
@@ -17411,63 +17411,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_BRUTE_BONNET"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_GREAT_TUSK"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_PRIMEAPE"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_PRIMEAPE"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_GREAT_TUSK"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_AUDINO"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_ALAKAZAM"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_ALAKAZAM"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               }
             ]
@@ -17518,63 +17518,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_BRUTE_BONNET"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_IRON_TREADS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_PANGORO"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_PANGORO"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_IRON_TREADS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_AUDINO"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_REUNICLUS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_REUNICLUS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_DURALUDON"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               }
             ]
@@ -17587,63 +17587,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_IRON_TREADS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_NOIVERN"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MEDICHAM"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_MEDICHAM"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_LOPUNNY"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_IRON_TREADS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_LOPUNNY"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_GARDEVOIR"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_EXCADRILL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_EXCADRILL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               }
             ]
@@ -17779,63 +17779,63 @@
             "encounter_rate": 7,
             "mons": [
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_IRON_TREADS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_NOIVERN"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TOXICROAK"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TOXICROAK"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_LOPUNNY"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_IRON_TREADS"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_LOPUNNY"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_GARDEVOIR"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_EXCADRILL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_EXCADRILL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               },
               {
-                "min_level": 60,
-                "max_level": 62,
+                "min_level": 59,
+                "max_level": 61,
                 "species": "SPECIES_TYPE_NULL"
               }
             ]
@@ -25635,7 +25635,7 @@
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_BELLSPROUT"
+                "species": "SPECIES_GOSSIFLEUR"
               },
               {
                 "min_level": 13,
@@ -26174,7 +26174,7 @@
               {
                 "min_level": 16,
                 "max_level": 18,
-                "species": "SPECIES_GOSSIFLEUR"
+                "species": "SPECIES_BELLSPROUT"
               },
               {
                 "min_level": 16,

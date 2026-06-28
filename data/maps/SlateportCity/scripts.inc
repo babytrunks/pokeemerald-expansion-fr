@@ -76,6 +76,7 @@ SlateportCity_EventScript_Brendan::
 	waitmovement 0
 	removeobject LOCALID_BRENDAN_SLATEPORT
 	setvar VAR_BRENDAN_SLATEPORT_CITY, 1
+	setrespawn HEAL_LOCATION_SLATEPORT_CITY
 	releaseall
 	end
 

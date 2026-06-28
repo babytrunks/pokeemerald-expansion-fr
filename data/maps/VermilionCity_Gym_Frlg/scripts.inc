@@ -349,7 +349,7 @@ VermilionCity_Gym_Text_TuckerPostBattle::
 VermilionCity_Gym_Text_BailyIntro::
     .string "I'm a lightweight, but I'm good\n"
     .string "with electricity!\p"
-    .string "That's why I joined this GYM.$"
+    .string "That's why I joined this Gym.$"
 
 VermilionCity_Gym_Text_BailyDefeat::
     .string "Fried!$"
@@ -369,7 +369,7 @@ VermilionCity_Gym_Text_DwayneDefeat::
 
 VermilionCity_Gym_Text_DwaynePostBattle::
     .string "Lt. Surge installed the traps in\n"
-    .string "the GYM himself.\p"
+    .string "the Gym himself.\p"
     .string "He set up double locks everywhere.\n"
     .string "Let me give you a hint.\p"
     .string "The bottom right trash can is always\n"

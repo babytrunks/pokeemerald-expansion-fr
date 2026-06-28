@@ -200,7 +200,6 @@ VermilionCity_EventScript_CheckTicket::
 	case NO, VermilionCity_EventScript_Leave
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 1
 	setvar VAR_0x8006, SEAGALLOP_SLATEPORT_CITY
-	setrespawn HEAL_LOCATION_SLATEPORT_CITY
 	goto EventScript_SailToDest
 	end
 

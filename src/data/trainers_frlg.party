@@ -11599,16 +11599,16 @@ EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Flip Turn
 - Grass Knot
 
-Krabby @ Mystic Water
-Nature: Jolly
-Ability: Sheer Force
-Level: 21
-IVs: 31 HP / 31 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+Gyarados @ Wacan Berry
+Nature: Modest
+Ability: Intimidate
+Level: 20
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Headbutt
 - Misty Splatter
-- Flip Turn
-- Rock Tomb
+- Bulldoze
+- Bite
+- Facade
 
 Starmie @ Berry Juice
 Nature: Bashful
@@ -19619,12 +19619,12 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Mugshot: Purple
 Boss: Yes
-Dynamic Level Ratio: 90
+Dynamic Level Ratio: 95
 
 Mimikyu @ Lum Berry
 Nature: Jolly
 Ability: Disguise
-Level: 67
+Level: 61
 EVs: 252 Atk / 4 Def / 252 Spe
 - Play Rough
 - Shadow Claw
@@ -19634,7 +19634,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Dusknoir @ Reaper Cloth
 Nature: Adamant
 Ability: Hustle
-Level: 67
+Level: 61
 EVs: 252 HP / 252 Atk / 4 Def
 - Shadow Punch
 - Shadow Sneak
@@ -19644,7 +19644,7 @@ EVs: 252 HP / 252 Atk / 4 Def
 Zoroark Hisui @ Colbur Berry
 Nature: Timid
 Ability: Illusion
-Level: 67
+Level: 61
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Hyper Voice
@@ -19655,7 +19655,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Skeledirge @ Leftovers
 Nature: Timid
 Ability: Unaware
-Level: 67
+Level: 61
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 248 HP / 8 SpA / 252 SpD
 - Torch Song
@@ -19666,18 +19666,18 @@ EVs: 248 HP / 8 SpA / 252 SpD
 Gengar @ Gengarite
 Nature: Timid
 Ability: Levitate
-Level: 68
+Level: 61
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Sludge Wave
 - Shadow Ball
 - Focus Blast
-- Nasty Plot
+- Thunderbolt
 
 Ceruledge @ Focus Sash
 Nature: Jolly
 Ability: Weak Armor
-Level: 67
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Bitter Blade

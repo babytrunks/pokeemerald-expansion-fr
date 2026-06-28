@@ -574,6 +574,14 @@ FourIsland_House10_EventScript_BodySlamTutor::
 	call EventScript_ChooseMoveTutorMon
 	setvar VAR_0x8005, MOVE_MEGAHORN
 	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_GRASSY_GLIDE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_RISING_VOLTAGE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_EXPANDING_FORCE
+	call EventScript_ChooseMoveTutorMon
+	setvar VAR_0x8005, MOVE_MISTY_EXPLOSION
+	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_BodySlamDeclined
 	goto EventScript_BodySlamTaught
 	end

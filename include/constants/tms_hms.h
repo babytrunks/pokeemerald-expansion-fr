@@ -88,7 +88,9 @@
     F(ICE_SPINNER) \
     F(KNOCK_OFF) \
     F(X_SCISSOR) \
-    F(POISON_JAB) 
+    F(POISON_JAB) \
+    F(ROOST) \
+    F(POLTERGEIST)
     
 #define FOREACH_HM(F) \
     F(CUT) \

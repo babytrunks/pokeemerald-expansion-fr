@@ -7248,20 +7248,18 @@
     "TutorMoves": []
   },
   "MEOWSTIC": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 1,
+        "Move": "MOVE_TELEPORT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_MYSTICAL_FIRE"
     ]
-  },
-  "MEOWSTIC_M": {
-    "LevelMoves": [],
-    "PreEvoMoves": [],
-    "TMMoves": [],
-    "EggMoves": [],
-    "TutorMoves": []
   },
   "HONEDGE": {
     "LevelMoves": [],
@@ -7859,7 +7857,11 @@
     "TutorMoves": []
   },
   "VIKAVOLT": {
-    "LevelMoves": [],
+    "LevelMoves": [      
+      {
+        "Level": 50,
+        "Move": "MOVE_THUNDERCLAP"
+      }],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -10326,13 +10328,6 @@
     "TutorMoves": []
   },
   "KYUREM_BLACK": {
-    "LevelMoves": [],
-    "PreEvoMoves": [],
-    "TMMoves": [],
-    "EggMoves": [],
-    "TutorMoves": []
-  },
-  "MEOWSTIC_F": {
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [],

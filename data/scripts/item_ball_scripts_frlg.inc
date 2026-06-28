@@ -119,7 +119,7 @@ Route6_EventScript_ItemTMVenoshock::
 	end
 
 SSAnne_1F_Room2_EventScript_ItemTM31::
-	finditem ITEM_TM31
+	finditem ITEM_TM_BRICK_BREAK
 	end
 
 SSAnne_2F_Room2_EventScript_ItemDiveBall::
@@ -263,7 +263,7 @@ SafariZone_North_EventScript_ItemTM47::
 	end
 
 SafariZone_West_EventScript_ItemTM32::
-	finditem ITEM_TM32
+	finditem ITEM_TM_LOW_KICK
 	end
 
 SafariZone_West_EventScript_ItemGoldTeeth::
