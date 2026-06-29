@@ -440,32 +440,31 @@ Debug_EventScript_SetHiddenNature::
 	goto_if_ge VAR_0x8004, PARTY_SIZE, Debug_EventScript_InflictStatus1_Close
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
 	goto_if_eq VAR_RESULT, SPECIES_EGG, Debug_EventScript_InflictStatus1_Close
-	dynmultipush Debug_EventScript_ChangeNature_Text_Hardy, 0
-	dynmultipush Debug_EventScript_ChangeNature_Text_Lonely, 1
-	dynmultipush Debug_EventScript_ChangeNature_Text_Brave, 2
 	dynmultipush Debug_EventScript_ChangeNature_Text_Adamant, 3
-	dynmultipush Debug_EventScript_ChangeNature_Text_Naughty, 4
-	dynmultipush Debug_EventScript_ChangeNature_Text_Bold, 5
-	dynmultipush Debug_EventScript_ChangeNature_Text_Docile, 6
-	dynmultipush Debug_EventScript_ChangeNature_Text_Relaxed, 7
-	dynmultipush Debug_EventScript_ChangeNature_Text_Impish, 8
-	dynmultipush Debug_EventScript_ChangeNature_Text_Lax, 9
+	dynmultipush Debug_EventScript_ChangeNature_Text_Modest, 15
 	dynmultipush Debug_EventScript_ChangeNature_Text_Timid, 10
-	dynmultipush Debug_EventScript_ChangeNature_Text_Hasty, 11
-	dynmultipush Debug_EventScript_ChangeNature_Text_Serious, 12
 	dynmultipush Debug_EventScript_ChangeNature_Text_Jolly, 13
 	dynmultipush Debug_EventScript_ChangeNature_Text_Naive, 14
-	dynmultipush Debug_EventScript_ChangeNature_Text_Modest, 15
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hasty, 11
+	dynmultipush Debug_EventScript_ChangeNature_Text_Bold, 5
+	dynmultipush Debug_EventScript_ChangeNature_Text_Impish, 8
+	dynmultipush Debug_EventScript_ChangeNature_Text_Calm, 20
+	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lonely, 1
+	dynmultipush Debug_EventScript_ChangeNature_Text_Naughty, 4
 	dynmultipush Debug_EventScript_ChangeNature_Text_Mild, 16
+	dynmultipush Debug_EventScript_ChangeNature_Text_Rash, 19
+	dynmultipush Debug_EventScript_ChangeNature_Text_Brave, 2
+	dynmultipush Debug_EventScript_ChangeNature_Text_Docile, 6
+	dynmultipush Debug_EventScript_ChangeNature_Text_Relaxed, 7
+	dynmultipush Debug_EventScript_ChangeNature_Text_Lax, 9
+	dynmultipush Debug_EventScript_ChangeNature_Text_Serious, 12
 	dynmultipush Debug_EventScript_ChangeNature_Text_Quiet, 17
 	dynmultipush Debug_EventScript_ChangeNature_Text_Bashful, 18
-	dynmultipush Debug_EventScript_ChangeNature_Text_Rash, 19
-	dynmultipush Debug_EventScript_ChangeNature_Text_Calm, 20
 	dynmultipush Debug_EventScript_ChangeNature_Text_Gentle, 21
 	dynmultipush Debug_EventScript_ChangeNature_Text_Sassy, 22
-	dynmultipush Debug_EventScript_ChangeNature_Text_Careful, 23
-	dynmultipush Debug_EventScript_ChangeNature_Text_Quirky, 24
-	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	dynmultipush Debug_EventScript_ChangeNature_Text_Hardy, 0
+	dynmultistack 0, 0, TRUE, 7, FALSE, 3, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, Debug_EventScript_InflictStatus1_Close
 	special SetHiddenNature

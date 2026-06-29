@@ -1881,7 +1881,7 @@ static const struct LevelUpMove sPoliwhirlLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(23, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE(27, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(30, MOVE_HYDRO_PUMP),
+
     LEVEL_UP_MOVE(45, MOVE_BELLY_DRUM),
     LEVEL_UP_END
 };
@@ -1910,7 +1910,6 @@ static const struct LevelUpMove sPoliwrathLevelUpLearnset[] = {
 #if P_GEN_2_CROSS_EVOS
 //done
 static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SCALD),
     LEVEL_UP_MOVE( 1, MOVE_RAIN_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_SWAGGER),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -1922,9 +1921,10 @@ static const struct LevelUpMove sPolitoedLevelUpLearnset[] = {
     LEVEL_UP_MOVE(17, MOVE_BODY_SLAM),
     LEVEL_UP_MOVE(23, MOVE_EARTH_POWER),
     LEVEL_UP_MOVE(27, MOVE_DOUBLE_EDGE),
-    LEVEL_UP_MOVE(30, MOVE_HYDRO_PUMP),
+    LEVEL_UP_MOVE(36, MOVE_ENCORE),
     LEVEL_UP_MOVE(40, MOVE_PERISH_SONG),
     LEVEL_UP_MOVE(45, MOVE_BELLY_DRUM),
+    LEVEL_UP_MOVE(48, MOVE_MUDDY_WATER),
     LEVEL_UP_END
 };
 #endif //P_GEN_2_CROSS_EVOS
@@ -10953,7 +10953,7 @@ static const struct LevelUpMove sWormadamSandyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(26, MOVE_FLAIL),
     LEVEL_UP_MOVE(28, MOVE_EARTHQUAKE),
     LEVEL_UP_MOVE(30, MOVE_PSYCHIC),
-    LEVEL_UP_MOVE(32, MOVE_LUNGE)
+    LEVEL_UP_MOVE(32, MOVE_LUNGE), 
     LEVEL_UP_MOVE(34, MOVE_ATTRACT),
     LEVEL_UP_MOVE(36, MOVE_QUIVER_DANCE),
     LEVEL_UP_END
