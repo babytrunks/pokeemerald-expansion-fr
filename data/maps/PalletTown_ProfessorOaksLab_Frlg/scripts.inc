@@ -1977,6 +1977,7 @@ PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLink::
 	waitmovement 0
 	msgbox PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_GiveExpShare
 	giveitem ITEM_POKEMON_BOX_LINK
+	giveitem ITEM_TIME_CHANGER
 	msgbox PalletTown_ProfessorOaksLab_Text_AideGiveExpShare_KindnessWins
 	setvar VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK 2
 	release

@@ -221,6 +221,7 @@
 #define TRAINER_BACK_PIC_GREEN                  15
 #define TRAINER_BACK_PIC_LYRA                   16
 #define TRAINER_BACK_PIC_ALAIN                  17
+#define TRAINER_BACK_PIC_LANCE                  18
 
 #define FACILITY_CLASS_HIKER                 0x0
 #define FACILITY_CLASS_AQUA_GRUNT_M          0x1

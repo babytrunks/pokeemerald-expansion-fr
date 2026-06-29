@@ -186,6 +186,17 @@ CeruleanCave_B1F_EventScript_RanFromMewtwo::
 	goto EventScript_MonFlewAway
 	end
 
+CeruleanCave_B1F_EventScript_ReadyForMewtwo::
+	goto_if_unset FLAG_SYS_GAME_CLEAR, CeruleanCave_B1F_EventScript_NotReadyForMewtwo
+	end
+
+CeruleanCave_B1F_EventScript_NotReadyForMewtwo:
+	msgbox CeruleanCave_B1F_Text_NotReadyForMewtwo
+	closemessage
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
+	waitmovement 0
+	end
+
 CeruleanCave_B1F_Text_Mew::
     .string "Mew!$"
 
@@ -261,3 +272,5 @@ gText_ceruleangiovanni_BrokeOutOfMyBall::
 gText_ceruleangiovanni_10::
 	.string "Yes… you are UNWORTHY!!!$"
 
+CeruleanCave_B1F_Text_NotReadyForMewtwo::
+	.string "No… you are not worthy…$"

@@ -197,7 +197,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_DEFEATED_GIOVANNI_CERULEAN_CAVE"
     },
     {
       "local_id": "LOCALID_CERULEAN_CAVE_LANCE",
@@ -257,6 +257,24 @@
       "var": "VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI",
       "var_value": "0",
       "script": "EventScript_ceruleangiovanni_Start_Right"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI",
+      "var_value": "2",
+      "script": "CeruleanCave_B1F_EventScript_ReadyForMewtwo"
+    },
+    {
+      "type": "trigger",
+      "x": 6,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI",
+      "var_value": "2",
+      "script": "CeruleanCave_B1F_EventScript_ReadyForMewtwo"
     }
   ],
   "bg_events": [],

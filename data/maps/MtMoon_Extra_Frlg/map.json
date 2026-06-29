@@ -298,11 +298,11 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 28,
-      "y": 20,
+      "x": 3,
+      "y": 27,
       "elevation": 3,
       "dest_map": "MAP_MT_MOON_B1F",
-      "dest_warp_id": "2"
+      "dest_warp_id": "8"
     },
     {
       "x": 18,

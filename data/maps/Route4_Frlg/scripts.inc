@@ -53,6 +53,7 @@ Route4_Movement_GiovanniLeaveRight:
     walk_right
     walk_right
     walk_right
+    walk_right
     step_end
 
 Route4_EventScript_Woman::

@@ -118,7 +118,7 @@ Route110_TrickHousePuzzle2_Text_TedPostBattle:
 	.string "for me?$"
 
 Route110_TrickHousePuzzle2_Text_PaulIntro:
-	.string "Oh! You're on your second TRICK HOUSE\n"
+	.string "Oh! You're on your first Trick House\n"
 	.string "challenge!$"
 
 Route110_TrickHousePuzzle2_Text_PaulDefeat:

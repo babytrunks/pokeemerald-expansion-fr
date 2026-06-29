@@ -8589,54 +8589,80 @@ EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Earthquake
 - Head Smash
 
-=== TRAINER_LEADER_GIOVANNI ===
-Name: Giovanni
-Class: Leader Frlg
-Pic: Leader Giovanni Frlg
+=== TRAINER_LEADER_CLAIR ===
+Name: Clair
+Class: Leader Johto
+Pic: Leader Clair 
 Gender: Male
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+Mugshot: Blue
+Boss: Yes
 
-Rhyhorn
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Rock Blast
-- Scary Face
+Aerodactyl @ Focus Sash
+Nature: Jolly
+Ability: Unnerve
+Level: 65
+EVs: 252 Atk / 4 Def / 252 Spe
+- Stealth Rock
+- Stone Edge
 - Earthquake
+- Taunt
 
-Dugtrio
-Level: 42
+Roaring-Moon @ Booster Energy
+Nature: Jolly
+Ability: Protosynthesis
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Slash
-- Sand Tomb
-- Mud Slap
+EVs: 252 Atk / 4 Def / 252 Spe
+- Knock Off
+- Acrobatics
 - Earthquake
+- Iron Head
 
-Nidoqueen
-Level: 44
+Dragonite @ Dragoninite
+Nature: Timid
+Ability: Inner Focus
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Body Slam
-- Double Kick
-- Poison Sting
-- Earthquake
+EVs: 252 SpA / 4 Def / 252 Spe
+- Fire Blast
+- Hurricane
+- Blizzard
+- Thunder
 
-Nidoking
-Level: 45
+Magearna @ Leftovers
+Nature: Modest
+Ability: Soul Heart
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thrash
-- Double Kick
-- Poison Sting
-- Earthquake
+EVs: 252 HP / 252 SpA / 4 Spe
+- Shift Gear
+- Fleur Cannon
+- Flash Cannon
+- Aura Sphere
 
-Rhyhorn
-Level: 50
+Gouging-Fire @ Booster Energy
+Nature: Jolly
+Ability: Protosynthesis
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Rock Blast
-- Scary Face
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Dragon Dance
+- Flare Blitz
 - Earthquake
+- Dragon Claw
+
+Naganadel @ Life Orb
+Nature: Timid
+Ability: Beast Boost
+Level: 65
+EVs: 4 Def / 252 SpA / 252 Spe
+- Flamethrower
+- Thunderbolt
+- Sludge Wave
+- Draco Meteor
 
 === TRAINER_TEAM_ROCKET_GRUNT ===
 Name: Grunt
@@ -13023,14 +13049,14 @@ Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: Yes
+Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Items: Mega Ring
 Boss: Yes
 
-Steelix @ Steelixite
+Dragonite @ Dragoninite
 Nature: Jolly
-Ability: Sturdy
+Ability: Inner Focus
 Level: 52
 EVs: 54 Atk / 252 Spe
 - Dragon Breath
@@ -17640,7 +17666,6 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
-Mugshot: Yellow
 Boss: Yes
 Items: Mega Ring
 

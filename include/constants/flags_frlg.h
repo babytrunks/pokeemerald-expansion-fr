@@ -57,7 +57,7 @@
 #define FLAG_0x052                                  0x052
 #define FLAG_HIDE_SILPH_ROCKETS                            0x053
 #define FLAG_HIDE_ROUTE_12_SNORLAX                         0x054
-#define FLAG_HIDE_VIRIDIAN_GIOVANNI                        0x055
+#define FLAG_HIDE_VIRIDIAN_GIOVANNI                        0x055 // unused
 #define FLAG_HIDE_OLD_AMBER                                0x056
 #define FLAG_HIDE_EEVEE_BALL                               0x057
 #define FLAG_HIDE_VICTORY_ROAD_2F_BOULDER                  0x058
@@ -381,7 +381,7 @@
 #define FLAG_HIDE_SILPH_CO_5F_CARD_KEY                          0x192
 #define FLAG_HIDE_SILPH_CO_6F_HP_UP                             0x193
 #define FLAG_HIDE_SILPH_CO_6F_AUDINITE                         0x194
-#define FLAG_HIDE_SILPH_CO_7F_CALCIUM                           0x195 // unused
+#define FLAG_HIDE_ROUTE_23_MEDICHAMITE                           0x195
 #define FLAG_HIDE_SILPH_CO_7F_TM08                              0x196
 #define FLAG_HIDE_SILPH_CO_10F_CARBOS                           0x197
 #define FLAG_HIDE_SILPH_CO_10F_DREAM_PATCH                       0x198
@@ -541,8 +541,8 @@
 
 // Story flags
 #define STORY_FLAGS_START                                0x230
-#define FLAG_GOT_QUICK_BALL_ON_ROUTE_1                       0x230
-#define FLAG_TRANSFORM_BATTLE                            0x231 // unused
+#define FLAG_GOT_QUICK_BALL_ON_ROUTE_1                   0x230
+#define FLAG_TRANSFORM_BATTLE                            0x231 
 #define FLAG_GOT_FOSSIL_FROM_MT_MOON                     0x232
 #define FLAG_HELPED_BILL_IN_SEA_COTTAGE                  0x233
 #define FLAG_GOT_SS_TICKET                               0x234
@@ -582,7 +582,7 @@
 #define FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE                0x256
 #define FLAG_DID_MARC_TRADE                              0x257
 #define FLAG_BEAT_RIVAL_IN_OAKS_LAB                      0x258
-#define FLAG_GOT_TM06_FROM_KOGA                          0x259 // unused
+#define FLAG_ROUTE_23_LUCARIONITE                        0x259 
 #define FLAG_HIDE_ROUTE8_TM_DUAL_WINGBEAT                0x25A
 #define FLAG_GOT_TM27                                    0x25B
 #define FLAG_RECEIVED_MUSCLE_BAND                        0x25C
@@ -639,16 +639,16 @@
 #define FLAG_SILPH_CO_7F_RARE_EXTRACT                    0x28F
 #define FLAG_MET_STICKER_MAN                             0x290
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0x291
-#define FLAG_ITEM_ROUTE_110_DIRE_HIT                     0x292 // UNUSED
+#define FLAG_ITEM_ROUTE_110_DIRE_HIT                     0x292 
 #define FLAG_GOT_TM19_FROM_ERIKA                         0x293
 #define FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL                  0x294
 #define FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL                  0x295
 #define FLAG_GOT_TM16_FROM_THIRSTY_GIRL                  0x296
-#define FLAG_GOT_TM03_FROM_MISTY                         0x297 // UNUSED
-#define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298
+#define FLAG_HIDE_SAFARI_ZONE_PYROARITE                  0x297 
+#define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298 // Unused
 #define FLAG_0x299                                       0x299
 #define FLAG_GOT_TM04_FROM_SABRINA                       0x29A
-#define FLAG_HIDE_ROUTE8_LAX_MINT                        0x29B // UNUSED
+#define FLAG_HIDE_ROUTE8_LAX_MINT                        0x29B 
 #define FLAG_GOT_RECORD_SETTING_MAGIKARP                 0x29C
 #define FLAG_TWO_ISLAND_SHOP_INTRODUCED                  0x29D
 #define FLAG_TWO_ISLAND_SHOP_EXPANDED_1                  0x29E

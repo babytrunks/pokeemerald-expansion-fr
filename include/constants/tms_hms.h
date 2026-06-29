@@ -90,7 +90,8 @@
     F(X_SCISSOR) \
     F(POISON_JAB) \
     F(ROOST) \
-    F(POLTERGEIST)
+    F(POLTERGEIST) \
+    F(DRACO_METEOR)
     
 #define FOREACH_HM(F) \
     F(CUT) \

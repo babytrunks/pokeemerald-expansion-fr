@@ -381,45 +381,45 @@
 #define ITEM_BLASTOISINITE 295 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_BEEDRILLITE 296 // DONE  
 #define ITEM_PIDGEOTITE 297 // DONE (Celadon Game Corner, 3000 coins)
-#define ITEM_ALAKAZITE 298
+#define ITEM_ALAKAZITE 298 // DONE (Cerulean Cave)
 #define ITEM_SLOWBRONITE 299 // DONE (Route 12, post surf)
 #define ITEM_GENGARITE 300 // DONE (Morty Cinnabar Island)
 #define ITEM_KANGASKHANITE 301 // DONE (Silph Co 11F, map object)
 #define ITEM_PINSIRITE 302 // DONE (Route 6, item ball)
-#define ITEM_GYARADOSITE 303
+#define ITEM_GYARADOSITE 303 // Fuschia post Surf
 #define ITEM_AERODACTYLITE 304 // DONE (Cinnabar Mansion)
 #define ITEM_MEWTWONITE_X 305
-#define ITEM_MEWTWONITE_Y 306
+#define ITEM_MEWTWONITE_Y 306 // DONE (Cerulean Cave)
 #define ITEM_AMPHAROSITE 307 // DONE (Route 17, map object)
 #define ITEM_STEELIXITE 308 // DONE (jasmine)
 #define ITEM_SCIZORITE 309 // DONE (route 2 rock smash)
 #define ITEM_HERACRONITE 310 // DONE (Celadon Game Corner, 3000 coins)
-#define ITEM_HOUNDOOMINITE 311
+#define ITEM_HOUNDOOMINITE 311 // DONE (Cerulean Cave)
 #define ITEM_TYRANITARITE 312
 #define ITEM_SCEPTILITE 313 // DONE (Fuschia City, NPC gift)
-#define ITEM_BLAZIKENITE 314
+#define ITEM_BLAZIKENITE 314 // DONE (Cinnabar Island)
 #define ITEM_SWAMPERTITE 315 // DONE (Saffron Copycat's House, NPC gift)
-#define ITEM_GARDEVOIRITE 316
+#define ITEM_GARDEVOIRITE 316 // Safari ZOne
 #define ITEM_SABLENITE 317 // DONE (Pokemon Tower 6F, item ball)
-#define ITEM_MAWILITE 318
+#define ITEM_MAWILITE 318 // DONE (Cerulean Cave)
 #define ITEM_AGGRONITE 319
-#define ITEM_MEDICHAMITE 320
+#define ITEM_MEDICHAMITE 320 // DONE (Route 22 post Rock Smash)
 #define ITEM_MANECTITE 321 // DONE (Silph Co 4F, item ball)
-#define ITEM_SHARPEDONITE 322
+#define ITEM_SHARPEDONITE 322 // Done (Route 12 Fisherman House)
 #define ITEM_CAMERUPTITE 323 // DONE (Celadon Dept Store Roof, trade)
 #define ITEM_ALTARIANITE 324 // DONE (Route 18, map object)
 #define ITEM_BANETTITE 325 // DONE (Celadon Dept Store Roof, trade)
 #define ITEM_ABSOLITE 326 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_GLALITITE 327 // DONE (Silph Co 6F, item ball)
-#define ITEM_SALAMENCITE 328
+#define ITEM_SALAMENCITE 328 // DONE (Cerulean Cave)
 #define ITEM_METAGROSSITE 329
 #define ITEM_LATIASITE 330
 #define ITEM_LATIOSITE 331
-#define ITEM_LOPUNNITE 332
-#define ITEM_GARCHOMPITE 333
-#define ITEM_LUCARIONITE 334
+#define ITEM_LOPUNNITE 332 // DONE (Safari Zone)
+#define ITEM_GARCHOMPITE 333 // DONE (Pokemon Mansion)
+#define ITEM_LUCARIONITE 334 // DONE (Route 23 post Surf)
 #define ITEM_ABOMASITE 335 // DONE (Route 12, item ball)
-#define ITEM_GALLADITE 336
+#define ITEM_GALLADITE 336 // DONE (Pokemon Mansion)
 #define ITEM_AUDINITE 337 // DONE (Celadon Dept Store Roof, trade)
 #define ITEM_DIANCITE 338
 
@@ -1009,10 +1009,10 @@
 #define ITEM_CHESNAUGHTITE 843
 #define ITEM_DELPHOXITE 844 // DONE (Route 13, map object)
 #define ITEM_GRENINJITE 845 // DONE (Koga)
-#define ITEM_PYROARITE 846 // DONE (safari zone)
+#define ITEM_PYROARITE 846 // DONE (safari zone post surf)
 #define ITEM_FLOETTITE 847 // DONE (Route 12, NPC gift)
 #define ITEM_MALAMARITE 848
-#define ITEM_BARBARACITE 849
+#define ITEM_BARBARACITE 849 // DONE (Safari Zone)
 #define ITEM_DRAGALGITE 850
 #define ITEM_HAWLUCHANITE 851
 #define ITEM_ZYGARDITE 852

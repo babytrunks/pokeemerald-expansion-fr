@@ -1,40 +1,28 @@
 ViridianCity_Gym_Frlg_MapScripts::
 	.byte 0
 
-ViridianCity_Gym_EventScript_Giovanni::
-	famechecker FAMECHECKER_GIOVANNI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_GIOVANNI, ViridianCity_Gym_Text_GiovanniIntro, ViridianCity_Gym_Text_GiovanniDefeat, ViridianCity_Gym_EventScript_DefeatedGiovanni, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM26_FROM_GIOVANNI, ViridianCity_Gym_EventScript_GiveTM26
-	msgbox ViridianCity_Gym_Text_GiovanniPostBattle
+ViridianCity_Gym_EventScript_Clair::
+	trainerbattle_single TRAINER_LEADER_CLAIR, Text_claire_EncounterText, ViridianCity_Gym_Text_ClairDefeat, ViridianCity_Gym_EventScript_DefeatedClair, NO_MUSIC
+	msgbox ViridianCity_Gym_Text_ExplainItems
 	closemessage
-	fadescreen FADE_TO_BLACK
-	removeobject LOCALID_VIRIDIAN_GIOVANNI
-	fadescreen FADE_FROM_BLACK
 	release
 	end
 
-ViridianCity_Gym_EventScript_DefeatedGiovanni::
-	famechecker FAMECHECKER_GIOVANNI, 3
+ViridianCity_Gym_EventScript_DefeatedClair::
 	setflag FLAG_HIDE_MISC_KANTO_ROCKETS
 	setflag FLAG_DEFEATED_LEADER_GIOVANNI
 	setflag FLAG_BADGE08_GET
 	setvar VAR_MAP_SCENE_ROUTE22, 3
 	set_gym_trainers_frlg 8
-	goto ViridianCity_Gym_EventScript_GiveTM26
+	goto ViridianCity_Gym_EventScript_GiveTM90
 	end
 
-ViridianCity_Gym_EventScript_GiveTM26::
-	msgbox ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis
-	checkitemspace ITEM_TM26
-	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Gym_EventScript_NoRoomForTM26
-	giveitem_msg ViridianCity_Gym_Text_ReceivedTM26FromGiovanni, ITEM_TM26
-	setflag FLAG_GOT_TM26_FROM_GIOVANNI
-	msgbox ViridianCity_Gym_Text_ExplainTM26
-	release
-	end
-
-ViridianCity_Gym_EventScript_NoRoomForTM26::
-	msgbox ViridianCity_Gym_Text_YouDoNotHaveSpace
+ViridianCity_Gym_EventScript_GiveTM90::
+    callnative SetBuffer1ToLevelCap
+	msgbox ViridianCity_Gym_Text_ExplainRisingBadgeTakeThis
+    giveitem ITEM_DRAGONINITE
+    giveitem ITEM_TM_DRACO_METEOR
+	msgbox ViridianCity_Gym_Text_ExplainItems
 	release
 	end
 
@@ -120,40 +108,28 @@ ViridianCity_Gym_Text_GiovanniDefeat::
     .string "That was a truly intense fight.\l"
     .string "You have won!\p"
     .string "As proof, here is the EARTHBADGE!\n"
-    .string "{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
+    .string "{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0xFE}{PAUSE 0xFE}{RESUME_MUSIC}$"
 
-ViridianCity_Gym_Text_GiovanniPostBattle::
-    .string "Having lost in this fashion, \n"
-    .string "I can't face my followers.\l"
-    .string "I have betrayed their trust.\p"
-    .string "As of today, Team Rocket is\n"
-    .string "finished forever!\p"
-    .string "As for myself, I shall dedicate\n"
-    .string "my life to training again.\p"
-    .string "Let us meet again someday!\n"
-    .string "Farewell!$"
-
-ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis::
-    .string "The EARTHBADGE makes Pokémon of\n"
-    .string "any level obey without question.\p"
-    .string "It is evidence of your mastery as\n"
-    .string "a Pokémon TRAINER.\p"
+ViridianCity_Gym_Text_ExplainRisingBadgeTakeThis::
+    .string "The Rising Badge raises your Level\n"
+    .string "Cap to {STR_VAR_1}.\p"
     .string "With it, you can challenge the\n"
-    .string "Pokémon LEAGUE.\p"
-    .string "Also, take this TM.\p"
-    .string "Consider it a gift for your Pokémon\n"
-    .string "LEAGUE challenge.$"
+    .string "Pokémon League.\p"
+    .string "Also, take these.\p"
+    .string "Consider it gifts for your Pokémon\n"
+    .string "League challenge.$"
 
-ViridianCity_Gym_Text_ReceivedTM26FromGiovanni::
-    .string "{PLAYER} received TM26\n"
-    .string "from GIOVANNI.$"
 
-ViridianCity_Gym_Text_ExplainTM26::
-    .string "TM26 contains EARTHQUAKE.\p"
-    .string "It is a powerful attack that causes\n"
-    .string "a massive tremor.\p"
-    .string "I made it when I ran the GYM here,\n"
-    .string "far too long ago… $"
+ViridianCity_Gym_Text_ExplainItems::
+    .string "TM90 contains Draco Meteor.\p"
+    .string "It is a powerful attack that rains\n"
+    .string "comets on the foe.\p"
+    .string "However, it lowers Special Attack,\n"
+    .string "so be wary when using it.\p"
+    .string "Mega Dragonite obtains No Guard\n"
+    .string "when its base form has Inner Focus.\p"
+    .string "It allows it to use inaccurate moves\n"
+    .string "like Hurricane without fear.$"
 
 ViridianCity_Gym_Text_YouDoNotHaveSpace::
     .string "You do not have space for this!$"
@@ -275,3 +251,18 @@ ViridianCity_Gym_Text_GymStatuePlayerWon::
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"
 
+Text_claire_EncounterText::
+    .string "Ah, a challenger finally arrives.\p"
+    .string "Although I'm a newly appointed\n"
+    .string "Gym Leader in the Kanto region,\l"
+    .string "I was once a leader in Johto.\p"
+    .string "So, this is nothing new to me.\p"
+    .string "Lance may be considered the world's\n"
+    .string "number one dragon master,\l"
+    .string "but I'm a close second!\p"
+    .string "I will use my full power against\n"
+    .string "any opponent!$"
+
+ViridianCity_Gym_Text_ClairDefeat::
+    .string "Alright. I recognize your power.\n"
+    .string "The badge is yours.$"

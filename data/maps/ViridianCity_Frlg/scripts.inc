@@ -365,11 +365,11 @@ ViridianCity_Text_CanCarryMonsAnywhere::
     .string "use Pokémon anytime, anywhere.$"
 
 ViridianCity_Text_GymClosedWonderWhoLeaderIs::
-    .string "This Pokémon GYM is always closed.\p"
-    .string "I wonder who the LEADER is?$"
+    .string "This Pokémon Gym is always closed.\p"
+    .string "I wonder who the Leader is?$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
-    .string "Viridian Gym's LEADER returned!$"
+    .string "Viridian Gym's Leader is here!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
     .string "You want to know about the two\n"

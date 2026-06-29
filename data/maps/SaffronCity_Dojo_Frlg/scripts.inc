@@ -3,16 +3,21 @@ SaffronCity_Dojo_Frlg_MapScripts::
 
 SaffronCity_Dojo_EventScript_TriggerMasterBattleLeft::
 	lockall
-	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 1
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterLeft
+	waitmovement 0
+	msgbox SaffronCity_Dojo_Text_ChuckHeyDontGoThere
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	releaseall
 	end
 
 SaffronCity_Dojo_EventScript_TriggerMasterBattleRight::
 	lockall
-	setvar VAR_MAP_SCENE_SAFFRON_CITY_DOJO, 1
+
 	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	msgbox SaffronCity_Dojo_Text_ChuckHeyDontGoThere
+	applymovement LOCALID_PLAYER, Common_Movement_WalkDown
 	waitmovement 0
 	releaseall
 	end
@@ -56,7 +61,9 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 
 SaffronCity_Dojo_EventScript_GiveHitmon::
 	hidemonpic
-	givemon VAR_TEMP_1, 25
+	setflag FLAG_3_PERFECT_IVS
+	givemon VAR_TEMP_1, 35
+	clearflag FLAG_3_PERFECT_IVS
 	goto_if_eq VAR_RESULT, 0, SaffronCity_Dojo_EventScript_ReceivedHitmonParty
 	goto_if_eq VAR_RESULT, 1, SaffronCity_Dojo_EventScript_ReceivedHitmonPC
 	goto_if_eq VAR_RESULT, 2, Common_EventScript_NoMoreRoomForPokemon
@@ -262,3 +269,6 @@ SaffronCity_Dojo_Text_GoesAroundComesAround::
 SaffronCity_Dojo_Text_FightingDojo::
     .string "FIGHTING DOJO$"
 
+SaffronCity_Dojo_Text_ChuckHeyDontGoThere::
+    .string "Hey! You'll have to fight me for\n"
+    .string "those!$"

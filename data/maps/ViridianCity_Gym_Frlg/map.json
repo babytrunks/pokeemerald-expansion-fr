@@ -3,7 +3,6 @@
   "name": "ViridianCity_Gym_Frlg",
   "layout": "LAYOUT_VIRIDIAN_CITY_GYM",
   "music": "MUS_GYM",
-  "region": "REGION_KANTO",
   "region_map_section": "MAPSEC_VIRIDIAN_CITY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -26,14 +25,14 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "1",
       "script": "ViridianCity_Gym_EventScript_Takashi",
       "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 12,
+      "x": 14,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -47,7 +46,7 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACKBELT",
-      "x": 11,
+      "x": 13,
       "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -61,14 +60,14 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
-      "x": 10,
-      "y": 10,
+      "x": 5,
+      "y": 0,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_Gym_EventScript_Jason",
       "flag": "0"
     },
@@ -89,13 +88,13 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACKBELT",
-      "x": 3,
-      "y": 11,
+      "x": 7,
+      "y": 0,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "ViridianCity_Gym_EventScript_Kiyo",
       "flag": "0"
@@ -117,7 +116,7 @@
     {
       "local_id": "LOCALID_VIRIDIAN_GIOVANNI",
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
+      "graphics_id": "OBJ_EVENT_GFX_CLAIR",
       "x": 2,
       "y": 2,
       "elevation": 3,
@@ -126,16 +125,16 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ViridianCity_Gym_EventScript_Giovanni",
-      "flag": "FLAG_HIDE_VIRIDIAN_GIOVANNI"
+      "script": "ViridianCity_Gym_EventScript_Clair",
+      "flag": "0"
     },
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
-      "x": 13,
-      "y": 7,
+      "x": 12,
+      "y": 10,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -201,13 +200,14 @@
     },
     {
       "type": "hidden_item",
-      "x": 2,
-      "y": 2,
+      "x": 3,
+      "y": 0,
       "elevation": 3,
       "item": "ITEM_MACHO_BRACE",
       "flag": "FLAG_HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE",
       "quantity": 1,
       "underfoot": true
     }
-  ]
+  ],
+  "region": "REGION_KANTO"
 }
