@@ -2485,7 +2485,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .aiRating = 10,
         .breakable = TRUE,
     },
-    [ABILITY_PHOENIX_DOWN] = //fru todo
+    [ABILITY_PHOENIX_DOWN] = //todo
     {        
         .name = _("Phoenix Down"),
         .description = COMPOUND_STRING("Revives to half health on first faint once per battle."),
@@ -2497,7 +2497,13 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Ups Sp. Attack and locks move."),
         .aiRating = 10,
     },
-    [ABILITY_FATAL_PRECISION] = //fru todo
+    [ABILITY_BONE_ZONE] = //todo
+    {        
+        .name = _("Bone Zone"),
+        .description = COMPOUND_STRING("Bone moves bypass resists and immunities."),
+        .aiRating = 8,
+    },
+    [ABILITY_FATAL_PRECISION] = //todo
     {        
         .name = _("Fatal Precision"),
         .description = COMPOUND_STRING("Super effective moves can't miss & boosted by 20%."),
