@@ -41,6 +41,7 @@ MtMoon_1F_EventScript_ItemTM09::
 MtMoon_B2F_EventScript_ItemBerryJuice::
 	giveitem ITEM_BERRY_JUICE
 	removeobject VAR_LAST_TALKED
+	closemessage
 	end
 
 MtMoon_1F_EventScript_ItemKalosFossil::
@@ -306,6 +307,7 @@ SilphCo_5F_EventScript_ItemCardKey::
 	removeobject VAR_LAST_TALKED
 	giveitem ITEM_CARD_KEY 
 	setflag FLAG_HIDE_SILPH_CO_5F_CARD_KEY
+	closemessage
 	release
 	end
 
@@ -531,6 +533,7 @@ RockTunnel_1F_EventScript_ItemTMZenHeadbutt::
 RockTunnel_1F_EventScript_ItemEverstone::
 	giveitem ITEM_EVERSTONE
 	removeobject VAR_LAST_TALKED
+	closemessage
 	end
 
 RockTunnel_B1F_EventScript_ItemSinnohFossil::

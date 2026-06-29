@@ -1582,7 +1582,7 @@ static void SpriteCB_HitAnimHealthoxEffect(struct Sprite *sprite)
     gSprites[r1].y2 = sprite->data[0];
     sprite->data[0] = -sprite->data[0];
     sprite->data[2]++;
-    if (sprite->data[2] == 10)
+    if (sprite->data[2] == 21)
     {
         gSprites[r1].x2 = 0;
         gSprites[r1].y2 = 0;

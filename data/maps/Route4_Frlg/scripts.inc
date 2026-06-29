@@ -6,11 +6,11 @@ Route4_Frlg_MapScripts::
 
 Route4_Frlg_OnWarp::
     map_script_2 VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI, 1, Route4_ShowSprites_PostCeruleanCaveScript
-    end
+    .2byte 0
 
 Route4_OnFrame::
     map_script_2 VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI, 1, Route4_EventScript_PostCeruleanCaveScript 
-    end
+	.2byte 0
 
 Route4_ShowSprites_PostCeruleanCaveScript::
     addobject LOCALID_ROUTE4_GIOVANNI

@@ -3004,8 +3004,11 @@ static enum MoveCanceler CancelerProtean(struct BattleContext *ctx)
             gDisableStructs[ctx->battlerAtk].usedProteanLibero = TRUE;
         PREPARE_TYPE_BUFFER(gBattleTextBuff1, moveType);
         gBattlerAbility = ctx->battlerAtk;
-        PrepareStringBattle(STRINGID_EMPTYSTRING3, ctx->battlerAtk);
-        gBattleCommunication[MSG_DISPLAY] = 1;
+        // PrepareStringBattle(STRINGID_EMPTYSTRING3, ctx->battlerAtk);
+        // gBattleCommunication[MSG_DISPLAY] = 1;
+
+        // commented above as it wipes the "mon used move" text
+        // text before it can be read which is jarring
         BattleScriptCall(BattleScript_ProteanActivates);
         return MOVE_STEP_BREAK;
     }

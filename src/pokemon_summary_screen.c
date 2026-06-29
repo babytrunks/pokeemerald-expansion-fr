@@ -5088,6 +5088,7 @@ static void CreateFriendshipHeartSprite(void)
         LoadSpritePalette(&sFriendshipHeartPalettes[index]);
 
         heartSpriteId = CreateSprite(&sSpriteTemplate_FriendshipHeart, 200, 56, 0);
+        gSprites[heartSpriteId].invisible = TRUE;   // shown only on the Info page by SetTypeIcons()
         ballSprite->data[0] = heartSpriteId;
     }
     else
