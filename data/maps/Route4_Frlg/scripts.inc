@@ -44,6 +44,7 @@ Route4_EventScript_PostCeruleanCaveScript::
     removeobject LOCALID_ROUTE4_LANCE
     fadescreenswapbuffers FADE_FROM_BLACK
     setvar VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI, 2
+    callnative ScriptUpdateFollowingMon
     end
 
 Route4_Movement_GiovanniLeaveRight:

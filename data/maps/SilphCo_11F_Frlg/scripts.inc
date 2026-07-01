@@ -221,6 +221,7 @@ SilphCo_11F_EventScript_ArcherArianaChooseTeam:
 	multi_2_vs_2 TRAINER_SILPH_CO_ARCHER, SilphCo_11F_Text_ArcherDefeat, TRAINER_SILPH_CO_ARIANA, SilphCo_11F_Text_ArianaDefeat, PARTNER_SILPH_BRENDAN
 	@ Post-battle
 	@ playse SE_BALL_THROW
+	callnative ScriptUpdateFollowingMon
 	switch VAR_RESULT
 	case 1, SilphCo_11F_EventScript_DefeatedArcherArianaScene
 	fadescreen FADE_TO_BLACK

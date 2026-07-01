@@ -515,7 +515,7 @@ CeladonCity_GameCorner_EventScript_SlotMachine24::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, 50, Pinball_Not_Enough
 	showcoinsbox 1, 1
-	msgbox MauvilleCity_GameCorner_Text_Pinball_Diglett, MSGBOX_YESNO
+	msgbox CeladonCity_GameCorner_Text_Pinball_Diglett, MSGBOX_YESNO
 	closemessage
 	goto_if_eq VAR_RESULT, NO, CeladonCity_GameCorner_CancelVF	
 	removecoins 50
