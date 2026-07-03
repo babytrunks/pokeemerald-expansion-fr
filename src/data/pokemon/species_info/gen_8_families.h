@@ -2470,7 +2470,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_FLAPPLE},
                                 {EVO_ITEM, ITEM_SUN_STONE, SPECIES_APPLETUN}
                             #if P_GEN_9_CROSS_EVOS
-                                ,{EVO_LEVEL, 28, SPECIES_DIPPLIN}
+                                ,{EVO_LEVEL, 25, SPECIES_DIPPLIN}
                             #endif
                             ),
     },
@@ -2786,7 +2786,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDipplinLevelUpLearnset,
         .teachableLearnset = sDipplinTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GIOVANNI_CELADON, SPECIES_HYDRAPPLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_4, SPECIES_HYDRAPPLE}),
     },
 
     [SPECIES_HYDRAPPLE] =

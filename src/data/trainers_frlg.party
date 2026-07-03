@@ -11792,6 +11792,17 @@ EVs: 0 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 54 Spe
 - Hidden Power 
 - Explosion
 
+Hydrapple @ Assault Vest
+Nature: Modest
+Ability: Regenerator
+Level: 35
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 0 Atk / 0 Def / 54 SpA / 0 SpD / 0 Spe
+- Earth Power
+- Fickle Beam
+- Giga Drain
+- Hydro Pump
+
 === TRAINER_LEADER_KOGA ===
 Name: Koga
 Class: Leader Frlg
