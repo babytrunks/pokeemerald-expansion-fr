@@ -9358,7 +9358,7 @@ Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Fire Blast  
 - Hurricane  
-- Will-O-Wisp  
+- U-Turn 
 - Tailwind  
 
 Brambleghast @ Focus Sash  
@@ -9369,17 +9369,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Power Whip  
 - Phantom Force  
 - Skitter Smack  
-- Spikes  
+- Facade 
 
-Toxicroak @ Lum Berry  
-Ability: Dry Skin  
+Heracross @ Silver Powder  
+Ability: Guts  
 Level: 35  
-Nature: Jolly  
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Drain Punch  
-- Ice Punch  
-- Knock Off  
-- Poison Jab  
+Adamant Nature  
+- Lunge  
+- Brick Break  
+- Drill Run  
+- Shadow Claw  
 
 Eelektross @ Expert Belt  
 Ability: Levitate  
@@ -15556,6 +15555,7 @@ EVs: 252 HP / 252 Atk
 
 Pelipper @ Damp Rock
 Level: 44
+Ability: Drizzle
 Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 252 Spe

@@ -210,8 +210,14 @@ Debug_EventScript_Script_1::
 	end
 
 Debug_EventScript_Script_2::
-	trainerbattle_no_intro TRAINER_RIVAL_ROUTE22_EARLY_BULBASAUR, adminmtmoonleft_Text_Defeat
-
+	special SavePlayerParty
+	fadescreen FADE_TO_BLACK
+	special ChooseHalfPartyForBattle
+	waitstate
+	multi_2_vs_2 TRAINER_SILPH_CO_ARCHER, SilphCo_11F_Text_ArcherDefeat, TRAINER_SILPH_CO_ARIANA, SilphCo_11F_Text_ArianaDefeat, PARTNER_SILPH_BRENDAN
+	@ Post-battle
+	@ playse SE_BALL_THROW
+	callnative ScriptUpdateFollowingMon
 	release
 	end
 

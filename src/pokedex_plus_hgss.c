@@ -4326,6 +4326,28 @@ static void PrintStatsScreenTextSmall(u8 windowId, const u8* str, u8 left, u8 to
 
     AddTextPrinterParameterized4(windowId, 0, left, top, 0, 0, color, 0, str);
 }
+
+
+#define STATS_ABILITY_DESC_MAX 30
+
+static void PrintStatsScreen_AbilityDescription(u8 windowId, const u8 *description, u8 left, u8 top)
+{
+    u8 buffer[STATS_ABILITY_DESC_MAX + 4]; // room for "..." + EOS
+
+    if (StringLength(description) > STATS_ABILITY_DESC_MAX)
+    {
+        StringCopyN(buffer, description, STATS_ABILITY_DESC_MAX - 3); // keep 47 chars
+        buffer[STATS_ABILITY_DESC_MAX - 3] = EOS;
+        StringAppend(buffer, COMPOUND_STRING("…"));                 // -> 50 chars total
+        PrintStatsScreenTextSmall(windowId, buffer, left, top);
+    }
+    else
+    {
+        PrintStatsScreenTextSmall(windowId, description, left, top);
+    }
+}
+
+
 static void PrintStatsScreenTextSmallWhite(u8 windowId, const u8* str, u8 left, u8 top)
 {
     u8 color[3];
@@ -5885,20 +5907,20 @@ static void PrintStatsScreen_Abilities(u8 taskId)
     {
         ability0 = sPokedexView->sPokemonStats.ability0;
         PrintStatsScreenTextSmallWhite(WIN_STATS_ABILITIES, gAbilitiesInfo[ability0].name, abilities_x, abilities_y);
-        // PrintStatsScreenTextSmall(WIN_STATS_ABILITIES, gAbilitiesInfo[ability0].description, abilities_x, abilities_y + 14);
+        PrintStatsScreen_AbilityDescription(WIN_STATS_ABILITIES, gAbilitiesInfo[ability0].description, abilities_x, abilities_y + 14);
 
         ability1 = sPokedexView->sPokemonStats.ability1;
         if (ability1 != ABILITY_NONE && ability1 != ability0)
         {
             PrintStatsScreenTextSmallWhite(WIN_STATS_ABILITIES, gAbilitiesInfo[ability1].name, abilities_x, abilities_y + 30);
-            // PrintStatsScreenTextSmall(WIN_STATS_ABILITIES, gAbilitiesInfo[ability1].description, abilities_x, abilities_y + 44);
+            PrintStatsScreen_AbilityDescription(WIN_STATS_ABILITIES, gAbilitiesInfo[ability1].description, abilities_x, abilities_y + 44);
         }
     }
     else //Hidden abilities
     {
         abilityHidden = sPokedexView->sPokemonStats.abilityHidden;
         PrintStatsScreenTextSmallWhite(WIN_STATS_ABILITIES, gAbilitiesInfo[abilityHidden].name, abilities_x, abilities_y);
-        // PrintStatsScreenTextSmall(WIN_STATS_ABILITIES, gAbilitiesInfo[abilityHidden].description, abilities_x, abilities_y + 14);
+        PrintStatsScreen_AbilityDescription(WIN_STATS_ABILITIES, gAbilitiesInfo[abilityHidden].description, abilities_x, abilities_y + 14);
     }
 }
 
