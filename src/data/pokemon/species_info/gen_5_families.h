@@ -2243,6 +2243,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sBlitzleLevelUpLearnset,
         .teachableLearnset = sBlitzleTeachableLearnset,
         .eggMoveLearnset = sBlitzleEggMoveLearnset,
+        .formSpeciesIdTable = sBlitzleFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_ZEBSTRIKA}),
     },
 
@@ -2311,6 +2312,137 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sZebstrikaLevelUpLearnset,
         .teachableLearnset = sZebstrikaTeachableLearnset,
+        .formSpeciesIdTable = sZebstrikaFormSpeciesIdTable,
+    },
+
+    [SPECIES_BLITZLE_SEVII] =
+    {
+        .baseHP        = 45,
+        .baseAttack    = 60,
+        .baseDefense   = 32,
+        .baseSpeed     = 76,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 32,
+        .types = MON_TYPES(TYPE_ELECTRIC), // TODO: set SEVII form typing
+        .catchRate = 190,
+        .expYield = 59,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_SAP_SIPPER, ABILITY_FLARE_BOOST }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Blitzle"),
+        .cryId = CRY_BLITZLE,
+        .natDexNum = NATIONAL_DEX_BLITZLE,
+        .categoryName = _("Electrified"),
+        .height = 8,
+        .weight = 298,
+        .description = COMPOUND_STRING(
+            "A regional form found in the Sevii\n"
+            "Islands. Its coloration and habits differ\n"
+            "from the Unovan variety, shaped by the\n"
+            "islands' distinct environment."),
+        .pokemonScale = 366,
+        .pokemonOffset = 8,
+        .trainerScale = 257,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_BlitzleSevii,
+        .frontPicSize = MON_COORDS_SIZE(40, 56),
+        .frontPicYOffset = 5,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_BlitzleSevii,
+        .backPicSize = MON_COORDS_SIZE(56, 56),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_DIP_RIGHT_SIDE,
+        .palette = gMonPalette_BlitzleSevii,
+        .shinyPalette = gMonShinyPalette_BlitzleSevii,
+        .iconSprite = gMonIcon_BlitzleSevii,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(3, 9, SHADOW_SIZE_M)
+        FOOTPRINT(Blitzle)
+        OVERWORLD(
+            sPicTable_BlitzleSevii,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_BlitzleSevii,
+            gShinyOverworldPalette_BlitzleSevii
+        )
+        .levelUpLearnset = sBlitzleLevelUpLearnset,
+        .teachableLearnset = sBlitzleTeachableLearnset,
+        .eggMoveLearnset = sBlitzleEggMoveLearnset,
+        .formSpeciesIdTable = sBlitzleFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_ZEBSTRIKA_SEVII}),
+    },
+
+    [SPECIES_ZEBSTRIKA_SEVII] =
+    {
+        .baseHP        = 75,
+        .baseAttack    = 100,
+        .baseDefense   = 63,
+        .baseSpeed     = 116,
+        .baseSpAttack  = 80,
+        .baseSpDefense = 63,
+        .types = MON_TYPES(TYPE_ELECTRIC), // TODO: set SEVII form typing
+        .catchRate = 75,
+        .expYield = 174,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD),
+        .abilities = { ABILITY_LIGHTNING_ROD, ABILITY_SAP_SIPPER, ABILITY_FLARE_BOOST }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_BLACK,
+        .speciesName = _("Zebstrika"),
+        .cryId = CRY_ZEBSTRIKA,
+        .natDexNum = NATIONAL_DEX_ZEBSTRIKA,
+        .categoryName = _("Thunderbolt"),
+        .height = 16,
+        .weight = 795,
+        .description = COMPOUND_STRING(
+            "The Sevii Islands form of Zebstrika.\n"
+            "Generations of island life have altered\n"
+            "its appearance and temperament from\n"
+            "that of its mainland kin."),
+        .pokemonScale = 259,
+        .pokemonOffset = 1,
+        .trainerScale = 296,
+        .trainerOffset = 1,
+        .frontPic = gMonFrontPic_ZebstrikaSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_BACK_AND_LUNGE,
+        .backPic = gMonBackPic_ZebstrikaSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 7,
+        .backAnimId = BACK_ANIM_SHAKE_FLASH_YELLOW,
+        .palette = gMonPalette_ZebstrikaSevii,
+        .shinyPalette = gMonShinyPalette_ZebstrikaSevii,
+        .iconSprite = gMonIcon_ZebstrikaSevii,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-2, 13, SHADOW_SIZE_M)
+        FOOTPRINT(Zebstrika)
+        OVERWORLD(
+            sPicTable_ZebstrikaSevii,
+            SIZE_32x32,
+            SHADOW_SIZE_M,
+            TRACKS_FOOT,
+            sAnimTable_Following,
+            gOverworldPalette_ZebstrikaSevii,
+            gShinyOverworldPalette_ZebstrikaSevii
+        )
+        .levelUpLearnset = sZebstrikaLevelUpLearnset,
+        .teachableLearnset = sZebstrikaTeachableLearnset,
+        .formSpeciesIdTable = sZebstrikaFormSpeciesIdTable,
     },
 #endif //P_FAMILY_BLITZLE
 

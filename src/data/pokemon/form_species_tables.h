@@ -1365,6 +1365,20 @@ static const u16 sDarmanitanFormSpeciesIdTable[] = {
 };
 #endif //P_FAMILY_DARUMAKA
 
+#if P_FAMILY_BLITZLE
+static const u16 sBlitzleFormSpeciesIdTable[] = {
+    SPECIES_BLITZLE,
+    SPECIES_BLITZLE_SEVII,
+    FORM_SPECIES_END,
+};
+
+static const u16 sZebstrikaFormSpeciesIdTable[] = {
+    SPECIES_ZEBSTRIKA,
+    SPECIES_ZEBSTRIKA_SEVII,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_BLITZLE
+
 #if P_FAMILY_SCRAGGY
 static const u16 sScraftyFormSpeciesIdTable[] = {
     SPECIES_SCRAFTY,

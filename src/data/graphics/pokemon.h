@@ -16678,6 +16678,32 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
     const u16 gShinyOverworldPalette_Zebstrika[] = INCBIN_U16("graphics/pokemon/zebstrika/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_BlitzleSevii[] = INCBIN_U32("graphics/pokemon/blitzle/sevii/front.4bpp.smol");
+    const u16 gMonPalette_BlitzleSevii[] = INCBIN_U16("graphics/pokemon/blitzle/sevii/normal.gbapal");
+    const u32 gMonBackPic_BlitzleSevii[] = INCBIN_U32("graphics/pokemon/blitzle/sevii/back.4bpp.smol");
+    const u16 gMonShinyPalette_BlitzleSevii[] = INCBIN_U16("graphics/pokemon/blitzle/sevii/shiny.gbapal");
+    const u8 gMonIcon_BlitzleSevii[] = INCBIN_U8("graphics/pokemon/blitzle/sevii/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_BlitzleSevii[] = INCBIN_COMP("graphics/pokemon/blitzle/sevii/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_BlitzleSevii[] = INCBIN_U16("graphics/pokemon/blitzle/sevii/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_BlitzleSevii[] = INCBIN_U16("graphics/pokemon/blitzle/sevii/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_ZebstrikaSevii[] = INCBIN_U32("graphics/pokemon/zebstrika/sevii/front.4bpp.smol");
+    const u16 gMonPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/normal.gbapal");
+    const u32 gMonBackPic_ZebstrikaSevii[] = INCBIN_U32("graphics/pokemon/zebstrika/sevii/back.4bpp.smol");
+    const u16 gMonShinyPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/shiny.gbapal");
+    const u8 gMonIcon_ZebstrikaSevii[] = INCBIN_U8("graphics/pokemon/zebstrika/sevii/icon.4bpp");
+#if OW_POKEMON_OBJECT_EVENTS
+    const u32 gObjectEventPic_ZebstrikaSevii[] = INCBIN_COMP("graphics/pokemon/zebstrika/sevii/overworld.4bpp");
+#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
+    const u16 gOverworldPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/overworld_normal.gbapal");
+    const u16 gShinyOverworldPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/overworld_shiny.gbapal");
+#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
+#endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_BLITZLE
 
 #if P_FAMILY_ROGGENROLA
