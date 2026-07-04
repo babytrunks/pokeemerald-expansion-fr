@@ -14342,7 +14342,7 @@
             ]
           }
         },
-  {
+        {
           "map": "MAP_MT_MOON_EXTRA_FRLG",
           "base_label": "sMtMoonExtra_FireRed_Morning",
           "land_mons": {
@@ -14525,7 +14525,7 @@
                 "max_level": 54,
                 "species": "SPECIES_GOLEM_ALOLA"
               },
-                           {
+              {
                 "min_level": 50,
                 "max_level": 54,
                 "species": "SPECIES_CROBAT"
@@ -16912,7 +16912,7 @@
             ]
           }
         },
-         {
+        {
           "map": "MAP_SAFARI_ZONE_EXTRA_FRLG",
           "base_label": "sSafariZoneExtraFrlg_FireRed_Morning",
           "land_mons": {
@@ -17080,7 +17080,7 @@
           "land_mons": {
             "encounter_rate": 21,
             "mons": [
-                           {
+              {
                 "min_level": 50,
                 "max_level": 52,
                 "species": "SPECIES_HYDRAPPLE"
@@ -18163,15 +18163,14 @@
             ]
           }
         },
-
-                {
+        {
           "map": "MAP_ROCK_TUNNEL_EXTRA_FRLG",
           "base_label": "sRockTunnelExtra_FireRed_Morning",
           "land_mons": {
             "encounter_rate": 7,
             "mons": [
               {
-                  "min_level": 50,
+                "min_level": 50,
                 "max_level": 54,
                 "species": "SPECIES_ORTHWORM"
               },

@@ -5257,14 +5257,86 @@
   },
   "ROTOM": {
     "LevelMoves": [
+
+    ],
+    "PreEvoMoves": [
+    ],
+    "TMMoves": [
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+    ]
+  },
+    "ROTOM_HEAT": {
+    "LevelMoves": [
       {
-        "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Level": 48,
+        "Move": "MOVE_LAVA_PLUME"
+      }
+    ],
+    "PreEvoMoves": [ 
+    ],
+    "TMMoves": ["MOVE_FLAMETHROWER"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+    ]
+  },
+  "ROTOM_FROST": {
+    "LevelMoves": [
+      {
+        "Level": 48,
+        "Move": "MOVE_FROST_BREATH"
+      }
+    ],
+    "PreEvoMoves": [
+    ],
+    "TMMoves": ["MOVE_ICE_BEAM"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+    ]
+  },
+   "ROTOM_WASH": {
+    "LevelMoves": [
+      {
+        "Level": 48,
+        "Move": "MOVE_SCALD"
       }
     ],
     "PreEvoMoves": [
     ],
     "TMMoves": [
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+    ]
+  },
+     "ROTOM_FAN": {
+    "LevelMoves": [
+            {
+        "Level": 48,
+        "Move": "MOVE_HURRICANE"
+      }
+    ],
+    "PreEvoMoves": [
+    ],
+    "TMMoves": [ "MOVE_HURRICANE"
+    ],
+    "EggMoves": [],
+    "TutorMoves": [
+    ]
+  },
+       "ROTOM_MOW": {
+    "LevelMoves": [
+      {
+        "Level": 48,
+        "Move": "MOVE_ENERGY_BALL"
+      }
+    ],
+    "PreEvoMoves": [
+    ],
+    "TMMoves": [ "MOVE_GIGA_DRAIN"
     ],
     "EggMoves": [],
     "TutorMoves": [

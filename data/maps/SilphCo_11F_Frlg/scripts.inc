@@ -154,7 +154,6 @@ SilphCo_11F_EventScript_ArcherArianaScene::
 	waitmovement 0
 	applymovement LOCALID_PLAYER, SilphCo_11F_Movement_PlayerStepUp
 	waitmovement 0
-	@ textcolor NPC_TEXT_COLOR_FEMALE
 	setspeaker SP_NAME_ARIANA
 	msgbox SilphCo_11F_Text_ArcherArianaIntro1
 	@ applymovement LOCALID_SILPHCO_ARCHER, Common_Movement_FaceLeft
@@ -177,12 +176,10 @@ SilphCo_11F_EventScript_ArcherArianaScene::
 	msgbox SilphCo_11F_Text_ArcherArianaIntro4
 	applymovement LOCALID_SILPHCO_ARCHER, Common_Movement_FaceUp
 	waitmovement 0
-	@ textcolor NPC_TEXT_COLOR_FEMALE
 	setspeaker SP_NAME_ARIANA
 	msgbox SilphCo_11F_Text_ArcherArianaIntro5
 	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	@ textcolor NPC_TEXT_COLOR_NEUTRAL
 	setspeaker SP_NAME_UNKNOWN 
 	msgbox SilphCo_11F_Text_BrendanAppears
 	addobject LOCALID_SILPHCO_BRENDAN
@@ -202,7 +199,6 @@ SilphCo_11F_EventScript_ArcherArianaScene::
 	waitmovement 0
 	call_if_eq VAR_TEMP_1, 0, SilphCo_11F_EventScript_PlayerFaceRight
 	call_if_eq VAR_TEMP_1, 1, SilphCo_11F_EventScript_PlayerFaceLeft
-	@ textcolor NPC_TEXT_COLOR_MALE
 	setspeaker SP_NAME_BRENDAN
 	msgbox SilphCo_11F_Text_BrendanIntro2
 	@ Player faces down, Brendan faces down to signal battle start
@@ -217,11 +213,9 @@ SilphCo_11F_EventScript_ArcherArianaChooseTeam:
 	special ChooseHalfPartyForBattle
 	waitstate
 	goto_if_eq VAR_RESULT, 0, SilphCo_11F_EventScript_ArcherArianaChooseTeam
-	@ Tag battle: Player + Brendan vs Archer + Ariana
+	@ Tag battle: Player/Brendan vs Archer/Ariana
 	multi_2_vs_2 TRAINER_SILPH_CO_ARCHER, SilphCo_11F_Text_ArcherDefeat, TRAINER_SILPH_CO_ARIANA, SilphCo_11F_Text_ArianaDefeat, PARTNER_SILPH_BRENDAN
 	@ Post-battle
-	@ playse SE_BALL_THROW
-	callnative ScriptUpdateFollowingMon
 	switch VAR_RESULT
 	case 1, SilphCo_11F_EventScript_DefeatedArcherArianaScene
 	fadescreen FADE_TO_BLACK
