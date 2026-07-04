@@ -241,7 +241,7 @@ CeladonCity_GameCorner_EventScript_FlutterfreeCheck::
 
 CeladonCity_GameCorner_EventScript_FlutterfreeReward::
 	msgbox CeladonCity_GameCorner_Text_FlutterfreeCongrats
-	giveitem ITEM_GACHA_VOUCHER 3
+	giveitem ITEM_GACHA_VOUCHER 2
 	completequest QUEST_FLUTTERFREE
 	release
 	end

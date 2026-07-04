@@ -25,7 +25,9 @@ Viridian_Forest_2_EventScript_Virizion::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Viridian_Forest_2_EventScript_DefeatedVirizion
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Viridian_Forest_2_EventScript_RanFromVirizion
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Viridian_Forest_2_EventScript_RanFromVirizion
+	
 	setflag FLAG_FOUGHT_VIRIZION
+	goto EventScript_RemoveStaticMon
 	release
 	end
 

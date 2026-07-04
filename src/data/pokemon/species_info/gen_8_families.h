@@ -3735,6 +3735,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSizzlipedeLevelUpLearnset,
         .teachableLearnset = sSizzlipedeTeachableLearnset,
         .eggMoveLearnset = sSizzlipedeEggMoveLearnset,
+        .formSpeciesIdTable = sSizzlipedeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_CENTISKORCH}),
     },
 
@@ -3863,6 +3864,118 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .formSpeciesIdTable = sCentiskorchFormSpeciesIdTable,
         .formChangeTable = sCentiskorchFormChangeTable,
         .randomizerMode = MON_RANDOMIZER_INVALID,
+    },
+
+    [SPECIES_SIZZLIPEDE_SEVII] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 65,
+        .baseDefense   = 45,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 50,
+        .baseSpDefense = 50,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_BUG), // TODO: set SEVII form typing
+        .catchRate = 190,
+        .expYield = 61,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WHITE_SMOKE, ABILITY_FLAME_BODY }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Sizzlipede"),
+        .cryId = CRY_SIZZLIPEDE,
+        .natDexNum = NATIONAL_DEX_SIZZLIPEDE,
+        .categoryName = _("Radiator"),
+        .height = 7,
+        .weight = 10,
+        .description = COMPOUND_STRING(
+            "A regional form found in the Sevii\n"
+            "Islands. Its coloration and habits differ\n"
+            "from the Galarian variety, shaped by the\n"
+            "islands' distinct environment."),
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_SizzlipedeSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_VIBRATE,
+        .backPic = gMonBackPic_SizzlipedeSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_SizzlipedeSevii,
+        .shinyPalette = gMonShinyPalette_SizzlipedeSevii,
+        .iconSprite = gMonIcon_SizzlipedeSevii,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(6, -4, SHADOW_SIZE_S)
+        FOOTPRINT(Sizzlipede)
+        .levelUpLearnset = sSizzlipedeLevelUpLearnset,
+        .teachableLearnset = sSizzlipedeTeachableLearnset,
+        .eggMoveLearnset = sSizzlipedeEggMoveLearnset,
+        .formSpeciesIdTable = sSizzlipedeFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_CENTISKORCH_SEVII}),
+    },
+
+    [SPECIES_CENTISKORCH_SEVII] =
+    {
+        .baseHP        = 100,
+        .baseAttack    = 115,
+        .baseDefense   = 65,
+        .baseSpeed     = 65,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 90,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_BUG), // TODO: set SEVII form typing
+        .catchRate = 75,
+        .expYield = 184,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_FLASH_FIRE, ABILITY_WHITE_SMOKE, ABILITY_FLAME_BODY }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_RED,
+        .speciesName = _("Centiskorch"),
+        .cryId = CRY_CENTISKORCH,
+        .natDexNum = NATIONAL_DEX_CENTISKORCH,
+        .categoryName = _("Radiator"),
+        .height = 30,
+        .weight = 1200,
+        .description = COMPOUND_STRING(
+            "The Sevii Islands form of Centiskorch.\n"
+            "Generations of island life have altered\n"
+            "its appearance and temperament from\n"
+            "that of its mainland kin."),
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CentiskorchSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_CentiskorchSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_CentiskorchSevii,
+        .shinyPalette = gMonShinyPalette_CentiskorchSevii,
+        .iconSprite = gMonIcon_CentiskorchSevii,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(-3, 7, SHADOW_SIZE_M)
+        FOOTPRINT(Centiskorch)
+        .levelUpLearnset = sCentiskorchLevelUpLearnset,
+        .teachableLearnset = sCentiskorchTeachableLearnset,
+        .formSpeciesIdTable = sCentiskorchFormSpeciesIdTable,
     },
 #endif //P_FAMILY_SIZZLIPEDE
 

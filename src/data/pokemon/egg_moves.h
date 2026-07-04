@@ -649,16 +649,6 @@ static const u16 sTentacoolEggMoveLearnset[] = {
 
 #if P_FAMILY_GEODUDE
 static const u16 sGeodudeEggMoveLearnset[] = {
-    MOVE_MEGA_PUNCH,
-    MOVE_BLOCK,
-    MOVE_HAMMER_ARM,
-    MOVE_FLAIL,
-    MOVE_CURSE,
-    MOVE_FOCUS_PUNCH,
-    MOVE_ROCK_CLIMB,
-    MOVE_ENDURE,
-    MOVE_AUTOTOMIZE,
-    MOVE_WIDE_GUARD,
     MOVE_UNAVAILABLE,
 };
 #if P_ALOLAN_FORMS

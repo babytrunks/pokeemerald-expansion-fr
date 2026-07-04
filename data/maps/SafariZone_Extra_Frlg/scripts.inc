@@ -45,6 +45,7 @@ SafariZoneExtra_EventScript_Moltres::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SafariZoneExtra_EventScript_RanFromMoltres
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SafariZoneExtra_EventScript_RanFromMoltres
 	setflag FLAG_FOUGHT_MOLTRES
+	goto EventScript_RemoveStaticMon
 	release
 	end
 
@@ -81,6 +82,7 @@ SafariZoneExtra_EventScript_MoltresGalar::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SafariZoneExtra_EventScript_RanFromMoltresGalar
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SafariZoneExtra_EventScript_RanFromMoltresGalar
 	setflag FLAG_FOUGHT_MOLTRES
+	goto EventScript_RemoveStaticMon
 	release
 	end
 

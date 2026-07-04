@@ -59,9 +59,9 @@ EventScript_Gacha_Uncommon::
 	end
 
 EventScript_Gacha_Rare::
-	checkitem ITEM_GACHA_VOUCHER 4
+	checkitem ITEM_GACHA_VOUCHER 5
 	goto_if_eq VAR_RESULT, FALSE, EventScript_NoGatcha4Voucher
-	setvar VAR_0x8004, 3 @This sets to Pseudos
+	setvar VAR_0x8004, 3 @This sets to Rares
 	call EventScript_GachaCommon
 	releaseall
 	end

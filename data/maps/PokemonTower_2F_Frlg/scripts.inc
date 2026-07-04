@@ -33,7 +33,7 @@ PokemonTower_2F_EventScript_Rival::
 	call_if_eq VAR_STARTER_MON, 0, PokemonTower_2F_EventScript_RivalCharmander
 	msgbox PokemonTower_2F_Text_RivalPostBattle
 	closemessage
-	giveitem ITEM_GACHA_VOUCHER 2
+	giveitem ITEM_GACHA_VOUCHER
 	msgbox PokemonTower_2F_Text_RivalPostBattle2
 	closemessage
 	playbgm MUS_RG_RIVAL_EXIT, 0

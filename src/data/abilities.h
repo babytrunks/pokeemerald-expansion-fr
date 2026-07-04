@@ -1701,9 +1701,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
             .aiRating = 7,
         },
 
-        [ABILITY_ELEVATE] =
+        [ABILITY_EELEVATE] =
         {
-            .name = _("Elevate"),
+            .name = _("Eelevate"),
             .description = COMPOUND_STRING("Immune to Ground moves. KOs boost the user's best stat."),
             .aiRating = 9,
             .breakable = TRUE,

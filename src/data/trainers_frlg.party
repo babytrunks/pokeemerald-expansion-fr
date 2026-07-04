@@ -5202,7 +5202,7 @@ EVs: 252 HP
 - Poison Jab  
 - U-turn  
 
-Pidgeot-Mega @ Pidgeotite  
+Pidgeot @ Pidgeotite  
 Level: 52
 Ability: No Guard  
 Nature: Modest  
@@ -6358,8 +6358,8 @@ Ability: Quick Draw
 Nature: Modest
 EVs: 252 SpA / 252 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psycho Boost
-- Moonblast
+- Armor Cannon
+- Dragon Pulse
 - Focus Blast
 - Thunderbolt
 
@@ -14631,7 +14631,7 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
 Porygon-Z @ Up-Grade  
 Level: 55
-EVs: 252 SpA / 252 Spe 
+EVs: 252 SpA / 4 Def / 252 Spe 
 Ability: Adaptability  
 Nature: Timid  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -14642,7 +14642,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Roserade @ Life Orb  
 Level: 55
-EVs: 252 SpA / 252 Spe 
+EVs: 252 SpA / 4 Def / 252 Spe 
 Ability: Technician  
 Nature: Timid  
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
@@ -14653,7 +14653,7 @@ IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 
 Chandelure @ Chandelurite
 Level: 55
-EVs: 252 SpA / 252 Spe 
+EVs: 252 SpA / 4 Def / 252 Spe 
 Ability: Shadow Tag  
 Nature: Timid  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -14664,7 +14664,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Staraptor @ Heavy-Duty Boots  
 Level: 55
-EVs: 252 Atk / 252 Spe 
+EVs: 252 Atk / 4 Def / 252 Spe 
 Ability: Reckless  
 Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -14675,7 +14675,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Donphan @ Loaded Dice  
 Level: 55
-EVs: 252 HP / 252 Atk
+EVs: 252 HP / 4 Def / 252 Atk
 Ability: Technician  
 Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15167,9 +15167,9 @@ Nature: Jolly
 - Close Combat
 
 === TRAINER_SILPH_CO_POLICEMAN ===
-Name: Policeman
+Name: Officer
 Class: Dumbass 
-Pic: Hiker Frlg
+Pic: Officer
 Gender: Male
 Music: Hiker
 Double Battle: No

@@ -145,7 +145,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TMDarkPulseSold:
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_TM13::
 	checkitem ITEM_TM_ICE_BEAM
-	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
+	goto_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_ICE_BEAM
 	setvar VAR_TEMP_2, 1500
 	buffermovename STR_VAR_2, MOVE_ICE_BEAM
@@ -154,12 +154,13 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_TM13::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold::
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_AlreadySold
-	release
+	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
+	@ release
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_TMFlashCannon::
 	checkitem ITEM_TM_FLASH_CANNON
-	call_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
+	goto_if_eq VAR_RESULT, TRUE, CeladonCity_GameCorner_PrizeRoom_EventScript_AlreadySold
 	setvar VAR_TEMP_1, ITEM_TM_FLASH_CANNON
 	setvar VAR_TEMP_2, 1500
 	buffermovename STR_VAR_2, MOVE_FLASH_CANNON

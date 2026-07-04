@@ -58,6 +58,7 @@ PowerPlant_EventScript_Zapdos::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_RanFromZapdos
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_RanFromZapdos
 	setflag FLAG_FOUGHT_ZAPDOS
+	goto EventScript_RemoveStaticMon
 	release
 	end
 
@@ -93,6 +94,7 @@ PowerPlant_EventScript_ZapdosGalar::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PowerPlant_EventScript_RanFromZapdosGalar
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PowerPlant_EventScript_RanFromZapdosGalar
 	setflag FLAG_FOUGHT_ZAPDOS
+    goto EventScript_RemoveStaticMon
 	release
 	end
 

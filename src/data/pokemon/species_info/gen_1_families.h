@@ -11272,6 +11272,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sDoduoLevelUpLearnset,
         .teachableLearnset = sDoduoTeachableLearnset,
         .eggMoveLearnset = sDoduoEggMoveLearnset,
+        .formSpeciesIdTable = sDoduoFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_3, SPECIES_DODRIO}),
     },
 
@@ -11363,6 +11364,119 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .levelUpLearnset = sDodrioLevelUpLearnset,
         .teachableLearnset = sDodrioTeachableLearnset,
+        .formSpeciesIdTable = sDodrioFormSpeciesIdTable,
+    },
+
+    [SPECIES_DODUO_SEVII] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 80,
+        .baseDefense   = 45,
+        .baseSpeed     = 75,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 35,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
+        .catchRate = 190,
+        .expYield = 62,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_EARLY_BIRD, ABILITY_ANGER_POINT }, 
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Doduo"),
+        .cryId = CRY_DODUO,
+        .natDexNum = NATIONAL_DEX_DODUO,
+        .categoryName = _("Twin Bird"),
+        .height = 14,
+        .weight = 392,
+        .description = COMPOUND_STRING(
+            "A regional form found in the Sevii\n"
+            "Islands. Its coloration and habits differ\n"
+            "from the Kantonian variety, shaped by the\n"
+            "islands' distinct environment."),
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 257,
+        .trainerOffset = -1,
+        .frontPic = gMonFrontPic_DoduoSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_H_SHAKE_SLOW,
+        .backPic = gMonBackPic_DoduoSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_DoduoSevii,
+        .shinyPalette = gMonShinyPalette_DoduoSevii,
+        .iconSprite = gMonIcon_DoduoSevii,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(6, 5, SHADOW_SIZE_M)
+        FOOTPRINT(Doduo)
+        .levelUpLearnset = sDoduoLevelUpLearnset,
+        .teachableLearnset = sDoduoTeachableLearnset,
+        .eggMoveLearnset = sDoduoEggMoveLearnset,
+        .formSpeciesIdTable = sDoduoFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_3, SPECIES_DODRIO_SEVII}),
+    },
+
+    [SPECIES_DODRIO_SEVII] =
+    {
+        .baseHP        = 65,
+        .baseAttack    = 125,
+        .baseDefense   = 65,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 40,
+        .baseSpDefense = 65,
+        .types = MON_TYPES(TYPE_FIRE, TYPE_GROUND),
+        .catchRate = 45,
+        .expYield = 165,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_EARLY_BIRD, ABILITY_ANGER_POINT },
+        .bodyColor = BODY_COLOR_BROWN,
+        .speciesName = _("Dodrio"),
+        .cryId = CRY_DODRIO,
+        .natDexNum = NATIONAL_DEX_DODRIO,
+        .categoryName = _("Triple Bird"),
+        .height = 18,
+        .weight = 852,
+        .description = COMPOUND_STRING(
+            "The Sevii Islands form of Dodrio.\n"
+            "Generations of island life have altered\n"
+            "its appearance and temperament from\n"
+            "that of its mainland kin."),
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 268,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_DodrioSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_DodrioSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_DodrioSevii,
+        .shinyPalette = gMonShinyPalette_DodrioSevii,
+        .iconSprite = gMonIcon_DodrioSevii,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(3, 12, SHADOW_SIZE_L)
+        FOOTPRINT(Dodrio)
+        .levelUpLearnset = sDodrioLevelUpLearnset,
+        .teachableLearnset = sDodrioTeachableLearnset,
+        .formSpeciesIdTable = sDodrioFormSpeciesIdTable,
     },
 #endif //P_FAMILY_DODUO
 
@@ -16485,7 +16599,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sSmoochumLevelUpLearnset,
         .teachableLearnset = sSmoochumTeachableLearnset,
         .eggMoveLearnset = sSmoochumEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_JYNX}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_JYNX}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -16632,7 +16746,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sElekidLevelUpLearnset,
         .teachableLearnset = sElekidTeachableLearnset,
         .eggMoveLearnset = sElekidEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ELECTABUZZ}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_ELECTABUZZ}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 
@@ -16856,7 +16970,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMagbyLevelUpLearnset,
         .teachableLearnset = sMagbyTeachableLearnset,
         .eggMoveLearnset = sMagbyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MAGMAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_MAGMAR}),
     },
 #endif //P_GEN_2_CROSS_EVOS
 

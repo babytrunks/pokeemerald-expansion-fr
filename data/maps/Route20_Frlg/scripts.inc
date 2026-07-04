@@ -248,7 +248,7 @@ gText_pryce_Reject::
 
 pryce_Text_Defeat::
   .string "Ah, well fought.\n"
-  .string "It appears a strong will can overcome even\n"
+  .string "It appears a strong will can overcome\l"
   .string "my extended experience.$"
 
 gText_pryce_3::

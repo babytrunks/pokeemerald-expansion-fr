@@ -1693,8 +1693,23 @@
 #define SPECIES_ZEBSTRIKA_SEVII                         1574
 #define SPECIES_NOIBAT_SEVII                            1575
 #define SPECIES_NOIVERN_SEVII                           1576
+#define SPECIES_FEEBAS_SEVII                            1577
+#define SPECIES_MILOTIC_SEVII                           1578
+#define SPECIES_SIZZLIPEDE_SEVII                        1579
+#define SPECIES_CENTISKORCH_SEVII                       1580
+#define SPECIES_TEDDIURSA_SEVII                         1581
+#define SPECIES_URSARING_SEVII                          1582
+#define SPECIES_NYMBLE_SEVII                            1583
+#define SPECIES_LOKIX_SEVII                             1584
+#define SPECIES_DODUO_SEVII                             1585
+#define SPECIES_DODRIO_SEVII                            1586
+#define SPECIES_MANTYKE_SEVII                           1587
+#define SPECIES_MANTINE_SEVII                           1588
+#define SPECIES_CARNIVINE_SEVII                         1589
+#define SPECIES_CLAUNCHER_SEVII                         1590
+#define SPECIES_CLAWITZER_SEVII                         1591
 
-#define SPECIES_EGG                                     (SPECIES_NOIVERN_SEVII + 1)
+#define SPECIES_EGG                                     (SPECIES_CLAWITZER_SEVII + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

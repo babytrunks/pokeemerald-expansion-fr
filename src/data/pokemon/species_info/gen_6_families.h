@@ -4437,6 +4437,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sClauncherLevelUpLearnset,
         .teachableLearnset = sClauncherTeachableLearnset,
         .eggMoveLearnset = sClauncherEggMoveLearnset,
+        .formSpeciesIdTable = sClauncherFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_CLAWITZER}),
     },
 
@@ -4511,6 +4512,121 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sClawitzerLevelUpLearnset,
         .teachableLearnset = sClawitzerTeachableLearnset,
+        .formSpeciesIdTable = sClawitzerFormSpeciesIdTable,
+    },
+
+    [SPECIES_CLAUNCHER_SEVII] =
+    {
+        .baseHP        = 50,
+        .baseAttack    = 53,
+        .baseDefense   = 62,
+        .baseSpeed     = 44,
+        .baseSpAttack  = 58,
+        .baseSpDefense = 63,
+        .types = MON_TYPES(TYPE_WATER), // TODO: set SEVII form typing
+        .catchRate = 225,
+        .expYield = 66,
+        .evYield_SpAttack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_NONE, ABILITY_NONE }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = TRUE,
+        .speciesName = _("Clauncher"),
+        .cryId = CRY_CLAUNCHER,
+        .natDexNum = NATIONAL_DEX_CLAUNCHER,
+        .categoryName = _("Water Gun"),
+        .height = 5,
+        .weight = 83,
+        .description = COMPOUND_STRING(
+            "A regional form found in the Sevii\n"
+            "Islands. Its coloration and habits differ\n"
+            "from the Kalosian variety, shaped by the\n"
+            "islands' distinct environment."),
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ClauncherSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_TIP_MOVE_FORWARD,
+        .backPic = gMonBackPic_ClauncherSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_H_SLIDE,
+        .palette = gMonPalette_ClauncherSevii,
+        .shinyPalette = gMonShinyPalette_ClauncherSevii,
+        .iconSprite = gMonIcon_ClauncherSevii,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
+        SHADOW(4, -6, SHADOW_SIZE_M)
+        FOOTPRINT(Clauncher)
+        .levelUpLearnset = sClauncherLevelUpLearnset,
+        .teachableLearnset = sClauncherTeachableLearnset,
+        .eggMoveLearnset = sClauncherEggMoveLearnset,
+        .formSpeciesIdTable = sClauncherFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_CLAWITZER_SEVII}),
+    },
+
+    [SPECIES_CLAWITZER_SEVII] =
+    {
+        .baseHP        = 71,
+        .baseAttack    = 73,
+        .baseDefense   = 88,
+        .baseSpeed     = 72,
+        .baseSpAttack  = 120,
+        .baseSpDefense = 89,
+        .types = MON_TYPES(TYPE_WATER), // TODO: set SEVII form typing
+        .catchRate = 55,
+        .expYield = 100,
+        .evYield_SpAttack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 15,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
+        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_NONE, ABILITY_NONE }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_BLUE,
+        .noFlip = TRUE,
+        .speciesName = _("Clawitzer"),
+        .cryId = CRY_CLAWITZER,
+        .natDexNum = NATIONAL_DEX_CLAWITZER,
+        .categoryName = _("Howitzer"),
+        .height = 13,
+        .weight = 353,
+        .description = COMPOUND_STRING(
+            "The Sevii Islands form of Clawitzer.\n"
+            "Generations of island life have altered\n"
+            "its appearance and temperament from\n"
+            "that of its mainland kin."),
+        .pokemonScale = 272,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_ClawitzerSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_CIRCLE_C_CLOCKWISE_SLOW,
+        .backPic = gMonBackPic_ClawitzerSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_V_SHAKE,
+        .palette = gMonPalette_ClawitzerSevii,
+        .shinyPalette = gMonShinyPalette_ClawitzerSevii,
+        .iconSprite = gMonIcon_ClawitzerSevii,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(6, 1, SHADOW_SIZE_L)
+        FOOTPRINT(Clawitzer)
+        .levelUpLearnset = sClawitzerLevelUpLearnset,
+        .teachableLearnset = sClawitzerTeachableLearnset,
+        .formSpeciesIdTable = sClawitzerFormSpeciesIdTable,
     },
 #endif //P_FAMILY_CLAUNCHER
 
@@ -6707,7 +6823,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 55,
         .baseSpAttack  = 45,
         .baseSpDefense = 40,
-        .types = MON_TYPES(TYPE_FLYING, TYPE_DRAGON), // TODO: set SEVII form typing
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GHOST), 
         .catchRate = 190,
         .expYield = 49,
         .evYield_Speed = 1,
@@ -6720,7 +6836,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
     #endif
-        .abilities = { ABILITY_FRISK, ABILITY_INFILTRATOR, ABILITY_TELEPATHY }, // TODO: set SEVII form abilities
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_LEVITATE }, 
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Noibat"),
         .cryId = CRY_NOIBAT,
@@ -6769,7 +6885,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 123,
         .baseSpAttack  = 102,
         .baseSpDefense = 80,
-        .types = MON_TYPES(TYPE_FLYING, TYPE_DRAGON), // TODO: set SEVII form typing
+        .types = MON_TYPES(TYPE_ROCK, TYPE_GHOST),
         .catchRate = 45,
         .expYield = 187,
         .evYield_Speed = 2,
@@ -6782,7 +6898,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
     #else
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
     #endif
-        .abilities = { ABILITY_FRISK, ABILITY_INFILTRATOR, ABILITY_TELEPATHY }, // TODO: set SEVII form abilities
+        .abilities = { ABILITY_ROCK_HEAD, ABILITY_STURDY, ABILITY_LEVITATE }, 
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("Noivern"),
         .cryId = CRY_NOIVERN,

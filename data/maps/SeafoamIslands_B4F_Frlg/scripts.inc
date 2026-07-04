@@ -186,6 +186,7 @@ SeafoamIslands_B4F_EventScript_Articuno::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SeafoamIslands_B4F_EventScript_RanFromArticuno
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SeafoamIslands_B4F_EventScript_RanFromArticuno
 	setflag FLAG_FOUGHT_ARTICUNO
+	goto EventScript_RemoveStaticMon
 	release
 	end
 
@@ -221,6 +222,7 @@ SeafoamIslands_B4F_EventScript_ArticunoGalar::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, SeafoamIslands_B4F_EventScript_RanFromArticunoGalar
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, SeafoamIslands_B4F_EventScript_RanFromArticunoGalar
 	setflag FLAG_FOUGHT_ARTICUNO
+	goto EventScript_RemoveStaticMon
 	release
 	end
 

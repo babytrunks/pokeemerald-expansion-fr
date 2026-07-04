@@ -975,6 +975,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sNymbleLevelUpLearnset,
         .teachableLearnset = sNymbleTeachableLearnset,
         .eggMoveLearnset = sNymbleEggMoveLearnset,
+        .formSpeciesIdTable = sNymbleFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_LOKIX}),
     },
 
@@ -1039,6 +1040,119 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sLokixLevelUpLearnset,
         .teachableLearnset = sLokixTeachableLearnset,
+        .formSpeciesIdTable = sLokixFormSpeciesIdTable,
+    },
+
+    [SPECIES_NYMBLE_SEVII] =
+    {
+        .baseHP        = 33,
+        .baseAttack    = 46,
+        .baseDefense   = 40,
+        .baseSpeed     = 45,
+        .baseSpAttack  = 21,
+        .baseSpDefense = 25,
+        .types = MON_TYPES(TYPE_BUG), // TODO: set SEVII form typing
+        .catchRate = 190,
+        .expYield = 42,
+        .evYield_Attack = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 20,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SWARM, ABILITY_TINTED_LENS, ABILITY_NONE }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Nymble"),
+        .cryId = CRY_NYMBLE,
+        .natDexNum = NATIONAL_DEX_NYMBLE,
+        .categoryName = _("Grasshopper"),
+        .height = 2,
+        .weight = 10,
+        .description = COMPOUND_STRING(
+            "A regional form found in the Sevii\n"
+            "Islands. Its coloration and habits differ\n"
+            "from the Paldean variety, shaped by the\n"
+            "islands' distinct environment."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_NymbleSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_NymbleSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_NymbleSevii,
+        .shinyPalette = gMonShinyPalette_NymbleSevii,
+        .iconSprite = gMonIcon_NymbleSevii,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
+        SHADOW(1, 3, SHADOW_SIZE_M)
+        FOOTPRINT(Nymble)
+        .levelUpLearnset = sNymbleLevelUpLearnset,
+        .teachableLearnset = sNymbleTeachableLearnset,
+        .eggMoveLearnset = sNymbleEggMoveLearnset,
+        .formSpeciesIdTable = sNymbleFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_LOKIX_SEVII}),
+    },
+
+    [SPECIES_LOKIX_SEVII] =
+    {
+        .baseHP        = 71,
+        .baseAttack    = 102,
+        .baseDefense   = 78,
+        .baseSpeed     = 92,
+        .baseSpAttack  = 52,
+        .baseSpDefense = 55,
+        .types = MON_TYPES(TYPE_BUG, TYPE_DARK), // TODO: set SEVII form typing
+        .catchRate = 30,
+        .expYield = 158,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = 0,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_BUG),
+        .abilities = { ABILITY_SWARM, ABILITY_TINTED_LENS, ABILITY_NONE }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_GRAY,
+        .speciesName = _("Lokix"),
+        .cryId = CRY_LOKIX,
+        .natDexNum = NATIONAL_DEX_LOKIX,
+        .categoryName = _("Grasshopper"),
+        .height = 10,
+        .weight = 175,
+        .description = COMPOUND_STRING(
+            "A regional form found in the Sevii\n"
+            "Islands. Its coloration and habits differ\n"
+            "from the Paldean variety, shaped by the\n"
+            "islands' distinct environment."),
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_LokixSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_LokixSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_LokixSevii,
+        .shinyPalette = gMonShinyPalette_LokixSevii,
+        .iconSprite = gMonIcon_LokixSevii,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 11, SHADOW_SIZE_M)
+        FOOTPRINT(Lokix)
+        .levelUpLearnset = sLokixLevelUpLearnset,
+        .teachableLearnset = sLokixTeachableLearnset,
+        .formSpeciesIdTable = sLokixFormSpeciesIdTable,
     },
 #endif //P_FAMILY_NYMBLE
 

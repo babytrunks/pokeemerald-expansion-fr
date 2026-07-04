@@ -5420,6 +5420,64 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sCarnivineLevelUpLearnset,
         .teachableLearnset = sCarnivineTeachableLearnset,
         .eggMoveLearnset = sCarnivineEggMoveLearnset,
+        .formSpeciesIdTable = sCarnivineFormSpeciesIdTable,
+    },
+
+    [SPECIES_CARNIVINE_SEVII] =
+    {
+        .baseHP        = 94,
+        .baseAttack    = 100,
+        .baseDefense   = 92,
+        .baseSpeed     = 36,
+        .baseSpAttack  = 55,
+        .baseSpDefense = 77,
+        .types = MON_TYPES(TYPE_POISON, TYPE_STEEL), // TODO: set SEVII form typing
+        .catchRate = 200,
+        .expYield = (P_UPDATED_EXP_YIELDS >= GEN_5) ? 159 : 164,
+        .evYield_Attack = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 25,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_SLOW,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_GRASS),
+        .abilities = { ABILITY_LEVITATE, ABILITY_NONE, ABILITY_NONE },
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Carnivine"),
+        .cryId = CRY_CARNIVINE,
+        .natDexNum = NATIONAL_DEX_CARNIVINE,
+        .categoryName = _("Bug Catcher"),
+        .height = 14,
+        .weight = 270,
+        .description = COMPOUND_STRING(
+            "The Sevii Islands form of Carnivine.\n"
+            "Generations of island life have altered\n"
+            "its appearance and temperament from\n"
+            "that of its mainland kin."),
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_CarnivineSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_FIGURE_8,
+        .enemyMonElevation = 8,
+        .backPic = gMonBackPic_CarnivineSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_SHRINK_GROW_VIBRATE,
+        .palette = gMonPalette_CarnivineSevii,
+        .shinyPalette = gMonShinyPalette_CarnivineSevii,
+        .iconSprite = gMonIcon_CarnivineSevii,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(0, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
+        FOOTPRINT(Carnivine)
+        .levelUpLearnset = sCarnivineLevelUpLearnset,
+        .teachableLearnset = sCarnivineTeachableLearnset,
+        .eggMoveLearnset = sCarnivineEggMoveLearnset,
+        .formSpeciesIdTable = sCarnivineFormSpeciesIdTable,
     },
 #endif //P_FAMILY_CARNIVINE
 

@@ -5073,7 +5073,8 @@
     ],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_BULK_UP"
+      "MOVE_BULK_UP",
+      "MOVE_DRAIN_PUNCH"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -9691,7 +9692,7 @@
   "ENAMORUS": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [ "MOVE_U_TURN"],
     "EggMoves": [],
     "TutorMoves": []
   },

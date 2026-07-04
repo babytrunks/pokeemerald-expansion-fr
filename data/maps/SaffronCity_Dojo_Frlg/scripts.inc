@@ -252,7 +252,7 @@ SaffronCity_Dojo_Text_YouWantHitmonlee::
 
 SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster::
     .string "{PLAYER} received the {STR_VAR_1}\n"
-    .string "from the KARATE MASTER.$"
+    .string "from the Chuck.$"
 
 SaffronCity_Dojo_Text_YouWantHitmonchan::
     .string "You want the Tauros Aqua Breed?$"

@@ -112,6 +112,14 @@ CeruleanCave_EventScript_StartSelectPokemon:
 	setflag FLAG_TRANSFORM_BATTLE
 	multi_2_vs_1 TRAINER_CERULEAN_CAVE_GIOVANNI, gText_ceruleangiovanni_Defeated, PARTNER_CERULEAN_CAVE_LANCE
 	clearflag FLAG_TRANSFORM_BATTLE
+	@ Post-battle
+	switch VAR_RESULT
+	case 1, CeruleanCave_EventScript_DefeatedGioScene
+	fadescreen FADE_TO_BLACK
+	special SetCB2WhiteOut
+	waitstate
+	
+CeruleanCave_EventScript_DefeatedGioScene::
 	setflag FLAG_DEFEATED_GIOVANNI_CERULEAN_CAVE
 	setvar VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI, 1
 	setspeaker SP_NAME_GIOVANNI
