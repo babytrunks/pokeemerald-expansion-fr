@@ -6624,6 +6624,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .levelUpLearnset = sNoibatLevelUpLearnset,
         .teachableLearnset = sNoibatTeachableLearnset,
         .eggMoveLearnset = sNoibatEggMoveLearnset,
+        .formSpeciesIdTable = sNoibatFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_4, SPECIES_NOIVERN}),
     },
 
@@ -6695,6 +6696,128 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         )
         .levelUpLearnset = sNoivernLevelUpLearnset,
         .teachableLearnset = sNoivernTeachableLearnset,
+        .formSpeciesIdTable = sNoivernFormSpeciesIdTable,
+    },
+
+    [SPECIES_NOIBAT_SEVII] =
+    {
+        .baseHP        = 40,
+        .baseAttack    = 30,
+        .baseDefense   = 35,
+        .baseSpeed     = 55,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 40,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_DRAGON), // TODO: set SEVII form typing
+        .catchRate = 190,
+        .expYield = 49,
+        .evYield_Speed = 1,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+    #if P_UPDATED_EGG_GROUPS >= GEN_8
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
+    #else
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+    #endif
+        .abilities = { ABILITY_FRISK, ABILITY_INFILTRATOR, ABILITY_TELEPATHY }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Noibat"),
+        .cryId = CRY_NOIBAT,
+        .natDexNum = NATIONAL_DEX_NOIBAT,
+        .categoryName = _("Sound Wave"),
+        .height = 5,
+        .weight = 80,
+        .description = COMPOUND_STRING(
+            "A regional form found in the Sevii\n"
+            "Islands. Its coloration and habits differ\n"
+            "from the Kalosian variety, shaped by the\n"
+            "islands' distinct environment."),
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_NoibatSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_RISING_WOBBLE,
+        .enemyMonElevation = 8,
+        .backPic = gMonBackPic_NoibatSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        .backAnimId = BACK_ANIM_TRIANGLE_DOWN,
+        .palette = gMonPalette_NoibatSevii,
+        .shinyPalette = gMonShinyPalette_NoibatSevii,
+        .iconSprite = gMonIcon_NoibatSevii,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(2, 11, SHADOW_SIZE_L)
+        FOOTPRINT(Noibat)
+        .levelUpLearnset = sNoibatLevelUpLearnset,
+        .teachableLearnset = sNoibatTeachableLearnset,
+        .eggMoveLearnset = sNoibatEggMoveLearnset,
+        .formSpeciesIdTable = sNoibatFormSpeciesIdTable,
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_4, SPECIES_NOIVERN_SEVII}),
+    },
+
+    [SPECIES_NOIVERN_SEVII] =
+    {
+        .baseHP        = 85,
+        .baseAttack    = 70,
+        .baseDefense   = 80,
+        .baseSpeed     = 123,
+        .baseSpAttack  = 102,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_FLYING, TYPE_DRAGON), // TODO: set SEVII form typing
+        .catchRate = 45,
+        .expYield = 187,
+        .evYield_Speed = 2,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 20,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+    #if P_UPDATED_EGG_GROUPS >= GEN_8
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING, EGG_GROUP_DRAGON),
+    #else
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FLYING),
+    #endif
+        .abilities = { ABILITY_FRISK, ABILITY_INFILTRATOR, ABILITY_TELEPATHY }, // TODO: set SEVII form abilities
+        .bodyColor = BODY_COLOR_PURPLE,
+        .speciesName = _("Noivern"),
+        .cryId = CRY_NOIVERN,
+        .natDexNum = NATIONAL_DEX_NOIVERN,
+        .categoryName = _("Sound Wave"),
+        .height = 15,
+        .weight = 850,
+        .description = COMPOUND_STRING(
+            "The Sevii Islands form of Noivern.\n"
+            "Generations of island life have altered\n"
+            "its appearance and temperament from\n"
+            "that of its mainland kin."),
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
+        .trainerOffset = 0,
+        .frontPic = gMonFrontPic_NoivernSevii,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontAnimId = ANIM_V_STRETCH,
+        .backPic = gMonBackPic_NoivernSevii,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 4,
+        .backAnimId = BACK_ANIM_JOLT_RIGHT,
+        .palette = gMonPalette_NoivernSevii,
+        .shinyPalette = gMonShinyPalette_NoivernSevii,
+        .iconSprite = gMonIcon_NoivernSevii,
+        .iconPalIndex = 2,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        SHADOW(5, 10, SHADOW_SIZE_L)
+        FOOTPRINT(Noivern)
+        .levelUpLearnset = sNoivernLevelUpLearnset,
+        .teachableLearnset = sNoivernTeachableLearnset,
+        .formSpeciesIdTable = sNoivernFormSpeciesIdTable,
     },
 #endif //P_FAMILY_NOIBAT
 

@@ -34,11 +34,11 @@ EventScript_PlainInsane_Battle::
     giveitem ITEM_STARMINITE
     giveitem ITEM_ASSAULT_VEST
     msgbox gText_plaininsane_4
-    fadescreen FADE_TO_BLACK                
+    fadescreenswapbuffers FADE_TO_BLACK                
     playse SE_EXIT                            
     waitse                                  
     removeobject LOCALID_ROUTE19_PLAINSANE             
-    fadescreen FADE_FROM_BLACK              
+    fadescreenswapbuffers FADE_FROM_BLACK              
     releaseall
     end
 

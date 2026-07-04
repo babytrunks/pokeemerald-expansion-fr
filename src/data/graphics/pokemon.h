@@ -16684,26 +16684,12 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
     const u32 gMonBackPic_BlitzleSevii[] = INCBIN_U32("graphics/pokemon/blitzle/sevii/back.4bpp.smol");
     const u16 gMonShinyPalette_BlitzleSevii[] = INCBIN_U16("graphics/pokemon/blitzle/sevii/shiny.gbapal");
     const u8 gMonIcon_BlitzleSevii[] = INCBIN_U8("graphics/pokemon/blitzle/sevii/icon.4bpp");
-#if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_BlitzleSevii[] = INCBIN_COMP("graphics/pokemon/blitzle/sevii/overworld.4bpp");
-#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_BlitzleSevii[] = INCBIN_U16("graphics/pokemon/blitzle/sevii/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_BlitzleSevii[] = INCBIN_U16("graphics/pokemon/blitzle/sevii/overworld_shiny.gbapal");
-#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
-#endif //OW_POKEMON_OBJECT_EVENTS
 
     const u32 gMonFrontPic_ZebstrikaSevii[] = INCBIN_U32("graphics/pokemon/zebstrika/sevii/front.4bpp.smol");
     const u16 gMonPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/normal.gbapal");
     const u32 gMonBackPic_ZebstrikaSevii[] = INCBIN_U32("graphics/pokemon/zebstrika/sevii/back.4bpp.smol");
     const u16 gMonShinyPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/shiny.gbapal");
     const u8 gMonIcon_ZebstrikaSevii[] = INCBIN_U8("graphics/pokemon/zebstrika/sevii/icon.4bpp");
-#if OW_POKEMON_OBJECT_EVENTS
-    const u32 gObjectEventPic_ZebstrikaSevii[] = INCBIN_COMP("graphics/pokemon/zebstrika/sevii/overworld.4bpp");
-#if OW_PKMN_OBJECTS_SHARE_PALETTES == FALSE
-    const u16 gOverworldPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/overworld_normal.gbapal");
-    const u16 gShinyOverworldPalette_ZebstrikaSevii[] = INCBIN_U16("graphics/pokemon/zebstrika/sevii/overworld_shiny.gbapal");
-#endif //OW_PKMN_OBJECTS_SHARE_PALETTES
-#endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_FAMILY_BLITZLE
 
 #if P_FAMILY_ROGGENROLA
@@ -21151,6 +21137,18 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
     const u16 gShinyOverworldPalette_Noivern[] = INCBIN_U16("graphics/pokemon/noivern/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_NoibatSevii[] = INCBIN_U32("graphics/pokemon/noibat/sevii/front.4bpp.smol");
+    const u16 gMonPalette_NoibatSevii[] = INCBIN_U16("graphics/pokemon/noibat/sevii/normal.gbapal");
+    const u32 gMonBackPic_NoibatSevii[] = INCBIN_U32("graphics/pokemon/noibat/sevii/back.4bpp.smol");
+    const u16 gMonShinyPalette_NoibatSevii[] = INCBIN_U16("graphics/pokemon/noibat/sevii/shiny.gbapal");
+    const u8 gMonIcon_NoibatSevii[] = INCBIN_U8("graphics/pokemon/noibat/sevii/icon.4bpp");
+
+    const u32 gMonFrontPic_NoivernSevii[] = INCBIN_U32("graphics/pokemon/noivern/sevii/front.4bpp.smol");
+    const u16 gMonPalette_NoivernSevii[] = INCBIN_U16("graphics/pokemon/noivern/sevii/normal.gbapal");
+    const u32 gMonBackPic_NoivernSevii[] = INCBIN_U32("graphics/pokemon/noivern/sevii/back.4bpp.smol");
+    const u16 gMonShinyPalette_NoivernSevii[] = INCBIN_U16("graphics/pokemon/noivern/sevii/shiny.gbapal");
+    const u8 gMonIcon_NoivernSevii[] = INCBIN_U8("graphics/pokemon/noivern/sevii/icon.4bpp");
 #endif //P_FAMILY_NOIBAT
 
 #if P_FAMILY_XERNEAS

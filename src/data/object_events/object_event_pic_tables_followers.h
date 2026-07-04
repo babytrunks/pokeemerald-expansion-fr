@@ -3825,12 +3825,6 @@ static const struct SpriteFrameImage sPicTable_Blitzle[] = {
 static const struct SpriteFrameImage sPicTable_Zebstrika[] = {
     overworld_ascending_frames(gObjectEventPic_Zebstrika, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_BlitzleSevii[] = {
-    overworld_ascending_frames(gObjectEventPic_BlitzleSevii, 4, 4),
-};
-static const struct SpriteFrameImage sPicTable_ZebstrikaSevii[] = {
-    overworld_ascending_frames(gObjectEventPic_ZebstrikaSevii, 4, 4),
-};
 #endif //P_FAMILY_BLITZLE
 
 #if P_FAMILY_ROGGENROLA

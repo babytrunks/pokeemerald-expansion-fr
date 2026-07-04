@@ -1691,8 +1691,10 @@
 // Custom SEVII regional forms
 #define SPECIES_BLITZLE_SEVII                           1573
 #define SPECIES_ZEBSTRIKA_SEVII                         1574
+#define SPECIES_NOIBAT_SEVII                            1575
+#define SPECIES_NOIVERN_SEVII                           1576
 
-#define SPECIES_EGG                                     (SPECIES_ZEBSTRIKA_SEVII + 1)
+#define SPECIES_EGG                                     (SPECIES_NOIVERN_SEVII + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 
