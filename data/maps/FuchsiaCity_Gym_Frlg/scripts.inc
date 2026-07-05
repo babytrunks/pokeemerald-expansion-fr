@@ -131,7 +131,7 @@ FuchsiaCity_Gym_Text_KogaExplainSoulBadge::
 
 FuchsiaCity_Gym_Text_ReceivedTM06FromKoga::
     .string "{PLAYER} received TM06\n"
-    .string "from KOGA.$"
+    .string "from Koga.$"
 
 FuchsiaCity_Gym_Text_KogaExplainGreninjite::
     .string "That allows you to use Mega Greninja!\p"
@@ -157,12 +157,12 @@ FuchsiaCity_Gym_Text_KaydenPostBattle::
     .string "So, you mix brawn with brains?\n"
     .string "Good strategy!\p"
     .string "That's remarkable for a child\n"
-    .string "TRAINER.$"
+    .string "Trainer.$"
 
 FuchsiaCity_Gym_Text_KirkIntro::
     .string "I was a magician once upon a time.\p"
     .string "But I dreamt of becoming a ninja,\n"
-    .string "so I joined this GYM.$"
+    .string "so I joined this Gym.$"
 
 FuchsiaCity_Gym_Text_KirkDefeat::
     .string "I'm done for!$"
@@ -170,7 +170,7 @@ FuchsiaCity_Gym_Text_KirkDefeat::
 FuchsiaCity_Gym_Text_KirkPostBattle::
     .string "Even though I've lost, I will keep\n"
     .string "training according to the teachings\l"
-    .string "of KOGA, my ninja master.$"
+    .string "of Koga, my ninja master.$"
 
 FuchsiaCity_Gym_Text_NateIntro::
     .string "Let's see you beat my special\n"
@@ -186,7 +186,7 @@ FuchsiaCity_Gym_Text_NatePostBattle::
 FuchsiaCity_Gym_Text_PhilIntro::
     .string "Stop right there!\p"
     .string "The famed invisible walls of\n"
-    .string "FUCHSIA GYM have you frustrated?$"
+    .string "Fuchsia Gym have you frustrated?$"
 
 FuchsiaCity_Gym_Text_PhilDefeat::
     .string "Whoa!\n"
@@ -200,7 +200,7 @@ FuchsiaCity_Gym_Text_PhilPostBattle::
 
 FuchsiaCity_Gym_Text_EdgarIntro::
     .string "I also study the way of the ninja\n"
-    .string "with Master KOGA!\p"
+    .string "with Master Koga!\p"
     .string "Ninja have a long history of using\n"
     .string "animals!$"
 
@@ -211,7 +211,7 @@ FuchsiaCity_Gym_Text_EdgarPostBattle::
     .string "I still have much to learn.$"
 
 FuchsiaCity_Gym_Text_ShawnIntro::
-    .string "Master KOGA comes from a long line\n"
+    .string "Master Koga comes from a long line\n"
     .string "of ninjas.\p"
     .string "What did you descend from?$"
 
@@ -228,9 +228,9 @@ FuchsiaCity_Gym_Text_ShawnPostBattle::
 FuchsiaCity_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "FUCHSIA GYM is a tricked-up place.\n"
+    .string "Fuchsia Gym is a tricked-up place.\n"
     .string "It's riddled with invisible walls!\p"
-    .string "KOGA might appear close, but he's\n"
+    .string "Koga might appear close, but he's\n"
     .string "blocked off.\p"
     .string "You have to find gaps in the walls\n"
     .string "to reach him.$"
@@ -240,14 +240,14 @@ FuchsiaCity_Gym_Text_GymGuyPostVictory::
     .string "even now!$"
 
 FuchsiaCity_Gym_Text_GymStatue::
-    .string "FUCHSIA Pokémon GYM\n"
-    .string "LEADER: KOGA\p"
-    .string "WINNING TRAINERS:\n"
+    .string "Fuchsia Pokémon Gym\n"
+    .string "Leader: Koga\p"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}$"
 
 FuchsiaCity_Gym_Text_GymStatuePlayerWon::
-    .string "FUCHSIA Pokémon GYM\n"
-    .string "LEADER: KOGA\p"
-    .string "WINNING TRAINERS:\n"
+    .string "Fuchsia Pokémon Gym\n"
+    .string "Leader: Koga\p"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
 

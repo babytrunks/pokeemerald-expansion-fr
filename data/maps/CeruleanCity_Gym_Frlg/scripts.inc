@@ -104,7 +104,7 @@ CeruleanCity_Gym_Text_ExplainCascadeBadge::
 
 CeruleanCity_Gym_Text_ReceivedTM54FromMisty::
     .string "{PLAYER} received TM54\n"
-    .string "from MISTY.$"
+    .string "from Misty.$"
 
 CeruleanCity_Gym_Text_BetterMakeRoomForThis::
     .string "You better make room for this!$"
@@ -165,7 +165,7 @@ CeruleanCity_Gym_Text_GymStatue::
     .string "{RIVAL}$"
 
 CeruleanCity_Gym_Text_GymStatuePlayerWon::
-    .string "Cerulean Pokémon GYM\n"
+    .string "Cerulean Pokémon Gym\n"
     .string "Leader: Misty\p"
     .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"

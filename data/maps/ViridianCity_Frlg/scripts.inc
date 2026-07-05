@@ -387,10 +387,10 @@ ViridianCity_Text_ExplainWillyWonka::
 	.string "money!$"
 
 ViridianCity_Text_ExplainCaterpieWeedle::
-    .string "CATERPIE has no poison,\n"
-    .string "but WEEDLE does.\p"
+    .string "Caterpie has no poison,\n"
+    .string "but Weedle does.\p"
     .string "Watch that your Pokémon aren't\n"
-    .string "stabbed by WEEDLE's POISON STING.$"
+    .string "stabbed by Weedle's Poison Sting.$"
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
     .string "Oh, Grandpa!\n"
@@ -454,7 +454,7 @@ ViridianCity_Text_MyGrandsonOnTheShow::
 
 ViridianCity_Text_TooBusyForTeachyTV::
     .string "Hm… You're too busy to not even\n"
-    .string "have the time for TEACHY TV…\p"
+    .string "have the time for Teachy TV…\p"
     .string "Time is money, and neither should\n"
     .string "be ill spent…$"
 
@@ -472,12 +472,12 @@ ViridianCity_Text_CatchMonsForEasierBattles::
 ViridianCity_Text_MovesLimitedByPP::
     .string "Trainer Tips\p"
     .string "The battle moves of Pokémon are\n"
-    .string "limited by their POWER POINTS, PP.\p"
+    .string "limited by their Power Points, PP.\p"
     .string "To replenish PP, rest your tired\n"
-    .string "Pokémon at a Pokémon CENTER.$"
+    .string "Pokémon at a Pokémon Center.$"
 
 ViridianCity_Text_GymSign::
-    .string "Viridian City Pokémon GYM$"
+    .string "Viridian City Pokémon Gym$"
 
 ViridianCity_Text_GymDoorsAreLocked::
     .string "Viridian Gym's doors are locked…$"

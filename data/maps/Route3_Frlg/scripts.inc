@@ -99,7 +99,7 @@ Route3_EventScript_Shuckle::
 Route3_Text_TunnelFromCeruleanTiring::
     .string "Whew… I better take a rest…\n"
     .string "Groan…\p"
-    .string "That tunnel from CERULEAN takes a\n"
+    .string "That tunnel from Cerulean takes a\n"
     .string "lot out of you!$"
 
 Route3_Text_ColtonIntro::
@@ -123,9 +123,9 @@ Route3_Text_BenDefeat::
     .string "I don't believe it!$"
 
 Route3_Text_BenPostBattle::
-    .string "Are you using a Pokémon CENTER's\n"
+    .string "Are you using a Pokémon Center's\n"
     .string "PC for storing your Pokémon?\p"
-    .string "Each BOX can hold up to\n"
+    .string "Each Box can hold up to\n"
     .string "30 Pokémon.$"
 
 Route3_Text_JaniceIntro::
@@ -140,7 +140,7 @@ Route3_Text_JanicePostBattle::
     .string "don't want to battle!$"
 
 Route3_Text_GregIntro::
-    .string "Are you a TRAINER?\n"
+    .string "Are you a Trainer?\n"
     .string "Let's get with it right away!$"
 
 Route3_Text_GregDefeat::
@@ -148,8 +148,8 @@ Route3_Text_GregDefeat::
     .string "won!$"
 
 Route3_Text_GregPostBattle::
-    .string "If a Pokémon BOX on the PC gets\n"
-    .string "full, just switch to another BOX.$"
+    .string "If a Pokémon Box on the PC gets\n"
+    .string "full, just switch to another Box.$"
 
 Route3_Text_SallyIntro::
     .string "That look you gave me…\n"
@@ -160,7 +160,7 @@ Route3_Text_SallyDefeat::
 
 Route3_Text_SallyPostBattle::
     .string "You can avoid battles by not\n"
-    .string "letting TRAINERS see you.$"
+    .string "letting Trainers see you.$"
 
 Route3_Text_CalvinIntro::
     .string "Hey! You're not wearing shorts!\n"
@@ -198,7 +198,7 @@ Route3_Text_RobinPostBattle::
 
 Route3_Text_RouteSign::
     .string "Route 3\n"
-    .string "Mt. Moon AHEAD$"
+    .string "Mt. Moon Ahead$"
 
 Route3_Text_DroppedBerryJuiceQuest::
     .string "{COLOR BLUE}Hey there! I dropped a Berry Juice\n"

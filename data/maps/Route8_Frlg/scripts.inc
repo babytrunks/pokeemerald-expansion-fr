@@ -125,11 +125,11 @@ Route8_Text_GlennDefeat::
     .string "It's not logical!$"
 
 Route8_Text_GlennPostBattle::
-    .string "Go with GRIMER first…and…\n"
+    .string "Go with Grimer first…and…\n"
     .string "…and…then…$"
 
 Route8_Text_PaigeIntro::
-    .string "I like NIDORAN, so I collect them!$"
+    .string "I like Nidoran, so I collect them!$"
 
 Route8_Text_PaigeDefeat::
     .string "Why?\n"
@@ -152,7 +152,7 @@ Route8_Text_LesliePostBattle::
     .string "I was planning on getting some\n"
     .string "fresh air for a change, but…\p"
     .string "We're stuck here because of the\n"
-    .string "gates at SAFFRON.$"
+    .string "gates at Saffron.$"
 
 Route8_Text_AndreaIntro::
     .string "Ambipom is so so cute!$"
@@ -173,7 +173,7 @@ Route8_Text_MeganDefeat::
     .string "Pokémon!$"
 
 Route8_Text_MeganPostBattle::
-    .string "SAFFRON's gatekeeper won't let us\n"
+    .string "Saffron's gatekeeper won't let us\n"
     .string "go through.\p"
     .string "I know he's doing his job, but I\n"
     .string "think he's mean.$"
@@ -194,12 +194,12 @@ Route8_Text_JuliaIntro::
 
 Route8_Text_JuliaDefeat::
     .string "Stop!\p"
-    .string "Don't be so mean to my CLEFAIRY!$"
+    .string "Don't be so mean to my Clefairy!$"
 
 Route8_Text_JuliaPostBattle::
-    .string "I read that CLEFAIRY evolves when\n"
-    .string "it's exposed to a MOON STONE.\p"
-    .string "I read that in a Pokémon JOURNAL.\n"
+    .string "I read that Clefairy evolves when\n"
+    .string "it's exposed to a Moon Stone.\p"
+    .string "I read that in a Pokémon Journal.\n"
     .string "I wonder if it's true?$"
 
 Route8_Text_UndergroundPathSign::
@@ -216,7 +216,7 @@ Route8_Text_EliDefeat::
 
 Route8_Text_EliPostBattle::
     .string "I caught my Pokémon with\n"
-    .string "ANNE!$"
+    .string "Anne!$"
 
 Route8_Text_EliNotEnoughMons::
     .string "We can't battle if you don't\n"
@@ -231,7 +231,7 @@ Route8_Text_AnneDefeat::
 
 Route8_Text_AnnePostBattle::
     .string "I'm raising Pokémon with\n"
-    .string "ELI.$"
+    .string "Eli.$"
 
 Route8_Text_AnneNotEnoughMons::
     .string "Hi, hi! Let's battle!\n"

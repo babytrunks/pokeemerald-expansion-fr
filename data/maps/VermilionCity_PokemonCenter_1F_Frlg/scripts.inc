@@ -77,16 +77,16 @@ VermilionCity_PokemonCenter_1F_Text_UrgeToBattleSomeoneAgain::
 
 VermilionCity_PokemonCenter_1F_Text_UseDeviceForRematches::
     .string "Use that device and you'll find\n"
-    .string "TRAINERS looking for a rematch.\p"
+    .string "Trainers looking for a rematch.\p"
     .string "You have to charge its battery to\n"
     .string "use it, though.$"
 
 VermilionCity_PokemonCenter_1F_Text_ExplainVSSeeker::
-    .string "How do you use the VS SEEKER?\n"
+    .string "How do you use the VS Seeker?\n"
     .string "There's nothing to it.\p"
     .string "Use it like beep-beep-beep, and\n"
-    .string "TRAINERS around you will notice.\p"
-    .string "If any TRAINER wants a rematch,\n"
+    .string "Trainers around you will notice.\p"
+    .string "If any Trainer wants a rematch,\n"
     .string "it will let you know immediately.\p"
     .string "Charge its battery and use it\n"
     .string "while you're on a road.$"

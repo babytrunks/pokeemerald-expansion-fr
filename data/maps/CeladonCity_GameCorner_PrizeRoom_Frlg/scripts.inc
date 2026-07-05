@@ -435,67 +435,67 @@ CeladonCity_GameCorner_PrizeRoom_Text_TMIceBeam::
 	.string "{FONT_SMALL_NARROW}TM Ice Beam{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMIceBeamSold::
-	.string "{FONT_SMALL_NARROW}TM Ice Beam{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "{FONT_SMALL_NARROW}TM Ice Beam{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlashCannon::
 	.string "{FONT_SMALL_NARROW}TM Flash Cannon{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlashCannonSold::
-	.string "{FONT_SMALL_NARROW}TM Flash Cannon{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "{FONT_SMALL_NARROW}TM Flash Cannon{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMThunderbolt::
 	.string "{FONT_SMALL_NARROW}TM Thunderbolt{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMThunderboltSold::
-	.string "{FONT_SMALL_NARROW}TM Thunderbolt{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "{FONT_SMALL_NARROW}TM Thunderbolt{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlamethrower::
 	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMFlamethrowerSold::
-	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "{FONT_SMALL_NARROW}TM Flamethrower{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMDarkPulse::
 	.string "{FONT_SMALL_NARROW}TM Dark Pulse{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_TMDarkPulseSold::
-	.string "{FONT_SMALL_NARROW}TM Dark Pulse{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "{FONT_SMALL_NARROW}TM Dark Pulse{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Venusaurite::
 	.string "Venusaurite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_VenusauriteSold::
-	.string "Venusaurite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "Venusaurite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Blastoisinite::
 	.string "Blastoisinite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_BlastoisiniteSold::
-	.string "Blastoisinite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "Blastoisinite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_CharizarditeX::
 	.string "Charizardite X{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_CharizarditeXSold::
-	.string "Charizardite X{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "Charizardite X{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Pidgeotite::
 	.string "Pidgeotite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_PidgeotiteSold::
-	.string "Pidgeotite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "Pidgeotite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Heracronite::
 	.string "Heracronite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_HeracroniteSold::
-	.string "Heracronite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "Heracronite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_Absolite::
 	.string "Absolite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}1500 Coins$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_AbsoliteSold::
-	.string "Absolite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}SOLD$"
+	.string "Absolite{CLEAR_TO 0x4A}{FONT_SMALL_NARROWER}{COLOR RED}Sold$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM::
     .string "Okay, a TM of {STR_VAR_2}\n"

@@ -205,7 +205,7 @@ SaffronCity_Dojo_Text_MikeDefeat::
     .string "I give up!$"
 
 SaffronCity_Dojo_Text_MikePostBattle::
-    .string "You wait 'til you see our MASTER!\n"
+    .string "You wait 'til you see our Master!\n"
     .string "I'm a small fry compared to him!$"
 
 SaffronCity_Dojo_Text_HidekiIntro::
@@ -217,7 +217,7 @@ SaffronCity_Dojo_Text_HidekiDefeat::
     .string "One point!$"
 
 SaffronCity_Dojo_Text_HidekiPostBattle::
-    .string "Our MASTER is a pro fighter.\n"
+    .string "Our Master is a pro fighter.\n"
     .string "Be prepared to lose!$"
 
 SaffronCity_Dojo_Text_AaronIntro::
@@ -237,7 +237,7 @@ SaffronCity_Dojo_Text_AaronPostBattle::
 SaffronCity_Dojo_Text_HitoshiIntro::
     .string "Hwaah!\p"
     .string "You're trespassing in our\n"
-    .string "FIGHTING DOJO!$"
+    .string "Fighting Dojo!$"
 
 SaffronCity_Dojo_Text_HitoshiDefeat::
     .string "Oof!\n"
@@ -267,7 +267,7 @@ SaffronCity_Dojo_Text_GoesAroundComesAround::
     .string "What goes around comes around.$"
 
 SaffronCity_Dojo_Text_FightingDojo::
-    .string "FIGHTING DOJO$"
+    .string "Fighting Dojo$"
 
 SaffronCity_Dojo_Text_ChuckHeyDontGoThere::
     .string "Hey! You'll have to fight me for\n"

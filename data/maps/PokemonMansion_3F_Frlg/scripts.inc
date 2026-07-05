@@ -99,7 +99,7 @@ PokemonMansion_3F_Text_VitaminQuestNotYet::
 PokemonMansion_3F_Text_VitaminQuestCongrats::
 	.string "Well, I'll be… you actually pulled it\n"
 	.string "off.\p"
-	.string "You a straight DOG. Hand it over\n"
+	.string "You a straight Dog. Hand it over\n"
 	.string "and take your cut.$"
 
 PokemonMansion_3F_Text_VitaminQuestPostQuest::

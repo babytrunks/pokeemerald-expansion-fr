@@ -170,7 +170,7 @@ PalletTown_RivalsHouse_EventScript_Picture::
 PalletTown_RivalsHouse_Text_HiBrothersAtLab::
     .string "Hi, {PLAYER}!\p"
     .string "My brother, {RIVAL}, is out at\n"
-    .string "Grandpa's LAB.$"
+    .string "Grandpa's Lab.$"
 
 PalletTown_RivalsHouse_Text_HeardYouBattledRival::
     .string "{PLAYER}, I heard you had\n"
@@ -185,7 +185,7 @@ PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
 
 PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
     .string "{PLAYER} received a Town Map\n"
-    .string "from DAISY.$"
+    .string "from Daisy.$"
 
 PalletTown_RivalsHouse_Text_DaisyThatsTownMap::
     .string "It's a map of the Kanto region.\n"
@@ -194,10 +194,10 @@ PalletTown_RivalsHouse_Text_DaisyThatsTownMap::
 
 PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
     .string "You don't have space for this in\n"
-    .string "your BAG.$"
+    .string "your Bag.$"
 
 PalletTown_RivalsHouse_Text_ExplainTownMap::
-    .string "You can use the TOWN MAP to find\n"
+    .string "You can use the Town Map to find\n"
     .string "out where you are, or check the\l"
     .string "names of places.$"
 
@@ -208,7 +208,7 @@ PalletTown_RivalsHouse_Text_PleaseGiveMonsRest::
     .string "them a rest.$"
 
 PalletTown_RivalsHouse_Text_ItsBigMapOfKanto::
-    .string "It's a big map of the KANTO region.\n"
+    .string "It's a big map of the Kanto region.\n"
     .string "Now this would be useful!$"
 
 PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks::
@@ -249,7 +249,7 @@ PalletTown_RivalsHouse_Text_ThereYouGoAllDone::
 
 PalletTown_RivalsHouse_Text_CantGroomAnEgg::
     .string "Oh, sorry. I honestly can't\n"
-    .string "groom an EGG.$"
+    .string "groom an Egg.$"
 
 PalletTown_RivalsHouse_Text_MayISeeFirstMon::
     .string "Your Pokémon grow to love\n"
@@ -296,5 +296,5 @@ PalletTown_RivalsHouse_Text_WhyWouldMonHateYouSoMuch::
 
 PalletTown_RivalsHouse_Text_LovelyAndSweetClefairy::
     .string "“The lovely and sweet\n"
-    .string "CLEFAIRY”$"
+    .string "Clefairy”$"
 

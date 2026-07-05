@@ -86,7 +86,7 @@ LavenderTown_VolunteerPokemonHouse_Text_WhereDidMrFujiGo::
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiWasPrayingForCubonesMother::
     .string "Mr. Fuji had been praying alone\n"
-    .string "for CUBONE's mother.$"
+    .string "for Cubone's mother.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MrFujiLooksAfterOrphanedMons::
     .string "This is really Mr. Fuji's house.\p"
@@ -128,7 +128,7 @@ LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou::
     .string "helped you?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
-    .string "Pokémon FAN MAGAZINE\n"
+    .string "Pokémon Fan Magazine\n"
     .string "Monthly Grand Prize Drawing!\p"
     .string "The application form is…\p"
     .string "Gone! It's been clipped out.\n"

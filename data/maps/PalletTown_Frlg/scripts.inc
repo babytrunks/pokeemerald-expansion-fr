@@ -366,7 +366,7 @@ PalletTown_Text_CanStoreItemsAndMonsInPC::
     .string "and Pokémon as data via PC.$"
 
 PalletTown_Text_OakPokemonResearchLab::
-    .string "OAK Pokémon RESEARCH LAB$"
+    .string "Oak Pokémon Research Lab$"
 
 PalletTown_Text_PlayersHouse::
     .string "{PLAYER}'s house$"
@@ -413,7 +413,7 @@ PalletTown_Text_OakYouEnjoyingTraveling::
 @ Used by sign
 PalletTown_Text_PressStartToOpenMenu::
 	.string "Trainer Tips\p"
-	.string "Press START to open the MENU!$"
+	.string "Press Start to open the Menu!$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
 	.string "Signs are useful, aren't they?$"
@@ -421,6 +421,6 @@ PalletTown_Text_SignsAreUsefulArentThey::
 @ Used by NPC
 PalletTown_Text_PressStartToOpenMenuCopy::
 	.string "Trainer Tips!\p"
-	.string "Press START to open the MENU!$"
+	.string "Press Start to open the Menu!$"
 
 

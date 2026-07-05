@@ -235,11 +235,11 @@ PokemonLeague_ChampionsRoom_Text_Intro::
     .string "Not only that, I assembled teams\n"
     .string "that would beat any Pokémon type.\p"
     .string "And now…\p"
-    .string "I'm the Pokémon LEAGUE CHAMPION!\p"
+    .string "I'm the Pokémon League Champion!\p"
     .string "{PLAYER}!\n"
     .string "Do you know what that means?\p"
     .string "I'll tell you.\p"
-    .string "I am the most powerful TRAINER in\n"
+    .string "I am the most powerful Trainer in\n"
     .string "the world!$"
 
 PokemonLeague_ChampionsRoom_Text_RematchIntro::
@@ -253,11 +253,11 @@ PokemonLeague_ChampionsRoom_Text_RematchIntro::
     .string "Not only that, I assembled teams\n"
     .string "that would beat any Pokémon type.\p"
     .string "And now…\p"
-    .string "I'm the Pokémon LEAGUE CHAMPION!\p"
+    .string "I'm the Pokémon League Champion!\p"
     .string "{PLAYER}!\n"
     .string "Do you know what that means?\p"
     .string "I'll tell you.\p"
-    .string "I am the most powerful TRAINER in\n"
+    .string "I am the most powerful Trainer in\n"
     .string "the world!$"
 
 PokemonLeague_ChampionsRoom_Text_Defeat::
@@ -265,7 +265,7 @@ PokemonLeague_ChampionsRoom_Text_Defeat::
     .string "That can't be!\l"
     .string "You beat me at my best!\p"
     .string "After all that work to become\n"
-    .string "the LEAGUE CHAMP?\p"
+    .string "the League Champ?\p"
     .string "My reign is over already?\n"
     .string "It's not fair!$"
 
@@ -286,27 +286,27 @@ PokemonLeague_ChampionsRoom_Text_PostBattle::
     .string "I never made any mistakes raising\n"
     .string "my Pokémon…\p"
     .string "Darn it! You're the new Pokémon\n"
-    .string "LEAGUE CHAMPION!\p"
+    .string "League Champion!\p"
     .string "Although I don't like to admit it…$"
 
 PokemonLeague_ChampionsRoom_Text_OakPlayer::
-    .string "OAK: {PLAYER}!$"
+    .string "Oak: {PLAYER}!$"
 
 PokemonLeague_ChampionsRoom_Text_OakCongratulations::
-    .string "OAK: So, you've won!\n"
+    .string "Oak: So, you've won!\n"
     .string "Sincerely, congratulations!\p"
-    .string "You're the new Pokémon LEAGUE\n"
-    .string "CHAMPION!\p"
+    .string "You're the new Pokémon League\n"
+    .string "Champion!\p"
     .string "You've grown up so much since you\n"
     .string "first left with {STR_VAR_1} to work\l"
     .string "on the Pokédex.\p"
     .string "{PLAYER}, you have come of age!$"
 
 PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival::
-    .string "OAK: {RIVAL}…\n"
+    .string "Oak: {RIVAL}…\n"
     .string "I'm disappointed in you.\p"
     .string "I came when I heard you'd beaten\n"
-    .string "the ELITE FOUR.\p"
+    .string "the Elite Four.\p"
     .string "But, when I got here, you had\n"
     .string "already lost!\p"
     .string "{RIVAL}, do you understand why\n"
@@ -314,10 +314,10 @@ PokemonLeague_ChampionsRoom_Text_OakImDisappointedRival::
     .string "You have forgotten to treat your\n"
     .string "Pokémon with love and trust.\p"
     .string "Without them, you will never\n"
-    .string "become a CHAMP again!$"
+    .string "become a Champ again!$"
 
 PokemonLeague_ChampionsRoom_Text_OakPlayerComeWithMe::
-    .string "OAK: {PLAYER}.\p"
+    .string "Oak: {PLAYER}.\p"
     .string "You understand that your victory\n"
     .string "was not just your own doing.\p"
     .string "The bond you share with your\n"

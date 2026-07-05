@@ -757,7 +757,7 @@ CinnabarIsland_Gym_Text_ErikPostBattle::
 
 CinnabarIsland_Gym_Text_QuinnIntro::
     .string "I was a thief, but I went straight\n"
-    .string "as a TRAINER.$"
+    .string "as a Trainer.$"
 
 CinnabarIsland_Gym_Text_QuinnDefeat::
     .string "I surrender!$"
@@ -779,7 +779,7 @@ CinnabarIsland_Gym_Text_AveryPostBattle::
     .string "for you to understand.$"
 
 CinnabarIsland_Gym_Text_RamonIntro::
-    .string "I like using FIRE-type Pokémon.\n"
+    .string "I like using Fire-type Pokémon.\n"
     .string "I just do.$"
 
 CinnabarIsland_Gym_Text_RamonDefeat::
@@ -790,22 +790,22 @@ CinnabarIsland_Gym_Text_RamonPostBattle::
     .string "I'd use that!$"
 
 CinnabarIsland_Gym_Text_DerekIntro::
-    .string "I know why BLAINE became a\n"
-    .string "TRAINER.$"
+    .string "I know why Blaine became a\n"
+    .string "Trainer.$"
 
 CinnabarIsland_Gym_Text_DerekDefeat::
     .string "Ow!$"
 
 CinnabarIsland_Gym_Text_DerekPostBattle::
-    .string "Our LEADER, BLAINE, became lost\n"
+    .string "Our Leader, Blaine, became lost\n"
     .string "in the mountains but good.\p"
     .string "Night fell when a fiery bird\n"
     .string "Pokémon appeared.\p"
-    .string "Its light allowed BLAINE to find\n"
+    .string "Its light allowed Blaine to find\n"
     .string "his way down safely.$"
 
 CinnabarIsland_Gym_Text_DustyIntro::
-    .string "I've been to many GYMS, but this\n"
+    .string "I've been to many Gyms, but this\n"
     .string "one best suits my style.$"
 
 CinnabarIsland_Gym_Text_DustyDefeat::
@@ -813,8 +813,8 @@ CinnabarIsland_Gym_Text_DustyDefeat::
     .string "Too hot!$"
 
 CinnabarIsland_Gym_Text_DustyPostBattle::
-    .string "PONYTA, NINETALES…\n"
-    .string "Those are popular FIRE Pokémon.$"
+    .string "Ponyta, Ninetales…\n"
+    .string "Those are popular Fire Pokémon.$"
 
 CinnabarIsland_Gym_Text_ZacIntro::
     .string "Fire is weak against H2O.$"
@@ -840,15 +840,15 @@ CinnabarIsland_Gym_Text_GymGuyPostVictory::
     .string "You beat that firebrand!$"
 
 CinnabarIsland_Gym_Text_GymStatue::
-    .string "CINNABAR Pokémon GYM\n"
-    .string "LEADER: BLAINE\p"
-    .string "WINNING TRAINERS:\n"
+    .string "Cinnabar Pokémon Gym\n"
+    .string "Leader: Blaine\p"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}$"
 
 CinnabarIsland_Gym_Text_GymStatuePlayerWon::
-    .string "CINNABAR Pokémon GYM\n"
-    .string "LEADER: BLAINE\p"
-    .string "WINNING TRAINERS:\n"
+    .string "Cinnabar Pokémon Gym\n"
+    .string "Leader: Blaine\p"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
 
 CinnabarIsland_Gym_Text_PokemonQuizRules::
@@ -857,25 +857,25 @@ CinnabarIsland_Gym_Text_PokemonQuizRules::
     .string "maintenance…$"
 
 CinnabarIsland_Gym_Text_QuizQuestion1::
-    .string "CATERPIE evolves into METAPOD?$"
+    .string "Caterpie evolves into Metapod?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion2::
     .string "There are nine certified Pokémon\n"
-    .string "LEAGUE BADGES?$"
+    .string "League Badges?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion3::
-    .string "POLIWAG evolves three times?$"
+    .string "Poliwag evolves three times?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion4::
     .string "Are electric moves effective\n"
-    .string "against GROUND-type Pokémon?$"
+    .string "against Ground-type Pokémon?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion5::
     .string "Pokémon of the same kind and level\n"
     .string "are not identical?$"
 
 CinnabarIsland_Gym_Text_QuizQuestion6::
-    .string "TM28 contains TOMBSTONY?$"
+    .string "TM28 contains Tombstony?$"
 
 CinnabarIsland_Gym_Text_CorrectGoOnThrough::
     .string "You're absolutely correct!\p"

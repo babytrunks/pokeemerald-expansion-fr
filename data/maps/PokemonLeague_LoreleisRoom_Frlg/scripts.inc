@@ -93,8 +93,8 @@ PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
 	end
 
 PokemonLeague_LoreleisRoom_Text_Intro::
-    .string "Welcome to the Pokémon LEAGUE.\p"
-    .string "I am LORELEI of the ELITE FOUR.\p"
+    .string "Welcome to the Pokémon League.\p"
+    .string "I am Lorelei of the Elite Four.\p"
     .string "No one can best me when it comes\n"
     .string "to icy Pokémon.\p"
     .string "Freezing moves are powerful.\p"
@@ -104,8 +104,8 @@ PokemonLeague_LoreleisRoom_Text_Intro::
     .string "Are you ready?{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_LoreleisRoom_Text_RematchIntro::
-    .string "Welcome to the Pokémon LEAGUE.\p"
-    .string "I, LORELEI of the ELITE FOUR,\n"
+    .string "Welcome to the Pokémon League.\p"
+    .string "I, Lorelei of the Elite Four,\n"
     .string "have returned!\p"
     .string "You know how it goes.\n"
     .string "No one can best me when it comes\l"
@@ -123,5 +123,5 @@ PokemonLeague_LoreleisRoom_Text_PostBattle::
     .string "You're better than I thought.\n"
     .string "Go on ahead.\p"
     .string "You only got a taste of the\n"
-    .string "Pokémon LEAGUE's power.$"
+    .string "Pokémon League's power.$"
 

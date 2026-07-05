@@ -2050,7 +2050,7 @@ PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
     .string "Come on, I'll take you on!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
-    .string "WHAT?\n"
+    .string "What?\n"
     .string "Unbelievable!\l"
     .string "I picked the wrong Pokémon!$"
 
@@ -2079,7 +2079,7 @@ PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps::
 PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
     .string "{PLAYER}, I hate to say it, but you\n"
     .string "won't be necessary for this.\p"
-    .string "I know! I'll borrow a TOWN MAP\n"
+    .string "I know! I'll borrow a Town Map\n"
     .string "from my sis!\p"
     .string "I'll tell her not to lend you one,\n"
     .string "{PLAYER}! Hahaha!\p"
@@ -2097,7 +2097,7 @@ PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
     .string "The Pokémon are held inside\n"
     .string "these Poké Balls.\p"
     .string "When I was young, I was a serious\n"
-    .string "Pokémon TRAINER.\p"
+    .string "Pokémon Trainer.\p"
     .string "But now, in my old age, I have\n"
     .string "only these three left.\p"
     .string "You can have one.\n"
@@ -2161,12 +2161,12 @@ PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe::
     .string "Well, it seems to be growing more\n"
     .string "attached to you.\p"
     .string "You must be talented as a Pokémon\n"
-    .string "TRAINER.\p"
+    .string "Trainer.\p"
     .string "What's that?\n"
     .string "You have something for me?$"
 
 PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel::
-    .string "{PLAYER} delivered OAK'S PARCEL.$"
+    .string "{PLAYER} delivered Oak's Parcel.$"
 
 PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered::
     .string "Ah! \n"
@@ -2258,10 +2258,10 @@ PalletTown_ProfessorOaksLab_Text_OaksLastMon::
     .string "That's Prof. Oak's last Pokémon.$"
 
 PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
-    .string "Press START to open the MENU!$"
+    .string "Press Start to open the Menu!$"
 
 PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
-    .string "The SAVE option is on the MENU.\n"
+    .string "The Save option is on the Menu.\n"
     .string "Use it regularly.$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::
@@ -2272,12 +2272,12 @@ PalletTown_ProfessorOaksLab_Text_EmailMessage::
     .string "There's an e-mail message here.\p"
     .string "…\p"
     .string "Finally!\n"
-    .string "The ultimate TRAINERS of the\l"
-    .string "Pokémon LEAGUE are ready to\l"
+    .string "The ultimate Trainers of the\l"
+    .string "Pokémon League are ready to\l"
     .string "take on all comers!\p"
     .string "Bring your best Pokémon and see\n"
-    .string "how you rate as a TRAINER!\p"
-    .string "Pokémon LEAGUE HQ\n"
+    .string "how you rate as a Trainer!\p"
+    .string "Pokémon League HQ\n"
     .string "Indigo Plateau\p"
     .string "Prof. Oak, please visit us!\n"
     .string "…$"
@@ -2286,8 +2286,8 @@ PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons::
     .string "Hi, {PLAYER}. I bet you've become\n"
     .string "good friends with your Pokémon.\p"
     .string "By the way, did you know about\n"
-    .string "DAISY?\p"
-    .string "If you show DAISY your Pokémon,\n"
+    .string "Daisy?\p"
+    .string "If you show Daisy your Pokémon,\n"
     .string "she can tell how much it likes you.\p"
     .string "Occasionally, she will even groom\n"
     .string "a Pokémon for you.\p"
@@ -2297,8 +2297,8 @@ PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons::
 PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
     .string "Prof. Oak is going to have his own\n"
     .string "radio show soon.\p"
-    .string "The program will be called PROF.\n"
-    .string "OAK's Pokémon SEMINAR.$"
+    .string "The program will be called Prof.\n"
+    .string "Oak's Pokémon Seminar.$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
     .string "Prof. Oak may not look like much,\n"
@@ -2318,7 +2318,7 @@ PalletTown_ProfessorOaksLab_Text_OakSightingsOfRareMons::
     .string "Recently, there have been sightings\n"
     .string "of many rare Pokémon species.\p"
     .string "I'm talking about Pokémon that\n"
-    .string "have never been seen in KANTO.\p"
+    .string "have never been seen in Kanto.\p"
     .string "I would love to go see things for\n"
     .string "myself, but I'm much too old.\p"
     .string "Since I can't do it, {PLAYER}, I'd\n"
@@ -2368,7 +2368,7 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
     .string "I'll get the Pokédex completed,\n"
     .string "don't you worry about a thing.\p"
     .string "I think I'll try looking around\n"
-    .string "ONE ISLAND first…\p"
+    .string "One Island first…\p"
     .string "Anyways, I'm outta here!$"
 
 gText_PalletGary_WayCooler::

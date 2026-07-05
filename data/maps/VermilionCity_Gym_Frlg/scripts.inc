@@ -325,7 +325,7 @@ VermilionCity_Gym_Text_ExplainTM34::
     .string "Teach it to an Electric Pokémon!$"
 
 VermilionCity_Gym_Text_MakeRoomInYourBag::
-    .string "Yo, kid, make room in your BAG!$"
+    .string "Yo, kid, make room in your Bag!$"
 
 VermilionCity_Gym_Text_LtSurgeDefeat::
     .string "Now that's a shocker!\p"
@@ -334,7 +334,7 @@ VermilionCity_Gym_Text_LtSurgeDefeat::
 
 VermilionCity_Gym_Text_TuckerIntro::
     .string "When I was in the Army, Lt. Surge\n"
-    .string "was my strict CO.\p"
+    .string "was my strict Co.\p"
     .string "He was a hard taskmaster.$"
 
 VermilionCity_Gym_Text_TuckerDefeat::
@@ -383,8 +383,8 @@ VermilionCity_Gym_Text_GymGuyAdvice::
     .string "Lightning American!\p"
     .string "He's an expert on electric\n"
     .string "Pokémon.\p"
-    .string "BIRD/WATER-type Pokémon match\n"
-    .string "poorly against the ELECTRIC type.\p"
+    .string "Bird/Water-type Pokémon match\n"
+    .string "poorly against the Electric type.\p"
     .string "Beware of paralysis, too.\p"
     .string "Lt. Surge is very cautious.\p"
     .string "He's locked himself in, so it won't\n"
@@ -401,8 +401,8 @@ VermilionCity_Gym_Text_GymStatue::
     .string "{RIVAL}$"
 
 VermilionCity_Gym_Text_GymStatuePlayerWon::
-    .string "VERMILION Pokémon GYM\n"
-    .string "LEADER: Lt. Surge\p"
+    .string "Vermilion Pokémon Gym\n"
+    .string "Leader: Lt. Surge\p"
     .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
 

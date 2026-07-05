@@ -50,7 +50,7 @@ SilphCo_3F_Text_GruntDefeat::
 
 SilphCo_3F_Text_GruntPostBattle::
     .string "A hint? You can open doors with\n"
-    .string "a CARD KEY!$"
+    .string "a Card Key!$"
 
 SilphCo_3F_Text_JoseIntro::
     .string "I support Team Rocket more than\n"
@@ -65,6 +65,6 @@ SilphCo_3F_Text_JosePostBattle::
     .string "them, they'd let me study Pokémon.$"
 
 SilphCo_3F_Text_FloorSign::
-    .string "Silph Co. HEAD OFFICE\n"
+    .string "Silph Co. Head Office\n"
     .string "3F$"
 

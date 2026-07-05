@@ -50,7 +50,7 @@ Route17_Text_IsaiahPostBattle::
     .string "here!$"
 
 Route17_Text_VirgilIntro::
-    .string "You heading to FUCHSIA?$"
+    .string "You heading to Fuchsia?$"
 
 Route17_Text_VirgilDefeat::
     .string "Crash and burn!$"
@@ -59,7 +59,7 @@ Route17_Text_VirgilPostBattle::
     .string "I love racing downhill!$"
 
 Route17_Text_BillyIntro::
-    .string "We're BIKERS!\n"
+    .string "We're Bikers!\n"
     .string "We rule the roads, man!$"
 
 Route17_Text_BillyDefeat::
@@ -69,14 +69,14 @@ Route17_Text_BillyPostBattle::
     .string "Are you looking for adventure?$"
 
 Route17_Text_NikolasIntro::
-    .string "Let VOLTORB electrify you!$"
+    .string "Let Voltorb electrify you!$"
 
 Route17_Text_NikolasDefeat::
     .string "Grounded out!$"
 
 Route17_Text_NikolasPostBattle::
-    .string "I got my VOLTORB at the abandoned\n"
-    .string "POWER PLANT.$"
+    .string "I got my Voltorb at the abandoned\n"
+    .string "Power Plant.$"
 
 Route17_Text_ZeekIntro::
     .string "I leveled up my Pokémon, but it\n"
@@ -87,7 +87,7 @@ Route17_Text_ZeekDefeat::
 
 Route17_Text_ZeekPostBattle::
     .string "Maybe some Pokémon need element\n"
-    .string "STONES to evolve.$"
+    .string "Stones to evolve.$"
 
 Route17_Text_JamalIntro::
     .string "I need a little exercise!$"
@@ -109,7 +109,7 @@ Route17_Text_CoreyPostBattle::
     .string "Be ready to fight for your beliefs!$"
 
 Route17_Text_JaxonIntro::
-    .string "Nice BIKE!\n"
+    .string "Nice Bike!\n"
     .string "How's it handle?$"
 
 Route17_Text_JaxonDefeat::
@@ -149,8 +149,8 @@ Route17_Text_RouteSign::
 
 Route17_Text_DontThrowGameThrowBalls::
     .string "It's a notice!\p"
-    .string "Don't throw the game, throw POKé\n"
-    .string "BALLS instead!$"
+    .string "Don't throw the game, throw Poké\n"
+    .string "Balls instead!$"
 
 Route17_Text_CyclingRoadSign::
     .string "Cycling Road\n"

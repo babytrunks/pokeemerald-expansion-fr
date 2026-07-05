@@ -406,8 +406,8 @@ SilphCo_7F_Text_HaveMonForSavingUs::
     .string "for saving us.$"
 
 SilphCo_7F_Text_ObtainedLaprasFromEmployee::
-    .string "{PLAYER} obtained a LAPRAS from\n"
-    .string "the SILPH employee!$"
+    .string "{PLAYER} obtained a Lapras from\n"
+    .string "the Silph employee!$"
 
 SilphCo_7F_Text_ExplainLapras::
     .string "I've got some rare Pokémon\n"
@@ -417,20 +417,20 @@ SilphCo_7F_Text_ExplainLapras::
 SilphCo_7F_Text_RocketBossWentToBoardroom::
     .string "Team Rocket's Boss went to the\n"
     .string "boardroom!\p"
-    .string "Is our PRESIDENT okay?\n"
+    .string "Is our President okay?\n"
     .string "I'm worried.$"
 
 SilphCo_7F_Text_RocketsAfterMasterBall::
-    .string "Team Rocket was after the MASTER\n"
-    .string "BALL, which catches any Pokémon.$"
+    .string "Team Rocket was after the Master\n"
+    .string "Ball, which catches any Pokémon.$"
 
 SilphCo_7F_Text_CanceledMasterBallProject::
-    .string "We canceled the MASTER BALL\n"
+    .string "We canceled the Master Ball\n"
     .string "project because of Team Rocket.$"
 
 SilphCo_7F_Text_BadIfTeamRocketTookOver::
     .string "It would be bad if Team Rocket\n"
-    .string "took over SILPH or our Pokémon.$"
+    .string "took over Silph or our Pokémon.$"
 
 SilphCo_7F_Text_WowYouChasedOffTeamRocket::
     .string "Wow!\p"
@@ -466,11 +466,11 @@ SilphCo_7F_Text_JoshuaDefeat::
 
 SilphCo_7F_Text_JoshuaPostBattle::
     .string "Despite your age, you are a\n"
-    .string "skilled TRAINER!$"
+    .string "skilled Trainer!$"
 
 SilphCo_7F_Text_Grunt1Intro::
-    .string "I am one of the four ROCKET\n"
-    .string "BROTHERS!$"
+    .string "I am one of the four Rocket\n"
+    .string "Brothers!$"
 
 SilphCo_7F_Text_Grunt1Defeat::
     .string "Aack!\n"
@@ -515,10 +515,10 @@ SilphCo_7F_Text_RivalPostBattle::
     .string "starting to see what's strong and\l"
     .string "how they evolve!\p"
     .string "Am I a genius or what?\p"
-    .string "I'm going to the Pokémon LEAGUE to\n"
-    .string "boot out the ELITE FOUR.\p"
+    .string "I'm going to the Pokémon League to\n"
+    .string "boot out the Elite Four.\p"
     .string "I'll become the world's most\n"
-    .string "powerful TRAINER!\p"
+    .string "powerful Trainer!\p"
     .string "{PLAYER}, well, good luck to you!\n"
     .string "Don't sweat it!\l"
     .string "Smell ya!$"

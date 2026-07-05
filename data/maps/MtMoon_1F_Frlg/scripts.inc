@@ -43,7 +43,7 @@ MtMoon_1F_EventScript_Robby::
 	end
 
 MtMoon_1F_Text_MarcosIntro::
-    .string "WHOA!\n"
+    .string "Whoa!\n"
     .string "You shocked me!\l"
     .string "…Oh, you're just a kid!$"
 
@@ -121,13 +121,13 @@ MtMoon_1F_Text_RobbyDefeat::
     .string "I lost.$"
 
 MtMoon_1F_Text_RobbyPostBattle::
-    .string "ZUBAT is tough!\n"
+    .string "Zubat is tough!\n"
     .string "But if you can catch one, you'll\l"
     .string "be able to count on it.$"
 
 MtMoon_1F_Text_ZubatIsABloodsucker::
     .string "Beware!\n"
-    .string "ZUBAT is a bloodsucker!$"
+    .string "Zubat is a bloodsucker!$"
 
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
     .string "Hi, I'm excavating for fossils here\n"

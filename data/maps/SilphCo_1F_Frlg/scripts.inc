@@ -52,11 +52,11 @@ SilphCo_1F_EventScript_FloorSign::
 
 SilphCo_1F_Text_WelcomePresidentInBoardroom::
     .string "Welcome.\p"
-    .string "The PRESIDENT is in the boardroom\n"
+    .string "The President is in the boardroom\n"
     .string "on 11F.$"
 
 SilphCo_1F_Text_FloorSign::
-    .string "Silph Co. HEAD OFFICE\n"
+    .string "Silph Co. Head Office\n"
     .string "1F$"
 
 SilphCo_1F_Text_DontGetPaid::

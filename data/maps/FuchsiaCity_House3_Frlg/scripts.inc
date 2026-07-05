@@ -55,7 +55,7 @@ FuchsiaCity_House3_EventScript_CancelForgetMove::
 
 FuchsiaCity_House3_Text_WouldYouLikeToForgetMove::
     .string "Uh…\n"
-    .string "Oh, yes, I'm the MOVE DELETER.\p"
+    .string "Oh, yes, I'm the Move Deleter.\p"
     .string "I can make Pokémon forget their\n"
     .string "moves.\p"
     .string "Would you like me to do that?$"
@@ -86,5 +86,5 @@ FuchsiaCity_House3_Text_ComeAgainToForgetOtherMoves::
 
 FuchsiaCity_House3_Text_NoEggShouldKnowMoves::
     .string "What?\n"
-    .string "No EGG should know any moves.$"
+    .string "No Egg should know any moves.$"
 

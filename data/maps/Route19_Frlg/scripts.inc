@@ -66,7 +66,7 @@ Route19_Text_ReeceDefeat::
     .string "That's chilly!$"
 
 Route19_Text_ReecePostBattle::
-    .string "Watch out for TENTACOOL.\n"
+    .string "Watch out for Tentacool.\n"
     .string "They sting so painfully.$"
 
 Route19_Text_MatthewIntro::
@@ -123,7 +123,7 @@ Route19_Text_AnyaDefeat::
 Route19_Text_AnyaPostBattle::
     .string "It's still a long way to go to\n"
     .string "Seafoam Islands…\p"
-    .string "I want to go back to FUCHSIA…$"
+    .string "I want to go back to Fuchsia…$"
 
 Route19_Text_AliceIntro::
     .string "Swimming's great!\n"
@@ -157,17 +157,17 @@ Route19_Text_ConnieDefeat::
 
 Route19_Text_ConniePostBattle::
     .string "If I were to ride a Pokémon on\n"
-    .string "the sea, I'd like a LAPRAS.\p"
-    .string "LAPRAS is so big, I bet it\n"
+    .string "the sea, I'd like a Lapras.\p"
+    .string "Lapras is so big, I bet it\n"
     .string "would keep me dry on water.$"
 
 Route19_Text_RouteSign::
-    .string "SEA ROUTE 19\n"
-    .string "Fuchsia City - SEAFOAM ISLANDS$"
+    .string "Sea Route 19\n"
+    .string "Fuchsia City - Seafoam Islands$"
 
 Route19_Text_LiaIntro::
     .string "I'm looking after my brother.\n"
-    .string "He just became a TRAINER.$"
+    .string "He just became a Trainer.$"
 
 Route19_Text_LiaDefeat::
     .string "That's no way to treat my\n"
@@ -212,7 +212,7 @@ gText_plaininsane_askChallenge::
 gText_plaininsane_2::
     .string "Surprise!\n"
     .string "I'll show you how to battle with\l"
-    .string "an all out ASSAULT!$"
+    .string "an all out Assault!$"
 
 gText_plaininsane_Reject::
   .string "Ah, well…$"
@@ -222,7 +222,7 @@ plaininsane_Text_Defeat::
 
 gText_plaininsane_3::
   .string "Well done! I knew you looked\n"
-  .string "like a MEGA STAR! Take these!$"
+  .string "like a Mega Star! Take these!$"
 
 gText_plaininsane_4::
   .string "Make sure to use those gifts you\n"

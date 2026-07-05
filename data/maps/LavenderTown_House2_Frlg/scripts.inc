@@ -63,7 +63,7 @@ LavenderTown_House2_EventScript_ChoseNewNickname::
 
 LavenderTown_House2_Text_WantMeToRateNicknames::
     .string "Hello, hello!\n"
-    .string "I am the official NAME RATER!\p"
+    .string "I am the official Name Rater!\p"
     .string "Want me to rate the nicknames of\n"
     .string "your Pokémon?$"
 
@@ -106,5 +106,5 @@ LavenderTown_House2_Text_TrulyImpeccableName::
 
 LavenderTown_House2_Text_ThatIsMerelyAnEgg::
     .string "Now, now.\n"
-    .string "That is merely an EGG!$"
+    .string "That is merely an Egg!$"
 

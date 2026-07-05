@@ -71,7 +71,7 @@ Route4_EventScript_RouteSign::
 
 Route4_Text_TrippedOverGeodude::
     .string "Ouch! I tripped over a rocky\n"
-    .string "Pokémon, GEODUDE!$"
+    .string "Pokémon, Geodude!$"
 
 Route4_Text_CrissyIntro::
     .string "I came to Mt. Moon in search of\n"

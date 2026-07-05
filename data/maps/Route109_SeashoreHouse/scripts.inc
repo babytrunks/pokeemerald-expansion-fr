@@ -67,7 +67,7 @@ Route109_SeashoreHouse_Text_SeashoreHouseIntro:
 	.string "What I love above all is to see hot\n"
 	.string "Pokémon battles.\p"
 	.string "Let me see that your heart burns hot!\p"
-	.string "If you can defeat all the TRAINERS\n"
+	.string "If you can defeat all the Trainers\n"
 	.string "here, I'll reward your efforts.$"
 
 Route109_SeashoreHouse_Text_ShowMeSomeHotMatches:
@@ -93,8 +93,8 @@ Route109_SeashoreHouse_Text_DwayneDefeated:
 	.string "I can accept that loss, matey!$"
 
 Route109_SeashoreHouse_Text_DwaynePostBattle:
-	.string "Whenever I'm in SLATEPORT, I enjoy\n"
-	.string "hot battles and ice-cold SODA POP!$"
+	.string "Whenever I'm in Slateport, I enjoy\n"
+	.string "hot battles and ice-cold Soda Pop!$"
 
 Route109_SeashoreHouse_Text_JohannaIntro:
 	.string "Boring battles aren't worth the effort.\p"

@@ -15,7 +15,7 @@ Route9_Text_AliciaDefeat::
 Route9_Text_AliciaPostBattle::
     .string "The tunnel coming up is pitch-black\n"
     .string "inside.\p"
-    .string "You'll need FLASH to get through\n"
+    .string "You'll need Flash to get through\n"
     .string "there.$"
 
 Route9_Text_ChrisIntro::
@@ -30,7 +30,7 @@ Route9_Text_ChrisPostBattle::
 
 Route9_Text_DrewIntro::
     .string "I'm taking the Rock Tunnel to\n"
-    .string "go to LAVENDER…$"
+    .string "go to Lavender…$"
 
 Route9_Text_DrewDefeat::
     .string "Can't measure up…$"
@@ -80,7 +80,7 @@ Route9_Text_BrentIntro::
     .string "my Pokémon from cocoons!$"
 
 Route9_Text_BrentDefeat::
-    .string "WHAT?\p"
+    .string "What?\p"
     .string "What a total waste of time!$"
 
 Route9_Text_BrentPostBattle::
@@ -100,13 +100,13 @@ Route9_Text_AlanPostBattle::
     .string "Us hearty guys always laugh!$"
 
 Route9_Text_ConnerIntro::
-    .string "Go, my super BUG Pokémon!$"
+    .string "Go, my super Bug Pokémon!$"
 
 Route9_Text_ConnerDefeat::
     .string "My bugs…$"
 
 Route9_Text_ConnerPostBattle::
-    .string "If you don't like BUG Pokémon,\n"
+    .string "If you don't like Bug Pokémon,\n"
     .string "you bug me!$"
 
 Route9_Text_RouteSign::

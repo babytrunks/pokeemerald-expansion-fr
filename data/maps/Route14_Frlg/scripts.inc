@@ -29,7 +29,7 @@ Route14_Text_MitchPostBattle::
 
 Route14_Text_BeckIntro::
     .string "They have TMs on sale at the\n"
-    .string "CELADON DEPT. STORE.\p"
+    .string "Celadon Dept. Store.\p"
     .string "TMs aren't really rare, but not\n"
     .string "many people have HMs.$"
 
@@ -44,7 +44,7 @@ Route14_Text_BeckPostBattle::
 
 Route14_Text_MarlonIntro::
     .string "Have you taught your bird Pokémon\n"
-    .string "how to FLY?\p"
+    .string "how to Fly?\p"
     .string "You'll be able to soar with it into\n"
     .string "the sky!$"
 
@@ -66,8 +66,8 @@ Route14_Text_DonaldDefeat::
 Route14_Text_DonaldPostBattle::
     .string "Well, the winged mirages are the\n"
     .string "legendary bird Pokémon.\p"
-    .string "There are three of them: ARTICUNO,\n"
-    .string "ZAPDOS, and MOLTRES.$"
+    .string "There are three of them: Articuno,\n"
+    .string "Zapdos, and Moltres.$"
 
 Route14_Text_BennyIntro::
     .string "I'm not into it, but okay.\n"
@@ -132,32 +132,32 @@ Route14_Text_RouteSign::
     .string "West to Fuchsia City$"
 
 Route14_Text_KiriIntro::
-    .string "KIRI: JAN, let's try really,\n"
+    .string "Kiri: Jan, let's try really,\n"
     .string "really hard together.$"
 
 Route14_Text_KiriDefeat::
-    .string "KIRI: Whimper…\n"
+    .string "Kiri: Whimper…\n"
     .string "We lost, didn't we?$"
 
 Route14_Text_KiriPostBattle::
-    .string "KIRI: Did we lose because of me?$"
+    .string "Kiri: Did we lose because of me?$"
 
 Route14_Text_KiriNotEnoughMons::
-    .string "KIRI: We can battle if you have\n"
+    .string "Kiri: We can battle if you have\n"
     .string "two Pokémon.$"
 
 Route14_Text_JanIntro::
-    .string "JAN: KIRI, here we go!\n"
+    .string "Jan: Kiri, here we go!\n"
     .string "We have to try hard!$"
 
 Route14_Text_JanDefeat::
-    .string "JAN: Eeeeh!\n"
+    .string "Jan: Eeeeh!\n"
     .string "No fair!$"
 
 Route14_Text_JanPostBattle::
-    .string "JAN: KIRI, don't cry!\n"
+    .string "Jan: Kiri, don't cry!\n"
     .string "We'll just try harder next time.$"
 
 Route14_Text_JanNotEnoughMons::
-    .string "JAN: You want to battle?\n"
+    .string "Jan: You want to battle?\n"
     .string "You don't have enough Pokémon.$"

@@ -10,7 +10,7 @@ SevenIsland_TanobyRuins_Text_BrandonDefeat::
     .string "You didn't have to be so rough.$"
 
 SevenIsland_TanobyRuins_Text_BrandonPostBattle::
-    .string "The TANOBY RUINS date back at\n"
+    .string "The Tanoby Ruins date back at\n"
     .string "least 1,500 years.\p"
     .string "But it's a baffling mystery as to\n"
     .string "why it was built in the first place.$"
@@ -29,7 +29,7 @@ SevenIsland_TanobyRuins_Text_BenjaminPostBattle::
     .string "of other mystic Pokémon?$"
 
 SevenIsland_TanobyRuins_Text_EdnaIntro::
-    .string "CLIFFORD is teaching me how to\n"
+    .string "Clifford is teaching me how to\n"
     .string "paint.$"
 
 SevenIsland_TanobyRuins_Text_EdnaDefeat::
@@ -39,7 +39,7 @@ SevenIsland_TanobyRuins_Text_EdnaDefeat::
 SevenIsland_TanobyRuins_Text_EdnaPostBattle::
     .string "I said that I wanted to paint an\n"
     .string "old building.\p"
-    .string "So CLIFFORD brought me here.$"
+    .string "So Clifford brought me here.$"
 
 SevenIsland_TanobyRuins_Text_CliffordIntro::
     .string "Today, in addition to our lesson,\n"

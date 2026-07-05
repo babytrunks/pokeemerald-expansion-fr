@@ -307,7 +307,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutPal::
     .string "Hiya! I'm a Pokémon…\n"
     .string "…No I'm not!\p"
     .string "Call me Bill!\n"
-    .string "I'm a true-blue POKéMANIAC!\p"
+    .string "I'm a true-blue PokéManiac!\p"
     .string "Hey!\n"
     .string "What's with that skeptical look?\p"
     .string "I'm not joshing you, pal.\p"
@@ -320,7 +320,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutLady::
     .string "Hiya! I'm a Pokémon…\n"
     .string "…No I'm not!\p"
     .string "Call me Bill!\n"
-    .string "I'm a true-blue POKéMANIAC!\p"
+    .string "I'm a true-blue PokéManiac!\p"
     .string "Hey!\n"
     .string "What's with that skeptical look?\p"
     .string "I'm not joshing you, lady.\p"
@@ -331,7 +331,7 @@ Route25_SeaCottage_Text_ImBillHelpMeOutLady::
 
 Route25_SeaCottage_Text_RunCellSeparationOnPC::
     .string "Wait till I get inside the\n"
-    .string "TELEPORTER.\p"
+    .string "Teleporter.\p"
     .string "When I do, go to my PC and run\n"
     .string "the Cell Separation System.$"
 
@@ -377,7 +377,7 @@ Route25_SeaCottage_Text_ThanksLadyTakeThis::
 
 Route25_SeaCottage_Text_ReceivedSSTicketFromBill::
     .string "{PLAYER} received an Slateport Ticket\n"
-    .string "from BILL.$"
+    .string "from Bill.$"
 
 Route25_SeaCottage_Text_YouveGotTooMuchStuff::
     .string "You've got too much stuff!$"
@@ -396,15 +396,15 @@ Route25_SeaCottage_Text_CheckOutRareMonsOnPC::
     .string "Go on, check out my PC.$"
 
 Route25_SeaCottage_Text_TeleporterIsDisplayed::
-    .string "TELEPORTER is displayed on the PC\n"
+    .string "Teleporter is displayed on the PC\n"
     .string "monitor.$"
 
 Route25_SeaCottage_Text_InitiatedTeleportersCellSeparator::
-    .string "{PLAYER} initiated the TELEPORTER's\n"
+    .string "{PLAYER} initiated the Teleporter's\n"
     .string "Cell Separator.$"
 
 Route25_SeaCottage_Text_BillsFavoriteMonList::
-    .string "BILL's favorite Pokémon list!$"
+    .string "Bill's favorite Pokémon list!$"
 
 Route25_SeaCottage_Text_SeeWhichMon::
     .string "Which Pokémon do you want to see?$"

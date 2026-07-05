@@ -147,7 +147,7 @@ Route12_FishingHouse_Text_TakeThisAndFish::
     .string "Take this and fish, young friend!$"
 
 Route12_FishingHouse_Text_ReceivedSuperRod::
-    .string "{PLAYER} received a SUPER ROD from\n"
+    .string "{PLAYER} received a Super Rod from\n"
     .string "the Fishing Guru's brother.$"
 
 Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe::
@@ -156,10 +156,10 @@ Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe::
     .string "From the seas to rivers, go out\n"
     .string "and land the big one, my friend.\p"
     .string "Now, I have a request.\p"
-    .string "If you catch a big MAGIKARP \n"
-    .string "with that ROD, I want to see it.\p"
+    .string "If you catch a big Magikarp \n"
+    .string "with that Rod, I want to see it.\p"
     .string "As much as I love to fish, I also\n"
-    .string "love seeing gigantic MAGIKARP.$"
+    .string "love seeing gigantic Magikarp.$"
 
 Route12_FishingHouse_Text_OhThatsDisappointing::
     .string "Oh…\n"
@@ -168,16 +168,16 @@ Route12_FishingHouse_Text_OhThatsDisappointing::
 Route12_FishingHouse_Text_TryFishingBringMeMagikarp::
     .string "Hello there, {PLAYER}!\n"
     .string "Have you been fishing?\p"
-    .string "Try fishing with the SUPER ROD in\n"
+    .string "Try fishing with the Super Rod in\n"
     .string "any body of water.\p"
     .string "You'll find different Pokémon in\n"
     .string "different places.\p"
     .string "Oh, and don't forget to bring me\n"
-    .string "gigantic MAGIKARP.$"
+    .string "gigantic Magikarp.$"
 
 Route12_FishingHouse_Text_OhMagikarpAllowMeToSee::
     .string "Oh? {PLAYER}?\n"
-    .string "Why, if it isn't a MAGIKARP!\p"
+    .string "Why, if it isn't a Magikarp!\p"
     .string "Allow me to see it, quick!$"
 
 Route12_FishingHouse_Text_WhoaXInchesTakeThis::
@@ -206,7 +206,7 @@ Route12_FishingHouse_Text_HmmXInchesDoesntMeasureUp::
 
 Route12_FishingHouse_Text_DoesntLookLikeMagikarp::
     .string "Uh… That doesn't look much like\n"
-    .string "a MAGIKARP.$"
+    .string "a Magikarp.$"
 
 Route12_FishingHouse_Text_NoRoomForGift::
     .string "Oh, no!\p"
@@ -214,7 +214,7 @@ Route12_FishingHouse_Text_NoRoomForGift::
     .string "no room for it.$"
 
 Route12_FishingHouse_Text_MostGiganticMagikarpXInches::
-    .string "The most gigantic MAGIKARP\n"
+    .string "The most gigantic Magikarp\n"
     .string "I have ever witnessed…\p"
     .string "{STR_VAR_3} inches!$"
 
@@ -226,7 +226,7 @@ Route12_FishingHouse_Text_BlankChartOfSomeSort::
 Route12_FishingHouse_Text_RockGuyIntro::
     .string "Ahh, a fellow lover of the deep!\p"
     .string "On one of my dives I hauled up a\n"
-    .string "curious BLUE ROCK with a yellow\l"
+    .string "curious Blue Rock with a yellow\l"
     .string "tint to it.\p"
     .string "I just know it'll react to the\n"
     .string "right Pokémon… a fierce one of\l"
@@ -235,24 +235,24 @@ Route12_FishingHouse_Text_RockGuyIntro::
     .string "you? Let it walk by your side!$"
 
 Route12_FishingHouse_Text_RockGuyNotYet::
-    .string "Hmm, the BLUE ROCK is quiet…\p"
+    .string "Hmm, the Blue Rock is quiet…\p"
     .string "I need a fierce sea Pokémon\n"
     .string "following right behind you.$"
 
 Route12_FishingHouse_Text_RockGuyReact::
     .string "Wait… do you feel that?\p"
-    .string "The BLUE ROCK is glowing!\n"
-    .string "Your SHARPEDO… look at it!$"
+    .string "The Blue Rock is glowing!\n"
+    .string "Your Sharpedo… look at it!$"
 
 Route12_FishingHouse_Text_RockGuyCongrats::
     .string "Incredible! It Mega Evolved!\p"
     .string "So this was a Mega Stone all\n"
-    .string "along… the SHARPEDONITE!\p"
+    .string "along… the Sharpedonite!\p"
     .string "It belongs with you and your\n"
-    .string "SHARPEDO. Please, take it!$"
+    .string "Sharpedo. Please, take it!$"
 
 Route12_FishingHouse_Text_RockGuyPostQuest::
-    .string "That SHARPEDO of yours is a\n"
+    .string "That Sharpedo of yours is a\n"
     .string "magnificent beast of the sea.\p"
-    .string "Treasure the SHARPEDONITE!$"
+    .string "Treasure the Sharpedonite!$"
 

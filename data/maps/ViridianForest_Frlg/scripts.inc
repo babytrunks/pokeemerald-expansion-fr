@@ -296,7 +296,7 @@ Movement_Viridian_LassRepelLeave:
 
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with some friends to\n"
-    .string "catch us some BUG Pokémon!\p"
+    .string "catch us some Bug Pokémon!\p"
     .string "They're all itching to get into\n"
     .string "some Pokémon battles!$"
 
@@ -306,7 +306,7 @@ ViridianForest_Text_RickIntro::
     .string "Let's battle 'em!$"
 
 ViridianForest_Text_RickDefeat::
-    .string "No!\nCATERPIE can't hack it!$"
+    .string "No!\nCaterpie can't hack it!$"
 
 ViridianForest_Text_RickPostBattle::
     .string "Ssh! You'll scare the bugs away.\n"
@@ -315,7 +315,7 @@ ViridianForest_Text_RickPostBattle::
 ViridianForest_Text_DougIntro::
     .string "Yo!\n"
     .string "You can't jam out if you're a\l"
-    .string "Pokémon TRAINER!$"
+    .string "Pokémon Trainer!$"
 
 ViridianForest_Text_DougDefeat::
     .string "Huh?\n"
@@ -366,8 +366,8 @@ ViridianForest_Text_Brendan1Defeat::
     .string "So it goes…$"
 
 ViridianForest_Text_UseAntidoteForPoison::
-    .string "For poison, use ANTIDOTE!\n"
-    .string "Get it at Pokémon MARTS!$"
+    .string "For poison, use Antidote!\n"
+    .string "Get it at Pokémon Marts!$"
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
     .string "Trainer Tips\p"

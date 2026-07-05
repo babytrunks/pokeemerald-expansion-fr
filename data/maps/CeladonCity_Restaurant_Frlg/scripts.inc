@@ -73,7 +73,7 @@ CeladonCity_Restaurant_Text_TakeThisImBusted::
     .string "I won't be needing this anymore!$"
 
 CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan::
-    .string "{PLAYER} received a COIN CASE\n"
+    .string "{PLAYER} received a Coin Case\n"
     .string "from the man.$"
 
 CeladonCity_Restaurant_Text_MakeRoomForThis::

@@ -119,7 +119,7 @@ Route20_Text_BarryPostBattle::
     .string "I bet you're not tired.$"
 
 Route20_Text_ShirleyIntro::
-    .string "SEAFOAM is a quiet getaway.\n"
+    .string "Seafoam is a quiet getaway.\n"
     .string "I'm vacationing here.$"
 
 Route20_Text_ShirleyDefeat::
@@ -146,7 +146,7 @@ Route20_Text_IreneDefeat::
     .string "No mercy at all!$"
 
 Route20_Text_IrenePostBattle::
-    .string "SEAFOAM used to be a single island\n"
+    .string "Seafoam used to be a single island\n"
     .string "in the distant past.$"
 
 Route20_Text_DeanIntro::
@@ -179,7 +179,7 @@ Route20_Text_RogerDefeat::
 
 Route20_Text_RogerPostBattle::
     .string "My birds are exhausted.\n"
-    .string "They can't FLY me back!$"
+    .string "They can't Fly me back!$"
 
 Route20_Text_NoraIntro::
     .string "My boyfriend gave me big pearls.$"
@@ -190,7 +190,7 @@ Route20_Text_NoraDefeat::
 
 Route20_Text_NoraPostBattle::
     .string "Will my pearls grow bigger inside\n"
-    .string "CLOYSTER?$"
+    .string "Cloyster?$"
 
 Route20_Text_MissyIntro::
     .string "I swam here from Cinnabar Island.\n"
@@ -201,12 +201,12 @@ Route20_Text_MissyDefeat::
 
 Route20_Text_MissyPostBattle::
     .string "Pokémon have taken over an\n"
-    .string "abandoned mansion on CINNABAR.\p"
-    .string "They call it the Pokémon MANSION\n"
+    .string "abandoned mansion on Cinnabar.\p"
+    .string "They call it the Pokémon Mansion\n"
     .string "now.$"
 
 Route20_Text_MelissaIntro::
-    .string "CINNABAR, in the west, has a LAB\n"
+    .string "Cinnabar, in the west, has a Lab\n"
     .string "for Pokémon.\p"
     .string "My daddy works there.$"
 
@@ -215,7 +215,7 @@ Route20_Text_MelissaDefeat::
     .string "You're supposed to wait!$"
 
 Route20_Text_MelissaPostBattle::
-    .string "CINNABAR is a volcanic island.\p"
+    .string "Cinnabar is a volcanic island.\p"
     .string "I heard it rose out of the sea\n"
     .string "when a volcano erupted.$"
 
@@ -223,10 +223,10 @@ Route20_Text_SeafoamIslands::
     .string "Seafoam Islands$"
 
 Route20_Text_MistyTrainsHere::
-    .string "Strong TRAINERS and WATER Pokémon\n"
+    .string "Strong Trainers and Water Pokémon\n"
     .string "are common sights in these parts.\p"
-    .string "They say that MISTY of the\n"
-    .string "CERULEAN GYM trains here.$"
+    .string "They say that Misty of the\n"
+    .string "Cerulean Gym trains here.$"
 
 gText_pryce_1::
   .string "Ah, hello.\p"

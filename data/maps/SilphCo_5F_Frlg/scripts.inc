@@ -86,8 +86,8 @@ SilphCo_5F_Text_BeauDefeat::
     .string "Blast it!$"
 
 SilphCo_5F_Text_BeauPostBattle::
-    .string "We worked on the ultimate POKé\n"
-    .string "BALL which would catch anything.$"
+    .string "We worked on the ultimate Poké\n"
+    .string "Ball which would catch anything.$"
 
 SilphCo_5F_Text_DaltonIntro::
     .string "Whaaat?\p"
@@ -99,7 +99,7 @@ SilphCo_5F_Text_DaltonDefeat::
 
 SilphCo_5F_Text_DaltonPostBattle::
     .string "You're only on 5F.\n"
-    .string "It's a long way to my BOSS!$"
+    .string "It's a long way to my Boss!$"
 
 SilphCo_5F_Text_Grunt2Intro::
     .string "Show Team Rocket a little respect!$"
@@ -110,31 +110,31 @@ SilphCo_5F_Text_Grunt2Defeat::
 
 SilphCo_5F_Text_Grunt2PostBattle::
     .string "Which reminds me.\p"
-    .string "KOFFING evolves into WEEZING!$"
+    .string "Koffing evolves into Weezing!$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
-    .string "It's a Pokémon REPORT!\p"
-    .string "Pokémon LAB created PORYGON,\n"
+    .string "It's a Pokémon Report!\p"
+    .string "Pokémon Lab created Porygon,\n"
     .string "the first virtual-reality Pokémon.$"
 
 SilphCo_5F_Text_Over350TechniquesConfirmed::
-    .string "It's a Pokémon REPORT!\p"
+    .string "It's a Pokémon Report!\p"
     .string "Over 350 Pokémon techniques have\n"
     .string "been confirmed.$"
 
 SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
-    .string "It's a Pokémon REPORT!\p"
+    .string "It's a Pokémon Report!\p"
     .string "Some Pokémon have been confirmed\n"
     .string "to evolve when they are traded.$"
 
 SilphCo_5F_Text_FloorSign::
-    .string "Silph Co. HEAD OFFICE\n"
+    .string "Silph Co. Head Office\n"
     .string "5F$"
 
 SilphCo_5F_Text_RocketBossLookingForStrongMons::
     .string "Those thugs that took over our\n"
     .string "building…\p"
-    .string "Their BOSS said he was looking for\n"
+    .string "Their Boss said he was looking for\n"
     .string "strong Pokémon.\p"
-    .string "I hope our PRESIDENT managed to\n"
+    .string "I hope our President managed to\n"
     .string "avoid trouble…$"

@@ -138,9 +138,9 @@ PewterCity_Gym_Text_BrockDefeat::
     .string "I lost.\p"
     .string "As proof of your victory, I confer\n"
     .string "on you this…the official Pokémon\l"
-    .string "LEAGUE BOULDERBADGE.\p"
-    .string "{FONT_NORMAL}{PLAYER} received the BOULDERBADGE\n"
-    .string "from BROCK!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
+    .string "League BoulderBadge.\p"
+    .string "{FONT_NORMAL}{PLAYER} received the BoulderBadge\n"
+    .string "from Brock!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
     .string "{FONT_MALE}Just having the Boulder Badge enables\n"
     .string "Flash outside of battle.$"
 
@@ -150,7 +150,7 @@ PewterCity_Gym_Text_TakeThisWithYou::
 
 PewterCity_Gym_Text_ReceivedTM39FromBrock::
     .string "{PLAYER} received TM39\n"
-    .string "from BROCK.$"
+    .string "from Brock.$"
 
 PewterCity_Gym_Text_ExplainTM39::
     .string "{COLOR BLUE}A TM, Technical Machine, contains a\n"
@@ -176,7 +176,7 @@ PewterCity_Gym_Text_BrockPostBattle::
 PewterCity_Gym_Text_LiamIntro::
     .string "Stop right there, kid!\p"
     .string "You're ten thousand light-years \n"
-    .string "from facing BROCK!$"
+    .string "from facing Brock!$"
 
 PewterCity_Gym_Text_LiamDefeat::
     .string "Darn!\p"
@@ -185,7 +185,7 @@ PewterCity_Gym_Text_LiamDefeat::
 
 PewterCity_Gym_Text_LiamPostBattle::
     .string "You're pretty hot.\n"
-    .string "…But not as hot as BROCK!$"
+    .string "…But not as hot as Brock!$"
 
 PewterCity_Gym_Text_LetMeTakeYouToTheTop::
     .string "Hiya!\n"
@@ -202,7 +202,7 @@ PewterCity_Gym_Text_LetsGetHappening::
 
 PewterCity_Gym_Text_TryDifferentPartyOrders::
     .string "The first Pokémon out in a match is\n"
-    .string "at the left of the Pokémon LIST.\p"
+    .string "at the left of the Pokémon List.\p"
     .string "By changing the order of Pokémon,\n"
     .string "you may gain an advantage.\p"
     .string "Try different orders to suit your\n"
@@ -217,15 +217,15 @@ PewterCity_Gym_Text_YoureChampMaterial::
     .string "You're Pokémon champ material!$"
 
 PewterCity_Gym_Text_GymStatue::
-    .string "PEWTER Pokémon GYM\n"
-    .string "LEADER: BROCK\p"
-    .string "WINNING TRAINERS:\n"
+    .string "Pewter Pokémon Gym\n"
+    .string "Leader: Brock\p"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}$"
 
 PewterCity_Gym_Text_GymStatuePlayerWon::
-    .string "PEWTER Pokémon GYM\n"
-    .string "LEADER: BROCK\p"
-    .string "WINNING TRAINERS:\n"
+    .string "Pewter Pokémon Gym\n"
+    .string "Leader: Brock\p"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
 
 
@@ -248,7 +248,7 @@ ExpertMode2_Text::
   .string "1: The bag is inaccessible during\n"
   .string "boss battles.\p"
   .string "2: There is a hard level cap before\n"
-  .string "each boss, which removes EXP gain\l"
+  .string "each boss, which removes Exp gain\l"
   .string "when the level cap is reached.\l"
   .string "However, the finite Rare Candy can\l"
   .string "bypass the cap.\p"

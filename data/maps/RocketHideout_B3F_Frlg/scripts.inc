@@ -21,7 +21,7 @@ RocketHideout_B3F_Text_Grunt1Defeat::
 
 RocketHideout_B3F_Text_Grunt1PostBattle::
     .string "Silph Scope?\n"
-    .string "Oh, that machine the BOSS stole.\p"
+    .string "Oh, that machine the Boss stole.\p"
     .string "It's here somewhere.$"
 
 RocketHideout_B3F_Text_Grunt2Intro::

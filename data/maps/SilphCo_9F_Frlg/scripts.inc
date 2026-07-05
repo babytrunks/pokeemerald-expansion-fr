@@ -62,7 +62,7 @@ SilphCo_9F_Text_Grunt1Defeat::
     .string "Ghaaah!$"
 
 SilphCo_9F_Text_Grunt1PostBattle::
-    .string "If I had started as a TRAINER at\n"
+    .string "If I had started as a Trainer at\n"
     .string "your age…$"
 
 SilphCo_9F_Text_EdIntro::
@@ -77,8 +77,8 @@ SilphCo_9F_Text_EdPostBattle::
     .string "Think about type advantages.$"
 
 SilphCo_9F_Text_Grunt2Intro::
-    .string "I am one of the four ROCKET\n"
-    .string "BROTHERS!$"
+    .string "I am one of the four Rocket\n"
+    .string "Brothers!$"
 
 SilphCo_9F_Text_Grunt2Defeat::
     .string "Warg!\n"
@@ -88,6 +88,6 @@ SilphCo_9F_Text_Grunt2PostBattle::
     .string "My brothers will avenge me!$"
 
 SilphCo_9F_Text_FloorSign::
-    .string "Silph Co. HEAD OFFICE\n"
+    .string "Silph Co. Head Office\n"
     .string "9F$"
 

@@ -118,11 +118,11 @@ SaffronCity_House_Text_Skitty::
     .string "Uhhh, meow?$"
 
 SaffronCity_House_Text_GettingCopycatPokeDoll::
-    .string "The COPYCAT is cute!\n"
-    .string "I'm getting her a POKé DOLL.$"
+    .string "The Copycat is cute!\n"
+    .string "I'm getting her a Poké Doll.$"
 
 SaffronCity_House_Text_ExplainPPUp::
-    .string "I was given a PP UP as a gift.\p"
+    .string "I was given a PP Up as a gift.\p"
     .string "It's used to increase the PP of\n"
     .string "a Pokémon's move.\p"
     .string "I should use it on a powerful move\n"
@@ -149,7 +149,7 @@ SaffronCity_House_Text_CatLadyNotYet::
     .string "back to me.$"
 
 SaffronCity_House_Text_CatLadyCongrats::
-    .string "Oh! OH!\p"
+    .string "Oh! Oh!\p"
     .string "Look at those whiskers!\n"
     .string "Those darling little paws!\p"
     .string "What a perfect, precious kitty!\n"

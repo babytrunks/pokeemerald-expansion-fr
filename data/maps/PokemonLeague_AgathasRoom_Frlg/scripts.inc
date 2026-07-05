@@ -89,8 +89,8 @@ PokemonLeague_AgathasRoom_EventScript_DefeatedAgatha::
 	end
 
 PokemonLeague_AgathasRoom_Text_Intro::
-    .string "I am AGATHA of the ELITE FOUR.\p"
-    .string "I hear OAK's taken a lot of\n"
+    .string "I am Agatha of the Elite Four.\p"
+    .string "I hear Oak's taken a lot of\n"
     .string "interest in you, child.\p"
     .string "That old duff was once tough and\n"
     .string "handsome.\p"
@@ -101,11 +101,11 @@ PokemonLeague_AgathasRoom_Text_Intro::
     .string "He's wrong.\n"
     .string "Pokémon are for battling!\p"
     .string "{PLAYER}! I'll show you how a real\n"
-    .string "TRAINER battles!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "Trainer battles!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_AgathasRoom_Text_RematchIntro::
-    .string "I am AGATHA of the ELITE FOUR.\p"
-    .string "You're the child that OAK's taken\n"
+    .string "I am Agatha of the Elite Four.\p"
+    .string "You're the child that Oak's taken\n"
     .string "under his wing, aren't you?\p"
     .string "That old duff was once tough and\n"
     .string "handsome.\p"
@@ -116,7 +116,7 @@ PokemonLeague_AgathasRoom_Text_RematchIntro::
     .string "He's wrong.\n"
     .string "Pokémon are for battling!\p"
     .string "{PLAYER}! I'll show you how a real\n"
-    .string "TRAINER battles!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "Trainer battles!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 PokemonLeague_AgathasRoom_Text_Defeat::
     .string "Oh, my!\n"

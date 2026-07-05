@@ -79,7 +79,7 @@ SixIsland_PokemonCenter_1F_EventScript_OldMan::
 
 SixIsland_PokemonCenter_1F_Text_SomethingHiddenOnThisIsland::
     .string "For ten years, I've searched for\n"
-    .string "RUINS.\p"
+    .string "Ruins.\p"
     .string "No, make that twenty years.\p"
     .string "I get this feeling that there's\n"
     .string "something hidden on this island.$"
