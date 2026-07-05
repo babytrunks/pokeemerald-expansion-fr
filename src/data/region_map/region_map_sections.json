@@ -1045,7 +1045,7 @@
     },
     {
       "id": "MAPSEC_KANTO_VICTORY_ROAD",
-      "name": "VICTORY ROAD",
+      "name": "Victory Road",
       "x": 2,
       "y": 4,
       "width": 1,
@@ -1085,7 +1085,7 @@
     },
     {
       "id": "MAPSEC_POKEMON_LEAGUE",
-      "name": "Pokémon LEAGUE",
+      "name": "Pokémon League",
       "x": 2,
       "y": 3,
       "width": 1,

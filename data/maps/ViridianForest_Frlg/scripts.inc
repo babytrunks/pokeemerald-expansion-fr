@@ -358,9 +358,12 @@ ViridianForest_Text_RanOutOfPokeBalls::
 
 ViridianForest_Text_AvoidGrassyAreasWhenWeak::
     .string "Trainer Tips\p"
-    .string "If your Pokémon are weak and you\n"
-    .string "want to avoid battles, stay away\l"
-    .string "from grassy areas!$"
+    .string "A significant amount of changes have\n"
+    .string "been made to many Pokémon's stats,\l"
+    .string "typing, learnsets, and more.\p"
+    .string "It is highly recommended to check the\n"
+    .string "documentation online for more info!$"
+
 
 ViridianForest_Text_Brendan1Defeat::
     .string "So it goes…$"

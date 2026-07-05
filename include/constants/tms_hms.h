@@ -91,7 +91,8 @@
     F(POISON_JAB) \
     F(ROOST) \
     F(POLTERGEIST) \
-    F(DRACO_METEOR)
+    F(DRACO_METEOR) \
+    F(ENERGY_BALL) 
     
 #define FOREACH_HM(F) \
     F(CUT) \

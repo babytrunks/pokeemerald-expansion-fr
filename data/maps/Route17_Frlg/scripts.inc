@@ -155,4 +155,3 @@ Route17_Text_DontThrowGameThrowBalls::
 Route17_Text_CyclingRoadSign::
     .string "Cycling Road\n"
     .string "Slope ends here!$"
-

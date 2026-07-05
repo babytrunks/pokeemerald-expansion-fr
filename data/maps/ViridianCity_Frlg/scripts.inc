@@ -464,17 +464,16 @@ ViridianCity_Text_CitySign::
 
 ViridianCity_Text_CatchMonsForEasierBattles::
     .string "Trainer Tips\p"
-    .string "Catch Pokémon and expand your\n"
-    .string "collection.\p"
-    .string "The more you have, the easier it\n"
-    .string "is to battle.$"
+	.string "Consumable held items are automati-\n"
+	.string "cally retrieved at the end of each\l"
+	.string "battle!$"
 
 ViridianCity_Text_MovesLimitedByPP::
     .string "Trainer Tips\p"
-    .string "The battle moves of Pokémon are\n"
-    .string "limited by their Power Points, PP.\p"
-    .string "To replenish PP, rest your tired\n"
-    .string "Pokémon at a Pokémon Center.$"
+	.string "Natures can be a big difference maker!\n"
+	.string "The stats colored in Red are in-\l"
+	.string "creased by 10% while the stats co-\l"
+	.string "lored in blue are decreased by 10%.$"
 
 ViridianCity_Text_GymSign::
     .string "Viridian City Pokémon Gym$"
