@@ -3916,8 +3916,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(6, -4, SHADOW_SIZE_S)
         FOOTPRINT(Sizzlipede)
-        .levelUpLearnset = sSizzlipedeLevelUpLearnset,
-        .teachableLearnset = sSizzlipedeTeachableLearnset,
+        .levelUpLearnset = sSizzlipedeSeviiLevelUpLearnset,
+        .teachableLearnset = sSizzlipedeSeviiTeachableLearnset,
         .eggMoveLearnset = sSizzlipedeEggMoveLearnset,
         .formSpeciesIdTable = sSizzlipedeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_CENTISKORCH_SEVII}),
@@ -3973,8 +3973,8 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-3, 7, SHADOW_SIZE_M)
         FOOTPRINT(Centiskorch)
-        .levelUpLearnset = sCentiskorchLevelUpLearnset,
-        .teachableLearnset = sCentiskorchTeachableLearnset,
+        .levelUpLearnset = sCentiskorchSeviiLevelUpLearnset,
+        .teachableLearnset = sCentiskorchSeviiTeachableLearnset,
         .formSpeciesIdTable = sCentiskorchFormSpeciesIdTable,
     },
 #endif //P_FAMILY_SIZZLIPEDE

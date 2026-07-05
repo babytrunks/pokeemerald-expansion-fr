@@ -4566,8 +4566,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_SLOW,
         SHADOW(4, -6, SHADOW_SIZE_M)
         FOOTPRINT(Clauncher)
-        .levelUpLearnset = sClauncherLevelUpLearnset,
-        .teachableLearnset = sClauncherTeachableLearnset,
+        .levelUpLearnset = sClauncherSeviiLevelUpLearnset,
+        .teachableLearnset = sClauncherSeviiTeachableLearnset,
         .eggMoveLearnset = sClauncherEggMoveLearnset,
         .formSpeciesIdTable = sClauncherFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 37, SPECIES_CLAWITZER_SEVII}),
@@ -4624,8 +4624,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(6, 1, SHADOW_SIZE_L)
         FOOTPRINT(Clawitzer)
-        .levelUpLearnset = sClawitzerLevelUpLearnset,
-        .teachableLearnset = sClawitzerTeachableLearnset,
+        .levelUpLearnset = sClawitzerSeviiLevelUpLearnset,
+        .teachableLearnset = sClawitzerSeviiTeachableLearnset,
         .formSpeciesIdTable = sClawitzerFormSpeciesIdTable,
     },
 #endif //P_FAMILY_CLAUNCHER
@@ -6870,8 +6870,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(2, 11, SHADOW_SIZE_L)
         FOOTPRINT(Noibat)
-        .levelUpLearnset = sNoibatLevelUpLearnset,
-        .teachableLearnset = sNoibatTeachableLearnset,
+        .levelUpLearnset = sNoibatSeviiLevelUpLearnset,
+        .teachableLearnset = sNoibatSeviiTeachableLearnset,
         .eggMoveLearnset = sNoibatEggMoveLearnset,
         .formSpeciesIdTable = sNoibatFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_4, SPECIES_NOIVERN_SEVII}),
@@ -6931,8 +6931,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(5, 10, SHADOW_SIZE_L)
         FOOTPRINT(Noivern)
-        .levelUpLearnset = sNoivernLevelUpLearnset,
-        .teachableLearnset = sNoivernTeachableLearnset,
+        .levelUpLearnset = sNoivernSeviiLevelUpLearnset,
+        .teachableLearnset = sNoivernSeviiTeachableLearnset,
         .formSpeciesIdTable = sNoivernFormSpeciesIdTable,
     },
 #endif //P_FAMILY_NOIBAT

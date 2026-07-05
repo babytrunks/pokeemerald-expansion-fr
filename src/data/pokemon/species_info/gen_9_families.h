@@ -1093,8 +1093,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_FAST,
         SHADOW(1, 3, SHADOW_SIZE_M)
         FOOTPRINT(Nymble)
-        .levelUpLearnset = sNymbleLevelUpLearnset,
-        .teachableLearnset = sNymbleTeachableLearnset,
+        .levelUpLearnset = sNymbleSeviiLevelUpLearnset,
+        .teachableLearnset = sNymbleSeviiTeachableLearnset,
         .eggMoveLearnset = sNymbleEggMoveLearnset,
         .formSpeciesIdTable = sNymbleFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_LOKIX_SEVII}),
@@ -1150,8 +1150,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 11, SHADOW_SIZE_M)
         FOOTPRINT(Lokix)
-        .levelUpLearnset = sLokixLevelUpLearnset,
-        .teachableLearnset = sLokixTeachableLearnset,
+        .levelUpLearnset = sLokixSeviiLevelUpLearnset,
+        .teachableLearnset = sLokixSeviiTeachableLearnset,
         .formSpeciesIdTable = sLokixFormSpeciesIdTable,
     },
 #endif //P_FAMILY_NYMBLE

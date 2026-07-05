@@ -9238,13 +9238,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_LEAF_STONE, SPECIES_VICTREEBEL}),
     },
 
-#if P_UPDATED_STATS >= GEN_6
-    #define VICTREEBEL_SP_DEF 70
-#elif P_UPDATED_STATS >= GEN_2
-    #define VICTREEBEL_SP_DEF 60
-#else
-    #define VICTREEBEL_SP_DEF 100
-#endif
+
 
     [SPECIES_VICTREEBEL] =
     {
@@ -11417,11 +11411,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(6, 5, SHADOW_SIZE_M)
         FOOTPRINT(Doduo)
-        .levelUpLearnset = sDoduoLevelUpLearnset,
-        .teachableLearnset = sDoduoTeachableLearnset,
+        .levelUpLearnset = sDoduoSeviiLevelUpLearnset,
+        .teachableLearnset = sDoduoSeviiTeachableLearnset,
         .eggMoveLearnset = sDoduoEggMoveLearnset,
         .formSpeciesIdTable = sDoduoFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_3, SPECIES_DODRIO_SEVII}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_3 + 1, SPECIES_DODRIO_SEVII}),
     },
 
     [SPECIES_DODRIO_SEVII] =
@@ -11474,8 +11468,8 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 12, SHADOW_SIZE_L)
         FOOTPRINT(Dodrio)
-        .levelUpLearnset = sDodrioLevelUpLearnset,
-        .teachableLearnset = sDodrioTeachableLearnset,
+        .levelUpLearnset = sDodrioSeviiLevelUpLearnset,
+        .teachableLearnset = sDodrioSeviiTeachableLearnset,
         .formSpeciesIdTable = sDodrioFormSpeciesIdTable,
     },
 #endif //P_FAMILY_DODUO

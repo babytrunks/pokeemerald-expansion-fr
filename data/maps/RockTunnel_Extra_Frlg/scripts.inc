@@ -75,6 +75,7 @@ RockTunnel_Extra_EventScript_Terrakion::
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, RockTunnel_Extra_EventScript_RanFromTerrakion
 	setflag FLAG_FOUGHT_TERRAKION
 	setflag FLAG_HIDE_TERRAKION
+	goto EventScript_RemoveStaticMon
 	release
 	end
 

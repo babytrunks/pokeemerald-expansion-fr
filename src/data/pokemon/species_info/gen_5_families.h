@@ -2365,8 +2365,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(3, 9, SHADOW_SIZE_M)
         FOOTPRINT(Blitzle)
-        .levelUpLearnset = sBlitzleLevelUpLearnset,
-        .teachableLearnset = sBlitzleTeachableLearnset,
+        .levelUpLearnset = sBlitzleSeviiLevelUpLearnset,
+        .teachableLearnset = sBlitzleSeviiTeachableLearnset,
         .eggMoveLearnset = sBlitzleEggMoveLearnset,
         .formSpeciesIdTable = sBlitzleFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_ZEBSTRIKA_SEVII}),
@@ -2422,8 +2422,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 13, SHADOW_SIZE_M)
         FOOTPRINT(Zebstrika)
-        .levelUpLearnset = sZebstrikaLevelUpLearnset,
-        .teachableLearnset = sZebstrikaTeachableLearnset,
+        .levelUpLearnset = sZebstrikaSeviiLevelUpLearnset,
+        .teachableLearnset = sZebstrikaSeviiTeachableLearnset,
         .formSpeciesIdTable = sZebstrikaFormSpeciesIdTable,
     },
 #endif //P_FAMILY_BLITZLE

@@ -6226,8 +6226,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-2, 1, SHADOW_SIZE_S)
         FOOTPRINT(Teddiursa)
-        .levelUpLearnset = sTeddiursaLevelUpLearnset,
-        .teachableLearnset = sTeddiursaTeachableLearnset,
+        .levelUpLearnset = sTeddiursaSeviiLevelUpLearnset,
+        .teachableLearnset = sTeddiursaSeviiTeachableLearnset,
         .eggMoveLearnset = sTeddiursaEggMoveLearnset,
         .formSpeciesIdTable = sTeddiursaFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 28, SPECIES_URSARING_SEVII}),
@@ -6283,8 +6283,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(1, 14, SHADOW_SIZE_L)
         FOOTPRINT(Ursaring)
-        .levelUpLearnset = sUrsaringLevelUpLearnset,
-        .teachableLearnset = sUrsaringTeachableLearnset,
+        .levelUpLearnset = sUrsaringSeviiLevelUpLearnset,
+        .teachableLearnset = sUrsaringSeviiTeachableLearnset,
         .formSpeciesIdTable = sUrsaringFormSpeciesIdTable,
     },
 #endif //P_FAMILY_TEDDIURSA
@@ -7339,8 +7339,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 3, SHADOW_SIZE_S)
         FOOTPRINT(Mantyke)
-        .levelUpLearnset = sMantykeLevelUpLearnset,
-        .teachableLearnset = sMantykeTeachableLearnset,
+        .levelUpLearnset = sMantykeSeviiLevelUpLearnset,
+        .teachableLearnset = sMantykeSeviiTeachableLearnset,
         .eggMoveLearnset = sMantykeEggMoveLearnset,
         .formSpeciesIdTable = sMantykeFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MANTINE_SEVII, CONDITIONS({IF_SPECIES_IN_PARTY, SPECIES_REMORAID})},
@@ -7398,8 +7398,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-1, 8, SHADOW_SIZE_M)
         FOOTPRINT(Mantine)
-        .levelUpLearnset = sMantineLevelUpLearnset,
-        .teachableLearnset = sMantineTeachableLearnset,
+        .levelUpLearnset = sMantineSeviiLevelUpLearnset,
+        .teachableLearnset = sMantineSeviiTeachableLearnset,
         .eggMoveLearnset = sMantineEggMoveLearnset,
         .formSpeciesIdTable = sMantineFormSpeciesIdTable,
     },

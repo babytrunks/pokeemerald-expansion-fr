@@ -5474,8 +5474,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 9, SHADOW_SIZE_XL_BATTLE_ONLY)
         FOOTPRINT(Carnivine)
-        .levelUpLearnset = sCarnivineLevelUpLearnset,
-        .teachableLearnset = sCarnivineTeachableLearnset,
+        .levelUpLearnset = sCarnivineSeviiLevelUpLearnset,
+        .teachableLearnset = sCarnivineSeviiTeachableLearnset,
         .eggMoveLearnset = sCarnivineEggMoveLearnset,
         .formSpeciesIdTable = sCarnivineFormSpeciesIdTable,
     },

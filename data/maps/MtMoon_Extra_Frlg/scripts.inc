@@ -22,6 +22,7 @@ MtMoon_Extra_EventScript_Cobalion::
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, MtMoon_Extra_EventScript_RanFromCobalion
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, MtMoon_Extra_EventScript_RanFromCobalion
 	setflag FLAG_FOUGHT_COBALION
+	goto EventScript_RemoveStaticMon
 	release
 	end
 

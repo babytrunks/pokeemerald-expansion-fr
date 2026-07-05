@@ -9193,8 +9193,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(-2, 2, SHADOW_SIZE_S)
         FOOTPRINT(Feebas)
-        .levelUpLearnset = sFeebasLevelUpLearnset,
-        .teachableLearnset = sFeebasTeachableLearnset,
+        .levelUpLearnset = sFeebasSeviiLevelUpLearnset,
+        .teachableLearnset = sFeebasSeviiTeachableLearnset,
         .eggMoveLearnset = sFeebasEggMoveLearnset,
         .formSpeciesIdTable = sFeebasFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MILOTIC_SEVII, CONDITIONS({IF_MIN_BEAUTY, 170})},
@@ -9253,8 +9253,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         SHADOW(0, 12, SHADOW_SIZE_M)
         FOOTPRINT(Milotic)
-        .levelUpLearnset = sMiloticLevelUpLearnset,
-        .teachableLearnset = sMiloticTeachableLearnset,
+        .levelUpLearnset = sMiloticSeviiLevelUpLearnset,
+        .teachableLearnset = sMiloticSeviiTeachableLearnset,
         .formSpeciesIdTable = sMiloticFormSpeciesIdTable,
     },
 #endif //P_FAMILY_FEEBAS

@@ -12057,9 +12057,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("TM18"),
         .price = 2000,
         .description = COMPOUND_STRING(
-            "Attacks with a blade\n"
-            "of air. May cause\n"
-            "flinching."),
+            "Attacks with a\n"
+            "blade of air.\n"
+            "Can flinch."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
