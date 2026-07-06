@@ -1,11 +1,53 @@
 VermilionCity_PokemonCenter_1F_Frlg_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, VermilionCity_PokemonCenter_1F_OnTransition
 	map_script MAP_SCRIPT_ON_RESUME, CableClub_OnResume
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, VermilionCity_PokemonCenter_1F_OnFrame
 	.byte 0
 
 VermilionCity_PokemonCenter_1F_OnTransition::
 	setrespawn HEAL_LOCATION_VERMILION_CITY
 	end
+
+VermilionCity_PokemonCenter_1F_OnFrame::
+	map_script_2 VAR_RECEIVED_VERMILION_SEVII, 0, VermilionCity_PokemonCenter_1F_EventScript_SeviiAide
+	.2byte 0
+
+VermilionCity_PokemonCenter_1F_EventScript_SeviiAide::
+	lockall
+	textcolor NPC_TEXT_COLOR_MALE
+	playse SE_PIN
+	applymovement LOCALID_VERMILION_PC_AIDE, Common_Movement_ExclamationMark
+	waitmovement 0
+	waitse
+	applymovement LOCALID_VERMILION_PC_AIDE, VermilionCity_PokemonCenter_1F_Movement_AideApproach
+	waitmovement 0
+	msgbox VermilionCity_PokemonCenter_1F_Text_OakSeviiResearch
+	setflag FLAG_RARE_POKEMON_SCREEN
+	setvar VAR_RARE_POKEMON_COUNTER, 3
+	factory_generaterentalmons
+	factory_rentmons
+	waitstate
+	clearflag FLAG_RARE_POKEMON_SCREEN
+	clearflag FLAG_3_PERFECT_IVS
+	clearflag FLAG_FORCE_SHINY
+	msgbox VermilionCity_PokemonCenter_1F_Text_AideMustLeave
+	closemessage
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_VERMILION_PC_AIDE
+	setflag FLAG_RECEIVED_VERMILION_SEVII
+	fadescreen FADE_FROM_BLACK
+	setvar VAR_RECEIVED_VERMILION_SEVII, 1
+	releaseall
+	end
+
+VermilionCity_PokemonCenter_1F_Movement_AideApproach::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	step_end
 
 VermilionCity_PokemonCenter_1F_EventScript_Nurse::
 	lock
@@ -90,3 +132,20 @@ VermilionCity_PokemonCenter_1F_Text_ExplainVSSeeker::
     .string "it will let you know immediately.\p"
     .string "Charge its battery and use it\n"
     .string "while you're on a road.$"
+
+VermilionCity_PokemonCenter_1F_Text_OakSeviiResearch::
+    .string "Oh! You must be {PLAYER}!\p"
+    .string "I'm one of Professor Oak's aides.\n"
+    .string "The professor's research has\l"
+    .string "turned up something exciting!\p"
+    .string "Interesting new Pokémon have been\n"
+    .string "found residing in the Sevii Islands!\p"
+    .string "Here, have your pick and help\n"
+    .string "further his research!$"
+
+VermilionCity_PokemonCenter_1F_Text_AideMustLeave::
+    .string "Splendid choice!\p"
+    .string "Do take good care of it, and let\n"
+    .string "the professor know what you learn.\p"
+    .string "Well then, I must be off.\n"
+    .string "There's always research to be done!$"

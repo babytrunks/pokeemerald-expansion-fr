@@ -459,6 +459,104 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
     .ball = BALL_PREMIER,},
 
 
+    // Sevii Mons Mon Selection
+    [FRONTIER_MON_BLITZLE_SEVII] = {
+        .species = SPECIES_BLITZLE_SEVII,
+        .moves = {MOVE_QUICK_ATTACK, MOVE_TAIL_WHIP, MOVE_CHARGE, MOVE_ICY_WIND},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_NOIBAT_SEVII] = {
+        .species = SPECIES_NOIBAT_SEVII,
+        .moves = {MOVE_SCREECH, MOVE_SUPERSONIC, MOVE_BITE, MOVE_ASTONISH},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_FEEBAS_SEVII] = {
+        .species = SPECIES_FEEBAS_SEVII,
+        .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_FLAIL, MOVE_NONE},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_SIZZLIPEDE_SEVII] = {
+        .species = SPECIES_SIZZLIPEDE_SEVII,
+        .moves = {MOVE_MUD_SLAP, MOVE_WRAP, MOVE_BITE, MOVE_MUD_SHOT},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_TEDDIURSA_SEVII] = {
+        .species = SPECIES_TEDDIURSA_SEVII,
+        .moves = {MOVE_FLING, MOVE_CURSE, MOVE_SCRATCH, MOVE_BABY_DOLL_EYES},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_NYMBLE_SEVII] = {
+        .species = SPECIES_NYMBLE_SEVII,
+        .moves = {MOVE_QUICK_ATTACK, MOVE_LEER, MOVE_POUNCE, MOVE_STRUGGLE_BUG},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_DODUO_SEVII] = {
+        .species = SPECIES_DODUO_SEVII,
+        .moves = {MOVE_PECK, MOVE_GROWL, MOVE_FLAME_WHEEL, MOVE_RAGE},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_MANTYKE_SEVII] = {
+        .species = SPECIES_MANTYKE_SEVII,
+        .moves = {MOVE_TACKLE, MOVE_BOUNCE, MOVE_THUNDER_SHOCK, MOVE_SUPERSONIC},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_CARNIVINE_SEVII] = {
+        .species = SPECIES_CARNIVINE_SEVII,
+        .moves = {MOVE_BIND, MOVE_BITE, MOVE_ACID, MOVE_METAL_CLAW},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_CLAUNCHER_SEVII] = {
+        .species = SPECIES_CLAUNCHER_SEVII,
+        .moves = {MOVE_SPLASH, MOVE_STRUGGLE_BUG, MOVE_TORMENT, MOVE_VISE_GRIP},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_WISHIWASHI_SEVII] = {
+        .species = SPECIES_WISHIWASHI_SOLO_SEVII,
+        .moves = {MOVE_ASTONISH, MOVE_GROWL, MOVE_HELPING_HAND, MOVE_FEINT_ATTACK},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+    [FRONTIER_MON_DHELMISE_SEVII] = {
+        .species = SPECIES_DHELMISE_SEVII,
+        .moves = {MOVE_SWITCHEROO, MOVE_ABSORB, MOVE_GROWTH, MOVE_RAPID_SPIN},
+        .nature = NATURE_DOCILE,
+        .ball = BALL_PREMIER,
+        .numPerfectIVs = 3,
+    },
+
+
     [FRONTIER_MON_DRATINI] = {
         .ability = ABILITY_MARVEL_SCALE,
         .species = SPECIES_DRATINI,

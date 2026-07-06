@@ -182,7 +182,7 @@
 #define VAR_DIFFICULTY                                  0x40A6
 #define VAR_BRENDAN_SLATEPORT_CITY                      0x40A7
 #define VAR_TRIGGER_ROAMER_SAFFRON                      0x40A8
-#define VAR_0x40A9                 0x40A9
+#define VAR_RECEIVED_VERMILION_SEVII                 0x40A9
 
 #define VAR_QLBAK_TRAINER_REMATCHES 0x40AA // array of 4
 #define VAR_QLBAK_MAP_LAYOUT        0x40AE
