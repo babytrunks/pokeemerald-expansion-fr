@@ -5124,6 +5124,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
             }
             break;
         case ABILITY_INNARDS_OUT:
+        case ABILITY_CORROSIVE_GUTS:
             if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)
              && !IsBattlerAlive(gBattlerTarget)
              && IsBattlerAlive(gBattlerAttacker))
@@ -6200,7 +6201,7 @@ bool32 CanSetNonVolatileStatus(u32 battlerAtk, u32 battlerDef, enum Ability abil
         {
             battleScript = BattleScript_AlreadyPoisoned;
         }
-        else if (abilityAtk != ABILITY_CORROSION && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_POISON, TYPE_STEEL))
+        else if (abilityAtk != ABILITY_CORROSION && abilityAtk != ABILITY_CORROSIVE_GUTS && IS_BATTLER_ANY_TYPE(battlerDef, TYPE_POISON, TYPE_STEEL))
         {
             battleScript = BattleScript_NotAffected;
         }
@@ -9011,7 +9012,7 @@ static inline void MulByTypeEffectiveness(struct DamageContext *ctx, uq4_12_t *m
             RecordAbilityBattle(ctx->battlerAtk, ctx->abilityAtk);
     }
     else if ((ctx->moveType == TYPE_POISON ) && defType == TYPE_STEEL
-        && (ctx->abilityAtk == ABILITY_CORROSION)
+        && (ctx->abilityAtk == ABILITY_CORROSION || ctx->abilityAtk == ABILITY_CORROSIVE_GUTS)
         && mod == UQ_4_12(0.0))
     {
         mod = UQ_4_12(1.0);

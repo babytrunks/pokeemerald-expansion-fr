@@ -2539,4 +2539,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Powers up Fire-typemoves by 50%."),
         .aiRating = 8,
     },
+    [ABILITY_CORROSIVE_GUTS] =
+    {
+        .name = _("Corrosive Guts"),
+        .description = COMPOUND_STRING("Poison hits Steel. Hurts foe when defeated."),
+        .aiRating = 6,
+    },
 };

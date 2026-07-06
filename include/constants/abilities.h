@@ -353,6 +353,7 @@ enum __attribute__((packed)) Ability
     ABILITY_ORAORAORAORA = 329,
     ABILITY_FIRE_MANE = 330,
     ABILITY_EELEVATE = 331,
+    ABILITY_CORROSIVE_GUTS = 332, // Corrosion + Innards Out
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };
