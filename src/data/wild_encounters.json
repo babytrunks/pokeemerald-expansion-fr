@@ -25654,7 +25654,7 @@
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_TANDEMAUS"
+                "species": "SPECIES_SKITTY"
               },
               {
                 "min_level": 13,
@@ -25816,7 +25816,7 @@
               {
                 "min_level": 13,
                 "max_level": 15,
-                "species": "SPECIES_TANDEMAUS"
+                "species": "SPECIES_SKITTY"
               },
               {
                 "min_level": 13,
@@ -26700,7 +26700,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SKITTY"
+                "species": "SPECIES_TANDEMAUS"
               },
               {
                 "min_level": 20,
@@ -26862,7 +26862,7 @@
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_SKITTY"
+                "species": "SPECIES_TANDEMAUS"
               },
               {
                 "min_level": 20,
