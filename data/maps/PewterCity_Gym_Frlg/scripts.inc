@@ -4,6 +4,7 @@ PewterCity_Gym_Frlg_MapScripts::
 
 PewterCity_Gym_OnFrame::
 	map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 0, EventScript_ExpertModeMapScript
+    map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 1, EventScript_ExplainRulesMapScript
 	.2byte 0
 
 EventScript_ExpertModeMapScript::
@@ -22,11 +23,35 @@ EventScript_ExpertModeMapScript::
     waitstate      
     end
 
+EventScript_ExplainRulesMapScript:
+    applymovement LOCALID_EXPERT_MODE_NPC, Movement_GymGuide_WalkUpToYou   
+    waitmovement 0
+    msgbox ExpertMode1_Text, MSGBOX_AUTOCLOSE
+    msgbox ExpertMode2_Text, MSGBOX_AUTOCLOSE
+    call_if_unset FLAG_DISABLE_EVS, PewterCity_Gym_EventScript_ExplainEVCap
+    msgbox ExpertMode3_Text, MSGBOX_AUTOCLOSE
+    msgbox PewterCity_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
+    giveitem ITEM_MUSCLE_FEATHER
+    giveitem ITEM_RESIST_FEATHER 
+    applymovement LOCALID_EXPERT_MODE_NPC, Movement_GymGuide_WalkBack
+    waitmovement 0
+    setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 2
+    end
+
+PewterCity_Gym_EventScript_ExplainEVCap::
+    msgbox PewterCity_Gym_Text_ExplainEVCap, MSGBOX_AUTOCLOSE
+    return
+
 Movement_GymGuide_WalkUpToYou:
     walk_left
     walk_down
     step_end
 
+Movement_GymGuide_WalkBack::
+    walk_right
+    walk_up
+    face_down
+    step_end
 
 PewterCity_Gym_EventScript_Brock::
 	famechecker FAMECHECKER_BROCK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
@@ -78,8 +103,9 @@ PewterCity_Gym_EventScript_GymGuyPostVictory::
 	end
 
 PewterCity_Gym_EventScript_GymGuyTakeMeToTop::
-	msgbox PewterCity_Gym_Text_LetsGetHappening
-	goto PewterCity_Gym_EventScript_GymGuyAdvice
+    msgbox ExpertMode2_Text, MSGBOX_AUTOCLOSE
+    call_if_unset FLAG_DISABLE_EVS, PewterCity_Gym_EventScript_ExplainEVCap
+    release
 	end
 
 PewterCity_Gym_EventScript_GymGuyDontTakeMeToTop::
@@ -194,7 +220,7 @@ PewterCity_Gym_Text_LetMeTakeYouToTheTop::
     .string "the Pokémon champ?\p"
     .string "I'm no trainer, but I can advise\n"
     .string "you on how to win.\p"
-    .string "Let me take you to the top!$"
+    .string "Wanna know the rules?$"
 
 PewterCity_Gym_Text_LetsGetHappening::
     .string "All right!\n"
@@ -261,7 +287,18 @@ ExpertMode2_Text::
   .string "full in most boss battles to prevent\l"
   .string "certain exploits.$"
 
+PewterCity_Gym_Text_ExplainEVCap::
+    .string "5. The EV Cap starts at 0.\n"
+    .string "You will begin to increase the EV Cap as\l"
+    .string "you progress through the\l"
+    .string "game.$"
 
 ExpertMode3_Text::
   .string "If you ever want me to reiterate\n"
   .string "the rules, just talk to me again!$"
+
+PewterCity_Gym_Text_ComplimentaryItems::
+    .string "Please, have these complimentary items\n"
+    .string "for being brave enough to take on\l"
+    .string "your first gym challenge.$"
+ 

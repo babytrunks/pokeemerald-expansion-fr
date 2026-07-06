@@ -867,14 +867,14 @@ static void SetTVMetatilesOnMap(int width, int height, u16 metatileId)
 
 void TurnOffTVScreen(void)
 {
-    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, METATILE_Building_TV_Off);
-    DrawWholeMapView();
+    // SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, METATILE_Building_TV_Off);
+    // DrawWholeMapView();
 }
 
 void TurnOnTVScreen(void)
 {
-    SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, METATILE_Building_TV_On);
-    DrawWholeMapView();
+    // SetTVMetatilesOnMap(gBackupMapLayout.width, gBackupMapLayout.height, METATILE_Building_TV_On);
+    // DrawWholeMapView();
 }
 
 // gSpecialVar_0x8004 here is set from GetRandomActiveShowIdx in EventScript_TryDoTVShow

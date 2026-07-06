@@ -15066,10 +15066,10 @@ Ability: Levitate
 Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 Def / 4 SpD
-- Calm Mind
-- Surf
-- Draining Kiss
-- Ice Beam
+- Flamethrower
+- Sludge Bomb
+- Strange Steam
+- Haze
 
 Ferrothorn @ Rocky Helmet
 Nature: Relaxed

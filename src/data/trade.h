@@ -1162,19 +1162,19 @@ static const struct InGameTrade sIngameTrades[] =
     },
     [INGAME_TRADE_TANGELA] = 
     {
-        .nickname = _("TANGENY"),
-        .species = SPECIES_TANGELA,
-        .ivs = {22, 17, 25, 16, 23, 20},
+        .nickname = _("FredFazbear"),
+        .species = SPECIES_URSALUNA_BLOODMOON,
+        .ivs = {31, 31, 31, 16, 23, 20},
         .abilityNum = 0,
         .otId = 60042,
         .conditions = {5, 5, 30, 5, 5},
         .personality = 0x5c77ecfa,
-        .heldItem = ITEM_STARDUST,
+        .heldItem = ITEM_NONE,
         .mailNum = 255,
-        .otName = _("NORMA"),
+        .otName = _("Norma"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_VENONAT
+        .requestedSpecies = SPECIES_URSALUNA
     },
     [INGAME_TRADE_SEEL] = 
     {

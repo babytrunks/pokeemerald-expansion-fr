@@ -2027,6 +2027,8 @@ static const u16 sLycanrocFormSpeciesIdTable[] = {
 static const u16 sWishiwashiFormSpeciesIdTable[] = {
     SPECIES_WISHIWASHI_SOLO,
     SPECIES_WISHIWASHI_SCHOOL,
+    SPECIES_WISHIWASHI_SOLO_SEVII,
+    SPECIES_WISHIWASHI_SCHOOL_SEVII,
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_WISHIWASHI
@@ -2136,6 +2138,14 @@ static const u16 sDrampaFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 #endif //P_FAMILY_DRAMPA
+
+#if P_FAMILY_DHELMISE
+static const u16 sDhelmiseFormSpeciesIdTable[] = {
+    SPECIES_DHELMISE,
+    SPECIES_DHELMISE_SEVII,
+    FORM_SPECIES_END,
+};
+#endif //P_FAMILY_DHELMISE
 
 #if P_FAMILY_JANGMO_O
 static const u16 sKommoOFormSpeciesIdTable[] = {

@@ -21934,6 +21934,18 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
     // const u16 gShinyOverworldPalette_WishiwashiSchool[] = INCBIN_U16("graphics/pokemon/wishiwashi/school/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_WishiwashiSoloSevii[] = INCBIN_U32("graphics/pokemon/wishiwashi/sevii/front.4bpp.smol");
+    const u16 gMonPalette_WishiwashiSoloSevii[] = INCBIN_U16("graphics/pokemon/wishiwashi/sevii/normal.gbapal");
+    const u32 gMonBackPic_WishiwashiSoloSevii[] = INCBIN_U32("graphics/pokemon/wishiwashi/sevii/back.4bpp.smol");
+    const u16 gMonShinyPalette_WishiwashiSoloSevii[] = INCBIN_U16("graphics/pokemon/wishiwashi/sevii/shiny.gbapal");
+    const u8 gMonIcon_WishiwashiSoloSevii[] = INCBIN_U8("graphics/pokemon/wishiwashi/sevii/icon.4bpp");
+
+    const u32 gMonFrontPic_WishiwashiSchoolSevii[] = INCBIN_U32("graphics/pokemon/wishiwashi/sevii/school/front.4bpp.smol");
+    const u16 gMonPalette_WishiwashiSchoolSevii[] = INCBIN_U16("graphics/pokemon/wishiwashi/sevii/school/normal.gbapal");
+    const u32 gMonBackPic_WishiwashiSchoolSevii[] = INCBIN_U32("graphics/pokemon/wishiwashi/sevii/school/back.4bpp.smol");
+    const u16 gMonShinyPalette_WishiwashiSchoolSevii[] = INCBIN_U16("graphics/pokemon/wishiwashi/sevii/school/shiny.gbapal");
+    const u8 gMonIcon_WishiwashiSchoolSevii[] = INCBIN_U8("graphics/pokemon/wishiwashi/sevii/school/icon.4bpp");
 #endif //P_FAMILY_WISHIWASHI
 
 #if P_FAMILY_MAREANIE
@@ -22661,6 +22673,12 @@ const u8 gMonIcon_VictreebelMega[] = INCBIN_U8("graphics/pokemon/victreebel/mega
     const u16 gShinyOverworldPalette_Dhelmise[] = INCBIN_U16("graphics/pokemon/dhelmise/overworld_shiny.gbapal");
 #endif //OW_PKMN_OBJECTS_SHARE_PALETTES
 #endif //OW_POKEMON_OBJECT_EVENTS
+
+    const u32 gMonFrontPic_DhelmiseSevii[] = INCBIN_U32("graphics/pokemon/dhelmise/sevii/front.4bpp.smol");
+    const u16 gMonPalette_DhelmiseSevii[] = INCBIN_U16("graphics/pokemon/dhelmise/sevii/normal.gbapal");
+    const u32 gMonBackPic_DhelmiseSevii[] = INCBIN_U32("graphics/pokemon/dhelmise/sevii/back.4bpp.smol");
+    const u16 gMonShinyPalette_DhelmiseSevii[] = INCBIN_U16("graphics/pokemon/dhelmise/sevii/shiny.gbapal");
+    const u8 gMonIcon_DhelmiseSevii[] = INCBIN_U8("graphics/pokemon/dhelmise/sevii/icon.4bpp");
 #endif //P_FAMILY_DHELMISE
 
 #if P_FAMILY_JANGMO_O

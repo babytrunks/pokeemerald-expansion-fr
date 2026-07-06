@@ -1708,8 +1708,11 @@
 #define SPECIES_CARNIVINE_SEVII                         1589
 #define SPECIES_CLAUNCHER_SEVII                         1590
 #define SPECIES_CLAWITZER_SEVII                         1591
+#define SPECIES_WISHIWASHI_SOLO_SEVII                   1592
+#define SPECIES_WISHIWASHI_SCHOOL_SEVII                 1593
+#define SPECIES_DHELMISE_SEVII                          1594
 
-#define SPECIES_EGG                                     (SPECIES_CLAWITZER_SEVII + 1)
+#define SPECIES_EGG                                     (SPECIES_DHELMISE_SEVII + 1)
 
 #define NUM_SPECIES SPECIES_EGG
 

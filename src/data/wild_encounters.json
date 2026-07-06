@@ -13837,7 +13837,7 @@
         },
         {
           "map": "MAP_VIRIDIAN_FOREST_FRLG_2",
-          "base_label": "sViridianForest2_FireRed_Night",
+          "base_label": "sViridianForest2FireRed_Night",
           "land_mons": {
             "encounter_rate": 14,
             "mons": [
@@ -27916,7 +27916,7 @@
               {
                 "min_level": 33,
                 "max_level": 36,
-                "species": "SPECIES_DURANT"
+                "species": "SPECIES_DRUDDIGON"
               },
               {
                 "min_level": 33,
@@ -27993,7 +27993,7 @@
               {
                 "min_level": 36,
                 "max_level": 38,
-                "species": "SPECIES_DURANT"
+                "species": "SPECIES_DRUDDIGON"
               },
               {
                 "min_level": 36,
@@ -28087,12 +28087,12 @@
               {
                 "min_level": 46,
                 "max_level": 48,
-                "species": "SPECIES_DRACOZOLT"
+                "species": "SPECIES_CYCLIZAR"
               },
               {
                 "min_level": 46,
                 "max_level": 48,
-                "species": "SPECIES_DRACOZOLT"
+                "species": "SPECIES_CYCLIZAR"
               }
             ]
           }
@@ -28164,12 +28164,12 @@
               {
                 "min_level": 46,
                 "max_level": 48,
-                "species": "SPECIES_DRACOZOLT"
+                "species": "SPECIES_CYCLIZAR"
               },
               {
                 "min_level": 46,
                 "max_level": 48,
-                "species": "SPECIES_DRACOZOLT"
+                "species": "SPECIES_CYCLIZAR"
               }
             ]
           }
