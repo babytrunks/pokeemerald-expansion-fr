@@ -4491,13 +4491,6 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                 break;
         // Fallthrough
         case ABILITY_ZEN_MODE:
-            if (TryBattleFormChange(battler, FORM_CHANGE_BEGIN_BATTLE))
-            {
-                BattleScriptCall(BattleScript_BattlerFormChange);
-                effect++;
-            }
-            break;
-
         case ABILITY_SHIELDS_DOWN:
             if (TryBattleFormChange(battler, FORM_CHANGE_BATTLE_HP_PERCENT))
             {

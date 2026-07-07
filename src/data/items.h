@@ -10927,8 +10927,8 @@ const struct Item gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Pomeg Berries"),
         .price = 1,
         .description = COMPOUND_STRING(
-            "Makes a Pokémon\n"
-            "more friendly."), 
+            "Maxes out a Pokémon's\n"
+            "happiness."), 
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,

@@ -19703,6 +19703,8 @@ static const u16 sMothimTeachableLearnset[] = {
     MOVE_SHADOW_BALL,
     MOVE_SIGNAL_BEAM,
     MOVE_SOLAR_BEAM,
+    MOVE_STEEL_WING,
+    MOVE_STOMPING_TANTRUM,
     MOVE_SWIFT,
     MOVE_TAILWIND,
     MOVE_TOXIC,
