@@ -3916,9 +3916,15 @@ u32 GetSpeciesBaseStat(u16 species, u32 statIndex)
 
 const struct LevelUpMove *GetSpeciesLevelUpLearnset(u16 species)
 {
-    const struct LevelUpMove *learnset = gSpeciesInfo[SanitizeSpeciesId(species)].levelUpLearnset;
+    u16 sanitizedSpecies = SanitizeSpeciesId(species);
+    const struct LevelUpMove *learnset = gSpeciesInfo[sanitizedSpecies].levelUpLearnset;
     if (learnset == NULL)
-        return gSpeciesInfo[SPECIES_NONE].levelUpLearnset;
+        learnset = gSpeciesInfo[SPECIES_NONE].levelUpLearnset;
+
+#if RANDOMIZER_AVAILABLE == TRUE
+    learnset = RandomizeLearnset(sanitizedSpecies, learnset);
+#endif
+
     return learnset;
 }
 

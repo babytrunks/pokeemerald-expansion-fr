@@ -13,6 +13,8 @@
 #include "constants/abilities.h"
 #include "data/randomizer/ability_whitelist.h"
 #include "constants/abilities.h"
+#include "constants/moves.h"
+#include "data/randomizer/move_whitelist.h"
 
 // Add the mons you wish to be randomized when given as starter/gift mon to this list
 const u16 gStarterAndGiftMonTable[STARTER_AND_GIFT_MON_COUNT] =
@@ -108,6 +110,12 @@ bool32 RandomizerFeatureEnabled(enum RandomizerFeature feature)
                 return FORCE_RANDOMIZE_ABILITIES;
             #else
                 return FlagGet(RANDOMIZER_FLAG_ABILITIES);
+            #endif
+        case RANDOMIZE_LEARNSET:
+            #ifdef FORCE_RANDOMIZE_LEARNSET
+                return FORCE_RANDOMIZE_LEARNSET;
+            #else
+                return FlagGet(RANDOMIZER_FLAG_LEARNSET);
             #endif
         default:
             return FALSE;
@@ -1001,6 +1009,50 @@ u16 RandomizeAbility(u16 species, u8 abilityNum, u16 originalAbility)
     }
 
     return originalAbility;
+}
+
+EWRAM_DATA static struct LevelUpMove sRandomizedLearnset[MAX_LEVEL_UP_MOVES + 1] = {0};
+
+// Given a species and its original level-up learnset, returns a possibly-randomized
+// replacement with the same move count and levels, but shuffled move ids.
+const struct LevelUpMove *RandomizeLearnset(u16 species, const struct LevelUpMove *originalLearnset)
+{
+    struct Sfc32State state;
+    u32 i;
+
+    if (!RandomizerFeatureEnabled(RANDOMIZE_LEARNSET))
+        return originalLearnset;
+
+    state = RandomizerRandSeed(RANDOMIZER_REASON_LEARNSET, species, 0);
+
+    for (i = 0; i < MAX_LEVEL_UP_MOVES && originalLearnset[i].move != LEVEL_UP_MOVE_END; i++)
+    {
+        u16 candidate;
+        u32 j;
+        bool32 duplicate;
+
+        do
+        {
+            candidate = sRandomizerMoveWhitelist[RandomizerNextRange(&state, MOVE_WHITELIST_SIZE)];
+            duplicate = FALSE;
+            for (j = 0; j < i; j++)
+            {
+                if (sRandomizedLearnset[j].move == candidate)
+                {
+                    duplicate = TRUE;
+                    break;
+                }
+            }
+        } while (duplicate);
+
+        sRandomizedLearnset[i].move = candidate;
+        sRandomizedLearnset[i].level = originalLearnset[i].level;
+    }
+
+    sRandomizedLearnset[i].move = LEVEL_UP_MOVE_END;
+    sRandomizedLearnset[i].level = 0;
+
+    return sRandomizedLearnset;
 }
 
 #endif // RANDOMIZER_AVAILABLE

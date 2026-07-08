@@ -700,6 +700,14 @@
       "height": 1
     },
     {
+      "id": "MAPSEC_PROFESSOR_OAKS_LAB",
+      "name": "Oak's Lab",
+      "x": 4,
+      "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
       "id": "MAPSEC_VIRIDIAN_CITY",
       "name": "Viridian City",
       "x": 4,

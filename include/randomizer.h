@@ -129,6 +129,12 @@ u16 RandomizeEggMon(u16 originalSlot, const u16* originalEggMons);
 // Given a species and an abilityNum, returns a replacement for that ability.
 u16 RandomizeAbility(u16 species, u8 abilityNum, u16 originalAbility);
 
+// pokemon.h is not included by this header, so forward-declare the struct tag.
+struct LevelUpMove;
+// Given a species and its original level-up learnset, returns a possibly-randomized
+// replacement with the same move count and levels, but shuffled move ids.
+const struct LevelUpMove *RandomizeLearnset(u16 species, const struct LevelUpMove *originalLearnset);
+
 static inline bool32 GroupSetsIntersect(struct RandomizerGroupSet* originalCache, struct RandomizerGroupSet* targetCache)
 {
     return originalCache->maxGroup >= targetCache->minGroup
