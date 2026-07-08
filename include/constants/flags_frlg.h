@@ -1192,7 +1192,7 @@
 #define FLAG_ZA_WARUDO_BATTLE           0x4A9
 #define FLAG_HIDE_TOWER_SANS            0x4AA
 #define FLAG_HIDE_MANSION_THOMAS        0x4AB
-#define FLAG_UNUSED_0x4AC               0x4AC // Unused Flag
+#define FLAG_RECEIVED_FUCHSIA_SEVII     0x4AC
 #define FLAG_UNUSED_0x4AD               0x4AD // Unused Flag
 #define FLAG_UNUSED_0x4AE               0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF               0x4AF // Unused Flag
@@ -1337,7 +1337,7 @@
 
 #define FLAG_SYS_POKEMON_GET                                        (SYS_FLAGS + 0x28)
 #define FLAG_SYS_POKEDEX_GET                                        (SYS_FLAGS + 0x29)
-#define FLAG_0x82A                                                  (SYS_FLAGS + 0x2A)
+#define FLAG_NEW_GAME_PLUS                                          (SYS_FLAGS + 0x2A)
 #define FLAG_0x82B                                                  (SYS_FLAGS + 0x2B)
 #define FLAG_SYS_GAME_CLEAR                                         (SYS_FLAGS + 0x2C)
 #define FLAG_SYS_SET_TRAINER_CARD_PROFILE                           (SYS_FLAGS + 0x2D)

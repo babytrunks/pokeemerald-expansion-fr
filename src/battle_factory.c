@@ -508,6 +508,12 @@ static void GenerateInitialRentalMons(void)
         if (gFacilityTrainerMons[monId].species == SPECIES_UNOWN)
             continue;
 
+        // Exclude a specific species from rare Pokémon gift screens (e.g. to prevent
+        // a duplicate of a species already given out by a different gift screen).
+        if (FlagGet(FLAG_RARE_POKEMON_SCREEN) && VarGet(VAR_RARE_POKEMON_EXCLUDE_SPECIES) != SPECIES_NONE
+            && gFacilityTrainerMons[monId].species == VarGet(VAR_RARE_POKEMON_EXCLUDE_SPECIES))
+            continue;
+
         // Cannot have two Pokémon of the same species.
         for (j = firstMonId; j < firstMonId + i; j++)
         {

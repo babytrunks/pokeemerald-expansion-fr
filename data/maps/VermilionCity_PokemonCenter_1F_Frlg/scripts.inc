@@ -27,6 +27,7 @@ VermilionCity_PokemonCenter_1F_EventScript_SeviiAide::
 	factory_generaterentalmons
 	factory_rentmons
 	waitstate
+	copyvar VAR_VERMILION_CHOSEN_SEVII, VAR_RESULT
 	clearflag FLAG_RARE_POKEMON_SCREEN
 	clearflag FLAG_3_PERFECT_IVS
 	clearflag FLAG_FORCE_SHINY

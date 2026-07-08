@@ -222,10 +222,10 @@
 #define VAR_FRONTIER_FACILITY      0x40CF
 #define VAR_TRIGGER_CERULEAN_CAVE_GIOVANNI             0x40D0
 #define VAR_TRANSFORM_BATTLE_TYPE                      0x40D1
-#define VAR_0x40D2                 0x40D2
-#define VAR_0x40D3                 0x40D3
-#define VAR_0x40D4                 0x40D4
-#define VAR_0x40D5                 0x40D5
+#define VAR_RECEIVED_FUCHSIA_SEVII                0x40D2
+#define VAR_RARE_POKEMON_EXCLUDE_SPECIES           0x40D3
+#define VAR_STARTER_SPECIES                0x40D4 // Species of the player's chosen starter, set in Oak's Lab
+#define VAR_VERMILION_CHOSEN_SEVII                 0x40D5
 #define VAR_0x40D6                 0x40D6
 #define VAR_0x40D7                 0x40D7
 #define VAR_0x40D8                 0x40D8

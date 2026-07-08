@@ -189,12 +189,14 @@ void NewGameInitData(void)
 {
 #if IS_FRLG
     u8 rivalName[PLAYER_NAME_LENGTH + 1];
+    bool8 hadHallOfFame;
 #endif
     if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_CORRUPT)
         RtcReset();
 
 #if IS_FRLG
     StringCopy(rivalName, gSaveBlock1Ptr->rivalName);
+    hadHallOfFame = FlagGet(FLAG_SYS_GAME_CLEAR);
 #endif
     gDifferentSaveFile = TRUE;
     gSaveBlock2Ptr->encryptionKey = 0;
@@ -247,6 +249,8 @@ void NewGameInitData(void)
         RunScriptImmediately(EventScript_ResetAllMapFlags);
 #if IS_FRLG
         StringCopy(gSaveBlock1Ptr->rivalName, rivalName);
+        if (hadHallOfFame)
+            FlagSet(FLAG_NEW_GAME_PLUS);
 #endif
     ResetMiniGamesRecords();
     InitUnionRoomChatRegisteredTexts();

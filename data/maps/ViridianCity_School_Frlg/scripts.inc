@@ -42,9 +42,11 @@ ViridianCity_School_EventScript_GiveMon::
 	setflag FLAG_RARE_POKEMON_SCREEN
 	setflag FLAG_BEAT_VIRIDIAN_CITY_TEACHER
 	setvar VAR_RARE_POKEMON_COUNTER, 0
+	copyvar VAR_RARE_POKEMON_EXCLUDE_SPECIES, VAR_STARTER_SPECIES
 	factory_generaterentalmons
 	factory_rentmons
 	waitstate
+	setvar VAR_RARE_POKEMON_EXCLUDE_SPECIES, SPECIES_NONE
 	clearflag FLAG_RARE_POKEMON_SCREEN
 ViridianCity_School_EventScript_BeatenTeacher::
 	msgbox ViridianCity_School_Text_Study

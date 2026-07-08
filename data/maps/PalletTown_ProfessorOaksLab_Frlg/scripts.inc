@@ -1149,6 +1149,7 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
 	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
 	givemon PLAYER_STARTER_SPECIES, 5, ITEM_ORAN_BERRY
 	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
+	copyvar VAR_STARTER_SPECIES, PLAYER_STARTER_SPECIES
 	bufferspeciesname STR_VAR_1, VAR_TEMP_2
 	message PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak
 	waitmessage

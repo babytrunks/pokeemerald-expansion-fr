@@ -4317,6 +4317,8 @@ static void GiveSelectedRareMonToPlayer(void)
         {
             if (sFactorySelectScreen->mons[j].selectedId == i + 1)
             {
+                if (FlagGet(FLAG_RARE_POKEMON_SCREEN))
+                    VarSet(VAR_RESULT, GetMonData(&sFactorySelectScreen->mons[j].monData, MON_DATA_SPECIES, NULL));
                 GiveMonToPlayer( &sFactorySelectScreen->mons[j].monData);
                 break;
             }
