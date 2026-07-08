@@ -458,6 +458,8 @@ extern const u8 BattleScript_BattlerFormChangeWithString[];
 extern const u8 BattleScript_DampPreventsAftermath[];
 extern const u8 BattleScript_HealingWishActivates[];
 extern const u8 BattleScript_LunarDanceActivates[];
+extern const u8 BattleScript_LastKissActivates[];
+extern const u8 BattleScript_LastKissHeals[];
 extern const u8 BattleScript_ShellTrapSetUp[];
 extern const u8 BattleScript_StealthRockActivates[];
 extern const u8 BattleScript_CouldntFullyProtect[];

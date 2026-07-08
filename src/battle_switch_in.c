@@ -210,6 +210,14 @@ static bool32 FirstEventBlockEvents(struct BattleContext *ctx)
             BattleScriptCall(BattleScript_LunarDanceActivates);
             effect = TRUE;
         }
+        else if (gBattleStruct->battlerState[battler].storedLastKiss)
+        {
+            gBattleStruct->battlerState[battler].storedLastKiss = FALSE;
+            SetHealAmount(battler, GetNonDynamaxMaxHP(battler));
+            gBattleScripting.battler = battler;
+            BattleScriptCall(BattleScript_LastKissHeals);
+            effect = TRUE;
+        }
         else if (gBattleStruct->zmove.healReplacement & 1u << battler)
         {
             gBattleStruct->zmove.healReplacement &= ~(1u << battler);

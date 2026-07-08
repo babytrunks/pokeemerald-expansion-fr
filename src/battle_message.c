@@ -893,6 +893,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNEATING]                           = COMPOUND_STRING("{B_OPPONENT_MON1_NAME} is eating!"),
     [STRINGID_ZAWARUDO]                             = COMPOUND_STRING("ZA WARUDO! Time has stopped.{PAUSE_UNTIL_PRESS}"),
     [STRINGID_TRANSFORMBATTLEREACT]                 = COMPOUND_STRING("{B_BUFF1} reacted to Giovanni's\nMega Ring!"),
+    [STRINGID_LASTKISSACTIVATES]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} left a parting gift!"),
+    [STRINGID_LASTKISSCAMETRUE]                     = COMPOUND_STRING("The last kiss blessed {B_SCR_NAME_WITH_PREFIX2}!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -958,7 +960,8 @@ const u16 gTerrainPreventsStringIds[] =
 const u16 gHealingWishStringIds[] =
 {
     STRINGID_HEALINGWISHCAMETRUE,
-    STRINGID_LUNARDANCECAMETRUE
+    STRINGID_LUNARDANCECAMETRUE,
+    STRINGID_LASTKISSCAMETRUE
 };
 
 const u16 gDmgHazardsStringIds[] =

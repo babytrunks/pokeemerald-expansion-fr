@@ -2133,6 +2133,10 @@
 	callnative BS_TryActivateSoulheart
 	.endm
 
+	.macro tryactivatelastkiss
+	callnative BS_TryActivateLastKiss
+	.endm
+
 	.macro playmoveanimation move:req
 	callnative BS_PlayMoveAnimation
 	.2byte \move

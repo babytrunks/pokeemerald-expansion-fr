@@ -577,6 +577,7 @@ struct BattlerState
     u32 forcedSwitch:1;
     u32 storedHealingWish:1;
     u32 storedLunarDance:1;
+    u32 storedLastKiss:1;
     u32 usedEjectItem:1;
     u32 sleepClauseEffectExempt:1; // Stores whether effect should be exempt from triggering Sleep Clause (Effect Spore)
     u32 usedMicleBerry:1;
@@ -588,7 +589,7 @@ struct BattlerState
     u32 commanderSpecies:11;
     u32 selectionScriptFinished:1;
     u32 switchIn:1;
-    u32 padding:3;
+    u32 padding:2;
     // End of Word
     u16 hpOnSwitchout;
 };

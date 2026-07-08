@@ -9806,7 +9806,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_LUVDISC"
               },
               {
                 "min_level": 5,
@@ -9816,7 +9816,7 @@
               {
                 "min_level": 10,
                 "max_level": 25,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_BARBOACH"
               },
               {
                 "min_level": 10,
@@ -30510,7 +30510,7 @@
               {
                 "min_level": 5,
                 "max_level": 15,
-                "species": "SPECIES_REMORAID"
+                "species": "SPECIES_LUVDISC"
               },
               {
                 "min_level": 15,

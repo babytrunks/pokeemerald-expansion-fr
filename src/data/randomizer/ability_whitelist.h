@@ -336,6 +336,7 @@ static const u16 sRandomizerAbilityWhitelist[] =
     ABILITY_FIRE_MANE,
     ABILITY_EELEVATE,
     ABILITY_CORROSIVE_GUTS, // Corrosion + Innards Out
+    ABILITY_LAST_KISS, // Healing Wish + revival on faint
 };
 
 #define ABILITY_WHITELIST_SIZE     (NELEMS(sRandomizerAbilityWhitelist))

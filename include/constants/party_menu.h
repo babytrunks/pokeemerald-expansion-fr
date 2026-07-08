@@ -50,6 +50,7 @@
 #define PARTY_ACTION_MINIGAME           13
 #define PARTY_ACTION_SEND_MON_TO_BOX    14
 #define PARTY_ACTION_CHOOSE_FAINTED_MON 15
+#define PARTY_ACTION_SEND_OUT_CAN_REVIVE 16 // Last Kiss: forced send-out that may also pick a fainted mon to revive
 
 // IDs for DisplayPartyMenuStdMessage, to display the message at the bottom of the party menu
 #define PARTY_MSG_CHOOSE_MON                0

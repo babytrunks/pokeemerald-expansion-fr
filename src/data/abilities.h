@@ -2545,4 +2545,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Poison hits Steel. Hurts foe when defeated."),
         .aiRating = 6,
     },
+    [ABILITY_LAST_KISS] =
+    {
+        .name = _("Last Kiss"),
+        .description = COMPOUND_STRING("Fully heals its replacement on fainting. Can revive an ally."),
+        .aiRating = 8,
+    },
 };

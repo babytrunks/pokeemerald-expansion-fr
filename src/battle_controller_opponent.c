@@ -555,7 +555,12 @@ static void OpponentHandleChoosePokemon(u32 battler)
         if (IsDoubleBattle())
             SetBattlerAiData(GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT), gAiLogicData);
 
-        chosenMonId = GetMostSuitableMonToSwitchInto(battler, switchType);
+        // Last Kiss: reviving a fainted mon costs nothing, so prefer it whenever possible.
+        chosenMonId = PARTY_SIZE;
+        if (gBattleResources->bufferA[battler][1] == PARTY_ACTION_SEND_OUT_CAN_REVIVE)
+            chosenMonId = GetBestMonToRevive(battler);
+        if (chosenMonId == PARTY_SIZE)
+            chosenMonId = GetMostSuitableMonToSwitchInto(battler, switchType);
         if (chosenMonId == PARTY_SIZE) // Advanced logic failed so we pick the next available battler
         {
             s32 battler1, battler2, firstId, lastId;

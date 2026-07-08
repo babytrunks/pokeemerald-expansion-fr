@@ -7464,13 +7464,21 @@ static void Cmd_jumpifcantswitch(void)
 // Opens the party screen to choose a new Pokémon to send out.
 // slotId is the Pokémon to replace.
 // Note that this is not used by the Switch action, only replacing fainted Pokémon or Baton Pass
+static u32 GetSendOutPartyActionId(u32 battler)
+{
+    if (gBattleStruct->battlerState[battler].storedLastKiss
+     && GetFirstFaintedPartyIndex(battler) != PARTY_SIZE)
+        return PARTY_ACTION_SEND_OUT_CAN_REVIVE;
+    return PARTY_ACTION_SEND_OUT;
+}
+
 static void ChooseMonToSendOut(u32 battler, u8 slotId)
 {
     gBattleStruct->battlerPartyIndexes[battler] = gBattlerPartyIndexes[battler];
     gBattleStruct->monToSwitchIntoId[battler] = PARTY_SIZE;
     gBattleStruct->field_93 &= ~(1u << battler);
 
-    BtlController_EmitChoosePokemon(battler, B_COMM_TO_CONTROLLER, PARTY_ACTION_SEND_OUT, slotId, ABILITY_NONE, 0, gBattleStruct->battlerPartyOrders[battler]);
+    BtlController_EmitChoosePokemon(battler, B_COMM_TO_CONTROLLER, GetSendOutPartyActionId(battler), slotId, ABILITY_NONE, 0, gBattleStruct->battlerPartyOrders[battler]);
     MarkBattlerForControllerExec(battler);
 }
 
@@ -7626,12 +7634,11 @@ static void Cmd_openpartyscreen(void)
     }
     else
     {
+        battler = GetBattlerForBattleScript(cmd->battler);
         if (cmd->partyScreenOptional)
             hitmarkerFaintBits = PARTY_ACTION_CHOOSE_MON; // Used here as the caseId for the EmitChoose function.
         else
-            hitmarkerFaintBits = PARTY_ACTION_SEND_OUT;
-
-        battler = GetBattlerForBattleScript(cmd->battler);
+            hitmarkerFaintBits = GetSendOutPartyActionId(battler);
         if (gSpecialStatuses[battler].faintedHasReplacement)
         {
             gBattlescriptCurrInstr = cmd->nextInstr;
@@ -7684,6 +7691,27 @@ static void Cmd_openpartyscreen(void)
     }
 }
 
+// Last Kiss: if the chosen replacement is fainted, revive it to 1 HP before it is
+// sent out; the stored switch-in heal then brings it to full HP. Direct SetMonData
+// is safe here because this ability never appears in link battles.
+static void TryReviveLastKissMon(u32 battler)
+{
+    u32 partyId = gBattleStruct->monToSwitchIntoId[battler];
+    struct Pokemon *party;
+
+    if (!gBattleStruct->battlerState[battler].storedLastKiss || partyId >= PARTY_SIZE)
+        return;
+
+    party = GetBattlerParty(battler);
+    if (GetMonData(&party[partyId], MON_DATA_HP) == 0
+     && GetMonData(&party[partyId], MON_DATA_SPECIES_OR_EGG) != SPECIES_EGG
+     && GetMonData(&party[partyId], MON_DATA_SPECIES) != SPECIES_NONE)
+    {
+        u16 hp = 1;
+        SetMonData(&party[partyId], MON_DATA_HP, &hp);
+    }
+}
+
 static void Cmd_switchhandleorder(void)
 {
     CMD_ARGS(u8 battler, u8 state);
@@ -7702,6 +7730,7 @@ static void Cmd_switchhandleorder(void)
             if (gBattleResources->bufferB[i][0] == CONTROLLER_CHOSENMONRETURNVALUE)
             {
                 gBattleStruct->monToSwitchIntoId[i] = gBattleResources->bufferB[i][1];
+                TryReviveLastKissMon(i);
                 if (!(gBattleStruct->field_93 & (1u << i)))
                 {
                     RecordedBattle_SetBattlerAction(i, gBattleResources->bufferB[i][1]);
@@ -7724,6 +7753,7 @@ static void Cmd_switchhandleorder(void)
     case 3:
         gBattleCommunication[0] = gBattleResources->bufferB[battler][1];
         gBattleStruct->monToSwitchIntoId[battler] = gBattleResources->bufferB[battler][1];
+        TryReviveLastKissMon(battler);
 
         if (gBattleTypeFlags & BATTLE_TYPE_LINK && gBattleTypeFlags & BATTLE_TYPE_MULTI)
         {
@@ -16951,6 +16981,27 @@ void BS_TryActivateSoulheart(void)
     }
     gBattleStruct->soulheartBattlerId = 0;
     gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_TryActivateLastKiss(void)
+{
+    NATIVE_ARGS();
+    u32 battler = gBattlerFainted;
+
+    if (GetBattlerAbility(battler) == ABILITY_LAST_KISS
+     && !gBattleStruct->battlerState[battler].storedLastKiss
+     && !NoAliveMonsForEitherParty()
+     && !HasNoMonsToSwitch(battler, PARTY_SIZE, PARTY_SIZE))
+    {
+        gBattleStruct->battlerState[battler].storedLastKiss = TRUE;
+        gBattleScripting.battler = battler;
+        BattleScriptPush(cmd->nextInstr);
+        gBattlescriptCurrInstr = BattleScript_LastKissActivates;
+    }
+    else
+    {
+        gBattlescriptCurrInstr = cmd->nextInstr;
+    }
 }
 
 void BS_PlayMoveAnimation(void)

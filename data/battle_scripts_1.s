@@ -2053,6 +2053,9 @@ BattleScript_EffectHealingWishGen4:
 BattleScript_HealingWishActivates::
 	setbyte cMULTISTRING_CHOOSER, 0
 	goto BattleScript_EffectHealingWishRestore
+BattleScript_LastKissHeals::
+	setbyte cMULTISTRING_CHOOSER, 2
+	goto BattleScript_EffectHealingWishRestore
 BattleScript_LunarDanceActivates::
 	setbyte cMULTISTRING_CHOOSER, 1
 	restoremovepp
@@ -2068,6 +2071,13 @@ BattleScript_EffectHealingWishRestore:
 	updatestatusicon BS_SCRIPTING
 	waitstate
 	printstring STRINGID_HEALINGWISHHEALED
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_LastKissActivates::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUpScripting
+	printstring STRINGID_LASTKISSACTIVATES
 	waitmessage B_WAIT_TIME_LONG
 	return
 
@@ -4347,6 +4357,7 @@ BattleScript_EffectCamouflage::
 BattleScript_FaintBattler::
 	tryillusionoff BS_FAINTED
 	tryactivategulpmissile
+	tryactivatelastkiss
 	playfaintcry BS_FAINTED
 	pause B_WAIT_TIME_LONG
 	dofaintanimation BS_FAINTED
