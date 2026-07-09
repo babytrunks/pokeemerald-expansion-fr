@@ -112,7 +112,7 @@ struct ShopData
 static EWRAM_DATA struct MartInfo sMartInfo = {0};
 static EWRAM_DATA struct ShopData *sShopData = NULL;
 static EWRAM_DATA struct ListMenuItem *sListMenuItems = NULL;
-static EWRAM_DATA u8 (*sItemNames)[ITEM_NAME_LENGTH + 2] = {0};
+static EWRAM_DATA u8 (*sItemNames)[ITEM_NAME_LENGTH + MOVE_NAME_LENGTH + 2] = {0};
 static EWRAM_DATA u8 sPurchaseHistoryId = 0;
 EWRAM_DATA struct ItemSlot gMartPurchaseHistory[SMARTSHOPPER_NUM_ITEMS] = {0};
 
@@ -583,10 +583,40 @@ static void BuyMenuBuildListMenuTemplate(void)
     sShopData->itemsShowed = gMultiuseListMenuTemplate.maxShowed;
 }
 
+// Smaller move-name variant so long TM move names clear the price column.
+static const u8 sText_TMListEntrySmallMove[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{FONT_SMALL_NARROWER}{STR_VAR_2}");
+
 static void BuyMenuSetListEntry(struct ListMenuItem *menuItem, u16 item, u8 *name)
 {
     if (sMartInfo.martType == MART_TYPE_NORMAL)
-        CopyItemName(item, name);
+    {
+        u16 move = ItemIdToBattleMoveId(item);
+        if (move != MOVE_NONE)
+        {
+            // TM/HM: show the move name alongside the TM/HM number, e.g. "No.09 Thunderbolt".
+            enum TMHMIndex tmhmIndex = GetItemTMHMIndex(item);
+            StringCopy(gStringVar2, GetMoveName(move));
+            if (tmhmIndex > NUM_TECHNICAL_MACHINES)
+            {
+                ConvertIntToDecimalStringN(gStringVar1, tmhmIndex - NUM_TECHNICAL_MACHINES, STR_CONV_MODE_LEADING_ZEROS, 1);
+                StringExpandPlaceholders(name, gText_NumberItem_HM);
+            }
+            else
+            {
+                ConvertIntToDecimalStringN(gStringVar1, tmhmIndex, STR_CONV_MODE_LEADING_ZEROS, 2);
+                // Long move names overlap the price in the list's font, so render
+                // them in a smaller font to reclaim horizontal space.
+                if (StringLength(gStringVar2) >= 9)
+                    StringExpandPlaceholders(name, sText_TMListEntrySmallMove);
+                else
+                    StringExpandPlaceholders(name, gText_NumberItem_TMBerry);
+            }
+        }
+        else
+        {
+            CopyItemName(item, name);
+        }
+    }
     else if (sMartInfo.martType == MART_TYPE_OUTFIT)
         BufferOutfitStrings(name, item, OUTFIT_BUFFER_NAME);
     else

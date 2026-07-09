@@ -22,6 +22,7 @@
 #include "follower_helper.h"
 #include "gpu_regs.h"
 #include "graphics.h"
+#include "item.h"
 #include "mauville_old_man.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
@@ -33,6 +34,7 @@
 #include "region_map.h"
 #include "rtc.h"
 #include "script.h"
+#include "script_menu.h"
 #include "sound.h"
 #include "sprite.h"
 #include "string_util.h"
@@ -44,6 +46,7 @@
 #include "constants/event_object_movement.h"
 #include "constants/abilities.h"
 #include "constants/battle.h"
+#include "constants/characters.h"
 #include "constants/event_objects.h"
 #include "constants/field_effects.h"
 #include "constants/items.h"
@@ -2642,6 +2645,56 @@ void SwapSelectedPokemonGender(void)
     UpdateMonPersonality(&mon->box, personality);
     CalculateMonStats(mon);
 }
+
+// Pushes every real Poké Ball onto the dynamic-multichoice stack, using each ball's
+// item id as the entry .id so DYN_MULTICHOICE_CB_SHOW_ITEM draws its icon and the
+// chosen id comes back in VAR_RESULT. Sets VAR_0x8006 to the selected mon's current
+// ball item so that ball starts highlighted. Name buffers are Alloc'd and freed later
+// by the multichoice teardown, exactly like ScrCmd_dynmultipush.
+void BuildBallSwapList(void)
+{
+    u32 ball;
+    struct Pokemon *mon = &gPlayerParty[gSpecialVar_0x8004];
+    enum PokeBall currentBall = GetMonData(mon, MON_DATA_POKEBALL, NULL);
+
+    for (ball = BALL_POKE; ball < POKEBALL_COUNT; ball++)
+    {
+        u16 itemId = gBallItemIds[ball];
+        struct ListMenuItem item;
+        u8 *nameBuffer = Alloc(100);
+        u8 *ptr = nameBuffer;
+
+        // Draw the ball the Pokémon is currently kept in with red text so the
+        // player can see it at a glance. ListMenuPrint -> AddTextPrinterParameterized4
+        // interprets these embedded control codes, so no menu-infra changes are needed.
+        if (ball == currentBall)
+        {
+            *(ptr++) = EXT_CTRL_CODE_BEGIN;
+            *(ptr++) = EXT_CTRL_CODE_COLOR;
+            *(ptr++) = TEXT_COLOR_RED;
+            *(ptr++) = EXT_CTRL_CODE_BEGIN;
+            *(ptr++) = EXT_CTRL_CODE_SHADOW;
+            *(ptr++) = TEXT_COLOR_LIGHT_RED;
+        }
+        CopyItemName(itemId, ptr);
+        item.name = nameBuffer;
+        item.id = itemId;
+        MultichoiceDynamic_PushElement(item);
+    }
+    gSpecialVar_0x8006 = gBallItemIds[currentBall];
+}
+
+// Applies the chosen ball (VAR_0x8005 = ball item id) to the selected party mon and
+// buffers the ball name into STR_VAR_2 for the confirmation message.
+void SetSelectedMonBall(void)
+{
+    struct Pokemon *mon = &gPlayerParty[gSpecialVar_0x8004];
+    u16 ballItem = gSpecialVar_0x8005;
+    u32 ballId = ItemIdToBallId(ballItem); // maps ITEM_*_BALL -> BALL_* enum stored in MON_DATA_POKEBALL
+    SetMonData(mon, MON_DATA_POKEBALL, &ballId);
+    CopyItemName(ballItem, gStringVar2);
+}
+
 void CheckFollowerPokemonIsDog(void)
 {
     u16 species = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));

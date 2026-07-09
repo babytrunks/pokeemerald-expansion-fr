@@ -159,6 +159,7 @@ EventScript_PkmnCenterNurse_Aide::
 	call_if_set FLAG_NES_GAVE_INFINITE_CANDY, PkmnCenterNurse_LevelCapOptions
 	msgbox PkmnCenterNurse_Text_WhatService
 	dynmultipush PkmnCenterNurse_Text_GenderSwap, 4
+	dynmultipush PkmnCenterNurse_Text_BallSwap, 5
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, PkmnCenterNurse_Aide_End
@@ -167,6 +168,7 @@ EventScript_PkmnCenterNurse_Aide::
 	case 2, PkmnCenterNurse_EventScript_PartyToLvlCap
 	case 3, PkmnCenterNurse_EventScript_PkmnToLvlCap
 	case 4, PkmnCenterNurse_EventScript_SwapGender
+	case 5, PkmnCenterNurse_EventScript_SwapBall
 	release
 	end
 
@@ -742,6 +744,26 @@ PkmnCenterNurse_EventScript_SwapGender:
 	release
 	end
 
+PkmnCenterNurse_EventScript_SwapBall:
+	msgbox PkmnCenterNurse_Text_DoYouWantToSwapBall MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, EventScript_PkmnCenterNurse_Aide
+	special ChoosePartyMon
+	waitstate
+	goto_if_ge VAR_0x8004, PARTY_SIZE, EventScript_PkmnCenterNurse_Aide
+	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, PkmnCenterNurse_CantOperateOnEgg
+	bufferpartymonnick STR_VAR_1, VAR_0x8004
+	msgbox PkmnCenterNurse_Text_WhichBall
+	callnative BuildBallSwapList
+	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x8006, DYN_MULTICHOICE_CB_SHOW_ITEM
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	copyvar VAR_0x8005, VAR_RESULT
+	callnative SetSelectedMonBall
+	msgbox PkmnCenterNurse_Text_BallSwapDone
+	release
+	end
+
 PkmnCenterNurse_CantOperateOnEgg::
 	msgbox PkmnCenterNurse_Text_CantOperateOnEgg
 	goto EventScript_PkmnCenterNurse_Aide
@@ -780,58 +802,73 @@ PkmnCenterNurse_Text_MysteryGift:
 	.string "Mystery Gift$"
 
 PkmnCenterNurse_Text_WhatService:
-	.string "{COLOR RED}What service would be of interest?$"
+	.string "What service would be of interest?$"
 
 PkmnCenterNurse_Text_CantOperateOnEgg:
-	.string "{COLOR RED}…I can't operate on an egg.$"
+	.string "…I can't operate on an egg.$"
 
 PkmnCenterNurse_Text_WhatNature:
-	.string "{COLOR RED}What nature would you like for {STR_VAR_1}?$"
+	.string "What nature would you like for {STR_VAR_1}?$"
 
 PkmnCenterNurse_Text_SetPartyToLevelCapDone: 
-	.string "{COLOR RED}…Okay, your team has been set to the\n"
+	.string "…Okay, your team has been set to the\n"
 	.string "Level Cap of {STR_VAR_2}.$"
 
 PkmnCenterNurse_Text_WhichPokemonDoYouWantLvlCap:
-	.string "{COLOR RED}Select the {PKMN} whose level you'd like to\n"
+	.string "Select the {PKMN} whose level you'd like to\n"
 	.string "raise to the Level Cap.$"
 
 PkmnCenterNurse_Text_RaisePokemonToLvlCap:
-	.string "{COLOR RED}Raise {STR_VAR_1} to\n"
+	.string "Raise {STR_VAR_1} to\n"
 	.string "the Level Cap?$"
 
 PkmnCenterNurse_Text_SetPartyToLevelCap:
-	.string "{COLOR RED}Shall I raise your party's levels to the\n"
+	.string "Shall I raise your party's levels to the\n"
 	.string "Level Cap?$"
 
 PkmnCenterNurse_Text_PkmnRaisedToCapDone:
-	.string "{COLOR RED}{STR_VAR_1} has been raised to the\n"
+	.string "{STR_VAR_1} has been raised to the\n"
 	.string "Level Cap of {STR_VAR_2}.$"
 
 PkmnCenterNurse_Text_InterestedInNatureChange:
-	.string "{COLOR RED}Are you interested in swapping\n"
+	.string "Are you interested in swapping\n"
 	.string "a Pokémon's nature?$"
 
 PkmnCenterNurse_Text_PkmnNatureChangeDone:
-	.string "{COLOR RED}…Okay, your {STR_VAR_1}'s Nature has\n"
+	.string "…Okay, your {STR_VAR_1}'s Nature has\n"
 	.string "been changed to {STR_VAR_2}.$"
 
 PkmnCenterNurse_Text_DoYouWantToSwapGender:
-	.string "{COLOR RED}Do you want to swap the Gender\n"
+	.string "Do you want to swap the Gender\n"
 	.string "of one of your Pokémon?$"
 
 PkmnCenterNurse_Text_CantOperateOnGenderless:
-	.string "{COLOR RED}…That Pokémon doesn't have a gender.$"
+	.string "…That Pokémon doesn't have a gender.$"
 
 PkmnCenterNurse_Text_CantSwapFixedGender:
-	.string "{COLOR RED}…I can't change that Pokémon's gender.$"
+	.string "…I can't change that Pokémon's gender.$"
 
 PkmnCenterNurse_Text_SwapGenderDone:
-	.string "{COLOR RED}…Okay, {STR_VAR_1}'s gender has\n"
+	.string "…Okay, {STR_VAR_1}'s gender has\n"
 	.string "been changed.$"
 
 PkmnCenterNurse_Text_SwapGenderOfPkmn:
-	.string "{COLOR RED}Swap the Gender of {STR_VAR_1}?$"
+	.string "Swap the Gender of {STR_VAR_1}?$"
+
+PkmnCenterNurse_Text_BallSwap:
+	.string "Poké Ball Swap$"
+
+PkmnCenterNurse_Text_DoYouWantToSwapBall:
+	.string "Do you want to change the Ball a\n"
+	.string "Pokémon is kept in?$"
+
+PkmnCenterNurse_Text_WhichBall:
+	.string "Which Ball would you like for\n"
+	.string "{STR_VAR_1}?$"
+
+PkmnCenterNurse_Text_BallSwapDone:
+	.string "…Okay, {STR_VAR_1} is now\n"
+	.string "kept in a {STR_VAR_2}.$"
 
 PkmnCenterNurse_Text_Swift:
 	.string "Swift$"

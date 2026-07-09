@@ -4428,7 +4428,7 @@ static const struct LevelUpMove sEeveeLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sVaporeonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_WATER_GUN),
+    LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE( 1, MOVE_SWIFT),
     LEVEL_UP_MOVE( 1, MOVE_JOVIAL_BASH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -4441,7 +4441,7 @@ static const struct LevelUpMove sVaporeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(15, MOVE_BABY_DOLL_EYES),
-    LEVEL_UP_MOVE(19, MOVE_WATER_PULSE),
+    LEVEL_UP_MOVE(21, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE(24, MOVE_HAZE),
     LEVEL_UP_MOVE(27, MOVE_AURORA_BEAM),
     LEVEL_UP_MOVE(30, MOVE_AQUA_RING),
@@ -4458,7 +4458,7 @@ static const struct LevelUpMove sVaporeonLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sJolteonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SHOCK_WAVE),
+    LEVEL_UP_MOVE( 1, MOVE_THUNDERSHOCK),
     LEVEL_UP_MOVE( 1, MOVE_HIDDEN_POWER),
     LEVEL_UP_MOVE( 1, MOVE_JOVIAL_BASH),
     LEVEL_UP_MOVE( 1, MOVE_SWIFT),
@@ -4488,7 +4488,7 @@ static const struct LevelUpMove sJolteonLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sFlareonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_INCINERATE),
+    LEVEL_UP_MOVE( 1, MOVE_EMBER),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE( 1, MOVE_JOVIAL_BASH),
     LEVEL_UP_MOVE( 1, MOVE_SWIFT),
@@ -4503,6 +4503,7 @@ static const struct LevelUpMove sFlareonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(12, MOVE_BABY_DOLL_EYES),
     LEVEL_UP_MOVE(15, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE(19, MOVE_BITE),
+    LEVEL_UP_MOVE(21, MOVE_INCINERATE),
     LEVEL_UP_MOVE(23, MOVE_DOUBLE_KICK),
     LEVEL_UP_MOVE(27, MOVE_LAVA_PLUME),
     LEVEL_UP_MOVE(33, MOVE_BODY_SLAM),
@@ -4531,8 +4532,8 @@ static const struct LevelUpMove sEspeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 8, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_BABY_DOLL_EYES),
     LEVEL_UP_MOVE(15, MOVE_BITE),
-    LEVEL_UP_MOVE(19, MOVE_PSYBEAM),
-    LEVEL_UP_MOVE(23, MOVE_HIDDEN_POWER),
+    LEVEL_UP_MOVE(22, MOVE_PSYBEAM),
+    LEVEL_UP_MOVE(24, MOVE_HIDDEN_POWER),
     LEVEL_UP_MOVE(27, MOVE_MORNING_SUN),
     LEVEL_UP_MOVE(33, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(35, MOVE_POWER_SWAP),
@@ -4548,7 +4549,6 @@ static const struct LevelUpMove sEspeonLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sUmbreonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_SNARL),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_JOVIAL_BASH),
     LEVEL_UP_MOVE( 1, MOVE_MEAN_LOOK),
@@ -4580,7 +4580,7 @@ static const struct LevelUpMove sUmbreonLevelUpLearnset[] = {
 #if P_GEN_4_CROSS_EVOS
 //done
 static const struct LevelUpMove sLeafeonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_RAZOR_LEAF),
+    LEVEL_UP_MOVE( 1, MOVE_LEAFAGE),
     LEVEL_UP_MOVE( 1, MOVE_JOVIAL_BASH),
     LEVEL_UP_MOVE( 1, MOVE_SWIFT),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
@@ -4607,8 +4607,9 @@ static const struct LevelUpMove sLeafeonLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//done
 static const struct LevelUpMove sGlaceonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_ICY_WIND),
+    LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_JOVIAL_BASH),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
@@ -4622,6 +4623,7 @@ static const struct LevelUpMove sGlaceonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(15, MOVE_ICE_SHARD),
     LEVEL_UP_MOVE(19, MOVE_BITE),
     LEVEL_UP_MOVE(23, MOVE_MUD_SHOT),
+    LEVEL_UP_MOVE(25, MOVE_ICY_WIND),
     LEVEL_UP_MOVE(27, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE(33, MOVE_ICE_BEAM),
     LEVEL_UP_MOVE(37, MOVE_FREEZE_DRY),
@@ -4637,9 +4639,10 @@ static const struct LevelUpMove sGlaceonLevelUpLearnset[] = {
 #endif //P_GEN_4_CROSS_EVOS
 
 #if P_GEN_6_CROSS_EVOS
+//done
 static const struct LevelUpMove sSylveonLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_DRAINING_KISS),
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_DISARMING_VOICE),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
