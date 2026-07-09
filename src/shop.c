@@ -21,6 +21,7 @@
 #include "menu.h"
 #include "menu_helpers.h"
 #include "money.h"
+#include "coins.h"
 #include "move.h"
 #include "overworld.h"
 #include "palette.h"
@@ -35,6 +36,7 @@
 #include "text_window.h"
 #include "tv.h"
 #include "outfit_menu.h"
+#include "constants/coins.h"
 #include "constants/decorations.h"
 #include "constants/event_objects.h"
 #include "constants/items.h"
@@ -73,6 +75,7 @@ enum {
     MART_TYPE_DECOR,
     MART_TYPE_DECOR2,
     MART_TYPE_OUTFIT,
+    MART_TYPE_PRIZE, // Game Corner prizes, bought with Coins
 };
 
 // shop view window NPC info enum
@@ -90,6 +93,7 @@ struct MartInfo
     void (*callback)(void);
     const struct MenuAction *menuActions;
     const u16 *itemList;
+    const struct PrizeItem *prizeList; // used when martType == MART_TYPE_PRIZE
     u16 itemCount;
     u8 windowId;
     u8 martType;
@@ -157,6 +161,15 @@ static void Task_ReturnToItemListAfterItemPurchase(u8 taskId);
 static void Task_ReturnToItemListAfterDecorationPurchase(u8 taskId);
 static void Task_ReturnToItemListAfterOutfitPurchase(u8 taskId);
 static void Task_HandleShopMenuBuy(u8 taskId);
+static void SetShopPrizesForSale(const struct PrizeItem *prizes);
+static u16 GetMartItemIdAt(u16 index);
+static u16 GetPrizeCoinCost(u16 itemId);
+static void BuyMenuPrintCoinAmount(void);
+
+// Confirm/decline text for the Coin-based Game Corner prize shop.
+static const u8 sText_YouWantedVar1ThatllBeVar2Coins[] = _("You wanted the {STR_VAR_1}?\nThat'll be {STR_VAR_2} Coins.");
+static const u8 sText_NotEnoughCoins[] = _("You don't have enough Coins.");
+static const u8 sText_Var1Coins[] = _("{STR_VAR_1} C");
 static void Task_HandleShopMenuSell(u8 taskId);
 static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, struct ListMenu *list);
 static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y);
@@ -396,6 +409,45 @@ static void SetShopItemsForSale(const u16 *items)
     }
 }
 
+static void SetShopPrizesForSale(const struct PrizeItem *prizes)
+{
+    u16 i = 0;
+
+    sMartInfo.prizeList = prizes;
+    sMartInfo.itemCount = 0;
+
+    // Read prizes until the ITEM_NONE terminator is reached.
+    while (sMartInfo.prizeList[i].itemId != ITEM_NONE)
+    {
+        sMartInfo.itemCount++;
+        i++;
+    }
+}
+
+// Returns the item id at a given list index, accounting for the mart type's
+// backing list (prize marts store {itemId, coinCost} pairs).
+static u16 GetMartItemIdAt(u16 index)
+{
+    if (sMartInfo.martType == MART_TYPE_PRIZE)
+        return sMartInfo.prizeList[index].itemId;
+
+    return sMartInfo.itemList[index];
+}
+
+// Returns the Coin cost of a prize item, or 0 if it isn't in the prize list.
+static u16 GetPrizeCoinCost(u16 itemId)
+{
+    u16 i;
+
+    for (i = 0; i < sMartInfo.itemCount; i++)
+    {
+        if (sMartInfo.prizeList[i].itemId == itemId)
+            return sMartInfo.prizeList[i].coinCost;
+    }
+
+    return 0;
+}
+
 static void Task_ShopMenu(u8 taskId)
 {
     s8 inputCode = Menu_ProcessInputNoWrap();
@@ -566,7 +618,7 @@ static void BuyMenuBuildListMenuTemplate(void)
     sListMenuItems = Alloc((sMartInfo.itemCount + 1) * sizeof(*sListMenuItems));
     sItemNames = Alloc((sMartInfo.itemCount + 1) * sizeof(*sItemNames));
     for (i = 0; i < sMartInfo.itemCount; i++)
-        BuyMenuSetListEntry(&sListMenuItems[i], sMartInfo.itemList[i], sItemNames[i]);
+        BuyMenuSetListEntry(&sListMenuItems[i], GetMartItemIdAt(i), sItemNames[i]);
 
     StringCopy(sItemNames[i], gText_Cancel2);
     sListMenuItems[i].name = sItemNames[i];
@@ -588,7 +640,7 @@ static const u8 sText_TMListEntrySmallMove[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{FO
 
 static void BuyMenuSetListEntry(struct ListMenuItem *menuItem, u16 item, u8 *name)
 {
-    if (sMartInfo.martType == MART_TYPE_NORMAL)
+    if (sMartInfo.martType == MART_TYPE_NORMAL || sMartInfo.martType == MART_TYPE_PRIZE)
     {
         u16 move = ItemIdToBattleMoveId(item);
         if (move != MOVE_NONE)
@@ -641,7 +693,7 @@ static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, s
     sShopData->iconSlot ^= 1;
     if (item != LIST_CANCEL)
     {
-        if (sMartInfo.martType == MART_TYPE_NORMAL)
+        if (sMartInfo.martType == MART_TYPE_NORMAL || sMartInfo.martType == MART_TYPE_PRIZE)
             description = GetItemDescription(item);
         else if (sMartInfo.martType == MART_TYPE_OUTFIT)
             description = gOutfits[item].name; // the actual desc is a bit too long oops
@@ -671,6 +723,10 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
                 STR_CONV_MODE_LEFT_ALIGN,
                 6);
         }
+        else if (sMartInfo.martType == MART_TYPE_PRIZE)
+        {
+            ConvertIntToDecimalStringN(gStringVar1, GetPrizeCoinCost(itemId), STR_CONV_MODE_LEFT_ALIGN, MAX_COIN_DIGITS);
+        }
         else if (sMartInfo.martType == MART_TYPE_OUTFIT)
         {
             ConvertIntToDecimalStringN(gStringVar1, GetOutfitPrice(itemId), STR_CONV_MODE_LEFT_ALIGN, 6);
@@ -684,10 +740,22 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y)
                 6);
         }
 
-        if ((GetItemImportance(itemId) && (CheckBagHasItem(itemId, 1) || CheckPCHasItem(itemId, 1)))) //|| GetOutfitStatus(itemId))
+        if (sMartInfo.martType == MART_TYPE_PRIZE)
+        {
+            // Prizes are one-time purchases: mark Sold Out once already owned.
+            if (CheckBagHasItem(itemId, 1) || CheckPCHasItem(itemId, 1))
+                StringCopy(gStringVar4, gText_SoldOut);
+            else
+                StringExpandPlaceholders(gStringVar4, sText_Var1Coins);
+        }
+        else if ((GetItemImportance(itemId) && (CheckBagHasItem(itemId, 1) || CheckPCHasItem(itemId, 1)))) //|| GetOutfitStatus(itemId))
+        {
             StringCopy(gStringVar4, gText_SoldOut);
+        }
         else
+        {
             StringExpandPlaceholders(gStringVar4, gText_PokedollarVar1);
+        }
         x = GetStringRightAlignXOffset(FONT_NARROW, gStringVar4, 120);
         AddTextPrinterParameterized4(windowId, FONT_NARROW, x, y, 0, 0, sShopBuyMenuTextColors[COLORID_ITEM_LIST], TEXT_SKIP_DRAW, gStringVar4);
     }
@@ -731,7 +799,7 @@ static void BuyMenuAddItemIcon(u16 item, u8 iconSlot)
     if (*spriteIdPtr != SPRITE_NONE)
         return;
 
-    if (sMartInfo.martType == MART_TYPE_NORMAL || item == ITEM_LIST_END)
+    if (sMartInfo.martType == MART_TYPE_NORMAL || sMartInfo.martType == MART_TYPE_PRIZE || item == ITEM_LIST_END)
     {
         spriteId = AddItemIconSprite(iconSlot + TAG_ITEM_ICON_BASE, iconSlot + TAG_ITEM_ICON_BASE, item);
         if (spriteId != MAX_SPRITES)
@@ -823,12 +891,33 @@ static void BuyMenuDisplayMessage(u8 taskId, const u8 *text, TaskFunc callback)
     ScheduleBgCopyTilemapToVram(0);
 }
 
+// Draws the player's Coin total into the top-left WIN_MONEY slot, reusing the
+// shop's already-loaded window-border gfx (tile 1, palette 13). The Coin count
+// is right-aligned to a fixed width so refreshes overwrite cleanly.
+static void BuyMenuPrintCoinAmount(void)
+{
+    u32 x;
+
+    ConvertIntToDecimalStringN(gStringVar1, GetCoins(), STR_CONV_MODE_RIGHT_ALIGN, MAX_COIN_DIGITS);
+    StringExpandPlaceholders(gStringVar4, gText_Coins);
+    x = GetStringRightAlignXOffset(FONT_NORMAL, gStringVar4, 0x48);
+    AddTextPrinterParameterized(WIN_MONEY, FONT_NORMAL, gStringVar4, x, 1, 0, NULL);
+}
+
 static void BuyMenuDrawGraphics(void)
 {
     BuyMenuDrawMapGraphics();
     BuyMenuCopyMenuBgToBg1TilemapBuffer();
-    AddMoneyLabelObject(19, 11);
-    PrintMoneyAmountInMoneyBoxWithBorder(WIN_MONEY, 1, 13, GetMoney(&gSaveBlock1Ptr->money));
+    if (sMartInfo.martType == MART_TYPE_PRIZE)
+    {
+        DrawStdFrameWithCustomTileAndPalette(WIN_MONEY, FALSE, 1, 13);
+        BuyMenuPrintCoinAmount();
+    }
+    else
+    {
+        AddMoneyLabelObject(19, 11);
+        PrintMoneyAmountInMoneyBoxWithBorder(WIN_MONEY, 1, 13, GetMoney(&gSaveBlock1Ptr->money));
+    }
     ScheduleBgCopyTilemapToVram(0);
     ScheduleBgCopyTilemapToVram(1);
     ScheduleBgCopyTilemapToVram(2);
@@ -1055,12 +1144,34 @@ static void Task_BuyMenu(u8 taskId)
 
             if (sMartInfo.martType == MART_TYPE_NORMAL)
                 sShopData->totalCost = (GetItemPrice(itemId) >> IsPokeNewsActive(POKENEWS_SLATEPORT));
+            else if (sMartInfo.martType == MART_TYPE_PRIZE)
+                sShopData->totalCost = GetPrizeCoinCost(itemId);
             else if (sMartInfo.martType == MART_TYPE_OUTFIT)
                 sShopData->totalCost = GetOutfitPrice(itemId);
             else
                 sShopData->totalCost = gDecorations[itemId].price;
 
-            if ((GetItemImportance(itemId) && (CheckBagHasItem(itemId, 1) || CheckPCHasItem(itemId, 1))) )
+            if (sMartInfo.martType == MART_TYPE_PRIZE)
+            {
+                // One prize per purchase; sold out once already owned; paid in Coins.
+                if (CheckBagHasItem(itemId, 1) || CheckPCHasItem(itemId, 1))
+                {
+                    BuyMenuDisplayMessage(taskId, gText_ThatItemIsSoldOut, BuyMenuReturnToItemList);
+                }
+                else if (GetCoins() < sShopData->totalCost)
+                {
+                    BuyMenuDisplayMessage(taskId, sText_NotEnoughCoins, BuyMenuReturnToItemList);
+                }
+                else
+                {
+                    CopyItemName(itemId, gStringVar1);
+                    ConvertIntToDecimalStringN(gStringVar2, sShopData->totalCost, STR_CONV_MODE_LEFT_ALIGN, MAX_COIN_DIGITS);
+                    StringExpandPlaceholders(gStringVar4, sText_YouWantedVar1ThatllBeVar2Coins);
+                    tItemCount = 1;
+                    BuyMenuDisplayMessage(taskId, gStringVar4, BuyMenuConfirmPurchase);
+                }
+            }
+            else if ((GetItemImportance(itemId) && (CheckBagHasItem(itemId, 1) || CheckPCHasItem(itemId, 1))) )
                 BuyMenuDisplayMessage(taskId, gText_ThatItemIsSoldOut, BuyMenuReturnToItemList);
             else if (!IsEnoughMoney(&gSaveBlock1Ptr->money, sShopData->totalCost))
             {
@@ -1191,7 +1302,7 @@ static void BuyMenuTryMakePurchase(u8 taskId)
 
     PutWindowTilemap(WIN_ITEM_LIST);
 
-    if (sMartInfo.martType == MART_TYPE_NORMAL)
+    if (sMartInfo.martType == MART_TYPE_NORMAL || sMartInfo.martType == MART_TYPE_PRIZE)
     {
         if (AddBagItem(tItemId, tItemCount) == TRUE)
         {
@@ -1228,6 +1339,16 @@ static void BuyMenuTryMakePurchase(u8 taskId)
 static void BuyMenuSubtractMoney(u8 taskId)
 {
     IncrementGameStat(GAME_STAT_SHOPPED);
+
+    if (sMartInfo.martType == MART_TYPE_PRIZE)
+    {
+        RemoveCoins(sShopData->totalCost);
+        PlaySE(SE_SHOP);
+        BuyMenuPrintCoinAmount();
+        gTasks[taskId].func = Task_ReturnToItemListAfterDecorationPurchase;
+        return;
+    }
+
     RemoveMoney(&gSaveBlock1Ptr->money, sShopData->totalCost);
     PlaySE(SE_SHOP);
     PrintMoneyAmountInMoneyBox(WIN_MONEY, GetMoney(&gSaveBlock1Ptr->money), 0);
@@ -1328,7 +1449,9 @@ static void Task_ExitBuyMenu(u8 taskId)
 {
     if (!gPaletteFade.active)
     {
-        RemoveMoneyLabelObject();
+        // The prize (Coin) mart never creates the money label sprite.
+        if (sMartInfo.martType != MART_TYPE_PRIZE)
+            RemoveMoneyLabelObject();
         BuyMenuFreeMemory();
         SetMainCallback2(CB2_ReturnToField);
         DestroyTask(taskId);
@@ -1399,5 +1522,15 @@ void CreateOutfitShopMenu(const u16 *itemsForSale)
 {
     CreateShopMenu(MART_TYPE_OUTFIT);
     SetShopItemsForSale(itemsForSale);
+    SetShopMenuCallback(ScriptContext_Enable);
+}
+
+// Opens the standard buy menu for Game Corner prizes, paid for with Coins.
+// prizes is an array of {itemId, coinCost} pairs terminated by ITEM_NONE.
+void CreateGameCornerPrizeMenu(const struct PrizeItem *prizes)
+{
+    CreateShopMenu(MART_TYPE_PRIZE);
+    SetShopPrizesForSale(prizes);
+    ClearItemPurchases();
     SetShopMenuCallback(ScriptContext_Enable);
 }

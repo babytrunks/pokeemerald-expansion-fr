@@ -2616,6 +2616,19 @@ bool8 ScrCmd_pokemartdecoration2(struct ScriptContext *ctx)
     return TRUE;
 }
 
+// Opens the buy menu for Game Corner prizes, paid for with Coins. The pointer is
+// to an array of {itemId, coinCost} pairs terminated by ITEM_NONE.
+bool8 ScrCmd_prizemart(struct ScriptContext *ctx)
+{
+    const void *ptr = (void *)ScriptReadWord(ctx);
+
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
+
+    CreateGameCornerPrizeMenu(ptr);
+    ScriptContext_Stop();
+    return TRUE;
+}
+
 bool8 ScrCmd_playslotmachine(struct ScriptContext *ctx)
 {
     u8 machineId = VarGet(ScriptReadHalfword(ctx));

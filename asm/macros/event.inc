@@ -1331,6 +1331,25 @@
 	.4byte \products
 	.endm
 
+	@ Opens the buy menu for Game Corner prizes, paid for with Coins.
+	@ prizes is a list of 'prize_item' entries (preceded by an .align 2) terminated by 'prizelistend'.
+	.macro prizemart prizes:req
+	.byte SCR_OP_PRIZEMART
+	.4byte \prizes
+	.endm
+
+	@ A single Game Corner prize entry: an item and its cost in Coins. See struct PrizeItem.
+	.macro prize_item itemId:req, cost:req
+	.2byte \itemId
+	.2byte \cost
+	.endm
+
+	@ Used as the endpoint for a prizemart prize list.
+	.macro prizelistend
+	.2byte ITEM_NONE
+	.2byte 0
+	.endm
+
 	@ Starts up the slot machine minigame. id is a SLOT_MACHINE_* value that influences probabilities of certain reel outcomes.
 	.macro playslotmachine id:req
 	.byte SCR_OP_PLAYSLOTMACHINE

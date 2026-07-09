@@ -262,6 +262,7 @@ gScriptCmdTable::
 	script_cmd_table_entry SCR_OP_GETOUTFITSTATUS               ScrCmd_getoutfitstatus              requests_effects=1  @ 0xed
 	script_cmd_table_entry SCR_OP_BUFFEROUTFITSTR               ScrCmd_bufferoutfitstr              requests_effects=1  @ 0xee
 	script_cmd_table_entry SCR_OP_POKEMARTOUTFIT                ScrCmd_pokemartoutfit               requests_effects=1  @ 0xef
+	script_cmd_table_entry SCR_OP_PRIZEMART                     ScrCmd_prizemart,                   requests_effects=1  @ 0xf0
 	.if ALLOCATE_SCRIPT_CMD_TABLE
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop
