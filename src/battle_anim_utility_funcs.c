@@ -145,7 +145,19 @@ void AnimTask_SetCamouflageBlend(u8 taskId)
 void AnimTask_BlendParticle(u8 taskId)
 {
     u8 paletteIndex = IndexOfSpritePaletteTag(gBattleAnimArgs[0]);
-    u32 selectedPalettes = 1 << (paletteIndex + 16);
+    u32 selectedPalettes;
+
+    // If the tag's palette never loaded (sprite palette slots exhausted),
+    // 1 << (0xFF + 16) wraps to bit 15 and the blend hits palettes it was
+    // never meant to touch. Skip the blend instead.
+    if (paletteIndex == 0xFF)
+    {
+        DebugPrintf("AnimTask_BlendParticle: palette tag %d not loaded, skipping blend", gBattleAnimArgs[0]);
+        DestroyAnimVisualTask(taskId);
+        return;
+    }
+
+    selectedPalettes = 1 << (paletteIndex + 16);
     StartBlendAnimSpriteColor(taskId, selectedPalettes);
 }
 
@@ -170,7 +182,9 @@ static void AnimTask_BlendSpriteColor_Step2(u8 taskId)
     if (gTasks[taskId].data[9] == gTasks[taskId].data[2])
     {
         gTasks[taskId].data[9] = 0;
-        selectedPalettes = gTasks[taskId].data[0] | (gTasks[taskId].data[1] << 16);
+        // Task data is s16; without the casts a mask with bit 15 set (BG palette 15)
+        // sign-extends and selects all 16 OBJ palettes.
+        selectedPalettes = (u16)gTasks[taskId].data[0] | ((u16)gTasks[taskId].data[1] << 16);
         while (selectedPalettes != 0)
         {
             if (selectedPalettes & 1)

@@ -324,6 +324,19 @@ u32 GetIndicatorPalTag(u32 battler)
 
 #define INDICATOR_SIZE (8 * 16 / 2)
 
+static const struct SpritePalette *GetIndicatorSpritePalette(u32 palTag)
+{
+    switch (palTag)
+    {
+    case TAG_MEGA_INDICATOR_PAL:
+        return &sSpritePalette_MegaIndicator;
+    case TAG_TERA_INDICATOR_PAL:
+        return &sSpritePalette_TeraIndicator;
+    default:
+        return &sSpritePalette_MiscIndicator;
+    }
+}
+
 void UpdateIndicatorVisibilityAndType(u32 healthboxId, bool32 invisible)
 {
     u32 battler = gSprites[healthboxId].hMain_Battler;
@@ -335,7 +348,16 @@ void UpdateIndicatorVisibilityAndType(u32 healthboxId, bool32 invisible)
 
     if (palTag != TAG_NONE)
     {
-        sprite->oam.paletteNum = IndexOfSpritePaletteTag(palTag);
+        u32 palSlot = IndexOfSpritePaletteTag(palTag);
+
+        // Battle anims can leave this slot blended in gPlttBufferFaded, and nothing
+        // re-syncs sprite palettes mid-battle, so rewrite the colors on every update.
+        // Skipped during fades: LoadPalette would overwrite the faded buffer at full
+        // brightness, and the fade itself restores the slot from the unfaded buffer.
+        if (palSlot != 0xFF && !gPaletteFade.active)
+            LoadPalette(GetIndicatorSpritePalette(palTag)->data, OBJ_PLTT_ID(palSlot), PLTT_SIZE_4BPP);
+
+        sprite->oam.paletteNum = palSlot;
         sprite->invisible = invisible;
 
         u32 *dst = (u32 *)(OBJ_VRAM0 + TILE_SIZE_4BPP * GetSpriteTileStartByTag(BATTLER_INDICATOR_TAG + battler));
