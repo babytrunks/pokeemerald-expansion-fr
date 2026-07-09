@@ -2578,44 +2578,69 @@ void GetFollowerPokemonGender(void)
 
 void GetSelectedPokemonGender(void)
 {
-    gSpecialVar_Result = GetMonGender(&gPlayerParty[gSpecialVar_0x8004]);
-    GetMonNickname(&gPlayerParty[gSpecialVar_0x8004], gStringVar1);
+    struct Pokemon *mon = &gPlayerParty[gSpecialVar_0x8004];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES);
+
+    GetMonNickname(mon, gStringVar1);
+
+    // Report whether the selected Pokémon's gender can be swapped so the script
+    // can refuse it before prompting. GetMonGender only ever returns MON_MALE,
+    // MON_FEMALE or MON_GENDERLESS, so 0xFD is a safe "can't swap" sentinel.
+    switch (gSpeciesInfo[species].genderRatio)
+    {
+    case MON_GENDERLESS:
+        gSpecialVar_Result = MON_GENDERLESS; // truly genderless
+        break;
+    case MON_MALE:
+    case MON_FEMALE:
+        gSpecialVar_Result = 0xFD; // fixed single-gender species: cannot be swapped
+        break;
+    default:
+        gSpecialVar_Result = GetMonGender(mon); // dual-gender: MON_MALE or MON_FEMALE
+        break;
+    }
 }
 
 void SwapSelectedPokemonGender(void)
 {
-    struct Pokemon* mon = &gPlayerParty[gSpecialVar_0x8004];
-	u32 speciesPersonality = GetMonData(mon, MON_DATA_PERSONALITY);
-	u16 species = GetMonData(mon, MON_DATA_SPECIES);
-	u8 nature = GetNatureFromPersonality(speciesPersonality);
-	u8 gender = GetMonGender(mon);
+    struct Pokemon *mon = &gPlayerParty[gSpecialVar_0x8004];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES);
+    u32 oldPersonality = GetMonData(mon, MON_DATA_PERSONALITY);
+    u8 nature = GetNatureFromPersonality(oldPersonality);
+    u8 gender = GetMonGender(mon);
+    u8 abilityBit = oldPersonality & 1;
+    u8 genderToSwapTo;
+    u32 personality;
 
-	u8 abilityBit = speciesPersonality & 1;
-	u8 genderToSwapTo;
-	u32 personality;
-	if (gender == MON_MALE) {
-		genderToSwapTo = MON_FEMALE;
-	}
-	else {
-		genderToSwapTo = MON_MALE; 
-	}
-    // bool8 isShiny = IsMonShiny(mon);
-	// u32 trainerId = GetMonData(mon, MON_DATA_OT_ID, NULL);
-	// u16 sid = HIHALF(trainerId);
-	// u16 tid = LOHALF(trainerId);
+    // Defensive guard: only dual-gender species can be swapped. Without this the
+    // reroll loop below would spin forever on a single-gender/genderless species.
+    switch (gSpeciesInfo[species].genderRatio)
+    {
+    case MON_MALE:
+    case MON_FEMALE:
+    case MON_GENDERLESS:
+        return;
+    }
+
+    genderToSwapTo = (gender == MON_MALE) ? MON_FEMALE : MON_MALE;
+
+    // Find a personality that yields the opposite gender while keeping the ability
+    // slot (bit 0) and nature (personality % NUM_NATURES, read directly by GetNature)
+    // intact.
     do
-	{
-		personality = Random32(); 
-		personality &= ~(1);
-		personality |= abilityBit;   
-		if(GetGenderFromSpeciesAndPersonality(species, personality) == genderToSwapTo){
-			if(nature == GetNatureFromPersonality(personality))  
-				break; // we found a personality with the desired nature  
-		}  
-	} while (TRUE);
- 
-	SetMonData(mon, MON_DATA_PERSONALITY, &personality);
-	CalculateMonStats(mon);
+    {
+        personality = Random32();
+        personality &= ~1u;
+        personality |= abilityBit;
+    } while (GetGenderFromSpeciesAndPersonality(species, personality) != genderToSwapTo
+          || GetNatureFromPersonality(personality) != nature);
+
+    // UpdateMonPersonality re-keys and re-orders the encrypted substructures and
+    // fixes the checksum (preventing a Bad Egg), and preserves shininess, hidden
+    // nature and Tera type. Setting MON_DATA_PERSONALITY directly would corrupt the
+    // Pokémon.
+    UpdateMonPersonality(&mon->box, personality);
+    CalculateMonStats(mon);
 }
 void CheckFollowerPokemonIsDog(void)
 {

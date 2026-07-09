@@ -89,16 +89,11 @@ FuchsiaCity_PokemonCenter_1F_Text_VisitSafariZoneForPokedex::
     .string "there.$"
 
 FuchsiaCity_PokemonCenter_1F_Text_OakSeviiResearch::
-    .string "Oh, {PLAYER}! I heard about you\n"
-    .string "from my colleague back in\l"
-    .string "Vermilion City!\p"
-    .string "I'm also one of Professor Oak's\n"
-    .string "aides, studying the Pokémon of\l"
-    .string "the Sevii Islands.\p"
-    .string "We've turned up a few more\n"
-    .string "interesting specimens since then!\p"
-    .string "Go on, have your pick and help\n"
-    .string "further his research!$"
+    .string "Oh, {PLAYER}! Good to see you again.\n"
+    .string "We've turned up a few more interesting\n"
+    .string "Seviian forms since we last met!\p"
+    .string "Go on, have your pick and help further\n"
+    .string "our research!$"
 
 FuchsiaCity_PokemonCenter_1F_Text_AideMustLeave::
     .string "Splendid choice!\p"

@@ -12765,54 +12765,75 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+Dynamic Level Ratio: 95
+Mugshot: Yellow
+Boss: Yes
 
-Pidgeot
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Feather Dance
-- Wing Attack
-- Gust
+Staraptor @ Sharp Beak
+Nature: Jolly
+Ability: Intimidate
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Brave Bird
+- U Turn
+- Close Combat
 - Quick Attack
 
-Rhyhorn
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
+Kingambit @ Chople Berry
+Nature: Adamant
+Ability: Supreme Overlord
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+- Swords Dance
+- Iron Head
+- Knock Off
+- Sucker Punch
 
-Growlithe
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Flame Wheel
-- Take Down
-- Leer
-- Agility
+Sandy-Shocks @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 66
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 SpD / 252 Spe
+- Thunderbolt
+- Earth Power
+- Hidden Power
+- Volt Switch
 
-Exeggcute
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Solar Beam
-- Sleep Powder
-- Poison Powder
-- Stun Spore
+Iron-Bundle @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 66
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Hydro Pump
+- Freeze Dry
+- Flip Turn
+- Ice Beam
 
-Alakazam
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Psychic
-- Calm Mind
-- Future Sight
-- Disable
+Sneasler @ Focus Sash
+Nature: Jolly
+Ability: Unburden
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Dire Claw
+- Close Combat
+- U Turn
+- Fire Punch
 
-Blastoise
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Water Gun
-- Rain Dance
-- Bite
-- Rapid Spin
+Blastoise @ Blastoisinite
+Nature: Timid
+Ability: Rain Dish
+Level: 66
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Shell Smash
+- Dark Pulse
+- Hydro Pump
+- Ice Beam
 
 === TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
 Name: Terry
@@ -12822,54 +12843,74 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+Dynamic Level Ratio: 95
+Mugshot: Yellow
+Boss: Yes
 
-Pidgeot
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Feather Dance
-- Wing Attack
-- Gust
+Staraptor @ Sharp Beak
+Nature: Jolly
+Ability: Intimidate
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Brave Bird
+- U Turn
+- Close Combat
 - Quick Attack
 
-Rhyhorn
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
+Kingambit @ Chople Berry
+Nature: Adamant
+Ability: Supreme Overlord
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+- Swords Dance
+- Iron Head
+- Knock Off
+- Sucker Punch
 
-Gyarados
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Sandy-Shocks @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 66
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 SpD / 252 Spe
+- Thunderbolt
+- Earth Power
+- Hidden Power
+- Volt Switch
+
+Iron-Bundle @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 66
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
 - Hydro Pump
-- Twister
-- Leer
-- Rain Dance
+- Freeze Dry
+- Flip Turn
+- Ice Beam
 
-Growlithe
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Flame Wheel
-- Take Down
-- Leer
-- Agility
+Sneasler @ Focus Sash
+Nature: Jolly
+Ability: Unburden
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Dire Claw
+- Close Combat
+- U Turn
+- Fire Punch
 
-Alakazam
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Psychic
-- Calm Mind
-- Future Sight
-- Disable
-
-Venusaur
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Razor Leaf
-- Sweet Scent
-- Growth
-- Synthesis
+Venusaur @ Venusaurite
+Nature: Timid
+Ability: Overgrow
+Level: 66
+EVs: 252 HP / 4 Def / 252 SpA
+- Chloroblast
+- Sludge Bomb
+- Earth Power
+- Sleep Powder
 
 === TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
 Name: Terry
@@ -12879,54 +12920,75 @@ Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+Dynamic Level Ratio: 95
+Mugshot: Yellow
+Boss: Yes
 
-Pidgeot
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Feather Dance
-- Wing Attack
-- Gust
+Staraptor @ Sharp Beak
+Nature: Jolly
+Ability: Intimidate
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Brave Bird
+- U Turn
+- Close Combat
 - Quick Attack
 
-Rhyhorn
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
+Kingambit @ Chople Berry
+Nature: Adamant
+Ability: Supreme Overlord
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+- Swords Dance
+- Iron Head
+- Knock Off
+- Sucker Punch
 
-Exeggcute
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Solar Beam
-- Sleep Powder
-- Poison Powder
-- Stun Spore
+Sandy-Shocks @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 66
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 SpD / 252 Spe
+- Thunderbolt
+- Earth Power
+- Hidden Power
+- Volt Switch
 
-Gyarados
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Hydro Pump
-- Twister
-- Leer
-- Rain Dance
+Azumarill @ Mystic Water
+Nature: Adamant
+Ability: Huge Power
+Level: 66
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Def
+- Liquidation
+- Play Rough
+- Aqua Jet
+- Superpower
 
-Alakazam
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Psychic
-- Calm Mind
-- Future Sight
-- Disable
+Sneasler @ Focus Sash
+Nature: Jolly
+Ability: Unburden
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Dire Claw
+- Close Combat
+- U Turn
+- Fire Punch
 
-Charizard
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Flamethrower
-- Wing Attack
-- Slash
-- Scary Face
+Charizard @ Charizardite X
+Nature: Jolly
+Ability: Levitate
+Level: 66
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Dragon Dance
+- Flare Blitz
+- Earthquake
+- Dragon Claw
 
 === TRAINER_CHAMPION_FIRST_SQUIRTLE ===
 Name: Terry

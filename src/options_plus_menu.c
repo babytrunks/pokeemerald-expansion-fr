@@ -16,11 +16,14 @@
 #include "strings.h"
 #include "gba/m4a_internal.h"
 #include "constants/rgb.h"
+#include "event_data.h"
+#include "constants/flags.h"
 
 enum
 {
     MENU_MAIN,
     MENU_CUSTOM,
+    MENU_GAMEMODES,
     MENU_COUNT,
 };
 
@@ -46,11 +49,23 @@ enum
     MENUITEM_ITEM_BATTLESCENE,
     MENUITEM_ITEM_BATTLESTYLE,
     // MENUITEM_BATTLE_EXP_BAR,
-    // MENUITEM_BATTLE_FAST_BATTLES, 
+    // MENUITEM_BATTLE_FAST_BATTLES,
     MENUITEM_BATTLE_FAST_INTRO,
     // MENUITEM_BATTLE_MATCHCALL,
     MENUITEM_BATTLE_CANCEL,
     MENUITEM_BATTLE_COUNT,
+};
+
+enum
+{
+    MENUITEM_GAMEMODES_MODE,
+    MENUITEM_GAMEMODES_EVS,
+    MENUITEM_GAMEMODES_POKEMON_RANDOMIZER,
+    MENUITEM_GAMEMODES_ABILITY_RANDOMIZER,
+    MENUITEM_GAMEMODES_MOVE_RANDOMIZER,
+    MENUITEM_GAMEMODES_ITEM_RANDOMIZER,
+    MENUITEM_GAMEMODES_NEW_GAME_PLUS,
+    MENUITEM_GAMEMODES_COUNT,
 };
 
 // Window Ids
@@ -178,6 +193,14 @@ static void DrawChoices_FastIntro(int selection, int y);
 
 static void DrawChoices_Music(int selection, int y);
 
+static void DrawChoices_GameMode_Mode(int selection, int y);
+static void DrawChoices_GameMode_EVs(int selection, int y);
+static void DrawChoices_GameMode_PokemonRandomizer(int selection, int y);
+static void DrawChoices_GameMode_AbilityRandomizer(int selection, int y);
+static void DrawChoices_GameMode_MoveRandomizer(int selection, int y);
+static void DrawChoices_GameMode_ItemRandomizer(int selection, int y);
+static void DrawChoices_GameMode_NewGamePlus(int selection, int y);
+
 static void DrawBgWindowFrames(void);
 
 // EWRAM vars
@@ -239,6 +262,21 @@ struct // MENU_CUSTOM
     [MENUITEM_BATTLE_CANCEL]       = {NULL, NULL},
 };
 
+struct // MENU_GAMEMODES (read only - every row has processInput = NULL)
+{
+    void (*drawChoices)(int selection, int y);
+    int (*processInput)(int selection);
+} static const sItemFunctionsGameModes[MENUITEM_GAMEMODES_COUNT] =
+{
+    [MENUITEM_GAMEMODES_MODE]                 = {DrawChoices_GameMode_Mode,               NULL},
+    [MENUITEM_GAMEMODES_EVS]                  = {DrawChoices_GameMode_EVs,                NULL},
+    [MENUITEM_GAMEMODES_POKEMON_RANDOMIZER]   = {DrawChoices_GameMode_PokemonRandomizer,   NULL},
+    [MENUITEM_GAMEMODES_ABILITY_RANDOMIZER]   = {DrawChoices_GameMode_AbilityRandomizer,   NULL},
+    [MENUITEM_GAMEMODES_MOVE_RANDOMIZER]      = {DrawChoices_GameMode_MoveRandomizer,      NULL},
+    [MENUITEM_GAMEMODES_ITEM_RANDOMIZER]      = {DrawChoices_GameMode_ItemRandomizer,      NULL},
+    [MENUITEM_GAMEMODES_NEW_GAME_PLUS]        = {DrawChoices_GameMode_NewGamePlus,         NULL},
+};
+
 // Menu left side option names text
 static const u8 sText_HpBar[]       = _("Battle Speed");
 static const u8 sText_ExpBar[]      = _("Exp. Bar");
@@ -277,13 +315,33 @@ static const u8 *const sOptionMenuItemsNamesCustom[MENUITEM_BATTLE_COUNT] =
     [MENUITEM_BATTLE_CANCEL]      = gText_OptionMenuSave,
 };
 
+static const u8 sText_GameModes_Mode[]               = _("Game Mode");
+static const u8 sText_GameModes_EVs[]                = _("EVs");
+static const u8 sText_GameModes_PokemonRandomizer[]  = _("Pokemon Randomizer");
+static const u8 sText_GameModes_AbilityRandomizer[]  = _("Ability Randomizer");
+static const u8 sText_GameModes_MoveRandomizer[]     = _("Move Randomizer");
+static const u8 sText_GameModes_ItemRandomizer[]     = _("Item Randomizer");
+static const u8 sText_GameModes_NewGamePlus[]        = _("New Game Plus");
+
+static const u8 *const sOptionMenuItemsNamesGameModes[MENUITEM_GAMEMODES_COUNT] =
+{
+    [MENUITEM_GAMEMODES_MODE]                = sText_GameModes_Mode,
+    [MENUITEM_GAMEMODES_EVS]                 = sText_GameModes_EVs,
+    [MENUITEM_GAMEMODES_POKEMON_RANDOMIZER]  = sText_GameModes_PokemonRandomizer,
+    [MENUITEM_GAMEMODES_ABILITY_RANDOMIZER]  = sText_GameModes_AbilityRandomizer,
+    [MENUITEM_GAMEMODES_MOVE_RANDOMIZER]     = sText_GameModes_MoveRandomizer,
+    [MENUITEM_GAMEMODES_ITEM_RANDOMIZER]     = sText_GameModes_ItemRandomizer,
+    [MENUITEM_GAMEMODES_NEW_GAME_PLUS]       = sText_GameModes_NewGamePlus,
+};
+
 static const u8 *const OptionTextRight(u8 menuItem)
 {
     switch (sOptions->submenu)
     {
-    case MENU_MAIN:     return sOptionMenuItemsNamesMain[menuItem];
-    case MENU_CUSTOM:   return sOptionMenuItemsNamesCustom[menuItem];
-    default:            return sOptionMenuItemsNamesMain[menuItem];
+    case MENU_MAIN:       return sOptionMenuItemsNamesMain[menuItem];
+    case MENU_CUSTOM:     return sOptionMenuItemsNamesCustom[menuItem];
+    case MENU_GAMEMODES:  return sOptionMenuItemsNamesGameModes[menuItem];
+    default:              return sOptionMenuItemsNamesMain[menuItem];
     }
 }
 
@@ -419,6 +477,26 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledCustom[MENUITEM_BATTLE
     [MENUITEM_BATTLE_CANCEL]      = sText_Empty,
 };
 
+// Game Modes descriptions (read only page - one line each, no per-selection variants)
+static const u8 sText_Desc_GameModes_Mode[]               = _("The active game difficulty.");
+static const u8 sText_Desc_GameModes_EVs[]                = _("Whether EVs are earned in battle.");
+static const u8 sText_Desc_GameModes_PokemonRandomizer[]  = _("Whether POKéMON species are\nrandomized.");
+static const u8 sText_Desc_GameModes_AbilityRandomizer[]  = _("Whether POKéMON abilities are\nrandomized.");
+static const u8 sText_Desc_GameModes_MoveRandomizer[]     = _("Whether POKéMON movesets are\nrandomized.");
+static const u8 sText_Desc_GameModes_ItemRandomizer[]     = _("Whether field items are\nrandomized.");
+static const u8 sText_Desc_GameModes_NewGamePlus[]        = _("Whether New Game Plus is active.");
+
+static const u8 *const sOptionMenuItemDescriptionsGameModes[MENUITEM_GAMEMODES_COUNT] =
+{
+    [MENUITEM_GAMEMODES_MODE]                = sText_Desc_GameModes_Mode,
+    [MENUITEM_GAMEMODES_EVS]                 = sText_Desc_GameModes_EVs,
+    [MENUITEM_GAMEMODES_POKEMON_RANDOMIZER]  = sText_Desc_GameModes_PokemonRandomizer,
+    [MENUITEM_GAMEMODES_ABILITY_RANDOMIZER]  = sText_Desc_GameModes_AbilityRandomizer,
+    [MENUITEM_GAMEMODES_MOVE_RANDOMIZER]     = sText_Desc_GameModes_MoveRandomizer,
+    [MENUITEM_GAMEMODES_ITEM_RANDOMIZER]     = sText_Desc_GameModes_ItemRandomizer,
+    [MENUITEM_GAMEMODES_NEW_GAME_PLUS]       = sText_Desc_GameModes_NewGamePlus,
+};
+
 static const u8 *const OptionTextDescription(void)
 {
     u8 menuItem = sOptions->menuCursor[sOptions->submenu];
@@ -440,6 +518,8 @@ static const u8 *const OptionTextDescription(void)
         if (menuItem == MENU_ITEM_BATTLE_SPEED )//|| menuItem == MENUITEM_BATTLE_EXP_BAR)
             selection = 0;
         return sOptionMenuItemDescriptionsCustom[menuItem][selection];
+    case MENU_GAMEMODES:
+        return sOptionMenuItemDescriptionsGameModes[menuItem];
     default:
         return sOptionMenuItemDescriptionsMain[menuItem][0];
     }
@@ -449,9 +529,10 @@ static u8 MenuItemCount(void)
 {
     switch (sOptions->submenu)
     {
-    case MENU_MAIN:     return MENUITEM_MAIN_COUNT;
-    case MENU_CUSTOM:   return MENUITEM_BATTLE_COUNT;
-    default:            return MENUITEM_MAIN_COUNT;
+    case MENU_MAIN:       return MENUITEM_MAIN_COUNT;
+    case MENU_CUSTOM:     return MENUITEM_BATTLE_COUNT;
+    case MENU_GAMEMODES:  return MENUITEM_GAMEMODES_COUNT;
+    default:              return MENUITEM_MAIN_COUNT;
     }
 }
 
@@ -459,9 +540,10 @@ static u8 MenuItemCancel(void)
 {
     switch (sOptions->submenu)
     {
-    case MENU_MAIN:     return MENUITEM_MAIN_CANCEL;
-    case MENU_CUSTOM:   return MENUITEM_BATTLE_CANCEL;
-    default:            return MENUITEM_MAIN_CANCEL;
+    case MENU_MAIN:       return MENUITEM_MAIN_CANCEL;
+    case MENU_CUSTOM:     return MENUITEM_BATTLE_CANCEL;
+    case MENU_GAMEMODES:  return MENUITEM_GAMEMODES_COUNT; // sentinel: no cursor position ever matches, page is strictly read-only
+    default:              return MENUITEM_MAIN_CANCEL;
     }
 }
 
@@ -481,10 +563,13 @@ static void VBlankCB(void)
     TransferPlttBuffer();
 }
 
-static const u8 sText_TopBar_Main[]         = _("General");
-static const u8 sText_TopBar_Main_Right[]   = _("{R_BUTTON}Battle");
-static const u8 sText_TopBar_Battle[]       = _("Battle");
-static const u8 sText_TopBar_Battle_Left[]  = _("{L_BUTTON}General");
+static const u8 sText_TopBar_Main[]           = _("General");
+static const u8 sText_TopBar_Main_Right[]     = _("{R_BUTTON}Battle");
+static const u8 sText_TopBar_Battle[]         = _("Battle");
+static const u8 sText_TopBar_Battle_Left[]    = _("{L_BUTTON}General");
+static const u8 sText_TopBar_Battle_Right[]   = _("{R_BUTTON}Modes");
+static const u8 sText_TopBar_GameModes[]      = _("Game Modes");
+static const u8 sText_TopBar_GameModes_Left[] = _("{L_BUTTON}Battle");
 
 static void DrawTopBarText(void)
 {
@@ -500,7 +585,15 @@ static void DrawTopBarText(void)
         case MENU_CUSTOM:
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 105, 1, color, 0, sText_TopBar_Battle);
             AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 2, 1, color, 0, sText_TopBar_Battle_Left);
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 190, 1, color, 0, sText_TopBar_Battle_Right);
             break;
+        case MENU_GAMEMODES:
+        {
+            int width = GetStringWidth(FONT_SMALL, sText_TopBar_GameModes, 0) / 2;
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 120 - width, 1, color, 0, sText_TopBar_GameModes);
+            AddTextPrinterParameterized3(WIN_TOPBAR, FONT_SMALL, 2, 1, color, 0, sText_TopBar_GameModes_Left);
+            break;
+        }
     }
     PutWindowTilemap(WIN_TOPBAR);
     CopyWindowToVram(WIN_TOPBAR, COPYWIN_FULL);
@@ -588,6 +681,10 @@ static void DrawChoices(u32 id, int y) //right side draw function
         case MENU_CUSTOM:
             if (sItemFunctionsCustom[id].drawChoices != NULL)
                 sItemFunctionsCustom[id].drawChoices(sOptions->sel_battle[id], y);
+            break;
+        case MENU_GAMEMODES:
+            if (sItemFunctionsGameModes[id].drawChoices != NULL)
+                sItemFunctionsGameModes[id].drawChoices(0, y);
             break;
     }
 }
@@ -825,7 +922,7 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     }
     else if (JOY_NEW(R_BUTTON))
     {
-        if (sOptions->submenu != MENU_CUSTOM)
+        if (sOptions->submenu != MENU_GAMEMODES)
             sOptions->submenu++;
 
         DrawTopBarText();
@@ -1303,6 +1400,62 @@ static void DrawChoices_FastIntro(int selection, int y)
 //     DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
 // }
 
+// Game Modes page (read only) - each row queries the persistent flag directly and
+// draws a single right-aligned value; the `selection` param is unused since there's
+// nothing to select.
+static const u8 sText_GameModes_Easy[]     = _("Easy");
+static const u8 sText_GameModes_Normal[]   = _("Normal");
+static const u8 sText_GameModes_Hardcore[] = _("Hardcore");
+
+static void DrawChoices_GameMode_Mode(int selection, int y)
+{
+    const u8 *text;
+
+    if (FlagGet(FLAG_HARDCORE_MODE))
+        text = sText_GameModes_Hardcore;
+    else if (FlagGet(FLAG_EASY_MODE))
+        text = sText_GameModes_Easy;
+    else
+        text = sText_GameModes_Normal;
+
+    DrawOptionMenuChoice(text, GetStringRightAlignXOffset(FONT_NORMAL, text, 198), y, 1, TRUE);
+}
+
+static void DrawChoices_GameMode_EVs(int selection, int y)
+{
+    const u8 *text = FlagGet(FLAG_DISABLE_EVS) ? gText_BattleSceneOff : gText_BattleSceneOn;
+    DrawOptionMenuChoice(text, GetStringRightAlignXOffset(FONT_NORMAL, text, 198), y, 1, TRUE);
+}
+
+static void DrawChoices_GameMode_PokemonRandomizer(int selection, int y)
+{
+    const u8 *text = FlagGet(FLAG_RANDOMIZER_WILD_MON) ? gText_BattleSceneOn : gText_BattleSceneOff;
+    DrawOptionMenuChoice(text, GetStringRightAlignXOffset(FONT_NORMAL, text, 198), y, 1, TRUE);
+}
+
+static void DrawChoices_GameMode_AbilityRandomizer(int selection, int y)
+{
+    const u8 *text = FlagGet(FLAG_RANDOMIZER_ABILITIES) ? gText_BattleSceneOn : gText_BattleSceneOff;
+    DrawOptionMenuChoice(text, GetStringRightAlignXOffset(FONT_NORMAL, text, 198), y, 1, TRUE);
+}
+
+static void DrawChoices_GameMode_MoveRandomizer(int selection, int y)
+{
+    const u8 *text = FlagGet(FLAG_RANDOMIZER_MOVES) ? gText_BattleSceneOn : gText_BattleSceneOff;
+    DrawOptionMenuChoice(text, GetStringRightAlignXOffset(FONT_NORMAL, text, 198), y, 1, TRUE);
+}
+
+static void DrawChoices_GameMode_ItemRandomizer(int selection, int y)
+{
+    const u8 *text = FlagGet(FLAG_RANDOMIZER_FIELD_ITEM) ? gText_BattleSceneOn : gText_BattleSceneOff;
+    DrawOptionMenuChoice(text, GetStringRightAlignXOffset(FONT_NORMAL, text, 198), y, 1, TRUE);
+}
+
+static void DrawChoices_GameMode_NewGamePlus(int selection, int y)
+{
+    const u8 *text = FlagGet(FLAG_NEW_GAME_PLUS) ? gText_BattleSceneOn : gText_BattleSceneOff;
+    DrawOptionMenuChoice(text, GetStringRightAlignXOffset(FONT_NORMAL, text, 198), y, 1, TRUE);
+}
 
 // Background tilemap
 #define TILE_TOP_CORNER_L 0x1A2 // 418

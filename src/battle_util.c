@@ -2273,7 +2273,9 @@ static enum MoveCanceler CancelerPowerPoints(struct BattleContext *ctx)
 
 static enum MoveCanceler CancelerTruant(struct BattleContext *ctx)
 {
-    if (GetBattlerAbility(ctx->battlerAtk) == ABILITY_TRUANT && gDisableStructs[ctx->battlerAtk].truantCounter)
+    if (GetBattlerAbility(ctx->battlerAtk) == ABILITY_TRUANT
+     && gDisableStructs[ctx->battlerAtk].truantCounter
+     && ctx->currentMove != MOVE_SLACK_OFF)
     {
         CancelMultiTurnMoves(ctx->battlerAtk, SKY_DROP_ATTACKCANCELER_CHECK);
         gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;

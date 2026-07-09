@@ -158,7 +158,7 @@ EventScript_PkmnCenterNurse_Aide::
 	dynmultipush PkmnCenterNurse_Text_MoveTutor, 1
 	call_if_set FLAG_NES_GAVE_INFINITE_CANDY, PkmnCenterNurse_LevelCapOptions
 	msgbox PkmnCenterNurse_Text_WhatService
-	@ dynmultipush PkmnCenterNurse_Text_GenderSwap, 4
+	dynmultipush PkmnCenterNurse_Text_GenderSwap, 4
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, PkmnCenterNurse_Aide_End
@@ -166,7 +166,7 @@ EventScript_PkmnCenterNurse_Aide::
 	case 1, PkmnCenterNurse_EventScript_WantMoveTutor
 	case 2, PkmnCenterNurse_EventScript_PartyToLvlCap
 	case 3, PkmnCenterNurse_EventScript_PkmnToLvlCap
-	@ case 4, PkmnCenterNurse_EventScript_SwapGender
+	case 4, PkmnCenterNurse_EventScript_SwapGender
 	release
 	end
 
@@ -732,16 +732,28 @@ PkmnCenterNurse_EventScript_SwapGender:
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
 	goto_if_eq VAR_RESULT, SPECIES_EGG, PkmnCenterNurse_CantOperateOnEgg
 	callnative GetSelectedPokemonGender
-	goto_if_eq VAR_RESULT, 0xFE, PkmnCenterNurse_CantOperateOnGenderless
+	goto_if_eq VAR_RESULT, MON_GENDERLESS, PkmnCenterNurse_CantOperateOnGenderless
+	goto_if_eq VAR_RESULT, 0xFD, PkmnCenterNurse_CantSwapFixedGender
 	msgbox PkmnCenterNurse_Text_SwapGenderOfPkmn MSGBOX_YESNO
 	switch VAR_RESULT
 	case NO, EventScript_PkmnCenterNurse_Aide
 	callnative SwapSelectedPokemonGender
+	msgbox PkmnCenterNurse_Text_SwapGenderDone
 	release
 	end
 
 PkmnCenterNurse_CantOperateOnEgg::
 	msgbox PkmnCenterNurse_Text_CantOperateOnEgg
+	goto EventScript_PkmnCenterNurse_Aide
+	end
+
+PkmnCenterNurse_CantOperateOnGenderless::
+	msgbox PkmnCenterNurse_Text_CantOperateOnGenderless
+	goto EventScript_PkmnCenterNurse_Aide
+	end
+
+PkmnCenterNurse_CantSwapFixedGender::
+	msgbox PkmnCenterNurse_Text_CantSwapFixedGender
 	goto EventScript_PkmnCenterNurse_Aide
 	end
 
@@ -808,8 +820,15 @@ PkmnCenterNurse_Text_DoYouWantToSwapGender:
 	.string "{COLOR RED}Do you want to swap the Gender\n"
 	.string "of one of your Pokémon?$"
 
-PkmnCenterNurse_CantOperateOnGenderless:
+PkmnCenterNurse_Text_CantOperateOnGenderless:
 	.string "{COLOR RED}…That Pokémon doesn't have a gender.$"
+
+PkmnCenterNurse_Text_CantSwapFixedGender:
+	.string "{COLOR RED}…I can't change that Pokémon's gender.$"
+
+PkmnCenterNurse_Text_SwapGenderDone:
+	.string "{COLOR RED}…Okay, {STR_VAR_1}'s gender has\n"
+	.string "been changed.$"
 
 PkmnCenterNurse_Text_SwapGenderOfPkmn:
 	.string "{COLOR RED}Swap the Gender of {STR_VAR_1}?$"
