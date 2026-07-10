@@ -278,7 +278,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_IRON_HEAD"
+      "MOVE_FLASH_CANNON"
     ]
   },
   "PIKACHU_BELLE": {
@@ -287,7 +287,6 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_ICICLE_SPEAR"
     ]
   },
   "PIKACHU_POP_STAR": {
@@ -303,7 +302,7 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_PSYCHIC"
+      "MOVE_PSYSHOCK"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -316,7 +315,27 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_CLOSE_COMBAT"
+      "MOVE_CLOSE_COMBAT",
+      "MOVE_DRAIN_PUNCH"
+    ]
+  },
+  "PIKACHU_SURFING": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_HYDRO_PUMP"
+    ]
+  },
+  "PIKACHU_FLYING": {
+    "LevelMoves": [],
+    "PreEvoMoves": [],
+    "TMMoves": [],
+    "EggMoves": [],
+    "TutorMoves": [
+      "MOVE_HURRICANE",
+      "MOVE_AIR_SLASH"
     ]
   },
   "RAICHU": {

@@ -1044,7 +1044,8 @@
 #define ITEM_MACHAMPITE 877
 #define ITEM_CENTISKITE 878
 #define ITEM_TIME_CHANGER 879
-#define ITEMS_COUNT 880
+#define ITEM_PIKA_WARDROBE 880
+#define ITEMS_COUNT 881
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

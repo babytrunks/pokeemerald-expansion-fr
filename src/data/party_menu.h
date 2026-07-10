@@ -674,6 +674,17 @@ static const struct WindowTemplate sZygardeCubeSelectWindowTemplate =
     .baseBlock = 0x2E9,
 };
 
+static const struct WindowTemplate sPikaWardrobeSelectWindowTemplate =
+{
+    .bg = 2,
+    .tilemapLeft = 18,
+    .tilemapTop = 1,
+    .width = 11,
+    .height = 18,
+    .paletteNum = 14,
+    .baseBlock = 0x2E9,
+};
+
 static const struct WindowTemplate sPartyMenuYesNoWindowTemplate =
 {
     .bg = 2,
@@ -812,6 +823,7 @@ static const u8 *const sActionStringTable[] =
     [PARTY_MSG_NO_POKEMON]             = COMPOUND_STRING("You have no Pokémon."),
     [PARTY_MSG_CHOOSE_MON_FOR_BOX]     = gText_SendWhichMonToPC,
     [PARTY_MSG_MOVE_ITEM_WHERE]        = gText_MoveItemWhere,
+    [PARTY_MSG_WHICH_OUTFIT]           = COMPOUND_STRING("Which outfit?"),
 };
 
 static const u8 *const sDescriptionStringTable[] =
@@ -881,6 +893,14 @@ struct
     [MENU_CATALOG_MOWER]   = {COMPOUND_STRING("Lawn mower"),      CursorCb_CatalogMower},
     [MENU_CHANGE_FORM]     = {COMPOUND_STRING("Change form"),     CursorCb_ChangeForm},
     [MENU_CHANGE_ABILITY]  = {COMPOUND_STRING("Change Ability"),  CursorCb_ChangeAbility},
+    [MENU_WARDROBE_COSPLAY]   = {COMPOUND_STRING("Cosplay"),      CursorCb_WardrobeCosplay},
+    [MENU_WARDROBE_ROCK_STAR] = {COMPOUND_STRING("Rock Star"),    CursorCb_WardrobeRockStar},
+    [MENU_WARDROBE_BELLE]     = {COMPOUND_STRING("Belle"),        CursorCb_WardrobeBelle},
+    [MENU_WARDROBE_POP_STAR]  = {COMPOUND_STRING("Pop Star"),     CursorCb_WardrobePopStar},
+    [MENU_WARDROBE_PHD]       = {COMPOUND_STRING("Ph.D."),        CursorCb_WardrobePhD},
+    [MENU_WARDROBE_LIBRE]     = {COMPOUND_STRING("Libre"),        CursorCb_WardrobeLibre},
+    [MENU_WARDROBE_SURFING]   = {COMPOUND_STRING("Surfing"),      CursorCb_WardrobeSurfing},
+    [MENU_WARDROBE_FLYING]    = {COMPOUND_STRING("Flying"),       CursorCb_WardrobeFlying},
 };
 
 static const u8 sPartyMenuAction_SummarySwitchCancel[] = {MENU_SUMMARY, MENU_SWITCH, MENU_CANCEL1};
@@ -898,6 +918,7 @@ static const u8 sPartyMenuAction_TradeSummaryCancel2[] = {MENU_TRADE2, MENU_SUMM
 static const u8 sPartyMenuAction_TakeItemTossCancel[] = {MENU_TAKE_ITEM, MENU_TOSS, MENU_CANCEL1};
 static const u8 sPartyMenuAction_RotomCatalog[] = {MENU_CATALOG_BULB, MENU_CATALOG_OVEN, MENU_CATALOG_WASHING, MENU_CATALOG_FRIDGE, MENU_CATALOG_FAN, MENU_CATALOG_MOWER, MENU_CANCEL1};
 static const u8 sPartyMenuAction_ZygardeCube[] = {MENU_CHANGE_FORM, MENU_CHANGE_ABILITY, MENU_CANCEL1};
+static const u8 sPartyMenuAction_PikaWardrobe[] = {MENU_WARDROBE_COSPLAY, MENU_WARDROBE_ROCK_STAR, MENU_WARDROBE_BELLE, MENU_WARDROBE_POP_STAR, MENU_WARDROBE_PHD, MENU_WARDROBE_LIBRE, MENU_WARDROBE_SURFING, MENU_WARDROBE_FLYING, MENU_CANCEL1};
 
 
 
@@ -919,6 +940,7 @@ static const u8 *const sPartyMenuActions[] =
     [ACTIONS_TAKEITEM_TOSS] = sPartyMenuAction_TakeItemTossCancel,
     [ACTIONS_ROTOM_CATALOG] = sPartyMenuAction_RotomCatalog,
     [ACTIONS_ZYGARDE_CUBE]  = sPartyMenuAction_ZygardeCube,
+    [ACTIONS_PIKA_WARDROBE] = sPartyMenuAction_PikaWardrobe,
 };
 
 static const u8 sPartyMenuActionCounts[] =
@@ -939,6 +961,7 @@ static const u8 sPartyMenuActionCounts[] =
     [ACTIONS_TAKEITEM_TOSS] = ARRAY_COUNT(sPartyMenuAction_TakeItemTossCancel),
     [ACTIONS_ROTOM_CATALOG] = ARRAY_COUNT(sPartyMenuAction_RotomCatalog),
     [ACTIONS_ZYGARDE_CUBE]  = ARRAY_COUNT(sPartyMenuAction_ZygardeCube),
+    [ACTIONS_PIKA_WARDROBE] = ARRAY_COUNT(sPartyMenuAction_PikaWardrobe),
 };
 
 static const u8 *const sUnionRoomTradeMessages[] =
@@ -1282,11 +1305,14 @@ static const u16 sRotomFormChangeMoves[12] =
     MOVE_FROST_BREATH
 };
 
-static const u16 sPikachuFormChangeMoves[18] =
+static const u16 sPikachuFormChangeMoves[24] =
 {
+    MOVE_PIKA_PAPOW,
+    MOVE_EXTREMESPEED,
+    MOVE_BUZZY_BUZZ,
     MOVE_BULLET_PUNCH,
     MOVE_METEOR_MASH,
-    MOVE_IRON_HEAD,
+    MOVE_FLASH_CANNON,
     MOVE_BOUNCY_BUBBLE,
     MOVE_HYDRO_PUMP,
     MOVE_SPLISHY_SPLASH,

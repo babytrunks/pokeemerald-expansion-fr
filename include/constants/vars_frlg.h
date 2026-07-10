@@ -226,7 +226,7 @@
 #define VAR_RARE_POKEMON_EXCLUDE_SPECIES           0x40D3
 #define VAR_STARTER_SPECIES                0x40D4 // Species of the player's chosen starter, set in Oak's Lab
 #define VAR_VERMILION_CHOSEN_SEVII                 0x40D5
-#define VAR_0x40D6                 0x40D6
+#define VAR_VIRIDIAN_FOREST_QUEST                 0x40D6
 #define VAR_0x40D7                 0x40D7
 #define VAR_0x40D8                 0x40D8
 #define VAR_0x40D9                 0x40D9

@@ -117,6 +117,14 @@ enum {
     MENU_CATALOG_MOWER,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
+    MENU_WARDROBE_COSPLAY,
+    MENU_WARDROBE_ROCK_STAR,
+    MENU_WARDROBE_BELLE,
+    MENU_WARDROBE_POP_STAR,
+    MENU_WARDROBE_PHD,
+    MENU_WARDROBE_LIBRE,
+    MENU_WARDROBE_SURFING,
+    MENU_WARDROBE_FLYING,
     MENU_FIELD_MOVES
 };
 
@@ -139,6 +147,7 @@ enum {
     ACTIONS_TAKEITEM_TOSS,
     ACTIONS_ROTOM_CATALOG,
     ACTIONS_ZYGARDE_CUBE,
+    ACTIONS_PIKA_WARDROBE,
 };
 
 enum {
@@ -499,6 +508,14 @@ static void CursorCb_CatalogFan(u8);
 static void CursorCb_CatalogMower(u8);
 static void CursorCb_ChangeForm(u8);
 static void CursorCb_ChangeAbility(u8);
+static void CursorCb_WardrobeCosplay(u8);
+static void CursorCb_WardrobeRockStar(u8);
+static void CursorCb_WardrobeBelle(u8);
+static void CursorCb_WardrobePopStar(u8);
+static void CursorCb_WardrobePhD(u8);
+static void CursorCb_WardrobeLibre(u8);
+static void CursorCb_WardrobeSurfing(u8);
+static void CursorCb_WardrobeFlying(u8);
 void TryItemHoldFormChange(struct Pokemon *mon, s8 slotId);
 static void ShowMoveSelectWindow(u8 slot);
 static void Task_HandleWhichMoveInput(u8 taskId);
@@ -2843,6 +2860,7 @@ void DisplayPartyMenuStdMessage(u32 stringId)
             *windowPtr = AddWindow(&sAlreadyHoldingOneMsgWindowTemplate);
             break;
         case PARTY_MSG_WHICH_APPLIANCE:
+        case PARTY_MSG_WHICH_OUTFIT:
             *windowPtr = AddWindow(&sOrderWhichApplianceMsgWindowTemplate);
             break;
         default:
@@ -2909,6 +2927,9 @@ static u8 DisplaySelectionWindow(u8 windowType)
         break;
     case SELECTWINDOW_ZYGARDECUBE:
         window = sZygardeCubeSelectWindowTemplate;
+        break;
+    case SELECTWINDOW_PIKA_WARDROBE:
+        window = sPikaWardrobeSelectWindowTemplate;
         break;
     default: // SELECTWINDOW_MOVES
         window = sMoveSelectWindowTemplate;
@@ -6905,7 +6926,7 @@ static void Task_TryItemUseFormChange(u8 taskId)
     case 6:
         if (!IsPartyMenuTextPrinterActive())
         {
-            if (gSpecialVar_ItemId == ITEM_ROTOM_CATALOG) //only for Rotom currently
+            if (gSpecialVar_ItemId == ITEM_ROTOM_CATALOG)
             {
                 u32 i;
                 for (i = 0; i < ARRAY_COUNT(sRotomFormChangeMoves); i++)
@@ -6918,6 +6939,12 @@ static void Task_TryItemUseFormChange(u8 taskId)
                 }
                 else
                     FormChangeTeachMove(taskId, gSpecialVar_0x8000, gPartyMenu.slotId);
+            }
+            else if (gSpecialVar_ItemId == ITEM_PIKA_WARDROBE)
+            {
+                u32 i;
+                for (i = 0; i < ARRAY_COUNT(sPikachuFormChangeMoves); i++)
+                    DeleteMove(mon, sPikachuFormChangeMoves[i]);
             }
 
             gTasks[taskId].tState++;
@@ -6978,6 +7005,15 @@ void ItemUseCB_RotomCatalog(u8 taskId, TaskFunc task)
     gTasks[taskId].func = Task_HandleSelectionMenuInput;
 }
 
+static void PartyMenuFormChangeNoEffect(u8 taskId)
+{
+    gPartyMenuUseExitCallback = FALSE;
+    PlaySE(SE_SELECT);
+    DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+    ScheduleBgCopyTilemapToVram(2);
+    gTasks[taskId].func = Task_ClosePartyMenuAfterText;
+}
+
 bool32 TryMultichoiceFormChange(u8 taskId)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
@@ -6999,13 +7035,27 @@ bool32 TryMultichoiceFormChange(u8 taskId)
     }
     else
     {
-        gPartyMenuUseExitCallback = FALSE;
-        PlaySE(SE_SELECT);
-        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
-        ScheduleBgCopyTilemapToVram(2);
-        gTasks[taskId].func = Task_ClosePartyMenuAfterText;
+        PartyMenuFormChangeNoEffect(taskId);
         return FALSE;
     }
+}
+
+// True if the species has at least one FORM_CHANGE_ITEM_USE_MULTICHOICE entry for this item,
+// regardless of which specific choice (gSpecialVar_Result) would be picked.
+static bool32 SpeciesHasMultichoiceFormChangeItem(u16 species, u16 item)
+{
+    u32 i;
+    const struct FormChange *formChanges = GetSpeciesFormChanges(species);
+
+    if (formChanges == NULL)
+        return FALSE;
+
+    for (i = 0; formChanges[i].method != FORM_CHANGE_TERMINATOR; i++)
+    {
+        if (formChanges[i].method == FORM_CHANGE_ITEM_USE_MULTICHOICE && formChanges[i].param1 == item)
+            return TRUE;
+    }
+    return FALSE;
 }
 
 static void CursorCb_CatalogBulb(u8 taskId)
@@ -7047,6 +7097,75 @@ static void CursorCb_CatalogMower(u8 taskId)
 {
     gSpecialVar_Result = 5;
     gSpecialVar_0x8000 = ROTOM_MOW_MOVE;
+    TryMultichoiceFormChange(taskId);
+}
+
+void ItemUseCB_PikaWardrobe(u8 taskId, TaskFunc task)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[0]);
+    PartyMenuRemoveWindow(&sPartyMenuInternal->windowId[1]);
+
+    if (!SpeciesHasMultichoiceFormChangeItem(species, ITEM_PIKA_WARDROBE))
+    {
+        PartyMenuFormChangeNoEffect(taskId);
+        return;
+    }
+
+    SetPartyMonSelectionActions(gPlayerParty, gPartyMenu.slotId, ACTIONS_PIKA_WARDROBE);
+    DisplaySelectionWindow(SELECTWINDOW_PIKA_WARDROBE);
+    DisplayPartyMenuStdMessage(PARTY_MSG_WHICH_OUTFIT);
+    gTasks[taskId].data[0] = 0xFF;
+    gTasks[taskId].func = Task_HandleSelectionMenuInput;
+}
+
+static void CursorCb_WardrobeCosplay(u8 taskId)
+{
+    gSpecialVar_Result = 0;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_WardrobeRockStar(u8 taskId)
+{
+    gSpecialVar_Result = 1;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_WardrobeBelle(u8 taskId)
+{
+    gSpecialVar_Result = 2;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_WardrobePopStar(u8 taskId)
+{
+    gSpecialVar_Result = 3;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_WardrobePhD(u8 taskId)
+{
+    gSpecialVar_Result = 4;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_WardrobeLibre(u8 taskId)
+{
+    gSpecialVar_Result = 5;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_WardrobeSurfing(u8 taskId)
+{
+    gSpecialVar_Result = 6;
+    TryMultichoiceFormChange(taskId);
+}
+
+static void CursorCb_WardrobeFlying(u8 taskId)
+{
+    gSpecialVar_Result = 7;
     TryMultichoiceFormChange(taskId);
 }
 

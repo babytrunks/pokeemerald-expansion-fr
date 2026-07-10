@@ -3,9 +3,9 @@ ViridianForest_Frlg_2_MapScripts::
 	.byte 0
 
 @ The Pichu bullying scene is only present while the Light Ball quest is
-@ active and the rescue hasn't happened yet. VAR_TEMP_0 arms the triggers.
+@ active and the rescue hasn't happened yet
 ViridianForest_2_OnTransition::
-	setvar VAR_TEMP_0, 1
+	setvar VAR_VIRIDIAN_FOREST_QUEST, 1
 	setflag FLAG_HIDE_VIRIDIAN_FOREST_2_PICHU_BULLIES
 	goto_if_set FLAG_RESCUED_SPIKY_PICHU, ViridianForest_2_EventScript_PichuSceneInactive
 	goto_if_quest_active QUEST_LIGHT_BALL, ViridianForest_2_EventScript_ShowPichuScene
@@ -13,7 +13,7 @@ ViridianForest_2_OnTransition::
 
 ViridianForest_2_EventScript_ShowPichuScene::
 	clearflag FLAG_HIDE_VIRIDIAN_FOREST_2_PICHU_BULLIES
-	setvar VAR_TEMP_0, 0
+	setvar VAR_VIRIDIAN_FOREST_QUEST, 0
 	end
 
 ViridianForest_2_EventScript_PichuSceneInactive::
@@ -84,6 +84,7 @@ ViridianForest_2_EventScript_PichuBulliesDefeated::
 	closemessage
 	applymovement LOCALID_VIRIDIAN_FOREST__SPIKY_PICHU, ViridianForest_2_Movement_SpikyPichuApproachIntoPlayer
 	waitmovement 0
+	setvar VAR_VIRIDIAN_FOREST_QUEST, 1
 	setflag FLAG_DONT_RANDOMIZE
 	setflag FLAG_3_PERFECT_IVS
 	givemon SPECIES_PICHU_SPIKY_EARED, 10, ITEM_ZAP_PLATE, move1=MOVE_VOLT_TACKLE, move2=MOVE_HELPING_HAND, move3=MOVE_SWAGGER, move4=MOVE_PAIN_SPLIT

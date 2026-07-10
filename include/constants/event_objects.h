@@ -494,7 +494,7 @@
 #define OBJ_EVENT_GFX_JOJO_FAN                   460
 #define OBJ_EVENT_GFX_DRAGON_TAMER               461
 #define OBJ_EVENT_GFX_CUE_BALL                   462
-#define OBJ_EVENT_GFX_SANS                        463
+#define OBJ_EVENT_GFX_SANS                       463
 #define OBJ_EVENT_GFX_SOUPERCELL                 464
 
 // FRLG equivalents

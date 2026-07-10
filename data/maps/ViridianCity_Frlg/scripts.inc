@@ -8,19 +8,19 @@ ViridianCity_OnTransition::
 	end
 
 ViridianCity_EventScript_SetOldManNormal::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_1
+	@ setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_1
 	return
 
 ViridianCity_EventScript_SetOldManStandingByRoad::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_1
-	setobjectxyperm LOCALID_TUTORIAL_MAN, 21, 8
-	setobjectmovementtype LOCALID_TUTORIAL_MAN, MOVEMENT_TYPE_LOOK_AROUND
+	@ setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_1
+	@ setobjectxyperm LOCALID_TUTORIAL_MAN, 21, 8
+	@ setobjectmovementtype LOCALID_TUTORIAL_MAN, MOVEMENT_TYPE_LOOK_AROUND
 	return
 
 ViridianCity_EventScript_SetOldManBlockingRoad::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_LYING_DOWN
-	setobjectxyperm LOCALID_TUTORIAL_MAN, 21, 11
-	setobjectmovementtype LOCALID_TUTORIAL_MAN, MOVEMENT_TYPE_FACE_DOWN
+	@ setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_OLD_MAN_LYING_DOWN
+	@ setobjectxyperm LOCALID_TUTORIAL_MAN, 21, 11
+	@ setobjectmovementtype LOCALID_TUTORIAL_MAN, MOVEMENT_TYPE_FACE_DOWN
 	return
 
 ViridianCity_EventScript_TryUnlockGym::
@@ -106,12 +106,7 @@ ViridianCity_EventScript_OldManGymLeaderReturned::
 	end
 
 ViridianCity_EventScript_TutorialOldMan::
-	lock
-	faceplayer
-	goto_if_set FLAG_BADGE01_GET, ViridianCity_EventScript_AskIfTeachyTVHelpful
-	goto_if_ge VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 2, ViridianCity_EventScript_TutorialCompleted
-	goto_if_eq VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 1, ViridianCity_EventScript_TutorialStart
-	goto_if_eq VAR_OAKS_LAB_AIDE_GIVE_BOX_LINK, 0, ViridianCity_EventScript_TutorialNotReady
+	msgbox ViridianCity_Text_UsedToHelpLads, MSGBOX_NPC
 	end
 
 ViridianCity_EventScript_AskIfTeachyTVHelpful::
@@ -512,3 +507,10 @@ ViridianCity_Text_BrendanToCeruleanNeedYourHelp::
 
 ViridianCity_Text_BrendanToCerulean_LetsGo::
 	.string "Okay, off we go.$"
+
+ViridianCity_Text_UsedToHelpLads::
+	.string "I used to help young lads like you\n"
+	.string "learn how to catch Pokémon.\p"
+	.string "Now you young ones act like complete\n"
+	.string "know it alls.\p"
+	.string "How disrespectful, you lot!$"

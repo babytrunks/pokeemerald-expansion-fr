@@ -155,6 +155,15 @@
       "var": "VAR_TRIGGER_MAY_FUSCHIA",
       "var_value": "0",
       "script": "EventScript_Cinnabar_May_Start"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "CinnabarIsland_EventScript_KabutopsMissingNo"
     }
   ],
   "bg_events": [

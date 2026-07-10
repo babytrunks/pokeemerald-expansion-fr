@@ -1166,6 +1166,47 @@ static const u16 sRaichuAlolaTeachableLearnset[] = {
 #endif //P_ALOLAN_FORMS
 #endif //P_FAMILY_PIKACHU
 
+static const u16 sPikachuCosplayTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+
+static const u16 sPikachuFlyingTeachableLearnset[] = {
+    MOVE_AIR_SLASH,
+    MOVE_HURRICANE,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPikachuSurfingTeachableLearnset[] = {
+    MOVE_HYDRO_PUMP,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPikachuPhdTeachableLearnset[] = {
+    MOVE_ZEN_HEADBUTT,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPikachuBelleTeachableLearnset[] = {
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPikachuRockStarTeachableLearnset[] = {
+    MOVE_FLASH_CANNON,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPikachuLibreTeachableLearnset[] = {
+    MOVE_CLOSE_COMBAT,
+    MOVE_DRAIN_PUNCH,
+    MOVE_UNAVAILABLE,
+};
+
+static const u16 sPikachuPopStarTeachableLearnset[] = {
+    MOVE_DAZZLING_GLEAM,
+    MOVE_UNAVAILABLE,
+};
+
 #if P_FAMILY_SANDSHREW
 static const u16 sSandshrewTeachableLearnset[] = {
     MOVE_AERIAL_ACE,

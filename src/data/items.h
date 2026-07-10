@@ -13370,6 +13370,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_RotomCatalog,
     },
 
+    [ITEM_PIKA_WARDROBE] =
+    {
+        .name = ITEM_NAME("Pika Wardrobe"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A wardrobe full of\n"
+            "outfits for a\n"
+            "costumed Pikachu."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_PikaWardrobe,
+        .iconPic = gItemIcon_OutfitBox,
+        .iconPalette = gItemIconPalette_OutfitBox,
+    },
+
     [ITEM_GRACIDEA] =
     {
         .name = ITEM_NAME("Gracidea"),

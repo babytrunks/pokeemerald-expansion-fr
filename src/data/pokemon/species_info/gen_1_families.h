@@ -2982,6 +2982,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 #if P_COSPLAY_PIKACHU_FORMS
     [SPECIES_PIKACHU_COSPLAY]   =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = 40,
@@ -3026,14 +3027,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
+        .levelUpLearnset = sPikachuCosplayLevelUpLearnset,
+        .teachableLearnset = sPikachuCosplayTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable
     },
 
     [SPECIES_PIKACHU_ROCK_STAR] =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = 40,
@@ -3079,13 +3080,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuRockstarLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
+        .teachableLearnset = sPikachuRockStarTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable
     },
 
     [SPECIES_PIKACHU_BELLE] =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = 40,
@@ -3132,13 +3133,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuBelleLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
+        .teachableLearnset = sPikachuBelleTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable
     },
 
     [SPECIES_PIKACHU_POP_STAR] =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = 40,
@@ -3184,14 +3185,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuPopstarLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
+        .levelUpLearnset = sPikachuPopStarLevelUpLearnset,
+        .teachableLearnset = sPikachuPopStarTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable
     },
 
     [SPECIES_PIKACHU_PHD] =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = 40,
@@ -3237,13 +3238,13 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuPhdLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
+        .teachableLearnset = sPikachuPhdTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable
     },
 
     [SPECIES_PIKACHU_LIBRE] =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = 40,
@@ -3289,14 +3290,14 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
         .levelUpLearnset = sPikachuLibreLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
+        .teachableLearnset = sPikachuLibreTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable
     },
 
     
     [SPECIES_PIKACHU_SURFING] =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
@@ -3345,10 +3346,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
-        .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
+        .levelUpLearnset = sPikachuSurfingLevelUpLearnset,
+        .teachableLearnset = sPikachuSurfingTeachableLearnset,
+        .formSpeciesIdTable = sPikachuFormSpeciesIdTable
     },
     
 #endif //P_COSPLAY_PIKACHU_FORMS
@@ -3413,6 +3413,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 
     [SPECIES_PIKACHU_FLYING] =
     {
+        .formChangeTable = sPikachuWardrobeFormChangeTable,
         .baseHP        = 35,
         .baseAttack    = 55,
         .baseDefense   = P_UPDATED_STATS >= GEN_6 ? 40 : 30,
@@ -3460,10 +3461,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .pokemonJumpType = PKMN_JUMP_TYPE_NORMAL,
         SHADOW(-3, 5, SHADOW_SIZE_M)
         FOOTPRINT(Pikachu)
-        .levelUpLearnset = sPikachuLevelUpLearnset,
-        .teachableLearnset = sPikachuTeachableLearnset,
+        .levelUpLearnset = sPikachuFlyingLevelUpLearnset,
+        .teachableLearnset = sPikachuFlyingTeachableLearnset,
         .formSpeciesIdTable = sPikachuFormSpeciesIdTable,
-        .randomizerMode = MON_RANDOMIZER_INVALID
     },
 
     [SPECIES_PIKACHU_SINNOH] =

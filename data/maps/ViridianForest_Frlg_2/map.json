@@ -228,7 +228,7 @@
       "x": 34,
       "y": 28,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_VIRIDIAN_FOREST_QUEST",
       "var_value": "0",
       "script": "ViridianForest_2_EventScript_PichuBullyTriggerUp"
     },
@@ -237,7 +237,7 @@
       "x": 34,
       "y": 29,
       "elevation": 0,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_VIRIDIAN_FOREST_QUEST",
       "var_value": "0",
       "script": "ViridianForest_2_EventScript_PichuBullyTriggerDown"
     }

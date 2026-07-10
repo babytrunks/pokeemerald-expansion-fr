@@ -189,28 +189,17 @@ SlateportCity_PokemonFanClub_EventScript_MeetChairman::
 SlateportCity_PokemonFanClub_EventScript_SootheBellWoman::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_SOOTHE_BELL, SlateportCity_PokemonFanClub_EventScript_ReceivedSootheBell
-	msgbox SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou, MSGBOX_DEFAULT
-	specialvar VAR_RESULT, GetLeadMonFriendshipScore
-	goto_if_ge VAR_RESULT, FRIENDSHIP_150_TO_199, SlateportCity_PokemonFanClub_EventScript_GiveSootheBell
-	release
-	end
-
-SlateportCity_PokemonFanClub_EventScript_GiveSootheBell::
-	playse SE_PIN
-	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
-	waitmovement 0
-	applymovement VAR_LAST_TALKED, Common_Movement_Delay48
-	waitmovement 0
-	msgbox SlateportCity_PokemonFanClub_Text_PokemonAdoresYou, MSGBOX_DEFAULT
-	giveitem ITEM_SOOTHE_BELL
+	goto_if_set FLAG_RECEIVED_SOOTHE_BELL, SlateportCity_PokemonFanClub_EventScript_ReceivedPikaWardrobe
+	msgbox SlateportCity_PokemonFanClub_Text_StylishTrainer, MSGBOX_DEFAULT
+	giveitem ITEM_PIKA_WARDROBE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_SOOTHE_BELL
+	msgbox SlateportCity_PokemonFanClub_Text_SpiceUpYourPikachu, MSGBOX_DEFAULT
 	release
 	end
 
-SlateportCity_PokemonFanClub_EventScript_ReceivedSootheBell::
-	msgbox SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove, MSGBOX_DEFAULT
+SlateportCity_PokemonFanClub_EventScript_ReceivedPikaWardrobe::
+	msgbox SlateportCity_PokemonFanClub_Text_SpiceUpYourPikachu, MSGBOX_DEFAULT
 	release
 	end
 
@@ -401,26 +390,16 @@ SlateportCity_PokemonFanClub_Text_NothingElseToGiveYou:
 	.string "of raising Pokémon without resorting\l"
 	.string "to any items!$"
 
-SlateportCity_PokemonFanClub_Text_ShowMePokemonThatLoveYou:
-	.string "I love seeing Pokémon that love\n"
-	.string "their Trainers.\p"
-	.string "Pokémon are very sensitive to\n"
-	.string "the feelings of their Trainers.\p"
-	.string "If you treat your Pokémon with love\n"
-	.string "and care, they'll love you back.\p"
-	.string "When your Pokémon grow to love you,\n"
-	.string "please come show me.$"
+SlateportCity_PokemonFanClub_Text_StylishTrainer:
+	.string "Oh, you look like a stylish Trainer!\p"
+	.string "We love spicing up Pokémon and\n"
+	.string "sharing the love.\p"
+	.string "Take this!$"
 
-SlateportCity_PokemonFanClub_Text_PokemonAdoresYou:
-	.string "Your Pokémon really adores you.\p"
-	.string "For you, a most compassionate\n"
-	.string "Trainer, a gift from the Fan Club!$"
-
-SlateportCity_PokemonFanClub_Text_TreatPokemonWithLove:
-	.string "Pokémon are very sensitive to\n"
-	.string "the feelings of their Trainers.\p"
-	.string "If you treat your Pokémon with love\n"
-	.string "and care, they'll love you back.$"
+SlateportCity_PokemonFanClub_Text_SpiceUpYourPikachu:
+	.string "That can spice up your Pikachu.\p"
+	.string "Though, only specific Pikachu are\n"
+	.string "open to wearing outfits.$"
 
 SlateportCity_PokemonFanClub_Text_PokemonDontLikeFainting:
 	.string "If you keep letting a Pokémon faint\n"

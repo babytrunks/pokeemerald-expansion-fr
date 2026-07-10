@@ -399,6 +399,9 @@ Movement_Cinnabar_May_Movedown2:
     walk_right
     step_end
 
+CinnabarIsland_EventScript_KabutopsMissingNo::
+	end
+
 CinnabarIsland_Text_DoorIsLocked::
     .string "The door is locked…$"
 
