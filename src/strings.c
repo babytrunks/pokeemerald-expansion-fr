@@ -1367,7 +1367,7 @@ const u8 gText_QuestComplete[] =_("complete");
 const u8 gText_QuestActive[] =_("active");
 
 //names
-const u8 gText_AFathersRequest[] = _("Pika, Please!");
+const u8 gText_AFathersRequest[] = _("Peace of Mind");
 const u8 gText_SideQuestName_2[] = _("Berry Important");
 const u8 gText_AStudyInNature[] = _("A Study In Nature");
 const u8 gText_SideQuestName_4[] = _("A Familiar Bark");
@@ -1399,7 +1399,7 @@ const u8 gText_SideQuestName_29[] = _("Side Quest 29");
 const u8 gText_AStudyInNature0[] = _("Side Quest 30");
 
 //descriptions
-const u8 gText_SideQuestDesc_1[] = _("Help a father out by showing a Pikachu\nto please his daughter.");
+const u8 gText_SideQuestDesc_1[] = _("Rescue the bullied Pichu in western\nViridian Forest and bring it along.");
 const u8 gText_SideQuestDesc_2[] = _("Find a Berry Juice for a rare Grass\nPokémon.");
 const u8 gText_SideQuestDesc_3[] = _("Help Oak's Aide with some tasks\nto unlock Nature Changing.");
 const u8 gText_SideQuestDesc_4[] = _("Cheer up an old man by showing\nhim a dog Pokémon.");
@@ -1431,7 +1431,7 @@ const u8 gText_SideQuestDesc_29[] = _("Description 29");
 const u8 gText_SideQuestDesc_30[] = _("Description 30");
 
 //completed quest description
-const u8 gText_SideQuestDoneDesc_1[] = _("Received Light Ball by showing a\nPikachu.");
+const u8 gText_SideQuestDoneDesc_1[] = _("Rescued the spiky-eared Pichu and\nreceived a Light Ball.");
 const u8 gText_SideQuestDoneDesc_2[] = _("Received a Grass Pokémon by giving\na Berry Juice.");
 const u8 gText_SideQuestDoneDesc_3[] = _("Completed Oak Aide's tasks to unlock\nNature Changing.");
 const u8 gText_SideQuestDoneDesc_4[] = _("Showed a good boy to unlock Fang\nTutor.");

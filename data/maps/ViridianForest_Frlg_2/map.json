@@ -174,10 +174,74 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Viridian_Forest_2_EventScript_Virizion",
       "flag": "FLAG_HIDE_VIRIZION"
+    },
+    {
+      "local_id": "LOCALID_VIRIDIAN_FOREST_PICHU_BULLY_1",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PICHU)",
+      "x": 31,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_VIRIDIAN_FOREST_2_PICHU_BULLIES"
+    },
+    {
+      "local_id": "LOCALID_VIRIDIAN_FOREST_PICHU_BULLY_2",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PICHU)",
+      "x": 30,
+      "y": 28,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_JOG_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_VIRIDIAN_FOREST_2_PICHU_BULLIES"
+    },
+    {
+      "local_id": "LOCALID_VIRIDIAN_FOREST__SPIKY_PICHU",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PICHU)",
+      "x": 30,
+      "y": 27,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_VIRIDIAN_FOREST_2_PICHU_BULLIES"
     }
   ],
   "warp_events": [],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ViridianForest_2_EventScript_PichuBullyTriggerUp"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "ViridianForest_2_EventScript_PichuBullyTriggerDown"
+    }
+  ],
   "bg_events": [],
   "region": "REGION_KANTO"
 }

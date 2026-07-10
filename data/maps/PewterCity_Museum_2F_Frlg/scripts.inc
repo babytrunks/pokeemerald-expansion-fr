@@ -14,44 +14,51 @@ PewterCity_Museum_2F_EventScript_Scientist::
 	end
 
 PewterCity_Museum_2F_EventScript_LittleGirl::
-    goto_if_quest_complete QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_LittleGirlPikablu
-	msgbox PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu, MSGBOX_NPC
+    goto_if_quest_complete QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_LittleGirlPichuSaved
+	msgbox PewterCity_Museum_1F_Text_PoorLittlePichu, MSGBOX_NPC
 	end
 
-PewterCity_Museum_2F_EventScript_LittleGirlPikablu::
-	msgbox PewterCity_Museum_1F_Text_AskedDaddyToCatchPikablu, MSGBOX_NPC
+PewterCity_Museum_2F_EventScript_LittleGirlPichuSaved::
+	msgbox PewterCity_Museum_1F_Text_PichuFoundAFriend, MSGBOX_NPC
 	end
 
 PewterCity_Museum_2F_EventScript_BaldingMan::
     @ lock
-    goto_if_quest_complete QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_WhatIsPikablu
-    goto_if_quest_active QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_FindPikachu
-	msgbox PewterCity_Museum_1F_Text_PikachuSoonIPromise
+    goto_if_quest_complete QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_DaughterSmilesAgain
+    goto_if_quest_active QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_CheckPichuRescued
+	msgbox PewterCity_Museum_1F_Text_ThereThereSweetie
     applymovement LOCALID_PEWTER_BALDING_MAN, Common_Movement_ExclamationMark
     playse SE_PIN
     waitmovement 0
     waitse
     faceplayer
     setflag FLAG_SYS_QUEST_MENU_GET
-	msgbox PewterCity_Museum_1F_Text_HeyYouLookLike
+	msgbox PewterCity_Museum_1F_Text_TeachThoseBulliesALesson
     closemessage
     questmenu QUEST_MENU_SET_ACTIVE QUEST_LIGHT_BALL
     openquestmenu
     startquest QUEST_LIGHT_BALL
 	end
 
-PewterCity_Museum_2F_EventScript_FindPikachu::
+PewterCity_Museum_2F_EventScript_CheckPichuRescued::
     @ lock
     faceplayer
+    goto_if_unset FLAG_RESCUED_SPIKY_PICHU, PewterCity_Museum_2F_EventScript_BulliesStillOutThere
     callnative GetFollowerPokemon
-    goto_if_eq VAR_RESULT, SPECIES_PIKACHU, PewterCity_Museum_2F_EventScript_LightBallCompleteQuest
-	msgbox PewterCity_Museum_1F_Text_HeyYouLookLike
+    goto_if_eq VAR_RESULT, SPECIES_PICHU, PewterCity_Museum_2F_EventScript_LightBallCompleteQuest
+	msgbox PewterCity_Museum_1F_Text_BringThePichuAlong
     closemessage
     release
     end
 
-PewterCity_Museum_2F_EventScript_WhatIsPikablu::
-    msgbox PewterCity_Museum_1F_Text_WhatIsPikablu
+PewterCity_Museum_2F_EventScript_BulliesStillOutThere::
+	msgbox PewterCity_Museum_1F_Text_BulliesStillOutThere
+    closemessage
+    release
+    end
+
+PewterCity_Museum_2F_EventScript_DaughterSmilesAgain::
+    msgbox PewterCity_Museum_1F_Text_DaughterSmilesAgain
     release
     end
 
@@ -60,14 +67,14 @@ PewterCity_Museum_2F_EventScript_LightBallCompleteQuest::
     applymovement LOCALID_PEWTER_LITTLE_GIRL_PIKACHU, PewterMuseum_Movement_GirlFacePlayer
     waitmovement 0
     waitse
- 	msgbox PewterCity_Museum_1F_Text_HeyItsPikachu
+ 	msgbox PewterCity_Museum_1F_Text_ItsTheLittlePichu
     waitmessage
     applymovement LOCALID_PEWTER_BALDING_MAN, Common_Movement_WalkInPlaceLeft
     waitmovement 0
-    msgbox PewterCity_Museum_1F_Text_ThatsOkaySilly
+    msgbox PewterCity_Museum_1F_Text_HerSmileIsBack
     applymovement LOCALID_PEWTER_BALDING_MAN,  Common_Movement_FacePlayer
     waitmovement 0
-    msgbox PewterCity_Museum_1F_Text_KnewThisWouldHappen
+    msgbox PewterCity_Museum_1F_Text_SpikyEaredPichu
     giveitem ITEM_LIGHT_BALL
     completequest QUEST_LIGHT_BALL
     waitmessage
@@ -177,45 +184,75 @@ PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
     .string "This month, we're running a space\n"
     .string "exhibit.$"
 
-PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu::
-    .string "{COLOR RED}I want a Pikachu!\n"
-    .string "It's so cute!\p"
-    .string "I asked my daddy to catch me one!$"
+PewterCity_Museum_1F_Text_PoorLittlePichu::
+    .string "Waaah… The poor little Pichu…\p"
+    .string "Those two big meanies just kept\n"
+    .string "picking on it…$"
 
-PewterCity_Museum_1F_Text_AskedDaddyToCatchPikablu::
-    .string "{COLOR RED}Daddy, I want a Pikablu now!\n"
-    .string "It's so cute!$"
+PewterCity_Museum_1F_Text_PichuFoundAFriend::
+    .string "You saved the little Pichu!\p"
+    .string "Its spiky ear makes it extra\n"
+    .string "cute! Take good care of it!$"
 
-PewterCity_Museum_1F_Text_PikachuSoonIPromise::
-    .string "{COLOR BLUE}Yeah, a Pikachu soon, I promise!$"
+PewterCity_Museum_1F_Text_ThereThereSweetie::
+    .string "There, there, sweetie.\n"
+    .string "I'm sure that Pichu is fine…$"
 
-PewterCity_Museum_1F_Text_HeyYouLookLike::
-    .string "{COLOR BLUE}Hey, you look like a trainer!\p"
-    .string "Can you get a Pikachu to show\n"
-    .string "my daughter? Pretty please?$"
+PewterCity_Museum_1F_Text_TeachThoseBulliesALesson::
+    .string "Oh! You look like a Trainer!\p"
+    .string "My daughter and I were strolling\n"
+    .string "through Viridian Forest when we\l"
+    .string "saw something awful…\p"
+    .string "In the western part, two Pichu\n"
+    .string "were ganging up on a little one!\p"
+    .string "She hasn't stopped crying about\n"
+    .string "it since.\p"
+    .string "Could you go teach those bullies\n"
+    .string "a lesson?\p"
+    .string "Please, for my little girl's\n"
+    .string "peace of mind…$"
 
-PewterCity_Museum_1F_Text_WhatIsPikablu::
-    .string "{COLOR BLUE}Yeah, a Pikablu soon, I-\n"
-    .string "…what in the world is a Pikablu?$"
+PewterCity_Museum_1F_Text_BulliesStillOutThere::
+    .string "Those two bullies were in the\n"
+    .string "western part of Viridian Forest.\p"
+    .string "Please, put my daughter's mind\n"
+    .string "at ease…$"
 
-PewterCity_Museum_1F_Text_HeyItsPikachu::
-    .string "{COLOR RED}Hey… it's a Pikachu!\n"
-    .string "Sooooo cute!\p"
-    .string "Hmm…\p"
-    .string "Hmmmm…\p"
-    .string "Hm…\p"
-    .string "…Now that I've seen it, I don't\n"
-    .string "think I want one anymore…$"
+PewterCity_Museum_1F_Text_BringThePichuAlong::
+    .string "You drove those bullies off?\n"
+    .string "Thank you!\p"
+    .string "And the little one that was being\n"
+    .string "picked on… is it doing okay?\p"
+    .string "I'd love for my daughter to see\n"
+    .string "it safe with her own eyes.\p"
+    .string "Could you bring it along with\n"
+    .string "you?$"
 
-PewterCity_Museum_1F_Text_ThatsOkaySilly::
-    .string "{COLOR BLUE}Okay silly…$"
+PewterCity_Museum_1F_Text_ItsTheLittlePichu::
+    .string "Ah! It's the little Pichu!\n"
+    .string "It's safe!\p"
+    .string "And it looks sooooo happy\n"
+    .string "with you!$"
 
-PewterCity_Museum_1F_Text_KnewThisWouldHappen::
-    .string "{COLOR BLUE}I sort of knew this would happen.\p"
-    .string "Kids can be like this. The joy of\n"
-    .string "parenting! Anyway, thanks for that.\p"
-    .string "This was going to go to her Pikachu,\n" 
-    .string "but you can have it instead.$"
+PewterCity_Museum_1F_Text_HerSmileIsBack::
+    .string "Well, what do you know…\n"
+    .string "Her smile is finally back.$"
+
+PewterCity_Museum_1F_Text_SpikyEaredPichu::
+    .string "Hm? Look at that…\p"
+    .string "That ear of its is all spiky!\n"
+    .string "I've never seen one like it.\p"
+    .string "Maybe that's why the others\n"
+    .string "picked on it…\p"
+    .string "Well, it couldn't have found a\n"
+    .string "better Trainer.\p"
+    .string "Here, take this as thanks.$"
+
+PewterCity_Museum_1F_Text_DaughterSmilesAgain::
+    .string "Thanks to you, my daughter can't\n"
+    .string "stop smiling.\p"
+    .string "Take good care of that spiky-\n"
+    .string "eared Pichu!$"
 
 PewterCity_Museum_1F_Text_SpaceShuttle::
     .string "Space Shuttle$"
@@ -226,12 +263,12 @@ PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
 
 
 falkner_Text_1::
-  .string "{COLOR BLUE}Hmm… There doesn't seem to be\n"
+  .string "Hmm… There doesn't seem to be\n"
   .string "any information on Mega Stones…$"
 
 
 falkner_Text_2::
-  .string "{COLOR BLUE}Oh, hello! I'm Falkner, a Gym\n"
+  .string "Oh, hello! I'm Falkner, a Gym\n"
   .string "Leader from Johto.\p"
   .string "I'm traveling in Kanto looking for\n"
   .string "information on Mega Evolution,\l"
@@ -239,7 +276,7 @@ falkner_Text_2::
 
 
 falkner_Text_3::
-  .string "{COLOR BLUE}…A battle is what you're looking\n"
+  .string "…A battle is what you're looking\n"
   .string "for?\p"
   .string "I guess I could spare the time.\p"
   .string "I'll demonstrate the power of the\n"
@@ -252,7 +289,7 @@ falkner_Text_Defeat::
 
 
 falkner_Text_4::
-  .string "{COLOR BLUE}Thank you for a wonderful battle.\n"
+  .string "Thank you for a wonderful battle.\n"
   .string "I hope we meet again.\p"
   .string "I don't have a badge to give\n"
   .string "unfortunately, but you can have this.$"

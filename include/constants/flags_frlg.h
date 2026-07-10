@@ -785,8 +785,8 @@
 #define FLAG_HIDE_ARTICUNO_GALAR                         0x31E
 #define FLAG_HIDE_MOLTRES                                0x31F
 #define FLAG_HIDE_MOLTRES_GALAR                          0x320
-#define FLAG_0x321               0x321
-#define FLAG_0x322               0x322
+#define FLAG_HIDE_VIRIDIAN_FOREST_2_PICHU_BULLIES        0x321
+#define FLAG_RESCUED_SPIKY_PICHU                         0x322
 #define FLAG_0x323               0x323
 #define FLAG_0x324               0x324
 #define FLAG_0x325               0x325

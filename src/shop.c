@@ -169,7 +169,7 @@ static void BuyMenuPrintCoinAmount(void);
 // Confirm/decline text for the Coin-based Game Corner prize shop.
 static const u8 sText_YouWantedVar1ThatllBeVar2Coins[] = _("You wanted the {STR_VAR_1}?\nThat'll be {STR_VAR_2} Coins.");
 static const u8 sText_NotEnoughCoins[] = _("You don't have enough Coins.");
-static const u8 sText_Var1Coins[] = _("{STR_VAR_1} C");
+static const u8 sText_Var1Coins[] = _("{STR_VAR_1}");
 static void Task_HandleShopMenuSell(u8 taskId);
 static void BuyMenuPrintItemDescriptionAndShowItemIcon(s32 item, bool8 onInit, struct ListMenu *list);
 static void BuyMenuPrintPriceInList(u8 windowId, u32 itemId, u8 y);

@@ -24,6 +24,14 @@ SlateportCity_PokemonCenter_1F_EventScript_Woman::
 	msgbox SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend, MSGBOX_NPC
 	end
 
+SlateportCity_PokemonCenter_1F_EventScript_NurseJoke::
+	msgbox SlateportCity_PokemonCenter_1F_Text_IsNoMoreMore, MSGBOX_NPC
+	end
+
+SlateportCity_PokemonCenter_1F_EventScript_NOOOOOOOOOOOOO::
+	msgbox SlateportCity_PokemonCenter_1F_Text_NOOOOOOOOO, MSGBOX_NPC
+	end
+
 SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon:
 	.string "Want a tip for battling?\p"
 	.string "I'd say it's raising different kinds\n"
@@ -34,7 +42,11 @@ SlateportCity_PokemonCenter_1F_Text_RaiseDifferentTypesOfPokemon:
 	.string "it might not stand a chance.$"
 
 SlateportCity_PokemonCenter_1F_Text_TradedMonWithFriend:
-	.string "I trade Pokémon with my friends.\p"
-	.string "If a traded Pokémon is holding an\n"
-	.string "item, it makes me twice as happy!$"
+	.string "Hey dude calm down$"
 
+SlateportCity_PokemonCenter_1F_Text_IsNoMoreMore::
+	.string "Your Bagon is no more more$"
+
+SlateportCity_PokemonCenter_1F_Text_NOOOOOOOOO::
+	.string "NOOOOOOOOOOO\n"
+	.string "NOOOOOOOOOOOOOOOOO$"
