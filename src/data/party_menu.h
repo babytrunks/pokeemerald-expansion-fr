@@ -1282,7 +1282,7 @@ static const u16 sRotomFormChangeMoves[12] =
     MOVE_FROST_BREATH
 };
 
-static const u16 sPikachuFormChangeMoves[12] =
+static const u16 sPikachuFormChangeMoves[18] =
 {
     MOVE_BULLET_PUNCH,
     MOVE_METEOR_MASH,
@@ -1298,6 +1298,12 @@ static const u16 sPikachuFormChangeMoves[12] =
     MOVE_ZEN_HEADBUTT,
     MOVE_ICE_SHARD, 
     MOVE_ICICLE_CRASH, 
-    MOVE_FREEZY_FROST
+    MOVE_FREEZY_FROST,
+    MOVE_FLOATY_FALL, 
+    MOVE_AIR_SLASH,
+    MOVE_HURRICANE,
+    MOVE_MOONBLAST,
+    MOVE_SPARKLY_SWIRL,
+    MOVE_DAZZLING_GLEAM, 
 };
 

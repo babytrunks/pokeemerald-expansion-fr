@@ -17285,11 +17285,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Floaty Fall"),
         .description = COMPOUND_STRING(
             "Floats in air and dives at\n"
-            "angle. May cause flinching."),
+            "angle. 30% chance to flinch."),
         .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_FLYING,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

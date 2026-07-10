@@ -1029,11 +1029,11 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
     const u16 gMonShinyPalette_PikachuOriginal[] = INCBIN_U16("graphics/pokemon/pikachu/original/shiny.gbapal");
     const u8 gMonIcon_PikachuOriginal[] = INCBIN_U8("graphics/pokemon/pikachu/original/icon.4bpp");
 
-    const u32 gMonFrontPic_PikachuHoenn[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn/front.4bpp.smol");
-    const u16 gMonPalette_PikachuHoenn[] = INCBIN_U16("graphics/pokemon/pikachu/hoenn/normal.gbapal");
-    const u32 gMonBackPic_PikachuHoenn[] = INCBIN_U32("graphics/pokemon/pikachu/hoenn/back.4bpp.smol");
-    const u16 gMonShinyPalette_PikachuHoenn[] = INCBIN_U16("graphics/pokemon/pikachu/hoenn/shiny.gbapal");
-    const u8 gMonIcon_PikachuHoenn[] = INCBIN_U8("graphics/pokemon/pikachu/hoenn/icon.4bpp");
+    const u32 gMonFrontPic_PikachuFlying[] = INCBIN_U32("graphics/pokemon/pikachu/flying/front.4bpp.smol");
+    const u16 gMonPalette_PikachuFlying[] = INCBIN_U16("graphics/pokemon/pikachu/flying/normal.gbapal");
+    const u32 gMonBackPic_PikachuFlying[] = INCBIN_U32("graphics/pokemon/pikachu/flying/back.4bpp.smol");
+    const u16 gMonShinyPalette_PikachuFlying[] = INCBIN_U16("graphics/pokemon/pikachu/flying/shiny.gbapal");
+    const u8 gMonIcon_PikachuFlying[] = INCBIN_U8("graphics/pokemon/pikachu/flying/icon.4bpp");
 
     const u32 gMonFrontPic_PikachuSinnoh[] = INCBIN_U32("graphics/pokemon/pikachu/sinnoh/front.4bpp.smol");
     const u16 gMonPalette_PikachuSinnoh[] = INCBIN_U16("graphics/pokemon/pikachu/sinnoh/normal.gbapal");
@@ -1069,7 +1069,7 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 
 #if OW_POKEMON_OBJECT_EVENTS
     // const u32 gObjectEventPic_PikachuOriginal[] = INCBIN_COMP("graphics/pokemon/pikachu/original/overworld.4bpp");
-    // const u32 gObjectEventPic_PikachuHoenn[] = INCBIN_COMP("graphics/pokemon/pikachu/hoenn/overworld.4bpp");
+    // const u32 gObjectEventPic_PikachuFlying[] = INCBIN_COMP("graphics/pokemon/pikachu/flying/overworld.4bpp");
     // const u32 gObjectEventPic_PikachuSinnoh[] = INCBIN_COMP("graphics/pokemon/pikachu/sinnoh/overworld.4bpp");
     // const u32 gObjectEventPic_PikachuUnova[] = INCBIN_COMP("graphics/pokemon/pikachu/unova/overworld.4bpp");
     // const u32 gObjectEventPic_PikachuKalos[] = INCBIN_COMP("graphics/pokemon/pikachu/kalos/overworld.4bpp");

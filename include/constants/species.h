@@ -1083,7 +1083,7 @@
 #define SPECIES_PIKACHU_PHD                             1013
 #define SPECIES_PIKACHU_LIBRE                           1014
 #define SPECIES_PIKACHU_ORIGINAL                        1015
-#define SPECIES_PIKACHU_HOENN                           1016
+#define SPECIES_PIKACHU_FLYING                          1016
 #define SPECIES_PIKACHU_SINNOH                          1017
 #define SPECIES_PIKACHU_UNOVA                           1018
 #define SPECIES_PIKACHU_KALOS                           1019

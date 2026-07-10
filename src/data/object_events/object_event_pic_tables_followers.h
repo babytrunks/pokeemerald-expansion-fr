@@ -230,8 +230,8 @@ static const struct SpriteFrameImage sPicTable_PikachuLibre[] = {
 /*static const struct SpriteFrameImage sPicTable_PikachuOriginal[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuOriginal, 4, 4),
 };
-static const struct SpriteFrameImage sPicTable_PikachuHoenn[] = {
-    overworld_ascending_frames(gObjectEventPic_PikachuHoenn, 4, 4),
+static const struct SpriteFrameImage sPicTable_PikachuFlying[] = {
+    overworld_ascending_frames(gObjectEventPic_PikachuFlying, 4, 4),
 };
 static const struct SpriteFrameImage sPicTable_PikachuSinnoh[] = {
     overworld_ascending_frames(gObjectEventPic_PikachuSinnoh, 4, 4),
