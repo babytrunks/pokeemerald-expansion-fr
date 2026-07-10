@@ -106,7 +106,41 @@ ViridianCity_EventScript_OldManGymLeaderReturned::
 	end
 
 ViridianCity_EventScript_TutorialOldMan::
-	msgbox ViridianCity_Text_UsedToHelpLads, MSGBOX_NPC
+	lock
+	faceplayer
+	goto_if_unset FLAG_BADGE06_GET, ViridianCity_EventScript_OldManTired
+	goto_if_quest_complete QUEST_MISSING_NUMBER, ViridianCity_EventScript_MissingNumberDone
+	goto_if_quest_active QUEST_MISSING_NUMBER, ViridianCity_EventScript_MissingNumberCheck
+	msgbox ViridianCity_Text_MissingNumberIntro
+	setflag FLAG_SYS_QUEST_MENU_GET
+	startquest QUEST_MISSING_NUMBER
+	release
+	end
+
+ViridianCity_EventScript_OldManTired::
+	msgbox ViridianCity_Text_UsedToHelpLads
+	release
+	end
+
+ViridianCity_EventScript_MissingNumberCheck::
+	checkitem ITEM_LOTTO_TICKET
+	goto_if_eq VAR_RESULT, TRUE, ViridianCity_EventScript_MissingNumberReward
+	msgbox ViridianCity_Text_MissingNumberReminder
+	release
+	end
+
+ViridianCity_EventScript_MissingNumberReward::
+	msgbox ViridianCity_Text_MissingNumberAwShucks
+	msgbox ViridianCity_Text_MissingNumberTakeThis
+	giveitem ITEM_CHOICE_BAND
+	removeitem ITEM_LOTTO_TICKET, 1
+	completequest QUEST_MISSING_NUMBER
+	release
+	end
+
+ViridianCity_EventScript_MissingNumberDone::
+	msgbox ViridianCity_Text_MissingNumberThanks
+	release
 	end
 
 ViridianCity_EventScript_AskIfTeachyTVHelpful::
@@ -514,3 +548,42 @@ ViridianCity_Text_UsedToHelpLads::
 	.string "Now you young ones act like complete\n"
 	.string "know it alls.\p"
 	.string "How disrespectful, you lot!$"
+
+ViridianCity_Text_MissingNumberIntro::
+	.string "Bah! You caught me in a foul mood.\p"
+	.string "I've been grouchy for weeks now, ever\n"
+	.string "since I lost my lotto ticket.\p"
+	.string "I dropped it somewhere along the east\n"
+	.string "side of Cinnabar Island, of all the\l"
+	.string "far-flung places.\p"
+	.string "I don't lose things often, even in my\n"
+	.string "old age. Believe it or not.\p"
+	.string "Almost felt like a glitch in the\n"
+	.string "matrix…\p"
+	.string "If a spry young thing like you could\n"
+	.string "track it down, I'd make it worth your\l"
+	.string "while. What do you say?$"
+
+ViridianCity_Text_MissingNumberReminder::
+	.string "Still no sign of my lotto ticket?\p"
+	.string "Check the east side of Cinnabar\n"
+	.string "Island. That's where I lost it.$"
+
+ViridianCity_Text_MissingNumberAwShucks::
+	.string "My lotto ticket! You actually found\n"
+	.string "it!\p"
+	.string "Let me just check the number and…\p"
+	.string "…Aw, shucks. Doesn't match a single\n"
+	.string "digit. What a load of hooey.$"
+
+ViridianCity_Text_MissingNumberTakeThis::
+	.string "Still, you went to all that trouble\n"
+	.string "for a grouchy old coot like me.\p"
+	.string "Here, take this. It belonged to a\n"
+	.string "battler I trained back in the day.$"
+
+ViridianCity_Text_MissingNumberThanks::
+	.string "That Choice Band's a fine piece of\n"
+	.string "gear. Put it to good use.\p"
+	.string "And thanks again for humoring an old\n"
+	.string "man, you hear?$"

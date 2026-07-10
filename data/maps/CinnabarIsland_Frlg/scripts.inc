@@ -5,11 +5,17 @@ CinnabarIsland_Frlg_MapScripts::
 
 CinnabarIsland_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_CINNABAR_ISLAND
+	setvar VAR_TEMP_0, 0
+	call_if_quest_active QUEST_MISSING_NUMBER, CinnabarIsland_EventScript_KabutopsMissingNoSetVar
 	call CinnabarIsland_EventScript_CheckUnlockGym
 	@ call_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND, 1, CinnabarIsland_EventScript_ReadyObjectsSailToOneIsland
 	@ call_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND, 3, CinnabarIsland_EventScript_ReadyObjectsReturnFromSeviiIslands
 	@ call_if_eq VAR_MAP_SCENE_CINNABAR_ISLAND_2, 1, CinnabarIsland_EventScript_ReadyObjectsSailToOneIslandFromPokeCenter
 	end
+
+CinnabarIsland_EventScript_KabutopsMissingNoSetVar::
+	setvar VAR_TEMP_0, 1
+	return
 
 CinnabarIsland_EventScript_ReadyObjectsSailToOneIslandFromPokeCenter::
 	savebgm MUS_FOLLOW_ME
@@ -400,6 +406,39 @@ Movement_Cinnabar_May_Movedown2:
     step_end
 
 CinnabarIsland_EventScript_KabutopsMissingNo::
+	goto_if_quest_active QUEST_MISSING_NUMBER, CinnabarIsland_EventScript_KabutopsMissingNoCheck
+	setvar VAR_TEMP_0, 0
+	end
+
+CinnabarIsland_EventScript_KabutopsMissingNoCheck::
+	checkitem ITEM_LOTTO_TICKET
+	goto_if_eq VAR_RESULT, FALSE, CinnabarIsland_EventScript_KabutopsMissingNoBattle
+	setvar VAR_TEMP_0, 0
+	end
+
+CinnabarIsland_EventScript_KabutopsMissingNoBattle::
+	lockall
+	setflag FLAG_DONT_RANDOMIZE
+	setflag FLAG_CANT_CATCH
+	setflag FLAG_STRANGE_ENCOUNTER
+	setwildbattle SPECIES_KABUTOPS, 0
+	createmon 1, 0, SPECIES_KABUTOPS, 0, ITEM_NONE, 0, NATURE_HARDY, 0, MON_MALE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, MOVE_WATER_GUN, MOVE_SKY_ATTACK, MOVE_NONE, MOVE_NONE, FALSE, FALSE, 0, 0
+	waitse
+	playmoncry SPECIES_KABUTOPS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	dowildbattle
+	clearflag FLAG_DONT_RANDOMIZE
+	clearflag FLAG_CANT_CATCH
+	clearflag FLAG_STRANGE_ENCOUNTER
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, CinnabarIsland_EventScript_KabutopsMissingNoDefeated
+	releaseall
+	end
+
+CinnabarIsland_EventScript_KabutopsMissingNoDefeated::
+	giveitem ITEM_LOTTO_TICKET
+	releaseall
 	end
 
 CinnabarIsland_Text_DoorIsLocked::

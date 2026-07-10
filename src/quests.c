@@ -592,12 +592,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
-	      gText_AFathersRequest0,
+	side_quest( // The Missing Number quest
+	      gText_SideQuestName_10,
 	      gText_SideQuestDesc_10,
 	      gText_SideQuestDoneDesc_10,
 	      gText_SideQuestMap10,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_OLD_MAN_1,
 	      OBJECT,
 	      NULL,
 	      0

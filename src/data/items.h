@@ -13945,6 +13945,22 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_SSTicket,
     },
 
+    [ITEM_LOTTO_TICKET] =
+    {
+        .name = ITEM_NAME("Lotto Ticket"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A lottery ticket an\n"
+            "old man dropped on\n"
+            "Cinnabar Island."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .iconPic = gItemIcon_SSTicket,
+        .iconPalette = gItemIconPalette_SSTicket,
+    },
+
     [ITEM_EON_TICKET] =
     {
         .name = ITEM_NAME("Eon Ticket"),

@@ -86,6 +86,7 @@ static const u8 sText_WildPkmnAppearedPause[] = _("You encountered a {B_OPPONENT
 static const u8 sText_TwoWildPkmnAppeared[] = _("Oh! A wild {B_OPPONENT_MON1_NAME} and {B_OPPONENT_MON2_NAME} appeared!\p");
 static const u8 sText_GhostAppearedCantId[] = _("The GHOST appeared!\pDarn!\nThe GHOST can't be ID'd!\p");
 static const u8 sText_TheGhostAppeared[] = _("The GHOST appeared!\p");
+static const u8 sText_StrangePkmnAppeared[] = _("You encountered a strange\n{B_OPPONENT_MON1_NAME}!\p");
 static const u8 sText_Trainer1WantsToBattle[] = _("You are challenged by {B_TRAINER1_NAME_WITH_CLASS}!\p");
 static const u8 sText_LinkTrainerWantsToBattle[] = _("You are challenged by {B_LINK_OPPONENT1_NAME}!");
 static const u8 sText_TwoLinkTrainersWantToBattle[] = _("You are challenged by {B_LINK_OPPONENT1_NAME} and {B_LINK_OPPONENT2_NAME}!");
@@ -2160,7 +2161,9 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
         }
         else
         {
-            if (gBattleTypeFlags & BATTLE_TYPE_GHOST && IsGhostBattleWithoutScope())
+            if (FlagGet(FLAG_STRANGE_ENCOUNTER))
+                stringPtr = sText_StrangePkmnAppeared;
+            else if (gBattleTypeFlags & BATTLE_TYPE_GHOST && IsGhostBattleWithoutScope())
                 stringPtr = sText_GhostAppearedCantId;
             else if (gBattleTypeFlags & BATTLE_TYPE_GHOST)
                 stringPtr = sText_TheGhostAppeared;

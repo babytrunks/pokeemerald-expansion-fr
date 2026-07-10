@@ -16367,7 +16367,6 @@ static const struct LevelUpMove sPyroarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_CRUNCH),
     LEVEL_UP_MOVE(35, MOVE_HYPER_VOICE),
     LEVEL_UP_MOVE(38, MOVE_OVERHEAT),
-    LEVEL_UP_MOVE(LEVEL_CAP_GYM_6 + 1, MOVE_TORCH_SONG),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LITLEO
