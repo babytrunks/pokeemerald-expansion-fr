@@ -66,7 +66,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route4_EventScript_ItemTM_ShockWave",
-      "flag": "FLAG_HIDE_ROUTE4_TM_ShockWave"
+      "flag": "FLAG_HIDE_ROUTE4_TM_SHOCK_WAVE"
     },
     {
       "type": "object",

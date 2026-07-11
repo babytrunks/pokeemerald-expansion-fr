@@ -1809,7 +1809,7 @@
 #define FLAG_HIDE_MT_MOON_1F_MOON_STONE                         0
 #define FLAG_HIDE_MT_MOON_B2F_SOFT_SAND                        0
 #define FLAG_HIDE_MT_MOON_B2F_TM46                              0
-#define FLAG_HIDE_ROUTE4_TM_ShockWave                                   0
+#define FLAG_HIDE_ROUTE4_TM_SHOCK_WAVE                                   0
 #define FLAG_HIDE_ROUTE24_TM45                                  0
 #define FLAG_HIDE_ROUTE25_TM43                                  0
 #define FLAG_HIDE_SSANNE_1F_ROOM2_TM31                          0

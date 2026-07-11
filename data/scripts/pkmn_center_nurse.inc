@@ -303,7 +303,6 @@ PkmnCenterNurse_EventScript_BoulderMoveTutors:
 	dynmultipush PkmnCenterNurse_Text_MudShot, 4
 	dynmultipush PkmnCenterNurse_Text_OminousWind, 5
 	dynmultipush PkmnCenterNurse_Text_AncientPower, 6
-	dynmultipush PkmnCenterNurse_Text_VacuumWave, 7
 	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
@@ -314,7 +313,6 @@ PkmnCenterNurse_EventScript_BoulderMoveTutors:
 	case 4, PkmnCenterNurse_Tutor_Mudshot
 	case 5, PkmnCenterNurse_Tutor_OminousWind
 	case 6, PkmnCenterNurse_Tutor_AncientPower
-	case 7, PkmnCenterNurse_Tutor_VacuumWave
 	goto PkmnCenterNurse_EventScript_WantMoveTutor
 	
 	end
