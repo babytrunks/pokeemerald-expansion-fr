@@ -4905,13 +4905,49 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Shellder
-Level: 31
+Beartic @ Choice Band
+Ability: Slush Rush
+Level: 56
+Nature: Jolly
+EVs: 6 HP / 140 Atk / 160 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Icicle Crash
+- Close Combat
+- Earthquake
+- Rock Slide
 
-Cloyster
-Level: 31
+Qwilfish @ Air Balloon
+Ability: Intimidate
+Level: 55
+Nature: Jolly
+EVs: 160 HP / 30 Atk / 116 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Barb Barrage
+- Aqua Jet
+- Snowscape 
+
+Aurorus @ Chople Berry
+Ability: Refrigerate 
+Level: 57
+Nature: Modest
+EVs: 200 HP / 106 SpA
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Boomburst
+- Ancient Power
+- Earth Power
+- Freeze-Dry
+
+Dewgong @ Leftovers
+Ability: Ice Body
+Level: 56
+Nature: Calm
+EVs: 120 HP / 100 SpA / 86 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Freeze Dry
+- Weather Ball
+- Surf 
+- Recover
 
 === TRAINER_SWIMMER_MALE_DEAN ===
 Name: Dean
@@ -4922,9 +4958,49 @@ Music: Swimmer
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Staryu
-Level: 35
+Walrein @ Leftovers
+Ability: Fur Coat
+Level: 57
+Nature: Bold
+EVs: 100 HP / 106 Def / 100 SpA
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Rest
+- Sleep Talk
+- Aurora Beam
+
+Eiscue @ Choice Band
+Ability: Ice Face
+Level: 56
+Nature: Adamant
+EVs: 54 HP / 252 Atk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Spinner
+- Liquidation
+- Flip Turn
+- Ice Shard
+
+Clawitzer @ Choice Specs
+Ability: Mega Launcher
+Level: 57
+Nature: Modest
+EVs: 100 SpA / 100 SpD / 106 Spe
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Water Pulse
+- Dark Pulse
+- Aura Sphere
+- U-Turn
+
+Pyukumuku @ Leftovers
+Ability: Unaware
+Level: 56
+Nature: Bold
+EVs: 252 HP / 54 SpD
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Soak
+- Protect
+- Recover
 
 === TRAINER_SWIMMER_MALE_DARRIN ===
 Name: Darrin
@@ -5756,17 +5832,49 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Shellder
-Level: 30
+Glalie @ Glalitite
+Ability: Refrigerate
+Level: 57
+Nature: Jolly
+EVs: 100 Atk / 206 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Ice Shard
+- Body Slam
+- Explosion
 
-Shellder
-Level: 30
+Vanilluxe @ Choice Specs
+Ability: Slush Rush
+Level: 58
+Nature: Timid
+EVs: 200 SpA / 106 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Blizzard
+- Weather Ball
+- Icy Wind
+- Mirror Shot
 
-Cloyster
-Level: 30
+Baxcalibur @ Life Orb
+Ability: Ice Body
+Level: 57
+Nature: Jolly
+EVs: 100 Atk / 100 Def / 106 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Dance
+- Breaking Swipe
+- Icicle Crash
+- Brick Break
+
+Seismitoad @ Leftovers
+Ability: Water Absorb
+Level: 58
+Nature: Calm
+EVs: 100 HP / 100 SpA / 106 SpD
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Muddy Water
+- Icy Wind
+- Aqua Ring
+- Snowscape
 
 === TRAINER_SWIMMER_FEMALE_MELISSA ===
 Name: Melissa
@@ -5777,13 +5885,60 @@ Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Poliwag
-Level: 31
+Sandslash-Alola @ Focus Sash
+Ability: Slush Rush
+Level: 57
+Nature: Jolly
+EVs: 106 HP / 100 Atk / 100 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Metal Burst
+- Spiky Shield
+- Rapid Spin
 
-Seaking
-Level: 31
+Ninetales-Alola @ Light Clay
+Ability: Serene Grace
+Level: 56
+Nature: Timid
+EVs: 100 SpA / 206 Spe
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aurora Veil
+- Snowscape
+- Moonblast
+- Blizzard
+
+Relicanth @ Choice Band
+Ability: Rock Head
+Level: 56
+Nature: Brave
+EVs: 100 HP / 106 Atk / 100 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Head Smash
+- Wave Crash
+- Flip Turn
+- Bulldoze
+
+Mantine @ Leftovers
+Ability: Water Absorb
+Level: 57
+Nature: Modest
+EVs: 180 HP / 26 SpA / 100 SpD
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Toxic
+- Substitute
+- Roost
+- Blizzard
+
+Slowbro @ Slowbronite
+Ability: Regenerator
+Level: 58
+Nature: Bold
+EVs: 106 HP / 100 Def / 100 SpA
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Yawn
+- Calm Mind
+- Scald
+- Slack Off
 
 === TRAINER_BEAUTY_GRACE ===
 Name: Grace
@@ -6017,20 +6172,52 @@ Class: Swimmer F Frlg
 Pic: Swimmer F Frlg
 Gender: Male
 Music: Female
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Seadra
-Level: 30
+Weavile @ Focus Sash
+Ability: Infiltrator
+Level: 56
+Nature: Jolly
+EVs: 206 Atk / 100 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Triple Axel
+- Knock Off
+- Taunt
 
-Horsea
-Level: 30
+Arctovish @ Leftovers
+Ability: Ice Body
+Level: 57
+Nature: Adamant
+EVs: 100 HP / 106 Atk / 100 Def
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Aurora Veil
+- Snowscape
+- Rock Slide
+- Waterfall
 
-Seadra
-Level: 30
+Froslass @ Choice Specs
+Ability: Stakeout
+Level: 55
+Nature: Modest
+EVs: 252 SpA / 54 Spe
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Blizzard 
+- Bitter Malice
+- Weather Ball
+- Thunder
+
+Darmanitan-Galar @ Choice Band
+Ability: Zen Mode
+Level: 57
+Nature: Jolly
+EVs: 252 Atk / 54 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Flare Blitz
+- Icicle Crash
+- Superpower
+- Rock Slide
 
 === TRAINER_PSYCHIC_JOHAN ===
 Name: Johan
@@ -6682,7 +6869,6 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-
 Gliscor @ Toxic Orb
 Nature: Jolly
 Ability: Poison Heal
@@ -7182,20 +7368,52 @@ Class: Bird Keeper Frlg
 Pic: Bird Keeper Frlg
 Gender: Male
 Music: Cool
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Fearow
-Level: 30
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ribombee @ Focus Sash
+Ability: Shield Dust
+Level: 57
+Nature: Timid
+EVs: 100 SpA / 100 SpD / 106 Spe
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stun Spore
+- Pollen Puff
+- Aromatic Mist
+- Speed Swap
 
-Fearow
-Level: 30
+Avalugg-Hisui @ Leftovers
+Ability: Technician
+Level: 58
+Nature: Adamant
+EVs: 106 HP / 200 Atk
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Ice Shard
+- Mountain Gale
+- Rock Slide
+- Recover
 
-Pidgeotto
-Level: 30
+Swanna @ Charti Berry
+Ability: No Guard
+Level: 55
+Nature: Timid
+EVs: 100 HP / 106 SpA / 100 Spe
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tailwind
+- Hurricane
+- Feather Dance
+- Hydro Pump
+
+Cramorant @ Wacan Berry
+Ability: Gulp Missile
+Level: 57
+Nature: Timid
+EVs: 100 SpA / 100 SpD / 106 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stockpile
+- Surf
+- Blizzard
+- Aqua Ring
 
 === TRAINER_BIRD_KEEPER_REED ===
 Name: Reed
@@ -13913,13 +14131,60 @@ Music: Girl
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Goldeen
-Level: 31
+Delibird @ Focus Sash
+Ability: Refrigerate
+Level: 57
+Nature: Jolly
+EVs: 252 Atk / 54 Spe
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fake Out
+- Counter
+- Triple Axel
+- Spikes
 
-Seaking
-Level: 31
+Rotom-Frost @ Heavy-Duty Boots
+Ability: Levitate
+Level: 58
+Nature: Modest
+EVs: 100 HP / 100 SpA / 106 SpD
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Thunder Wave
+- Hex
+- Blizzard
+- Will-o-wisp
+
+Cryogonal @ Light Clay
+Ability: Levitate
+Level: 56
+Nature: Calm
+EVs: 100 SpA / 100 SpD / 106 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Reflect
+- Light Screen
+- Freeze Dry
+- Hidden Power
+
+Swoobat @ Covert Cloak
+Ability: Simple
+Level: 57
+Nature: Timid
+EVs: 106 SpA / 100 SpD / 100 Spe
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Esper Wing
+- Calm Mind
+- Stored Power
+- Air Slash
+
+Absol @ Absolite
+Ability: Sharpness
+Level: 58
+Nature: Jolly
+EVs: 200 Atk / 106 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Swords Dance
+- Play Rough
+- Sucker Punch
+- Cut
 
 === TRAINER_PICNICKER_IRENE ===
 Name: Irene
@@ -15786,17 +16051,49 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Ekans
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Slurpuff @ Focus Sash  
+Ability: Unburden  
+Level: 56 
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Nature: Hasty
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Sticky Web  
+- Endeavor  
+- Light Screen  
+- Misty Explosion
 
-Ekans
-Level: 33
+Drapion @ Black Glasses  
+Ability: Sniper  
+Level: 57  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wicked Blow  
+- Cross Poison  
+- Stomping Tantrum  
+- Fell Stinger
 
-Raticate
-Level: 34
+Smeargle @ Power Herb
+Ability: Own Tempo
+Level: 57
+EVs: 4 HP / 252 SpA / 252 Spe
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stored Power
+- Boomburst
+- Geomancy
+- Spore
+
+Smeargle @ Wide Lens
+Ability: Technician
+Level: 57
+EVs: 4 HP / 252 Atk / 252 Spe
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Power Trip
+- Population Bomb
+- Shell Smash
+- Spore
 
 === TRAINER_BIKER_RICARDO ===
 Name: Ricardo

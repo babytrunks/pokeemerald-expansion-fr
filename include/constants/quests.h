@@ -25,7 +25,7 @@
 #define QUEST_BLUE_ROCK          7   // was QUEST_8
 #define QUEST_RARE_EXTRACT       8   // was QUEST_9
 #define QUEST_MISSING_NUMBER         9   // was QUEST_10
-#define QUEST_11        10
+#define QUEST_MEGA_MAYHEM        10   // was QUEST_11
 #define QUEST_12        11
 #define QUEST_13        12
 #define QUEST_14        13

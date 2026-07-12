@@ -406,9 +406,9 @@
 #define ITEM_MEDICHAMITE 320 // DONE (Route 22 post Rock Smash)
 #define ITEM_MANECTITE 321 // DONE (Silph Co 4F, item ball)
 #define ITEM_SHARPEDONITE 322 // Done (Route 12 Fisherman House)
-#define ITEM_CAMERUPTITE 323 // DONE (Celadon Dept Store Roof, trade)
+#define ITEM_CAMERUPTITE 323 // DONE (Celadon Dept Store Roof)
 #define ITEM_ALTARIANITE 324 // DONE (Route 18, map object)
-#define ITEM_BANETTITE 325 // DONE (Celadon Dept Store Roof, trade)
+#define ITEM_BANETTITE 325 // DONE (Celadon Dept Store Roof)
 #define ITEM_ABSOLITE 326 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_GLALITITE 327 // DONE (Silph Co 6F, item ball)
 #define ITEM_SALAMENCITE 328 // DONE (Cerulean Cave)
@@ -420,7 +420,7 @@
 #define ITEM_LUCARIONITE 334 // DONE (Route 23 post Surf)
 #define ITEM_ABOMASITE 335 // DONE (Route 12, item ball)
 #define ITEM_GALLADITE 336 // DONE (Pokemon Mansion)
-#define ITEM_AUDINITE 337 // DONE (Celadon Dept Store Roof, trade)
+#define ITEM_AUDINITE 337 // DONE (Celadon Dept Store Roof)
 #define ITEM_DIANCITE 338
 
 // Gems

@@ -56,11 +56,13 @@ ViridianForest_2_EventScript_PichuBullyScene::
 	closemessage
 	setflag FLAG_DONT_RANDOMIZE
 	setflag FLAG_CANT_CATCH
+	setflag FLAG_CANT_RUN
 	setwildbattle SPECIES_PICHU, 10, ITEM_NONE, SPECIES_PICHU, 10, ITEM_NONE
 	setwildonevstwo
 	dowildbattle
 	clearflag FLAG_DONT_RANDOMIZE
 	clearflag FLAG_CANT_CATCH
+	clearflag FLAG_CANT_RUN
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, ViridianForest_2_EventScript_PichuBulliesDefeated
 	releaseall
@@ -75,22 +77,23 @@ ViridianForest_2_EventScript_PichuBulliesDefeated::
 	removeobject LOCALID_VIRIDIAN_FOREST_PICHU_BULLY_2
 	msgbox ViridianForest_2_Text_BulliesFled
 	closemessage
-	applymovement LOCALID_VIRIDIAN_FOREST__SPIKY_PICHU, ViridianForest_2_Movement_SpikyPichuApproach
+	applymovement LOCALID_VIRIDIAN_FOREST_SPIKY_PICHU, ViridianForest_2_Movement_SpikyPichuApproach
 	waitmovement 0
 	waitse
 	playmoncry SPECIES_PICHU_SPIKY_EARED, CRY_MODE_NORMAL
 	msgbox ViridianForest_2_Text_PichuLooksUpAtYou
 	waitmoncry
 	closemessage
-	applymovement LOCALID_VIRIDIAN_FOREST__SPIKY_PICHU, ViridianForest_2_Movement_SpikyPichuApproachIntoPlayer
+	applymovement LOCALID_VIRIDIAN_FOREST_SPIKY_PICHU, ViridianForest_2_Movement_SpikyPichuApproachIntoPlayer
 	waitmovement 0
+	questmenu QUEST_MENU_SET_REWARD, QUEST_LIGHT_BALL
 	setvar VAR_VIRIDIAN_FOREST_QUEST, 1
 	setflag FLAG_DONT_RANDOMIZE
 	setflag FLAG_3_PERFECT_IVS
 	givemon SPECIES_PICHU_SPIKY_EARED, 10, ITEM_ZAP_PLATE, move1=MOVE_VOLT_TACKLE, move2=MOVE_HELPING_HAND, move3=MOVE_SWAGGER, move4=MOVE_PAIN_SPLIT
 	clearflag FLAG_DONT_RANDOMIZE
 	clearflag FLAG_3_PERFECT_IVS
-	removeobject LOCALID_VIRIDIAN_FOREST__SPIKY_PICHU
+	removeobject LOCALID_VIRIDIAN_FOREST_SPIKY_PICHU
 	goto_if_eq VAR_RESULT, 0, ViridianForest_2_EventScript_SpikyPichuJoinsParty
 	goto_if_eq VAR_RESULT, 1, ViridianForest_2_EventScript_SpikyPichuToPC
 	@ goto_if_eq VAR_RESULT, 2, ViridianForest_2_EventScript_NoRoomForSpikyPichu

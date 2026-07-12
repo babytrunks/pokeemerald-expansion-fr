@@ -602,12 +602,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
-	      gText_AFathersRequest1,
+	side_quest( // Mega Mayhem quest
+	      gText_SideQuestName_11,
 	      gText_SideQuestDesc_11,
 	      gText_SideQuestDoneDesc_11,
 	      gText_SideQuestMap11,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_SUPER_NERD,
 	      OBJECT,
 	      NULL,
 	      0

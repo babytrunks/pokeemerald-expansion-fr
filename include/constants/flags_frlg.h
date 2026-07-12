@@ -1236,7 +1236,7 @@
 #define FLAG_DOWSING_MACHINE                        0x4D1
 #define FLAG_DEFEATED_POWER_PLANT_JOJO_FAN          0x4D2
 #define FLAG_HIDE_TRICK_HOUSE_END_MAN               0x4D3
-#define FLAG_0x4D4               0x4D4
+#define FLAG_HIDE_SAFARI_ZONE_EAST_LUCARIO_Z    0x4D4
 #define FLAG_0x4D5               0x4D5
 #define FLAG_0x4D6               0x4D6
 #define FLAG_0x4D7               0x4D7

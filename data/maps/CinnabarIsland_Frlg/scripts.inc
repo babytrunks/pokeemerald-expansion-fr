@@ -421,6 +421,7 @@ CinnabarIsland_EventScript_KabutopsMissingNoBattle::
 	setflag FLAG_DONT_RANDOMIZE
 	setflag FLAG_CANT_CATCH
 	setflag FLAG_STRANGE_ENCOUNTER
+	setflag FLAG_CANT_RUN
 	setwildbattle SPECIES_KABUTOPS, 0
 	createmon 1, 0, SPECIES_KABUTOPS, 0, ITEM_NONE, 0, NATURE_HARDY, 0, MON_MALE, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, MOVE_WATER_GUN, MOVE_SKY_ATTACK, MOVE_NONE, MOVE_NONE, FALSE, FALSE, 0, 0
 	waitse
@@ -431,6 +432,7 @@ CinnabarIsland_EventScript_KabutopsMissingNoBattle::
 	clearflag FLAG_DONT_RANDOMIZE
 	clearflag FLAG_CANT_CATCH
 	clearflag FLAG_STRANGE_ENCOUNTER
+	clearflag FLAG_CANT_RUN
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, CinnabarIsland_EventScript_KabutopsMissingNoDefeated
 	releaseall
@@ -438,6 +440,7 @@ CinnabarIsland_EventScript_KabutopsMissingNoBattle::
 
 CinnabarIsland_EventScript_KabutopsMissingNoDefeated::
 	giveitem ITEM_LOTTO_TICKET
+	questmenu QUEST_MENU_SET_REWARD, QUEST_MISSING_NUMBER
 	releaseall
 	end
 
