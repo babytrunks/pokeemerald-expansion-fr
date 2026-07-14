@@ -227,7 +227,7 @@ Route25_Text_AreYouHereAlone::
 
 gText_bugsy_1::
   .string "I better keep my ass in this rainy\n"
-  .string "weather!!! or im Finished!!$" 
+  .string "weather!!! or im FINISHED!!$" 
 
 
 gText_bugsy_2::

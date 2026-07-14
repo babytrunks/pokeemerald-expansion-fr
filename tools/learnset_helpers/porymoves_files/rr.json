@@ -4423,6 +4423,7 @@
       }],
     "PreEvoMoves": [],
     "TMMoves": [      
+      "MOVE_DUAL_WINGBEAT",
       "MOVE_STEEL_WING",
     "MOVE_STOMPING_TANTRUM"],
     "EggMoves": [],

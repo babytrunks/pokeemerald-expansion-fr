@@ -2839,7 +2839,9 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .categoryName = _("Tiny Mouse"),
         .height = 3,
         .weight = 20,
-        .description = gPichuPokedexText,
+        .description =    COMPOUND_STRING("A Pichu with a unique spiky-ear.\n"
+    "Although it lacks confidence, it has\n"
+    "dreams of eventually becoming a star."),
         .pokemonScale = 508,
         .pokemonOffset = 20,
         .trainerScale = 256,

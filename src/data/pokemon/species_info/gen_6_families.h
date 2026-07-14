@@ -6844,11 +6844,11 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .categoryName = _("Sound Wave"),
         .height = 5,
         .weight = 80,
-        .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Kalosian variety, shaped by the\n"
-            "islands' distinct environment."),
+        .description = .description = COMPOUND_STRING(
+            "They make nests in the Sevii Islands\n"
+            "near cemeteries and old temples.\n"
+            "Due to their weakness, they stay close to\n"
+            "their parents."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -6907,10 +6907,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 15,
         .weight = 850,
         .description = COMPOUND_STRING(
-            "The Sevii Islands form of Noivern.\n"
-            "Generations of island life have altered\n"
-            "its appearance and temperament from\n"
-            "that of its mainland kin."),
+            "Stays immobile for days until prey appears\n"
+            "it's capable of flying in complete silence.\n"
+            "Legends say that in ancient times, it used\n"
+            "to haunt the Sevii Islands."),
         .pokemonScale = 268,
         .pokemonOffset = 2,
         .trainerScale = 271,

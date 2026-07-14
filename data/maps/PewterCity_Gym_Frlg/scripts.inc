@@ -33,6 +33,7 @@ EventScript_ExplainRulesMapScript:
     msgbox PewterCity_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
     giveitem ITEM_MUSCLE_FEATHER
     giveitem ITEM_RESIST_FEATHER 
+    closemessage
     applymovement LOCALID_EXPERT_MODE_NPC, Movement_GymGuide_WalkBack
     waitmovement 0
     setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 2

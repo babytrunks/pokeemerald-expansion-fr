@@ -3835,7 +3835,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .weight = 0,
         .description = COMPOUND_STRING(
             "The heat that comes off a\n"
-            "Gigantamax Centiskorch may\n"
+            "Mega Centiskorch may\n"
             "destabilize air currents. Sometimes\n"
             "it can even cause storms."),
         .pokemonScale = 275,

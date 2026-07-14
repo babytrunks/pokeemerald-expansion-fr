@@ -1069,10 +1069,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 2,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Paldean variety, shaped by the\n"
-            "islands' distinct environment."),
+            "Consuming dragon corpses\n"
+            "altered this creature's form.\n"
+            "It has begun to show signs\n"
+            "of divergent evolution."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -1126,10 +1126,10 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .height = 10,
         .weight = 175,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Paldean variety, shaped by the\n"
-            "islands' distinct environment."),
+            "Radiating draconic energy,\n"
+            "the creatures presses onward.\n"
+            "It unleashes an intense\n"
+            "assault on its enemies."),
         .pokemonScale = 356,
         .pokemonOffset = 17,
         .trainerScale = 256,

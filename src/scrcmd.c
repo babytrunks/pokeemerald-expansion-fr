@@ -2577,6 +2577,7 @@ bool8 ScrCmd_dowildbattle(struct ScriptContext *ctx)
         BattleSetup_StartScriptedDoubleWildBattle();
 
     sIsScriptedWildOneVsTwo = FALSE;
+    sIsScriptedWildDouble = FALSE;   // don't let the latch leak into the next bare dowildbattle (e.g. DexNav)
     ScriptContext_Stop();
 
     return TRUE;

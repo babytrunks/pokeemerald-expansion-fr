@@ -1,4 +1,6 @@
 
+https://www.youtube.com/watch?v=ndDZMMgkFXk gsc red midi
+
 TODO:
 Bug:
 - Text colors arent really consistent with FR right now (Blue for male, Red for girls, mostly just using default color)
@@ -12,18 +14,13 @@ HIGHEST PRIORITY:
 - Update TM/HM list to FRU (WIP)
     - (pokeemerald has 100)
 - Updated Move Tutor, TM, HM, Egg Moves from FRU (mostly done)
-- Update beginning options select into fancier option menu
-- Level Cap (basically done, but will be updated depending on how vision changes)
 - Testing, obviously
 
 MEDIUM PRIORITY:
-- Convert rest of trainers into trainers.party format 
 - Trainer battle sprites, new object events (mostly done)
 - FRU Exclusive Megas, Regional forms
 - FRU Exclusive Items/Functionality
 - FRU Exclusive moves (there aren't many ?)
-- Time Changer
-- Randomization Options (Species, Ability, Moves)
 - Max Boxes is only 14, need to research on how to expand..
 - Some FRU Ability exclusive abilities still need implementation (can see //fru todo in constants/abilities.h)
 
