@@ -11388,10 +11388,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 14,
         .weight = 392,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Kantonian variety, shaped by the\n"
-            "islands' distinct environment."),
+            "Its feet are so hot that they often liquify\n"
+            "the ground beneath them. If it doesn't move,\n"
+            "it will eventually sink up to its belly in\n"
+            "lava, which it uses to sleep peacefully."),
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 257,
@@ -11445,10 +11445,10 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .height = 18,
         .weight = 852,
         .description = COMPOUND_STRING(
-            "The Sevii Islands form of Dodrio.\n"
-            "Generations of island life have altered\n"
-            "its appearance and temperament from\n"
-            "that of its mainland kin."),
+            "Every morning, it runs into a boulder\n"
+            "headfirst, causing molten rock to fly upwards\n"
+            "like a volcanic eruption. The head that\n"
+            "causes the most damage is the leader that day."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,

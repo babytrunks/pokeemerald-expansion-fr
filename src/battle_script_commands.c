@@ -13506,6 +13506,10 @@ static void Cmd_handleballthrow(void)
             {
                 shakes = maxShakes;
             }
+            else if ( (ballId == BALL_LUXURY || ballId == BALL_FAST) && gBattleMons[gBattlerTarget].hp <= gBattleMons[gBattlerTarget].maxHP / 5)
+                shakes = maxShakes;
+            else if (ballId == BALL_DREAM &&  (gBattleMons[gBattlerTarget].status1 & STATUS1_SLEEP || GetBattlerAbility(gBattlerTarget) == ABILITY_COMATOSE)) 
+                shakes = maxShakes;
             else
             {
                 odds = Sqrt(Sqrt(16711680 / odds));
@@ -13592,6 +13596,10 @@ static void Cmd_handleballthrow(void)
                             break;
                         }
                     }
+                }
+                else if (ballId == BALL_FAST) {
+                    u16 perfectIv = 31;
+                    SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_SPEED_IV, &perfectIv);
                 }
                 else if (ballId == BALL_FRIEND)
                 {

@@ -6202,10 +6202,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 6,
         .weight = 88,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Johtonian variety, shaped by the\n"
-            "islands' distinct environment."),
+            "A Teddiursa inhabiting its old body after \n"
+            "dying due to being separated from its mother.\n"
+            "It keeps on living, hoping it can reunite\n"
+            "with its mother and one day become like her."),
         .pokemonScale = 455,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -6259,10 +6259,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 18,
         .weight = 1258,
         .description = COMPOUND_STRING(
-            "The Sevii Islands form of Ursaring.\n"
-            "Generations of island life have altered\n"
-            "its appearance and temperament from\n"
-            "that of its mainland kin."),
+            "This Ursaring cannot evolve due to \n"
+            "not being able to bask in the moon's light.\n"
+            "Knowing this, it endlessly trains to \n"
+            "one day be strong enough to find its mother."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -7374,10 +7374,10 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .height = 21,
         .weight = 2200,
         .description = COMPOUND_STRING(
-            "The Sevii Islands form of Mantine.\n"
-            "Generations of island life have altered\n"
-            "its appearance and temperament from\n"
-            "that of its mainland kin."),
+            "Mantine native to the Sevii Islands have\n"
+            "perfect control over the electricity coursing\n"
+            "through them.  Remoraid attached to them\n"
+            "will never get shocked."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 342,

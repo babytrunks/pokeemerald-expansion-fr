@@ -1,4 +1,4 @@
-.equ REQUIRED_CAUGHT_MONS, 50
+.equ REQUIRED_CAUGHT_MONS, 30
 
 Route15_WestEntrance_2F_Frlg_MapScripts::
 	.byte 0
@@ -32,9 +32,12 @@ Route15_WestEntrance_2F_EventScript_Aide::
 	call Route15_WestEntrance_2F_EventScript_GetAideRequestInfo
 	goto_if_lt VAR_0x8006, REQUIRED_CAUGHT_MONS, Aide_EventScript_HaventCaughtEnough
 	msgbox Route15_WestEntrance_2F_Text_GreatHereYouGo
-	checkitemspace ITEM_EXP_SHARE
-	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
-	giveitem_msg Route15_WestEntrance_2F_Text_ReceivedItemFromAide, ITEM_EXP_SHARE
+	giveitem ITEM_HP_UP
+	giveitem ITEM_PROTEIN
+	giveitem ITEM_IRON
+	giveitem ITEM_CALCIUM
+	giveitem ITEM_ZINC
+	giveitem ITEM_CARBOS
 	setflag FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE
 	msgbox Route15_WestEntrance_2F_Text_ExplainExpShare
 	release
@@ -56,8 +59,8 @@ Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
     .string "If your Pokédex has complete data\n"
     .string "on {STR_VAR_1} species, I'm supposed to\l"
     .string "give you a reward.\p"
-    .string "Prof. Oak entrusted me with the\n"
-    .string "{STR_VAR_2} for you.\p"
+    .string "Prof. Oak entrusted me with various\n"
+    .string "vitamins for you.\p"
     .string "So, {PLAYER}, let me ask you.\p"
     .string "Have you gathered data on at least\n"
     .string "{STR_VAR_1} kinds of Pokémon?$"
@@ -73,11 +76,11 @@ Route15_WestEntrance_2F_Text_ReceivedItemFromAide::
     .string "from the Aide.$"
 
 Route15_WestEntrance_2F_Text_ExplainExpShare::
-    .string "Exp. Share is an item to be held\n"
-    .string "by a Pokémon.\p"
-    .string "The Pokémon will receive a share\n"
-    .string "of the Exp. Points without having\l"
-    .string "to battle.$"
+    .string "Vitamins are vital for helping\n"
+    .string "your Pokémon reach its ceiling.\p"
+    .string "And the stronger you are, the more\n"
+    .string "data you can provide for Prof.\l"
+    .string "Oak's research!$"
 
 Route15_WestEntrance_2F_Text_LargeShiningBird::
     .string "Let's see what the binoculars have\n"

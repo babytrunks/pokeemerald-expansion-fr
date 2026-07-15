@@ -411,8 +411,8 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Luxury Ball"),
         .price = (I_PRICE >= GEN_8) ? 3000 : 1000,
         .description = COMPOUND_STRING(
-            "A Ball that gives\n"
-            "caught Pokémon\n"
+            "100% catch rate at\n"
+            "red health & gives\n"
             "3 Perfect IVs."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
@@ -507,9 +507,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Fast Ball"),
         .price = (I_PRICE >= GEN_7) ? 0 : 300,
         .description = COMPOUND_STRING(
-            "Works well on\n"
-            "very fast\n"
-            "Pokémon."),
+            "100% catch rate at\n"
+            "red health & gives\n"
+            "3 Perfect IVs."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,
@@ -539,9 +539,9 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Dream Ball"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A Ball that awakens\n"
-            "a rare ability on\n"
-            "caught Pokémon."),
+            "100% catch on asleep\n"
+            "foes & awakens\n"
+            "hidden ability."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,
         .battleUsage = EFFECT_ITEM_THROW_BALL,

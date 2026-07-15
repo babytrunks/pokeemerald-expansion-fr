@@ -1041,7 +1041,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_3                           (FLAG_HIDDEN_ITEMS_START +  44)
 #define FLAG_HIDDEN_ITEM_ROUTE_109_ETHER                                   (FLAG_HIDDEN_ITEMS_START +  45)
 #define FLAG_HIDDEN_ITEM_ROUTE_109_GREAT_BALL                              (FLAG_HIDDEN_ITEMS_START +  46)
-#define FLAG_HIDDEN_ITEM_CELADON_CITY_PP_UP                                (FLAG_HIDDEN_ITEMS_START +  47)
+#define FLAG_HIDDEN_ITEM_CELADON_CITY_PP_UP                                (FLAG_HIDDEN_ITEMS_START +  47) // unused
 #define FLAG_HIDDEN_ITEM_VERMILION_CITY_MAX_ETHER                          (FLAG_HIDDEN_ITEMS_START +  48)
 #define FLAG_HIDDEN_ITEM_CERULEAN_CITY_RARE_CANDY                          (FLAG_HIDDEN_ITEMS_START +  49)
 #define FLAG_HIDDEN_ITEM_ROUTE4_GREAT_BALL                                 (FLAG_HIDDEN_ITEMS_START +  50)
@@ -1193,7 +1193,7 @@
 #define FLAG_HIDE_TOWER_SANS            0x4AA
 #define FLAG_HIDE_MANSION_THOMAS        0x4AB
 #define FLAG_RECEIVED_FUCHSIA_SEVII     0x4AC
-#define FLAG_UNUSED_0x4AD               0x4AD // Unused Flag
+#define FLAG_HIDE_ITEM_CELADON_CITY_FAST_BALL               0x4AD 
 #define FLAG_UNUSED_0x4AE               0x4AE // Unused Flag
 #define FLAG_UNUSED_0x4AF               0x4AF // Unused Flag
 

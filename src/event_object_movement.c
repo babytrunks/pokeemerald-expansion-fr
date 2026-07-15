@@ -2512,7 +2512,7 @@ void RemoveFollowingPokemon(void)
 void GetFollowerPokemon(void)
 {
 
-    gSpecialVar_Result = GET_BASE_SPECIES_ID(GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES));
+    gSpecialVar_Result = GetMonData(GetFirstLiveMon(), MON_DATA_SPECIES);
 }
 
 // Visually mega-evolve the overworld follower into Mega Sharpedo. One-time only:

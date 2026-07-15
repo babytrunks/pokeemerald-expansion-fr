@@ -25,6 +25,7 @@ PewterCity_Museum_2F_EventScript_LittleGirlPichuSaved::
 PewterCity_Museum_2F_EventScript_BaldingMan::
     @ lock
     goto_if_quest_complete QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_DaughterSmilesAgain
+    goto_if_quest_reward QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_CheckIfRewardActive
     goto_if_quest_active QUEST_LIGHT_BALL, PewterCity_Museum_2F_EventScript_CheckPichuRescued
 	msgbox PewterCity_Museum_1F_Text_ThereThereSweetie
     applymovement LOCALID_PEWTER_BALDING_MAN, Common_Movement_ExclamationMark
@@ -44,8 +45,10 @@ PewterCity_Museum_2F_EventScript_CheckPichuRescued::
     @ lock
     faceplayer
     goto_if_unset FLAG_RESCUED_SPIKY_PICHU, PewterCity_Museum_2F_EventScript_BulliesStillOutThere
+PewterCity_Museum_2F_EventScript_CheckIfRewardActive:
+    faceplayer
     callnative GetFollowerPokemon
-    goto_if_eq VAR_RESULT, SPECIES_PICHU, PewterCity_Museum_2F_EventScript_LightBallCompleteQuest
+    goto_if_eq VAR_RESULT, SPECIES_PICHU_SPIKY_EARED, PewterCity_Museum_2F_EventScript_LightBallCompleteQuest
 	msgbox PewterCity_Museum_1F_Text_BringThePichuAlong
     closemessage
     release

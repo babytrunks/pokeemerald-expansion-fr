@@ -149,7 +149,6 @@
 // - MOVE_PHANTOM_FORCE                                //
 // - MOVE_POWER_GEM                                    //
 // - MOVE_POWER_UP_PUNCH                               //
-// - MOVE_POWER_UP_PUNCH                               //
 // - MOVE_POWER_WHIP                                   //
 // - MOVE_PSYCHIC_FANGS                                //
 // - MOVE_RISING_VOLTAGE                               //
@@ -164,7 +163,6 @@
 // - MOVE_STORED_POWER                                 //
 // - MOVE_SUBSTITUTE                                   //
 // - MOVE_SWIFT                                        //
-// - MOVE_SWORDS_DANCE                                 //
 // - MOVE_SWORDS_DANCE                                 //
 // - MOVE_TAILWIND                                     //
 // - MOVE_TAIL_SLAP                                    //
@@ -19730,6 +19728,7 @@ static const u16 sMothimTeachableLearnset[] = {
     MOVE_BUG_BUZZ,
     MOVE_DEFOG,
     MOVE_DREAM_EATER,
+    MOVE_DUAL_WINGBEAT,
     MOVE_ELECTROWEB,
     MOVE_ENERGY_BALL,
     MOVE_FLASH,

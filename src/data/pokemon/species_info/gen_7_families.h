@@ -2569,10 +2569,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 2,
         .weight = 3,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Alolan variety, shaped by the\n"
-            "islands' distinct environment."),
+            "A strange energy in the Sevii Islands draws in\n"
+            "Wishiwashi on their way to the afterlife.  As\n"
+            "they swim upstream, they’ll sometimes encounter\n"
+            "the souls of White-Striped Basculin."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -2627,10 +2627,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 82,
         .weight = 786,
         .description = COMPOUND_STRING(
-            "The Sevii Islands form of Wishiwashi.\n"
-            "Generations of island life have altered\n"
-            "its appearance and temperament from\n"
-            "that of its Alolan kin."),
+            "Wishiwashi dream of one day becoming a dragon.\n"
+            "No longer restricted by the confines of a\n"
+            "physical body, Schools of Seviian Wishiwashi\n"
+            "can make this dream a reality."),
         .pokemonScale = 682,
         .pokemonOffset = 24,
         .trainerScale = 256,
@@ -5731,10 +5731,10 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .height = 39,
         .weight = 2100,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Alolan variety, shaped by the\n"
-            "islands' distinct environment."),
+            "Dhelmise from the Sevii Islands are\n"
+            "anchor-like water beings that are controlled.\n"
+            "by a parasite. It constantly needs water, \n"
+            "usually absorbing it from the Dhelmise."),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 510,

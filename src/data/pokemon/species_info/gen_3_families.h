@@ -9169,10 +9169,10 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 6,
         .weight = 74,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Hoennian variety, shaped by the\n"
-            "islands' distinct environment."),
+            "The rapid currents of the Sevii Islands forced \n"
+            "Feebas to move to muddy ponds. Although its\n"
+            "less apalling this way, the mud's smell\n"
+            "still makes it equally unappealing."),
         .pokemonScale = 423,
         .pokemonOffset = -4,
         .trainerScale = 256,

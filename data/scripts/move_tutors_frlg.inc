@@ -377,7 +377,6 @@ FourIsland_House1_EventScript_BodySlamTutor::
 	setvar VAR_0x8005, MOVE_MUD_SHOT
 	setvar VAR_0x8005, MOVE_OMINOUS_WIND
 	setvar VAR_0x8005, MOVE_VACUUM_WAVE
-	setvar VAR_0x8005, MOVE_POWER_UP_PUNCH 
 	setvar VAR_0x8005, MOVE_CHARGE_BEAM
 	setvar VAR_0x8005, MOVE_WORK_UP
 	setvar VAR_0x8005, MOVE_HONE_CLAWS
@@ -545,8 +544,6 @@ FourIsland_House10_EventScript_BodySlamTutor::
 	setvar VAR_0x8005, MOVE_BLAZE_KICK
 	call EventScript_ChooseMoveTutorMon
 	setvar VAR_0x8005, MOVE_PAIN_SPLIT
-	call EventScript_ChooseMoveTutorMon
-	setvar VAR_0x8005, MOVE_SWORDS_DANCE
 	call EventScript_ChooseMoveTutorMon
 	setvar VAR_0x8005, MOVE_NASTY_PLOT
 	call EventScript_ChooseMoveTutorMon

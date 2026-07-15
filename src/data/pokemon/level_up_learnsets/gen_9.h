@@ -15696,7 +15696,6 @@ static const struct LevelUpMove sLarvestaLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sVolcaronaLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_FIERY_DANCE),
     LEVEL_UP_MOVE( 1, MOVE_STRUGGLE_BUG),
     LEVEL_UP_MOVE( 1, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_SPIN),
@@ -15715,11 +15714,10 @@ static const struct LevelUpMove sVolcaronaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_FLARE_BLITZ),
     LEVEL_UP_MOVE(47, MOVE_AMNESIA),
     LEVEL_UP_MOVE(50, MOVE_FIERY_DANCE),
-    LEVEL_UP_MOVE(51, MOVE_QUIVER_DANCE), // COMMENT come back to this ? 
-    LEVEL_UP_MOVE(54, MOVE_HURRICANE),
-    LEVEL_UP_MOVE(57, MOVE_FIRE_BLAST),
+    LEVEL_UP_MOVE(52, MOVE_HURRICANE),
+    LEVEL_UP_MOVE(55, MOVE_QUIVER_DANCE), // COMMENT come back to this ? 
+    LEVEL_UP_MOVE(58, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(64, MOVE_RAGE_POWDER),
-    LEVEL_UP_MOVE(66, MOVE_GIGA_DRAIN),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_LARVESTA

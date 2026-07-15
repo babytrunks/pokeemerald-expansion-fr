@@ -3892,10 +3892,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 7,
         .weight = 10,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Galarian variety, shaped by the\n"
-            "islands' distinct environment."),
+            "The heated Sevii Islands forced Sizzlipede \n"
+            "to stop producing gas or heat in its body.\n"
+            "The loss of this tool made its fangs \n"
+            "grow longer and sharper to defeat its prey."),
         .pokemonScale = 365,
         .pokemonOffset = 12,
         .trainerScale = 256,
@@ -3949,10 +3949,10 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .height = 30,
         .weight = 1200,
         .description = COMPOUND_STRING(
-            "The Sevii Islands form of Centiskorch.\n"
-            "Generations of island life have altered\n"
-            "its appearance and temperament from\n"
-            "that of its mainland kin."),
+            "Stronger prey and rivals made Centiskorch\n"
+            "adapt and become rougher and deadlier.\n"
+            "It coils itself on its prey, stabbing it with\n"
+            "its rocks then killing them with its jaws."),
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,

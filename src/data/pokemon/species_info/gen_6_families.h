@@ -4523,7 +4523,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 44,
         .baseSpAttack  = 58,
         .baseSpDefense = 63,
-        .types = MON_TYPES(TYPE_WATER), // TODO: set SEVII form typing
+        .types = MON_TYPES(TYPE_DARK, TYPE_BUG), 
         .catchRate = 225,
         .expYield = 66,
         .evYield_SpAttack = 1,
@@ -4532,8 +4532,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_NONE, ABILITY_NONE }, // TODO: set SEVII form abilities
-        .bodyColor = BODY_COLOR_BLUE,
+        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_NONE, ABILITY_NONE }, 
+        .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Clauncher"),
         .cryId = CRY_CLAUNCHER,
@@ -4542,10 +4542,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 5,
         .weight = 83,
         .description = COMPOUND_STRING(
-            "A regional form found in the Sevii\n"
-            "Islands. Its coloration and habits differ\n"
-            "from the Kalosian variety, shaped by the\n"
-            "islands' distinct environment."),
+            "Clauncher has adapted to the Sevii Islands by\n"
+            "learning how to walk on land. It scuttles\n"
+            "along the shoreline shooting down prey,\n"
+            "then cools off in the ocean once it's full."),
         .pokemonScale = 432,
         .pokemonOffset = 13,
         .trainerScale = 256,
@@ -4581,7 +4581,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .baseSpeed     = 72,
         .baseSpAttack  = 120,
         .baseSpDefense = 89,
-        .types = MON_TYPES(TYPE_WATER), // TODO: set SEVII form typing
+        .types = MON_TYPES(TYPE_DARK, TYPE_BUG), 
         .catchRate = 55,
         .expYield = 100,
         .evYield_SpAttack = 2,
@@ -4590,8 +4590,8 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_WATER_3),
-        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_NONE, ABILITY_NONE }, // TODO: set SEVII form abilities
-        .bodyColor = BODY_COLOR_BLUE,
+        .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_NONE, ABILITY_NONE }, 
+        .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
         .speciesName = _("Clawitzer"),
         .cryId = CRY_CLAWITZER,
@@ -4600,10 +4600,10 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .height = 13,
         .weight = 353,
         .description = COMPOUND_STRING(
-            "The Sevii Islands form of Clawitzer.\n"
-            "Generations of island life have altered\n"
-            "its appearance and temperament from\n"
-            "that of its mainland kin."),
+            "Clawitzer thrives in darkness, staying\n"
+            "underwater during the day and surfacing at\n"
+            "dusk. It lurks in shadows, ambushing targets\n"
+            "with massive blasts from its cannon."),
         .pokemonScale = 272,
         .pokemonOffset = 3,
         .trainerScale = 256,
@@ -6844,7 +6844,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .categoryName = _("Sound Wave"),
         .height = 5,
         .weight = 80,
-        .description = .description = COMPOUND_STRING(
+        .description = COMPOUND_STRING(
             "They make nests in the Sevii Islands\n"
             "near cemeteries and old temples.\n"
             "Due to their weakness, they stay close to\n"
