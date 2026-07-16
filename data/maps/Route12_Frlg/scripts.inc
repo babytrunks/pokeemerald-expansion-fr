@@ -108,7 +108,7 @@ Text_SnorlaxLeftAnItem:
 Text_SnorlaxReturnedToMountains::
     .string "Snorlax calmed down.\n"
     .string "It gave a huge yawn…\l"
-    .string "And returned to the mountains.\p
+    .string "And returned to the mountains.\p"
     .string "It left behind an item.$"
 
 Text_WantToUsePokeFlute::

@@ -1,5 +1,7 @@
 #include "global.h"
 #include "battle.h"
+#include "battle_ai_switch_items.h"
+#include "battle_ai_util.h"
 #include "battle_anim.h"
 #include "battle_arena.h"
 #include "battle_controllers.h"
@@ -2116,8 +2118,15 @@ static void PlayerHandleChooseAction(u32 battler)
 
     if (B_SHOW_PARTNER_TARGET && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && IsBattlerAlive(B_POSITION_PLAYER_RIGHT))
     {
+        if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
+         && gAiLogicData->shouldSwitch & (1u << B_POSITION_PLAYER_RIGHT)
+         && IsSwitchinValid(B_POSITION_PLAYER_RIGHT))
+        {
+            BattlePutTextOnWindow(COMPOUND_STRING("Partner will:\nswitch out!"), B_WIN_ACTION_PROMPT);
+            return;
+        }
         StringCopy(gStringVar1, COMPOUND_STRING("Partner will use:\n"));
-        u32 move = GetChosenMoveFromPosition(B_POSITION_PLAYER_RIGHT);
+        u32 move = GetAIChosenMove(B_POSITION_PLAYER_RIGHT);
         StringAppend(gStringVar1, GetMoveName(move));
         u32 moveTarget = GetBattlerMoveTargetType(B_POSITION_PLAYER_RIGHT, move);
         if (moveTarget == MOVE_TARGET_SELECTED)
