@@ -2118,21 +2118,19 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_ExpCandies,
     },
 
-    [ITEM_EXP_CANDY_XL] =
+    [ITEM_VITAMAX] =
     {
-        .name = ITEM_NAME("Exp. Candy XL"),
-        .pluralName = ITEM_PLURAL_NAME("Exp. Candies XL"),
+        .name = ITEM_NAME("Vitamax"),
+        .pluralName = ITEM_PLURAL_NAME("Vitamaxes"),
         .price = 10000,
-        .holdEffectParam = EXP_30000,
         .description = COMPOUND_STRING(
-            "Gives a very large\n"
-            "amount of Exp. to\n"
-            "a single Pokémon."),
-        .pocket = POCKET_ITEMS,
+            "Maxes out the IVs\n"
+            "of a single\n"
+            "Pokémon."),
+        .pocket = POCKET_POWER_UP,
         .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
-        .effect = gItemEffect_RareCandy,
+        .fieldUseFunc = ItemUseOutOfBattle_Vitamax,
         .flingPower = 30,
         .iconPic = gItemIcon_ExpCandyXL,
         .iconPalette = gItemIconPalette_ExpCandies,
@@ -10927,8 +10925,8 @@ const struct Item gItemsInfo[] =
         .pluralName = ITEM_PLURAL_NAME("Pomeg Berries"),
         .price = 1,
         .description = COMPOUND_STRING(
-            "Maxes out a Pokémon's\n"
-            "happiness."), 
+            "Maxes out a Poké-\n"
+            "mon's happiness."), 
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ReduceEV,
@@ -14561,7 +14559,7 @@ const struct Item gItemsInfo[] =
             "Encapsuled energy\n"
             "ups Pokémon with\n"
             "certain Abilities."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_BATTLE_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,

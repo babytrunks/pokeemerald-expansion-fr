@@ -204,7 +204,7 @@ CeruleanCave1F_Text_ArcherDefeat::
 CeruleanCave_1F_Text_ComeOnArcher::
 	.string "Oh come on, Archer.\p"
 	.string "Always making me clean up after\n"
-	.string "yourself.$"
+	.string "you.$"
 
 CeruleanCave_1F_Text_BrendanWeakenedMe::
 	.string "Shush. I only lost because that\n"
@@ -227,5 +227,5 @@ CeruleanCave1F_Text_ArcherWouldntUnderstand::
 	.string "Hmph, take care.$"
 
 CeruleanCave1F_Text_AccidentallyDropped::
-	.string "Tt appears they've accidentally\n"
+	.string "It appears they've accidentally\n"
 	.string "dropped some items on the ground…$"

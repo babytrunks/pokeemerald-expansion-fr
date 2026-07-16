@@ -76,6 +76,35 @@ VictoryRoad_2F_EventScript_Vincent::
 	msgbox VictoryRoad_2F_Text_VincentPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+VictoryRoad_2F_EventScript_VitamaxGiver::
+	lock
+	faceplayer
+	goto_if_set FLAG_VICTORY_ROAD_GAVE_VITAMAX, VictoryRoad_2F_EventScript_VitamaxGave
+	msgbox VictoryRoad_2F_Text_VitamaxGive, MSGBOX_NPC
+	giveitem ITEM_VITAMAX
+	setflag FLAG_VICTORY_ROAD_GAVE_VITAMAX
+	release
+	end
+
+VictoryRoad_2F_EventScript_VitamaxGave::
+	msgbox VictoryRoad_2F_Text_KeepDriveGoing
+	release
+	end
+
+VictoryRoad_2F_Text_VitamaxGive::
+    .string "You should be proud of yourself,\n"
+    .string "having battled your way through\l"
+    .string "Victory Road so courageously.\p"
+    .string "In recognition of your feat,\n"
+    .string "take this powerful item.$"
+
+VictoryRoad_2F_Text_KeepDriveGoing::
+    .string "Keep that drive going for the\n"
+    .string "Pokémon League!\p"
+    .string "Take a run at them and knock 'em\n"
+    .string "out!$"
+
+
 VictoryRoad_2F_Text_DawsonIntro::
     .string "If you can get through here,\n"
     .string "you can go meet the Elite Four.$"
@@ -129,8 +158,3 @@ VictoryRoad_2F_Text_GregoryDefeat::
 VictoryRoad_2F_Text_GregoryPostBattle::
     .string "Many Trainers give up their\n"
     .string "challenge here and go home.$"
-
-@ Unused, old text for Moltres
-VictoryRoad_2F_Text_Gyaoo::
-    .string "ギヤーオ！$"
-

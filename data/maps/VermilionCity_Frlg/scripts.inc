@@ -297,6 +297,8 @@ Vermilion_EventScript_Mew::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Vermilion_EventScript_DefeatedMew
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Vermilion_EventScript_RanFromMew
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Vermilion_EventScript_RanFromMew
+	setflag FLAG_HIDE_MEW_VERMILION
+	goto EventScript_RemoveStaticMon
 	release
 	end
 

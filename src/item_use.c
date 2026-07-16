@@ -1004,6 +1004,12 @@ void ItemUseOutOfBattle_ResetEVs(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
+void ItemUseOutOfBattle_Vitamax(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_Vitamax;
+    SetUpItemUseCallback(taskId);
+}
+
 void ItemUseOutOfBattle_ReduceEV(u8 taskId)
 {
     gItemUseCB = ItemUseCB_ReduceEV;

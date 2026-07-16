@@ -1,27 +1,3 @@
-VictoryRoad_2F_EventScript_DoubleEdgeTutor::
-	lock
-	faceplayer
-	msgbox Text_DoubleEdgeTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, EventScript_DoubleEdgeDeclined
-	call EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, EventScript_DoubleEdgeDeclined
-	msgbox Text_DoubleEdgeWhichMon
-	setvar VAR_0x8005, MOVE_DOUBLE_EDGE
-	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, EventScript_DoubleEdgeDeclined
-	goto EventScript_DoubleEdgeTaught
-	end
-
-EventScript_DoubleEdgeDeclined::
-	msgbox Text_DoubleEdgeDeclined
-	release
-	end
-
-EventScript_DoubleEdgeTaught::
-	msgbox Text_DoubleEdgeTaught
-	release
-	end
-
 EventScript_ThunderWaveTutor::
 	lock
 	faceplayer

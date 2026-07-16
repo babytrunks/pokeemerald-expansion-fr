@@ -283,6 +283,7 @@ const u8 gText_12PoofForgotMove[] = _("1, {PAUSE 15}2, and{PAUSE 15}… {PAUSE 1
 const u8 gText_PkmnAlreadyKnows[] = _("{STR_VAR_1} already knows\n{STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnHPRestoredByVar2[] = _("{STR_VAR_1}'s HP was restored\nby {STR_VAR_2} point(s).{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnIVStatRaised[] = _("{STR_VAR_1}'s {STR_VAR_2} IV\nstat was raised.{PAUSE 50}{PAUSE_UNTIL_PRESS}");
+const u8 gText_PkmnIVsAllMaxed[] = _("{STR_VAR_1}'s IVs\nwere all maxed out!{PAUSE 50}{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnCuredOfPoison[] = _("{STR_VAR_1} was cured of its\npoisoning.{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnCuredOfParalysis[] = _("{STR_VAR_1} was cured of\nparalysis.{PAUSE 30}{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnWokeUp2[] = _("{STR_VAR_1} woke up.{PAUSE_UNTIL_PRESS}");

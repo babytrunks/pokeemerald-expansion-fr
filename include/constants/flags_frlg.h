@@ -689,7 +689,7 @@
 #define FLAG_DEFEATED_CERULEAN_ARCHER_ARIANA             0x2BF
 #define FLAG_DEFEATED_GIOVANNI_CERULEAN_CAVE             0x2C0 
 #define FLAG_TUTOR_THUNDER_WAVE                          0x2C1 
-#define FLAG_TUTOR_ROCK_SLIDE                            0x2C2 // Unused
+#define FLAG_VICTORY_ROAD_GAVE_VITAMAX                   0x2C2 // Unused
 #define FLAG_TUTOR_EXPLOSION                             0x2C3
 #define FLAG_GIVE_BLACK_BELT                             0x2C4
 #define FLAG_TM_LOW_KICK                                 0x2C5
@@ -1125,8 +1125,8 @@
 #define FLAG_HIDDEN_ITEM_ROUTE8_LUM_BERRY                                  (FLAG_HIDDEN_ITEMS_START + 128)
 #define FLAG_HIDDEN_ITEM_ROUTE8_LEPPA_BERRY                                (FLAG_HIDDEN_ITEMS_START + 129)
 #define FLAG_HIDDEN_ITEM_ROUTE12_RARE_CANDY                                (FLAG_HIDDEN_ITEMS_START + 130)
-#define FLAG_HIDDEN_ITEM_ROUTE12_LEFTOVERS                                 (FLAG_HIDDEN_ITEMS_START + 131)
-#define FLAG_HIDDEN_ITEM_ROUTE16_LEFTOVERS                                 (FLAG_HIDDEN_ITEMS_START + 132)
+#define FLAG_ITEM_ROCK_TUNNEL_CALCIUM                                      (FLAG_HIDDEN_ITEMS_START + 131) //unused 
+#define FLAG_HIDDEN_ITEM_ROUTE16_LEFTOVERS                                 (FLAG_HIDDEN_ITEMS_START + 132)  //unused
 #define FLAG_HIDDEN_ITEM_FUCHSIA_CITY_MAX_REVIVE                           (FLAG_HIDDEN_ITEMS_START + 133)
 #define FLAG_HIDDEN_ITEM_ROCKET_HIDEOUT_B4F_NET_BALL                       (FLAG_HIDDEN_ITEMS_START + 134)
 #define FLAG_HIDDEN_ITEM_SILPH_CO_2F_ULTRA_BALL                            (FLAG_HIDDEN_ITEMS_START + 135)

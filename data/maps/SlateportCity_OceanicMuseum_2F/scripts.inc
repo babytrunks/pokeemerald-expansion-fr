@@ -86,7 +86,7 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	@ call Common_EventScript_PlayerHandedOverTheItem
 	setspeaker SP_NAME_BRENDAN
 	msgbox SlateportCity_OceanicMuseum_2F_Text_BrendanHeresTheParts, MSGBOX_DEFAULT
-		setspeaker SP_NAME_BRENDAN
+	setspeaker SP_NAME_CAPTAIN_STERN
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT
 	closemessage
 	savebgm MUS_DUMMY

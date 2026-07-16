@@ -5398,6 +5398,46 @@ void ItemUseCB_ResetEVs(u8 taskId, TaskFunc task)
     }
 }
 
+void ItemUseCB_Vitamax(u8 taskId, TaskFunc task)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 item = gSpecialVar_ItemId;
+    u8 iv = MAX_PER_STAT_IVS;
+    bool8 cannotUseEffect = TRUE;
+    u32 i;
+
+    // Usable only if at least one IV is below the cap
+    for (i = 0; i < NUM_STATS; i++)
+    {
+        if (GetMonData(mon, MON_DATA_HP_IV + i, NULL) < MAX_PER_STAT_IVS)
+            cannotUseEffect = FALSE;
+    }
+
+    if (cannotUseEffect)
+    {
+        gPartyMenuUseExitCallback = FALSE;
+        PlaySE(SE_SELECT);
+        DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+    else
+    {
+        for (i = 0; i < NUM_STATS; i++)
+            SetMonData(mon, MON_DATA_HP_IV + i, &iv);
+        CalculateMonStats(mon);
+
+        gPartyMenuUseExitCallback = TRUE;
+        PlaySE(SE_USE_ITEM);
+        RemoveBagItem(item, 1);
+        GetMonNickname(mon, gStringVar1);
+        StringExpandPlaceholders(gStringVar4, gText_PkmnIVsAllMaxed);
+        DisplayPartyMenuMessage(gStringVar4, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = task;
+    }
+}
+
 void ItemUseCB_ReduceEV(u8 taskId, TaskFunc task)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];

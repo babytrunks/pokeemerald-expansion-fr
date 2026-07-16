@@ -261,6 +261,7 @@ SilphCo_11F_EventScript_DefeatedArcherArianaScene::
 	fadescreen FADE_FROM_BLACK
 	@ msgbox SilphCo_11F_Text_LevelCapIncreased, MSGBOX_SIGN
 	setvar VAR_MAP_SCENE_SILPH_CO_11F_ARCHER, 1
+	special HealPlayerParty
 	releaseall
 	end
 

@@ -48,7 +48,7 @@ Route13_Text_SebastianIntro::
     .string "with you!$"
 
 Route13_Text_SebastianDefeat::
-    .string "My Pidgey and Pidgeotto combo\n"
+    .string "My Charizard and Tropius combo\n"
     .string "lost?$"
 
 Route13_Text_SebastianPostBattle::

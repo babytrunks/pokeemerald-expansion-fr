@@ -48,7 +48,9 @@ Route16_EventScript_Snorlax::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route16_EventScript_FoughtSnorlax
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route16_EventScript_FoughtSnorlax
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route16_EventScript_FoughtSnorlax
-	release
+	msgbox Text_SnorlaxLeftAnItem
+    giveitem ITEM_LEFTOVERS
+    release
 	end
 
 Route16_EventScript_ThreeBackToBack::
@@ -113,6 +115,7 @@ Route16_EventScript_DontUsePokeFlute::
 
 Route16_EventScript_FoughtSnorlax::
 	msgbox Text_SnorlaxReturnedToMountains
+    giveitem ITEM_LEFTOVERS
 	release
 	end
 

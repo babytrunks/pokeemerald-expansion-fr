@@ -31,6 +31,8 @@ Route12_EventScript_Snorlax::
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route12_EventScript_FoughtSnorlax
 	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route12_EventScript_FoughtSnorlax
 	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route12_EventScript_FoughtSnorlax
+    msgbox Text_SnorlaxLeftAnItem
+    giveitem ITEM_LEFTOVERS
 	release
 	end
 
@@ -74,6 +76,7 @@ Route12_EventScript_DontUsePokeFlute::
 
 Route12_EventScript_FoughtSnorlax::
 	msgbox Text_SnorlaxReturnedToMountains
+    giveitem ITEM_LEFTOVERS
 	release
 	end
 
@@ -98,10 +101,15 @@ Text_SnorlaxWokeUp::
     .string "Snorlax woke up!\p"
     .string "It attacked in a grumpy rage!$"
 
+Text_SnorlaxLeftAnItem:
+    .string "The Snorlax left behind an item.$"
+
+
 Text_SnorlaxReturnedToMountains::
     .string "Snorlax calmed down.\n"
     .string "It gave a huge yawn…\l"
-    .string "And returned to the mountains.$"
+    .string "And returned to the mountains.\p
+    .string "It left behind an item.$"
 
 Text_WantToUsePokeFlute::
     .string "Want to use the Poké Flute?$"

@@ -146,7 +146,7 @@
 #define VAR_MAP_SCENE_FIVE_ISLAND_RESORT_GORGEOUS                              0x4084
 #define VAR_MAP_SCENE_INDIGO_PLATEAU_EXTERIOR                                  0x4085
 #define VAR_MAP_SCENE_FOUR_ISLAND                                              0x4086
-#define VAR_LEVEL_CAP_FR                                                       0x4087
+#define VAR_LEVEL_CAP_FR                                                       0x4087 // unused
 #define VAR_MAP_SCENE_ROCKET_WAREHOUSE                                         0x4088
 #define VAR_MAP_SCENE_SIX_ISLAND_POKEMON_CENTER_1F                             0x4089
 #define VAR_MAP_SCENE_CINNABAR_ISLAND_2                                        0x408A
@@ -193,14 +193,14 @@
 #define VAR_TRICK_HOUSE_ENTRANCE_STATE                 0x40B2
 #define VAR_TRICK_HOUSE_BEING_WATCHED_STATE                 0x40B3
 #define VAR_PORTHOLE               0x40B4
-#define VAR_EVENT_PICHU_SLOT       0x40B5
-#define VAR_MYSTERY_GIFT_1         0x40B6
-#define VAR_MYSTERY_GIFT_2         0x40B7
-#define VAR_MYSTERY_GIFT_3         0x40B8
-#define VAR_MYSTERY_GIFT_4         0x40B9
-#define VAR_MYSTERY_GIFT_5         0x40BA
-#define VAR_MYSTERY_GIFT_6         0x40BB
-#define VAR_MYSTERY_GIFT_7         0x40BC
+#define VAR_EVENT_PICHU_SLOT       0x40B5 // unused
+#define VAR_MYSTERY_GIFT_1         0x40B6 // unused
+#define VAR_MYSTERY_GIFT_2         0x40B7 // unused
+#define VAR_MYSTERY_GIFT_3         0x40B8 // unused
+#define VAR_MYSTERY_GIFT_4         0x40B9 // unused
+#define VAR_MYSTERY_GIFT_5         0x40BA // unused
+#define VAR_MYSTERY_GIFT_6         0x40BB // unused
+#define VAR_MYSTERY_GIFT_7         0x40BC // unused
 #define VAR_TRICK_HOUSE_PUZZLE_1_STATE                 0x40BD
 #define VAR_TRICK_HOUSE_PUZZLE_2_STATE                 0x40BE
 #define VAR_TRICK_HOUSE_PUZZLE_3_STATE                 0x40BF
@@ -227,8 +227,8 @@
 #define VAR_STARTER_SPECIES                0x40D4 // Species of the player's chosen starter, set in Oak's Lab
 #define VAR_VERMILION_CHOSEN_SEVII                 0x40D5
 #define VAR_VIRIDIAN_FOREST_QUEST                 0x40D6
-#define VAR_0x40D7                 0x40D7
-#define VAR_0x40D8                 0x40D8
+#define VAR_CYCLING_CHALLENGE_STATE                 0x40D7
+#define VAR_SLATEPORT_MUSEUM_1F_STATE                 0x40D8
 #define VAR_0x40D9                 0x40D9
 #define VAR_0x40DA                 0x40DA
 #define VAR_0x40DB                 0x40DB

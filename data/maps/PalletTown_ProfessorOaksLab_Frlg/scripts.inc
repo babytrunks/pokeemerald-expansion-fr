@@ -661,6 +661,10 @@ ProceedPokedexScript::
 	call PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverNorth
 	delay 10
 	textcolor NPC_TEXT_COLOR_NEUTRAL
+	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_WalkLeft
+	waitmovement 0
+	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
+	waitmovement 0
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
 	message PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak
 	waitmessage
@@ -672,11 +676,8 @@ ProceedPokedexScript::
 	setvar VAR_MAP_SCENE_POKEMON_CENTER_TEALA, 1
 	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese
-	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_WalkLeft
-	waitmovement 0
-	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
-	waitmovement 0
-	giveitem_msg PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls, ITEM_POKE_BALL, 5
+	closemessage
+	giveitem ITEM_POKE_BALL 10
 	setspeaker SP_NAME_PROF_OAK
 	msgbox PalletTown_ProfessorOaksLab_Text_OakExplainCatching
 	famechecker FAMECHECKER_OAK, 1
@@ -1225,6 +1226,7 @@ MoveGaryBulbasaur::
 
 MoveGarySquirtle::
     applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryWaterToOak
+	waitmovement 0
     @here 3 locations have to be considered for player: above, right and under
     @because player takes fire here which is far right
 	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak6
@@ -1234,6 +1236,7 @@ MoveGarySquirtle::
 
 MoveGaryCharmander::
     applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryFireToOak 
+	waitmovement 0
     @here 3 locations have to be considered for player: above, left and under
     @because player takes grass here which is left
 	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
@@ -1260,15 +1263,18 @@ GaryMoveFromFire:
 	setspeaker SP_NAME_PROF_OAK
     msgbox gText_OakYesSure
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceRight
+	waitmovement 0
 	setspeaker SP_NAME_PROF_OAK
     msgbox gText_OakPlayerComeHere
     applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceUp
+	waitmovement 0
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
+	waitmovement 0
     @here 3 locations have to be considered for player: above, left and under
     @because player takes grass here which is left
 	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
-	call_if_eq VAR_FACING, DIR_WEST, PlayerBackToOak1
-	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak2
+	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak1
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak2_2
     goto ProceedPokedexScript
 
 GaryMoveFromWater::
@@ -1285,14 +1291,17 @@ GaryMoveFromWater::
     msgbox gText_OakYesSure
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceRight
 	waitmovement 0
+	setspeaker SP_NAME_PROF_OAK
     msgbox gText_OakPlayerComeHere 
     applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceUp
+	waitmovement 0
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
+	waitmovement 0
     @here 3 locations have to be considered for player: above, right and under
     @because player takes fire here which is far right
 	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak6
 	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak4
-	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak5
+	call_if_eq VAR_FACING, DIR_WEST, PlayerBackToOak5
     goto ProceedPokedexScript
 
 GaryMoveFromGrass::
@@ -1309,9 +1318,12 @@ GaryMoveFromGrass::
     msgbox gText_OakYesSure
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceRight
 	waitmovement 0
+	setspeaker SP_NAME_PROF_OAK
     msgbox gText_OakPlayerComeHere 
 	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceUp
+	waitmovement 0
     applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
+	waitmovement 0
     @here 2 locations have to be considered for player: above and under
     @because player takes water here which is middle
 	call_if_eq VAR_FACING, DIR_NORTH,PlayerBackToOak8
@@ -1813,6 +1825,21 @@ PlayerBackToOak2::
 
 PlayerMoves2::
 	walk_down
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+PlayerBackToOak2_2::
+    applymovement LOCALID_PLAYER, PlayerMoves2_2
+	waitmovement 0
+    return
+
+PlayerMoves2_2::
+	walk_left
+	walk_down
+	walk_down
+	walk_left
 	walk_left
 	walk_left
 	walk_up

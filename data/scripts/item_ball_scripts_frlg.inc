@@ -608,22 +608,6 @@ SafariZone_North_EventScript_ItemQuickClaw::
 	finditem ITEM_QUICK_CLAW
 	end
 
-SeafoamIslands_1F_EventScript_ItemIceHeal::
-	finditem ITEM_ICE_HEAL
-	end
-
-SeafoamIslands_B1F_EventScript_ItemWaterStone::
-	finditem ITEM_WATER_STONE
-	end
-
-SeafoamIslands_B1F_EventScript_ItemRevive::
-	finditem ITEM_REVIVE
-	end
-
-SeafoamIslands_B2F_EventScript_ItemBigPearl::
-	finditem ITEM_BIG_PEARL
-	end
-
 SeafoamIslands_B4F_EventScript_ItemUltraBall::
 	finditem ITEM_ULTRA_BALL
 	end

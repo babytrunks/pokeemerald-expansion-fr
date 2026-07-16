@@ -193,9 +193,9 @@
 #define VAR_TRICK_HOUSE_ENTRANCE_STATE                   0x40A7
 #endif
 #define VAR_UNUSED_0x40A8                                0x40A8 // Unused Var
+#if !IS_FRLG
 #define VAR_CYCLING_CHALLENGE_STATE                      0x40A9
 #define VAR_SLATEPORT_MUSEUM_1F_STATE                    0x40AA
-#if !IS_FRLG
 #define VAR_TRICK_HOUSE_PUZZLE_1_STATE                   0x40AB
 #define VAR_TRICK_HOUSE_PUZZLE_2_STATE                   0x40AC
 #define VAR_TRICK_HOUSE_PUZZLE_3_STATE                   0x40AD

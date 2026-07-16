@@ -135,7 +135,7 @@
 #define ITEM_EXP_CANDY_S 104
 #define ITEM_EXP_CANDY_M 105
 #define ITEM_EXP_CANDY_L 106
-#define ITEM_EXP_CANDY_XL 107
+#define ITEM_VITAMAX 107
 #define ITEM_DYNAMAX_CANDY 108
 
 // Medicinal Flutes

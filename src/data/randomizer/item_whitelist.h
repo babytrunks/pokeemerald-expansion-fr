@@ -120,7 +120,7 @@ static const u16 sRandomizerItemWhitelist[] =
     // ITEM_EXP_CANDY_S,
     // ITEM_EXP_CANDY_M,
     //ITEM_EXP_CANDY_L,
-    //ITEM_EXP_CANDY_XL,
+    //ITEM_VITAMAX,
     //ITEM_DYNAMAX_CANDY,
     // Medicinal Flutes
     // ITEM_BLUE_FLUTE,

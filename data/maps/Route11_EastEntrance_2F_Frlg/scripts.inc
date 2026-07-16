@@ -1,4 +1,4 @@
-.equ REQUIRED_CAUGHT_MONS, 20
+.equ REQUIRED_CAUGHT_MONS, 30
 
 Route11_EastEntrance_2F_Frlg_MapScripts::
 	.byte 0
@@ -66,35 +66,35 @@ Route11_EastEntrance_2F_EventScript_Aide::
 	call Route11_EastEntrance_2F_EventScript_GetAideRequestInfo
 	goto_if_lt VAR_0x8006, REQUIRED_CAUGHT_MONS, Aide_EventScript_HaventCaughtEnough
 	msgbox Route11_EastEntrance_2F_Text_GreatHereYouGo
-	checkitemspace ITEM_ITEMFINDER
-	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
-	giveitem_msg Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide, ITEM_ITEMFINDER
+	giveitem_msg Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide, ITEM_EVERSTONE
 	setflag FLAG_GOT_ITEMFINDER
-	msgbox Route11_EastEntrance_2F_Text_ExplainItemfinder
+	msgbox Route11_EastEntrance_2F_Text_ExplainEverstone
 	release
 	end
 
 Route11_EastEntrance_2F_EventScript_AlreadyGotItemfinder::
-	msgbox Route11_EastEntrance_2F_Text_ExplainItemfinder
+	msgbox Route11_EastEntrance_2F_Text_ExplainEverstone
 	release
 	end
 
 Route11_EastEntrance_2F_EventScript_GetAideRequestInfo::
 	buffernumberstring STR_VAR_1, REQUIRED_CAUGHT_MONS
-	bufferitemname STR_VAR_2, ITEM_ITEMFINDER
+	bufferitemname STR_VAR_2, ITEM_EVERSTONE
 	return
 
 Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
-    .string "Hi! Remember me?\n"
-    .string "I'm one of Prof. Oak's Aides.\p"
+    .string "Oh… {PLAYER}!\n"
+    .string "I've been looking for you!\p"
+    .string "It's me, one of the ever-present\n"
+    .string "Aides to Prof. Oak.\p"
     .string "If your Pokédex has complete data\n"
-    .string "on {STR_VAR_1} species, I'm supposed to\l"
-    .string "give you a reward.\p"
-    .string "Prof. Oak entrusted me with the\n"
-    .string "{STR_VAR_2} for you.\p"
+    .string "on twenty species, I'm supposed to\l"
+    .string "give you a reward from Prof. Oak.\p"
+    .string "He entrusted me with this\n"
+    .string "Everstone.\p"
     .string "So, {PLAYER}, let me ask you.\p"
     .string "Have you gathered data on at least\n"
-    .string "{STR_VAR_1} kinds of Pokémon?$"
+    .string "twenty kinds of Pokémon?$"
 
 Route11_EastEntrance_2F_Text_GreatHereYouGo::
     .string "Great! You have caught or owned\n"
@@ -106,17 +106,15 @@ Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide::
     .string "{PLAYER} received the {STR_VAR_2}\n"
     .string "from the Aide.$"
 
-Route11_EastEntrance_2F_Text_ExplainItemfinder::
-    .string "There are items on the ground that\n"
-    .string "may be hidden from view.\p"
-    .string "Use the Itemfinder to detect any\n"
-    .string "hidden items close to you.\p"
-    .string "The machine is a bit limited.\n"
-    .string "It can't pinpoint item locations.\p"
-    .string "What it does is show the direction\n"
-    .string "where the item is.\p"
-    .string "Use it to get your bearings, then\n"
-    .string "search the suspect area by hand.$"
+Route11_EastEntrance_2F_Text_ExplainEverstone::
+    .string "Making Pokémon evolve certainly\n"
+    .string "can add to the Pokédex.\p"
+    .string "However, at times, you may not\n"
+    .string "want a certain Pokémon to evolve.\p"
+    .string "In that case, give the Everstone\n"
+    .string "to that Pokémon.\p"
+    .string "It will prevent evolution according\n"
+    .string "to the Professor.$"
 
 Route11_EastEntrance_2F_Text_BigMonAsleepOnRoad::
     .string "Let's see what the binoculars have\n"

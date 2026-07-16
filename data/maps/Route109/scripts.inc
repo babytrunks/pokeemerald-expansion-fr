@@ -369,8 +369,8 @@ Route109_EventScript_Edmond::
 
 Route109_EventScript_Lola::
 	trainerbattle_single TRAINER_LOLA_1, Route109_Text_LolaIntro, Route109_Text_LolaDefeated, Route109_EventScript_LolaRegisterMatchCallAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_LolaRematch
+	@ specialvar VAR_RESULT, ShouldTryRematchBattle
+	@ goto_if_eq VAR_RESULT, TRUE, Route109_EventScript_LolaRematch
 	msgbox Route109_Text_LolaPostBattle, MSGBOX_DEFAULT
 	release
 	end

@@ -278,7 +278,7 @@ gText_ceruleangiovanni_BrokeOutOfMyBall::
 	.string "Mewtwo escaped out of my Master Ball!$"
 
 gText_ceruleangiovanni_10::
-	.string "Yes… you are Unworthy!!!$"
+	.string "Yes… you are UNWORTHY!!!$"
 
 CeruleanCave_B1F_Text_NotReadyForMewtwo::
 	.string "No… you are not worthy…$"
