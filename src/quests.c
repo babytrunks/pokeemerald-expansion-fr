@@ -26,6 +26,11 @@
 #include "quests.h"
 #include "overworld.h"
 #include "event_data.h"
+#include "field_effect.h"
+#include "field_effect_helpers.h"
+#include "trainer_see.h"
+#include "constants/field_effects.h"
+#include "constants/trainer_types.h"
 #include "constants/items.h"
 #include "constants/field_weather.h"
 #include "constants/songs.h"
@@ -2767,4 +2772,69 @@ void QuestMenu_ResetMenuSaveData(void)
 	       sizeof(gSaveBlock2Ptr->questData));
 	memset(&gSaveBlock2Ptr->subQuests, 0,
 	       sizeof(gSaveBlock2Ptr->subQuests));
+}
+
+// Quest icons
+//
+// An object event shows a hovering icon while the quest it hands out is not yet
+// completed. An object opts in by setting trainer_type to TRAINER_TYPE_QUEST_GIVER
+// and the optional map JSON property "quest_id", which lands in
+// ObjectEventTemplate.questId.
+
+static bool32 ObjectEventShouldShowQuestIcon(struct ObjectEvent *objectEvent)
+{
+	const struct ObjectEventTemplate *template;
+	u16 questId;
+
+	template = GetObjectEventTemplateByLocalIdAndMap(objectEvent->localId, objectEvent->mapNum, objectEvent->mapGroup);
+	if (template == NULL)
+		return FALSE;
+
+	// Catches QUEST_NONE as well as garbage. QuestMenu_GetSetQuestState takes a u8
+	// and does no bounds checking, so an out-of-range id would corrupt save data.
+	questId = template->questId;
+	if (questId >= QUEST_COUNT)
+		return FALSE;
+
+	// Deliberately not gated on FLAG_GET_UNLOCKED: nothing calls
+	// QUEST_MENU_UNLOCK_QUEST on its own, so "unlocked" only ever gets set
+	// alongside SET_ACTIVE, i.e. it means "already accepted". Gating on it would
+	// stop the icon from ever advertising a quest. Hide quest givers behind their
+	// object event `flag` if they should not be visible yet.
+	//
+	// The GET cases return a masked byte rather than 0/1, so only test truthiness.
+	return !QuestMenu_GetSetQuestState(questId, FLAG_GET_COMPLETED);
+}
+
+// Idempotent: brings the icon in line with the quest state, whatever it was
+// before. Safe to call repeatedly and on every object event.
+void HandleQuestIconForSingleObjectEvent(struct ObjectEvent *objectEvent)
+{
+	bool32 shouldShow;
+	bool32 hasIcon;
+
+	// Cheap bail-out for the overwhelming majority of objects, which avoids the
+	// sprite scan and the template lookup entirely. The player is covered too,
+	// since the player object is never a quest giver.
+	if (objectEvent->trainerType != TRAINER_TYPE_QUEST_GIVER)
+		return;
+
+	shouldShow = ObjectEventShouldShowQuestIcon(objectEvent);
+	hasIcon = ObjectEventHasQuestIcon(objectEvent);
+
+	if (shouldShow && !hasIcon)
+		StartFieldEffectForObjectEvent(FLDEFF_QUEST_ICON, objectEvent);
+	else if (!shouldShow && hasIcon)
+		RemoveQuestIconForObjectEvent(objectEvent);
+}
+
+void RefreshQuestIcons(void)
+{
+	u32 i;
+
+	for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+	{
+		if (gObjectEvents[i].active)
+			HandleQuestIconForSingleObjectEvent(&gObjectEvents[i]);
+	}
 }

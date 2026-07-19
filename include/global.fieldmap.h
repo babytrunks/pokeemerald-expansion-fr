@@ -150,7 +150,7 @@ struct __attribute__((packed, aligned(4))) ObjectEventTemplate
     };
     /*0x10*/ const u8 *script;
     /*0x14*/ u16 flagId;
-    /*0x16*/ u16 filler;
+    /*0x16*/ u16 questId; // ID of the quest this object hands out, QUEST_NONE = none
 }; // size = 0x18
 
 struct WarpEvent

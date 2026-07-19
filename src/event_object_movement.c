@@ -60,6 +60,13 @@
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "quests.h"
+
+// Both structs are mirrored in SaveBlock1, so growing either one shifts every
+// field after it and breaks existing saves. ObjectEventTemplate.questId reuses
+// the old `filler` halfword specifically to avoid that.
+STATIC_ASSERT(sizeof(struct ObjectEvent) == 0x24, ObjectEventMustNotGrow);
+STATIC_ASSERT(sizeof(struct ObjectEventTemplate) == 0x18, ObjectEventTemplateMustNotGrow);
 
 #define SPECIAL_LOCALIDS_START (min(LOCALID_CAMERA, \
                                 min(LOCALID_PLAYER, \
@@ -592,6 +599,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPaletteLight,              OBJ_EVENT_PAL_TAG_LIGHT},
     {gObjectEventPaletteLight2,             OBJ_EVENT_PAL_TAG_LIGHT_2},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},
+    {gObjectEventPaletteQuestIcons,         OBJ_EVENT_PAL_TAG_QUEST_ICONS},
     {gObjectEventPaletteNeonLight,          OBJ_EVENT_PAL_TAG_NEON_LIGHT},
     // {gObjectEventPal_YoungsterFrlg,         OBJ_EVENT_PAL_TAG_YOUNGSTER},
     {gObjectEventPal_Birdkeeper,         OBJ_EVENT_PAL_TAG_BIRDKEEPER},
@@ -1961,6 +1969,8 @@ u8 TrySpawnObjectEventTemplate(const struct ObjectEventTemplate *objectEventTemp
     gSprites[gObjectEvents[objectEventId].spriteId].images = graphicsInfo->images;
     if (subspriteTables)
         SetSubspriteTables(&gSprites[gObjectEvents[objectEventId].spriteId], subspriteTables);
+
+    HandleQuestIconForSingleObjectEvent(&gObjectEvents[objectEventId]);
 
     return objectEventId;
 }
@@ -3392,6 +3402,10 @@ static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
 
         ResetObjectEventFldEffData(objectEvent);
         SetObjectSubpriorityByElevation(objectEvent->previousElevation, sprite, 1);
+
+        // This path rebuilds sprites from the ObjectEvent alone, so the icon has
+        // to be re-derived here rather than at template spawn time.
+        HandleQuestIconForSingleObjectEvent(objectEvent);
     }
 }
 

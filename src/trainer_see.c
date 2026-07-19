@@ -70,6 +70,7 @@ static const u8 sEmotion_DoubleExclamationMarkGfx[] = INCBIN_U8("graphics/field_
 static const u8 sEmotion_XGfx[] = INCBIN_U8("graphics/field_effects/pics/emote_x.4bpp");
 // HGSS emote graphics ripped by Lemon on The Spriters Resource: https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/30497/
 static const u8 sEmotion_Gfx[] = INCBIN_U8("graphics/misc/emotes.4bpp");
+static const u8 sQuest_Gfx[] = INCBIN_U8("graphics/misc/quests_icons.4bpp");
 
 static u8 (*const sDirectionalApproachDistanceFuncs[])(struct ObjectEvent *trainerObj, s16 range, s16 x, s16 y) =
 {
@@ -238,6 +239,12 @@ static const struct SpriteFrameImage sSpriteImageTable_HeartIcon[] =
     }
 };
 
+static const struct SpriteFrameImage sSpriteImageTable_QuestIcon[] =
+{
+    overworld_frame(sQuest_Gfx, 2, 2, 0),
+    overworld_frame(sQuest_Gfx, 2, 2, 1),
+};
+
 static const struct SpriteFrameImage sSpriteImageTable_Emotes[] =
 {
     overworld_frame(sEmotion_Gfx, 2, 2, 0), // FOLLOWER_EMOTION_HAPPY
@@ -385,6 +392,20 @@ static const union AnimCmd *const sSpriteAnimTable_Icons[] =
     sSpriteAnim_Icons4
 };
 
+// Loops forever: the quest icon hovers until the quest is completed, so it must
+// never set animEnded (which is what tears down the other head icons).
+static const union AnimCmd sSpriteAnim_QuestIcon[] =
+{
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd *const sSpriteAnimTable_QuestIcon[] =
+{
+    sSpriteAnim_QuestIcon
+};
+
 static const union AnimCmd *const sSpriteAnimTable_Emotes[] =
 {
     sSpriteAnim_Emotes0,
@@ -431,6 +452,17 @@ static const struct SpriteTemplate sSpriteTemplate_Emote =
     .images = sSpriteImageTable_Emotes,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_TrainerIcons
+};
+
+static const struct SpriteTemplate sSpriteTemplate_QuestIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_QUEST_ICONS,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_QuestIcon,
+    .images = sSpriteImageTable_QuestIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_QuestIcon
 };
 
 // code
@@ -1138,6 +1170,83 @@ static void SpriteCB_TrainerIcons(struct Sprite *sprite)
         else
             sprite->sYVelocity = 0;
     }
+}
+
+u8 FldEff_QuestIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_QuestIcon, 0, 0, 0x52);
+
+    if (spriteId != MAX_SPRITES)
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+
+        SetIconSpriteData(sprite, FLDEFF_QUEST_ICON, 0);
+        UpdateSpritePaletteByTemplate(&sSpriteTemplate_QuestIcon, sprite);
+    }
+
+    return 0;
+}
+
+// Unlike SpriteCB_TrainerIcons this neither bounces nor self-destructs on
+// animEnded; the icon sits above the NPC until something removes it explicitly.
+void SpriteCB_QuestIcon(struct Sprite *sprite)
+{
+    u8 objEventId;
+    struct Sprite *objEventSprite;
+
+    // Returns TRUE when the object event is *not* found.
+    if (TryGetObjectEventIdByLocalIdAndMap(sprite->sLocalId, sprite->sMapNum, sprite->sMapGroup, &objEventId))
+    {
+        FieldEffectStop(sprite, sprite->sFldEffId);
+        return;
+    }
+
+    objEventSprite = &gSprites[gObjectEvents[objEventId].spriteId];
+    sprite->x = objEventSprite->x;
+    sprite->y = objEventSprite->y - 16;
+    sprite->x2 = objEventSprite->x2;
+    sprite->y2 = objEventSprite->y2;
+    // Don't leave an icon floating over an NPC that's been hidden by a flag.
+    sprite->invisible = objEventSprite->invisible;
+}
+
+// Locates this object's own icon sprite. The field effect active list can't be
+// used for this: it's a flat global set of effect ids with no per-instance
+// identity, so it can't tell two NPCs' icons apart.
+//
+// Looking the sprite up directly also means the sprite is the single source of
+// truth for "does this object have an icon", which stays correct across map
+// transitions (where every sprite is destroyed) without any cached state.
+static struct Sprite *FindQuestIconSprite(struct ObjectEvent *objectEvent)
+{
+    u32 i;
+
+    for (i = 0; i < MAX_SPRITES; i++)
+    {
+        struct Sprite *sprite = &gSprites[i];
+
+        if (sprite->inUse
+         && sprite->callback == SpriteCB_QuestIcon
+         && sprite->sLocalId == objectEvent->localId
+         && sprite->sMapNum == objectEvent->mapNum
+         && sprite->sMapGroup == objectEvent->mapGroup)
+            return sprite;
+    }
+
+    return NULL;
+}
+
+bool32 ObjectEventHasQuestIcon(struct ObjectEvent *objectEvent)
+{
+    return FindQuestIconSprite(objectEvent) != NULL;
+}
+
+void RemoveQuestIconForObjectEvent(struct ObjectEvent *objectEvent)
+{
+    struct Sprite *sprite = FindQuestIconSprite(objectEvent);
+
+    if (sprite != NULL)
+        FieldEffectStop(sprite, sprite->sFldEffId);
 }
 
 #undef sLocalId

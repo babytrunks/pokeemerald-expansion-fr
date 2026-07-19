@@ -241,7 +241,11 @@ string generate_map_events_text(Json map_data) {
                      << json_to_string(obj_event, "trainer_type") << ", "
                      << json_to_string(obj_event, "trainer_sight_or_berry_tree_id") << ", "
                      << json_to_string(obj_event, "script") << ", "
-                     << json_to_string(obj_event, "flag") << "\n";
+                     << json_to_string(obj_event, "flag");
+                // quest_id is optional; objects without one give no quest.
+                // Must be read silently, or a missing key aborts the build.
+                string quest_id = json_to_string(obj_event, "quest_id", true);
+                text << ", " << (quest_id.empty() ? "QUEST_NONE" : quest_id) << "\n";
             } else if (type == "clone") {
                 text << "\tclone_event " << i + 1 << ", "
                      << json_to_string(obj_event, "graphics_id") << ", "

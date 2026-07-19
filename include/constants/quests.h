@@ -14,6 +14,10 @@
 #define QUEST_MENU_CHECK_COMPLETE       9   //checks if questId has been completed. Returns result to gSpecialVar_Result
 #define QUEST_MENU_BUFFER_QUEST_NAME    10   //buffers a quest name to gStringVar1
 
+// Sentinel for object events that hand out no quest. Quest 0 is a real quest,
+// so it cannot double as "none".
+#define QUEST_NONE                      0xFFFF
+
 // quest number defines
 #define QUEST_NATURE_CHANGER                0
 #define QUEST_LIGHT_BALL          1

@@ -1,6 +1,8 @@
 #ifndef GUARD_QUESTS_H
 #define GUARD_QUESTS_H
 
+#include "main.h" // MainCallback
+
 //#include constants/quests.h       //included in global.h
 
 #define SORT_DEFAULT 0
@@ -76,5 +78,7 @@ void Task_QuestMenu_OpenFromStartMenu(u8);
 void QuestMenu_CopyQuestName(u8 *dst, u8 questId);
 void QuestMenu_CopySubquestName(u8 *dst, u8 parentId, u8 childId);
 void QuestMenu_ResetMenuSaveData(void);
+void HandleQuestIconForSingleObjectEvent(struct ObjectEvent *objectEvent);
+void RefreshQuestIcons(void);
 
 #endif // GUARD_QUESTS_H

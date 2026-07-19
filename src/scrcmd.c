@@ -3553,7 +3553,11 @@ bool8 ScrCmd_questmenu(struct ScriptContext *ctx)
             QuestMenu_CopyQuestName(gStringVar1, questId);
         break;
     }
-    
+
+    // Quest state may have changed, so add/remove quest giver icons on the fly
+    // rather than waiting for the player to leave and re-enter the map.
+    RefreshQuestIcons();
+
     return TRUE;
 }
 
