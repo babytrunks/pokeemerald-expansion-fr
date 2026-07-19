@@ -1025,14 +1025,14 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_TOXIC_BOOST] =
         {
             .name = _("Toxic Boost"),
-            .description = COMPOUND_STRING("Increases Attack stat by 50% when theuser is poisoned."),
+            .description = COMPOUND_STRING("Ups Attack by 50% when poisoned. Takes no damage from poison."),
             .aiRating = 6,
         },
 
         [ABILITY_FLARE_BOOST] =
         {
             .name = _("Flare Boost"),
-            .description = COMPOUND_STRING("Increases Special Attack stat by 50% whenthe user is burned."),
+            .description = COMPOUND_STRING("Ups Sp. Atk by 50% when burned. Takes no damage from burns."),
             .aiRating = 5,
         },
 

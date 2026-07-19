@@ -485,7 +485,8 @@ static bool32 HandleEndTurnPoison(u32 battler)
 
     if ((gBattleMons[battler].status1 & STATUS1_POISON || gBattleMons[battler].status1 & STATUS1_TOXIC_POISON)
      && IsBattlerAlive(battler)
-     && !IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD))
+     && !IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD)
+     && !IsAbilityAndRecord(battler, ability, ABILITY_TOXIC_BOOST))
     {
         if (ability == ABILITY_POISON_HEAL)
         {
@@ -526,7 +527,8 @@ static bool32 HandleEndTurnBurn(u32 battler)
 
     if (gBattleMons[battler].status1 & STATUS1_BURN
      && IsBattlerAlive(battler)
-     && !IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD))
+     && !IsAbilityAndRecord(battler, ability, ABILITY_MAGIC_GUARD)
+     && !IsAbilityAndRecord(battler, ability, ABILITY_FLARE_BOOST))
     {
         s32 burnDamage = GetNonDynamaxMaxHP(battler) / (B_BURN_DAMAGE >= GEN_7 ? 16 : 8);
         if (ability == ABILITY_HEATPROOF)

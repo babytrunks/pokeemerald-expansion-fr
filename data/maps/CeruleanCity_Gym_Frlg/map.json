@@ -11,10 +11,12 @@
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": false,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_GYM",
   "connections": null,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
       "x": 10,
       "y": 12,
@@ -28,6 +30,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER_FRLG",
       "x": 4,
       "y": 7,
@@ -41,6 +44,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MISTY",
       "x": 8,
       "y": 6,
@@ -54,6 +58,8 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_CERULEAN_GYM_GUY",
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
       "x": 7,
       "y": 16,
@@ -67,6 +73,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(STARMIE)",
       "x": 7,
       "y": 6,
@@ -122,6 +129,5 @@
       "script": "CeruleanCity_Gym_EventScript_GymStatue"
     }
   ],
-  "floor_number": 0,
   "region": "REGION_KANTO"
 }

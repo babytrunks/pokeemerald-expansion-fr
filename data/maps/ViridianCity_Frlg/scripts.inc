@@ -333,11 +333,11 @@ ViridianCity_EventScript_TriggerBrendanCeruleanCave:
 	msgbox ViridianCity_Text_BrendanToCerulean_GladToFindYou
 	setspeaker SP_NAME_BRENDAN
 	msgbox ViridianCity_Text_BrendanToCeruleanNeedYourHelp
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	playse SE_USE_ITEM
 	waitse
 	special HealPlayerParty
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setflag FLAG_HIDE_CERULEAN_CAVE_GUARD
 	setflag FLAG_HIDE_ROUTE_22_RIVAL
 	setvar VAR_VIRIDIAN_TRIGGER_CERULEAN_CAVE 1

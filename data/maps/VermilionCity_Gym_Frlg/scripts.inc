@@ -4,9 +4,38 @@
 .equ TRASH_CAN_ID,       VAR_0x8008
 
 VermilionCity_Gym_Frlg_MapScripts::
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, VermilionCity_Gym_OnFrame
 	map_script MAP_SCRIPT_ON_LOAD, VermilionCity_Gym_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, VermilionCity_Gym_OnTransition
 	.byte 0
+
+VermilionCity_Gym_OnFrame::
+	map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 3, EventScript_VermilionCityGym_GymGuyFeathers
+	.2byte 0
+	
+EventScript_VermilionCityGym_GymGuyFeathers:
+	applymovement LOCALID_VERMILION_GYM_GUY, Movement_GymGuideVermilion_WalkUpToYou   
+    waitmovement 0
+    msgbox VermilionCity_Gym_Text_GymGuyAdvice, MSGBOX_AUTOCLOSE
+    msgbox Common_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
+    giveitem ITEM_SWIFT_FEATHER 2
+    giveitem ITEM_HEALTH_FEATHER 2
+    closemessage
+    applymovement LOCALID_VERMILION_GYM_GUY, Movement_GymGuideVermilion_WalkBack
+    waitmovement 0
+    setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 4
+    end
+
+Movement_GymGuideVermilion_WalkUpToYou::
+    walk_right
+    walk_down
+    step_end
+
+Movement_GymGuideVermilion_WalkBack::
+    walk_up
+    walk_left
+    face_down
+    step_end
 
 VermilionCity_Gym_OnLoad::
 	call_if_set FOUND_FIRST_SWITCH, VermilionCity_Gym_EventScript_SetOneBeamOff
@@ -214,7 +243,6 @@ VermilionCity_Gym_EventScript_DefeatedLtSurge::
 	famechecker FAMECHECKER_LTSURGE, 1
 	call_if_unset FLAG_GOT_HM05, VermilionCity_Gym_EventScript_ShowOaksAide
 	clearflag FLAG_HIDE_FAME_CHECKER_LT_SURGE_JOURNAL
-	setflag FLAG_DEFEATED_LT_SURGE
 	setflag FLAG_BADGE03_GET
 	set_gym_trainers_frlg 3
 	goto VermilionCity_Gym_EventScript_GiveTM34
@@ -230,6 +258,8 @@ VermilionCity_Gym_EventScript_GiveTM34::
 	giveitem ITEM_TM_VOLT_SWITCH
 	setspeaker SP_NAME_LT_SURGE
 	msgbox VermilionCity_Gym_Text_ExplainTM34
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
 	release
 	end
 
@@ -258,7 +288,7 @@ VermilionCity_Gym_EventScript_DefeatedTucker::
 VermilionCity_Gym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_LT_SURGE, VermilionCity_Gym_EventScript_GymGuyPostVictory
+	goto_if_set FLAG_BADGE03_GET, VermilionCity_Gym_EventScript_GymGuyPostVictory
 	msgbox VermilionCity_Gym_Text_GymGuyAdvice
 	release
 	end
@@ -381,14 +411,11 @@ VermilionCity_Gym_Text_GymGuyAdvice::
     .string "Lt. Surge has a nickname.\p"
     .string "People refer to him as the\n"
     .string "Lightning American!\p"
-    .string "He's an expert on electric\n"
-    .string "Pokémon.\p"
-    .string "Bird/Water-type Pokémon match\n"
-    .string "poorly against the Electric type.\p"
-    .string "Beware of paralysis, too.\p"
     .string "Lt. Surge is very cautious.\p"
     .string "He's locked himself in, so it won't\n"
-    .string "be easy getting to him.$"
+    .string "be easy getting to him.\p"
+	.string "Though, I hear that top left trash\n"
+	.string "can could be a good start.$"
 
 VermilionCity_Gym_Text_GymGuyPostVictory::
     .string "Whew!\n"

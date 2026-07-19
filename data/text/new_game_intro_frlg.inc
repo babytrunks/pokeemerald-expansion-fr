@@ -191,7 +191,7 @@ gOakSpeech_Text_WelcomeToTheWorld::
     .string "Welcome to the world of Pokémon!\p"
     .string "My name is OAK.\p"
     .string "People affectionately refer to me\n"
-    .string "as the Pokémon PROFESSOR.\p$"
+    .string "as the Pokémon Professor.\p$"
 
 gOakSpeech_Text_ThisWorld::
     .string "This world…$"

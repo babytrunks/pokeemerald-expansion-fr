@@ -7586,7 +7586,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sCacneaLevelUpLearnset,
         .teachableLearnset = sCacneaTeachableLearnset,
         .eggMoveLearnset = sCacneaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2 + 1, SPECIES_CACTURNE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, LEVEL_CAP_GYM_2, SPECIES_CACTURNE}),
     },
 
     [SPECIES_CACTURNE] =

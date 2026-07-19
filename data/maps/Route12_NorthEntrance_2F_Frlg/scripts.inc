@@ -14,7 +14,7 @@ Route12_NorthEntrance_2F_EventScript_Lass::
 	faceplayer
 	goto_if_set FLAG_GOT_TM27, Route12_NorthEntrance_2F_EventScript_ExplainTM27
 	msgbox Route12_NorthEntrance_2F_Text_TakeTMDontNeedAnymoreMale
-	giveitem_msg Route12_NorthEntrance_2F_Text_ReceivedTM27FromLittleGirl, ITEM_TM27
+	giveitem ITEM_TM_RETURN
 	msgbox Route12_NorthEntrance_2F_Text_ExplainTM27
 	setflag FLAG_GOT_TM27
 	release

@@ -1,7 +1,10 @@
 CeladonCity_GameCorner_Frlg_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, CeladonCity_GameCorner_OnLoad
+
 	.byte 0
 
+
+	
 CeladonCity_GameCorner_OnLoad::
 	call_if_unset FLAG_OPENED_ROCKET_HIDEOUT, CeladonCity_GameCorner_EventScript_HideRocketHideout
 	end
@@ -141,7 +144,7 @@ CeladonCity_GameCorner_EventScript_FisherAlreadyGotCoins::
 CeladonCity_GameCorner_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_ERIKA, CeladonCity_GameCorner_EventScript_GymGuyPostVictory
+	goto_if_set FLAG_BADGE04_GET, CeladonCity_GameCorner_EventScript_GymGuyPostVictory
 	msgbox CeladonCity_GameCorner_Text_GymGuyAdvice
 	goto CeladonCity_GameCorner_EventScript_FaceSlotMachine
 	end
@@ -172,8 +175,8 @@ CeladonCity_GameCorner_EventScript_Scientist::
 	msgbox CeladonCity_GameCorner_Text_WantSomeCoins
 	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_EventScript_GamblerNoCoinCase
 	checkcoins VAR_TEMP_1
-	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1) - 20, CeladonCity_GameCorner_EventScript_ScientistNoRoomForCoins
-	addcoins 20
+	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1) - 500, CeladonCity_GameCorner_EventScript_ScientistNoRoomForCoins
+	addcoins 500
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy
 	playse SE_SHOP
@@ -199,8 +202,8 @@ CeladonCity_GameCorner_EventScript_Gentleman::
 	msgbox CeladonCity_GameCorner_Text_HereAreSomeCoinsShoo
 	goto_if_unset FLAG_GOT_COIN_CASE, CeladonCity_GameCorner_EventScript_GamblerNoCoinCase
 	checkcoins VAR_TEMP_1
-	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1) - 20, CeladonCity_GameCorner_EventScript_GentlemanNoRoomForCoins
-	addcoins 20
+	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1) - 1000, CeladonCity_GameCorner_EventScript_GentlemanNoRoomForCoins
+	addcoins 1000
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox CeladonCity_GameCorner_Text_Received20CoinsFromMan
 	playse SE_SHOP
@@ -754,7 +757,7 @@ CeladonCity_GameCorner_Text_WantSomeCoins::
     .string "Want some Coins?$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromNiceGuy::
-    .string "{PLAYER} received 20 Coins\n"
+    .string "{PLAYER} received 500 Coins\n"
     .string "from the nice guy.$"
 
 CeladonCity_GameCorner_Text_YouHaveLotsOfCoins::
@@ -769,7 +772,7 @@ CeladonCity_GameCorner_Text_HereAreSomeCoinsShoo::
     .string "Here are some Coins, so shoo!$"
 
 CeladonCity_GameCorner_Text_Received20CoinsFromMan::
-    .string "{PLAYER} received 20 Coins\n"
+    .string "{PLAYER} received 1000 Coins\n"
     .string "from the man.$"
 
 CeladonCity_GameCorner_Text_YouveGotPlentyCoins::

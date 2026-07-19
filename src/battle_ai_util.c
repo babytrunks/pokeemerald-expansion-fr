@@ -3158,7 +3158,8 @@ static u32 GetPoisonDamage(u32 battlerId)
 {
     u32 damage = 0;
 
-    if (gAiLogicData->abilities[battlerId] == ABILITY_POISON_HEAL)
+    if (gAiLogicData->abilities[battlerId] == ABILITY_POISON_HEAL
+     || gAiLogicData->abilities[battlerId] == ABILITY_TOXIC_BOOST)
         return damage;
 
     if (gBattleMons[battlerId].status1 & STATUS1_POISON)
@@ -3593,7 +3594,7 @@ bool32 ShouldPoison(u32 battlerAtk, u32 battlerDef)
     if (CanBePoisoned(battlerAtk, battlerDef, gAiLogicData->abilities[battlerAtk], abilityDef) && (
         DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef)
         || abilityDef == ABILITY_POISON_HEAL
-        || (abilityDef == ABILITY_TOXIC_BOOST && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))))
+        || abilityDef == ABILITY_TOXIC_BOOST))
     {
         if (battlerAtk == battlerDef) // Targeting self
             return TRUE;
@@ -3612,7 +3613,7 @@ bool32 ShouldBurn(u32 battlerAtk, u32 battlerDef, enum Ability abilityDef)
     if (CanBeBurned(battlerAtk, battlerDef, abilityDef) && (
         DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef)
         || abilityDef == ABILITY_HEATPROOF
-        || (abilityDef == ABILITY_FLARE_BOOST && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))))
+        || abilityDef == ABILITY_FLARE_BOOST))
     {
         if (battlerAtk == battlerDef) // Targeting self
             return TRUE;
@@ -4074,13 +4075,8 @@ static bool32 ShouldCureStatusInternal(u32 battlerAtk, u32 battlerDef, bool32 us
         if (aiData->abilities[battlerDef] == ABILITY_POISON_HEAL)
             isHarmless = TRUE;
 
-        if (aiData->abilities[battlerDef] == ABILITY_TOXIC_BOOST && !isHarmless)
-        {
-            if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
-                isHarmless = TRUE;
-            else if (!(targetingSelf || targetingAlly) && !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
-                isHarmless = TRUE;
-        }
+        if (aiData->abilities[battlerDef] == ABILITY_TOXIC_BOOST)
+            isHarmless = TRUE;
     }
 
     if (status & STATUS1_BURN)
@@ -4088,13 +4084,8 @@ static bool32 ShouldCureStatusInternal(u32 battlerAtk, u32 battlerDef, bool32 us
         if (aiData->holdEffects[battlerDef] == HOLD_EFFECT_FLAME_ORB)
             return FALSE;
 
-        if (aiData->abilities[battlerDef] == ABILITY_FLARE_BOOST && !isHarmless)
-        {
-            if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL))
-                isHarmless = TRUE;
-            else if (!(targetingSelf || targetingAlly) && !HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL))
-                isHarmless = TRUE;
-        }
+        if (aiData->abilities[battlerDef] == ABILITY_FLARE_BOOST)
+            isHarmless = TRUE;
     }
 
 /*

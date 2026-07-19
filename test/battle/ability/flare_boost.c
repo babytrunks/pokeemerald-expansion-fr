@@ -19,3 +19,15 @@ SINGLE_BATTLE_TEST("Flare Boost increases Sp. Attack by 50% when the Pokémon is
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
     }
 }
+
+SINGLE_BATTLE_TEST("Flare Boost prevents burn end-of-turn damage")
+{
+    GIVEN {
+        PLAYER(SPECIES_DRIFBLIM) { Ability(ABILITY_FLARE_BOOST); Status1(STATUS1_BURN); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { }
+    } SCENE {
+        NOT HP_BAR(player);
+    }
+}

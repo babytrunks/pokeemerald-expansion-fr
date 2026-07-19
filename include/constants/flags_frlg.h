@@ -571,7 +571,7 @@
 #define FLAG_DID_MS_NIDO_TRADE                           0x24B
 #define FLAG_RECEIVED_VERMILION_SEVII                    0x24C
 #define FLAG_DID_CH_DING_TRADE                           0x24D
-#define FLAG_GOT_TM38_FROM_BLAINE                        0x24E
+#define FLAG_GOT_TM38_FROM_BLAINE                        0x24E // unused
 #define FLAG_OAK_SKIP_22_RIVAL_CHECK                     0x24F
 #define FLAG_GOT_MASTER_BALL_FROM_SILPH                  0x250
 #define FLAG_DID_NINA_TRADE                              0x251
@@ -640,14 +640,14 @@
 #define FLAG_MET_STICKER_MAN                             0x290
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0x291
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                     0x292 
-#define FLAG_GOT_TM19_FROM_ERIKA                         0x293
+#define FLAG_GOT_TM19_FROM_ERIKA                         0x293 // unused
 #define FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL                  0x294
 #define FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL                  0x295
 #define FLAG_GOT_TM16_FROM_THIRSTY_GIRL                  0x296
 #define FLAG_HIDE_SAFARI_ZONE_PYROARITE                  0x297 
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298 // Unused
 #define FLAG_0x299                                       0x299
-#define FLAG_GOT_TM04_FROM_SABRINA                       0x29A
+#define FLAG_GOT_TM04_FROM_SABRINA                       0x29A // unused
 #define FLAG_HIDE_ROUTE8_LAX_MINT                        0x29B 
 #define FLAG_GOT_RECORD_SETTING_MAGIKARP                 0x29C
 #define FLAG_TWO_ISLAND_SHOP_INTRODUCED                  0x29D
@@ -1198,11 +1198,11 @@
 #define FLAG_UNUSED_0x4AF               0x4AF // Unused Flag
 
 // Boss clear flags, 1200
-#define FLAG_DEFEATED_BROCK           0x4B0
-#define FLAG_DEFEATED_MISTY           0x4B1
-#define FLAG_DEFEATED_LT_SURGE        0x4B2
+#define FLAG_DEFEATED_BROCK           0x4B0 // unused
+#define FLAG_DEFEATED_MISTY           0x4B1 // unused 
+#define FLAG_DEFEATED_LT_SURGE        0x4B2 // unused
 #define FLAG_DEFEATED_ERIKA           0x4B3
-#define FLAG_DEFEATED_KOGA            0x4B4
+#define FLAG_DEFEATED_KOGA            0x4B4 // unused
 #define FLAG_DEFEATED_SABRINA         0x4B5
 #define FLAG_DEFEATED_BLAINE          0x4B6
 #define FLAG_DEFEATED_LEADER_GIOVANNI 0x4B7

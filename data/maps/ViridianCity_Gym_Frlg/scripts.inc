@@ -23,6 +23,8 @@ ViridianCity_Gym_EventScript_GiveTM90::
     giveitem ITEM_DRAGONINITE
     giveitem ITEM_TM_DRACO_METEOR
 	msgbox ViridianCity_Gym_Text_ExplainItems
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
 	release
 	end
 

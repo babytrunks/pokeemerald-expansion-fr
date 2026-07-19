@@ -1,5 +1,10 @@
 CeruleanCity_Gym_Frlg_MapScripts::
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, CeruleanCity_Gym_OnFrame
 	.byte 0
+
+CeruleanCity_Gym_OnFrame:
+    map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 2, EventScript_CeruleanCityGym_GymGuyFeathers
+	.2byte 0
 
 CeruleanCity_Gym_EventScript_Misty::
     setspeaker SP_NAME_MISTY
@@ -13,7 +18,6 @@ CeruleanCity_Gym_EventScript_Misty::
 
 CeruleanCity_Gym_EventScript_MistyDefeated::
 	famechecker FAMECHECKER_MISTY, 1
-	setflag FLAG_DEFEATED_MISTY
 	setflag FLAG_BADGE02_GET
 	setrespawn HEAL_LOCATION_CERULEAN_CITY
 	set_gym_trainers_frlg 2
@@ -24,9 +28,11 @@ CeruleanCity_Gym_EventScript_GiveTM54::
     callnative SetBuffer1ToLevelCap
     setspeaker SP_NAME_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainCascadeBadge
-	giveitem_msg CeruleanCity_Gym_Text_ReceivedTM54FromMisty, ITEM_TM_FLIP_TURN
+	giveitem ITEM_TM_FLIP_TURN
     setspeaker SP_NAME_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainTM54
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
 	release
 	end
 
@@ -44,7 +50,7 @@ CeruleanCity_Gym_EventScript_Luis::
 CeruleanCity_Gym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_MISTY, CeruleanCity_Gym_EventScript_GymGuyPostVictory
+	goto_if_set FLAG_BADGE02_GET, CeruleanCity_Gym_EventScript_GymGuyPostVictory
 	msgbox CeruleanCity_Gym_Text_GymGuyAdvice
 	release
 	end
@@ -76,8 +82,32 @@ CeruleanCity_Gym_EventScript_Starmie::
 	release
 	end
 
+EventScript_CeruleanCityGym_GymGuyFeathers::
+    applymovement LOCALID_CERULEAN_GYM_GUY, Movement_GymGuideCerulean_WalkUpToYou   
+    waitmovement 0
+    msgbox CeruleanCity_Gym_Text_GymGuyAdvice, MSGBOX_AUTOCLOSE
+    msgbox Common_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
+    giveitem ITEM_GENIUS_FEATHER 2
+    giveitem ITEM_CLEVER_FEATHER 2
+    closemessage
+    applymovement LOCALID_CERULEAN_GYM_GUY, Movement_GymGuideCerulean_WalkBack
+    waitmovement 0
+    setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 3
+    end
+
+Movement_GymGuideCerulean_WalkUpToYou::
+    walk_right
+    walk_down
+    step_end
+
+Movement_GymGuideCerulean_WalkBack::
+    walk_up
+    walk_left
+    face_down
+    step_end
+
 CeruleanCity_Gym_Text_Starmie::
-    .string "Starmie: Star Star!$"
+    .string "Star Star!$"
 
 CeruleanCity_Gym_Text_MistyIntro::
     .string "Hi, you're a new face!\p"
@@ -169,3 +199,8 @@ CeruleanCity_Gym_Text_GymStatuePlayerWon::
     .string "Leader: Misty\p"
     .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
+
+Common_Gym_Text_ComplimentaryItems::
+    .string "Here, take these items on the house\n"
+    .string "for being brave enough to Tackle\l"
+    .string "this gym.$"

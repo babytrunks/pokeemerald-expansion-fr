@@ -48,7 +48,6 @@ CinnabarIsland_Gym_OnLoadOpenDoor6::
 CinnabarIsland_Gym_EventScript_Blaine::
 	famechecker FAMECHECKER_BLAINE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineIntro, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM38_FROM_BLAINE, CinnabarIsland_Gym_EventScript_GiveTM38
 	msgbox CinnabarIsland_Gym_Text_BlainePostBattle
 	release
 	end
@@ -67,9 +66,10 @@ CinnabarIsland_Gym_EventScript_DefeatedBlaine::
 CinnabarIsland_Gym_EventScript_GiveTM38::
 	callnative SetBuffer1ToLevelCap
 	msgbox CinnabarIsland_Gym_Text_ExplainVolcanoBadge
-	giveitem_msg CinnabarIsland_Gym_Text_ReceivedTM07FromBlaine, ITEM_TM_HEAT_WAVE
-	setflag FLAG_GOT_TM38_FROM_BLAINE
+	giveitem ITEM_TM_HEAT_WAVE
 	msgbox CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
 	release
 	end
 

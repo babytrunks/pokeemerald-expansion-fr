@@ -21,3 +21,18 @@ SINGLE_BATTLE_TEST("Toxic Boost increases Attack by 50% when the Pokémon is poi
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[2].damage);
     }
 }
+
+SINGLE_BATTLE_TEST("Toxic Boost prevents poison and Toxic end-of-turn damage")
+{
+    u32 status1;
+    PARAMETRIZE { status1 = STATUS1_POISON; }
+    PARAMETRIZE { status1 = STATUS1_TOXIC_POISON; }
+    GIVEN {
+        PLAYER(SPECIES_ZANGOOSE) { Ability(ABILITY_TOXIC_BOOST); Status1(status1); }
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { }
+    } SCENE {
+        NOT HP_BAR(player);
+    }
+}

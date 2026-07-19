@@ -14733,12 +14733,12 @@
               {
                 "min_level": 23,
                 "max_level": 25,
-                "species": "SPECIES_HIPPOPOTAS"
+                "species": "SPECIES_DUGTRIO"
               },
               {
                 "min_level": 23,
                 "max_level": 25,
-                "species": "SPECIES_HIPPOPOTAS"
+                "species": "SPECIES_DUGTRIO"
               }
             ]
           }
@@ -14810,12 +14810,12 @@
               {
                 "min_level": 23,
                 "max_level": 25,
-                "species": "SPECIES_HIPPOPOTAS"
+                "species": "SPECIES_DUGTRIO_ALOLA"
               },
               {
                 "min_level": 23,
                 "max_level": 25,
-                "species": "SPECIES_HIPPOPOTAS"
+                "species": "SPECIES_DUGTRIO_ALOLA"
               }
             ]
           }

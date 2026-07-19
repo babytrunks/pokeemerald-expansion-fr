@@ -31,8 +31,8 @@ EventScript_ExplainRulesMapScript:
     call_if_unset FLAG_DISABLE_EVS, PewterCity_Gym_EventScript_ExplainEVCap
     msgbox ExpertMode3_Text, MSGBOX_AUTOCLOSE
     msgbox PewterCity_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
-    giveitem ITEM_MUSCLE_FEATHER
-    giveitem ITEM_RESIST_FEATHER 
+    giveitem ITEM_MUSCLE_FEATHER 2
+    giveitem ITEM_RESIST_FEATHER 2
     closemessage
     applymovement LOCALID_EXPERT_MODE_NPC, Movement_GymGuide_WalkBack
     waitmovement 0
@@ -57,7 +57,6 @@ Movement_GymGuide_WalkBack::
 PewterCity_Gym_EventScript_Brock::
 	famechecker FAMECHECKER_BROCK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_BROCK, PewterCity_Gym_Text_BrockIntro, PewterCity_Gym_Text_BrockDefeat, PewterCity_Gym_EventScript_DefeatedBrock, NO_MUSIC
-	goto_if_unset FLAG_BADGE01_GET, PewterCity_Gym_EventScript_GiveTM39
     setspeaker SP_NAME_BROCK
 	msgbox PewterCity_Gym_Text_BrockPostBattle
 	release
@@ -65,7 +64,6 @@ PewterCity_Gym_EventScript_Brock::
 
 PewterCity_Gym_EventScript_DefeatedBrock::
 	famechecker FAMECHECKER_BROCK, 1
-	setflag FLAG_DEFEATED_BROCK
 	setflag FLAG_BADGE01_GET
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 1
 	setflag FLAG_HIDE_PEWTER_CITY_GYM_GUIDE
@@ -77,10 +75,12 @@ PewterCity_Gym_EventScript_DefeatedBrock::
 PewterCity_Gym_EventScript_GiveTM39::
     setspeaker SP_NAME_BROCK
 	msgbox PewterCity_Gym_Text_TakeThisWithYou
-	giveitem_msg PewterCity_Gym_Text_ReceivedTM39FromBrock, ITEM_TM39
+	giveitem ITEM_TM_ROCK_TOMB
     setspeaker SP_NAME_BROCK
     callnative SetBuffer1ToLevelCap
 	msgbox PewterCity_Gym_Text_ExplainTM39
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
 	release
 	end
 
@@ -92,7 +92,7 @@ PewterCity_Gym_EventScript_Liam::
 PewterCity_Gym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_BROCK, PewterCity_Gym_EventScript_GymGuyPostVictory
+	goto_if_set FLAG_BADGE01_GET, PewterCity_Gym_EventScript_GymGuyPostVictory
 	msgbox PewterCity_Gym_Text_LetMeTakeYouToTheTop, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, PewterCity_Gym_EventScript_GymGuyTakeMeToTop
 	goto_if_eq VAR_RESULT, NO, PewterCity_Gym_EventScript_GymGuyDontTakeMeToTop
@@ -257,7 +257,7 @@ PewterCity_Gym_Text_GymStatuePlayerWon::
 
 
 PewterCity_Gym_Text_BrockNotHere:
-  .string "{COLOR BLUE}Yo, champ in the making!\p"
+  .string "Yo, champ in the making!\p"
   .string "Brock's not here at the moment.\n"
   .string "He's busy swooning after girls\l"
   .string "or something.\p"
@@ -291,8 +291,7 @@ ExpertMode2_Text::
 PewterCity_Gym_Text_ExplainEVCap::
     .string "5. The EV Cap starts at 0.\n"
     .string "You will begin to increase the EV Cap as\l"
-    .string "you progress through the\l"
-    .string "game.$"
+    .string "you progress through the game.$"
 
 ExpertMode3_Text::
   .string "If you ever want me to reiterate\n"

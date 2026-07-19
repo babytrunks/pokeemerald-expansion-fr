@@ -1814,7 +1814,7 @@ static u32 GetSwitchinStatusDamage(u32 battler)
     // Status condition damage
     if ((status != 0) && gAiLogicData->switchinCandidate.battleMon.ability != ABILITY_MAGIC_GUARD)
     {
-        if (status & STATUS1_BURN)
+        if ((status & STATUS1_BURN) && ability != ABILITY_FLARE_BOOST)
         {
             if (B_BURN_DAMAGE >= GEN_7)
                 statusDamage = maxHP / 16;
@@ -1834,13 +1834,13 @@ static u32 GetSwitchinStatusDamage(u32 battler)
             if (statusDamage == 0)
                 statusDamage = 1;
         }
-        else if ((status & STATUS1_POISON) && ability != ABILITY_POISON_HEAL)
+        else if ((status & STATUS1_POISON) && ability != ABILITY_POISON_HEAL && ability != ABILITY_TOXIC_BOOST)
         {
             statusDamage = maxHP / 8;
             if (statusDamage == 0)
                 statusDamage = 1;
         }
-        else if ((status & STATUS1_TOXIC_POISON) && ability != ABILITY_POISON_HEAL)
+        else if ((status & STATUS1_TOXIC_POISON) && ability != ABILITY_POISON_HEAL && ability != ABILITY_TOXIC_BOOST)
         {
             if ((status & STATUS1_TOXIC_COUNTER) != STATUS1_TOXIC_TURN(15)) // not 16 turns
                 gAiLogicData->switchinCandidate.battleMon.status1 += STATUS1_TOXIC_TURN(1);
@@ -1854,7 +1854,7 @@ static u32 GetSwitchinStatusDamage(u32 battler)
     // Apply hypothetical poisoning from Toxic Spikes, which means the first turn of damage already added in GetSwitchinHazardsDamage
     // Do this last to skip one iteration of Poison / Toxic damage, and start counting Toxic damage one turn later.
     if (tSpikesLayers != 0 && (defType1 != TYPE_POISON && defType2 != TYPE_POISON
-        && ability != ABILITY_IMMUNITY && ability != ABILITY_POISON_HEAL
+        && ability != ABILITY_IMMUNITY && ability != ABILITY_POISON_HEAL && ability != ABILITY_TOXIC_BOOST
         && status == 0
         && !(heldItemEffect == HOLD_EFFECT_HEAVY_DUTY_BOOTS
             && (((gFieldStatuses & STATUS_FIELD_MAGIC_ROOM) || ability == ABILITY_KLUTZ)))

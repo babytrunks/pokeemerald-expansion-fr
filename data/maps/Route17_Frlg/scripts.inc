@@ -69,25 +69,24 @@ Route17_Text_BillyPostBattle::
     .string "Are you looking for adventure?$"
 
 Route17_Text_NikolasIntro::
-    .string "Let Voltorb electrify you!$"
+    .string "Let Scolipede poison you!$"
 
 Route17_Text_NikolasDefeat::
     .string "Grounded out!$"
 
 Route17_Text_NikolasPostBattle::
-    .string "I got my Voltorb at the abandoned\n"
-    .string "Power Plant.$"
+    .string "I got my Scolipede from your momma.$"
 
 Route17_Text_ZeekIntro::
-    .string "I leveled up my Pokémon, but it\n"
-    .string "won't evolve. Why?$"
+    .string "I leveled up my Pokémon. Now they're\n"
+    .string "busted!$"
 
 Route17_Text_ZeekDefeat::
     .string "Why, you!$"
 
 Route17_Text_ZeekPostBattle::
-    .string "Maybe some Pokémon need element\n"
-    .string "Stones to evolve.$"
+    .string "Maybe some Pokémon need more\n"
+    .string "Swagger for their true potential.$"
 
 Route17_Text_JamalIntro::
     .string "I need a little exercise!$"

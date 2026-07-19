@@ -1,11 +1,45 @@
 SaffronCity_Gym_Frlg_MapScripts::
     map_script MAP_SCRIPT_ON_LOAD, SaffronCityGym_SetmaptileScript
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, SaffronCity_Gym_OnFrame
 	.byte 0
+
+SaffronCity_Gym_OnFrame::
+    map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 4, EventScript_SaffronCityGym_GymGuyFeathers
+	.2byte 0
+
+EventScript_SaffronCityGym_GymGuyFeathers:
+	applymovement LOCALID_SAFFROM_GYM_GUY, Movement_GymGuideSaffron_WalkUpToYou   
+    waitmovement 0
+    msgbox SaffronCity_Gym_Text_GymGuyAdvice, MSGBOX_AUTOCLOSE
+    msgbox Common_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
+    giveitem ITEM_HEALTH_FEATHER 2
+	giveitem ITEM_MUSCLE_FEATHER 2
+	giveitem ITEM_RESIST_FEATHER 2
+    giveitem ITEM_GENIUS_FEATHER 2
+    giveitem ITEM_CLEVER_FEATHER 2
+    giveitem ITEM_SWIFT_FEATHER 2
+    closemessage
+    applymovement LOCALID_SAFFROM_GYM_GUY, Movement_GymGuideSaffron_WalkBack
+    waitmovement 0
+    setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 5
+    end
+
+Movement_GymGuideSaffron_WalkUpToYou::
+    walk_left
+    walk_down
+	walk_down
+    step_end
+
+Movement_GymGuideSaffron_WalkBack::
+    walk_up
+    walk_up
+    walk_right
+	face_down
+    step_end
 
 SaffronCity_Gym_EventScript_Sabrina::
 	famechecker FAMECHECKER_SABRINA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM04_FROM_SABRINA, SaffronCity_Gym_EventScript_GiveTM04
 	msgbox SaffronCity_Gym_Text_ExplainTM04
 	release
 	end
@@ -70,17 +104,11 @@ SaffronCity_Gym_EventScript_DefeatedSabrina::
 SaffronCity_Gym_EventScript_GiveTM04::
 	callnative SetBuffer1ToLevelCap
 	msgbox SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis
-	checkitemspace ITEM_TM_TRICK_ROOM
-	goto_if_eq VAR_RESULT, FALSE, SaffronCity_Gym_EventScript_NoRoomForTM04
-	giveitem_msg SaffronCity_Gym_Text_ReceivedTM71FromSabrina, ITEM_TM_TRICK_ROOM
-	setflag FLAG_GOT_TM04_FROM_SABRINA
+	giveitem ITEM_TM_TRICK_ROOM
 	msgbox SaffronCity_Gym_Text_SabrinaPostBattle
 	giveitem ITEM_CHIMECHITE
-	release
-	end
-
-SaffronCity_Gym_EventScript_NoRoomForTM04::
-	msgbox SaffronCity_Gym_Text_BagFullOfOtherItems
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
 	release
 	end
 
@@ -282,12 +310,11 @@ SaffronCity_Gym_Text_PrestonPostBattle::
 SaffronCity_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "Sabrina's Pokémon use psychic\n"
-    .string "power instead of force.\p"
-    .string "Fighting Pokémon are especially\n"
-    .string "weak against Psychic Pokémon.\p"
-    .string "They'll get destroyed before they\n"
-    .string "can even aim a punch!$"
+    .string "Sabrina specializes in the double\n"
+    .string "battle, rather than a specific type.\p"
+    .string "Switch up your strategies for doubles!\p"
+    .string "Double targetting a threat can\n"
+    .string "be a good strategy.$"
 
 SaffronCity_Gym_Text_GymGuyPostVictory::
     .string "Psychic power, huh?\p"

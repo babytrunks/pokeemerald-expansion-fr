@@ -1,5 +1,41 @@
 FuchsiaCity_Gym_Frlg_MapScripts::
+    map_script MAP_SCRIPT_ON_LOAD, FuchsiaCity_Gym_Frlg_CheckClearPathToKoga
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, FuchsiaCity_Gym_OnFrame
 	.byte 0
+
+FuchsiaCity_Gym_OnFrame:
+    map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 5, EventScript_FuschiaCityGym_GymGuyFeathers
+	.2byte 0
+
+EventScript_FuschiaCityGym_GymGuyFeathers::
+	applymovement LOCALID_FUSCHIA_GYM_GUY, Movement_GymGuideFuschia_WalkUpToYou   
+    waitmovement 0
+    msgbox FuchsiaCity_Gym_Text_GymGuyAdvice, MSGBOX_AUTOCLOSE
+    msgbox FuschiaCity_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
+    giveitem ITEM_CARBOS 2
+    closemessage
+    applymovement LOCALID_FUSCHIA_GYM_GUY, Movement_GymGuideFuschia_WalkBack
+    waitmovement 0
+    setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 6
+    end
+
+Movement_GymGuideFuschia_WalkUpToYou:
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    face_down
+    step_end
+
+Movement_GymGuideFuschia_WalkBack::
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    face_down
+    step_end
 
 FuchsiaCity_Gym_EventScript_Koga::
 	famechecker FAMECHECKER_KOGA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
@@ -11,21 +47,39 @@ FuchsiaCity_Gym_EventScript_Koga::
 FuchsiaCity_Gym_EventScript_DefeatedKoga::
 	famechecker FAMECHECKER_KOGA, 1
 	clearflag FLAG_HIDE_FAME_CHECKER_KOGA_JOURNAL
-	setflag FLAG_DEFEATED_KOGA
 	setflag FLAG_BADGE06_GET
 	set_gym_trainers_frlg 5
 	goto FuchsiaCity_Gym_EventScript_GiveTM06
 	end
 
 FuchsiaCity_Gym_EventScript_GiveTM06::
+	callnative SetBuffer1ToLevelCap
 	msgbox FuchsiaCity_Gym_Text_KogaExplainSoulBadge
 	giveitem ITEM_GRENINJITE
 	msgbox FuchsiaCity_Gym_Text_KogaExplainGreninjite
     giveitem ITEM_LIFE_ORB
     msgbox FuchsiaCity_Gym_Text_KogaPostBattle
+    playse SE_DOOR
+    setmetatile 6, 16, 0x281, FALSE
+    setmetatile 7, 16, 0x281, FALSE
+    setmetatile 8, 16, 0x281, FALSE
+	special DrawWholeMapView
+	waitse
+    applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+    waitmovement 0
 	release
 	end
 
+
+FuchsiaCity_Gym_Frlg_CheckClearPathToKoga::
+    call_if_set FLAG_BADGE06_GET, FuchsiaCity_Gym_Frlg_ClearPathToKoga
+    end
+
+FuchsiaCity_Gym_Frlg_ClearPathToKoga:
+    setmetatile 6, 16, 0x281, FALSE
+    setmetatile 7, 16, 0x281, FALSE
+    setmetatile 8, 16, 0x281, FALSE
+    return
 
 FuchsiaCity_Gym_EventScript_Phil::
 	trainerbattle_single TRAINER_TAMER_PHIL, FuchsiaCity_Gym_Text_PhilIntro, FuchsiaCity_Gym_Text_PhilDefeat
@@ -61,7 +115,7 @@ FuchsiaCity_Gym_EventScript_Nate::
 FuchsiaCity_Gym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_KOGA, FuchsiaCity_Gym_EventScript_GymGuyPostVictory
+	goto_if_set FLAG_BADGE06_GET, FuchsiaCity_Gym_EventScript_GymGuyPostVictory
 	msgbox FuchsiaCity_Gym_Text_GymGuyAdvice
 	release
 	end
@@ -126,6 +180,8 @@ FuchsiaCity_Gym_Text_KogaPostBattle::
 FuchsiaCity_Gym_Text_KogaExplainSoulBadge::
     .string "Now that you have the Soul Badge,\n"
     .string "you can now Surf outside of battle.\p"
+    .string "It also increases your Level Cap\n"
+    .string "to {STR_VAR_1}.\p"
     .string "Ah!\n"
     .string "Take this, too!$"
 
@@ -228,12 +284,14 @@ FuchsiaCity_Gym_Text_ShawnPostBattle::
 FuchsiaCity_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "Fuchsia Gym is a tricked-up place.\n"
-    .string "It's riddled with invisible walls!\p"
-    .string "Koga might appear close, but he's\n"
-    .string "blocked off.\p"
-    .string "You have to find gaps in the walls\n"
-    .string "to reach him.$"
+    .string "Koga specializes in speed.\p"
+    .string "He's got some of the fastest\n"
+    .string "Pokémon out there!\p"
+    .string "Priority moves could be a big help.$"
+
+FuschiaCity_Gym_Text_ComplimentaryItems:
+    .string "Here, these complimentary items may\n"
+    .string "help too.$"
 
 FuchsiaCity_Gym_Text_GymGuyPostVictory::
     .string "It's amazing how ninja can terrify,\n"

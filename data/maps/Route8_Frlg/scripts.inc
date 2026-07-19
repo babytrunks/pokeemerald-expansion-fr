@@ -129,7 +129,7 @@ Route8_Text_GlennPostBattle::
     .string "…and…then…$"
 
 Route8_Text_PaigeIntro::
-    .string "I like Nidoran, so I collect them!$"
+    .string "I like fairies, so I collect them!$"
 
 Route8_Text_PaigeDefeat::
     .string "Why?\n"

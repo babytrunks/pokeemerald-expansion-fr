@@ -59,7 +59,7 @@ Modest Nature
 Ability: Intimidate
 Level: 42
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 204 SpA 
+EVs: 4 Def / 252 SpA / 252 Spe  
 - Scald
 - Bug Buzz
 - Giga Drain
@@ -79,12 +79,12 @@ EVs: 252 HP / 6 SpA / 252 SpD
 Sceptile @ Sceptilite
 Adamant Nature
 Level: 44
-IVs: 31 HP / 30 Atk / 31 Def / 30 SpA / 31 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Leaf Blade
 - Dragon Claw
 - Focus Blast
-- Hidden Power
+- Night Slash
 
 
 === PARTNER_CERULEAN_CAVE_LANCE ===

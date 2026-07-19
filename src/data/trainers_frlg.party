@@ -2600,7 +2600,7 @@ Class: Cooltrainer Frlg
 Pic: Cooltrainer M
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 
@@ -3546,7 +3546,7 @@ EVs: 252 HP
 
 Espathra @ Leftovers  
 Level: 51
-Ability: Speed Boost  
+Ability: Speed Boost
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP
 - Lumina Crash  
@@ -5350,10 +5350,10 @@ EVs: 252 HP
 
 Pawmot @ Punching Glove  
 Level: 51
-Ability: Volt Absorb  
+Ability: Iron Fist
 Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP
+EVs: 252 Spe
 - Drain Punch  
 - Ice Punch  
 - Fire Punch  
