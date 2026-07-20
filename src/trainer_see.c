@@ -4,6 +4,7 @@
 #include "event_object_movement.h"
 #include "event_scripts.h"
 #include "field_effect.h"
+#include "field_effect_helpers.h"
 #include "field_player_avatar.h"
 #include "follower_npc.h"
 #include "pokemon.h"
@@ -19,6 +20,7 @@
 #include "constants/event_objects.h"
 #include "constants/event_object_movement.h"
 #include "constants/field_effects.h"
+#include "constants/opponents.h"
 #include "constants/script_commands.h"
 #include "constants/trainer_types.h"
 
@@ -71,6 +73,7 @@ static const u8 sEmotion_XGfx[] = INCBIN_U8("graphics/field_effects/pics/emote_x
 // HGSS emote graphics ripped by Lemon on The Spriters Resource: https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/30497/
 static const u8 sEmotion_Gfx[] = INCBIN_U8("graphics/misc/emotes.4bpp");
 static const u8 sQuest_Gfx[] = INCBIN_U8("graphics/misc/quests_icons.4bpp");
+static const u8 sMenacing_Gfx[] = INCBIN_U8("graphics/misc/menacing.4bpp");
 
 static u8 (*const sDirectionalApproachDistanceFuncs[])(struct ObjectEvent *trainerObj, s16 range, s16 x, s16 y) =
 {
@@ -245,6 +248,12 @@ static const struct SpriteFrameImage sSpriteImageTable_QuestIcon[] =
     overworld_frame(sQuest_Gfx, 2, 2, 1),
 };
 
+static const struct SpriteFrameImage sSpriteImageTable_MenacingIcon[] =
+{
+    overworld_frame(sMenacing_Gfx, 2, 2, 0),
+    overworld_frame(sMenacing_Gfx, 2, 2, 1),
+};
+
 static const struct SpriteFrameImage sSpriteImageTable_Emotes[] =
 {
     overworld_frame(sEmotion_Gfx, 2, 2, 0), // FOLLOWER_EMOTION_HAPPY
@@ -406,6 +415,20 @@ static const union AnimCmd *const sSpriteAnimTable_QuestIcon[] =
     sSpriteAnim_QuestIcon
 };
 
+// Same rule as the quest icon: loops forever so animEnded never fires. Faster
+// than the quest icon's 30/25 so the two frames read as a throb rather than a blink.
+static const union AnimCmd sSpriteAnim_MenacingIcon[] =
+{
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 12),
+    ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd *const sSpriteAnimTable_MenacingIcon[] =
+{
+    sSpriteAnim_MenacingIcon
+};
+
 static const union AnimCmd *const sSpriteAnimTable_Emotes[] =
 {
     sSpriteAnim_Emotes0,
@@ -463,6 +486,17 @@ static const struct SpriteTemplate sSpriteTemplate_QuestIcon =
     .images = sSpriteImageTable_QuestIcon,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_QuestIcon
+};
+
+static const struct SpriteTemplate sSpriteTemplate_MenacingIcon =
+{
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_MENACING,
+    .oam = &sOamData_Icons,
+    .anims = sSpriteAnimTable_MenacingIcon,
+    .images = sSpriteImageTable_MenacingIcon,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_MenacingIcon
 };
 
 // code
@@ -1247,6 +1281,140 @@ void RemoveQuestIconForObjectEvent(struct ObjectEvent *objectEvent)
 
     if (sprite != NULL)
         FieldEffectStop(sprite, sprite->sFldEffId);
+}
+
+// Menacing icons
+//
+// An object event shows a hovering menacing icon while the trainer it fights as
+// is still undefeated. An object opts in by setting trainer_type to
+// TRAINER_TYPE_MENACING and the map JSON property "menacing_trainer", which lands
+// in ObjectEventTemplate.iconParam.
+//
+// The trainer id has to be authored rather than read out of the object's script:
+// the scripts this targets (gym leaders, bosses) open with lock/faceplayer or
+// setspeaker/famechecker, all of which request script effects, so the
+// CheckTrainer-style RunScriptImmediatelyUntilEffect walk halts long before it
+// reaches the trainerbattle command.
+
+u8 FldEff_MenacingIcon(void)
+{
+    u8 spriteId = CreateSpriteAtEnd(&sSpriteTemplate_MenacingIcon, 0, 0, 0x52);
+
+    if (spriteId != MAX_SPRITES)
+    {
+        struct Sprite *sprite = &gSprites[spriteId];
+
+        SetIconSpriteData(sprite, FLDEFF_MENACING_ICON, 0);
+        UpdateSpritePaletteByTemplate(&sSpriteTemplate_MenacingIcon, sprite);
+    }
+
+    return 0;
+}
+
+void SpriteCB_MenacingIcon(struct Sprite *sprite)
+{
+    u8 objEventId;
+    struct Sprite *objEventSprite;
+
+    // Returns TRUE when the object event is *not* found.
+    if (TryGetObjectEventIdByLocalIdAndMap(sprite->sLocalId, sprite->sMapNum, sprite->sMapGroup, &objEventId))
+    {
+        FieldEffectStop(sprite, sprite->sFldEffId);
+        return;
+    }
+
+    objEventSprite = &gSprites[gObjectEvents[objEventId].spriteId];
+    sprite->x = objEventSprite->x;
+    sprite->y = objEventSprite->y - 16;
+    sprite->x2 = objEventSprite->x2;
+    sprite->y2 = objEventSprite->y2;
+    // Don't leave an icon floating over an NPC that's been hidden by a flag.
+    sprite->invisible = objEventSprite->invisible;
+}
+
+// Comparing against SpriteCB_MenacingIcon rather than SpriteCB_QuestIcon is what
+// keeps the two icon systems from finding each other's sprites.
+static struct Sprite *FindMenacingIconSprite(struct ObjectEvent *objectEvent)
+{
+    u32 i;
+
+    for (i = 0; i < MAX_SPRITES; i++)
+    {
+        struct Sprite *sprite = &gSprites[i];
+
+        if (sprite->inUse
+         && sprite->callback == SpriteCB_MenacingIcon
+         && sprite->sLocalId == objectEvent->localId
+         && sprite->sMapNum == objectEvent->mapNum
+         && sprite->sMapGroup == objectEvent->mapGroup)
+            return sprite;
+    }
+
+    return NULL;
+}
+
+bool32 ObjectEventHasMenacingIcon(struct ObjectEvent *objectEvent)
+{
+    return FindMenacingIconSprite(objectEvent) != NULL;
+}
+
+void RemoveMenacingIconForObjectEvent(struct ObjectEvent *objectEvent)
+{
+    struct Sprite *sprite = FindMenacingIconSprite(objectEvent);
+
+    if (sprite != NULL)
+        FieldEffectStop(sprite, sprite->sFldEffId);
+}
+
+static bool32 ObjectEventShouldShowMenacingIcon(struct ObjectEvent *objectEvent)
+{
+    const struct ObjectEventTemplate *template;
+    u16 trainerId;
+
+    template = GetObjectEventTemplateByLocalIdAndMap(objectEvent->localId, objectEvent->mapNum, objectEvent->mapGroup);
+    if (template == NULL)
+        return FALSE;
+
+    // Catches the 0xFFFF "unset" sentinel and garbage as well as TRAINER_NONE.
+    // The bound check is what keeps HasTrainerBeenFought's FlagGet inside the
+    // trainer flag range.
+    trainerId = template->iconParam;
+    if (trainerId == TRAINER_NONE || trainerId >= TRAINERS_COUNT)
+        return FALSE;
+
+    return !HasTrainerBeenFought(trainerId);
+}
+
+// Idempotent: brings the icon in line with the trainer flag, whatever it was
+// before. Safe to call repeatedly and on every object event.
+void HandleMenacingIconForSingleObjectEvent(struct ObjectEvent *objectEvent)
+{
+    bool32 shouldShow;
+    bool32 hasIcon;
+
+    // Cheap bail-out for the overwhelming majority of objects, which avoids the
+    // sprite scan and the template lookup entirely.
+    if (objectEvent->trainerType != TRAINER_TYPE_MENACING)
+        return;
+
+    shouldShow = ObjectEventShouldShowMenacingIcon(objectEvent);
+    hasIcon = ObjectEventHasMenacingIcon(objectEvent);
+
+    if (shouldShow && !hasIcon)
+        StartFieldEffectForObjectEvent(FLDEFF_MENACING_ICON, objectEvent);
+    else if (!shouldShow && hasIcon)
+        RemoveMenacingIconForObjectEvent(objectEvent);
+}
+
+void RefreshMenacingIcons(void)
+{
+    u32 i;
+
+    for (i = 0; i < OBJECT_EVENTS_COUNT; i++)
+    {
+        if (gObjectEvents[i].active)
+            HandleMenacingIconForSingleObjectEvent(&gObjectEvents[i]);
+    }
 }
 
 #undef sLocalId

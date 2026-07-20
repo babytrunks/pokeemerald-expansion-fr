@@ -63,7 +63,7 @@
 #include "quests.h"
 
 // Both structs are mirrored in SaveBlock1, so growing either one shifts every
-// field after it and breaks existing saves. ObjectEventTemplate.questId reuses
+// field after it and breaks existing saves. ObjectEventTemplate.iconParam reuses
 // the old `filler` halfword specifically to avoid that.
 STATIC_ASSERT(sizeof(struct ObjectEvent) == 0x24, ObjectEventMustNotGrow);
 STATIC_ASSERT(sizeof(struct ObjectEventTemplate) == 0x18, ObjectEventTemplateMustNotGrow);
@@ -600,6 +600,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPaletteLight2,             OBJ_EVENT_PAL_TAG_LIGHT_2},
     {gObjectEventPaletteEmotes,             OBJ_EVENT_PAL_TAG_EMOTES},
     {gObjectEventPaletteQuestIcons,         OBJ_EVENT_PAL_TAG_QUEST_ICONS},
+    {gObjectEventPaletteMenacing,           OBJ_EVENT_PAL_TAG_MENACING},
     {gObjectEventPaletteNeonLight,          OBJ_EVENT_PAL_TAG_NEON_LIGHT},
     // {gObjectEventPal_YoungsterFrlg,         OBJ_EVENT_PAL_TAG_YOUNGSTER},
     {gObjectEventPal_Birdkeeper,         OBJ_EVENT_PAL_TAG_BIRDKEEPER},
@@ -1971,6 +1972,7 @@ u8 TrySpawnObjectEventTemplate(const struct ObjectEventTemplate *objectEventTemp
         SetSubspriteTables(&gSprites[gObjectEvents[objectEventId].spriteId], subspriteTables);
 
     HandleQuestIconForSingleObjectEvent(&gObjectEvents[objectEventId]);
+    HandleMenacingIconForSingleObjectEvent(&gObjectEvents[objectEventId]);
 
     return objectEventId;
 }
@@ -3403,9 +3405,12 @@ static void SpawnObjectEventOnReturnToField(u8 objectEventId, s16 x, s16 y)
         ResetObjectEventFldEffData(objectEvent);
         SetObjectSubpriorityByElevation(objectEvent->previousElevation, sprite, 1);
 
-        // This path rebuilds sprites from the ObjectEvent alone, so the icon has
-        // to be re-derived here rather than at template spawn time.
+        // This path rebuilds sprites from the ObjectEvent alone, so the icons have
+        // to be re-derived here rather than at template spawn time. It is also the
+        // path taken when returning to the field after a battle, which is what
+        // makes a menacing icon disappear once its trainer is beaten.
         HandleQuestIconForSingleObjectEvent(objectEvent);
+        HandleMenacingIconForSingleObjectEvent(objectEvent);
     }
 }
 

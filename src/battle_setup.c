@@ -1287,14 +1287,21 @@ bool8 HasTrainerBeenFought(u16 trainerId)
     return FlagGet(TRAINER_FLAGS_START + trainerId);
 }
 
+// These two are only reached from the settrainerflag/cleartrainerflag script
+// commands -- the post-battle path sets the flag via FlagSet(GetTrainerAFlag())
+// instead -- so RefreshMenacingIcons only ever runs with the overworld up. It
+// covers scripts that award or revoke a trainer flag without a battle; the
+// normal post-battle case is handled by SpawnObjectEventOnReturnToField.
 void SetTrainerFlag(u16 trainerId)
 {
     FlagSet(TRAINER_FLAGS_START + trainerId);
+    RefreshMenacingIcons();
 }
 
 void ClearTrainerFlag(u16 trainerId)
 {
     FlagClear(TRAINER_FLAGS_START + trainerId);
+    RefreshMenacingIcons();
 }
 
 void BattleSetup_StartTrainerBattle(void)

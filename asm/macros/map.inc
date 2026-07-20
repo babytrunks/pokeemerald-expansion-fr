@@ -24,7 +24,9 @@
 	.endm
 
 	@ Defines an object event template for map data, to be used by a normal object. Mirrors the struct layout of ObjectEventTemplate in include/global.fieldmap.h
-	.macro object_event index:req, gfx:req, x:req, y:req, elevation:req, movement_type:req, x_radius:req, y_radius:req, trainer_type:req, sight_radius_tree_etc:req, script:req, event_flag:req, quest_id=0xFFFF
+	@ icon_param is the shared halfword at 0x16: a quest id for TRAINER_TYPE_QUEST_GIVER,
+	@ a trainer id for TRAINER_TYPE_MENACING. 0xFFFF means "unset" for both.
+	.macro object_event index:req, gfx:req, x:req, y:req, elevation:req, movement_type:req, x_radius:req, y_radius:req, trainer_type:req, sight_radius_tree_etc:req, script:req, event_flag:req, icon_param=0xFFFF
 	.byte \index
 	.2byte \gfx
 	.byte OBJ_KIND_NORMAL
@@ -41,7 +43,7 @@
 	.2byte \sight_radius_tree_etc
 	.4byte \script
 	.2byte \event_flag
-	.2byte \quest_id
+	.2byte \icon_param
 	inc _num_npcs
 	.endm
 
@@ -56,7 +58,7 @@
 	.2byte \target_map_id & 0xFF  @ map num
 	.2byte \target_map_id >> 8    @ map group
 	.space 6  @ Padding (script, event_flag)
-	.2byte 0xFFFF  @ questId = QUEST_NONE; clones never give quests
+	.2byte 0xFFFF  @ icon_param unset; clones never give quests or show menacing icons
 	inc _num_npcs
 	.endm
 

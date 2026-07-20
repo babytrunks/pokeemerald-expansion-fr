@@ -2779,7 +2779,7 @@ void QuestMenu_ResetMenuSaveData(void)
 // An object event shows a hovering icon while the quest it hands out is not yet
 // completed. An object opts in by setting trainer_type to TRAINER_TYPE_QUEST_GIVER
 // and the optional map JSON property "quest_id", which lands in
-// ObjectEventTemplate.questId.
+// ObjectEventTemplate.iconParam.
 
 static bool32 ObjectEventShouldShowQuestIcon(struct ObjectEvent *objectEvent)
 {
@@ -2792,7 +2792,7 @@ static bool32 ObjectEventShouldShowQuestIcon(struct ObjectEvent *objectEvent)
 
 	// Catches QUEST_NONE as well as garbage. QuestMenu_GetSetQuestState takes a u8
 	// and does no bounds checking, so an out-of-range id would corrupt save data.
-	questId = template->questId;
+	questId = template->iconParam;
 	if (questId >= QUEST_COUNT)
 		return FALSE;
 

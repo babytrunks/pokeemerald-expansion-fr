@@ -32,5 +32,11 @@ u8 FldEff_QuestIcon(void);
 void SpriteCB_QuestIcon(struct Sprite *sprite);
 bool32 ObjectEventHasQuestIcon(struct ObjectEvent *objectEvent);
 void RemoveQuestIconForObjectEvent(struct ObjectEvent *objectEvent);
+u8 FldEff_MenacingIcon(void);
+void SpriteCB_MenacingIcon(struct Sprite *sprite);
+bool32 ObjectEventHasMenacingIcon(struct ObjectEvent *objectEvent);
+void RemoveMenacingIconForObjectEvent(struct ObjectEvent *objectEvent);
+void HandleMenacingIconForSingleObjectEvent(struct ObjectEvent *objectEvent);
+void RefreshMenacingIcons(void);
 
 #endif // GUARD_TRAINER_SEE_H

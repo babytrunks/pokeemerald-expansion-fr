@@ -150,7 +150,15 @@ struct __attribute__((packed, aligned(4))) ObjectEventTemplate
     };
     /*0x10*/ const u8 *script;
     /*0x14*/ u16 flagId;
-    /*0x16*/ u16 questId; // ID of the quest this object hands out, QUEST_NONE = none
+    // One halfword shared by the two icon systems, its meaning selected by
+    // trainerType: a quest id for TRAINER_TYPE_QUEST_GIVER, a trainer id for
+    // TRAINER_TYPE_MENACING. 0xFFFF means "unset" for both.
+    //
+    // Must stay a plain u16, not a union of the two names: this struct is
+    // mirrored into SaveBlock1 and must remain 0x18 bytes, but -mabi=apcs-gnu
+    // rounds every aggregate up to a 4-byte size boundary, so a nested 2-byte
+    // union would occupy 4 and push the struct to 0x1C.
+    /*0x16*/ u16 iconParam;
 }; // size = 0x18
 
 struct WarpEvent
