@@ -896,6 +896,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_TRANSFORMBATTLEREACT]                 = COMPOUND_STRING("{B_BUFF1} reacted to Giovanni's\nMega Ring!"),
     [STRINGID_LASTKISSACTIVATES]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} left a parting gift!"),
     [STRINGID_LASTKISSCAMETRUE]                     = COMPOUND_STRING("The last kiss blessed {B_SCR_NAME_WITH_PREFIX2}!"),
+    [STRINGID_IVRAISED]                             = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} had its\n{B_BUFF1} IV raised!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

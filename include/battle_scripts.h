@@ -834,8 +834,7 @@ extern const u8 BattleScript_SilphScopeUnveiled[];
 
 extern const u8 BattleScript_EffectAttractAttack[];
 extern const u8 BattleScript_EffectMistAttack[];
-extern const u8 BattleScript_BreakthroughRaisesStat[];
-extern const u8 BattleScript_BreakthroughRaisesHP[];
+extern const u8 BattleScript_IVRaisedOnKO[];
 
 extern const u8 BattleScript_MoveUsedLoafingAroundMsg[]; // Za Warudo
 #endif // GUARD_BATTLE_SCRIPTS_H

@@ -312,6 +312,9 @@ enum GiveCaughtMonStates
 
 #define TAG_LVLUP_BANNER_MON_ICON 55130
 
+// IVs gained per KO by Breakthrough/Fortify.
+#define IV_RAISE_ON_KO 10
+
 static u32 ChangeStatBuffs(u32 battler, s8 statValue, enum Stat statId, union StatChangeFlags flags, u32 stats, const u8 *BS_ptr);
 static bool32 IsMonGettingExpSentOut(void);
 static void InitLevelUpBanner(void);
@@ -5875,50 +5878,41 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
             effect = TRUE;
         }
         break;
-    
     case EFFECT_BREAKTHROUGH:
     case EFFECT_FORTIFY:
-        if ( IsBattlerAlive(gBattlerAttacker)
-            && !IsBattlerAlive(gBattlerTarget)
-            && IsBattlerTurnDamaged(gBattlerTarget)
-            // && !NoAliveMonsForEitherParty()
-            && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+        // Deliberately no NoAliveMonsForEitherParty() check, so the effect still fires on the final KO of a battle.
+        if (IsBattlerAlive(gBattlerAttacker)
+         && !IsBattlerAlive(gBattlerTarget)
+         && IsBattlerTurnDamaged(gBattlerTarget)
+         && IsOnPlayerSide(gBattlerAttacker)
+         && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
         {
-            u8 i;
-            u8 statArray[3] = {STAT_ATK,  STAT_SPATK, STAT_SPEED};
-            if (moveEffect== EFFECT_FORTIFY )
+            u32 i;
+            u8 statArray[3] = {STAT_ATK, STAT_SPATK, STAT_SPEED};
+            struct Pokemon *mon = GetBattlerMon(gBattlerAttacker);
+
+            if (moveEffect == EFFECT_FORTIFY)
             {
-                statArray[0] = STAT_HP; 
-                statArray[1] = STAT_DEF; 
+                statArray[0] = STAT_HP;
+                statArray[1] = STAT_DEF;
                 statArray[2] = STAT_SPDEF;
             }
-            u8 monIVs[NUM_STATS];
-            struct Pokemon *mon2;
-            mon2 = GetBattlerMon(gBattlerAttacker);
-            for (i = 0; i < NUM_STATS; i++) {
-                monIVs[i] = GetMonData(mon2, MON_DATA_HP_IV + i);
-            }
-            // u8 perfIv = 31;
-            Shuffle(statArray, 3, sizeof(statArray[0]));
-            for (i = 0; i < 3; i++)
+
+            Shuffle(statArray, ARRAY_COUNT(statArray), sizeof(statArray[0]));
+            for (i = 0; i < ARRAY_COUNT(statArray); i++)
             {
-                if (monIVs[statArray[i]] != 31)
+                u32 stat = statArray[i];
+                u32 iv = GetMonData(mon, MON_DATA_HP_IV + stat);
+
+                if (iv < MAX_PER_STAT_IVS)
                 {
-                    u8 newIV = monIVs[statArray[i]] + 10;
-                    if (newIV > 31) {
-                        newIV = 31;
-                    }
-                    // SET_STATCHANGER(statArray[i], 1 , FALSE);
-                    SetMonData(mon2, MON_DATA_HP_IV + statArray[i] , &newIV);
-                    // gBattlescriptCurrInstr = BattleScript_BreakthroughRaisesStat;
-                    // effect = TRUE;
+                    u8 newIv = min(iv + IV_RAISE_ON_KO, MAX_PER_STAT_IVS);
+
+                    SetMonData(mon, MON_DATA_HP_IV + stat, &newIv);
+                    PREPARE_STAT_BUFFER(gBattleTextBuff1, stat);
+                    BattleScriptCall(BattleScript_IVRaisedOnKO);
+                    effect = TRUE;
                     break;
-                    // PREPARE_STAT_BUFFER(gBattleTextBuff1,statArray[i] );
-                    // BattleScriptPushCursor();
-                    // if (statArray[i] == STAT_HP) {
-                    //     gBattlescriptCurrInstr = BattleScript_BreakthroughRaisesHP;
-                    // }
-                    // else {
                 }
             }
         }
