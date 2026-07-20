@@ -5881,7 +5881,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
         if ( IsBattlerAlive(gBattlerAttacker)
             && !IsBattlerAlive(gBattlerTarget)
             && IsBattlerTurnDamaged(gBattlerTarget)
-            && !NoAliveMonsForEitherParty()
+            // && !NoAliveMonsForEitherParty()
             && gBattleTypeFlags & BATTLE_TYPE_TRAINER)
         {
             u8 i;
@@ -5904,7 +5904,7 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
             {
                 if (monIVs[statArray[i]] != 31)
                 {
-                    u8 newIV = monIVs[statArray[i]] + 5;
+                    u8 newIV = monIVs[statArray[i]] + 10;
                     if (newIV > 31) {
                         newIV = 31;
                     }
