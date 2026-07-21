@@ -1579,8 +1579,7 @@ static void WaitForMonSelection(u32 battler)
         else
             BtlController_EmitChosenMonReturnValue(battler, B_COMM_TO_ENGINE, PARTY_SIZE, NULL);
 
-        if (gBattleResources->bufferA[battler][1] == PARTY_ACTION_SEND_OUT
-         || gBattleResources->bufferA[battler][1] == PARTY_ACTION_SEND_OUT_CAN_REVIVE)
+        if (gBattleResources->bufferA[battler][1] == PARTY_ACTION_SEND_OUT)
             PrintLinkStandbyMsg();
 
         BtlController_Complete(battler);

@@ -1520,64 +1520,6 @@ static u32 GetBestMonDmg(struct Pokemon *party, int firstId, int lastId, u8 inva
     return bestMonId;
 }
 
-// Last Kiss: pick the best fainted party mon to revive and send out. The regular
-// scoring helpers only skip mons via the invalidMons mask, so they can score
-// fainted candidates; the revived mon enters at full HP via the stored heal.
-u32 GetBestMonToRevive(u32 battler)
-{
-    s32 firstId, lastId, i;
-    u32 battlerIn1 = battler, battlerIn2 = battler, opposingBattler;
-    u8 invalidMons = 0;
-    bool32 anyFainted = FALSE;
-    u32 bestMonId = PARTY_SIZE;
-    struct Pokemon *party = GetBattlerParty(battler);
-
-    if (IsDoubleBattle())
-    {
-        if (!(gAbsentBattlerFlags & (1u << GetPartnerBattler(battler))))
-            battlerIn2 = GetPartnerBattler(battler);
-        opposingBattler = BATTLE_OPPOSITE(battler);
-        if (gAbsentBattlerFlags & (1u << opposingBattler))
-            opposingBattler ^= BIT_FLANK;
-    }
-    else
-    {
-        opposingBattler = GetOppositeBattler(battler);
-    }
-
-    GetAIPartyIndexes(battler, &firstId, &lastId);
-    for (i = firstId; i < lastId; i++)
-    {
-        u32 species = GetMonData(&party[i], MON_DATA_SPECIES_OR_EGG);
-        if (species == SPECIES_NONE || species == SPECIES_EGG
-         || GetMonData(&party[i], MON_DATA_HP) != 0
-         || i == gBattlerPartyIndexes[battlerIn1] || i == gBattlerPartyIndexes[battlerIn2]
-         || i == gBattleStruct->monToSwitchIntoId[battlerIn1]
-         || i == gBattleStruct->monToSwitchIntoId[battlerIn2])
-            invalidMons |= 1u << i;
-        else
-            anyFainted = TRUE;
-    }
-    if (!anyFainted)
-        return PARTY_SIZE;
-
-    bestMonId = GetBestMonTypeMatchup(party, firstId, lastId, invalidMons, battler, opposingBattler);
-    if (bestMonId == PARTY_SIZE)
-        bestMonId = GetBestMonDmg(party, firstId, lastId, invalidMons, battler, opposingBattler);
-    if (bestMonId == PARTY_SIZE)
-    {
-        for (i = firstId; i < lastId; i++)
-        {
-            if (!((1u << i) & invalidMons))
-            {
-                bestMonId = i;
-                break;
-            }
-        }
-    }
-    return bestMonId;
-}
-
 static u32 GetFirstNonInvalidMon(u32 firstId, u32 lastId, u32 invalidMons)
 {
     u32 chosenMonId = PARTY_SIZE;

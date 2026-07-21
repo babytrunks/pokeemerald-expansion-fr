@@ -2548,7 +2548,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_LAST_KISS] =
     {
         .name = _("Last Kiss"),
-        .description = COMPOUND_STRING("Fully heals its replacement on fainting. Can revive an ally."),
+        .description = COMPOUND_STRING("Fully heals its replacement on fainting."),
         .aiRating = 8,
     },
 };

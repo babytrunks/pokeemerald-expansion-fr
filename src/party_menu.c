@@ -1637,7 +1637,6 @@ static void HandleChooseMonCancel(u8 taskId, s8 *slotPtr)
     switch (gPartyMenu.action)
     {
     case PARTY_ACTION_SEND_OUT:
-    case PARTY_ACTION_SEND_OUT_CAN_REVIVE:
     case PARTY_ACTION_CHOOSE_FAINTED_MON:
         PlaySE(SE_FAILURE);
         break;
@@ -2891,7 +2890,7 @@ static bool8 ShouldUseChooseMonText(void)
     u8 i;
     u8 numAliveMons = 0;
 
-    if (gPartyMenu.action == PARTY_ACTION_SEND_OUT || gPartyMenu.action == PARTY_ACTION_SEND_OUT_CAN_REVIVE)
+    if (gPartyMenu.action == PARTY_ACTION_SEND_OUT)
         return TRUE;
 
     for (i = 0; i < PARTY_SIZE; i++)
@@ -7790,7 +7789,7 @@ static u8 GetPartyMenuActionsTypeInBattle(struct Pokemon *mon)
 {
     if (GetMonData(&gPlayerParty[1], MON_DATA_SPECIES) != SPECIES_NONE && GetMonData(mon, MON_DATA_IS_EGG) == FALSE)
     {
-        if (gPartyMenu.action == PARTY_ACTION_SEND_OUT || gPartyMenu.action == PARTY_ACTION_SEND_OUT_CAN_REVIVE)
+        if (gPartyMenu.action == PARTY_ACTION_SEND_OUT)
             return ACTIONS_SEND_OUT;
         if (!(gBattleTypeFlags & BATTLE_TYPE_ARENA))
             return ACTIONS_SHIFT;
@@ -7811,8 +7810,7 @@ static bool8 TrySwitchInPokemon(void)
         StringExpandPlaceholders(gStringVar4, gText_CantSwitchWithAlly);
         return FALSE;
     }
-    if (GetMonData(&gPlayerParty[slot], MON_DATA_HP) == 0
-     && gPartyMenu.action != PARTY_ACTION_SEND_OUT_CAN_REVIVE)
+    if (GetMonData(&gPlayerParty[slot], MON_DATA_HP) == 0)
     {
         GetMonNickname(&gPlayerParty[slot], gStringVar1);
         StringExpandPlaceholders(gStringVar4, gText_PkmnHasNoEnergy);
