@@ -779,7 +779,7 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_MUSIC]         = gSaveBlock2Ptr->optionsMusicOnOff;
         sOptions->sel[MENUITEM_MAIN_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
         sOptions->sel[MENUITEM_MAIN_AUTORUN]             = gSaveBlock2Ptr->optionsautoRun;
-        sOptions->sel[MENUITEM_MAIN_AUTONICKNAME]        = gSaveBlock2Ptr->optionsAutoNickname ? 0 : 1; // 0 = On
+        sOptions->sel[MENUITEM_MAIN_AUTONICKNAME]        = FlagGet(FLAG_AUTO_NICKNAME_ENABLED) ? 0 : 1; // 0 = On
         sOptions->sel[MENUITEM_MAIN_AUTOSAVE]            = FlagGet(FLAG_AUTOSAVE_ENABLED) ? 0 : 1; // 0 = On
         sOptions->sel_battle[MENU_ITEM_BATTLE_SPEED]      = gSaveBlock2Ptr->optionsHpBarSpeed;
         sOptions->sel_battle[MENUITEM_ITEM_BATTLESCENE] = gSaveBlock2Ptr->optionsBattleSceneOff;
@@ -971,7 +971,11 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode       = sOptions->sel[MENUITEM_MAIN_BUTTONMODE];
     gSaveBlock2Ptr->optionsfollowerEnable        = sOptions->sel[MENUITEM_MAIN_FOLLOWER];
     gSaveBlock2Ptr->optionsautoRun               = sOptions->sel[MENUITEM_MAIN_AUTORUN];
-    gSaveBlock2Ptr->optionsAutoNickname          = (sOptions->sel[MENUITEM_MAIN_AUTONICKNAME] == 0); // 0 = On
+
+    if (sOptions->sel[MENUITEM_MAIN_AUTONICKNAME] == 0) // 0 = On
+        FlagSet(FLAG_AUTO_NICKNAME_ENABLED);
+    else
+        FlagClear(FLAG_AUTO_NICKNAME_ENABLED);
 
     if (sOptions->sel[MENUITEM_MAIN_AUTOSAVE] == 0) // 0 = On
         FlagSet(FLAG_AUTOSAVE_ENABLED);

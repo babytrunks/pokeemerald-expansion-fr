@@ -604,7 +604,6 @@ struct SaveBlock2
              u16 optionsFastBattle:1;
              u16 optionsfollowerEnable:1;
              u16 optionsFastIntro:1;
-             u16 optionsAutoNickname:1; // auto-assign random nicknames on catch/gift
              //u16 padding1:4;
              //u16 padding2;
              u16 playerBike:1;

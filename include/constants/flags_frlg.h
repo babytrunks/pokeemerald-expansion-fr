@@ -646,7 +646,7 @@
 #define FLAG_GOT_TM16_FROM_THIRSTY_GIRL                  0x296
 #define FLAG_HIDE_SAFARI_ZONE_PYROARITE                  0x297 
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298 // Unused
-#define FLAG_0x299                                       0x299
+#define FLAG_AUTO_NICKNAME_ENABLED                       0x299
 #define FLAG_GOT_TM04_FROM_SABRINA                       0x29A // unused
 #define FLAG_HIDE_ROUTE8_LAX_MINT                        0x29B 
 #define FLAG_GOT_RECORD_SETTING_MAGIKARP                 0x29C

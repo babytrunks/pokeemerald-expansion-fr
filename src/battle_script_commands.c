@@ -13893,7 +13893,7 @@ static void Cmd_trygivecaughtmonnick(void)
     {
     case 0:
         // Auto Nickname option: skip the "give a nickname?" prompt and assign one automatically.
-        if (gSaveBlock2Ptr->optionsAutoNickname)
+        if (FlagGet(FLAG_AUTO_NICKNAME_ENABLED))
         {
             ApplyAutoNickname(GetBattlerMon(gBattlerTarget));
             gBattleCommunication[MULTIUSE_STATE] = 4;

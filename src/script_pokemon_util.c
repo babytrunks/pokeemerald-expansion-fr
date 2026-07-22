@@ -460,7 +460,7 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
     SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
 
     // Auto Nickname option: give player-side gift/starter Pokemon a random nickname.
-    if (side == 0 && gSaveBlock2Ptr->optionsAutoNickname)
+    if (side == 0 && FlagGet(FLAG_AUTO_NICKNAME_ENABLED))
         ApplyAutoNickname(&mon);
 
     if (slot < PARTY_SIZE)
