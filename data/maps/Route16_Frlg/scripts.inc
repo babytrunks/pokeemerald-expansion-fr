@@ -25,7 +25,7 @@ Route16_OnWarp::
 	.2byte 0
 
 Route16_OnWarpCyclingRoad::
-	@ special ForcePlayerOntoBike
+	special ForcePlayerOntoBike
 	end
 
 Route16_EventScript_Snorlax::
