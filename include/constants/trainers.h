@@ -197,8 +197,9 @@
 #define TRAINER_PIC_JOJO_FAN              175
 #define TRAINER_PIC_SANS                  176
 #define TRAINER_PIC_SOUPERCELL            177
-#define TRAINER_PIC_OFFICER               178 
-#define TRAINER_PIC_COUNT                 179
+#define TRAINER_PIC_OFFICER               178
+#define TRAINER_PIC_MINA                  179
+#define TRAINER_PIC_COUNT                 180
 
 #define TRAINER_BACK_PIC_PLAYER_MALE (IS_FRLG ? TRAINER_BACK_PIC_RED : TRAINER_BACK_PIC_BRENDAN)
 #define TRAINER_BACK_PIC_PLAYER_FEMALE (IS_FRLG ? TRAINER_BACK_PIC_LEAF : TRAINER_BACK_PIC_MAY)

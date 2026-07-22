@@ -8920,10 +8920,10 @@ EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Head Smash
 
 === TRAINER_LEADER_CLAIR ===
-Name: Clair
-Class: Leader Johto
-Pic: Leader Clair 
-Gender: Male
+Name: Mina
+Class: Leader 
+Pic: Mina 
+Gender: Female
 Music: Aqua
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability

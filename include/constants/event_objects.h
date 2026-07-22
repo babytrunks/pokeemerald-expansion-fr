@@ -496,6 +496,7 @@
 #define OBJ_EVENT_GFX_CUE_BALL                   462
 #define OBJ_EVENT_GFX_SANS                       463
 #define OBJ_EVENT_GFX_SOUPERCELL                 464
+#define OBJ_EVENT_GFX_MINA                       465
 
 // FRLG equivalents
 
@@ -508,7 +509,7 @@
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        465
+#define NUM_OBJ_EVENT_GFX                        466
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -731,6 +732,7 @@
 #define OBJ_EVENT_PAL_TAG_SANS                    0x1190
 #define OBJ_EVENT_PAL_TAG_SOUPERCELL              0x1191
 #define OBJ_EVENT_PAL_TAG_MEGA_STONE              0x1192
+#define OBJ_EVENT_PAL_TAG_MINA                    0x1193
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

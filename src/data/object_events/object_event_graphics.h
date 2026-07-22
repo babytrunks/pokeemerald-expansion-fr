@@ -794,4 +794,7 @@ const u16 gObjectEventPal_Sans[] = INCBIN_U16("graphics/object_events/palettes/s
 const u32 gObjectEventPic_Soupercell[] = INCBIN_U32("graphics/object_events/pics/people/soupercell.4bpp");
 const u16 gObjectEventPal_Soupercell[] = INCBIN_U16("graphics/object_events/palettes/soupercell.gbapal");
 const u16 gObjectEventPal_MegaStone[] = INCBIN_U16("graphics/object_events/palettes/mega_stone.gbapal");
+
+const u32 gObjectEventPic_Mina[] = INCBIN_U32("graphics/object_events/pics/people/mina.4bpp");
+const u16 gObjectEventPal_Mina[] = INCBIN_U16("graphics/object_events/palettes/mina.gbapal");
 #endif // IS_FRLG
