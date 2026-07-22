@@ -1,4 +1,5 @@
 #include "global.h"
+#include "auto_nickname.h"
 #include "battle.h"
 #include "battle_hold_effects.h"
 #include "battle_message.h"
@@ -13891,6 +13892,13 @@ static void Cmd_trygivecaughtmonnick(void)
     switch (gBattleCommunication[MULTIUSE_STATE])
     {
     case 0:
+        // Auto Nickname option: skip the "give a nickname?" prompt and assign one automatically.
+        if (gSaveBlock2Ptr->optionsAutoNickname)
+        {
+            ApplyAutoNickname(GetBattlerMon(gBattlerTarget));
+            gBattleCommunication[MULTIUSE_STATE] = 4;
+            break;
+        }
         HandleBattleWindow(YESNOBOX_X_Y, 0);
         BattlePutTextOnWindow(gText_BattleYesNoChoice, B_WIN_YESNO);
         gBattleCommunication[MULTIUSE_STATE]++;

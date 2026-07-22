@@ -1,4 +1,5 @@
 #include "global.h"
+#include "auto_nickname.h"
 #include "battle.h"
 #include "battle_gfx_sfx_util.h"
 #include "berry.h"
@@ -457,6 +458,10 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
     // assign OT name and gender
     SetMonData(&mon, MON_DATA_OT_NAME, gSaveBlock2Ptr->playerName);
     SetMonData(&mon, MON_DATA_OT_GENDER, &gSaveBlock2Ptr->playerGender);
+
+    // Auto Nickname option: give player-side gift/starter Pokemon a random nickname.
+    if (side == 0 && gSaveBlock2Ptr->optionsAutoNickname)
+        ApplyAutoNickname(&mon);
 
     if (slot < PARTY_SIZE)
     {

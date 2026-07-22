@@ -65,6 +65,7 @@ PewterCity_Gym_EventScript_Brock::
 PewterCity_Gym_EventScript_DefeatedBrock::
 	famechecker FAMECHECKER_BROCK, 1
 	setflag FLAG_BADGE01_GET
+    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 1
 	setflag FLAG_HIDE_PEWTER_CITY_GYM_GUIDE
 	clearflag FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY
@@ -141,8 +142,12 @@ PewterCity_Gym_EventScript_Onix::
 	release
 	end
 
+Common_EventScript_AutoSave::
+    call CableClubSaveGame
+    return
+
 PewterCity_Gym_Text_Onix::
-    .string "Onix: Oooar!$"
+    .string "Oooar!$"
 
 PewterCity_Gym_Text_BrockIntro::
     .string "{COLOR BLUE}So, you're here. I'm Brock.\n"

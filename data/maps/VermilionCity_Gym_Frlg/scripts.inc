@@ -243,6 +243,7 @@ VermilionCity_Gym_EventScript_DefeatedLtSurge::
 	famechecker FAMECHECKER_LTSURGE, 1
 	call_if_unset FLAG_GOT_HM05, VermilionCity_Gym_EventScript_ShowOaksAide
 	clearflag FLAG_HIDE_FAME_CHECKER_LT_SURGE_JOURNAL
+	call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setflag FLAG_BADGE03_GET
 	set_gym_trainers_frlg 3
 	goto VermilionCity_Gym_EventScript_GiveTM34

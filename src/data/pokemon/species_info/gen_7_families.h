@@ -8199,7 +8199,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         .baseSpAttack  = 80,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_STEEL),
-        .catchRate = 3,
+        .catchRate = 45,
         .expYield = (P_UPDATED_EXP_YIELDS >= GEN_8) ? 300 : 270,
         .evYield_Attack = 3,
         .genderRatio = MON_GENDERLESS,

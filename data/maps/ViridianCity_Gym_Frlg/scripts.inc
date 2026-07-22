@@ -10,7 +10,7 @@ ViridianCity_Gym_EventScript_Clair::
 
 ViridianCity_Gym_EventScript_DefeatedClair::
 	setflag FLAG_HIDE_MISC_KANTO_ROCKETS
-	setflag FLAG_DEFEATED_LEADER_GIOVANNI
+	call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setflag FLAG_BADGE08_GET
 	setvar VAR_MAP_SCENE_ROUTE22, 3
 	set_gym_trainers_frlg 8

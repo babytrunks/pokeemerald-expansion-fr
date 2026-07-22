@@ -48,6 +48,7 @@ FuchsiaCity_Gym_EventScript_DefeatedKoga::
 	famechecker FAMECHECKER_KOGA, 1
 	clearflag FLAG_HIDE_FAME_CHECKER_KOGA_JOURNAL
 	setflag FLAG_BADGE06_GET
+    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	set_gym_trainers_frlg 5
 	goto FuchsiaCity_Gym_EventScript_GiveTM06
 	end

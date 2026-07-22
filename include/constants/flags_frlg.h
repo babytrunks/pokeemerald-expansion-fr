@@ -571,7 +571,7 @@
 #define FLAG_DID_MS_NIDO_TRADE                           0x24B
 #define FLAG_RECEIVED_VERMILION_SEVII                    0x24C
 #define FLAG_DID_CH_DING_TRADE                           0x24D
-#define FLAG_GOT_TM38_FROM_BLAINE                        0x24E // unused
+#define FLAG_AUTOSAVE_ENABLED                            0x24E 
 #define FLAG_OAK_SKIP_22_RIVAL_CHECK                     0x24F
 #define FLAG_GOT_MASTER_BALL_FROM_SILPH                  0x250
 #define FLAG_DID_NINA_TRADE                              0x251

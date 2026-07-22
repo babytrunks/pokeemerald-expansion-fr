@@ -37,8 +37,10 @@ enum
     MENUITEM_MAIN_BUTTONMODE,
     MENUITEM_MAIN_FOLLOWER,
     // MENUITEM_MAIN_UNIT_SYSTEM,
-    MENUITEM_MAIN_FONT, 
+    MENUITEM_MAIN_FONT,
     MENUITEM_MAIN_FRAMETYPE,
+    MENUITEM_MAIN_AUTONICKNAME,
+    MENUITEM_MAIN_AUTOSAVE,
     MENUITEM_MAIN_CANCEL,
     MENUITEM_MAIN_COUNT,
 };
@@ -185,6 +187,8 @@ static void DrawChoices_BattleSpeed(int selection, int y); //HP and EXP
 static void DrawChoices_Font(int selection, int y);
 static void DrawChoices_FrameType(int selection, int y);
 static void DrawChoices_Autorun(int selection, int y);
+static void DrawChoices_AutoNickname(int selection, int y);
+static void DrawChoices_AutoSave(int selection, int y);
 
 // static void DrawChoices_MatchCall(int selection, int y);
 static void DrawChoices_Follower(int selection, int y);
@@ -240,8 +244,10 @@ struct // MENU_MAIN
     [MENUITEM_MAIN_BUTTONMODE]   = {DrawChoices_ButtonMode,  ProcessInput_Options_Three},
     [MENUITEM_MAIN_FOLLOWER]                = {DrawChoices_Follower,         ProcessInput_Options_Two},
     // [MENUITEM_MAIN_UNIT_SYSTEM]  = {DrawChoices_UnitSystem,  ProcessInput_Options_Two},
-    [MENUITEM_MAIN_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two}, 
+    [MENUITEM_MAIN_FONT]         = {DrawChoices_Font,        ProcessInput_Options_Two},
     [MENUITEM_MAIN_FRAMETYPE]    = {DrawChoices_FrameType,   ProcessInput_FrameType},
+    [MENUITEM_MAIN_AUTONICKNAME] = {DrawChoices_AutoNickname, ProcessInput_Options_Two},
+    [MENUITEM_MAIN_AUTOSAVE]     = {DrawChoices_AutoSave,     ProcessInput_Options_Two},
     [MENUITEM_MAIN_CANCEL]       = {NULL, NULL},
 };
 
@@ -285,6 +291,8 @@ static const u8 sText_UnitSystem[]  = _("Unit System");
 static const u8 gText_FollowerEnable[] = _("{PKMN} Follower"); 
 static const u8 sText_OptionMusic[]                  = _("Music");
 static const u8 gText_Autorun[] = _("Autorun");
+static const u8 sText_AutoNickname[] = _("Auto Nickname");
+static const u8 sText_AutoSave[] = _("Auto Save");
 static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
 {
     [MENUITEM_MAIN_TEXTSPEED]   = gText_TextSpeed,
@@ -296,6 +304,8 @@ static const u8 *const sOptionMenuItemsNamesMain[MENUITEM_MAIN_COUNT] =
     [MENUITEM_MAIN_FOLLOWER]  = gText_FollowerEnable,
     // [MENUITEM_MAIN_UNIT_SYSTEM] = sText_UnitSystem,
     [MENUITEM_MAIN_FRAMETYPE]   = gText_Frame,
+    [MENUITEM_MAIN_AUTONICKNAME] = sText_AutoNickname,
+    [MENUITEM_MAIN_AUTOSAVE]    = sText_AutoSave,
     [MENUITEM_MAIN_CANCEL]      = gText_OptionMenuSave,
 };
 
@@ -364,6 +374,8 @@ static bool8 CheckConditions(int selection)
         case MENUITEM_MAIN_COUNT:           return TRUE;
         case MENUITEM_MAIN_MUSIC:          return TRUE;
         case MENUITEM_MAIN_AUTORUN:           return TRUE;
+        case MENUITEM_MAIN_AUTONICKNAME:      return TRUE;
+        case MENUITEM_MAIN_AUTOSAVE:          return TRUE;
         }
     case MENU_CUSTOM:
         switch(selection)
@@ -408,6 +420,10 @@ static const u8 sText_Desc_FastIntroOff[]          = _("Battles load at the usua
 static const u8 sText_Desc_FontType[]           = _("Choose the font design.");
 static const u8 sText_Desc_AutorunOn[]             = _("Run without pressing B.");
 static const u8 sText_Desc_AutorunOff[]            = _("Press and hold B to run.");
+static const u8 sText_Desc_AutoNicknameOn[]        = _("Caught and gifted POKéMON get a\nrandom nickname automatically.");
+static const u8 sText_Desc_AutoNicknameOff[]       = _("Choose nicknames yourself when\ncatching or receiving POKéMON.");
+static const u8 sText_Desc_AutoSaveOn[]            = _("The game saves automatically as\nyou play.");
+static const u8 sText_Desc_AutoSaveOff[]           = _("Save manually from the menu.");
 
 static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][3] =
 {
@@ -420,6 +436,8 @@ static const u8 *const sOptionMenuItemDescriptionsMain[MENUITEM_MAIN_COUNT][3] =
     [MENUITEM_MAIN_FONT]        = {sText_Desc_FontType,           sText_Desc_FontType},
     //[MENUITEM_MAIN_UNIT_SYSTEM] = {sText_Desc_UnitSystemImperial,   sText_Desc_UnitSystemMetric,sText_Empty},
     [MENUITEM_MAIN_FRAMETYPE]   = {sText_Desc_FrameType,            sText_Empty,                sText_Empty},
+    [MENUITEM_MAIN_AUTONICKNAME] = {sText_Desc_AutoNicknameOn,      sText_Desc_AutoNicknameOff},
+    [MENUITEM_MAIN_AUTOSAVE]    = {sText_Desc_AutoSaveOn,           sText_Desc_AutoSaveOff},
     [MENUITEM_MAIN_CANCEL]      = {sText_Desc_Save,                 sText_Empty,                sText_Empty},
 };
 
@@ -461,6 +479,8 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMain[MENUITEM_MAIN_COU
     //[MENUITEM_MAIN_UNIT_SYSTEM] = sText_Empty,
     [MENUITEM_MAIN_FRAMETYPE]   = sText_Empty,
     [MENUITEM_MAIN_FONT]        = sText_Empty,
+    [MENUITEM_MAIN_AUTONICKNAME] = sText_Empty,
+    [MENUITEM_MAIN_AUTOSAVE]    = sText_Empty,
     [MENUITEM_MAIN_CANCEL]      = sText_Empty,
 };
 
@@ -759,6 +779,8 @@ void CB2_InitOptionPlusMenu(void)
         sOptions->sel[MENUITEM_MAIN_MUSIC]         = gSaveBlock2Ptr->optionsMusicOnOff;
         sOptions->sel[MENUITEM_MAIN_FONT]        = gSaveBlock2Ptr->optionsCurrentFont;
         sOptions->sel[MENUITEM_MAIN_AUTORUN]             = gSaveBlock2Ptr->optionsautoRun;
+        sOptions->sel[MENUITEM_MAIN_AUTONICKNAME]        = gSaveBlock2Ptr->optionsAutoNickname ? 0 : 1; // 0 = On
+        sOptions->sel[MENUITEM_MAIN_AUTOSAVE]            = FlagGet(FLAG_AUTOSAVE_ENABLED) ? 0 : 1; // 0 = On
         sOptions->sel_battle[MENU_ITEM_BATTLE_SPEED]      = gSaveBlock2Ptr->optionsHpBarSpeed;
         sOptions->sel_battle[MENUITEM_ITEM_BATTLESCENE] = gSaveBlock2Ptr->optionsBattleSceneOff;
         sOptions->sel_battle[MENUITEM_ITEM_BATTLESTYLE] = gSaveBlock2Ptr->optionsBattleStyle;
@@ -949,6 +971,12 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsButtonMode       = sOptions->sel[MENUITEM_MAIN_BUTTONMODE];
     gSaveBlock2Ptr->optionsfollowerEnable        = sOptions->sel[MENUITEM_MAIN_FOLLOWER];
     gSaveBlock2Ptr->optionsautoRun               = sOptions->sel[MENUITEM_MAIN_AUTORUN];
+    gSaveBlock2Ptr->optionsAutoNickname          = (sOptions->sel[MENUITEM_MAIN_AUTONICKNAME] == 0); // 0 = On
+
+    if (sOptions->sel[MENUITEM_MAIN_AUTOSAVE] == 0) // 0 = On
+        FlagSet(FLAG_AUTOSAVE_ENABLED);
+    else
+        FlagClear(FLAG_AUTOSAVE_ENABLED);
 
     // gSaveBlock2Ptr->optionsUnitSystem       = sOptions->sel[MENUITEM_MAIN_UNIT_SYSTEM];
     gSaveBlock2Ptr->optionsWindowFrameType  = sOptions->sel[MENUITEM_MAIN_FRAMETYPE];
@@ -1345,6 +1373,26 @@ static void DrawChoices_Autorun(int selection, int y)
 static void DrawChoices_Follower(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_MAIN_FOLLOWER);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+}
+
+static void DrawChoices_AutoNickname(int selection, int y) // selection 0 = On
+{
+    bool8 active = CheckConditions(MENUITEM_MAIN_AUTONICKNAME);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);
+    DrawOptionMenuChoice(gText_BattleSceneOff, GetStringRightAlignXOffset(1, gText_BattleSceneOff, 198), y, styles[1], active);
+}
+
+static void DrawChoices_AutoSave(int selection, int y) // selection 0 = On
+{
+    bool8 active = CheckConditions(MENUITEM_MAIN_AUTOSAVE);
     u8 styles[2] = {0};
     styles[selection] = 1;
 
