@@ -3145,7 +3145,7 @@ void UNUSED ItemMenu_Register(u8 taskId)
 
     tQuantity = itemSlot.quantity;
     gSpecialVar_ItemId = itemSlot.itemId;
-    DebugPrintf("ItemMenu_Register: itemId=%d", itemSlot.itemId);
+    // DebugPrintf("ItemMenu_Register: itemId=%d", itemSlot.itemId);
 
     sContextMenuFuncs[gBagPosition.location](taskId);
 }

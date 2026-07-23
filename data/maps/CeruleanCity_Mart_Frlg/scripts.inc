@@ -69,6 +69,7 @@ CeruleanCity_Mart_4BadgeItems::
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_MAGNET
 	.2byte ITEM_SHARP_BEAK
 	.2byte ITEM_POISON_BARB
@@ -82,6 +83,7 @@ CeruleanCity_Mart_5BadgeItems::
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_DUSK_BALL  
 	.2byte ITEM_MAGNET
 	.2byte ITEM_SHARP_BEAK

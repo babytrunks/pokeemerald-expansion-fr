@@ -66,6 +66,7 @@ VermilionCity_Mart_4BadgeItems::
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_HARD_STONE
 	.2byte ITEM_SOFT_SAND

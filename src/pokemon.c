@@ -4530,8 +4530,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         // In general, Pokémon with lower friendship receive more,
                         // and Pokémon with higher friendship receive less.
                         friendshipOnly = TRUE;
-                        if (!ShouldSkipFriendshipChange() && friendshipChange == 0)  
-                            DebugPrintf("friendshipOnly %d" , friendshipOnly );                        
+                        // if (!ShouldSkipFriendshipChange() && friendshipChange == 0)  
+                        //     DebugPrintf("friendshipOnly %d" , friendshipOnly );                        
                         if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 100)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
 
@@ -4540,7 +4540,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         break;
 
                     case 6: // ITEM5_FRIENDSHIP_MID
-                        DebugPrintf("In ITEM5_FRIENDSHIP_MID");    
+                        // DebugPrintf("In ITEM5_FRIENDSHIP_MID");    
                         if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 100 && GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) < 200)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
                         friendshipOnly = TRUE;
@@ -4549,7 +4549,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         break;
 
                     case 7: // ITEM5_FRIENDSHIP_HIGH
-                        DebugPrintf("In ITEM5_FRIENDSHIP_HIGH");   
+                        // DebugPrintf("In ITEM5_FRIENDSHIP_HIGH");   
                         if (GetMonData(mon, MON_DATA_FRIENDSHIP, NULL) >= 200)
                             UPDATE_FRIENDSHIP_FROM_ITEM();
                         friendshipOnly = TRUE;
