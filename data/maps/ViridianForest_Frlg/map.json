@@ -129,8 +129,8 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "ViridianForest_EventScript_ItemDuskBall",
+      "trainer_sight_or_berry_tree_id": "ITEM_HEALTH_FEATHER",
+      "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_VIRIDIAN_FOREST_SILVER_POWDER"
     },
     {
@@ -345,8 +345,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 9,
-      "y": 30,
+      "x": 5,
+      "y": 8,
       "elevation": 3,
       "item": "ITEM_POTION",
       "flag": "FLAG_HIDDEN_ITEM_VIRIDIAN_FOREST_POTION",

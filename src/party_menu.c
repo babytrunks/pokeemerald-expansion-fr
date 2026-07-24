@@ -6178,6 +6178,10 @@ static void Task_TryLearningNextMove(u8 taskId)
 static void CB2_ReturnToPartyMenuUsingRareCandy(void)
 {
     gItemUseCB = ItemUseCB_RareCandy;
+    // Re-flag the field origin, otherwise CB2_ShowPartyMenuForItemUse defaults the exit
+    // callback to CB2_ReturnToBagMenu and B drops into a bag that was never opened.
+    if (gPartyMenu.exitCallback == CB2_ReturnToField)
+        gPartyMenu.data1 = DATA1_PARTY_MENU_FROM_FIELD;
     SetMainCallback2(CB2_ShowPartyMenuForItemUse);
 }
 

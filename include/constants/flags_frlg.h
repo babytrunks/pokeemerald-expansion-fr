@@ -1205,7 +1205,7 @@
 #define FLAG_DEFEATED_KOGA            0x4B4 // unused
 #define FLAG_DEFEATED_SABRINA         0x4B5
 #define FLAG_DEFEATED_BLAINE          0x4B6
-#define FLAG_DEFEATED_LEADER_GIOVANNI 0x4B7
+#define FLAG_SYS_COLLISION_OFF        0x4B7 // unused
 #define FLAG_DEFEATED_LORELEI         0x4B8
 #define FLAG_DEFEATED_BRUNO           0x4B9
 #define FLAG_DEFEATED_AGATHA          0x4BA

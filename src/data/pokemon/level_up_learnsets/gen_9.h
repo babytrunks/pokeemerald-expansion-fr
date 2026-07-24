@@ -8728,6 +8728,7 @@ static const struct LevelUpMove sProbopassLevelUpLearnset[] = {
 #endif //P_FAMILY_NOSEPASS
 
 #if P_FAMILY_SKITTY
+//done
 static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
@@ -8750,6 +8751,7 @@ static const struct LevelUpMove sSkittyLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
+//done
 static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SUCKER_PUNCH),
     LEVEL_UP_MOVE( 1, MOVE_JOVIAL_BASH),
@@ -8776,6 +8778,7 @@ static const struct LevelUpMove sDelcattyLevelUpLearnset[] = {
 #endif //P_FAMILY_SKITTY
 
 #if P_FAMILY_SABLEYE
+//done
 static const struct LevelUpMove sSableyeLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),

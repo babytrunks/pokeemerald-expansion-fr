@@ -71,7 +71,7 @@ ViridianCity_Gym_EventScript_Warren::
 ViridianCity_Gym_EventScript_GymGuy::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_LEADER_GIOVANNI, ViridianCity_Gym_EventScript_GymGuyPostVictory
+	goto_if_set FLAG_BADGE08_GET, ViridianCity_Gym_EventScript_GymGuyPostVictory
 	msgbox ViridianCity_Gym_Text_GymGuyAdvice
 	release
 	end
