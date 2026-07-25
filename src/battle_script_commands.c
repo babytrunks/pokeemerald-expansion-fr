@@ -13447,6 +13447,17 @@ static void Cmd_handleballthrow(void)
                 u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);
                 SetMonData(caughtMon, MON_DATA_FRIENDSHIP, &friendship);
             }
+            else if (ballId == BALL_MASTER)
+            {
+                u32 iv = MAX_PER_STAT_IVS;
+                struct Pokemon *masterMon = &gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]];
+                SetMonData(masterMon, MON_DATA_HP_IV,    &iv);
+                SetMonData(masterMon, MON_DATA_ATK_IV,   &iv);
+                SetMonData(masterMon, MON_DATA_DEF_IV,   &iv);
+                SetMonData(masterMon, MON_DATA_SPEED_IV, &iv);
+                SetMonData(masterMon, MON_DATA_SPATK_IV, &iv);
+                SetMonData(masterMon, MON_DATA_SPDEF_IV, &iv);
+            }
         }
         else // mon may be caught, calculate shakes
         {
@@ -13569,6 +13580,17 @@ static void Cmd_handleballthrow(void)
                 {
                     u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);
                     SetMonData(caughtMon, MON_DATA_FRIENDSHIP, &friendship);
+                }
+                else if (ballId == BALL_MASTER)
+                {
+                    u32 iv = MAX_PER_STAT_IVS;
+                    struct Pokemon *masterMon = &gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]];
+                    SetMonData(masterMon, MON_DATA_HP_IV,    &iv);
+                    SetMonData(masterMon, MON_DATA_ATK_IV,   &iv);
+                    SetMonData(masterMon, MON_DATA_DEF_IV,   &iv);
+                    SetMonData(masterMon, MON_DATA_SPEED_IV, &iv);
+                    SetMonData(masterMon, MON_DATA_SPATK_IV, &iv);
+                    SetMonData(masterMon, MON_DATA_SPDEF_IV, &iv);
                 }
             }
             else // not caught
