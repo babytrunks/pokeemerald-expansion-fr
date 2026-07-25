@@ -987,6 +987,11 @@ static void SmolDecompressData(const struct SmolHeader *header, const u32 *data,
     u32 alignedLoSize = header->loSize % 2 == 1 ? headerLoSize + 1 : headerLoSize;
     u32 alignedSymSize = header->symSize % 2 == 1 ? headerSymSize + 1 : headerSymSize;
     void *memoryAlloced = Alloc((alignedSymSize*2) + alignedLoSize);
+    //  Out of heap. Decoding through a NULL buffer would leave symVec/loVec pointing at
+    //  low memory, so the tANS decoders would write nothing and DecodeInstructionsIwram
+    //  would then run on garbage.
+    if (memoryAlloced == NULL)
+        return;
     u16 *symVec = memoryAlloced;
     u8 *loVec = memoryAlloced + alignedSymSize*2;
 
@@ -1365,6 +1370,9 @@ bool8 LoadCompressedSpriteSheetUsingHeap(const struct CompressedSpriteSheet *src
     void *buffer;
 
     buffer = AllocZeroed(GetDecompressedDataSize(&src->data[0]));
+    //  Out of heap. Decompressing through a NULL buffer would write over low memory.
+    if (buffer == NULL)
+        return FALSE;
     DecompressDataWithHeaderWram(src->data, buffer);
 
     dest.data = buffer;

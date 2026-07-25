@@ -935,44 +935,9 @@ Route104_EventScript_RematchWinston::
 	end
 
 Route104_EventScript_Cindy::
-	trainerbattle_single TRAINER_CINDY_1, Route104_Text_CindyIntro, Route104_Text_CindyDefeat, Route104_EventScript_TryRegisterCindyAfterBattle
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route104_EventScript_RematchCindy
-	setvar VAR_0x8004, TRAINER_CINDY_1
-	specialvar VAR_RESULT, IsTrainerRegistered
-	goto_if_eq VAR_RESULT, FALSE, Route104_EventScript_TryRegisterCindy
+	trainerbattle_single TRAINER_CINDY_1, Route104_Text_CindyIntro, Route104_Text_CindyDefeat
 	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
 	release
-	end
-
-Route104_EventScript_TryRegisterCindyAfterBattle::
-	special PlayerFaceTrainerAfterBattle
-	waitmovement 0
-	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterCindyAfterBattle
-	release
-	end
-
-Route104_EventScript_RegisterCindyAfterBattle::
-	msgbox Route104_Text_CindyRegister2, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CINDY_1
-	release
-	end
-
-Route104_EventScript_TryRegisterCindy::
-	goto_if_set FLAG_HAS_MATCH_CALL, Route104_EventScript_RegisterCindy
-	msgbox Route104_Text_CindyPostBattle, MSGBOX_DEFAULT
-	release
-	end
-
-Route104_EventScript_RegisterCindy::
-	msgbox Route104_Text_CindyRegister1, MSGBOX_DEFAULT
-	register_matchcall TRAINER_CINDY_1
-	release
-	end
-
-Route104_EventScript_RematchCindy::
-	trainerbattle_rematch TRAINER_CINDY_1, Route104_Text_CindyRematchIntro, Route104_Text_CindyRematchDefeat
-	msgbox Route104_Text_CindyPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route104_EventScript_Gina::

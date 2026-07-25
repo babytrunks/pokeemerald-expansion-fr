@@ -1,6 +1,14 @@
 #ifndef GUARD_EVENT_DATA_H
 #define GUARD_EVENT_DATA_H
 
+// TEMPORARY DIAGNOSTIC: watchdog that catches spurious writes into the trainer-flag
+// region of gSaveBlock1Ptr->flags[] (see plan "spuriously-defeated trainers").
+// Set to 0 to strip all watchdog code. Only active in non-release (mGBA log) builds.
+#define TRAINER_FLAG_WATCH 1
+#if TRAINER_FLAG_WATCH && !defined(NDEBUG)
+void WatchTrainerFlags(void);
+#endif
+
 void InitEventData(void);
 void ClearTempFieldEventData(void);
 void ClearDailyFlags(void);

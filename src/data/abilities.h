@@ -1800,7 +1800,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         [ABILITY_BALL_FETCH] =
         {
             .name = _("Ball Fetch"),
-            .description = COMPOUND_STRING("When holding a 'Ball' itemspeed stat is boosted by 1.3x."),
+            .description = COMPOUND_STRING("When holding a 'Ball' item, speed stat is boosted by 1.3x."),
             .aiRating = 10,
         },
 

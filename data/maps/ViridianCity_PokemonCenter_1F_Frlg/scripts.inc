@@ -60,7 +60,7 @@ EventScript_Gacha_Uncommon::
 
 EventScript_Gacha_Rare::
 	checkitem ITEM_GACHA_VOUCHER 5
-	goto_if_eq VAR_RESULT, FALSE, EventScript_NoGatcha4Voucher
+	goto_if_eq VAR_RESULT, FALSE, EventScript_NoGatcha5Voucher
 	setvar VAR_0x8004, 3 @This sets to Rares
 	call EventScript_GachaCommon
 	releaseall
@@ -110,8 +110,8 @@ EventScript_NoGatcha2Voucher::
 	msgbox GatchaMachine_Text_CantBuyWithNo2Voucher, MSGBOX_DEFAULT
 	goto EventScript_Gatcha_releasEnd
 
-EventScript_NoGatcha4Voucher::
-	msgbox GatchaMachine_Text_CantBuyWithNo4Voucher, MSGBOX_DEFAULT
+EventScript_NoGatcha5Voucher::
+	msgbox GatchaMachine_Text_CantBuyWithNo5Voucher, MSGBOX_DEFAULT
 	goto EventScript_Gatcha_releasEnd
 
 EventScript_NoGatcha10Voucher::
@@ -158,8 +158,8 @@ GachaMachine_Text_UltraRare::
 GatchaMachine_Text_CantBuyWithNo2Voucher::
 	.string "You need 2 Gatcha Vouchers to play.$"
 
-GatchaMachine_Text_CantBuyWithNo4Voucher::
-	.string "You need 4 Gatcha Vouchers to play.$"
+GatchaMachine_Text_CantBuyWithNo5Voucher::
+	.string "You need 5 Gatcha Vouchers to play.$"
 
 GatchaMachine_Text_CantBuyWithNo10Voucher::
 	.string "You need 10 Gatcha Vouchers to play.$"

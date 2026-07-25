@@ -22,6 +22,7 @@
 #include "text.h"
 #include "intro.h"
 #include "main.h"
+#include "event_data.h"
 #include "trainer_hill.h"
 #include "test_runner.h"
 #include "constants/rgb.h"
@@ -137,6 +138,10 @@ void AgbMainLoop(void)
     for (;;)
     {
         ReadKeys();
+
+#if TRAINER_FLAG_WATCH && !defined(NDEBUG)
+        WatchTrainerFlags();
+#endif
 
         if (gSoftResetDisabled == FALSE
          && JOY_HELD_RAW(A_BUTTON)

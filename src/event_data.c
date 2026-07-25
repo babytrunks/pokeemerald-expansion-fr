@@ -1,11 +1,28 @@
 #include "global.h"
 #include "event_data.h"
 #include "pokedex.h"
+#include "gba/isagbprint.h"
+#include "constants/opponents.h"
 
 #define SPECIAL_FLAGS_SIZE  (NUM_SPECIAL_FLAGS / 8)  // 8 flags per byte
 #define TEMP_FLAGS_SIZE     (NUM_TEMP_FLAGS / 8)
 #define DAILY_FLAGS_SIZE    (NUM_DAILY_FLAGS / 8)
 #define TEMP_VARS_SIZE      (NUM_TEMP_VARS * 2)      // 1/2 var per byte
+
+#if TRAINER_FLAG_WATCH && !defined(NDEBUG)
+// Byte range of gSaveBlock1Ptr->flags[] covered by the trainer band (0x500-0x7FF).
+#define TRAINER_FLAG_BYTE_START (TRAINER_FLAGS_START / 8)                          // 0xA0
+#define TRAINER_FLAG_BYTE_END   (TRAINER_FLAGS_END / 8)                            // 0xFF
+#define TRAINER_FLAG_BYTE_COUNT (TRAINER_FLAG_BYTE_END - TRAINER_FLAG_BYTE_START + 1)
+// Set by FlagSet() whenever it legitimately touches the trainer band, so the
+// per-frame watchdog can tell a real FlagSet apart from a raw memory smash.
+static bool8 sTrainerFlagWriteThisFrame = FALSE;
+
+// Specific trainers to call out with a distinctive ">>> WATCHED" line (easy to grep
+// for in the mGBA log). Add or remove ids here as needed.
+#define IS_WATCHED_TRAINER(trainerId) \
+    ((trainerId) == TRAINER_BURGLAR_DUSTY || (trainerId) == TRAINER_PICNICKER_CAITLIN)
+#endif
 
 EWRAM_DATA u16 gSpecialVar_0x8000 = 0;
 EWRAM_DATA u16 gSpecialVar_0x8001 = 0;
@@ -243,6 +260,25 @@ u8 FlagSet(u16 id)
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr |= 1 << (id & 7);
+#if TRAINER_FLAG_WATCH && !defined(NDEBUG)
+    if (id >= TRAINER_FLAGS_START && id <= TRAINER_FLAGS_END)
+    {
+        u32 trainerId = id - TRAINER_FLAGS_START;
+        sTrainerFlagWriteThisFrame = TRUE;
+        if (IS_WATCHED_TRAINER(trainerId))
+            DebugPrintf(">>> WATCHED SET trainer=%u id=0x%X map=%u.%u LR=0x%X",
+                        trainerId, id, gSaveBlock1Ptr->location.mapGroup,
+                        gSaveBlock1Ptr->location.mapNum, (u32)__builtin_return_address(0));
+        else
+            DebugPrintf("FLAGSET trainer=%u id=0x%X map=%u.%u LR=0x%X",
+                        trainerId, id, gSaveBlock1Ptr->location.mapGroup,
+                        gSaveBlock1Ptr->location.mapNum, (u32)__builtin_return_address(0));
+    }
+    else if (id >= FLAGS_COUNT)
+    {
+        DebugPrintf("FLAGSET OOB id=0x%X LR=0x%X", id, (u32)__builtin_return_address(0));
+    }
+#endif
     return 0;
 }
 
@@ -251,6 +287,14 @@ u8 FlagToggle(u16 id)
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr ^= 1 << (id & 7);
+#if TRAINER_FLAG_WATCH && !defined(NDEBUG)
+    if (id >= TRAINER_FLAGS_START && id <= TRAINER_FLAGS_END)
+    {
+        sTrainerFlagWriteThisFrame = TRUE;
+        DebugPrintf("FLAGTOGGLE trainer=%u id=0x%X LR=0x%X",
+                    id - TRAINER_FLAGS_START, id, (u32)__builtin_return_address(0));
+    }
+#endif
     return 0;
 }
 
@@ -259,8 +303,70 @@ u8 FlagClear(u16 id)
     u8 *ptr = GetFlagPointer(id);
     if (ptr)
         *ptr &= ~(1 << (id & 7));
+#if TRAINER_FLAG_WATCH && !defined(NDEBUG)
+    if (id >= TRAINER_FLAGS_START && id <= TRAINER_FLAGS_END)
+        DebugPrintf("FLAGCLEAR trainer=%u id=0x%X LR=0x%X",
+                    id - TRAINER_FLAGS_START, id, (u32)__builtin_return_address(0));
+#endif
     return 0;
 }
+
+#if TRAINER_FLAG_WATCH && !defined(NDEBUG)
+// Runs once per frame from AgbMainLoop. Diffs the trainer-flag byte region of the
+// save against a shadow copy and logs any bit that becomes set. "RAW-WRITE!" means
+// no FlagSet touched the band that frame -> the corruption came from a stray/OOB
+// memory write, and the contiguous run of changed bytes points at the smash.
+void WatchTrainerFlags(void)
+{
+    static u8 sShadow[TRAINER_FLAG_BYTE_COUNT];
+    static bool8 sInitialized = FALSE;
+    const u8 *flags;
+    u32 i, bit;
+
+    if (gSaveBlock1Ptr == NULL)
+        return;
+
+    flags = &gSaveBlock1Ptr->flags[TRAINER_FLAG_BYTE_START];
+
+    if (!sInitialized)
+    {
+        for (i = 0; i < TRAINER_FLAG_BYTE_COUNT; i++)
+            sShadow[i] = flags[i];
+        sInitialized = TRUE;
+        sTrainerFlagWriteThisFrame = FALSE;
+        return;
+    }
+
+    for (i = 0; i < TRAINER_FLAG_BYTE_COUNT; i++)
+    {
+        u8 newlySet = flags[i] & ~sShadow[i];
+        if (newlySet)
+        {
+            u32 byteIdx = TRAINER_FLAG_BYTE_START + i;
+            DebugPrintf("TRAINER_FLAG_WATCH %s byte[0x%X] 0x%X->0x%X map=%u.%u",
+                        sTrainerFlagWriteThisFrame ? "viaFlagSet" : "RAW-WRITE!",
+                        byteIdx, sShadow[i], flags[i],
+                        gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
+            for (bit = 0; bit < 8; bit++)
+            {
+                if (newlySet & (1 << bit))
+                {
+                    u32 flagId = byteIdx * 8 + bit;
+                    u32 trainerId = flagId - TRAINER_FLAGS_START;
+                    if (IS_WATCHED_TRAINER(trainerId))
+                        DebugPrintf(">>> WATCHED trainer=%u flag=0x%X map=%u.%u (%s)", trainerId, flagId,
+                                    gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum,
+                                    sTrainerFlagWriteThisFrame ? "viaFlagSet" : "RAW-WRITE!");
+                    else
+                        DebugPrintf("   trainer=%u flag=0x%X", trainerId, flagId);
+                }
+            }
+        }
+        sShadow[i] = flags[i];
+    }
+    sTrainerFlagWriteThisFrame = FALSE;
+}
+#endif
 
 bool8 FlagGet(u16 id)
 {
