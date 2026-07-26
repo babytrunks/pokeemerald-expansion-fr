@@ -8761,4 +8761,23 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mina = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Coats = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_COATS,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_COATS,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_Coats,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 #endif // IS_FRLG

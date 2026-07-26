@@ -797,4 +797,7 @@ const u16 gObjectEventPal_MegaStone[] = INCBIN_U16("graphics/object_events/palet
 
 const u32 gObjectEventPic_Mina[] = INCBIN_U32("graphics/object_events/pics/people/mina.4bpp");
 const u16 gObjectEventPal_Mina[] = INCBIN_U16("graphics/object_events/palettes/mina.gbapal");
+
+const u32 gObjectEventPic_Coats[] = INCBIN_U32("graphics/object_events/pics/people/coats.4bpp");
+const u16 gObjectEventPal_Coats[] = INCBIN_U16("graphics/object_events/pics/people/coats.gbapal");
 #endif // IS_FRLG

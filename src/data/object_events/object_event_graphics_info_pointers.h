@@ -485,6 +485,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CueBall;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sans;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Soupercell;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Coats;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -958,6 +959,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SANS] =               &gObjectEventGraphicsInfo_Sans,
     [OBJ_EVENT_GFX_SOUPERCELL] =         &gObjectEventGraphicsInfo_Soupercell,
     [OBJ_EVENT_GFX_MINA] =               &gObjectEventGraphicsInfo_Mina,
+    [OBJ_EVENT_GFX_COATS] =              &gObjectEventGraphicsInfo_Coats,
 #endif // IS_FRLG
 };
 

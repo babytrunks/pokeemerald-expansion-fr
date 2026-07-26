@@ -3787,4 +3787,8 @@ static const struct SpriteFrameImage sPicTable_Mina[] = {
     overworld_ascending_frames(gObjectEventPic_Mina, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Coats[] = {
+    overworld_ascending_frames(gObjectEventPic_Coats, 2, 4),
+};
+
 #endif // IS_FRLG
