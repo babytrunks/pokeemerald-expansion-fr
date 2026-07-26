@@ -85,6 +85,6 @@
       "script": "CeladonCity_DepartmentStore_Roof_EventScript_VendingMachine"
     }
   ],
-  "floor_number": 127,
+  "floor_number": "FLOOR_ROOFTOP",
   "region": "REGION_KANTO"
 }
