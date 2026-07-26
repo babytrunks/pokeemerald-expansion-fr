@@ -602,7 +602,8 @@
 #define B_ANIM_SWAP_FROM_SUBSTITUTE     59
 #define B_ANIM_ROCK_THROW               60
 #define B_ANIM_SAFARI_REACTION          61
-#define NUM_B_ANIMS_GENERAL             62
+#define B_ANIM_PROTECTED_ITSELF         62
+#define NUM_B_ANIMS_GENERAL             63
 
 // special animations table (sBattleAnims_Special)
 #define B_ANIM_LVL_UP                   0

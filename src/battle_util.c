@@ -6763,6 +6763,7 @@ bool32 IsBattlerProtected(u32 battlerAtk, u32 battlerDef, u32 move)
             return FALSE;
     }
 
+    u32 moveTarget = GetBattlerMoveTargetType(battlerAtk, move);
     bool32 isProtected = FALSE;
 
     if (IsSideProtected(battlerDef, PROTECT_CRAFTY_SHIELD)
@@ -6771,7 +6772,8 @@ bool32 IsBattlerProtected(u32 battlerAtk, u32 battlerDef, u32 move)
         isProtected = TRUE;
     else if (MoveIgnoresProtect(move))
         isProtected = FALSE;
-    else if (IsSideProtected(battlerDef, PROTECT_WIDE_GUARD) && IsSpreadMove(GetBattlerMoveTargetType(battlerAtk, move)))
+    else if (IsSideProtected(battlerDef, PROTECT_WIDE_GUARD)
+          && (moveTarget == MOVE_TARGET_BOTH || moveTarget == MOVE_TARGET_FOES_AND_ALLY)) // Wide Guard also works in Single Battles
         isProtected = TRUE;
     else if (gProtectStructs[battlerDef].protected == PROTECT_NORMAL)
         isProtected = TRUE;

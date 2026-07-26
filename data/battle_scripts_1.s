@@ -7116,6 +7116,13 @@ BattleScript_AbilityAvoidsDamage::
 	printfromtable gMissStringIds @ waitmessage is executed next so no waitmessage here
 	return
 
+BattleScript_TargetProtected::
+	playanimation BS_TARGET, B_ANIM_PROTECTED_ITSELF
+	waitanimation
+	printstring STRINGID_PKMNPROTECTEDITSELF
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_TeraShellDistortingTypeMatchups::
 	pause B_WAIT_TIME_SHORTEST
 	call BattleScript_AbilityPopUpScripting

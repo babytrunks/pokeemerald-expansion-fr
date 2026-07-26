@@ -28,6 +28,7 @@ static void SpriteCB_SpriteToCentreOfSide(struct Sprite *sprite);
 static void SpriteCB_SpriteOnMonForDuration(struct Sprite *sprite);
 static void SpriteCB_ToxicThreadWrap(struct Sprite *sprite);
 static void SpriteCB_GrowingSuperpower(struct Sprite *sprite);
+static void SpriteCB_Protect(struct Sprite *sprite);
 static void SpriteCB_CentredSpiderWeb(struct Sprite *sprite);
 static void SpriteCB_CoreEnforcerHits(struct Sprite *sprite);
 static void SpriteCB_CoreEnforcerBeam(struct Sprite *sprite);
@@ -3221,6 +3222,18 @@ const struct SpriteTemplate gSunsteelStrikeBlackFlyBallTemplate =
     .images = NULL,
     .affineAnims = gAffineAnims_FlyBallUp,
     .callback = AnimFlyBallUp
+};
+
+// Protect
+const struct SpriteTemplate gProtectTemplate =
+{
+    .tileTag = ANIM_TAG_PROTECT,
+    .paletteTag = ANIM_TAG_PROTECT,
+    .oam = &gOamData_AffineOff_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_Protect
 };
 
 static const struct OamData sSunsteelStrikeBlastOAM =
@@ -7950,6 +7963,13 @@ static void SpriteCB_GrowingSuperpower(struct Sprite *sprite)
     InitAnimLinearTranslation(sprite);
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
     sprite->callback = AnimTranslateLinear_WithFollowup;
+}
+
+static void SpriteCB_Protect(struct Sprite *sprite)
+{
+    InitSpritePosToAnimTarget(sprite, FALSE);
+
+    sprite->callback = AnimSpiderWeb;
 }
 
 static void SpriteCB_CentredSpiderWeb(struct Sprite *sprite)

@@ -2431,6 +2431,13 @@ static void Cmd_resultmessage(void)
             return;
         }
 
+        if (gBattleStruct->missStringId[gBattlerTarget] == B_MSG_PROTECTED)
+        {
+            gBattlescriptCurrInstr = cmd->nextInstr;
+            BattleScriptCall(BattleScript_TargetProtected);
+            return;
+        }
+
         gBattleCommunication[MSG_DISPLAY] = 1;
         stringId = gMissStringIds[gBattleStruct->missStringId[gBattlerTarget]];
     }

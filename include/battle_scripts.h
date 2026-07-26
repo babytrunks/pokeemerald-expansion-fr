@@ -220,6 +220,7 @@ extern const u8 BattleScript_ConsumableStatRaiseRet[];
 extern const u8 BattleScript_BerryFocusEnergy[];
 extern const u8 BattleScript_ActionSelectionItemsCantBeUsed[];
 extern const u8 BattleScript_AbilityAvoidsDamage[];
+extern const u8 BattleScript_TargetProtected[];
 extern const u8 BattleScript_AbilityShieldProtects[];
 extern const u8 BattleScript_ArenaTurnBeginning[];
 extern const u8 BattleScript_PalacePrintFlavorText[];
