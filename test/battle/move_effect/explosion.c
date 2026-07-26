@@ -62,7 +62,24 @@ SINGLE_BATTLE_TEST("Explosion causes the user to faint even if it has no effect"
         TURN { MOVE(player, MOVE_EXPLOSION); }
     } SCENE {
         HP_BAR(player, hp: 0);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
         MESSAGE("It doesn't affect the opposing Gastly…");
+        NOT HP_BAR(opponent);
+        MESSAGE("Wobbuffet fainted!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Explosion causes the user to faint even if it is blocked by Protect")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_PROTECT); MOVE(player, MOVE_EXPLOSION); }
+    } SCENE {
+        HP_BAR(player, hp: 0);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_EXPLOSION, player);
+        MESSAGE("The opposing Wobbuffet protected itself!");
         NOT HP_BAR(opponent);
         MESSAGE("Wobbuffet fainted!");
     }

@@ -2001,7 +2001,13 @@ static void Cmd_attackanimation(void)
         if (GetMoveEffect(gCurrentMove) == EFFECT_EXPANDING_FORCE && moveTarget & MOVE_TARGET_BOTH && CountAliveMonsInBattle(BATTLE_ALIVE_SIDE, BATTLE_OPPOSITE(gBattlerAttacker) > 1))
             gBattleScripting.animTurn = 1;
 
-        if (!(moveResultFlags & MOVE_RESULT_NO_EFFECT))
+        // Explosion-like moves have already committed the user to fainting by this point,
+        // so the boom plays even when the target is immune or the move missed. A genuine
+        // failure (no target, etc.) still suppresses it.
+        bool32 alwaysAnimates = (effect == EFFECT_EXPLOSION || effect == EFFECT_MISTY_EXPLOSION)
+                             && !(moveResultFlags & MOVE_RESULT_FAILED);
+
+        if (!(moveResultFlags & MOVE_RESULT_NO_EFFECT) || alwaysAnimates)
         {
             u32 multihit;
             if (gBattleMons[gBattlerTarget].volatiles.substitute)

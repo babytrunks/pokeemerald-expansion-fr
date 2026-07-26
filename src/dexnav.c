@@ -1010,7 +1010,7 @@ void EndDexNavSearch(u8 taskId)
 
 static void EndDexNavSearchSetupScript(const u8 *script, u8 taskId)
 {
-    gSaveBlock3Ptr->dexNavChain = 0;   //reset chain
+    // gSaveBlock3Ptr->dexNavChain = 0;   //reset chain
     EndDexNavSearch(taskId);
     ScriptContext_SetupScript(script);
 }

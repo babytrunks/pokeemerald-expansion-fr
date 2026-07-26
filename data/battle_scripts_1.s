@@ -2568,8 +2568,14 @@ BattleScript_EffectExplosion::
 	setatkhptozero
 	waitstate
 	jumpiffainted BS_TARGET, TRUE, BattleScript_MoveEnd
-	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
+	accuracycheck BattleScript_ExplosionMissed, ACC_CURR_MOVE
 	goto BattleScript_HitFromDamageCalc
+
+@ The user is already committed to fainting, so play the boom before the miss message.
+BattleScript_ExplosionMissed:
+	attackanimation
+	waitanimation
+	goto BattleScript_MoveMissedPause
 
 BattleScript_FaintAttackerForExplosion::
 	tryfaintmon BS_ATTACKER
