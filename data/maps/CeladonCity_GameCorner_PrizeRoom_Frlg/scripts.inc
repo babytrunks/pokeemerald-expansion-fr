@@ -62,6 +62,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_NeedCoinCase::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_NotEnoughCoins::
 	msgbox CeladonCity_GameCorner_PrizeRoom_Text_NeedMoreCoins
+	waitbuttonpress
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	end
 

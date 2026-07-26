@@ -4472,7 +4472,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sVaroomLevelUpLearnset,
         .teachableLearnset = sVaroomTeachableLearnset,
         .eggMoveLearnset = sVaroomEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_REVAVROOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_REVAVROOM}),
     },
 
     [SPECIES_REVAVROOM] =
@@ -4842,7 +4842,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .frontPic = gMonFrontPic_GlimmoraMega,
         .frontPicSize = MON_COORDS_SIZE(64, 64),
         .frontPicYOffset = 0,
-        .frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
         .enemyMonElevation = 7,
         .backPic = gMonBackPic_GlimmoraMega,

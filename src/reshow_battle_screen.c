@@ -367,8 +367,7 @@ void CreateBattlerSprite(u32 battler)
 
 static void CreateHealthboxSprite(u32 battler)
 {
-    if (battler < gBattlersCount
-        && !(WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
+    if (battler < gBattlersCount)
     {
         u8 healthboxSpriteId;
 
@@ -401,7 +400,12 @@ static void CreateHealthboxSprite(u32 battler)
         }
         else if (!(gBattleTypeFlags & BATTLE_TYPE_SAFARI))
         {
-            if (!IsValidForBattle(GetBattlerMon(battler)))
+            // The player's right slot in a 1 vs 2 wild battle is absent, so its healthbox is hidden -
+            // but it still has to be created. gHealthboxSpriteIds is not cleared by ResetSpriteData,
+            // so skipping it would leave everything that loops over gBattlersCount writing through a
+            // stale sprite id.
+            if (!IsValidForBattle(GetBattlerMon(battler))
+                || (WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT))
                 SetHealthboxSpriteInvisible(healthboxSpriteId);
         }
     }

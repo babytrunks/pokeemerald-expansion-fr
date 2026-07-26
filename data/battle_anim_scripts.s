@@ -16897,110 +16897,76 @@ gBattleAnimMove_DoubleShock::
 	waitforvisualfinish
 	end
 
+@ Mud Bomb's animation, tinted green. The original syrup animation reserved 320 OBJ tiles
+@ across three sheets (one of them 256 contiguous tiles) and froze the game; this uses the
+@ single 5-tile ANIM_TAG_MUD_SAND sheet instead.
 gBattleAnimMove_SyrupBomb::
-	createvisualtask AnimTask_SyrupBomb, 0x5
-	jumpargeq 0x0, FALSE, gBattleAnimMove_SyrupBombRed
-	jumpargeq 0x0, TRUE, gBattleAnimMove_SyrupBombYellow
-
-@ Credits to Dat.H A
-gBattleAnimMove_SyrupBombRed::
-	loadspritegfx ANIM_TAG_SYRUP_BLOB_RED
-	loadspritegfx ANIM_TAG_SYRUP_SPLAT_RED
-	loadspritegfx ANIM_TAG_SYRUP_SHELL_RED
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	call SyrupBombProjectileRed
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 3, 0, 15, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 2, 0, 12, RGB(20, 3, 3)
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 27, 20
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, -27, 44, 20
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, 39, -28, 20
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, -42, -42, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
+	loadspritegfx ANIM_TAG_MUD_SAND
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_MUD_SAND, 0, 10, 10, RGB(2, 28, 2)
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gMudBombToss, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
 	delay 5
-	createsprite gSyrupBombRedShellSpriteTemplate, ANIM_TARGET, 1, ANIM_TARGET, 100
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, 0, 40, 20
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, -8, -44, 20
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, -46, -28, 20
-	createsprite gSyrupBombRedHitParticleSpriteTemplate, ANIM_TARGET, 2, 46, 9, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gMudBombToss, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
 	delay 5
-	waitsound
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gMudBombToss, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
+	delay 5
+	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
+	createsprite gMudBombToss, ANIM_TARGET, 2, 20, 0, 0, 0, 35, -25
+	delay 11
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 5, 1
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 42, 27, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 42, 27, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -27, 44, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 39, -28, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -42, -42, 20
+	playsewithpan SE_M_VITAL_THROW2, SOUND_PAN_TARGET
+	delay 5
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 5, 1
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 0, 40, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -8, -44, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -46, -28, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 46, 9, 20
+	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
+	delay 5
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 5, 1
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 42, 0, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -43, -12, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 16, -46, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -16, 44, 20
+	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
+	delay 5
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 5, 1
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 0, 40, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -8, -44, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -46, -28, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 46, 9, 20
+	playsewithpan SE_M_ROCK_THROW, SOUND_PAN_TARGET
+	delay 5
+	createvisualtask AnimTask_ShakeMon, 5, ANIM_TARGET, 3, 0, 5, 1
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 42, 0, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -43, -12, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 16, -46, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -16, 44, 20
 	waitforvisualfinish
 	end
-SyrupBombProjectileRed:
-	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	createsprite gSyrupRedProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 0
-	delay 3
-	return
-
-gBattleAnimMove_SyrupBombYellow::
-	loadspritegfx ANIM_TAG_SYRUP_BLOB_YELLOW
-	loadspritegfx ANIM_TAG_SYRUP_SPLAT_YELLOW
-	loadspritegfx ANIM_TAG_SYRUP_SHELL_YELLOW
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	call SyrupBombProjectileYellow
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 3, 0, 15, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 2, 0, 12, RGB(23, 13, 1)
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, 42, 27, 20
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, -27, 44, 20
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, 39, -28, 20
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, -42, -42, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
-	delay 5
-	createsprite gSyrupBombYellowShellSpriteTemplate, ANIM_TARGET, 1, ANIM_TARGET, 100
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, 0, 40, 20
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, -8, -44, 20
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, -46, -28, 20
-	createsprite gSyrupBombYellowHitParticleSpriteTemplate, ANIM_TARGET, 2, 46, 9, 20
-	playsewithpan SE_M_DIG, SOUND_PAN_TARGET
-	delay 5
-	waitsound
-	waitforvisualfinish
-	end
-SyrupBombProjectileYellow:
-	playsewithpan SE_M_BUBBLE3, SOUND_PAN_ATTACKER
-	createsprite gSyrupYellowProjectileSpriteTemplate, ANIM_TARGET, 2, 20, 0, 40, 0
-	delay 3
-	return
 
 gBattleAnimGeneral_SyrupBombSpeedDrop::
-	createvisualtask AnimTask_StickySyrup, 0x5
-	jumpargeq 0x0, FALSE, SyrupBombSpeedDropRed
-	jumpargeq 0x0, TRUE, SyrupBombSpeedDropYellow
-
-SyrupBombSpeedDropRed:
-	loadspritegfx ANIM_TAG_SYRUP_BLOB_RED
-	loadspritegfx ANIM_TAG_SYRUP_SHELL_RED
+	loadspritegfx ANIM_TAG_MUD_SAND
+	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_MUD_SAND, 0, 10, 10, RGB(2, 28, 2)
 	loopsewithpan SE_M_TOXIC, SOUND_PAN_TARGET, 13, 6
 	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 3, 0, 15, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 2, 0, 12, RGB(20, 3, 3)
-	createsprite gSyrupBombRedShellBSpriteTemplate, ANIM_TARGET, 1, ANIM_TARGET, 60
-	waitforvisualfinish
-	end
-
-SyrupBombSpeedDropYellow:
-	loadspritegfx ANIM_TAG_SYRUP_BLOB_YELLOW
-	loadspritegfx ANIM_TAG_SYRUP_SHELL_YELLOW
-	loopsewithpan SE_M_TOXIC, SOUND_PAN_TARGET, 13, 6
-	createvisualtask AnimTask_ShakeMon2, 5, ANIM_TARGET, 3, 0, 15, 1
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 2, 0, 12, RGB(23, 13, 1)
-	createsprite gSyrupBombYellowShellBSpriteTemplate, ANIM_TARGET, 1, ANIM_TARGET, 60
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 1, 2, 0, 12, RGB(6, 26, 4)
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 42, 27, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -27, 44, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 39, -28, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -42, -42, 20
+	delay 5
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 0, 40, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -8, -44, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, -46, -28, 20
+	createsprite gMudBombSplash, ANIM_TARGET, 2, 46, 9, 20
 	waitforvisualfinish
 	end
 

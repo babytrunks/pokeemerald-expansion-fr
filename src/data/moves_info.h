@@ -11437,12 +11437,12 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Gunk Shot"),
         .description = COMPOUND_STRING(
-            "Shoots filthy garbage.\n"
-            "30% to poison the foe."),
+            "30% to poison the foe.\n"
+            "Can't miss with Poison attackers."),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_POISON,
-        .accuracy = B_UPDATED_MOVE_DATA >= GEN_6 ? 80 : 70,
+        .accuracy = 80,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,

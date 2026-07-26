@@ -216,6 +216,7 @@
       "MOVE_DOUBLE_HIT"
     ],
     "TMMoves": [
+      "MOVE_DUAL_WINGBEAT"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -1884,7 +1885,12 @@
     ]
   },
   "CROBAT": {
-    "LevelMoves": [],
+    "LevelMoves": [
+      {
+        "Level": 55,
+        "Move": "MOVE_GUNK_SHOT"
+      }
+    ],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -11307,7 +11313,7 @@
   "FEZANDIPITI": {
     "LevelMoves": [],
     "PreEvoMoves": [],
-    "TMMoves": [],
+    "TMMoves": [ "MOVE_DRAINING_KISS"],
     "EggMoves": [],
     "TutorMoves": []
   },

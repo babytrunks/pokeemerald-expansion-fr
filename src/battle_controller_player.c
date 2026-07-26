@@ -1393,6 +1393,15 @@ static s32 GetTaskExpValue(u8 taskId)
     return (u16)(gTasks[taskId].tExpTask_gainedExp_1) | (gTasks[taskId].tExpTask_gainedExp_2 << 16);
 }
 
+// In a 1 vs 2 wild battle the player's right slot is permanently absent - it has no mon sprite and a
+// hidden healthbox - so exp and level up visuals must never be redirected to it, even though
+// gBattlerPartyIndexes still holds a real party index for it.
+static bool32 IsExpMonOnPartnerSlot(u32 battler, u32 monIndex)
+{
+    return IsDoubleBattle() && !WILD_ONE_VS_TWO_BATTLE
+        && monIndex == gBattlerPartyIndexes[BATTLE_PARTNER(battler)];
+}
+
 static void Task_GiveExpToMon(u8 taskId)
 {
     u32 monId = (u8)(gTasks[taskId].tExpTask_monId);
@@ -1423,7 +1432,7 @@ static void Task_GiveExpToMon(u8 taskId)
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, RET_VALUE_LEVELED_UP, (B_LEVEL_UP_NOTIFICATION >= GEN_9) ? 0 : gainedExp);
 
             if (IsDoubleBattle() == TRUE
-             && (monId == gBattlerPartyIndexes[battler] || monId == gBattlerPartyIndexes[BATTLE_PARTNER(battler)]))
+             && (monId == gBattlerPartyIndexes[battler] || IsExpMonOnPartnerSlot(battler, monId)))
                 gTasks[taskId].func = Task_LaunchLvlUpAnim;
             else
                 gTasks[taskId].func = Task_SetControllerToWaitForString;
@@ -1525,7 +1534,7 @@ static void Task_LaunchLvlUpAnim(u8 taskId)
     u8 battler = gTasks[taskId].tExpTask_battler;
     u8 monIndex = gTasks[taskId].tExpTask_monId;
 
-    if (IsDoubleBattle() == TRUE && monIndex == gBattlerPartyIndexes[BATTLE_PARTNER(battler)])
+    if (IsExpMonOnPartnerSlot(battler, monIndex))
         battler ^= BIT_FLANK;
 
     InitAndLaunchSpecialAnimation(battler, battler, battler, B_ANIM_LVL_UP);
@@ -1540,7 +1549,7 @@ static void Task_UpdateLvlInHealthbox(u8 taskId)
     {
         u8 monIndex = gTasks[taskId].tExpTask_monId;
 
-        if (IsDoubleBattle() == TRUE && monIndex == gBattlerPartyIndexes[BATTLE_PARTNER(battler)])
+        if (IsExpMonOnPartnerSlot(battler, monIndex))
             UpdateHealthboxAttribute(gHealthboxSpriteIds[BATTLE_PARTNER(battler)], &gPlayerParty[monIndex], HEALTHBOX_ALL);
         else
             UpdateHealthboxAttribute(gHealthboxSpriteIds[battler], &gPlayerParty[monIndex], HEALTHBOX_ALL);
