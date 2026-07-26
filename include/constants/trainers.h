@@ -200,7 +200,11 @@
 #define TRAINER_PIC_OFFICER               178
 #define TRAINER_PIC_MINA                  179
 #define TRAINER_PIC_COATS                 180
-#define TRAINER_PIC_COUNT                 181
+#define TRAINER_PIC_MDE                   181
+#define TRAINER_PIC_ELBEIN                182
+#define TRAINER_PIC_DENO                  183
+#define TRAINER_PIC_POM                   184
+#define TRAINER_PIC_COUNT                 185
 
 #define TRAINER_BACK_PIC_PLAYER_MALE (IS_FRLG ? TRAINER_BACK_PIC_RED : TRAINER_BACK_PIC_BRENDAN)
 #define TRAINER_BACK_PIC_PLAYER_FEMALE (IS_FRLG ? TRAINER_BACK_PIC_LEAF : TRAINER_BACK_PIC_MAY)

@@ -486,6 +486,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sans;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Soupercell;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mina;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Coats;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mde;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Elbein;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Deno;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pom;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -960,6 +964,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SOUPERCELL] =         &gObjectEventGraphicsInfo_Soupercell,
     [OBJ_EVENT_GFX_MINA] =               &gObjectEventGraphicsInfo_Mina,
     [OBJ_EVENT_GFX_COATS] =              &gObjectEventGraphicsInfo_Coats,
+    [OBJ_EVENT_GFX_MDE] =                &gObjectEventGraphicsInfo_Mde,
+    [OBJ_EVENT_GFX_ELBEIN] =             &gObjectEventGraphicsInfo_Elbein,
+    [OBJ_EVENT_GFX_DENO] =               &gObjectEventGraphicsInfo_Deno,
+    [OBJ_EVENT_GFX_POM] =                &gObjectEventGraphicsInfo_Pom,
 #endif // IS_FRLG
 };
 

@@ -800,4 +800,16 @@ const u16 gObjectEventPal_Mina[] = INCBIN_U16("graphics/object_events/palettes/m
 
 const u32 gObjectEventPic_Coats[] = INCBIN_U32("graphics/object_events/pics/people/coats.4bpp");
 const u16 gObjectEventPal_Coats[] = INCBIN_U16("graphics/object_events/pics/people/coats.gbapal");
+
+const u32 gObjectEventPic_Mde[] = INCBIN_U32("graphics/object_events/pics/people/mde.4bpp");
+const u16 gObjectEventPal_Mde[] = INCBIN_U16("graphics/object_events/pics/people/mde.gbapal");
+
+const u32 gObjectEventPic_Elbein[] = INCBIN_U32("graphics/object_events/pics/people/elbein.4bpp");
+const u16 gObjectEventPal_Elbein[] = INCBIN_U16("graphics/object_events/pics/people/elbein.gbapal");
+
+const u32 gObjectEventPic_Deno[] = INCBIN_U32("graphics/object_events/pics/people/deno.4bpp");
+const u16 gObjectEventPal_Deno[] = INCBIN_U16("graphics/object_events/pics/people/deno.gbapal");
+
+const u32 gObjectEventPic_Pom[] = INCBIN_U32("graphics/object_events/pics/people/pom.4bpp");
+const u16 gObjectEventPal_Pom[] = INCBIN_U16("graphics/object_events/pics/people/pom.gbapal");
 #endif // IS_FRLG

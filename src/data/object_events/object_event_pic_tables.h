@@ -3791,4 +3791,38 @@ static const struct SpriteFrameImage sPicTable_Coats[] = {
     overworld_ascending_frames(gObjectEventPic_Coats, 2, 4),
 };
 
+static const struct SpriteFrameImage sPicTable_Mde[] = {
+    overworld_ascending_frames(gObjectEventPic_Mde, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Elbein[] = {
+    overworld_ascending_frames(gObjectEventPic_Elbein, 2, 4),
+};
+
+// deno's sheet is only 3 frames (48x32), so the walking frames reuse the facing frames.
+static const struct SpriteFrameImage sPicTable_Deno[] = {
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Deno, 2, 4, 2),
+};
+
+// pom's sheet is only 3 frames (48x32), so the walking frames reuse the facing frames.
+static const struct SpriteFrameImage sPicTable_Pom[] = {
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Pom, 2, 4, 2),
+};
+
 #endif // IS_FRLG
