@@ -159,3 +159,62 @@ EventScript_StrengthTile3::
 	setvar VAR_ROCK_TUNNEL_EXTRA_STRENGTH_3, 100
     releaseall
     end
+
+
+RockTunnelExtra_EventScript_Coats::
+    lock
+    faceplayer
+	goto_if_set FLAG_DEFEATED_ROCK_TUNNEL_EXTRA_COATS, EventScript_Coats_Defeated
+    msgbox gText_coats_askChallenge, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, 1, EventScript_Coats_Battle
+    @ msgbox gText_coats_Reject
+    release
+    end
+
+EventScript_Coats_Battle::
+    setspeaker SP_NAME_UNKNOWN
+    msgbox gText_coats_2
+    @ special HealPlayerParty                 
+	trainerbattle_no_intro TRAINER_ROCK_TUNNEL_COATS, coats_Text_Defeat  
+    setflag FLAG_DEFEATED_ROCK_TUNNEL_EXTRA_COATS
+    msgbox gText_coats_3
+    giveitem ITEM_GOLURKITE      
+	msgbox gText_coats_4
+	waitbuttonpress                             
+    release
+    end
+
+EventScript_Coats_Defeated::
+	msgbox gText_coats_4
+EventScript_Coats_Releasend:
+	release
+	end
+
+
+gText_coats_askChallenge::
+  .string "I hear there is a legendary Pokémon\n"
+  .string "in this area. I'd like to hone\l"
+  .string "my skills before encountering it.\p"
+  .string "Would you like a battle? Just a heads\n"
+  .string "up, I specialize in doubles.\p"
+
+gText_coats_Reject::
+  .string "Fine, I'll see you around, maybe?$"
+
+
+coats_Text_Defeat::
+	.string "Well then, it looks like I wasn't\n"
+	.string "ready for you!$"
+
+gText_coats_2::
+	.string "Alrighty, I'll even put a Mega Stone\n"
+	.string "on the line. As a trainer, you have\l"
+	.string "to be ready for anything!$"
+
+gText_coats_3::
+	.string "A good trainer keeps to his word.\p"
+	.string "Take this."
+
+gText_coats_4::
+	.string "Mega Golurk packs a mean punch. Use\n"
+	.string "it well!$"

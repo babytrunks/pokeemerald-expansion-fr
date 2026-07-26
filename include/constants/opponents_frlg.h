@@ -77,7 +77,7 @@
 #define TRAINER_POKEMANIAC_MARK                    71
 #define TRAINER_POKEMANIAC_HERMAN                  72
 #define TRAINER_POKEMANIAC_COOPER                  73
-#define TRAINER_POKEMANIAC_STEVE                   74 // unused
+#define TRAINER_ROCK_TUNNEL_COATS                   74 // unused
 #define TRAINER_POKEMANIAC_WINSTON                 75
 #define TRAINER_POKEMANIAC_DAWSON                  76
 #define TRAINER_POKEMANIAC_ASHTON                  77

@@ -1028,7 +1028,7 @@
 #define ITEM_STARAPTITE  862
 #define ITEM_GARCHOMPITE_Z  863
 #define ITEM_LUCARIONITE_Z  864
-#define ITEM_GOLURKITE  865
+#define ITEM_GOLURKITE  865 // DONE Rock Tunnel Extra
 #define ITEM_MEOWSTICITE  866 // DONE (Cat Lady Quest in Saffron)
 #define ITEM_CRABOMINITE  867
 #define ITEM_GOLISOPITE  868 // DONE (Pokemon Mansion mde boss)

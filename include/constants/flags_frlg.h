@@ -787,7 +787,7 @@
 #define FLAG_HIDE_MOLTRES_GALAR                          0x320
 #define FLAG_HIDE_VIRIDIAN_FOREST_2_PICHU_BULLIES        0x321
 #define FLAG_RESCUED_SPIKY_PICHU                         0x322
-#define FLAG_0x323               0x323
+#define FLAG_DEFEATED_ROCK_TUNNEL_EXTRA_COATS            0x323
 #define FLAG_0x324               0x324
 #define FLAG_0x325               0x325
 #define FLAG_0x326               0x326

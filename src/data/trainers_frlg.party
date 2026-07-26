@@ -2110,22 +2110,83 @@ Nature: Quirky
 - Swift 
 - Roar
 
-=== TRAINER_POKEMANIAC_STEVE ===
-Name: Steve
-Class: Pokemaniac Frlg
-Pic: Pokemaniac Frlg
+=== TRAINER_ROCK_TUNNEL_COATS ===
+Name: Coats
+Class: Cooltrainer Frlg
+Pic: Coats
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Yellow
+Boss: Yes
+Dynamic Level Ratio: 95
 
-Carracosta
-Level: 29
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tyranitar @ Sitrus Berry  
+Ability: Sand Stream  
+Level: 59  
+EVs: 252 HP / 40 Atk / 48 Def / 168 SpD  
+Relaxed Nature  
+IVs: 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Stealth Rock  
+- Earthquake  
+- Knock Off  
+- Rock Slide  
 
-Relicanth
-Level: 28
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Farigiraf @ Safety Goggles  
+Ability: Armor Tail  
+Level: 59  
+EVs: 252 HP / 252 SpA / 4 SpD  
+Quiet Nature  
+IVs: 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Trick Room  
+- Energy Ball  
+- Psychic Noise  
+- Dazzling Gleam  
+
+Incineroar @ Red Card  
+Ability: Intimidate  
+Level: 59  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Brave Nature  
+IVs: 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Fake Out  
+- U-turn  
+- Flare Blitz  
+- Knock Off  
+
+Slowking-Galar @ Heavy-Duty Boots  
+Ability: Regenerator  
+Level: 59  
+EVs: 252 HP / 84 Def / 172 SpA  
+Relaxed Nature  
+IVs: 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Sludge Bomb  
+- Trick Room  
+- Psyshock  
+- Chilly Reception  
+
+Primarina @ Leftovers  
+Ability: Liquid Voice  
+Level: 59  
+EVs: 248 HP / 252 SpA / 8 SpD  
+Quiet Nature  
+IVs: 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Hyper Voice  
+- Life Dew  
+- Blizzard  
+- Dazzling Gleam  
+
+Golurk  @ Golurkite
+Ability: Iron Fist  
+Level: 61  
+Shiny: Yes  
+EVs: 252 HP / 252 Atk / 4 SpD  
+IVs: 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Ice Punch  
+- Drain Punch  
+- Earthquake  
+- Shadow Punch  
 
 === TRAINER_POKEMANIAC_WINSTON ===
 Name: Winston
