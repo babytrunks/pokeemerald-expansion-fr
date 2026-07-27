@@ -12,6 +12,7 @@
 #include "battle_tv.h"
 #include "battle_z_move.h"
 #include "battle_gimmick.h"
+#include "battle_info.h"
 #include "battle_info_menu.h"
 #include "bg.h"
 #include "data.h"
@@ -101,6 +102,8 @@ static void ReloadMoveNames(u32 battler);
 static u32 CheckTypeEffectiveness(u32 battlerAtk, u32 battlerDef);
 static u32 CheckTargetTypeEffectiveness(u32 battler);
 static void MoveSelectionDisplayMoveEffectiveness(u32 foeEffectiveness, u32 battler);
+static void OpenBattleStatusMenu(u32 battler);
+static void WaitForBattleStatusMenu(u32 battler);
 
 static void (*const sPlayerBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
 {
@@ -307,8 +310,22 @@ static void HandleInputChooseAction(u32 battler)
         }
     }
 
+    if (JOY_NEW(B_BATTLE_STATUS_MENU_BUTTON)
+     && !(B_BATTLE_STATUS_MENU_BUTTON == L_BUTTON && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A))
+    {
+        TryToHideBattleStatusHint();
+        TryHideBattleInfoSprite();
+        PlaySE(SE_SELECT);
+        TryHideLastUsedBall();
+        BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
+        gBattlerControllerFuncs[battler] = OpenBattleStatusMenu;
+        gBattlerInMenuId = battler;
+        return;
+    }
+
     if (JOY_NEW(A_BUTTON))
     {
+        TryToHideBattleStatusHint();
         PlaySE(SE_SELECT);
         TryHideLastUsedBall();
         TryHideBattleInfoSprite();
@@ -420,6 +437,25 @@ static void HandleInputChooseAction(u32 battler)
         BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_THROW_BALL, 0);
         BtlController_Complete(battler);
     }
+}
+
+static void OpenBattleStatusMenu(u32 battler)
+{
+    if (!gPaletteFade.active)
+    {
+        gBattlerControllerFuncs[battler] = WaitForBattleStatusMenu;
+        FreeAllWindowBuffers();
+        CB2_BattleInfoFromBattle();
+    }
+}
+
+static void WaitForBattleStatusMenu(u32 battler)
+{
+    if (gPaletteFade.active)
+        return;
+
+    if (gMain.callback2 == BattleMainCB2)
+        PlayerHandleChooseAction(battler);
 }
 
 void HandleInputChooseTarget(u32 battler)
@@ -2120,6 +2156,7 @@ static void PlayerHandleChooseAction(u32 battler)
 
     TryRestoreLastUsedBall();
     TryAddBattleInfoSprite();
+    TryToAddBattleStatusHint();
     ActionSelectionCreateCursorAt(gActionSelectionCursor[battler], 0);
     PREPARE_MON_NICK_BUFFER(gBattleTextBuff1, battler, gBattlerPartyIndexes[battler]);
     BattleStringExpandPlaceholdersToDisplayedString(gText_WhatWillPkmnDo);
@@ -2217,6 +2254,7 @@ void PlayerHandleChooseMove(u32 battler)
     {
         struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
 
+        TryToHideBattleStatusHint();
         InitMoveSelectionsVarsAndStrings(battler);
         gBattleStruct->gimmick.playerSelect = FALSE;
         TryToAddMoveInfoWindow();
@@ -2253,6 +2291,7 @@ static void PlayerHandleChooseItem(u32 battler)
 {
     s32 i;
 
+    TryToHideBattleStatusHint();
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 0x10, RGB_BLACK);
     gBattlerControllerFuncs[battler] = OpenBagAndChooseItem;
     gBattlerInMenuId = battler;
@@ -2265,6 +2304,7 @@ static void PlayerHandleChoosePokemon(u32 battler)
 {
     s32 i;
 
+    TryToHideBattleStatusHint();
     for (i = 0; i < ARRAY_COUNT(gBattlePartyCurrentOrder); i++)
         gBattlePartyCurrentOrder[i] = gBattleResources->bufferA[battler][4 + i];
 

@@ -311,6 +311,13 @@ const u32 *GetIndicatorSpriteSrc(u32 battler)
     }
 }
 
+const u32 *GetTeraIndicatorSpriteSrc(u32 type)
+{
+    if (type >= ARRAY_COUNT(sTeraIndicatorDataPtrs))
+        type = TYPE_NORMAL;
+    return (const u32 *)sTeraIndicatorDataPtrs[type];
+}
+
 u32 GetIndicatorPalTag(u32 battler)
 {
     u32 gimmick = GetActiveGimmick(battler);

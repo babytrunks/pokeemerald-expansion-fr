@@ -258,6 +258,7 @@ bool32 EndOrContinueWeather(void)
     if (gWishFutureKnock.weatherDuration > 0 && --gWishFutureKnock.weatherDuration == 0)
     {
         gBattleWeather = B_WEATHER_NONE;
+        gBattleStruct->weatherDurationTotal = 0;
         for (u32 battler = 0; battler < gBattlersCount; battler++)
         {
             gDisableStructs[battler].weatherAbilityDone = FALSE;
@@ -3391,6 +3392,9 @@ bool32 TryChangeBattleWeather(u32 battler, u32 battleWeatherId, u32 ability)
     else if (GetGenConfig(GEN_CONFIG_ABILITY_WEATHER) < GEN_6 && ability != ABILITY_NONE)
     {
         gBattleWeather = sBattleWeatherInfo[battleWeatherId].flag;
+        gWishFutureKnock.weatherDuration = 0;
+        gBattleStruct->weatherDurationTotal = 0;
+        gBattleStruct->weatherSide = GetBattlerSide(battler);
         for (u32 i = 0; i < gBattlersCount; i++)
         {
             gDisableStructs[i].weatherAbilityDone = FALSE;
@@ -3408,6 +3412,8 @@ bool32 TryChangeBattleWeather(u32 battler, u32 battleWeatherId, u32 ability)
             gWishFutureKnock.weatherDuration = 8;
         else
             gWishFutureKnock.weatherDuration = 5;
+        gBattleStruct->weatherDurationTotal = gWishFutureKnock.weatherDuration;
+        gBattleStruct->weatherSide = GetBattlerSide(battler);
         for (u32 i = 0; i < gBattlersCount; i++)
         {
             gDisableStructs[i].weatherAbilityDone = FALSE;
@@ -3437,6 +3443,8 @@ bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag)
             gFieldTimers.terrainTimer = 8;
         else
             gFieldTimers.terrainTimer = 5;
+        gFieldTimers.terrainTimerTotal = gFieldTimers.terrainTimer;
+        gFieldTimers.terrainSide = GetBattlerSide(battler);
         gBattleScripting.battler = battler;
         return TRUE;
     }
