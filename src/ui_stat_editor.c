@@ -514,7 +514,7 @@ static u8 CreateSelector()
 
     gSprites[sStatEditorDataPtr->selectorSpriteId].invisible = FALSE;
     StartSpriteAnim(&gSprites[sStatEditorDataPtr->selectorSpriteId], 0);
-    DebugPrintf("Sprite ID: %d", sStatEditorDataPtr->selectorSpriteId);
+    // DebugPrintf("Sprite ID: %d", sStatEditorDataPtr->selectorSpriteId);
     return sStatEditorDataPtr->selectorSpriteId;
 }
 
@@ -673,7 +673,7 @@ static void PrintMonStats(bool8 calcInitialEvTotal)
     {
         currentStat = GetMonData(ReturnPartyMon(), statsToPrintActual[i]);
         sStatEditorDataPtr->normalTotal += currentStat;
-        DebugPrintf("Stat: %d", currentStat);
+        // DebugPrintf("Stat: %d", currentStat);
         ConvertIntToDecimalStringN(gStringVar2, currentStat, STR_CONV_MODE_RIGHT_ALIGN, 3);
         AddTextPrinterParameterized4(WINDOW_2, 1, StatPrintData[statsToPrintActual[i]].x, StatPrintData[statsToPrintActual[i]].y, 0, 0, sMenuWindowFontColors[FONT_WHITE], 0xFF, gStringVar2);
     }
@@ -685,7 +685,7 @@ static void PrintMonStats(bool8 calcInitialEvTotal)
         if (calcInitialEvTotal == TRUE) {
             sStatEditorDataPtr->initialEvTotal += currentStat;
         }
-        DebugPrintf("Stat: %d", currentStat);
+        // DebugPrintf("Stat: %d", currentStat);
         ConvertIntToDecimalStringN(gStringVar2, currentStat, STR_CONV_MODE_RIGHT_ALIGN, 3);
         AddTextPrinterParameterized4(WINDOW_2, 1, StatPrintData[statsToPrintEVs[i]].x, StatPrintData[statsToPrintEVs[i]].y, 0, 0, sMenuWindowFontColors[FONT_WHITE], 0xFF, gStringVar2);
     }
@@ -694,7 +694,7 @@ static void PrintMonStats(bool8 calcInitialEvTotal)
     {
         currentStat = GetMonData(ReturnPartyMon(), statsToPrintIVs[i]);
         sStatEditorDataPtr->ivTotal += currentStat;
-        DebugPrintf("Stat: %d", currentStat);
+        // DebugPrintf("Stat: %d", currentStat);
         ConvertIntToDecimalStringN(gStringVar2, currentStat, STR_CONV_MODE_RIGHT_ALIGN, 3);
         AddTextPrinterParameterized4(WINDOW_2, 1, StatPrintData[statsToPrintIVs[i]].x, StatPrintData[statsToPrintIVs[i]].y, 0, 0, sMenuWindowFontColors[FONT_WHITE], 0xFF, gStringVar2);
     }

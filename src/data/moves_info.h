@@ -11463,7 +11463,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Iron Head"),
         .description = COMPOUND_STRING(
             "Slams with a hard head.\n"
-            "30% to flinch."),
+            "20% to flinch."),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_STEEL,

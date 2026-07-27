@@ -50,6 +50,7 @@ enum SpeakerNames {
     SP_NAME_JESSE,
     SP_NAME_LANCE,
     SP_NAME_MEWTWO,
+    SP_NAME_ANABEL,
     SP_NAME_COUNT
 };
 

@@ -191,6 +191,10 @@ VermilionCity_EventScript_CheckTicket::
 	applymovement LOCALID_VERMILION_FERRY_SAILOR, Common_Movement_WalkInPlaceFasterLeft
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
+	checkitem ITEM_EON_TICKET
+	goto_if_eq VAR_RESULT, TRUE, VermilionCity_EventScript_AskSouthernIsland
+
+VermilionCity_EventScript_CheckTicketMain::
 	goto_if_eq VAR_MAP_SCENE_VERMILION_CITY, 3, VermilionCity_EventScript_CheckSeagallopPresentTrigger
 	goto_if_unset FLAG_BADGE02_GET, VermilionCity_EventScript_ShipIsntPresent
 	msgbox VermilionCity_Text_DoYouHaveATicket
@@ -201,6 +205,18 @@ VermilionCity_EventScript_CheckTicket::
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 1
 	setvar VAR_0x8006, SEAGALLOP_SLATEPORT_CITY
 	goto EventScript_SailToDest
+	end
+
+VermilionCity_EventScript_AskSouthernIsland::
+	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
+	msgbox VermilionCity_Text_EonTicketSouthernIsland, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, VermilionCity_EventScript_CheckTicketMain
+	msgbox VermilionCity_Text_SetSailSouthernIsland
+	closemessage
+	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 1
+	warp MAP_SOUTHERN_ISLAND_EXTERIOR, 14, 23
+	waitstate
+	releaseall
 	end
 
 VermilionCity_EventScript_Leave::
@@ -417,6 +433,19 @@ VermilionCity_Text_OhAuroraTicketTakeYouToBirthIsland::
     .string "Now that is rare.\p"
     .string "We'll be happy to take you to\n"
     .string "Birth Island anytime.$"
+
+VermilionCity_Text_EonTicketSouthernIsland::
+    .string "Oh! That's an Eon Ticket!\n"
+    .string "Now that is rare.\p"
+    .string "It'll take you to a tiny spot of an\n"
+    .string "island far to the south.\p"
+    .string "Would you like to sail to\n"
+    .string "Southern Island?$"
+
+VermilionCity_Text_SetSailSouthernIsland::
+    .string "Okay, everything's in order.\p"
+    .string "We'll set sail for Southern Island\n"
+    .string "immediately.$"
 
 VermilionCity_Text_BoardSeagallopFerry::
     .string "Would you like to board\n"

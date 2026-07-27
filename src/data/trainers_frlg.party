@@ -20253,14 +20253,17 @@ EVs: 252 Atk / 4 Def / 252 Spe
 - Swords Dance
 
 
-=== TRAINER_YOUNGSTER_DESTIN_2 ===
-Name: Destin
-Class: Youngster Frlg
-Pic: Youngster Frlg
-Gender: Male
-Music: Male
+=== TRAINER_SAFARI_ZONE_ANABEL ===
+Name: Anabel
+Class: Salon Maiden
+Pic: Salon Maiden Anabel
+Gender: Female
+Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Mugshot: Pink
+Boss: Yes
+Dynamic Level Ratio: 95
 
 Raticate
 Level: 53

@@ -1237,13 +1237,11 @@
 #define FLAG_DEFEATED_POWER_PLANT_JOJO_FAN          0x4D2
 #define FLAG_HIDE_TRICK_HOUSE_END_MAN               0x4D3
 #define FLAG_HIDE_SAFARI_ZONE_EAST_LUCARIO_Z    0x4D4
-#define FLAG_0x4D5               0x4D5
-#define FLAG_0x4D6               0x4D6
-#define FLAG_0x4D7               0x4D7
-#define FLAG_0x4D8               0x4D8
-#define FLAG_0x4D9               0x4D9
-#define FLAG_0x4DA               0x4DA
-#define FLAG_0x4DB               0x4DB
+// 0x4D5-0x4DB are claimed by the Southern Island / Eon duo flags further down this file:
+// FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE, FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON,
+// FLAG_LANDMARK_SOUTHERN_ISLAND, FLAG_ENABLE_SHIP_SOUTHERN_ISLAND,
+// FLAG_ENCOUNTERED_LATIAS_OR_LATIOS, FLAG_DEFEATED_LATIAS_OR_LATIOS,
+// FLAG_CAUGHT_LATIAS_OR_LATIOS
 #define FLAG_0x4DC               0x4DC
 #define FLAG_0x4DD               0x4DD
 #define FLAG_0x4DE               0x4DE
@@ -1630,7 +1628,7 @@
 #define FLAG_RECEIVED_GREEN_SCARF            0
 #define FLAG_RECEIVED_YELLOW_SCARF           0
 #define FLAG_INTERACTED_WITH_STEVEN_SPACE_CENTER    0
-#define FLAG_ENCOUNTERED_LATIAS_OR_LATIOS    0
+#define FLAG_ENCOUNTERED_LATIAS_OR_LATIOS    0x4D9
 #define FLAG_MET_ARCHIE_METEOR_FALLS         0
 #define FLAG_GOT_BASEMENT_KEY_FROM_WATTSON   0
 #define FLAG_GOT_TM_THUNDERBOLT_FROM_WATTSON 0
@@ -1869,8 +1867,8 @@
 #define FLAG_DEFEATED_ELECTRODE_2_AQUA_HIDEOUT 0
 #define FLAG_DEFEATED_SUDOWOODO              0
 #define FLAG_DEFEATED_MEW                    0
-#define FLAG_DEFEATED_LATIAS_OR_LATIOS       0
-#define FLAG_CAUGHT_LATIAS_OR_LATIOS         0
+#define FLAG_DEFEATED_LATIAS_OR_LATIOS       0x4DA
+#define FLAG_CAUGHT_LATIAS_OR_LATIOS         0x4DB
 #define FLAG_CAUGHT_MEW                      0
 #define FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE 0
 #define FLAG_MET_SCOTT_IN_VERDANTURF         0
@@ -2207,8 +2205,8 @@
 #define FLAG_HIDE_FALLARBOR_AZURILL                                 0
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_ATTENDANT                   0
 #define FLAG_HIDE_LILYCOVE_HARBOR_FERRY_SAILOR                      0
-#define FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE                         0
-#define FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON              0
+#define FLAG_HIDE_SOUTHERN_ISLAND_EON_STONE                         0x4D5
+#define FLAG_HIDE_SOUTHERN_ISLAND_UNCHOSEN_EON_DUO_MON              0x4D6
 #define FLAG_HIDE_MAUVILLE_CITY_WATTSON                             0
 #define FLAG_HIDE_MAUVILLE_GYM_WATTSON                              0
 #define FLAG_HIDE_ROUTE_121_TEAM_AQUA_GRUNTS                        0
@@ -2540,13 +2538,13 @@
 #define FLAG_LANDMARK_POKEMON_DAYCARE               0
 #define FLAG_LANDMARK_SEAFLOOR_CAVERN               0
 #define FLAG_LANDMARK_BATTLE_FRONTIER               0
-#define FLAG_LANDMARK_SOUTHERN_ISLAND               0
+#define FLAG_LANDMARK_SOUTHERN_ISLAND               0x4D7
 #define FLAG_LANDMARK_FIERY_PATH                    0
 #define FLAG_SYS_BRAILLE_DIG                        0
 #define FLAG_SYS_REGIROCK_PUZZLE_COMPLETED          0
 #define FLAG_SYS_BRAILLE_REGICE_COMPLETED           0
 #define FLAG_SYS_REGISTEEL_PUZZLE_COMPLETED         0
-#define FLAG_ENABLE_SHIP_SOUTHERN_ISLAND            0
+#define FLAG_ENABLE_SHIP_SOUTHERN_ISLAND            0x4D8
 #define FLAG_LANDMARK_POKEMON_LEAGUE                0
 #define FLAG_LANDMARK_ISLAND_CAVE                   0
 #define FLAG_LANDMARK_DESERT_RUINS                  0

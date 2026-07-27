@@ -194,7 +194,7 @@
 #define VAR_TRICK_HOUSE_BEING_WATCHED_STATE                 0x40B3
 #define VAR_PORTHOLE               0x40B4
 #define VAR_EVENT_PICHU_SLOT       0x40B5 // unused
-#define VAR_MYSTERY_GIFT_1         0x40B6 // unused
+#define VAR_LATIOS_CHOSEN          0x40B6 // if chose red (latias), set to 1. otherwise, 0
 #define VAR_MYSTERY_GIFT_2         0x40B7 // unused
 #define VAR_MYSTERY_GIFT_3         0x40B8 // unused
 #define VAR_MYSTERY_GIFT_4         0x40B9 // unused

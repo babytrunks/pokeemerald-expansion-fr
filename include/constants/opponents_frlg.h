@@ -588,7 +588,7 @@
 #define TRAINER_LEADER_JASMINE                      582
 #define TRAINER_LEADER_PRYCE                    583
 #define TRAINER_LEADER_MORTY                   584
-#define TRAINER_YOUNGSTER_DESTIN_2                 585
+#define TRAINER_SAFARI_ZONE_ANABEL                 585
 #define TRAINER_PKMN_BREEDER_ALIZE_2               586
 #define TRAINER_YOUNG_COUPLE_GIA_JES_2             587
 #define TRAINER_YOUNG_COUPLE_GIA_JES_3             588

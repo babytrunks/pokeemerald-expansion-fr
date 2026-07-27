@@ -172,7 +172,6 @@ RockTunnelExtra_EventScript_Coats::
     end
 
 EventScript_Coats_Battle::
-    setspeaker SP_NAME_UNKNOWN
     msgbox gText_coats_2
     @ special HealPlayerParty                 
 	trainerbattle_no_intro TRAINER_ROCK_TUNNEL_COATS, coats_Text_Defeat  
@@ -192,11 +191,13 @@ EventScript_Coats_Releasend:
 
 
 gText_coats_askChallenge::
-  .string "I hear there is a legendary Pokémon\n"
-  .string "in this area. I'd like to hone\l"
-  .string "my skills before encountering it.\p"
+  .string "Oh, another trainer?\n"
+  .string "Just what I was looking for.\p"
+  .string "I've heard there's a legendary Pokémon\n"
+  .string "in this area. I'd like to hone my\l"
+  .string "skills before encountering it.\p"
   .string "Would you like a battle? Just a heads\n"
-  .string "up, I specialize in doubles.\p"
+  .string "up, I specialize in doubles.$"
 
 gText_coats_Reject::
   .string "Fine, I'll see you around, maybe?$"
@@ -213,7 +214,7 @@ gText_coats_2::
 
 gText_coats_3::
 	.string "A good trainer keeps to his word.\p"
-	.string "Take this."
+	.string "Take this.$"
 
 gText_coats_4::
 	.string "Mega Golurk packs a mean punch. Use\n"
