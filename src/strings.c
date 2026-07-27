@@ -329,7 +329,7 @@ const u8 gText_PokemonCantBeSame[] = _("Pokémon can't be the same.");
 const u8 gText_NoIdenticalHoldItems[] = _("No identical hold items.");
 const u8 gText_CurrentIsTooFast[] = _("The current is much too fast!");
 const u8 gText_DoWhatWithMail[] = _("Do what with the MAIL?");
-const u8 gText_ChoosePokemonCancel[] = _("Choose Pokémon or CANCEL.");
+const u8 gText_ChoosePokemonCancel[] = _("Choose Pokémon or Cancel.");
 const u8 gText_ChoosePokemonConfirm[] = _("Choose Pokémon and confirm.");
 const u8 gText_SendWhichMonToPC[] = _("Send which Pokémon to the PC?");
 const u8 gText_MoveItemWhere[] = _("Move item to where?");
@@ -1351,6 +1351,7 @@ const u8 gText_OakThisIsListOfPokemon[] = _("This is a list of your Pokémon,\n{
 
 // Start Pokevial Branch
 const u8 gText_PokevialHasDoses[] =_("The {STR_VAR_1} has {STR_VAR_2} doses remaining.\nYour party's been healed.{PAUSE_UNTIL_PRESS}");
+const u8 gText_PokevialHasOneDose[] =_("The {STR_VAR_1} has {STR_VAR_2} dose remaining.\nYour party's been healed.{PAUSE_UNTIL_PRESS}");
 const u8 gText_PokevialIsEmpty[] =_("The {STR_VAR_1} is empty!\nRefill it by healing at a {STR_VAR_2}.{PAUSE_UNTIL_PRESS}");
 const u8 gText_YourPkmnWereRestored[] =_("Your Pokémon were restored\nto full health.{PAUSE_UNTIL_PRESS}");
 //End Pokevial Branch

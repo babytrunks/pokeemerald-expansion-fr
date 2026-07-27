@@ -1891,12 +1891,6 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId)
     u32 currentDoses = PokevialGetDose();
     bool32 isPlayerUsingRegisteredKeyItem = gTasks[taskId].tUsingRegisteredKeyItem;
 
-    u32 numDigits = CountDigits(currentDoses);
-
-    // ConvertIntToDecimalStringN(gStringVar2, currentDoses, STR_CONV_MODE_LEFT_ALIGN, numDigits);
-    // StringExpandPlaceholders(gStringVar4, gText_PokevialHasDoses);
-
-
     CopyItemName(ITEM_POKEVIAL, gStringVar1);
 
     if (currentDoses > EMPTY_VIAL)
@@ -1904,15 +1898,22 @@ void ItemUseOutOfBattle_Pokevial(u8 taskId)
         PlaySE(SE_USE_ITEM);
         PokevialDoseDown(1);
         currentDoses = PokevialGetDose();
-        numDigits = CountDigits(currentDoses);
-        ConvertIntToDecimalStringN(gStringVar2, currentDoses, STR_CONV_MODE_LEFT_ALIGN, numDigits);
+        // Size the buffer from the largest vial, not from currentDoses: CountDigits(0) is 0,
+        // which makes ConvertIntToDecimalStringN print nothing for the last dose.
+        ConvertIntToDecimalStringN(gStringVar2, currentDoses, STR_CONV_MODE_LEFT_ALIGN, CountDigits(VIAL_MAX_SIZE));
         FlagSet(FLAG_USING_POKE_VIAL);
         HealPlayerParty();
-        StringExpandPlaceholders(gStringVar4, gText_PokevialHasDoses);
+        StringExpandPlaceholders(gStringVar4, currentDoses == 1 ? gText_PokevialHasOneDose : gText_PokevialHasDoses);
         if (isPlayerUsingRegisteredKeyItem)
+        {
+            // update follower mon if lead mon is dead
+            UpdateFollowingPokemon();
             DisplayItemMessageOnField(taskId, gStringVar4, Task_CloseCantUseKeyItemMessage);
+        }
         else
+        {
             DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+        }
     }
     else
     {

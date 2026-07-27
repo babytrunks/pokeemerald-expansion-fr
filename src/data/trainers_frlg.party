@@ -2185,7 +2185,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 IVs: 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
 - Ice Punch  
 - Drain Punch  
-- Earthquake  
+- Headlong Rush
 - Shadow Punch  
 
 === TRAINER_POKEMANIAC_WINSTON ===
@@ -20265,13 +20265,71 @@ Mugshot: Pink
 Boss: Yes
 Dynamic Level Ratio: 95
 
-Raticate
-Level: 53
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Alakazam @ Focus Sash
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 Def / 252 Spe
+Ability: Magic Guard
+Nature: Timid
+- Psyshock
+- Aura Sphere
+- Dazzling Gleam
+- Energy Ball
 
-Pidgeot
-Level: 53
-IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
+Snorlax @ Leftovers
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Def / 252 SpD
+Ability: Thick Fat
+Nature: Careful
+- Curse
+- Body Slam
+- Crunch
+- Slack Off
+
+Entei @ Shuca Berry
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+Ability: Inner Focus
+Nature: Jolly
+- Sacred Fire
+- Extreme Speed
+- Stone Edge
+- Trailblaze
+
+Raikou @ Shuca Berry
+Level: 61
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 Def / 252 Spe
+Ability: Pressure
+Nature: Timid
+- Thunderbolt
+- Calm Mind
+- Scald
+- Hidden Power
+
+Latios @ Soul Dew
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 Def / 252 Spe
+Ability: Levitate
+Nature: Timid
+- Luster Purge
+- Dragon Pulse
+- Surf
+- Aura Sphere
+
+Lucario @ Lucarionite
+Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+Ability: Inner Focus
+Nature: Jolly
+- Close Combat
+- Meteor Mash
+- Bullet Punch
+- Thunder Punch
 
 === TRAINER_PKMN_BREEDER_ALIZE_2 ===
 Name: Alize
