@@ -799,7 +799,8 @@ struct BattleStruct
     u16 flingItem;
     u8 incrementEchoedVoice:1;
     u8 echoedVoiceCounter:3;
-    u8 padding4:4;
+    u8 overworldWeatherPresent:1; // Gen9: weather started by the overworld, which can't be overridden
+    u8 padding4:3;
 };
 
 struct AiBattleData

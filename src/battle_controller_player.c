@@ -423,12 +423,6 @@ static void HandleInputChooseAction(u32 battler)
         BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_DEBUG, 0);
         BtlController_Complete(battler);
     }
-    else if (JOY_NEW(R_BUTTON))
-    {
-        TryHideBattleInfoSprite();
-        BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_BATTLE_INFO, 0);
-        BtlController_Complete(battler);
-    }
     else if (B_LAST_USED_BALL == TRUE && B_LAST_USED_BALL_CYCLE == FALSE
              && JOY_NEW(B_LAST_USED_BALL_BUTTON) && CanThrowLastUsedBall())
     {

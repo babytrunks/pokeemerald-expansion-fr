@@ -14,6 +14,7 @@ enum BattleMenuPages
 {
     B_INFO_PAGE_OVERVIEW,
     B_INFO_PAGE_DETAIL,
+    B_INFO_PAGE_ENEMY_PARTY,
 };
 
 enum
@@ -97,6 +98,25 @@ enum
 #define B_INFO_WIN_DETAIL_STATS_BASE   (B_INFO_WIN_DETAIL_ITEM_BASE + (B_INFO_DETAIL_ITEM_WIN_W * B_INFO_DETAIL_ITEM_WIN_H))
 #define B_INFO_WIN_DETAIL_EFFECTS_BASE (B_INFO_WIN_DETAIL_STATS_BASE + (B_INFO_DETAIL_STATS_WIN_W * B_INFO_DETAIL_STATS_WIN_H))
 #define B_INFO_WIN_DETAIL_DESC_BASE    (B_INFO_WIN_DETAIL_EFFECTS_BASE + (B_INFO_DETAIL_EFFECTS_WIN_W * B_INFO_DETAIL_EFFECTS_WIN_H))
+
+// Enemy Party page. The roster and info cards line up with the rows the overview
+// already owns, so WIN_ROW_ENEMY / WIN_ROW_PLAYER can be reused verbatim.
+#define B_INFO_PARTY_CARD_TILE_X       1
+#define B_INFO_PARTY_CARD_TILE_W       28
+#define B_INFO_PARTY_CARD_TILE_H       7
+#define B_INFO_PARTY_ROSTER_TILE_Y     (B_INFO_ROW_Y_ENEMY / 8)
+#define B_INFO_PARTY_INFO_TILE_Y       (B_INFO_ROW_Y_PLAYER / 8)
+#define B_INFO_PARTY_SLOT_FIRST_X      35
+#define B_INFO_PARTY_SLOT_PITCH        34
+#define B_INFO_PARTY_ICON_Y            50
+#define B_INFO_PARTY_STATUS_X_OFFSET   12
+#define B_INFO_PARTY_STATUS_Y_OFFSET   12
+#define B_INFO_PARTY_CURSOR_X_OFFSET   18
+#define B_INFO_PARTY_INFO_COL_L_X      22
+#define B_INFO_PARTY_INFO_COL_R_X      126
+#define B_INFO_PARTY_INFO_COL_W        96
+#define B_INFO_PARTY_INFO_ROW_H        10
+#define B_INFO_PARTY_INFO_ROW_Y        8
 
 #define B_INFO_GENDER_W                8
 

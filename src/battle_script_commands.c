@@ -2784,7 +2784,9 @@ static void SetNonVolatileStatus(u32 effectBattler, enum MoveEffect effect, cons
     switch (effect)
     {
     case MOVE_EFFECT_SLEEP:
-        if (B_SLEEP_TURNS >= GEN_5)
+        if (B_SLEEP_TURNS_MAX_TWO)
+            gBattleMons[effectBattler].status1 |= STATUS1_SLEEP_TURN(RandomChance(RNG_SLEEP_TURNS, 1, 3) ? 2 : 3);
+        else if (B_SLEEP_TURNS >= GEN_5)
             gBattleMons[effectBattler].status1 |= STATUS1_SLEEP_TURN(1 + RandomUniform(RNG_SLEEP_TURNS, 1, 3));
         else
             gBattleMons[effectBattler].status1 |= STATUS1_SLEEP_TURN(1 + RandomUniform(RNG_SLEEP_TURNS, 2, 5));
@@ -3715,7 +3717,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
             default:
                 break;
         }
-        if (TryChangeBattleWeather(gBattlerAttacker, weather, ABILITY_NONE))
+        if (TryChangeBattleWeather(gBattlerAttacker, weather, ABILITY_NONE) == WEATHER_FAILURE_SUCCESS)
         {
             gBattleCommunication[MULTISTRING_CHOOSER] = msg;
             BattleScriptPush(battleScript);
@@ -9498,7 +9500,7 @@ static void Cmd_setfieldweather(void)
 
     u8 battleWeatherId = cmd->weather;
 
-    if (!TryChangeBattleWeather(gBattlerAttacker, battleWeatherId, ABILITY_NONE))
+    if (TryChangeBattleWeather(gBattlerAttacker, battleWeatherId, ABILITY_NONE) != WEATHER_FAILURE_SUCCESS)
     {
         gBattleStruct->moveResultFlags[gBattlerTarget] |= MOVE_RESULT_MISSED;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_FAILED;

@@ -40,6 +40,14 @@ enum MoveAbsorbed
     MOVE_ABSORBED_BY_BOOST_FLASH_FIRE,
 };
 
+enum WeatherFailure
+{
+    WEATHER_FAILURE_SAME_WEATHER,
+    WEATHER_FAILURE_OVERWORLD,
+    WEATHER_FAILURE_PRIMAL,
+    WEATHER_FAILURE_SUCCESS,
+};
+
 enum FieldEffectCases
 {
     FIELD_EFFECT_TRAINER_STATUSES,
@@ -263,7 +271,7 @@ bool32 HandleFaintedMonActions(void);
 void TryClearRageAndFuryCutter(void);
 enum MoveCanceler AtkCanceler_MoveSuccessOrder(struct BattleContext *ctx);
 bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2);
-bool32 TryChangeBattleWeather(u32 battler, u32 battleWeatherId, u32 ability);
+enum WeatherFailure TryChangeBattleWeather(u32 battler, u32 battleWeatherId, u32 ability);
 bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag);
 bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, enum Ability abilityAtk, enum Ability abilityDef, u32 move, enum FunctionCallOption option);
 bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, enum Ability abilityDef, u32 move, enum Type moveType, enum FunctionCallOption option);

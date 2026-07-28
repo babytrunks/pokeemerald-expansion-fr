@@ -67,7 +67,7 @@ SINGLE_BATTLE_TEST("Life Orb does not activate if using a status move")
 
 SINGLE_BATTLE_TEST("Life Orb doesn't cause any HP loss if user is unable to attack")
 {
-    PASSES_RANDOMLY(25, 100, RNG_PARALYSIS);
+    PASSES_RANDOMLY(1, B_PARALYSIS_IMMOBILITY_DENOM, RNG_PARALYSIS);
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_LIFE_ORB); Status1(STATUS1_PARALYSIS); }
         OPPONENT(SPECIES_WOBBUFFET);

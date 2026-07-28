@@ -3668,6 +3668,13 @@ BattleScript_BlockedByPrimalWeather::
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_STRONG_WINDS, BattleScript_MysteriousAirCurrentBlowsOn
 	return
 
+BattleScript_BlockedByOverworldWeather::
+	call BattleScript_AbilityPopUp
+	waitmessage B_WAIT_TIME_SHORT
+	printstring STRINGID_BUTITFAILED
+	waitmessage B_WAIT_TIME_LONG
+	return
+
 BattleScript_EffectBellyDrum::
 	attackcanceler
 	jumpifstatignorecontrary BS_ATTACKER, CMP_EQUAL, STAT_ATK, MAX_STAT_STAGE, BattleScript_ButItFailed
@@ -7921,6 +7928,11 @@ BattleScript_ActivateTeraformZero::
 	call BattleScript_AbilityPopUp
 	waitmessage B_WAIT_TIME_LONG
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_ANY, BattleScript_ActivateTeraformZero_RemoveWeather
+	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_TERRAIN_ANY, BattleScript_ActivateTeraformZero_RemoveTerrain
+	goto BattleScript_ActivateTeraformZero_Ret
+BattleScript_ActivateTeraformZeroRemovesOnlyTerrain::
+	call BattleScript_AbilityPopUp
+	waitmessage B_WAIT_TIME_LONG
 	jumpifhalfword CMP_COMMON_BITS, gFieldStatuses, STATUS_FIELD_TERRAIN_ANY, BattleScript_ActivateTeraformZero_RemoveTerrain
 	goto BattleScript_ActivateTeraformZero_Ret
 BattleScript_ActivateTeraformZero_RemoveWeather:

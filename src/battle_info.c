@@ -93,6 +93,10 @@ struct BattleInfoMenuData
 {
     u8 menuState;
     u8 page;
+    u8 nextPage;
+    u8 partySlot;
+    u8 partyIconSpriteIds[PARTY_SIZE];
+    u8 partyStatusSpriteIds[PARTY_SIZE];
     u8 selectedCard;
     u8 cursorSpriteId;
     u8 iconSpriteId;
@@ -151,6 +155,21 @@ static void OverviewGetCursorPos(const struct BattleInfoCard *card, s16 *outX, s
 static void Task_BattleMenuStatus_HandleInput(u8 taskId);
 static void OverviewHandleInput(u8 taskId);
 static bool32 OverviewTryMoveCursor(s8 dx, s8 dy);
+static void EnemyPartyEnter(void);
+static void EnemyPartyExit(void);
+static void EnemyPartyHandleInput(u8 taskId);
+static void EnemyPartyDrawBackground(void);
+static void EnemyPartyDrawLabels(void);
+static void EnemyPartyCreateRosterSprites(void);
+static void EnemyPartyDestroyRosterSprites(void);
+static void EnemyPartyUpdateCursorPos(void);
+static void EnemyPartyPrintInfoValue(const u8 *text, s16 x, s16 row);
+static void EnemyPartyRefreshInfoCard(void);
+static u32 EnemyPartyGetCount(void);
+static bool32 EnemyPartyIsSlotScouted(u32 slot);
+static s16 EnemyPartyGetSlotX(u32 slot);
+static void BattleInfoPageEnter(u32 page);
+static void BattleInfoPageExit(u32 page);
 static void DetailEnter(void);
 static void DetailExit(void);
 static void DetailHandleInput(u8 taskId);
@@ -272,6 +291,10 @@ static const u8 sTextColor_BattleInfo_Female[] =
 
 static const u8 sText_BattleInfo_DetailLButtonGlyph[] = _("{L_BUTTON}");
 static const u8 sText_BattleInfo_DetailRButtonGlyph[] = _("{R_BUTTON}");
+
+static const u8 sText_BattleInfo_EnemyPartyTitle[] = _("Enemy Party");
+static const u8 sText_BattleInfo_EnemyPartyHint[] = _("{DPAD_LEFTRIGHT}Select  {B_BUTTON}Back");
+static const u8 sText_BattleInfo_EnemyPartyUnknown[] = _("???");
 
 static const u8 *const sBattleInfoDetailStatLabels[B_INFO_DETAIL_STAT_ROW_COUNT] =
 {
@@ -1270,17 +1293,12 @@ static void Task_BattleInfoLoadPage(u8 taskId)
     switch (sData->menuState)
     {
     case B_INFO_STATE_CLEAR_PAGE:
-        if (sData->page == B_INFO_PAGE_DETAIL)
-            OverviewExit();
-        else if (sData->page == B_INFO_PAGE_OVERVIEW)
-            DetailExit();
+        BattleInfoPageExit(sData->page);
+        sData->page = sData->nextPage;
         sData->menuState++;
         break;
     case B_INFO_STATE_ENTER_PAGE:
-        if (sData->page == B_INFO_PAGE_DETAIL)
-            DetailEnter();
-        else if (sData->page == B_INFO_PAGE_OVERVIEW)
-            OverviewEnter();
+        BattleInfoPageEnter(sData->page);
         sData->menuState = B_INFO_STATE_HANDLE_INPUT;
         break;
     case B_INFO_STATE_EXIT:
@@ -1294,6 +1312,38 @@ static void Task_BattleInfoLoadPage(u8 taskId)
         sData->menuState++;
         break;
     case B_INFO_STATE_DONE:
+        break;
+    }
+}
+
+static void BattleInfoPageEnter(u32 page)
+{
+    switch (page)
+    {
+    case B_INFO_PAGE_OVERVIEW:
+        OverviewEnter();
+        break;
+    case B_INFO_PAGE_DETAIL:
+        DetailEnter();
+        break;
+    case B_INFO_PAGE_ENEMY_PARTY:
+        EnemyPartyEnter();
+        break;
+    }
+}
+
+static void BattleInfoPageExit(u32 page)
+{
+    switch (page)
+    {
+    case B_INFO_PAGE_OVERVIEW:
+        OverviewExit();
+        break;
+    case B_INFO_PAGE_DETAIL:
+        DetailExit();
+        break;
+    case B_INFO_PAGE_ENEMY_PARTY:
+        EnemyPartyExit();
         break;
     }
 }
@@ -1327,6 +1377,13 @@ static void BattleInfoResetSpriteIds(void)
     sData->effectsScrollbarSpriteId = SPRITE_NONE;
     sData->typeIconSpriteIds[0] = SPRITE_NONE;
     sData->typeIconSpriteIds[1] = SPRITE_NONE;
+
+    sData->partySlot = 0;
+    for (u32 i = 0; i < PARTY_SIZE; i++)
+    {
+        sData->partyIconSpriteIds[i] = SPRITE_NONE;
+        sData->partyStatusSpriteIds[i] = SPRITE_NONE;
+    }
 
     for (u32 i = 0; i < B_INFO_DETAIL_STAT_ROW_COUNT; i++)
     {
@@ -1418,8 +1475,10 @@ static void OverviewExit(void)
         DestroySprite(&gSprites[sData->cursorSpriteId]);
     sData->cursorSpriteId = SPRITE_NONE;
 
+    // The HP bar tiles are re-allocated by CreateHpBarSprite on every OverviewEnter,
+    // so they have to be freed here or each round trip through another page leaks them.
     for (u32 i = 0; i < GetCardCount(); i++)
-        DestroyOverviewCardSprites(&sData->cards[i], FALSE);
+        DestroyOverviewCardSprites(&sData->cards[i], TRUE);
 
     OverviewClearWindows();
 }
@@ -3502,6 +3561,7 @@ static void BattleInfoDestroy(void)
     DetailDestroyTypeIcons();
     DetailDestroyStatPips();
     DetailDestroyEffectsScrollbar();
+    EnemyPartyDestroyRosterSprites();
 
     if (sData->iconSpriteId != SPRITE_NONE)
     {
@@ -3740,10 +3800,18 @@ static void OverviewUpdateCursorPos(void)
 
 static void Task_BattleMenuStatus_HandleInput(u8 taskId)
 {
-    if (sData->page == B_INFO_PAGE_OVERVIEW)
+    switch (sData->page)
+    {
+    case B_INFO_PAGE_OVERVIEW:
         OverviewHandleInput(taskId);
-    else
+        break;
+    case B_INFO_PAGE_ENEMY_PARTY:
+        EnemyPartyHandleInput(taskId);
+        break;
+    default:
         DetailHandleInput(taskId);
+        break;
+    }
 }
 
 static void OverviewHandleInput(u8 taskId)
@@ -3768,8 +3836,15 @@ static void OverviewHandleInput(u8 taskId)
     else if (JOY_NEW(A_BUTTON) && CanViewCard(GetSelectedBattler()))
     {
         PlaySE(SE_SELECT);
+        sData->nextPage = B_INFO_PAGE_DETAIL;
         sData->menuState = B_INFO_STATE_CLEAR_PAGE;
-        sData->page = B_INFO_PAGE_DETAIL;
+        gTasks[taskId].func = Task_BattleInfoLoadPage;
+    }
+    else if (JOY_NEW(R_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        sData->nextPage = B_INFO_PAGE_ENEMY_PARTY;
+        sData->menuState = B_INFO_STATE_CLEAR_PAGE;
         gTasks[taskId].func = Task_BattleInfoLoadPage;
     }
     else if (JOY_NEW(B_BUTTON))
@@ -3788,8 +3863,8 @@ static void DetailHandleInput(u8 taskId)
     if (JOY_NEW(B_BUTTON))
     {
         PlaySE(SE_SELECT);
+        sData->nextPage = B_INFO_PAGE_OVERVIEW;
         sData->menuState = B_INFO_STATE_CLEAR_PAGE;
-        sData->page = B_INFO_PAGE_OVERVIEW;
         gTasks[taskId].func = Task_BattleInfoLoadPage;
     }
     else if (JOY_NEW(L_BUTTON))
@@ -3874,6 +3949,321 @@ static bool32 OverviewTryMoveCursor(s8 dx, s8 dy)
     }
 
     return FALSE;
+}
+
+// ==================== ENEMY PARTY PAGE ====================
+// Scouted roster of the opposing party, opened with R from the overview page.
+// Replaces the old standalone R-button menu (src/battle_info_menu.c).
+
+static u32 EnemyPartyGetCount(void)
+{
+    u32 count = gAiPartyData->count[B_SIDE_OPPONENT];
+
+    if (count > PARTY_SIZE)
+        count = PARTY_SIZE;
+
+    return count;
+}
+
+// Species and status are shown for the whole party, but levels, abilities,
+// items and moves stay hidden until the mon has actually been sent out.
+static bool32 EnemyPartyIsSlotScouted(u32 slot)
+{
+    return gAiPartyData->mons[B_SIDE_OPPONENT][slot].wasSentInBattle;
+}
+
+static s16 EnemyPartyGetSlotX(u32 slot)
+{
+    return B_INFO_PARTY_SLOT_FIRST_X + slot * B_INFO_PARTY_SLOT_PITCH;
+}
+
+static void EnemyPartyEnter(void)
+{
+    sData->page = B_INFO_PAGE_ENEMY_PARTY;
+
+    if (sData->partySlot >= EnemyPartyGetCount())
+        sData->partySlot = 0;
+
+    LoadBackdropAssets();
+    OverviewClearWindows();
+    EnemyPartyDrawBackground();
+    EnemyPartyDrawLabels();
+    EnemyPartyCreateRosterSprites();
+    EnemyPartyRefreshInfoCard();
+    ShowBg(B_INFO_BACKDROP_BG);
+    ShowBg(B_INFO_TEXT_BG);
+}
+
+static void EnemyPartyExit(void)
+{
+    EnemyPartyDestroyRosterSprites();
+
+    if (sData->cursorSpriteId != SPRITE_NONE)
+    {
+        DestroySprite(&gSprites[sData->cursorSpriteId]);
+        sData->cursorSpriteId = SPRITE_NONE;
+    }
+
+    OverviewClearWindows();
+}
+
+static void EnemyPartyDrawBackground(void)
+{
+    s16 titleHeaderX;
+    s16 titleHeaderWidth;
+    s16 hintHeaderX;
+    s16 hintHeaderWidth;
+    u8 titleTextLenTiles;
+    u8 hintTextLenTiles;
+
+    CpuCopy16(sBattleInfoMenuOverviewBaseTilemap, sData->bg1Tilemap,
+              B_INFO_TILEMAP_WIDTH * B_INFO_TILEMAP_HEIGHT * sizeof(u16));
+
+    OverviewFillBgRect(sData->bg1Tilemap, B_INFO_SAFE_LEFT_TILE, 0,
+                       B_INFO_SAFE_RIGHT_TILE - B_INFO_SAFE_LEFT_TILE + 1, B_INFO_LABEL_TILE_H,
+                       B_INFO_BG_TILE_FILL, 0);
+    OverviewFillBgRect(sData->bg1Tilemap, B_INFO_SAFE_LEFT_TILE, B_INFO_LABEL_BOTTOM_TILE_TOP,
+                       B_INFO_SAFE_RIGHT_TILE - B_INFO_SAFE_LEFT_TILE + 1, B_INFO_LABEL_TILE_H,
+                       B_INFO_BG_TILE_FILL, 0);
+
+    // Roster card (top row) and the info card for the selected mon (bottom row).
+    OverviewFillBgRect(sData->bg1Tilemap, B_INFO_PARTY_CARD_TILE_X, B_INFO_PARTY_ROSTER_TILE_Y,
+                       B_INFO_PARTY_CARD_TILE_W, B_INFO_PARTY_CARD_TILE_H, B_INFO_BG_TILE_FILL, 0);
+    OverviewDrawStatusCard(sData->bg1Tilemap, B_INFO_PARTY_CARD_TILE_X, B_INFO_PARTY_ROSTER_TILE_Y,
+                           B_INFO_PARTY_CARD_TILE_W, B_INFO_PARTY_CARD_TILE_H, FALSE, FALSE);
+    OverviewFillBgRect(sData->bg1Tilemap, B_INFO_PARTY_CARD_TILE_X, B_INFO_PARTY_INFO_TILE_Y,
+                       B_INFO_PARTY_CARD_TILE_W, B_INFO_PARTY_CARD_TILE_H, B_INFO_BG_TILE_FILL, 0);
+    OverviewDrawStatusCard(sData->bg1Tilemap, B_INFO_PARTY_CARD_TILE_X, B_INFO_PARTY_INFO_TILE_Y,
+                           B_INFO_PARTY_CARD_TILE_W, B_INFO_PARTY_CARD_TILE_H, TRUE, TRUE);
+
+    OverviewComputeHeaderLayout(GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyTitle, 0),
+                                &titleTextLenTiles, &titleHeaderX, &titleHeaderWidth);
+    OverviewComputeHeaderLayout(GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyHint, 0),
+                                &hintTextLenTiles, &hintHeaderX, &hintHeaderWidth);
+
+    OverviewDrawHeaderBox(sData->bg1Tilemap, titleHeaderX, 0, titleTextLenTiles);
+    OverviewDrawHeaderBox(sData->bg1Tilemap, hintHeaderX, B_INFO_LABEL_BOTTOM_TILE_TOP, hintTextLenTiles);
+
+    CopyBgTilemapBufferToVram(B_INFO_BACKDROP_BG);
+}
+
+static void EnemyPartyDrawLabels(void)
+{
+    s16 titleHeaderX;
+    s16 titleHeaderWidth;
+    s16 hintHeaderX;
+    s16 hintHeaderWidth;
+    s32 titleWidth = GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyTitle, 0);
+    s32 hintWidth = GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyHint, 0);
+    s32 labelHeight = GetFontAttribute(FONT_SMALL, FONTATTR_MAX_LETTER_HEIGHT);
+    s32 labelY;
+
+    OverviewComputeHeaderLayout(titleWidth, NULL, &titleHeaderX, &titleHeaderWidth);
+    OverviewComputeHeaderLayout(hintWidth, NULL, &hintHeaderX, &hintHeaderWidth);
+
+    if (labelHeight <= 0 || labelHeight > B_INFO_LABEL_H)
+        labelHeight = 8;
+
+    labelY = (B_INFO_LABEL_H - labelHeight) / 2;
+    labelY -= 2;
+    if (labelY < 0)
+        labelY = 0;
+
+    FillWindowPixelBuffer(WIN_LABEL_TOP, PIXEL_FILL(B_INFO_TEXT_COLOR_TRANSPARENT));
+    AddTextPrinterParameterized4(WIN_LABEL_TOP, FONT_SMALL,
+                                 titleHeaderX * 8 + ((titleHeaderWidth * 8) - titleWidth) / 2, labelY, 0, 0,
+                                 sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, sText_BattleInfo_EnemyPartyTitle);
+    PutWindowTilemap(WIN_LABEL_TOP);
+    CopyWindowToVram(WIN_LABEL_TOP, COPYWIN_FULL);
+
+    FillWindowPixelBuffer(WIN_LABEL_BOTTOM, PIXEL_FILL(B_INFO_TEXT_COLOR_TRANSPARENT));
+    AddTextPrinterParameterized4(WIN_LABEL_BOTTOM, FONT_SMALL,
+                                 hintHeaderX * 8 + ((hintHeaderWidth * 8) - hintWidth) / 2, labelY, 0, 0,
+                                 sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, sText_BattleInfo_EnemyPartyHint);
+    PutWindowTilemap(WIN_LABEL_BOTTOM);
+    CopyWindowToVram(WIN_LABEL_BOTTOM, COPYWIN_FULL);
+}
+
+static void EnemyPartyCreateRosterSprites(void)
+{
+    u32 count = EnemyPartyGetCount();
+
+    for (u32 i = 0; i < count; i++)
+    {
+        struct Pokemon *mon = &gEnemyParty[i];
+        u16 species = GetMonData(mon, MON_DATA_SPECIES);
+        u32 personality = GetMonData(mon, MON_DATA_PERSONALITY);
+        s16 slotX = EnemyPartyGetSlotX(i);
+        u32 ailment;
+
+        sData->partyIconSpriteIds[i] = CreateMonIcon(species, SpriteCallbackDummy, slotX, B_INFO_PARTY_ICON_Y, 0, personality);
+        if (sData->partyIconSpriteIds[i] != SPRITE_NONE)
+            gSprites[sData->partyIconSpriteIds[i]].oam.priority = 0;
+
+        if (GetMonData(mon, MON_DATA_HP) == 0)
+            ailment = AILMENT_FNT;
+        else
+            ailment = GetAilmentFromStatus(GetMonData(mon, MON_DATA_STATUS));
+
+        if (ailment != AILMENT_NONE && ailment != AILMENT_PKRS)
+        {
+            sData->partyStatusSpriteIds[i] = CreateSprite(&gSpriteTemplate_StatusIcons,
+                                                          slotX + B_INFO_PARTY_STATUS_X_OFFSET,
+                                                          B_INFO_PARTY_ICON_Y + B_INFO_PARTY_STATUS_Y_OFFSET, 0);
+            if (sData->partyStatusSpriteIds[i] != SPRITE_NONE)
+            {
+                StartSpriteAnim(&gSprites[sData->partyStatusSpriteIds[i]], ailment - 1);
+                gSprites[sData->partyStatusSpriteIds[i]].oam.priority = 0;
+            }
+        }
+    }
+
+    if (sData->cursorSpriteId != SPRITE_NONE)
+        DestroySprite(&gSprites[sData->cursorSpriteId]);
+
+    sData->cursorSpriteId = CreateSprite(&sSpriteTemplate_BattleInfoCursor,
+                                         EnemyPartyGetSlotX(sData->partySlot) - B_INFO_PARTY_CURSOR_X_OFFSET,
+                                         B_INFO_PARTY_ICON_Y, 0);
+    if (sData->cursorSpriteId != SPRITE_NONE)
+        gSprites[sData->cursorSpriteId].oam.priority = 0;
+}
+
+static void EnemyPartyDestroyRosterSprites(void)
+{
+    for (u32 i = 0; i < PARTY_SIZE; i++)
+    {
+        if (sData->partyIconSpriteIds[i] != SPRITE_NONE)
+        {
+            FreeAndDestroyMonIconSprite(&gSprites[sData->partyIconSpriteIds[i]]);
+            sData->partyIconSpriteIds[i] = SPRITE_NONE;
+        }
+
+        if (sData->partyStatusSpriteIds[i] != SPRITE_NONE)
+        {
+            DestroySprite(&gSprites[sData->partyStatusSpriteIds[i]]);
+            sData->partyStatusSpriteIds[i] = SPRITE_NONE;
+        }
+    }
+}
+
+static void EnemyPartyUpdateCursorPos(void)
+{
+    if (sData->cursorSpriteId == SPRITE_NONE)
+        return;
+
+    gSprites[sData->cursorSpriteId].x = EnemyPartyGetSlotX(sData->partySlot) - B_INFO_PARTY_CURSOR_X_OFFSET;
+    gSprites[sData->cursorSpriteId].y = B_INFO_PARTY_ICON_Y;
+}
+
+static void EnemyPartyPrintInfoValue(const u8 *text, s16 x, s16 row)
+{
+    u32 font = DetailGetBestFitSmallFont(text, B_INFO_PARTY_INFO_COL_W);
+
+    AddTextPrinterParameterized4(WIN_ROW_PLAYER, font, x,
+                                 B_INFO_PARTY_INFO_ROW_Y + row * B_INFO_PARTY_INFO_ROW_H, 0, 0,
+                                 sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, text);
+}
+
+static void EnemyPartyRefreshInfoCard(void)
+{
+    const struct AiPartyMon *aiMon = &gAiPartyData->mons[B_SIDE_OPPONENT][sData->partySlot];
+    u8 *text = sData->detailTextBuffer;
+    u8 *txtPtr;
+
+    FillWindowPixelBuffer(WIN_ROW_PLAYER, PIXEL_FILL(B_INFO_TEXT_COLOR_TRANSPARENT));
+
+    if (sData->partySlot >= EnemyPartyGetCount() || !EnemyPartyIsSlotScouted(sData->partySlot))
+    {
+        s32 unknownWidth = GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyUnknown, 0);
+
+        AddTextPrinterParameterized4(WIN_ROW_PLAYER, FONT_SMALL,
+                                     (DISPLAY_WIDTH - unknownWidth) / 2,
+                                     B_INFO_PARTY_INFO_ROW_Y + B_INFO_PARTY_INFO_ROW_H, 0, 0,
+                                     sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW,
+                                     sText_BattleInfo_EnemyPartyUnknown);
+    }
+    else
+    {
+        // Row 0: nickname on the left, level (with gender glyph) on the right.
+        GetMonData(&gEnemyParty[sData->partySlot], MON_DATA_NICKNAME, text);
+        EnemyPartyPrintInfoValue(text, B_INFO_PARTY_INFO_COL_L_X, 0);
+
+        txtPtr = text;
+        *txtPtr++ = CHAR_EXTRA_SYMBOL;
+        *txtPtr++ = CHAR_LV_2;
+        txtPtr = ConvertIntToDecimalStringN(txtPtr, aiMon->level, STR_CONV_MODE_LEFT_ALIGN, 3);
+        *txtPtr = EOS;
+        AddTextPrinterParameterized4(WIN_ROW_PLAYER, FONT_SMALL, B_INFO_PARTY_INFO_COL_R_X,
+                                     B_INFO_PARTY_INFO_ROW_Y, 0, 0,
+                                     sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, text);
+
+        if (aiMon->gender == MON_MALE || aiMon->gender == MON_FEMALE)
+        {
+            const u8 *colors = (aiMon->gender == MON_MALE) ? sTextColor_BattleInfo_Male : sTextColor_BattleInfo_Female;
+            u8 genderSymbol[2];
+
+            genderSymbol[0] = (aiMon->gender == MON_MALE) ? CHAR_MALE : CHAR_FEMALE;
+            genderSymbol[1] = EOS;
+
+            AddTextPrinterParameterized4(WIN_ROW_PLAYER, FONT_SMALL,
+                                         B_INFO_PARTY_INFO_COL_R_X + GetStringWidth(FONT_SMALL, text, 0) + 2,
+                                         B_INFO_PARTY_INFO_ROW_Y, 0, 0,
+                                         colors, TEXT_SKIP_DRAW, genderSymbol);
+        }
+
+        // Row 1: ability on the left, held item on the right.
+        txtPtr = StringCopy(text, COMPOUND_STRING("Ability: "));
+        StringCopy(txtPtr, gAbilitiesInfo[aiMon->ability].name);
+        EnemyPartyPrintInfoValue(text, B_INFO_PARTY_INFO_COL_L_X, 1);
+
+        txtPtr = StringCopy(text, COMPOUND_STRING("Item: "));
+        if (aiMon->item != ITEM_NONE)
+            StringCopy(txtPtr, GetItemName(aiMon->item));
+        else
+            StringCopy(txtPtr, COMPOUND_STRING("None"));
+        EnemyPartyPrintInfoValue(text, B_INFO_PARTY_INFO_COL_R_X, 1);
+
+        // Rows 2-3: the four known moves, two per row.
+        for (u32 i = 0; i < MAX_MON_MOVES; i++)
+        {
+            s16 x = (i & 1) ? B_INFO_PARTY_INFO_COL_R_X : B_INFO_PARTY_INFO_COL_L_X;
+
+            if (aiMon->moves[i] == MOVE_NONE)
+                continue;
+
+            EnemyPartyPrintInfoValue(GetMoveName(aiMon->moves[i]), x, 2 + (i / 2));
+        }
+    }
+
+    PutWindowTilemap(WIN_ROW_PLAYER);
+    CopyWindowToVram(WIN_ROW_PLAYER, COPYWIN_FULL);
+}
+
+static void EnemyPartyHandleInput(u8 taskId)
+{
+    u32 count = EnemyPartyGetCount();
+
+    if (JOY_NEW(B_BUTTON) || JOY_NEW(R_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        sData->nextPage = B_INFO_PAGE_OVERVIEW;
+        sData->menuState = B_INFO_STATE_CLEAR_PAGE;
+        gTasks[taskId].func = Task_BattleInfoLoadPage;
+    }
+    else if (JOY_NEW(DPAD_LEFT) && count != 0 && sData->partySlot != 0)
+    {
+        PlaySE(SE_SELECT);
+        sData->partySlot--;
+        EnemyPartyUpdateCursorPos();
+        EnemyPartyRefreshInfoCard();
+    }
+    else if (JOY_NEW(DPAD_RIGHT) && count != 0 && sData->partySlot + 1 < count)
+    {
+        PlaySE(SE_SELECT);
+        sData->partySlot++;
+        EnemyPartyUpdateCursorPos();
+        EnemyPartyRefreshInfoCard();
+    }
 }
 
 static u32 GetCardCount(void)

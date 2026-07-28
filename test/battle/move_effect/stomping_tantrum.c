@@ -39,7 +39,7 @@ SINGLE_BATTLE_TEST("Stomping Tantrum will deal double damage if user flinched on
 SINGLE_BATTLE_TEST("Stomping Tantrum will deal double damage if user failed to attack due to paralysis")
 {
     s16 damage[3];
-    PASSES_RANDOMLY(25, 100, RNG_PARALYSIS);
+    PASSES_RANDOMLY(1, B_PARALYSIS_IMMOBILITY_DENOM, RNG_PARALYSIS);
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET) { Speed(100); Item(ITEM_POTION); };
         OPPONENT(SPECIES_WOBBUFFET) { Speed(10); Item(ITEM_LUM_BERRY); };
