@@ -3208,6 +3208,9 @@ void TryToAddMoveInfoWindow(void)
     if (!B_SHOW_MOVE_DESCRIPTION)
         return;
 
+    if (!B_SHOW_MOVE_DESCRIPTION_PROMPT)
+        return;
+
     LoadSpritePalette(&sSpritePalette_AbilityPopUp);
     if (GetSpriteTileStartByTag(MOVE_INFO_WINDOW_TAG) == 0xFFFF)
         LoadSpriteSheet(&sSpriteSheet_MoveInfoWindow);

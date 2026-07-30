@@ -395,12 +395,12 @@ ViridianForest_Text_LeavingViridianForest::
     .string "Pewter City Ahead$"
 
 ViridianForest_Text_BrendanLooking::
-  .string "{COLOR BLUE}Hm… I wonder if there are Surskit\n"
+  .string "Hm… I wonder if there are Surskit\n"
   .string "somewhere here…{PAUSE 15}$"
 
   
 ViridianForest_Text_BrendanOhHello::
-  .string "{COLOR BLUE}Oh hello!\p"
+  .string "Oh hello!\p"
   .string "I'm just trying to catch some Poké-\n"
   .string "mon before I challenge Brock.\p"
   .string "…Oh? You're looking to challenge him\n"
@@ -408,14 +408,14 @@ ViridianForest_Text_BrendanOhHello::
   .string "Why don't we have a battle then?$"
 
 ViridianForest_Text_PostDefeat::
-  .string "{COLOR BLUE}I haven't had a loss like that in\n"
+  .string "I haven't had a loss like that in\n"
   .string "a while! But, that was rather fun.\p"
-  .string "…{PLAYER}, {COLOR BLUE}huh…\p"
+  .string "…{PLAYER}, huh…\p"
   .string "Here, I have an extra of these,\n"
   .string "they'll surely help you.$"
 
 ViridianForest_Text_BrendanTeacher::
-  .string "{COLOR BLUE}Anyway, I'm heading to Viridian to\n"
+  .string "Anyway, I'm heading to Viridian to\n"
   .string "check out the trainer school.\p"
   .string "I heard the teacher has some rare\n"
   .string "Pokémon.\p"
@@ -425,7 +425,7 @@ ViridianForest_Text_BrendanTeacher::
   .string "{PLAYER}!$"
 
 LassRepelEncounter_Text::
-  .string "{COLOR RED}Eek, I hate bugs!$"
+  .string "Eek, I hate bugs!$"
 
 
 LassRepelDefeat_Text::
@@ -433,17 +433,17 @@ LassRepelDefeat_Text::
 
 
 Viridian_Text_LassRepel1::
-  .string "{COLOR RED}Sorry for being rude!\n"
+  .string "Sorry for being rude!\n"
   .string "I'm on edge…\p"
-  .string "Using the new Infinite Repel{COLOR RED}\n"
+  .string "Using the new Infinite Repel\n"
   .string "I got from my father, I'm able to avoid\l"
   .string "these pesky insects…\p"
   .string "But I'm still a bit startled.$"
 
 Viridian_Text_LassRepel1_2::
-  .string "{COLOR RED}…Ah, perhaps you could put it to use\n"
+  .string "…Ah, perhaps you could put it to use\n"
   .string "too!$\p"
 
 Viridian_Text_LassRepel3::
-  .string "{COLOR RED}Well, no more bugs for both of\n"
+  .string "Well, no more bugs for both of\n"
   .string "us! Toodles!$"

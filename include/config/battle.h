@@ -259,6 +259,7 @@
 
 // Move description menu
 #define B_SHOW_MOVE_DESCRIPTION     TRUE       // Shows move information in battler
+#define B_SHOW_MOVE_DESCRIPTION_PROMPT FALSE   // Shows the move information prompt. Disabled because it overlaps the gimmick trigger icon in doubles.
 
 // Battle info button prompt
 #define B_SHOW_BATTLE_INFO_BUTTON   FALSE      // If TRUE, shows an R button prompt during Trainer Battles indicating R can be pressed for battle info. Retired in favour of the battle status menu's Enemy Party page.
