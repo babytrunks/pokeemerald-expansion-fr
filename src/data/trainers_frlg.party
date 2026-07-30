@@ -8981,9 +8981,9 @@ EVs: 0 HP / 54 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Head Smash
 
 === TRAINER_LEADER_CLAIR ===
-Name: Mina
+Name: Clair
 Class: Leader 
-Pic: Mina 
+Pic: Leader Clair
 Gender: Female
 Music: Aqua
 Double Battle: No
@@ -15206,7 +15206,7 @@ Dynamic Level Ratio: 90
 
 Samurott-Hisui @ Focus Sash
 Level: 58
-EVs: 100 HP / 120 Atk / 100 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
 Nature: Jolly
 Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15217,7 +15217,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Pidgeot @ Expert Belt
 Level: 58
-EVs: 160 SpA / 180 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
 Nature: Timid
 Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15228,7 +15228,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Tauros-Paldea-Blaze @ Assault Vest
 Level: 58
-EVs: 200 Atk / 160 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
 Nature: Jolly
 Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15239,7 +15239,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Rotom-Wash @ Sitrus Berry
 Level: 58
-EVs: 220 HP / 160 SpA
+EVs: 252 HP / 252 SpA / 4 Def
 Nature: Modest
 Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15250,7 +15250,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Primarina @ Leftovers
 Level: 58
-EVs: 200 HP / 200 SpA
+EVs: 252 HP / 4 Def / 252 SpA
 Nature: Modest
 Ability: Water Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15261,7 +15261,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 Starmie @ Starminite
 Level: 58
-EVs: 220 Atk / 220 Spe
+EVs: 252 Atk / 252 Spe / 4 Def
 Nature: Jolly
 Ability: Natural Cure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -15280,71 +15280,71 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 90
 
-Porygon-Z @ Up-Grade  
+Armaldo @ Assault Vest  
 Level: 55
-EVs: 252 SpA / 252 Spe 
-Ability: Adaptability  
-Nature: Timid  
+Ability: Skill Link  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tri Attack  
-- Ice Beam  
-- Thunderbolt  
-- Shadow Ball  
+EVs: 252 HP / 252 Def / 4 SpD
+- Pin Missile  
+- Rock Blast  
+- First Impression  
+- Earthquake  
 
-Roserade @ Life Orb  
+Delphox-Mega @ Delphoxite  
 Level: 55
-EVs: 252 SpA / 252 Spe 
-Ability: Technician  
+Ability: Levitate  
 Nature: Timid  
-IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
-- Mega Drain  
-- Ancient Power  
-- Sludge Bomb  
-- Hidden Power
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 SpA / 4 SpD / 252 Spe
+- Psyshock  
+- Fire Blast  
+- Grass Knot  
+- Nasty Plot  
 
-Chandelure @ Chandelurite
+Minun @ Magnet  
 Level: 55
-EVs: 252 SpA / 252 Spe 
-Ability: Shadow Tag  
-Nature: Timid  
+Ability: Galvanize  
+Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower  
-- Energy Ball  
-- Shadow Ball  
-- Calm Mind  
+EVs: 4 HP / 252 Atk / 252 Spe
+- Extreme Speed  
+- Knock Off  
+- Play Rough  
+- Volt Switch  
 
-Staraptor @ Heavy-Duty Boots  
+Dewgong @ Leftovers  
 Level: 55
-EVs: 252 Atk / 252 Spe 
+Ability: Ice Scales  
+Nature: Bold  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Def / 252 SpD
+- Whirlpool  
+- Aqua Ring  
+- Toxic  
+- Haze  
+
+Mienshao @ Choice Band  
+Level: 55
 Ability: Reckless  
 Nature: Jolly  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Brave Bird  
-- Close Combat  
+EVs: 252 Atk / 4 SpD / 252 Spe
+- High Jump Kick  
 - U-turn  
-- Double-Edge  
+- Poison Jab  
+- Ice Spinner  
 
-Donphan @ Loaded Dice  
+Arboliva @ Sitrus Berry  
 Level: 55
-EVs: 252 HP / 252 Atk
-Ability: Technician  
-Nature: Adamant  
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bulldoze 
-- Ice Shard  
-- Rock Blast  
-- Trailblaze  
-
-Lanturn @ Leftovers  
-Level: 55
-EVs: 252 HP/ 252 SpD / 4 Def
-Ability: Water Absorb  
-Nature: Modest  
+Ability: Harvest  
+Nature: Calm  
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Parabolic Charge  
-- Scald  
-- Volt Switch  
-- Dazzling Gleam  
+EVs: 248 HP / 8 SpA / 252 SpD
+- Giga Drain  
+- Earth Power  
+- Strength Sap  
+- Leech Seed 
 
 === TRAINER_POKEMON_TOWER_SANS ===
 Name: Sans

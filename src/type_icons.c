@@ -45,7 +45,7 @@ static s32 GetTypeIconSlideMovement(s32, s32);
 #define TYPE_ICON_PLAYER_DOUBLE_X_OFFSET (-34)
 #define TYPE_ICON_OPPONENT_X_OFFSET      78
 #define TYPE_ICON_PAIR_SPACING           10
-#define TYPE_ICON_RESTING_Y_OFFSET       (-5)
+#define TYPE_ICON_RESTING_Y_OFFSET       (-3)
 #define TYPE_ICON_VERTICAL_Y_OFFSET      (-11)
 #define TYPE_ICON_VERTICAL_Y_SPACING     11
 #define TYPE_ICON_REVEAL_DISTANCE        10

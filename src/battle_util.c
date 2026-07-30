@@ -39,6 +39,7 @@
 #include "pokedex.h"
 #include "mail.h"
 #include "field_weather.h"
+#include "regions.h"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -4105,7 +4106,9 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
         }
         if (effect)
         {
-            if (GetGenConfig(GEN_OVERWORLD_WEATHER_OVERRIDE) >= GEN_9)
+            // Kanto keeps the pre-Gen9 rule: its overworld weather can still be overridden.
+            if (GetGenConfig(GEN_OVERWORLD_WEATHER_OVERRIDE) >= GEN_9
+             && GetCurrentRegion() != REGION_KANTO)
                 gBattleStruct->overworldWeatherPresent = TRUE;
             gBattleCommunication[MULTISTRING_CHOOSER] = GetCurrentWeather();
             BattleScriptPushCursorAndCallback(BattleScript_OverworldWeatherStarts);

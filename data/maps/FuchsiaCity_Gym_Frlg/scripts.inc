@@ -12,7 +12,7 @@ EventScript_FuschiaCityGym_GymGuyFeathers::
     waitmovement 0
     msgbox FuchsiaCity_Gym_Text_GymGuyAdvice, MSGBOX_AUTOCLOSE
     msgbox FuschiaCity_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
-    giveitem ITEM_CARBOS 2
+    giveitem ITEM_CARBOS 1
     closemessage
     applymovement LOCALID_FUSCHIA_GYM_GUY, Movement_GymGuideFuschia_WalkBack
     waitmovement 0
