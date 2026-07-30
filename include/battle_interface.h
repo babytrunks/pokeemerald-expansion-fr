@@ -47,6 +47,7 @@ enum
 #define TAG_HEALTHBOX_PALS_2            0xD70A
 #define TAG_HEALTHBOX_SAFARI_TILE       0xD70B
 #define TAG_STATUS_SUMMARY_BAR_TILE     0xD70C
+#define TAG_HEALTHBOX_SAFARI_PAL        0xD70D
 
 #define TAG_STATUS_SUMMARY_BAR_PAL      0xD710
 #define TAG_STATUS_SUMMARY_BALLS_PAL    0xD712
@@ -142,7 +143,7 @@ void TryToAddBattleStatusHint(void);
 void TryToHideBattleStatusHint(void);
 void TryAddBattleInfoSprite(void);
 void TryHideBattleInfoSprite(void);
-void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId, bool8 noStatus);
+void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId);
 void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon);
 
 #endif // GUARD_BATTLE_INTERFACE_H

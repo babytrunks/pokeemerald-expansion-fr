@@ -24,6 +24,8 @@
 #include "trainer_slide.h"
 #include "trainer_tower.h"
 #include "window.h"
+#include "bw_battle_ui.h"
+#include "config/bw_battle_ui.h"
 #include "line_break.h"
 #include "constants/abilities.h"
 #include "constants/battle_dome.h"
@@ -2068,7 +2070,8 @@ static const struct BattleWindowText sTextOnWindowsInfo_Arena[] =
 static const struct BattleWindowText *const sBattleTextOnWindowsInfo[] =
 {
     [B_WIN_TYPE_NORMAL] = sTextOnWindowsInfo_Normal,
-    [B_WIN_TYPE_ARENA]  = sTextOnWindowsInfo_Arena
+    [B_WIN_TYPE_ARENA]  = sTextOnWindowsInfo_Arena,
+    [B_WIN_TYPE_FIRST_BATTLE] = sTextOnWindowsInfo_Normal,
 };
 
 static const u8 sRecordedBattleTextSpeeds[] = {8, 4, 1, 0};
@@ -3555,6 +3558,27 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
     struct TextPrinterTemplate printerTemplate;
     u8 speed;
 
+    // The BW action box is a blitted bitmap rather than printed text, and the
+    // move box draws its own PP/type/prompt, so those windows are handled here.
+    // The Kanto tutorial and Battle Arena keep their own window sets, which are
+    // too small for the BW artwork, so they stay on the gen3 menu.
+    if (BattleUI_UsesInputBox())
+    {
+        switch (windowId)
+        {
+        case B_WIN_ACTION_MENU:
+            BattleUI_PopulateActionBox();
+            // fallthrough
+        case B_WIN_PP:
+        case B_WIN_PP_REMAINING:
+        case B_WIN_SWITCH_PROMPT:
+        case B_WIN_MOVE_TYPE:
+            return;
+        default:
+            break;
+        }
+    }
+
     if (windowId & B_WIN_COPYTOVRAM)
     {
         windowId &= ~B_WIN_COPYTOVRAM;
@@ -3575,7 +3599,7 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
     printerTemplate.currentY = printerTemplate.y;
     printerTemplate.letterSpacing = textInfo[windowId].letterSpacing;
     printerTemplate.lineSpacing = textInfo[windowId].lineSpacing;
-    printerTemplate.unk = 0;
+    printerTemplate.accentColor = 0;
     printerTemplate.fgColor = textInfo[windowId].fgColor;
     printerTemplate.bgColor = textInfo[windowId].bgColor;
     printerTemplate.shadowColor = textInfo[windowId].shadowColor;

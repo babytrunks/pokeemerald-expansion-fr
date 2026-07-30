@@ -594,6 +594,7 @@ enum BattleEnvironments
 
 #define B_WIN_TYPE_NORMAL 0
 #define B_WIN_TYPE_ARENA  1
+#define B_WIN_TYPE_FIRST_BATTLE 2 // Kanto tutorial battles; keeps the gen3 menu layout.
 
 // Window Ids for sStandardBattleWindowTemplates / sBattleArenaWindowTemplates
 #define B_WIN_MSG                 0

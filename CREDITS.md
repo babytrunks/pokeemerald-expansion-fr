@@ -151,6 +151,14 @@ Credits for Game Corner Expansion (new minigames + gacha machine):
 - huderlem (Pokemon pinball)
 - AsparagusEduardo
 
+Black and White Battle UI
+
+* [pollythadon](https://github.com/pollythadon/pokeemerald-expansion/tree/gen5bwUI) for pokeemerald-expansion implementation
+* **[EternalCode](https://github.com/PlatinumMaster/EternalCode-BWHealthBars-BPRE)** for the original Black/Wite health bar design, graphics and FireRed implementation.
+* **[PlatinumMaster](https://github.com/PlatinumMaster)** for maintaining a buildable source of that health bar implementation.
+* **[NicoSwag](https://github.com/NicoSwag/pokeemerald-expansion/tree/nicos_cool_ui)** for the Nico's Cool UI battle type-icon artwork and layout.
+* **[mudskipper13](https://github.com/mudskipper13/pokeemerald/tree/feature/bwBattleUI)** for the Black/White message box, action box, move box and cursor, and the outlined battle UI font.
+
 ## Other Credits
 
 ### Mega Evolution Overworld Sprite Credits:

@@ -1453,7 +1453,7 @@ static void PrintSecondaryEntries(struct BattleDebugMenu *data)
 
     printer.windowId = data->secondaryListWindowId;
     printer.fontId = 1;
-    printer.unk = 0;
+    printer.accentColor = 0;
     printer.letterSpacing = 0;
     printer.lineSpacing = 1;
     printer.fgColor = 2;

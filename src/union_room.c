@@ -3801,7 +3801,7 @@ static void PrintUnionRoomText(u8 windowId, u8 fontId, const u8 *str, u8 x, u8 y
     printerTemplate.y = y;
     printerTemplate.currentX = x;
     printerTemplate.currentY = y;
-    printerTemplate.unk = 0;
+    printerTemplate.accentColor = 0;
 
     gTextFlags.useAlternateDownArrow = FALSE;
     switch (colorIdx)

@@ -41,7 +41,12 @@ struct MemBlock
     u8 data[0];
 };
 
-#define HEAP_SIZE 0x1C500
+// Raised from 0x1C500 to fit the BW battle UI, whose window buffers cost ~6.5 KB
+// more per battle than the gen3 menus. Measured from the build's .map: EWRAM data
+// ended at 0x0203A2E4, leaving 23836 unused bytes below the 256K limit, so this
+// +0x5000 keeps ~3.3 KB of EWRAM in reserve. The linker script caps EWRAM at
+// LENGTH = 256K, so overshooting fails the build rather than corrupting memory.
+#define HEAP_SIZE 0x21500
 extern u8 gHeap[HEAP_SIZE];
 
 #if TESTING || !defined(NDEBUG)

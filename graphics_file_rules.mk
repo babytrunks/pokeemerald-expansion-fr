@@ -253,6 +253,9 @@ $(FONTGFXDIR)/short_narrow.latfont: $(FONTGFXDIR)/latin_short_narrow.png
 $(FONTGFXDIR)/short_narrower.latfont: $(FONTGFXDIR)/latin_short_narrower.png
 	$(GFX) $< $@
 
+$(FONTGFXDIR)/battle_ui_element.latfont: $(FONTGFXDIR)/latin_battle_ui_element.png
+	$(GFX) $< $@
+
 $(FONTGFXDIR)/small.hwjpnfont: $(FONTGFXDIR)/japanese_small.png
 	$(GFX) $< $@
 
@@ -301,6 +304,16 @@ $(MISCGFXDIR)/mirage_tower.4bpp: %.4bpp: %.png
 $(BATINTGFXDIR)/textbox.gbapal: $(BATINTGFXDIR)/textbox_0.gbapal \
                                 $(BATINTGFXDIR)/textbox_1.gbapal
 	@cat $^ >$@
+
+$(BATINTGFXDIR)/bw/textbox.gbapal: $(BATINTGFXDIR)/bw/textbox_0.gbapal \
+                                   $(BATINTGFXDIR)/bw/textbox_1.gbapal
+	@cat $^ >$@
+
+$(BATINTGFXDIR)/bw/movebox.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 14 -mheight 3
+
+$(BATINTGFXDIR)/bw/cursor.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
 
 $(BTLANMSPRGFXDIR)/ice_cube.4bpp: $(BTLANMSPRGFXDIR)/ice_cube_0.4bpp \
                                   $(BTLANMSPRGFXDIR)/ice_cube_1.4bpp \

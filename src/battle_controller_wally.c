@@ -173,6 +173,9 @@ static void WallyHandleActions(u32 battler)
             PlaySE(SE_SELECT);
             ActionSelectionDestroyCursorAt(0);
             ActionSelectionCreateCursorAt(1, 0);
+            // The BW cursor sprite reads gActionSelectionCursor, so the scripted
+            // move onto BAG has to update it rather than only the tilemap arrow.
+            gActionSelectionCursor[battler] = 1;
             gBattleStruct->wallyWaitFrames = B_WAIT_TIME_LONG;
             gBattleStruct->wallyBattleState++;
         }
