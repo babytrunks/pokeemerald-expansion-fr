@@ -687,7 +687,8 @@ struct BattleStruct
     u8 anyMonHasTransformed:1; // Only used in battle_tv.c
     u8 sleepClauseNotBlocked:1;
     u8 isSkyBattle:1;
-    u8 unused:5;
+    u8 lastKissUsed:2; // Last Kiss is limited to one activation per side per battle
+    u8 unused:3;
     u8 sortedBattlers[MAX_BATTLERS_COUNT];
     void (*savedCallback)(void);
     u16 chosenItem[MAX_BATTLERS_COUNT];

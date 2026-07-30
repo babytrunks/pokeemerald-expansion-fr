@@ -45,6 +45,7 @@ enum SwitchType
 void GetAIPartyIndexes(u32 battlerId, s32 *firstId, s32 *lastId);
 void AI_TrySwitchOrUseItem(u32 battler);
 u32 GetMostSuitableMonToSwitchInto(u32 battler, enum SwitchType switchType);
+u32 GetBestMonToRevive(u32 battler);
 bool32 ShouldSwitch(u32 battler);
 bool32 IsSwitchinValid(u32 battler);
 bool32 IsMonGrounded(enum HoldEffect heldItemEffect, enum Ability ability, enum Type type1, enum Type type2);
