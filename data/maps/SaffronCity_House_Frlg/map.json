@@ -81,9 +81,10 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_QUEST_GIVER",
-      "trainer_sight_or_berry_tree_id": "QUEST_CRAZY_CAT_LADY",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "SaffronCity_House_EventScript_CatLady",
-      "flag": "0"
+      "flag": "0",
+      "quest_id": "QUEST_CRAZY_CAT_LADY"
     },
     {
       "type": "object",

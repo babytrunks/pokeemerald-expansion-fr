@@ -156,9 +156,10 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_QUEST_GIVER",
-      "trainer_sight_or_berry_tree_id": "QUEST_FIND_BERRY_JUICE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "Route3_EventScript_CamperQuest",
-      "flag": "0"
+      "flag": "0",
+      "quest_id": "QUEST_FIND_BERRY_JUICE"
     },
     {
       "type": "object",

@@ -2778,8 +2778,34 @@ void QuestMenu_ResetMenuSaveData(void)
 //
 // An object event shows a hovering icon while the quest it hands out is not yet
 // completed. An object opts in by setting trainer_type to TRAINER_TYPE_QUEST_GIVER
-// and the optional map JSON property "quest_id", which lands in
+// and the optional map JSON property quest_id, which lands in
 // ObjectEventTemplate.iconParam.
+
+// Some quests are not offered until a story milestone is reached, so their giver
+// should stay iconless until then even though the NPC itself is already visible
+struct QuestIconGate
+{
+	u16 questId;
+	u16 flagId;
+};
+
+static const struct QuestIconGate sQuestIconGates[] =
+{
+	{ QUEST_MISSING_NUMBER, FLAG_BADGE06_GET },
+};
+
+static bool32 QuestIconGateMet(u16 questId)
+{
+	u32 i;
+
+	for (i = 0; i < ARRAY_COUNT(sQuestIconGates); i++)
+	{
+		if (sQuestIconGates[i].questId == questId)
+			return FlagGet(sQuestIconGates[i].flagId);
+	}
+
+	return TRUE;
+}
 
 static bool32 ObjectEventShouldShowQuestIcon(struct ObjectEvent *objectEvent)
 {
@@ -2796,11 +2822,14 @@ static bool32 ObjectEventShouldShowQuestIcon(struct ObjectEvent *objectEvent)
 	if (questId >= QUEST_COUNT)
 		return FALSE;
 
+	if (!QuestIconGateMet(questId))
+		return FALSE;
+
 	// Deliberately not gated on FLAG_GET_UNLOCKED: nothing calls
-	// QUEST_MENU_UNLOCK_QUEST on its own, so "unlocked" only ever gets set
-	// alongside SET_ACTIVE, i.e. it means "already accepted". Gating on it would
+	// QUEST_MENU_UNLOCK_QUEST on its own, so unlocked only ever gets set
+	// alongside SET_ACTIVE, it means already accepted. Gating on it would
 	// stop the icon from ever advertising a quest. Hide quest givers behind their
-	// object event `flag` if they should not be visible yet.
+	// object event flag if they should not be visible yet.
 	//
 	// The GET cases return a masked byte rather than 0/1, so only test truthiness.
 	return !QuestMenu_GetSetQuestState(questId, FLAG_GET_COMPLETED);

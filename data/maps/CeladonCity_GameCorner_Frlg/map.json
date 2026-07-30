@@ -151,9 +151,10 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_QUEST_GIVER",
-      "trainer_sight_or_berry_tree_id": "QUEST_FLUTTERFREE",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_GameCorner_EventScript_FlutterfreeFan",
-      "flag": "0"
+      "flag": "0",
+      "quest_id": "QUEST_FLUTTERFREE"
     },
     {
       "local_id": "LOCALID_GAME_CORNER_GRUNT",

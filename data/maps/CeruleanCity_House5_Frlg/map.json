@@ -25,9 +25,10 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_QUEST_GIVER",
-      "trainer_sight_or_berry_tree_id": "QUEST_FANG_TUTOR",
+      "trainer_sight_or_berry_tree_id": "0",
       "script": "CeruleanCity_House5_EventScript_FangTutorMan",
-      "flag": "0"
+      "flag": "0",
+      "quest_id": "QUEST_FANG_TUTOR"
     }
   ],
   "warp_events": [
