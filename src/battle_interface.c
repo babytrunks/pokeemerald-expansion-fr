@@ -390,7 +390,7 @@ static const struct Subsprite sHealthBar_Subsprites_Opponent[] =
     // The level digits end at local x 88, or x 104 when a Mega/Tera indicator
     // shifts levelTile along, so this slot never collides with them.
     {
-        .x = 58,
+        .x = 46,
         .y = -8,
         .shape = SPRITE_SHAPE(8x8),
         .size = SPRITE_SIZE(8x8),
