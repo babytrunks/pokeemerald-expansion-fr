@@ -618,6 +618,10 @@ static u32 InitMainMenu(bool8 returningFromOptionsMenu)
 
     SetGpuReg(REG_OFFSET_WIN0H, 0);
     SetGpuReg(REG_OFFSET_WIN0V, 0);
+    // The FRLG intro's letterbox leaves a band in WIN1H/WIN1V that nothing between it
+    // and here clears; wipe it so screens reached from this menu don't inherit it.
+    SetGpuReg(REG_OFFSET_WIN1H, 0);
+    SetGpuReg(REG_OFFSET_WIN1V, 0);
     SetGpuReg(REG_OFFSET_WININ, 0);
     SetGpuReg(REG_OFFSET_WINOUT, 0);
     SetGpuReg(REG_OFFSET_BLDCNT, 0);
