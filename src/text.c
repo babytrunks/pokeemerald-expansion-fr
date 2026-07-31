@@ -54,6 +54,7 @@ static u32 GetGlyphWidth_ShortNarrower(u16, bool32);
 static u32 GetGlyphWidth_BattleUIElements(u16, bool32);
 static void SpriteCB_TextCursor(struct Sprite *sprite);
 static inline bool32 IsOutlinedFont(u32 fontId);
+static union TextColor ResolveAccentColor(bool32 isOutlinedFont, union TextColor color);
 
 static EWRAM_DATA struct TextPrinter sTempTextPrinter = {0};
 static EWRAM_DATA struct TextPrinter sTextPrinters[WINDOWS_MAX] = {0};
@@ -402,11 +403,12 @@ bool32 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, voi
         sTempTextPrinter.subStructFields[i] = 0;
 
     sTempTextPrinter.printerTemplate = *printerTemplate;
+    sTempTextPrinter.printerTemplate.color = ResolveAccentColor(IsOutlinedFont(printerTemplate->fontId), printerTemplate->color);
     sTempTextPrinter.callback = callback;
     sTempTextPrinter.minLetterSpacing = 0;
     sTempTextPrinter.japanese = 0;
 
-    GenerateFontColorLookupTable(printerTemplate->color);
+    GenerateFontColorLookupTable(sTempTextPrinter.printerTemplate.color);
     if (speed != TEXT_SKIP_DRAW && speed != 0)
     {
         --sTempTextPrinter.textSpeed;
@@ -497,6 +499,28 @@ static u32 RenderFont(struct TextPrinter *textPrinter)
         if (ret != RENDER_REPEAT)
             return ret;
     }
+}
+
+// Only the outlined BW font gives pixel value 3 its own color. In every other
+// font that value is the glyph's opaque interior, so it has to be drawn in the
+// background color; leaving it as the unset accent (0) makes GLYPH_COPY skip
+// those pixels, and redrawn text stops erasing whatever it overwrites.
+static union TextColor ResolveAccentColor(bool32 isOutlinedFont, union TextColor color)
+{
+    if (!isOutlinedFont)
+        color.accent = color.background;
+    return color;
+}
+
+// Used when a control code recolors mid-string; {HIGHLIGHT} changes the
+// background, so the accent has to be re-derived along with it.
+static void RegenerateTextPrinterColors(struct TextPrinter *textPrinter)
+{
+    struct TextPrinterSubStruct *subStruct = (struct TextPrinterSubStruct *)(&textPrinter->subStructFields);
+    bool32 isOutlinedFont = IsOutlinedFont(textPrinter->printerTemplate.fontId) || IsOutlinedFont(subStruct->fontId);
+
+    textPrinter->printerTemplate.color = ResolveAccentColor(isOutlinedFont, textPrinter->printerTemplate.color);
+    GenerateFontColorLookupTable(textPrinter->printerTemplate.color);
 }
 
 void GenerateFontColorLookupTable(union TextColor color)
@@ -1117,17 +1141,17 @@ static u16 RenderText(struct TextPrinter *textPrinter)
             case EXT_CTRL_CODE_COLOR:
                 textPrinter->printerTemplate.fgColor = *textPrinter->printerTemplate.currentChar;
                 textPrinter->printerTemplate.currentChar++;
-                GenerateFontColorLookupTable(textPrinter->printerTemplate.color);
+                RegenerateTextPrinterColors(textPrinter);
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_HIGHLIGHT:
                 textPrinter->printerTemplate.bgColor = *textPrinter->printerTemplate.currentChar;
                 textPrinter->printerTemplate.currentChar++;
-                GenerateFontColorLookupTable(textPrinter->printerTemplate.color);
+                RegenerateTextPrinterColors(textPrinter);
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_SHADOW:
                 textPrinter->printerTemplate.shadowColor = *textPrinter->printerTemplate.currentChar;
                 textPrinter->printerTemplate.currentChar++;
-                GenerateFontColorLookupTable(textPrinter->printerTemplate.color);
+                RegenerateTextPrinterColors(textPrinter);
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_COLOR_HIGHLIGHT_SHADOW:
                 textPrinter->printerTemplate.fgColor = *textPrinter->printerTemplate.currentChar;
@@ -1136,7 +1160,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
                 textPrinter->printerTemplate.currentChar++;
                 textPrinter->printerTemplate.shadowColor = *textPrinter->printerTemplate.currentChar;
                 textPrinter->printerTemplate.currentChar++;
-                GenerateFontColorLookupTable(textPrinter->printerTemplate.color);
+                RegenerateTextPrinterColors(textPrinter);
                 return RENDER_REPEAT;
             case EXT_CTRL_CODE_PALETTE:
                 textPrinter->printerTemplate.currentChar++;
