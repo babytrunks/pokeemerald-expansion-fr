@@ -75,11 +75,10 @@ static const struct CompressedSpriteSheet sSpriteSheets_HealthBar[MAX_BATTLERS_C
     {gBlankGfxCompressed, 0x0120, TAG_HEALTHBAR_OPPONENT2_TILE}
 };
 
-const struct SpritePalette sSpritePalettes_HealthBoxHealthBar[3] =
+const struct SpritePalette sSpritePalettes_HealthBoxHealthBar[2] =
 {
     {gBattleInterface_BwHealthboxPal, TAG_HEALTHBOX_PAL},
-    {gBattleInterface_BwHealthbarPal, TAG_HEALTHBAR_PAL},
-    {gBattleInterface_BallStatusBarPal, TAG_HEALTHBOX_SAFARI_PAL},
+    {gBattleInterface_BwHealthbarPal, TAG_HEALTHBAR_PAL}
 };
 
 const struct CompressedSpriteSheet gSpriteSheet_EnemyShadow =
@@ -717,8 +716,7 @@ void BattleLoadAllHealthBoxesGfxAtOnce(void)
 
     LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[0]);
     LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[1]);
-    if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
-        LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[2]);
+
     if (!IsDoubleBattle())
     {
         LoadCompressedSpriteSheet(&sSpriteSheet_SinglesPlayerHealthbox);
@@ -747,8 +745,7 @@ bool8 BattleLoadAllHealthBoxesGfx(u8 state)
         {
             LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[0]);
             LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[1]);
-            if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
-                LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[2]);
+
             LoadIndicatorSpritesGfx();
             CategoryIcons_LoadSpritesGfx();
         }

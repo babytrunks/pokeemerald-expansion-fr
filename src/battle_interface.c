@@ -273,7 +273,7 @@ static const struct SpriteTemplate sHealthboxOpponentSpriteTemplates[2] =
 static const struct SpriteTemplate sHealthboxSafariSpriteTemplate =
 {
     .tileTag = TAG_HEALTHBOX_SAFARI_TILE,
-    .paletteTag = TAG_HEALTHBOX_SAFARI_PAL,
+    .paletteTag = TAG_HEALTHBOX_PAL,
     .oam = &sOamData_64x32,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
