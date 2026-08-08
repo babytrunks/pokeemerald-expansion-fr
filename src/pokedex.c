@@ -4315,6 +4315,9 @@ static u8* ReplaceDecimalSeparator(const u8* originalString)
     u32 length = StringLength(originalString), i;
     u8* modifiedString = Alloc(WEIGHT_HEIGHT_STR_MEM);
 
+    if (length > WEIGHT_HEIGHT_STR_LEN - 1)
+        length = WEIGHT_HEIGHT_STR_LEN - 1;
+
     for (i = 0; i < length; i++)
     {
         if ((originalString[i] != CHAR_PERIOD) || replaced)

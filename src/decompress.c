@@ -1394,7 +1394,10 @@ ARM_FUNC static void SwitchToArmCallFastLZ77(const u32 *src, void *dest, void (*
 
 void FastLZ77UnCompWram(const u32 *src, void *dest)
 {
-    u32 funcBuffer[200];
+    // Sized from the routine like every other CopyFuncToIwram caller. old
+    // hardcoded 200 words reserved 800 bytes for a 280-byte routine. this
+    // buffer lives on a system stack that only has a couple of KB
+    u32 funcBuffer[FUNC_BUFFER_SIZE(LZ77UnCompWRAMOptimized, LZ77UnCompWRAMOptimized_end)];
 
     CopyFuncToIwram(funcBuffer, LZ77UnCompWRAMOptimized, LZ77UnCompWRAMOptimized_end);
     SwitchToArmCallFastLZ77(src, dest, (void *) funcBuffer);

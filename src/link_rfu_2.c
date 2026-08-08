@@ -78,7 +78,8 @@ struct RfuDebug
 };
 
 COMMON_DATA u32 gRfuAPIBuffer[RFU_API_BUFF_SIZE_RAM / 4] = {0};
-COMMON_DATA struct RfuManager gRfu = {0};
+// Moved out of IWRAM: this is 3316 bytes of our own bookkeeping, and IWRAM was
+EWRAM_DATA struct RfuManager gRfu = {0};
 
 static u8 sHeldKeyCount;
 static u8 sResendBlock8[CMD_LENGTH * 2];

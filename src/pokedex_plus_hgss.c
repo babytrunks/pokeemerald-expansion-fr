@@ -52,6 +52,7 @@
 #include "constants/songs.h"
 #include "config/pokedex_plus_hgss.h"
 
+
 enum
 {
     PAGE_MAIN,
@@ -294,6 +295,10 @@ static EWRAM_DATA struct PokedexListItem *sPokedexListItem = NULL;
 #define MOVES_COUNT_TOTAL (EGG_MOVES_ARRAY_COUNT + MAX_LEVEL_UP_MOVES + NUM_ALL_MACHINES)
 EWRAM_DATA static u16 sStatsMoves[MOVES_COUNT_TOTAL] = {0};
 EWRAM_DATA static u16 sStatsMovesTMHM_ID[NUM_ALL_MACHINES] = {0};
+
+EWRAM_DATA static bool8 sIsTMMove[MOVES_COUNT] = {0};
+EWRAM_DATA static u16 sStatsMovesEgg[EGG_MOVES_ARRAY_COUNT] = {0};
+EWRAM_DATA static u16 sStatsMovesLevelUp[MAX_LEVEL_UP_MOVES] = {0};
 
 
 struct SearchOptionText
@@ -3614,9 +3619,11 @@ static void CreateStatBars(struct PokedexListItem *dexMon)
     {
         u8 i;
         u32 width, statValue;
-        u8 *gfx = Alloc(64 * 64);
+        // 64x64 4bpp is 2048 bytes, not 64 * 64. The old size over-allocated and
+        // then handed LoadSpriteSheet 2048 bytes of uninitialised heap.
+        u8 *gfx = Alloc(sizeof(sStatBarsGfx));
         static const u8 sBarsYOffset[] = {3, 13, 23, 33, 43, 53};
-        struct SpriteSheet sheet = {gfx, 64 * 64, TAG_STAT_BAR};
+        struct SpriteSheet sheet = {gfx, sizeof(sStatBarsGfx), TAG_STAT_BAR};
         u32 species = NationalPokedexNumToSpecies(dexMon->dexNum);
 
         memcpy(gfx, sStatBarsGfx, sizeof(sStatBarsGfx));
@@ -3645,7 +3652,7 @@ static void CreateStatBars(struct PokedexListItem *dexMon)
     }
     else if (dexMon->seen) // Just HP/ATK/DEF
     {
-        static const struct SpriteSheet sheet = {sStatBarsGfx, 64 * 64, TAG_STAT_BAR};
+        static const struct SpriteSheet sheet = {sStatBarsGfx, sizeof(sStatBarsGfx), TAG_STAT_BAR};
 
         LoadSpriteSheet(&sheet);
     }
@@ -3657,7 +3664,7 @@ static void CreateStatBars(struct PokedexListItem *dexMon)
 }
 static void CreateStatBarsBg(void) //stat bars background text
 {
-    static const struct SpriteSheet sheetStatBarsBg = {sStatBarsGfx, 64 * 64, TAG_STAT_BAR_BG};
+    static const struct SpriteSheet sheetStatBarsBg = {sStatBarsGfx, sizeof(sStatBarsGfx), TAG_STAT_BAR_BG};
     u8 offset_x = 184; //Moves the complete stat box left/right
     u8 offset_y = 16; //Moves the complete stat box up/down
 
@@ -4707,35 +4714,41 @@ static u16 NationalPokedexNumToSpeciesHGSS(u16 nationalNum)
         return NationalPokedexNumToSpecies(nationalNum);
 }
 
+// Passing 0 for the transfer size makes DecompressAndLoadBgGfxUsingHeap use the
+// real decompressed size. The tilesets here are 6656/3072/4096 bytes, so the
+// 0x2000 these used to pass DMA'd up to 5 KB of whatever followed the buffer on
+// the heap into VRAM.
 static void LoadTilesetTilemapHGSS(u8 page)
 {
+
     switch (page)
     {
     case INFO_SCREEN:
-        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_1_Gfx, 0x2000, 0, 0);
+        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_1_Gfx, 0, 0, 0);
         CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenInfo_Tilemap, 0, 0);
         break;
     case STATS_SCREEN:
-        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_1_Gfx, 0x2000, 0, 0);
+        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_1_Gfx, 0, 0, 0);
         CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenStats_Tilemap, 0, 0);
         break;
     case EVO_SCREEN:
-        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_2_Gfx, 0x2000, 0, 0);
+        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_2_Gfx, 0, 0, 0);
         CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenEvolution_Tilemap_PE, 0, 0);
         break;
     case FORMS_SCREEN:
-        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_2_Gfx, 0x2000, 0, 0);
+        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_2_Gfx, 0, 0, 0);
         CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenForms_Tilemap, 0, 0);
         break;
     case CRY_SCREEN:
-        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_3_Gfx, 0x2000, 0, 0);
+        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_3_Gfx, 0, 0, 0);
         CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenCry_Tilemap, 0, 0);
         break;
     case SIZE_SCREEN:
-        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_3_Gfx, 0x2000, 0, 0);
+        DecompressAndLoadBgGfxUsingHeap(3, sPokedexPlusHGSS_Menu_3_Gfx, 0, 0, 0);
         CopyToBgTilemapBuffer(3, sPokedexPlusHGSS_ScreenSize_Tilemap, 0, 0);
         break;
     }
+
 }
 
 //Physical/Special/Status category
@@ -5086,8 +5099,10 @@ static void PrintStatsScreen_DestroyMoveItemIcon(u8 taskId)
 static u16 AddTMTutorMoves(u16 species, u16 movesTotal, u8 *numTMHMMoves, u8 *numTutorMoves)
 {
     u16 i, move;
-    bool8 isTMMove[MOVES_COUNT] = {0};
     const u16 *teachableLearnset = GetSpeciesTeachableLearnset(species);
+
+    // sIsTMMove is static, so clear it explicitly the way the old `= {0}` did.
+    memset(sIsTMMove, 0, sizeof(sIsTMMove));
 
     // TM Moves
     if (HGSS_SORT_TMS_BY_NUM)
@@ -5097,7 +5112,7 @@ static u16 AddTMTutorMoves(u16 species, u16 movesTotal, u8 *numTMHMMoves, u8 *nu
             move = GetTMHMMoveId(i + 1);
             if (move != MOVE_NONE && CanLearnTeachableMove(species, move))
             {
-                isTMMove[move] = TRUE;
+                sIsTMMove[move] = TRUE;
                 sStatsMovesTMHM_ID[*numTMHMMoves] = GetTMHMItemId(i + 1);
                 (*numTMHMMoves)++;
                 sStatsMoves[movesTotal] = move;
@@ -5114,7 +5129,7 @@ static u16 AddTMTutorMoves(u16 species, u16 movesTotal, u8 *numTMHMMoves, u8 *nu
             {
                 if (GetTMHMMoveId(j + 1) == move)
                 {
-                    isTMMove[move] = TRUE;
+                    sIsTMMove[move] = TRUE;
                     sStatsMovesTMHM_ID[*numTMHMMoves] = GetTMHMItemId(j + 1);
                     (*numTMHMMoves)++;
                     sStatsMoves[movesTotal] = move;
@@ -5130,7 +5145,7 @@ static u16 AddTMTutorMoves(u16 species, u16 movesTotal, u8 *numTMHMMoves, u8 *nu
     for (i = 0; gTutorMoves[i] != MOVE_UNAVAILABLE; i++)
     {
         move = gTutorMoves[i];
-        if (!isTMMove[move] && CanLearnTeachableMove(species, move))
+        if (!sIsTMMove[move] && CanLearnTeachableMove(species, move))
         {
             sStatsMoves[movesTotal] = move;
             movesTotal++;
@@ -5141,7 +5156,7 @@ static u16 AddTMTutorMoves(u16 species, u16 movesTotal, u8 *numTMHMMoves, u8 *nu
     for (i = 0; teachableLearnset[i] != MOVE_UNAVAILABLE; i++)
     {
         move = teachableLearnset[i];
-        if (!isTMMove[move] && CanLearnTeachableMove(species, move))
+        if (!sIsTMMove[move] && CanLearnTeachableMove(species, move))
         {
             sStatsMoves[movesTotal] = move;
             movesTotal++;
@@ -5156,8 +5171,9 @@ static bool8 CalculateMoves(void)
 {
     u16 species = NationalPokedexNumToSpeciesHGSS(sPokedexListItem->dexNum);
 
-    u16 statsMovesEgg[EGG_MOVES_ARRAY_COUNT] = {0};
-    u16 statsMovesLevelUp[MAX_LEVEL_UP_MOVES] = {0};
+    // Static (EWRAM) rather than stack; cleared here as the old `= {0}` did.
+    memset(sStatsMovesEgg, 0, sizeof(sStatsMovesEgg));
+    memset(sStatsMovesLevelUp, 0, sizeof(sStatsMovesLevelUp));
 
     u8 numEggMoves = 0;
     u8 numLevelUpMoves = 0;
@@ -5176,26 +5192,26 @@ static bool8 CalculateMoves(void)
         u16 preSpecies = species;
         while (preSpecies != SPECIES_NONE)
         {
-            numEggMoves = GetEggMovesBySpecies(preSpecies, statsMovesEgg);
+            numEggMoves = GetEggMovesBySpecies(preSpecies, sStatsMovesEgg);
             preSpecies = GetSpeciesPreEvolution(preSpecies);
         }
     }
     else
     {
-        numEggMoves = GetEggMovesBySpecies(species, statsMovesEgg);
+        numEggMoves = GetEggMovesBySpecies(species, sStatsMovesEgg);
     }
 
     for (i = 0; i < numEggMoves; i++)
     {
-        sStatsMoves[movesTotal] = statsMovesEgg[i];
+        sStatsMoves[movesTotal] = sStatsMovesEgg[i];
         movesTotal++;
     }
 
     // Level up moves
-    numLevelUpMoves = GetLevelUpMovesBySpecies(species, statsMovesLevelUp);
+    numLevelUpMoves = GetLevelUpMovesBySpecies(species, sStatsMovesLevelUp);
     for (i = 0; i < numLevelUpMoves; i++)
     {
-        sStatsMoves[movesTotal] = statsMovesLevelUp[i];
+        sStatsMoves[movesTotal] = sStatsMovesLevelUp[i];
         movesTotal++;
     }
 
