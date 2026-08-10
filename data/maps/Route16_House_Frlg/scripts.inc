@@ -63,10 +63,10 @@ EventScript_Silva_Battle::
     setspeaker SP_NAME_UNKNOWN
     msgbox gText_silva_2
     @ special HealPlayerParty                 
-	trainerbattle_no_intro TRAINER_ROUTE16_SILVA, silva_Text_Defeat  
+	trainerbattle_no_intro TRAINER_SILVA, silva_Text_Defeat  
     setflag FLAG_DEFEATED_ROUTE_16_SILVA
     msgbox gText_silva_3
-    giveitem ITEM_CHANDELURITE                                   
+    giveitem ITEM_DELPHOXITE                                   
     release
     end
 
@@ -93,7 +93,7 @@ gText_silva_Reject::
 
  
 silva_Text_Defeat::
-	.string "Hm, I thought Shadow Tag would give\n"
+	.string "Hm, I thought a Mega would give\n"
 	.string "a free win.$"
 
 gText_silva_2::
@@ -102,12 +102,12 @@ gText_silva_2::
 gText_silva_3::
 	.string "Well then, you've earned this.\p"
 	.string "It makes the already awesome\n"
-	.string "Chandelure even more powerful.$"
+	.string "Delphox even more powerful.$"
 
 gText_silva_4::
-	.string "Mega Chandelure is a straight up\n"
-	.string "nuke. You ought to give it a\l"
-	.string "shot.$"
+	.string "Mega Delphox hits faster and\n"
+	.string "stronger, while also gaining an\l"
+	.string "immunity to ground.$"
 
 Route16_House_Text_FoundMySecretRetreat::
     .string "Oh, dear.\n"
