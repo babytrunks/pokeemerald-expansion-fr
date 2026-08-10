@@ -11942,7 +11942,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_SUPERCELL_SLAM] =
+    [ITEM_TM_SUPERCELL_SLAM] = 
     {
         .name = ITEM_NAME("TM11"),
         .price = 2000,
@@ -12036,7 +12036,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_PROTECT] =
+    [ITEM_TM_PROTECT] = // postgame
     {
         .name = ITEM_NAME("TM17"),
         .price = 3000,
