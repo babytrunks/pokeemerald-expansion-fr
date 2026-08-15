@@ -296,6 +296,7 @@
 #define B_SHOW_TARGETS                      TRUE  // If set to TRUE, all available targets, for moves hitting 2 or 3 Pokémon, will be shown before selecting a move.
 #define B_SHOW_CATEGORY_ICON                TRUE  // If set to TRUE, it will show an icon in the summary and move relearner showing the move's category.
 #define B_HIDE_HEALTHBOX_IN_ANIMS           TRUE  // If set to TRUE, hides healthboxes during move animations.
+#define B_SHOW_HP_NUMBERS                   FALSE // If set to TRUE, pressing START on the battle command screen swaps the HP bars for numeric HP values.
 #define B_WAIT_TIME_MULTIPLIER              16    // This determines how long text pauses in battle last. Vanilla is 16. Lower values result in faster battles.
 #define B_QUICK_MOVE_CURSOR_TO_RUN          TRUE // If set to TRUE, pushing B in the battle options against a wild encounter will move the cursor to the run option
 #define B_RUN_TRAINER_BATTLE                TRUE  // If set to TRUE, players can run from Trainer battles. This is treated as a whiteout.

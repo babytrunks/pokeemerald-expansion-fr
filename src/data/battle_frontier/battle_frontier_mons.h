@@ -815,11 +815,11 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_DOCILE,
     .ball = BALL_PREMIER,},
 
-    [FRONTIER_MON_PIKACHU] = {
-        .species = SPECIES_PIKACHU,
-        .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_THUNDERSHOCK, MOVE_QUICK_ATTACK},
-        .nature = NATURE_DOCILE, 
-    .ball = BALL_PREMIER,},
+    // [FRONTIER_MON_PIKACHU] = {
+    //     .species = SPECIES_PIKACHU,
+    //     .moves = {MOVE_SHOCK_WAVE, MOVE_THUNDER_WAVE, MOVE_THUNDERSHOCK, MOVE_QUICK_ATTACK},
+    //     .nature = NATURE_DOCILE, 
+    // .ball = BALL_PREMIER,},
 
     [FRONTIER_MON_SANDSHREW] = {
         .species = SPECIES_SANDSHREW,

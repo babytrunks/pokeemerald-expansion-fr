@@ -14,6 +14,8 @@ LavenderTown_PokemonCenter_1F_EventScript_Nurse::
 	release
 	end
 
+
+
 LavenderTown_PokemonCenter_1F_EventScript_Gentleman::
 	msgbox LavenderTown_PokemonCenter_1F_Text_RocketsDoAnythingForMoney, MSGBOX_NPC
 	end
@@ -41,4 +43,3 @@ LavenderTown_PokemonCenter_1F_Text_PeoplePayForCuboneSkulls::
     .string "You know how the Cubone species\n"
     .string "wears skulls, right?\p"
     .string "People will pay a lot for one.$"
-

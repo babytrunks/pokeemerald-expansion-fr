@@ -416,7 +416,7 @@ static void HandleInputChooseAction(u32 battler)
             }
         }
     }
-    else if (JOY_NEW(START_BUTTON))
+    else if (B_SHOW_HP_NUMBERS == TRUE && JOY_NEW(START_BUTTON))
     {
         SwapHpBarsWithHpText();
     }

@@ -24,6 +24,5 @@
     FRONTIER_MON_SPRIGATITO,         \
     FRONTIER_MON_FUECOCO,        \
     FRONTIER_MON_QUAXLY,      \
-    FRONTIER_MON_PIKACHU,        \
     FRONTIER_MON_EEVEE,        \
     -1

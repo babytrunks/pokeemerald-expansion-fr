@@ -29,11 +29,10 @@
 #define FRONTIER_MON_SPRIGATITO     21
 #define FRONTIER_MON_FUECOCO        22
 #define FRONTIER_MON_QUAXLY         23
-#define FRONTIER_MON_PIKACHU        24
-#define FRONTIER_MON_EEVEE          25
-#define FRONTIER_MON_TREECKO        26
-#define FRONTIER_MON_TORCHIC        27
-#define FRONTIER_MON_MUDKIP         28
+#define FRONTIER_MON_EEVEE          24
+#define FRONTIER_MON_TREECKO        25
+#define FRONTIER_MON_TORCHIC        26
+#define FRONTIER_MON_MUDKIP         27
 
 // Berry Juice Quest Selection
 #define FRONTIER_MON_ODDISH         (FRONTIER_MON_MUDKIP + 1)
