@@ -256,6 +256,12 @@ $(FONTGFXDIR)/short_narrower.latfont: $(FONTGFXDIR)/latin_short_narrower.png
 $(FONTGFXDIR)/battle_ui_element.latfont: $(FONTGFXDIR)/latin_battle_ui_element.png
 	$(GFX) $< $@
 
+$(FONTGFXDIR)/outlined.latfont: $(FONTGFXDIR)/latin_outlined.png
+	$(GFX) $< $@
+
+$(FONTGFXDIR)/outlined_narrow.latfont: $(FONTGFXDIR)/latin_outlined_narrow.png
+	$(GFX) $< $@
+
 $(FONTGFXDIR)/small.hwjpnfont: $(FONTGFXDIR)/japanese_small.png
 	$(GFX) $< $@
 

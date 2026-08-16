@@ -29,6 +29,7 @@
 #include "item_icon.h"
 #include "item_use.h"
 #include "test_runner.h"
+#include "config/bw_battle_ui.h"
 #include "constants/battle_anim.h"
 #include "constants/rgb.h"
 #include "constants/songs.h"
@@ -173,6 +174,7 @@ enum
 static const u8 *GetHealthboxElementGfxPtr(u8);
 static u8 *AddTextPrinterAndCreateWindowOnHealthbox(const u8 *, u32, u32, u32, u32 *);
 static u8 *AddTextPrinterAndCreateWindowOnHealthboxToFit(const u8 *, u32, u32, u32, u32 *, u32);
+static u8 *AddTextPrinterAndCreateWindowOnHealthboxWithColors(const u8 *, u32, u32, u32, u32, u32, u32 *, u32);
 
 static void RemoveWindowOnHealthbox(u32 windowId);
 static void UpdateHpTextInHealthboxInDoubles(u32 healthboxSpriteId, u32 maxOrCurrent, s16 currHp, s16 maxHp);
@@ -631,6 +633,23 @@ static const struct WindowTemplate sHealthboxWindowTemplate = {
 #define BW_LEVEL_LABEL_OPPONENT         15
 #define BW_HP_TILE_PLAYER               30
 #define BW_NAME_FONT_MAX_TILES           7
+
+// Slots in gBattleInterface_BwHealthboxPal. Index 1 is the dark outline the BW
+// art draws its lettering with, index 2 the white body.
+#define BW_TEXT_COLOR_TRANSPARENT        0
+#define BW_TEXT_COLOR_SHADOW             1
+#define BW_TEXT_COLOR_FOREGROUND         2
+
+// Pixel budget for an engine-font nickname. The field cannot grow to the right:
+// past the player's name is the banded plate the level sits on, which is real art
+// (only the label and digit tiles on it are redrawn), and past the opponent's is
+// BW_LEVEL_LABEL_OPPONENT, drawn before the nickname is. So a name too wide for
+// six tiles takes a seventh from the blank tile to its left instead, exactly as
+// the bw_name_font path does.
+#define BW_NAME_FIELD_TILES              6
+#define BW_NAME_WIDE_TILES               7
+#define BW_NAME_FIELD_WIDTH             (BW_NAME_FIELD_TILES * TILE_WIDTH - 1)
+#define BW_NAME_WIDE_WIDTH              (BW_NAME_WIDE_TILES * TILE_WIDTH - 1)
 
 static void *GetBwHealthboxTileDest(u8 healthboxSpriteId, u32 tileOffset)
 {
@@ -1954,6 +1973,41 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
     if (GetBattlerSide(gSprites[healthboxSpriteId].hMain_Battler) == B_SIDE_OPPONENT && IsGhostBattleWithoutScope())
         gender = 100;
 
+#if BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
+    if (gender == MON_MALE || gender == MON_FEMALE)
+        text[length++] = gender == MON_MALE ? CHAR_MALE : CHAR_FEMALE;
+    text[length] = EOS;
+
+    nameTile = IsOnPlayerSide(gSprites[healthboxSpriteId].hMain_Battler)
+             ? BW_NAME_TILE_PLAYER
+             : BW_NAME_TILE_OPPONENT;
+
+    {
+        u32 windowId;
+        u8 *windowTileData;
+        u32 tileCount = BW_NAME_FIELD_TILES;
+        u32 fontId = GetFontIdToFit(text, FONT_OUTLINED, -1, BW_NAME_WIDE_WIDTH);
+
+        // Wipe both tiles left of the six-tile field so a name that no longer
+        // needs the seventh does not leave the old glyph behind.
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, nameTile - 1), TILE_SIZE_4BPP);
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, nameTile - 9), TILE_SIZE_4BPP);
+
+        if (GetStringWidth(fontId, text, -1) > BW_NAME_FIELD_WIDTH)
+            tileCount = BW_NAME_WIDE_TILES, nameTile--;
+
+        // TextIntoHealthboxObject only lifts window rows 5-15 out, and the
+        // outlined glyphs start four rows into their 16-pixel cell, so y2 sits
+        // the name as low as the band allows: g/p/q/y land on the last row.
+        windowTileData = AddTextPrinterAndCreateWindowOnHealthboxWithColors(text, 0, 2, BW_TEXT_COLOR_TRANSPARENT,
+                                                                           BW_TEXT_COLOR_FOREGROUND, BW_TEXT_COLOR_SHADOW,
+                                                                           &windowId, fontId);
+        // The glyphs are taller than one tile row, so the destination starts a
+        // row up: the three pixels that overhang land in the blank tiles above.
+        TextIntoHealthboxObject(GetBwHealthboxTileDest(healthboxSpriteId, nameTile - 8), windowTileData, tileCount);
+        RemoveWindowOnHealthbox(windowId);
+    }
+#else
     if (gender == MON_MALE || gender == MON_FEMALE)
     {
         // Keep the source renderer's gender symbol aligned to a full tile.
@@ -1971,6 +2025,7 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
         DrawBwOutlinedFont(healthboxSpriteId, nameTile - 1, 7, text);
     else
         DrawBwOutlinedFont(healthboxSpriteId, nameTile, 6, text);
+#endif
 }
 
 void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId)
@@ -2524,7 +2579,7 @@ u8 GetHPBarLevel(s16 hp, s16 maxhp)
     return result;
 }
 
-static u8 *AddTextPrinterAndCreateWindowOnHealthboxWithFont(const u8 *str, u32 x, u32 y, u32 bgColor, u32 *windowId, u32 fontId)
+static u8 *AddTextPrinterAndCreateWindowOnHealthboxWithColors(const u8 *str, u32 x, u32 y, u32 bgColor, u32 fgColor, u32 shadowColor, u32 *windowId, u32 fontId)
 {
     u16 winId;
     u8 color[3];
@@ -2534,13 +2589,21 @@ static u8 *AddTextPrinterAndCreateWindowOnHealthboxWithFont(const u8 *str, u32 x
     FillWindowPixelBuffer(winId, PIXEL_FILL(bgColor));
 
     color[0] = bgColor;
-    color[1] = 1;
-    color[2] = 3;
+    color[1] = fgColor;
+    color[2] = shadowColor;
 
-    AddTextPrinterParameterized4(winId, fontId, x, y, 0, 0, color, TEXT_SKIP_DRAW, str);
+    // Outlined fonts carry a negative letter spacing so neighbouring outlines
+    // share a column; taking it from the font keeps the drawn width equal to
+    // what GetStringWidth reported. It is 0 for every other healthbox font.
+    AddTextPrinterParameterized4(winId, fontId, x, y, GetFontAttribute(fontId, FONTATTR_LETTER_SPACING), 0, color, TEXT_SKIP_DRAW, str);
 
     *windowId = winId;
     return (u8 *)(GetWindowAttribute(winId, WINDOW_TILE_DATA));
+}
+
+static u8 *AddTextPrinterAndCreateWindowOnHealthboxWithFont(const u8 *str, u32 x, u32 y, u32 bgColor, u32 *windowId, u32 fontId)
+{
+    return AddTextPrinterAndCreateWindowOnHealthboxWithColors(str, x, y, bgColor, 1, 3, windowId, fontId);
 }
 
 static u8 *AddTextPrinterAndCreateWindowOnHealthbox(const u8 *str, u32 x, u32 y, u32 bgColor, u32 *windowId)

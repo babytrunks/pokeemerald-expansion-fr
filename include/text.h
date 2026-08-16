@@ -30,6 +30,8 @@ enum {
     FONT_SHORT_NARROW,
     FONT_SHORT_NARROWER,
     FONT_BATTLE_UI_ELEMENTS, // Outlined BW battle UI lettering; glyphs overlap by a pixel.
+    FONT_OUTLINED,           // Outlined text font used by the BW healthboxes; glyphs overlap by a pixel.
+    FONT_OUTLINED_NARROW,
 };
 
 #define FONT_MALE FONT_NORMAL
@@ -83,9 +85,9 @@ union TextColor {
 
 struct TextPrinterSubStruct
 {
-    u8 fontId:4;  // 0x14
+    u8 fontId:5;  // 0x14. Five bits since the BW battle UI pushed the font count past 15.
     bool8 hasPrintBeenSpedUp:1;
-    u8 unk:3;
+    u8 unk:2;
     u16 utilityCounter:13;
     u16 downArrowYPosIdx:2;
     bool16 hasFontIdBeenSet:1;
