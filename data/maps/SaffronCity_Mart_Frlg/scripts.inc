@@ -47,9 +47,7 @@ SaffronCity_Mart_Items::
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_REVIVE
 	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 
 	.align 2
@@ -59,9 +57,7 @@ SaffronCity_Mart_2BadgeItems::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 	.align 2
 SaffronCity_Mart_4BadgeItems::
@@ -72,9 +68,7 @@ SaffronCity_Mart_4BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 	.align 2
 SaffronCity_Mart_5BadgeItems::
@@ -86,9 +80,7 @@ SaffronCity_Mart_5BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 SaffronCity_Mart_Text_MaxRepelMoreEffectiveThanSuper::
     .string "I'd prefer getting my Fighting-types\n"

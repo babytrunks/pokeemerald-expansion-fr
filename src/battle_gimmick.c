@@ -13,6 +13,7 @@
 #include "sprite.h"
 #include "util.h"
 #include "test_runner.h"
+#include "config/bw_battle_ui.h"
 
 #include "data/gimmicks.h"
 
@@ -466,20 +467,36 @@ void UpdateIndicatorLevelData(u32 healthboxId, u32 level)
 {
     s32 xDelta = 0;
 
+#if BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
+    // Level digits are right-aligned, so the indicator follows their left edge: four pixels per digit.
+    if (level < 10)
+        xDelta += 8;
+    else if (level < 100)
+        xDelta += 4;
+#else
     if (level >= 100)
         xDelta -= 4;
     else if (level < 10)
         xDelta += 5;
+#endif
 
     gSprites[GetIndicatorSpriteId(healthboxId)].tLevelXDelta = xDelta;
 }
 
+// With the engine font the sprite fills the "Lv" slot; positions assume three digits.
 static const s8 sIndicatorPositions[][2] =
 {
+#if BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
+    [B_POSITION_PLAYER_LEFT] = {54, -9},
+    [B_POSITION_OPPONENT_LEFT] = {38, -9},
+    [B_POSITION_PLAYER_RIGHT] = {54, -9},
+    [B_POSITION_OPPONENT_RIGHT] = {38, -9},
+#else
     [B_POSITION_PLAYER_LEFT] = {49, -9},
     [B_POSITION_OPPONENT_LEFT] = {40, -9},
     [B_POSITION_PLAYER_RIGHT] = {48, -9},
     [B_POSITION_OPPONENT_RIGHT] = {40, -9},
+#endif
 };
 
 void CreateIndicatorSprite(u32 battler)

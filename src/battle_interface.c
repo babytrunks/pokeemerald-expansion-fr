@@ -385,15 +385,11 @@ static const struct Subsprite sHealthBar_Subsprites_Opponent[] =
         .tileOffset = 4,
         .priority = 1
     },
-    // The "already caught" Poké Ball. A subsprite's top-left lands at
-    // sprite->x + .x, and the opponent healthbar sits at healthbox.x + 8 while
-    // the 64x32 healthbox's own top-left is healthbox.x - 32, so this is
-    // healthbox-local (104, 8): the name/level row, right of the level field.
-    // The level digits end at local x 88, or x 104 when a Mega/Tera indicator
-    // shifts levelTile along, so this slot never collides with them.
+    // The "already caught" Poké Ball, drawn flush left of the nickname at healthbox-local (0, 7).
+    // Kept on the healthbar for bw_healthbar.gbapal; it draws behind the healthbox, so names must not overlap.
     {
-        .x = 46,
-        .y = -8,
+        .x = -40,
+        .y = -9,
         .shape = SPRITE_SHAPE(8x8),
         .size = SPRITE_SIZE(8x8),
         .tileOffset = 8,
@@ -632,13 +628,27 @@ static const struct WindowTemplate sHealthboxWindowTemplate = {
 #define BW_LEVEL_LABEL_DOUBLE_PLAYER    41
 #define BW_LEVEL_LABEL_OPPONENT         15
 #define BW_HP_TILE_PLAYER               30
+#if !BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
 #define BW_NAME_FONT_MAX_TILES           7
+#endif
 
 // Slots in gBattleInterface_BwHealthboxPal. Index 1 is the dark outline the BW
 // art draws its lettering with, index 2 the white body.
 #define BW_TEXT_COLOR_TRANSPARENT        0
 #define BW_TEXT_COLOR_SHADOW             1
 #define BW_TEXT_COLOR_FOREGROUND         2
+// The gender symbol keeps the vanilla TEXT_DYNAMIC_COLOR_1/_2 slots: pink and light blue.
+#define BW_TEXT_COLOR_FEMALE            10
+#define BW_TEXT_COLOR_MALE              11
+#define BW_TEXT_COLOR_LEVEL_LABEL        9
+
+// The band holding the gender symbol, the "Lv" label and up to three level digits.
+#define BW_LEVEL_FIELD_TILES             4
+#define BW_LEVEL_FIELD_WIDTH            (BW_LEVEL_FIELD_TILES * TILE_WIDTH - 1)
+
+// Pixels the "Lv" label costs, and the blank kept on either side of it.
+#define BW_LEVEL_LABEL_ADVANCE           7
+#define BW_LEVEL_LABEL_GAP               2
 
 // Pixel budget for an engine-font nickname. The field cannot grow to the right:
 // past the player's name is the banded plate the level sits on, which is real art
@@ -656,6 +666,7 @@ static void *GetBwHealthboxTileDest(u8 healthboxSpriteId, u32 tileOffset)
     return (void *)(OBJ_VRAM0 + (gSprites[healthboxSpriteId].oam.tileNum + tileOffset) * TILE_SIZE_4BPP);
 }
 
+#if !BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
 static const u8 *GetBwNameGlyph(u8 character)
 {
     u32 tile;
@@ -807,6 +818,7 @@ static void DrawBwOutlinedFont(u8 healthboxSpriteId, u32 tileOffset, u32 tileCou
 
     CpuCopy32(tileBuffer, GetBwHealthboxTileDest(healthboxSpriteId, tileOffset), tileCount * TILE_SIZE_4BPP);
 }
+#endif // !BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
 
 // This function is here to cover a specific case - one player's mon in a 2 vs 1 double battle. In this scenario - display singles layout.
 // The same goes for a 2 vs 1 where opponent has only one pokemon, and for a 1 vs 2 wild battle where the player only ever sends out one mon.
@@ -1079,16 +1091,15 @@ void InitBattlerHealthboxCoords(u8 battler)
     UpdateSpritePos(gHealthboxSpriteIds[battler], x, y);
 }
 
-static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
+static void UpdateLvlInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
 {
     u8 battler = gSprites[healthboxSpriteId].hMain_Battler;
     bool32 isPlayer = IsOnPlayerSide(battler);
     bool32 hasIndicator = GetIndicatorPalTag(battler) != TAG_NONE;
     enum BattleCoordTypes coords = GetBattlerCoordsIndex(battler);
+    u32 lvl = GetMonData(mon, MON_DATA_LEVEL);
     u32 levelTile;
     u32 labelTile;
-    u8 text[8];
-    u8 *textPtr;
 
     if (!isPlayer)
     {
@@ -1106,27 +1117,122 @@ static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
         labelTile = BW_LEVEL_LABEL_DOUBLE_PLAYER;
     }
 
-    CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, levelTile), 4 * TILE_SIZE_4BPP);
-
-    if (hasIndicator)
+#if BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
     {
-        UpdateIndicatorLevelData(healthboxSpriteId, lvl);
-        UpdateIndicatorVisibilityAndType(healthboxSpriteId, FALSE);
-        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, labelTile), TILE_SIZE_4BPP);
-        levelTile += isPlayer ? 1 : 2;
-    }
-    else
-    {
-        UpdateIndicatorVisibilityAndType(healthboxSpriteId, TRUE);
-        CpuCopy32(gBattleInterface_BwLevelLabelGfx, GetBwHealthboxTileDest(healthboxSpriteId, labelTile), TILE_SIZE_4BPP);
-    }
+        // A disguised Pokemon shows its disguise's gender symbol here, but always its own level.
+        struct Pokemon *genderMon = GetIllusionMonPtr(battler);
+        u8 nickname[POKEMON_NAME_LENGTH + 1];
+        // Worst case 20 bytes: colour, symbol, colour, gap, label slot, gap, three digits, terminator.
+        u8 text[24];
+        u8 *textPtr = text;
+        u8 *windowTileData;
+        u32 species, gender, windowId, width;
 
-    textPtr = ConvertIntToDecimalStringN(text, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
-    *textPtr++ = CHAR_SPACE;
-    *textPtr++ = CHAR_SPACE;
-    *textPtr++ = CHAR_SPACE;
-    *textPtr = EOS;
-    DrawBwOutlinedFont(healthboxSpriteId, levelTile, 3, text);
+        if (genderMon == NULL)
+            genderMon = mon;
+
+        GetMonData(genderMon, MON_DATA_NICKNAME, nickname);
+        StringGet_Nickname(nickname);
+        gender = GetMonGender(genderMon);
+        species = GetMonData(genderMon, MON_DATA_SPECIES);
+
+        // An unnamed Nidoran already carries its symbol, and a ghost has none until the Silph Scope.
+        if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && StringCompare(nickname, GetSpeciesName(species)) == 0)
+            gender = MON_GENDERLESS;
+        if (!isPlayer && IsGhostBattleWithoutScope())
+            gender = MON_GENDERLESS;
+
+        if (gender == MON_MALE || gender == MON_FEMALE)
+        {
+            *textPtr++ = EXT_CTRL_CODE_BEGIN;
+            *textPtr++ = EXT_CTRL_CODE_COLOR;
+            *textPtr++ = gender == MON_MALE ? BW_TEXT_COLOR_MALE : BW_TEXT_COLOR_FEMALE;
+            *textPtr++ = gender == MON_MALE ? CHAR_MALE : CHAR_FEMALE;
+            *textPtr++ = EXT_CTRL_CODE_BEGIN;
+            *textPtr++ = EXT_CTRL_CODE_CLEAR;
+            *textPtr++ = BW_LEVEL_LABEL_GAP;
+        }
+
+        if (hasIndicator)
+        {
+            // The indicator sprite stands in for the "Lv", so skip its slot rather than close it up.
+            UpdateIndicatorLevelData(healthboxSpriteId, lvl);
+            UpdateIndicatorVisibilityAndType(healthboxSpriteId, FALSE);
+            *textPtr++ = EXT_CTRL_CODE_BEGIN;
+            *textPtr++ = EXT_CTRL_CODE_CLEAR;
+            *textPtr++ = BW_LEVEL_LABEL_ADVANCE;
+        }
+        else
+        {
+            UpdateIndicatorVisibilityAndType(healthboxSpriteId, TRUE);
+            *textPtr++ = EXT_CTRL_CODE_BEGIN;
+            *textPtr++ = EXT_CTRL_CODE_COLOR;
+            *textPtr++ = BW_TEXT_COLOR_LEVEL_LABEL;
+            *textPtr++ = CHAR_EXTRA_SYMBOL;
+            *textPtr++ = CHAR_LV_2;
+        }
+
+        *textPtr++ = EXT_CTRL_CODE_BEGIN;
+        *textPtr++ = EXT_CTRL_CODE_CLEAR;
+        *textPtr++ = BW_LEVEL_LABEL_GAP;
+
+        // Set here, not after the symbol, so the digits come out white in both branches.
+        *textPtr++ = EXT_CTRL_CODE_BEGIN;
+        *textPtr++ = EXT_CTRL_CODE_COLOR;
+        *textPtr++ = BW_TEXT_COLOR_FOREGROUND;
+
+        textPtr = ConvertIntToDecimalStringN(textPtr, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+        *textPtr = EOS;
+
+        // Right-aligned: the digits end flush with the field, the "Lv" and symbol sliding left of them.
+        width = GetStringWidth(FONT_OUTLINED_NARROW, text, -1);
+        // Printed at the nickname's y so the two share a baseline.
+        windowTileData = AddTextPrinterAndCreateWindowOnHealthboxWithColors(text,
+                            width < BW_LEVEL_FIELD_WIDTH ? BW_LEVEL_FIELD_WIDTH - width : 0, 2,
+                            BW_TEXT_COLOR_TRANSPARENT, BW_TEXT_COLOR_FOREGROUND, BW_TEXT_COLOR_SHADOW,
+                            &windowId, FONT_OUTLINED_NARROW);
+
+        // No clear beforehand: the copy rewrites every tile's band, including the "Lv" baked into the art.
+        if (isPlayer)
+        {
+            TextIntoHealthboxObject(GetBwHealthboxTileDest(healthboxSpriteId, labelTile - 8), windowTileData, BW_LEVEL_FIELD_TILES);
+        }
+        else
+        {
+            // The opponent's field straddles both sprites, so it takes two copies split at the label tile.
+            TextIntoHealthboxObject(GetBwHealthboxTileDest(healthboxSpriteId, labelTile - 8), windowTileData, 1);
+            TextIntoHealthboxObject(GetBwHealthboxTileDest(healthboxSpriteId, levelTile - 8), windowTileData + TILE_SIZE_4BPP, BW_LEVEL_FIELD_TILES - 1);
+        }
+        RemoveWindowOnHealthbox(windowId);
+    }
+#else
+    {
+        u8 text[8];
+        u8 *textPtr;
+
+        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, levelTile), 4 * TILE_SIZE_4BPP);
+
+        if (hasIndicator)
+        {
+            UpdateIndicatorLevelData(healthboxSpriteId, lvl);
+            UpdateIndicatorVisibilityAndType(healthboxSpriteId, FALSE);
+            CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, labelTile), TILE_SIZE_4BPP);
+            levelTile += isPlayer ? 1 : 2;
+        }
+        else
+        {
+            UpdateIndicatorVisibilityAndType(healthboxSpriteId, TRUE);
+            CpuCopy32(gBattleInterface_BwLevelLabelGfx, GetBwHealthboxTileDest(healthboxSpriteId, labelTile), TILE_SIZE_4BPP);
+        }
+
+        textPtr = ConvertIntToDecimalStringN(text, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+        *textPtr++ = CHAR_SPACE;
+        *textPtr++ = CHAR_SPACE;
+        *textPtr++ = CHAR_SPACE;
+        *textPtr = EOS;
+        DrawBwOutlinedFont(healthboxSpriteId, levelTile, 3, text);
+    }
+#endif
 }
 
 static void PrintHpOnHealthbox(u32 spriteId, s16 currHp, s16 maxHp, u32 bgColor, u32 rightTile, u32 leftTile)
@@ -1953,8 +2059,6 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
     u8 text[POKEMON_NAME_LENGTH + 4];
     u32 length;
     u32 nameTile;
-    u32 species;
-    u8 gender;
     struct Pokemon *illusionMon = GetIllusionMonPtr(gSprites[healthboxSpriteId].hMain_Battler);
     if (illusionMon != NULL)
         mon = illusionMon;
@@ -1964,37 +2068,30 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
     length = StringLength(nickname);
     memcpy(text, nickname, length);
 
-    gender = GetMonGender(mon);
-    species = GetMonData(mon, MON_DATA_SPECIES);
-
-    if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && StringCompare(nickname, GetSpeciesName(species)) == 0)
-        gender = 100;
-
-    if (GetBattlerSide(gSprites[healthboxSpriteId].hMain_Battler) == B_SIDE_OPPONENT && IsGhostBattleWithoutScope())
-        gender = 100;
-
 #if BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
-    if (gender == MON_MALE || gender == MON_FEMALE)
-        text[length++] = gender == MON_MALE ? CHAR_MALE : CHAR_FEMALE;
+    // The gender symbol lives in the level field here, so UpdateLvlInHealthbox prints it.
     text[length] = EOS;
 
-    nameTile = IsOnPlayerSide(gSprites[healthboxSpriteId].hMain_Battler)
-             ? BW_NAME_TILE_PLAYER
-             : BW_NAME_TILE_OPPONENT;
-
     {
+        bool32 isPlayer = IsOnPlayerSide(gSprites[healthboxSpriteId].hMain_Battler);
         u32 windowId;
         u8 *windowTileData;
         u32 tileCount = BW_NAME_FIELD_TILES;
-        u32 fontId = GetFontIdToFit(text, FONT_OUTLINED, -1, BW_NAME_WIDE_WIDTH);
+        u32 fontId;
 
-        // Wipe both tiles left of the six-tile field so a name that no longer
-        // needs the seventh does not leave the old glyph behind.
-        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, nameTile - 1), TILE_SIZE_4BPP);
-        CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, nameTile - 9), TILE_SIZE_4BPP);
+        // Only the player can borrow a seventh tile; the opponent's left tile holds the caught ball.
+        nameTile = isPlayer ? BW_NAME_TILE_PLAYER : BW_NAME_TILE_OPPONENT;
+        fontId = GetFontIdToFit(text, FONT_OUTLINED, -1, isPlayer ? BW_NAME_WIDE_WIDTH : BW_NAME_FIELD_WIDTH);
 
-        if (GetStringWidth(fontId, text, -1) > BW_NAME_FIELD_WIDTH)
-            tileCount = BW_NAME_WIDE_TILES, nameTile--;
+        if (isPlayer)
+        {
+            // Wipe both tiles left of the field so a shorter name leaves no old glyph behind.
+            CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, nameTile - 1), TILE_SIZE_4BPP);
+            CpuFill32(0, GetBwHealthboxTileDest(healthboxSpriteId, nameTile - 9), TILE_SIZE_4BPP);
+
+            if (GetStringWidth(fontId, text, -1) > BW_NAME_FIELD_WIDTH)
+                tileCount = BW_NAME_WIDE_TILES, nameTile--;
+        }
 
         // TextIntoHealthboxObject only lifts window rows 5-15 out, and the
         // outlined glyphs start four rows into their 16-pixel cell, so y2 sits
@@ -2008,6 +2105,15 @@ void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon)
         RemoveWindowOnHealthbox(windowId);
     }
 #else
+    u32 species = GetMonData(mon, MON_DATA_SPECIES);
+    u8 gender = GetMonGender(mon);
+
+    if ((species == SPECIES_NIDORAN_F || species == SPECIES_NIDORAN_M) && StringCompare(nickname, GetSpeciesName(species)) == 0)
+        gender = MON_GENDERLESS;
+
+    if (GetBattlerSide(gSprites[healthboxSpriteId].hMain_Battler) == B_SIDE_OPPONENT && IsGhostBattleWithoutScope())
+        gender = MON_GENDERLESS;
+
     if (gender == MON_MALE || gender == MON_FEMALE)
     {
         // Keep the source renderer's gender symbol aligned to a full tile.
@@ -2164,13 +2270,19 @@ void UpdateHealthboxAttribute(u8 healthboxSpriteId, struct Pokemon *mon, u8 elem
     u32 battler = gSprites[healthboxSpriteId].hMain_Battler;
     s32 maxHp = GetMonData(mon, MON_DATA_MAX_HP);
     s32 currHp = GetMonData(mon, MON_DATA_HP);
+    bool32 updateLevel = (elementId == HEALTHBOX_LEVEL || elementId == HEALTHBOX_ALL);
+
+#if BW_BATTLE_UI_HEALTHBOX_ENGINE_FONT
+    // The gender symbol is printed with the level, so a nickname-only refresh redraws that too.
+    updateLevel |= (elementId == HEALTHBOX_NICK);
+#endif
 
     if (IsOnPlayerSide(battler))
     {
         u8 isDoubles = GetBattlerCoordsIndex(battler) == BATTLE_COORDS_DOUBLES;
 
-        if (elementId == HEALTHBOX_LEVEL || elementId == HEALTHBOX_ALL)
-            UpdateLvlInHealthbox(healthboxSpriteId, GetMonData(mon, MON_DATA_LEVEL));
+        if (updateLevel)
+            UpdateLvlInHealthbox(healthboxSpriteId, mon);
 
         if (elementId == HEALTHBOX_ALL)
             UpdateHpTextInHealthbox(healthboxSpriteId, HP_BOTH, currHp, maxHp);
@@ -2214,8 +2326,8 @@ void UpdateHealthboxAttribute(u8 healthboxSpriteId, struct Pokemon *mon, u8 elem
     }
     else
     {
-        if (elementId == HEALTHBOX_LEVEL || elementId == HEALTHBOX_ALL)
-            UpdateLvlInHealthbox(healthboxSpriteId, GetMonData(mon, MON_DATA_LEVEL));
+        if (updateLevel)
+            UpdateLvlInHealthbox(healthboxSpriteId, mon);
         if (gBattleSpritesDataPtr->battlerData[battler].hpNumbersNoBars)
         {
             if (elementId == HEALTHBOX_ALL)
@@ -3153,12 +3265,13 @@ static const struct SpriteTemplate sSpriteTemplate_BattleStatusHint =
 
 #define LAST_USED_BALL_X_F    14
 #define LAST_USED_BALL_X_0    -14
-#define LAST_USED_BALL_Y      ((IsDoubleBattle()) ? 78 : 68)
-#define LAST_USED_BALL_Y_BNC  ((IsDoubleBattle()) ? 76 : 66)
+#define LAST_USED_BALL_Y      ((IsDoubleBattle()) ? 79 : 69)
+#define LAST_USED_BALL_Y_BNC  ((IsDoubleBattle()) ? 77 : 67)
 
 #define LAST_BALL_WIN_X_F       (LAST_USED_BALL_X_F - 0)
 #define LAST_BALL_WIN_X_0       (LAST_USED_BALL_X_0 - 0)
-#define LAST_USED_WIN_Y         (LAST_USED_BALL_Y - 8)
+// -9 rather than -8: the ball moved down a pixel, so this keeps the window and tabs put.
+#define LAST_USED_WIN_Y         (LAST_USED_BALL_Y - 9)
 #define BATTLE_SPRITE_HINT_X_F  LAST_BALL_WIN_X_F
 #define BATTLE_SPRITE_HINT_X_0  LAST_BALL_WIN_X_0
 #define BATTLE_SPRITE_HINT_Y_SINGLE 92

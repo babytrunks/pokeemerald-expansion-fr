@@ -50,9 +50,7 @@ LavenderTown_Mart_Items::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_SPELL_TAG
 	.2byte ITEM_BLACK_GLASSES
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 	.align 2
 LavenderTown_Mart_2BadgeItems::
@@ -61,9 +59,7 @@ LavenderTown_Mart_2BadgeItems::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_SPELL_TAG
 	.2byte ITEM_BLACK_GLASSES
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 	.align 2
 LavenderTown_Mart_4BadgeItems::
@@ -74,9 +70,7 @@ LavenderTown_Mart_4BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_SPELL_TAG
 	.2byte ITEM_BLACK_GLASSES
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 	.align 2
 LavenderTown_Mart_5BadgeItems::
@@ -88,9 +82,7 @@ LavenderTown_Mart_5BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_SPELL_TAG
 	.2byte ITEM_BLACK_GLASSES
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LavenderTown_Mart_Text_SearchingForStatRaiseItems::
     .string "I'm searching for items that raise\n"
