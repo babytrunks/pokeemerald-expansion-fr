@@ -1,6 +1,10 @@
 #ifndef GUARD_BATTLE_GFX_SFX_UTIL_H
 #define GUARD_BATTLE_GFX_SFX_UTIL_H
 
+// Tags reserving fixed OBJ palette slots 8/9 for player and partner back pics
+#define TAG_PLAYER_BACK_PIC_PAL  0xD6F8
+#define TAG_PARTNER_BACK_PIC_PAL 0xD6F9
+
 void AllocateBattleSpritesData(void);
 void FreeBattleSpritesData(void);
 u16 ChooseMoveAndTargetInBattlePalace(u32 battler);

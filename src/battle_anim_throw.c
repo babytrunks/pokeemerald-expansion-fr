@@ -788,6 +788,19 @@ void LoadHealthboxPalsForLevelUp(u8 *paletteId1, u8 *paletteId2, u8 battler)
     *paletteId1 = AllocSpritePalette(TAG_HEALTHBOX_PALS_1);
     *paletteId2 = AllocSpritePalette(TAG_HEALTHBOX_PALS_2);
 
+    // OBJ palette table can be full
+    //  skip the flash rather than indexing with 0xFF
+    if (*paletteId1 == 0xFF || *paletteId2 == 0xFF)
+    {
+        DebugPrintfLevel(MGBA_LOG_ERROR, "LEVEL UP FLASH: no free OBJ palette slot, skipping healthbox flash");
+        DebugPrintSpritePaletteTable("level up flash alloc failed");
+        FreeSpritePaletteByTag(TAG_HEALTHBOX_PALS_1);
+        FreeSpritePaletteByTag(TAG_HEALTHBOX_PALS_2);
+        *paletteId1 = 0xFF;
+        *paletteId2 = 0xFF;
+        return;
+    }
+
     offset1 = OBJ_PLTT_ID(gSprites[healthBoxSpriteId].oam.paletteNum);
     offset2 = OBJ_PLTT_ID(gSprites[spriteId2].oam.paletteNum);
     LoadPalette(&gPlttBufferUnfaded[offset1], OBJ_PLTT_ID(*paletteId1), PLTT_SIZE_4BPP);
@@ -847,6 +860,14 @@ static void AnimTask_FlashHealthboxOnLevelUp_Step(u8 taskId)
     {
         gTasks[taskId].data[0] = 0;
         paletteNum = IndexOfSpritePaletteTag(TAG_HEALTHBOX_PALS_1);
+
+        // No private palette copy was made, so there is nothing to flash.
+        if (paletteNum == 0xFF)
+        {
+            DestroyAnimVisualTask(taskId);
+            return;
+        }
+
         colorOffset = gTasks[taskId].data[10] == 0 ? 6 : 2;
         switch (gTasks[taskId].data[1])
         {
@@ -2453,10 +2474,28 @@ void TryShinyAnimation(u8 battler, struct Pokemon *mon)
     {
         if (isShiny)
         {
-            if (GetSpriteTileStartByTag(ANIM_TAG_GOLD_STARS) == 0xFFFF)
+            bool32 tilesResident = (GetSpriteTileStartByTag(ANIM_TAG_GOLD_STARS) != 0xFFFF);
+            bool32 palResident = (IndexOfSpritePaletteTag(ANIM_TAG_GOLD_STARS) != 0xFF);
+
+            // Palette load is gated on the tile tag so mismatched residency means wrong colors
+            if (tilesResident != palResident)
+            {
+                DebugPrintfLevel(MGBA_LOG_ERROR,
+                                 "SHINY ANIM: gold star tiles %s but palette %s - stars will use the wrong colors",
+                                 tilesResident ? "resident" : "missing",
+                                 palResident ? "resident" : "missing");
+                DebugPrintSpritePaletteTable("shiny anim palette mismatch");
+            }
+
+            if (!tilesResident)
             {
                 LoadCompressedSpriteSheetUsingHeap(&gBattleAnimPicTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
-                LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]);
+                if (LoadSpritePalette(&gBattleAnimPaletteTable[ANIM_TAG_GOLD_STARS - ANIM_SPRITES_START]) == 0xFF)
+                {
+                    DebugPrintfLevel(MGBA_LOG_ERROR, "SHINY ANIM: no free OBJ palette slot for gold stars (tag 0x%04X)",
+                                     ANIM_TAG_GOLD_STARS);
+                    DebugPrintSpritePaletteTable("shiny anim palette alloc failed");
+                }
             }
 
             taskCirc = CreateTask(Task_ShinyStars, 10);

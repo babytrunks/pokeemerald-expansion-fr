@@ -1160,7 +1160,7 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_DEDENNE
     },
-    [INGAME_TRADE_TANGELA] = 
+    [INGAME_TRADE_URSALUNA_BLOODMOON] = 
     {
         .nickname = _("FredFazbear"),
         .species = SPECIES_URSALUNA_BLOODMOON,

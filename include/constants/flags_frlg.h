@@ -549,7 +549,7 @@
 #define FLAG_GOT_SS_TICKET_DUP                           0x235
 #define FLAG_GOT_TM42_AT_MEMORIAL_PILLAR                 0x236
 #define FLAG_GOT_HM01                                    0x237
-#define FLAG_GOT_HM02                                    0x238
+#define FLAG_GOT_HM02                                    0x238 // unused
 #define FLAG_GOT_HM03                                    0x239
 #define FLAG_GOT_HM04                                    0x23A
 #define FLAG_GOT_HM05                                    0x23B

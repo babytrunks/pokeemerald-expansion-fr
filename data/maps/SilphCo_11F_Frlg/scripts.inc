@@ -327,7 +327,8 @@ SilphCo_11F_Movement_QuestionMark::
 SilphCo_11F_Movement_BrendanApproach::
 	@ Brendan walks down from his starting position to meet the player
 	@ (adjust walk count to match map layout)
-	face_right
+	walk_right
+	walk_down
 	walk_down
 	walk_down
 	walk_down

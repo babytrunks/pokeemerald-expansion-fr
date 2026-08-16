@@ -345,10 +345,10 @@
 #define TRAINER_CHAMPION_FIRST_BULBASAUR           339
 #define TRAINER_CHAMPION_FIRST_CHARMANDER          340
 #define TRAINER_CHANNELER_PATRICIA                 341
-#define TRAINER_CHANNELER_CARLY                    342 // unused
+#define TRAINER_TESTBATTLE_CHANNELER                    342 // unused
 #define TRAINER_CHANNELER_HOPE                     343
 #define TRAINER_CHANNELER_PAULA                    344
-#define TRAINER_CHANNELER_LAUREL                   345
+#define TRAINER_TESTBATTLE2_CHANNELER                   345
 #define TRAINER_CHANNELER_JODY                     346
 #define TRAINER_CHANNELER_TAMMY                    347 // unused
 #define TRAINER_CHANNELER_RUTH                     348

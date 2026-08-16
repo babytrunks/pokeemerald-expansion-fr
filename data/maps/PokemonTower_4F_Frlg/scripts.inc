@@ -7,7 +7,7 @@ PokemonTower_4F_EventScript_Paula::
 	end
 
 PokemonTower_4F_EventScript_Laurel::
-	trainerbattle_single TRAINER_CHANNELER_LAUREL, PokemonTower_4F_Text_LaurelIntro, PokemonTower_4F_Text_LaurelDefeat
+	trainerbattle_single TRAINER_TESTBATTLE2_CHANNELER, PokemonTower_4F_Text_LaurelIntro, PokemonTower_4F_Text_LaurelDefeat
 	msgbox PokemonTower_4F_Text_LaurelPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -204,7 +204,7 @@ Debug_EventScript_Text_DefensiveIVs:
 
 Debug_EventScript_Script_1::
 	@ setflag FLAG_ZA_WARUDO_BATTLE
-	trainerbattle_no_intro TRAINER_CHANNELER_CARLY, adminmtmoonleft_Text_Defeat
+	trainerbattle_no_intro TRAINER_TESTBATTLE_CHANNELER, adminmtmoonleft_Text_Defeat
 	clearflag FLAG_ZA_WARUDO_BATTLE
 	release
 	end
@@ -214,7 +214,7 @@ Debug_EventScript_Script_2::
 	fadescreen FADE_TO_BLACK
 	special ChooseHalfPartyForBattle
 	waitstate
-	multi_2_vs_2 TRAINER_SILPH_CO_ARCHER, SilphCo_11F_Text_ArcherDefeat, TRAINER_SILPH_CO_ARIANA, SilphCo_11F_Text_ArianaDefeat, PARTNER_SILPH_BRENDAN
+	multi_2_vs_2 TRAINER_TESTBATTLE_CHANNELER, SilphCo_11F_Text_ArcherDefeat, TRAINER_TESTBATTLE2_CHANNELER, SilphCo_11F_Text_ArianaDefeat, PARTNER_TEST_BRENDAN
 	@ Post-battle
 	@ playse SE_BALL_THROW
 	callnative ScriptUpdateFollowingMon

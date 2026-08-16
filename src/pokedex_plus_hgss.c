@@ -5187,6 +5187,7 @@ static bool8 CalculateMoves(void)
         species = GetFormSpeciesId(species, 0);
 
     // Egg moves
+#if HGSS_SHOW_EGG_MOVES
     if (HGSS_SHOW_EGG_MOVES_FOR_EVOS)
     {
         u16 preSpecies = species;
@@ -5206,6 +5207,7 @@ static bool8 CalculateMoves(void)
         sStatsMoves[movesTotal] = sStatsMovesEgg[i];
         movesTotal++;
     }
+#endif
 
     // Level up moves
     numLevelUpMoves = GetLevelUpMovesBySpecies(species, sStatsMovesLevelUp);

@@ -128,3 +128,19 @@ EVs: 252 Atk / 4 SpA / 252 Spe
 - Aqua Tail
 - Fire Blast
 - Hyper Voice
+
+=== PARTNER_TEST_BRENDAN ===
+Name: Brendan
+Class: Rival
+Pic: Brendan
+Gender: Male
+Music: Male
+Back Pic: Brendan
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+
+Sceptile @ Sceptilite
+Adamant Nature
+Level: 100
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- False Swipe

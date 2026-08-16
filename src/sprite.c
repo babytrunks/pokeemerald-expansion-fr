@@ -1668,6 +1668,19 @@ u16 GetSpritePaletteTagByPaletteNum(u8 paletteNum)
     return sSpritePaletteTags[paletteNum];
 }
 
+// Diagnostic: dump which tag owns each of the 16 OBJ palette slots
+void DebugPrintSpritePaletteTable(const char *why)
+{
+    DebugPrintfLevel(MGBA_LOG_ERROR, "OBJ PALETTE TABLE (%s):", why);
+
+    for (u32 slot = 0; slot < 16; slot++)
+    {
+        DebugPrintfLevel(MGBA_LOG_ERROR, "  slot %2d: tag 0x%04X%s",
+                         slot, sSpritePaletteTags[slot],
+                         slot < gReservedSpritePaletteCount ? " (reserved)" : "");
+    }
+}
+
 void FreeSpritePaletteByTag(u16 tag)
 {
     u8 index = IndexOfSpritePaletteTag(tag);

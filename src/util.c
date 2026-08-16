@@ -229,6 +229,15 @@ void BlendPalette(u16 palOffset, u16 numEntries, u8 coeff, u32 blendColor)
 {
     u16 i;
     struct PlttData *data2 = (struct PlttData *) & blendColor;
+
+    // Writes the palette buffers directly bypassing LoadPalette so it needs its own range check
+    if (palOffset + numEntries > PLTT_BUFFER_SIZE)
+    {
+        DebugPrintfLevel(MGBA_LOG_ERROR, "BlendPalette: out of range, offset %d entries %d", palOffset, numEntries);
+        AGB_ASSERT(FALSE);
+        return;
+    }
+
     for (i = 0; i < numEntries; i++)
     {
         u16 index = i + palOffset;

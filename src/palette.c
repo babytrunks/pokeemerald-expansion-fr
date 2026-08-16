@@ -47,8 +47,25 @@ static const u8 sRoundedDownGrayscaleMap[] = {
     31, 31
 };
 
+// Out-of-range writes stomp EWRAM
+// offset is in entries size in bytes.
+static bool32 IsPlttRangeValid(u32 offset, u32 size)
+{
+    u32 end = offset + size / 2;
+
+    if (end >= offset && end <= PLTT_BUFFER_SIZE)
+        return TRUE;
+
+    DebugPrintfLevel(MGBA_LOG_ERROR, "PALETTE: write out of range, offset %d size %d (buffer is %d entries)",
+                     offset, size, PLTT_BUFFER_SIZE);
+    AGB_ASSERT(FALSE);
+    return FALSE;
+}
+
 void LoadPalette(const void *src, u32 offset, u32 size)
 {
+    if (!IsPlttRangeValid(offset, size))
+        return;
     CpuCopy16(src, &gPlttBufferUnfaded[offset], size);
     CpuCopy16(src, &gPlttBufferFaded[offset], size);
 }
@@ -58,6 +75,8 @@ void LoadPaletteFast(const void *src, u32 offset, u32 size)
 {
     if ((u32)src & 3) // In case palette is not 4 byte aligned
         return LoadPalette(src, offset, size);
+    if (!IsPlttRangeValid(offset, size))
+        return;
     CpuFastCopy(src, &gPlttBufferUnfaded[offset], size);
     // Copying from EWRAM->EWRAM is faster than ROM->EWRAM
     CpuFastCopy(&gPlttBufferUnfaded[offset], &gPlttBufferFaded[offset], size);
@@ -65,6 +84,8 @@ void LoadPaletteFast(const void *src, u32 offset, u32 size)
 
 void FillPalette(u32 value, u32 offset, u32 size)
 {
+    if (!IsPlttRangeValid(offset, size))
+        return;
     CpuFill16(value, &gPlttBufferUnfaded[offset], size);
     CpuFill16(value, &gPlttBufferFaded[offset], size);
 }

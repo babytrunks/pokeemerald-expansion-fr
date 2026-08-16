@@ -13506,7 +13506,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Foul Play  
 - Parting Shot
 
-=== TRAINER_CHANNELER_CARLY ===
+=== TRAINER_TESTBATTLE_CHANNELER ===
 Name: TestBattle
 Class: Channeler Frlg
 Pic: Channeler Frlg
@@ -13622,22 +13622,21 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Wish  
 - Taunt  
 
-=== TRAINER_CHANNELER_LAUREL ===
+=== TRAINER_TESTBATTLE2_CHANNELER ===
 Name: Laurel
 Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+AI: Basic Trainer / Omniscient / Smart Switching / Smart Mon Choices / PP Stall Prevention / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 
-Haunter
-Level: 33
+Dusclops @ Eviolite
+Tera Type: Ghost
+Level: 50
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Hypno
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Splash
+- Shadow Sneak
 
 === TRAINER_CHANNELER_JODY ===
 Name: Jody
@@ -15505,71 +15504,72 @@ Mugshot: Pink
 Boss: Yes
 Dynamic Level Ratio: 95
 
-Hydreigon @ Life Orb  
-Ability: Levitate  
+
+Garchomp @ Rocky Helmet  
+Ability: Rough Skin 
+Level: 57    
+EVs: 252 Spe / 252 HP 
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Spikes
+- Stealth Rock  
+- Dragon Tail
+- Earthquake
+
+Dragalge @ Dragalgite  
+Ability: Adaptability  
 Level: 58  
-EVs: 4 HP / 252 SpA / 252 Spe  
-Nature: Timid
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
-- Dark Pulse  
+EVs: 252 SpD / 252 HP  
+Nature: Calm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Draco Meteor  
-- Flash Cannon  
-- Stealth Rock
+- Sludge Bomb  
+- Toxic  
+- Flip Turn
 
-Lilligant-Hisui @ Blunder Policy  
-Ability: Hustle  
-Level: 58  
-EVs: 252 Atk / 4 SpD / 252 Spe  
-Nature: Adamant
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
-- Close Combat  
-- Leaf Blade  
-- Ice Spinner  
-- Knock Off
-
-Wishiwashi @ Wiki Berry
-Ability: Schooling  
-Level: 58  
-EVs: 252 HP / 252 SpA / 4 SpD  
+Wailord @ Sitrus Berry 
+Ability: Blubber Defense  
+Level: 57  
+EVs: 252 HP / 252 SpA  
 Nature: Modest
-IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe 
-- Hydro Pump  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
+- Water Spout 
 - Ice Beam  
-- Flip Turn  
-- Endeavor
+- Rest  
+- Bouncy Bubble
 
-Sandaconda @ Rocky Helmet
-Ability: Shed Skin  
-Level: 58  
-EVs: 252 HP / 8 Atk / 248 SpD  
-Nature: Careful
+Blastoise @ Leftovers 
+Ability: Torrent  
+Level: 57  
+EVs: 252 HP / 252 SpA 
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald
+- Mirror Coat
+- Protect
+- Ice Beam
+
+Sharpedo @ Expert Belt  
+Ability: Rough Skin
+Level: 57   
+EVs: 252 Atk / 252 Spe  
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
-- Earthquake  
-- Stone Edge  
-- Coil  
-- Rest
+- Liquidation
+- Crunch  
+- Ice Fang  
+- Flip Turn
 
-Floette-Eternal @ Choice Specs  
-Ability: Natural Cure  
-Level: 58  
-EVs: 252 SpA / 4 SpD / 252 Spe  
+Chatot @ Throat Spray
+Ability: Punk Rock
+Level: 57   
+EVs: 252 SpA / 252 Spe  
 Nature: Timid
-IVs: 30 HP / 0 Atk / 30 Def / 31 SpA / 30 SpD / 30 Spe  
-- Light of Ruin  
-- Moonblast  
-- Psychic  
-- Hidden Power
-
-Golisopod @ Golisopite
-Ability: Emergency Exit  
-Level: 58  
-EVs: 244 HP / 252 Atk / 12 SpD  
-Nature: Adamant  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe  
-- Leech Life  
-- Iron Head  
-- Liquidation  
-- Swords Dance
+- Boomburst
+- Chatter  
+- Heat Wave  
+- U-Turn
 
 === TRAINER_BURGLAR_JESSE ===
 Name: Jesse

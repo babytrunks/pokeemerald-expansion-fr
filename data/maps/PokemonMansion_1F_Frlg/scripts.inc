@@ -48,16 +48,11 @@ PokemonMansion_1F_EventScript_Thomas::
 	trainerbattle_no_intro TRAINER_COOLTRAINER_THOMAS, PokemonMansion_1F_Text_ThomasDefeat
 PokemonMansion_1F_EventScript_ThomasReward::
 	msgbox PokemonMansion_1F_Text_ThomasReward
-	giveitem ITEM_GOLISOPITE
+	giveitem ITEM_DRAGALGITE
 	msgbox PokemonMansion_1F_Text_ThomasPostBattle
 	closemessage
 	setflag FLAG_HIDE_MANSION_THOMAS
 	removeobject LOCALID_POKEMON_MANSION_1F_THOMAS
-	release
-	end
-
-PokemonMansion_1F_EventScript_ThomasBagFull::
-	msgbox gText_TooBadBagIsFull
 	release
 	end
 

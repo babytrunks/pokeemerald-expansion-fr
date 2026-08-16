@@ -79,6 +79,10 @@ bool32 ShouldTrainerBattlerUseGimmick(u32 battler, enum Gimmick gimmick)
     // Check the trainer party data to see if a gimmick is intended.
     else
     {
+        // Bitfields below describe gEnemyParty only; partner indexes overlap the opponent's.
+        if (IsOnPlayerSide(battler))
+            return FALSE;
+
         if (gimmick == GIMMICK_TERA && gBattleStruct->opponentMonCanTera & 1 << gBattlerPartyIndexes[battler])
             return TRUE;
         if (gimmick == GIMMICK_DYNAMAX && gBattleStruct->opponentMonCanDynamax & 1 << gBattlerPartyIndexes[battler])
@@ -174,6 +178,7 @@ void CreateGimmickTriggerSprite(u32 battler)
     if (paletteNum == 0xFF)
     {
         DebugPrintfLevel(MGBA_LOG_ERROR, "GIMMICK TRIGGER: no free OBJ palette slot for tag 0x%04X", gimmick->triggerPal->tag);
+        DebugPrintSpritePaletteTable("gimmick trigger alloc failed");
         return;
     }
 
@@ -410,12 +415,29 @@ void UpdateIndicatorVisibilityAndType(u32 healthboxId, bool32 invisible)
     {
         u32 palSlot = IndexOfSpritePaletteTag(palTag);
 
+        if (palSlot == 0xFF)
+        {
+            // First use this battle: claim a slot and load colors, ignoring the fade check.
+            palSlot = LoadSpritePalette(GetIndicatorSpritePalette(palTag));
+        }
         // Battle anims can leave this slot blended in gPlttBufferFaded, and nothing
         // re-syncs sprite palettes mid-battle, so rewrite the colors on every update.
         // Skipped during fades: LoadPalette would overwrite the faded buffer at full
         // brightness, and the fade itself restores the slot from the unfaded buffer.
-        if (palSlot != 0xFF && !gPaletteFade.active)
+        else if (!gPaletteFade.active)
+        {
             LoadPalette(GetIndicatorSpritePalette(palTag)->data, OBJ_PLTT_ID(palSlot), PLTT_SIZE_4BPP);
+        }
+
+        // oam.paletteNum is 4 bits, so 0xFF would become slot 15. Hide instead.
+        if (palSlot == 0xFF)
+        {
+            DebugPrintfLevel(MGBA_LOG_ERROR, "INDICATOR: no free OBJ palette slot for tag 0x%04X (battler %d)",
+                             palTag, battler);
+            DebugPrintSpritePaletteTable("indicator alloc failed");
+            sprite->invisible = TRUE;
+            return;
+        }
 
         sprite->oam.paletteNum = palSlot;
         sprite->invisible = invisible;

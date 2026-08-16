@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle.h"
 #include "battle_controllers.h"
+#include "battle_gfx_sfx_util.h"
 #include "battle_ai_main.h"
 #include "battle_anim.h"
 #include "constants/battle_anim.h"
@@ -697,10 +698,26 @@ void DecompressTrainerFrontPic(u16 frontPicId, u8 battler)
 void DecompressTrainerBackPic(u16 backPicId, u8 battler)
 {
     u8 position = GetBattlerPosition(battler);
-    CopyTrainerBackspriteFramesToDest(backPicId, gMonSpritesGfxPtr->spritesGfx[position]);
+    u32 fixedSlot = 8 + battler/2;
     // Aiming for palette slots 8 and 9 for Player and PlayerPartner to prevent Trainer Slides causing mons to change colour
-    LoadPalette(gTrainerBacksprites[backPicId].palette.data,
-                          OBJ_PLTT_ID(8 + battler/2), PLTT_SIZE_4BPP);
+    struct SpritePalette backPicPal =
+    {
+        .data = gTrainerBacksprites[backPicId].palette.data,
+        .tag = (battler/2) ? TAG_PARTNER_BACK_PIC_PAL : TAG_PLAYER_BACK_PIC_PAL,
+    };
+    CopyTrainerBackspriteFramesToDest(backPicId, gMonSpritesGfxPtr->spritesGfx[position]);
+
+    // Tag-register the fixed slot so AllocSpritePalette cant hand it to another consumer
+    u16 squatterTag = GetSpritePaletteTagByPaletteNum(fixedSlot);
+    if (squatterTag != TAG_NONE && squatterTag != backPicPal.tag)
+    {
+        DebugPrintfLevel(MGBA_LOG_ERROR,
+                         "BACK PIC: fixed OBJ pal slot %d was tag-allocated to 0x%04X (battler %d, backPicId %d) - evicting it",
+                         fixedSlot, squatterTag, battler, backPicId);
+        DebugPrintSpritePaletteTable("back pic slot conflict");
+    }
+
+    LoadSpritePaletteInSlot(&backPicPal, fixedSlot);
 }
 
 void FreeTrainerFrontPicPalette(u16 frontPicId)
@@ -746,7 +763,7 @@ bool8 BattleLoadAllHealthBoxesGfx(u8 state)
             LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[0]);
             LoadSpritePalette(&sSpritePalettes_HealthBoxHealthBar[1]);
 
-            // LoadIndicatorSpritesGfx();
+            // Not preloaded: each battler needs only one indicator palette, allocated on demand.
             CategoryIcons_LoadSpritesGfx();
         }
         else if (!IsDoubleBattle())

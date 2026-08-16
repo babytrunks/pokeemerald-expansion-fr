@@ -2783,7 +2783,7 @@ bool32 TwoOpponentIntroMons(u32 battler) // Double battle with both opponent pok
 
 void BtlController_HandleIntroTrainerBallThrow(u32 battler, u16 tagTrainerPal, const u16 *trainerPal, s16 framesToWait, void (*controllerCallback)(u32 battler))
 {
-    u8 paletteNum, taskId;
+    u8 taskId;
     enum BattleSide side = GetBattlerSide(battler);
 
     SetSpritePrimaryCoordsFromSecondaryCoords(&gSprites[gBattleStruct->trainerSlideSpriteIds[battler]]);
@@ -2807,8 +2807,7 @@ void BtlController_HandleIntroTrainerBallThrow(u32 battler, u16 tagTrainerPal, c
         StoreSpriteCallbackInData6(&gSprites[gBattleStruct->trainerSlideSpriteIds[battler]], SpriteCB_FreePlayerSpriteLoadMonSprite);
         StartSpriteAnim(&gSprites[gBattleStruct->trainerSlideSpriteIds[battler]], ShouldDoSlideInAnim(battler) ? 2 : 1);
 
-        paletteNum = AllocSpritePalette(tagTrainerPal);
-        LoadPalette(trainerPal, OBJ_PLTT_ID(paletteNum), PLTT_SIZE_4BPP);
+        // Back pic palette already loaded into fixed slot 8 + battler/2 params now unused
         gSprites[gBattleStruct->trainerSlideSpriteIds[battler]].oam.paletteNum = (8 + battler/2);
     }
     else
@@ -2891,9 +2890,8 @@ static void SpriteCB_FreePlayerSpriteLoadMonSprite(struct Sprite *sprite)
 {
     u8 battler = sprite->sBattlerId;
 
-    // Free player trainer sprite
+    // Free player trainer sprite. No palette tag to release; the back pic slot is untagged.
     FreeSpriteOamMatrix(sprite);
-    FreeSpritePaletteByTag(GetSpritePaletteTagByPaletteNum(sprite->oam.paletteNum));
     DestroySprite(sprite);
 
     // Load mon sprite

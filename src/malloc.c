@@ -34,6 +34,10 @@ void *AllocInternal(void *heapStart, u32 size, const char *location)
     struct MemBlock *splitBlock;
     u32 foundBlockSize;
 
+    // A zero-byte block aliases the next blocks header so give every block a byte
+    if (size == 0)
+        size = 4;
+
     // Alignment
     if (size & 3)
         size = 4 * ((size / 4) + 1);
@@ -113,14 +117,59 @@ void *AllocInternal(void *heapStart, u32 size, const char *location)
     }
 }
 
+// Walks the heap by address (corrupt links can't loop)
+// block before first bad one overran.
+#if TESTING || !defined(NDEBUG)
+static void DumpHeap(const char *why)
+{
+    struct MemBlock *pos = (struct MemBlock *)sHeapStart;
+    const u8 *limit = (const u8 *)sHeapStart + sHeapSize;
+    u32 index = 0;
+
+    DebugPrintfLevel(MGBA_LOG_ERROR, "HEAP DUMP (%s):", why);
+
+    while ((const u8 *)pos + sizeof(struct MemBlock) <= limit)
+    {
+        const char *location = MemBlockLocation(pos);
+
+        if (pos->magic != MALLOC_SYSTEM_ID)
+        {
+            DebugPrintfLevel(MGBA_LOG_ERROR, "  [%d] %p CORRUPT: magic 0x%04X, expected 0x%04X",
+                             index, pos, pos->magic, MALLOC_SYSTEM_ID);
+            return;
+        }
+
+        DebugPrintfLevel(MGBA_LOG_ERROR, "  [%d] %p %s size %d %s",
+                         index, pos, pos->allocated ? "used" : "free", pos->size,
+                         location != NULL ? location : "<unknown>");
+
+        if (pos->size == 0 || (const u8 *)(pos->data + pos->size) > limit)
+            return;
+
+        pos = (struct MemBlock *)(pos->data + pos->size);
+        index++;
+    }
+}
+#else
+#define DumpHeap(why) ((void)0)
+#endif
+
 void FreeInternal(void *heapStart, void *pointer)
 {
     if (pointer)
     {
         struct MemBlock *head = (struct MemBlock *)heapStart;
         struct MemBlock *block = (struct MemBlock *)((u8 *)pointer - sizeof(struct MemBlock));
-        AGB_ASSERT(block->magic == MALLOC_SYSTEM_ID);
-        AGB_ASSERT(block->allocated == TRUE);
+
+        // Bail out: merging through a corrupt header's garbage links crashes instead of reporting
+        if (block->magic != MALLOC_SYSTEM_ID || block->allocated != TRUE)
+        {
+            DumpHeap("FreeInternal on a bad block");
+            AGB_ASSERT(block->magic == MALLOC_SYSTEM_ID);
+            AGB_ASSERT(block->allocated == TRUE);
+            return;
+        }
+
         block->allocated = FALSE;
 
         // If the freed block isn't the last one, merge with the next block
