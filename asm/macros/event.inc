@@ -2890,6 +2890,12 @@
 	waitstate
 	.endm
 
+	@ Saves with no prompt, just a Saving message and the jingle
+	.macro autosave
+	callnative Script_AutoSaveGame
+	waitstate
+	.endm
+
 	@ Makes the trainer unable to see the player if executed.
 	@ This is a no-op if the player interacts with the trainer.
 	.macro cant_see_if, condition:req

@@ -10257,6 +10257,19 @@
       "border_filepath": "data/layouts/MtMoon_Extra_Frlg/border.bin",
       "blockdata_filepath": "data/layouts/MtMoon_Extra_Frlg/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_SILPH_CO_EXTRA1",
+      "name": "SilphCoExtra1",
+      "width": 36,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_BuildingFrlg",
+      "secondary_tileset": "gTileset_SilphCo",
+      "border_filepath": "data/layouts/SilphCoExtra1/border.bin",
+      "blockdata_filepath": "data/layouts/SilphCoExtra1/map.bin",
+      "layout_version": "frlg"
     }
   ]
 }

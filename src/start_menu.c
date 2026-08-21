@@ -1550,9 +1550,67 @@ void Script_ForceSaveGame(struct ScriptContext *ctx)
 {
     SaveGame();
     ShowSaveInfoWindow();
-    gMenuCallback = SaveCallback;
     sSaveDialogCallback = SaveSavingMessageCallback;
 }
+
+static const u8 sText_AutoSaving[] = _("Saving…");
+
+#define tState data[0]
+
+// Promptless save, no yes/no and no save info window
+static void Task_AutoSave(u8 taskId)
+{
+    s16 *state = &gTasks[taskId].tState;
+
+    switch (*state)
+    {
+    case 0:
+        // Draw the message first so it covers the blocking write below
+        StringExpandPlaceholders(gStringVar4, sText_AutoSaving);
+        LoadMessageBoxAndFrameGfx(0, TRUE);
+        AddTextPrinterForMessage(TRUE);
+        (*state)++;
+        break;
+    case 1:
+        // The overworld does not pump text printers, so do it here
+        if (RunTextPrintersAndIsPrinter0Active() != TRUE)
+            (*state)++;
+        break;
+    case 2:
+        // TrySavingData blocks until every sector is written
+        SaveMapView();
+        IncrementGameStat(GAME_STAT_SAVED_GAME);
+        if (TrySavingData(SAVE_NORMAL) == SAVE_STATUS_OK)
+            PlaySE(SE_SAVE);
+        (*state)++;
+        break;
+    case 3:
+        // Hold the message up until the jingle finishes
+        if (!IsSEPlaying())
+        {
+            ClearDialogWindowAndFrame(0, TRUE);
+            (*state)++;
+        }
+        break;
+    case 4:
+        DestroyTask(taskId);
+        ScriptContext_Enable();
+        break;
+    }
+}
+
+void Script_AutoSaveGame(struct ScriptContext *ctx)
+{
+    u8 taskId = CreateTask(Task_AutoSave, 0x50);
+
+    // Never silently clobber another player's save file, and leave the pyramid
+    // to its own rest and retire semantics. Jump to the last state rather than
+    // returning early, so waitstate still gets released
+    if (gDifferentSaveFile == TRUE || CurrentBattlePyramidLocation() != PYRAMID_LOCATION_NONE)
+        gTasks[taskId].tState = 4;
+}
+
+#undef tState
 
 // extern const u8 gText_StartMenu_Time[];
 static const u8 gText_StartMenu_Day[]   = _("Day: ");

@@ -73,3 +73,10 @@ Common_EventScript_SaveGame::
 	special SaveGame
 	waitstate
 	return
+
+@ Promptless save used by the Auto Save option
+@ closemessage first so no field message task fights the Saving text
+Common_EventScript_AutoSave::
+    closemessage
+	autosave
+	return

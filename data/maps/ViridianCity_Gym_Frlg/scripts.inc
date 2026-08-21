@@ -10,7 +10,6 @@ ViridianCity_Gym_EventScript_Clair::
 
 ViridianCity_Gym_EventScript_DefeatedClair::
 	setflag FLAG_HIDE_MISC_KANTO_ROCKETS
-	call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setflag FLAG_BADGE08_GET
 	setvar VAR_MAP_SCENE_ROUTE22, 3
 	set_gym_trainers_frlg 8
@@ -25,6 +24,7 @@ ViridianCity_Gym_EventScript_GiveTM90::
 	msgbox ViridianCity_Gym_Text_ExplainItems
     applymovement LOCALID_PLAYER, Common_Movement_FaceDown
     waitmovement 0
+	call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	release
 	end
 

@@ -149,6 +149,7 @@ EventScript_PkmnCenterNurse_PlayerTurn::
    @ closemessage
    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
    waitmovement 0
+   call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
    release
    end
 

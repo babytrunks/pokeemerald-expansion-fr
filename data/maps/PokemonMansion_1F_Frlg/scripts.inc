@@ -91,40 +91,39 @@ PokemonMansion_1F_Text_JohnsonPostBattle::
     .string "I ought to go soon.$"
 
 PokemonMansion_1F_Text_ThomasIntro::
-    .string "Hm? Oh yes.\n"
-    .string "I've had my eye on you. Cleared\l"
-    .string "out every trainer here.\p"
-    .string "Fine. A battle, and make it\n"
-    .string "snappy.\p"
-    .string "Well? Yes or no? Don't waste\n"
-    .string "my time.$"
+    .string "I see you found me, trainer.\p"
+    .string "Me and my Pokémon are here on\n"
+    .string "Cinnabar Island to relax after\l"
+    .string "many weeks out on the high seas.\p"
+    .string "It could be fun to see how the\n"
+    .string "mainland trainers fare in battle!$"
 
 PokemonMansion_1F_Text_ThomasAccept::
-    .string "Good! Let's get this over with.\n"
-    .string "I have a power nap scheduled at\l"
-	.string "three.$"
+    .string "That's the spirit, matey!\p"
+    .string "Let's see if you can weather a\n"
+    .string "storm!$"
 
 PokemonMansion_1F_Text_ThomasDefeat::
-    .string "Wha?! That was not what I\n"
-    .string "had planned!$"
+    .string "Well done matey!\n"
+    .string "You really washed me there!$"
 
 PokemonMansion_1F_Text_ThomasReward::
-    .string "Fine, fine. You got me.\n"
-    .string "Here, consider it a signing\l"
-    .string "bonus.\p"
-	.string "Maybe it'll get you to leave\n"
-	.string "me alone.$"
+    .string "Take this item, it is precious\n"
+    .string "to my partner Dragalge.$"
 
 PokemonMansion_1F_Text_ThomasPostBattle::
-    .string "Now if you'll excuse me, I have\n"
-    .string "a very important nap to take.$"
+    .string "It was mighty fun battling you,\n"
+    .string "youngster.\p"
+    .string "I hope we can meet again\n"
+    .string "sometime, out on the high seas!$"
 
 PokemonMansion_1F_Text_ThomasNotReady::
-    .string "Mm? You want my time?\p"
-    .string "Sorry. I don't take meetings\n"
-    .string "with amateurs.\p"
-    .string "Clear out every trainer in this\n"
-    .string "mansion first. Then we'll talk.$"
+    .string "Ahoy there, youngster!\p"
+    .string "I only battle sailors who have\n"
+    .string "earned their sea legs.\p"
+    .string "Best every trainer in this\n"
+    .string "mansion first, then we'll talk!$"
 
 PokemonMansion_1F_Text_ThomasNo::
-    .string "No? Fine. You saved me the trouble.$"
+    .string "No? Then rest up, matey.\n"
+    .string "I'll be here a while yet.$"

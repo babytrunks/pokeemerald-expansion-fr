@@ -13,7 +13,6 @@ CeladonCity_Gym_EventScript_DefeatedErika::
 	famechecker FAMECHECKER_ERIKA, 1
 	clearflag FLAG_HIDE_FAME_CHECKER_ERIKA_JOURNALS
 	setflag FLAG_BADGE04_GET
-    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	set_gym_trainers_frlg 4
 	goto CeladonCity_Gym_EventScript_GiveTM19
 	end
@@ -29,11 +28,13 @@ CeladonCity_Gym_EventScript_GiveTM19::
 	msgbox CeladonCity_Gym_Text_Victreebelite
     applymovement LOCALID_PLAYER, Common_Movement_FaceDown
     waitmovement 0
+    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	release
 	end
 
 CeladonCity_Gym_EventScript_NoRoomForTM19::
 	msgbox CeladonCity_Gym_Text_ShouldMakeRoomForThis
+    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	release
 	end
 

@@ -1020,7 +1020,6 @@ VermilionCity_FanClub_Text_ThatFossilMergesWithAnother::
 	.string "Oh! That Fossil merges with another.\n"
 	.string "Which one you merge with?$"
 
-@ TODO: Resolve text dump error below?
 VermilionCity_FanClub_Text_HandedFossilToWeirdDoctor::
     .string "So!\n"
     .string "You hurry and give me that!\p"

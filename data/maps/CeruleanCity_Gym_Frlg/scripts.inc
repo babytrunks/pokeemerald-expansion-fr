@@ -18,7 +18,6 @@ CeruleanCity_Gym_EventScript_Misty::
 
 CeruleanCity_Gym_EventScript_MistyDefeated::
 	famechecker FAMECHECKER_MISTY, 1
-    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setflag FLAG_BADGE02_GET
 	setrespawn HEAL_LOCATION_CERULEAN_CITY
 	set_gym_trainers_frlg 2
@@ -34,6 +33,7 @@ CeruleanCity_Gym_EventScript_GiveTM54::
 	msgbox CeruleanCity_Gym_Text_ExplainTM54
     applymovement LOCALID_PLAYER, Common_Movement_FaceDown
     waitmovement 0
+    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	release
 	end
 

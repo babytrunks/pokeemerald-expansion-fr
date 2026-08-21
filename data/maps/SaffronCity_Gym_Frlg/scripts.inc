@@ -95,7 +95,6 @@ SaffronCity_Gym_EventScript_DefeatedSabrina::
 	famechecker FAMECHECKER_SABRINA, 2
 	famechecker FAMECHECKER_SABRINA, 3
 	clearflag FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS
-    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setflag FLAG_DEFEATED_SABRINA
 	setflag FLAG_BADGE05_GET
 	set_gym_trainers_frlg 6
@@ -110,6 +109,7 @@ SaffronCity_Gym_EventScript_GiveTM04::
 	giveitem ITEM_CHIMECHITE
     applymovement LOCALID_PLAYER, Common_Movement_FaceDown
     waitmovement 0
+    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	release
 	end
 

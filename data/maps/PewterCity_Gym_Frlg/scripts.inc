@@ -65,7 +65,6 @@ PewterCity_Gym_EventScript_Brock::
 PewterCity_Gym_EventScript_DefeatedBrock::
 	famechecker FAMECHECKER_BROCK, 1
 	setflag FLAG_BADGE01_GET
-    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setvar VAR_MAP_SCENE_PEWTER_CITY, 1
 	setflag FLAG_HIDE_PEWTER_CITY_GYM_GUIDE
 	clearflag FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY
@@ -82,6 +81,7 @@ PewterCity_Gym_EventScript_GiveTM39::
 	msgbox PewterCity_Gym_Text_ExplainTM39
     applymovement LOCALID_PLAYER, Common_Movement_FaceDown
     waitmovement 0
+    call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	release
 	end
 
@@ -142,15 +142,11 @@ PewterCity_Gym_EventScript_Onix::
 	release
 	end
 
-Common_EventScript_AutoSave::
-    call CableClubSaveGame
-    return
-
 PewterCity_Gym_Text_Onix::
     .string "Oooar!$"
 
 PewterCity_Gym_Text_BrockIntro::
-    .string "{COLOR BLUE}So, you're here. I'm Brock.\n"
+    .string "So, you're here. I'm Brock.\n"
     .string "I'm Pewter's Gym Leader.\p"
     .string "My rock-hard willpower is evident\n"
     .string "even in my Pokémon.\p"
@@ -177,7 +173,7 @@ PewterCity_Gym_Text_BrockDefeat::
     .string "Flash outside of battle.$"
 
 PewterCity_Gym_Text_TakeThisWithYou::
-    .string "{COLOR BLUE}Wait!\n"
+    .string "Wait!\n"
     .string "Take this with you.$"
 
 PewterCity_Gym_Text_ReceivedTM39FromBrock::
@@ -185,7 +181,7 @@ PewterCity_Gym_Text_ReceivedTM39FromBrock::
     .string "from Brock.$"
 
 PewterCity_Gym_Text_ExplainTM39::
-    .string "{COLOR BLUE}A TM, Technical Machine, contains a\n"
+    .string "A TM, Technical Machine, contains a\n"
     .string "technique for Pokémon.\p"
     .string "Using a TM teaches the move it\n"
     .string "contains to a Pokémon.\p"

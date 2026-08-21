@@ -54,7 +54,6 @@ CinnabarIsland_Gym_EventScript_Blaine::
 
 CinnabarIsland_Gym_EventScript_DefeatedBlaine::
 	famechecker FAMECHECKER_BLAINE, 1
-	call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	setflag FLAG_BADGE07_GET
 	setrespawn HEAL_LOCATION_CINNABAR_ISLAND
 	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 1
@@ -70,6 +69,7 @@ CinnabarIsland_Gym_EventScript_GiveTM38::
 	msgbox CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove
     applymovement LOCALID_PLAYER, Common_Movement_FaceDown
     waitmovement 0
+	call_if_set FLAG_AUTOSAVE_ENABLED, Common_EventScript_AutoSave
 	release
 	end
 

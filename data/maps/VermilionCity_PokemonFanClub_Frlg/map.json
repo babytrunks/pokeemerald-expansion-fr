@@ -52,11 +52,10 @@
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_QUEST_GIVER",
+      "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_Pikachu",
-      "flag": "0",
-      "quest_id": "QUEST_FAN_CLUB_TUTOR"
+      "flag": "0"
     },
     {
       "type": "object",
@@ -111,10 +110,11 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_QUEST_GIVER",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VermilionCity_PokemonFanClub_EventScript_TamerTutor",
-      "flag": "0"
+      "flag": "0",
+      "quest_id": "QUEST_FAN_CLUB_TUTOR"
     },
     {
       "type": "object",
