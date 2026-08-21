@@ -3,6 +3,7 @@
 
 #include "main.h"
 #include "task.h"
+#include "constants/party_menu.h"
 
 // seems like the last two fields may have been left as all-purpose vars
 // and the second of the two just happens to only be used in one case
@@ -11,7 +12,7 @@ struct PartyMenu
     MainCallback exitCallback;
     TaskFunc task;
     u8 menuType:4;
-    u8 layout:2;
+    u8 layout:4; // 4 bits so the SwSh full-team multi layouts fit
     s8 slotId;
     s8 slotId2;
     u8 action;
