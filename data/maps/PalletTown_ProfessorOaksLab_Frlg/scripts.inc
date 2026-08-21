@@ -1273,8 +1273,8 @@ GaryMoveFromFire:
     @here 3 locations have to be considered for player: above, left and under
     @because player takes grass here which is left
 	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
-	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak1
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak2_2
+	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak1
+	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak2
     goto ProceedPokedexScript
 
 GaryMoveFromWater::
@@ -1825,21 +1825,6 @@ PlayerBackToOak2::
 
 PlayerMoves2::
 	walk_down
-	walk_left
-	walk_left
-	walk_up
-	step_end
-
-PlayerBackToOak2_2::
-    applymovement LOCALID_PLAYER, PlayerMoves2_2
-	waitmovement 0
-    return
-
-PlayerMoves2_2::
-	walk_left
-	walk_down
-	walk_down
-	walk_left
 	walk_left
 	walk_left
 	walk_up
