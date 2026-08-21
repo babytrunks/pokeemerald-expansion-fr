@@ -92,10 +92,8 @@ ViridianForest_2_EventScript_PichuBulliesDefeated::
 	questmenu QUEST_MENU_SET_REWARD, QUEST_LIGHT_BALL
 	setvar VAR_VIRIDIAN_FOREST_QUEST, 1
 	setflag FLAG_DONT_RANDOMIZE
-	setflag FLAG_3_PERFECT_IVS
 	givemon SPECIES_PICHU_SPIKY_EARED, 10, ITEM_ZAP_PLATE, move1=MOVE_VOLT_TACKLE, move2=MOVE_HELPING_HAND, move3=MOVE_SWAGGER, move4=MOVE_PAIN_SPLIT
 	clearflag FLAG_DONT_RANDOMIZE
-	clearflag FLAG_3_PERFECT_IVS
 	removeobject LOCALID_VIRIDIAN_FOREST_SPIKY_PICHU
 	goto_if_eq VAR_RESULT, 0, ViridianForest_2_EventScript_SpikyPichuJoinsParty
 	goto_if_eq VAR_RESULT, 1, ViridianForest_2_EventScript_SpikyPichuToPC

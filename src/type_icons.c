@@ -41,8 +41,9 @@ static s32 GetTypeIconSlideMovement(s32, s32);
 // there, since the healthbox draws over anything below that line.
 // Doubles keep a horizontal pair so four healthboxes remain easy to scan.
 #define TYPE_ICON_PLAYER_SINGLE_X_OFFSET  79
-#define TYPE_ICON_PLAYER_SINGLE_Y_OFFSET (-1)
+#define TYPE_ICON_PLAYER_SINGLE_Y_OFFSET (-2)
 #define TYPE_ICON_PLAYER_DOUBLE_X_OFFSET (-34)
+#define TYPE_ICON_PLAYER_DOUBLE_Y_OFFSET (-4)
 #define TYPE_ICON_OPPONENT_X_OFFSET      78
 #define TYPE_ICON_PAIR_SPACING           10
 #define TYPE_ICON_RESTING_Y_OFFSET       (-3)
@@ -415,7 +416,7 @@ static void SetTypeIconXY(s32 *x, s32 *y, u32 position, bool32 useDoubleBattleCo
     }
 
     *x = healthbox->x + (IsOnPlayerSide(battler) ? TYPE_ICON_PLAYER_DOUBLE_X_OFFSET : TYPE_ICON_OPPONENT_X_OFFSET);
-    *y = healthbox->y + TYPE_ICON_RESTING_Y_OFFSET;
+    *y = healthbox->y + (IsOnPlayerSide(battler) ? TYPE_ICON_PLAYER_DOUBLE_Y_OFFSET : TYPE_ICON_RESTING_Y_OFFSET);
 
     // A monotype stays centered in the reserved slot. Dual types expand toward
     // the outside edge, keeping both clear of the name and level.

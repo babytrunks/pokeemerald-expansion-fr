@@ -209,7 +209,6 @@ static void SpriteCB_LastUsedBall(struct Sprite *);
 static void SpriteCB_LastUsedBallWin(struct Sprite *);
 static void SpriteCB_MoveInfoWin(struct Sprite *sprite);
 static void SpriteCB_BattleStatusHint(struct Sprite *sprite);
-static bool32 ShouldUseDoublesBattleStatusHintPosition(void);
 
 static const struct OamData sOamData_64x32 =
 {
@@ -3275,8 +3274,8 @@ static const struct SpriteTemplate sSpriteTemplate_BattleStatusHint =
 #define LAST_USED_WIN_Y         (LAST_USED_BALL_Y - 9)
 #define BATTLE_SPRITE_HINT_X_F  LAST_BALL_WIN_X_F
 #define BATTLE_SPRITE_HINT_X_0  LAST_BALL_WIN_X_0
-#define BATTLE_SPRITE_HINT_Y_SINGLE 92
-#define BATTLE_SPRITE_HINT_Y_DOUBLE 102
+// Same height in every battle type so the tab always tucks under the battle textbox
+#define BATTLE_SPRITE_HINT_Y    102
 
 #define sHide  data[0]
 #define sTimer  data[1]
@@ -3298,17 +3297,6 @@ bool32 CanThrowLastUsedBall(void)
         return FALSE;
 
     return TRUE;
-}
-
-static bool32 ShouldUseDoublesBattleStatusHintPosition(void)
-{
-    if (IsDoubleBattle())
-        return TRUE;
-
-    if (B_LAST_USED_BALL_BUTTON == L_BUTTON && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
-        return FALSE;
-
-    return CanThrowLastUsedBall();
 }
 
 void TryAddLastUsedBallItemSprites(void)
@@ -3415,10 +3403,9 @@ void TryToAddBattleStatusHint(void)
 
     if (gBattleStruct->battleStatusHintSpriteId == MAX_SPRITES)
     {
-        s16 y = ShouldUseDoublesBattleStatusHintPosition() ? BATTLE_SPRITE_HINT_Y_DOUBLE : BATTLE_SPRITE_HINT_Y_SINGLE;
         gBattleStruct->battleStatusHintSpriteId = CreateSprite(&sSpriteTemplate_BattleStatusHint,
                                                                BATTLE_SPRITE_HINT_X_0,
-                                                               y,
+                                                               BATTLE_SPRITE_HINT_Y,
                                                                6);
         gSprites[gBattleStruct->battleStatusHintSpriteId].sHide = FALSE;
     }
