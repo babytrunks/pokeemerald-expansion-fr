@@ -10270,6 +10270,19 @@
       "border_filepath": "data/layouts/SilphCoExtra1/border.bin",
       "blockdata_filepath": "data/layouts/SilphCoExtra1/map.bin",
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_SILPH_CO_EXTRA2_FRLG",
+      "name": "SilphCo_Extra2_Frlg_Layout",
+      "width": 36,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_BuildingFrlg",
+      "secondary_tileset": "gTileset_SilphCo",
+      "border_filepath": "data/layouts/SilphCo_Extra2_Frlg/border.bin",
+      "blockdata_filepath": "data/layouts/SilphCo_Extra2_Frlg/map.bin",
+      "layout_version": "frlg"
     }
   ]
 }

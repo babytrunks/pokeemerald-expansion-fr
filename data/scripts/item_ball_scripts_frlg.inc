@@ -312,7 +312,7 @@ SilphCo_5F_EventScript_ItemCardKey::
 	end
 
 SilphCo_6F_EventScript_ItemUpgrade::
-	finditem ITEM_UPGRADE
+	finditem ITEM_ELECTIRIZER
 	end
 
 SilphCo_6F_EventScript_ItemGlalitite::

@@ -15059,7 +15059,7 @@ Pic: Jojo Fan
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / HP Aware / Try To 2HKO
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
 Dynamic Level Ratio: 95
 Mugshot: Yellow
 
@@ -15118,80 +15118,83 @@ EVs: 252 HP / 252 Atk / 4 Def
 - Ice Punch
 - Stone Edge
 
-=== TRAINER_ROUTE16_SILVA ===
-Name: Silva
+=== TRAINER_SAFFRON_POM ===
+Name: Pom
 Class: Cooltrainer Frlg
-Pic: Silva
-Gender: Male
+Pic: Pom
+Gender: Female
 Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Dynamic Level Ratio: 95
+Mugshot: Purple
 
-Porygon-Z @ Up-Grade  
-Level: 55
-EVs: 252 SpA / 4 Def / 252 Spe 
-Ability: Adaptability  
-Nature: Timid  
+Tinkaton (F) @ Sitrus Berry  
+Ability: Own Tempo  
+Level: 44
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Tri Attack  
-- Ice Beam  
-- Thunderbolt  
-- Shadow Ball  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Jolly Nature  
+- Gigaton Hammer  
+- Ice Hammer  
+- Bulldoze  
+- Swords Dance  
 
-Roserade @ Life Orb  
-Level: 55
-EVs: 252 SpA / 4 Def / 252 Spe 
-Ability: Technician  
-Nature: Timid  
-IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
-- Mega Drain  
-- Ancient Power  
-- Sludge Bomb  
-- Hidden Power
-
-Chandelure @ Chandelurite
-Level: 55
-EVs: 252 SpA / 4 Def / 252 Spe 
-Ability: Shadow Tag  
-Nature: Timid  
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower  
-- Energy Ball  
-- Shadow Ball  
-- Calm Mind  
-
-Staraptor @ Heavy-Duty Boots  
-Level: 55
-EVs: 252 Atk / 4 Def / 252 Spe 
-Ability: Reckless  
-Nature: Jolly  
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Brave Bird  
-- Close Combat  
-- U-turn  
-- Double-Edge  
-
-Donphan @ Loaded Dice  
-Level: 55
-EVs: 252 HP / 4 Def / 252 Atk
-Ability: Technician  
-Nature: Adamant  
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Bulldoze 
-- Ice Shard  
-- Rock Blast  
-- Trailblaze  
-
-Lanturn @ Leftovers  
-Level: 55
-EVs: 252 HP/ 252 SpD / 4 Def
-Ability: Water Absorb  
-Nature: Modest  
+Skeledirge (M) @ Leftovers  
+Ability: Unaware  
+Level: 44
 IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Parabolic Charge  
-- Scald  
-- Volt Switch  
-- Dazzling Gleam
+EVs: 252 HP / 252 Def / 4 SpA  
+Bold Nature  
+- Torch Song  
+- Hex  
+- Slack Off  
+- Sing  
+
+Tsareena (F) @ Normalium Z  
+Ability: Striker  
+Level: 44
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Spe  
+Adamant Nature  
+- Trop Kick  
+- High Jump Kick  
+- Grass Whistle  
+- Splash  
+
+Oricorio-Pom-Pom (F) @ Focus Sash  
+Ability: Dancer  
+Level: 45
+IVs: 31 HP / 0 Atk / 31 Def / 30 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe  
+Timid Nature  
+- Revelation Dance  
+- Air Slash  
+- Hidden Power
+- Quiver Dance  
+
+Primarina (F) @ Throat Spray  
+Ability: Liquid Voice  
+Shiny: Yes  
+Level: 44
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 SpA / 4 Spe  
+Modest Nature  
+- Hyper Voice  
+- Moonblast  
+- Calm Mind  
+- Sing  
+
+Meloetta @ Assault Vest  
+Ability: Serene Grace  
+Level: 45
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpA / 252 Spe  
+Bashful Nature  
+- Relic Song  
+- Psychic Noise  
+- Close Combat  
+- Knock Off  
 
 === TRAINER_PLAININSANE ===
 Name: Plain

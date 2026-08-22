@@ -2404,6 +2404,7 @@ extern const u8 gText_SideQuestName_8[];
 extern const u8 gText_SideQuestName_9[];
 extern const u8 gText_SideQuestName_10[];
 extern const u8 gText_SideQuestName_11[];
+extern const u8 gText_SideQuestName_12[];
 extern const u8 gText_AFathersRequest2[];
 extern const u8 gText_AFathersRequest3[];
 extern const u8 gText_AFathersRequest4[];

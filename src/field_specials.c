@@ -961,6 +961,12 @@ u8 GetBattleOutcome(void)
     return gBattleOutcome;
 }
 
+// Distinct sound moves the player used in the last battle, for the Meloetta quest
+u16 GetPlayerSoundMovesUsed(void)
+{
+    return gBattleResults.numSoundMovesUsedPlayer;
+}
+
 void CableCarWarp(void)
 {
     if (gSpecialVar_0x8004 != 0)

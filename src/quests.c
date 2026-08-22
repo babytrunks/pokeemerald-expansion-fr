@@ -617,12 +617,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
-	      gText_AFathersRequest2,
+	side_quest( // Meloetta's Blues quest
+	      gText_SideQuestName_12,
 	      gText_SideQuestDesc_12,
 	      gText_SideQuestDoneDesc_12,
 	      gText_SideQuestMap12,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_POM,
 	      OBJECT,
 	      NULL,
 	      0

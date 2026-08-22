@@ -391,7 +391,7 @@
 #define TRAINER_YOUNGSTER_BEN_4                    385
 #define TRAINER_STARTER_TEACHER                    386
 #define TRAINER_POWER_PLANT_JOJO_FAN                        387
-#define TRAINER_ROUTE16_SILVA                        388
+#define TRAINER_SAFFRON_POM                        388
 #define TRAINER_PLAININSANE                  389
 #define TRAINER_SILVA                  390
 #define TRAINER_POKEMON_TOWER_SANS                  391

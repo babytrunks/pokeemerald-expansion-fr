@@ -649,3 +649,4 @@ gSpecials::
     def_special PokevialGetSize
     def_special PokevialRefill
 	def_special CheckAddCoins
+	def_special GetPlayerSoundMovesUsed

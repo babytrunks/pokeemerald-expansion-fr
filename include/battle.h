@@ -29,6 +29,10 @@
 #include "random.h" // for rng_value_t
 #include "trainer_slide.h"
 
+// How many distinct sound moves one battle remembers the player using
+// Must stay >= any quota a script checks, currently MELOETTAS_BLUES_SOUND_MOVES
+#define MAX_TRACKED_SOUND_MOVES 4
+
 // Helper for accessing command arguments and advancing gBattlescriptCurrInstr.
 //
 // For example accuracycheck is defined as:
@@ -424,6 +428,8 @@ struct BattleResults
     u8 caughtMonNick[POKEMON_NAME_LENGTH + 1];     // 0x2A
     u8 filler35;           // 0x35
     u8 catchAttempts[POKEBALL_COUNT];     // 0x36
+    u16 soundMovesUsedPlayer[MAX_TRACKED_SOUND_MOVES]; // distinct sound moves the player picked
+    u8 numSoundMovesUsedPlayer;
 };
 
 struct BattleTv_Side

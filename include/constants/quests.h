@@ -30,7 +30,7 @@
 #define QUEST_RARE_EXTRACT       8   // was QUEST_9
 #define QUEST_MISSING_NUMBER         9   // was QUEST_10
 #define QUEST_MEGA_MAYHEM        10   // was QUEST_11
-#define QUEST_12        11
+#define QUEST_MELOETTAS_BLUES    11   // was QUEST_12
 #define QUEST_13        12
 #define QUEST_14        13
 #define QUEST_15        14
@@ -81,6 +81,10 @@
 #define SUB_QUEST_28        27
 #define SUB_QUEST_29        28
 #define SUB_QUEST_30        29
+
+// Distinct sound moves needed to cheer up Pom's Meloetta
+// Capped by MAX_TRACKED_SOUND_MOVES in battle.h, never raise past it
+#define MELOETTAS_BLUES_SOUND_MOVES 4
 
 #define QUEST_1_SUB_COUNT 4
 #define QUEST_2_SUB_COUNT 20

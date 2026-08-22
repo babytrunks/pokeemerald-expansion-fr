@@ -640,7 +640,7 @@
 #define FLAG_MET_STICKER_MAN                             0x290
 #define FLAG_PALLET_LADY_NOT_BLOCKING_SIGN               0x291
 #define FLAG_ITEM_ROUTE_110_DIRE_HIT                     0x292 
-#define FLAG_GOT_TM19_FROM_ERIKA                         0x293 // unused
+#define FLAG_HIDE_SILPH_CO_EXTRA_UPGRADE                 0x293 
 #define FLAG_GOT_AUDINITE_FROM_THIRSTY_GIRL                  0x294
 #define FLAG_GOT_CAMERUPTITE_FROM_THIRSTY_GIRL                  0x295
 #define FLAG_GOT_TM16_FROM_THIRSTY_GIRL                  0x296

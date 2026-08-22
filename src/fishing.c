@@ -193,7 +193,7 @@ static bool32 Fishing_InitDots(struct Task *task)
     task->tNumDots = 0;
     // randVal = Random();
     // randVal %= 10;
-    task->tDotsRequired = 1;
+    task->tDotsRequired = 3;
     return TRUE;
 }
 
@@ -227,8 +227,12 @@ static bool32 Fishing_ShowDots(struct Task *task)
             }
             else
             {
-                AddTextPrinterParameterized(0, FONT_NORMAL, dot, task->tNumDots * 8, 1, 0, NULL);
-                task->tNumDots++;
+                // Print every dot at once so the bite does not feel abrupt
+                while (task->tNumDots < task->tDotsRequired)
+                {
+                    AddTextPrinterParameterized(0, FONT_NORMAL, dot, task->tNumDots * 8, 1, 0, NULL);
+                    task->tNumDots++;
+                }
             }
         }
         return FALSE;

@@ -449,6 +449,23 @@ bool32 HandleMoveTargetRedirection(void)
     return FALSE;
 }
 
+// Tracks distinct sound moves the player picks, for the Meloetta quest
+static void TryRecordPlayerSoundMove(u32 move)
+{
+    u32 i;
+
+    if (!IsSoundMove(move) || gBattleResults.numSoundMovesUsedPlayer >= MAX_TRACKED_SOUND_MOVES)
+        return;
+
+    for (i = 0; i < gBattleResults.numSoundMovesUsedPlayer; i++)
+    {
+        if (gBattleResults.soundMovesUsedPlayer[i] == move)
+            return;
+    }
+
+    gBattleResults.soundMovesUsedPlayer[gBattleResults.numSoundMovesUsedPlayer++] = move;
+}
+
 // Functions
 void HandleAction_UseMove(void)
 {
@@ -514,9 +531,14 @@ void HandleAction_UseMove(void)
     if (IsBattlerAlive(gBattlerAttacker))
     {
         if (IsOnPlayerSide(gBattlerAttacker))
+        {
             gBattleResults.lastUsedMovePlayer = gCurrentMove;
+            TryRecordPlayerSoundMove(gCurrentMove);
+        }
         else
+        {
             gBattleResults.lastUsedMoveOpponent = gCurrentMove;
+        }
     }
 
     // Set dynamic move type.

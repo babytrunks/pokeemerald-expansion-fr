@@ -383,6 +383,118 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan::
 	release
 	end
 
+@ Meloetta's Blues quest, win a battle using four different sound moves
+SaffronCity_PokemonTrainerFanClub_EventScript_Pom::
+	lock
+	faceplayer
+	goto_if_quest_complete QUEST_MELOETTAS_BLUES, SaffronCity_PokemonTrainerFanClub_EventScript_PomAfterQuest
+	@ Reward state means the battle was won but the gift could not be handed over
+	goto_if_quest_reward QUEST_MELOETTAS_BLUES, SaffronCity_PokemonTrainerFanClub_EventScript_PomGiveMeloetta
+	goto_if_quest_active QUEST_MELOETTAS_BLUES, SaffronCity_PokemonTrainerFanClub_EventScript_PomAskRematch
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_MeloettaIsDepressed, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_PokemonTrainerFanClub_EventScript_PomDeclined
+	setflag FLAG_SYS_QUEST_MENU_GET
+	startquest QUEST_MELOETTAS_BLUES
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_PomBattle
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_PomDeclined::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomDeclined
+	setflag FLAG_SYS_QUEST_MENU_GET
+	startquest QUEST_MELOETTAS_BLUES
+	release
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_PomAskRematch::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomAskRematch, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_PokemonTrainerFanClub_EventScript_PomDeclined
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_PomBattle
+	end
+
+@ earlyrival is the only mode that returns here when the player loses
+SaffronCity_PokemonTrainerFanClub_EventScript_PomBattle::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomLetTheMusicPlay
+	closemessage
+	trainerbattle_earlyrival TRAINER_SAFFRON_POM, RIVAL_BATTLE_HEAL_AFTER, SaffronCity_PokemonTrainerFanClub_Text_PomDefeat, SaffronCity_PokemonTrainerFanClub_Text_PomVictory
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_PomJudgeBattle
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_PomJudgeBattle::
+	@ earlyrival sets VAR_RESULT to TRUE when the player lost
+	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_PomQuestFailed
+	specialvar VAR_RESULT, GetPlayerSoundMovesUsed
+	goto_if_lt VAR_RESULT, MELOETTAS_BLUES_SOUND_MOVES, SaffronCity_PokemonTrainerFanClub_EventScript_PomQuestFailed
+	@ Set reward first so a full party or PC can be recovered from
+	questmenu QUEST_MENU_SET_REWARD, QUEST_MELOETTAS_BLUES
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_PomGiveMeloetta
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_PomQuestFailed::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomQuestFailed
+	release
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_PomGiveMeloetta::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_MeloettaLooksCheerful
+	closemessage
+	playmoncry SPECIES_MELOETTA, CRY_MODE_NORMAL
+	waitmoncry
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELOETTA
+	setflag FLAG_DONT_RANDOMIZE
+	givemon SPECIES_MELOETTA, 50
+	clearflag FLAG_DONT_RANDOMIZE
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaToParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaToPC
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaNoRoom
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaToParty::
+	playfanfare MUS_LEVEL_UP
+	message SaffronCity_PokemonTrainerFanClub_Text_MeloettaJoined
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_MELOETTA
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_PokemonTrainerFanClub_EventScript_FinishMeloettaGift
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_FinishMeloettaGift
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaToPC::
+	playfanfare MUS_LEVEL_UP
+	message SaffronCity_PokemonTrainerFanClub_Text_MeloettaJoined
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_MELOETTA
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaTransferToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaTransferToPC
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaTransferToPC::
+	call Common_EventScript_TransferredToPC
+	goto SaffronCity_PokemonTrainerFanClub_EventScript_FinishMeloettaGift
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_FinishMeloettaGift::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomThankYou
+	completequest QUEST_MELOETTAS_BLUES
+	release
+	end
+
+@ Quest stays in reward state so Pom hands Meloetta over without another battle
+SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaNoRoom::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_MeloettaNoRoom
+	release
+	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_PomAfterQuest::
+	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomAfterQuest
+	release
+	end
+
 SaffronCity_PokemonTrainerFanClub_Text_HuhYou::
     .string "Huh?\n"
     .string "You…$"
@@ -672,4 +784,82 @@ SaffronCity_PokemonTrainerFanClub_Text_NeverBeFanOfAnyoneButMaster::
     .string "I will even sneak out of the Dojo\n"
     .string "to spread word of his greatness.\p"
     .string "Hiyah!$"
+
+SaffronCity_PokemonTrainerFanClub_Text_MeloettaIsDepressed::
+    .string "Oh… hello.\p"
+    .string "I'm Pom. I sing with my Pokémon,\n"
+    .string "but lately my Meloetta won't sing\l"
+    .string "a single note.\p"
+    .string "It just stares at the floor.\n"
+    .string "I've tried everything…\p"
+    .string "But I had a thought!\n"
+    .string "Meloetta lives for music.\p"
+    .string "If we had a battle overflowing\n"
+    .string "with sound, maybe the song would\l"
+    .string "come back to it.\p"
+    .string "So here's my request.\p"
+    .string "Beat me, and use four different\n"
+    .string "Sound moves while you do it.\p"
+    .string "Growl, Hyper Voice, Sing…\n"
+    .string "anything, so long as it's loud!\p"
+    .string "Will you play along?$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomDeclined::
+    .string "That's all right.\p"
+    .string "We'll be here whenever you feel\n"
+    .string "like making some noise.$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomAskRematch::
+    .string "Meloetta still isn't singing.\p"
+    .string "Remember, four different Sound\n"
+    .string "moves, and you have to win!\p"
+    .string "Shall we try again?$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomLetTheMusicPlay::
+    .string "Wonderful!\p"
+    .string "Meloetta, listen closely.\n"
+    .string "Let the music play!$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomDefeat::
+    .string "What a performance!$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomVictory::
+    .string "Oh dear, I got carried away…$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomQuestFailed::
+    .string "Hmm…\p"
+    .string "Meloetta is still staring at the\n"
+    .string "floor. That didn't lift its spirits.\p"
+    .string "It has to be four different Sound\n"
+    .string "moves, and you have to come out\l"
+    .string "on top.\p"
+    .string "Come find me when you'd like\n"
+    .string "another go.$"
+
+SaffronCity_PokemonTrainerFanClub_Text_MeloettaLooksCheerful::
+    .string "Wait…\p"
+    .string "Meloetta! You're humming!\p"
+    .string "Look at it. It hasn't looked this\n"
+    .string "cheerful in months!$"
+
+SaffronCity_PokemonTrainerFanClub_Text_MeloettaJoined::
+    .string "Pom gave you a Meloetta!$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomThankYou::
+    .string "It's decided.\p"
+    .string "Meloetta wants to hear more of\n"
+    .string "your music, not mine.\p"
+    .string "Take good care of it, and keep\n"
+    .string "the songs coming!$"
+
+SaffronCity_PokemonTrainerFanClub_Text_MeloettaNoRoom::
+    .string "Oh, you've no room for it.\p"
+    .string "I'll hold on to Meloetta.\n"
+    .string "Come back when you've made space.$"
+
+SaffronCity_PokemonTrainerFanClub_Text_PomAfterQuest::
+    .string "How is Meloetta doing?\p"
+    .string "I can still hear it singing from\n"
+    .string "here. That's all I wanted.\p"
+    .string "Thank you, truly.$"
 
