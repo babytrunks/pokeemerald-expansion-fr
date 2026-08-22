@@ -206,6 +206,9 @@ enum {
 #define MENU_DIR_RIGHT    2
 #define MENU_DIR_LEFT    -2
 
+// White fill in BG palette 1 used by the ability and held item boxes
+#define ABILITY_BOX_WHITE 3
+
 enum {
     // Window ids 0-5 are implicitly assigned to each party Pokémon in InitPartyMenuBoxes
     WIN_MSG = PARTY_SIZE,
@@ -1574,28 +1577,41 @@ static void UpdatePartyMoveWindows(u8 slot)
 
 static void DisplayPartyPokemonAbility(u8 windowId, u8 slot)
 {
+    struct Pokemon *mon;
+    u16 species;
+    u16 item;
+    u16 ability;
+    const u8 *name;
+    u32 font;
+    int x;
+
     if (windowId == WINDOW_NONE)
         return;
 
-    u8 abilityNum;
-    u16 species;
-    u16 ability;
-    const u8 *name;
-    int x;
-    int y = 16;
+    // Clear all rows so the separator and the missing item box stay transparent
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(0));
 
-    BlitBitmapToPartyWindow(windowId, sAbilityTilemap_SwSh, 13, 0, 2, 13, 2);
-
+    mon = GetPartyMonFromPartyMenuId(slot);
+    species = GetMonData(mon, MON_DATA_SPECIES);
+    if (species != SPECIES_NONE && !GetMonData(mon, MON_DATA_IS_EGG))
     {
-        struct Pokemon *mon = GetPartyMonFromPartyMenuId(slot);
-        if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_NONE && !GetMonData(mon, MON_DATA_IS_EGG))
+        // Top white box holds the ability name
+        FillWindowPixelRect(windowId, ABILITY_BOX_WHITE, 0, 0, 104, 15);
+        ability = GetAbilityBySpecies(species, GetMonData(mon, MON_DATA_ABILITY_NUM), FALSE);
+        name = gAbilitiesInfo[ability].name;
+        font = GetFontIdToFit(name, FONT_SMALL, 0, 104);
+        x = GetStringCenterAlignXOffset(font, name, 104);
+        AddTextPrinterParameterized3(windowId, font, x, 0, sFontColorTable[11], 0, name);
+
+        // Bottom white box only exists when the mon holds something
+        item = GetMonData(mon, MON_DATA_HELD_ITEM);
+        if (item != ITEM_NONE)
         {
-            abilityNum = GetMonData(mon, MON_DATA_ABILITY_NUM);
-            species = GetMonData(mon, MON_DATA_SPECIES);
-            ability = GetAbilityBySpecies(species, abilityNum, FALSE);
-            name = gAbilitiesInfo[ability].name;
-            x = GetStringCenterAlignXOffset(FONT_SMALL, name, 104);
-            AddTextPrinterParameterized3(windowId, FONT_SMALL, x, y, sFontColorTable[11], 0, name);
+            FillWindowPixelRect(windowId, ABILITY_BOX_WHITE, 0, 16, 104, 16);
+            name = GetItemName(item);
+            font = GetFontIdToFit(name, FONT_SMALL, 0, 104);
+            x = GetStringCenterAlignXOffset(font, name, 104);
+            AddTextPrinterParameterized3(windowId, font, x, 16, sFontColorTable[11], 0, name);
         }
     }
     CopyWindowToVram(windowId, COPYWIN_GFX);
@@ -3012,7 +3028,6 @@ static void AllocBattleInfoWindows(void)
     if (sAbilityWindowId != WINDOW_NONE)
     {
         FillWindowPixelBuffer(sAbilityWindowId, PIXEL_FILL(0));
-        BlitBitmapToPartyWindow(sAbilityWindowId, sAbilityTilemap_SwSh, 13, 0, 0, 13, 4);
         PutWindowTilemap(sAbilityWindowId);
         CopyWindowToVram(sAbilityWindowId, COPYWIN_GFX);
     }
