@@ -5,7 +5,18 @@ VictoryRoad_2F_Frlg_MapScripts::
 VictoryRoad_2F_OnLoad::
 	call_if_ne VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER1, 100, VictoryRoad_2F_EventScript_SetRockBarrier1
 	call_if_ne VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER2, 100, VictoryRoad_2F_EventScript_SetRockBarrier2
+	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER1, 100, VictoryRoad_2F_EventScript_RestoreBoulder1
+	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER2, 100, VictoryRoad_2F_EventScript_RestoreBoulder2
 	end
+
+@ Puts each boulder back on its switch once that switch is solved
+VictoryRoad_2F_EventScript_RestoreBoulder1::
+	setobjectxyperm LOCALID_VICTORY_ROAD_2F_BOULDER1, 2, 19
+	return
+
+VictoryRoad_2F_EventScript_RestoreBoulder2::
+	setobjectxyperm LOCALID_VICTORY_ROAD_2F_BOULDER2, 14, 19
+	return
 
 VictoryRoad_2F_EventScript_SetRockBarrier1::
 	setmetatile 13, 10, METATILE_Cave_RockBarrier_Top, 1

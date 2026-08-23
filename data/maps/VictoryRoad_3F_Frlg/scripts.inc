@@ -3,7 +3,9 @@ VictoryRoad_3F_Frlg_MapScripts::
 	.byte 0
 
 VictoryRoad_3F_OnLoad::
-	call_if_ne VAR_MAP_SCENE_VICTORY_ROAD_3F, 100, VictoryRoad_3F_EventScript_SetRockBarrier
+	call_if_lt VAR_MAP_SCENE_VICTORY_ROAD_3F, 100, VictoryRoad_3F_EventScript_SetRockBarrier
+	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_3F, 100, VictoryRoad_3F_EventScript_RestoreBoulder1
+	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_3F, 101, VictoryRoad_3F_EventScript_RestoreBoulder2
 	end
 
 VictoryRoad_3F_EventScript_SetRockBarrier::
@@ -11,16 +13,35 @@ VictoryRoad_3F_EventScript_SetRockBarrier::
 	setmetatile 12, 13, METATILE_Cave_RockBarrier_Bottom, 1
 	return
 
+@ Either boulder can solve this switch so the var records which one did
+VictoryRoad_3F_EventScript_RestoreBoulder1::
+	setobjectxyperm LOCALID_VICTORY_ROAD_3F_BOULDER1, 7, 7
+	return
+
+VictoryRoad_3F_EventScript_RestoreBoulder2::
+	setobjectxyperm LOCALID_VICTORY_ROAD_3F_BOULDER2, 7, 7
+	return
+
 VictoryRoad_3F_EventScript_FloorSwitch::
 	lockall
-	goto_if_eq VAR_MAP_SCENE_VICTORY_ROAD_3F, 100, VictoryRoad_3F_EventScript_FloorSwitchAlreadyPressed
+	goto_if_ge VAR_MAP_SCENE_VICTORY_ROAD_3F, 100, VictoryRoad_3F_EventScript_FloorSwitchAlreadyPressed
 	setmetatile 12, 12, METATILE_Cave_Floor_Ledge_Top, 0
 	setmetatile 12, 13, METATILE_Cave_Floor_Ledge_Bottom, 0
 	playse SE_ICE_BREAK
 	special DrawWholeMapView
 	waitse
-	copyobjectxytoperm LOCALID_ROCK_TUNNEL_EXTRA_BOULDER_1
+	copyobjectxytoperm LOCALID_VICTORY_ROAD_3F_BOULDER1
+	copyobjectxytoperm LOCALID_VICTORY_ROAD_3F_BOULDER2
+	@ 0 is CURRENT_POSITION, note which boulder landed on the switch
+	getobjectxy LOCALID_VICTORY_ROAD_3F_BOULDER1, 0, VAR_TEMP_1, VAR_TEMP_2
+	goto_if_ne VAR_TEMP_1, 7, VictoryRoad_3F_EventScript_FloorSwitchBoulder2
+	goto_if_ne VAR_TEMP_2, 7, VictoryRoad_3F_EventScript_FloorSwitchBoulder2
 	setvar VAR_MAP_SCENE_VICTORY_ROAD_3F, 100
+	releaseall
+	end
+
+VictoryRoad_3F_EventScript_FloorSwitchBoulder2::
+	setvar VAR_MAP_SCENE_VICTORY_ROAD_3F, 101
 	releaseall
 	end
 

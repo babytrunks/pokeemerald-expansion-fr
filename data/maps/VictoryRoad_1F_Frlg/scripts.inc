@@ -5,7 +5,13 @@ VictoryRoad_1F_Frlg_MapScripts::
 
 VictoryRoad_1F_Frlg_OnLoad::
 	call_if_ne VAR_MAP_SCENE_VICTORY_ROAD_1F, 100, VictoryRoad_1F_EventScript_SetRockBarrier
+	call_if_eq VAR_MAP_SCENE_VICTORY_ROAD_1F, 100, VictoryRoad_1F_EventScript_RestoreBoulder
 	end
+
+@ Puts the boulder back on the switch once the puzzle is solved
+VictoryRoad_1F_EventScript_RestoreBoulder::
+	setobjectxyperm LOCALID_VICTORY_ROAD_1F_BOULDER, 20, 16
+	return
 
 VictoryRoad_1F_EventScript_SetRockBarrier::
 	setmetatile 12, 14, METATILE_Cave_RockBarrier_Top, 1

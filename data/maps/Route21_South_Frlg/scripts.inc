@@ -1,6 +1,89 @@
 Route21_South_Frlg_MapScripts::
 	.byte 0
 
+@ Gated boss, opens up once every Route 21 trainer is beaten
+Route21_South_EventScript_Elbein::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_STARAPTITE_FROM_ELBEIN, Route21_South_EventScript_ElbeinPostBattle
+	goto_if_defeated TRAINER_ROUTE21_ELBEIN, Route21_South_EventScript_ElbeinReward
+	goto_if_not_defeated TRAINER_FISHERMAN_RONALD, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_FISHERMAN_WADE, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_SPENCER, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_SIS_AND_BRO_LIL_IAN, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_FISHERMAN_CLAUDE, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_FISHERMAN_NOLAN, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_JACK, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_JEROME, Route21_South_EventScript_ElbeinLocked
+	goto_if_not_defeated TRAINER_SWIMMER_MALE_ROLAND, Route21_South_EventScript_ElbeinLocked
+	msgbox Route21_South_Text_ElbeinChallenge, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Route21_South_EventScript_ElbeinDecline
+	msgbox Route21_South_Text_ElbeinAccept
+	closemessage
+	trainerbattle_no_intro TRAINER_ROUTE21_ELBEIN, Route21_South_Text_ElbeinDefeat
+
+@ Also the re-talk path if the Bag was full last time
+Route21_South_EventScript_ElbeinReward::
+	msgbox Route21_South_Text_ElbeinReward
+	checkitemspace ITEM_STARAPTITE
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	giveitem ITEM_STARAPTITE
+	setflag FLAG_GOT_STARAPTITE_FROM_ELBEIN
+	goto Route21_South_EventScript_ElbeinPostBattle
+	end
+
+Route21_South_EventScript_ElbeinLocked::
+	msgbox Route21_South_Text_ElbeinLocked
+	release
+	end
+
+Route21_South_EventScript_ElbeinDecline::
+	msgbox Route21_South_Text_ElbeinDecline
+	release
+	end
+
+Route21_South_EventScript_ElbeinPostBattle::
+	msgbox Route21_South_Text_ElbeinPostBattle
+	release
+	end
+
+Route21_South_Text_ElbeinLocked::
+	.string "I befriended an incredibly rare\n"
+	.string "Pokémon in my home region.\p"
+	.string "Think you have what it takes to\n"
+	.string "beat it?\p"
+	.string "Defeat all the trainers here and\n"
+	.string "I'll show you its awesome power!$"
+
+Route21_South_Text_ElbeinChallenge::
+	.string "I see you've defeated all the\n"
+	.string "trainers in this area.\p"
+	.string "Are you sure you're ready to\n"
+	.string "face me?$"
+
+Route21_South_Text_ElbeinAccept::
+	.string "I have a Mythical Pokémon on my\n"
+	.string "side, there's no way I can lose!$"
+
+Route21_South_Text_ElbeinDefeat::
+	.string "I'm impressed.$"
+
+Route21_South_Text_ElbeinReward::
+	.string "It looks like I need to get back\n"
+	.string "to my training.\p"
+	.string "Here, take this.$"
+
+Route21_South_Text_ElbeinPostBattle::
+	.string "I once caught my partner sneaking\n"
+	.string "glances at another trainer's Ditto.\p"
+	.string "But I thought no Mythical Pokémon\n"
+	.string "could breed.\p"
+	.string "Odd, right?$"
+
+Route21_South_Text_ElbeinDecline::
+	.string "Then come back when you are.\n"
+	.string "I'm not going anywhere.$"
+
 Route21_South_Text_JackIntro::
 	.string "I caught my Pokémon at sea.$"
 

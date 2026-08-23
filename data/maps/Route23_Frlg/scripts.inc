@@ -3,13 +3,15 @@ Route23_Frlg_MapScripts::
 	.byte 0
 
 Route23_OnTransition::
+	call_if_unset FLAG_VICTORY_ROAD_PUZZLE_INIT, Route23_EventScript_InitVictoryRoadBoulders
+	end
+
+@ Seeds the Victory Road boulders once so puzzle progress can persist
+Route23_EventScript_InitVictoryRoadBoulders::
+	setflag FLAG_VICTORY_ROAD_PUZZLE_INIT
 	clearflag FLAG_HIDE_VICTORY_ROAD_3F_BOULDER
 	setflag FLAG_HIDE_VICTORY_ROAD_2F_BOULDER
-	setvar VAR_MAP_SCENE_VICTORY_ROAD_1F, 0
-	setvar VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER1, 0
-	setvar VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER2, 0
-	setvar VAR_MAP_SCENE_VICTORY_ROAD_3F, 0
-	end
+	return
 
 Route23_EventScript_CascadeBadgeGuard::
 	lock

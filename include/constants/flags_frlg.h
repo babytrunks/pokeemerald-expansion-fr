@@ -1029,7 +1029,7 @@
 #define FLAG_HIDDEN_ITEM_POKEMON_MANSION_3F_RARE_CANDY                     (FLAG_HIDDEN_ITEMS_START +  32)
 #define FLAG_HIDDEN_ITEM_POKEMON_MANSION_B1F_ELIXIR                        (FLAG_HIDDEN_ITEMS_START +  33)
 #define FLAG_HIDDEN_ITEM_ROUTE23_FULL_RESTORE                              (FLAG_HIDDEN_ITEMS_START +  34)
-#define FLAG_HIDDEN_ITEM_ROUTE23_ULTRA_BALL                                (FLAG_HIDDEN_ITEMS_START +  35)
+#define FLAG_HIDDEN_ITEM_ROUTE23_ULTRA_BALL                                (FLAG_HIDDEN_ITEMS_START +  35) // unused
 #define FLAG_HIDDEN_ITEM_ROUTE23_MAX_ETHER                                 (FLAG_HIDDEN_ITEMS_START +  36)
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL                        (FLAG_HIDDEN_ITEMS_START +  37)
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_FULL_RESTORE                      (FLAG_HIDDEN_ITEMS_START +  38)
@@ -1148,7 +1148,7 @@
 #define FLAG_HIDDEN_ITEM_ROUTE10_NANAB_BERRY                               (FLAG_HIDDEN_ITEMS_START + 151)
 #define FLAG_HIDDEN_ITEM_ROUTE7_WEPEAR_BERRY                               (FLAG_HIDDEN_ITEMS_START + 152)
 #define FLAG_HIDDEN_ITEM_ROUTE20_STARDUST                                  (FLAG_HIDDEN_ITEMS_START + 153)
-#define FLAG_HIDDEN_ITEM_ROUTE21_NORTH_PEARL                               (FLAG_HIDDEN_ITEMS_START + 154)
+#define FLAG_HIDE_ITEM_ROUTE21_MEGA_STONE                                  (FLAG_HIDDEN_ITEMS_START + 154) // unused
 #define FLAG_HIDDEN_ITEM_ROUTE23_MAX_ELIXIR                                (FLAG_HIDDEN_ITEMS_START + 155)
 #define FLAG_HIDDEN_ITEM_ROUTE4_RAZZ_BERRY                                 (FLAG_HIDDEN_ITEMS_START + 156)
 #define FLAG_HIDDEN_ITEM_ROUTE14_PINAP_BERRY                               (FLAG_HIDDEN_ITEMS_START + 157)
@@ -1244,8 +1244,8 @@
 // FLAG_CAUGHT_LATIAS_OR_LATIOS
 #define FLAG_HIDE_SILPH_CO_GHOST_SPECIAL 0x4DC
 #define FLAG_GOT_GARCHOMPITE_FROM_MDE 0x4DD
-#define FLAG_0x4DE               0x4DE
-#define FLAG_0x4DF               0x4DF
+#define FLAG_VICTORY_ROAD_PUZZLE_INIT            0x4DE
+#define FLAG_GOT_STARAPTITE_FROM_ELBEIN 0x4DF
 #define FLAG_0x4E0               0x4E0
 #define FLAG_0x4E1               0x4E1
 #define FLAG_0x4E2               0x4E2

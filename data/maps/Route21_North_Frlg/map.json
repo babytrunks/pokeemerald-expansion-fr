@@ -103,21 +103,24 @@
       "y": -3,
       "target_local_id": "LOCALID_PALLET_FAT_MAN",
       "target_map": "MAP_PALLET_TOWN"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
+      "x": 17,
+      "y": 42,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND_SLOWER",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_DRAMPANITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_ITEM_ROUTE21_MEGA_STONE"
     }
   ],
   "warp_events": [],
   "coord_events": [],
-  "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": 17,
-      "y": 42,
-      "elevation": 3,
-      "item": "ITEM_PEARL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE21_NORTH_PEARL",
-      "quantity": 1,
-      "underfoot": false
-    }
-  ],
+  "bg_events": [],
   "region": "REGION_KANTO"
 }

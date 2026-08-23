@@ -478,7 +478,7 @@
 #define TRAINER_CRUSH_GIRL_CYNDY                   472
 #define TRAINER_CRUSH_GIRL_JOCELYN                 473
 #define TRAINER_TAMER_EVAN                         474
-#define TRAINER_POKEMANIAC_MARK_2                  475
+#define TRAINER_ROUTE21_ELBEIN                  475
 #define TRAINER_PKMN_RANGER_LOGAN                  476
 #define TRAINER_PKMN_RANGER_JACKSON                477
 #define TRAINER_PKMN_RANGER_BETH                   478
