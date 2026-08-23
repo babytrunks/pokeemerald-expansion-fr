@@ -31,7 +31,7 @@
 #define QUEST_MISSING_NUMBER         9   // was QUEST_10
 #define QUEST_MEGA_MAYHEM        10   // was QUEST_11
 #define QUEST_MELOETTAS_BLUES    11   // was QUEST_12
-#define QUEST_13        12
+#define QUEST_GHOST_IN_THE_MACHINE 12   // was QUEST_13
 #define QUEST_14        13
 #define QUEST_15        14
 #define QUEST_16        15

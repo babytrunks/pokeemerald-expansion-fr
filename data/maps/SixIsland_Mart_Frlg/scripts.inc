@@ -6,7 +6,14 @@ SixIsland_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_LUXURY_BALLS_IN_MARTS, SixIsland_Mart_LuxuryStock
 	pokemart SixIsland_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+SixIsland_Mart_LuxuryStock:
+	pokemart SixIsland_Mart_LuxuryItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -21,6 +28,21 @@ SixIsland_Mart_Items::
 	.2byte ITEM_ESCAPE_ROPE
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_DREAM_MAIL
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+SixIsland_Mart_LuxuryItems::
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_REVIVE
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_MAX_REPEL
+	.2byte ITEM_DREAM_MAIL
+	.2byte ITEM_LUXURY_BALL
 	.2byte ITEM_NONE
 	release
 	end

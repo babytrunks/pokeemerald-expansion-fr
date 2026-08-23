@@ -21,10 +21,17 @@ ViridianCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_LUXURY_BALLS_IN_MARTS, ViridianCity_Mart_LuxuryStock
 	goto_if_set FLAG_BADGE05_GET, ViridianCity_Mart_5BadgeStock
 	goto_if_set FLAG_BADGE04_GET, ViridianCity_Mart_4BadgeStock
 	goto_if_set FLAG_BADGE02_GET, ViridianCity_Mart_2BadgeStock
 	pokemart ViridianCity_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+ViridianCity_Mart_LuxuryStock:
+	pokemart ViridianCity_Mart_LuxuryItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -91,6 +98,21 @@ ViridianCity_Mart_5BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_POMEG_BERRY
 	.2byte ITEM_SILK_SCARF
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+ViridianCity_Mart_LuxuryItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_POMEG_BERRY
+	.2byte ITEM_SILK_SCARF
+	.2byte ITEM_LUXURY_BALL
 	.2byte ITEM_NONE
 	release
 	end

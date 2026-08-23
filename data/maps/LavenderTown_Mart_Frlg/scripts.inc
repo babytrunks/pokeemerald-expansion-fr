@@ -18,10 +18,17 @@ LavenderTown_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_LUXURY_BALLS_IN_MARTS, LavenderTown_Mart_LuxuryStock
 	goto_if_set FLAG_BADGE05_GET, LavenderTown_Mart_5BadgeStock
 	goto_if_set FLAG_BADGE04_GET, LavenderTown_Mart_4BadgeStock
 	goto_if_set FLAG_BADGE02_GET, LavenderTown_Mart_2BadgeStock
 	pokemart LavenderTown_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+LavenderTown_Mart_LuxuryStock:
+	pokemart LavenderTown_Mart_LuxuryItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -82,6 +89,19 @@ LavenderTown_Mart_5BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_SPELL_TAG
 	.2byte ITEM_BLACK_GLASSES
+	pokemartlistend
+
+	.align 2
+LavenderTown_Mart_LuxuryItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_SPELL_TAG
+	.2byte ITEM_BLACK_GLASSES
+	.2byte ITEM_LUXURY_BALL
 	pokemartlistend
 
 LavenderTown_Mart_Text_SearchingForStatRaiseItems::

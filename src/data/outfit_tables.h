@@ -94,7 +94,7 @@ const struct Outfit gOutfits[OUTFIT_COUNT] =
            },
            [FEMALE] = {
                [PLAYER_AVATAR_STATE_NORMAL] =     OBJ_EVENT_GFX_GREEN_NORMAL,
-               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_RIVAL_MAY_ACRO_BIKE,
+               [PLAYER_AVATAR_STATE_BIKE] =       OBJ_EVENT_GFX_GREEN_BIKE,
                [PLAYER_AVATAR_STATE_SURFING] =    OBJ_EVENT_GFX_GREEN_SURF,
                [PLAYER_AVATAR_STATE_UNDERWATER] = OBJ_EVENT_GFX_BRENDAN_UNDERWATER
            },

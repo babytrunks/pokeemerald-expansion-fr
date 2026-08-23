@@ -43,7 +43,14 @@ IndigoPlateau_PokemonCenter_1F_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_LUXURY_BALLS_IN_MARTS, IndigoPlateau_PokemonCenter_1F_LuxuryStock
 	pokemart IndigoPlateau_PokemonCenter_1F_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+IndigoPlateau_PokemonCenter_1F_LuxuryStock:
+	pokemart IndigoPlateau_PokemonCenter_1F_LuxuryItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -56,6 +63,19 @@ IndigoPlateau_PokemonCenter_1F_Items::
 	.2byte ITEM_MAX_POTION
 	.2byte ITEM_REVIVE
 	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+IndigoPlateau_PokemonCenter_1F_LuxuryItems::
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_REVIVE
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_LUXURY_BALL
 	.2byte ITEM_NONE
 	release
 	end

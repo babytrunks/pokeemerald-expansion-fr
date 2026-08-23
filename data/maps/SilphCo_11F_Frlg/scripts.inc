@@ -9,7 +9,7 @@ SilphCo_11F_OnLoad::
 SilphCo_11F_EventScript_President::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_MASTER_BALL_FROM_SILPH, SilphCo_11F_EventScript_AlreadyGotMasterBall
+	goto_if_set FLAG_GOT_MASTER_BALL_FROM_SILPH, SilphCo_11F_EventScript_GhostQuest
 	setspeaker SP_NAME_PRESIDENT
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, SilphCo_11F_EventScript_PresidentThanksMale
@@ -20,6 +20,59 @@ SilphCo_11F_EventScript_President::
 	setspeaker SP_NAME_PRESIDENT
 	msgbox SilphCo_11F_Text_ThatsOurSecretPrototype
 	setflag FLAG_GOT_MASTER_BALL_FROM_SILPH
+	goto_if_set FLAG_DEFEATED_SABRINA, SilphCo_11F_EventScript_GhostQuest
+	release
+	end
+
+@ Ghost in the Machine quest, offered once Sabrina is beaten
+SilphCo_11F_EventScript_GhostQuest::
+	setspeaker SP_NAME_PRESIDENT
+	goto_if_quest_complete QUEST_GHOST_IN_THE_MACHINE, SilphCo_11F_EventScript_PresidentAfterQuest
+	goto_if_eq VAR_SILPH_CO_GHOST_QUEST, 4, SilphCo_11F_EventScript_PresidentReward
+	goto_if_quest_active QUEST_GHOST_IN_THE_MACHINE, SilphCo_11F_EventScript_PresidentReminder
+	goto_if_unset FLAG_DEFEATED_SABRINA, SilphCo_11F_EventScript_AlreadyGotMasterBall
+	msgbox SilphCo_11F_Text_PresidentGhostPlea
+	msgbox SilphCo_11F_Text_PresidentGhostAsk, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, SilphCo_11F_EventScript_PresidentDeclined
+	setflag FLAG_SYS_QUEST_MENU_GET
+	setvar VAR_SILPH_CO_GHOST_QUEST, 1
+	startquest QUEST_GHOST_IN_THE_MACHINE
+	setspeaker SP_NAME_PRESIDENT
+	msgbox SilphCo_11F_Text_PresidentGoToLavender
+	release
+	end
+
+@ Quest is not started so he asks again next time
+SilphCo_11F_EventScript_PresidentDeclined::
+	msgbox SilphCo_11F_Text_PresidentDeclined
+	release
+	end
+
+SilphCo_11F_EventScript_PresidentReminder::
+	goto_if_ge VAR_SILPH_CO_GHOST_QUEST, 2, SilphCo_11F_EventScript_PresidentReminderTeleporter
+	msgbox SilphCo_11F_Text_PresidentReminder
+	release
+	end
+
+SilphCo_11F_EventScript_PresidentReminderTeleporter::
+	msgbox SilphCo_11F_Text_PresidentReminderTeleporter
+	release
+	end
+
+@ Var stays at 4 until the balls actually fit so a full bag can be recovered from
+SilphCo_11F_EventScript_PresidentReward::
+	msgbox SilphCo_11F_Text_PresidentThankYou
+	giveitem ITEM_LUXURY_BALL, 3
+	setspeaker SP_NAME_PRESIDENT
+	msgbox SilphCo_11F_Text_PresidentLuxuryBallDeal
+	setflag FLAG_LUXURY_BALLS_IN_MARTS
+	setvar VAR_SILPH_CO_GHOST_QUEST, 5
+	completequest QUEST_GHOST_IN_THE_MACHINE
+	release
+	end
+
+SilphCo_11F_EventScript_PresidentAfterQuest::
+	msgbox SilphCo_11F_Text_PresidentAfterQuest
 	release
 	end
 
@@ -485,6 +538,70 @@ SilphCo_11F_Text_ThatsOurSecretPrototype::
 
 SilphCo_11F_Text_YouHaveNoRoomForThis::
     .string "You have no room for this.$"
+
+SilphCo_11F_Text_PresidentGhostPlea::
+    .string "Oh, {PLAYER}! Thank Arceus you're\n"
+    .string "here. Please, hear an old man out!\p"
+    .string "Ever since you drove those Rockets\n"
+    .string "out, Silph has been bleeding money.\p"
+    .string "Slowly at first… then all at once.\n"
+    .string "Faster than I could brace for.\p"
+    .string "I've searched this building floor by\n"
+    .string "floor and found nothing. Nothing!\p"
+    .string "I'm starting to think it's a ghost,\n"
+    .string "or something of its kind.$"
+
+SilphCo_11F_Text_PresidentGhostAsk::
+    .string "Help this old man get his company's\n"
+    .string "glory back.\p"
+    .string "There's someone in Lavender Town\n"
+    .string "who handles this sort of thing…\p"
+    .string "Will you go and speak with them?$"
+
+SilphCo_11F_Text_PresidentDeclined::
+    .string "Oh no…\p"
+    .string "My company. My company…$"
+
+SilphCo_11F_Text_PresidentGoToLavender::
+    .string "Bless you, {PLAYER}.\p"
+    .string "Lavender Town. Ask after the young\n"
+    .string "woman who studies the departed.$"
+
+SilphCo_11F_Text_PresidentReminder::
+    .string "Lavender Town, {PLAYER}.\p"
+    .string "They know ghosts there better than\n"
+    .string "anyone alive.$"
+
+SilphCo_11F_Text_PresidentReminderTeleporter::
+    .string "A teleporter? On my own ground\n"
+    .string "floor? In all these years…\p"
+    .string "Whatever is down there, {PLAYER},\n"
+    .string "I'm counting on you.$"
+
+SilphCo_11F_Text_PresidentThankYou::
+    .string "A rival? All of this, over a rival?\p"
+    .string "Ha! And here I was losing sleep over\n"
+    .string "phantoms.\p"
+    .string "You've given an old man his nerve\n"
+    .string "back. Let me give you something too.$"
+
+SilphCo_11F_Text_PresidentLuxuryBallDeal::
+    .string "Ten of our finest.\p"
+    .string "And I'll see to it that every Poké\n"
+    .string "Mart in Kanto carries them now.\p"
+    .string "Silph keeps its promises.\n"
+    .string "Unlike some people.$"
+
+SilphCo_11F_Text_PresidentMakeRoom::
+    .string "…Ah. Your Bag is rather full.\p"
+    .string "Make some room and come back.\n"
+    .string "They'll be waiting right here.$"
+
+SilphCo_11F_Text_PresidentAfterQuest::
+    .string "Business is picking up again, and I\n"
+    .string "have you to thank for it.\p"
+    .string "Let that young upstart contend all\n"
+    .string "he likes. Silph is ready for him.$"
 
 SilphCo_11F_Text_ThanksForRescuingUs::
     .string "Thank you for rescuing\n"

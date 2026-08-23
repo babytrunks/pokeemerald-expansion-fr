@@ -311,10 +311,6 @@ SilphCo_5F_EventScript_ItemCardKey::
 	release
 	end
 
-SilphCo_6F_EventScript_ItemUpgrade::
-	finditem ITEM_ELECTIRIZER
-	end
-
 SilphCo_6F_EventScript_ItemGlalitite::
 	finditem ITEM_GLALITITE
 	end

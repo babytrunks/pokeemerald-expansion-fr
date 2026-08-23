@@ -15682,14 +15682,16 @@ Level: 20
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Ember
 
-=== TRAINER_PKMN_PROF_PROF_OAK ===
-Name: Prof. Oak
-Class: Pkmn Prof Frlg
-Pic: Professor Oak Frlg
+=== TRAINER_SILPH_CO_MDE ===
+Name: Mde
+Class: Cooltrainer Frlg
+Pic: Mde
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO
+Dynamic Level Ratio: 95
+Mugshot: Pink
 
 Ekans
 Level: 5

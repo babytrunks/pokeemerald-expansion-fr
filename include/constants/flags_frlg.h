@@ -647,7 +647,7 @@
 #define FLAG_HIDE_SAFARI_ZONE_PYROARITE                  0x297 
 #define FLAG_GOT_TM26_FROM_GIOVANNI                      0x298 // Unused
 #define FLAG_AUTO_NICKNAME_ENABLED                       0x299
-#define FLAG_GOT_TM04_FROM_SABRINA                       0x29A // unused
+#define FLAG_LUXURY_BALLS_IN_MARTS                       0x29A
 #define FLAG_HIDE_ROUTE8_LAX_MINT                        0x29B 
 #define FLAG_GOT_RECORD_SETTING_MAGIKARP                 0x29C
 #define FLAG_TWO_ISLAND_SHOP_INTRODUCED                  0x29D
@@ -1242,8 +1242,8 @@
 // FLAG_LANDMARK_SOUTHERN_ISLAND, FLAG_ENABLE_SHIP_SOUTHERN_ISLAND,
 // FLAG_ENCOUNTERED_LATIAS_OR_LATIOS, FLAG_DEFEATED_LATIAS_OR_LATIOS,
 // FLAG_CAUGHT_LATIAS_OR_LATIOS
-#define FLAG_0x4DC               0x4DC
-#define FLAG_0x4DD               0x4DD
+#define FLAG_HIDE_SILPH_CO_GHOST_SPECIAL 0x4DC
+#define FLAG_GOT_GARCHOMPITE_FROM_MDE 0x4DD
 #define FLAG_0x4DE               0x4DE
 #define FLAG_0x4DF               0x4DF
 #define FLAG_0x4E0               0x4E0

@@ -627,12 +627,12 @@ static const struct SideQuest sSideQuests[QUEST_COUNT] =
 	      NULL,
 	      0
 	),
-	side_quest(
-	      gText_AFathersRequest3,
+	side_quest( // Ghost in the Machine quest
+	      gText_SideQuestName_13,
 	      gText_SideQuestDesc_13,
 	      gText_SideQuestDoneDesc_13,
 	      gText_SideQuestMap13,
-	      OBJ_EVENT_GFX_WALLY,
+	      OBJ_EVENT_GFX_OLD_MAN_2,
 	      OBJECT,
 	      NULL,
 	      0
@@ -2792,6 +2792,7 @@ struct QuestIconGate
 static const struct QuestIconGate sQuestIconGates[] =
 {
 	{ QUEST_MISSING_NUMBER, FLAG_BADGE06_GET },
+	{ QUEST_GHOST_IN_THE_MACHINE, FLAG_DEFEATED_SABRINA },
 };
 
 static bool32 QuestIconGateMet(u16 questId)

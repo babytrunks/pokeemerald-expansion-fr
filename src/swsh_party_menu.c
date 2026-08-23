@@ -537,7 +537,7 @@ static void Task_HandleStopLearningMoveYesNoInput(u8);
 static void Task_TryLearningNextMoveAfterText(u8);
 static void BufferMonStatsToTaskData(struct Pokemon *, s16 *);
 static void UpdateMonDisplayInfoAfterRareCandy(u8, struct Pokemon *);
-static void Task_DisplayLevelUpStatsPg1(u8);
+// static void Task_DisplayLevelUpStatsPg1(u8);
 static void DisplayLevelUpStatsPg1(u8);
 static void Task_DisplayLevelUpStatsPg2(u8);
 static void DisplayLevelUpStatsPg2(u8);
@@ -642,7 +642,7 @@ void CB2_ReopenPartyMenuFromPC(void);
 #endif
 // Multiuse item code from Kasen
 static void DisplayGiveHowManyMessage(void);
-static bool8 DoesItemIncreaseEV(u8 itemType);
+// static bool8 DoesItemIncreaseEV(u8 itemType);
 static void ClearHowManyItemsWindow(u8 taskId);
 static void PrintHowManyItemsWindow(u8 taskId);
 static void Task_GiveHowManyItems(u8 taskId);
@@ -7755,15 +7755,15 @@ static void UpdateMonDisplayInfoAfterRareCandy(u8 slot, struct Pokemon *mon)
     ScheduleBgCopyTilemapToVram(1);
 }
 
-static void Task_DisplayLevelUpStatsPg1(u8 taskId)
-{
-    if (WaitFanfare(FALSE) && IsPartyMenuTextPrinterActive() != TRUE && ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON))))
-    {
-        PlaySE(SE_SELECT);
-        DisplayLevelUpStatsPg1(taskId);
-        gTasks[taskId].func = Task_DisplayLevelUpStatsPg2;
-    }
-}
+// static void Task_DisplayLevelUpStatsPg1(u8 taskId)
+// {
+//     if (WaitFanfare(FALSE) && IsPartyMenuTextPrinterActive() != TRUE && ((JOY_NEW(A_BUTTON)) || (JOY_NEW(B_BUTTON))))
+//     {
+//         PlaySE(SE_SELECT);
+//         DisplayLevelUpStatsPg1(taskId);
+//         gTasks[taskId].func = Task_DisplayLevelUpStatsPg2;
+//     }
+// }
 
 static void Task_DisplayLevelUpStatsPg2(u8 taskId)
 {
@@ -10667,21 +10667,21 @@ static void DisplayGiveHowManyMessage(void)
     ScheduleBgCopyTilemapToVram(0);
 }
 
-static bool8 DoesItemIncreaseEV(u8 itemType)
-{
-    switch (itemType)
-    {
-    case ITEM_EFFECT_ATK_IV:
-    case ITEM_EFFECT_HP_IV:
-    case ITEM_EFFECT_SPATK_IV:
-    case ITEM_EFFECT_SPDEF_IV:
-    case ITEM_EFFECT_SPEED_IV:
-    case ITEM_EFFECT_DEF_IV:
-        return TRUE;
-    default:
-        return FALSE;
-    }
-}
+// static bool8 DoesItemIncreaseEV(u8 itemType)
+// {
+//     switch (itemType)
+//     {
+//     case ITEM_EFFECT_ATK_IV:
+//     case ITEM_EFFECT_HP_IV:
+//     case ITEM_EFFECT_SPATK_IV:
+//     case ITEM_EFFECT_SPDEF_IV:
+//     case ITEM_EFFECT_SPEED_IV:
+//     case ITEM_EFFECT_DEF_IV:
+//         return TRUE;
+//     default:
+//         return FALSE;
+//     }
+// }
 
 static void ClearHowManyItemsWindow(u8 taskId)
 {

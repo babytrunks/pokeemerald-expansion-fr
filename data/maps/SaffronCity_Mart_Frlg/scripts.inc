@@ -14,10 +14,17 @@ SaffronCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_LUXURY_BALLS_IN_MARTS, SaffronCity_Mart_LuxuryStock
 	goto_if_set FLAG_BADGE05_GET, SaffronCity_Mart_5BadgeStock
 	goto_if_set FLAG_BADGE04_GET, SaffronCity_Mart_4BadgeStock
 	goto_if_set FLAG_BADGE02_GET, SaffronCity_Mart_2BadgeStock
 	pokemart SaffronCity_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+SaffronCity_Mart_LuxuryStock:
+	pokemart SaffronCity_Mart_LuxuryItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -80,6 +87,19 @@ SaffronCity_Mart_5BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
+	pokemartlistend
+
+	.align 2
+SaffronCity_Mart_LuxuryItems::
+	.2byte ITEM_POKE_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_DUSK_BALL
+	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_BLACK_BELT
+	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_LUXURY_BALL
 	pokemartlistend
 
 SaffronCity_Mart_Text_MaxRepelMoreEffectiveThanSuper::

@@ -400,7 +400,7 @@
 #define TRAINER_BURGLAR_JESSE                      394
 #define TRAINER_BURGLAR_JOSEPH                   395
 #define TRAINER_SILPH_CO_POLICEMAN                   396
-#define TRAINER_PKMN_PROF_PROF_OAK                 397
+#define TRAINER_SILPH_CO_MDE                 397
 #define TRAINER_TEAM_ROCKET_GRUNT_42               398
 #define TRAINER_PSYCHIC_JACLYN                     399
 #define TRAINER_CRUSH_GIRL_SHARON                  400

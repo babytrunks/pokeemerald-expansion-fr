@@ -159,6 +159,8 @@ Black and White Battle UI
 * **[NicoSwag](https://github.com/NicoSwag/pokeemerald-expansion/tree/nicos_cool_ui)** for the Nico's Cool UI battle type-icon artwork and layout.
 * **[mudskipper13](https://github.com/mudskipper13/pokeemerald/tree/feature/bwBattleUI)** for the Black/White message box, action box, move box and cursor, and the outlined battle UI font.
 
+Quest Icon: theleonix, belle
+
 ## Other Credits
 
 ### Mega Evolution Overworld Sprite Credits:

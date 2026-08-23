@@ -6,7 +6,14 @@ SevenIsland_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
+	goto_if_set FLAG_LUXURY_BALLS_IN_MARTS, SevenIsland_Mart_LuxuryStock
 	pokemart SevenIsland_Mart_Items
+	msgbox gText_PleaseComeAgain
+	release
+	end
+
+SevenIsland_Mart_LuxuryStock:
+	pokemart SevenIsland_Mart_LuxuryItems
 	msgbox gText_PleaseComeAgain
 	release
 	end
@@ -20,6 +27,20 @@ SevenIsland_Mart_Items::
 	.2byte ITEM_HYPER_POTION
 	.2byte ITEM_REVIVE
 	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_NONE
+	release
+	end
+
+	.align 2
+SevenIsland_Mart_LuxuryItems::
+	.2byte ITEM_ULTRA_BALL
+	.2byte ITEM_GREAT_BALL
+	.2byte ITEM_FULL_RESTORE
+	.2byte ITEM_MAX_POTION
+	.2byte ITEM_HYPER_POTION
+	.2byte ITEM_REVIVE
+	.2byte ITEM_FULL_HEAL
+	.2byte ITEM_LUXURY_BALL
 	.2byte ITEM_NONE
 	release
 	end
