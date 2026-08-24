@@ -134,8 +134,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
-      "x": 10,
-      "y": 67,
+      "x": 4,
+      "y": 53,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -144,6 +144,34 @@
       "trainer_sight_or_berry_tree_id": "ITEM_LUCARIONITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ROUTE_23_LUCARIONITE"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 7,
+      "y": 133,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_117_PAYAPA",
+      "script": "BerryTreeScript",
+      "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
+      "x": 19,
+      "y": 43,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_112_SHUCA",
+      "script": "BerryTreeScript",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -559,8 +587,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 11,
-      "y": 101,
+      "x": -1,
+      "y": 99,
       "elevation": 3,
       "item": "ITEM_MAX_ETHER",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE23_MAX_ETHER",
