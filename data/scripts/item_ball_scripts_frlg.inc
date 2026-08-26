@@ -291,10 +291,6 @@ SilphCo_4F_EventScript_ItemManectite::
 	finditem ITEM_MANECTITE
 	end
 
-SilphCo_4F_EventScript_ItemCovertCloak::
-	finditem ITEM_COVERT_CLOAK
-	end
-
 SilphCo_5F_EventScript_ItemProtein::
 	finditem ITEM_PROTEIN
 	end

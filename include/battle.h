@@ -734,6 +734,11 @@ struct BattleStruct
     struct DynamaxData dynamax;
     struct BattleGimmickData gimmick;
     const u8 *trainerSlideMsg;
+    // Queued pop up plus message, shown at the end of the current move
+    const u8 *notificationTopLine;
+    const u8 *notificationBottomLine;
+    const u8 *notificationMsg;
+    bool8 notificationPending;
     u8 stolenStats[NUM_BATTLE_STATS]; // hp byte is used for which stats to raise, other inform about by how many stages
     u8 lastMoveTarget[MAX_BATTLERS_COUNT]; // The last target on which each mon used a move, for the sake of Instruct
     enum Ability tracedAbility[MAX_BATTLERS_COUNT];

@@ -899,6 +899,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_LASTKISSACTIVATES]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX} left a parting gift!"),
     [STRINGID_LASTKISSCAMETRUE]                     = COMPOUND_STRING("The last kiss blessed {B_SCR_NAME_WITH_PREFIX2}!"),
     [STRINGID_IVRAISED]                             = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} had its\n{B_BUFF1} IV raised!"),
+    // Never read, the switch in BufferStringBattle supplies the text
+    [STRINGID_BATTLENOTIFICATION]                   = COMPOUND_STRING(""),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -2427,6 +2429,9 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
         break;
     case STRINGID_TRAINERSLIDE:
         stringPtr = gBattleStruct->trainerSlideMsg;
+        break;
+    case STRINGID_BATTLENOTIFICATION:
+        stringPtr = gBattleStruct->notificationMsg;
         break;
     default: // load a string from the table
         if (stringID >= STRINGID_COUNT)

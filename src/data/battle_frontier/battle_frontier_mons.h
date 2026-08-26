@@ -790,6 +790,203 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_DOCILE,
     .ball = BALL_PREMIER,},
 
+    // Signature move give mons, first move is the signature, rest from level up learnset
+    [FRONTIER_MON_ALTARIA_SIG] = {
+        .species = SPECIES_ALTARIA,
+        .moves = {MOVE_BOOMBURST, MOVE_MOONBLAST, MOVE_DRAGON_PULSE, MOVE_ROOST},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_CLOYSTER_SIG] = {
+        .species = SPECIES_CLOYSTER,
+        .moves = {MOVE_WATER_SHURIKEN, MOVE_SHELL_SMASH, MOVE_ICICLE_SPEAR, MOVE_ROCK_BLAST},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_CLEFABLE_SIG] = {
+        .species = SPECIES_CLEFABLE,
+        .moves = {MOVE_LIGHT_OF_RUIN, MOVE_MOONLIGHT, MOVE_COSMIC_POWER, MOVE_STORED_POWER},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_KINGDRA_SIG] = {
+        .species = SPECIES_KINGDRA,
+        .moves = {MOVE_SPACIAL_REND, MOVE_HYDRO_PUMP, MOVE_RAIN_DANCE, MOVE_AGILITY},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_GARCHOMP_SIG] = {
+        .species = SPECIES_GARCHOMP,
+        .moves = {MOVE_DRAGON_DANCE, MOVE_DRAGON_CLAW, MOVE_DIG, MOVE_CRUNCH},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_LILLIGANT_HISUI_SIG] = {
+        .species = SPECIES_LILLIGANT_HISUI,
+        .moves = {MOVE_FLOWER_TRICK, MOVE_VICTORY_DANCE, MOVE_AXE_KICK, MOVE_SYNTHESIS},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_MAGCARGO_SIG] = {
+        .species = SPECIES_MAGCARGO,
+        .moves = {MOVE_SHELL_SMASH, MOVE_FLAMETHROWER, MOVE_EARTH_POWER, MOVE_RECOVER},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_MAWILE_SIG] = {
+        .species = SPECIES_MAWILE,
+        .moves = {MOVE_DOUBLE_IRON_BASH, MOVE_PLAY_ROUGH, MOVE_SUCKER_PUNCH, MOVE_IRON_DEFENSE},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_SHUCKLE_SIG] = {
+        .species = SPECIES_SHUCKLE,
+        .moves = {MOVE_SALT_CURE, MOVE_STICKY_WEB, MOVE_REST, MOVE_POWER_TRICK},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_ROSERADE_SIG] = {
+        .species = SPECIES_ROSERADE,
+        .moves = {MOVE_MATCHA_GOTCHA, MOVE_SLUDGE_BOMB, MOVE_SLEEP_POWDER, MOVE_TOXIC_SPIKES},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_DRAMPA_SIG] = {
+        .species = SPECIES_DRAMPA,
+        .moves = {MOVE_BLOOD_MOON, MOVE_DRAGON_PULSE, MOVE_CALM_MIND, MOVE_ROOST},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_DOUBLADE_SIG] = {
+        .species = SPECIES_DOUBLADE,
+        .moves = {MOVE_BITTER_BLADE, MOVE_SWORDS_DANCE, MOVE_SACRED_SWORD, MOVE_SHADOW_SNEAK},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_HERACROSS_SIG] = {
+        .species = SPECIES_HERACROSS,
+        .moves = {MOVE_FIRST_IMPRESSION, MOVE_MEGAHORN, MOVE_CLOSE_COMBAT, MOVE_SWORDS_DANCE},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_METAGROSS_SIG] = {
+        .species = SPECIES_METAGROSS,
+        .moves = {MOVE_PSYSHIELD_BASH, MOVE_METEOR_MASH, MOVE_BULLET_PUNCH, MOVE_HAMMER_ARM},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_MEDICHAM_SIG] = {
+        .species = SPECIES_MEDICHAM,
+        .moves = {MOVE_MACH_PUNCH, MOVE_HIGH_JUMP_KICK, MOVE_ZEN_HEADBUTT, MOVE_BULK_UP},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_VOLCARONA_SIG] = {
+        .species = SPECIES_VOLCARONA,
+        .moves = {MOVE_BUZZY_BUZZ, MOVE_QUIVER_DANCE, MOVE_FIERY_DANCE, MOVE_BUG_BUZZ},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_GYARADOS_SIG] = {
+        .species = SPECIES_GYARADOS,
+        .moves = {MOVE_FLOATY_FALL, MOVE_DRAGON_DANCE, MOVE_LIQUIDATION, MOVE_ICE_FANG},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_MEGANIUM_SIG] = {
+        .species = SPECIES_MEGANIUM,
+        .moves = {MOVE_GROWTH, MOVE_GIGA_DRAIN, MOVE_DAZZLING_GLEAM, MOVE_SYNTHESIS},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_LUXRAY_SIG] = {
+        .species = SPECIES_LUXRAY,
+        .moves = {MOVE_ZIPPY_ZAP, MOVE_VOLT_TACKLE, MOVE_CRUNCH, MOVE_FIRE_FANG},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_DRAGONITE_SIG] = {
+        .species = SPECIES_DRAGONITE,
+        .moves = {MOVE_OBLIVION_WING, MOVE_EXTREME_SPEED, MOVE_DRAGON_DANCE, MOVE_OUTRAGE},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_DUSKNOIR_SIG] = {
+        .species = SPECIES_DUSKNOIR,
+        .moves = {MOVE_SPECTRAL_THIEF, MOVE_SHADOW_SNEAK, MOVE_ICE_PUNCH, MOVE_WILL_O_WISP},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_SCIZOR_SIG] = {
+        .species = SPECIES_SCIZOR,
+        .moves = {MOVE_JET_PUNCH, MOVE_SWORDS_DANCE, MOVE_X_SCISSOR, MOVE_IRON_HEAD},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_GARDEVOIR_SIG] = {
+        .species = SPECIES_GARDEVOIR,
+        .moves = {MOVE_GLITZY_GLOW, MOVE_MOONBLAST, MOVE_CALM_MIND, MOVE_MYSTICAL_FIRE},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_TYRANITAR_SIG] = {
+        .species = SPECIES_TYRANITAR,
+        .moves = {MOVE_CEASELESS_EDGE, MOVE_DRAGON_DANCE, MOVE_STONE_EDGE, MOVE_EARTHQUAKE},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_NOIVERN_SIG] = {
+        .species = SPECIES_NOIVERN,
+        .moves = {MOVE_CLANGOROUS_SOUL, MOVE_BOOMBURST, MOVE_AIR_SLASH, MOVE_DRAGON_PULSE},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_DRAGAPULT_SIG] = {
+        .species = SPECIES_DRAGAPULT,
+        .moves = {MOVE_SPIRIT_SHACKLE, MOVE_DRAGON_DARTS, MOVE_DRAGON_DANCE, MOVE_U_TURN},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_ELECTRODE_SIG] = {
+        .species = SPECIES_ELECTRODE,
+        .moves = {MOVE_BOOMBURST, MOVE_DISCHARGE, MOVE_ELECTRO_BALL, MOVE_LIGHT_SCREEN},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
+    [FRONTIER_MON_ABSOL_SIG] = {
+        .species = SPECIES_ABSOL,
+        .moves = {MOVE_CEASELESS_EDGE, MOVE_SWORDS_DANCE, MOVE_SUCKER_PUNCH, MOVE_PLAY_ROUGH},
+        .nature = NATURE_DOCILE,
+        .numPerfectIVs = 3,
+    .ball = BALL_PREMIER,},
+
 
     
 

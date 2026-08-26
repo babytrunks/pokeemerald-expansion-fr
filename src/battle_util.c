@@ -40,6 +40,7 @@
 #include "mail.h"
 #include "field_weather.h"
 #include "regions.h"
+#include "quests.h"
 #include "constants/abilities.h"
 #include "constants/battle_anim.h"
 #include "constants/battle_move_effects.h"
@@ -48,6 +49,7 @@
 #include "constants/items.h"
 #include "constants/item_effects.h"
 #include "constants/moves.h"
+#include "constants/opponents.h"
 #include "constants/songs.h"
 #include "constants/species.h"
 #include "constants/trainers.h"
@@ -449,6 +451,25 @@ bool32 HandleMoveTargetRedirection(void)
     return FALSE;
 }
 
+// Queues a pop up plus battle message, played back at the end of the current move
+// Only one can be pending at a time, later calls are dropped
+// Stores the pointers rather than copying, so every string must have static storage
+// Never pass COMPOUND_STRING from inside a function, that is a stack compound literal
+void QueueBattleNotification(const u8 *topLine, const u8 *bottomLine, const u8 *message)
+{
+    if (gBattleStruct->notificationPending)
+        return;
+
+    gBattleStruct->notificationTopLine = topLine;
+    gBattleStruct->notificationBottomLine = bottomLine;
+    gBattleStruct->notificationMsg = message;
+    gBattleStruct->notificationPending = TRUE;
+}
+
+// File scope so the pointers stay valid until the pop up plays at move end
+static const u8 sText_AriaOfSorrowPopUp[] = _("Objective met!");
+static const u8 sText_AriaOfSorrowMsg[] = _("Meloetta's spirits lifted!\nNow, win the battle.");
+
 // Tracks distinct sound moves the player picks, for the Meloetta quest
 static void TryRecordPlayerSoundMove(u32 move)
 {
@@ -464,6 +485,16 @@ static void TryRecordPlayerSoundMove(u32 move)
     }
 
     gBattleResults.soundMovesUsedPlayer[gBattleResults.numSoundMovesUsedPlayer++] = move;
+
+    // Counter caps at MAX_TRACKED_SOUND_MOVES so this can only match once per battle
+    if (gBattleResults.numSoundMovesUsedPlayer == MELOETTAS_BLUES_SOUND_MOVES
+     && TRAINER_BATTLE_PARAM.opponentA == TRAINER_SAFFRON_POM
+     && QuestMenu_GetSetQuestState(QUEST_ARIA_OF_SORROW, FLAG_GET_ACTIVE))
+    {
+        QueueBattleNotification(sText_AriaOfSorrowPopUp,
+                                QuestMenu_GetQuestName(QUEST_ARIA_OF_SORROW),
+                                sText_AriaOfSorrowMsg);
+    }
 }
 
 // Functions
@@ -11187,7 +11218,8 @@ bool32 CanMoveSkipAccuracyCalc(u32 battlerAtk, u32 battlerDef, enum Ability abil
         effect = TRUE;
         ability = ABILITY_NO_GUARD;
     }
-    else if (GetBattlerHoldEffectParam(battlerAtk) == HOLD_EFFECT_REAPER_CLOTH && gBattleMons[battlerAtk].species == SPECIES_DUSKNOIR)
+    // Reaper Cloth makes Dusknoir's moves never miss
+    else if (GetBattlerHoldEffect(battlerAtk) == HOLD_EFFECT_REAPER_CLOTH && gBattleMons[battlerAtk].species == SPECIES_DUSKNOIR)
     {
         effect = TRUE;
     }

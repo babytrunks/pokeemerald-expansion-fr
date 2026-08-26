@@ -189,6 +189,9 @@ static const u16 sInitialRentalMonRanges[][2] =
     {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
     {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
     {FRONTIER_MON_DUGTRIO_1, NUM_FRONTIER_MONS - 1},  // 372 - 881
+
+    // Signature move give mons, gift path only, must stay past the factory rows
+    {FRONTIER_MON_ALTARIA_SIG, FRONTIER_MON_ABSOL_SIG}, // 17 VAR_RARE_POKEMON_COUNTER, 121 - 148
 };
 
 // code

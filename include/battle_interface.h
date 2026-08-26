@@ -128,6 +128,8 @@ s32 MoveBattleBar(u8 battler, u8 healthboxSpriteId, u8 whichBar, u8 unused);
 u8 GetScaledHPFraction(s16 hp, s16 maxhp, u8 scale);
 u8 GetHPBarLevel(s16 hp, s16 maxhp);
 void CreateAbilityPopUp(u8 battlerId, enum Ability ability, bool32 isDoubleBattle);
+// Two line pop up on the player side plate, for non ability messages
+bool32 CreateMessagePopUp(const u8 *topLine, const u8 *bottomLine);
 void DestroyAbilityPopUp(u8 battlerId);
 bool32 CanThrowLastUsedBall(void);
 void TryHideLastUsedBall(void);

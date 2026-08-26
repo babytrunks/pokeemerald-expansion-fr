@@ -2194,6 +2194,11 @@
 	callnative BS_UpdateAbilityPopup
 	.endm
 
+	@ Shows the pop up queued by QueueBattleNotification
+	.macro shownotificationpopup
+	callnative BS_ShowNotificationPopUp
+	.endm
+
 	.macro jumpiftargetally jumpInstr:req
 	callnative BS_JumpIfTargetAlly
 	.4byte \jumpInstr

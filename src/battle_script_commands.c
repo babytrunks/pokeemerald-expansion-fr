@@ -7132,6 +7132,16 @@ static void Cmd_moveend(void)
             }
             gBattleScripting.moveendState++;
             break;
+        case MOVEEND_BATTLE_NOTIFICATION: // Quest or event banner queued from C during this move
+            gBattleScripting.moveendState++;
+            if (gBattleStruct->notificationPending)
+            {
+                gBattleStruct->notificationPending = FALSE;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_BattleNotification;
+                effect = TRUE;
+            }
+            break;
         case MOVEEND_COUNT:
             break;
         }
@@ -17266,6 +17276,13 @@ void BS_UpdateAbilityPopup(void)
 {
     NATIVE_ARGS();
     UpdateAbilityPopup(gBattlerAbility);
+    gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+void BS_ShowNotificationPopUp(void)
+{
+    NATIVE_ARGS();
+    CreateMessagePopUp(gBattleStruct->notificationTopLine, gBattleStruct->notificationBottomLine);
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 

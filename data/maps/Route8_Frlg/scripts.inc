@@ -11,16 +11,6 @@ Route8_EventScript_Cole::
 	goto_if_defeated TRAINER_ACE_TRAINER_COLE, Route8_EventScript_ColePostBattle
 	checkitem ITEM_MEGA_RING
 	goto_if_eq VAR_RESULT, FALSE, Route8_EventScript_ColeNoMegaRing
-	goto_if_not_defeated TRAINER_LASS_PAIGE, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_LASS_ANDREA, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_LASS_MEGAN, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_LASS_JULIA, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_GAMER_RICH, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_SUPER_NERD_GLENN, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_SUPER_NERD_LESLIE, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_SUPER_NERD_AIDAN, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_TWINS_ELI_ANNE, Route8_EventScript_ColeNotReady
-	goto_if_not_defeated TRAINER_BIKER_RICARDO, Route8_EventScript_ColeNotReady
     msgbox Route8_Text_ColeIntro, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route8_EventScript_ColeDecline
 	msgbox Route8_Text_ColeBattleAccept
@@ -48,16 +38,10 @@ Route8_EventScript_ColeDecline::
 	release
 	end
 
-Route8_EventScript_ColeNotReady::
-    msgbox Route8_Text_ColeNotReady
-    release
-    end
 
 Route8_Text_ColeIntro::
     .string "That ring on your hand…\n"
     .string "So you've earned a Mega Ring.\p"
-    .string "And you've bested every Trainer on\n"
-    .string "this route. Impressive.\p"
     .string "Then you're ready.\p"
     .string "Shall we do battle?$"
 
@@ -79,18 +63,12 @@ Route8_Text_ColePostBattle::
     .string "The Rocky Helmet punishes foes for\n"
     .string "attacking you.\p"
     .string "Sometimes chip damage makes all the\n"
-    .string "difference!\p"
-    .string "Do use those items.\n"
-    .string "Thank you for the fight. Goodbye.$"
+    .string "difference!$"
     
 Route8_Text_ColeNoMegaRing::
     .string "A real Trainer carries a Mega Ring.\p"
     .string "Come back when you've got one, and\n"
     .string "I'll give you a battle.$"
-
-Route8_Text_ColeNotReady::
-    .string "Beat every Trainer on this route\n"
-    .string "first. Then we'll talk.$"
 
 Route8_Text_ColeDecline::
     .string "Tsk, fine.$"

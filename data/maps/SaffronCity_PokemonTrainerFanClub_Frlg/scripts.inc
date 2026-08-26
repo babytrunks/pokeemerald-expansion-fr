@@ -387,21 +387,21 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan::
 SaffronCity_PokemonTrainerFanClub_EventScript_Pom::
 	lock
 	faceplayer
-	goto_if_quest_complete QUEST_MELOETTAS_BLUES, SaffronCity_PokemonTrainerFanClub_EventScript_PomAfterQuest
+	goto_if_quest_complete QUEST_ARIA_OF_SORROW, SaffronCity_PokemonTrainerFanClub_EventScript_PomAfterQuest
 	@ Reward state means the battle was won but the gift could not be handed over
-	goto_if_quest_reward QUEST_MELOETTAS_BLUES, SaffronCity_PokemonTrainerFanClub_EventScript_PomGiveMeloetta
-	goto_if_quest_active QUEST_MELOETTAS_BLUES, SaffronCity_PokemonTrainerFanClub_EventScript_PomAskRematch
+	goto_if_quest_reward QUEST_ARIA_OF_SORROW, SaffronCity_PokemonTrainerFanClub_EventScript_PomGiveMeloetta
+	goto_if_quest_active QUEST_ARIA_OF_SORROW, SaffronCity_PokemonTrainerFanClub_EventScript_PomAskRematch
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_MeloettaIsDepressed, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SaffronCity_PokemonTrainerFanClub_EventScript_PomDeclined
 	setflag FLAG_SYS_QUEST_MENU_GET
-	startquest QUEST_MELOETTAS_BLUES
+	startquest QUEST_ARIA_OF_SORROW
 	goto SaffronCity_PokemonTrainerFanClub_EventScript_PomBattle
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_PomDeclined::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomDeclined
 	setflag FLAG_SYS_QUEST_MENU_GET
-	startquest QUEST_MELOETTAS_BLUES
+	startquest QUEST_ARIA_OF_SORROW
 	release
 	end
 
@@ -425,7 +425,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_PomJudgeBattle::
 	specialvar VAR_RESULT, GetPlayerSoundMovesUsed
 	goto_if_lt VAR_RESULT, MELOETTAS_BLUES_SOUND_MOVES, SaffronCity_PokemonTrainerFanClub_EventScript_PomQuestFailed
 	@ Set reward first so a full party or PC can be recovered from
-	questmenu QUEST_MENU_SET_REWARD, QUEST_MELOETTAS_BLUES
+	questmenu QUEST_MENU_SET_REWARD, QUEST_ARIA_OF_SORROW
 	goto SaffronCity_PokemonTrainerFanClub_EventScript_PomGiveMeloetta
 	end
 
@@ -480,7 +480,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaTransferToPC::
 
 SaffronCity_PokemonTrainerFanClub_EventScript_FinishMeloettaGift::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomThankYou
-	completequest QUEST_MELOETTAS_BLUES
+	completequest QUEST_ARIA_OF_SORROW
 	release
 	end
 

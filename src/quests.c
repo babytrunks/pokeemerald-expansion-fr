@@ -2761,6 +2761,15 @@ void QuestMenu_CopyQuestName(u8 *dst, u8 questId)
 	StringCopy(dst, sSideQuests[questId].name);
 }
 
+// Direct pointer to the name, for callers that cannot spare a buffer
+const u8 *QuestMenu_GetQuestName(u16 questId)
+{
+	if (questId >= QUEST_COUNT)
+		return gText_EmptyString2;
+
+	return sSideQuests[questId].name;
+}
+
 void QuestMenu_CopySubquestName(u8 *dst, u8 parentId, u8 childId)
 {
 	StringCopy(dst, sSideQuests[parentId].subquests[childId].name);

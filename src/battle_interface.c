@@ -2933,6 +2933,34 @@ static void PrintOnAbilityPopUp(const u8 *str, u8 *spriteTileData1, u8 *spriteTi
     RemoveWindow(windowId);
 }
 
+// Prints the upper line of the plate, the nickname row for ability pop ups
+static void PrintTopLineOnPopUp(const u8 *str, u8 spriteId1, u8 spriteId2)
+{
+    PrintOnAbilityPopUp(str,
+                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId1].oam.tileNum),
+                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId2].oam.tileNum),
+                        0, 0,
+                        ABILITY_POP_UP_BATTLER_BG_TXTCLR, ABILITY_POP_UP_BATTLER_FG_TXTCLR, ABILITY_POP_UP_BATTLER_SH_TXTCLR,
+                        TRUE, gSprites[spriteId1].sBattlerId);
+}
+
+// Prints the lower line of the plate, blanking whatever was there before
+static void PrintBottomLineOnPopUp(const u8 *str, u8 spriteId1, u8 spriteId2)
+{
+    PrintOnAbilityPopUp(COMPOUND_STRING("                    "),
+                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId1].oam.tileNum) + TILE_OFFSET_4BPP(8),
+                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId2].oam.tileNum) + TILE_OFFSET_4BPP(8),
+                        0, 4,
+                        ABILITY_POP_UP_ABILITY_BG_TXTCLR, ABILITY_POP_UP_ABILITY_FG_TXTCLR, ABILITY_POP_UP_ABILITY_SH_TXTCLR,
+                        FALSE, gSprites[spriteId1].sBattlerId);
+    PrintOnAbilityPopUp(str,
+                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId1].oam.tileNum) + TILE_OFFSET_4BPP(8),
+                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId2].oam.tileNum) + TILE_OFFSET_4BPP(8),
+                        0, 4,
+                        ABILITY_POP_UP_ABILITY_BG_TXTCLR, ABILITY_POP_UP_ABILITY_FG_TXTCLR, ABILITY_POP_UP_ABILITY_SH_TXTCLR,
+                        FALSE, gSprites[spriteId1].sBattlerId);
+}
+
 static void PrintBattlerOnAbilityPopUp(u8 battler, u8 spriteId1, u8 spriteId2)
 {
     u32 totalChar = 0, lastChar;
@@ -2951,28 +2979,12 @@ static void PrintBattlerOnAbilityPopUp(u8 battler, u8 spriteId1, u8 spriteId2)
     if (lastChar != CHAR_S && lastChar != CHAR_s)
         StringAppend(gStringVar1, COMPOUND_STRING("s"));
 
-    PrintOnAbilityPopUp(gStringVar1,
-                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId1].oam.tileNum),
-                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId2].oam.tileNum),
-                        0, 0,
-                        ABILITY_POP_UP_BATTLER_BG_TXTCLR, ABILITY_POP_UP_BATTLER_FG_TXTCLR, ABILITY_POP_UP_BATTLER_SH_TXTCLR,
-                        TRUE, gSprites[spriteId1].sBattlerId);
+    PrintTopLineOnPopUp(gStringVar1, spriteId1, spriteId2);
 }
 
 static void PrintAbilityOnAbilityPopUp(enum Ability ability, u8 spriteId1, u8 spriteId2)
 {
-    PrintOnAbilityPopUp(COMPOUND_STRING("                    "),
-                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId1].oam.tileNum) + TILE_OFFSET_4BPP(8),
-                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId2].oam.tileNum) + TILE_OFFSET_4BPP(8),
-                        0, 4,
-                        ABILITY_POP_UP_ABILITY_BG_TXTCLR, ABILITY_POP_UP_ABILITY_FG_TXTCLR, ABILITY_POP_UP_ABILITY_SH_TXTCLR,
-                        FALSE, gSprites[spriteId1].sBattlerId);
-    PrintOnAbilityPopUp(gAbilitiesInfo[ability].name,
-                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId1].oam.tileNum) + TILE_OFFSET_4BPP(8),
-                        (void *)(OBJ_VRAM0) + TILE_OFFSET_4BPP(gSprites[spriteId2].oam.tileNum) + TILE_OFFSET_4BPP(8),
-                        0, 4,
-                        ABILITY_POP_UP_ABILITY_BG_TXTCLR, ABILITY_POP_UP_ABILITY_FG_TXTCLR, ABILITY_POP_UP_ABILITY_SH_TXTCLR,
-                        FALSE, gSprites[spriteId1].sBattlerId);
+    PrintBottomLineOnPopUp(gAbilitiesInfo[ability].name, spriteId1, spriteId2);
 }
 
 static inline bool32 IsAnyAbilityPopUpActive(void)
@@ -2987,22 +2999,13 @@ static inline bool32 IsAnyAbilityPopUpActive(void)
     return activeAbilityPopUps;
 }
 
-void CreateAbilityPopUp(u8 battler, enum Ability ability, bool32 isDoubleBattle)
+// Loads the gfx and spawns the two halves of the plate, returns the sprite id pair
+static u8 *CreatePopUpSpritePair(u32 battler, bool32 isDoubleBattle)
 {
     u8 *spriteIds;
     u32 xSlide, tileTag, battlerPosition = GetBattlerPosition(battler);
     struct SpriteTemplate template;
     const s16 (*coords)[2];
-
-    if (gBattleScripting.abilityPopupOverwrite)
-        ability = gBattleScripting.abilityPopupOverwrite;
-
-    if (gTestRunnerEnabled)
-    {
-        TestRunner_Battle_RecordAbilityPopUp(battler, ability);
-        if (gTestRunnerHeadless)
-            return;
-    }
 
     if (!IsAnyAbilityPopUpActive())
         LoadSpritePalette(&sSpritePalette_AbilityPopUp);
@@ -3045,8 +3048,47 @@ void CreateAbilityPopUp(u8 battler, enum Ability ability, bool32 isDoubleBattle)
     gSprites[spriteIds[0]].sBattlerId = battler;
     gSprites[spriteIds[1]].sBattlerId = battler;
 
+    return spriteIds;
+}
+
+void CreateAbilityPopUp(u8 battler, enum Ability ability, bool32 isDoubleBattle)
+{
+    u8 *spriteIds;
+
+    if (gBattleScripting.abilityPopupOverwrite)
+        ability = gBattleScripting.abilityPopupOverwrite;
+
+    if (gTestRunnerEnabled)
+    {
+        TestRunner_Battle_RecordAbilityPopUp(battler, ability);
+        if (gTestRunnerHeadless)
+            return;
+    }
+
+    spriteIds = CreatePopUpSpritePair(battler, isDoubleBattle);
+
     PrintBattlerOnAbilityPopUp(battler, spriteIds[0], spriteIds[1]);
     PrintAbilityOnAbilityPopUp(ability, spriteIds[0], spriteIds[1]);
+}
+
+// Generic two line plate for anything that is not an ability, both lines are caller supplied
+bool32 CreateMessagePopUp(const u8 *topLine, const u8 *bottomLine)
+{
+    u8 *spriteIds;
+    u32 battler = GetBattlerAtPosition(B_POSITION_PLAYER_LEFT);
+
+    if (gTestRunnerHeadless)
+        return FALSE;
+
+    // Borrows the player slot so it cannot share it with an ability pop up
+    if (gBattleStruct->battlerState[battler].activeAbilityPopUps)
+        return FALSE;
+
+    spriteIds = CreatePopUpSpritePair(battler, IsDoubleBattle());
+
+    PrintTopLineOnPopUp(topLine, spriteIds[0], spriteIds[1]);
+    PrintBottomLineOnPopUp(bottomLine, spriteIds[0], spriteIds[1]);
+    return TRUE;
 }
 
 void UpdateAbilityPopup(u8 battler)

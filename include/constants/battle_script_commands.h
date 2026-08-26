@@ -176,6 +176,8 @@ enum MoveEndEffects
     MOVEEND_CLEAR_BITS,
     MOVEEND_DANCER,
     MOVEEND_PURSUIT_NEXT_ACTION,
+    // Must stay last so every path through moveend reaches it
+    MOVEEND_BATTLE_NOTIFICATION,
     MOVEEND_COUNT,
 
     // This guarantees a correct jump if new moveends are added directly after MOVEEND_HIT_ESCAPE

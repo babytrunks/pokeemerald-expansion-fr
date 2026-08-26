@@ -7279,6 +7279,16 @@ BattleScript_IVRaisedOnKO::
 	waitmessage B_WAIT_TIME_LONG
 	return
 
+@ Generic notification, both the plate lines and the message come from QueueBattleNotification.
+BattleScript_BattleNotification::
+	pause B_WAIT_TIME_SHORT
+	shownotificationpopup
+	fanfare MUS_LEVEL_UP
+	printstring STRINGID_BATTLENOTIFICATION
+	waitmessage B_WAIT_TIME_LONG
+	waitfanfare
+	return
+
 BattleScript_AttackerAbilityStatRaiseEnd3::
 	call BattleScript_AttackerAbilityStatRaise
 	restoreattacker
