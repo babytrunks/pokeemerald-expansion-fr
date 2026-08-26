@@ -36,7 +36,7 @@ Route4_EventScript_PostCeruleanCaveScript::
     waitmovement 0
     setspeaker SP_NAME_LANCE
     msgbox gText_Route4_Lance_BeatenEvil
-    giveitem ITEM_SALAMENCITE
+    giveitem ITEM_DRAGONINITE
     setspeaker SP_NAME_LANCE
     msgbox gText_Route4_Lance_InDueTime, MSGBOX_AUTOCLOSE
     fadescreenswapbuffers FADE_TO_BLACK
@@ -158,8 +158,5 @@ gText_Route4_Lance_BeatenEvil::
 gText_Route4_Lance_InDueTime::
     .string "In due time, I expect you to\n"
     .string "challenge me in the league.\p"
-    .string "But first, you'll have to defeat\n"
-    .string "my cousin, who's recently been put\l"
-    .string "in charge of the Viridian City gym.\p"
-    .string "Best of luck!$"
-
+    .string "I will look forward to your arrival.\n"
+    .string "Best of luck.$"

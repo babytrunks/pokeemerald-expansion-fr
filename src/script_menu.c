@@ -17,8 +17,13 @@
 #include "malloc.h"
 #include "util.h"
 #include "item_icon.h"
+#include "decompress.h"
+#include "move.h"
+#include "battle_main.h"
+#include "pokemon_summary_screen.h"
 #include "constants/field_specials.h"
 #include "constants/items.h"
+#include "constants/pokemon.h"
 #include "constants/script_menu.h"
 #include "constants/seagallop.h"
 #include "constants/songs.h"
@@ -68,6 +73,9 @@ static void MultichoiceDynamicEventDebug_OnDestroy(struct DynamicListMenuEventAr
 static void MultichoiceDynamicEventShowItem_OnInit(struct DynamicListMenuEventArgs *eventArgs);
 static void MultichoiceDynamicEventShowItem_OnSelectionChanged(struct DynamicListMenuEventArgs *eventArgs);
 static void MultichoiceDynamicEventShowItem_OnDestroy(struct DynamicListMenuEventArgs *eventArgs);
+static void MultichoiceDynamicEventShowMoveInfo_OnInit(struct DynamicListMenuEventArgs *eventArgs);
+static void MultichoiceDynamicEventShowMoveInfo_OnSelectionChanged(struct DynamicListMenuEventArgs *eventArgs);
+static void MultichoiceDynamicEventShowMoveInfo_OnDestroy(struct DynamicListMenuEventArgs *eventArgs);
 
 static const struct DynamicListMenuEventCollection sDynamicListMenuEventCollections[] =
 {
@@ -82,6 +90,12 @@ static const struct DynamicListMenuEventCollection sDynamicListMenuEventCollecti
         .OnInit = MultichoiceDynamicEventShowItem_OnInit,
         .OnSelectionChanged = MultichoiceDynamicEventShowItem_OnSelectionChanged,
         .OnDestroy = MultichoiceDynamicEventShowItem_OnDestroy
+    },
+    [DYN_MULTICHOICE_CB_SHOW_MOVE_INFO] =
+    {
+        .OnInit = MultichoiceDynamicEventShowMoveInfo_OnInit,
+        .OnSelectionChanged = MultichoiceDynamicEventShowMoveInfo_OnSelectionChanged,
+        .OnDestroy = MultichoiceDynamicEventShowMoveInfo_OnDestroy
     }
 };
 
@@ -207,6 +221,117 @@ static void MultichoiceDynamicEventShowItem_OnDestroy(struct DynamicListMenuEven
 #undef sAuxWindowId
 #undef sItemSpriteId
 #undef TAG_CB_ITEM_ICON
+
+// Shows type, category, power, accuracy and description for the highlighted move
+// The list must push MOVE_ constants as its item ids
+static const u8 sText_MoveInfoPower[] = _("Power");
+static const u8 sText_MoveInfoAccuracy[] = _("Acc.");
+
+#define sInfoWindowId     sDynamicMenuEventScratchPad[0]
+#define sCategorySpriteId sDynamicMenuEventScratchPad[1]
+
+// One window across the bottom, chained onto the end of the list window
+// Hard ceiling is DLG_WINDOW_BASE_TILE_NUM since the frame graphics there are live
+// Tiles 0x194 up belong to message box window 0, which is cleared but never removed
+// Overlapping it is fine while it is hidden and it redraws its own tiles from RAM
+#define MOVE_INFO_LEFT   1
+#define MOVE_INFO_TOP    13
+#define MOVE_INFO_WIDTH  27
+#define MOVE_INFO_HEIGHT 6
+
+// Column offsets inside the window, in pixels
+#define MOVE_INFO_X_CATEGORY 60
+#define MOVE_INFO_X_POWER    88
+#define MOVE_INFO_X_POWER_V  128
+#define MOVE_INFO_X_ACC      152
+#define MOVE_INFO_X_ACC_V    186
+#define MOVE_INFO_Y_STATS    1
+#define MOVE_INFO_Y_DESC     17
+
+static void MultichoiceDynamicEventShowMoveInfo_OnInit(struct DynamicListMenuEventArgs *eventArgs)
+{
+    struct WindowTemplate *listTemplate = &gWindows[eventArgs->windowId].window;
+    u32 baseBlock = listTemplate->baseBlock + listTemplate->width * listTemplate->height;
+    struct WindowTemplate infoTemplate = CreateWindowTemplate(0, MOVE_INFO_LEFT, MOVE_INFO_TOP, MOVE_INFO_WIDTH, MOVE_INFO_HEIGHT, 15, baseBlock);
+
+    sInfoWindowId = AddWindow(&infoTemplate);
+    // Must copy here or the tilemap only ever reaches VRAM if something else flushes bg 0
+    SetStandardWindowBorderStyle(sInfoWindowId, TRUE);
+
+    LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
+    LoadSpritePalette(&gSpritePal_CategoryIcons);
+    sCategorySpriteId = MAX_SPRITES;
+}
+
+static void MultichoiceDynamicEventShowMoveInfo_OnSelectionChanged(struct DynamicListMenuEventArgs *eventArgs)
+{
+    u32 move = eventArgs->selectedItem;
+    u32 power = GetMovePower(move);
+    u32 accuracy = GetMoveAccuracy(move);
+    u8 buffer[8];
+
+    FillWindowPixelBuffer(sInfoWindowId, PIXEL_FILL(1));
+
+    AddTextPrinterParameterized(sInfoWindowId, FONT_NARROW, gTypesInfo[GetMoveType(move)].name, 0, MOVE_INFO_Y_STATS, TEXT_SKIP_DRAW, NULL);
+
+    // A power of 0 or 1 means the move has no fixed base power
+    AddTextPrinterParameterized(sInfoWindowId, FONT_NARROW, sText_MoveInfoPower, MOVE_INFO_X_POWER, MOVE_INFO_Y_STATS, TEXT_SKIP_DRAW, NULL);
+    if (power <= 1)
+        StringCopy(buffer, gText_ThreeDashes);
+    else
+        ConvertIntToDecimalStringN(buffer, power, STR_CONV_MODE_RIGHT_ALIGN, 3);
+    AddTextPrinterParameterized(sInfoWindowId, FONT_NARROW, buffer, MOVE_INFO_X_POWER_V, MOVE_INFO_Y_STATS, TEXT_SKIP_DRAW, NULL);
+
+    // An accuracy of 0 means the move cannot miss
+    AddTextPrinterParameterized(sInfoWindowId, FONT_NARROW, sText_MoveInfoAccuracy, MOVE_INFO_X_ACC, MOVE_INFO_Y_STATS, TEXT_SKIP_DRAW, NULL);
+    if (accuracy == 0)
+        StringCopy(buffer, gText_ThreeDashes);
+    else
+        ConvertIntToDecimalStringN(buffer, accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
+    AddTextPrinterParameterized(sInfoWindowId, FONT_NARROW, buffer, MOVE_INFO_X_ACC_V, MOVE_INFO_Y_STATS, TEXT_SKIP_DRAW, NULL);
+
+    // The description carries its own line break
+    AddTextPrinterParameterized(sInfoWindowId, FONT_NORMAL, GetMoveDescription(move), 0, MOVE_INFO_Y_DESC, TEXT_SKIP_DRAW, NULL);
+
+    CopyWindowToVram(sInfoWindowId, COPYWIN_GFX);
+
+    if (sCategorySpriteId == MAX_SPRITES)
+    {
+        u32 x = MOVE_INFO_LEFT * 8 + MOVE_INFO_X_CATEGORY + 8;
+        u32 y = MOVE_INFO_TOP * 8 + MOVE_INFO_Y_STATS + 8;
+        sCategorySpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, x, y, 0);
+        if (sCategorySpriteId == MAX_SPRITES)
+            return;
+        gSprites[sCategorySpriteId].oam.priority = 0;
+    }
+    StartSpriteAnim(&gSprites[sCategorySpriteId], GetMoveCategory(move));
+}
+
+static void MultichoiceDynamicEventShowMoveInfo_OnDestroy(struct DynamicListMenuEventArgs *eventArgs)
+{
+    ClearStdWindowAndFrame(sInfoWindowId, TRUE);
+    RemoveWindow(sInfoWindowId);
+
+    if (sCategorySpriteId != MAX_SPRITES)
+        DestroySprite(&gSprites[sCategorySpriteId]);
+
+    FreeSpriteTilesByTag(gSpriteSheet_CategoryIcons.tag);
+    FreeSpritePaletteByTag(gSpritePal_CategoryIcons.tag);
+}
+
+#undef sInfoWindowId
+#undef sCategorySpriteId
+#undef MOVE_INFO_LEFT
+#undef MOVE_INFO_TOP
+#undef MOVE_INFO_WIDTH
+#undef MOVE_INFO_HEIGHT
+#undef MOVE_INFO_X_CATEGORY
+#undef MOVE_INFO_X_POWER
+#undef MOVE_INFO_X_POWER_V
+#undef MOVE_INFO_X_ACC
+#undef MOVE_INFO_X_ACC_V
+#undef MOVE_INFO_Y_STATS
+#undef MOVE_INFO_Y_DESC
 
 static void FreeListMenuItems(struct ListMenuItem *items, u32 count)
 {
@@ -356,7 +481,7 @@ static void DrawMultichoiceMenuDynamic(u8 left, u8 top, u8 argc, struct ListMenu
 
     for (i = 0; i < argc; ++i)
     {
-        width = DisplayTextAndGetWidth(items[i].name, width);
+        width = DisplayTextAndGetWidthWithSpacing(items[i].name, width, sScriptableListMenuTemplate.lettersSpacing);
     }
     LoadMessageBoxAndBorderGfx();
     windowHeight = (argc < maxBeforeScroll) ? argc * 2 : maxBeforeScroll * 2;
@@ -1121,6 +1246,22 @@ static int DisplayTextAndGetWidthInternal(const u8 *str)
 int DisplayTextAndGetWidth(const u8 *str, int prevWidth)
 {
     int width = DisplayTextAndGetWidthInternal(str);
+    if (width < prevWidth)
+    {
+        width = prevWidth;
+    }
+    return width;
+}
+
+// Same but measured at the spacing the list actually renders with
+// Measuring at 0 makes the window too narrow and clips entries past about 9 characters
+int DisplayTextAndGetWidthWithSpacing(const u8 *str, int prevWidth, s16 letterSpacing)
+{
+    u8 temp[64];
+    int width;
+
+    StringExpandPlaceholders(temp, str);
+    width = GetStringWidth(FONT_NORMAL, temp, letterSpacing);
     if (width < prevWidth)
     {
         width = prevWidth;

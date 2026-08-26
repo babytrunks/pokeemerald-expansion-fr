@@ -118,16 +118,16 @@ EVs: 252 HP / 252 Def / 4 SpD
 - Body Press
 - Flamethrower
 
-Salamence @ Salamencite
-Hasty Nature
-Ability: Intimidate
+Dragonite @ Dragoninite
+Timid Nature
+Ability: Inner Focus
 Level: 63
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 4 SpA / 252 Spe
-- Double Edge
-- Aqua Tail
+EVs: 4 Def / 252 SpA  / 252 Spe
+- Hydro Pump
+- Hurricane
 - Fire Blast
-- Hyper Voice
+- Extreme Speed
 
 === PARTNER_TEST_BRENDAN ===
 Name: Brendan

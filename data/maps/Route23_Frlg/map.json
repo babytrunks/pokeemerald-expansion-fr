@@ -200,6 +200,20 @@
       "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_112_SHUCA",
       "script": "BerryTreeScript",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
+      "x": 20,
+      "y": 75,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_SALAMENCITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_ITEM_ROUTE23_SALAMENCITE"
     }
   ],
   "warp_events": [
@@ -613,16 +627,6 @@
     }
   ],
   "bg_events": [
-    {
-      "type": "hidden_item",
-      "x": -1,
-      "y": 99,
-      "elevation": 3,
-      "item": "ITEM_MAX_ETHER",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE23_MAX_ETHER",
-      "quantity": 1,
-      "underfoot": false
-    },
     {
       "type": "sign",
       "x": 3,

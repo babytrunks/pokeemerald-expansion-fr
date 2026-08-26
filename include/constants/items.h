@@ -995,7 +995,7 @@
 #define ITEM_CLEFABLITE 829 // DONE (Whitney)
 #define ITEM_VICTREEBELITE 830 // DONE (Erika)
 #define ITEM_STARMINITE 831 // DONE (Erika defeated)
-#define ITEM_DRAGONINITE 832 // probably Claire?
+#define ITEM_DRAGONINITE 832 // UNPLACED, freed when Viridian went from Clair to Mina
 #define ITEM_MEGANIUMITE 833 // DONE (Route 12, post Snorlax, boss fight)
 #define ITEM_FERALIGITE 834 // DONE (Route 12, post Rock Smash/Snorlax)
 #define ITEM_SKARMORITE 835
@@ -1010,7 +1010,7 @@
 #define ITEM_DELPHOXITE 844 // DONE (Route 13, map object)
 #define ITEM_GRENINJITE 845 // DONE (Koga)
 #define ITEM_PYROARITE 846 // DONE (safari zone post surf)
-#define ITEM_FLOETTITE 847 // DONE (Route 12, NPC gift)
+#define ITEM_FLOETTITE 847 // DONE (Viridian Gym, Mina reward)
 #define ITEM_MALAMARITE 848
 #define ITEM_BARBARACITE 849 // DONE (Safari Zone)
 #define ITEM_DRAGALGITE 850

@@ -1338,14 +1338,15 @@ const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbec
 const u8 gText_CannotSendMonToBoxActive[] = _("Cannot send an active battler\nto the box.{PAUSE_UNTIL_PRESS}");
 const u8 gText_CannotSendMonToBoxPartner[] = _("Cannot send a mon that doesn't,\nbelong to you to the box.{PAUSE_UNTIL_PRESS}");
 ALIGNED(4) const u8 gText_Ghost[] = _("GHOST");
-const u8 gText_Boulderbadge[] = _("BOULDERBADGE");
-const u8 gText_Cascadebadge[] = _("CASCADEBADGE");
-const u8 gText_Thunderbadge[] = _("THUNDERBADGE");
-const u8 gText_Rainbowbadge[] = _("RAINBOWBADGE");
-const u8 gText_Soulbadge[] = _("SOULBADGE");
-const u8 gText_Marshbadge[] = _("MARSHBADGE");
-const u8 gText_Volcanobadge[] = _("VOLCANOBADGE");
-const u8 gText_Earthbadge[] = _("EARTHBADGE");
+const u8 gText_Boulderbadge[] = _("Boulder Badge");
+const u8 gText_Cascadebadge[] = _("Cascade Badge");
+const u8 gText_Thunderbadge[] = _("Thunder Badge");
+const u8 gText_Rainbowbadge[] = _("Rainbow Badge");
+const u8 gText_Soulbadge[] = _("Soul Badge");
+const u8 gText_Marshbadge[] = _("Marsh Badge");
+const u8 gText_Volcanobadge[] = _("Volcano Badge");
+// Badge 8 is the Petal Badge now that Mina runs Viridian, symbol name kept
+const u8 gText_Earthbadge[] = _("Petal Badge");
 const u8 gText_OakImportantToGetToKnowPokemonThroughly[] = _("OAK: It's important to get to know\nyour Pokémon thoroughly.\p");
 const u8 gText_OakThisIsListOfPokemon[] = _("This is a list of your Pokémon,\n{PLAYER}.\pOpen this to check the skills\nand moves of your Pokémon.\pYou also choose Pokémon here if\nyou want to use an item on one.{PAUSE_UNTIL_PRESS}");
 

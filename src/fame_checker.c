@@ -1057,7 +1057,7 @@
 
 // static u8 AdjustGiovanniIndexIfBeatenInGym(u8 a0)
 // {
-//     if (HasTrainerBeenFought(TRAINER_LEADER_CLAIR) == TRUE)
+//     if (HasTrainerBeenFought(TRAINER_LEADER_MINA) == TRUE)
 //     {
 //         if (a0 == 9)
 //             return FAMECHECKER_GIOVANNI;

@@ -114,7 +114,7 @@
       "flag": "0"
     },
     {
-      "local_id": "LOCALID_VIRIDIAN_GIOVANNI",
+      "local_id": "LOCALID_VIRIDIAN_MINA",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MINA",
       "x": 2,
@@ -125,7 +125,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "ViridianCity_Gym_EventScript_Clair",
+      "script": "ViridianCity_Gym_EventScript_Mina",
       "flag": "0"
     },
     {

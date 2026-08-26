@@ -253,7 +253,7 @@
 #define TRAINER_SCIENTIST_IVAN                     247
 #define TRAINER_BOSS_GIOVANNI                      248
 #define TRAINER_BOSS_GIOVANNI_2                    249
-#define TRAINER_LEADER_CLAIR                    250
+#define TRAINER_LEADER_MINA                    250
 #define TRAINER_TEAM_ROCKET_GRUNT                  251
 #define TRAINER_TEAM_ROCKET_GRUNT_2                252
 #define TRAINER_TEAM_ROCKET_GRUNT_3                253
