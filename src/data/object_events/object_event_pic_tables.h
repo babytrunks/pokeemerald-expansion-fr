@@ -3825,4 +3825,12 @@ static const struct SpriteFrameImage sPicTable_Pom[] = {
     overworld_frame(gObjectEventPic_Pom, 2, 4, 2),
 };
 
+static const struct SpriteFrameImage sPicTable_Painter[] = {
+    overworld_ascending_frames(gObjectEventPic_Painter, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_AromaLady[] = {
+    overworld_ascending_frames(gObjectEventPic_AromaLady, 2, 4),
+};
+
 #endif // IS_FRLG

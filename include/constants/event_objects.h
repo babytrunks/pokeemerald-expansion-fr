@@ -502,6 +502,8 @@
 #define OBJ_EVENT_GFX_ELBEIN                     468
 #define OBJ_EVENT_GFX_DENO                       469
 #define OBJ_EVENT_GFX_POM                        470
+#define OBJ_EVENT_GFX_PAINTER                    471
+#define OBJ_EVENT_GFX_AROMA_LADY                 472
 
 // FRLG equivalents
 
@@ -514,7 +516,7 @@
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
 
-#define NUM_OBJ_EVENT_GFX                        471
+#define NUM_OBJ_EVENT_GFX                        473
 
 // These are dynamic object gfx ids.
 // They correspond with the values of the VAR_OBJ_GFX_ID_X vars.
@@ -743,6 +745,8 @@
 #define OBJ_EVENT_PAL_TAG_ELBEIN                  0x1196
 #define OBJ_EVENT_PAL_TAG_DENO                    0x1197
 #define OBJ_EVENT_PAL_TAG_POM                     0x1198
+#define OBJ_EVENT_PAL_TAG_PAINTER                 0x1199
+#define OBJ_EVENT_PAL_TAG_AROMA_LADY              0x119A
 // Used as a placeholder follower graphic
 #define OBJ_EVENT_PAL_TAG_SUBSTITUTE              0x7611
 #define OBJ_EVENT_PAL_TAG_LIGHT                   0x8001

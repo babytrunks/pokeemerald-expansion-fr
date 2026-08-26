@@ -138,6 +138,8 @@ kwenio: Green OW, Trainer sprites
 
 mid117 - Commissioned Jojo, Silva, PlainInsane sprites
 
+kalerie - Aroma Lady, Painter OW sprites
+
 Credits for Battle Speedup (from Emerald Rogue)
 
 - Alexonl1ne

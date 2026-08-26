@@ -6863,12 +6863,12 @@ Rhyhorn
 Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_TAMER_COLE ===
-Name: Cole
-Class: Tamer Frlg
-Pic: Tamer Frlg
+=== TRAINER_AROMA_LADY_DAPHNE ===
+Name: Daphne
+Class: Aroma Lady Frlg
+Pic: Aroma Lady Frlg
 Gender: Male
-Music: Hiker
+Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
@@ -7863,12 +7863,12 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Screech
 
 
-=== TRAINER_BLACK_BELT_ATSUSHI ===
-Name: Atsushi
-Class: Black Belt Frlg
-Pic: Black Belt Frlg
+=== TRAINER_PAINTER_VERA ===
+Name: Vera
+Class: Painter Frlg
+Pic: Painter Frlg
 Gender: Male
-Music: Intense
+Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
@@ -7893,12 +7893,12 @@ Machoke @ Black Belt
 Level: 43
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
-=== TRAINER_BLACK_BELT_TAKASHI ===
-Name: Takashi
-Class: Black Belt Frlg
-Pic: Black Belt Frlg
+=== TRAINER_PAINTER_SIENNA ===
+Name: Sienna
+Class: Painter Frlg
+Pic: Painter Frlg
 Gender: Male
-Music: Intense
+Music: Female
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 

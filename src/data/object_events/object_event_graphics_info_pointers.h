@@ -490,6 +490,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mde;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Elbein;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Deno;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pom;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Painter;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AromaLady;
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -968,6 +970,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ELBEIN] =             &gObjectEventGraphicsInfo_Elbein,
     [OBJ_EVENT_GFX_DENO] =               &gObjectEventGraphicsInfo_Deno,
     [OBJ_EVENT_GFX_POM] =                &gObjectEventGraphicsInfo_Pom,
+    [OBJ_EVENT_GFX_PAINTER] =            &gObjectEventGraphicsInfo_Painter,
+    [OBJ_EVENT_GFX_AROMA_LADY] =         &gObjectEventGraphicsInfo_AromaLady,
 #endif // IS_FRLG
 };
 

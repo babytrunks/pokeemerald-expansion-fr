@@ -159,10 +159,10 @@ EventScript_SetCinnabarGymTrainers::
 
 EventScript_SetViridianGymTrainers::
 	settrainerflag TRAINER_TAMER_JASON
-	settrainerflag TRAINER_TAMER_COLE
-	settrainerflag TRAINER_BLACK_BELT_ATSUSHI
+	settrainerflag TRAINER_AROMA_LADY_DAPHNE
+	settrainerflag TRAINER_PAINTER_VERA
 	settrainerflag TRAINER_BLACK_BELT_KIYO
-	settrainerflag TRAINER_BLACK_BELT_TAKASHI
+	settrainerflag TRAINER_PAINTER_SIENNA
 	settrainerflag TRAINER_COOLTRAINER_SAMUEL
 	settrainerflag TRAINER_COOLTRAINER_YUJI
 	settrainerflag TRAINER_COOLTRAINER_WARREN

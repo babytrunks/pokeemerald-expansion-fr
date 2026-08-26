@@ -130,8 +130,6 @@ PalletTown_RivalsHouse_EventScript_PleaseGiveMonsRest::
 PalletTown_RivalsHouse_EventScript_GiveTownMap::
 	msgbox PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp
 	closemessage
-	checkitemspace ITEM_TOWN_MAP
-	goto_if_eq VAR_RESULT, FALSE, PalletTown_RivalsHouse_EventScript_NoRoomForTownMap
 	applymovement LOCALID_DAISY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	removeobject LOCALID_TOWN_MAP
@@ -145,10 +143,6 @@ PalletTown_RivalsHouse_EventScript_GiveTownMap::
 	release
 	end
 
-PalletTown_RivalsHouse_EventScript_NoRoomForTownMap::
-	msgbox PalletTown_RivalsHouse_Text_DontHaveSpaceForThis
-	release
-	end
 
 PalletTown_RivalsHouse_EventScript_ExplainTownMap::
 	msgbox PalletTown_RivalsHouse_Text_ExplainTownMap
@@ -190,11 +184,7 @@ PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
 PalletTown_RivalsHouse_Text_DaisyThatsTownMap::
     .string "It's a map of the Kanto region.\n"
     .string "It allows you to traverse to already\l"
-    .string "seen places as well.$"
-
-PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
-    .string "You don't have space for this in\n"
-    .string "your Bag.$"
+    .string "seen places as well by pressing {A_BUTTON}.$"
 
 PalletTown_RivalsHouse_Text_ExplainTownMap::
     .string "You can use the Town Map to find\n"

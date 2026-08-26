@@ -34,14 +34,14 @@ ViridianCity_Gym_EventScript_Jason::
 	msgbox ViridianCity_Gym_Text_JasonPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-ViridianCity_Gym_EventScript_Cole::
-	trainerbattle_single TRAINER_TAMER_COLE, ViridianCity_Gym_Text_ColeIntro, ViridianCity_Gym_Text_ColeDefeat
-	msgbox ViridianCity_Gym_Text_ColePostBattle, MSGBOX_AUTOCLOSE
+ViridianCity_Gym_EventScript_Daphne::
+	trainerbattle_single TRAINER_AROMA_LADY_DAPHNE, ViridianCity_Gym_Text_DaphneIntro, ViridianCity_Gym_Text_DaphneDefeat
+	msgbox ViridianCity_Gym_Text_DaphnePostBattle, MSGBOX_AUTOCLOSE
 	end
 
-ViridianCity_Gym_EventScript_Atsushi::
-	trainerbattle_single TRAINER_BLACK_BELT_ATSUSHI, ViridianCity_Gym_Text_AtsushiIntro, ViridianCity_Gym_Text_AtsushiDefeat
-	msgbox ViridianCity_Gym_Text_AtsushiPostBattle, MSGBOX_AUTOCLOSE
+ViridianCity_Gym_EventScript_Vera::
+	trainerbattle_single TRAINER_PAINTER_VERA, ViridianCity_Gym_Text_VeraIntro, ViridianCity_Gym_Text_VeraDefeat
+	msgbox ViridianCity_Gym_Text_VeraPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 ViridianCity_Gym_EventScript_Kiyo::
@@ -49,9 +49,9 @@ ViridianCity_Gym_EventScript_Kiyo::
 	msgbox ViridianCity_Gym_Text_KiyoPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-ViridianCity_Gym_EventScript_Takashi::
-	trainerbattle_single TRAINER_BLACK_BELT_TAKASHI, ViridianCity_Gym_Text_TakashiIntro, ViridianCity_Gym_Text_TakashiDefeat
-	msgbox ViridianCity_Gym_Text_TakashiPostBattle, MSGBOX_AUTOCLOSE
+ViridianCity_Gym_EventScript_Sienna::
+	trainerbattle_single TRAINER_PAINTER_SIENNA, ViridianCity_Gym_Text_SiennaIntro, ViridianCity_Gym_Text_SiennaDefeat
+	msgbox ViridianCity_Gym_Text_SiennaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 ViridianCity_Gym_EventScript_Samuel::
@@ -133,15 +133,16 @@ ViridianCity_Gym_Text_YujiPostBattle::
     .string "You'll need power to keep up with\n"
     .string "our Gym Leader.$"
 
-ViridianCity_Gym_Text_AtsushiIntro::
-    .string "Rrrroar!\n"
-    .string "I'm working myself into a rage!$"
+ViridianCity_Gym_Text_VeraIntro::
+    .string "I paint whatever I'm feeling!\n"
+    .string "Right now I'm feeling victory!$"
 
-ViridianCity_Gym_Text_AtsushiDefeat::
-    .string "Wargh!$"
+ViridianCity_Gym_Text_VeraDefeat::
+    .string "My palette!$"
 
-ViridianCity_Gym_Text_AtsushiPostBattle::
-    .string "I'm still not worthy!$"
+ViridianCity_Gym_Text_VeraPostBattle::
+    .string "Mina's hand never shakes.\n"
+    .string "Mine still does.$"
 
 ViridianCity_Gym_Text_JasonIntro::
     .string "Pokémon and I, we make wonderful\n"
@@ -175,28 +176,31 @@ ViridianCity_Gym_Text_WarrenPostBattle::
     .string "The Leader will scold me for\n"
     .string "losing this way…$"
 
-ViridianCity_Gym_Text_TakashiIntro::
-    .string "I'm the Karate King!\n"
-    .string "Your fate rests with me!$"
+ViridianCity_Gym_Text_SiennaIntro::
+    .string "I sketch everyone who walks in\n"
+    .string "through that door.\p"
+    .string "Hold still. This won't take long!$"
 
-ViridianCity_Gym_Text_TakashiDefeat::
-    .string "Ayah!$"
+ViridianCity_Gym_Text_SiennaDefeat::
+    .string "Ah! Smudged it!$"
 
-ViridianCity_Gym_Text_TakashiPostBattle::
-    .string "The Pokémon League?\n"
-    .string "You? Don't get cocky!$"
+ViridianCity_Gym_Text_SiennaPostBattle::
+    .string "You move too quickly.\n"
+    .string "I couldn't get a single line down!$"
 
-ViridianCity_Gym_Text_ColeIntro::
-    .string "Your Pokémon will cower at the\n"
-    .string "crack of my whip!$"
+ViridianCity_Gym_Text_DaphneIntro::
+    .string "Can you smell the flowers?\p"
+    .string "Then you're already standing\n"
+    .string "much too close to me!$"
 
-ViridianCity_Gym_Text_ColeDefeat::
-    .string "Yowch!\n"
-    .string "Whiplash!$"
+ViridianCity_Gym_Text_DaphneDefeat::
+    .string "Oh, dear.\n"
+    .string "Wilted…$"
 
-ViridianCity_Gym_Text_ColePostBattle::
-    .string "Wait!\n"
-    .string "I was just careless!$"
+ViridianCity_Gym_Text_DaphnePostBattle::
+    .string "Go on up.\p"
+    .string "The Leader has been waiting to\n"
+    .string "sketch you.$"
 
 ViridianCity_Gym_Text_SamuelIntro::
     .string "Viridian Gym was closed for a\n"

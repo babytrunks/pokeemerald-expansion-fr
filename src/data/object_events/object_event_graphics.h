@@ -812,4 +812,10 @@ const u16 gObjectEventPal_Deno[] = INCBIN_U16("graphics/object_events/pics/peopl
 
 const u32 gObjectEventPic_Pom[] = INCBIN_U32("graphics/object_events/pics/people/pom.4bpp");
 const u16 gObjectEventPal_Pom[] = INCBIN_U16("graphics/object_events/pics/people/pom.gbapal");
+
+const u32 gObjectEventPic_Painter[] = INCBIN_U32("graphics/object_events/pics/people/painter.4bpp");
+const u16 gObjectEventPal_Painter[] = INCBIN_U16("graphics/object_events/pics/people/painter.gbapal");
+
+const u32 gObjectEventPic_AromaLady[] = INCBIN_U32("graphics/object_events/pics/people/aroma_lady.4bpp");
+const u16 gObjectEventPal_AromaLady[] = INCBIN_U16("graphics/object_events/pics/people/aroma_lady.gbapal");
 #endif // IS_FRLG

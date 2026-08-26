@@ -200,7 +200,7 @@
 #define TRAINER_TAMER_PHIL                         194
 #define TRAINER_TAMER_EDGAR                        195
 #define TRAINER_TAMER_JASON                        196
-#define TRAINER_TAMER_COLE                         197
+#define TRAINER_AROMA_LADY_DAPHNE                  197
 #define TRAINER_TAMER_VINCENT                      198
 #define TRAINER_TAMER_JOHN                         199
 #define TRAINER_BIRD_KEEPER_SEBASTIAN              200
@@ -225,9 +225,9 @@
 #define TRAINER_BLACK_BELT_HIDEKI                  219
 #define TRAINER_BLACK_BELT_AARON                   220
 #define TRAINER_BLACK_BELT_HITOSHI                 221
-#define TRAINER_BLACK_BELT_ATSUSHI                 222
+#define TRAINER_PAINTER_VERA                       222
 #define TRAINER_BLACK_BELT_KIYO                    223
-#define TRAINER_BLACK_BELT_TAKASHI                 224
+#define TRAINER_PAINTER_SIENNA                     224
 #define TRAINER_BLACK_BELT_DAISUKE                 225
 #define TRAINER_RIVAL_OAKS_LAB_SQUIRTLE            226
 #define TRAINER_RIVAL_OAKS_LAB_BULBASAUR           227
