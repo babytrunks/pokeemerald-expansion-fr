@@ -10907,45 +10907,60 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Exeggutor
-Level: 42
+Exeggutor-Alola @ Miracle Seed
+Level: 61
+Ability: Chlorophyll
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Egg Bomb
-- Confusion
-- Stun Spore
+EVs: 252 HP / 252 SpA / 4 Spe
 - Sleep Powder
+- Giga Drain
+- Dragon Pulse
+- Flamethrower
 
-Sandslash
-Level: 42
+Donphan @ Leftovers
+Level: 62
+Ability: Technician
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fury Swipes
-- Swift
-- Poison Sting
-- Sand Attack
+EVs: 252 HP / 252 Atk / 4 Spe
+- Bonemerang
+- Ice Shard
+- Rock Blast
+- Knock Off
 
-Cloyster
-Level: 42
+Cloyster @ White Herb
+Level: 62
+Ability: Skill Link
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spike Cannon
-- Spikes
-- Aurora Beam
-- Supersonic
+EVs: 4 HP / 252 Atk / 252 Spe
+- Shell Smash
+- Icicle Spear
+- Rock Blast
+- Liquidation
 
-Electrode
-Level: 42
+Mienshao @ Life Orb
+Level: 62
+Ability: Regenerator
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Light Screen
+EVs: 4 HP / 252 Atk / 252 Spe
+- Fake Out
+- Close Combat
+- U-Turn
+- Knock Off
 
-Arcanine
-Level: 42
+Pinsir @ Pinsirite
+Level: 63
+Ability: Mold Breaker
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flame Wheel
-- Roar
-- Bite
-- Take Down
+EVs: 4 HP / 252 Atk / 252 Spe
+- Quick Attack
+- X-Scissor
+- Double-Edge
+- Close Combat
 
 === TRAINER_COOLTRAINER_COLBY ===
 Name: Colby
@@ -10956,45 +10971,59 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Kingler
-Level: 41
+Feraligatr @ Focus Sash
+Level: 61
+Ability: Strong Jaw
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Guillotine
-- Stomp
-- Mud Shot
-- Bubble
+EVs: 4 HP / 252 Atk / 252 Spe
+- Dragon Dance
+- Liquidation
+- Ice Fang
+- Jaw Lock
 
-Poliwhirl
-Level: 42
+Swanna @ Life Orb
+Level: 62
+Ability: No Guard
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Body Slam
-- Double Slap
-- Water Gun
-- Hypnosis
+EVs: 4 HP / 252 SpA / 252 Spe
+- Hurricane
+- Hydro Pump
+- Ice Beam
 
-Tentacruel
-Level: 42
+Walrein @ Leftovers
+Level: 62
+Ability: Fur Coat
+Nature: Calm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Barrier
-- Wrap
-- Bubble Beam
-- Acid
+EVs: 252 HP / 128 Def / 128 SpD
+- Surf
+- Toxic
+- Protect
+- Ice Beam
 
-Seadra
-Level: 42
+Sharpedo @ Sharpedonite
+Level: 63
+Ability: Speed Boost
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Gun
-- Smokescreen
-- Twister
-- Leer
+EVs: 4 HP / 252 Atk / 252 Spe
+- Crunch
+- Ice Fang
+- Aqua Jet
+- Liquidation
 
-Blastoise
-Level: 43
+Empoleon @ Leftovers
+Level: 63
+Ability: Competitive
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Gun
-- Bite
-- Rapid Spin
-- Rain Dance
+EVs: 252 HP / 252 Def
+- Calm Mind
+- Scald
+- Rest
+- Sleep Talk
 
 === TRAINER_COOLTRAINER_PAUL ===
 Name: Paul
@@ -11054,45 +11083,55 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Raticate
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Super Fang
-- Pursuit
-- Scary Face
-- Quick Attack
+Cyclizar @ Sitrus Berry
+Nature: Jolly
+Ability: Regenerator
+Level: 63
+EVs: 252 HP / 4 Def / 252 Spe
+- Shed Tail
+- Knock Off
+- Body Slam
+- Dragon Claw
 
-Ivysaur
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Razor Leaf
-- Sleep Powder
-- Sweet Scent
-- Synthesis
+Flygon @ Life Orb
+Nature: Jolly
+Ability: Levitate
+Level: 64
+EVs: 252 Atk / 4 Def / 252 Spe
+- Dragon Dance
+- Earthquake
+- Dragon Claw
+- Fire Punch
 
-Wartortle
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Gun
-- Bite
-- Rapid Spin
-- Tail Whip
+Crobat @ Sitrus Berry
+Nature: Timid
+Ability: Sniper
+Level: 64
+EVs: 4 Def / 252 SpA / 252 Spe
+- Nasty Plot
+- Hurricane
+- Heat Wave
+- Giga Drain
 
-Charmeleon
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Slash
-- Smokescreen
-- Scary Face
+Kingler @ Kinglerite
+Nature: Jolly
+Ability: Hyper Cutter
+Level: 64
+EVs: 252 Atk / 4 Def / 252 Spe
+- Crabhammer
+- Close Combat
+- Ice Hammer
+- Swords Dance
 
-Charizard
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Wing Attack
-- Smokescreen
-- Scary Face
+Hatterene @ Leftovers
+Nature: Modest
+Ability: Magic Bounce
+Level: 64
+EVs: 252 HP / 4 Def / 252 SpA
+- Calm Mind
+- Draining Kiss
+- Psyshock
+- Mystical Fire
 
 === TRAINER_COOLTRAINER_GILBERT ===
 Name: Gilbert
@@ -11402,45 +11441,60 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Bellsprout
-Level: 42
+Bellossom @ Leftovers
+Level: 61
+Ability: Chlorophyll
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Razor Leaf
-- Acid
-- Stun Spore
-- Poison Powder
-
-Weepinbell
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Razor Leaf
-- Acid
+EVs: 252 HP / 4 SpA / 252 Spe
 - Sleep Powder
-- Poison Powder
+- Quiver Dance
+- Strength Sap
+- Moonblast
 
-Victreebel
-Level: 42
+Parasect @ Focus Sash
+Level: 62
+Ability: Dry Skin
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Razor Leaf
-- Acid
-- Stun Spore
-- Sleep Powder
-
-Paras
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Growth
-- Slash
-- Leech Life
-- Stun Spore
-
-Parasect
-Level: 42
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 Spe
 - Spore
-- Slash
+- Leaf Blade
 - Leech Life
-- Poison Powder
+- Crabhammer
+
+Vileplume @ Black Sludge
+Level: 62
+Ability: Chlorophyll
+Nature: Calm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 128 Def / 128 SpD
+- Sludge Bomb
+- Giga Drain
+- Sleep Powder
+- Strength Sap
+
+Amoonguss @ Black Sludge
+Level: 62
+Ability: Regenerator
+Nature: Impish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 128 Def / 128 SpD
+- Spore
+- Foul Play
+- Giga Drain
+- Clear Smog
+
+Lopunny @ Lopunnite
+Level: 63
+Ability: Cute Charm
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+- Close Combat
+- Frustration
+- Fake Out
+- Quick Attack
 
 === TRAINER_COOLTRAINER_ALEXA ===
 Name: Alexa
@@ -11451,45 +11505,60 @@ Music: Cool
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Clefairy
-Level: 42
+Clefable @ Life Orb
+Level: 61
+Ability: Magic Guard
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Light Screen
-- Cosmic Power
-- Double Slap
-- Encore
+EVs: 252 HP / 252 SpA / 4 Spe
+- Moonblast
+- Fire Blast
+- Thunderbolt
+- Stealth Rock
 
-Jigglypuff
-Level: 42
+Wigglytuff @ Life Orb
+Level: 62
+Ability: Competitive
+Nature: Bashful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sing
-- Body Slam
-- Rollout
-- Disable
+EVs: 4 HP / 40 Spe
+- Moonblast
+- Thunderbolt
+- Flamethrower
+- Hyper Voice
 
-Persian
-Level: 42
+Chansey @ Eviolite
+Level: 62
+Ability: Natural Cure
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Pay Day
-- Faint Attack
-- Bite
-- Screech
+EVs: 252 HP / 252 Def
+- Wish
+- Toxic
+- Seismic Toss
+- Protect
 
-Dewgong
-Level: 42
+Komala @ Choice Band
+Level: 62
+Ability: Comatose
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sheer Cold
-- Take Down
-- Rest
-- Aurora Beam
+EVs: 252 HP / 252 Atk / 4 Spe
+- Frustration
+- Knock Off
+- U-Turn
+- Earthquake
 
-Chansey
-Level: 42
+Audino @ Audinite
+Level: 63
+Ability: Regenerator
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sing
-- Egg Bomb
-- Soft Boiled
-- Minimize
+EVs: 252 HP / 252 Def
+- Moonblast
+- Wish
+- Protect
+- Toxic
 
 === TRAINER_COOLTRAINER_SHANNON ===
 Name: Shannon
@@ -18414,22 +18483,57 @@ EVs: 4 HP / 252 SpA / 252 Spe
 - Flamethrower
 - Aura Sphere
 
-=== TRAINER_CAMPER_JEFF_2 ===
-Name: Jeff
-Class: Camper Frlg
-Pic: Camper Frlg
+=== TRAINER_INDIGO_PLATEAU_SOUPERCELL ===
+Name: Creator
+Class: Dumbass
+Pic: Soupercell
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+Mugshot: Purple
 
-Spearow
-Level: 21
+Gigalith (GIGA BRAINED) @ Smooth Rock
+Level: 100
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 SpD / 252 Spe
+- Explosion
 
-Raticate
-Level: 21
+INVINCIBLE (Shedinja) @ Focus Sash
+Level: 100
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Phantom Force
+
+OP AF (Shedinja) @ Focus Sash
+Level: 100
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Phantom Force
+
+HOW2BEAT (Shedinja) @ Focus Sash
+Level: 100
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Phantom Force
+
+GG NO RE (Shedinja)  @ Focus Sash
+Level: 100
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Phantom Force
+
+GET PWNED (Shedinja) @ Focus Sash
+Level: 100
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 SpD / 252 Spe
+- Phantom Force
 
 === TRAINER_CAMPER_JEFF_3 ===
 Name: Jeff

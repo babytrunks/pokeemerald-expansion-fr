@@ -16,6 +16,121 @@ IndigoPlateau_Exterior_OnFrame::
 	map_script_2 VAR_MAP_SCENE_INDIGO_PLATEAU_EXTERIOR, 1, IndigoPlateau_Exterior_EventScript_Credits
 	.2byte 0
 
+@ The creator ambushes you at the League doors for one last boss fight
+IndigoPlateau_Exterior_EventScript_SoupercellTrigger::
+	lockall
+	textcolor NPC_TEXT_COLOR_MALE
+	delay 20
+
+	@ Player backs off the doormat so Soupercell has room to step out
+	applymovement LOCALID_PLAYER, IndigoPlateau_Exterior_Movement_PlayerMakeRoom
+	waitmovement 0
+	opendoor 11, 6
+	waitdooranim
+	addobject LOCALID_INDIGO_PLATEU_EXTERIOR_SOUPERCELL
+	applymovement LOCALID_INDIGO_PLATEU_EXTERIOR_SOUPERCELL, IndigoPlateau_Exterior_Movement_SoupercellExitBuilding
+	waitmovement 0
+	closedoor 11, 6
+	waitdooranim
+	applymovement LOCALID_PLAYER, IndigoPlateau_Exterior_Movement_PlayerFaceSoupercell
+	waitmovement 0
+
+	msgbox IndigoPlateau_Exterior_Text_SoupercellIntro
+	closemessage
+	setvar VAR_LAST_TALKED, LOCALID_INDIGO_PLATEU_EXTERIOR_SOUPERCELL
+	call IndigoPlateau_Exterior_EventScript_SoupercellBattle
+
+	msgbox IndigoPlateau_Exterior_Text_SoupercellReward
+	closemessage
+	giveitem ITEM_TM_SUPERCELL_SLAM
+	
+	msgbox IndigoPlateau_Exterior_Text_SoupercellFarewell
+	closemessage
+
+	setflag FLAG_RARE_POKEMON_SCREEN
+ 	setvar VAR_RARE_POKEMON_COUNTER, 17
+	setflag FLAG_3_PERFECT_IVS
+    factory_generaterentalmons
+	factory_rentmons
+	waitstate
+	clearflag FLAG_RARE_POKEMON_SCREEN
+	clearflag FLAG_3_PERFECT_IVS
+
+	msgbox IndigoPlateau_Exterior_Text_SoupercellThanksForPlaying
+	closemessage
+	@ Soupercell sidesteps the player and heads down the mountain
+	delay 10
+	applymovement LOCALID_INDIGO_PLATEU_EXTERIOR_SOUPERCELL, IndigoPlateau_Exterior_Movement_SoupercellLeave
+	waitmovement 0
+	removeobject LOCALID_INDIGO_PLATEU_EXTERIOR_SOUPERCELL
+	setvar VAR_MAP_SCENE_INDIGO_PLATEAU_SOUPERCELL, 1
+	releaseall
+	end
+
+@ Wrapped in a call so the script resumes once the battle is over
+IndigoPlateau_Exterior_EventScript_SoupercellBattle::
+	trainerbattle_no_intro TRAINER_INDIGO_PLATEAU_SOUPERCELL, IndigoPlateau_Exterior_Text_SoupercellDefeat
+	return
+
+IndigoPlateau_Exterior_Movement_PlayerMakeRoom::
+	walk_down
+	step_end
+
+IndigoPlateau_Exterior_Movement_PlayerFaceSoupercell::
+	walk_in_place_faster_up
+	step_end
+
+IndigoPlateau_Exterior_Movement_SoupercellExitBuilding::
+	walk_down
+	step_end
+
+IndigoPlateau_Exterior_Movement_SoupercellLeave::
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+IndigoPlateau_Exterior_Text_SoupercellIntro::
+	.string "Well well, thought you could\n"
+	.string "waltz into the Pokémon League\l"
+	.string "without another boss battle?\p"
+	.string "…Who the hell am I?\p"
+	.string "I'm {COLOR GREEN}soupercell{COLOR BLUE}, the creator of\n"
+	.string "this hack, dumbass!\p"
+	.string "Anyway, I can't let any scrubs\n"
+	.string "complete my game, so I'll need\l"
+	.string "to give you an ass-whooping.$"
+
+IndigoPlateau_Exterior_Text_SoupercellDefeat::
+	.string "W-what?! You…\n"
+	.string "You beat my invincible strat?!$"
+
+IndigoPlateau_Exterior_Text_SoupercellReward::
+	.string "Hot damn!\p"
+	.string "I don't know why I doubted you!\p"
+	.string "You're certainly ready.\p"
+	.string "I've reserved this item for you,\n"
+	.string "it's my signature move!\p"
+	.string "Just don't go crashing too hard.$"
+
+IndigoPlateau_Exterior_Text_SoupercellFarewell::
+	.string "I will warn that I've dropped\n"
+	.string "{RIVAL} some sick Pokémon on his way to the\l"
+	.string "League.\p"
+	.string "His team won't even resemble the one\n"
+	.string "you just faced. Have fun!\p"
+	.string "Here, I'll give you a little something\n"
+	.string "to compensate.$"
+
+IndigoPlateau_Exterior_Text_SoupercellThanksForPlaying::
+	.string "Have a good one, friend!$"
+
 
 @ After beating the champion, you are warped to the main
 @ entrance of Indigo Plateau. This script starts running

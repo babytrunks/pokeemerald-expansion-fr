@@ -75,6 +75,21 @@ PalletTown_PlayersHouse_2F_EventScript_Sign::
 	msgbox PalletTown_PlayersHouse_2F_Text_PressLRForHelp, MSGBOX_SIGN
 	end
 
+PalletTown_PlayersHouse_2F_EventScript_CheatBook::
+	lockall
+	msgbox PalletTown_PlayersHouse_2F_Text_CheatBookAskRead, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, PalletTown_PlayersHouse_2F_EventScript_CheatBookRead
+	goto PalletTown_PlayersHouse_2F_EventScript_CheatBookDone
+
+PalletTown_PlayersHouse_2F_EventScript_CheatBookRead::
+	msgbox PalletTown_PlayersHouse_2F_Text_CheatBookContents, MSGBOX_DEFAULT
+	goto PalletTown_PlayersHouse_2F_EventScript_CheatBookDone
+
+PalletTown_PlayersHouse_2F_EventScript_CheatBookDone::
+	closemessage
+	releaseall
+	end
+
 PalletTown_Text_AskCode::
 	.string "Would you like to input a code?$"
 
@@ -101,5 +116,30 @@ PalletTown_PlayersHouse_2F_Text_PlayedWithNES::
 PalletTown_PlayersHouse_2F_Text_PressLRForHelp::
     .string "It's a posted notice…\p"
     .string "Check out the Options Menu in the\n"
-    .string "{START_BUTTON} Menu!$"
+    .string "{START_BUTTON} Menu!\p"
+	.string "Don't forget to pres$"
+
+PalletTown_PlayersHouse_2F_Text_CheatBookAskRead::
+	.string "A worn paperback sits on the shelf…\p"
+	.string "Title: Cheat Codes For Dummies…\p"
+	.string "Read it?$"
+
+PalletTown_PlayersHouse_2F_Text_CheatBookContents::
+	.string "Chapter 1: So You Bought An NES\p"
+	.string "Punch a secret word into the NES\n"
+	.string "and the world plays along!\p"
+	.string "Spelling counts, dummy.\p"
+	.string "Chapter 2: The Sweet Tooth\p"
+	.string "“Woyaopp” buys candy that never, EVER\n"
+	.string "runs out.\p"
+	.string "Chapter 3: The Know-It-All\p"
+	.string "“DexAll” is said to fill a Pokédex\n"
+	.string "with things you have yet to meet.\p"
+	.string "Makes DexNav hunting a breeze.\p"
+	.string "Chapter 4: The Lazy Catch\p"
+	.string "“EZCatch” makes every Ball stick.\n"
+	.string "No wiggling. No heartbreak.\p"
+	.string "The last page is torn out…\p"
+	.string "Something's scribbled in the margin:\n"
+	.string "“Hide from Mom! And Soup!!!”$"
 

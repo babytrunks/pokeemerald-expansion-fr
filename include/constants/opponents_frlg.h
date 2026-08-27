@@ -511,7 +511,7 @@
 #define TRAINER_CERULEAN_CAVE_ARCHER                     505
 #define TRAINER_CERULEAN_CAVE_ARIANA                     506
 #define TRAINER_CERULEAN_CAVE_GIOVANNI                     507
-#define TRAINER_CAMPER_JEFF_2                      508
+#define TRAINER_INDIGO_PLATEAU_SOUPERCELL                      508
 #define TRAINER_CAMPER_JEFF_3                      509
 #define TRAINER_CAMPER_JEFF_4                      510
 #define TRAINER_BRENDAN_FUSCHIA               511 // unused 

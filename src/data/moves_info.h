@@ -21216,6 +21216,29 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_RockThrow,
     },
 
+    [MOVE_AQUA_FANG] =
+    {
+        .name = COMPOUND_STRING("Aqua Fang"),
+        .description = COMPOUND_STRING(
+            "User bites the foe with aquatic\n"
+            "force."),
+        .power = 80,
+        .effect = EFFECT_HIT,
+        .type = TYPE_WATER,
+        .accuracy = 100,
+        .pp = 10,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .category = DAMAGE_CATEGORY_PHYSICAL,
+        .makesContact = TRUE,
+        .contestEffect = CONTEST_EFFECT_HIGHLY_APPEALING,
+        .contestCategory = CONTEST_CATEGORY_TOUGH,
+        .contestComboStarterId = 0,
+        .contestComboMoves = {COMBO_STARTER_DEFENSE_CURL, COMBO_STARTER_HARDEN, COMBO_STARTER_LEER},
+        .battleAnimScript = gBattleAnimMove_AquaFang,
+    },
+
+
     // Z-Moves
     [MOVE_BREAKNECK_BLITZ] =
     {

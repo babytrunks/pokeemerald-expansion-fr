@@ -150,7 +150,7 @@
 
 // Unused?
 #define FLAG_SAFARI_BUG_CATCHER_QUIZ 0x0AF // set once the Rest House Bug Catcher's Shed Shell reward is claimed
-#define FLAG_0x0B0               0x0B0
+#define FLAG_HIDE_INDIGO_PLATEAU_SOUPERCELL                0x0B0
 #define FLAG_0x0B1               0x0B1
 #define FLAG_0x0B2               0x0B2
 #define FLAG_0x0B3               0x0B3

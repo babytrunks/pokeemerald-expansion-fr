@@ -260,7 +260,7 @@
 #define VAR_0x40F5                 0x40F5
 #define VAR_0x40F6                 0x40F6
 #define VAR_0x40F7                 0x40F7
-#define VAR_0x40F8                 0x40F8
+#define VAR_MAP_SCENE_INDIGO_PLATEAU_SOUPERCELL 0x40F8 // 1 once the creator boss is done
 #define VAR_0x40F9                 0x40F9
 #define VAR_0x40FA                 0x40FA
 #define VAR_0x40FB                 0x40FB
