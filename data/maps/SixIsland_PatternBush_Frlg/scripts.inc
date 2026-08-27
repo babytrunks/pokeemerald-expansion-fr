@@ -183,7 +183,7 @@ SixIsland_PatternBush_Text_DaliaPostBattle::
     .string "Isn't it refreshing?$"
 
 SixIsland_PatternBush_Text_JoanaIntro::
-    .string "I love Bug Pokémon.\n"
+    .string "I love Fairy Pokémon.\n"
     .string "That's why I'm here all the time.\p"
     .string "Am I the only girl like that?$"
 
@@ -193,7 +193,7 @@ SixIsland_PatternBush_Text_JoanaDefeat::
 
 SixIsland_PatternBush_Text_JoanaPostBattle::
     .string "I'm going to keep on collecting\n"
-    .string "Bug Pokémon.\p"
+    .string "Fairy Pokémon.\p"
     .string "Am I the only girl like that?$"
 
 SixIsland_PatternBush_Text_RileyIntro::

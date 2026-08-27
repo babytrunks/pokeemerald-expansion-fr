@@ -103,7 +103,7 @@ Route8_Text_GlennDefeat::
     .string "It's not logical!$"
 
 Route8_Text_GlennPostBattle::
-    .string "Go with Grimer first…and…\n"
+    .string "Go with Cradily first…and…\n"
     .string "…and…then…$"
 
 Route8_Text_PaigeIntro::
@@ -172,13 +172,11 @@ Route8_Text_JuliaIntro::
 
 Route8_Text_JuliaDefeat::
     .string "Stop!\p"
-    .string "Don't be so mean to my Clefairy!$"
+    .string "Don't be so mean to my Probopass!$"
 
 Route8_Text_JuliaPostBattle::
-    .string "I read that Clefairy evolves when\n"
-    .string "it's exposed to a Moon Stone.\p"
-    .string "I read that in a Pokémon Journal.\n"
-    .string "I wonder if it's true?$"
+    .string "Nosepass evolves when it's near\n"
+    .string "a special magnetic field.$"
 
 Route8_Text_UndergroundPathSign::
     .string "Underground Path\n"

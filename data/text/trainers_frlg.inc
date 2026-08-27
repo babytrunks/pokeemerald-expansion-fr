@@ -83,8 +83,8 @@ Route8_Text_LeslieRematchIntro::
 	.string "Pokémon are fun, too.$"
 
 Route8_Text_AndreaRematchIntro::
-	.string "MEOWTH and PERSIAN are so cute,\n"
-	.string "meow, meow, meow!$"
+	.string "Ambipom and Mismagius are so cute,\n"
+	.string "hee, hee, hee!$"
 
 Route8_Text_MeganRematchIntro::
 	.string "We may look silly standing here\n"
@@ -453,8 +453,8 @@ Route17_Text_BillyRematchIntro::
 	.string "We rule the roads, man!$"
 
 Route17_Text_NikolasRematchIntro::
-	.string "VOLTORB's going to seriously\n"
-	.string "electrify you today!$"
+	.string "Scolipede's going to seriously\n"
+	.string "poison you today!$"
 
 Route17_Text_ZeekRematchIntro::
 	.string "I leveled up my Pokémon, but it\n"

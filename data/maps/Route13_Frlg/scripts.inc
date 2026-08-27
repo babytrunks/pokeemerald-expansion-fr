@@ -154,8 +154,8 @@ Route13_Text_RobertDefeat::
     .string "Out of power!$"
 
 Route13_Text_RobertPostBattle::
-    .string "I wish I could fly like Pidgey and\n"
-    .string "Pidgeotto…$"
+    .string "I wish I could fly like my\n"
+    .string "Archeops…$"
 
 Route13_Text_LookToLeftOfThatPost::
     .string "Trainer Tips\p"

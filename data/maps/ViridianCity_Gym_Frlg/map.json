@@ -143,6 +143,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_VIRIDIAN_GYM_GUY",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
       "x": 16,

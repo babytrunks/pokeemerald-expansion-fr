@@ -2199,7 +2199,7 @@
 #define FLAG_HIDDEN_ITEM_POKEMON_MANSION_B1F_ELIXIR                        0
 #define FLAG_HIDDEN_ITEM_ROUTE23_FULL_RESTORE                              0
 #define FLAG_HIDDEN_ITEM_ROUTE23_ULTRA_BALL                                0
-#define FLAG_HIDDEN_ITEM_ROUTE23_MAX_ETHER                                 0
+#define FLAG_HIDE_CELADON_CITY_MEGA_STONE                                 0
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_FULL_RESTORE                      0
 #define FLAG_HIDDEN_ITEM_CERULEAN_CAVE_1F_ULTRA_BALL                       0
 #define FLAG_HIDDEN_ITEM_UNUSED_0x28                                       0

@@ -1,6 +1,38 @@
 CinnabarIsland_Gym_Frlg_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, CinnabarIsland_Gym_OnLoad
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, CinnabarIsland_Gym_OnFrame
 	.byte 0
+
+CinnabarIsland_Gym_OnFrame:
+	map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 6, EventScript_CinnabarIslandGym_GymGuyFeathers
+	.2byte 0
+
+EventScript_CinnabarIslandGym_GymGuyFeathers:
+	applymovement LOCALID_CINNABAR_GYM_GUY, Movement_GymGuideCinnabar_WalkUpToYou
+	waitmovement 0
+	msgbox CinnabarIsland_Gym_Text_GymGuyAdvice, MSGBOX_AUTOCLOSE
+	msgbox Common_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
+	giveitem ITEM_HP_UP   1
+	giveitem ITEM_PROTEIN 1
+	giveitem ITEM_CALCIUM 1
+	closemessage
+	applymovement LOCALID_CINNABAR_GYM_GUY, Movement_GymGuideCinnabar_WalkBack
+	waitmovement 0
+	setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 7
+	end
+
+Movement_GymGuideCinnabar_WalkUpToYou:
+	walk_right
+	walk_down
+	walk_down
+	step_end
+
+Movement_GymGuideCinnabar_WalkBack:
+	walk_up
+	walk_up
+	walk_left
+	face_down
+	step_end
 
 CinnabarIsland_Gym_OnLoad::
 	goto_if_set FLAG_DEFEATED_BLAINE, CinnabarIsland_Gym_OnLoadOpenAllDoors
@@ -813,7 +845,7 @@ CinnabarIsland_Gym_Text_DustyDefeat::
     .string "Too hot!$"
 
 CinnabarIsland_Gym_Text_DustyPostBattle::
-    .string "Ponyta, Ninetales…\n"
+    .string "Charizard, Ninetales…\n"
     .string "Those are popular Fire Pokémon.$"
 
 CinnabarIsland_Gym_Text_ZacIntro::
@@ -831,9 +863,9 @@ CinnabarIsland_Gym_Text_ZacPostBattle::
 CinnabarIsland_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "The hotheaded Blaine is a Fire\n"
-    .string "Pokémon pro.\p"
-    .string "Douse his spirits with water!$"
+    .string "You've probably noticed already, but\n"
+    .string "this Gym is packing heat!\p"
+    .string "Be wary of the weather conditions!$"
 
 CinnabarIsland_Gym_Text_GymGuyPostVictory::
     .string "{PLAYER}!\n"

@@ -198,7 +198,7 @@ Route12_Text_AndrewDefeat::
     .string "Lost it!$"
 
 Route12_Text_AndrewPostBattle::
-    .string "What, Magikarp?\p"
+    .string "What, Tentacool?\p"
     .string "I catch them all the time, sure.\n"
     .string "But, boy are they wimpy.$"
 

@@ -89,7 +89,7 @@ RockTunnel_1F_Text_AshtonDefeat::
     .string "Game over!$"
 
 RockTunnel_1F_Text_AshtonPostBattle::
-    .string "Oh well, I'll get a Zubat as I go!$"
+    .string "Oh well, I'll get an Onix as I go!$"
 
 RockTunnel_1F_Text_LeahIntro::
     .string "Eek!\p"
@@ -100,7 +100,7 @@ RockTunnel_1F_Text_LeahDefeat::
     .string "It was too dark…$"
 
 RockTunnel_1F_Text_LeahPostBattle::
-    .string "I saw a Machop in this tunnel.$"
+    .string "I saw a Carbink in this tunnel.$"
 
 RockTunnel_1F_Text_DanaIntro::
     .string "I came this far looking for wild\n"

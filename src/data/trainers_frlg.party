@@ -5927,16 +5927,16 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Icicle Crash
 - Brick Break
 
-Seismitoad @ Leftovers
-Ability: Water Absorb
+Cloyster @ Leftovers
+Ability: Skill Link
 Level: 58
-Nature: Calm
-EVs: 100 HP / 100 SpA / 106 SpD
+Nature: Rash
+EVs: 204 HP / 100 SpA 
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Muddy Water
-- Icy Wind
-- Aqua Ring
-- Snowscape
+- Blizzard
+- Hydro Pump
+- Rock Blast
+- Ice Shard
 
 === TRAINER_SWIMMER_FEMALE_MELISSA ===
 Name: Melissa
@@ -18493,7 +18493,7 @@ Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 Mugshot: Purple
 
-Gigalith (GIGA BRAINED) @ Smooth Rock
+GIGA BRAINED (Gigalith) @ Smooth Rock
 Level: 100
 Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -18535,14 +18535,14 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 SpD / 252 Spe
 - Phantom Force
 
-=== TRAINER_CAMPER_JEFF_3 ===
-Name: Jeff
-Class: Camper Frlg
+=== TRAINER_CERULEAN_FRIENDLY_COACH ===
+Name: Friendly
+Class: Dumbass
 Pic: Camper Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability / Sequence Switching
 
 Fearow
 Level: 29

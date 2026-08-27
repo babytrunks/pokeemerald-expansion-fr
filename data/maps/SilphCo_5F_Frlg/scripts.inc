@@ -110,7 +110,7 @@ SilphCo_5F_Text_Grunt2Defeat::
 
 SilphCo_5F_Text_Grunt2PostBattle::
     .string "Which reminds me.\p"
-    .string "Koffing evolves into Weezing!$"
+    .string "Poochyena evolves into Mightyena!$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
     .string "It's a Pokémon Report!\p"

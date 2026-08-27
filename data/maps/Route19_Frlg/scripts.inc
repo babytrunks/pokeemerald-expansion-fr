@@ -66,7 +66,7 @@ Route19_Text_ReeceDefeat::
     .string "That's chilly!$"
 
 Route19_Text_ReecePostBattle::
-    .string "Watch out for Tentacool.\n"
+    .string "Watch out for Jellicent.\n"
     .string "They sting so painfully.$"
 
 Route19_Text_MatthewIntro::

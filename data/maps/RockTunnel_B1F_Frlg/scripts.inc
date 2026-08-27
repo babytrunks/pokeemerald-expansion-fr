@@ -88,7 +88,7 @@ RockTunnel_B1F_Text_SteveDefeat::
 RockTunnel_B1F_Text_StevePostBattle::
     .string "Pokémon cosplay is dressing up as\n"
     .string "Pokémon for fun.\p"
-    .string "Clefairy is a favorite.$"
+    .string "Delphox is a favorite.$"
 
 RockTunnel_B1F_Text_AllenIntro::
     .string "My Pokémon techniques will leave\n"

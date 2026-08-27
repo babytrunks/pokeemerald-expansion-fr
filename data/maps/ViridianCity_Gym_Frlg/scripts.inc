@@ -1,5 +1,33 @@
 ViridianCity_Gym_Frlg_MapScripts::
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, ViridianCity_Gym_OnFrame
 	.byte 0
+
+ViridianCity_Gym_OnFrame:
+	map_script_2 VAR_MAP_SCENE_PEWTER_CITY_GYM, 7, EventScript_ViridianCityGym_GymGuyFeathers
+	.2byte 0
+
+EventScript_ViridianCityGym_GymGuyFeathers:
+	applymovement LOCALID_VIRIDIAN_GYM_GUY, Movement_GymGuideViridian_WalkUpToYou
+	waitmovement 0
+	msgbox ViridianCity_Gym_Text_GymGuyAdvice, MSGBOX_AUTOCLOSE
+	msgbox Common_Gym_Text_ComplimentaryItems, MSGBOX_AUTOCLOSE
+	giveitem ITEM_VITAMAX 1
+	closemessage
+	applymovement LOCALID_VIRIDIAN_GYM_GUY, Movement_GymGuideViridian_WalkBack
+	waitmovement 0
+	setvar VAR_MAP_SCENE_PEWTER_CITY_GYM, 8
+	end
+
+Movement_GymGuideViridian_WalkUpToYou:
+	walk_right
+	walk_down
+	step_end
+
+Movement_GymGuideViridian_WalkBack:
+	walk_up
+	walk_left
+	face_down
+	step_end
 
 ViridianCity_Gym_EventScript_Mina::
 	trainerbattle_single TRAINER_LEADER_MINA, ViridianCity_Gym_Text_MinaIntro, ViridianCity_Gym_Text_MinaDefeat, ViridianCity_Gym_EventScript_DefeatedMina, NO_MUSIC
@@ -100,7 +128,6 @@ ViridianCity_Gym_Text_ExplainPetalBadgeTakeThis::
     .string "You and your Pokémon, battling\n"
     .string "side by side…\p"
     .string "Now that's a great composition.\n"
-    .string "I'd love to draw the two of you.\p"
     .string "Here. The Petal Badge is yours.\p"
     .string "It raises your Level Cap to\n"
     .string "{STR_VAR_1}, and it lets you challenge\l"
@@ -110,7 +137,7 @@ ViridianCity_Gym_Text_ExplainPetalBadgeTakeThis::
 ViridianCity_Gym_Text_ExplainDazzlingGleam::
     .string "TM56 is Dazzling Gleam.\p"
     .string "It floods the whole field with light\n"
-    .string "and hits everything across from you.$"
+    .string "and hits everything opposite of you.$"
 
 ViridianCity_Gym_Text_ExplainFloettite::
     .string "And that one is the Floettite.\p"
@@ -223,9 +250,9 @@ ViridianCity_Gym_Text_GymGuyAdvice::
     .string "then the League up and handed it\l"
     .string "to a painter from Alola.\p"
     .string "Don't let that fool you.\n"
-    .string "She's the toughest of the eight.\p"
-    .string "Word is she uses nothing but\n"
-    .string "Fairy-type Pokémon.\p"
+    .string "She's a certifiably strong opponent.\p"
+    .string "Word is she specializes in Fairy-type\n"
+    .string "Pokémon.\p"
     .string "Steel and Poison, kid!$"
 
 ViridianCity_Gym_Text_GymGuyPostVictory::
@@ -251,15 +278,13 @@ ViridianCity_Gym_Text_MinaIntro::
     .string "Sorry. I kinda lost track of time.\p"
     .string "See, I was down at Vermilion Port\n"
     .string "sketching the ocean view, and I got\l"
-    .string "so caught up in it that I guess I\l"
+    .string "so caught up in it that I\l"
     .string "missed my ship back to Alola.\p"
-    .string "Aww… Well, shoot.\p"
     .string "But then the League came around\n"
     .string "asking if anybody could fill in for\l"
     .string "their eighth Gym Leader.\p"
     .string "Happy accident, I guess!\p"
-    .string "So how about it, Kantonian Trainer?\p"
-    .string "Heh heh heh… Then here I go!\p"
+    .string "So how about it, challenger?\p"
     .string "You're going to learn how great\n"
     .string "Fairy-type Pokémon can be!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 

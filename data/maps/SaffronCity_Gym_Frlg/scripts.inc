@@ -311,16 +311,17 @@ SaffronCity_Gym_Text_PrestonPostBattle::
 SaffronCity_Gym_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
-    .string "Sabrina specializes in the double\n"
-    .string "battle, rather than a specific type.\p"
+    .string "The Saffron City gym specializes in\n"
+    .string "Double Battles, rather than a specific\l"
+    .string "type.\p"
     .string "Switch up your strategies for doubles!\p"
     .string "Double targetting a threat can\n"
     .string "be a good strategy.$"
 
 SaffronCity_Gym_Text_GymGuyPostVictory::
-    .string "Psychic power, huh?\p"
-    .string "If I had that, I'd make a bundle\n"
-    .string "at the slots!$"
+    .string "Trick Room, huh?\p"
+    .string "If I had that, I might make the Olympics\n"
+    .string "for the 40 meter dash!$"
 
 SaffronCity_Gym_Text_GymStatue::
     .string "Saffron Pokémon Gym\n"

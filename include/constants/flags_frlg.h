@@ -994,8 +994,8 @@
 
 #define FLAG_HIDDEN_ITEMS_START 1000 // 0x3E8
 
-#define FLAG_HIDDEN_ITEM_VIRIDIAN_FOREST_POTION                            (FLAG_HIDDEN_ITEMS_START +   0)
-#define FLAG_HIDDEN_ITEM_VIRIDIAN_FOREST_ANTIDOTE                          (FLAG_HIDDEN_ITEMS_START +   1)
+#define FLAG_HIDDEN_ITEM_VIRIDIAN_FOREST_POTION                            (FLAG_HIDDEN_ITEMS_START +   0) // unused
+#define FLAG_HIDDEN_ITEM_VIRIDIAN_FOREST_ANTIDOTE                          (FLAG_HIDDEN_ITEMS_START +   1) // unused
 #define FLAG_HIDDEN_ITEM_MT_MOON_B2F_MOON_STONE                            (FLAG_HIDDEN_ITEMS_START +   2)
 #define FLAG_HIDDEN_ITEM_MT_MOON_B2F_ETHER                                 (FLAG_HIDDEN_ITEMS_START +   3)
 #define FLAG_HIDDEN_ITEM_ROUTE25_ELIXIR                                    (FLAG_HIDDEN_ITEMS_START +   4)
@@ -1030,7 +1030,7 @@
 #define FLAG_HIDDEN_ITEM_POKEMON_MANSION_B1F_ELIXIR                        (FLAG_HIDDEN_ITEMS_START +  33)
 #define FLAG_HIDDEN_ITEM_ROUTE23_FULL_RESTORE                              (FLAG_HIDDEN_ITEMS_START +  34)
 #define FLAG_HIDE_ITEM_ROUTE23_TM_SUPERPOWER                               (FLAG_HIDDEN_ITEMS_START +  35) 
-#define FLAG_HIDDEN_ITEM_ROUTE23_MAX_ETHER                                 (FLAG_HIDDEN_ITEMS_START +  36) // unused
+#define FLAG_HIDE_CELADON_CITY_MEGA_STONE                                 (FLAG_HIDDEN_ITEMS_START +  36) // unused
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_ULTRA_BALL                        (FLAG_HIDDEN_ITEMS_START +  37)
 #define FLAG_HIDDEN_ITEM_VICTORY_ROAD_1F_FULL_RESTORE                      (FLAG_HIDDEN_ITEMS_START +  38)
 #define FLAG_HIDDEN_ITEM_CERULEAN_CAVE_1F_ULTRA_BALL                       (FLAG_HIDDEN_ITEMS_START +  39)

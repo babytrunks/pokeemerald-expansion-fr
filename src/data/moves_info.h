@@ -11878,21 +11878,15 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_ROAR_OF_TIME] =
     {
         .name = COMPOUND_STRING("Roar of Time"),
-        .description = COMPOUND_STRING(
-            "Powerful, but leaves the\n"
-            "user immobile the next turn."),
-        .effect = EFFECT_HIT,
-        .power = 150,
+        .description = sCircleThrowDescription,
+        .effect = EFFECT_HIT_SWITCH_TARGET,
+        .power = 80,
         .type = TYPE_DRAGON,
         .accuracy = 100,
         .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_RECHARGE,
-            .self = TRUE,
-        }),
         .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = C_UPDATED_MOVE_CATEGORIES >= GEN_6 ? CONTEST_CATEGORY_BEAUTY : CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,
