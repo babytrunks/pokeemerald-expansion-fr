@@ -127,5 +127,5 @@ CeruleanCity_Mart_Text_DoYouKnowAboutRareCandy::
     .string "Do you know about Rare Candy?\n"
     .string "They don't sell it in shops.\p"
     .string "It can level up Pokémon past\n"
-    .string "the level cap.$"
+    .string "the Level Cap.$"
 

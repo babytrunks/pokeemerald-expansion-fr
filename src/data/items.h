@@ -13703,11 +13703,12 @@ const struct Item gItemsInfo[] =
     [ITEM_INFINITE_CANDY] =
     {
         .name = ITEM_NAME("Infinite Candy"),
+        .pluralName = ITEM_PLURAL_NAME("Infinite Candies"),
         .price = 0,
         .description = COMPOUND_STRING(
             "Raises the level\n"
-            "of a Pokémon by\n"
-            "one."),
+            "of a Pokémon up\n"
+            "to the Level Cap."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_PARTY_MENU,

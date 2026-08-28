@@ -373,6 +373,26 @@ Debug_EventScript_Steven_Multi::
 	release
 	end
 
+@ Battle params are set by the debug menu before this runs
+Debug_EventScript_BattleTrainer::
+	lockall
+	callnative Debug_CheckTrainerBattleReady
+	goto_if_eq VAR_RESULT, FALSE, Debug_EventScript_BattleTrainerNotEnoughMons
+	special PlayTrainerEncounterMusic
+	dotrainerbattle
+	callnative Debug_RestoreTrainerBattleFlag
+	releaseall
+	end
+
+Debug_EventScript_BattleTrainerNotEnoughMons::
+	msgbox DebugText_BattleTrainerNotEnoughMons, MSGBOX_DEFAULT
+	releaseall
+	end
+
+DebugText_BattleTrainerNotEnoughMons:
+	.string "Not enough healthy Pokémon to\n"
+	.string "battle that Trainer.$"
+
 Debug_BerryPestsDisabled::
 	msgbox DebugText_BerryPestsDisabled, MSGBOX_DEFAULT
 	release

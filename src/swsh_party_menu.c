@@ -514,6 +514,7 @@ static void Task_SetSacredAshCB(u8);
 static void CB2_ReturnToBagMenu(void);
 static void Task_DisplayHPRestoredMessage(u8);
 static u16 ItemEffectToMonIv(struct Pokemon *, u8);
+static bool32 IsIvIncreaseItemEffect(u8);
 static void ItemEffectToStatString(u8, u8 *);
 static void ReturnToUseOnWhichMon(u8);
 static void SetSelectedMoveForItem(u8);
@@ -6699,11 +6700,43 @@ void ItemUseCB_BattleChooseMove(u8 taskId, TaskFunc task)
 // This fork's vitamins and berries act on IVs, not EVs, so keep the vanilla party_menu.c logic
 void ItemUseCB_Medicine(u8 taskId, TaskFunc task)
 {
+    s16 *data = gTasks[taskId].data;
+
     u16 hp = 0;
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 item = gSpecialVar_ItemId;
     bool8 canHeal, cannotUse;
     u32 oldStatus = GetMonData(mon, MON_DATA_STATUS);
+    u8 itemEffect = GetItemEffectType(item);
+    u8 holdEffectParam = GetItemHoldEffectParam(item);
+
+    // Feathers raise an IV by 10 so a run of them is useful, vitamins max the IV in one use
+    if (holdEffectParam == IV_10 && IsIvIncreaseItemEffect(itemEffect)
+     && NotUsingHPEVItemOnShedinja(mon, item) == TRUE)
+    {
+        u32 currentIv = ItemEffectToMonIv(mon, itemEffect);
+        u32 quantityInBag = CountTotalItemQuantityInBag(item);
+
+        if (currentIv < MAX_PER_STAT_IVS && quantityInBag > 1)
+        {
+            u32 ivIncrease = sIndividualValueVitaminTable[holdEffectParam - 1];
+            u32 maxByStat = (MAX_PER_STAT_IVS - currentIv + ivIncrease - 1) / ivIncrease;
+
+            if (maxByStat > 1)
+            {
+                tItemEffect = itemEffect;
+                tHoldEffectParam = holdEffectParam;
+                tItemCount = 1;
+                tQuantityInBag = quantityInBag;
+                tMaxItemQuantity = min(maxByStat, quantityInBag);
+
+                PlaySE(SE_SELECT);
+                DisplayGiveHowManyMessage();
+                gTasks[taskId].func = Task_GiveHowManyItems;
+                return;
+            }
+        }
+    }
 
     if (NotUsingHPEVItemOnShedinja(mon, item) == FALSE)
     {
@@ -7216,6 +7249,22 @@ static u16 ItemEffectToMonIv(struct Pokemon *mon, u8 effectType)
     return 0;
 }
 
+static bool32 IsIvIncreaseItemEffect(u8 effectType)
+{
+    switch (effectType)
+    {
+    case ITEM_EFFECT_HP_IV:
+    case ITEM_EFFECT_ATK_IV:
+    case ITEM_EFFECT_DEF_IV:
+    case ITEM_EFFECT_SPEED_IV:
+    case ITEM_EFFECT_SPATK_IV:
+    case ITEM_EFFECT_SPDEF_IV:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 static void ItemEffectToStatString(u8 effectType, u8 *dest)
 {
     switch (effectType)
@@ -7713,27 +7762,32 @@ void ItemUseCB_RareCandy(u8 taskId, TaskFunc task)
     }
     else
     {
+        u32 currentLevelCap = GetCurrentLevelCap();
+        bool32 isInfiniteCandy = (gSpecialVar_ItemId == ITEM_INFINITE_CANDY);
+
         tQuantityInBag = CountTotalItemQuantityInBag(gSpecialVar_ItemId);
 
-        if (tQuantityInBag > 1)
+        if (tHoldEffectParam == 0) // Rare Candy
         {
-            u32 currentLevelCap = GetCurrentLevelCap();
+            // Regular Rare Candies may sit above the cap so never let this underflow
+            tMaxItemQuantity = (currentLevelCap > sInitialLevel) ? currentLevelCap - sInitialLevel : 1;
+        }
+        else // Exp Candies
+        {
+            u32 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
+            u32 totalExp = gExperienceTables[gSpeciesInfo[species].growthRate][currentLevelCap] - gExperienceTables[gSpeciesInfo[species].growthRate][sInitialLevel];
+            u16 candyExp = sExpCandyExperienceTable[tHoldEffectParam - 1];
+            u16 candyCount = (totalExp + candyExp - 1) / candyExp;
 
-            if (tHoldEffectParam == 0) // Rare Candy
-            {
-                tMaxItemQuantity = currentLevelCap - sInitialLevel;
-            }
-            else // Exp Candies
-            {
-                u32 species = GetMonData(mon, MON_DATA_SPECIES, NULL);
-                u32 totalExp = gExperienceTables[gSpeciesInfo[species].growthRate][currentLevelCap] - gExperienceTables[gSpeciesInfo[species].growthRate][sInitialLevel];
-                u16 candyExp = sExpCandyExperienceTable[tHoldEffectParam - 1];
-                u16 candyCount = (totalExp + candyExp - 1) / candyExp;
+            tMaxItemQuantity = min(candyCount, MAX_BAG_ITEM_CAPACITY);
+        }
 
-                tMaxItemQuantity = min(candyCount, MAX_BAG_ITEM_CAPACITY);
-            }
-
+        // The Infinite Candy is never consumed so only the level cap limits it
+        if (!isInfiniteCandy)
             tMaxItemQuantity = min(tQuantityInBag, tMaxItemQuantity);
+
+        if (tMaxItemQuantity > 1 && (isInfiniteCandy || tQuantityInBag > 1))
+        {
             DisplayGiveHowManyMessage();
 
             gTasks[taskId].func = Task_GiveHowManyItems;
@@ -10667,22 +10721,6 @@ static void DisplayGiveHowManyMessage(void)
     ScheduleBgCopyTilemapToVram(0);
 }
 
-// static bool8 DoesItemIncreaseEV(u8 itemType)
-// {
-//     switch (itemType)
-//     {
-//     case ITEM_EFFECT_ATK_IV:
-//     case ITEM_EFFECT_HP_IV:
-//     case ITEM_EFFECT_SPATK_IV:
-//     case ITEM_EFFECT_SPDEF_IV:
-//     case ITEM_EFFECT_SPEED_IV:
-//     case ITEM_EFFECT_DEF_IV:
-//         return TRUE;
-//     default:
-//         return FALSE;
-//     }
-// }
-
 static void ClearHowManyItemsWindow(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
@@ -10823,8 +10861,15 @@ static void ItemUse_ApplyEvIncreaseItem(u8 taskId)
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     u16 item = gSpecialVar_ItemId;
 
+    // Stop once the stat caps out so the leftover feathers are not consumed for nothing
+    u16 applied = 0;
     for (u16 i = 0; i < tItemCount; i++)
-        ExecuteTableBasedItemEffect(mon, item, gPartyMenu.slotId, 0);
+    {
+        if (ExecuteTableBasedItemEffect(mon, item, gPartyMenu.slotId, 0) == TRUE)
+            break;
+        applied++;
+    }
+    tItemCount = applied;
     gPartyMenuUseExitCallback = TRUE;
     PlaySE(SE_USE_ITEM);
     if (tItemEffect == ITEM_EFFECT_HP_IV)

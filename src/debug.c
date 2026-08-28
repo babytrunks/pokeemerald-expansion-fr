@@ -57,12 +57,14 @@
 #include "strings.h"
 #include "string_util.h"
 #include "task.h"
+#include "trainer_see.h"
 #include "tv.h"
 #include "pokemon_summary_screen.h"
 #include "wild_encounter.h"
 #include "constants/abilities.h"
 #include "constants/battle_ai.h"
 #include "constants/battle_frontier.h"
+#include "constants/battle_setup.h"
 #include "constants/coins.h"
 #include "constants/decorations.h"
 #include "constants/event_objects.h"
@@ -263,6 +265,7 @@ enum DebugBattleEnvironment
 #define DEBUG_NUMBER_DIGITS_VARIABLE_VALUE 5
 #define DEBUG_NUMBER_DIGITS_ITEMS 4
 #define DEBUG_NUMBER_DIGITS_ITEM_QUANTITY 3
+#define DEBUG_NUMBER_DIGITS_TRAINERS ((TRAINERS_COUNT > 1000) ? 4 : 3)
 
 #define DEBUG_NUMBER_ICON_X 210
 #define DEBUG_NUMBER_ICON_Y 50
@@ -339,6 +342,8 @@ static void DebugAction_Util_Warp_SelectMap(u8 taskId);
 static void DebugAction_Util_Warp_SelectWarp(u8 taskId);
 static void DebugAction_Util_Weather(u8 taskId);
 static void DebugAction_Util_Weather_SelectId(u8 taskId);
+static void DebugAction_Util_BattleTrainer(u8 taskId);
+static void DebugAction_Util_BattleTrainer_SelectId(u8 taskId);
 static void DebugAction_Util_WatchCredits(u8 taskId);
 static void DebugAction_Util_CheatStart(u8 taskId);
 
@@ -464,6 +469,7 @@ extern const u8 Debug_EventScript_EWRAMCounters[];
 extern const u8 Debug_Follower_NPC_Event_Script[];
 extern const u8 Debug_Follower_NPC_Not_Enabled[];
 extern const u8 Debug_EventScript_Steven_Multi[];
+extern const u8 Debug_EventScript_BattleTrainer[];
 extern const u8 Debug_EventScript_PrintTimeOfDay[];
 extern const u8 Debug_EventScript_TellTheTime[];
 extern const u8 Debug_EventScript_FakeRTCNotEnabled[];
@@ -627,6 +633,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Utilities[] =
     { COMPOUND_STRING("Fly to map…"),       DebugAction_Util_Fly },
     { COMPOUND_STRING("Warp to map warp…"), DebugAction_Util_Warp_Warp },
     { COMPOUND_STRING("Set weather…"),      DebugAction_Util_Weather },
+    { COMPOUND_STRING("Battle trainer…"),   DebugAction_Util_BattleTrainer },
     { COMPOUND_STRING("Font Test…"),        DebugAction_ExecuteScript, Debug_EventScript_FontTest },
     { COMPOUND_STRING("Time Functions…"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
     { COMPOUND_STRING("Watch credits…"),    DebugAction_Util_WatchCredits },
@@ -1660,6 +1667,123 @@ static void DebugAction_Util_Weather_SelectId(u8 taskId)
         PlaySE(SE_SELECT);
         DebugAction_DestroyExtraWindow(taskId);
     }
+}
+
+// Set when the debug battle starts, so a won battle does not mark the trainer beaten
+static bool8 sDebugTrainerFlagWasSet = FALSE;
+
+static void Debug_Display_TrainerInfo(u32 trainerId, u32 digit, u8 windowId)
+{
+    u8 *end;
+
+    StringCopy(gStringVar2, gText_DigitIndicator[digit]);
+    end = StringCopy(gStringVar1, GetTrainerClassNameFromId(trainerId));
+    end = StringCopy(end, gText_Space);
+    end = StringCopy(end, GetTrainerNameFromId(trainerId));
+
+    WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
+    StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
+    ConvertIntToDecimalStringN(gStringVar3, trainerId, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_TRAINERS);
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Trainer ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
+    AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
+}
+
+static void DebugAction_Util_BattleTrainer(u8 taskId)
+{
+    u8 windowId;
+
+    ClearStdWindowAndFrame(gTasks[taskId].tWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tWindowId);
+
+    HideMapNamePopUpWindow();
+    LoadMessageBoxAndBorderGfx();
+    windowId = AddWindow(&sDebugMenuWindowTemplateExtra);
+    DrawStdWindowFrame(windowId, FALSE);
+
+    CopyWindowToVram(windowId, COPYWIN_FULL);
+
+    // Display initial trainer
+    Debug_Display_TrainerInfo(1, 0, windowId);
+
+    gTasks[taskId].func = DebugAction_Util_BattleTrainer_SelectId;
+    gTasks[taskId].tSubWindowId = windowId;
+    gTasks[taskId].tInput = 1;
+    gTasks[taskId].tDigit = 0;
+}
+
+// Closes the input window and hands control to a script, unlike DebugAction_DestroyExtraWindow
+static void Debug_DestroyExtraWindow_Script(u8 taskId, const u8 *script)
+{
+    ClearStdWindowAndFrame(gTasks[taskId].tSubWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tSubWindowId);
+    DestroyListMenuTask(gTasks[taskId].tMenuTaskId, NULL, NULL);
+    DestroyTask(taskId);
+    Free(sDebugMenuListData);
+    sDebugMenuListData = NULL;
+
+    LockPlayerFieldControls();
+    FreezeObjectEvents();
+    ScriptContext_SetupScript(script);
+}
+
+static void DebugAction_Util_BattleTrainer_SelectId(u8 taskId)
+{
+    u16 trainerId;
+
+    if (JOY_NEW(DPAD_ANY))
+    {
+        PlaySE(SE_SELECT);
+        Debug_HandleInput_Numeric(taskId, 1, TRAINERS_COUNT - 1, DEBUG_NUMBER_DIGITS_TRAINERS);
+        Debug_Display_TrainerInfo(gTasks[taskId].tInput, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+    }
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        trainerId = gTasks[taskId].tInput;
+        PlaySE(SE_SELECT);
+
+        // No trainer object event is involved, so set the battle up by hand
+        memset(gTrainerBattleParameter.data, 0, sizeof(TrainerBattleParameter));
+        TRAINER_BATTLE_PARAM.mode = TRAINER_BATTLE_SINGLE;
+        TRAINER_BATTLE_PARAM.objEventLocalIdA = LOCALID_NONE;
+        TRAINER_BATTLE_PARAM.opponentA = trainerId;
+        gApproachingTrainerId = 0;
+        gNoOfApproachingTrainers = 0;
+        sDebugTrainerFlagWasSet = HasTrainerBeenFought(trainerId);
+
+        Debug_DestroyExtraWindow_Script(taskId, Debug_EventScript_BattleTrainer);
+    }
+    else if (JOY_NEW(B_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        DebugAction_DestroyExtraWindow(taskId);
+    }
+}
+
+// Sets VAR_RESULT to whether the party can take on the selected trainer
+void Debug_CheckTrainerBattleReady(struct ScriptContext *ctx)
+{
+    u32 i, usableMons = 0;
+    u32 neededMons = (GetTrainerBattleType(TRAINER_BATTLE_PARAM.opponentA) == TRAINER_BATTLE_TYPE_DOUBLES) ? 2 : 1;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE
+         && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG)
+         && GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
+            usableMons++;
+    }
+
+    gSpecialVar_Result = (usableMons >= neededMons);
+}
+
+// Keeps a won debug battle from permanently marking the trainer as beaten
+void Debug_RestoreTrainerBattleFlag(struct ScriptContext *ctx)
+{
+    u16 trainerId = TRAINER_BATTLE_PARAM.opponentA;
+
+    if (!sDebugTrainerFlagWasSet && trainerId < MAX_TRAINERS_COUNT)
+        ClearTrainerFlag(trainerId);
 }
 
 static void DebugAction_Util_WatchCredits(u8 taskId)
