@@ -403,7 +403,9 @@ SilphCo_7F_Text_HaveMonForSavingUs::
     .string "You came to save us?\l"
     .string "Why, thank you!\p"
     .string "I want you to have a rare Pokémon\n"
-    .string "for saving us.$"
+    .string "for saving us.\p"
+	.string "I've collected Pseudos from other\n"
+	.string "regions!$"
 
 SilphCo_7F_Text_ObtainedLaprasFromEmployee::
     .string "{PLAYER} obtained a Lapras from\n"

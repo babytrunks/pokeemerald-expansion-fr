@@ -403,7 +403,7 @@
 #define FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY                0x1A8
 #define FLAG_HIDE_VICTORY_ROAD_1F_RARE_CANDY                    0x1A9
 #define FLAG_HIDE_VICTORY_ROAD_1F_TM02                          0x1AA
-#define FLAG_HIDE_VICTORY_ROAD_2F_GUARD_SPEC                    0x1AB
+#define FLAG_HIDE_VICTORY_ROAD_2F_GUARD_SPEC                    0x1AB // unused
 #define FLAG_HIDE_VICTORY_ROAD_2F_TM07                          0x1AC
 #define FLAG_HIDE_VICTORY_ROAD_2F_FULL_HEAL                     0x1AD
 #define FLAG_HIDE_VICTORY_ROAD_2F_TM37                          0x1AE
@@ -1246,7 +1246,7 @@
 #define FLAG_GOT_GARCHOMPITE_FROM_MDE 0x4DD
 #define FLAG_VICTORY_ROAD_PUZZLE_INIT            0x4DE
 #define FLAG_GOT_STARAPTITE_FROM_ELBEIN 0x4DF
-#define FLAG_0x4E0               0x4E0
+#define FLAG_HIDE_VICTORY_ROAD_URSHIFU           0x4E0
 #define FLAG_0x4E1               0x4E1
 #define FLAG_0x4E2               0x4E2
 #define FLAG_0x4E3               0x4E3

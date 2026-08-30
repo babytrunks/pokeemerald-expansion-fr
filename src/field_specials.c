@@ -940,6 +940,12 @@ u8 GetPlayerTrainerIdOnesDigit(void)
     return (u16)((gSaveBlock2Ptr->playerTrainerId[1] << 8) | gSaveBlock2Ptr->playerTrainerId[0]) % 10;
 }
 
+// Used to split static encounters between two variants per save file
+bool8 IsPlayerTrainerIdEven(void)
+{
+    return (gSaveBlock2Ptr->playerTrainerId[0] & 1) == 0;
+}
+
 void GetPlayerBigGuyGirlString(void)
 {
     if (gSaveBlock2Ptr->playerGender == MALE)

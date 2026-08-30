@@ -101,7 +101,7 @@ IndigoPlateau_Exterior_Text_SoupercellIntro::
 	.string "waltz into the Pokémon League\l"
 	.string "without another boss battle?\p"
 	.string "…Who the hell am I?\p"
-	.string "I'm {COLOR GREEN}soupercell{COLOR BLUE}, the creator of\n"
+	.string "I'm soupercell, the creator of\n"
 	.string "this hack, dumbass!\p"
 	.string "Anyway, I can't let any scrubs\n"
 	.string "complete my game, so I'll need\l"
@@ -121,8 +121,8 @@ IndigoPlateau_Exterior_Text_SoupercellReward::
 
 IndigoPlateau_Exterior_Text_SoupercellFarewell::
 	.string "I will warn that I've dropped\n"
-	.string "{RIVAL} some sick Pokémon on his way to the\l"
-	.string "League.\p"
+	.string "{RIVAL} some sick Pokémon on his way to\l"
+	.string "the League.\p"
 	.string "His team won't even resemble the one\n"
 	.string "you just faced. Have fun!\p"
 	.string "Here, I'll give you a little something\n"

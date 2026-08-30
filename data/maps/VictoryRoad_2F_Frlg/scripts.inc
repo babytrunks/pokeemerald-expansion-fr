@@ -1,6 +1,22 @@
 VictoryRoad_2F_Frlg_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, VictoryRoad_2F_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, VictoryRoad_2F_OnTransition
 	.byte 0
+
+VictoryRoad_2F_OnTransition::
+	specialvar VAR_RESULT, IsPlayerTrainerIdEven
+	call_if_eq VAR_RESULT, TRUE, VictoryRoad_2F_EventScript_SetUrshifuRapidStrikeGfx
+	call_if_eq VAR_RESULT, FALSE, VictoryRoad_2F_EventScript_SetUrshifuSingleStrikeGfx
+	end
+
+@ Even trainer IDs get Rapid Strike odd ones get Single Strike
+VictoryRoad_2F_EventScript_SetUrshifuRapidStrikeGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(URSHIFU_RAPID_STRIKE)
+	return
+
+VictoryRoad_2F_EventScript_SetUrshifuSingleStrikeGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(URSHIFU_SINGLE_STRIKE)
+	return
 
 VictoryRoad_2F_OnLoad::
 	call_if_ne VAR_MAP_SCENE_VICTORY_ROAD_2F_BOULDER1, 100, VictoryRoad_2F_EventScript_SetRockBarrier1
@@ -86,6 +102,55 @@ VictoryRoad_2F_EventScript_Vincent::
 	trainerbattle_single TRAINER_TAMER_VINCENT, VictoryRoad_2F_Text_VincentIntro, VictoryRoad_2F_Text_VincentDefeat
 	msgbox VictoryRoad_2F_Text_VincentPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+@ Same parity check as the on transition graphics so both always agree
+VictoryRoad_2F_EventScript_Urshifu::
+	lock
+	faceplayer
+	specialvar VAR_RESULT, IsPlayerTrainerIdEven
+	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_2F_EventScript_UrshifuRapidStrike
+	goto VictoryRoad_2F_EventScript_UrshifuSingleStrike
+	end
+
+VictoryRoad_2F_EventScript_UrshifuRapidStrike::
+	setwildbattle SPECIES_URSHIFU_RAPID_STRIKE, 65
+	waitse
+	playmoncry SPECIES_URSHIFU_RAPID_STRIKE, CRY_MODE_ENCOUNTER
+	goto VictoryRoad_2F_EventScript_UrshifuBattle
+	end
+
+VictoryRoad_2F_EventScript_UrshifuSingleStrike::
+	setwildbattle SPECIES_URSHIFU_SINGLE_STRIKE, 65
+	waitse
+	playmoncry SPECIES_URSHIFU_SINGLE_STRIKE, CRY_MODE_ENCOUNTER
+	goto VictoryRoad_2F_EventScript_UrshifuBattle
+	end
+
+VictoryRoad_2F_EventScript_UrshifuBattle::
+	message VictoryRoad_2F_Text_UrshifuRoar
+	waitmessage
+	waitmoncry
+	delay 10
+	playbgm MUS_RG_ENCOUNTER_GYM_LEADER, 0
+	waitbuttonpress
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, VictoryRoad_2F_EventScript_UrshifuStays
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, VictoryRoad_2F_EventScript_UrshifuStays
+	setflag FLAG_HIDE_VICTORY_ROAD_URSHIFU
+	goto EventScript_RemoveStaticMon
+	end
+
+@ Fleeing leaves it on the map so the player can try again
+VictoryRoad_2F_EventScript_UrshifuStays::
+	release
+	end
+
+VictoryRoad_2F_Text_UrshifuRoar::
+	.string "Gwooooh!$"
 
 VictoryRoad_2F_EventScript_VitamaxGiver::
 	lock
