@@ -1035,6 +1035,12 @@ static s8 GetWarpEventAtMapPosition(struct MapHeader *mapHeader, struct MapPosit
     return GetWarpEventAtPosition(mapHeader, position->x - MAP_OFFSET, position->y - MAP_OFFSET, position->elevation);
 }
 
+// Must match both halves of MAP_DYNAMIC or a real map numbered 0x7F is mistaken for it
+static bool32 IsDynamicWarpDest(const struct WarpEvent *warpEvent)
+{
+    return warpEvent->mapNum == MAP_NUM(MAP_DYNAMIC) && warpEvent->mapGroup == MAP_GROUP(MAP_DYNAMIC);
+}
+
 static void SetupWarp(struct MapHeader *unused, s8 warpEventId, struct MapPosition *position)
 {
     const struct WarpEvent *warpEvent;
@@ -1064,7 +1070,7 @@ static void SetupWarp(struct MapHeader *unused, s8 warpEventId, struct MapPositi
         warpEvent = &gMapHeader.events->warps[warpEventId];
     }
 
-    if (warpEvent->mapNum == MAP_NUM(MAP_DYNAMIC))
+    if (IsDynamicWarpDest(warpEvent))
     {
         SetWarpDestinationToDynamicWarp(warpEvent->warpId);
     }
@@ -1075,7 +1081,7 @@ static void SetupWarp(struct MapHeader *unused, s8 warpEventId, struct MapPositi
         SetWarpDestinationToMapWarp(warpEvent->mapGroup, warpEvent->mapNum, warpEvent->warpId);
         UpdateEscapeWarp(position->x, position->y);
         mapHeader = Overworld_GetMapHeaderByGroupAndId(warpEvent->mapGroup, warpEvent->mapNum);
-        if (mapHeader->events->warps[warpEvent->warpId].mapNum == MAP_NUM(MAP_DYNAMIC))
+        if (IsDynamicWarpDest(&mapHeader->events->warps[warpEvent->warpId]))
             SetDynamicWarp(mapHeader->events->warps[warpEventId].warpId, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, warpEventId);
     }
 }

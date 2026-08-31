@@ -797,8 +797,7 @@
     "SafariZone_Extra_Frlg",
     "RockTunnel_Extra_Frlg",
     "MtMoon_Extra_Frlg",
-    "SilphCo_Extra1_Frlg",
-    "SilphCo_Extra2_Frlg"
+    "SilphCo_Extra1_Frlg"
   ],
   "gMapGroup_SpecialArea_Frlg": [
     "NavelRock_Exterior_Frlg",
@@ -1038,7 +1037,8 @@
     "SaffronCity_PokemonCenter_1F_Frlg",
     "SaffronCity_PokemonCenter_2F_Frlg",
     "SaffronCity_MrPsychicsHouse_Frlg",
-    "SaffronCity_PokemonTrainerFanClub_Frlg"
+    "SaffronCity_PokemonTrainerFanClub_Frlg",
+    "SilphCo_Extra2_Frlg"
   ],
   "gMapGroup_IndoorRoute2_Frlg": [
     "Route2_ViridianForest_SouthEntrance_Frlg",

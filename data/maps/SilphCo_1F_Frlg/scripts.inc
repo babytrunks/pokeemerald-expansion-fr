@@ -92,7 +92,7 @@ SilphCo_1F_EventScript_GhostGirlScene::
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_SILPH_CO_GHOST_SPECIAL
 	removeobject LOCALID_SILPH_CO_GHOST_SPECIAL
-	fadescreen FADE_TO_BLACK
+	fadescreen FADE_FROM_BLACK
 	releaseall
 	end
 

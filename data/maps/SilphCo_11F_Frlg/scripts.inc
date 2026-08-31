@@ -586,7 +586,7 @@ SilphCo_11F_Text_PresidentThankYou::
     .string "back. Let me give you something too.$"
 
 SilphCo_11F_Text_PresidentLuxuryBallDeal::
-    .string "Ten of our finest.\p"
+    .string "Some of our finest.\p"
     .string "And I'll see to it that every Poké\n"
     .string "Mart in Kanto carries them now.\p"
     .string "Silph keeps its promises.\n"

@@ -151,9 +151,11 @@ EventScript_FinalBrendan_Fight::
 	applymovement LOCALID_ROUTE_23_BRENDAN, Common_Movement_FaceLeft
 	waitmovement 0
 	msgbox gText_VRBrendanBattle_3
+	setspeaker SP_NAME_BRENDAN
 	msgbox gText_VRBrendanBattle_4
 	applymovement LOCALID_ROUTE_23_BRENDAN, Common_Movement_FaceUp
 	waitmovement 0
+	setspeaker SP_NAME_BRENDAN
 	msgbox gText_VRBrendanBattle_5
 	msgbox gText_VRBrendanBattle_6
 	trainerbattle_no_intro TRAINER_ROUTE_23_BRENDAN, gText_VRBrendanLoss

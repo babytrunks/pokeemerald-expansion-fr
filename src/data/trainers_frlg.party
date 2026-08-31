@@ -6283,66 +6283,178 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PSYCHIC_JOHAN ===
 Name: Johan
-Class: Psychic Frlg
-Pic: Psychic M Frlg
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Intense
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Kadabra
-Level: 31
+Torkoal @ Charcoal
+Ability: Drought
+Level: 43
+EVs: 204 SpA
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Eruption
 
-Slowpoke
-Level: 31
+Maractus @ Covert Cloak
+Ability: Chlorophyll
+Level: 41
+EVs: 204 Spe
+Nature: Timid
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- After You
 
-Mr Mime
-Level: 31
+Camerupt @ Passho Berry
+Ability: Solid Rock
+Level: 43
+EVs: 204 SpA
+Nature: Modest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Eruption
+- Hydro Steam
+- Earth Power
+- Protect
 
-Kadabra
-Level: 31
+Tropius @ Starf Berry
+Ability: Harvest
+Level: 42
+EVs: 102 HP / 102 Def
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Solar Beam
+- Dragon Pulse
+- Growth
+- Tailwind
 
 === TRAINER_PSYCHIC_TYRON ===
 Name: Tyron
-Class: Psychic Frlg
-Pic: Psychic M Frlg
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Intense
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Mr Mime
-Level: 34
+Cinderace @ Charcoal 
+Ability: Libero  
+Level: 42   
+EVs: 204 Spe  
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Pyro Ball  
+- High Jump Kick  
+- Coaching  
+- Court Change  
 
-Kadabra
-Level: 34
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Ribombee @ Focus Sash  
+Ability: Shield Dust  
+Level: 42  
+EVs: 4 SpA / 200 Spe  
+Nature: Timid
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dazzling Gleam  
+- Struggle Bug  
+- Pollen Puff  
+- Sticky Web  
+
+Bisharp @ Assault Vest  
+Ability: Defiant  
+Level: 43   
+EVs: 104 HP / 100 SpD  
+Nature: Sassy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Iron Head  
+- Sucker Punch  
+- Knock Off  
+- Stone Edge  
+
+Falinks @ Sitrus Berry  
+Ability: Defiant  
+Level: 43  
+EVs: 104 HP / 100 Atk  
+Nature: Brave
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Close Combat  
+- Facade  
+- Rock Slide  
+- No Retreat
+
+Gothitelle @ Expert Belt  
+Ability: Competitive  
+Level: 43  
+EVs: 100 HP / 104 Def  
+Nature: Relaxed
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe  
+- Psychic  
+- Thunderbolt  
+- Shadow Ball  
+- Heal Pulse 
 
 === TRAINER_PSYCHIC_CAMERON ===
 Name: Cameron
-Class: Psychic Frlg
-Pic: Psychic M Frlg
+Class: Cooltrainer Frlg
+Pic: Cooltrainer M Frlg
 Gender: Male
 Music: Intense
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Slowpoke
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Grumpig @ Sitrus Berry  
+Ability: Thick Fat  
+Level: 43  
+EVs: 84 HP / 120 Def  
+Bold Nature  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stomping Tantrum  
+- Earth Power  
+- Psychic  
+- Imprison
 
-Slowpoke
-Level: 33
+Arcanine-Hisui @ Hard Stone
+Ability: Rock Head
+Level: 43
+EVs: 104 Atk / 96 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Head Smash
+- Flare Blitz
+- Wild Charge
+- Extreme Speed
 
-Slowbro
-Level: 33
+Golurk @ Leftovers  
+Ability: Iron Fist  
+Level: 43  
+EVs: 96 HP / 4 Atk / 12 Def / 92 SpD  
+Nature: Careful
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stomping Tantrum  
+- Scorching Sands  
+- Shadow Punch  
+- Imprison
+
+Toxicroak @ Black Sludge  
+Ability: Dry Skin  
+Level: 43    
+EVs: 4 HP / 92 Atk / 8 SpD / 100 Spe  
+Nature: Jolly
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat  
+- Gunk Shot  
+- Knock Off  
+- Swords Dance
+
+Glimmora @ Glimmoranite
+Ability: Toxic Debris
+Level: 43
+EVs: 100 SpA / 104 Spe  
+Nature: Timid
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sludge Bomb  
+- Power Gem  
+- Earth Power  
+- Spiky Shield
 
 === TRAINER_PSYCHIC_PRESTON ===
 Name: Preston
@@ -6350,12 +6462,58 @@ Class: Psychic Frlg
 Pic: Psychic M Frlg
 Gender: Male
 Music: Intense
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Slowbro
-Level: 38
+Hawlucha @ Hawluchanite
+Ability: Limber
+Level: 43
+EVs: 48 Atk / 152 Spe
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Entrainment
+- Close Combat
+- Brave Bird
+- Rock Slide
+
+Tauros @ Sticky Barb
+Ability: Intimidate  
+Level: 43  
+EVs: 8 Atk / 196 Spe  
+Nature: Hasty
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Horn Drill
+- Fissure
+
+Dewgong @ Sitrus Berry
+Ability: Ice Scales
+Level: 43
+EVs: 4 HP / 104 Def / 96 SpD
+Nature: Relaxed
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Horn Drill
+- Sheer Cold
+
+Gligar @ Eviolite
+Ability: Hyper Cutter
+Level: 43
+EVs: 64 HP / 140 SpD
+Nature: Sassy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+- Guillotine
+- Taunt
+- Roost
+
+Whimsicott @ Focus Sash
+Ability: Prankster
+Level: 43
+EVs: 100 SpA / 104 Spe
+Nature: Timid
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Tailwind
+- Dazzling Gleam
+- Shadow Ball
+- Growth
 
 === TRAINER_ROCKER_RANDALL ===
 Name: Randall
@@ -11836,6 +11994,7 @@ Politoed @ Damp Rock
 Nature: Timid
 Ability: Drizzle
 Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 4 Def / 252 Spe
 - Scald
 - Haze
@@ -11846,6 +12005,7 @@ Ogerpon-Wellspring @ Wellspring Mask
 Nature: Jolly
 Ability: Water Absorb
 Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Ivy Cudgel
 - Horn Leech
@@ -11856,6 +12016,7 @@ Swampert @ Swampertite
 Nature: Adamant
 Ability: Torrent 
 Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Power Up Punch
 - Earthquake
@@ -11866,6 +12027,7 @@ Walking-Wake @ Life Orb
 Nature: Timid
 Ability: Protosynthesis
 Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Hurricane
 - Hydro Pump
@@ -11876,6 +12038,7 @@ Kyogre @ Blue Orb
 Nature: Timid
 Ability: Pressure
 Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Water Spout
 - Origin Pulse
@@ -11885,6 +12048,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Iron-Bundle @ Focus Sash
 Nature: Timid
 Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Hydro Pump
 - Ice Beam
@@ -11903,45 +12067,71 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Mugshot: Green
 Boss: Yes
 
-Onix
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Rock Tomb
-- Iron Tail
-- Roar
+Infernape @ Focus Sash
+Nature: Jolly
+Ability: Blaze
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Stealth Rock
+- Pyro Ball
+- Close Combat
+- Taunt
 
-Hitmonchan
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
+Urshifu-Single-Strike @ Black Glasses
+Nature: Jolly
+Ability: Unseen Fist
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Wicked Blow
+- Swords Dance
+- Close Combat
+- Sucker Punch
 
-Hitmonlee
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
+Kommo O @ Throat Spray
+Nature: Timid
+Ability: Overcoat
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Clanging Scales
+- Clangorous Soul
+- Aura Sphere
+- Flash Cannon
 
-Onix
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Earthquake
-- Iron Tail
-- Sand Tomb
+Iron-Valiant @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Moonblast
+- Thunderbolt
+- Aura Sphere
+- Shadow Ball
 
-Machamp @ Sitrus Berry
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Cross Chop
-- Bulk Up
-- Scary Face
-- Rock Tomb
+Zacian @ Rusted Sword
+Nature: Jolly
+Ability: Intrepid Sword
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Swords Dance
+- Behemoth Blade
+- Close Combat
+- Wild Charge
+
+Lucario @ Lucarionite
+Nature: Jolly
+Ability: Inner Focus 
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Swords Dance
+- Close Combat
+- Bullet Punch
+- Meteor Mash
 
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: Agatha
@@ -11954,45 +12144,71 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Mugshot: Pink
 Boss: Yes
 
-Gengar
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
-
-Golbat
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
-
-Haunter
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
-
-Arbok
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Zoroark @ Focus Sash
+Nature: Timid
+Ability: Illusion
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Dark Pulse
+- Flamethrower
 - Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
+- Taunt
 
-Gengar @ Sitrus Berry
-Level: 58
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Gholdengo @ Air Balloon
+Nature: Timid
+Ability: Good as Gold
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Nasty Plot
 - Shadow Ball
-- Sludge Bomb
-- Hypnosis
-- Nightmare
+- Make It Rain
+- Focus Blast
+
+Marshadow @ Focus Sash
+Nature: Jolly
+Ability: Technician
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Spectral Thief
+- Close Combat
+- Shadow Sneak
+- Bulk Up
+
+Flutter-Mane @ Booster Energy
+Nature: Timid
+Ability: Protosynthesis
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Shadow Ball
+- Moonblast
+- Mystical Fire
+- Psyshock
+
+Chien Pao @ Black Glasses
+Nature: Jolly
+Ability: Sword of Ruin
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Crunch
+- Icicle Crash
+- Ice Shard
+- Sacred Sword
+
+Gengar @ Gengarite
+Nature: Timid
+Ability: Levitate
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Shadow Ball
+- Sludge Wave
+- Aura Sphere
+- Nasty Plot
 
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: Lance
@@ -12005,45 +12221,71 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Mugshot: Blue
 Boss: Yes
 
-Gyarados
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Dragon Rage
-- Twister
-- Bite
+Aerodactyl @ Focus Sash
+Nature: Jolly
+Ability: Unnerve
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Stealth Rock
+- Earthquake
+- Stone Edge
+- Taunt
 
-Dragonair
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Dragon Rage
-- Outrage
+Melmetal @ Assault Vest
+Nature: Adamant
+Ability: Iron Fist
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 252 Atk / 4 SpD
+- Double Iron Bash
+- Ice Punch
+- Earthquake
+- Thunder Punch
 
-Dragonair
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Thunder Wave
-- Outrage
+Iron-Jugulis @ Booster Energy
+Nature: Timid
+Ability: Quark Drive
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Aeroblast
+- Dark Hole
+- Earth Power
+- Flamethrower
 
-Aerodactyl
-Level: 58
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
+Roaring-Moon @ Booster Energy
+Nature: Jolly
+Ability: Protosynthesis
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Acrobatics
+- Knock Off
+- Dragon Dance
+- Iron Head
 
-Dragonite @ Sitrus Berry
-Level: 60
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Outrage
-- Wing Attack
+Dialga @ Leftovers
+Nature: Calm
+Ability: Pressure
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 SpA / 252 SpD
+- Roar Of Time
+- Flash Cannon
+- Rest
+- Sleep Talk
+
+Dragonite @ Dragoninite
+Nature: Timid
+Ability: Intimidate
+Level: 65
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 Atk / 4 Def / 252 Spe
+- Hurricane
+- Thunder
+- Blizzard
+- Fire Blast
 
 === TRAINER_LEADER_BROCK ===
 Name: Brock
@@ -13179,7 +13421,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 Sandy-Shocks @ Booster Energy
 Nature: Timid
 Ability: Protosynthesis
-Level: 66
+Level: 65
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Thunderbolt
@@ -13190,7 +13432,7 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 Iron-Bundle @ Booster Energy
 Nature: Timid
 Ability: Quark Drive
-Level: 66
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Hydro Pump
@@ -13257,7 +13499,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 Sandy-Shocks @ Booster Energy
 Nature: Timid
 Ability: Protosynthesis
-Level: 66
+Level: 65
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Thunderbolt
@@ -13268,7 +13510,7 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 Iron-Bundle @ Booster Energy
 Nature: Timid
 Ability: Quark Drive
-Level: 66
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Hydro Pump
@@ -13334,7 +13576,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 Sandy-Shocks @ Booster Energy
 Nature: Timid
 Ability: Protosynthesis
-Level: 66
+Level: 65
 IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Thunderbolt
@@ -13345,7 +13587,7 @@ EVs: 252 SpA / 4 SpD / 252 Spe
 Azumarill @ Mystic Water
 Nature: Adamant
 Ability: Huge Power
-Level: 66
+Level: 65
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 Atk / 4 Def
 - Liquidation
@@ -13386,53 +13628,68 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Mugshot: Yellow
 Boss: Yes
 
-Pidgeot
-Level: 59
+Pheromosa @ Focus Sash
+Nature: Jolly
+Ability: Beast Boost
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+EVs: 252 Atk / 4 Def / 252 Spe
+- Close Combat
+- U Turn
+- Triple Axel
+- Poison Jab
 
-Alakazam
-Level: 57
+Metagross @ Metagrossite
+Nature: Jolly
+Ability: Tough Claws
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+EVs: 252 Atk / 4 Def / 252 Spe
+- Meteor Mash
+- Bullet Punch
+- Zen Headbutt
+- Fire Punch
 
-Rhydon
-Level: 59
+Koraidon @ Lum Berry
+Nature: Jolly
+Ability: Orichalcum Pulse
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+EVs: 252 Atk / 4 Def / 252 Spe
+- Swords Dance
+- Collision Course
+- Dragon Claw
+- Flare Blitz
 
-Arcanine
-Level: 59
+Yveltal @ Assault Vest
+Nature: Modest
+Ability: Dark Aura
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
+EVs: 252 HP / 4 Def / 252 SpA
+- Oblivion Wing
+- Dark Hole
+- Heat Wave
+- Sucker Punch
+
+Eternatus @ Power Herb
+Nature: Timid
+Ability: Multitype
+Level: 67
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 4 Def / 252 SpA / 252 Spe
+- Meteor Beam
+- Sludge Wave
+- Dynamax Cannon
 - Flamethrower
-- Roar
-- Bite
 
-Exeggutor
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
-
-Blastoise @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Rain Dance
-- Skull Bash
-- Bite
+Ditto @ Choice Scarf
+Nature: Timid
+Ability: Imposter
+Level: 85
+EVs: 252 HP / 4 Def / 252 Spe
+Ball: Ultra Ball
+- Transform
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: Terry
@@ -13445,53 +13702,68 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Mugshot: Yellow
 Boss: Yes
 
-Pidgeot
-Level: 59
+Pheromosa @ Focus Sash
+Nature: Jolly
+Ability: Beast Boost
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+EVs: 252 Atk / 4 Def / 252 Spe
+- Close Combat
+- U Turn
+- Triple Axel
+- Poison Jab
 
-Alakazam
-Level: 57
+Metagross @ Metagrossite
+Nature: Jolly
+Ability: Tough Claws
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+EVs: 252 Atk / 4 Def / 252 Spe
+- Meteor Mash
+- Bullet Punch
+- Zen Headbutt
+- Fire Punch
 
-Rhydon
-Level: 59
+Koraidon @ Lum Berry
+Nature: Jolly
+Ability: Orichalcum Pulse
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+EVs: 252 Atk / 4 Def / 252 Spe
+- Swords Dance
+- Collision Course
+- Dragon Claw
+- Flare Blitz
 
-Gyarados
-Level: 59
+Yveltal @ Assault Vest
+Nature: Modest
+Ability: Dark Aura
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+EVs: 252 HP / 4 Def / 252 SpA
+- Oblivion Wing
+- Dark Hole
+- Heat Wave
+- Sucker Punch
 
-Arcanine
-Level: 61
+Eternatus @ Power Herb
+Nature: Timid
+Ability: Multitype
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
+EVs: 4 Def / 252 SpA / 252 Spe
+- Meteor Beam
+- Sludge Wave
+- Dynamax Cannon
 - Flamethrower
-- Roar
-- Bite
 
-Venusaur @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Solar Beam
-- Synthesis
-- Sunny Day
-- Growth
+Ditto @ Choice Scarf
+Nature: Timid
+Ability: Imposter
+Level: 85
+EVs: 252 HP / 4 Def / 252 Spe
+Ball: Ultra Ball
+- Transform
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: Terry
@@ -13504,53 +13776,68 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Mugshot: Yellow
 Boss: Yes
 
-Pidgeot
-Level: 59
+Pheromosa @ Focus Sash
+Nature: Jolly
+Ability: Beast Boost
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+EVs: 252 Atk / 4 Def / 252 Spe
+- Close Combat
+- U Turn
+- Triple Axel
+- Poison Jab
 
-Alakazam
-Level: 57
+Metagross @ Metagrossite
+Nature: Jolly
+Ability: Tough Claws
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+EVs: 252 Atk / 4 Def / 252 Spe
+- Meteor Mash
+- Bullet Punch
+- Zen Headbutt
+- Fire Punch
 
-Rhydon
-Level: 59
+Koraidon @ Lum Berry
+Nature: Jolly
+Ability: Orichalcum Pulse
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+EVs: 252 Atk / 4 Def / 252 Spe
+- Swords Dance
+- Collision Course
+- Dragon Claw
+- Flare Blitz
 
-Exeggutor
-Level: 59
+Yveltal @ Assault Vest
+Nature: Modest
+Ability: Dark Aura
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+EVs: 252 HP / 4 Def / 252 SpA
+- Oblivion Wing
+- Dark Hole
+- Heat Wave
+- Sucker Punch
 
-Gyarados
-Level: 61
+Eternatus @ Power Herb
+Nature: Timid
+Ability: Multitype
+Level: 67
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+EVs: 4 Def / 252 SpA / 252 Spe
+- Meteor Beam
+- Sludge Wave
+- Dynamax Cannon
+- Flamethrower
 
-Charizard @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
-- Aerial Ace
-- Slash
-- Fire Spin
+Ditto @ Choice Scarf
+Nature: Timid
+Ability: Imposter
+Level: 85
+EVs: 252 HP / 4 Def / 252 Spe
+Ball: Ultra Ball
+- Transform
 
 === TRAINER_CHANNELER_PATRICIA ===
 Name: Patricia
@@ -13983,16 +14270,52 @@ Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Gastly
-Level: 34
+Oranguru @ Throat Spray
+Ability: Telepathy
+Level: 41
+EVs: 104 HP / 96 Def / 4 SpD  
+Nature: Bold
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Psychic
+- Hyper Voice
+- Instruct
+- Protect
 
-Haunter
-Level: 34
+Diggersby @ Choice Band
+Ability: Huge Power
+Level: 42
+EVs: 60 Atk / 4 SpD / 140 Spe  
+Nature: Adamant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Earthquake
+- Rock Slide
+- Body Slam
+- Knock Off
+
+Chatot @ Choice Specs
+Ability: Punk Rock
+Level: 42
+EVs: 100 HP / 104 Spe 
+Nature: Naive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Boomburst
+- Chatter
+- Heat Wave
+- Alluring Voice
+
+Abomasnow @ Aguav Berry
+Ability: Soundproof
+Level: 41
+EVs: 96 HP / 108 Def
+Nature: Bold
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Wood Hammer
+- Icy Wind
+- Helping Hand
+- Sleep Powder
 
 === TRAINER_CHANNELER_STACY ===
 Name: Stacy
@@ -14000,12 +14323,49 @@ Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Haunter
-Level: 38
+Clefairy @ Mental Herb  
+Ability: Friend Guard  
+Level: 41  
+EVs: 204 Spe  
+Timid Nature  
+IVs: 0 HP / 0 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
+- Follow Me  
+
+Cetitan @ Sitrus Berry  
+Ability: Slush Rush  
+Level: 43  
+EVs: 100 HP / 100 Atk / 4 SpD  
+Adamant Nature  
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Icicle Crash  
+- High Horsepower  
+- Liquidation  
+- Belly Drum  
+
+Greninja @ Adrenaline Orb  
+Ability: Torrent  
+Level: 42   
+EVs: 100 SpA / 4 SpD / 100 Spe  
+Timid Nature  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Scald  
+- Dark Pulse  
+- Icy Wind  
+- Mat Block  
+
+Ninetales-Alola @ Light Clay  
+Ability: Snow Warning  
+Level: 42  
+EVs: 204 Spe  
+Timid Nature  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Freeze-Dry  
+- Dazzling Gleam  
+- Encore  
+- Aurora Veil  
 
 === TRAINER_CHANNELER_TASHA ===
 Name: Tasha
@@ -14013,20 +14373,52 @@ Class: Channeler Frlg
 Pic: Channeler Frlg
 Gender: Male
 Music: Suspicious
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Gastly
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Mr. Mime @ Light Clay  
+Ability: Filter  
+Level: 41   
+EVs: 92 HP / 8 SpA / 104 Spe  
+Timid Nature  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dazzling Gleam  
+- Light Screen  
+- Reflect  
+- Teeter Dance  
 
-Gastly
-Level: 33
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Mr. Rime @ Expert Belt  
+Ability: Tangled Feet  
+Level: 43  
+EVs: 104 SpA / 100 Spe  
+Nature: Timid  
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Freezy Frost  
+- Thunderbolt  
+- Dazzling Gleam  
+- Psychic  
 
-Haunter
-Level: 33
+Lopunny @ Clear Amulet
+Ability: Cute Charm  
+Level: 42  
+EVs: 48 Atk / 4 SpD / 152 Spe  
+Nature: Jolly
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Close Combat  
+- Return  
+- Ice Punch  
+- Teeter Dance
+
+Incineroar @ Leftovers  
+Ability: Intimidate  
+Level: 43   
+EVs: 104 HP / 92 Atk / 4 Def / 4 SpD 
+Nature: Adamant 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Temper Flare  
+- Stomping Tantrum  
+- Power Trip  
+- Bulk Up
 
 === TRAINER_HIKER_JEREMY ===
 Name: Jeremy
