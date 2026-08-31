@@ -230,6 +230,7 @@ bool32 AI_CanConfuse(u32 battlerAtk, u32 battlerDef, enum Ability defAbility, u3
 bool32 ShouldBurn(u32 battlerAtk, u32 battlerDef, enum Ability abilityDef);
 bool32 ShouldFreezeOrFrostbite(u32 battlerAtk, u32 battlerDef, enum Ability abilityDef);
 bool32 ShouldParalyze(u32 battlerAtk, u32 battlerDef, enum Ability abilityDef);
+bool32 IsBattlerCrippledByStatus(u32 battlerAtk, u32 battlerDef);
 bool32 AI_CanBurn(u32 battlerAtk, u32 battlerDef, enum Ability defAbility, u32 battlerAtkPartner, u32 move, u32 partnerMove);
 bool32 AI_CanGiveFrostbite(u32 battlerAtk, u32 battlerDef, enum Ability defAbility, u32 battlerAtkPartner, u32 move, u32 partnerMove);
 bool32 AI_CanBeInfatuated(u32 battlerAtk, u32 battlerDef, enum Ability defAbility);

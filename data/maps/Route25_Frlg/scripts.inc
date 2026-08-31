@@ -54,8 +54,6 @@ NormalBugsy:
 
 
 PostBugsy:
-    setweather 0x0                           
-    doweather
     setspeaker SP_NAME_BUGSY
     msgbox gText_bugsy_6, MSGBOX_DEFAULT
     setflag FLAG_RARE_POKEMON_SCREEN
@@ -75,9 +73,6 @@ PostBugsy:
     waitse
     fadescreenswapbuffers FADE_FROM_BLACK
     setflag FLAG_DEFEATED_BUGSY                           
-    setweather 0x3                            
-    doweather
-
     release
     end
 

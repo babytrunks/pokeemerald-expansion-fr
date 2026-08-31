@@ -11,10 +11,12 @@
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": true,
+  "floor_number": 2,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_LASS_FRLG",
       "x": 5,
       "y": 10,
@@ -28,6 +30,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CLERK",
       "x": 1,
       "y": 8,
@@ -41,6 +44,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CLERK",
       "x": 1,
       "y": 6,
@@ -54,6 +58,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_1_FRLG",
       "x": 11,
       "y": 6,
@@ -86,8 +91,8 @@
       "x": 9,
       "y": 2,
       "elevation": 3,
-      "dest_map": "MAP_CELADON_CITY_DEPARTMENT_STORE_3F",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_CELADON_CITY_DEPARTMENT_STORE_4F",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [],
@@ -101,6 +106,5 @@
       "script": "CeladonCity_DepartmentStore_2F_EventScript_FloorSign"
     }
   ],
-  "floor_number": 2,
   "region": "REGION_KANTO"
 }

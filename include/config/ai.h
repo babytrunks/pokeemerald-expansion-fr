@@ -56,20 +56,28 @@
 
 // AI move scoring
 #define STATUS_MOVE_FOCUS_PUNCH_CHANCE                          50 // Chance the AI will use a status move if the player's best move is Focus Punch
-#define BOOST_INTO_HAZE_CHANCE                                  0 // Chance the AI will use a stat boosting move if the player has used Haze
+#define BOOST_INTO_HAZE_CHANCE                                  20 // Chance the AI will use a stat boosting move if the player has used Haze
 #define SHOULD_RECOVER_CHANCE                                   50 // Chance the AI will give recovery moves score increase if less than ENABLE_RECOVERY_THRESHOLD and in no immediate danger
 #define ENABLE_RECOVERY_THRESHOLD                               60 // HP percentage beneath which SHOULD_RECOVER_CHANCE is active
-#define SUCKER_PUNCH_CHANCE                                     50 // Chance for the AI to not use Sucker Punch if the player has a status move
+#define SUCKER_PUNCH_CHANCE                                     30 // Chance for the AI to not use Sucker Punch if the player has a status move
 #define SUCKER_PUNCH_PREDICTION_CHANCE                          50 // Additional chance for the AI to not use Sucker Punch if actively predicting a status move if SUCKER_PUNCH_CHANCE fails
-#define PRIORITIZE_LAST_CHANCE_CHANCE                           50 // Chance the AI will prioritize Last Chance (priority move in the face of being outsped and KO'd) over Slow KO
+#define PRIORITIZE_LAST_CHANCE_CHANCE                           70 // Chance the AI will prioritize Last Chance (priority move in the face of being outsped and KO'd) over Slow KO
 
 // AI damage calc considerations
 #define RISKY_AI_CRIT_STAGE_THRESHOLD                           2   // Stat stages at which Risky will assume it gets a crit
 #define RISKY_AI_CRIT_THRESHOLD_GEN_1                           128 // "Stat stage" at which Risky will assume it gets a crit with gen 1 mechanics (this translates to an X / 255 % crit threshold)
 
 // AI prediction chances
-#define PREDICT_SWITCH_CHANCE                                   50
+#define PREDICT_SWITCH_CHANCE                                   40  // Base chance the AI acts on a switch read
 #define PREDICT_MOVE_CHANCE                                     100
+
+// AI_FLAG_PREDICT_SWITCH weighting, applied on top of the base chance above
+#define PREDICT_SWITCH_WEIGH_RISK                               TRUE // AI declines a read that would cost it a KO it already had
+#define PREDICT_SWITCH_KO_AVAILABLE_MODIFIER                    25   // Percent of base chance kept when the AI has a guaranteed KO
+#define PREDICT_SWITCH_WEIGH_FODDER                             TRUE // AI assumes a spent mon gets sacked rather than switched
+#define PREDICT_SWITCH_FODDER_MODIFIER                          25   // Percent of base chance kept when the current mon reads as fodder
+#define PREDICT_SWITCH_FODDER_HP_THRESHOLD                      40   // HP percent at or below which a harmless mon reads as fodder
+#define PREDICT_SWITCH_FODDER_STATUS                            TRUE // Paralyzed fast, burned physical or frostbitten special mons read as fodder
 
 // AI Terastalization chances
 #define AI_CONSERVE_TERA_CHANCE_PER_MON                         10 // Chance for AI with smart tera flag to decide not to tera before considering defensive benefit is this*(X-1), where X is the number of alive pokemon that could tera

@@ -3587,6 +3587,55 @@ static inline bool32 DoesBattlerBenefitFromAllVolatileStatus(u32 battler, enum A
     return FALSE;
 }
 
+// Mirrors the omniscience aware attacker check in IncreaseBurnScore and IncreaseFrostbiteScore
+static bool32 IsBattlerAttackerOfCategory(u32 battlerAtk, u32 battlerDef, enum DamageCategory category)
+{
+    if (HasMoveWithCategory(battlerDef, category))
+        return TRUE;
+
+    // Not Omniscient so guess from base stats the way the status scorers do
+    if (!(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_OMNISCIENT))
+    {
+        u32 atk = GetSpeciesBaseAttack(gBattleMons[battlerDef].species);
+        u32 spAtk = GetSpeciesBaseSpAttack(gBattleMons[battlerDef].species);
+
+        if (category == DAMAGE_CATEGORY_PHYSICAL)
+            return atk >= spAtk + 10;
+        return spAtk >= atk + 10;
+    }
+    return FALSE;
+}
+
+// A status that guts what the mon was built to do makes the player write it off
+bool32 IsBattlerCrippledByStatus(u32 battlerAtk, u32 battlerDef)
+{
+    u32 status = gBattleMons[battlerDef].status1;
+    enum Ability abilityDef = gAiLogicData->abilities[battlerDef];
+
+    // Turns the status into an upside so the player keeps it in
+    if (DoesBattlerBenefitFromAllVolatileStatus(battlerDef, abilityDef))
+        return FALSE;
+
+    if (status & STATUS1_PARALYSIS)
+    {
+        u32 divisor = GetGenConfig(GEN_CONFIG_PARALYSIS_SPEED) >= GEN_7 ? 2 : 4;
+        u32 unparalyzedSpeed = gAiLogicData->speedStats[battlerDef] * divisor;
+
+        // Paralysis cost it turn order it used to have against this mon
+        if (unparalyzedSpeed > gAiLogicData->speedStats[battlerAtk]
+         && gAiLogicData->speedStats[battlerDef] <= gAiLogicData->speedStats[battlerAtk])
+            return TRUE;
+    }
+
+    if ((status & STATUS1_BURN) && IsBattlerAttackerOfCategory(battlerAtk, battlerDef, DAMAGE_CATEGORY_PHYSICAL))
+        return TRUE;
+
+    if ((status & STATUS1_FROSTBITE) && IsBattlerAttackerOfCategory(battlerAtk, battlerDef, DAMAGE_CATEGORY_SPECIAL))
+        return TRUE;
+
+    return FALSE;
+}
+
 bool32 ShouldPoison(u32 battlerAtk, u32 battlerDef)
 {
     enum Ability abilityDef = gAiLogicData->abilities[battlerDef];

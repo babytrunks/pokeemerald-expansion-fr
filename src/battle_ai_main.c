@@ -335,6 +335,51 @@ bool32 BattlerChooseNonMoveAction(void)
     return FALSE;
 }
 
+// A spent or crippled mon is one the player usually lets die rather than spending a switch
+static bool32 IsLikelySackFodder(u32 battlerAtk, u32 battlerDef)
+{
+    // Still threatens the AI so the player has a reason to keep it alive
+    if (CanTargetFaintAi(battlerDef, battlerAtk))
+        return FALSE;
+
+    // Spent and harmless
+    if (gAiLogicData->hpPercents[battlerDef] <= PREDICT_SWITCH_FODDER_HP_THRESHOLD)
+        return TRUE;
+
+    // Crippled by a status that guts what it was built to do
+    if (PREDICT_SWITCH_FODDER_STATUS && IsBattlerCrippledByStatus(battlerAtk, battlerDef))
+        return TRUE;
+
+    return FALSE;
+}
+
+// Base switch read chance damped by how costly acting on a wrong read would be
+static u32 GetPredictSwitchChance(u32 battlerAtk, u32 battlerDef)
+{
+    u32 chance = PREDICT_SWITCH_CHANCE;
+
+    if (PREDICT_SWITCH_WEIGH_RISK)
+    {
+        u32 aiMove = GetBestDmgMoveFromBattler(battlerAtk, battlerDef, AI_ATTACKING);
+        u32 incomingMove = GetIncomingMoveSpeedCheck(battlerAtk, battlerDef, gAiLogicData);
+
+        // A KO in hand this turn is worth more than a read
+        if (CanAIFaintTarget(battlerAtk, battlerDef, 0)
+         && AI_IsFaster(battlerAtk, battlerDef, aiMove, incomingMove, CONSIDER_PRIORITY))
+        {
+            // Being wrong does not just cost the KO it costs the mon
+            if (CanTargetFaintAi(battlerDef, battlerAtk))
+                return 0;
+            chance = chance * PREDICT_SWITCH_KO_AVAILABLE_MODIFIER / 100;
+        }
+    }
+
+    if (PREDICT_SWITCH_WEIGH_FODDER && IsLikelySackFodder(battlerAtk, battlerDef))
+        chance = chance * PREDICT_SWITCH_FODDER_MODIFIER / 100;
+
+    return chance;
+}
+
 void SetupAIPredictionData(u32 battler, enum SwitchType switchType)
 {
     s32 opposingBattler = GetOppositeBattler(battler);
@@ -350,7 +395,7 @@ void SetupAIPredictionData(u32 battler, enum SwitchType switchType)
     }
 
     // Determine whether AI will use predictions this turn
-    gAiLogicData->predictingSwitch = RandomPercentage(RNG_AI_PREDICT_SWITCH, PREDICT_SWITCH_CHANCE);
+    gAiLogicData->predictingSwitch = RandomPercentage(RNG_AI_PREDICT_SWITCH, GetPredictSwitchChance(battler, opposingBattler));
 
     gAiLogicData->aiPredictionInProgress = FALSE;
 }

@@ -11,10 +11,12 @@
   "allow_escaping": false,
   "allow_running": false,
   "show_map_name": true,
+  "floor_number": 3,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
       "x": 6,
       "y": 6,
@@ -28,6 +30,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER_FRLG",
       "x": 10,
       "y": 11,
@@ -41,6 +44,7 @@
       "flag": "0"
     },
     {
+      "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CLERK",
       "x": 3,
       "y": 13,
@@ -66,8 +70,8 @@
       "x": 3,
       "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_CELADON_CITY_DEPARTMENT_STORE_3F",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_CELADON_CITY_DEPARTMENT_STORE_5F",
+      "dest_warp_id": "1"
     },
     {
       "x": 9,
@@ -81,13 +85,12 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 4,
+      "x": 8,
       "y": 1,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "CeladonCity_DepartmentStore_4F_EventScript_FloorSign"
+      "script": "CeladonCity_DepartmentStore_3F_EventScript_FloorSign"
     }
   ],
-  "floor_number": 4,
   "region": "REGION_KANTO"
 }
