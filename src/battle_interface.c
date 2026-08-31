@@ -3439,6 +3439,13 @@ void TryToAddBattleStatusHint(void)
     if (B_BATTLE_STATUS_MENU_BUTTON == L_BUTTON && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_L_EQUALS_A)
         return;
 
+    // Catch ball indicator takes the corner instead, button still works
+    if (CanThrowLastUsedBall())
+    {
+        TryToHideBattleStatusHint();
+        return;
+    }
+
     LoadSpritePalette(&sSpritePalette_AbilityPopUp);
     if (GetSpriteTileStartByTag(BATTLE_STATUS_HINT_WINDOW_TAG) == 0xFFFF)
         LoadSpriteSheet(&sSpriteSheet_BattleStatusWindow);

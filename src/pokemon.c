@@ -6522,7 +6522,7 @@ u16 GetBattleBGM(void)
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL_EARLY_FRLG:
         case TRAINER_CLASS_RIVAL_LATE_FRLG:
-            return MUS_VS_RIVAL;
+            return MUS_VS_TRAINER_KANTO;
         case TRAINER_CLASS_PKMN_TRAINER_1:
             return MUS_VS_RIVAL;
 

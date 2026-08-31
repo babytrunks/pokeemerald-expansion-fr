@@ -92,7 +92,7 @@ CeladonCity_DepartmentStore_3F_Text_FightingGame::
     .string "Looks tough!$"
 
 CeladonCity_DepartmentStore_3F_Text_TVGameShop::
-    .string "3F: TV Game Shop$"
+    .string "3F: Wise Man Gifts$"
 
 CeladonCity_DepartmentStore_3F_Text_RedGreenBothArePokemon::
     .string "Red and Green!\n"

@@ -30,9 +30,6 @@ MtEmber_Exterior_EventScript_ExplosionTutor::
 	goto_if_eq VAR_RESULT, NO, EventScript_ExplosionDeclined
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_ExplosionDeclined
-	msgbox Text_ExplosionWhichMon
-	setvar VAR_0x8005, MOVE_EXPLOSION
-	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_ExplosionDeclined
 .if I_REUSABLE_TMS == FALSE
 	setflag FLAG_TUTOR_EXPLOSION
@@ -99,9 +96,6 @@ EventScript_DreamEaterTutor::
 	goto_if_eq VAR_RESULT, NO, EventScript_DreamEaterDeclined
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_DreamEaterDeclined
-	msgbox Text_DreamEaterWhichMon
-	setvar VAR_0x8005, MOVE_DREAM_EATER
-	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DreamEaterDeclined
 .if I_REUSABLE_TMS == FALSE
 	setflag FLAG_HIDE_VIRIDIAN_CITY_TM_ICE_SPINNER
@@ -129,9 +123,6 @@ EventScript_SoftboiledTutor::
 	goto_if_eq VAR_RESULT, NO, EventScript_SoftboiledDeclined
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_SoftboiledDeclined
-	msgbox Text_SoftboiledWhichMon
-	setvar VAR_0x8005, MOVE_SOFT_BOILED
-	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SoftboiledDeclined
 .if I_REUSABLE_TMS == FALSE
 	setflag FLAG_TUTOR_SOFT_BOILED
@@ -160,8 +151,6 @@ FuchsiaCity_EventScript_SubstituteTutor::
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_SubstituteDeclined
 	msgbox Text_SubstituteWhichMon
-	setvar VAR_0x8005, MOVE_SUBSTITUTE
-	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SubstituteDeclined
 .if I_REUSABLE_TMS == FALSE
 	setflag FLAG_TUTOR_SUBSTITUTE
@@ -182,20 +171,12 @@ EventScript_SubstituteTaught::
 SevenIsland_EventScript_SwordsDanceTutor::
 	lock
 	faceplayer
-.if I_REUSABLE_TMS == FALSE
-	goto_if_set FLAG_TUTOR_SWORDS_DANCE, EventScript_SwordsDanceTaught
-.endif
 	msgbox Text_SwordsDanceTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_SwordsDanceDeclined
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_SwordsDanceDeclined
 	msgbox Text_SwordsDanceWhichMon
-	setvar VAR_0x8005, MOVE_SWORDS_DANCE
-	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_SwordsDanceDeclined
-.if I_REUSABLE_TMS == FALSE
-	setflag FLAG_TUTOR_SWORDS_DANCE
-.endif
 	goto EventScript_SwordsDanceTaught
 	end
 
@@ -238,7 +219,6 @@ EventScript_CounterTutor::
 	lock
 	faceplayer
 	msgbox Text_CounterTeach, MSGBOX_YESNO
-	setflag FLAG_TUTOR_COUNTER
 	goto_if_eq VAR_RESULT, NO, EventScript_CounterDeclined
 	@ call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_CounterDeclined
@@ -270,8 +250,6 @@ EventScript_MetronomeTutor::
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_MetronomeDeclined
 	msgbox Text_MetronomeWhichMon
-	setvar VAR_0x8005, MOVE_METRONOME
-	call EventScript_ChooseMoveTutorMon
 	goto_if_eq VAR_RESULT, FALSE, EventScript_MetronomeDeclined
 .if I_REUSABLE_TMS == FALSE
 	setflag FLAG_TUTOR_METRONOME
@@ -298,8 +276,6 @@ EventScript_MimicTutor::
 	call EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, EventScript_MimicDeclined
 	msgbox Text_MimicWhichMon
-	setvar VAR_0x8005, MOVE_MIMIC
-	call EventScript_ChooseMoveTutorMon
 	lock
 	faceplayer
 	goto_if_eq VAR_RESULT, 0, EventScript_MimicDeclined

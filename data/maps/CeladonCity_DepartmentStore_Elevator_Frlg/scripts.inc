@@ -12,44 +12,32 @@ CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelect::
 	setvar VAR_0x8004, 3
 	specialvar VAR_RESULT, InitElevatorFloorSelectMenuPos
 	switch VAR_RESULT
-	case 0, CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom4F
-	case 1, CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom3F
-	case 2, CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom2F
-	case 3, CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom1F
-	end
-
-CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom5F::
-	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 0, FALSE
-	goto CeladonCity_DepartmentStore_Elevator_EventScript_ChooseFloor
-	end
-
-CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom4F::
-	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 0, FALSE
-	goto CeladonCity_DepartmentStore_Elevator_EventScript_ChooseFloor
+	case 0, CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom3F
+	case 1, CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom2F
+	case 2, CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom1F
 	end
 
 CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom3F::
-	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 1, FALSE
+	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 0, FALSE
 	goto CeladonCity_DepartmentStore_Elevator_EventScript_ChooseFloor
 	end
 
 CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom2F::
-	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 2, FALSE
+	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 1, FALSE
 	goto CeladonCity_DepartmentStore_Elevator_EventScript_ChooseFloor
 	end
 
 CeladonCity_DepartmentStore_Elevator_EventScript_FloorSelectFrom1F::
-	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 3, FALSE
+	multichoicedefault 0, 0, MULTI_DEPT_STORE_ELEVATOR, 2, FALSE
 	goto CeladonCity_DepartmentStore_Elevator_EventScript_ChooseFloor
 	end
 
 CeladonCity_DepartmentStore_Elevator_EventScript_ChooseFloor::
 	switch VAR_RESULT
-	case 0, CeladonCity_DepartmentStore_Elevator_EventScript_To4F
-	case 1, CeladonCity_DepartmentStore_Elevator_EventScript_To3F
-	case 2, CeladonCity_DepartmentStore_Elevator_EventScript_To2F
-	case 3, CeladonCity_DepartmentStore_Elevator_EventScript_To1F
-	case 4, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
+	case 0, CeladonCity_DepartmentStore_Elevator_EventScript_To3F
+	case 1, CeladonCity_DepartmentStore_Elevator_EventScript_To2F
+	case 2, CeladonCity_DepartmentStore_Elevator_EventScript_To1F
+	case 3, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
 	case 127, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
 	end
 
@@ -71,30 +59,13 @@ CeladonCity_DepartmentStore_Elevator_EventScript_To2F::
 	goto CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
 	end
 
+@ old 3F and 5F maps are unused, 4F map is now the top floor
 CeladonCity_DepartmentStore_Elevator_EventScript_To3F::
 	setvar VAR_0x8006, 6
-	setdynamicwarp MAP_CELADON_CITY_DEPARTMENT_STORE_3F, 255, 6, 1
+	setdynamicwarp MAP_CELADON_CITY_DEPARTMENT_STORE_4F, 255, 6, 1
 	goto_if_eq VAR_ELEVATOR_FLOOR, 6, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
 	call CeladonCity_DepartmentStore_Elevator_EventScript_MoveElevator
 	setvar VAR_ELEVATOR_FLOOR, 6
-	goto CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
-	end
-
-CeladonCity_DepartmentStore_Elevator_EventScript_To4F::
-	setvar VAR_0x8006, 7
-	setdynamicwarp MAP_CELADON_CITY_DEPARTMENT_STORE_4F, 255, 6, 1
-	goto_if_eq VAR_ELEVATOR_FLOOR, 7, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
-	call CeladonCity_DepartmentStore_Elevator_EventScript_MoveElevator
-	setvar VAR_ELEVATOR_FLOOR, 7
-	goto CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
-	end
-
-CeladonCity_DepartmentStore_Elevator_EventScript_To5F::
-	setvar VAR_0x8006, 8
-	setdynamicwarp MAP_CELADON_CITY_DEPARTMENT_STORE_5F, 255, 6, 1
-	goto_if_eq VAR_ELEVATOR_FLOOR, 8, CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
-	call CeladonCity_DepartmentStore_Elevator_EventScript_MoveElevator
-	setvar VAR_ELEVATOR_FLOOR, 8
 	goto CeladonCity_DepartmentStore_Elevator_EventScript_ExitFloorSelect
 	end
 

@@ -5076,14 +5076,9 @@ void GetElevatorFloor(void)
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_2F):
             floor = 5;
             break;
-        case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_3F):
-            floor = 6;
-            break;
+        // old 3F and 5F maps are unused, 4F map is the third floor
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_4F):
-            floor = 7;
-            break;
-        case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_5F):
-            floor = 8;
+            floor = 6;
             break;
         }
     }
@@ -5181,25 +5176,18 @@ u16 InitElevatorFloorSelectMenuPos(void)
     {
         switch (gSaveBlock1Ptr->dynamicWarp.mapNum)
         {
-        case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_5F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 0;
-            break;
+        // old 3F and 5F maps are unused, 4F map is the third floor
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_4F):
             sElevatorScroll = 0;
             sElevatorCursorPos = 0;
             break;
-        case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_3F):
+        case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_2F):
             sElevatorScroll = 0;
             sElevatorCursorPos = 1;
             break;
-        case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_2F):
-            sElevatorScroll = 0;
-            sElevatorCursorPos = 2;
-            break;
         case MAP_NUM(MAP_CELADON_CITY_DEPARTMENT_STORE_1F):
             sElevatorScroll = 0;
-            sElevatorCursorPos = 3;
+            sElevatorCursorPos = 2;
             break;
         }
     }

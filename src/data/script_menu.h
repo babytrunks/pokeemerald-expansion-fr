@@ -922,7 +922,6 @@ static const struct MenuAction sMultichoiceList_GameCornerBattleItemPrizes[] = {
 };
 
 static const struct MenuAction sMultichoiceList_DeptStoreElevator[] = {
-    { COMPOUND_STRING("4F") },
     { COMPOUND_STRING("3F") },
     { COMPOUND_STRING("2F") },
     { COMPOUND_STRING("1F") },

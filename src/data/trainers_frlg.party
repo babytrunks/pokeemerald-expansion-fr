@@ -12562,6 +12562,7 @@ Accelgor @ Life Orb
 Nature: Timid
 Ability: Sheer Force
 Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Bug Buzz
 - U Turn
@@ -12572,6 +12573,7 @@ Greninja @ Greninjite
 Nature: Timid
 Ability: Battle Bond
 Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe
 - Hydro Pump
 - Water Shuriken
@@ -12582,24 +12584,27 @@ Drapion @ Choice Scarf
 Nature: Adamant
 Ability: Sniper
 Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 SpD / 252 Spe
 - Wicked Blow
 - Cross Poison
 
-Iron Valiant @ Booster Energy
-Nature: Jolly
+Iron Moth @ Booster Energy
+Nature: Timid
 Ability: Quark Drive
 Level: 54
-EVs: 252 Atk / 4 Def / 252 Spe
-- Close Combat
-- Spirit Break
-- Knock Off
-- Liquidation
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 124 Def / 132 SpA / 252 Spe
+- Fiery Dance
+- Sludge Wave
+- Dazzling Gleam
+- Energy Ball
 
 Weavile @ Focus Sash
 Nature: Jolly
 Ability: Pickpocket
 Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Triple Axel
 - Knock Off
@@ -12619,6 +12624,7 @@ Armarouge @ Focus Sash
 Nature: Timid
 Ability: Mega Launcher
 Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Armor Cannon
 - Psyshock
@@ -12629,6 +12635,7 @@ Slither-Wing @ Life Orb
 Nature: Jolly
 Ability: Protosynthesis
 Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - First Impression
 - U Turn
@@ -12639,6 +12646,7 @@ Exeggutor @ Lum Berry
 Nature: Timid
 Ability: Chlorophyll
 Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Growth
 - Giga Drain
@@ -12660,6 +12668,7 @@ Ogerpon-Hearthflame @ Hearthflame Mask
 Nature: Jolly
 Ability: Mold Breaker
 Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Ivy Cudgel
 - Horn Leech
@@ -12670,6 +12679,7 @@ Charizard @ Charizardite Y
 Nature: Timid
 Ability: Blaze
 Level: 61
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Heat Wave
 - Air Slash
@@ -17929,6 +17939,7 @@ Dynamic Level Ratio: 95
 
 Wormadam-Trash (F) @ Occa Berry  
 Ability: Oblivious  
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 56 Def / 200 SpD  
 Sassy Nature  
@@ -17939,6 +17950,7 @@ Sassy Nature
 
 Torterra (M) @ Leftovers  
 Ability: Self Sufficient  
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 200 Atk / 56 SpD  
 Adamant Nature  
@@ -17949,6 +17961,7 @@ Adamant Nature
 
 Luxray @ Flame Orb  
 Ability: Guts  
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Adamant Nature  
@@ -17959,6 +17972,7 @@ Adamant Nature
 
 Porygon-Z @ Up-Grade  
 Ability: Download  
+Level: 60
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
@@ -17969,6 +17983,7 @@ Timid Nature
 
 Phione @ Sitrus Berry  
 Ability: Hydration  
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Modest Nature  
@@ -17979,6 +17994,7 @@ Modest Nature
 
 Staraptor @ Staraptite  
 Ability: Intimidate  
+Level: 61
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 SpD / 252 Spe  
 Jolly Nature  
@@ -19217,7 +19233,7 @@ EVs: 6 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Leaf Blade
 - Earthquake
 
-=== TRAINER_YOUNGSTER_YASU_2 ===
+=== TRAINER_PUZZLE_BATTLE_PLAYER_TEAM_1 ===
 Name: Yasu
 Class: Youngster Frlg
 Pic: Youngster Frlg
@@ -19226,38 +19242,124 @@ Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 
-Gumshoos
-Level: 24
+Rookidee
+Level: 5
+Nature: Bashful
+Ability: Keen Eye
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-
-Greedent
-Level: 23
+- Dual Wingbeat
+- Aerial Ace
+- Power Trip
+- Roost 
+ 
+Skarmory
+Level: 5
+Nature: Bashful
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Spikes
+- Drill Peck
+- Stealth Rock
+- Roost
 
-Raticate-Alola
-Level: 22
+Gible @ Eviolite
+Level: 5
+Nature: Bashful
+Ability: Rough Skin
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Stealth Rock
+- Rock Tomb
+- Bulldoze
+- Scale Shot
 
-=== TRAINER_YOUNGSTER_YASU_3 ===
-Name: Yasu
-Class: Youngster Frlg
-Pic: Youngster Frlg
+Aron @ Eviolite
+Level: 5
+Nature: Bashful
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Roar
+- Thunder Wave
+- Stealth Rock
+- Metal Burst
+
+Shuckle @ Berry Juice
+Level: 5
+Nature: Bashful
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Sticky Web
+- Encore
+- Final Gambit
+- Infestation
+
+Fletchling @ Big Pecks
+Level: 5
+Nature: Bashful
+Ability: Big Pecks
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Brave Bird
+- U-Turn
+- Return
+- Roost
+
+
+
+=== TRAINER_PUZZLE_BATTLE_OPP_TEAM_1 ===
+Name: Coach
+Class: Cooltrainer M
+Pic: Gambler Frlg
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability / Sequence Switching
 
-Raticate
-Level: 47
+Shedinja @ Focus Sash
+Level: 100
+Nature: Jolly
+Ability: Wonder Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X-Scissor
+- Shadow Sneak
 
-Raticate
-Level: 47
+Shedinja @ Focus Sash
+Level: 100
+Nature: Jolly
+Ability: Wonder Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X-Scissor
+- Shadow Sneak
 
-Raticate
-Level: 47
+Shedinja @ Focus Sash
+Level: 100
+Nature: Jolly
+Ability: Wonder Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X-Scissor
+- Shadow Sneak
+
+Shedinja @ Focus Sash
+Level: 100
+Nature: Jolly
+Ability: Wonder Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X-Scissor
+- Shadow Sneak
+
+Shedinja @ Focus Sash
+Level: 100
+Nature: Jolly
+Ability: Wonder Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X-Scissor
+- Shadow Sneak
+
+Shedinja @ Heavy Duty Boots 
+Level: 100
+Nature: Jolly
+Ability: Wonder Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X-Scissor
+- Shadow Sneak
 
 === TRAINER_ENGINEER_BERNIE_2 ===
 Name: Bernie

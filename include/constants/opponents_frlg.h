@@ -517,8 +517,8 @@
 #define TRAINER_BRENDAN_FUSCHIA               511 // unused 
 #define TRAINER_MAY_CINNABAR               512 // unused
 #define TRAINER_ROUTE_23_BRENDAN               513 // unused 
-#define TRAINER_YOUNGSTER_YASU_2                   514 // unused
-#define TRAINER_YOUNGSTER_YASU_3                   515 // unused
+#define TRAINER_PUZZLE_BATTLE_PLAYER_TEAM_1                   514 // unused
+#define TRAINER_PUZZLE_BATTLE_OPP_TEAM_1                   515 // unused
 #define TRAINER_ENGINEER_BERNIE_2                  516 // unused
 #define TRAINER_GAMER_DARIAN_2                     517 // unused
 #define TRAINER_CAMPER_CHRIS_2                     518 // unused

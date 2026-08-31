@@ -399,12 +399,9 @@ PkmnCenterNurse_AllTutors_Thunder:
 	dynmultipush PkmnCenterNurse_Text_TailSlap, MOVE_TAIL_SLAP
 	dynmultipush PkmnCenterNurse_Text_RockBlast, MOVE_ROCK_BLAST
 	dynmultipush PkmnCenterNurse_Text_IcicleSpear, MOVE_ICICLE_SPEAR
-	call_if_set FLAG_TUTOR_COUNTER, PkmnCenterNurse_AllTutors_Counter
-	return
-
-PkmnCenterNurse_AllTutors_Counter:
 	dynmultipush PkmnCenterNurse_Text_Counter, MOVE_COUNTER
 	return
+
 
 PkmnCenterNurse_AllTutors_Rainbow:
 	dynmultipush PkmnCenterNurse_Text_BugBuzz, MOVE_BUG_BUZZ

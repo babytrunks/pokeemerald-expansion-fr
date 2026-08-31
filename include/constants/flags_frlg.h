@@ -698,7 +698,7 @@
 #define FLAG_TUTOR_SUBSTITUTE                            0x2C8
 #define FLAG_TUTOR_SWORDS_DANCE                          0x2C9
 #define FLAG_TUTOR_SEISMIC_TOSS                          0x2CA
-#define FLAG_TUTOR_COUNTER                               0x2CB
+#define FLAG_TUTOR_COUNTER                               0x2CB // unused
 #define FLAG_TUTOR_METRONOME                             0x2CC
 #define FLAG_TUTOR_MIMIC                                 0x2CD
 #define FLAG_TUTOR_BODY_SLAM                             0x2CE

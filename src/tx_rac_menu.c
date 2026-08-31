@@ -37,7 +37,7 @@ enum
     MENUITEM_MODE_CLASSIC_MODERN,
     MENUITEM_MODE_DIFFICULTY,
     MENUITEM_MODE_NO_EVS,
-    MENUITEM_MODE_PARTY_LIMIT,
+    //MENUITEM_MODE_PARTY_LIMIT,
     MENUITEM_MODE_NEXT,
     MENUITEM_MODE_COUNT,
 };
@@ -259,7 +259,7 @@ static void DrawChoices_Nuzlocke_Deletion(int selection, int y);
 static void DrawChoices_Nuzlocke_RareCandy(int selection, int y);
 
 static void DrawChoices_Challenges_PartyLimit(int selection, int y);
-static void DrawChoices_Challenges_PartyLimitMode(int selection, int y);
+//static void DrawChoices_Challenges_PartyLimitMode(int selection, int y);
 static void DrawChoices_Challenges_LevelCap(int selection, int y);
 static void DrawChoices_Challenges_ExpMultiplier(int selection, int y);
 static void DrawChoices_Challenges_YesNo(int selection, int y, bool8 active);
@@ -342,7 +342,7 @@ struct // MENU_MODE
     [MENUITEM_MODE_CLASSIC_MODERN]  = {DrawChoices_Mode_Classic_Modern_Selector,  ProcessInput_Options_Two},
     [MENUITEM_MODE_DIFFICULTY]      = {DrawChoices_Mode_Difficulty,               ProcessInput_Options_Three},
     [MENUITEM_MODE_NO_EVS]          = {DrawChoices_Mode_NoEVs,                    ProcessInput_Options_Two},
-    [MENUITEM_MODE_PARTY_LIMIT]     = {DrawChoices_Challenges_PartyLimitMode,     ProcessInput_Options_Six},
+    //[MENUITEM_MODE_PARTY_LIMIT]     = {DrawChoices_Challenges_PartyLimitMode,     ProcessInput_Options_Six},
     [MENUITEM_MODE_NEXT]            = {NULL, NULL},
 };
 
@@ -460,7 +460,7 @@ static const u8 *const sOptionMenuItemsNamesMode[MENUITEM_MODE_COUNT] =
     [MENUITEM_MODE_CLASSIC_MODERN]  = sText_Gamemode,
     [MENUITEM_MODE_DIFFICULTY]      = sText_ModeDifficulty,
     [MENUITEM_MODE_NO_EVS]          = sText_Mode_PlayerEVs,
-    [MENUITEM_MODE_PARTY_LIMIT]           = sText_PartyLimit,
+    //[MENUITEM_MODE_PARTY_LIMIT]           = sText_PartyLimit,
     [MENUITEM_MODE_NEXT]            = sText_Next,
 };
 
@@ -608,7 +608,7 @@ static bool8 CheckConditions(int selection)
             case MENUITEM_MODE_CLASSIC_MODERN:  return TRUE;
             case MENUITEM_MODE_DIFFICULTY:      return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1; // only active in CUSTOM
             case MENUITEM_MODE_NO_EVS:          return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1; // only active in CUSTOM
-            case MENUITEM_MODE_PARTY_LIMIT:     return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1; // only active in CUSTOM
+            //case MENUITEM_MODE_PARTY_LIMIT:     return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1; // only active in CUSTOM
             case MENUITEM_MODE_NEXT:            return TRUE;
             default:                            return FALSE;
         }
@@ -666,9 +666,9 @@ static const u8 sText_Description_Mode_Difficulty_Easy[]                = _("Tra
 static const u8 sText_Description_Mode_Difficulty_Normal[]              = _("The intended difficulty to play\nthe game.");
 static const u8 sText_Description_Mode_Difficulty_Hardcore[]            = _("{COLOR RED}Unimplemented!");
 // _("Bosses are absurd. Certain moves &\nabilties are banned for the player.");
-static const u8 sText_Description_Mode_NoEVs_Off[]                      = _("{COLOR RED}EVs are enabled for both\nthe player and NPCs.");
+static const u8 sText_Description_Mode_NoEVs_Off[]                      = _("EVs are enabled for both\nthe player and NPCs.");
 // {PKMN} gain effort values\nas expected.");
-static const u8 sText_Description_Mode_NoEVs_On[]                       = _("{COLOR RED}EVs are disabled for both\nthe player and NPCs.");
+static const u8 sText_Description_Mode_NoEVs_On[]                       = _("EVs are disabled for both\nthe player and NPCs.");
 // _("Your {PKMN} and opposing {PKMN} do\n{COLOR 7}{COLOR 8}NOT{COLOR 1}{COLOR 2} gain any effort values!");
 static const u8 sText_Description_Mode_Party_Limit[]              = _("Limit the amount of {PKMN} in the\nplayers party.");
 static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
@@ -676,7 +676,7 @@ static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
     [MENUITEM_MODE_CLASSIC_MODERN]  = {sText_Description_Mode_Gamemode_Classic,      sText_Description_Mode_Gamemode_Modern,  sText_Empty, sText_Empty, sText_Empty},
     [MENUITEM_MODE_DIFFICULTY]      = {sText_Description_Mode_Difficulty_Easy,       sText_Description_Mode_Difficulty_Normal, sText_Description_Mode_Difficulty_Hardcore, sText_Empty, sText_Empty},
     [MENUITEM_MODE_NO_EVS]          = {sText_Description_Mode_NoEVs_On,             sText_Description_Mode_NoEVs_Off,         sText_Empty, sText_Empty, sText_Empty},
-    [MENUITEM_MODE_PARTY_LIMIT]     = {sText_Description_Mode_Party_Limit,        sText_Empty,                                        sText_Empty,                                    sText_Empty, sText_Empty},
+    //[MENUITEM_MODE_PARTY_LIMIT]     = {sText_Description_Mode_Party_Limit,        sText_Empty,                                        sText_Empty,                                    sText_Empty, sText_Empty},
 
     [MENUITEM_MODE_NEXT]            = {sText_Description_Mode_Next,                  sText_Empty,                              sText_Empty, sText_Empty, sText_Empty},
 };
@@ -873,7 +873,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMode[MENUITEM_MODE_COU
     [MENUITEM_MODE_CLASSIC_MODERN]  = sText_Empty,
     [MENUITEM_MODE_DIFFICULTY]      = sText_Empty,
     [MENUITEM_MODE_NO_EVS]          = sText_Empty,
-    [MENUITEM_MODE_PARTY_LIMIT]           = sText_Empty,
+    //[MENUITEM_MODE_PARTY_LIMIT]           = sText_Empty,
     [MENUITEM_MODE_NEXT]            = sText_Empty,
 };
 
@@ -956,9 +956,7 @@ static const u8 *const OptionTextDescription(void)
     case MENU_MODE:
         if (!CheckConditions(menuItem) && sOptionMenuItemDescriptionsDisabledMode[menuItem] != sText_Empty)
             return sOptionMenuItemDescriptionsDisabledMode[menuItem];
-        if (sOptions->menuCursor[MENU_MODE] == MENUITEM_MODE_PARTY_LIMIT)
-            return sOptionMenuItemDescriptionsMode[menuItem][0];
-        selection = sOptions->sel_mode[menuItem];  
+        selection = sOptions->sel_mode[menuItem];
         return sOptionMenuItemDescriptionsMode[menuItem][selection];
     case MENU_RANDOMIZER:
         if (!CheckConditions(menuItem) && sOptionMenuItemDescriptionsDisabledRandomizer[menuItem] != sText_Empty)
@@ -1016,14 +1014,14 @@ static void VBlankCB(void)
     TransferPlttBuffer();
 }
 
-static const u8 sText_TopBar_Left[]             = _("{L_BUTTON}PREVIOUS");
-static const u8 sText_TopBar_Right[]            = _("{R_BUTTON}NEXT");
+static const u8 sText_TopBar_Left[]             = _("{L_BUTTON}Previous");
+static const u8 sText_TopBar_Right[]            = _("{R_BUTTON}Next");
 static const u8 sText_TopBar_Mode[]             = _("Game Mode");
-static const u8 sText_TopBar_Features[]         = _("FEATURES");
-static const u8 sText_TopBar_Randomizer[]       = _("RANDOMIZER");
-static const u8 sText_TopBar_Nuzlocke[]         = _("NUZLOCKE");
-static const u8 sText_TopBar_Difficulty[]       = _("DIFFICULTY");
-static const u8 sText_TopBar_Challenges[]       = _("CHALLENGES");
+static const u8 sText_TopBar_Features[]         = _("Features");
+static const u8 sText_TopBar_Randomizer[]       = _("Randomizer");
+static const u8 sText_TopBar_Nuzlocke[]         = _("Nuzlocke");
+static const u8 sText_TopBar_Difficulty[]       = _("Difficulty");
+static const u8 sText_TopBar_Challenges[]       = _("Challenges");
 static void DrawTopBarText(void)
 {
     const u8 color[3] = { TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_WHITE, TEXT_COLOR_OPTIONS_GRAY_FG };
@@ -1272,7 +1270,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN]    = FALSE;     // default: RECOMMENDED
         sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY]        = 1;         // default: Normal
         sOptions->sel_mode[MENUITEM_MODE_NO_EVS]            = 1;     // default: EVs enabled
-        sOptions->sel_mode[MENUITEM_MODE_PARTY_LIMIT]    = TX_DIFFICULTY_PARTY_LIMIT;
+        //sOptions->sel_mode[MENUITEM_MODE_PARTY_LIMIT]    = TX_DIFFICULTY_PARTY_LIMIT;
         //MENU FEATURES
         sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]               = TX_FEATURES_RTC_TYPE;
         sOptions->sel_features[MENUITEM_FEATURES_SHINY_CHANCE]           = TX_FEATURES_SHINY_CHANCE;
@@ -1352,7 +1350,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         
         sOptions->arrowTaskId = AddScrollIndicatorArrowPairParameterized(SCROLL_ARROW_UP, 240 / 2, 20, 110, MENUITEM_MODE_COUNT - 1, 110, 110, 0);
 
-        for (i = 0; i < OPTIONS_ON_SCREEN; i++)
+        for (i = 0; i < OPTIONS_ON_SCREEN && i < MenuItemCount(); i++)
             DrawChoices(i, i * Y_DIFF);
 
         HighlightOptionMenuItem();
@@ -1409,7 +1407,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     }
     else if (JOY_NEW(DPAD_UP))
     {
-        if (sOptions->visibleCursor[sOptions->submenu] == NUM_OPTIONS_FROM_BORDER) // don't advance visible cursor until scrolled to the bottom
+        if (MenuItemCount() <= OPTIONS_ON_SCREEN) // whole menu fits on screen, just wrap the cursor
+        {
+            if (--sOptions->menuCursor[sOptions->submenu] < 0)
+                sOptions->menuCursor[sOptions->submenu] = MenuItemCount() - 1;
+            sOptions->visibleCursor[sOptions->submenu] = sOptions->menuCursor[sOptions->submenu];
+        }
+        else if (sOptions->visibleCursor[sOptions->submenu] == NUM_OPTIONS_FROM_BORDER) // don't advance visible cursor until scrolled to the bottom
         {
             if (--sOptions->menuCursor[sOptions->submenu] == 0)
                 sOptions->visibleCursor[sOptions->submenu]--;
@@ -1435,7 +1439,13 @@ static void Task_OptionMenuProcessInput(u8 taskId)
     }
     else if (JOY_NEW(DPAD_DOWN))
     {
-        if (sOptions->visibleCursor[sOptions->submenu] == 3) // don't advance visible cursor until scrolled to the bottom
+        if (MenuItemCount() <= OPTIONS_ON_SCREEN) // whole menu fits on screen, just wrap the cursor
+        {
+            if (++sOptions->menuCursor[sOptions->submenu] >= MenuItemCount())
+                sOptions->menuCursor[sOptions->submenu] = 0;
+            sOptions->visibleCursor[sOptions->submenu] = sOptions->menuCursor[sOptions->submenu];
+        }
+        else if (sOptions->visibleCursor[sOptions->submenu] == 3) // don't advance visible cursor until scrolled to the bottom
         {
             if (++sOptions->menuCursor[sOptions->submenu] == MenuItemCount() - 1)
                 sOptions->visibleCursor[sOptions->submenu]++;
@@ -1538,7 +1548,7 @@ void SaveData_TxRandomizerAndChallenges(void)
 {
     PrintCurrentSelections();
     //MENU MODE
-    VarSet(VAR_PARTY_LIMIT, sOptions->sel_mode[MENUITEM_MODE_PARTY_LIMIT]);
+    VarSet(VAR_PARTY_LIMIT, TX_DIFFICULTY_PARTY_LIMIT); // party limit not selectable for now
     VarSet(VAR_DIFFICULTY, DIFFICULTY_NORMAL);
     if (sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] == 0)
         FlagSet(FLAG_EASY_MODE);
@@ -1895,7 +1905,7 @@ static void ReDrawAll(void)
     }
 
     FillWindowPixelBuffer(WIN_OPTIONS, PIXEL_FILL(1));
-    for (i = 0; i < OPTIONS_ON_SCREEN; i++)
+    for (i = 0; i < OPTIONS_ON_SCREEN && menuItem + i < MenuItemCount(); i++)
     {
         DrawChoices(menuItem+i, i * Y_DIFF);
         DrawLeftSideOptionText(menuItem+i, (i * Y_DIFF) + 1);
@@ -1936,7 +1946,6 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
     {
         sOptions->sel_mode[MENUITEM_MODE_DIFFICULTY] = 1; // Normal
         sOptions->sel_mode[MENUITEM_MODE_NO_EVS]     = 1; // EVs enabled
-        sOptions->sel_mode[MENUITEM_MODE_PARTY_LIMIT] = 0;
     }
 }
 
@@ -2147,19 +2156,20 @@ static void DrawChoices_Challenges_PartyLimit(int selection, int y)
     DrawOptionMenuChoice(sText_Challenges_PartyLimit_1, 192, y, styles[5], active);
 }
 
-static void DrawChoices_Challenges_PartyLimitMode(int selection, int y)
-{
-    bool8 active = CheckConditions(MENUITEM_MODE_PARTY_LIMIT);
-    u8 styles[6] = {0};
-    styles[selection] = 1;
-
-    DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
-    DrawOptionMenuChoice(sText_Challenges_PartyLimit_5, 130, y, styles[1], active);
-    DrawOptionMenuChoice(sText_Challenges_PartyLimit_4, 146, y, styles[2], active);
-    DrawOptionMenuChoice(sText_Challenges_PartyLimit_3, 161, y, styles[3], active);
-    DrawOptionMenuChoice(sText_Challenges_PartyLimit_2, 176, y, styles[4], active);
-    DrawOptionMenuChoice(sText_Challenges_PartyLimit_1, 192, y, styles[5], active);
-}
+// Party limit is not selectable in the mode menu for now
+//static void DrawChoices_Challenges_PartyLimitMode(int selection, int y)
+//{
+//    bool8 active = CheckConditions(MENUITEM_MODE_PARTY_LIMIT);
+//    u8 styles[6] = {0};
+//    styles[selection] = 1;
+//
+//    DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
+//    DrawOptionMenuChoice(sText_Challenges_PartyLimit_5, 130, y, styles[1], active);
+//    DrawOptionMenuChoice(sText_Challenges_PartyLimit_4, 146, y, styles[2], active);
+//    DrawOptionMenuChoice(sText_Challenges_PartyLimit_3, 161, y, styles[3], active);
+//    DrawOptionMenuChoice(sText_Challenges_PartyLimit_2, 176, y, styles[4], active);
+//    DrawOptionMenuChoice(sText_Challenges_PartyLimit_1, 192, y, styles[5], active);
+//}
 static const u8 sText_Challenges_LevelCap_Normal[]  = _("NORMAL");
 static const u8 sText_Challenges_LevelCap_Hard[]    = _("HARD");
 static void DrawChoices_Challenges_LevelCap(int selection, int y)
