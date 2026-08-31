@@ -226,7 +226,7 @@ PkmnCenterNurse_EventScript_WantNatureChange::
 	end
 
 PkmnCenterNurse_EventScript_WantMoveTutor:
-	goto_if_unset FLAG_BADGE01_GET, PkmnCenterNurse_EventScript_StartingMoveTutors
+	@ goto_if_unset FLAG_BADGE01_GET, PkmnCenterNurse_EventScript_StartingMoveTutors
 	dynmultipush PkmnCenterNurse_Text_StartingTutors, 0
 	call_if_set FLAG_BADGE01_GET, PkmnCenterNurse_SetBoulderBadgeTutor
 	call_if_set FLAG_BADGE02_GET, PkmnCenterNurse_SetCascadeBadgeTutor

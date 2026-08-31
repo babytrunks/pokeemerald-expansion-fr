@@ -117,7 +117,8 @@ PalletTown_PlayersHouse_2F_Text_PressLRForHelp::
     .string "It's a posted notice…\p"
     .string "Check out the Options Menu in the\n"
     .string "{START_BUTTON} Menu!\p"
-	.string "Don't forget to pres$"
+	.string "Don't forget to press {R_BUTTON} for more\n"
+	.string "options!$"
 
 PalletTown_PlayersHouse_2F_Text_CheatBookAskRead::
 	.string "A worn paperback sits on the shelf…\p"

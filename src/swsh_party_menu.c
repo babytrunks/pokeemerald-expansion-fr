@@ -193,7 +193,7 @@ enum {
 #define TAG_MOVE_TYPES              55160
 
 #define PARTY_PAL_SELECTED     (1 << 0)
-#define PARTY_PAL_FAINTED      (1 << 1) // unused in swsh party menu
+#define PARTY_PAL_FAINTED      (1 << 1)
 #define PARTY_PAL_TO_SWITCH    (1 << 2)
 #define PARTY_PAL_MULTI_ALT    (1 << 3)
 #define PARTY_PAL_SWITCHING    (1 << 4)
@@ -1903,10 +1903,13 @@ void AnimatePartySlot(u8 slot, u8 animNum)
 
 static u8 GetPartyBoxPaletteFlags(u8 slot, u8 animNum)
 {
+    struct Pokemon *mon = GetPartyMonFromPartyMenuId(slot);
     u8 palFlags = 0;
 
     if (animNum == 1)
         palFlags |= PARTY_PAL_SELECTED;
+    if (!GetMonData(mon, MON_DATA_IS_EGG) && GetMonData(mon, MON_DATA_HP) == 0)
+        palFlags |= PARTY_PAL_FAINTED;
     if (PartyBoxPal_ParnterOrDisqualifiedInArena(slot) == TRUE)
         palFlags |= PARTY_PAL_MULTI_ALT;
     if (gPartyMenu.action == PARTY_ACTION_SWITCHING)
@@ -3299,6 +3302,13 @@ static void LoadPartyBoxPalette(struct PartyMenuBox *menuBox, u8 palFlags)
     {
         LoadPalette(GetPartyMenuPalBufferPtr(sPartyBoxCurrSelectionPalId1), sPartyBoxPalOffset1 + palOffset, PLTT_SIZEOF(1));
         LOAD_PARTY_TEXT_PAL(sPartyBoxCurrSelectionPalIds3, sPartyBoxPalOffsets3);
+    }
+    else if (palFlags & PARTY_PAL_FAINTED)
+    {
+        // Dark box so fainted mons read at a glance, not just from the icon
+        LoadPalette(&sPartyBoxFaintedPal[0], sPartyBoxPalOffset1 + palOffset, PLTT_SIZEOF(1));
+        LoadPalette(&sPartyBoxFaintedPal[1], sPartyBoxPalOffsets3[0] + palOffset, PLTT_SIZEOF(1));
+        LoadPalette(&sPartyBoxFaintedPal[2], sPartyBoxPalOffsets3[1] + palOffset, PLTT_SIZEOF(1));
     }
     else
     {
@@ -10045,45 +10055,8 @@ static void LoadBattlePartyCurrentOrderForLayout(void)
 
 static void GetPartyAndSlotFromPartyMenuId(s8 menuId, struct Pokemon **party, s8 *partySlot)
 {
-    switch (gPartyMenu.layout)
-    {
-    case PARTY_LAYOUT_MULTI_FULL_PARTNER:
-    case PARTY_LAYOUT_MULTI_FULL_SHOWCASE_PARTNER:
-        *party = gPlayerParty;
-        *partySlot = menuId;
-        break;
-    case PARTY_LAYOUT_MULTI_SHOWCASE:
-        switch (menuId)
-        {
-        case 3:
-        case 4:
-        case 5:
-            *party = gPlayerParty;
-            *partySlot = menuId - MULTI_PARTY_SIZE;
-            break;
-        default:
-            *party = gPlayerParty;
-            *partySlot = menuId;
-            break;
-        }
-        break;
-    case PARTY_LAYOUT_MULTI:
-        if (menuId >= MULTI_PARTY_SIZE)
-        {
-            *party = gPlayerParty;
-            *partySlot = menuId - MULTI_PARTY_SIZE;
-        }
-        else
-        {
-            *party = gPlayerParty;
-            *partySlot = menuId;
-        }
-        break;
-    default:
-        *party = gPlayerParty;
-        *partySlot = menuId;
-        break;
-    }
+    *party = gPlayerParty;
+    *partySlot = menuId;
 }
 
 static struct Pokemon *GetPartyMonFromPartyMenuId(s8 menuId)

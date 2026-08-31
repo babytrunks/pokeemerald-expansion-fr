@@ -1053,6 +1053,10 @@ static const u8 sPartyBoxSelectedForActionPalId1  = 65;
 static const u8 sPartyBoxCurrSelectionPalId1      = 81;
 static const u8 sPartyBoxCurrSelectionMultiPalId  = 97;
 
+// Fainted box colors, not part of the bg palette file
+// Order is box fill, text shadow, text
+static const u16 sPartyBoxFaintedPal[] = {RGB(11, 11, 12), RGB(5, 5, 6), RGB(31, 31, 31)};
+
 // Text palettes
 static const u8 sPartyBoxEmptySlotPalIds3[]          = {34, 35};
 static const u8 sPartyBoxMultiPalIds3[]              = {50, 51};
