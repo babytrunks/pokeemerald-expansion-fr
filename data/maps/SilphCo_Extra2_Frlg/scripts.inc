@@ -25,8 +25,6 @@ SilphCo_Extra2_EventScript_MdeDeclined::
 
 @ A full Bag leaves the flag clear so he hands the stone over on the next talk
 SilphCo_Extra2_EventScript_MdeGiveMegaStone::
-	checkitemspace ITEM_GARCHOMPITE
-	goto_if_eq VAR_RESULT, FALSE, SilphCo_Extra2_EventScript_MdeNoRoom
 	giveitem ITEM_GARCHOMPITE
 	setflag FLAG_GOT_GARCHOMPITE_FROM_MDE
 	msgbox SilphCo_Extra2_Text_MdeFiredUp

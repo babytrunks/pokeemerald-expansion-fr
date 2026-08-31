@@ -261,13 +261,18 @@
 #define VAR_0x40F6                 0x40F6
 #define VAR_0x40F7                 0x40F7
 #define VAR_MAP_SCENE_INDIGO_PLATEAU_SOUPERCELL 0x40F8 // 1 once the creator boss is done
-#define VAR_0x40F9                 0x40F9
-#define VAR_0x40FA                 0x40FA
+#define VAR_MAP_SCENE_ROUTE23_BRENDAN 0x40F9 // 1 once the final Brendan fight is done
+#define VAR_VICTORY_ROAD_URSHIFU_FORM 0x40FA // 0 until seeded then flips on every League win
 #define VAR_0x40FB                 0x40FB
 #define VAR_0x40FC                 0x40FC
 #define VAR_0x40FD                 0x40FD
 #define VAR_0x40FE                 0x40FE
 #define VAR_0x40FF                 0x40FF
+
+// Values for VAR_VICTORY_ROAD_URSHIFU_FORM
+#define URSHIFU_FORM_UNSET          0
+#define URSHIFU_FORM_RAPID_STRIKE   1
+#define URSHIFU_FORM_SINGLE_STRIKE  2
 
 #define VARS_END_FRLG                   0x40FF
 #define VARS_COUNT_FRLG                 (VARS_END_FRLG - VARS_START_FRLG + 1)

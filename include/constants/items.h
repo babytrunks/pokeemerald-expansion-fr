@@ -402,7 +402,7 @@
 #define ITEM_GARDEVOIRITE 316 // Safari ZOne
 #define ITEM_SABLENITE 317 // DONE (Pokemon Tower 6F, item ball)
 #define ITEM_MAWILITE 318 // DONE (Cerulean Cave)
-#define ITEM_AGGRONITE 319
+#define ITEM_AGGRONITE 319 // DONE (Route 13 behind cut)
 #define ITEM_MEDICHAMITE 320 // DONE (Route 22 post Rock Smash)
 #define ITEM_MANECTITE 321 // DONE (Silph Co 4F, item ball)
 #define ITEM_SHARPEDONITE 322 // Done (Route 12 Fisherman House)
@@ -412,8 +412,8 @@
 #define ITEM_ABSOLITE 326 // DONE (Celadon Game Corner, 3000 coins)
 #define ITEM_GLALITITE 327 // DONE (Silph Co 6F, item ball)
 #define ITEM_SALAMENCITE 328 // DONE (Cerulean Cave)
-#define ITEM_METAGROSSITE 329
-#define ITEM_LATIASITE 330
+#define ITEM_METAGROSSITE 329 // DONE (Indigo Plateau)
+#define ITEM_LATIASITE 330 
 #define ITEM_LATIOSITE 331
 #define ITEM_LOPUNNITE 332 // DONE (Safari Zone)
 #define ITEM_GARCHOMPITE 333 // DONE (Pokemon Mansion)

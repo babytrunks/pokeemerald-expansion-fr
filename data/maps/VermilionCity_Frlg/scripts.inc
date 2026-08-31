@@ -194,6 +194,10 @@ VermilionCity_EventScript_CheckTicket::
 	checkitem ITEM_EON_TICKET
 	goto_if_eq VAR_RESULT, TRUE, VermilionCity_EventScript_AskSouthernIsland
 
+VermilionCity_EventScript_CheckOldSeaMap::
+	checkitem ITEM_OLD_SEA_MAP
+	goto_if_eq VAR_RESULT, TRUE, VermilionCity_EventScript_AskFarawayIsland
+
 VermilionCity_EventScript_CheckTicketMain::
 	goto_if_eq VAR_MAP_SCENE_VERMILION_CITY, 3, VermilionCity_EventScript_CheckSeagallopPresentTrigger
 	goto_if_unset FLAG_BADGE02_GET, VermilionCity_EventScript_ShipIsntPresent
@@ -210,11 +214,23 @@ VermilionCity_EventScript_CheckTicketMain::
 VermilionCity_EventScript_AskSouthernIsland::
 	setflag FLAG_ENABLE_SHIP_SOUTHERN_ISLAND
 	msgbox VermilionCity_Text_EonTicketSouthernIsland, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, VermilionCity_EventScript_CheckTicketMain
+	goto_if_eq VAR_RESULT, NO, VermilionCity_EventScript_CheckOldSeaMap
 	msgbox VermilionCity_Text_SetSailSouthernIsland
 	closemessage
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 1
 	warp MAP_SOUTHERN_ISLAND_EXTERIOR, 14, 23
+	waitstate
+	releaseall
+	end
+
+VermilionCity_EventScript_AskFarawayIsland::
+	setflag FLAG_ENABLE_SHIP_FARAWAY_ISLAND
+	msgbox VermilionCity_Text_OldSeaMapFarawayIsland, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, VermilionCity_EventScript_CheckTicketMain
+	msgbox VermilionCity_Text_SetSailFarawayIsland
+	closemessage
+	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 1
+	warp MAP_FARAWAY_ISLAND_ENTRANCE, 13, 38
 	waitstate
 	releaseall
 	end
@@ -445,6 +461,19 @@ VermilionCity_Text_EonTicketSouthernIsland::
 VermilionCity_Text_SetSailSouthernIsland::
     .string "Okay, everything's in order.\p"
     .string "We'll set sail for Southern Island\n"
+    .string "immediately.$"
+
+VermilionCity_Text_OldSeaMapFarawayIsland::
+    .string "Oh! That's an Old Sea Map!\n"
+    .string "I've never seen one before.\p"
+    .string "The chart points to an island that\n"
+    .string "isn't on any modern map.\p"
+    .string "Would you like to sail to\n"
+    .string "the Wishing Isle?$"
+
+VermilionCity_Text_SetSailFarawayIsland::
+    .string "Okay, everything's in order.\p"
+    .string "We'll set sail for Wishing Isle\n"
     .string "immediately.$"
 
 VermilionCity_Text_BoardSeagallopFerry::

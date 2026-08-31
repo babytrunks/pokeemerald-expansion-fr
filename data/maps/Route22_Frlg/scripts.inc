@@ -240,7 +240,7 @@ Route22_EventScript_LeagueGateSign::
 	end
 
 Route22_Text_EarlyRivalIntro::
-	.string "{COLOR BLUE}Hey! {PLAYER}!\p"
+	.string "Hey! {PLAYER}!\p"
 	.string "You're off to the Pokémon League?\n"
 	.string "Forget about it!\p"
 	.string "You probably don't have any\n"
@@ -255,17 +255,15 @@ Route22_Text_EarlyRivalDefeat::
 	.string "You just lucked out!$"
 
 Route22_Text_EarlyRivalPostBattle::
-	.string "{COLOR BLUE}I heard the Pokémon League is\n"
+	.string "I heard the Pokémon League is\n"
 	.string "crawling with tough trainers.\p"
 	.string "A scrub like you would need\n"
 	.string "something like this to get past\l"
 	.string "them.$"
 
-Route22_Text_ReceivedAnEgg::
-	.string "You received a mysterious Egg.$"
 
 Route22_Text_EarlyRivalPostBattle2::
-	.string "{COLOR BLUE}My gramps sent me a couple of these\n"
+	.string "My gramps sent me a couple of these\n"
 	.string "items he used to stock up on.\p"
 	.string "I figure a dummy like you would be\n"
 	.string "entertained.\p"
@@ -273,7 +271,7 @@ Route22_Text_EarlyRivalPostBattle2::
 	.string "move on!$"
 
 Route22_Text_LateRivalIntro::
-	.string "{COLOR BLUE}What? {PLAYER}!\n"
+	.string "What? {PLAYER}!\n"
 	.string "What a surprise to see you here!\p"
 	.string "So you're going to the Pokémon\n"
 	.string "League?\p"
@@ -288,7 +286,7 @@ Route22_Text_LateRivalDefeat::
 	.string "I was just careless, you!$"
 
 Route22_Text_LateRivalPostBattle::
-	.string "{COLOR BLUE}That loosened me up.\n"
+	.string "That loosened me up.\n"
 	.string "I'm ready for the Pokémon League!\p"
 	.string "{PLAYER}, you need more practice.\p"
 	.string "But hey, you know that!\n"

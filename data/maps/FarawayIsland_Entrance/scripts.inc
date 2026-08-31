@@ -26,10 +26,12 @@ FarawayIsland_Entrance_EventScript_Sailor::
 	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	delay 30
+	hidefollower
 	hideobjectat LOCALID_FARAWAY_ISLAND_SAILOR, MAP_FARAWAY_ISLAND_ENTRANCE
 	setvar VAR_0x8004, LOCALID_FARAWAY_ISLAND_SS_TIDAL
 	call Common_EventScript_FerryDepartIsland
-	warp MAP_LILYCOVE_CITY_HARBOR, 8, 11
+	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 0
+	warp MAP_VERMILION_CITY, 23, 32
 	waitstate
 	release
 	end

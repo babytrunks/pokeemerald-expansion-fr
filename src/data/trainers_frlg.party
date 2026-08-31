@@ -11832,45 +11832,65 @@ AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / 
 Mugshot: Purple
 Boss: Yes
 
-Dewgong
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Hail
-- Safeguard
+Politoed @ Damp Rock
+Nature: Timid
+Ability: Drizzle
+Level: 65
+EVs: 252 HP / 4 Def / 252 Spe
+- Scald
+- Haze
+- Rain Dance
+- Flip Turn
 
-Cloyster
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Spikes
-- Protect
-- Hail
-- Dive
+Ogerpon-Wellspring @ Wellspring Mask
+Nature: Jolly
+Ability: Water Absorb
+Level: 65
+EVs: 252 Atk / 4 Def / 252 Spe
+- Ivy Cudgel
+- Horn Leech
+- Knock Off
+- Play Rough
 
-Slowbro
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Amnesia
-- Yawn
-
-Jynx
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+Swampert @ Swampertite
+Nature: Adamant
+Ability: Torrent 
+Level: 65
+EVs: 252 Atk / 4 Def / 252 Spe
+- Power Up Punch
+- Earthquake
+- Waterfall
 - Ice Punch
-- Double Slap
-- Lovely Kiss
-- Attract
 
-Lapras @ Sitrus Berry
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
+Walking-Wake @ Life Orb
+Nature: Timid
+Ability: Protosynthesis
+Level: 65
+EVs: 4 Def / 252 SpA / 252 Spe
+- Hurricane
+- Hydro Pump
+- Sleep Talk
+- Dragon Pulse
+
+Kyogre @ Blue Orb
+Nature: Timid
+Ability: Pressure
+Level: 65
+EVs: 4 Def / 252 SpA / 252 Spe
+- Water Spout
+- Origin Pulse
+- Thunder
 - Ice Beam
-- Surf
-- Body Slam
+
+Iron-Bundle @ Focus Sash
+Nature: Timid
+Level: 65
+EVs: 4 Def / 252 SpA / 252 Spe
+- Hydro Pump
+- Ice Beam
+- Freeze Dry
+- Flip Turn
+
 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: Bruno
@@ -18728,26 +18748,82 @@ EVs: 4 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
 - Thunder Punch
 
 
-=== TRAINER_PICNICKER_ISABELLE_4 ===
-Name: Isabelle
-Class: Picnicker Frlg
-Pic: Picnicker Frlg
+=== TRAINER_ROUTE_23_BRENDAN ===
+Name: Brendan
+Class: Pkmn Trainer 1
+Pic: Brendan
 Gender: Male
-Music: Girl
+Music: Male
 Double Battle: No
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
+Mugshot: Green
+Boss: Yes
 
-Pidgeotto
-Level: 47
+Deoxys-Attack @ Focus Sash
+Level: 64
+Nature: Naive
+Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 0 HP / 128 Atk / 4 Def / 128 SpA / 0 SpD / 252 Spe
+- Psychic
+- Ice Beam
+- Superpower
+- Extreme Speed
 
-Pidgeotto
-Level: 47
+Jirachi @ Leftovers
+Level: 64
+Nature: Jolly
+Ability: Serene Grace
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 252 HP / 4 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Iron Head
+- U-Turn
+- Body Slam
+- Zen Headbutt
 
-Pidgeot
-Level: 50
+Landorus @ Life Orb
+Level: 65
+Nature: Naive
+Ability: Sand Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 0 Atk / 0 Def / 252 SpA / 0 SpD / 252 Spe
+- Earth Power
+- Rock Slide
+- Sludge Wave
+- Aura Sphere
+
+Zapdos-Galar @ Black Belt
+Level: 64
+Nature: Jolly
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Brave Bird
+- Close Combat
+- U-Turn
+- Blaze Kick
+
+Huntail @ White Herb
+Level: 64
+Nature: Jolly
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Shell Smash
+- Waterfall
+- Crunch
+- Ice Fang
+
+Sceptile @ Sceptilite
+Level: 65
+Nature: Jolly
+Ability: Overgrow
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+EVs: 6 HP / 252 Atk / 0 Def / 0 SpA / 0 SpD / 252 Spe
+- Swords Dance
+- Dragon Claw
+- Leaf Blade
+- Earthquake
 
 === TRAINER_YOUNGSTER_YASU_2 ===
 Name: Yasu

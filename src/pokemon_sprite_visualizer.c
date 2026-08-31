@@ -385,6 +385,7 @@ const u8 gBattleBackgroundNames[][30] =
     [MAP_BATTLE_SCENE_GROUDON]  = _("GROUDON                 "),
     [MAP_BATTLE_SCENE_KYOGRE]   = _("KYOGRE                  "),
     [MAP_BATTLE_SCENE_RAYQUAZA] = _("RAYQUAZA                "),
+    [MAP_BATTLE_SCENE_ELECTRIC] = _("ELECTRIC                "),
 };
 
 const u8 gBattleBackgroundTerrainNames[][26] =
@@ -1000,6 +1001,11 @@ static void LoadBattleBg(u8 battleBgType, enum BattleEnvironments battleEnvironm
         DecompressDataWithHeaderVram(gBattleEnvironmentTilemap_Rayquaza, (void*)(BG_SCREEN_ADDR(26)));
         LoadPalette(gBattleEnvironmentPalette_Rayquaza, 0x20, 0x60);
         break;
+    case MAP_BATTLE_SCENE_ELECTRIC:
+        DecompressDataWithHeaderVram(gBattleEnvironmentTiles_Building, (void*)(BG_CHAR_ADDR(2)));
+        DecompressDataWithHeaderVram(gBattleEnvironmentTilemap_Building, (void*)(BG_SCREEN_ADDR(26)));
+        LoadPalette(gBattleEnvironmentPalette_BuildingElectric, 0x20, 0x60);
+        break;
     }
 }
 
@@ -1032,7 +1038,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
         else
         {
             if (data->battleEnvironment == BATTLE_ENVIRONMENT_GRASS)
-                data->battleBgType = MAP_BATTLE_SCENE_RAYQUAZA;
+                data->battleBgType = MAP_BATTLE_SCENE_ELECTRIC;
             else
                 data->battleEnvironment -= 1;
         }
@@ -1047,7 +1053,7 @@ static void UpdateBattleBg(u8 taskId, bool8 increment)
             data->battleEnvironment = BATTLE_ENVIRONMENT_PLAIN;
         }
     }
-    else if (data->battleBgType == MAP_BATTLE_SCENE_RAYQUAZA)
+    else if (data->battleBgType == MAP_BATTLE_SCENE_ELECTRIC)
     {
         if (increment)
         {

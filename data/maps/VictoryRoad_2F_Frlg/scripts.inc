@@ -4,12 +4,33 @@ VictoryRoad_2F_Frlg_MapScripts::
 	.byte 0
 
 VictoryRoad_2F_OnTransition::
-	specialvar VAR_RESULT, IsPlayerTrainerIdEven
-	call_if_eq VAR_RESULT, TRUE, VictoryRoad_2F_EventScript_SetUrshifuRapidStrikeGfx
-	call_if_eq VAR_RESULT, FALSE, VictoryRoad_2F_EventScript_SetUrshifuSingleStrikeGfx
+	call_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_UNSET, VictoryRoad_2F_EventScript_SeedUrshifuForm
+	call_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_RAPID_STRIKE, VictoryRoad_2F_EventScript_SetUrshifuRapidStrikeGfx
+	call_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_SINGLE_STRIKE, VictoryRoad_2F_EventScript_SetUrshifuSingleStrikeGfx
 	end
 
-@ Even trainer IDs get Rapid Strike odd ones get Single Strike
+@ Even trainer IDs start on Rapid Strike odd ones start on Single Strike
+VictoryRoad_2F_EventScript_SeedUrshifuForm::
+	specialvar VAR_RESULT, IsPlayerTrainerIdEven
+	call_if_eq VAR_RESULT, TRUE, VictoryRoad_2F_EventScript_SetFormRapidStrike
+	call_if_eq VAR_RESULT, FALSE, VictoryRoad_2F_EventScript_SetFormSingleStrike
+	return
+
+@ Called from the Champions Room so each League win brings the other form back
+VictoryRoad_2F_EventScript_RespawnUrshifu::
+	clearflag FLAG_HIDE_VICTORY_ROAD_URSHIFU
+	goto_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_RAPID_STRIKE, VictoryRoad_2F_EventScript_SetFormSingleStrike
+	goto VictoryRoad_2F_EventScript_SetFormRapidStrike
+
+@ Both of these return to whoever called or jumped in
+VictoryRoad_2F_EventScript_SetFormRapidStrike::
+	setvar VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_RAPID_STRIKE
+	return
+
+VictoryRoad_2F_EventScript_SetFormSingleStrike::
+	setvar VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_SINGLE_STRIKE
+	return
+
 VictoryRoad_2F_EventScript_SetUrshifuRapidStrikeGfx::
 	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(URSHIFU_RAPID_STRIKE)
 	return
@@ -103,13 +124,12 @@ VictoryRoad_2F_EventScript_Vincent::
 	msgbox VictoryRoad_2F_Text_VincentPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-@ Same parity check as the on transition graphics so both always agree
+@ Reads the same var as the on transition graphics so both always agree
 VictoryRoad_2F_EventScript_Urshifu::
 	lock
 	faceplayer
-	specialvar VAR_RESULT, IsPlayerTrainerIdEven
-	goto_if_eq VAR_RESULT, TRUE, VictoryRoad_2F_EventScript_UrshifuRapidStrike
-	goto VictoryRoad_2F_EventScript_UrshifuSingleStrike
+	goto_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_SINGLE_STRIKE, VictoryRoad_2F_EventScript_UrshifuSingleStrike
+	goto VictoryRoad_2F_EventScript_UrshifuRapidStrike
 	end
 
 VictoryRoad_2F_EventScript_UrshifuRapidStrike::

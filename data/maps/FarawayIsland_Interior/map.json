@@ -11,12 +11,14 @@
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
+  "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_FARAWAY_ISLAND_MEW",
-      "graphics_id": "OBJ_EVENT_GFX_MEW",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(JIRACHI)",
       "x": 13,
       "y": 17,
       "elevation": 3,

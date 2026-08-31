@@ -11,6 +11,7 @@ const u16 gBattleEnvironmentPalette_Groudon[] = INCBIN_U16("graphics/battle_envi
 const u16 gBattleEnvironmentPalette_BuildingGym[] = INCBIN_U16("graphics/battle_environment/building/palette2.gbapal");
 const u16 gBattleEnvironmentPalette_BuildingAqua[] = INCBIN_U16("graphics/battle_environment/building/palette4.gbapal");
 const u16 gBattleEnvironmentPalette_BuildingMagma[] = INCBIN_U16("graphics/battle_environment/building/palette5.gbapal");
+const u16 gBattleEnvironmentPalette_BuildingElectric[] = INCBIN_U16("graphics/battle_environment/building/palette6.gbapal");
 const u16 gBattleEnvironmentPalette_StadiumLeader[] = INCBIN_U16("graphics/battle_environment/stadium/palette8.gbapal");
 const u16 gBattleEnvironmentPalette_StadiumSidney[] = INCBIN_U16("graphics/battle_environment/stadium/palette3.gbapal");
 const u16 gBattleEnvironmentPalette_StadiumPhoebe[] = INCBIN_U16("graphics/battle_environment/stadium/palette4.gbapal");

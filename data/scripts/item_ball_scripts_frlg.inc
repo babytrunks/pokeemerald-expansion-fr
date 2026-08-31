@@ -395,9 +395,6 @@ VictoryRoad_1F_EventScript_ItemTM02::
 	finditem ITEM_TM02
 	end
 
-VictoryRoad_2F_EventScript_ItemGuardSpec::
-	finditem ITEM_GUARD_SPEC
-	end
 
 VictoryRoad_2F_EventScript_ItemTM07::
 	finditem ITEM_TM07

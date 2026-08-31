@@ -185,8 +185,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 59,
-      "y": 8,
+      "x": 23,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -209,6 +209,20 @@
       "trainer_sight_or_berry_tree_id": "ITEM_DELPHOXITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_ROUTE13_DELPHOXITE"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
+      "x": 59,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_AGGRONITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_ROUTE13_AGGRONITE"
     }
   ],
   "warp_events": [],
@@ -247,16 +261,6 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route13_EventScript_TrainerTips1"
-    },
-    {
-      "type": "hidden_item",
-      "x": 23,
-      "y": 14,
-      "elevation": 3,
-      "item": "ITEM_PP_UP",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE13_PP_UP",
-      "quantity": 1,
-      "underfoot": false
     }
   ],
   "region": "REGION_KANTO"

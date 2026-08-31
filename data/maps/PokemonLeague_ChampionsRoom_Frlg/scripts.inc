@@ -61,6 +61,7 @@ PokemonLeague_ChampionsRoom_EventScript_EnterRoom::
 	clearflag FLAG_TEMP_5
 	setflag FLAG_DEFEATED_CHAMP
 	setflag FLAG_TEMP_4
+	call VictoryRoad_2F_EventScript_RespawnUrshifu
 	msgbox PokemonLeague_ChampionsRoom_Text_PostBattle
 	playbgm MUS_RG_SLOW_PALLET, 0
 	addobject LOCALID_CHAMPIONS_ROOM_PROF_OAK

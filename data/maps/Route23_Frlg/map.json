@@ -197,7 +197,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_112_SHUCA",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_111_YACHE",
       "script": "BerryTreeScript",
       "flag": "0"
     },
@@ -214,6 +214,35 @@
       "trainer_sight_or_berry_tree_id": "ITEM_SALAMENCITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_HIDE_ITEM_ROUTE23_SALAMENCITE"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_MEGA_STONE",
+      "x": 9,
+      "y": 8,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_METAGROSSITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_HIDE_INDIGO_PLATEAU_METAGROSSITE"
+    },
+    {
+      "local_id": "LOCALID_ROUTE_23_BRENDAN",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 5,
+      "y": 37,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_HIDE_ROUTE_22_RIVAL"
     }
   ],
   "warp_events": [
@@ -624,6 +653,15 @@
       "var": "VAR_MAP_SCENE_ROUTE23",
       "var_value": "1",
       "script": "Route23_EventScript_CascadeBadgeGuardTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_MAP_SCENE_ROUTE23_BRENDAN",
+      "var_value": "0",
+      "script": "Route23_EventScript_BrendanTrigger"
     }
   ],
   "bg_events": [

@@ -576,6 +576,8 @@ enum BattleEnvironments
     BATTLE_ENVIRONMENT_DISTORTION_WORLD,
     BATTLE_ENVIRONMENT_SPACE,
     BATTLE_ENVIRONMENT_ULTRA_SPACE,
+    // Background only environments, selected per map via battle_scene
+    BATTLE_ENVIRONMENT_ELECTRIC,
     BATTLE_ENVIRONMENT_COUNT,
 };
 

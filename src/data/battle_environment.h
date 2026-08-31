@@ -419,6 +419,18 @@ const struct BattleEnvironment gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COUNT] 
         .secretPowerEffect = MOVE_EFFECT_DEF_MINUS_1,
         .camouflageType = TYPE_PSYCHIC,
     },
+
+    [BATTLE_ENVIRONMENT_ELECTRIC] =
+    {
+        .background =
+        {
+            .tileset = gBattleEnvironmentTiles_Building,
+            .tilemap = gBattleEnvironmentTilemap_Building,
+            .entryTileset = gBattleEnvironmentAnimTiles_Building,
+            .entryTilemap = gBattleEnvironmentAnimTilemap_Building,
+            .palette = gBattleEnvironmentPalette_BuildingElectric,
+        },
+    },
 };
 
 static const struct {
@@ -432,5 +444,8 @@ static const struct {
     {MAP_BATTLE_SCENE_PHOEBE,   BATTLE_ENVIRONMENT_PHOEBE},
     {MAP_BATTLE_SCENE_GLACIA,   BATTLE_ENVIRONMENT_GLACIA},
     {MAP_BATTLE_SCENE_DRAKE,    BATTLE_ENVIRONMENT_DRAKE},
-    {MAP_BATTLE_SCENE_FRONTIER, BATTLE_ENVIRONMENT_FRONTIER}
+    {MAP_BATTLE_SCENE_FRONTIER, BATTLE_ENVIRONMENT_FRONTIER},
+    {MAP_BATTLE_SCENE_MOUNTAIN, BATTLE_ENVIRONMENT_MOUNTAIN},
+    {MAP_BATTLE_SCENE_ELECTRIC, BATTLE_ENVIRONMENT_ELECTRIC},
+    {MAP_BATTLE_SCENE_LONG_GRASS, BATTLE_ENVIRONMENT_LONG_GRASS}
 };
