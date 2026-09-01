@@ -2,15 +2,19 @@
 #include "auto_nickname.h"
 #include "battle.h"
 #include "battle_gfx_sfx_util.h"
+#include "battle_main.h"
+#include "battle_setup.h"
 #include "berry.h"
 #include "data.h"
 #include "daycare.h"
 #include "decompress.h"
 #include "event_data.h"
+#include "event_object_movement.h"
 #include "international_string_util.h"
 #include "item.h"
 #include "link.h"
 #include "link_rfu.h"
+#include "load_save.h"
 #include "main.h"
 #include "menu.h"
 #include "overworld.h"
@@ -28,6 +32,7 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 #include "constants/battle_frontier.h"
+#include "constants/opponents.h"
 #include "pokevial.h" //Pokevial Branch
 #include "randomizer.h"
 
@@ -259,6 +264,50 @@ void ReducePlayerPartyToSelectedMons(void)
         gPlayerParty[i] = party[i];
 
     CalculatePlayerPartyCount();
+}
+
+// Puzzle battle, the player borrows a fixed team and fights a fixed team
+// The real party lives in the saveblock backup for the whole sequence
+// Every script exit path must call PuzzleBattle_End or the party is lost
+// Losing runs HealPlayerParty, which also tops up the vial, so snapshot the dose
+static u16 sPuzzleBattleSavedVialDose;
+
+void PuzzleBattle_Begin(void)
+{
+    sPuzzleBattleSavedVialDose = VarGet(VAR_POKEVIAL_CURRENT_DOSE);
+    // Levelling up mid battle would change the puzzle, the loaners are discarded anyway
+    FlagSet(B_FLAG_NO_EXP);
+    RemoveFollowingPokemon();
+    SavePlayerParty();
+}
+
+// gSpecialVar_0x8004 holds the trainer id whose party to load into gPlayerParty
+// Deterministic, so it can be called again to swap between the two puzzle teams
+void PuzzleBattle_LoadTeam(void)
+{
+    u16 trainerId = gSpecialVar_0x8004;
+
+    ZeroPlayerPartyMons();
+    CreateNPCTrainerPartyFromTrainer(gPlayerParty, GetTrainerStructFromId(trainerId), TRUE, BATTLE_TYPE_TRAINER, trainerId, 0);
+    CalculatePlayerPartyCount();
+}
+
+// Same as ChooseHalfPartyForBattle but forces exactly 3 and allows duplicate held items
+void ChoosePuzzleBattleParty(void)
+{
+    gMain.savedCallback = CB2_ReturnFromChooseHalfParty;
+    VarSet(VAR_FRONTIER_FACILITY, FACILITY_PUZZLE_BATTLE);
+    InitChooseHalfPartyForBattle(0);
+}
+
+void PuzzleBattle_End(void)
+{
+    FlagClear(B_FLAG_NO_EXP);
+    VarSet(VAR_POKEVIAL_CURRENT_DOSE, sPuzzleBattleSavedVialDose);
+    LoadPlayerParty();
+    ClearSelectedPartyOrder();
+    ClearTrainerFlag(TRAINER_PUZZLE_BATTLE_OPP_TEAM_1);
+    UpdateFollowingPokemon();
 }
 
 void CanHyperTrain(struct ScriptContext *ctx)

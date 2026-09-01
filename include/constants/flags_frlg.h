@@ -1117,7 +1117,7 @@
 #define FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_PECHA_BERRY                        (FLAG_HIDDEN_ITEMS_START + 120)
 #define FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHERI_BERRY                        (FLAG_HIDDEN_ITEMS_START + 121)
 #define FLAG_HIDDEN_ITEM_SSANNE_KITCHEN_CHESTO_BERRY                       (FLAG_HIDDEN_ITEMS_START + 122)
-#define FLAG_HIDDEN_ITEM_ROUTE9_RARE_CANDY                                 (FLAG_HIDDEN_ITEMS_START + 123)
+#define FLAG_HIDE_ITEM_ROUTE9_RARE_CANDY                                   (FLAG_HIDDEN_ITEMS_START + 123)
 #define FLAG_HIDDEN_ITEM_UNUSED_0x7C                                       (FLAG_HIDDEN_ITEMS_START + 124)
 #define FLAG_HIDDEN_ITEM_ROUTE10_PERSIM_BERRY                              (FLAG_HIDDEN_ITEMS_START + 125)
 #define FLAG_HIDDEN_ITEM_ROUTE10_CHERI_BERRY                               (FLAG_HIDDEN_ITEMS_START + 126)
@@ -1248,9 +1248,9 @@
 #define FLAG_GOT_STARAPTITE_FROM_ELBEIN 0x4DF
 #define FLAG_HIDE_VICTORY_ROAD_URSHIFU           0x4E0
 // 0x4E1 is claimed by FLAG_ENABLE_SHIP_FARAWAY_ISLAND further down this file
-#define FLAG_0x4E2               0x4E2
-#define FLAG_0x4E3               0x4E3
-#define FLAG_0x4E4               0x4E4
+#define FLAG_MOVE_RELEARNER_UNLOCKED             0x4E2
+#define FLAG_PUZZLE_BATTLE_1_SOLVED              0x4E3
+#define FLAG_DISABLE_EXP                         0x4E4
 #define FLAG_0x4E5               0x4E5
 #define FLAG_0x4E6               0x4E6
 #define FLAG_0x4E7               0x4E7

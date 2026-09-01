@@ -651,3 +651,8 @@ gSpecials::
     def_special PokevialRefill
 	def_special CheckAddCoins
 	def_special GetPlayerSoundMovesUsed
+	def_special PuzzleBattle_Begin
+	def_special PuzzleBattle_LoadTeam
+	def_special ChoosePuzzleBattleParty
+	def_special PuzzleBattle_End
+	def_special ShowPuzzleBattleTeam

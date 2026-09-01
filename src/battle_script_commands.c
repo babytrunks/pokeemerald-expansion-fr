@@ -4414,7 +4414,9 @@ FEATURE_FLAG_ASSERT(I_EXP_SHARE_FLAG, YouNeedToSetTheExpShareFlagToAnUnusedFlag)
 
 static bool32 BattleTypeAllowsExp(void)
 {
-    if (RECORDED_WILD_BATTLE)
+    if (B_FLAG_NO_EXP != 0 && FlagGet(B_FLAG_NO_EXP))
+        return FALSE;
+    else if (RECORDED_WILD_BATTLE)
         return TRUE;
     else if (gBattleTypeFlags &
               ( BATTLE_TYPE_LINK

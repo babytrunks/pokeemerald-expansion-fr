@@ -623,21 +623,22 @@ void BattleLoadMonSpriteGfx(struct Pokemon *mon, u32 battler)
         return;
 
     isShiny = GetMonData(mon, MON_DATA_IS_SHINY);
+    species = GetMonData(mon, MON_DATA_SPECIES);
+    personalityValue = GetMonData(mon, MON_DATA_PERSONALITY);
 
-    if (gBattleSpritesDataPtr->battlerData[battler].transformSpecies == SPECIES_NONE)
-    {
-        species = GetMonData(mon, MON_DATA_SPECIES);
-        personalityValue = GetMonData(mon, MON_DATA_PERSONALITY);
-    }
-    else
+    if (gBattleSpritesDataPtr->battlerData[battler].transformSpecies != SPECIES_NONE)
     {
         species = gBattleSpritesDataPtr->battlerData[battler].transformSpecies;
         // If battler has Gigantamax factor, try convert gfx to G-Max version
         if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX && GetMonData(mon, MON_DATA_GIGANTAMAX_FACTOR))
             gBattleSpritesDataPtr->battlerData[battler].transformSpecies = species = GetGMaxTargetSpecies(species);
 
-        personalityValue = gTransformedPersonalities[battler];
-        isShiny = gTransformedShininess[battler];
+        // Only a real Transform borrows another mons look form changes keep their own
+        if (gBattleMons[battler].volatiles.transformed)
+        {
+            personalityValue = gTransformedPersonalities[battler];
+            isShiny = gTransformedShininess[battler];
+        }
     }
 
     position = GetBattlerPosition(battler);
@@ -647,13 +648,11 @@ void BattleLoadMonSpriteGfx(struct Pokemon *mon, u32 battler)
 
     paletteOffset = OBJ_PLTT_ID(battler);
 
-    if (gBattleSpritesDataPtr->battlerData[battler].transformSpecies == SPECIES_NONE) {
+    if (gBattleSpritesDataPtr->battlerData[battler].transformSpecies == SPECIES_NONE)
         paletteData = GetMonFrontSpritePal(mon);
-    }
     else
         paletteData = GetMonSpritePalFromSpeciesAndPersonality(species, isShiny, personalityValue);
 
-    // DebugPrintf("BattleLoadMonSpriteGfx: battler=%d species=%d paletteData=%p [0]=%04x", battler, species, paletteData, paletteData ? paletteData[0] : 0);
     LoadPalette(paletteData, paletteOffset, PLTT_SIZE_4BPP);
     LoadPalette(paletteData, BG_PLTT_ID(8) + BG_PLTT_ID(battler), PLTT_SIZE_4BPP);
 

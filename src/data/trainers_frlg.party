@@ -19292,7 +19292,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Final Gambit
 - Infestation
 
-Fletchling @ Big Pecks
+Fletchling
 Level: 5
 Nature: Bashful
 Ability: Big Pecks
@@ -19306,8 +19306,8 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 
 === TRAINER_PUZZLE_BATTLE_OPP_TEAM_1 ===
 Name: Coach
-Class: Cooltrainer M
-Pic: Gambler Frlg
+Class: Gentleman Frlg
+Pic: Gentleman Frlg
 Gender: Male
 Music: Male
 Double Battle: No
@@ -19353,7 +19353,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - X-Scissor
 - Shadow Sneak
 
-Shedinja @ Heavy Duty Boots 
+Shedinja @ Heavy Duty Boots
 Level: 100
 Nature: Jolly
 Ability: Wonder Guard

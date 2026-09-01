@@ -106,6 +106,7 @@ Info taken from https://bulbapedia.bulbagarden.net/wiki/Stats_judge.
 
 // Move Relearner summary screen
 #define P_SUMMARY_SCREEN_MOVE_RELEARNER  TRUE   // If TRUE, shows an option for Pokémon to relearn moves on the summary screen moves page.
+#define P_FLAG_SUMMARY_MOVE_RELEARNER    FLAG_MOVE_RELEARNER_UNLOCKED // If nonzero, the summary screen relearner only appears once this flag is set. Set by the Cerulean puzzle battle.
 #define P_SUMMARY_MOVE_RELEARNER_FULL_PP TRUE   // If TRUE, the move relearner in the summary screen restores relearned moves' PP to full.
 
 // Move Relearner party menu

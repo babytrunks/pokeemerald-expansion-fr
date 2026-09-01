@@ -585,6 +585,8 @@ static void Task_PartyMenuWaitForFade(u8 taskId);
 static void Task_ChooseContestMon(u8 taskId);
 static void CB2_ChooseContestMon(void);
 static void Task_ChoosePartyMon(u8 taskId);
+static void Task_ShowPuzzleBattleTeam(u8 taskId);
+static void CB2_ReturnFromPuzzleTeamView(void);
 static void Task_ChooseMonForMoveRelearner(u8);
 static void CB2_ChooseMonForMoveRelearner(void);
 static void Task_BattlePyramidChooseMonHeldItems(u8);
@@ -3894,6 +3896,10 @@ static u8 GetPartyMenuActionsType(struct Pokemon *mon)
     case PARTY_MENU_TYPE_STORE_PYRAMID_HELD_ITEMS:
         actionType = ACTIONS_TAKEITEM_TOSS;
         break;
+    // Read only viewer, no item or slot changes are reachable
+    case PARTY_MENU_TYPE_PUZZLE_SHOWCASE:
+        actionType = ACTIONS_SUMMARY_ONLY;
+        break;
     // The following have no selection actions (i.e. they exit immediately upon selection)
     // PARTY_MENU_TYPE_CONTEST
     // PARTY_MENU_TYPE_CHOOSE_MON
@@ -4013,7 +4019,7 @@ static void CB2_ShowPokemonSummaryScreen(void)
         else
             ShowPokemonSummaryScreen(SUMMARY_MODE_LOCK_MOVES, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
-    else if (gPartyMenu.menuType == PARTY_MENU_TYPE_CHOOSE_HALF)
+    else if (gPartyMenu.menuType == PARTY_MENU_TYPE_CHOOSE_HALF || gPartyMenu.menuType == PARTY_MENU_TYPE_PUZZLE_SHOWCASE)
     {
         ShowPokemonSummaryScreen(SUMMARY_MODE_LOCK_MOVES, gPlayerParty, gPartyMenu.slotId, gPlayerPartyCount - 1, CB2_ReturnToPartyMenuFromSummaryScreen);
     }
@@ -9533,6 +9539,7 @@ static bool8 GetBattleEntryEligibility(struct Pokemon *mon)
     switch (VarGet(VAR_FRONTIER_FACILITY))
     {
     case FACILITY_MULTI_OR_EREADER:
+    case FACILITY_PUZZLE_BATTLE:
         if (GetMonData(mon, MON_DATA_HP) != 0)
             return TRUE;
         return FALSE;
@@ -9565,7 +9572,8 @@ static const u8 *CheckBattleEntriesAndGetMessage(void)
     }
 
     facility = VarGet(VAR_FRONTIER_FACILITY);
-    if (facility == FACILITY_UNION_ROOM || facility == FACILITY_MULTI_OR_EREADER)
+    // The puzzle battle skips the dupe species and dupe held item checks, its loaner team has two Eviolites
+    if (facility == FACILITY_UNION_ROOM || facility == FACILITY_MULTI_OR_EREADER || facility == FACILITY_PUZZLE_BATTLE)
         return NULL;
 
     maxBattlers = GetMaxBattleEntries();
@@ -9629,6 +9637,7 @@ static u8 GetMaxBattleEntries(void)
     switch (VarGet(VAR_FRONTIER_FACILITY))
     {
     case FACILITY_MULTI_OR_EREADER:
+    case FACILITY_PUZZLE_BATTLE:
         return MULTI_PARTY_SIZE;
     case FACILITY_UNION_ROOM:
         return UNION_ROOM_PARTY_SIZE;
@@ -9641,6 +9650,8 @@ static u8 GetMinBattleEntries(void)
 {
     switch (VarGet(VAR_FRONTIER_FACILITY))
     {
+    case FACILITY_PUZZLE_BATTLE: // Must pick exactly 3
+        return MULTI_PARTY_SIZE;
     case FACILITY_MULTI_OR_EREADER:
         return 1;
     case FACILITY_UNION_ROOM:
@@ -9655,6 +9666,7 @@ static u8 GetBattleEntryLevelCap(void)
     switch (VarGet(VAR_FRONTIER_FACILITY))
     {
     case FACILITY_MULTI_OR_EREADER:
+    case FACILITY_PUZZLE_BATTLE:
         return MAX_LEVEL;
     case FACILITY_UNION_ROOM:
         return UNION_ROOM_MAX_LEVEL;
@@ -9669,7 +9681,7 @@ static const u8 *GetFacilityCancelString(void)
 {
     u8 facilityNum = VarGet(VAR_FRONTIER_FACILITY);
 
-    if (!(facilityNum != FACILITY_UNION_ROOM && facilityNum != FACILITY_MULTI_OR_EREADER))
+    if (facilityNum == FACILITY_UNION_ROOM || facilityNum == FACILITY_MULTI_OR_EREADER || facilityNum == FACILITY_PUZZLE_BATTLE)
         return gText_CancelBattle;
     else if (facilityNum == FRONTIER_FACILITY_DOME && gSpecialVar_0x8005 == 2)
         return gText_ReturnToWaitingRoom;
@@ -10369,6 +10381,31 @@ static void Task_ChoosePartyMon(u8 taskId)
         InitPartyMenu(PARTY_MENU_TYPE_CHOOSE_MON, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_AND_CLOSE, FALSE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, BufferMonSelection);
         DestroyTask(taskId);
     }
+}
+
+// Script special, opens a read only view of whatever party is currently in gPlayerParty
+void ShowPuzzleBattleTeam(void)
+{
+    LockPlayerFieldControls();
+    FadeScreen(FADE_TO_BLACK, 0);
+    CreateTask(Task_ShowPuzzleBattleTeam, 10);
+}
+
+static void Task_ShowPuzzleBattleTeam(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        CleanupOverworldWindowsAndTilemaps();
+        InitPartyMenu(PARTY_MENU_TYPE_PUZZLE_SHOWCASE, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, FALSE, PARTY_MSG_CHOOSE_MON, Task_HandleChooseMonInput, CB2_ReturnFromPuzzleTeamView);
+        DestroyTask(taskId);
+    }
+}
+
+// Deliberately does not touch gSpecialVar_0x8004, the script keeps a trainer id there
+static void CB2_ReturnFromPuzzleTeamView(void)
+{
+    gFieldCallback2 = CB2_FadeFromPartyMenu;
+    SetMainCallback2(CB2_ReturnToField);
 }
 
 void ChooseMonForMoveRelearner(void)

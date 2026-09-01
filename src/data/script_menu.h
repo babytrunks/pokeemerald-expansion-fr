@@ -1049,6 +1049,13 @@ static const struct MenuAction sMultichoiceList_TrainerTowerMode[] = {
     { gText_Exit }
 };
 
+static const struct MenuAction sMultichoiceList_PuzzleBattle[] = {
+    { COMPOUND_STRING("View Your Team") },
+    { COMPOUND_STRING("View Opp. Team") },
+    { COMPOUND_STRING("Explain Rules") },
+    { COMPOUND_STRING("Start Battle") }
+};
+
 static const struct MenuAction sMultichoiceList_TrainerCardIconTint[] = {
     { gText_Normal },
     { gText_DexSearchColorBlack },
@@ -1271,6 +1278,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_HOF_VICTORIES_QUIT]                         = MULTICHOICE(sMultichoiceList_HOF_Victories_Quit),
     [MULTI_EGGS_VICTORIES_QUIT]                        = MULTICHOICE(sMultichoiceList_Eggs_Victories_Quit),
     [MULTI_HOF_EGGS_VICTORIES_QUIT]                    = MULTICHOICE(sMultichoiceList_HOF_Eggs_Victories_Quit),
+    [MULTI_PUZZLE_BATTLE]                              = MULTICHOICE(sMultichoiceList_PuzzleBattle),
 };
 
 const u8 *const gStdStrings[] =

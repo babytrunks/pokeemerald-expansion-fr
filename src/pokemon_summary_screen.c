@@ -5206,6 +5206,7 @@ static void KeepMoveSelectorVisible(u8 firstSpriteId)
 static inline bool32 ShouldShowMoveRelearner(void)
 {
     return (P_SUMMARY_SCREEN_MOVE_RELEARNER
+         && (P_FLAG_SUMMARY_MOVE_RELEARNER == 0 || FlagGet(P_FLAG_SUMMARY_MOVE_RELEARNER))
          && !sMonSummaryScreen->lockMovesFlag
          && !sMonSummaryScreen->isBoxMon
          && sMonSummaryScreen->mode != SUMMARY_MODE_BOX
