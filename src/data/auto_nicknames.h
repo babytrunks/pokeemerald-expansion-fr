@@ -231,7 +231,7 @@ static const u8 *const sAutoNicknamesNeutral[] =
     COMPOUND_STRING("Cowardly"), COMPOUND_STRING("Junk"), COMPOUND_STRING("Yada Yada"), COMPOUND_STRING("Boone"),
     COMPOUND_STRING("Boss Baby"), COMPOUND_STRING("Born Rich"), COMPOUND_STRING("Brainrotted"), COMPOUND_STRING("Ayy Lmao"),
     COMPOUND_STRING("Crit"), 
-    COMPOUND_STRING("Yolo"),
+    COMPOUND_STRING("Yolo"),     COMPOUND_STRING("DaejonLove"),
     COMPOUND_STRING("Jailed"), COMPOUND_STRING("Boo Boo"),
     COMPOUND_STRING("OmaeMou"), COMPOUND_STRING("Covfefe"), COMPOUND_STRING("Giggles"), COMPOUND_STRING("Clueless"),
     COMPOUND_STRING("NANI?"), COMPOUND_STRING("Doodoohead"), 
