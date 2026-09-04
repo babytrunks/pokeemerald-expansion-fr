@@ -639,6 +639,9 @@ enum BattleEnvironments
 // Flag for BattlePutTextOnWindow. Never set
 #define B_WIN_COPYTOVRAM (1 << 7)
 
+// Flag for BattlePutTextOnWindow, prints the message in the text box red
+#define B_WIN_TEXT_RED (1 << 6)
+
 // Indicator for the party summary bar to display an empty slot.
 #define HP_EMPTY_SLOT 0xFFFF
 

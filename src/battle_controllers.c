@@ -2583,8 +2583,9 @@ void BtlController_HandlePrintString(u32 battler)
     // if (BattleStringShouldBeColored(*stringId))
     //     BattlePutTextOnWindow(gDisplayedStringBattle, (B_WIN_MSG | B_TEXT_FLAG_NPC_CONTEXT_FONT));
     // else
-        BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MSG);
-        
+        BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MSG | (ShouldPrintBattleStringInRed(*stringId) ? B_WIN_TEXT_RED : 0));
+
+
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && GetBattlerSide(battler) == B_SIDE_OPPONENT)
     {
         switch (*stringId)

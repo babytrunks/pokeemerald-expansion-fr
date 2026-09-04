@@ -3556,12 +3556,35 @@ static void UNUSED ChooseTypeOfMoveUsedString(u8 *dst)
     }
 }
 
+// Both the BW and the gen3 text box palettes keep a red at 2 and a near black at 9
+#define TEXT_RED_FG_COLOR     2
+#define TEXT_RED_SHADOW_COLOR 9
+
+// Battle messages worth calling out get printed in the text box red
+bool32 ShouldPrintBattleStringInRed(enum StringID stringId)
+{
+    switch (stringId)
+    {
+    case STRINGID_CRITICALHIT:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 void BattlePutTextOnWindow(const u8 *text, u8 windowId)
 {
     const struct BattleWindowText *textInfo = sBattleTextOnWindowsInfo[gBattleScripting.windowsType];
     bool32 copyToVram;
     struct TextPrinterTemplate printerTemplate;
     u8 speed;
+    bool32 redText = FALSE;
+
+    if (windowId & B_WIN_TEXT_RED)
+    {
+        windowId &= ~B_WIN_TEXT_RED;
+        redText = TRUE;
+    }
 
     // The BW action box is a blitted bitmap rather than printed text, and the
     // move box draws its own PP/type/prompt, so those windows are handled here.
@@ -3608,6 +3631,12 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
     printerTemplate.fgColor = textInfo[windowId].fgColor;
     printerTemplate.bgColor = textInfo[windowId].bgColor;
     printerTemplate.shadowColor = textInfo[windowId].shadowColor;
+
+    if (redText)
+    {
+        printerTemplate.fgColor = TEXT_RED_FG_COLOR;
+        printerTemplate.shadowColor = TEXT_RED_SHADOW_COLOR;
+    }
 
     if (B_WIN_MOVE_NAME_1 <= windowId && windowId <= B_WIN_MOVE_NAME_4)
     {
