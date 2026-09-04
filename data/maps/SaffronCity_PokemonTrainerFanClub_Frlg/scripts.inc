@@ -415,11 +415,14 @@ SaffronCity_PokemonTrainerFanClub_EventScript_PomAskRematch::
 SaffronCity_PokemonTrainerFanClub_EventScript_PomBattle::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_PomLetTheMusicPlay
 	closemessage
+	@ The hall makes every Sound move hit, for both sides
+	setflag FLAG_SOUND_MOVES_NEVER_MISS
 	trainerbattle_earlyrival TRAINER_SAFFRON_POM, RIVAL_BATTLE_HEAL_AFTER, SaffronCity_PokemonTrainerFanClub_Text_PomDefeat, SaffronCity_PokemonTrainerFanClub_Text_PomVictory
 	goto SaffronCity_PokemonTrainerFanClub_EventScript_PomJudgeBattle
 	end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_PomJudgeBattle::
+	clearflag FLAG_SOUND_MOVES_NEVER_MISS
 	@ earlyrival sets VAR_RESULT to TRUE when the player lost
 	goto_if_eq VAR_RESULT, TRUE, SaffronCity_PokemonTrainerFanClub_EventScript_PomQuestFailed
 	specialvar VAR_RESULT, GetPlayerSoundMovesUsed
@@ -786,80 +789,100 @@ SaffronCity_PokemonTrainerFanClub_Text_NeverBeFanOfAnyoneButMaster::
     .string "Hiyah!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_MeloettaIsDepressed::
-    .string "Oh… hello.\p"
-    .string "I'm Pom. I sing with my Pokémon,\n"
-    .string "but lately my Meloetta won't sing\l"
-    .string "a single note.\p"
-    .string "It just stares at the floor.\n"
-    .string "I've tried everything…\p"
-    .string "But I had a thought!\n"
-    .string "Meloetta lives for music.\p"
-    .string "If we had a battle overflowing\n"
-    .string "with sound, maybe the song would\l"
-    .string "come back to it.\p"
-    .string "So here's my request.\p"
-    .string "Beat me, and use four different\n"
-    .string "Sound moves while you do it.\p"
-    .string "Growl, Hyper Voice, Sing…\n"
-    .string "anything, so long as it's loud!\p"
-    .string "Will you play along?$"
+    .string "Greetings, my name is Azalee,\n"
+    .string "pleased to make your acquaintance.\p"
+    .string "I came to Kanto in the company of\n"
+    .string "my dearest friend, Meloetta, in\l"
+    .string "search of new musical experiences.\p"
+    .string "Alas, Meloetta has been feeling\n"
+    .string "terribly distressed for some time\l"
+    .string "now, noticing the dire state of\l"
+    .string "music in our modern era.\p"
+    .string "It won't even sing anymore!\p"
+    .string "If it's not too impertinent to ask,\n"
+    .string "could you do me a favor?\p"
+    .string "Let us have a musical battle.\n"
+    .string "Defeat me using four different\l"
+    .string "Sound moves in the process.\p"
+    .string "Do take heed, though.\n"
+    .string "This hall is consecrated to music.\p"
+    .string "Within these walls no Sound move\n"
+    .string "can ever falter, be it mine or\l"
+    .string "yours. Even Sing never misses.\p"
+    .string "That might rekindle Meloetta's\n"
+    .string "spirit!\p"
+    .string "Are you ready to partake in this\n"
+    .string "concerto?$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomDeclined::
-    .string "That's all right.\p"
-    .string "We'll be here whenever you feel\n"
-    .string "like making some noise.$"
+    .string "Understandable.\p"
+    .string "We'll be here waiting to perform\n"
+    .string "should you change your mind.$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomAskRematch::
+    .string "I'm glad to see you again.\p"
     .string "Meloetta still isn't singing.\p"
-    .string "Remember, four different Sound\n"
-    .string "moves, and you have to win!\p"
+    .string "Remember, you must use four\n"
+    .string "different Sound moves, and you\l"
+    .string "have to win!\p"
+    .string "And recall that no Sound move\n"
+    .string "misses in this hall, mine least\l"
+    .string "of all.\p"
     .string "Shall we try again?$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomLetTheMusicPlay::
-    .string "Wonderful!\p"
-    .string "Meloetta, listen closely.\n"
-    .string "Let the music play!$"
+    .string "Marvellous!\p"
+    .string "And now, if you please, maestro…\n"
+    .string "One… two… three!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomDefeat::
-    .string "What a performance!$"
+    .string "A most exquisite performance. I\n"
+    .string "expected nothing less from you!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomVictory::
-    .string "Oh dear, I got carried away…$"
+    .string "It is natural to have ups and\n"
+    .string "downs. Do not lose confidence.$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomQuestFailed::
-    .string "Hmm…\p"
-    .string "Meloetta is still staring at the\n"
-    .string "floor. That didn't lift its spirits.\p"
-    .string "It has to be four different Sound\n"
-    .string "moves, and you have to come out\l"
-    .string "on top.\p"
-    .string "Come find me when you'd like\n"
-    .string "another go.$"
+    .string "Sigh…\p"
+    .string "It pains me to say this, but\n"
+    .string "Meloetta's heart is not yet healed.\p"
+    .string "You must use four different Sound\n"
+    .string "moves and emerge victorious.\p"
+    .string "Please come to me again when you'd\n"
+    .string "like to have an encore.$"
 
 SaffronCity_PokemonTrainerFanClub_Text_MeloettaLooksCheerful::
-    .string "Wait…\p"
-    .string "Meloetta! You're humming!\p"
-    .string "Look at it. It hasn't looked this\n"
-    .string "cheerful in months!$"
+    .string "Ah, Meloetta, my soul rejoices to\n"
+    .string "see you this blissful.\p"
+    .string "{PLAYER}, we have succeeded!\p"
+    .string "And while it saddens me, I know I\n"
+    .string "must ask you to take Meloetta\l"
+    .string "with you.$"
 
 SaffronCity_PokemonTrainerFanClub_Text_MeloettaJoined::
-    .string "Pom gave you a Meloetta!$"
+    .string "Azalee gave you a Meloetta!$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomThankYou::
-    .string "It's decided.\p"
-    .string "Meloetta wants to hear more of\n"
-    .string "your music, not mine.\p"
-    .string "Take good care of it, and keep\n"
-    .string "the songs coming!$"
+    .string "I'm sure Meloetta will be able to\n"
+    .string "discover a new side to music if it\l"
+    .string "goes on an adventure by your side.\p"
+    .string "Kindly take good care of it.\p"
+    .string "One day, you'll come back to me,\n"
+    .string "will you not, my dear friend?\p"
+    .string "Thus, we part ways.\n"
+    .string "Godspeed, {PLAYER}.$"
 
 SaffronCity_PokemonTrainerFanClub_Text_MeloettaNoRoom::
-    .string "Oh, you've no room for it.\p"
-    .string "I'll hold on to Meloetta.\n"
-    .string "Come back when you've made space.$"
+    .string "Oh dear, you've no room for it.\p"
+    .string "I shall hold on to Meloetta.\n"
+    .string "Return once you've made space.$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomAfterQuest::
-    .string "How is Meloetta doing?\p"
-    .string "I can still hear it singing from\n"
-    .string "here. That's all I wanted.\p"
-    .string "Thank you, truly.$"
+    .string "From time to time, I communicate\n"
+    .string "with Meloetta through psychic\l"
+    .string "waves.\p"
+    .string "Knowing that it's singing happily\n"
+    .string "again is all I ever wanted.\p"
+    .string "You have my perennial gratitude.$"
 

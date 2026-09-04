@@ -1435,6 +1435,13 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
 {
     u8 pageCount = P_SUMMARY_SCREEN_SHOW_CONTEST_MOVES ? PSS_PAGE_COUNT - 1 : PSS_PAGE_COUNT - 2;
 
+    // Runtime check, not #if, so the old screen below stays referenced and does not warn
+    if (SWSH_SUMMARY_SCREEN)
+    {
+        ShowPokemonSummaryScreen_SwSh(mode, mons, monIndex, maxMonIndex, callback);
+        return;
+    }
+
     sMonSummaryScreen = AllocZeroed(sizeof(*sMonSummaryScreen));
     sMonSummaryScreen->mode = mode;
     sMonSummaryScreen->monList.mons = mons;
@@ -1492,12 +1499,24 @@ void ShowPokemonSummaryScreen(u8 mode, void *mons, u8 monIndex, u8 maxMonIndex, 
 
 void ShowSelectMovePokemonSummaryScreen(struct Pokemon *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void), u16 newMove)
 {
+    if (SWSH_SUMMARY_SCREEN)
+    {
+        ShowSelectMovePokemonSummaryScreen_SwSh(mons, monIndex, maxMonIndex, callback, newMove);
+        return;
+    }
+
     ShowPokemonSummaryScreen(SUMMARY_MODE_SELECT_MOVE, mons, monIndex, maxMonIndex, callback);
     sMonSummaryScreen->newMove = newMove;
 }
 
 void ShowPokemonSummaryScreenHandleDeoxys(u8 mode, struct BoxPokemon *mons, u8 monIndex, u8 maxMonIndex, void (*callback)(void))
 {
+    if (SWSH_SUMMARY_SCREEN)
+    {
+        ShowPokemonSummaryScreenHandleDeoxys_SwSh(mode, mons, monIndex, maxMonIndex, callback);
+        return;
+    }
+
     ShowPokemonSummaryScreen(mode, mons, monIndex, maxMonIndex, callback);
     sMonSummaryScreen->handleDeoxys = TRUE;
 }
@@ -3120,6 +3139,9 @@ static void Task_HandleInputCantForgetHMsMoves(u8 taskId)
 
 u8 GetMoveSlotToReplace(void)
 {
+    if (SWSH_SUMMARY_SCREEN)
+        return GetMoveSlotToReplace_SwSh();
+
     return sMoveSlotToReplace;
 }
 
@@ -4992,6 +5014,12 @@ static void SpriteCB_Pokemon(struct Sprite *sprite)
 // Normally destroys itself but it can be interrupted before the animation starts
 void SummaryScreen_SetAnimDelayTaskId(u8 taskId)
 {
+    if (SWSH_SUMMARY_SCREEN)
+    {
+        SummaryScreen_SetAnimDelayTaskId_SwSh(taskId);
+        return;
+    }
+
     sAnimDelayTaskId = taskId;
 }
 

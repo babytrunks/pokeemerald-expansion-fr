@@ -2691,6 +2691,8 @@
 #define FLAG_TEMP_REGICE_PUZZLE_FAILED          FLAG_TEMP_3
 #define FLAG_TEMP_HIDE_FOLLOWER                 FLAG_TEMP_E
 #define FLAG_TEMP_HIDE_MIRAGE_ISLAND_BERRY_TREE FLAG_TEMP_11
+// Set around a battle to make every Sound move hit, for both sides
+#define FLAG_SOUND_MOVES_NEVER_MISS             FLAG_TEMP_7
 
 
 #endif // GUARD_CONSTANTS_FLAGS_H

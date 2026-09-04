@@ -16,6 +16,7 @@
 #include "battle_info_menu.h"
 #include "bg.h"
 #include "data.h"
+#include "event_data.h"
 #include "item.h"
 #include "item_menu.h"
 #include "link.h"
@@ -1865,6 +1866,10 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         acc = GetTotalAccuracy(ctx.battlerAtk, ctx.battlerDef,ctx.move, ctx.abilityAtk, 0, ctx.holdEffectAtk, HOLD_EFFECT_NONE);
 
         if (acc > 100)
+            acc = 100;
+
+        // Music hall rule makes Sound moves never miss, show it
+        if (IsSoundMove(move) && FlagGet(FLAG_SOUND_MOVES_NEVER_MISS))
             acc = 100;
     }
     else

@@ -15,9 +15,9 @@
 #define FLAG_TEMP_2      (TEMP_FLAGS_START + 0x2)
 #define FLAG_TEMP_3      (TEMP_FLAGS_START + 0x3)
 #define FLAG_TEMP_4      (TEMP_FLAGS_START + 0x4)
-#define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)  // Unused Flag
-#define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Unused Flag
-#define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // Unused Flag
+#define FLAG_TEMP_5      (TEMP_FLAGS_START + 0x5)  // Elite Four battle in progress, Trainer Tower doubles trainer 2
+#define FLAG_TEMP_6      (TEMP_FLAGS_START + 0x6)  // Trainer Tower owner
+#define FLAG_TEMP_7      (TEMP_FLAGS_START + 0x7)  // FLAG_SOUND_MOVES_NEVER_MISS
 #define FLAG_TEMP_8      (TEMP_FLAGS_START + 0x8)  // Unused Flag
 #define FLAG_TEMP_9      (TEMP_FLAGS_START + 0x9)  // Unused Flag
 #define FLAG_TEMP_A      (TEMP_FLAGS_START + 0xA)  // Unused Flag

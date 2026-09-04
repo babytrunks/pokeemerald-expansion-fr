@@ -11251,6 +11251,11 @@ bool32 CanMoveSkipAccuracyCalc(u32 battlerAtk, u32 battlerDef, enum Ability abil
             effect = FALSE;
         }
     }
+    // Music hall rule, every Sound move rings true, see Meloetta's Blues
+    else if (IsSoundMove(move) && FlagGet(FLAG_SOUND_MOVES_NEVER_MISS))
+    {
+        effect = TRUE;
+    }
     else if (B_MINIMIZE_DMG_ACC >= GEN_6
      && gBattleMons[battlerDef].volatiles.minimize
      && MoveIncreasesPowerToMinimizedTargets(move))

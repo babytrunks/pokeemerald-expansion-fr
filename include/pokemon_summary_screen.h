@@ -4,6 +4,7 @@
 #include "main.h"
 #include "config/summary_screen.h"
 #include "constants/move_relearner.h"
+#include "swsh_summary_screen.h"
 
 extern u8 gLastViewedMonIndex;
 
@@ -40,6 +41,13 @@ enum PokemonSummaryScreenPage
     PSS_PAGE_SKILLS,
     PSS_PAGE_BATTLE_MOVES,
     PSS_PAGE_CONTEST_MOVES,
+// Keep these last, RELEARN_MODE_PSS_PAGE_* are pinned to the indices above
+#if SWSH_SUMMARY_SCREEN
+#if SWSH_SUMMARY_SHOW_CONTEST_PAGES
+    PSS_PAGE_CONDITIONS,
+#endif
+    PSS_PAGE_MEMO,
+#endif
     PSS_PAGE_COUNT,
 };
 
@@ -60,5 +68,6 @@ void ShowRelearnPrompt(void);
 void TryUpdateRelearnType(enum IncrDecrUpdateValues delta);
 u32 GetCurrentRelearnMovesCount(void);
 u32 GetRelearnMovesCount(enum MoveRelearnerStates state);
+bool32 CheckRelearnerStateFlag(enum MoveRelearnerStates state);
 
 #endif // GUARD_POKEMON_SUMMARY_SCREEN_H

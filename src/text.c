@@ -10,6 +10,7 @@
 #include "menu.h"
 #include "palette.h"
 #include "sound.h"
+#include "sprite.h"
 #include "string_util.h"
 #include "text.h"
 #include "window.h"
@@ -18,6 +19,13 @@
 
 static u16 RenderText(struct TextPrinter *);
 static u32 RenderFont(struct TextPrinter *);
+
+// A printer whose windowId is WINDOW_NONE draws into OBJ VRAM instead of a window
+static inline bool32 IsSpriteTextPrinter(struct TextPrinter *textPrinter)
+{
+    return textPrinter->printerTemplate.windowId == WINDOW_NONE;
+}
+
 static u16 FontFunc_Small(struct TextPrinter *);
 static u16 FontFunc_Normal(struct TextPrinter *);
 static u16 FontFunc_Short(struct TextPrinter *);
@@ -417,6 +425,26 @@ u16 AddTextPrinterParameterized(u8 windowId, u8 fontId, const u8 *str, u8 x, u8 
     return AddTextPrinter(&printerTemplate, speed, callback);
 }
 
+// Prints straight into OBJ VRAM, flowing across sprites linked by SetupSpritesForTextPrinting
+void AddSpriteTextPrinterParameterized6(u8 spriteId, u8 fontId, u8 left, u8 top, u8 letterSpacing, u8 lineSpacing, const union TextColor color, s8 speed, const u8 *str)
+{
+    struct TextPrinterTemplate printerTemplate;
+
+    printerTemplate.currentChar = str;
+    printerTemplate.windowId = WINDOW_NONE;
+    printerTemplate.spriteId = spriteId;
+    printerTemplate.fontId = fontId;
+    printerTemplate.x = left;
+    printerTemplate.y = top;
+    printerTemplate.currentX = left;
+    printerTemplate.currentY = top;
+    printerTemplate.letterSpacing = letterSpacing;
+    printerTemplate.lineSpacing = lineSpacing;
+    printerTemplate.color = color;
+
+    AddTextPrinter(&printerTemplate, speed, NULL);
+}
+
 bool32 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16))
 {
     int i;
@@ -441,6 +469,24 @@ bool32 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, voi
     sTempTextPrinter.japanese = 0;
 
     GenerateFontColorLookupTable(sTempTextPrinter.printerTemplate.color);
+
+    // Sprite printers draw into OBJ VRAM so they never enter the per window queue
+    if (IsSpriteTextPrinter(&sTempTextPrinter))
+    {
+        sTempTextPrinter.printerTemplate.firstSprite = printerTemplate->spriteId;
+        sTempTextPrinter.printerTemplate.firstSpriteInRow = printerTemplate->spriteId;
+        sTempTextPrinter.textSpeed = 0;
+
+        for (j = 0; j < 0x400; ++j)
+        {
+            if (RenderFont(&sTempTextPrinter) == RENDER_FINISH)
+                break;
+        }
+
+        gDisableTextPrinters = FALSE;
+        return TRUE;
+    }
+
     if (speed != TEXT_SKIP_DRAW && speed != 0)
     {
         --sTempTextPrinter.textSpeed;
@@ -698,57 +744,198 @@ inline static void GLYPH_COPY(u8 *windowTiles, u32 widthOffset, u32 x0, u32 y0, 
     }
 }
 
-void CopyGlyphToWindow(struct TextPrinter *textPrinter)
+// Sprites chained by SetupSpritesForTextPrinting link to their neighbours here
+#define nextX data[1]
+#define nextY data[2]
+
+// Shifts the pending glyph left so the cut off remainder can start a new sprite
+static u32 OffsetCurrGlyph(u32 shiftWidth)
+{
+    u32 newWidth = gCurGlyph.width - shiftWidth;
+
+    if (gCurGlyph.width <= 8)
+    {
+        for (u32 i = 0; i < 8; i++)
+        {
+            gCurGlyph.gfxBufferTop[i] = gCurGlyph.gfxBufferTop[i] >> (4 * shiftWidth);
+            gCurGlyph.gfxBufferBottom[i] = gCurGlyph.gfxBufferBottom[i] >> (4 * shiftWidth);
+        }
+    }
+    else
+    {
+        //  Do cursed u64 handling of double wide glyphs
+        for (u32 i = 0; i < 8; i++)
+        {
+            u64 tempVal = gCurGlyph.gfxBufferTop[8 + i];
+            u64 topVal = (tempVal << 32) | gCurGlyph.gfxBufferTop[i];
+            tempVal = gCurGlyph.gfxBufferBottom[8 + i];
+            u64 bottomVal = (tempVal << 32) | gCurGlyph.gfxBufferBottom[i];
+            topVal = topVal >> (4 * shiftWidth);
+            bottomVal = bottomVal >> (4 * shiftWidth);
+
+            gCurGlyph.gfxBufferTop[i] = topVal & 0xFFFFFFFF;
+            gCurGlyph.gfxBufferTop[8 + i] = topVal >> 32;
+
+            gCurGlyph.gfxBufferBottom[i] = bottomVal & 0xFFFFFFFF;
+            gCurGlyph.gfxBufferBottom[8 + i] = bottomVal >> 32;
+        }
+    }
+
+    gCurGlyph.width = newWidth;
+    return newWidth;
+}
+
+// Returns how many pixels of the glyph were cut off the right edge of a sprite
+u32 CopyGlyphToWindow(struct TextPrinter *textPrinter)
 {
     struct Window *window;
     struct WindowTemplate *template;
+    struct Sprite *sprite;
     u32 *glyphPixels;
     u32 currX, currY, widthOffset;
     s32 glyphWidth, glyphHeight;
-    u8 *windowTiles;
-
-    window = &gWindows[textPrinter->printerTemplate.windowId];
-    template = &window->window;
-
-    if ((glyphWidth = (template->width * 8) - textPrinter->printerTemplate.currentX) > gCurGlyph.width)
-        glyphWidth = gCurGlyph.width;
-
-    if ((glyphHeight = (template->height * 8) - textPrinter->printerTemplate.currentY) > gCurGlyph.height)
-        glyphHeight = gCurGlyph.height;
+    u8 *destTiles;
+    bool32 isSprite = IsSpriteTextPrinter(textPrinter);
+    bool32 wasCutOff = FALSE;
 
     currX = textPrinter->printerTemplate.currentX;
     currY = textPrinter->printerTemplate.currentY;
     glyphPixels = gCurGlyph.gfxBufferTop;
-    windowTiles = window->tileData;
-    widthOffset = template->width * 32;
+
+    if (isSprite)
+    {
+        sprite = &gSprites[textPrinter->printerTemplate.spriteId];
+        destTiles = (u8 *)(OBJ_VRAM0) + sprite->oam.tileNum * TILE_SIZE_4BPP;
+
+        if ((glyphWidth = GetSpriteWidth(sprite) - currX) > gCurGlyph.width)
+            glyphWidth = gCurGlyph.width;
+        else
+            wasCutOff = TRUE;
+
+        if ((glyphHeight = GetSpriteHeight(sprite) - currY) > gCurGlyph.height)
+            glyphHeight = gCurGlyph.height;
+
+        widthOffset = GetSpriteWidth(sprite) * 4;
+    }
+    else
+    {
+        window = &gWindows[textPrinter->printerTemplate.windowId];
+        template = &window->window;
+
+        if ((glyphWidth = (template->width * 8) - currX) > gCurGlyph.width)
+            glyphWidth = gCurGlyph.width;
+
+        if ((glyphHeight = (template->height * 8) - currY) > gCurGlyph.height)
+            glyphHeight = gCurGlyph.height;
+
+        destTiles = window->tileData;
+        widthOffset = template->width * 32;
+    }
 
     if (glyphWidth < 9)
     {
         if (glyphHeight < 9)
         {
-            GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, glyphWidth, glyphHeight);
+            GLYPH_COPY(destTiles, widthOffset, currX, currY, glyphPixels, glyphWidth, glyphHeight);
         }
         else
         {
-            GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, glyphWidth, 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX, currY + 8, glyphPixels + 16, glyphWidth, glyphHeight - 8);
+            GLYPH_COPY(destTiles, widthOffset, currX, currY, glyphPixels, glyphWidth, 8);
+            GLYPH_COPY(destTiles, widthOffset, currX, currY + 8, glyphPixels + 16, glyphWidth, glyphHeight - 8);
         }
     }
     else
     {
         if (glyphHeight < 9)
         {
-            GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, 8, glyphHeight);
-            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY, glyphPixels + 8, glyphWidth - 8, glyphHeight);
+            GLYPH_COPY(destTiles, widthOffset, currX, currY, glyphPixels, 8, glyphHeight);
+            GLYPH_COPY(destTiles, widthOffset, currX + 8, currY, glyphPixels + 8, glyphWidth - 8, glyphHeight);
         }
         else
         {
-            GLYPH_COPY(windowTiles, widthOffset, currX, currY, glyphPixels, 8, 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY, glyphPixels + 8, glyphWidth - 8, 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX, currY + 8, glyphPixels + 16, 8, glyphHeight - 8);
-            GLYPH_COPY(windowTiles, widthOffset, currX + 8, currY + 8, glyphPixels + 24, glyphWidth - 8, glyphHeight - 8);
+            GLYPH_COPY(destTiles, widthOffset, currX, currY, glyphPixels, 8, 8);
+            GLYPH_COPY(destTiles, widthOffset, currX + 8, currY, glyphPixels + 8, glyphWidth - 8, 8);
+            GLYPH_COPY(destTiles, widthOffset, currX, currY + 8, glyphPixels + 16, 8, glyphHeight - 8);
+            GLYPH_COPY(destTiles, widthOffset, currX + 8, currY + 8, glyphPixels + 24, glyphWidth - 8, glyphHeight - 8);
         }
     }
+
+    //  Spill whatever hung below the sprite into the one linked underneath it
+    if (isSprite
+     && glyphHeight != gCurGlyph.height
+     && gSprites[textPrinter->printerTemplate.spriteId].nextY != SPRITE_NONE)
+    {
+        sprite = &gSprites[gSprites[textPrinter->printerTemplate.spriteId].nextY];
+        destTiles = (u8 *)(OBJ_VRAM0) + sprite->oam.tileNum * TILE_SIZE_4BPP;
+
+        u32 newHeight = gCurGlyph.height - glyphHeight;
+
+        u32 leftHalf[16];
+        u32 rightHalf[16];
+
+        if (gCurGlyph.width > 8)
+        {
+            for (u32 i = 0; i < 8; i++)
+            {
+                leftHalf[i] = gCurGlyph.gfxBufferTop[i];
+                leftHalf[8 + i] = gCurGlyph.gfxBufferBottom[i];
+                rightHalf[i] = gCurGlyph.gfxBufferTop[8 + i];
+                rightHalf[8 + i] = gCurGlyph.gfxBufferBottom[8 + i];
+            }
+
+            for (u32 i = 0; i < newHeight; i++)
+            {
+                leftHalf[i] = leftHalf[glyphHeight + i];
+                rightHalf[i] = rightHalf[glyphHeight + i];
+            }
+        }
+        else
+        {
+            for (u32 i = 0; i < 8; i++)
+            {
+                leftHalf[i] = gCurGlyph.gfxBufferTop[i];
+                leftHalf[8 + i] = gCurGlyph.gfxBufferBottom[i];
+            }
+
+            for (u32 i = 0; i < newHeight; i++)
+                leftHalf[i] = leftHalf[glyphHeight + i];
+        }
+
+        glyphHeight = newHeight;
+
+        if (glyphWidth < 9)
+        {
+            if (glyphHeight < 9)
+            {
+                GLYPH_COPY(destTiles, widthOffset, currX, 0, leftHalf, glyphWidth, glyphHeight);
+            }
+            else
+            {
+                GLYPH_COPY(destTiles, widthOffset, currX, 0, leftHalf, glyphWidth, 8);
+                GLYPH_COPY(destTiles, widthOffset, currX, 8, &leftHalf[8], glyphWidth, glyphHeight - 8);
+            }
+        }
+        else
+        {
+            if (glyphHeight < 9)
+            {
+                GLYPH_COPY(destTiles, widthOffset, currX, 0, leftHalf, 8, glyphHeight);
+                GLYPH_COPY(destTiles, widthOffset, currX + 8, 0, rightHalf, glyphWidth - 8, glyphHeight);
+            }
+            else
+            {
+                GLYPH_COPY(destTiles, widthOffset, currX, 0, leftHalf, 8, 8);
+                GLYPH_COPY(destTiles, widthOffset, currX + 8, 0, rightHalf, glyphWidth - 8, 8);
+                GLYPH_COPY(destTiles, widthOffset, currX, 8, &leftHalf[8], 8, glyphHeight - 8);
+                GLYPH_COPY(destTiles, widthOffset, currX + 8, 8, &rightHalf[8], glyphWidth - 8, glyphHeight - 8);
+            }
+        }
+    }
+
+    if (wasCutOff)
+        return glyphWidth;
+
+    return 0;
 }
 
 void ClearTextSpan(struct TextPrinter *textPrinter, u32 width)
@@ -757,6 +944,10 @@ void ClearTextSpan(struct TextPrinter *textPrinter, u32 width)
     struct Bitmap pixels_data;
     struct TextGlyph *glyph;
     u8 *glyphHeight;
+
+    // Sprite printers have no window to clear into
+    if (IsSpriteTextPrinter(textPrinter))
+        return;
 
     if (sLastTextColor.background != TEXT_COLOR_TRANSPARENT)
     {
@@ -1135,6 +1326,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
     u16 currChar, nextChar;
     s32 width;
     s32 widthHelper;
+    u32 cutOffAmount;
     u8 repeats = 1;
 
     switch (textPrinter->state)
@@ -1185,6 +1377,19 @@ static u16 RenderText(struct TextPrinter *textPrinter)
         case CHAR_NEWLINE:
             textPrinter->printerTemplate.currentX = textPrinter->printerTemplate.x;
             textPrinter->printerTemplate.currentY += (gFonts[textPrinter->printerTemplate.fontId].maxLetterHeight + textPrinter->printerTemplate.lineSpacing);
+            // A new line on a sprite printer walks back to the row start then down
+            if (IsSpriteTextPrinter(textPrinter))
+            {
+                struct Sprite *sprite = &gSprites[textPrinter->printerTemplate.spriteId];
+                textPrinter->printerTemplate.spriteId = textPrinter->printerTemplate.firstSpriteInRow;
+                if (textPrinter->printerTemplate.currentY >= GetSpriteHeight(sprite)
+                 && gSprites[textPrinter->printerTemplate.spriteId].nextY != SPRITE_NONE)
+                {
+                    textPrinter->printerTemplate.currentY -= GetSpriteHeight(sprite);
+                    textPrinter->printerTemplate.spriteId = gSprites[textPrinter->printerTemplate.firstSpriteInRow].nextY;
+                    textPrinter->printerTemplate.firstSpriteInRow = textPrinter->printerTemplate.spriteId;
+                }
+            }
             return RENDER_REPEAT;
         case PLACEHOLDER_BEGIN:
             textPrinter->printerTemplate.currentChar++;
@@ -1389,9 +1594,22 @@ static u16 RenderText(struct TextPrinter *textPrinter)
             break;
         }
 
-        CopyGlyphToWindow(textPrinter);
+        cutOffAmount = CopyGlyphToWindow(textPrinter);
 
-        if (textPrinter->minLetterSpacing)
+        //  Glyph ran off the right edge, carry the rest onto the linked sprite
+        if (cutOffAmount > 0
+         && IsSpriteTextPrinter(textPrinter)
+         && gSprites[textPrinter->printerTemplate.spriteId].nextX != SPRITE_NONE)
+        {
+            u32 newWidth;
+
+            textPrinter->printerTemplate.spriteId = gSprites[textPrinter->printerTemplate.spriteId].nextX;
+            textPrinter->printerTemplate.currentX = 0;
+            newWidth = OffsetCurrGlyph(cutOffAmount);
+            CopyGlyphToWindow(textPrinter);
+            textPrinter->printerTemplate.currentX = newWidth;
+        }
+        else if (textPrinter->minLetterSpacing)
         {
             textPrinter->printerTemplate.currentX += gCurGlyph.width;
             width = textPrinter->minLetterSpacing - gCurGlyph.width;
