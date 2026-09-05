@@ -140,7 +140,8 @@ static void OverviewSetBgTile(u16 *tilemap, s16 x, s16 y, u16 tileNum, u16 attrs
 static void OverviewFillBgRect(u16 *tilemap, s16 x, s16 y, s16 width, s16 height, u16 tileNum, u16 attrs);
 static void BackdropLoadBaseTilemap(const u16 *baseTilemap);
 static void LoadBackdropAssets(void);
-static void OverviewComputeHeaderLayout(s16 labelWidth, u8 *outTextLenTiles, s16 *outHeaderX, s16 *outHeaderWidth);
+static void OverviewComputeHeaderLayout(s16 labelWidth, s16 minLeftTile, u8 *outTextLenTiles, s16 *outHeaderX, s16 *outHeaderWidth);
+static void OverviewComputeHintLayout(s16 hintWidth, u8 *outTextLenTiles, s16 *outHintX, s16 *outHintWidth);
 static void OverviewDrawStatusCard(u16 *tilemap, s16 x, s16 y, u8 width, u8 height, bool8 isActive, bool8 isBottomRow);
 static void OverviewDrawHeaderBox(u16 *tilemap, s16 x, s16 y, u8 textLenTiles);
 static void OverviewDrawBackground(void);
@@ -291,6 +292,8 @@ static const u8 sTextColor_BattleInfo_Female[] =
 
 static const u8 sText_BattleInfo_DetailLButtonGlyph[] = _("{L_BUTTON}");
 static const u8 sText_BattleInfo_DetailRButtonGlyph[] = _("{R_BUTTON}");
+
+static const u8 sText_BattleInfo_OverviewHint[] = _("{R_BUTTON}Team Preview");
 
 static const u8 sText_BattleInfo_EnemyPartyTitle[] = _("Enemy Party");
 static const u8 sText_BattleInfo_EnemyPartyHint[] = _("{DPAD_LEFTRIGHT}Select  {B_BUTTON}Back");
@@ -3252,7 +3255,8 @@ static u32 GetCenterRow(void)
     return (outRowLeft + outRowRight) / 2;
 }
 
-static void OverviewComputeHeaderLayout(s16 labelWidth, u8 *outTextLenTiles, s16 *outHeaderX, s16 *outHeaderWidth)
+// minLeftTile keeps the centered box clear of anything anchored to the left of it
+static void OverviewComputeHeaderLayout(s16 labelWidth, s16 minLeftTile, u8 *outTextLenTiles, s16 *outHeaderX, s16 *outHeaderWidth)
 {
     u32 textLenTiles = (labelWidth + 7) / 8;
 
@@ -3267,11 +3271,38 @@ static void OverviewComputeHeaderLayout(s16 labelWidth, u8 *outTextLenTiles, s16
         headerX = B_INFO_SAFE_LEFT_TILE;
     if (headerX + headerWidth - 1 > B_INFO_SAFE_RIGHT_TILE)
         headerX = B_INFO_SAFE_RIGHT_TILE - headerWidth + 1;
+    // Applied last so the left neighbour always wins over centering
+    if (headerX < minLeftTile)
+        headerX = minLeftTile;
 
     if (outTextLenTiles != NULL)
         *outTextLenTiles = textLenTiles;
     *outHeaderX = headerX;
     *outHeaderWidth = headerWidth;
+}
+
+// Same box shape as the headers but anchored to the left edge instead of centered
+static void OverviewComputeHintLayout(s16 hintWidth, u8 *outTextLenTiles, s16 *outHintX, s16 *outHintWidth)
+{
+    u32 textLenTiles = (hintWidth + 7) / 8;
+
+    if (textLenTiles == 0)
+        textLenTiles = 1;
+    if (textLenTiles & 1)
+        textLenTiles++;
+
+    s32 boxWidth = textLenTiles + 2;
+    s32 maxWidth = B_INFO_SAFE_RIGHT_TILE - B_INFO_SAFE_LEFT_TILE + 1;
+    if (boxWidth > maxWidth)
+    {
+        boxWidth = maxWidth;
+        textLenTiles = boxWidth - 2;
+    }
+
+    if (outTextLenTiles != NULL)
+        *outTextLenTiles = textLenTiles;
+    *outHintX = B_INFO_SAFE_LEFT_TILE;
+    *outHintWidth = boxWidth;
 }
 
 static void OverviewDrawStatusCard(u16 *tilemap, s16 x, s16 y, u8 width, u8 height, bool8 isActive, bool8 isBottomRow)
@@ -3408,6 +3439,9 @@ static void OverviewDrawBackground(void)
     s16 playerHeaderX;
     s16 enemyHeaderWidth;
     s16 playerHeaderWidth;
+    s16 hintX;
+    s16 hintBoxWidth;
+    u8 hintTextLenTiles;
 
     CpuCopy16(sBattleInfoMenuOverviewBaseTilemap, sData->bg1Tilemap,
               B_INFO_TILEMAP_WIDTH * B_INFO_TILEMAP_HEIGHT * sizeof(u16));
@@ -3430,11 +3464,15 @@ static void OverviewDrawBackground(void)
 
     enemyLabelWidth = GetStringWidth(FONT_SMALL, GetPrimaryOpponentTrainerName(), 0);
     playerLabelWidth = GetStringWidth(FONT_SMALL, GetPlayerSideTrainerName(), 0);
-    OverviewComputeHeaderLayout(enemyLabelWidth, &enemyTextLenTiles, &enemyHeaderX, &enemyHeaderWidth);
-    OverviewComputeHeaderLayout(playerLabelWidth, &playerTextLenTiles, &playerHeaderX, &playerHeaderWidth);
+    OverviewComputeHintLayout(GetStringWidth(FONT_SMALL, sText_BattleInfo_OverviewHint, 0),
+                              &hintTextLenTiles, &hintX, &hintBoxWidth);
+    OverviewComputeHeaderLayout(enemyLabelWidth, B_INFO_SAFE_LEFT_TILE, &enemyTextLenTiles, &enemyHeaderX, &enemyHeaderWidth);
+    // One tile of breathing room so the player name never touches the hint box
+    OverviewComputeHeaderLayout(playerLabelWidth, hintX + hintBoxWidth + 1, &playerTextLenTiles, &playerHeaderX, &playerHeaderWidth);
 
     OverviewDrawHeaderBox(sData->bg1Tilemap, enemyHeaderX, 0, enemyTextLenTiles);
     OverviewDrawHeaderBox(sData->bg1Tilemap, playerHeaderX, B_INFO_LABEL_BOTTOM_TILE_TOP, playerTextLenTiles);
+    OverviewDrawHeaderBox(sData->bg1Tilemap, hintX, B_INFO_LABEL_BOTTOM_TILE_TOP, hintTextLenTiles);
 
     CopyBgTilemapBufferToVram(B_INFO_BACKDROP_BG);
 }
@@ -3457,6 +3495,8 @@ static void OverviewDrawLabels(void)
     s16 playerHeaderX;
     s16 enemyHeaderWidth;
     s16 playerHeaderWidth;
+    s16 hintX;
+    s16 hintBoxWidth;
     s32 labelHeight = GetFontAttribute(FONT_SMALL, FONTATTR_MAX_LETTER_HEIGHT);
 
     const u8 *enemyLabel = GetPrimaryOpponentTrainerName();
@@ -3464,11 +3504,14 @@ static void OverviewDrawLabels(void)
 
     s32 enemyLabelWidth = GetStringWidth(FONT_SMALL, enemyLabel, 0);
     s32 playerLabelWidth = GetStringWidth(FONT_SMALL, playerLabel, 0);
-    OverviewComputeHeaderLayout(enemyLabelWidth, NULL, &enemyHeaderX, &enemyHeaderWidth);
-    OverviewComputeHeaderLayout(playerLabelWidth, NULL, &playerHeaderX, &playerHeaderWidth);
+    s32 hintLabelWidth = GetStringWidth(FONT_SMALL, sText_BattleInfo_OverviewHint, 0);
+    OverviewComputeHintLayout(hintLabelWidth, NULL, &hintX, &hintBoxWidth);
+    OverviewComputeHeaderLayout(enemyLabelWidth, B_INFO_SAFE_LEFT_TILE, NULL, &enemyHeaderX, &enemyHeaderWidth);
+    OverviewComputeHeaderLayout(playerLabelWidth, hintX + hintBoxWidth + 1, NULL, &playerHeaderX, &playerHeaderWidth);
 
     s32 enemyLabelX = enemyHeaderX * 8 + ((enemyHeaderWidth * 8) - enemyLabelWidth) / 2;
     s32 playerLabelX = playerHeaderX * 8 + ((playerHeaderWidth * 8) - playerLabelWidth) / 2;
+    s32 hintLabelX = hintX * 8 + ((hintBoxWidth * 8) - hintLabelWidth) / 2;
 
     if (labelHeight <= 0 || labelHeight > B_INFO_LABEL_H)
         labelHeight = 8;
@@ -3487,6 +3530,8 @@ static void OverviewDrawLabels(void)
     FillWindowPixelBuffer(WIN_LABEL_BOTTOM, PIXEL_FILL(B_INFO_TEXT_COLOR_TRANSPARENT));
     AddTextPrinterParameterized4(WIN_LABEL_BOTTOM, FONT_SMALL, playerLabelX, labelY, 0, 0,
                                  sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, playerLabel);
+    AddTextPrinterParameterized4(WIN_LABEL_BOTTOM, FONT_SMALL, hintLabelX, labelY, 0, 0,
+                                 sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, sText_BattleInfo_OverviewHint);
     PutWindowTilemap(WIN_LABEL_BOTTOM);
     CopyWindowToVram(WIN_LABEL_BOTTOM, COPYWIN_FULL);
 }
@@ -4037,9 +4082,9 @@ static void EnemyPartyDrawBackground(void)
                            B_INFO_PARTY_CARD_TILE_W, B_INFO_PARTY_CARD_TILE_H, TRUE, TRUE);
 
     OverviewComputeHeaderLayout(GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyTitle, 0),
-                                &titleTextLenTiles, &titleHeaderX, &titleHeaderWidth);
+                                B_INFO_SAFE_LEFT_TILE, &titleTextLenTiles, &titleHeaderX, &titleHeaderWidth);
     OverviewComputeHeaderLayout(GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyHint, 0),
-                                &hintTextLenTiles, &hintHeaderX, &hintHeaderWidth);
+                                B_INFO_SAFE_LEFT_TILE, &hintTextLenTiles, &hintHeaderX, &hintHeaderWidth);
 
     OverviewDrawHeaderBox(sData->bg1Tilemap, titleHeaderX, 0, titleTextLenTiles);
     OverviewDrawHeaderBox(sData->bg1Tilemap, hintHeaderX, B_INFO_LABEL_BOTTOM_TILE_TOP, hintTextLenTiles);
@@ -4058,8 +4103,8 @@ static void EnemyPartyDrawLabels(void)
     s32 labelHeight = GetFontAttribute(FONT_SMALL, FONTATTR_MAX_LETTER_HEIGHT);
     s32 labelY;
 
-    OverviewComputeHeaderLayout(titleWidth, NULL, &titleHeaderX, &titleHeaderWidth);
-    OverviewComputeHeaderLayout(hintWidth, NULL, &hintHeaderX, &hintHeaderWidth);
+    OverviewComputeHeaderLayout(titleWidth, B_INFO_SAFE_LEFT_TILE, NULL, &titleHeaderX, &titleHeaderWidth);
+    OverviewComputeHeaderLayout(hintWidth, B_INFO_SAFE_LEFT_TILE, NULL, &hintHeaderX, &hintHeaderWidth);
 
     if (labelHeight <= 0 || labelHeight > B_INFO_LABEL_H)
         labelHeight = 8;
