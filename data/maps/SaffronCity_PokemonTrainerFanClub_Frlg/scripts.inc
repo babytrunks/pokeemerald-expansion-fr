@@ -444,7 +444,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_PomGiveMeloetta::
 	waitmoncry
 	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELOETTA
 	setflag FLAG_DONT_RANDOMIZE
-	givemon SPECIES_MELOETTA, 50
+	givemon SPECIES_MELOETTA, 45
 	clearflag FLAG_DONT_RANDOMIZE
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaToParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, SaffronCity_PokemonTrainerFanClub_EventScript_MeloettaToPC

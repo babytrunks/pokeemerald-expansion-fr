@@ -3976,7 +3976,13 @@ static void TryDoEventsBeforeFirstTurn(void)
 
             // In 1-vs-2 wild battles, player's right slot is always absent.
             if (WILD_ONE_VS_TWO_BATTLE)
-                gAbsentBattlerFlags |= 1u << GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+            {
+                u32 right = GetBattlerAtPosition(B_POSITION_PLAYER_RIGHT);
+                gAbsentBattlerFlags |= 1u << right;
+                // The slot holds no mon of its own, so don't reserve a party member for it
+                gBattlerPartyIndexes[right] = gBattlerPartyIndexes[GetBattlerAtPosition(B_POSITION_PLAYER_LEFT)];
+                memset(&gBattleMons[right], 0, sizeof(gBattleMons[right]));
+            }
         }
 
         // Allow for illegal abilities within tests.
@@ -4110,6 +4116,12 @@ void BattleTurnPassed(void)
 
     gBattleStruct->eventState.faintedAction = 0;
     gBattleStruct->zaWarudoFreezePending = FALSE; // owed stun has now been applied to any send-in; don't carry into next turn
+
+    // In 1-vs-2 wild battles only the left slot is ever filled, so an absent left
+    // slot here means no replacement was found and the player has lost
+    if (WILD_ONE_VS_TWO_BATTLE && gBattleOutcome == 0
+     && (gAbsentBattlerFlags & (1u << GetBattlerAtPosition(B_POSITION_PLAYER_LEFT))))
+        gBattleOutcome |= B_OUTCOME_LOST;
 
     TurnValuesCleanUp(FALSE);
     gHitMarker &= ~HITMARKER_UNABLE_TO_USE_MOVE;

@@ -356,7 +356,15 @@ static void BattleUI_DisplayNormalMoveBox(u32 battler, struct ChooseMoveStruct *
         BattleUI_DisplayMoveBoxGraphics(battler, windowId);
 
         // type
-        u32 type = (moveId == MOVE_NONE) ? TYPE_MYSTERY : GetMoveType(moveId);
+        // GetMaxMove already resolved the dynamic type, everything else needs it here
+        u32 type;
+        if (moveId == MOVE_NONE)
+            type = TYPE_MYSTERY;
+        else if (hasDynamax)
+            type = GetMoveType(moveId);
+        else
+            type = BattleUI_GetDisplayedMoveType(battler, moveId);
+
         LoadPalette(sBWBattleUI_MoveBoxPalette, BG_PLTT_ID(10 + i), PLTT_SIZE_4BPP);
         LoadPalette(&sBWBattleUI_MoveBoxTypePalettes[type * 3], BG_PLTT_ID(10 + i) + 10, PLTT_SIZEOF(3));
 

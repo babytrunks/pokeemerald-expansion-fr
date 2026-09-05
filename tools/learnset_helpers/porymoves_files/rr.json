@@ -7061,7 +7061,7 @@
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [ "MOVE_BODY_SLAM"]
   },
   "MELOETTA_ARIA": {
     "LevelMoves": [],

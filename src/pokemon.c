@@ -5893,7 +5893,12 @@ u16 GetMonEVCount(struct Pokemon *mon)
 
 void RandomlyGivePartyPokerus(struct Pokemon *party)
 {
-    u16 rnd = Random();
+    u16 rnd;
+
+    if (!P_POKERUS_ENABLED)
+        return;
+
+    rnd = Random();
     if (rnd == 0x4000 || rnd == 0x8000 || rnd == 0xC000)
     {
         struct Pokemon *mon;
@@ -6009,6 +6014,9 @@ void UpdatePartyPokerusTime(u16 days)
 
 void PartySpreadPokerus(struct Pokemon *party)
 {
+    if (!P_POKERUS_ENABLED)
+        return;
+
     if ((Random() % 3) == 0)
     {
         int i;

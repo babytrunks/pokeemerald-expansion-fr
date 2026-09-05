@@ -30,5 +30,6 @@ enum BWBattleUICursorMode BattleUI_GetCursorMode(void);
 
 void BattleUI_DisplayMoveBox(u32);
 const u8 *BattleUI_GetTypeEffectivenessSymbol(u32, u16); // defined in src/battle_controller_player.c
+enum Type BattleUI_GetDisplayedMoveType(u32, u32);       // defined in src/battle_controller_player.c
 
 #endif // GUARD_BW_BATTLE_UI_H

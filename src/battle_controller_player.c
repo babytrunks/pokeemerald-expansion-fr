@@ -1767,13 +1767,11 @@ static void MoveSelectionDisplayPpNumber(u32 battler)
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_PP_REMAINING);
 }
 
-static void MoveSelectionDisplayMoveType(u32 battler)
+// Shows the type the move would actually be used at, so effects like
+// Revelation Dance and Terrain Pulse read correctly before being picked
+enum Type BattleUI_GetDisplayedMoveType(u32 battler, u32 move)
 {
-    u8 *txtPtr, *end;
     u32 speciesId = gBattleMons[battler].species;
-    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
-    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
-    u32 move = moveInfo->moves[gMoveSelectionCursor[battler]];
     enum Type type = GetMoveType(move);
     enum BattleMoveEffects effect = GetMoveEffect(move);
 
@@ -1805,6 +1803,18 @@ static void MoveSelectionDisplayMoveType(u32 battler)
         struct Pokemon *mon = GetBattlerMon(battler);
         type = CheckDynamicMoveType(mon, move, battler, MON_IN_BATTLE);
     }
+
+    return type;
+}
+
+static void MoveSelectionDisplayMoveType(u32 battler)
+{
+    u8 *txtPtr, *end;
+    struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
+    u32 move = moveInfo->moves[gMoveSelectionCursor[battler]];
+    enum Type type = BattleUI_GetDisplayedMoveType(battler, move);
+
+    txtPtr = StringCopy(gDisplayedStringBattle, gText_MoveInterfaceType);
     end = StringCopy(txtPtr, gTypesInfo[type].name);
 
     PrependFontIdToFit(txtPtr, end, FONT_NORMAL, WindowWidthPx(B_WIN_MOVE_TYPE) - 25);
@@ -2602,13 +2612,48 @@ static bool32 ShouldShowTypeEffectiveness(u32 targetId)
     if (IsGhostBattleWithoutScope())
         return FALSE;
 
+    // The disguise decides whether the indicator shows, otherwise a hidden
+    // marker on an unseen Zoroark gives the Illusion away
+    u32 species = GetBattlerVisualSpecies(targetId);
+
     if (B_SHOW_EFFECTIVENESS == SHOW_EFFECTIVENESS_CAUGHT)
-        return GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[targetId].species), FLAG_GET_CAUGHT);
+        return GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_CAUGHT);
 
     if (B_SHOW_EFFECTIVENESS == SHOW_EFFECTIVENESS_SEEN)
-        return GetSetPokedexFlag(SpeciesToNationalPokedexNum(gBattleMons[targetId].species), FLAG_GET_SEEN);
+        return GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN);
 
     return TRUE;
+}
+
+// Illusion has to fool the effectiveness indicator too, so the matchup is
+// calculated against the disguise the player can actually see
+static uq4_12_t CalcDisplayedTypeEffectiveness(struct DamageContext *ctx)
+{
+    struct Pokemon *illusionMon = GetIllusionMonPtr(ctx->battlerDef);
+    if (illusionMon == NULL)
+        return CalcTypeEffectivenessMultiplier(ctx);
+
+    u32 illusionSpecies = GetMonData(illusionMon, MON_DATA_SPECIES);
+    enum Type savedTypes[3];
+    enum Ability savedAbility = ctx->abilityDef;
+    u32 i;
+
+    for (i = 0; i < 3; i++)
+        savedTypes[i] = gBattleMons[ctx->battlerDef].types[i];
+
+    gBattleMons[ctx->battlerDef].types[0] = GetSpeciesType(illusionSpecies, 0);
+    gBattleMons[ctx->battlerDef].types[1] = GetSpeciesType(illusionSpecies, 1);
+    gBattleMons[ctx->battlerDef].types[2] = TYPE_MYSTERY;
+    ctx->abilityDef = GetMonAbility(illusionMon);
+
+    // Borrowing the types is safe here, updateFlags is FALSE so nothing is recorded
+    uq4_12_t modifier = CalcTypeEffectivenessMultiplier(ctx);
+
+    for (i = 0; i < 3; i++)
+        gBattleMons[ctx->battlerDef].types[i] = savedTypes[i];
+    ctx->abilityDef = savedAbility;
+
+    return modifier;
 }
 
 static u32 CheckTypeEffectiveness(u32 battlerAtk, u32 battlerDef)
@@ -2625,7 +2670,7 @@ static u32 CheckTypeEffectiveness(u32 battlerAtk, u32 battlerDef)
     ctx.holdEffectAtk = GetBattlerHoldEffect(battlerAtk);
     ctx.holdEffectDef = GetBattlerHoldEffect(battlerDef);
 
-    uq4_12_t modifier = CalcTypeEffectivenessMultiplier(&ctx);
+    uq4_12_t modifier = CalcDisplayedTypeEffectiveness(&ctx);
 
     if (!ShouldShowTypeEffectiveness(battlerDef))
         return EFFECTIVENESS_CANNOT_VIEW;
@@ -2690,7 +2735,7 @@ const u8 *BattleUI_GetTypeEffectivenessSymbol(u32 battler, u16 move)
     ctx.holdEffectAtk = GetBattlerHoldEffect(battler);
     ctx.holdEffectDef = GetBattlerHoldEffect(battlerDef);
 
-    uq4_12_t modifier = CalcTypeEffectivenessMultiplier(&ctx);
+    uq4_12_t modifier = CalcDisplayedTypeEffectiveness(&ctx);
 
     if (modifier == UQ_4_12(0.0))
         return immuneIcon;

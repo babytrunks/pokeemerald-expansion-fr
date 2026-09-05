@@ -15793,8 +15793,10 @@ void BS_TryRevivalBlessing(void)
         PREPARE_SPECIES_BUFFER(gBattleTextBuff1, GetMonData(&party[gSelectedMonPartyId], MON_DATA_SPECIES));
 
         // If an on-field battler is revived, it needs to be sent out again.
+        // The player's right slot in a 1-vs-2 wild battle is never on the field.
         if (IsDoubleBattle() &&
-            gBattlerPartyIndexes[BATTLE_PARTNER(gBattlerAttacker)] == gSelectedMonPartyId)
+            gBattlerPartyIndexes[BATTLE_PARTNER(gBattlerAttacker)] == gSelectedMonPartyId &&
+            !(WILD_ONE_VS_TWO_BATTLE && GetBattlerPosition(BATTLE_PARTNER(gBattlerAttacker)) == B_POSITION_PLAYER_RIGHT))
         {
             u32 i = BATTLE_PARTNER(gBattlerAttacker);
             gAbsentBattlerFlags &= ~(1u << i);
