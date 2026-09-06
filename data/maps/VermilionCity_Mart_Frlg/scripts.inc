@@ -53,6 +53,7 @@ VermilionCity_Mart_Items::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_HARD_STONE
 	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_SILVER_POWDER
 	.2byte ITEM_NONE
 	release
 	end
@@ -64,6 +65,7 @@ VermilionCity_Mart_2BadgeItems::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_HARD_STONE
 	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_SILVER_POWDER
 	.2byte ITEM_NONE
 	release
 	end
@@ -77,6 +79,7 @@ VermilionCity_Mart_4BadgeItems::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_HARD_STONE
 	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_SILVER_POWDER
 	.2byte ITEM_NONE
 	release
 	end
@@ -90,6 +93,7 @@ VermilionCity_Mart_5BadgeItems::
 	.2byte ITEM_DUSK_BALL  
 	.2byte ITEM_HARD_STONE
 	.2byte ITEM_SOFT_SAND
+	.2byte ITEM_SILVER_POWDER
 	.2byte ITEM_NONE
 	release
 	end
@@ -104,6 +108,7 @@ VermilionCity_Mart_LuxuryItems::
 	.2byte ITEM_HARD_STONE
 	.2byte ITEM_SOFT_SAND
 	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_SILVER_POWDER
 	.2byte ITEM_NONE
 	release
 	end

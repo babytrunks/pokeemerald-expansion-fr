@@ -6779,7 +6779,11 @@
     "TutorMoves": []
   },
   "GOLETT": {
-    "LevelMoves": [],
+    "LevelMoves": [      
+      {
+        "Level": 34,
+        "Move": "MOVE_SHADOW_SNEAK"
+      }],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [],
@@ -6787,6 +6791,10 @@
   },
   "GOLURK": {
     "LevelMoves": [
+      {
+        "Level": 34,
+        "Move": "MOVE_SHADOW_SNEAK"
+      },
       {
         "Level": 58,
         "Move": "MOVE_HEADLONG_RUSH"

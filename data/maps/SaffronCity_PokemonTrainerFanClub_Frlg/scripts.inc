@@ -804,13 +804,13 @@ SaffronCity_PokemonTrainerFanClub_Text_MeloettaIsDepressed::
     .string "Let us have a musical battle.\n"
     .string "Defeat me using four different\l"
     .string "Sound moves in the process.\p"
-    .string "Do take heed, though.\n"
-    .string "This hall is consecrated to music.\p"
-    .string "Within these walls no Sound move\n"
-    .string "can ever falter, be it mine or\l"
-    .string "yours. Even Sing never misses.\p"
     .string "That might rekindle Meloetta's\n"
     .string "spirit!\p"
+    .string "Do take heed, though.\n"
+    .string "This hall is consecrated to music.\p"
+    .string "Within these walls Sound moves\n"
+    .string "can never miss, be it mine or\l"
+    .string "yours. Even Sing!\p"
     .string "Are you ready to partake in this\n"
     .string "concerto?$"
 
@@ -826,8 +826,7 @@ SaffronCity_PokemonTrainerFanClub_Text_PomAskRematch::
     .string "different Sound moves, and you\l"
     .string "have to win!\p"
     .string "And recall that no Sound move\n"
-    .string "misses in this hall, mine least\l"
-    .string "of all.\p"
+    .string "misses in this hall.\p"
     .string "Shall we try again?$"
 
 SaffronCity_PokemonTrainerFanClub_Text_PomLetTheMusicPlay::

@@ -54,7 +54,7 @@ PokemonMansion_3F_EventScript_VitaminQuestCheck::
 PokemonMansion_3F_EventScript_VitaminQuestReward::
 	msgbox PokemonMansion_3F_Text_VitaminQuestCongrats
 	removeitem ITEM_RARE_EXTRACT
-	giveitem ITEM_DREAM_PATCH, 3
+	giveitem ITEM_DREAM_PATCH, 2
 	giveitem ITEM_HP_UP, 2
 	giveitem ITEM_PROTEIN, 2
 	giveitem ITEM_IRON, 2

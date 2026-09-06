@@ -4,39 +4,50 @@ VictoryRoad_2F_Frlg_MapScripts::
 	.byte 0
 
 VictoryRoad_2F_OnTransition::
-	call_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_UNSET, VictoryRoad_2F_EventScript_SeedUrshifuForm
-	call_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_RAPID_STRIKE, VictoryRoad_2F_EventScript_SetUrshifuRapidStrikeGfx
-	call_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_SINGLE_STRIKE, VictoryRoad_2F_EventScript_SetUrshifuSingleStrikeGfx
+	call_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_UNSET, VictoryRoad_2F_EventScript_SeedMythical
+	call_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_VICTINI, VictoryRoad_2F_EventScript_SetVictiniGfx
+	call_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_MANAPHY, VictoryRoad_2F_EventScript_SetManaphyGfx
+	call_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_ZARUDE, VictoryRoad_2F_EventScript_SetZarudeGfx
 	end
 
-@ Even trainer IDs start on Rapid Strike odd ones start on Single Strike
-VictoryRoad_2F_EventScript_SeedUrshifuForm::
-	specialvar VAR_RESULT, IsPlayerTrainerIdEven
-	call_if_eq VAR_RESULT, TRUE, VictoryRoad_2F_EventScript_SetFormRapidStrike
-	call_if_eq VAR_RESULT, FALSE, VictoryRoad_2F_EventScript_SetFormSingleStrike
+@ Trainer ID mod three decides which mythical this save file starts on
+VictoryRoad_2F_EventScript_SeedMythical::
+	specialvar VAR_RESULT, GetPlayerTrainerIdModThree
+	call_if_eq VAR_RESULT, 0, VictoryRoad_2F_EventScript_SetMythicalVictini
+	call_if_eq VAR_RESULT, 1, VictoryRoad_2F_EventScript_SetMythicalManaphy
+	call_if_eq VAR_RESULT, 2, VictoryRoad_2F_EventScript_SetMythicalZarude
 	return
 
-@ Called from the Champions Room so each League win brings the other form back
-VictoryRoad_2F_EventScript_RespawnUrshifu::
-	clearflag FLAG_HIDE_VICTORY_ROAD_URSHIFU
-	goto_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_RAPID_STRIKE, VictoryRoad_2F_EventScript_SetFormSingleStrike
-	goto VictoryRoad_2F_EventScript_SetFormRapidStrike
+@ Called from the Champions Room so each League win brings the next one back
+VictoryRoad_2F_EventScript_RespawnMythical::
+	clearflag FLAG_HIDE_VICTORY_ROAD_MYTHICAL
+	goto_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_VICTINI, VictoryRoad_2F_EventScript_SetMythicalManaphy
+	goto_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_MANAPHY, VictoryRoad_2F_EventScript_SetMythicalZarude
+	goto VictoryRoad_2F_EventScript_SetMythicalVictini
 
-@ Both of these return to whoever called or jumped in
-VictoryRoad_2F_EventScript_SetFormRapidStrike::
-	setvar VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_RAPID_STRIKE
+@ All three of these return to whoever called or jumped in
+VictoryRoad_2F_EventScript_SetMythicalVictini::
+	setvar VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_VICTINI
 	return
 
-VictoryRoad_2F_EventScript_SetFormSingleStrike::
-	setvar VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_SINGLE_STRIKE
+VictoryRoad_2F_EventScript_SetMythicalManaphy::
+	setvar VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_MANAPHY
 	return
 
-VictoryRoad_2F_EventScript_SetUrshifuRapidStrikeGfx::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(URSHIFU_RAPID_STRIKE)
+VictoryRoad_2F_EventScript_SetMythicalZarude::
+	setvar VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_ZARUDE
 	return
 
-VictoryRoad_2F_EventScript_SetUrshifuSingleStrikeGfx::
-	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(URSHIFU_SINGLE_STRIKE)
+VictoryRoad_2F_EventScript_SetVictiniGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(VICTINI)
+	return
+
+VictoryRoad_2F_EventScript_SetManaphyGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(MANAPHY)
+	return
+
+VictoryRoad_2F_EventScript_SetZarudeGfx::
+	setvar VAR_OBJ_GFX_ID_0, OBJ_EVENT_GFX_SPECIES(ZARUDE)
 	return
 
 VictoryRoad_2F_OnLoad::
@@ -125,29 +136,40 @@ VictoryRoad_2F_EventScript_Vincent::
 	end
 
 @ Reads the same var as the on transition graphics so both always agree
-VictoryRoad_2F_EventScript_Urshifu::
+VictoryRoad_2F_EventScript_Mythical::
 	lock
 	faceplayer
-	goto_if_eq VAR_VICTORY_ROAD_URSHIFU_FORM, URSHIFU_FORM_SINGLE_STRIKE, VictoryRoad_2F_EventScript_UrshifuSingleStrike
-	goto VictoryRoad_2F_EventScript_UrshifuRapidStrike
+	goto_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_MANAPHY, VictoryRoad_2F_EventScript_Manaphy
+	goto_if_eq VAR_VICTORY_ROAD_MYTHICAL, VICTORY_ROAD_MYTHICAL_ZARUDE, VictoryRoad_2F_EventScript_Zarude
+	goto VictoryRoad_2F_EventScript_Victini
 	end
 
-VictoryRoad_2F_EventScript_UrshifuRapidStrike::
-	setwildbattle SPECIES_URSHIFU_RAPID_STRIKE, 65
+VictoryRoad_2F_EventScript_Victini::
+	setwildbattle SPECIES_VICTINI, 65
 	waitse
-	playmoncry SPECIES_URSHIFU_RAPID_STRIKE, CRY_MODE_ENCOUNTER
-	goto VictoryRoad_2F_EventScript_UrshifuBattle
+	playmoncry SPECIES_VICTINI, CRY_MODE_ENCOUNTER
+	message VictoryRoad_2F_Text_VictiniCry
+	goto VictoryRoad_2F_EventScript_MythicalBattle
 	end
 
-VictoryRoad_2F_EventScript_UrshifuSingleStrike::
-	setwildbattle SPECIES_URSHIFU_SINGLE_STRIKE, 65
+VictoryRoad_2F_EventScript_Manaphy::
+	setwildbattle SPECIES_MANAPHY, 65
 	waitse
-	playmoncry SPECIES_URSHIFU_SINGLE_STRIKE, CRY_MODE_ENCOUNTER
-	goto VictoryRoad_2F_EventScript_UrshifuBattle
+	playmoncry SPECIES_MANAPHY, CRY_MODE_ENCOUNTER
+	message VictoryRoad_2F_Text_ManaphyCry
+	goto VictoryRoad_2F_EventScript_MythicalBattle
 	end
 
-VictoryRoad_2F_EventScript_UrshifuBattle::
-	message VictoryRoad_2F_Text_UrshifuRoar
+VictoryRoad_2F_EventScript_Zarude::
+	setwildbattle SPECIES_ZARUDE, 65
+	waitse
+	playmoncry SPECIES_ZARUDE, CRY_MODE_ENCOUNTER
+	message VictoryRoad_2F_Text_ZarudeCry
+	goto VictoryRoad_2F_EventScript_MythicalBattle
+	end
+
+@ Every branch queues its own cry text before jumping in here
+VictoryRoad_2F_EventScript_MythicalBattle::
 	waitmessage
 	waitmoncry
 	delay 10
@@ -158,18 +180,24 @@ VictoryRoad_2F_EventScript_UrshifuBattle::
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, VictoryRoad_2F_EventScript_UrshifuStays
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, VictoryRoad_2F_EventScript_UrshifuStays
-	setflag FLAG_HIDE_VICTORY_ROAD_URSHIFU
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, VictoryRoad_2F_EventScript_MythicalStays
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, VictoryRoad_2F_EventScript_MythicalStays
+	setflag FLAG_HIDE_VICTORY_ROAD_MYTHICAL
 	goto EventScript_RemoveStaticMon
 	end
 
 @ Fleeing leaves it on the map so the player can try again
-VictoryRoad_2F_EventScript_UrshifuStays::
+VictoryRoad_2F_EventScript_MythicalStays::
 	release
 	end
 
-VictoryRoad_2F_Text_UrshifuRoar::
+VictoryRoad_2F_Text_VictiniCry::
+	.string "Vii!$"
+
+VictoryRoad_2F_Text_ManaphyCry::
+	.string "Fwaah!$"
+
+VictoryRoad_2F_Text_ZarudeCry::
 	.string "Gwooooh!$"
 
 VictoryRoad_2F_EventScript_VitamaxGiver::

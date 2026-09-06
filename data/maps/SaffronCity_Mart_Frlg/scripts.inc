@@ -64,6 +64,8 @@ SaffronCity_Mart_2BadgeItems::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_DRAGON_FANG
 	pokemartlistend
 
 	.align 2
@@ -75,6 +77,8 @@ SaffronCity_Mart_4BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_DRAGON_FANG
 	pokemartlistend
 
 	.align 2
@@ -87,6 +91,8 @@ SaffronCity_Mart_5BadgeItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_NEVER_MELT_ICE
+	.2byte ITEM_DRAGON_FANG
 	pokemartlistend
 
 	.align 2
@@ -99,13 +105,15 @@ SaffronCity_Mart_LuxuryItems::
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_BLACK_BELT
 	.2byte ITEM_TWISTED_SPOON
+	.2byte ITEM_DRAGON_FANG
+	.2byte ITEM_NEVER_MELT_ICE
 	.2byte ITEM_LUXURY_BALL
 	pokemartlistend
 
 SaffronCity_Mart_Text_MaxRepelMoreEffectiveThanSuper::
-    .string "I'd prefer getting my Fighting-types\n"
-    .string "a White Belt rather than just handing\l"
-    .string "them a Black Belt.\p"
+    .string "I'd prefer starting my Fighting-types\n"
+    .string "with a White Belt rather than just\l"
+    .string "handing them a Black Belt.\p"
     .string "But I can't find them in stock anywhere!$"
 
 SaffronCity_Mart_Text_TryToBendSpoon::

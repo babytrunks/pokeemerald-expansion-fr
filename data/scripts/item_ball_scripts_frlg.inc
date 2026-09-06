@@ -565,10 +565,6 @@ ViridianCity_EventScript_ItemAbilityCapsule::
 	finditem ITEM_ABILITY_CAPSULE
 	end
 
-Route11_EventScript_ItemDreamBall::
-	finditem ITEM_DREAM_BALL
-	end
-
 Route11_EventScript_ItemMuscleFeather::
 	finditem ITEM_MUSCLE_FEATHER
 	end

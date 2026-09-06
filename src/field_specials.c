@@ -946,6 +946,12 @@ bool8 IsPlayerTrainerIdEven(void)
     return (gSaveBlock2Ptr->playerTrainerId[0] & 1) == 0;
 }
 
+// Used to split static encounters between three variants per save file
+u8 GetPlayerTrainerIdModThree(void)
+{
+    return (u16)((gSaveBlock2Ptr->playerTrainerId[1] << 8) | gSaveBlock2Ptr->playerTrainerId[0]) % 3;
+}
+
 void GetPlayerBigGuyGirlString(void)
 {
     if (gSaveBlock2Ptr->playerGender == MALE)

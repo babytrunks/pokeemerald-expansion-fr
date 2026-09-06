@@ -6718,29 +6718,6 @@ void GetDirectionToFaceScript(struct ScriptContext *ctx)
                                   gObjectEvents[targetId].currentCoords.y);
 }
 
-// Whether following pokemon is also the user of the field move
-// Intended to be called before the field effect itself
-void IsFollowerFieldMoveUser(struct ScriptContext *ctx)
-{
-    u32 varId = ScriptReadHalfword(ctx);
-
-    Script_RequestEffects(SCREFF_V1);
-    Script_RequestWriteVar(varId);
-
-    u16 *var = GetVarPointer(varId);
-    u16 userIndex = gFieldEffectArguments[0]; // field move user index
-    struct Pokemon *follower = GetFirstLiveMon();
-    struct ObjectEvent *obj = GetFollowerObject();
-    if (var == NULL)
-        return;
-    *var = FALSE;
-    if (follower && obj && !obj->invisible)
-    {
-        u16 followIndex = ((u32)follower - (u32)gPlayerParty) / sizeof(struct Pokemon);
-        *var = userIndex == followIndex;
-    }
-}
-
 void SetTrainerMovementType(struct ObjectEvent *objectEvent, u8 movementType)
 {
     objectEvent->movementType = movementType;

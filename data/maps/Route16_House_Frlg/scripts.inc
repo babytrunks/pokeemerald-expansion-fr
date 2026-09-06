@@ -4,12 +4,11 @@ Route16_House_Frlg_MapScripts::
 Route16_House_EventScript_Woman::
 	lock
 	faceplayer
-	checkitem ITEM_HM02
+	checkitem ITEM_HM_FLY
 	goto_if_eq VAR_RESULT, FALSE, Route16_House_EventScript_AlreadyGotHM02
 	msgbox Route16_House_Text_FoundMySecretRetreat
-	giveitem ITEM_HM02
+	giveitem ITEM_HM_FLY
 	msgbox Route16_House_Text_ExplainHM02
-	setflag FLAG_GOT_HM02
 	release
 	end
 

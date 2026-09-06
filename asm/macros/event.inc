@@ -2670,12 +2670,6 @@
 	callnative GetFollowerAction
 	.endm
 
-	@ Checks if Field move is being used by the current follower.
-	.macro isfollowerfieldmoveuser var:req
-	callnative IsFollowerFieldMoveUser, requests_effects=1
-	.2byte \var
-	.endm
-
 	@ Saves the direction from where source object event would need to turn to to face the target into the specified var.
 	.macro getdirectiontoface var:req, sourceId:req, targetId:req
 	callnative GetDirectionToFaceScript, requests_effects=1
