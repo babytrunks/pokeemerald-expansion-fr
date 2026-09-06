@@ -2866,11 +2866,8 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 ADJUST_SCORE(-10);
             break;
         case EFFECT_AFTER_YOU:
-            if (!IsTargetingPartner(battlerAtk, battlerDef)
-              || !hasPartner
-              || AI_IsSlower(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY)
-              || PartnerMoveIsSameAsAttacker(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
-                ADJUST_SCORE(-10);
+            // Partner targets return early above so this is always a foe and does nothing useful
+            ADJUST_SCORE(NO_DAMAGE_OR_FAILS);
             break;
         case EFFECT_SUCKER_PUNCH:
             if ((HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_STATUS) && RandomPercentage(RNG_AI_SUCKER_PUNCH, SUCKER_PUNCH_CHANCE)) // Player has a status move
@@ -3740,11 +3737,15 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 }
                 break;
             case EFFECT_AFTER_YOU:
+                // Does nothing if our partner already moves before us
+                if (!hasPartner || AI_IsSlower(battlerAtk, battlerAtkPartner, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY))
+                    break;
+
                 if (!(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && HasMoveWithEffect(battlerAtkPartner, EFFECT_TRICK_ROOM))
                     ADJUST_SCORE(DECENT_EFFECT);
 
-                if (AI_IsSlower(battlerAtkPartner, LEFT_FOE(battlerAtk), aiData->partnerMove, predictedMoveSpeedCheck, CONSIDER_PRIORITY)  // Opponent mon 1 goes before partner
-                 && AI_IsSlower(battlerAtkPartner, RIGHT_FOE(battlerAtk), aiData->partnerMove, predictedMoveSpeedCheck, CONSIDER_PRIORITY)) // Opponent mon 2 goes before partner
+                if ((!IsBattlerAlive(LEFT_FOE(battlerAtk))  || AI_IsSlower(battlerAtkPartner, LEFT_FOE(battlerAtk), aiData->partnerMove, predictedMoveSpeedCheck, CONSIDER_PRIORITY))  // Opponent mon 1 goes before partner
+                 && (!IsBattlerAlive(RIGHT_FOE(battlerAtk)) || AI_IsSlower(battlerAtkPartner, RIGHT_FOE(battlerAtk), aiData->partnerMove, predictedMoveSpeedCheck, CONSIDER_PRIORITY))) // Opponent mon 2 goes before partner
                 {
                     if (partnerEffect == EFFECT_COUNTER || partnerEffect == EFFECT_MIRROR_COAT)
                         break; // These moves need to go last

@@ -26464,6 +26464,7 @@ static const u16 sKeldeoTeachableLearnset[] = {
 #if P_FAMILY_MELOETTA
 static const u16 sMeloettaTeachableLearnset[] = {
     MOVE_ALLURING_VOICE,
+    MOVE_BODY_SLAM,
     MOVE_BRICK_BREAK,
     MOVE_CALM_MIND,
     MOVE_CHARGE_BEAM,

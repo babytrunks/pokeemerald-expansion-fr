@@ -227,8 +227,7 @@ Debug_EventScript_Script_3::
 	end
 
 Debug_EventScript_Script_4::
-	cleartrainerflag TRAINER_BURGLAR_DUSTY
-	cleartrainerflag TRAINER_SUPER_NERD_ZAC
+	trainerbattle_no_intro TRAINER_PSYCHIC_JOHAN, adminmtmoonleft_Text_Defeat
 	release
 	end
 

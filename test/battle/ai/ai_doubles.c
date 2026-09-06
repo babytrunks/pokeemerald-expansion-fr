@@ -603,6 +603,32 @@ AI_DOUBLE_BATTLE_TEST("AI uses After You to set up Trick Room")
     }
 }
 
+AI_DOUBLE_BATTLE_TEST("AI never aims After You at a foe and skips it when it moves after its partner")
+{
+    u32 speed;
+
+    PARAMETRIZE { speed = 5; } // Faster than the partner so After You actually helps
+    PARAMETRIZE { speed = 1; } // Slower than the partner so After You does nothing
+
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_AFTER_YOU) == EFFECT_AFTER_YOU);
+        ASSUME(GetMoveEffect(MOVE_TRICK_ROOM) == EFFECT_TRICK_ROOM);
+        ASSUME(IsHealingMove(MOVE_DRAINING_KISS)); // Doesn't have the Healing Move flag in Gen 5
+        AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_DOUBLE_BATTLE);
+        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(4); }
+        OPPONENT(SPECIES_COMFEY) { Ability(ABILITY_TRIAGE); Speed(speed); Moves(MOVE_AFTER_YOU, MOVE_DRAINING_KISS); }
+        OPPONENT(SPECIES_CLEFAIRY) { Speed(3); Moves(MOVE_TRICK_ROOM, MOVE_PSYCHIC); }
+    } WHEN {
+        if (speed == 5)
+            TURN { SCORE_LT_VAL(opponentLeft, MOVE_AFTER_YOU, AI_SCORE_DEFAULT - 10, target:playerLeft);
+                   SCORE_LT_VAL(opponentLeft, MOVE_AFTER_YOU, AI_SCORE_DEFAULT - 10, target:playerRight);
+                   EXPECT_MOVE(opponentLeft, MOVE_AFTER_YOU, target:opponentRight); }
+        else
+            TURN { NOT_EXPECT_MOVE(opponentLeft, MOVE_AFTER_YOU); }
+    }
+}
+
 AI_DOUBLE_BATTLE_TEST("AI uses Trick Room intelligently")
 {
     u32 move, ability, speed;

@@ -6003,7 +6003,9 @@ static void Cmd_moveend(void)
         switch (gBattleScripting.moveendState)
         {
         case MOVEEND_SET_VALUES:
-            gBattleScripting.savedDmg += gBattleStruct->moveDamage[gBattlerTarget];
+            // Fixed damage moves set moveDamage before typecalc so it lingers on a miss or immunity
+            if (!(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT))
+                gBattleScripting.savedDmg += gBattleStruct->moveDamage[gBattlerTarget];
             gBattleStruct->eventState.moveEndBattler = 0;
             gBattleScripting.moveendState++;
             break;
