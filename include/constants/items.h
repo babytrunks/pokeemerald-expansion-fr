@@ -1021,8 +1021,8 @@
 #define ITEM_HEATRANITE 855
 #define ITEM_DARKRANITE 856
 #define ITEM_ZERAORITE 857
-#define ITEM_RAICHUNITE_X 858
-#define ITEM_RAICHUNITE_Y  859
+#define ITEM_RAICHUNITE_X 858 // DONE (Celadon GC)
+#define ITEM_RAICHUNITE_Y  859 // DONE (Celadon Surf)
 #define ITEM_CHIMECHITE  860 // DONE (Sabrina)
 #define ITEM_ABSOLITE_Z  861
 #define ITEM_STARAPTITE  862 // DONE (Elbein Route above Cinnabar)

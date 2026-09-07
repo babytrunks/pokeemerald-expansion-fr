@@ -108,6 +108,7 @@ CeladonCity_GameCorner_PrizeRoom_MegaStonePrizes:
 	prize_item ITEM_BLASTOISINITE,  1500
 	prize_item ITEM_CHARIZARDITE_X, 1500
 	prize_item ITEM_PIDGEOTITE,     1500
+	prize_item ITEM_RAICHUNITE_X,   1500
 	prize_item ITEM_HERACRONITE,    1500
 	prize_item ITEM_ABSOLITE,       1500
 	prizelistend

@@ -46,7 +46,7 @@ Route24_EventScript_BattleRocket::
 	setvar VAR_LAST_TALKED, LOCALID_ROUTE24_ROCKET
 	trainerbattle_no_intro TRAINER_TEAM_ROCKET_GRUNT_6, Route24_Text_RocketDefeat
 	msgbox Route24_Text_FineHeresNugget
-	giveitem ITEM_NUGGET
+	giveitem ITEM_BIG_NUGGET
 	msgbox Route24_Text_YoudBecomeTopRocketLeader
 	setvar VAR_MAP_SCENE_ROUTE24, 1
 	return
@@ -97,7 +97,8 @@ Route24_Text_JoinTeamRocket::
     .string "refuse!$"
 
 Route24_Text_FineHeresNugget::
-    .string "Fine, here's your Nugget.$"
+    .string "Fine, here's your Nugget.\n"
+	.string "A big one, at that.$"
 
 Route24_Text_RocketDefeat::
     .string "Arrgh!\n"

@@ -1949,6 +1949,19 @@ bool32 IsEventIslandMapSecId(mapsec_u8_t mapSecId)
     return FALSE;
 }
 
+// Hoenn islands reached from Kanto so their map would show Hoenn fly spots
+bool32 IsRegionMapBlockedOnCurrentMap(void)
+{
+    switch (gMapHeader.regionMapSectionId)
+    {
+    case MAPSEC_SOUTHERN_ISLAND:
+    case MAPSEC_FARAWAY_ISLAND:
+        return TRUE;
+    default:
+        return FALSE;
+    }
+}
+
 void CB2_OpenFlyMap(void)
 {
     switch (gMain.state)

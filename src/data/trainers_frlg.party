@@ -11985,7 +11985,7 @@ Class: Elite Four Frlg
 Pic: Elite Four Lorelei Frlg
 Gender: Male
 Music: Elite Four
-Double Battle: No
+Double Battle: Yes
 AI: Smart Trainer / Prediction / Know Opponent Party / HP Aware / Try To 2HKO / Try To Faint / Check Viability
 Mugshot: Purple
 Boss: Yes

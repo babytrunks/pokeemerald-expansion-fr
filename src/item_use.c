@@ -35,6 +35,7 @@
 #include "party_menu.h"
 #include "pokeblock.h"
 #include "pokemon.h"
+#include "region_map.h"
 #include "script.h"
 #include "sound.h"
 #include "strings.h"
@@ -105,6 +106,7 @@ static void PokevialPrintPartyHealed(bool32 isPlayerUsingRegisteredKeyItem, u8 t
 //End Pokevial Branch
 
 static const u8 sText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_NoMapDataHere[] = _("There's no map data for this area.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderOnTop[] = _("Oh!\nThe ITEMFINDER's shaking wildly!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNothing[] = _("… … … …Nope!\nThere's no response.{PAUSE_UNTIL_PRESS}");
@@ -1767,6 +1769,13 @@ static void ItemUseOnFieldCB_TownMap(u8 taskId)
 
 void ItemUseOutOfBattle_TownMap(u8 taskId)
 {
+    // Wishing Isle and Eon Island sit on the Hoenn map so keep it shut there
+    if (IsRegionMapBlockedOnCurrentMap())
+    {
+        DisplayCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem, sText_NoMapDataHere);
+        return;
+    }
+
     if (!gTasks[taskId].tUsingRegisteredKeyItem)
     {
         sItemUseOnFieldCB = ItemUseOnFieldCB_TownMap;
