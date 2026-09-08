@@ -11993,7 +11993,7 @@ Boss: Yes
 Politoed @ Damp Rock
 Nature: Timid
 Ability: Drizzle
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 4 Def / 252 Spe
 - Scald
@@ -12004,7 +12004,7 @@ EVs: 252 HP / 4 Def / 252 Spe
 Ogerpon-Wellspring @ Wellspring Mask
 Nature: Jolly
 Ability: Water Absorb
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Ivy Cudgel
@@ -12015,7 +12015,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Swampert @ Swampertite
 Nature: Adamant
 Ability: Torrent 
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Power Up Punch
@@ -12026,7 +12026,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Walking-Wake @ Life Orb
 Nature: Timid
 Ability: Protosynthesis
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Hurricane
@@ -12037,7 +12037,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Kyogre @ Blue Orb
 Nature: Timid
 Ability: Pressure
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Water Spout
@@ -12047,7 +12047,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 
 Iron-Bundle @ Focus Sash
 Nature: Timid
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Hydro Pump
@@ -12070,7 +12070,7 @@ Boss: Yes
 Infernape @ Focus Sash
 Nature: Jolly
 Ability: Blaze
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Stealth Rock
@@ -12081,7 +12081,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Urshifu-Single-Strike @ Black Glasses
 Nature: Jolly
 Ability: Unseen Fist
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Wicked Blow
@@ -12092,7 +12092,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Kommo O @ Throat Spray
 Nature: Timid
 Ability: Overcoat
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Clanging Scales
@@ -12103,7 +12103,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Iron-Valiant @ Booster Energy
 Nature: Timid
 Ability: Quark Drive
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Moonblast
@@ -12114,7 +12114,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Zacian @ Rusted Sword
 Nature: Jolly
 Ability: Intrepid Sword
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Swords Dance
@@ -12125,7 +12125,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Lucario @ Lucarionite
 Nature: Jolly
 Ability: Inner Focus 
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Swords Dance
@@ -12147,7 +12147,7 @@ Boss: Yes
 Zoroark @ Focus Sash
 Nature: Timid
 Ability: Illusion
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Dark Pulse
@@ -12158,7 +12158,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Gholdengo @ Air Balloon
 Nature: Timid
 Ability: Good as Gold
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Nasty Plot
@@ -12169,7 +12169,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Marshadow @ Focus Sash
 Nature: Jolly
 Ability: Technician
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Spectral Thief
@@ -12180,7 +12180,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Flutter-Mane @ Booster Energy
 Nature: Timid
 Ability: Protosynthesis
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Shadow Ball
@@ -12191,7 +12191,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Chien Pao @ Black Glasses
 Nature: Jolly
 Ability: Sword of Ruin
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Crunch
@@ -12202,7 +12202,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Gengar @ Gengarite
 Nature: Timid
 Ability: Levitate
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Shadow Ball
@@ -12224,7 +12224,7 @@ Boss: Yes
 Aerodactyl @ Focus Sash
 Nature: Jolly
 Ability: Unnerve
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Stealth Rock
@@ -12235,7 +12235,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Melmetal @ Assault Vest
 Nature: Adamant
 Ability: Iron Fist
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 252 Atk / 4 SpD
 - Double Iron Bash
@@ -12246,7 +12246,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 Iron-Jugulis @ Booster Energy
 Nature: Timid
 Ability: Quark Drive
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Aeroblast
@@ -12257,7 +12257,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Roaring-Moon @ Booster Energy
 Nature: Jolly
 Ability: Protosynthesis
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Acrobatics
@@ -12268,7 +12268,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Dialga @ Leftovers
 Nature: Calm
 Ability: Pressure
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 4 SpA / 252 SpD
 - Roar Of Time
@@ -12279,7 +12279,7 @@ EVs: 252 HP / 4 SpA / 252 SpD
 Dragonite @ Dragoninite
 Nature: Timid
 Ability: Intimidate
-Level: 65
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Hurricane
@@ -13641,7 +13641,7 @@ Boss: Yes
 Pheromosa @ Focus Sash
 Nature: Jolly
 Ability: Beast Boost
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Close Combat
@@ -13652,7 +13652,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Metagross @ Metagrossite
 Nature: Jolly
 Ability: Tough Claws
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Meteor Mash
@@ -13663,7 +13663,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Koraidon @ Lum Berry
 Nature: Jolly
 Ability: Orichalcum Pulse
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Swords Dance
@@ -13674,7 +13674,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Yveltal @ Assault Vest
 Nature: Modest
 Ability: Dark Aura
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 4 Def / 252 SpA
 - Oblivion Wing
@@ -13685,7 +13685,7 @@ EVs: 252 HP / 4 Def / 252 SpA
 Eternatus @ Power Herb
 Nature: Timid
 Ability: Multitype
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Meteor Beam
@@ -13696,7 +13696,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Ditto @ Choice Scarf
 Nature: Timid
 Ability: Imposter
-Level: 85
+Level: 71
 EVs: 252 HP / 4 Def / 252 Spe
 Ball: Ultra Ball
 - Transform
@@ -13715,7 +13715,7 @@ Boss: Yes
 Pheromosa @ Focus Sash
 Nature: Jolly
 Ability: Beast Boost
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Close Combat
@@ -13726,7 +13726,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Metagross @ Metagrossite
 Nature: Jolly
 Ability: Tough Claws
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Meteor Mash
@@ -13737,7 +13737,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Koraidon @ Lum Berry
 Nature: Jolly
 Ability: Orichalcum Pulse
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Swords Dance
@@ -13748,7 +13748,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Yveltal @ Assault Vest
 Nature: Modest
 Ability: Dark Aura
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 4 Def / 252 SpA
 - Oblivion Wing
@@ -13759,7 +13759,7 @@ EVs: 252 HP / 4 Def / 252 SpA
 Eternatus @ Power Herb
 Nature: Timid
 Ability: Multitype
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Meteor Beam
@@ -13770,7 +13770,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Ditto @ Choice Scarf
 Nature: Timid
 Ability: Imposter
-Level: 85
+Level: 71
 EVs: 252 HP / 4 Def / 252 Spe
 Ball: Ultra Ball
 - Transform
@@ -13789,7 +13789,7 @@ Boss: Yes
 Pheromosa @ Focus Sash
 Nature: Jolly
 Ability: Beast Boost
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Close Combat
@@ -13800,7 +13800,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Metagross @ Metagrossite
 Nature: Jolly
 Ability: Tough Claws
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Meteor Mash
@@ -13811,7 +13811,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Koraidon @ Lum Berry
 Nature: Jolly
 Ability: Orichalcum Pulse
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 Atk / 4 Def / 252 Spe
 - Swords Dance
@@ -13822,7 +13822,7 @@ EVs: 252 Atk / 4 Def / 252 Spe
 Yveltal @ Assault Vest
 Nature: Modest
 Ability: Dark Aura
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 252 HP / 4 Def / 252 SpA
 - Oblivion Wing
@@ -13833,7 +13833,7 @@ EVs: 252 HP / 4 Def / 252 SpA
 Eternatus @ Power Herb
 Nature: Timid
 Ability: Multitype
-Level: 67
+Level: 71
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 EVs: 4 Def / 252 SpA / 252 Spe
 - Meteor Beam
@@ -13844,7 +13844,7 @@ EVs: 4 Def / 252 SpA / 252 Spe
 Ditto @ Choice Scarf
 Nature: Timid
 Ability: Imposter
-Level: 85
+Level: 71
 EVs: 252 HP / 4 Def / 252 Spe
 Ball: Ultra Ball
 - Transform

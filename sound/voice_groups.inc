@@ -5,6 +5,8 @@
 .include "sound/voicegroups/drumsets/frlg.inc"
 .include "sound/voicegroups/drumsets/emerald_1.inc"
 .include "sound/voicegroups/drumsets/emerald_2.inc"
+.include "sound/voicegroups/drumsets/arven.inc"
+.include "sound/voicegroups/drumsets/silver.inc"
 
 @ key splits
 .include "sound/voicegroups/keysplits/piano.inc"
@@ -256,3 +258,5 @@
 .include "sound/voicegroups/voicegroup191.inc"
 .include "sound/voicegroups/voicegroup192.inc"
 .include "sound/voicegroups/voicegroup193.inc"
+.include "sound/voicegroups/vs_arven.inc"
+.include "sound/voicegroups/vs_silver.inc"

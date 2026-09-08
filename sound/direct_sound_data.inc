@@ -7640,3 +7640,84 @@ DirectSoundWaveData_puresquare_50::
 	.incbin "sound/direct_sound_samples/puresquare_50.bin"
 
 	.align 2
+
+@ Arven battle drum kit, ripped from the source ROM
+	.align 2
+DirectSoundWaveData_arven_castanets::
+	.incbin "sound/direct_sound_samples/arven_castanets.bin"
+
+	.align 2
+DirectSoundWaveData_arven_clap::
+	.incbin "sound/direct_sound_samples/arven_clap.bin"
+
+	.align 2
+DirectSoundWaveData_arven_conga_low::
+	.incbin "sound/direct_sound_samples/arven_conga_low.bin"
+
+	.align 2
+DirectSoundWaveData_arven_conga_mute::
+	.incbin "sound/direct_sound_samples/arven_conga_mute.bin"
+
+	.align 2
+DirectSoundWaveData_arven_crash_cymbal_2::
+	.incbin "sound/direct_sound_samples/arven_crash_cymbal_2.bin"
+
+	.align 2
+DirectSoundWaveData_arven_hihat_closed::
+	.incbin "sound/direct_sound_samples/arven_hihat_closed.bin"
+
+	.align 2
+DirectSoundWaveData_arven_hihat_open::
+	.incbin "sound/direct_sound_samples/arven_hihat_open.bin"
+
+	.align 2
+DirectSoundWaveData_arven_kick::
+	.incbin "sound/direct_sound_samples/arven_kick.bin"
+
+	.align 2
+DirectSoundWaveData_arven_maracas::
+	.incbin "sound/direct_sound_samples/arven_maracas.bin"
+
+	.align 2
+DirectSoundWaveData_arven_perc_109::
+	.incbin "sound/direct_sound_samples/arven_perc_109.bin"
+
+	.align 2
+DirectSoundWaveData_arven_perc_90::
+	.incbin "sound/direct_sound_samples/arven_perc_90.bin"
+
+	.align 2
+DirectSoundWaveData_arven_ride_bell::
+	.incbin "sound/direct_sound_samples/arven_ride_bell.bin"
+
+	.align 2
+DirectSoundWaveData_arven_shaker::
+	.incbin "sound/direct_sound_samples/arven_shaker.bin"
+
+	.align 2
+DirectSoundWaveData_arven_snare::
+	.incbin "sound/direct_sound_samples/arven_snare.bin"
+
+	.align 2
+DirectSoundWaveData_arven_snare_electric::
+	.incbin "sound/direct_sound_samples/arven_snare_electric.bin"
+
+	.align 2
+DirectSoundWaveData_arven_splash_cymbal::
+	.incbin "sound/direct_sound_samples/arven_splash_cymbal.bin"
+
+	.align 2
+DirectSoundWaveData_arven_tambourine::
+	.incbin "sound/direct_sound_samples/arven_tambourine.bin"
+
+	.align 2
+DirectSoundWaveData_arven_timbale_high::
+	.incbin "sound/direct_sound_samples/arven_timbale_high.bin"
+
+	.align 2
+DirectSoundWaveData_arven_timbale_low::
+	.incbin "sound/direct_sound_samples/arven_timbale_low.bin"
+
+	.align 2
+DirectSoundWaveData_arven_tom_floor_low::
+	.incbin "sound/direct_sound_samples/arven_tom_floor_low.bin"

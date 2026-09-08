@@ -7860,7 +7860,7 @@ static const struct LevelUpMove sCombuskenLevelUpLearnset[] = {
     LEVEL_UP_MOVE(38, MOVE_SKY_UPPERCUT),
     LEVEL_UP_MOVE(40, MOVE_BLAZE_KICK),
     LEVEL_UP_MOVE(55, MOVE_FLARE_BLITZ),
-    LEVEL_UP_MOVE(66, MOVE_BULK_UP), 
+    LEVEL_UP_MOVE(LEVEL_CAP_IS_CHAMPION + 1, MOVE_BULK_UP), 
     LEVEL_UP_END
 };
 
@@ -21598,6 +21598,7 @@ static const struct LevelUpMove sSprigatitoLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(32, MOVE_ENERGY_BALL),
 	LEVEL_UP_MOVE(36, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(38, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(51, MOVE_HONE_CLAWS),
     LEVEL_UP_END
 };
 
@@ -21617,6 +21618,7 @@ static const struct LevelUpMove sFloragatoLevelUpLearnset[] = {
 	LEVEL_UP_MOVE(42, MOVE_PLAY_ROUGH),
 	LEVEL_UP_MOVE(46, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE(48, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(51, MOVE_HONE_CLAWS),
     LEVEL_UP_END
 };
 
@@ -21639,6 +21641,7 @@ static const struct LevelUpMove sMeowscaradaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(43, MOVE_FLOWER_TRICK),
     LEVEL_UP_MOVE(46, MOVE_LEAF_STORM),
     LEVEL_UP_MOVE(49, MOVE_SUCKER_PUNCH),
+    LEVEL_UP_MOVE(51, MOVE_HONE_CLAWS),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_SPRIGATITO
