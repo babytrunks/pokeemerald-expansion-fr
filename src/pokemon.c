@@ -6530,10 +6530,12 @@ u16 GetBattleBGM(void)
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL_EARLY_FRLG:
         case TRAINER_CLASS_RIVAL_LATE_FRLG:
-            return MUS_VS_TRAINER_KANTO;
+            return MUS_VS_SILVER;
         case TRAINER_CLASS_PKMN_TRAINER_1:
             return MUS_VS_RIVAL;
-
+        case TRAINER_CLASS_FRIENDLY:
+            return MUS_VS_ARVEN;
+            
         case TRAINER_CLASS_RIVAL:
             if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
                 return MUS_VS_RIVAL;

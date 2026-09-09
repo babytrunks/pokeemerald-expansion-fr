@@ -975,6 +975,20 @@ u16 RandomizeEggMon(u16 originalSlot, const u16* originalEggMons)
     return originalEggMons[originalSlot];
 }
 
+// Arbitrary constant so the rare screen keeps its own species mapping
+#define RARE_SCREEN_SEED 0x5241
+
+u16 RandomizeRareScreenMon(u16 species, u32 salt)
+{
+    if (RandomizerFeatureEnabled(RANDOMIZE_STARTER_AND_GIFT_MON))
+    {
+        return RandomizeMon(RANDOMIZER_REASON_STARTER_AND_GIFT_MON,
+                GetRandomizerOption(RANDOMIZER_OPTION_SPECIES_MODE), RARE_SCREEN_SEED + salt, species);
+    }
+
+    return species;
+}
+
 static inline bool32 IsAbilityIllegal(u16 ability)
 {
     if (ability == ABILITY_NONE || ability == ABILITY_WONDER_GUARD)

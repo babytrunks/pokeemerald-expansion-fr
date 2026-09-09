@@ -126,6 +126,11 @@ u16 RandomizeStarterAndGiftMon(u16 originalSlot, const u16* originalStarterAndGi
 // Given a egg slot and the list of original egg mons, returns the random egg mon in that slot.
 u16 RandomizeEggMon(u16 originalSlot, const u16* originalEggMons);
 
+// Rare Pokemon screen mons are gifts so they follow the starter and gift setting
+// The mapping is fixed per species so the same pool always offers the same replacements
+// Salt lets a caller reroll a slot that landed on a species it already placed
+u16 RandomizeRareScreenMon(u16 species, u32 salt);
+
 // Given a species and an abilityNum, returns a replacement for that ability.
 u16 RandomizeAbility(u16 species, u8 abilityNum, u16 originalAbility);
 

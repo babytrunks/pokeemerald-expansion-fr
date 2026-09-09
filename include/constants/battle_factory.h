@@ -30,6 +30,13 @@
 #define BATTLE_FACTORY_FUNC_GET_OPPONENT_STYLE      15
 #define BATTLE_FACTORY_FUNC_RESET_HELD_ITEMS        16
 
+// VAR_RARE_POKEMON_COUNTER sentinel, starters come from VAR_0x8005 to 0x8007 not sInitialRentalMonRanges
+#define RARE_POKEMON_POOL_STARTERS 0xFF
+#define STARTER_MON_LEVEL          5
+#define STARTER_SELECT_COUNT       3
+// Reroll budget for a randomized starter that duplicates another slot
+#define STARTER_SELECT_MAX_REROLLS 8
+
 #define FACTORY_DATA_WIN_STREAK         1
 #define FACTORY_DATA_WIN_STREAK_ACTIVE  2
 #define FACTORY_DATA_WIN_STREAK_SWAPS   3

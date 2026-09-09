@@ -1590,7 +1590,7 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
         ModifyPersonalityForNature(&personality, Random() % NUM_NATURES);
     }
 
-    if (FlagGet(FLAG_RARE_POKEMON_SCREEN)) 
+    if (FlagGet(FLAG_RARE_POKEMON_SCREEN) && !IsStarterSelectScreen()) 
     {
         if (FlagGet(FLAG_BADGE06_GET))
             level = 40;
@@ -1667,16 +1667,25 @@ void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32
     CreateMon(dst, species, level, fixedIV, TRUE, personality, otID, OT_ID_PRESET);
 
     friendship = MAX_FRIENDSHIP;
-    // Give the chosen Pokémon its specified moves.
-    for (j = 0; j < MAX_MON_MOVES; j++)
+    // Starters keep the moveset CreateMon gave them and the friendship a givemon would have
+    if (IsStarterSelectScreen())
     {
-        move = fmon->moves[j];
-        if (flags & FLAG_FRONTIER_MON_FACTORY && move == MOVE_RETURN)
-            move = MOVE_FRUSTRATION;
+        friendship = gSpeciesInfo[species].friendship;
+    }
+    else if (fmon->moves[0] != MOVE_NONE)
+    {
+        // An empty move list means the caller wants the level up moveset kept
+        // Give the chosen Pokémon its specified moves.
+        for (j = 0; j < MAX_MON_MOVES; j++)
+        {
+            move = fmon->moves[j];
+            if (flags & FLAG_FRONTIER_MON_FACTORY && move == MOVE_RETURN)
+                move = MOVE_FRUSTRATION;
 
-        SetMonMoveSlot(dst, move, j);
-        if (gMovesInfo[move].effect == EFFECT_FRUSTRATION)
-            friendship = 0;  // Frustration is more powerful the lower the pokemon's friendship is.
+            SetMonMoveSlot(dst, move, j);
+            if (gMovesInfo[move].effect == EFFECT_FRUSTRATION)
+                friendship = 0;  // Frustration is more powerful the lower the pokemon's friendship is.
+        }
     }
     u16 item = fmon->heldItem;
     SetMonData(dst, MON_DATA_FRIENDSHIP, &friendship);

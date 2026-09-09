@@ -25,8 +25,10 @@
 #include "util.h"
 #include "trainer_pokemon_sprites.h"
 #include "starter_choose.h"
+#include "pokeball.h"
 #include "strings.h"
 #include "graphics.h"
+#include "constants/battle_factory.h"
 #include "constants/battle_frontier.h"
 #include "constants/battle_tent.h"
 #include "constants/songs.h"
@@ -43,6 +45,8 @@
 #define SWAP_ENEMY_SCREEN  1  // The screen where the player selects which new Pokémon from the defeated party to swap for
 
 #define SELECTABLE_MONS_COUNT 3
+// The starter pick reuses these slots so the three Oaks Lab balls have to fit
+STATIC_ASSERT(STARTER_SELECT_COUNT <= SELECTABLE_MONS_COUNT, StarterSelectCountFitsSelectableMons);
 
 #define PALNUM_FADE_TEXT 14
 #define PALNUM_TEXT      15
@@ -1740,6 +1744,7 @@ static void Select_Task_HandleChooseMons(u8 taskId)
 static void CreateFrontierFactorySelectableMons(u8 firstMonId)
 {
     u8 i = 0;
+    u8 j = 0;
     u8 ivs = 0;
     u8 level = 0;
     u32 otId = 0;
@@ -1760,20 +1765,59 @@ static void CreateFrontierFactorySelectableMons(u8 firstMonId)
     rentalRank = GetNumPastRentalsRank(battleMode, lvlMode);
     otId = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);
 
+    // Oaks Lab starter pick, the script puts grass water fire in VAR_0x8005 to 0x8007
+    if (IsStarterSelectScreen())
+    {
+        u16 starterSpecies[STARTER_SELECT_COUNT];
+
+        GetRareScreenStarterSpecies(starterSpecies);
+        for (i = 0; i < SELECTABLE_MONS_COUNT; i++)
+        {
+            struct TrainerMon starter = {0};
+
+            starter.species = starterSpecies[i];
+            starter.heldItem = ITEM_ORAN_BERRY;
+            starter.ball = BALL_POKE; // zero would be BALL_STRANGE
+            starter.nature = NATURE_DOCILE; // docile means roll a random nature
+            // moves left empty on purpose so CreateMon keeps the level up moveset
+            sFactorySelectScreen->mons[i + firstMonId].monId = 0;
+            CreateFacilityMon(&starter, STARTER_MON_LEVEL, USE_RANDOM_IVS, otId, 0,
+                    &sFactorySelectScreen->mons[i + firstMonId].monData);
+        }
+        return;
+    }
+
     for (i = 0; i < SELECTABLE_MONS_COUNT; i++)
     // for (i = 0; i < 3; i++)
     {
         u16 monId = gSaveBlock2Ptr->frontier.rentalMons[i].monId;
+        const struct TrainerMon *fmon = &gFacilityTrainerMons[monId];
+        struct TrainerMon randomizedMon;
+
         sFactorySelectScreen->mons[i + firstMonId].monId = monId;
         if (FlagGet(FLAG_RARE_POKEMON_SCREEN)) {
+            u16 species = GetRareScreenMonSpecies(fmon->species);
+
             ivs = USE_RANDOM_IVS;
+            if (species != fmon->species)
+            {
+                // Nothing curated for the old species still fits so let CreateMon
+                // roll the new species level up moveset and a matching ability
+                randomizedMon = *fmon;
+                randomizedMon.species = species;
+                randomizedMon.ability = ABILITY_NONE;
+                randomizedMon.teraType = TYPE_NONE;
+                for (j = 0; j < MAX_MON_MOVES; j++)
+                    randomizedMon.moves[j] = MOVE_NONE;
+                fmon = &randomizedMon;
+            }
         }
         else if (i < rentalRank)
             ivs = GetFactoryMonFixedIV(challengeNum + 1, FALSE);
         else
             ivs = GetFactoryMonFixedIV(challengeNum, FALSE);
 
-        CreateFacilityMon(&gFacilityTrainerMons[monId],
+        CreateFacilityMon(fmon,
                 level, ivs, otId, FLAG_FRONTIER_MON_FACTORY,
                 &sFactorySelectScreen->mons[i + firstMonId].monData);
     }
@@ -4317,7 +4361,13 @@ static void GiveSelectedRareMonToPlayer(void)
         {
             if (sFactorySelectScreen->mons[j].selectedId == i + 1)
             {
-                if (FlagGet(FLAG_RARE_POKEMON_SCREEN))
+                if (IsStarterSelectScreen())
+                {
+                    VarSet(VAR_RESULT, j); // slot, the script maps it back through setstartervars
+                    // A randomized starter cannot be recomputed from the slot so hand the species over too
+                    VarSet(VAR_0x8004, GetMonData(&sFactorySelectScreen->mons[j].monData, MON_DATA_SPECIES, NULL));
+                }
+                else if (FlagGet(FLAG_RARE_POKEMON_SCREEN))
                     VarSet(VAR_RESULT, GetMonData(&sFactorySelectScreen->mons[j].monData, MON_DATA_SPECIES, NULL));
                 GiveMonToPlayer( &sFactorySelectScreen->mons[j].monData);
                 break;

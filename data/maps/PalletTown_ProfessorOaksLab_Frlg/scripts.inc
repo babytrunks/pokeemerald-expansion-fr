@@ -228,8 +228,61 @@ PalletTown_ProfessorOaksLab_ChooseStarterScene::
 	msgbox PalletTown_ProfessorOaksLab_Text_OakBePatientRival
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 2
 	setflag FLAG_3_PERFECT_IVS @ Starter has 3 Perfect IVs
-	releaseall
+	goto PalletTown_ProfessorOaksLab_EventScript_OpenStarterScreen
 	end
+
+@ builds the three region starters then opens the rare mon screen instead of the ball table
+PalletTown_ProfessorOaksLab_EventScript_OpenStarterScreen::
+	setvar PLAYER_STARTER_NUM, 0
+	call setstartervars
+	copyvar VAR_0x8005, PLAYER_STARTER_SPECIES
+	setvar PLAYER_STARTER_NUM, 1
+	call setstartervars
+	copyvar VAR_0x8006, PLAYER_STARTER_SPECIES
+	setvar PLAYER_STARTER_NUM, 2
+	call setstartervars
+	copyvar VAR_0x8007, PLAYER_STARTER_SPECIES
+	setflag FLAG_RARE_POKEMON_SCREEN
+	setvar VAR_RARE_POKEMON_COUNTER, RARE_POKEMON_POOL_STARTERS
+	factory_generaterentalmons
+	factory_rentmons
+	waitstate
+	clearflag FLAG_RARE_POKEMON_SCREEN
+	setvar VAR_RARE_POKEMON_COUNTER, 0
+	@ the screen already gave the mon and returns the slot it came from
+	copyvar PLAYER_STARTER_NUM, VAR_RESULT
+	call setstartervars
+	@ setstartervars only knows the unrandomized species so take what the screen gave
+	copyvar PLAYER_STARTER_SPECIES, VAR_0x8004
+	call_if_eq PLAYER_STARTER_NUM, 0, PalletTown_ProfessorOaksLab_EventScript_TookGrassStarter
+	call_if_eq PLAYER_STARTER_NUM, 1, PalletTown_ProfessorOaksLab_EventScript_TookWaterStarter
+	call_if_eq PLAYER_STARTER_NUM, 2, PalletTown_ProfessorOaksLab_EventScript_TookFireStarter
+	textcolor NPC_TEXT_COLOR_MALE
+	setspeaker SP_NAME_PROF_OAK
+	msgbox PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic
+	call EventScript_RestorePrevTextColor
+	setflag FLAG_SYS_POKEMON_GET
+	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
+	goto PalletTown_ProfessorOaksLab_EventScript_StarterReceived
+
+@ rival still takes the type advantaged Kanto mon, same pairs the ball scripts used
+PalletTown_ProfessorOaksLab_EventScript_TookGrassStarter::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_CHARMANDER
+	setvar RIVAL_STARTER_ID, LOCALID_CHARMANDER_BALL
+	removeobject LOCALID_BULBASAUR_BALL
+	return
+
+PalletTown_ProfessorOaksLab_EventScript_TookWaterStarter::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_BULBASAUR
+	setvar RIVAL_STARTER_ID, LOCALID_BULBASAUR_BALL
+	removeobject LOCALID_SQUIRTLE_BALL
+	return
+
+PalletTown_ProfessorOaksLab_EventScript_TookFireStarter::
+	setvar RIVAL_STARTER_SPECIES, SPECIES_SQUIRTLE
+	setvar RIVAL_STARTER_ID, LOCALID_SQUIRTLE_BALL
+	removeobject LOCALID_CHARMANDER_BALL
+	return
 
 PalletTown_ProfessorOaksLab_Movement_OakEnter::
 	walk_up
@@ -661,8 +714,6 @@ ProceedPokedexScript::
 	call PalletTown_ProfessorOaksLab_EventScript_OakBringDexesOverNorth
 	delay 10
 	textcolor NPC_TEXT_COLOR_NEUTRAL
-	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_WalkLeft
-	waitmovement 0
 	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
 	waitmovement 0
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
@@ -1149,6 +1200,8 @@ PalletTown_ProfessorOaksLab_EventScript_ChoseStarter::
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_PALLET_LADY_NOT_BLOCKING_SIGN
 	givemon PLAYER_STARTER_SPECIES, 5, ITEM_ORAN_BERRY
+
+PalletTown_ProfessorOaksLab_EventScript_StarterReceived::
 	copyvar VAR_STARTER_MON, PLAYER_STARTER_NUM
 	copyvar VAR_STARTER_SPECIES, PLAYER_STARTER_SPECIES
 	bufferspeciesname STR_VAR_1, VAR_TEMP_2
@@ -1170,35 +1223,20 @@ EventScript_GiveNicknameToStarter::
 
 PalletTown_ProfessorOaksLab_EventScript_RivalPicksStarter::
 	closemessage
-	goto_if_eq PLAYER_STARTER_NUM, 0, PalletTown_ProfessorOaksLab_EventScript_RivalWalksToCharmander
-	goto_if_eq PLAYER_STARTER_NUM, 1, PalletTown_ProfessorOaksLab_EventScript_RivalWalksToBulbasaur
-	goto_if_eq PLAYER_STARTER_NUM, 2, PalletTown_ProfessorOaksLab_EventScript_RivalWalksToSquirtle
-	end
-
-PalletTown_ProfessorOaksLab_EventScript_RivalWalksToCharmander::
-	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalWalksToCharmander
-	waitmovement 0
-	goto PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter
-	end
-
-PalletTown_ProfessorOaksLab_EventScript_RivalWalksToSquirtle::
-	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalWalksToSquirtle
-	waitmovement 0
-	goto PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter
-	end
-
-PalletTown_ProfessorOaksLab_EventScript_RivalWalksToBulbasaur::
-	applymovement LOCALID_OAKS_LAB_RIVAL, PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur
-	waitmovement 0
+	@ no ball table any more so the rival takes his straight from Oak
 	goto PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter::
 	textcolor NPC_TEXT_COLOR_MALE
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 3
+	@ rival is already beside Oak so he only steps in place to take his
+	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	setspeaker SP_NAME_RIVAL
 	msgbox PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen
-    goto_if_ne VAR_STARTER_GENERATION 0, PalletTown_ProfessorOaksLab_EventScript_RivalWalksBackToOak
 	removeobject RIVAL_STARTER_ID
+    goto_if_ne VAR_STARTER_GENERATION 0, PalletTown_ProfessorOaksLab_EventScript_RivalWalksBackToOak
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	bufferspeciesname STR_VAR_1, RIVAL_STARTER_SPECIES
 	message PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak
@@ -1206,129 +1244,31 @@ PalletTown_ProfessorOaksLab_EventScript_RivalTakesStarter::
 	playfanfare MUS_RG_OBTAIN_KEY_ITEM
 	waitfanfare
 	call_if_set FLAG_OPENED_START_MENU, PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene
-	applymovement LOCALID_OAKS_LAB_PROF_OAK Common_Movement_FaceRight
+	applymovement LOCALID_OAKS_LAB_PROF_OAK Common_Movement_FaceDown
+	waitmovement 0
 	setspeaker SP_NAME_PROF_OAK
     msgbox gText_OakBothComeHere 
-    applymovement LOCALID_OAKS_LAB_PROF_OAK Common_Movement_FaceDown
-	call_if_eq RIVAL_STARTER_ID 7, MoveGaryCharmander
-	call_if_eq RIVAL_STARTER_ID 6, MoveGarySquirtle
-	call_if_eq RIVAL_STARTER_ID 5, MoveGaryBulbasaur
+	@ both are already standing with Oak, they just look up at him
+	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
     goto ProceedPokedexScript
 
-MoveGaryBulbasaur::
-    applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryGrassToOak
-	waitmovement 0
-    @here 2 locations have to be considered for player: above and under
-    @because player takes water here which is middle
-	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak8
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak7
-    return
-
-MoveGarySquirtle::
-    applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryWaterToOak
-	waitmovement 0
-    @here 3 locations have to be considered for player: above, right and under
-    @because player takes fire here which is far right
-	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak6
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak4
-	call_if_eq VAR_FACING, DIR_WEST, PlayerBackToOak5
-    return
-
-MoveGaryCharmander::
-    applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryFireToOak 
-	waitmovement 0
-    @here 3 locations have to be considered for player: above, left and under
-    @because player takes grass here which is left
-	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak1
-	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak2
-    return
-
+@ non Kanto regions, the rival stays put and Oak hands him the leftover Kanto mon
 PalletTown_ProfessorOaksLab_EventScript_RivalWalksBackToOak:
-    goto_if_eq RIVAL_STARTER_ID 7, GaryMoveFromFire
-    goto_if_eq RIVAL_STARTER_ID 6, GaryMoveFromWater
-    goto_if_eq RIVAL_STARTER_ID 5, GaryMoveFromGrass
-	end
-
-GaryMoveFromFire:
-    applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryFireToOak
-    waitmovement 0
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
-    waitmovement 0
-    call GaryGetStarter
-    applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceRight
+	applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
+	waitmovement 0
+	call GaryGetStarter
+	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceRight
 	waitmovement 0
 	setspeaker SP_NAME_RIVAL
-    msgbox gText_PalletGary_WayCooler
+	msgbox gText_PalletGary_WayCooler
 	setspeaker SP_NAME_PROF_OAK
-    msgbox gText_OakYesSure
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceRight
-	waitmovement 0
+	msgbox gText_OakYesSure
 	setspeaker SP_NAME_PROF_OAK
-    msgbox gText_OakPlayerComeHere
-    applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceUp
-	waitmovement 0
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
-	waitmovement 0
-    @here 3 locations have to be considered for player: above, left and under
-    @because player takes grass here which is left
-	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak3
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak1
-	call_if_eq VAR_FACING, DIR_EAST, PlayerBackToOak2
-    goto ProceedPokedexScript
-
-GaryMoveFromWater::
- 	applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryWaterToOak
-    waitmovement 0
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
-    waitmovement 0
-    call GaryGetStarter
-	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceRight
-	waitmovement 0
-   	setspeaker SP_NAME_RIVAL
-    msgbox gText_PalletGary_WayCooler
-	setspeaker SP_NAME_PROF_OAK
-    msgbox gText_OakYesSure
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceRight
-	waitmovement 0
-	setspeaker SP_NAME_PROF_OAK
-    msgbox gText_OakPlayerComeHere 
-    applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceUp
-	waitmovement 0
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
-	waitmovement 0
-    @here 3 locations have to be considered for player: above, right and under
-    @because player takes fire here which is far right
-	call_if_eq VAR_FACING, DIR_NORTH, PlayerBackToOak6
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak4
-	call_if_eq VAR_FACING, DIR_WEST, PlayerBackToOak5
-    goto ProceedPokedexScript
-
-GaryMoveFromGrass::
-	applymovement LOCALID_OAKS_LAB_RIVAL, MoveGaryGrassToOak
-    waitmovement 0
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
-    waitmovement 0
-    call GaryGetStarter
-	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceRight
-	waitmovement 0
-    setspeaker SP_NAME_RIVAL
-    msgbox gText_PalletGary_WayCooler
-	setspeaker SP_NAME_PROF_OAK
-    msgbox gText_OakYesSure
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceRight
-	waitmovement 0
-	setspeaker SP_NAME_PROF_OAK
-    msgbox gText_OakPlayerComeHere 
+	msgbox gText_OakPlayerComeHere
 	applymovement LOCALID_OAKS_LAB_RIVAL, Common_Movement_FaceUp
 	waitmovement 0
-    applymovement LOCALID_OAKS_LAB_PROF_OAK, Common_Movement_FaceDown
-	waitmovement 0
-    @here 2 locations have to be considered for player: above and under
-    @because player takes water here which is middle
-	call_if_eq VAR_FACING, DIR_NORTH,PlayerBackToOak8
-	call_if_eq VAR_FACING, DIR_SOUTH, PlayerBackToOak7
-    goto ProceedPokedexScript
+	goto ProceedPokedexScript
 
 GaryGetStarter::
 	setspeaker SP_NAME_RIVAL
@@ -1345,34 +1285,6 @@ GaryGetStarter::
 PalletTown_ProfessorOaksLab_EventScript_ReadyEndSignLadyScene::
 	setvar VAR_MAP_SCENE_PALLET_TOWN_SIGN_LADY, 1
 	return
-
-PalletTown_ProfessorOaksLab_Movement_RivalWalksToCharmander::
-	walk_down
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_up
-	step_end
-
-PalletTown_ProfessorOaksLab_Movement_RivalWalksToSquirtle::
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_in_place_faster_up
-	step_end
-
-PalletTown_ProfessorOaksLab_Movement_RivalWalksToBulbasaur::
-	walk_down
-	walk_right
-	walk_right
-	walk_right
-	walk_in_place_faster_up
-	step_end
 
 PalletTown_ProfessorOaksLab_EventScript_SquirtleBall::
 	lock
@@ -1804,158 +1716,6 @@ SetFuecoco::
     bufferspeciesname STR_VAR_1, VAR_TEMP_2
     return
 
-PlayerBackToOak1:
-    applymovement LOCALID_PLAYER, PlayerMoves1
-	waitmovement 0
-    return
-
-PlayerMoves1::
-	walk_left
-	walk_down
-	walk_down
-	walk_left
-	walk_left
-	walk_up
-	step_end
-
-PlayerBackToOak2::
-    applymovement LOCALID_PLAYER, PlayerMoves2
-	waitmovement 0
-    return
-
-PlayerMoves2::
-	walk_down
-	walk_left
-	walk_left
-	walk_up
-	step_end
-
-PlayerBackToOak3::
-    applymovement LOCALID_PLAYER, PlayerMoves3
-	waitmovement 0
-    return
-
-PlayerMoves3::
-	walk_left
-	walk_left
-	walk_left
-	walk_up
-	step_end
-
-PlayerBackToOak4::
-    applymovement LOCALID_PLAYER, PlayerMoves4
-	waitmovement 0
-    return
-
-PlayerMoves4::
-	walk_right
-	walk_down
-	walk_down
-	walk_left
-	walk_left
-    walk_left
-	walk_left
-    walk_left
-	walk_left
-	walk_up
-	step_end
-
-PlayerBackToOak5::
-    applymovement LOCALID_PLAYER, PlayerMoves5
-	waitmovement 0
-    return
-
-PlayerMoves5::
-	walk_down
-	walk_left
-	walk_left
-    walk_left
-	walk_left
-    walk_left
-	walk_left
-	walk_up
-	step_end
-
-PlayerBackToOak6::
-    applymovement LOCALID_PLAYER, PlayerMoves6
-	waitmovement 0
-    return
-
-PlayerMoves6::
-	walk_down
-    walk_left
-    walk_left
-	walk_left
-    walk_left
-	walk_left
-	walk_up
-    walk_up
-	step_end
-
-PlayerBackToOak7::
-    applymovement LOCALID_PLAYER, PlayerMoves7
-	waitmovement 0
-    return
-
-PlayerMoves7::
-    walk_left
-	walk_left
-    walk_down
-    walk_down
-    walk_left
-	walk_left
-	walk_up
-	step_end
-
-PlayerBackToOak8::
-    applymovement LOCALID_PLAYER, PlayerMoves8
-	waitmovement 0
-    return
-
-PlayerMoves8::
-    walk_left
-	walk_left
-    walk_left
-	walk_left
-	walk_up
-	step_end
-
-MoveGaryFireToOak::
-    walk_down
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_up
-    walk_up
-    step_end
-
-MoveGaryOakToFire::
-    walk_down
-    walk_down
-    walk_right
-    walk_right
-    walk_right
-    walk_right
-    walk_up
-    step_end
-
-MoveGaryGrassToOak::
-    walk_left
-    walk_left
-    walk_up
-    step_end
-
-MoveGaryWaterToOak::
-    walk_down
-    walk_left
-    walk_left
-    walk_left
-    walk_up
-    walk_up
-    step_end
-
-
 PalletTown_ProfessorOaksLab_EventScript_AideGiveBoxLinkTriggerLeft::
 	lockall
 	setvar VAR_TEMP_2, 1
@@ -2105,14 +1865,14 @@ PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
     .string "Oh, that's right, I told you to\n"
     .string "come! Just wait!\p"
     .string "Here, {PLAYER}.\p"
-    .string "There are three Pokémon here.\p"
+    .string "There are a few Pokémon here.\p"
     .string "Haha!\p"
     .string "The Pokémon are held inside\n"
-    .string "these Poké Balls.\p"
+    .string "my Poké Balls.\p"
     .string "When I was young, I was a serious\n"
     .string "Pokémon Trainer.\p"
     .string "But now, in my old age, I have\n"
-    .string "only these three left.\p"
+    .string "only a few left.\p"
     .string "You can have one.\n"
     .string "Go on, choose!$"
 

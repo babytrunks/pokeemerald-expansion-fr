@@ -8,6 +8,7 @@
 #include "frontier_util.h"
 #include "battle_tower.h"
 #include "random.h"
+#include "randomizer.h"
 #include "constants/battle_ai.h"
 #include "constants/battle_factory.h"
 #include "constants/battle_frontier.h"
@@ -453,6 +454,61 @@ static void SetPlayerAndOpponentParties(void)
     }
 }
 
+// Starter pick in Oaks Lab reuses this screen but supplies its own species and level
+bool32 IsStarterSelectScreen(void)
+{
+    return FlagGet(FLAG_RARE_POKEMON_SCREEN) && VarGet(VAR_RARE_POKEMON_COUNTER) == RARE_POKEMON_POOL_STARTERS;
+}
+
+// Rare Pokemon screens hand out gift mons so the species randomizer applies to them
+// Salt picks a different replacement for a slot that collided with an earlier one
+static u16 GetRareScreenMonSpeciesSalted(u16 species, u32 salt)
+{
+    if (!FlagGet(FLAG_RARE_POKEMON_SCREEN))
+        return species;
+
+#if RANDOMIZER_AVAILABLE == TRUE
+    species = RandomizeRareScreenMon(species, salt);
+#endif
+
+    return species;
+}
+
+u16 GetRareScreenMonSpecies(u16 species)
+{
+    return GetRareScreenMonSpeciesSalted(species, 0);
+}
+
+// Oaks Lab shows all three starters at once so a slot that randomizes onto a species
+// already placed is rerolled, otherwise two of the three would be the same Pokemon
+// The script cannot recompute these from the slot so the screen reports what it gave
+void GetRareScreenStarterSpecies(u16 *species)
+{
+    u32 i, j, salt;
+
+    for (i = 0; i < STARTER_SELECT_COUNT; i++)
+    {
+        u16 original = VarGet(VAR_0x8005 + i);
+
+        species[i] = original;
+        for (salt = 0; salt < STARTER_SELECT_MAX_REROLLS; salt++)
+        {
+            u16 candidate = GetRareScreenMonSpeciesSalted(original, salt);
+
+            for (j = 0; j < i; j++)
+            {
+                if (species[j] == candidate)
+                    break;
+            }
+            if (j == i)
+            {
+                species[i] = candidate;
+                break;
+            }
+        }
+    }
+}
+
 static void GenerateInitialRentalMons(void)
 {
     int i, j;
@@ -496,9 +552,16 @@ static void GenerateInitialRentalMons(void)
         firstMonId = 0;
     }
     rentalRank = GetNumPastRentalsRank(factoryBattleMode, factoryLvlMode);
-    // if (FlagGet(FLAG_RARE_POKEMON_SCREEN)) {
 
-    // }
+    // Starters come from VAR_0x8005 onwards, not from a rental pool, so there is nothing to roll
+    // monId still has to be a valid index because Select_AreSpeciesValid dereferences it
+    if (IsStarterSelectScreen())
+    {
+        for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
+            gSaveBlock2Ptr->frontier.rentalMons[i].monId = 0;
+        return;
+    }
+
     currSpecies = SPECIES_NONE;
     i = 0;
     while (i != PARTY_SIZE)
@@ -514,7 +577,7 @@ static void GenerateInitialRentalMons(void)
         // Exclude a specific species from rare Pokémon gift screens (e.g. to prevent
         // a duplicate of a species already given out by a different gift screen).
         if (FlagGet(FLAG_RARE_POKEMON_SCREEN) && VarGet(VAR_RARE_POKEMON_EXCLUDE_SPECIES) != SPECIES_NONE
-            && gFacilityTrainerMons[monId].species == VarGet(VAR_RARE_POKEMON_EXCLUDE_SPECIES))
+            && GetRareScreenMonSpecies(gFacilityTrainerMons[monId].species) == VarGet(VAR_RARE_POKEMON_EXCLUDE_SPECIES))
             continue;
 
         // Cannot have two Pokémon of the same species.
@@ -523,10 +586,10 @@ static void GenerateInitialRentalMons(void)
             u16 existingMonId = monIds[j];
             if (existingMonId == monId)
                 break;
-            if (species[j] == gFacilityTrainerMons[monId].species)
+            if (species[j] == GetRareScreenMonSpecies(gFacilityTrainerMons[monId].species))
             {
                 if (currSpecies == SPECIES_NONE)
-                    currSpecies = gFacilityTrainerMons[monId].species;
+                    currSpecies = GetRareScreenMonSpecies(gFacilityTrainerMons[monId].species);
                 else
                     break;
             }
@@ -548,7 +611,7 @@ static void GenerateInitialRentalMons(void)
             continue;
 
         gSaveBlock2Ptr->frontier.rentalMons[i].monId = monId;
-        species[i] = gFacilityTrainerMons[monId].species;
+        species[i] = GetRareScreenMonSpecies(gFacilityTrainerMons[monId].species);
         // heldItems[i] = gFacilityTrainerMons[monId].heldItem;
         monIds[i] = monId;
         i++;
