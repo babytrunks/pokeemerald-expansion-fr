@@ -37,6 +37,7 @@ PalletTown_EventScript_NESAskCode::
 	goto_if_eq VAR_RESULT, 1, NESGiveInfCandy
 	goto_if_eq VAR_RESULT, 2, NESActivateDexAll
 	goto_if_eq VAR_RESULT, 3, NESActivateEZCatch
+	goto_if_eq VAR_RESULT, 4, NESActivateTeamPreview
 
 NESCodeFailed::
 	msgbox PalletTown_Text_NESInvalidCode
@@ -63,6 +64,13 @@ NESActivateEZCatch::
 	goto_if_set FLAG_NES_EZCATCH, PalletTown_EventScript_NES_AlreadyGaveCode
 	msgbox PalletTown_Text_NESEZCatchActivate
 	setflag FLAG_NES_EZCATCH
+	release
+	end
+
+NESActivateTeamPreview::
+	goto_if_set FLAG_NES_TEAM_PREVIEW, PalletTown_EventScript_NES_AlreadyGaveCode
+	msgbox PalletTown_Text_NESTeamPreviewActivate
+	setflag FLAG_NES_TEAM_PREVIEW
 	release
 	end
 
@@ -108,6 +116,11 @@ PalletTown_Text_NESInfCandyCode::
 PalletTown_Text_NESEZCatchActivate::
 	.string "…EZCatch activated.\nAll Pokéballs now catch without fail.$"
 
+PalletTown_Text_NESTeamPreviewActivate::
+	.string "…TeamPreview activated.\p"
+	.string "Enemy Party now shows the whole team,\n"
+	.string "Abilities and moves included.$"
+
 PalletTown_PlayersHouse_2F_Text_PlayedWithNES::
     .string "{PLAYER} played with the NES.\p"
     .string "…Okay!\n"
@@ -140,6 +153,10 @@ PalletTown_PlayersHouse_2F_Text_CheatBookContents::
 	.string "Chapter 4: The Lazy Catch\p"
 	.string "“EZCatch” makes every Ball stick.\n"
 	.string "No wiggling. No heartbreak.\p"
+	.string "Chapter 5: The Peeping Trainer\p"
+	.string "“TeamPreview” lays a rival's whole\n"
+	.string "team bare, Abilities and moves too.\p"
+	.string "Rude. Effective.\p"
 	.string "The last page is torn out…\p"
 	.string "Something's scribbled in the margin:\n"
 	.string "“Hide from Mom! And Soup!!!”$"

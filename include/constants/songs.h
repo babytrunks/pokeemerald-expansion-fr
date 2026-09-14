@@ -509,7 +509,8 @@
 #define MUS_VS_GYM_LEADER_JOHTO     614  // Battle! (Gym Leader - Johto Version)
 #define MUS_VS_ARVEN                615  // Battle! (Arven)
 #define MUS_VS_SILVER               616  // Battle! (Silver)
-#define END_MUS                     MUS_VS_SILVER
+#define MUS_VS_GYM_LEADER_REMIX     617  // Battle! (Gym Leader, remix)
+#define END_MUS                     MUS_VS_GYM_LEADER_REMIX
 
 // These PH_* constants are phoneme sounds used by the "bard" NPC (see src/bard_music.c and src/mauville_old_man.c).
 // Each comes in a triplet of PH_*_BLEND, PH_*_HELD, and PH_*_SOLO, and the name of each triplet incorporates the English phonetic sound it represents.

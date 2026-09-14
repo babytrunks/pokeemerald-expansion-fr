@@ -1251,7 +1251,7 @@
 #define FLAG_MOVE_RELEARNER_UNLOCKED             0x4E2
 #define FLAG_PUZZLE_BATTLE_1_SOLVED              0x4E3
 #define FLAG_DISABLE_EXP                         0x4E4
-#define FLAG_0x4E5               0x4E5
+#define FLAG_NES_TEAM_PREVIEW    0x4E5
 #define FLAG_0x4E6               0x4E6
 #define FLAG_0x4E7               0x4E7
 #define FLAG_0x4E8               0x4E8

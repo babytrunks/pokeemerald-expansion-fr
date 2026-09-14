@@ -163,6 +163,8 @@ Black and White Battle UI
 
 Quest Icon: theleonix, belle
 
+Gym Leader Remix: nico
+
 ## Other Credits
 
 ### Mega Evolution Overworld Sprite Credits:

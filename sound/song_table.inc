@@ -623,6 +623,7 @@ gSongTable::
 	song mus_vs_gym_leader_johto, MUSIC_PLAYER_BGM, 0
 	song mus_vs_arven, MUSIC_PLAYER_BGM, 0
 	song mus_vs_silver, MUSIC_PLAYER_BGM, 0
+	song mus_vs_gym_leader_remix, MUSIC_PLAYER_BGM, 0
 
 	.align 2
 dummy_song_header:

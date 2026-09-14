@@ -260,3 +260,4 @@
 .include "sound/voicegroups/voicegroup193.inc"
 .include "sound/voicegroups/vs_arven.inc"
 .include "sound/voicegroups/vs_silver.inc"
+.include "sound/voicegroups/nico.inc"

@@ -52,6 +52,7 @@ FuchsiaCity_Mart_2BadgeStock:
 FuchsiaCity_Mart_Items::
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 	release
 	end
@@ -61,6 +62,7 @@ FuchsiaCity_Mart_2BadgeItems::
 	.2byte ITEM_POKE_BALL
 	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_QUICK_BALL
+	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 	release
 	end
@@ -72,6 +74,7 @@ FuchsiaCity_Mart_4BadgeItems::
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 	release
 	end
@@ -84,6 +87,7 @@ FuchsiaCity_Mart_5BadgeItems::
 	.2byte ITEM_QUICK_BALL
 	.2byte ITEM_DUSK_BALL
 	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 	release
 	end
@@ -97,6 +101,7 @@ FuchsiaCity_Mart_LuxuryItems::
 	.2byte ITEM_DUSK_BALL
 	.2byte ITEM_ABILITY_CAPSULE
 	.2byte ITEM_LUXURY_BALL
+	.2byte ITEM_FAIRY_FEATHER
 	.2byte ITEM_NONE
 	release
 	end

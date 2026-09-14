@@ -89,6 +89,16 @@ struct BattleInfoCard
     u8 hpBarRightEndcapSpriteId;
 };
 
+// What the Enemy Party info card prints for one slot
+struct EnemyPartySlotInfo
+{
+    u32 level;
+    u32 gender;
+    enum Ability ability;
+    u16 item;
+    u16 moves[MAX_MON_MOVES];
+};
+
 struct BattleInfoMenuData
 {
     u8 menuState;
@@ -97,6 +107,8 @@ struct BattleInfoMenuData
     u8 partySlot;
     u8 partyIconSpriteIds[PARTY_SIZE];
     u8 partyStatusSpriteIds[PARTY_SIZE];
+    u8 partyRevealed; // Bitmask of slots the player has actually seen
+    u8 partyDataSrc[PARTY_SIZE]; // Party index supplying level, ability, item, moves, status
     u8 selectedCard;
     u8 cursorSpriteId;
     u8 iconSpriteId;
@@ -168,6 +180,10 @@ static void EnemyPartyPrintInfoValue(const u8 *text, s16 x, s16 row);
 static void EnemyPartyRefreshInfoCard(void);
 static u32 EnemyPartyGetCount(void);
 static bool32 EnemyPartyIsSlotScouted(u32 slot);
+static void EnemyPartyBuildSlotTable(void);
+static bool32 EnemyPartyIsSlotRevealed(u32 slot);
+static bool32 EnemyPartyCheatActive(void);
+static void EnemyPartyGetSlotInfo(u32 slot, struct EnemyPartySlotInfo *info);
 static s16 EnemyPartyGetSlotX(u32 slot);
 static void BattleInfoPageEnter(u32 page);
 static void BattleInfoPageExit(u32 page);
@@ -3093,7 +3109,9 @@ static void OverviewDrawCard(struct BattleInfoCard *card)
     s16 iconCenterX;
     s16 iconCenterY;
 
-    struct Pokemon *mon = GetBattlerMon(card->battler);
+    // An active Illusion must show the copied mon here, like the healthbox does
+    struct Pokemon *illusionMon = GetIllusionMonPtr(card->battler);
+    struct Pokemon *mon = (illusionMon != NULL) ? illusionMon : GetBattlerMon(card->battler);
     u16 species = GetMonData(mon, MON_DATA_SPECIES);
 
     u32 gender = GetMonGender(mon);
@@ -4010,11 +4028,77 @@ static u32 EnemyPartyGetCount(void)
     return count;
 }
 
-// Species and status are shown for the whole party, but levels, abilities,
-// items and moves stay hidden until the mon has actually been sent out.
+// Whether the AI has a full record of the mon, so levels, abilities, items and
+// moves can be printed. Always paired with EnemyPartyIsSlotRevealed.
 static bool32 EnemyPartyIsSlotScouted(u32 slot)
 {
     return gAiPartyData->mons[B_SIDE_OPPONENT][slot].wasSentInBattle;
+}
+
+// Nothing is shown for a slot until the trainer has actually sent it out.
+static bool32 EnemyPartyIsSlotRevealed(u32 slot)
+{
+    return (sData->partyRevealed & (1 << slot)) != 0;
+}
+
+// NES TeamPreview code shows the whole roster with abilities and moves
+static bool32 EnemyPartyCheatActive(void)
+{
+    return FlagGet(FLAG_NES_TEAM_PREVIEW);
+}
+
+// Works out what the player believes the opposing party looks like. Normally a
+// slot shows itself, but an active Illusion hides the disguised mon and shows
+// the copied party member in its place.
+static void EnemyPartyBuildSlotTable(void)
+{
+    u32 count = EnemyPartyGetCount();
+    u32 battlers[2] = { B_BATTLER_1, B_BATTLER_3 };
+    u32 battlerCount = IsDoubleBattle() ? 2 : 1;
+
+    sData->partyRevealed = 0;
+
+    for (u32 i = 0; i < PARTY_SIZE; i++)
+    {
+        sData->partyDataSrc[i] = i;
+
+        if (i < count && (EnemyPartyCheatActive() || gBattleStruct->partyState[B_SIDE_OPPONENT][i].sentOut))
+            sData->partyRevealed |= 1 << i;
+    }
+
+    // The cheat shows the truth, so no Illusion remapping
+    if (EnemyPartyCheatActive())
+        return;
+
+    for (u32 i = 0; i < battlerCount; i++)
+    {
+        u32 battler = battlers[i];
+        struct Pokemon *illusionMon;
+        u32 real, fake;
+
+        if (!IsBattlerAlive(battler))
+            continue;
+
+        illusionMon = GetIllusionMonPtr(battler);
+        if (illusionMon == NULL)
+            continue;
+
+        real = gBattlerPartyIndexes[battler];
+        fake = illusionMon - gEnemyParty;
+        if (real >= PARTY_SIZE || fake >= PARTY_SIZE)
+            continue;
+
+        // Hide the disguised mon unless its cover was already blown this battle
+        if (!gBattleStruct->partyState[B_SIDE_OPPONENT][real].identityRevealed)
+            sData->partyRevealed &= ~(1 << real);
+
+        // Show the copied mon, but with the stats the player has watched it use
+        if (!EnemyPartyIsSlotRevealed(fake))
+        {
+            sData->partyRevealed |= 1 << fake;
+            sData->partyDataSrc[fake] = real;
+        }
+    }
 }
 
 static s16 EnemyPartyGetSlotX(u32 slot)
@@ -4028,6 +4112,8 @@ static void EnemyPartyEnter(void)
 
     if (sData->partySlot >= EnemyPartyGetCount())
         sData->partySlot = 0;
+
+    EnemyPartyBuildSlotTable();
 
     LoadBackdropAssets();
     OverviewClearWindows();
@@ -4136,19 +4222,25 @@ static void EnemyPartyCreateRosterSprites(void)
     for (u32 i = 0; i < count; i++)
     {
         struct Pokemon *mon = &gEnemyParty[i];
-        u16 species = GetMonData(mon, MON_DATA_SPECIES);
-        u32 personality = GetMonData(mon, MON_DATA_PERSONALITY);
+        struct Pokemon *dataMon = &gEnemyParty[sData->partyDataSrc[i]];
+        bool32 revealed = EnemyPartyIsSlotRevealed(i);
+        u16 species = revealed ? GetMonData(mon, MON_DATA_SPECIES) : SPECIES_NONE;
+        u32 personality = revealed ? GetMonData(mon, MON_DATA_PERSONALITY) : 0;
         s16 slotX = EnemyPartyGetSlotX(i);
         u32 ailment;
 
+        // SPECIES_NONE draws the question mark icon for anything not sent out yet
         sData->partyIconSpriteIds[i] = CreateMonIcon(species, SpriteCallbackDummy, slotX, B_INFO_PARTY_ICON_Y, 0, personality);
         if (sData->partyIconSpriteIds[i] != SPRITE_NONE)
             gSprites[sData->partyIconSpriteIds[i]].oam.priority = 0;
 
-        if (GetMonData(mon, MON_DATA_HP) == 0)
+        if (!revealed)
+            continue;
+
+        if (GetMonData(dataMon, MON_DATA_HP) == 0)
             ailment = AILMENT_FNT;
         else
-            ailment = GetAilmentFromStatus(GetMonData(mon, MON_DATA_STATUS));
+            ailment = GetAilmentFromStatus(GetMonData(dataMon, MON_DATA_STATUS));
 
         if (ailment != AILMENT_NONE && ailment != AILMENT_PKRS)
         {
@@ -4209,15 +4301,49 @@ static void EnemyPartyPrintInfoValue(const u8 *text, s16 x, s16 row)
                                  sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, text);
 }
 
+// Fills the info card from the AI scouting record, or straight from the party
+// when the TeamPreview cheat is on and nothing has been scouted yet.
+static void EnemyPartyGetSlotInfo(u32 slot, struct EnemyPartySlotInfo *info)
+{
+    struct Pokemon *mon = &gEnemyParty[slot];
+    u32 dataSlot = sData->partyDataSrc[slot];
+    const struct AiPartyMon *aiMon = &gAiPartyData->mons[B_SIDE_OPPONENT][dataSlot];
+
+    if (EnemyPartyCheatActive())
+    {
+        info->level = GetMonData(mon, MON_DATA_LEVEL);
+        info->gender = GetMonGender(mon);
+        info->ability = GetMonAbility(mon);
+        info->item = GetMonData(mon, MON_DATA_HELD_ITEM);
+
+        for (u32 i = 0; i < MAX_MON_MOVES; i++)
+            info->moves[i] = GetMonData(mon, MON_DATA_MOVE1 + i);
+
+        return;
+    }
+
+    info->level = aiMon->level;
+    // Illusion copies the nickname and gender but not the level or moves
+    info->gender = (dataSlot == slot) ? aiMon->gender : GetMonGender(mon);
+    info->ability = aiMon->ability;
+    info->item = aiMon->item;
+
+    for (u32 i = 0; i < MAX_MON_MOVES; i++)
+        info->moves[i] = aiMon->moves[i];
+}
+
 static void EnemyPartyRefreshInfoCard(void)
 {
-    const struct AiPartyMon *aiMon = &gAiPartyData->mons[B_SIDE_OPPONENT][sData->partySlot];
+    u32 dataSlot = sData->partyDataSrc[sData->partySlot];
+    struct EnemyPartySlotInfo info;
     u8 *text = sData->detailTextBuffer;
     u8 *txtPtr;
 
     FillWindowPixelBuffer(WIN_ROW_PLAYER, PIXEL_FILL(B_INFO_TEXT_COLOR_TRANSPARENT));
 
-    if (sData->partySlot >= EnemyPartyGetCount() || !EnemyPartyIsSlotScouted(sData->partySlot))
+    if (sData->partySlot >= EnemyPartyGetCount()
+     || !EnemyPartyIsSlotRevealed(sData->partySlot)
+     || (!EnemyPartyCheatActive() && !EnemyPartyIsSlotScouted(dataSlot)))
     {
         s32 unknownWidth = GetStringWidth(FONT_SMALL, sText_BattleInfo_EnemyPartyUnknown, 0);
 
@@ -4229,6 +4355,11 @@ static void EnemyPartyRefreshInfoCard(void)
     }
     else
     {
+        u32 gender;
+
+        EnemyPartyGetSlotInfo(sData->partySlot, &info);
+        gender = info.gender;
+
         // Row 0: nickname on the left, level (with gender glyph) on the right.
         GetMonData(&gEnemyParty[sData->partySlot], MON_DATA_NICKNAME, text);
         EnemyPartyPrintInfoValue(text, B_INFO_PARTY_INFO_COL_L_X, 0);
@@ -4236,18 +4367,18 @@ static void EnemyPartyRefreshInfoCard(void)
         txtPtr = text;
         *txtPtr++ = CHAR_EXTRA_SYMBOL;
         *txtPtr++ = CHAR_LV_2;
-        txtPtr = ConvertIntToDecimalStringN(txtPtr, aiMon->level, STR_CONV_MODE_LEFT_ALIGN, 3);
+        txtPtr = ConvertIntToDecimalStringN(txtPtr, info.level, STR_CONV_MODE_LEFT_ALIGN, 3);
         *txtPtr = EOS;
         AddTextPrinterParameterized4(WIN_ROW_PLAYER, FONT_SMALL, B_INFO_PARTY_INFO_COL_R_X,
                                      B_INFO_PARTY_INFO_ROW_Y, 0, 0,
                                      sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, text);
 
-        if (aiMon->gender == MON_MALE || aiMon->gender == MON_FEMALE)
+        if (gender == MON_MALE || gender == MON_FEMALE)
         {
-            const u8 *colors = (aiMon->gender == MON_MALE) ? sTextColor_BattleInfo_Male : sTextColor_BattleInfo_Female;
+            const u8 *colors = (gender == MON_MALE) ? sTextColor_BattleInfo_Male : sTextColor_BattleInfo_Female;
             u8 genderSymbol[2];
 
-            genderSymbol[0] = (aiMon->gender == MON_MALE) ? CHAR_MALE : CHAR_FEMALE;
+            genderSymbol[0] = (gender == MON_MALE) ? CHAR_MALE : CHAR_FEMALE;
             genderSymbol[1] = EOS;
 
             AddTextPrinterParameterized4(WIN_ROW_PLAYER, FONT_SMALL,
@@ -4258,12 +4389,12 @@ static void EnemyPartyRefreshInfoCard(void)
 
         // Row 1: ability on the left, held item on the right.
         txtPtr = StringCopy(text, COMPOUND_STRING("Ability: "));
-        StringCopy(txtPtr, gAbilitiesInfo[aiMon->ability].name);
+        StringCopy(txtPtr, gAbilitiesInfo[info.ability].name);
         EnemyPartyPrintInfoValue(text, B_INFO_PARTY_INFO_COL_L_X, 1);
 
         txtPtr = StringCopy(text, COMPOUND_STRING("Item: "));
-        if (aiMon->item != ITEM_NONE)
-            StringCopy(txtPtr, GetItemName(aiMon->item));
+        if (info.item != ITEM_NONE)
+            StringCopy(txtPtr, GetItemName(info.item));
         else
             StringCopy(txtPtr, COMPOUND_STRING("None"));
         EnemyPartyPrintInfoValue(text, B_INFO_PARTY_INFO_COL_R_X, 1);
@@ -4273,10 +4404,10 @@ static void EnemyPartyRefreshInfoCard(void)
         {
             s16 x = (i & 1) ? B_INFO_PARTY_INFO_COL_R_X : B_INFO_PARTY_INFO_COL_L_X;
 
-            if (aiMon->moves[i] == MOVE_NONE)
+            if (info.moves[i] == MOVE_NONE)
                 continue;
 
-            EnemyPartyPrintInfoValue(GetMoveName(aiMon->moves[i]), x, 2 + (i / 2));
+            EnemyPartyPrintInfoValue(GetMoveName(info.moves[i]), x, 2 + (i / 2));
         }
     }
 

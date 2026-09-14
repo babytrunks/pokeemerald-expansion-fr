@@ -518,7 +518,11 @@ bool8 TryHandleLaunchBattleTableAnimation(u8 activeBattler, u8 atkBattler, u8 de
     }
 
     if (tableId == B_ANIM_ILLUSION_OFF)
+    {
         gBattleStruct->illusion[activeBattler].state = ILLUSION_OFF;
+        // Player has now seen the real mon so scouting screens keep showing it
+        GetBattlerPartyState(activeBattler)->identityRevealed = TRUE;
+    }
 
     gBattleAnimAttacker = atkBattler;
     gBattleAnimTarget = defBattler;
