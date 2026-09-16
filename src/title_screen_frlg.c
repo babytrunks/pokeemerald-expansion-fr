@@ -29,7 +29,6 @@
 enum TitleScreenScene
 {
     TITLESCREENSCENE_INIT = 0,
-    TITLESCREENSCENE_FLASHSPRITE,
     TITLESCREENSCENE_FADEIN,
     TITLESCREENSCENE_RUN,
     TITLESCREENSCENE_RESTART,
@@ -51,7 +50,6 @@ static void Task_TitleScreenTimer(u8 taskId);
 static void Task_TitleScreenMain(u8 taskId);
 static void SetTitleScreenScene(s16 *data, u8 sceneNum);
 static void SetTitleScreenScene_Init(s16 *data);
-static void SetTitleScreenScene_FlashSprite(s16 *data);
 static void SetTitleScreenScene_FadeIn(s16 *data);
 static void SetTitleScreenScene_Run(s16 *data);
 static void SetGpuRegsForTitleScreenRun(void);
@@ -60,7 +58,6 @@ static void SetTitleScreenScene_Cry(s16 *data);
 static void Task_TitleScreen_SlideWin0(u8 taskId);
 static void Task_TitleScreen_BlinkPressStart(u8 taskId);
 static void SignalEndTitleScreenPaletteSomethingTask(void);
-static void UpdateScanlineEffectRegBuffer(s16 y);
 static void ScheduleStopScanlineEffect(void);
 static void LoadMainTitleScreenPalsAndResetBgs(void);
 static void CB2_FadeOutTransitionToSaveClearScreen(void);
@@ -317,7 +314,6 @@ static const struct BgTemplate sBgTemplates[] = {
 
 static void (*const sSceneFuncs[])(s16 *data) = {
     [TITLESCREENSCENE_INIT]        = SetTitleScreenScene_Init,
-    [TITLESCREENSCENE_FLASHSPRITE] = SetTitleScreenScene_FlashSprite,
     [TITLESCREENSCENE_FADEIN]      = SetTitleScreenScene_FadeIn,
     [TITLESCREENSCENE_RUN]         = SetTitleScreenScene_Run,
     [TITLESCREENSCENE_RESTART]     = SetTitleScreenScene_Restart,
@@ -389,6 +385,7 @@ void CB2_InitTitleScreenFrlg(void)
         StartTimer1();
         InitHeap(gHeap, HEAP_SIZE);
         ResetTasks();
+        ScanlineEffect_Stop(); // nothing drives BLDY now that the light sweep is gone
         ResetSpriteData();
         FreeAllSpritePalettes();
         ResetPaletteFade();
@@ -509,51 +506,12 @@ static void SetTitleScreenScene(s16 *data, u8 sceneNum)
 
 static void SetTitleScreenScene_Init(s16 *data)
 {
-    struct ScanlineEffectParams params;
-
     HideBg(0);
     ShowBg(1);
     ShowBg(2);
     ShowBg(3);
 
-    params.dmaDest = (volatile void *)REG_ADDR_BLDY;
-    params.dmaControl = SCANLINE_EFFECT_DMACNT_16BIT;
-    params.initState = 1;
-    params.unused9 = 0;
-
-    CpuFill16(0, gScanlineEffectRegBuffers[0], 0x140);
-    CpuFill16(0, gScanlineEffectRegBuffers[1], 0x140);
-
-    ScanlineEffect_SetParams(params);
-
-    SetTitleScreenScene(data, TITLESCREENSCENE_FLASHSPRITE);
-}
-
-static void SetTitleScreenScene_FlashSprite(s16 *data)
-{
-    switch (tState)
-    {
-    case 0:
-        SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT1_BG1 | BLDCNT_EFFECT_LIGHTEN);
-        SetGpuReg(REG_OFFSET_BLDY, 0);
-        data[2] = 128;
-        UpdateScanlineEffectRegBuffer(data[2]);
-        tState++;
-        break;
-    case 1:
-        data[2] -= 4;
-        UpdateScanlineEffectRegBuffer(data[2]);
-        if (data[2] < 0)
-        {
-            gScanlineEffect.state = 3;
-            tState++;
-        }
-        break;
-    case 2:
-        SetGpuReg(REG_OFFSET_BLDCNT, 0);
-        SetGpuReg(REG_OFFSET_BLDY, 0);
-        SetTitleScreenScene(data, TITLESCREENSCENE_FADEIN);
-    }
+    SetTitleScreenScene(data, TITLESCREENSCENE_FADEIN);
 }
 
 static void SetTitleScreenScene_FadeIn(s16 *data)
@@ -568,7 +526,7 @@ static void SetTitleScreenScene_FadeIn(s16 *data)
         data[2]++;
         if (data[2] > 10)
         {
-            TintPalette_GrayScale2(&gPlttBufferUnfaded[BG_PLTT_ID(13)], 16);
+            // box art mon comes up in its real colors, no grayscale pass
             BeginNormalPaletteFade(1 << 13, 9, 16, 0, RGB_BLACK);
             tState++;
         }
@@ -585,59 +543,25 @@ static void SetTitleScreenScene_FadeIn(s16 *data)
         if (data[2] > 36)
         {
             CreateTask(Task_TitleScreen_SlideWin0, 3);
-            BlendPalettesGradually(1 << 13, -4, 1, 16, RGB(30, 30, 31), 0, 0);
             data[2] = 0;
             tState++;
         }
         break;
     case 4:
-        if (!IsBlendPalettesGraduallyTaskActive(0))
-        {
-            BlendPalettesGradually(1 << 13, -4, 15, 0, RGB(30, 30, 31), 0, 0);
-            tState++;
-        }
-        break;
-    case 5:
-        data[2]++;
-        if (data[2] > 20)
-        {
-            data[2] = 0;
-            BlendPalettesGradually(1 << 13, -4, 1, 16, RGB(30, 30, 31), 0, 0);
-            tState++;
-        }
-        break;
-    case 6:
-        if (!IsBlendPalettesGraduallyTaskActive(0))
-        {
-            BlendPalettesGradually(1 << 13, -4, 15, 0, RGB(30, 30, 31), 0, 0);
-            tState++;
-        }
-        break;
-    case 7:
-        data[2]++;
-        if (data[2] > 20)
-        {
-            data[2] = 0;
-            BlendPalettesGradually(1 << 13, -3, 0, 16, RGB(30, 30, 31), 0, 0);
-            tState++;
-        }
-        break;
-    case 8:
-        if (!IsBlendPalettesGraduallyTaskActive(0))
+        // wait for the wipe to finish then bring the logo up from black
+        if (FindTaskIdByFunc(Task_TitleScreen_SlideWin0) == TASK_NONE)
         {
             u32 palettes;
             tHasCreatedBlankSprite = TRUE;
             palettes = (PALETTES_BG & ~(1 << 13) & ~(1 << 14) & ~(1 << 15)) | (0x10000 << CreateBlankSprite());
-            BlendPalettes(palettes, 16, RGB(30, 30, 31));
-            BeginNormalPaletteFade(palettes, 1, 16, 0, RGB(30, 30, 31));
+            BlendPalettes(palettes, 16, RGB_BLACK);
+            BeginNormalPaletteFade(palettes, 1, 16, 0, RGB_BLACK);
             ShowBg(0);
-            CpuCopy16(gGraphics_TitleScreen_BoxArtMonPals, &gPlttBufferUnfaded[BG_PLTT_ID(13)], PLTT_SIZE_4BPP);
-            BlendPalettesGradually(1 << 13, 1, 15, 0, RGB(30, 30, 31), 0, 0);
             tState++;
         }
         break;
-    case 9:
-        if (!IsBlendPalettesGraduallyTaskActive(0) && !gPaletteFade.active)
+    case 5:
+        if (!gPaletteFade.active)
         {
             SetTitleScreenScene(data, TITLESCREENSCENE_RUN);
         }
@@ -898,36 +822,6 @@ static void SignalEndTitleScreenPaletteSomethingTask(void)
 {
     u8 taskId = FindTaskIdByFunc(Task_TitleScreen_BlinkPressStart);
     gTasks[taskId].data[15] = TRUE;
-}
-
-static void UpdateScanlineEffectRegBuffer(s16 y)
-{
-    s32 i;
-
-    if (y >= 0)
-        gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][y] = 16;
-
-    for (i = 0; i < 16; i++)
-    {
-        if (y + i >= 0)
-            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][y + i] = 15 - i;
-
-        if (y - i >= 0)
-            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][y - i] = 15 - i;
-
-    }
-
-    for (i = y + 16; i < 160; i++)
-    {
-        if (i >= 0)
-            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = 0;
-    }
-
-    for (i = y - 16; i >= 0; i--)
-    {
-        if (i >= 0)
-            gScanlineEffectRegBuffers[gScanlineEffect.srcBuffer][i] = 0;
-    }
 }
 
 static void ScheduleStopScanlineEffect(void)
