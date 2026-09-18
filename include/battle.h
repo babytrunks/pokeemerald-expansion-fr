@@ -33,6 +33,10 @@
 // Must stay >= any quota a script checks, currently MELOETTAS_BLUES_SOUND_MOVES
 #define MAX_TRACKED_SOUND_MOVES 4
 
+// Picks which script plays back a queued notification at move end
+#define NOTIFICATION_KIND_DEFAULT 0
+#define NOTIFICATION_KIND_MASTERY 1
+
 // Helper for accessing command arguments and advancing gBattlescriptCurrInstr.
 //
 // For example accuracycheck is defined as:
@@ -740,6 +744,9 @@ struct BattleStruct
     const u8 *notificationBottomLine;
     const u8 *notificationMsg;
     bool8 notificationPending;
+    u8 notificationKind; // NOTIFICATION_KIND_ constant, picks which script plays it back
+    u16 masteryRewardItem; // item handed over by the mastery that just completed
+    enum Ability masteryBoostAbility[MAX_BATTLERS_COUNT]; // ability that boosted this move, consumed at move end
     u8 stolenStats[NUM_BATTLE_STATS]; // hp byte is used for which stats to raise, other inform about by how many stages
     u8 lastMoveTarget[MAX_BATTLERS_COUNT]; // The last target on which each mon used a move, for the sake of Instruct
     enum Ability tracedAbility[MAX_BATTLERS_COUNT];

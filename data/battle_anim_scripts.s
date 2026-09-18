@@ -38147,3 +38147,11 @@ gBattleAnimGeneral_ProtectedItself::
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
 	end
+
+@ Mastery reward, the item pops out of the attacker and arcs toward the player
+gBattleAnimGeneral_MasteryReward::
+	playsewithpan SE_M_MINIMIZE, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_CreateMasteryRewardItem, 2
+	waitforvisualfinish
+	unloadspritegfx ANIM_TAG_ITEM_BAG @;The generated item sprite uses this tag
+	end

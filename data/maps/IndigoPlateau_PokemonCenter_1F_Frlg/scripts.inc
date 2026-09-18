@@ -74,6 +74,7 @@ IndigoPlateau_PokemonCenter_1F_LuxuryItems::
 IndigoPlateau_PokemonCenter_1F_EventScript_Nurse::
 	lock
 	faceplayer
+	setvar VAR_0x800B, LOCALID_INDIGO_LEAGUE_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	release
 	end

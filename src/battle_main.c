@@ -37,6 +37,7 @@
 #include "load_save.h"
 #include "main.h"
 #include "malloc.h"
+#include "mastery.h"
 #include "m4a.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -3201,6 +3202,7 @@ static void BattleStartClearSetData(void)
     memset(&gWishFutureKnock, 0, sizeof(gWishFutureKnock));
     memset(&gBattleResults, 0, sizeof(gBattleResults));
     ClearSetBScriptingStruct();
+    ClearPerBattleMasteryProgress();
 
     for (i = 0; i < MAX_BATTLERS_COUNT; i++)
     {

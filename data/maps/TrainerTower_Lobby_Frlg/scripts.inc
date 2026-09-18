@@ -96,6 +96,7 @@ TrainerTower_Lobby_EventScript_EnterEnd::
 TrainerTower_Lobby_EventScript_Nurse::
 	lock
 	faceplayer
+	setvar VAR_0x800B, LOCALID_TOWER_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	release
 	end

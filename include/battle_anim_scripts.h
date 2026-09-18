@@ -1012,6 +1012,7 @@ extern const u8 gBattleAnimGeneral_SilphScoped[];
 extern const u8 gBattleAnimGeneral_SafariRockThrow[];
 extern const u8 gBattleAnimGeneral_SafariReaction[];
 extern const u8 gBattleAnimGeneral_ProtectedItself[];
+extern const u8 gBattleAnimGeneral_MasteryReward[];
 
 // special animations
 extern const u8 gBattleAnimSpecial_LevelUp[];

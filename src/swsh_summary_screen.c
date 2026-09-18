@@ -26,6 +26,7 @@
 #include "link.h"
 #include "m4a.h"
 #include "malloc.h"
+#include "mastery.h"
 #include "menu.h"
 #include "menu_helpers.h"
 #include "menu_specialized.h"
@@ -144,9 +145,13 @@ static const u8 sSummaryConditionToLineLength[MAX_CONDITION + 1] =
 #define PSS_DATA_WINDOW_MEMO_NOTE 0
 #define PSS_DATA_WINDOW_MEMO_EXP 1
 
+// Dynamic fields for the Mastery page
+#define PSS_DATA_WINDOW_MASTERY 0
+
 // Layout of the name bar, in PSS_LABEL_WINDOW_PORTRAIT_INFO pixels
 // The gigantamax mark sits in the gap left of the name when it is enabled
-#define PORTRAIT_NAME_X       (SWSH_SUMMARY_SHOW_GIGANTAMAX ? 22 : 4)
+// The fifth page icon pushes the caught ball right, so the name starts two tiles in
+#define PORTRAIT_NAME_X       (SWSH_SUMMARY_SHOW_GIGANTAMAX ? 38 : 20)
 #define PORTRAIT_LEVEL_RIGHT  118 // level block is right aligned to this
 #define PORTRAIT_NAME_RIGHT   90  // name limit when the status icon hides the level
 
@@ -171,6 +176,7 @@ enum SwShSummarySprites
     // all sprites below are considered "page-specific" and will be hidden when switching pages
     SPRITE_ARR_ID_POKERUS_CURED,
     SPRITE_ARR_ID_ITEM,
+    SPRITE_ARR_ID_MASTERY_REWARD,
     SPRITE_ARR_ID_SHINY,
     SPRITE_ARR_ID_FRIENDSHIP,
     SPRITE_ARR_ID_CATEGORY,
@@ -310,6 +316,7 @@ static void ChangePage(u8, s8);
 static void PssScroll(u8);
 static void PssScrollEnd(u8);
 static void TryDrawExperienceProgressBar(void);
+static void TryDrawMasteryProgressBar(void);
 static void SwitchToMoveSelection(u8);
 static void Task_HandleInput_MoveSelect(u8);
 static bool8 HasMoreThanOneMove(void);
@@ -329,6 +336,7 @@ static bool8 CanReplaceMove(void);
 static void ShowCantForgetHMsWindow(u8);
 static void Task_HandleInputCantForgetHMsMoves(u8);
 static void DrawExperienceProgressBar(struct Pokemon *);
+static void DrawMasteryProgressBar(void);
 static void ResetWindows(void);
 static void PrintMonPortraitInfo(void);
 static void PrintNotEggInfo(void);
@@ -387,6 +395,8 @@ static void PrintContestMovesPageText(void);
 static void Task_PrintContestMoves(u8);
 static void PrintMemoPageText(void);
 static void Task_PrintMemoPage(u8);
+static void PrintMasteryPageText(void);
+static void Task_PrintMasteryPage(u8);
 static void PrintMoveNameAndPP(u8);
 static void HandleAppealJamTilemap(u16);
 static void PrintMoveDescription(u16);
@@ -416,6 +426,8 @@ static void CreateDynamaxLevelSprites(void);
 static void DestroyDynamaxLevelSprites(void);
 static void CreateHeldItemSprite(void);
 static void DestroyHeldItemIconSprite(void);
+static void CreateMasteryRewardSprite(void);
+static void DestroyMasteryRewardSprite(void);
 static void CreateStatusSprite(void);
 static void CreateMoveCursorSprite(void);
 static void DestroyMoveCursorSprite(void);
@@ -506,6 +518,15 @@ static const u8 sText_MemoFateful[]             = _("Met in a fateful encounter\
 static const u8 sText_MemoProbablyMet[]         = _("Seems to have met at {LV_2}. {DYNAMIC 1}{DYNAMIC 3}{DYNAMIC 1}\nLocation: {DYNAMIC 0}{DYNAMIC 4}{DYNAMIC 1}");
 static const u8 sText_MemoMetSomewhere[]        = _("Met somewhere at {LV_2}. {DYNAMIC 1}{DYNAMIC 3}{DYNAMIC 1}");
 static const u8 sText_MemoHatchedSomewhere[]    = _("Hatched from an egg\nsomewhere.");
+
+// Mastery page
+static const u8 sText_Mastery[]                 = _("Mastery");
+static const u8 sText_MasteryUnknown[]          = _("Unknown");
+static const u8 sText_MasteryNoneDesc[]         = _("This Pokemon has no mastery to pursue.");
+static const u8 sText_MasteryCompleted[]        = _("Completed!");
+static const u8 sText_MasterySlash[]            = _("/");
+static const u8 sText_MasteryReward[]           = _("Reward:");
+static const u8 sText_MasteryUnlocksAt[]        = _("Unlocks at Lv. ");
 
 // Characteristics
 static const u8 sCharacteristic_HP_0[]          = _("Loves to eat");
@@ -599,6 +620,7 @@ static const u32 sSummaryEffect_Contest_Tilemap[]          = INCBIN_U32("graphic
 static const u32 sSummaryPage_Conditions_Tilemap[]         = INCBIN_U32("graphics/summary_screen/swsh/page_conditions.bin.smolTM");
 #endif
 static const u32 sSummaryPage_Memo_Tilemap[]               = INCBIN_U32("graphics/summary_screen/swsh/page_memo.bin.smolTM");
+static const u32 sSummaryPage_Mastery_Tilemap[]            = INCBIN_U32("graphics/summary_screen/swsh/page_mastery.bin.smolTM");
 
 // sprite gfx
 static const u8 sButtons_Gfx[][4 * TILE_SIZE_4BPP] = {
@@ -812,12 +834,26 @@ static const struct WindowTemplate sPageMemoTemplate[] =
         .baseBlock = 335,
     },
 };
+// Covers the whole box, the "Mastery" tab label is printed rather than baked into the bg art
+static const struct WindowTemplate sPageMasteryTemplate[] =
+{
+    [PSS_DATA_WINDOW_MASTERY] = {
+        .bg = 0,
+        .tilemapLeft = 0,
+        .tilemapTop = 4,
+        .width = 20,
+        .height = 14,
+        .paletteNum = 2,
+        .baseBlock = 155,
+    },
+};
 // {bg, fg, shadow} entries indexing into BG palette 2
 static const u8 sTextColors[][3] =
 {
     {0, 1, 2},   // [0] main: most page texts (species, OT, nature, ability, stats, etc.)
     {0, 3, 4},   // [1] portrait text (nickname/level) + prompt texts
     {0, 5, 6},   // [2] shiny dex number + "HM can't be forgotten" warning
+    {0, 4, 2},   // [3] grey box labels, matches the tab labels baked into the bg art
 };
 
 static void (*const sTextPrinterFunctions[])(void) =
@@ -830,6 +866,7 @@ static void (*const sTextPrinterFunctions[])(void) =
 #endif
     [PSS_PAGE_CONTEST_MOVES] = PrintContestMovesPageText,
     [PSS_PAGE_MEMO] = PrintMemoPageText,
+    [PSS_PAGE_MASTERY] = PrintMasteryPageText,
 };
 
 static void (*const sTextPrinterTasks[])(u8 taskId) =
@@ -842,6 +879,7 @@ static void (*const sTextPrinterTasks[])(u8 taskId) =
 #endif
     [PSS_PAGE_CONTEST_MOVES] = Task_PrintContestMoves,
     [PSS_PAGE_MEMO] = Task_PrintMemoPage,
+    [PSS_PAGE_MASTERY] = Task_PrintMasteryPage,
 };
 
 #define TAG_MON_STATUS          30001
@@ -868,6 +906,8 @@ static void (*const sTextPrinterTasks[])(u8 taskId) =
 #define TAG_MOVE_SLOT_3         30027
 #define TAG_MOVE_SLOT_4         30028
 #define TAG_MOVE_CURSOR         30029
+// Must differ from TAG_HELD_ITEM_ICON or the two item sheets collide
+#define TAG_MASTERY_REWARD_ICON 30030
 
 
 enum SwShCategoryIcon
@@ -2271,6 +2311,7 @@ static bool8 DecompressGraphics(void)
         sMonSummaryScreen->switchCounter++;
         break;
     case 10:
+        DecompressDataWithHeaderWram(sSummaryPage_Mastery_Tilemap, sMonSummaryScreen->bg2TilemapBuffers[PSS_PAGE_MASTERY]);
         sMonSummaryScreen->switchCounter++;
         break;
     case 11:
@@ -2531,8 +2572,13 @@ static void SetSelectMoveTilemaps(void)
 #define PAGE_ICON_TILE_CONDITIONS       37
 #define PAGE_ICON_TILE_CONTEST_MOVES    41
 #define PAGE_ICON_TILE_MEMO             45
+// Appended to the free end of tiles.png, the rest of the sheet is packed
+#define PAGE_ICON_TILE_HL_MASTERY       0x117
+#define PAGE_ICON_TILE_MASTERY          0x11B
 
 
+// Turning the contest pages back on needs 7 icon slots, page_contest_moves.bin and
+// page_conditions.bin still carry the old 4 slot bar and would have to be redrawn first
 #if SWSH_SUMMARY_SHOW_CONTEST_PAGES
 static void ApplyPageIcon(u16 *buf, u8 slot, u16 baseTile)
 {
@@ -2886,6 +2932,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         if (SWSH_SUMMARY_MON_SHADOWS)
             DestroySpriteAndFreeResources(&gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_SHADOW]]);
         DestroyHeldItemIconSprite();
+        DestroyMasteryRewardSprite();
         break;
     case 2:
         DestroySpriteAndFreeResources(&gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]]);
@@ -2935,6 +2982,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         }
 
         TryDrawExperienceProgressBar();
+        TryDrawMasteryProgressBar();
         data[1] = 0;
         break;
     case 7:
@@ -2986,6 +3034,7 @@ static void Task_ChangeSummaryMon(u8 taskId)
         }
 #endif
         TryDrawExperienceProgressBar();
+        TryDrawMasteryProgressBar();
         break;
     case 13:
         gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MON]].sDelayAnim = 0;
@@ -3083,6 +3132,10 @@ static void ChangePage(u8 taskId, s8 delta)
     else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
     {
         DestroyHeldItemIconSprite();
+    }
+    else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_MASTERY)
+    {
+        DestroyMasteryRewardSprite();
     }
     else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
     {
@@ -3208,6 +3261,7 @@ static void PssScrollEnd(u8 taskId)
         }
     }
     TryDrawExperienceProgressBar();
+    TryDrawMasteryProgressBar();
 
     if (sMonSummaryScreen->currPageIndex == PSS_PAGE_INFO)
     {
@@ -3766,6 +3820,10 @@ static void Task_HideEffectTilemap(u8 taskId)
 #define EXP_BAR_TILE_FULL     376
 #define EXP_BAR_TILE_COUNT    12
 
+// Mastery bar reuses the exp bar tiles, row 12 cols 2 to 13 of the mastery page
+#define MASTERY_BAR_TILEMAP_START (12 * 32 + 2)
+#define MASTERY_BAR_TILE_BLANK    0x0049 // flat background tile baked into page_mastery.bin
+
 static void DrawExperienceProgressBar(struct Pokemon *unused)
 {
     s64 numExpProgressBarTicks;
@@ -3800,6 +3858,60 @@ static void DrawExperienceProgressBar(struct Pokemon *unused)
     }
 
     ScheduleBgCopyTilemapToVram(2);
+}
+
+// Always writes every tile, a species with no mastery clears the row
+// Otherwise the previous mon's bar lingers in the page buffer
+static void DrawMasteryProgressBar(void)
+{
+    s32 numTicks;
+    u32 progress, target;
+    u32 masteryId = GetSpeciesMastery(sMonSummaryScreen->summary.species);
+    u16 *dst = &sMonSummaryScreen->bg2TilemapBuffers[PSS_PAGE_MASTERY][MASTERY_BAR_TILEMAP_START];
+    u8 i;
+
+    if (masteryId == MASTERY_NONE)
+    {
+        for (i = 0; i < EXP_BAR_TILE_COUNT; i++)
+            dst[i] = MASTERY_BAR_TILE_BLANK;
+
+        ScheduleBgCopyTilemapToVram(2);
+        return;
+    }
+
+    // Progress is capped at targetCount so a completed mastery fills the bar
+    // Progress is pooled so a locked mon would inherit a relatives bar without this
+    if (IsMasteryUnlockedAtLevel(masteryId, sMonSummaryScreen->summary.level))
+        progress = GetMasteryProgress(masteryId);
+    else
+        progress = 0;
+
+    target = gMasteries[masteryId].targetCount;
+    if (target == 0)
+        target = 1;
+
+    numTicks = progress * (EXP_BAR_TILE_COUNT * 8) / target;
+    if (numTicks == 0 && progress != 0)
+        numTicks = 1;
+
+    for (i = 0; i < EXP_BAR_TILE_COUNT; i++)
+    {
+        if (numTicks > (8 - 1))
+            dst[i] = EXP_BAR_TILE_FULL;
+        else
+            dst[i] = EXP_BAR_TILE_EMPTY + (numTicks % 8);
+        numTicks -= 8;
+        if (numTicks < 0)
+            numTicks = 0;
+    }
+
+    ScheduleBgCopyTilemapToVram(2);
+}
+
+static void TryDrawMasteryProgressBar(void)
+{
+    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_MASTERY)
+        DrawMasteryProgressBar();
 }
 
 static void ResetWindows(void)
@@ -4046,6 +4158,7 @@ static void PutPageWindowTilemaps(u8 page)
         }
         break;
     case PSS_PAGE_MEMO:
+    case PSS_PAGE_MASTERY:
         break;
     }
 
@@ -4111,6 +4224,7 @@ static void ClearPageWindowTilemaps(u8 page)
         }
         break;
     case PSS_PAGE_MEMO:
+    case PSS_PAGE_MASTERY:
         break;
     }
 
@@ -4888,6 +5002,111 @@ static void Task_PrintMemoPage(u8 taskId)
         ScheduleBgCopyTilemapToVram(0);
         break;
     case 7:
+        DestroyTask(taskId);
+        return;
+    }
+    data[0]++;
+}
+
+// Tab label sits over the grey block baked into page_mastery.bin, see PSS_DATA_WINDOW_MASTERY
+static void PrintMasteryLabel(void)
+{
+    u8 windowId = AddWindowFromTemplateList(sPageMasteryTemplate, PSS_DATA_WINDOW_MASTERY);
+    PrintTextOnWindow(windowId, sText_Mastery, 3, 1, 0, 3);
+}
+
+static void PrintMasteryName(void)
+{
+    u8 windowId = AddWindowFromTemplateList(sPageMasteryTemplate, PSS_DATA_WINDOW_MASTERY);
+    u32 masteryId = GetSpeciesMastery(sMonSummaryScreen->summary.species);
+    const u8 *title = (masteryId == MASTERY_NONE) ? sText_MasteryUnknown : gMasteries[masteryId].title;
+
+    PrintTextOnWindow(windowId, title, 64, 1, 0, 0);
+}
+
+// Prints "Completed!", the unlock level, or the running count under the description
+// Buffer holds the unlock line which is the longest of the three
+static void PrintMasteryProgress(u8 windowId, u32 masteryId)
+{
+    u8 text[24];
+
+    if (IsMasteryCompleted(masteryId))
+    {
+        StringCopy(text, sText_MasteryCompleted);
+    }
+    else if (!IsMasteryUnlockedAtLevel(masteryId, sMonSummaryScreen->summary.level))
+    {
+        u8 *end = StringCopy(text, sText_MasteryUnlocksAt);
+        ConvertIntToDecimalStringN(end, gMasteries[masteryId].levelUnlocked, STR_CONV_MODE_LEFT_ALIGN, 3);
+    }
+    else
+    {
+        u8 *end = ConvertIntToDecimalStringN(text, GetMasteryProgress(masteryId), STR_CONV_MODE_LEFT_ALIGN, 3);
+        end = StringAppend(end, sText_MasterySlash);
+        ConvertIntToDecimalStringN(end, gMasteries[masteryId].targetCount, STR_CONV_MODE_LEFT_ALIGN, 3);
+    }
+
+    PrintTextOnWindow(windowId, text, 8, 72, 0, 0);
+}
+
+// Label and item name, the icon itself is an OAM sprite at fixed screen coords
+static void PrintMasteryReward(void)
+{
+    u8 windowId = AddWindowFromTemplateList(sPageMasteryTemplate, PSS_DATA_WINDOW_MASTERY);
+    u32 masteryId = GetSpeciesMastery(sMonSummaryScreen->summary.species);
+
+    if (masteryId == MASTERY_NONE)
+        return;
+
+    PrintTextOnWindow(windowId, sText_MasteryReward, 8, 90, 0, 0);
+    PrintTextOnWindow(windowId, GetItemName(gMasteries[masteryId].reward), 92, 90, 0, 0);
+}
+
+static void PrintMasteryDescription(void)
+{
+    u8 windowId = AddWindowFromTemplateList(sPageMasteryTemplate, PSS_DATA_WINDOW_MASTERY);
+    u32 masteryId = GetSpeciesMastery(sMonSummaryScreen->summary.species);
+    const u8 *source = (masteryId == MASTERY_NONE) ? sText_MasteryNoneDesc : gMasteries[masteryId].description;
+    u8 desc[MASTERY_MAX_DESCRIPTION_LENGTH];
+    u32 fontId = SwSh_FormatTextByWidth(desc, 144, PSS_DEFAULT_FONT, source,
+                                        GetFontAttribute(PSS_DEFAULT_FONT, FONTATTR_LETTER_SPACING));
+
+    PrintTextOnWindowWithFont(windowId, desc, 8, 24, 1, 0, fontId);
+
+    if (masteryId != MASTERY_NONE)
+        PrintMasteryProgress(windowId, masteryId);
+}
+
+static void PrintMasteryPageText(void)
+{
+    PrintMasteryLabel();
+    PrintMasteryName();
+    PrintMasteryDescription();
+    PrintMasteryReward();
+}
+
+static void Task_PrintMasteryPage(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+
+    switch (data[0])
+    {
+    case 1:
+        PrintMasteryLabel();
+        break;
+    case 2:
+        PrintMasteryName();
+        break;
+    case 3:
+        PrintMasteryDescription();
+        break;
+    case 4:
+        PrintMasteryReward();
+        break;
+    case 5:
+        ScheduleBgCopyTilemapToVram(0);
+        break;
+    case 6:
         DestroyTask(taskId);
         return;
     }
@@ -5913,6 +6132,10 @@ static void TrySetInfoPageIcons(void)
         if (SWSH_SUMMARY_SHOW_FRIENDSHIP)
             SetFriendshipSprite();
     }
+    else if (sMonSummaryScreen->currPageIndex == PSS_PAGE_MASTERY)
+    {
+        CreateMasteryRewardSprite();
+    }
 }
 
 static void CreateMoveTypeIcons(void)
@@ -6267,7 +6490,7 @@ static void CreateGigantamaxSprite(void)
     u8 *spriteId = &sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_GIGANTAMAX];
 
     if (*spriteId == SPRITE_NONE)
-        *spriteId = CreateSprite(&sSpriteTemplate_GigantamaxIcon, 114, 17, 6);
+        *spriteId = CreateSprite(&sSpriteTemplate_GigantamaxIcon, 130, 17, 6);
 
     gSprites[*spriteId].invisible = !MonHasGigantamaxFactor(mon);
 }
@@ -6306,7 +6529,8 @@ static void CreateCaughtBallSprite(struct Pokemon *mon)
     enum PokeBall ball = GetMonData(mon, MON_DATA_POKEBALL);
 
     LoadBallGfx(ball);
-    sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL] = CreateSprite(&gBallSpriteTemplates[ball], 95, 16, 6);
+    // sits just right of the five page icons, see PORTRAIT_NAME_X
+    sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL] = CreateSprite(&gBallSpriteTemplates[ball], 111, 16, 6);
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].callback = SpriteCallbackDummy;
     gSprites[sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_BALL]].oam.priority = 1;
 }
@@ -6400,6 +6624,41 @@ static void DestroyHeldItemIconSprite(void)
         FreeSpritePaletteByTag(TAG_HELD_ITEM_ICON);
         DestroySprite(&gSprites[spriteId]);
         sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_ITEM] = SPRITE_NONE;
+    }
+}
+
+// Reward icon shown beside the item name on the mastery page
+static void CreateMasteryRewardSprite(void)
+{
+    u32 masteryId = GetSpeciesMastery(sMonSummaryScreen->summary.species);
+    u8 spriteId;
+
+    // Always destroy old sprite first
+    DestroyMasteryRewardSprite();
+
+    if (masteryId == MASTERY_NONE)
+        return;
+
+    spriteId = AddItemIconSprite(TAG_MASTERY_REWARD_ICON, TAG_MASTERY_REWARD_ICON, gMasteries[masteryId].reward);
+
+    if (spriteId != MAX_SPRITES)
+    {
+        sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MASTERY_REWARD] = spriteId;
+        gSprites[spriteId].x = 72;
+        gSprites[spriteId].y = 134;
+    }
+}
+
+static void DestroyMasteryRewardSprite(void)
+{
+    u8 spriteId = sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MASTERY_REWARD];
+
+    if (spriteId != SPRITE_NONE)
+    {
+        FreeSpriteTilesByTag(TAG_MASTERY_REWARD_ICON);
+        FreeSpritePaletteByTag(TAG_MASTERY_REWARD_ICON);
+        DestroySprite(&gSprites[spriteId]);
+        sMonSummaryScreen->spriteIds[SPRITE_ARR_ID_MASTERY_REWARD] = SPRITE_NONE;
     }
 }
 

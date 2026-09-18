@@ -7289,6 +7289,19 @@ BattleScript_BattleNotification::
 	waitfanfare
 	return
 
+@ Mastery completed, the plate lines and message come from QueueBattleNotification
+@ and the reward item is already in the bag by the time this runs.
+BattleScript_MasteryComplete::
+	pause B_WAIT_TIME_SHORT
+	shownotificationpopup
+	playanimation BS_ATTACKER, B_ANIM_MASTERY_REWARD
+	waitanimation
+	fanfare MUS_OBTAIN_ITEM
+	printstring STRINGID_BATTLENOTIFICATION
+	waitmessage B_WAIT_TIME_LONG
+	waitfanfare
+	return
+
 BattleScript_AttackerAbilityStatRaiseEnd3::
 	call BattleScript_AttackerAbilityStatRaise
 	restoreattacker

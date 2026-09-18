@@ -8995,6 +8995,36 @@ void CoreEnforcerLoadBeamTarget(struct Sprite *sprite)
                     +  GetBattlerSpriteCoord(BATTLE_PARTNER(gBattleAnimTarget), BATTLER_COORD_Y_PIC_OFFSET)) / 2;
 }
 
+static void AnimMasteryRewardItem_Step(struct Sprite *sprite)
+{
+    if (TranslateAnimHorizontalArc(sprite))
+        DestroyAnimSprite(sprite);
+}
+
+// Pops the mastery reward out of the attacker and arcs it down toward the player
+// Negative data[5] makes the sine lift the item before it falls
+void AnimTask_CreateMasteryRewardItem(u8 taskId)
+{
+    u8 iconSpriteId = AddItemIconSprite(ANIM_TAG_ITEM_BAG, ANIM_TAG_ITEM_BAG, gBattleStruct->masteryRewardItem);
+
+    if (iconSpriteId != MAX_SPRITES)
+    {
+        struct Sprite *sprite = &gSprites[iconSpriteId];
+
+        sprite->oam.priority = 2;
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET);
+        sprite->data[0] = 40;
+        sprite->data[2] = sprite->x - 40;
+        sprite->data[4] = sprite->y + 20;
+        sprite->data[5] = -40;
+        InitAnimArcTranslation(sprite);
+        sprite->callback = AnimMasteryRewardItem_Step;
+        ++gAnimVisualTaskCount;
+    }
+    DestroyAnimVisualTask(taskId);
+}
+
 void AnimTask_CreateBestowItem(u8 taskId)
 {
     u8 iconSpriteId = AddItemIconSprite(ANIM_TAG_ITEM_BAG, ANIM_TAG_ITEM_BAG, gLastUsedItem);

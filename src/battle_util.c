@@ -455,15 +455,18 @@ bool32 HandleMoveTargetRedirection(void)
 // Only one can be pending at a time, later calls are dropped
 // Stores the pointers rather than copying, so every string must have static storage
 // Never pass COMPOUND_STRING from inside a function, that is a stack compound literal
-void QueueBattleNotification(const u8 *topLine, const u8 *bottomLine, const u8 *message)
+// Returns whether it queued, callers that need a custom kind check this first
+bool32 QueueBattleNotification(const u8 *topLine, const u8 *bottomLine, const u8 *message)
 {
     if (gBattleStruct->notificationPending)
-        return;
+        return FALSE;
 
     gBattleStruct->notificationTopLine = topLine;
     gBattleStruct->notificationBottomLine = bottomLine;
     gBattleStruct->notificationMsg = message;
+    gBattleStruct->notificationKind = NOTIFICATION_KIND_DEFAULT;
     gBattleStruct->notificationPending = TRUE;
+    return TRUE;
 }
 
 // File scope so the pointers stay valid until the pop up plays at move end
@@ -7804,6 +7807,14 @@ static inline uq4_12_t ApplyDefensiveBadgeBoost(uq4_12_t modifier, u32 battler, 
     return modifier;
 }
 
+// Notes which ability boosted this move so move end can tick masteries
+// Gated on updateFlags, the AI runs this calc speculatively many times per turn
+static inline void RecordMasteryAbilityBoost(struct DamageContext *ctx)
+{
+    if (ctx->updateFlags)
+        gBattleStruct->masteryBoostAbility[ctx->battlerAtk] = ctx->abilityAtk;
+}
+
 static inline u32 CalcAttackStat(struct DamageContext *ctx)
 {
     u8 atkStage;
@@ -7908,19 +7919,31 @@ static inline u32 CalcAttackStat(struct DamageContext *ctx)
         break;
     case ABILITY_SWARM:
         if (moveType == TYPE_BUG && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            RecordMasteryAbilityBoost(ctx);
+        }
         break;
     case ABILITY_TORRENT:
         if (moveType == TYPE_WATER && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            RecordMasteryAbilityBoost(ctx);
+        }
         break;
     case ABILITY_BLAZE:
         if (moveType == TYPE_FIRE && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            RecordMasteryAbilityBoost(ctx);
+        }
         break;
     case ABILITY_OVERGROW:
         if (moveType == TYPE_GRASS && gBattleMons[battlerAtk].hp <= (gBattleMons[battlerAtk].maxHP / 3))
+        {
             modifier = uq4_12_multiply_half_down(modifier, UQ_4_12(1.5));
+            RecordMasteryAbilityBoost(ctx);
+        }
         break;
     case ABILITY_PLUS:
         if (IsBattleMoveSpecial(move) && IsBattlerAlive(BATTLE_PARTNER(battlerAtk)))

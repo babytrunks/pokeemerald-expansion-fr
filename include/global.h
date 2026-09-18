@@ -576,6 +576,7 @@ struct RankingHall2P
 
 // quest menu
 #include "constants/quests.h"
+#include "constants/mastery.h"
 
 struct SaveBlock2
 {
@@ -1242,6 +1243,10 @@ struct SaveBlock1
     u8 registeredItemLastSelected:4; //max 16 items
     u8 registeredItemListCount:4;
     struct RegisteredItemSlot registeredItems[REGISTERED_ITEMS_MAX];
+    // Species mastery progress, pooled per mastery rather than per species
+    // Sized by MASTERY_SAVE_SLOTS so adding masteries never shifts the save layout
+    u8 masteryProgress[MASTERY_SAVE_SLOTS];
+    u8 masteryCompleted[NUM_MASTERY_FLAG_BYTES];
     // sizeof: 0x3???
 };
 

@@ -32,6 +32,7 @@
 #include "caps.h"
 #include "m4a.h"
 #include "mail.h"
+#include "mastery.h"
 #include "event_data.h"
 #include "pokemon_storage_system.h"
 #include "task.h"
@@ -2983,6 +2984,8 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
               && GetActiveGimmick(gEffectBattler) != GIMMICK_DYNAMAX)
         {
             gBattleMons[gEffectBattler].volatiles.flinched = TRUE;
+            // The check above means the foe has not moved yet so the flinch always costs it a turn
+            TryTickMastery(gBattlerAttacker, MASTERY_EVENT_FLINCH_THREE, 0);
             gBattlescriptCurrInstr = battleScript;
         }
         else
@@ -7138,11 +7141,15 @@ static void Cmd_moveend(void)
             break;
         case MOVEEND_BATTLE_NOTIFICATION: // Quest or event banner queued from C during this move
             gBattleScripting.moveendState++;
+            TryTickMasteryAtMoveEnd(); // May queue a banner of its own, so it runs first
             if (gBattleStruct->notificationPending)
             {
                 gBattleStruct->notificationPending = FALSE;
                 BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_BattleNotification;
+                if (gBattleStruct->notificationKind == NOTIFICATION_KIND_MASTERY)
+                    gBattlescriptCurrInstr = BattleScript_MasteryComplete;
+                else
+                    gBattlescriptCurrInstr = BattleScript_BattleNotification;
                 effect = TRUE;
             }
             break;

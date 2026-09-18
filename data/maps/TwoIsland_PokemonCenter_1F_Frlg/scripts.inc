@@ -10,6 +10,7 @@ TwoIsland_PokemonCenter_1F_OnTransition::
 TwoIsland_PokemonCenter_1F_EventScript_Nurse::
 	lock
 	faceplayer
+	setvar VAR_0x800B, LOCALID_TWO_ISLAND_NURSE
 	call Common_EventScript_PkmnCenterNurse
 	release
 	end

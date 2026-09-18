@@ -839,6 +839,7 @@ extern const u8 BattleScript_EffectAttractAttack[];
 extern const u8 BattleScript_EffectMistAttack[];
 extern const u8 BattleScript_IVRaisedOnKO[];
 extern const u8 BattleScript_BattleNotification[];
+extern const u8 BattleScript_MasteryComplete[];
 
 extern const u8 BattleScript_MoveUsedLoafingAroundMsg[]; // Za Warudo
 #endif // GUARD_BATTLE_SCRIPTS_H

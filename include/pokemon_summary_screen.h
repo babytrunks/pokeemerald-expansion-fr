@@ -47,6 +47,7 @@ enum PokemonSummaryScreenPage
     PSS_PAGE_CONDITIONS,
 #endif
     PSS_PAGE_MEMO,
+    PSS_PAGE_MASTERY,
 #endif
     PSS_PAGE_COUNT,
 };
