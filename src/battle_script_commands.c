@@ -3010,11 +3010,14 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
         break;
     case MOVE_EFFECT_PAYDAY:
         // Don't scatter coins on the second hit of Parental Bond
-        if (IsOnPlayerSide(gBattlerAttacker) && gSpecialStatuses[gBattlerAttacker].parentalBondState!= PARENTAL_BOND_2ND_HIT)
+        // Coins only scatter in trainer battles, never wild ones
+        if (IsOnPlayerSide(gBattlerAttacker)
+         && (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+         && gSpecialStatuses[gBattlerAttacker].parentalBondState != PARENTAL_BOND_2ND_HIT)
         {
             u16 payday = gPaydayMoney;
             u16 moveTarget = GetBattlerMoveTargetType(gBattlerAttacker, gCurrentMove);
-            gPaydayMoney += (gBattleMons[gBattlerAttacker].level * 5);
+            gPaydayMoney += (gBattleMons[gBattlerAttacker].level * 10); // Doubled since wild battles pay nothing
             if (payday > gPaydayMoney)
                 gPaydayMoney = 0xFFFF;
 

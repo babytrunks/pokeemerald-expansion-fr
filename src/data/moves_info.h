@@ -262,12 +262,13 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Pay Day"),
         .description = COMPOUND_STRING(
             "Throws coins at the foe.\n"
-            "Money is recovered after."),
+            "Money is recovered in\n"
+            "trainer battles."),
         .effect = EFFECT_HIT,
-        .power = 40,
+        .power = 60,
         .type = TYPE_NORMAL,
         .accuracy = 100,
-        .pp = 20,
+        .pp = 5,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
@@ -20128,7 +20129,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Make It Rain"),
         .description = COMPOUND_STRING(
             "Lowers the user's Sp. Atk.\n"
-            "Money is recovered after."),
+            "Money is recovered in\n"
+            "trainer battles."),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_STEEL,
