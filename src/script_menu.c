@@ -21,6 +21,8 @@
 #include "move.h"
 #include "battle_main.h"
 #include "pokemon_summary_screen.h"
+#include "pokemon.h"
+#include "pokemon_icon.h"
 #include "constants/field_specials.h"
 #include "constants/items.h"
 #include "constants/pokemon.h"
@@ -223,12 +225,19 @@ static void MultichoiceDynamicEventShowItem_OnDestroy(struct DynamicListMenuEven
 #undef TAG_CB_ITEM_ICON
 
 // Shows type, category, power, accuracy and description for the highlighted move
+// Also shows party icons top right, grayed out when unable to learn it
 // The list must push MOVE_ constants as its item ids
 static const u8 sText_MoveInfoPower[] = _("Power");
 static const u8 sText_MoveInfoAccuracy[] = _("Acc.");
 
 #define sInfoWindowId     sDynamicMenuEventScratchPad[0]
 #define sCategorySpriteId sDynamicMenuEventScratchPad[1]
+#define sPartyWindowId    sDynamicMenuEventScratchPad[2]
+#define sPartyIconIds     (&sDynamicMenuEventScratchPad[3])
+#define sPartyIconPals    (&sDynamicMenuEventScratchPad[3 + PARTY_SIZE])
+
+// Each party slot owns its palette so graying one icon never grays another
+#define TAG_TUTOR_PARTY_PAL_BASE 0x7350
 
 // One window across the bottom, chained onto the end of the list window
 // Hard ceiling is DLG_WINDOW_BASE_TILE_NUM since the frame graphics there are live
@@ -248,6 +257,125 @@ static const u8 sText_MoveInfoAccuracy[] = _("Acc.");
 #define MOVE_INFO_Y_STATS    1
 #define MOVE_INFO_Y_DESC     17
 
+// Party panel anchored to the top right, three icons per row
+// Chained after the info window so the worst case ends near tile 508
+#define PARTY_PANEL_LEFT   17
+#define PARTY_PANEL_TOP    1
+#define PARTY_PANEL_WIDTH  12
+#define PARTY_PANEL_HEIGHT 8
+#define PARTY_PANEL_COLS   3
+
+// Same palette choice as LoadMonIconPalettePersonality including female icons
+static u32 GetPartyIconPalIndex(u32 species, u32 personality)
+{
+    species = SanitizeSpeciesId(species);
+#if P_GENDER_DIFFERENCES
+    if (gSpeciesInfo[species].iconSpriteFemale != NULL && IsPersonalityFemale(species, personality))
+        return gSpeciesInfo[species].iconPalIndexFemale;
+#endif
+    return gSpeciesInfo[species].iconPalIndex;
+}
+
+static void CreateTutorPartyPanel(u32 baseBlock)
+{
+    struct WindowTemplate partyTemplate = CreateWindowTemplate(0, PARTY_PANEL_LEFT, PARTY_PANEL_TOP, PARTY_PANEL_WIDTH, PARTY_PANEL_HEIGHT, 15, baseBlock);
+    u32 i;
+
+    sPartyWindowId = AddWindow(&partyTemplate);
+    FillWindowPixelBuffer(sPartyWindowId, PIXEL_FILL(1));
+    SetStandardWindowBorderStyle(sPartyWindowId, TRUE);
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct SpritePalette palette;
+        u32 species, personality, palSlot, spriteId;
+        s32 x, y;
+
+        sPartyIconIds[i] = MAX_SPRITES;
+        if (i >= gPlayerPartyCount)
+            continue;
+
+        species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES_OR_EGG);
+        personality = GetMonData(&gPlayerParty[i], MON_DATA_PERSONALITY);
+        sPartyIconPals[i] = GetPartyIconPalIndex(species, personality);
+
+        palette.data = gMonIconPaletteTable[sPartyIconPals[i]].data;
+        palette.tag = TAG_TUTOR_PARTY_PAL_BASE + i;
+        palSlot = LoadSpritePalette(&palette);
+        // Out of OBJ palettes so skip the icon rather than borrow a live one
+        if (palSlot == 0xFF)
+            continue;
+
+        x = PARTY_PANEL_LEFT * 8 + 16 + (i % PARTY_PANEL_COLS) * 32;
+        y = PARTY_PANEL_TOP * 8 + 16 + (i / PARTY_PANEL_COLS) * 32;
+        spriteId = CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, personality);
+        if (spriteId == MAX_SPRITES)
+        {
+            FreeSpritePaletteByTag(TAG_TUTOR_PARTY_PAL_BASE + i);
+            continue;
+        }
+        gSprites[spriteId].oam.priority = 0;
+        gSprites[spriteId].oam.paletteNum = palSlot;
+        sPartyIconIds[i] = spriteId;
+    }
+}
+
+// Colored and bobbing if the mon can learn the move, otherwise gray and still
+static void UpdateTutorPartyPanel(u32 move)
+{
+    u32 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Sprite *sprite;
+        struct Pokemon *mon = &gPlayerParty[i];
+        bool32 canLearn;
+        u16 colors[16];
+
+        if (sPartyIconIds[i] == MAX_SPRITES)
+            continue;
+
+        sprite = &gSprites[sPartyIconIds[i]];
+        canLearn = !GetMonData(mon, MON_DATA_IS_EGG)
+                && CanLearnTeachableMove(GetMonData(mon, MON_DATA_SPECIES), move);
+
+        CpuCopy16(gMonIconPaletteTable[sPartyIconPals[i]].data, colors, sizeof(colors));
+        if (!canLearn)
+            TintPalette_GrayScale(colors, ARRAY_COUNT(colors));
+        LoadPalette(colors, OBJ_PLTT_ID(sprite->oam.paletteNum), PLTT_SIZE_4BPP);
+
+        if (canLearn)
+        {
+            sprite->callback = SpriteCB_MonIcon;
+        }
+        else if (sprite->callback != SpriteCallbackDummy)
+        {
+            // Snap back to the resting frame before freezing
+            sprite->callback = SpriteCallbackDummy;
+            sprite->animCmdIndex = 0;
+            sprite->animDelayCounter = 0;
+            UpdateMonIconFrame(sprite);
+        }
+    }
+}
+
+static void DestroyTutorPartyPanel(void)
+{
+    u32 i;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (sPartyIconIds[i] == MAX_SPRITES)
+            continue;
+        FreeAndDestroyMonIconSprite(&gSprites[sPartyIconIds[i]]);
+        FreeSpritePaletteByTag(TAG_TUTOR_PARTY_PAL_BASE + i);
+        sPartyIconIds[i] = MAX_SPRITES;
+    }
+
+    ClearStdWindowAndFrame(sPartyWindowId, TRUE);
+    RemoveWindow(sPartyWindowId);
+}
+
 static void MultichoiceDynamicEventShowMoveInfo_OnInit(struct DynamicListMenuEventArgs *eventArgs)
 {
     struct WindowTemplate *listTemplate = &gWindows[eventArgs->windowId].window;
@@ -257,6 +385,8 @@ static void MultichoiceDynamicEventShowMoveInfo_OnInit(struct DynamicListMenuEve
     sInfoWindowId = AddWindow(&infoTemplate);
     // Must copy here or the tilemap only ever reaches VRAM if something else flushes bg 0
     SetStandardWindowBorderStyle(sInfoWindowId, TRUE);
+
+    CreateTutorPartyPanel(baseBlock + MOVE_INFO_WIDTH * MOVE_INFO_HEIGHT);
 
     LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
     LoadSpritePalette(&gSpritePal_CategoryIcons);
@@ -269,6 +399,9 @@ static void MultichoiceDynamicEventShowMoveInfo_OnSelectionChanged(struct Dynami
     u32 power = GetMovePower(move);
     u32 accuracy = GetMoveAccuracy(move);
     u8 buffer[8];
+
+    // Runs first since a failed category sprite returns early below
+    UpdateTutorPartyPanel(move);
 
     FillWindowPixelBuffer(sInfoWindowId, PIXEL_FILL(1));
 
@@ -312,6 +445,8 @@ static void MultichoiceDynamicEventShowMoveInfo_OnDestroy(struct DynamicListMenu
     ClearStdWindowAndFrame(sInfoWindowId, TRUE);
     RemoveWindow(sInfoWindowId);
 
+    DestroyTutorPartyPanel();
+
     if (sCategorySpriteId != MAX_SPRITES)
         DestroySprite(&gSprites[sCategorySpriteId]);
 
@@ -321,6 +456,15 @@ static void MultichoiceDynamicEventShowMoveInfo_OnDestroy(struct DynamicListMenu
 
 #undef sInfoWindowId
 #undef sCategorySpriteId
+#undef sPartyWindowId
+#undef sPartyIconIds
+#undef sPartyIconPals
+#undef TAG_TUTOR_PARTY_PAL_BASE
+#undef PARTY_PANEL_LEFT
+#undef PARTY_PANEL_TOP
+#undef PARTY_PANEL_WIDTH
+#undef PARTY_PANEL_HEIGHT
+#undef PARTY_PANEL_COLS
 #undef MOVE_INFO_LEFT
 #undef MOVE_INFO_TOP
 #undef MOVE_INFO_WIDTH
