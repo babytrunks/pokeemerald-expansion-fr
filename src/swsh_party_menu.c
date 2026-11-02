@@ -7519,7 +7519,8 @@ void ItemUseCB_TMHM(u8 taskId, TaskFunc task)
     }
 }
 
-static void Task_LearnedMove(u8 taskId)
+// Shared by learning into an empty slot and replacing a move
+static void DisplayLearnedMoveMessage(u8 taskId, const u8 *text)
 {
     struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
     s16 *move = &gPartyMenu.data1;
@@ -7533,10 +7534,15 @@ static void Task_LearnedMove(u8 taskId)
     }
     GetMonNickname(mon, gStringVar1);
     StringCopy(gStringVar2, GetMoveName(move[0]));
-    StringExpandPlaceholders(gStringVar4, gText_PkmnLearnedMove3);
+    StringExpandPlaceholders(gStringVar4, text);
     DisplayPartyMenuMessage(gStringVar4, TRUE);
     ScheduleBgCopyTilemapToVram(0);
     gTasks[taskId].func = Task_DoLearnedMoveFanfareAfterText;
+}
+
+static void Task_LearnedMove(u8 taskId)
+{
+    DisplayLearnedMoveMessage(taskId, gText_PkmnLearnedMove3);
 }
 
 static void Task_DoLearnedMoveFanfareAfterText(u8 taskId)
@@ -7579,7 +7585,7 @@ static void Task_HandleReplaceMoveYesNoInput(u8 taskId)
     switch (Menu_ProcessInputNoWrapClearOnChoose())
     {
     case 0:
-        DisplayPartyMenuMessage(gText_WhichMoveToForget, TRUE);
+        // Skip the which move prompt and go straight to the move screen
         gTasks[taskId].func = Task_ShowSummaryScreenToForgetMove;
         break;
     case MENU_B_PRESSED:
@@ -7609,7 +7615,13 @@ static void CB2_ReturnToPartyMenuWhileLearningMove(void)
 {
     if (sFinalLevel != 0)
         SetMonData(&gPlayerParty[gPartyMenu.slotId], MON_DATA_LEVEL, &sFinalLevel); // to avoid displaying incorrect level
-    if (GetItemFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_RareCandy && gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
+    if (gPartyMenu.action == PARTY_ACTION_MOVE_TUTOR)
+    {
+        // Summary screen overwrites 0x8005 with the slot so restore the tutor move
+        gSpecialVar_0x8005 = gPartyMenu.data1;
+        InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_MOVE_TUTOR, TRUE, PARTY_MSG_NONE, Task_ReturnToPartyMenuWhileLearningMove, gPartyMenu.exitCallback);
+    }
+    else if (GetItemFieldFunc(gSpecialVar_ItemId) == ItemUseOutOfBattle_RareCandy && gPartyMenu.menuType == PARTY_MENU_TYPE_FIELD && CheckBagHasItem(gSpecialVar_ItemId, 1))
         InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_USE_ITEM, TRUE, PARTY_MSG_NONE, Task_ReturnToPartyMenuWhileLearningMove, gPartyMenu.exitCallback);
     else
         InitPartyMenu(PARTY_MENU_TYPE_FIELD, PARTY_LAYOUT_SINGLE, PARTY_ACTION_CHOOSE_MON, TRUE, PARTY_MSG_NONE, Task_ReturnToPartyMenuWhileLearningMove, gPartyMenu.exitCallback);
@@ -7628,12 +7640,7 @@ static void Task_ReturnToPartyMenuWhileLearningMove(u8 taskId)
 
 static void DisplayPartyMenuForgotMoveMessage(u8 taskId)
 {
-    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
-    u16 move = GetMonData(mon, MON_DATA_MOVE1 + GetMoveSlotToReplace());
-
-    GetMonNickname(mon, gStringVar1);
-    StringCopy(gStringVar2, GetMoveName(move));
-    DisplayLearnMoveMessage(gText_12PoofForgotMove);
+    // No separate forgot message, the replaced message covers both moves
     gTasks[taskId].func = Task_PartyMenuReplaceMove;
 }
 
@@ -7645,10 +7652,11 @@ static void Task_PartyMenuReplaceMove(u8 taskId)
     if (IsPartyMenuTextPrinterActive() != TRUE)
     {
         mon = &gPlayerParty[gPartyMenu.slotId];
+        StringCopy(gStringVar3, GetMoveName(GetMonData(mon, MON_DATA_MOVE1 + GetMoveSlotToReplace())));
         RemoveMonPPBonus(mon, GetMoveSlotToReplace());
         move = gPartyMenu.data1;
         SetMonMoveSlot(mon, move, GetMoveSlotToReplace());
-        Task_LearnedMove(taskId);
+        DisplayLearnedMoveMessage(taskId, gText_PkmnReplacedMove);
     }
 }
 

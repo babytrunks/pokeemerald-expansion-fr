@@ -8083,6 +8083,7 @@ static void Cmd_yesnoboxlearnmove(void)
                     gBattlescriptCurrInstr = cmd->forgotMovePtr;
 
                     PREPARE_MOVE_BUFFER(gBattleTextBuff2, move)
+                    PREPARE_MOVE_BUFFER(gBattleTextBuff3, gMoveToLearn)
 
                     RemoveMonPPBonus(&gPlayerParty[gBattleStruct->expGetterMonId], movePosition);
                     SetMonMoveSlot(&gPlayerParty[gBattleStruct->expGetterMonId], gMoveToLearn, movePosition);

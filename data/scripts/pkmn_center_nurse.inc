@@ -165,7 +165,7 @@ EventScript_PkmnCenterNurse_Aide::
 	switch VAR_RESULT
 	case MULTI_B_PRESSED, PkmnCenterNurse_Aide_End
 	case 0, PkmnCenterNurse_EventScript_WantNatureChange
-	case 1, PkmnCenterNurse_EventScript_WantMoveTutor
+	case 1, PkmnCenterNurse_EventScript_StartMoveTutor
 	case 2, PkmnCenterNurse_EventScript_PartyToLvlCap
 	case 3, PkmnCenterNurse_EventScript_PkmnToLvlCap
 	case 4, PkmnCenterNurse_EventScript_SwapGender
@@ -225,6 +225,10 @@ PkmnCenterNurse_EventScript_WantNatureChange::
 	releaseall
 	end
 
+@ VAR_0x8006 holds the tutor category and VAR_0x8005 the last picked move
+@ both act as initial cursors so backing out lands where the player was
+PkmnCenterNurse_EventScript_StartMoveTutor:
+	setvar VAR_0x8006, 0
 PkmnCenterNurse_EventScript_WantMoveTutor:
 	@ goto_if_unset FLAG_BADGE01_GET, PkmnCenterNurse_EventScript_StartingMoveTutors
 	dynmultipush PkmnCenterNurse_Text_StartingTutors, 0
@@ -237,9 +241,13 @@ PkmnCenterNurse_EventScript_WantMoveTutor:
 	call_if_set FLAG_BADGE07_GET, PkmnCenterNurse_SetVolcanoBadgeTutor
 	call_if_set FLAG_BADGE08_GET, PkmnCenterNurse_SetEarthBadgeTutor
 	dynmultipush PkmnCenterNurse_Text_AllTutors, 9
-	dynmultistack 0, 0, FALSE, 6, FALSE, 0, NULL
-	switch VAR_RESULT
-	case MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	dynmultistack 0, 0, FALSE, 6, FALSE, VAR_0x8006, NULL
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, EventScript_PkmnCenterNurse_Aide
+	copyvar VAR_0x8006, VAR_RESULT
+	setvar VAR_0x8005, MOVE_NONE
+@ re-entry point after a failed teach so the same list reopens
+PkmnCenterNurse_EventScript_OpenTutorCategory:
+	switch VAR_0x8006
 	case 0, PkmnCenterNurse_EventScript_StartingMoveTutors
 	case 1, PkmnCenterNurse_EventScript_BoulderMoveTutors
 	case 2, PkmnCenterNurse_EventScript_CascadeMoveTutors
@@ -289,7 +297,7 @@ PkmnCenterNurse_SetEarthBadgeTutor:
 PkmnCenterNurse_EventScript_StartingMoveTutors:
 	call PkmnCenterNurse_AllTutors_Starting
 	closemessage
-	dynmultistack 0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_MOVE_INFO
+	dynmultistack 0, 0, FALSE, 5, FALSE, VAR_0x8005, DYN_MULTICHOICE_CB_SHOW_MOVE_INFO
 	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, PkmnCenterNurse_EventScript_WantMoveTutor
 	copyvar VAR_0x8005, VAR_RESULT
 	goto PkmnCenterNurse_Tutor_TeachMove
@@ -330,7 +338,7 @@ PkmnCenterNurse_EventScript_EarthMoveTutors:
 @ maxBeforeScroll stays at 5 or the list border overlaps the info window
 PkmnCenterNurse_ShowTutorList:
 	closemessage
-	dynmultistack 0, 0, FALSE, 5, FALSE, 0, DYN_MULTICHOICE_CB_SHOW_MOVE_INFO
+	dynmultistack 0, 0, FALSE, 5, FALSE, VAR_0x8005, DYN_MULTICHOICE_CB_SHOW_MOVE_INFO
 	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, PkmnCenterNurse_EventScript_WantMoveTutor
 	copyvar VAR_0x8005, VAR_RESULT
 	goto PkmnCenterNurse_Tutor_TeachMove
@@ -442,8 +450,7 @@ PkmnCenterNurse_AllTutors_Volcano:
 
 PkmnCenterNurse_Tutor_TeachMove:
 	call EventScript_ChooseMoveTutorMon
-	goto_if_eq VAR_RESULT, FALSE, PkmnCenterNurse_EventScript_WantMoveTutor
-	release
+	goto PkmnCenterNurse_EventScript_OpenTutorCategory
 	end
 
 

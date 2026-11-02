@@ -4764,9 +4764,11 @@ BattleScript_AskToLearnMove::
 	printstring STRINGID_DIDNOTLEARNMOVE
 	goto BattleScript_TryLearnMoveLoop
 BattleScript_ForgotAndLearnedNewMove::
-	printstring STRINGID_123POOF
-	printstring STRINGID_PKMNFORGOTMOVE
-	printstring STRINGID_ANDELLIPSIS
+	fanfare MUS_LEVEL_UP
+	printstring STRINGID_PKMNREPLACEDMOVE
+	waitmessage B_WAIT_TIME_LONG
+	updatechoicemoveonlvlup
+	goto BattleScript_TryLearnMoveLoop
 BattleScript_LearnedNewMove::
 	buffermovetolearn
 	fanfare MUS_LEVEL_UP

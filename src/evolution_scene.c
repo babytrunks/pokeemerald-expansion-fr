@@ -1012,9 +1012,13 @@ static void Task_EvolutionScene(u8 taskId)
             }
             break;
         case MVSTATE_FORGET_MSG_1:
-            BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_123POOF]);
+            // One line replaced message instead of forgot then learned
+            PREPARE_MOVE_BUFFER(gBattleTextBuff3, gMoveToLearn)
+            PlayFanfare(MUS_LEVEL_UP);
+            BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_PKMNREPLACEDMOVE]);
             BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MSG);
-            gTasks[taskId].tLearnMoveState++;
+            gTasks[taskId].tLearnsFirstMove = 0x40; // re-used as a counter
+            gTasks[taskId].tState = EVOSTATE_TRY_LEARN_ANOTHER_MOVE;
             break;
         case MVSTATE_FORGET_MSG_2:
             if (!IsTextPrinterActive(0) && !IsSEPlaying())
@@ -1390,9 +1394,13 @@ static void Task_TradeEvolutionScene(u8 taskId)
 
                         RemoveMonPPBonus(mon, var);
                         SetMonMoveSlot(mon, gMoveToLearn, var);
-                        BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_123POOF]);
+                        // One line replaced message instead of forgot then learned
+                        PREPARE_MOVE_BUFFER(gBattleTextBuff3, gMoveToLearn)
+                        PlayFanfare(MUS_LEVEL_UP);
+                        BattleStringExpandPlaceholdersToDisplayedString(gBattleStringsTable[STRINGID_PKMNREPLACEDMOVE]);
                         DrawTextOnTradeWindow(0, gDisplayedStringBattle, 1);
-                        gTasks[taskId].tLearnMoveState++;
+                        gTasks[taskId].tLearnsFirstMove = 0x40; // re-used as a counter
+                        gTasks[taskId].tState = T_EVOSTATE_TRY_LEARN_ANOTHER_MOVE;
                     }
                 }
             }
