@@ -305,6 +305,7 @@ static void OpenPartyMenuToChooseMon(u32 battler)
         caseId = gTasks[gBattleControllerData[battler]].data[0];
         DestroyTask(gBattleControllerData[battler]);
         FreeAllWindowBuffers();
+        HideWeatherIndicator(TRUE);
         OpenPartyMenuInBattle(caseId);
     }
 }
@@ -328,6 +329,7 @@ static void OpenBagAndChooseItem(u32 battler)
         gBattlerControllerFuncs[battler] = CompleteWhenChoseItem;
         ReshowBattleScreenDummy();
         FreeAllWindowBuffers();
+        HideWeatherIndicator(TRUE);
         if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
             CB2_BagMenuFromBattle();
         else

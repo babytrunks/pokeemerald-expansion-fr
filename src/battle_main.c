@@ -4328,6 +4328,7 @@ static void HandleTurnActionSelectionState(void)
             ComputeBattlerDecisions(battler); // Do AI score computations here so we can use them in AI_TrySwitchOrUseItem
             // fallthrough
         case STATE_BEFORE_ACTION_CHOSEN: // Choose an action.
+            ShowWeatherIndicator(B_INSTANT_WEATHER_INDICATORS);
             gBattleStruct->monToSwitchIntoId[battler] = PARTY_SIZE;
             if (gBattleTypeFlags & BATTLE_TYPE_MULTI
                 || (position & BIT_FLANK) == B_FLANK_LEFT
@@ -4824,6 +4825,7 @@ static void HandleTurnActionSelectionState(void)
     // Check if everyone chose actions.
     if (gBattleCommunication[ACTIONS_CONFIRMED_COUNT] == gBattlersCount)
     {
+        HideWeatherIndicator(B_INSTANT_WEATHER_INDICATORS);
         RecordedBattle_CheckMovesetChanges(B_RECORD_MODE_RECORDING);
 
         if (WILD_DOUBLE_BATTLE
@@ -5906,6 +5908,7 @@ static void TryEvolvePokemon(void)
             if (species != SPECIES_NONE)
             {
                 FreeAllWindowBuffers();
+                HideWeatherIndicator(TRUE);
                 gBattleMainFunc = WaitForEvoSceneToFinish;
                 GetEvolutionTargetSpecies(&gPlayerParty[i], mode, evolutionItemArg, NULL, &canStopEvo, DO_EVO);
                 EvolutionScene(&gPlayerParty[i], species, canStopEvo, i);

@@ -13072,11 +13072,14 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM92] =
+    [ITEM_TM_GRASS_KNOT] =
     {
         .name = ITEM_NAME("TM92"),
         .price = 3000,
-        .description = sQuestionMarksDesc, // Todo
+        .description = COMPOUND_STRING(
+            "A move that deals\n"
+            "more damage on\n"
+            "heavier foes."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

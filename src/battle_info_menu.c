@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle.h"
 #include "battle_anim.h"
+#include "battle_interface.h"
 #include "battle_message.h"
 #include "main.h"
 #include "menu.h"
@@ -212,6 +213,7 @@ void CB2_BattleInfoMenu(void)
         InitBgsFromTemplates(0, sBgTemplates, ARRAY_COUNT(sBgTemplates));
         ResetAllBgsCoordinates();
         FreeAllWindowBuffers();
+        HideWeatherIndicator(TRUE);
         DeactivateAllTextPrinters();
         SetGpuReg(REG_OFFSET_DISPCNT, DISPCNT_OBJ_ON | DISPCNT_OBJ_1D_MAP);
         ShowBg(0);

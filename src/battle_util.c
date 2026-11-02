@@ -8842,7 +8842,7 @@ bool32 IsFutureSightAttackerInParty(u32 battlerAtk, u32 battlerDef, u32 move)
 
 #undef DAMAGE_APPLY_MODIFIER
 
-static u32 GetWeather(void)
+u32 GetWeather(void)
 {
     if (gBattleWeather == B_WEATHER_NONE || !HasWeatherEffect())
         return B_WEATHER_NONE;

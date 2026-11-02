@@ -2984,8 +2984,6 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
               && GetActiveGimmick(gEffectBattler) != GIMMICK_DYNAMAX)
         {
             gBattleMons[gEffectBattler].volatiles.flinched = TRUE;
-            // The check above means the foe has not moved yet so the flinch always costs it a turn
-            TryTickMastery(gBattlerAttacker, MASTERY_EVENT_FLINCH_THREE, 0);
             gBattlescriptCurrInstr = battleScript;
         }
         else
@@ -3020,6 +3018,10 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
             gPaydayMoney += (gBattleMons[gBattlerAttacker].level * 10); // Doubled since wild battles pay nothing
             if (payday > gPaydayMoney)
                 gPaydayMoney = 0xFFFF;
+
+            // Only Pay Day itself counts, Make It Rain shares this effect
+            if (gCurrentMove == MOVE_PAY_DAY)
+                TryTickMastery(gBattlerAttacker, MASTERY_EVENT_MOVE_USED, MOVE_PAY_DAY);
 
             // For a move that hits multiple targets (i.e. Make it Rain)
             // we only want to print the message on the final hit
@@ -8049,6 +8051,7 @@ static void Cmd_yesnoboxlearnmove(void)
         if (!gPaletteFade.active)
         {
             FreeAllWindowBuffers();
+            HideWeatherIndicator(TRUE);
             ShowSelectMovePokemonSummaryScreen(gPlayerParty, gBattleStruct->expGetterMonId, gPlayerPartyCount - 1, ReshowBattleScreenAfterMenu, gMoveToLearn);
             gBattleScripting.learnMoveState++;
         }
@@ -13879,6 +13882,7 @@ static void Cmd_displaydexinfo(void)
         if (!gPaletteFade.active)
         {
             FreeAllWindowBuffers();
+            HideWeatherIndicator(TRUE);
             gBattleCommunication[TASK_ID] = DisplayCaughtMonDexPage(species,
                                                                     GetMonData(mon, MON_DATA_IS_SHINY),
                                                                     GetMonData(mon, MON_DATA_PERSONALITY));
@@ -14044,6 +14048,7 @@ static void Cmd_trygivecaughtmonnick(void)
             struct Pokemon *caughtMon = GetBattlerMon(gBattlerTarget);
             GetMonData(caughtMon, MON_DATA_NICKNAME, gBattleStruct->caughtMonNick);
             FreeAllWindowBuffers();
+            HideWeatherIndicator(TRUE);
             MainCallback callback = CalculatePlayerPartyCount() == PARTY_SIZE ? ReshowBlankBattleScreenAfterMenu : BattleMainCB2;
 
             DoNamingScreen(NAMING_SCREEN_CAUGHT_MON, gBattleStruct->caughtMonNick,

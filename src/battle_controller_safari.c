@@ -216,6 +216,7 @@ static void SafariOpenPokeblockCase(u32 battler)
         BattleUI_SetCursorMode(NUM_BUI_CURSOR_MODES);
         gBattlerControllerFuncs[battler] = CompleteWhenChosePokeblock;
         FreeAllWindowBuffers();
+        HideWeatherIndicator(TRUE);
         OpenPokeblockCaseInBattle();
     }
 }
@@ -237,6 +238,7 @@ static void OpenPartyMenuToChooseMon(u32 battler)
         u8 caseId = gTasks[gBattleControllerData[battler]].data[0];
         DestroyTask(gBattleControllerData[battler]);
         FreeAllWindowBuffers();
+        HideWeatherIndicator(TRUE);
         OpenPartyMenuInBattle(caseId);
     }
 }

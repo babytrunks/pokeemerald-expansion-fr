@@ -265,7 +265,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Money is recovered in\n"
             "trainer battles."),
         .effect = EFFECT_HIT,
-        .power = 60,
+        .power = 40,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 5,

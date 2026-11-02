@@ -11,7 +11,6 @@ enum MasteryEvent
     MASTERY_EVENT_MOVE_USED,            // param is the move
     MASTERY_EVENT_KO_WITH_TYPE,         // param is the type that landed the KO
     MASTERY_EVENT_SUPER_EFFECTIVE_HIT,  // param unused
-    MASTERY_EVENT_FLINCH_THREE,               // param unused, ticks when the foe is made to flinch
 };
 
 // Mastery ids, 0 means the species has no mastery

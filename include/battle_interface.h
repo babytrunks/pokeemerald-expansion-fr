@@ -147,5 +147,7 @@ void TryAddBattleInfoSprite(void);
 void TryHideBattleInfoSprite(void);
 void TryAddPokeballIconToHealthbox(u8 healthboxSpriteId);
 void UpdateNickInHealthbox(u8 healthboxSpriteId, struct Pokemon *mon);
+void ShowWeatherIndicator(bool32 instant);
+void HideWeatherIndicator(bool32 instant);
 
 #endif // GUARD_BATTLE_INTERFACE_H

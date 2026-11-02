@@ -5108,7 +5108,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sSkorupiLevelUpLearnset,
         .teachableLearnset = sSkorupiTeachableLearnset,
         .eggMoveLearnset = sSkorupiEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_DRAPION}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_DRAPION}),
     },
 
     [SPECIES_DRAPION] =

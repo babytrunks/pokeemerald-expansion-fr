@@ -198,6 +198,7 @@ static void OpenBagAfterPaletteFade(u32 battler)
         gBattlerControllerFuncs[battler] = CompleteOnChosenItem;
         ReshowBattleScreenDummy();
         FreeAllWindowBuffers();
+        HideWeatherIndicator(TRUE);
         DoWallyTutorialBagMenu();
     }
 }

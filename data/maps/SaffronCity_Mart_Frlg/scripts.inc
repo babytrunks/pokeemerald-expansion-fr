@@ -118,5 +118,5 @@ SaffronCity_Mart_Text_MaxRepelMoreEffectiveThanSuper::
 
 SaffronCity_Mart_Text_TryToBendSpoon::
     .string "Do not try and bend the Twisted\n"
-    .string "Spoon. Instead, only try to\l$"
+    .string "Spoon. Instead, only try to\l"
     .string "realize the truth.$"

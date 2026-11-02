@@ -656,9 +656,9 @@ static void HandleInput(void)
     case LIST_CANCEL:
         PlaySE(SE_SELECT);
         RemoveScrollArrows();
-        sMoveRelearnerStruct->state = MENU_STATE_PRINT_GIVE_UP_PROMPT;
-        StringExpandPlaceholders(gStringVar4, gText_MoveRelearnerGiveUp);
-        MoveRelearnerPrintMessage(gStringVar4);
+        // Skip the give up prompt and exit immediately
+        gSpecialVar_0x8004 = FALSE;
+        sMoveRelearnerStruct->state = MENU_STATE_FADE_AND_RETURN;
         break;
     default:
         PlaySE(SE_SELECT);

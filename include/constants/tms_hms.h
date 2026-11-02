@@ -92,7 +92,8 @@
     F(ROOST) \
     F(POLTERGEIST) \
     F(DRACO_METEOR) \
-    F(ENERGY_BALL) 
+    F(ENERGY_BALL) \
+    F(GRASS_KNOT) 
     
 #define FOREACH_HM(F) \
     F(CUT) \
