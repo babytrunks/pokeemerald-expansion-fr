@@ -6655,7 +6655,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sWailmerLevelUpLearnset,
         .teachableLearnset = sWailmerTeachableLearnset,
         .eggMoveLearnset = sWailmerEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_WAILORD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_WAILORD}),
     },
 
     [SPECIES_WAILORD] =

@@ -26119,13 +26119,13 @@
                 "species": "SPECIES_MANTYKE"
               },
               {
-                "min_level": 30,
-                "max_level": 40,
-                "species": "SPECIES_SLOWBRO_GALAR"
+                "min_level": 25,
+                "max_level": 28,
+                "species": "SPECIES_SLOWPOKE_GALAR"
               },
               {
-                "min_level": 30,
-                "max_level": 40,
+                "min_level": 25,
+                "max_level": 28,
                 "species": "SPECIES_LANTURN"
               },
               {
@@ -26134,8 +26134,8 @@
                 "species": "SPECIES_GYARADOS"
               },
               {
-                "min_level": 30,
-                "max_level": 40,
+                "min_level": 25,
+                "max_level": 28,
                 "species": "SPECIES_GYARADOS"
               },
               {

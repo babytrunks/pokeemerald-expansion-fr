@@ -143,15 +143,15 @@ SaffronCity_EventScript_Lass::
 	end
 
 SaffronCity_EventScript_Boy::
-	msgbox SaffronCity_Text_FlewHereOnPidgeot, MSGBOX_NPC
+	msgbox SaffronCity_Text_FlewHereOnStaraptor, MSGBOX_NPC
 	end
 
-SaffronCity_EventScript_Pidgeot::
+SaffronCity_EventScript_Staraptor::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_PIDGEOT, CRY_MODE_NORMAL
-	msgbox SaffronCity_Text_Pidgeot
+	playmoncry SPECIES_STARAPTOR, CRY_MODE_NORMAL
+	msgbox SaffronCity_Text_Staraptor
 	waitmoncry
 	release
 	end
@@ -241,13 +241,13 @@ SaffronCity_Text_PeopleComingBackToSaffron::
     .string "They should be flocking back to\n"
     .string "Saffron now.$"
 
-SaffronCity_Text_FlewHereOnPidgeot::
-    .string "I flew here on my Pidgeot when\n"
+SaffronCity_Text_FlewHereOnStaraptor::
+    .string "I flew here on my Staraptor when\n"
     .string "I read about Silph.\p"
     .string "It's already over?\n"
     .string "I missed the media action…$"
 
-SaffronCity_Text_Pidgeot::
+SaffronCity_Text_Staraptor::
     .string "Starrrrrr!$"
 
 SaffronCity_Text_SawRocketBossEscaping::

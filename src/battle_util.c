@@ -2221,6 +2221,8 @@ static enum MoveCanceler CancelerAsleepOrFrozen(struct BattleContext *ctx)
             enum BattleMoveEffects moveEffect = GetMoveEffect(ctx->currentMove);
             if (gBattleMons[ctx->battlerAtk].status1 & STATUS1_SLEEP)
             {
+                // Keep party sleep counter in sync so switching does not reset it
+                SetMonData(GetBattlerMon(ctx->battlerAtk), MON_DATA_STATUS, &gBattleMons[ctx->battlerAtk].status1);
                 if (moveEffect != EFFECT_SNORE && moveEffect != EFFECT_SLEEP_TALK)
                 {
                     gProtectStructs[ctx->battlerAtk].nonVolatileStatusImmobility = TRUE;
