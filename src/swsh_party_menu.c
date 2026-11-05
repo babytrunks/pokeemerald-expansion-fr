@@ -55,6 +55,8 @@
 #include "pokemon_icon.h"
 #include "pokemon_jump.h"
 #include "pokemon_storage_system.h"
+#include "pokedex_plus_hgss.h"
+#include "config/pokedex_plus_hgss.h"
 #include "pokemon_summary_screen.h"
 #include "region_map.h"
 #include "reshow_battle_screen.h"
@@ -149,6 +151,7 @@ enum {
     MENU_CATALOG_MOWER,
     MENU_CHANGE_FORM,
     MENU_CHANGE_ABILITY,
+    MENU_POKEDEX,
     MENU_FIELD_MOVES
 };
 
@@ -623,6 +626,7 @@ static void CursorCb_ChangeForm(u8);
 static void CursorCb_ChangeAbility(u8);
 // Fork-only cursor options
 static void CursorCb_StatEdit(u8);
+static void CursorCb_Pokedex(u8);
 static void CursorCb_WardrobeCosplay(u8);
 static void CursorCb_WardrobeRockStar(u8);
 static void CursorCb_WardrobeBelle(u8);
@@ -3824,6 +3828,9 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
     if (FlagGet(FLAG_UNLOCKED_STAT_EDITOR))
         AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_STAT_EDIT);
 
+    if (POKEDEX_PLUS_HGSS)
+        AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, MENU_POKEDEX);
+
 #if SWSH_PARTY_MENU_FIELD_MOVES
     // Add field moves to action list
     for (u8 i = 0; i < MAX_MON_MOVES; i++)
@@ -6506,6 +6513,15 @@ static void CursorCb_StatEdit(u8 taskId)
     PlaySE(SE_SELECT);
     gSpecialVar_0x8004 = gPartyMenu.slotId;
     sPartyMenuInternal->exitCallback = ChangePokemonStatsPartyScreen;
+    Task_ClosePartyMenu(taskId);
+}
+
+// Opens the HGSS dex stats page for this mon and returns like the summary screen
+static void CursorCb_Pokedex(u8 taskId)
+{
+    PlaySE(SE_SELECT);
+    Pokedex_SetPartyStatsRequest(gPartyMenu.slotId, CB2_ReturnToPartyMenuFromSummaryScreen);
+    sPartyMenuInternal->exitCallback = CB2_OpenPokedexStatsForPartySlot;
     Task_ClosePartyMenu(taskId);
 }
 

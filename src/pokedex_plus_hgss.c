@@ -291,6 +291,10 @@ static EWRAM_DATA struct PokedexView *sPokedexView = NULL;
 static EWRAM_DATA u16 sLastSelectedPokemon = 0;
 static EWRAM_DATA u8 sPokeBallRotation = 0;
 static EWRAM_DATA struct PokedexListItem *sPokedexListItem = NULL;
+// Party menu stats view state
+static EWRAM_DATA MainCallback sPartyStatsReturnCB = NULL;
+static EWRAM_DATA u8 sPartyStatsSlot = 0;
+static EWRAM_DATA u8 sPartyStatsNextSlot = 0;
 //Pokedex Plus HGSS_Ui
 #define MOVES_COUNT_TOTAL (EGG_MOVES_ARRAY_COUNT + MAX_LEVEL_UP_MOVES + NUM_ALL_MACHINES)
 EWRAM_DATA static u16 sStatsMoves[MOVES_COUNT_TOTAL] = {0};
@@ -340,6 +344,8 @@ struct PokedexListItem
     u16 seen:1;
     u16 owned:1;
 };
+
+static EWRAM_DATA struct PokedexListItem sPartyStatsItem = {0};
 
 
 struct PokemonStats
@@ -600,6 +606,13 @@ static u8 ShowCategoryIcon(enum DamageCategory category);
 static void DestroyCategoryIcon(void);
 
 static u16 NationalPokedexNumToSpeciesHGSS(u16 nationalNum);
+
+//Party menu stats view
+static bool32 IsPartyStatsMode(void);
+static u32 GetNextPartyStatsSlot(bool32 forward);
+static void SetupPartyStatsItem(u32 slot);
+static void Task_SwitchPartyStatsMon(u8 taskId);
+static void Task_ExitPartyStatsScreen(u8 taskId);
 
 //Evo screen
 u32 GetSpeciesNameFontId(u32 nameWidth);
@@ -5025,9 +5038,29 @@ static void Task_HandleStatsScreenInput(u8 taskId)
     if (JOY_NEW(B_BUTTON))
     {
         BeginNormalPaletteFade(0xFFFFFFFF, 0, 0, 16, RGB_BLACK);
-        gTasks[taskId].func = Task_ExitStatsScreen;
+        gTasks[taskId].func = IsPartyStatsMode() ? Task_ExitPartyStatsScreen : Task_ExitStatsScreen;
         PlaySE(SE_PC_OFF);
         return;
+    }
+
+    // Party view cycles through party mons instead of switching dex pages
+    if (IsPartyStatsMode())
+    {
+        bool32 left = JOY_NEW(DPAD_LEFT) || JOY_NEW(L_BUTTON);
+        bool32 right = JOY_NEW(DPAD_RIGHT) || JOY_NEW(R_BUTTON);
+
+        if (left || right)
+        {
+            u32 nextSlot = GetNextPartyStatsSlot(right);
+            if (nextSlot != sPartyStatsSlot)
+            {
+                sPartyStatsNextSlot = nextSlot;
+                BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
+                gTasks[taskId].func = Task_SwitchPartyStatsMon;
+                PlaySE(SE_PIN);
+                return;
+            }
+        }
     }
 
     //Change moves
@@ -5063,6 +5096,8 @@ static void Task_HandleStatsScreenInput(u8 taskId)
     }
 
     //Switch screens
+    if (IsPartyStatsMode())
+        return;
     if ((JOY_NEW(DPAD_LEFT) || (JOY_NEW(L_BUTTON) && gSaveBlock2Ptr->optionsButtonMode == OPTIONS_BUTTON_MODE_LR)))
     {
         sPokedexView->selectedScreen = INFO_SCREEN;
@@ -5990,6 +6025,160 @@ static void Task_ExitStatsScreen(u8 taskId)
         FreeAndDestroyMonPicSprite(gTasks[taskId].tMonSpriteId);
         FreeInfoScreenWindowAndBgBuffers();
         DestroyTask(taskId);
+    }
+}
+
+//************************************
+//*                                  *
+//*        PARTY MENU STATS VIEW     *
+//*                                  *
+//************************************
+// Opened from the party menu Pokedex option, shows only the stats page
+
+void Pokedex_SetPartyStatsRequest(u8 slot, MainCallback returnCb)
+{
+    sPartyStatsSlot = slot;
+    sPartyStatsReturnCB = returnCb;
+}
+
+static bool32 IsPartyStatsMode(void)
+{
+    return sPartyStatsReturnCB != NULL;
+}
+
+static bool32 IsValidPartyStatsSlot(u32 slot)
+{
+    return GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES) != SPECIES_NONE
+        && !GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG);
+}
+
+// Returns the current slot when no other valid party mon exists
+static u32 GetNextPartyStatsSlot(bool32 forward)
+{
+    u32 i, slot = sPartyStatsSlot;
+
+    for (i = 1; i < gPlayerPartyCount; i++)
+    {
+        if (forward)
+            slot = (slot + 1) % gPlayerPartyCount;
+        else
+            slot = (slot == 0) ? gPlayerPartyCount - 1 : slot - 1;
+
+        if (IsValidPartyStatsSlot(slot))
+            return slot;
+    }
+    return sPartyStatsSlot;
+}
+
+static void SetupPartyStatsItem(u32 slot)
+{
+    u32 species = GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES);
+
+    sPartyStatsSlot = slot;
+    sPartyStatsItem.dexNum = SpeciesToNationalPokedexNum(species);
+    sPartyStatsItem.seen = TRUE;
+    sPartyStatsItem.owned = TRUE;
+    sPokedexView->formSpecies = (GetSpeciesFormTable(species) != NULL) ? species : 0;
+    sPokedexListItem = &sPartyStatsItem;
+}
+
+static void InitPartyStatsTaskData(u8 taskId)
+{
+    gTasks[taskId].data[1] = 0; // no mon pic on this page
+    gTasks[taskId].data[2] = 0; // full background reload
+    // Stats loader writes to gSprites[data[4]] so point at the dummy sprite
+    gTasks[taskId].data[3] = MAX_SPRITES;
+    gTasks[taskId].data[4] = MAX_SPRITES;
+    gTasks[taskId].data[6] = MAX_SPRITES;
+}
+
+void CB2_OpenPokedexStatsForPartySlot(void)
+{
+    u8 taskId;
+
+    if (!POKEDEX_PLUS_HGSS) return; // prevents the compiler from emitting static .rodata
+                                    // if the feature is disabled
+    switch (gMain.state)
+    {
+    case 0:
+    default:
+        SetVBlankCallback(NULL);
+        ResetOtherVideoRegisters(0);
+        DmaFillLarge16(3, 0, (u8 *)VRAM, VRAM_SIZE, 0x1000);
+        DmaClear32(3, OAM, OAM_SIZE);
+        DmaClear16(3, PLTT, PLTT_SIZE);
+        gMain.state = 1;
+        break;
+    case 1:
+        ScanlineEffect_Stop();
+        ResetTasks();
+        ResetSpriteData();
+        ResetPaletteFade();
+        FreeAllSpritePalettes();
+        gReservedSpritePaletteCount = 8;
+        ResetAllPicSprites();
+        gMain.state++;
+        break;
+    case 2:
+        sPokedexView = AllocZeroed(sizeof(struct PokedexView));
+        ResetPokedexView(sPokedexView);
+        sPokedexView->dexMode = gSaveBlock2Ptr->pokedex.mode;
+        if (!IsNationalPokedexEnabled())
+            sPokedexView->dexMode = DEX_MODE_HOENN;
+        sPokedexView->selectedScreen = STATS_SCREEN;
+        SetupPartyStatsItem(sPartyStatsSlot);
+
+        // Same BG and window setup the info screen normally provides
+        ResetBgsAndClearDma3BusyFlags(0);
+        InitBgsFromTemplates(0, sInfoScreen_BgTemplate, ARRAY_COUNT(sInfoScreen_BgTemplate));
+        SetBgTilemapBuffer(3, AllocZeroed(BG_SCREEN_SIZE));
+        SetBgTilemapBuffer(2, AllocZeroed(BG_SCREEN_SIZE));
+        SetBgTilemapBuffer(1, AllocZeroed(BG_SCREEN_SIZE));
+        SetBgTilemapBuffer(0, AllocZeroed(BG_SCREEN_SIZE));
+        InitWindows(sInfoScreen_WindowTemplates);
+        DeactivateAllTextPrinters();
+        gMain.state++;
+        break;
+    case 3:
+        EnableInterrupts(1);
+        SetVBlankCallback(VBlankCB_Pokedex);
+        taskId = CreateTask(Task_LoadStatsScreen, 0);
+        InitPartyStatsTaskData(taskId);
+        SetMainCallback2(CB2_Pokedex); // also resets gMain.state for the stats loader
+        break;
+    }
+}
+
+static void Task_SwitchPartyStatsMon(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        // Only this page's sprites exist so wipe them all to avoid icon leaks
+        ResetSpriteData();
+        FreeAllSpritePalettes();
+        gReservedSpritePaletteCount = 8;
+        SetupPartyStatsItem(sPartyStatsNextSlot);
+        InitPartyStatsTaskData(taskId);
+        gMain.state = 0;
+        gTasks[taskId].func = Task_LoadStatsScreen;
+    }
+}
+
+static void Task_ExitPartyStatsScreen(u8 taskId)
+{
+    if (!gPaletteFade.active)
+    {
+        MainCallback returnCb = sPartyStatsReturnCB;
+
+        // Party menu init resets sprites, palettes and tasks
+        FreeInfoScreenWindowAndBgBuffers();
+        Free(sPokedexView);
+        sPokedexView = NULL;
+        sPokedexListItem = NULL;
+        gLastViewedMonIndex = sPartyStatsSlot;
+        sPartyStatsReturnCB = NULL;
+        DestroyTask(taskId);
+        SetMainCallback2(returnCb);
     }
 }
 
