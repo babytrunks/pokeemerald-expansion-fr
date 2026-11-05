@@ -55,4 +55,14 @@ const struct Mastery gMasteries[MASTERY_COUNT] =
         .targetCount = 5,
         .reward      = ITEM_GACHA_VOUCHER,
     },
+
+    [MASTERY_PECK_FROM_ABOVE] =
+    {
+        .title       = COMPOUND_STRING("Peck From Above"),
+        .description = COMPOUND_STRING("Knock out 5 foes with super effective Flying moves."),
+        .event       = MASTERY_EVENT_SUPER_EFFECTIVE_KO,
+        .param       = TYPE_FLYING,
+        .targetCount = 5,
+        .reward      = ITEM_SHARP_BEAK,
+    },
 };

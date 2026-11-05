@@ -294,7 +294,7 @@ static const s32 sExperienceScalingFactors[] =
     159767,
 };
 
-static const u16 sWhiteOutBadgeMoney[9] = { 8, 16, 24, 36, 48, 64, 80, 100, 120 };
+static const u16 sWhiteOutBadgeMoney[9] = { 48, 64, 80, 96, 112, 140, 180, 220, 260 };
 
 enum GiveCaughtMonStates
 {

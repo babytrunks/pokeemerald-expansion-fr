@@ -3,6 +3,18 @@
 
 #define ITEM_NONE 0
 
+
+// Potential items for mastery:
+// All type boosting items (19)
+// Nugget (1)
+// Big Pearl 
+// Mega Stones
+// Rare Candy
+// Amulet Coin (Done)
+// 
+
+
+
 // Poké Balls
 #define ITEM_POKE_BALL 1
 #define ITEM_GREAT_BALL 2

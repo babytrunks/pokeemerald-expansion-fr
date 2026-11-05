@@ -127,6 +127,27 @@ void TryTickMastery(u32 battler, u32 event, u32 param)
     }
 }
 
+// Each foe this move hit super effectively and fainted counts once, spread moves can tick twice
+static void TryTickSuperEffectiveKOs(void)
+{
+    u32 battler;
+    enum Type moveType;
+
+    if (IsBattleMoveStatus(gCurrentMove))
+        return;
+
+    moveType = GetBattleMoveType(gCurrentMove);
+    for (battler = 0; battler < gBattlersCount; battler++)
+    {
+        if (battler == gBattlerAttacker || IsBattlerAlly(battler, gBattlerAttacker))
+            continue;
+        if (IsBattlerTurnDamaged(battler)
+         && !IsBattlerAlive(battler)
+         && (gBattleStruct->moveResultFlags[battler] & MOVE_RESULT_SUPER_EFFECTIVE))
+            TryTickMastery(gBattlerAttacker, MASTERY_EVENT_SUPER_EFFECTIVE_KO, moveType);
+    }
+}
+
 // Runs once per move resolution so spread moves cannot double count
 void TryTickMasteryAtMoveEnd(void)
 {
@@ -142,4 +163,6 @@ void TryTickMasteryAtMoveEnd(void)
      && gBattleStruct->magnitudeBasePower == 150
      && !(gBattleStruct->moveResultFlags[gBattlerTarget] & (MOVE_RESULT_MISSED | MOVE_RESULT_DOESNT_AFFECT_FOE | MOVE_RESULT_NO_EFFECT)))
         TryTickMastery(gBattlerAttacker, MASTERY_EVENT_MAGNITUDE_LEVEL, 10);
+
+    TryTickSuperEffectiveKOs();
 }
