@@ -13,7 +13,8 @@
 // Amulet Coin (Done)
 // TM Roost
 // TM Teleport
-
+// TM Energy Ball
+// Throat Spray
 
 
 // Poké Balls

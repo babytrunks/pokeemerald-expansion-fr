@@ -7031,10 +7031,10 @@
     "LevelMoves": [],
     "PreEvoMoves": [],
     "TMMoves": [
-      "MOVE_VOLT_SWITCH"
+      "MOVE_VOLT_SWITCH",
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
-      "MOVE_AQUA_TAIL"
     ],
     "TutorMoves": []
   },
@@ -10641,11 +10641,18 @@
     "TutorMoves": []
   },
   "STUNFISK_GALAR": {
-    "LevelMoves": [],
+    "LevelMoves": [    
+      {
+        "Level": 36,
+        "Move": "MOVE_AQUA_TAIL"
+      },  
+      {
+        "Level": 38,
+        "Move": "MOVE_GYRO_BALL"
+      }],
     "PreEvoMoves": [],
     "TMMoves": [],
     "EggMoves": [
-      "MOVE_AQUA_TAIL"
     ],
     "TutorMoves": []
   },
