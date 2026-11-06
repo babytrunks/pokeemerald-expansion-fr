@@ -11,7 +11,8 @@
 // Mega Stones
 // Rare Candy
 // Amulet Coin (Done)
-// 
+// TM Roost
+// TM Teleport
 
 
 

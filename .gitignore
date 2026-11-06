@@ -60,3 +60,4 @@ tools/compresSmol/compresSmolTilemap
 __pycache__
 log.txt
 post/
+*.gif
